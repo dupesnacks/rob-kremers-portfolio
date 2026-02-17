@@ -69,6 +69,35 @@
             color: #1a1a1a;
         }
 
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            gap: 6px;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 0;
+        }
+
+        .hamburger span {
+            width: 24px;
+            height: 2px;
+            background: #1a1a1a;
+            transition: all 0.3s;
+        }
+
+        .hamburger.active span:nth-child(1) {
+            transform: rotate(45deg) translate(8px, 8px);
+        }
+
+        .hamburger.active span:nth-child(2) {
+            opacity: 0;
+        }
+
+        .hamburger.active span:nth-child(3) {
+            transform: rotate(-45deg) translate(8px, -8px);
+        }
+
         .container {
             max-width: 1200px;
             margin: 0 auto;
@@ -478,11 +507,47 @@
         @media (max-width: 768px) {
             nav .container {
                 padding: 0 20px;
+                position: relative;
+            }
+
+            .hamburger {
+                display: flex;
             }
 
             nav ul {
-                gap: 20px;
-                font-size: 12px;
+                position: fixed;
+                top: 70px;
+                left: 0;
+                right: 0;
+                background: white;
+                border-bottom: 1px solid #f0f0f0;
+                flex-direction: column;
+                gap: 0;
+                max-height: 0;
+                overflow: hidden;
+                transition: max-height 0.3s ease;
+                list-style: none;
+                padding: 0;
+                margin: 0;
+                z-index: 999;
+            }
+
+            nav ul.active {
+                max-height: 500px;
+            }
+
+            nav ul li {
+                padding: 16px 20px;
+                border-bottom: 1px solid #f0f0f0;
+                margin: 0;
+            }
+
+            nav ul li:last-child {
+                border-bottom: none;
+            }
+
+            nav ul a {
+                font-size: 14px;
             }
 
             .container {
@@ -539,7 +604,12 @@
     <nav>
         <div class="container">
             <a href="#" class="logo">Rob Kremers</a>
-            <ul>
+            <button class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul id="nav-menu">
                 <li><a href="#why">Why Me</a></li>
                 <li><a href="#background">Background</a></li>
                 <li><a href="#work">Work</a></li>
@@ -717,5 +787,26 @@
             <p>&copy; 2026 Rob Kremers. All rights reserved.</p>
         </div>
     </footer>
+
+    <script>
+        // Hamburger Menu
+        const hamburger = document.getElementById('hamburger');
+        const navMenu = document.getElementById('nav-menu');
+
+        if (hamburger) {
+            hamburger.addEventListener('click', () => {
+                hamburger.classList.toggle('active');
+                navMenu.classList.toggle('active');
+            });
+
+            // Close menu when a link is clicked
+            document.querySelectorAll('#nav-menu a').forEach(link => {
+                link.addEventListener('click', () => {
+                    hamburger.classList.remove('active');
+                    navMenu.classList.remove('active');
+                });
+            });
+        }
+    </script>
 </body>
 </html>
