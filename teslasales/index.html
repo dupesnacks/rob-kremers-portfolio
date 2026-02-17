@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tesla Sales Dashboard - Track orders and metrics">
+    <title>Tesla Sales Dashboard</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', sans-serif;
+            line-height: 1.6;
+            color: #1a1a1a;
+            background: #ffffff;
+        }
+
+        /* Navigation */
+        nav {
+            position: sticky;
+            top: 0;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid #f0f0f0;
+            z-index: 1000;
+        }
+
+        nav .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 70px;
+        }
+
+        .logo {
+            font-size: 18px;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+            text-decoration: none;
+            color: #0D5E54;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 40px;
+        }
+
+        /* Header */
+        .hero {
+            padding: 60px 0 40px;
+            border-bottom: 1px solid #f0f0f0;
+        }
+
+        .hero h1 {
+            font-size: 42px;
+            line-height: 1.2;
+            margin-bottom: 12px;
+            font-weight: 700;
+            letter-spacing: -1px;
+        }
+
+        .hero .subheading {
+            font-size: 18px;
+            color: #666;
+            margin-bottom: 0;
+            font-weight: 400;
+        }
+
+        /* Metrics Grid */
+        .metrics {
+            padding: 60px 0;
+            border-bottom: 1px solid #f0f0f0;
+        }
+
+        .metrics-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .metric-card {
+            padding: 30px;
+            background: #f9f9f9;
+            border-radius: 4px;
+            text-align: center;
+        }
+
+        .metric-value {
+            font-size: 48px;
+            font-weight: 700;
+            color: #0D5E54;
+            margin-bottom: 8px;
+            line-height: 1;
+        }
+
+        .metric-label {
+            font-size: 14px;
+            color: #999;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            font-weight: 600;
+        }
+
+        .metric-detail {
+            font-size: 12px;
+            color: #bbb;
+            margin-top: 12px;
+        }
+
+        /* Charts Section */
+        .charts {
+            padding: 60px 0;
+            border-bottom: 1px solid #f0f0f0;
+        }
+
+        .charts h2 {
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 40px;
+            position: relative;
+            padding-bottom: 12px;
+        }
+
+        .charts h2::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 60px;
+            height: 3px;
+            background: #0D5E54;
+            border-radius: 2px;
+        }
+
+        .chart-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 40px;
+        }
+
+        .chart-container {
+            background: #f9f9f9;
+            padding: 30px;
+            border-radius: 4px;
+        }
+
+        .chart-title {
+            font-size: 16px;
+            font-weight: 700;
+            margin-bottom: 20px;
+            color: #1a1a1a;
+        }
+
+        canvas {
+            max-height: 300px;
+        }
+
+        /* Table Section */
+        .data-table {
+            padding: 60px 0;
+        }
+
+        .data-table h2 {
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 30px;
+            position: relative;
+            padding-bottom: 12px;
+        }
+
+        .data-table h2::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 60px;
+            height: 3px;
+            background: #0D5E54;
+            border-radius: 2px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+        }
+
+        thead {
+            background: #f9f9f9;
+        }
+
+        th {
+            padding: 16px;
+            text-align: left;
+            font-weight: 600;
+            font-size: 13px;
+            color: #666;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            border-bottom: 1px solid #e8e8e8;
+        }
+
+        td {
+            padding: 14px 16px;
+            border-bottom: 1px solid #f0f0f0;
+            font-size: 14px;
+        }
+
+        tr:hover {
+            background: #fafafa;
+        }
+
+        .order-id {
+            font-weight: 600;
+            color: #0D5E54;
+        }
+
+        .fsd-badge {
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .fsd-purchased {
+            background: #d4f1e8;
+            color: #0D5E54;
+        }
+
+        .fsd-subscription {
+            background: #fff4e6;
+            color: #d97706;
+        }
+
+        .fsd-transfer {
+            background: #e0e7ff;
+            color: #4f46e5;
+        }
+
+        .fsd-none {
+            background: #f3f4f6;
+            color: #9ca3af;
+        }
+
+        .price {
+            color: #0D5E54;
+            font-weight: 600;
+        }
+
+        /* Footer */
+        footer {
+            border-top: 1px solid #f0f0f0;
+            padding: 40px 0;
+            text-align: center;
+            color: #999;
+            font-size: 13px;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .container {
+                padding: 0 20px;
+            }
+
+            nav .container {
+                padding: 0 20px;
+            }
+
+            .hero h1 {
+                font-size: 32px;
+            }
+
+            .metrics-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+
+            .chart-grid {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+
+            table {
+                font-size: 12px;
+            }
+
+            th, td {
+                padding: 12px 8px;
+            }
+
+            .metric-value {
+                font-size: 36px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="container">
+            <a href="/" class="logo">Rob Kremers</a>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero">
+        <div class="container">
+            <h1>Tesla Sales Dashboard</h1>
+            <p class="subheading">Real-time tracking of orders, metrics, and patterns</p>
+        </div>
+    </section>
+
+    <!-- Key Metrics -->
+    <section class="metrics">
+        <div class="container">
+            <div class="metrics-grid">
+                <div class="metric-card">
+                    <div class="metric-value" id="totalOrders">15</div>
+                    <div class="metric-label">Total Orders</div>
+                    <div class="metric-detail">Jan 11 – Feb 17</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-value">$64.5K</div>
+                    <div class="metric-label">Avg MSRP</div>
+                    <div class="metric-detail">Across all models</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-value" id="mostCommonModel">Model Y</div>
+                    <div class="metric-label">Most Common</div>
+                    <div class="metric-detail">11 of 15 orders</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-value" id="fsdCount">3</div>
+                    <div class="metric-label">FSD Subscriptions</div>
+                    <div class="metric-detail">20% adoption rate</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Charts -->
+    <section class="charts">
+        <div class="container">
+            <h2>Insights & Patterns</h2>
+            <div class="chart-grid">
+                <div class="chart-container">
+                    <div class="chart-title">Orders by Model</div>
+                    <canvas id="modelChart"></canvas>
+                </div>
+                <div class="chart-container">
+                    <div class="chart-title">Orders per Day (Daily)</div>
+                    <canvas id="ordersChart"></canvas>
+                </div>
+                <div class="chart-container">
+                    <div class="chart-title">MSRP Distribution by Model</div>
+                    <canvas id="msrpChart"></canvas>
+                </div>
+                <div class="chart-container">
+                    <div class="chart-title">FSD Adoption</div>
+                    <canvas id="fsdChart"></canvas>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Data Table -->
+    <section class="data-table">
+        <div class="container">
+            <h2>Order History</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Order</th>
+                        <th>Date</th>
+                        <th>Model</th>
+                        <th>MSRP</th>
+                        <th>FSD Status</th>
+                    </tr>
+                </thead>
+                <tbody id="tableBody">
+                    <!-- Data will be inserted here -->
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Tesla Sales Dashboard. Data current as of Feb 17, 2026.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Data
+        const orders = [
+            { id: 1, date: '2026-01-11', model: 'Model Y Standard', msrp: 46130, fsd: 'None' },
+            { id: 2, date: '2026-01-16', model: 'Model Y Premium RWD', msrp: 41130, fsd: 'None' },
+            { id: 3, date: '2026-01-17', model: 'Model Y Premium AWD', msrp: 51630, fsd: 'None' },
+            { id: 4, date: '2026-01-17', model: 'Model S AWD', msrp: 102130, fsd: 'None' },
+            { id: 5, date: '2026-01-18', model: 'Model Y Premium AWD', msrp: 51630, fsd: 'Purchased' },
+            { id: 6, date: '2026-01-19', model: 'Model Y Premium AWD', msrp: 58130, fsd: 'None' },
+            { id: 7, date: '2026-01-23', model: 'Model Y Premium', msrp: 50630, fsd: 'None' },
+            { id: 8, date: '2026-01-24', model: 'Model Y Premium AWD', msrp: 50130, fsd: 'None' },
+            { id: 9, date: '2026-01-31', model: 'Model Y Premium AWD', msrp: 56130, fsd: 'None' },
+            { id: 10, date: '2026-02-02', model: 'Model Y Performance AWD', msrp: 66630, fsd: 'Purchased' },
+            { id: 11, date: '2026-02-09', model: 'Model S Plaid', msrp: 114130, fsd: 'None' },
+            { id: 12, date: '2026-02-12', model: 'Model S AWD', msrp: 99490, fsd: 'None' },
+            { id: 13, date: '2026-02-13', model: 'Model X Plaid', msrp: 117490, fsd: 'None' },
+            { id: 14, date: '2026-02-15', model: 'Model Y Premium AWD', msrp: 54130, fsd: 'Transfer' },
+            { id: 15, date: '2026-02-17', model: 'Model Y Premium AWD', msrp: 52630, fsd: 'Subscription' }
+        ];
+
+        // Populate table
+        const tableBody = document.getElementById('tableBody');
+        orders.forEach(order => {
+            const row = document.createElement('tr');
+            const fsdClass = 'fsd-' + order.fsd.toLowerCase().replace(' ', '-');
+            row.innerHTML = `
+                <td class="order-id">#${order.id}</td>
+                <td>${new Date(order.date).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })}</td>
+                <td>${order.model}</td>
+                <td class="price">$${order.msrp.toLocaleString()}</td>
+                <td><span class="fsd-badge ${fsdClass}">${order.fsd}</span></td>
+            `;
+            tableBody.appendChild(row);
+        });
+
+        // Calculate metrics
+        const avgMsrp = Math.round(orders.reduce((sum, o) => sum + o.msrp, 0) / orders.length);
+        const modelCounts = {};
+        orders.forEach(o => {
+            const baseModel = o.model.split(' ')[0] + ' ' + o.model.split(' ')[1];
+            modelCounts[baseModel] = (modelCounts[baseModel] || 0) + 1;
+        });
+        const mostCommon = Object.keys(modelCounts).reduce((a, b) => modelCounts[a] > modelCounts[b] ? a : b);
+        const fsdCount = orders.filter(o => o.fsd !== 'None').length;
+
+        // Update metric cards
+        document.querySelector('.metric-value').textContent = orders.length;
+        document.querySelector('.metric-detail').textContent = avgMsrp.toLocaleString('en-US', { style: 'currency', currency: 'USD' });
+
+        // Model breakdown chart
+        const ctx1 = document.getElementById('modelChart').getContext('2d');
+        new Chart(ctx1, {
+            type: 'bar',
+            data: {
+                labels: Object.keys(modelCounts),
+                datasets: [{
+                    label: 'Number of Orders',
+                    data: Object.values(modelCounts),
+                    backgroundColor: '#0D5E54',
+                    borderRadius: 4,
+                    borderSkipped: false
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: { display: false }
+                },
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        ticks: { stepSize: 1 }
+                    }
+                }
+            }
+        });
+
+        // Orders per day
+        const dateCounts = {};
+        orders.forEach(o => {
+            const date = new Date(o.date);
+            const dayNum = date.getDate();
+            dateCounts[dayNum] = (dateCounts[dayNum] || 0) + 1;
+        });
+        const ctx2 = document.getElementById('ordersChart').getContext('2d');
+        new Chart(ctx2, {
+            type: 'line',
+            data: {
+                labels: Object.keys(dateCounts).map(d => 'Day ' + d),
+                datasets: [{
+                    label: 'Orders',
+                    data: Object.values(dateCounts),
+                    borderColor: '#0D5E54',
+                    backgroundColor: 'rgba(13, 94, 84, 0.1)',
+                    fill: true,
+                    tension: 0.4,
+                    pointRadius: 4,
+                    pointBackgroundColor: '#D4AF37',
+                    pointBorderColor: '#0D5E54',
+                    pointBorderWidth: 2
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: { legend: { display: false } },
+                scales: {
+                    y: { beginAtZero: true, ticks: { stepSize: 1 } }
+                }
+            }
+        });
+
+        // MSRP by model
+        const modelMsrp = {};
+        orders.forEach(o => {
+            const baseModel = o.model.split(' ')[0] + ' ' + o.model.split(' ')[1];
+            if (!modelMsrp[baseModel]) modelMsrp[baseModel] = [];
+            modelMsrp[baseModel].push(o.msrp);
+        });
+        const avgByModel = Object.keys(modelMsrp).reduce((acc, model) => {
+            acc[model] = Math.round(modelMsrp[model].reduce((a, b) => a + b, 0) / modelMsrp[model].length);
+            return acc;
+        }, {});
+        const ctx3 = document.getElementById('msrpChart').getContext('2d');
+        new Chart(ctx3, {
+            type: 'bar',
+            data: {
+                labels: Object.keys(avgByModel),
+                datasets: [{
+                    label: 'Average MSRP',
+                    data: Object.values(avgByModel),
+                    backgroundColor: '#D4AF37',
+                    borderRadius: 4,
+                    borderSkipped: false
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: { legend: { display: false } },
+                scales: {
+                    y: {
+                        ticks: {
+                            callback: (value) => '$' + (value / 1000).toFixed(0) + 'K'
+                        }
+                    }
+                }
+            }
+        });
+
+        // FSD adoption
+        const fsdBreakdown = {
+            'No FSD': orders.filter(o => o.fsd === 'None').length,
+            'Purchased': orders.filter(o => o.fsd === 'Purchased').length,
+            'Subscription': orders.filter(o => o.fsd === 'Subscription').length,
+            'Transfer': orders.filter(o => o.fsd === 'Transfer').length
+        };
+        const ctx4 = document.getElementById('fsdChart').getContext('2d');
+        new Chart(ctx4, {
+            type: 'doughnut',
+            data: {
+                labels: Object.keys(fsdBreakdown),
+                datasets: [{
+                    data: Object.values(fsdBreakdown),
+                    backgroundColor: ['#f3f4f6', '#0D5E54', '#D4AF37', '#4f46e5'],
+                    borderColor: '#ffffff',
+                    borderWidth: 2
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: {
+                        position: 'bottom'
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>
