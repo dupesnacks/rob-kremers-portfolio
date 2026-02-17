@@ -172,6 +172,30 @@
             color: #333;
         }
 
+        .process-flow {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            margin-top: 40px;
+            padding: 40px;
+            background: #f9f9f9;
+            border-radius: 4px;
+            align-items: center;
+            text-align: center;
+        }
+
+        .process-step {
+            font-size: 18px;
+            font-weight: 700;
+            color: #1a1a1a;
+        }
+
+        .process-arrow {
+            font-size: 24px;
+            color: #999;
+            height: 20px;
+        }
+
         .positioning-left p {
             margin-bottom: 20px;
         }
@@ -885,6 +909,20 @@
                 gap: 40px;
             }
 
+            .process-flow {
+                margin-top: 30px;
+                padding: 30px;
+                gap: 15px;
+            }
+
+            .process-step {
+                font-size: 16px;
+            }
+
+            .process-arrow {
+                font-size: 20px;
+            }
+
             .positioning {
                 padding: 80px 0;
             }
@@ -1019,8 +1057,17 @@
                         This means taking a complex product or market opportunity and translating it into a structured framework that marketing, sales, and product can all execute against. It means aligning incentives. It means removing ambiguity. It means <strong>revenue.</strong>
                     </p>
                     <p>
-                        I've done this at scale (Nike's global retail operations, adidas's Amazon channel launch) and in chaos (early-stage deep tech). The pattern is always the same: <strong>Strategy → Clear Structure → Execution → Results.</strong>
+                        I've done this at scale (Nike's global retail operations, adidas's Amazon channel launch) and in chaos (early-stage deep tech). The pattern is always the same.
                     </p>
+                    <div class="process-flow">
+                        <div class="process-step">Strategy</div>
+                        <div class="process-arrow">↓</div>
+                        <div class="process-step">Clear Structure</div>
+                        <div class="process-arrow">↓</div>
+                        <div class="process-step">Execution</div>
+                        <div class="process-arrow">↓</div>
+                        <div class="process-step">Results</div>
+                    </div>
                 </div>
                 <div class="positioning-right">
                     <h3>Core Strengths</h3>
