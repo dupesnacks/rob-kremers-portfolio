@@ -536,7 +536,7 @@
 
         // Update metric cards
         document.querySelector('.metric-value').textContent = orders.length;
-        document.getElementById('totalRevenue').textContent = '$' + (totalRevenue / 1000).toFixed(1) + 'K';
+        document.getElementById('totalRevenue').textContent = '$' + totalRevenue.toLocaleString('en-US');
         document.getElementById('trailing7').textContent = rate7d;
         document.getElementById('trailing14').textContent = rate14d;
         document.getElementById('trailing30').textContent = rate30d;
@@ -701,7 +701,7 @@
                 scales: {
                     y: {
                         ticks: {
-                            callback: (value) => '$' + (value / 1000).toFixed(0) + 'K'
+                            callback: (value) => '$' + Math.round(value).toLocaleString('en-US')
                         }
                     }
                 }
@@ -747,7 +747,7 @@
                 scales: {
                     y: {
                         ticks: {
-                            callback: (value) => '$' + (value / 1000).toFixed(0) + 'K'
+                            callback: (value) => '$' + Math.round(value).toLocaleString('en-US')
                         }
                     }
                 }
@@ -776,7 +776,7 @@
                 scales: {
                     y: {
                         ticks: {
-                            callback: (value) => '$' + (value / 1000).toFixed(0) + 'K'
+                            callback: (value) => '$' + Math.round(value).toLocaleString('en-US')
                         }
                     }
                 }
