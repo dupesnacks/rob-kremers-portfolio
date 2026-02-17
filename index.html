@@ -1140,6 +1140,7 @@
                             <button onclick="changeEvBrandImage(0)" style="padding: 8px 16px; background: #1a1a1a; color: white; border: none; border-radius: 4px; cursor: pointer;">Archetype</button>
                             <button onclick="changeEvBrandImage(1)" style="padding: 8px 16px; background: #1a1a1a; color: white; border: none; border-radius: 4px; cursor: pointer;">Attributes</button>
                             <button onclick="changeEvBrandImage(2)" style="padding: 8px 16px; background: #1a1a1a; color: white; border: none; border-radius: 4px; cursor: pointer;">Competitor Map</button>
+                            <button onclick="changeEvBrandImage(3)" style="padding: 8px 16px; background: #1a1a1a; color: white; border: none; border-radius: 4px; cursor: pointer;">Tone & Voice</button>
                         </div>
                     </div>
                 `;
@@ -1166,7 +1167,7 @@
         }
 
         function changeEvBrandImage(index) {
-            const images = ['tusimple-ev-brand-archetype.png', 'tusimple-ev-brand-attributes.png', 'tusimple-ev-competitor-positioning.png'];
+            const images = ['tusimple-ev-brand-archetype.png', 'tusimple-ev-brand-attributes.png', 'tusimple-ev-competitor-positioning.png', 'tusimple-ev-tone-voice.png'];
             document.getElementById('evBrandImg').src = images[index];
         }
 
