@@ -315,16 +315,100 @@
             margin-bottom: 40px;
         }
 
+        .carousel-container {
+            position: relative;
+            width: 100%;
+        }
+
+        .carousel-wrapper {
+            display: flex;
+            overflow: hidden;
+            border-radius: 4px;
+        }
+
+        .carousel-track {
+            display: flex;
+            gap: 20px;
+            scroll-behavior: smooth;
+            width: 100%;
+        }
+
         .work-grid {
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 60px;
+            display: flex;
+            overflow-x: auto;
+            gap: 20px;
+            scroll-behavior: smooth;
+            -webkit-overflow-scrolling: touch;
+            scroll-snap-type: x mandatory;
+            padding-bottom: 10px;
+            margin-bottom: 10px;
+        }
+
+        .work-grid::-webkit-scrollbar {
+            height: 6px;
+        }
+
+        .work-grid::-webkit-scrollbar-track {
+            background: #f0f0f0;
+            border-radius: 10px;
+        }
+
+        .work-grid::-webkit-scrollbar-thumb {
+            background: #ccc;
+            border-radius: 10px;
+        }
+
+        .work-grid::-webkit-scrollbar-thumb:hover {
+            background: #999;
         }
 
         .case-study-preview {
             padding: 40px;
             background: #f9f9f9;
             border-radius: 4px;
+            flex: 0 0 100%;
+            scroll-snap-align: start;
+            scroll-snap-stop: always;
+            min-width: 100%;
+        }
+
+        @media (min-width: 1024px) {
+            .case-study-preview {
+                flex: 0 0 calc(50% - 10px);
+                min-width: calc(50% - 10px);
+            }
+        }
+
+        .carousel-nav {
+            display: flex;
+            gap: 12px;
+            margin-top: 20px;
+            justify-content: center;
+        }
+
+        .carousel-btn {
+            width: 40px;
+            height: 40px;
+            border: 1px solid #ddd;
+            background: white;
+            border-radius: 4px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 16px;
+            transition: all 0.3s;
+        }
+
+        .carousel-btn:hover {
+            background: #1a1a1a;
+            color: white;
+            border-color: #1a1a1a;
+        }
+
+        .carousel-btn:disabled {
+            opacity: 0.3;
+            cursor: not-allowed;
         }
 
         .case-study-title {
@@ -509,6 +593,20 @@
             .contact {
                 padding: 80px 0;
             }
+
+            .case-study-preview {
+                flex: 0 0 100%;
+                min-width: 100%;
+                padding: 30px;
+            }
+
+            .carousel-nav {
+                justify-content: center;
+            }
+
+            .work-grid {
+                gap: 15px;
+            }
         }
 
         @media (max-width: 480px) {
@@ -528,6 +626,16 @@
             .approach-grid,
             .why-hire-grid {
                 grid-template-columns: 1fr;
+            }
+
+            .carousel-nav {
+                display: flex;
+            }
+
+            .carousel-btn {
+                width: 36px;
+                height: 36px;
+                font-size: 14px;
             }
         }
     </style>
@@ -679,44 +787,82 @@
     <section class="work" id="work">
         <div class="container">
             <h2>Selected Work & Impact</h2>
-            <div class="work-grid">
-                <div class="case-study-preview">
-                    <div class="case-study-title">Nike: Global Retail Brand Systems</div>
-                    <div class="case-study-meta">Brand Strategy / Retail Execution / Wholesale Coordination</div>
-                    <div class="case-study-text">
-                        <p><strong>The Challenge:</strong> Nike needed a unified brand framework that could work across dozens of wholesale partners, multiple regions, and varying customer segments—all while maintaining consistency and flexibility.</p>
-                        <p><strong>What I Did:</strong> Built a modular brand system that gave retail partners clear guidance on positioning, messaging, and activation while maintaining local relevance. The system became the standard across Nike's global wholesale network.</p>
-                        <p><strong>Impact:</strong> [Videos, case study deck, and examples to be added]</p>
+            <div class="carousel-container">
+                <div class="work-grid" id="workCarousel">
+                    <div class="case-study-preview">
+                        <div class="case-study-title">Nike: Global Retail Brand Systems</div>
+                        <div class="case-study-meta">Brand Strategy / Retail Execution / Wholesale Coordination</div>
+                        <div class="case-study-text">
+                            <p><strong>The Challenge:</strong> Nike needed a unified brand framework that could work across dozens of wholesale partners, multiple regions, and varying customer segments—all while maintaining consistency and flexibility.</p>
+                            <p><strong>What I Did:</strong> Built a modular brand system that gave retail partners clear guidance on positioning, messaging, and activation while maintaining local relevance. The system became the standard across Nike's global wholesale network.</p>
+                            <p><strong>Impact:</strong> [Videos, case study deck, and examples to be added]</p>
+                        </div>
+                        <div class="media-placeholder">Media: Deck, examples, retail activation images coming soon</div>
                     </div>
-                    <div class="media-placeholder">Media: Deck, examples, retail activation images coming soon</div>
-                </div>
 
-                <div class="case-study-preview">
-                    <div class="case-study-title">adidas: Amazon Launch & Wholesale Growth</div>
-                    <div class="case-study-meta">Channel Strategy / Go-To-Market / E-Commerce Positioning</div>
-                    <div class="case-study-text">
-                        <p><strong>The Challenge:</strong> adidas needed a structured approach to Amazon, a channel that was both massive opportunity and significant risk (brand control, pricing pressure, competition with third-party sellers).</p>
-                        <p><strong>What I Did:</strong> Developed a comprehensive channel strategy that positioned adidas as a premium player on Amazon while protecting brand integrity. This included positioning, product strategy, and retail partnership coordination.</p>
-                        <p><strong>Impact:</strong> [Growth metrics, strategy deck, and execution examples to be added]</p>
+                    <div class="case-study-preview">
+                        <div class="case-study-title">adidas: Amazon Launch & Wholesale Growth</div>
+                        <div class="case-study-meta">Channel Strategy / Go-To-Market / E-Commerce Positioning</div>
+                        <div class="case-study-text">
+                            <p><strong>The Challenge:</strong> adidas needed a structured approach to Amazon, a channel that was both massive opportunity and significant risk (brand control, pricing pressure, competition with third-party sellers).</p>
+                            <p><strong>What I Did:</strong> Developed a comprehensive channel strategy that positioned adidas as a premium player on Amazon while protecting brand integrity. This included positioning, product strategy, and retail partnership coordination.</p>
+                            <p><strong>Impact:</strong> [Growth metrics, strategy deck, and execution examples to be added]</p>
+                        </div>
+                        <div class="media-placeholder">Media: Channel analysis, growth charts, strategy presentation coming soon</div>
                     </div>
-                    <div class="media-placeholder">Media: Channel analysis, growth charts, strategy presentation coming soon</div>
-                </div>
 
-                <div class="case-study-preview">
-                    <div class="case-study-title">TuSimple / CreateAI: Technical Product Storytelling</div>
-                    <div class="case-study-meta">Technical Communications / Positioning / Investor Narrative</div>
-                    <div class="case-study-text">
-                        <p><strong>The Challenge:</strong> How do you make autonomous vehicles and generative AI compelling to investors, customers, and the market when the technology is cutting-edge and genuinely novel? Traditional marketing doesn't work.</p>
-                        <p><strong>What I Did:</strong> Built a narrative framework that translated complex tech into clear, compelling stories about what the technology actually does, why it matters, and how it changes the game. This became the foundation for investor pitches, customer communications, and media strategy.</p>
-                        <p><strong>Impact:</strong> [YouTube videos, investor deck, and narrative examples to be added]</p>
+                    <div class="case-study-preview">
+                        <div class="case-study-title">TuSimple / CreateAI: Technical Product Storytelling</div>
+                        <div class="case-study-meta">Technical Communications / Positioning / Investor Narrative</div>
+                        <div class="case-study-text">
+                            <p><strong>The Challenge:</strong> How do you make autonomous vehicles and generative AI compelling to investors, customers, and the market when the technology is cutting-edge and genuinely novel? Traditional marketing doesn't work.</p>
+                            <p><strong>What I Did:</strong> Built a narrative framework that translated complex tech into clear, compelling stories about what the technology actually does, why it matters, and how it changes the game. This became the foundation for investor pitches, customer communications, and media strategy.</p>
+                            <p><strong>Impact:</strong> [YouTube videos, investor deck, and narrative examples to be added]</p>
+                        </div>
+                        <div class="media-placeholder">Media: YouTube video, investor presentation, media features coming soon</div>
                     </div>
-                    <div class="media-placeholder">Media: YouTube video, investor presentation, media features coming soon</div>
                 </div>
-
-
+                <div class="carousel-nav" id="carouselNav">
+                    <button class="carousel-btn" id="prevBtn" onclick="scrollCarousel(-1)">←</button>
+                    <button class="carousel-btn" id="nextBtn" onclick="scrollCarousel(1)">→</button>
+                </div>
             </div>
         </div>
     </section>
+
+    <script>
+        const carousel = document.getElementById('workCarousel');
+        const prevBtn = document.getElementById('prevBtn');
+        const nextBtn = document.getElementById('nextBtn');
+        const cases = document.querySelectorAll('.case-study-preview');
+        let currentIndex = 0;
+
+        function scrollCarousel(direction) {
+            currentIndex += direction;
+            
+            if (currentIndex < 0) currentIndex = 0;
+            if (currentIndex > cases.length - 1) currentIndex = cases.length - 1;
+            
+            const scrollAmount = cases[currentIndex].offsetWidth + 20;
+            carousel.scrollLeft = currentIndex * scrollAmount;
+            
+            updateButtons();
+        }
+
+        function updateButtons() {
+            prevBtn.disabled = currentIndex === 0;
+            nextBtn.disabled = currentIndex === cases.length - 1;
+        }
+
+        carousel.addEventListener('scroll', () => {
+            const scrollPosition = carousel.scrollLeft;
+            const itemWidth = cases[0].offsetWidth + 20;
+            currentIndex = Math.round(scrollPosition / itemWidth);
+            updateButtons();
+        });
+
+        updateButtons();
+    </script>
 
     <!-- Why Hire Me -->
     <section class="why-hire">
