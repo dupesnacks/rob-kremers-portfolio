@@ -1,0 +1,1696 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Rob Kremers - Strategic operator building scalable brand systems that drive revenue. From autonomous vehicles to global retail at Nike and adidas.">
+    <title>Rob Kremers | Strategic Brand & Growth Operator</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', sans-serif;
+            line-height: 1.6;
+            color: #1a1a1a;
+            background: #ffffff;
+        }
+
+        /* Navigation */
+        nav {
+            position: sticky;
+            top: 0;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid #f0f0f0;
+            z-index: 1000;
+        }
+
+        nav .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 70px;
+        }
+
+        .logo {
+            font-size: 18px;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+            text-decoration: none;
+            color: #0D5E54;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 40px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #666;
+            font-size: 14px;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #1a1a1a;
+        }
+
+        nav a.consulting-link {
+            color: #0D5E54;
+            font-weight: 600;
+        }
+
+        nav a.consulting-link:hover {
+            color: #D4AF37;
+        }
+
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            gap: 6px;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 0;
+        }
+
+        .hamburger span {
+            width: 24px;
+            height: 2px;
+            background: #1a1a1a;
+            transition: all 0.3s;
+        }
+
+        .hamburger.active span:nth-child(1) {
+            transform: rotate(45deg) translate(8px, 8px);
+        }
+
+        .hamburger.active span:nth-child(2) {
+            opacity: 0;
+        }
+
+        .hamburger.active span:nth-child(3) {
+            transform: rotate(-45deg) translate(8px, -8px);
+        }
+
+        @media (max-width: 768px) {
+            nav .container {
+                position: relative;
+            }
+
+            .hamburger {
+                display: flex;
+            }
+
+            nav ul {
+                position: fixed;
+                top: 70px;
+                left: 0;
+                right: 0;
+                background: white;
+                border-bottom: 1px solid #f0f0f0;
+                flex-direction: column;
+                gap: 0;
+                max-height: 0;
+                overflow: hidden;
+                transition: max-height 0.3s ease;
+                list-style: none;
+                padding: 0;
+                margin: 0;
+                z-index: 999;
+            }
+
+            nav ul.active {
+                max-height: 500px;
+            }
+
+            nav ul li {
+                padding: 16px 20px;
+                border-bottom: 1px solid #f0f0f0;
+                margin: 0;
+            }
+
+            nav ul li:last-child {
+                border-bottom: none;
+            }
+
+            nav ul a {
+                font-size: 14px;
+            }
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 40px;
+        }
+
+        /* Hero Section */
+        .hero {
+            padding: 140px 0 100px;
+            border-bottom: 1px solid #f0f0f0;
+        }
+
+        .hero h1 {
+            font-size: 56px;
+            line-height: 1.2;
+            margin-bottom: 20px;
+            font-weight: 700;
+            letter-spacing: -1px;
+        }
+
+        .hero .subheading {
+            font-size: 20px;
+            color: #666;
+            margin-bottom: 30px;
+            max-width: 700px;
+            font-weight: 400;
+            line-height: 1.5;
+        }
+
+        .hero-statement {
+            font-size: 16px;
+            line-height: 1.8;
+            color: #333;
+            max-width: 700px;
+            margin-bottom: 40px;
+        }
+
+        .hero-statement strong {
+            font-weight: 600;
+            color: #0D5E54;
+        }
+
+        .hero-cta {
+            display: flex;
+            gap: 20px;
+            margin-top: 40px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 14px 32px;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 14px;
+            transition: all 0.3s;
+            cursor: pointer;
+            border: none;
+        }
+
+        .btn-primary {
+            background: #0D5E54;
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: #05433a;
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: #1a1a1a;
+            border: 1px solid #1a1a1a;
+        }
+
+        .btn-secondary:hover {
+            background: #f5f5f5;
+        }
+
+        /* Positioning Section */
+        .positioning {
+            padding: 120px 0;
+            border-bottom: 1px solid #f0f0f0;
+        }
+
+        .positioning h2 {
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 40px;
+            position: relative;
+            padding-bottom: 12px;
+        }
+
+        .positioning h2::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 60px;
+            height: 3px;
+            background: #0D5E54;
+            border-radius: 2px;
+        }
+
+        .positioning-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 80px;
+            align-items: start;
+        }
+
+        .positioning-left {
+            font-size: 16px;
+            line-height: 1.8;
+            color: #333;
+        }
+
+        .process-flow {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            margin-top: 30px;
+            padding: 20px;
+            background: #f9f9f9;
+            border-radius: 4px;
+            align-items: center;
+            text-align: center;
+        }
+
+        .process-step {
+            font-size: 14px;
+            font-weight: 700;
+            color: #1a1a1a;
+        }
+
+        .process-arrow {
+            font-size: 16px;
+            color: #999;
+            height: 8px;
+        }
+
+        .positioning-left p {
+            margin-bottom: 20px;
+        }
+
+        .positioning-left strong {
+            color: #0D5E54;
+        }
+
+        .positioning-right {
+            background: #f9f9f9;
+            padding: 40px;
+            border-radius: 4px;
+        }
+
+        .positioning-right h3 {
+            font-size: 14px;
+            font-weight: 700;
+            color: #666;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 20px;
+        }
+
+        .positioning-right ul {
+            list-style: none;
+        }
+
+        .positioning-right li {
+            padding: 12px 0;
+            border-bottom: 1px solid #e8e8e8;
+            font-size: 15px;
+            line-height: 1.6;
+        }
+
+        .positioning-right strong {
+            color: #0D5E54;
+        }
+
+        .positioning-right li:last-child {
+            border-bottom: none;
+        }
+
+        /* Background Section */
+        .background {
+            padding: 120px 0;
+            border-bottom: 1px solid #f0f0f0;
+        }
+
+        .background h2 {
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 40px;
+            position: relative;
+            padding-bottom: 12px;
+        }
+
+        .background h2::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 60px;
+            height: 3px;
+            background: #0D5E54;
+            border-radius: 2px;
+        }
+
+        .background-narrative {
+            font-size: 16px;
+            line-height: 1.8;
+            color: #333;
+            max-width: 800px;
+        }
+
+        .background-narrative p {
+            margin-bottom: 20px;
+        }
+
+        .background-narrative strong {
+            font-weight: 600;
+            color: #0D5E54;
+        }
+
+        .experience-timeline {
+            margin-top: 60px;
+            padding-top: 40px;
+            border-top: 1px solid #f0f0f0;
+        }
+
+        .experience-timeline h3 {
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 40px;
+        }
+
+        .timeline-item {
+            margin-bottom: 40px;
+            padding-bottom: 30px;
+            border-bottom: 1px solid #f0f0f0;
+        }
+
+        .timeline-item:last-child {
+            border-bottom: none;
+        }
+
+        .timeline-company {
+            font-size: 18px;
+            font-weight: 700;
+            color: #1a1a1a;
+            margin-bottom: 16px;
+        }
+
+        .timeline-roles {
+            list-style: none;
+            margin-bottom: 16px;
+        }
+
+        .timeline-roles li {
+            font-size: 14px;
+            font-weight: 600;
+            color: #1a1a1a;
+            margin-bottom: 6px;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        .timeline-roles li:before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: #999;
+        }
+
+        .timeline-description {
+            font-size: 14px;
+            color: #666;
+            line-height: 1.7;
+        }
+
+        /* Approach Section */
+        .approach {
+            padding: 120px 0;
+            border-bottom: 1px solid #f0f0f0;
+        }
+
+        .approach h2 {
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 40px;
+            position: relative;
+            padding-bottom: 12px;
+        }
+
+        .approach h2::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 60px;
+            height: 3px;
+            background: #0D5E54;
+            border-radius: 2px;
+        }
+
+        .approach-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+        }
+
+        .approach-item {
+            padding-bottom: 30px;
+        }
+
+        .approach-item h3 {
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 12px;
+            color: #1a1a1a;
+        }
+
+        .approach-item p {
+            font-size: 14px;
+            line-height: 1.8;
+            color: #666;
+        }
+
+        /* Case Studies Preview */
+        .work {
+            padding: 120px 0;
+            border-bottom: 1px solid #f0f0f0;
+        }
+
+        .work h2 {
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 40px;
+            position: relative;
+            padding-bottom: 12px;
+        }
+
+        .work h2::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 60px;
+            height: 3px;
+            background: #0D5E54;
+            border-radius: 2px;
+        }
+
+        .carousel-container {
+            position: relative;
+            width: 100%;
+            padding: 0 70px;
+        }
+
+        .carousel-wrapper {
+            display: flex;
+            overflow: hidden;
+            border-radius: 4px;
+            position: relative;
+            width: 100%;
+        }
+
+        .carousel-track {
+            display: flex;
+            gap: 20px;
+            scroll-behavior: smooth;
+            width: 100%;
+        }
+
+        .work-grid {
+            display: flex;
+            overflow-x: auto;
+            gap: 20px;
+            scroll-behavior: smooth;
+            -webkit-overflow-scrolling: touch;
+            scroll-snap-type: x mandatory;
+            padding-bottom: 10px;
+            margin-bottom: 10px;
+            position: relative;
+            width: 100%;
+            align-items: flex-start;
+        }
+
+        .carousel-scroll-hint {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 28px;
+            color: rgba(0,0,0,0.35);
+            pointer-events: auto;
+            z-index: 20;
+            transition: all 0.3s;
+            cursor: pointer;
+            user-select: none;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(255,255,255,0.1);
+            border-radius: 4px;
+            backdrop-filter: blur(4px);
+        }
+
+        .carousel-scroll-hint.left {
+            left: 12px;
+        }
+
+        .carousel-scroll-hint.right {
+            right: 12px;
+        }
+
+        .carousel-scroll-hint:hover {
+            color: rgba(0,0,0,0.6);
+            background: rgba(255,255,255,0.2);
+            transform: translateY(-50%) scale(1.1);
+        }
+
+        .carousel-scroll-hint[style*="opacity: 0"] {
+            pointer-events: none;
+            cursor: default;
+            opacity: 0 !important;
+        }
+
+        @media (max-width: 768px) {
+            .carousel-scroll-hint {
+                font-size: 18px;
+            }
+
+            .carousel-scroll-hint.left {
+                left: 8px;
+            }
+
+            .carousel-scroll-hint.right {
+                right: 8px;
+            }
+        }
+
+        .work-grid::-webkit-scrollbar {
+            height: 6px;
+        }
+
+        .work-grid::-webkit-scrollbar-track {
+            background: #f0f0f0;
+            border-radius: 10px;
+        }
+
+        .work-grid::-webkit-scrollbar-thumb {
+            background: #ccc;
+            border-radius: 10px;
+        }
+
+        .work-grid::-webkit-scrollbar-thumb:hover {
+            background: #999;
+        }
+
+        .case-study-preview {
+            padding: 40px;
+            background: #f9f9f9;
+            border-radius: 4px;
+            flex: 0 0 100%;
+            scroll-snap-align: start;
+            scroll-snap-stop: always;
+            min-width: 100%;
+            height: auto;
+        }
+
+        .carousel-nav {
+            display: flex;
+            gap: 12px;
+            margin-top: 20px;
+            justify-content: center;
+        }
+
+        .carousel-btn {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 50px;
+            height: 50px;
+            border: 1px solid #ddd;
+            background: white;
+            border-radius: 4px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+            transition: all 0.3s;
+            z-index: 10;
+        }
+
+        .carousel-btn-left {
+            left: 16px;
+        }
+
+        .carousel-btn-right {
+            right: 16px;
+        }
+
+        .carousel-btn:hover {
+            background: #1a1a1a;
+            color: white;
+            border-color: #1a1a1a;
+        }
+
+        .carousel-btn:disabled {
+            opacity: 0.3;
+            cursor: not-allowed;
+            pointer-events: none;
+        }
+
+        .carousel-indicator {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            margin-top: 24px;
+            font-size: 13px;
+            color: #999;
+            text-align: center;
+        }
+
+        .carousel-counter {
+            font-weight: 600;
+            color: #666;
+        }
+
+        .carousel-hint {
+            font-style: italic;
+            color: #bbb;
+        }
+
+        .case-study-title {
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 10px;
+            color: #1a1a1a;
+        }
+
+        .case-study-meta {
+            font-size: 13px;
+            color: #999;
+            margin-bottom: 20px;
+        }
+
+        .case-study-text {
+            font-size: 14px;
+            line-height: 1.8;
+            color: #666;
+        }
+
+        .case-study-text strong {
+            font-weight: 600;
+            color: #0D5E54;
+        }
+
+        .media-placeholder {
+            background-color: #e8e8e8;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            aspect-ratio: 16 / 9;
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #999;
+            font-size: 13px;
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+            cursor: pointer;
+            transition: all 0.3s;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .media-placeholder:hover {
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+
+        .media-placeholder-square {
+            aspect-ratio: 1 / 1;
+            max-height: 400px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .media-placeholder::before {
+            content: "";
+            position: absolute;
+            width: 60px;
+            height: 60px;
+            background: rgba(255,255,255,0.9);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            transition: all 0.3s;
+            z-index: 1;
+        }
+
+        .media-placeholder::after {
+            content: "▶";
+            position: absolute;
+            font-size: 24px;
+            color: #1a1a1a;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 2;
+            transition: all 0.3s;
+        }
+
+        .media-placeholder:hover::before {
+            background: white;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+        }
+
+        /* Modal/Lightbox */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 2000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.8);
+            animation: fadeIn 0.3s;
+        }
+
+        .modal.active {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .modal-content {
+            position: relative;
+            background: white;
+            border-radius: 8px;
+            max-width: 90%;
+            max-height: 90vh;
+            overflow: auto;
+            width: 100%;
+        }
+
+        .modal-close {
+            position: absolute;
+            top: 16px;
+            right: 16px;
+            background: #1a1a1a;
+            color: white;
+            border: none;
+            width: 40px;
+            height: 40px;
+            border-radius: 4px;
+            font-size: 24px;
+            cursor: pointer;
+            z-index: 2001;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: background 0.3s;
+        }
+
+        .modal-close:hover {
+            background: #333;
+        }
+
+        .modal-body {
+            padding: 40px;
+            padding-top: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            max-height: calc(100vh - 120px);
+            overflow: hidden;
+        }
+
+        .modal-video {
+            width: 100%;
+            aspect-ratio: 16 / 9;
+            border-radius: 4px;
+        }
+
+        .modal-image-container {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            max-height: calc(100vh - 180px);
+            max-width: 95%;
+        }
+
+        .modal-image-container img {
+            max-height: calc(100vh - 180px);
+            max-width: 100%;
+            height: auto;
+            width: auto;
+            border-radius: 4px;
+            object-fit: contain;
+        }
+
+        @keyframes arrowPulse {
+            0%, 100% {
+                color: rgba(255,255,255,0.4);
+                background: rgba(0,0,0,0.25);
+            }
+            50% {
+                color: rgba(255,255,255,0.65);
+                background: rgba(0,0,0,0.4);
+            }
+        }
+
+        .modal-image-arrow {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 32px;
+            color: rgba(255,255,255,0.4);
+            background: rgba(0,0,0,0.25);
+            width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: all 0.3s;
+            z-index: 30;
+            animation: arrowPulse 2s ease-in-out infinite;
+        }
+
+        .modal-image-arrow:hover {
+            color: rgba(255,255,255,0.8);
+            background: rgba(0,0,0,0.5);
+            animation: none;
+        }
+
+        .modal-image-arrow.left {
+            left: 16px;
+        }
+
+        .modal-image-arrow.right {
+            right: 16px;
+        }
+
+        .modal-image-arrow[style*="opacity: 0"] {
+            display: none;
+        }
+
+        .image-counter {
+            position: absolute;
+            bottom: 16px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: rgba(0,0,0,0.5);
+            color: rgba(255,255,255,0.8);
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            z-index: 35;
+        }
+
+        @media (max-width: 768px) {
+            .modal-body {
+                padding: 20px;
+                padding-top: 50px;
+            }
+
+            .modal-content {
+                max-width: 95%;
+                max-height: 85vh;
+            }
+        }
+
+        /* Why Work With Me */
+        .why-hire {
+            padding: 120px 0;
+            border-bottom: 1px solid #f0f0f0;
+        }
+
+        .why-hire h2 {
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 40px;
+            position: relative;
+            padding-bottom: 12px;
+        }
+
+        .why-hire h2::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 60px;
+            height: 3px;
+            background: #0D5E54;
+            border-radius: 2px;
+        }
+
+        .why-hire-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+        }
+
+        .why-item {
+            padding-bottom: 20px;
+        }
+
+        .why-item h3 {
+            font-size: 16px;
+            font-weight: 700;
+            margin-bottom: 10px;
+            color: #1a1a1a;
+        }
+
+        .why-item p {
+            font-size: 14px;
+            line-height: 1.8;
+            color: #666;
+        }
+
+        /* Contact Section */
+        .contact {
+            padding: 120px 0;
+        }
+
+        .contact h2 {
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 30px;
+            position: relative;
+            padding-bottom: 12px;
+        }
+
+        .contact h2::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 60px;
+            height: 3px;
+            background: #0D5E54;
+            border-radius: 2px;
+        }
+
+        .contact-content {
+            max-width: 700px;
+        }
+
+        .contact-content p {
+            font-size: 16px;
+            line-height: 1.8;
+            color: #666;
+            margin-bottom: 30px;
+        }
+
+        .contact-links {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .contact-links a {
+            display: inline-block;
+            color: #0D5E54;
+            text-decoration: none;
+            font-weight: 600;
+            padding: 12px 0;
+            border-bottom: 1px solid #f0f0f0;
+            transition: color 0.3s;
+            font-size: 15px;
+        }
+
+        .contact-links a:hover {
+            color: #D4AF37;
+        }
+
+        /* Footer */
+        footer {
+            border-top: 1px solid #f0f0f0;
+            padding: 40px 0;
+            text-align: center;
+            color: #999;
+            font-size: 13px;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            nav .container {
+                padding: 0 20px;
+            }
+
+            nav ul {
+                gap: 20px;
+            }
+
+            .container {
+                padding: 0 20px;
+            }
+
+            .hero {
+                padding: 80px 0 60px;
+            }
+
+            .hero h1 {
+                font-size: 36px;
+            }
+
+            .hero .subheading {
+                font-size: 18px;
+            }
+
+            .hero-cta {
+                flex-direction: column;
+            }
+
+            .btn {
+                width: 100%;
+                text-align: center;
+            }
+
+            .positioning-grid,
+            .approach-grid,
+            .why-hire-grid {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+
+            .process-flow {
+                margin-top: 20px;
+                padding: 15px;
+                gap: 6px;
+            }
+
+            .process-step {
+                font-size: 13px;
+            }
+
+            .process-arrow {
+                font-size: 14px;
+                height: 6px;
+            }
+
+            .positioning {
+                padding: 80px 0;
+            }
+
+            .approach {
+                padding: 80px 0;
+            }
+
+            .work {
+                padding: 80px 0;
+            }
+
+            .contact {
+                padding: 80px 0;
+            }
+
+            .timeline-roles li {
+                font-size: 13px;
+            }
+
+            .case-study-preview {
+                flex: 0 0 100%;
+                min-width: 100%;
+                padding: 30px;
+            }
+
+            .work-grid {
+                gap: 15px;
+            }
+
+            .carousel-btn {
+                width: 40px;
+                height: 40px;
+                font-size: 16px;
+            }
+
+            .carousel-btn-left {
+                left: 8px;
+            }
+
+            .carousel-btn-right {
+                right: 8px;
+            }
+
+            .carousel-container {
+                padding: 0 50px;
+            }
+
+            .carousel-indicator {
+                font-size: 12px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            nav ul {
+                gap: 12px;
+                font-size: 12px;
+            }
+
+            .hero h1 {
+                font-size: 28px;
+            }
+
+            .hero .subheading {
+                font-size: 16px;
+            }
+
+            .approach-grid,
+            .why-hire-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .carousel-nav {
+                display: flex;
+            }
+
+            .carousel-btn {
+                width: 36px;
+                height: 36px;
+                font-size: 14px;
+            }
+
+            .media-placeholder::before {
+                width: 50px;
+                height: 50px;
+            }
+
+            .media-placeholder::after {
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="container">
+            <a href="#" class="logo">Rob Kremers</a>
+            <button class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul id="nav-menu">
+                <li><a href="#positioning">Who I Am</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#approach">Approach</a></li>
+                <li><a href="consulting.html" class="consulting-link">OpenClaw Consulting</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>I translate complex products into customer adoption and revenue.</h1>
+            <p class="subheading">Go-to-market execution that drives measurable business impact.</p>
+            <p class="hero-statement">
+                For 15+ years, I've led go-to-market execution across diverse marketing functions at Nike, adidas, and early-stage deep tech companies. I translate complex innovations into clear customer narratives that drive adoption and revenue. From global retail infrastructure to autonomous vehicle positioning to direct-to-consumer e-commerce, I specialize in the unsexy work: making innovation understandable, aligning cross-functional teams, and delivering measurable business results.
+            </p>
+            <p class="hero-statement">
+                I'm looking for roles where go-to-market leadership matters. Places where <strong>you need someone who thinks like an operator, not just a specialist.</strong>
+            </p>
+            <div class="hero-cta">
+                <a href="#work" class="btn btn-primary">See The Work</a>
+                <a href="#contact" class="btn btn-secondary">Let's Talk</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Positioning Section -->
+    <section class="positioning" id="positioning">
+        <div class="container">
+            <h2>What I Actually Do</h2>
+            <div class="positioning-grid">
+                <div class="positioning-left">
+                    <p>
+                        I don't just build creative campaigns or design brand identities. <strong>I build brand systems that work across organizations.</strong>
+                    </p>
+                    <p>
+                        This means taking a complex product or market opportunity and translating it into a structured framework that marketing, sales, and product can all execute against. It means aligning incentives. It means removing ambiguity. It means <strong>revenue.</strong>
+                    </p>
+                    <p>
+                        I've done this at scale (Nike's global retail operations, adidas's Amazon channel launch) and in chaos (early-stage deep tech). The pattern is always the same.
+                    </p>
+                    <div class="process-flow">
+                        <div class="process-step">Strategy</div>
+                        <div class="process-arrow">↓</div>
+                        <div class="process-step">Clear Structure</div>
+                        <div class="process-arrow">↓</div>
+                        <div class="process-step">Execution</div>
+                        <div class="process-arrow">↓</div>
+                        <div class="process-step">Results</div>
+                    </div>
+                </div>
+                <div class="positioning-right">
+                    <h3>Core Strengths</h3>
+                    <ul>
+                        <li><strong>Go-To-Market Strategy:</strong> Launch planning, positioning, channel strategy, and sales enablement.</li>
+                        <li><strong>Product Positioning:</strong> Making complex products (AI, autonomous vehicles, innovative tech) clear and compelling to buyers.</li>
+                        <li><strong>Retail & Channel Marketing:</strong> Deep experience with wholesale, e-commerce, and direct retail.</li>
+                        <li><strong>Cross-Functional Leadership:</strong> Connecting silos between marketing, sales, product, and operations.</li>
+                        <li><strong>Digital & Demand Generation:</strong> Campaign strategy, content, social, and sales enablement.</li>
+                        <li><strong>Analytics & Measurement:</strong> Performance tracking and data-driven decision making.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Background Section -->
+    <section class="background">
+        <div class="container">
+            <h2>My Background (The Throughline)</h2>
+            <div class="background-narrative">
+                <p>
+                    I build <strong>brand and growth systems that translate complex products into market impact.</strong> My career spans global brand leadership at adidas and Nike, full ownership of a direct-to-consumer business, and marketing leadership inside autonomous vehicle and generative AI companies.
+                </p>
+                <p>
+                    At <strong>adidas</strong>, I worked at the intersection of brand and channel execution in various roles: Internal Communications, Retail Brand Marketing for Men's and Women's Training, Account Marketing for Amazon, Digital Strategy for Key Accounts, and Retail Brand and Brand Management for Global Basketball. Each role required a deep understanding of the specific function and executing across many channels. The breadth of these roles gave me fluency in multiple marketing functions and taught me how to connect them. I learned early that silos kill strategy.
+                </p>
+                <p>
+                    At <strong>Nike</strong>, I built the global basketball retail brand playbook, a structured system that enabled markets and partners worldwide to execute with clarity and consistency. <strong>At scale, brand only works when it's operationalized.</strong>
+                </p>
+                <p>
+                    Outside of large organizations, I built and ran an e-commerce brand end-to-end, overseeing sourcing, logistics, website development, marketing, fulfillment, customer service, and financial management. Running the entire business sharpened my bias toward execution and accountability.
+                </p>
+                <p>
+                    Most recently at <strong>TuSimple and CreateAI</strong>, I worked cross-functionally with engineering and executive leadership to translate autonomous trucking and generative AI technology into credible, structured narratives for diverse audiences (regulators, fleet operators, enterprise customers). <strong>When your product is novel and technically complex, clarity becomes a competitive advantage.</strong>
+                </p>
+                <p>
+                    Across every role, the throughline is consistent: <strong>Strategy → Structure → Execution → Revenue. Brand is not decoration. It's infrastructure.</strong>
+                </p>
+            </div>
+
+            <div class="experience-timeline">
+                <h3>The Timeline</h3>
+                <div class="timeline-item">
+                    <div class="timeline-company">WE Communications</div>
+                    <ul class="timeline-roles">
+                        <li>Account Executive, Microsoft Windows PR Account</li>
+                    </ul>
+                    <div class="timeline-description">Early experience in communications and account management.</div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-company">adidas</div>
+                    <ul class="timeline-roles">
+                        <li>Internal Communications Specialist</li>
+                        <li>US Basketball Brand Specialist</li>
+                        <li>Key Account Digital Strategy Manager</li>
+                        <li>Retail Brand Manager, Men's and Women's Training North America</li>
+                        <li>Senior Retail Brand Manager, Global Basketball</li>
+                        <li>Senior Brand Manager, Global Basketball</li>
+                    </ul>
+                    <div class="timeline-description">Worked across a wide variety of functional marketing roles—communications, retail brand, digital, and key accounts—all with the same shared objective of driving sales. Built frameworks that enabled markets and retail partners to execute with clarity and consistency.</div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-company">Columbia Sportswear</div>
+                    <ul class="timeline-roles">
+                        <li>Retail Brand Manager, North America</li>
+                    </ul>
+                    <div class="timeline-description">Directed in-store marketing initiatives across North America to align with Columbia's brand identity and retail strategy for Columbia Sportswear and Sorel.</div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-company">Nike</div>
+                    <ul class="timeline-roles">
+                        <li>Senior Retail Brand Manager, Global Basketball</li>
+                    </ul>
+                    <div class="timeline-description">Delivered seasonal and fiscal year retail brand marketing toolkits to enable markets to activate key product launches and cultural moments.</div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-company">BarMe</div>
+                    <ul class="timeline-roles">
+                        <li>Business Owner</li>
+                    </ul>
+                    <div class="timeline-description">Full end-to-end ownership of sourcing, logistics, website, marketing, fulfillment, customer service, and financials. Scaled from zero to 70,000+ units sold, sharpening my operational bias and accountability mindset.</div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-company">CreateAI (Formerly TuSimple)</div>
+                    <ul class="timeline-roles">
+                        <li>Brand Manager</li>
+                        <li>Head of Marketing</li>
+                    </ul>
+                    <div class="timeline-description">Reporting to the CEO, developed and executed holistic brand and marketing strategies for an autonomous vehicle and generative AI startup.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Approach Section -->
+    <section class="approach" id="approach">
+        <div class="container">
+            <h2>How I Think About Work</h2>
+            <div class="approach-grid">
+                <div class="approach-item">
+                    <h3>Start With Strategy, Not Tactics</h3>
+                    <p>Every project begins with clarity: What's the actual problem? What are we trying to achieve? What's the market opportunity? Only after those questions are answered do we move to execution. Too many marketing teams skip this step.</p>
+                </div>
+                <div class="approach-item">
+                    <h3>Build Systems, Not Campaigns</h3>
+                    <p>I think in frameworks. A good system works across channels, teams, and geographies. It's repeatable. It scales. A campaign is a moment; a system is a permanent capability. The goal is always to build the latter.</p>
+                </div>
+                <div class="approach-item">
+                    <h3>Connect Marketing to Revenue</h3>
+                    <p>Marketing's job isn't to look good. It's to drive business results. This means thinking about sell-through, adoption, channel health, and measurable outcomes. It means understanding how sales and operations actually work.</p>
+                </div>
+                <div class="approach-item">
+                    <h3>Lead Across Silos</h3>
+                    <p>The best marketing decisions require input from product, sales, operations, and customer teams. But someone has to connect those dots. That's often me. I'm comfortable being the person who says "here's what needs to happen" and then leads the organization to make it real.</p>
+                </div>
+                <div class="approach-item">
+                    <h3>Clarity Over Complexity</h3>
+                    <p>If you can't explain something simply, you don't understand it well enough. Whether it's a brand system, a product story, or a go-to-market plan, my job is to take complexity and make it clear, compelling, and actionable.</p>
+                </div>
+                <div class="approach-item">
+                    <h3>Measure What Matters</h3>
+                    <p>Data without context is noise. I focus on metrics that actually matter: sell-through, adoption, revenue impact, customer acquisition cost. Numbers should tell a story and inform decisions.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Work Section -->
+    <section class="work" id="work">
+        <div class="container">
+            <h2>Selected Work & Impact</h2>
+            <div class="carousel-container">
+                <button class="carousel-btn carousel-btn-left" id="prevBtn" onclick="scrollCarousel(-1)">←</button>
+                <div class="work-grid" id="workCarousel">
+                    <div class="case-study-preview">
+                        <div class="case-study-title">Nike Global Basketball Retail Brand Playbook</div>
+                        <div class="case-study-meta">Brand Strategy / Retail Systems / Global Execution</div>
+                        <div class="case-study-text">
+                            <p><strong>The Challenge:</strong> Nike Basketball needed a comprehensive, globally scalable playbook that could guide retail partners, wholesalers, and market teams on how to execute brand strategy with consistency across different regions and store environments.</p>
+                            <p><strong>What I Built:</strong> A structured playbook covering four core pillars (Category, Product, Service, and Environment) with detailed guidance on positioning, product presentation, service standards, and store design. The playbook served as the foundation for all DTC retail execution worldwide.</p>
+                            <p><strong>Impact:</strong> A living system that set the standard for how Nike Basketball should show up in retail, enabling markets and partners to execute with clarity without sacrificing local relevance.</p>
+                        </div>
+                        <div class="media-placeholder" onclick="openModal('nike-playbook')" style="background-image: url('nike-playbook-1.jpg');"></div>
+                    </div>
+
+                    <div class="case-study-preview">
+                        <div class="case-study-title">adidas DSG Fixture System Rollout</div>
+                        <div class="case-study-meta">Retail Execution / Account Management / Shop-in-Shop Strategy</div>
+                        <div class="case-study-text">
+                            <p><strong>The Challenge:</strong> adidas developed a new fixture system to modernize how the brand appears in wholesale retail. The North American rollout required adapting this system for Dick's Sporting Goods (DSG) while balancing adidas' global brand vision with DSG's retail environment, creative requirements, and operational constraints.</p>
+                            <p><strong>What I Led:</strong> End-to-end North American rollout of the fixture system at DSG. Partnered with global and local teams to translate the fixture concept into a tailored shop-in-shop experience. Managed prototyping, vendor relationships, and strategic fixture selection to ensure DSG could bring adidas' brand stories to life while staying operationally feasible.</p>
+                            <p><strong>Impact:</strong> Successfully deployed across DSG locations, creating a premium adidas brand experience within a multi-brand retail environment. Demonstrated how to adapt global brand systems for local retail partners without compromising brand integrity.</p>
+                        </div>
+                        <div class="media-placeholder" onclick="openModal('adidas-dsg-fixture')" style="background-image: url('adidas-dsg-fixture-wall.png'); background-size: cover;"></div>
+                    </div>
+
+                    <div class="case-study-preview">
+                        <div class="case-study-title">adidas DSG "Earn Your Spotlight" Campaign</div>
+                        <div class="case-study-meta">Campaign Strategy / Multi-Channel Activation / Retail + Digital Integration</div>
+                        <div class="case-study-text">
+                            <p><strong>The Challenge:</strong> Launch exclusive adidas training apparel at Dick's Sporting Goods with a campaign that would drive both emotional connection and commercial impact. The message had to resonate with today's athletes: people who seek validation and recognition beyond traditional metrics.</p>
+                            <p><strong>The Insight:</strong> Modern athletes don't just chase wins. They chase personal moments that matter, their own "spotlight moments." This became the campaign foundation.</p>
+                            <p><strong>What I Developed:</strong> A comprehensive multi-channel strategy across social, digital, in-store, and live activations. Featured top-tier athletes and influencers to drive aspiration and authenticity. Planned a 10-city nationwide activation tour bringing the campaign to life in DSG retail hubs and local communities.</p>
+                            <p><strong>Results:</strong> 55M+ impressions, 2.7M video views, $2.6M attributed revenue, 460K store visits, 35K e-commerce orders. Drove significant scale while maintaining retail partnership integrity.</p>
+                        </div>
+                        <div class="media-placeholder media-placeholder-square" onclick="openModal('adidas-dsg-spotlight')" style="background-image: url('adidas-dsg-earn-spotlight.png');"></div>
+                    </div>
+
+                    <div class="case-study-preview">
+                        <div class="case-study-title">Damian Lillard Dame 6 Launch Film</div>
+                        <div class="case-study-meta">Brand Storytelling / Content / Identity Positioning</div>
+                        <div class="case-study-text">
+                            <p><strong>The Concept:</strong> A launch film for the Dame 6 shoe that goes beyond product specs to tell Damian Lillard's identity. The piece highlights who he is beyond basketball: a son, father, rapper, and leader rooted in the cities that shaped him (Oakland, Ogden, Portland).</p>
+                            <p><strong>What Makes It Work:</strong> Rather than focusing on shoe features or performance metrics, the film reflects the campaign's core message: he's more than just an NBA player. It's brand storytelling that connects the product to authentic human narrative.</p>
+                            <p><strong>Impact:</strong> A masterclass in how to build brand around identity, not just product. The film anchors the entire Damian Lillard brand ecosystem.</p>
+                        </div>
+                        <div class="media-placeholder" onclick="openModal('damien-video')" style="background-image: url('https://img.youtube.com/vi/HDYadppg5oU/hqdefault.jpg');"></div>
+                    </div>
+
+                    <div class="case-study-preview">
+                        <div class="case-study-title">adidas D Rose 10 Launch Film</div>
+                        <div class="case-study-meta">Product Launch / Archival Storytelling / Retail & Social Content</div>
+                        <div class="case-study-text">
+                            <p><strong>The Concept:</strong> A stop-motion inspired film for the D Rose 10 launch that moves beyond product features to celebrate Derrick Rose's legacy. Using archival stills from his adidas journey, the piece creates a visual timeline of his career accolades and signature moments.</p>
+                            <p><strong>The Approach:</strong> Rather than traditional product launch content, this film treats the shoe as the culmination of a legacy. Each frame from Derrick's career (the accolades, the signature plays, the evolution) builds toward the design itself. It's about honoring what came before.</p>
+                            <p><strong>Distribution:</strong> Deployed at retail in China and across social media, reaching a global audience of fans who grew up with Derrick Rose and new audiences discovering his impact.</p>
+                            <p><strong>Impact:</strong> Proved that product launch content doesn't need to be about specs. When you connect the product to authentic human legacy, you create emotional resonance that drives both retail impact and social conversation.</p>
+                        </div>
+                        <div class="media-placeholder" onclick="openModal('drose-10-video')" style="background-image: url('https://img.youtube.com/vi/QGfa4L0YtHo/hqdefault.jpg');"></div>
+                    </div>
+
+                    <div class="case-study-preview">
+                        <div class="case-study-title">TuSimple: My Story Trailer Campaign</div>
+                        <div class="case-study-meta">Internal Storytelling / Brand Humanization / Documentary</div>
+                        <div class="case-study-text">
+                            <p><strong>The Challenge:</strong> TuSimple was operating in a complex, novel space (autonomous trucking) where the company narrative often got lost in technical specs and investor decks. The brand needed humanization: a way to show the actual people building this technology and why they're committed to it.</p>
+                            <p><strong>The Campaign:</strong> Built a documentary-style campaign called "My TuSimple Story" designed to put the spotlight on the people who do the work: engineers, drivers, operations teams. Through intimate, authentic storytelling, the campaign showed the inner workings of the company and the human motivations behind the innovation.</p>
+                            <p><strong>Outcome:</strong> While the project was ultimately pivoted due to business priorities shifting, it demonstrated how to translate a technical company into a human one. This approach became foundational for how I later approached the CreateAI positioning work.</p>
+                        </div>
+                        <div class="media-placeholder" onclick="openModal('tusimple-stories')" style="background-image: url('tusimple-story-frame.png');"></div>
+                    </div>
+
+                    <div class="case-study-preview">
+                        <div class="case-study-title">CreateAI: Positioning & Brand Launch</div>
+                        <div class="case-study-meta">Brand Strategy / Positioning / Go-to-Market</div>
+                        <div class="case-study-text">
+                            <p><strong>The Challenge:</strong> CreateAI emerged from TuSimple as a new company focused on generative AI, but the positioning was unclear. We needed to articulate what makes this company different in a crowded AI space and position it clearly to enterprise customers.</p>
+                            <p><strong>What I Led:</strong> End-to-end brand and positioning strategy. Worked with executive leadership and product to distill the company's unique approach into a clear, compelling narrative that could resonate with enterprise buyers. Developed the brand identity, core messaging, and go-to-market positioning.</p>
+                            <p><strong>Impact:</strong> Established CreateAI as a distinctive player in generative AI, with clear positioning that differentiates on reliability and enterprise adoption rather than on being the flashiest AI tool.</p>
+                        </div>
+                        <div class="media-placeholder" onclick="openModal('createai-brand')" style="background-image: url('createai-brand-frame.png');"></div>
+                    </div>
+                </div>
+                <button class="carousel-btn carousel-btn-right" id="nextBtn" onclick="scrollCarousel(1)">→</button>
+            </div>
+            <div class="carousel-indicator">
+                <span class="carousel-counter"><span id="currentSlide">1</span> / <span id="totalSlides">7</span></span>
+                <span class="carousel-hint">Scroll to see more →</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Work With Me Section -->
+    <section class="why-hire">
+        <div class="container">
+            <h2>Why Work With Me?</h2>
+            <div class="why-hire-grid">
+                <div class="why-item">
+                    <h3>Operator First. Specialist Second.</h3>
+                    <p>I think like a business builder, not a department manager. I care about unit economics, channel health, and business outcomes. I'll push back on ideas that look good but don't drive revenue. That's what partners need from marketing leadership.</p>
+                </div>
+                <div class="why-item">
+                    <h3>Deep Multi-Channel Fluency</h3>
+                    <p>I've worked across wholesale, retail, DTC, digital, social, sales enablement, and internal communications. This breadth means I speak the language of different teams and can connect the dots between them. I know where the silos are and how to break them.</p>
+                </div>
+                <div class="why-item">
+                    <h3>Translate Complex Into Clear</h3>
+                    <p>If it's a complex product, novel market opportunity, or challenging business problem, I make it understandable. I've done this for autonomous vehicles, generative AI, luxury retail, and global sporting goods brands. The pattern is always the same: clarity is a competitive advantage.</p>
+                </div>
+                <div class="why-item">
+                    <h3>Systems & Structure</h3>
+                    <p>I don't just execute campaigns. I build systems that outlive me. Playbooks, positioning frameworks, channel strategies, content systems. Once it's built, teams can execute with clarity. That's leverage.</p>
+                </div>
+                <div class="why-item">
+                    <h3>Bias Toward Results</h3>
+                    <p>I care about outcomes. Revenue, adoption, sell-through, brand health. Everything should be measurable. If a campaign looks great but doesn't drive business results, I'll tell you. That's partnership.</p>
+                </div>
+                <div class="why-item">
+                    <h3>Lead Cross-Functionally</h3>
+                    <p>I'm comfortable being the person in the room who connects product, sales, operations, and customer insights. I don't wait for perfect alignment. I build it. That's leadership.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2>Let's Connect</h2>
+            <div class="contact-content">
+                <p>I'm looking for roles where go-to-market leadership actually matters. Places building something real, where clarity and execution drive results. If that's you, let's talk.</p>
+                <div class="contact-links">
+                    <a href="mailto:rob@robkremers.com">Email: rob@robkremers.com</a>
+                    <a href="https://www.linkedin.com/in/robkremers/" target="_blank">LinkedIn: linkedin.com/in/robkremers</a>
+                    <a href="https://twitter.com/robkremers" target="_blank">Twitter: @robkremers</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Rob Kremers. Built with clarity in mind.</p>
+        </div>
+    </footer>
+
+    <!-- Modals for media -->
+    <div id="mediaModal" class="modal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal()">✕</button>
+            <div class="modal-body" id="modalBody">
+                <!-- Content will be inserted here -->
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Hamburger menu toggle
+        const hamburger = document.getElementById('hamburger');
+        const navMenu = document.getElementById('nav-menu');
+
+        hamburger.addEventListener('click', function() {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+
+        // Close menu when a link is clicked
+        navMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', function() {
+                hamburger.classList.remove('active');
+                navMenu.classList.remove('active');
+            });
+        });
+
+        // Carousel functionality
+        const carousel = document.getElementById('workCarousel');
+        const totalSlides = document.querySelectorAll('.case-study-preview').length;
+        let currentSlide = 1;
+
+        // Update slide counter
+        function updateSlideCounter() {
+            document.getElementById('currentSlide').textContent = currentSlide;
+            document.getElementById('totalSlides').textContent = totalSlides;
+        }
+
+        function scrollCarousel(direction) {
+            const slideWidth = carousel.querySelector('.case-study-preview').offsetWidth;
+            const gap = 20;
+            const totalDistance = slideWidth + gap;
+            
+            const newScroll = carousel.scrollLeft + (totalDistance * direction);
+            
+            carousel.scrollTo({
+                left: newScroll,
+                behavior: 'smooth'
+            });
+        }
+
+        // Update carousel buttons and counter on scroll
+        carousel.addEventListener('scroll', function() {
+            const slideWidth = carousel.querySelector('.case-study-preview').offsetWidth;
+            const gap = 20;
+            const totalDistance = slideWidth + gap;
+            
+            currentSlide = Math.round(carousel.scrollLeft / totalDistance) + 1;
+            updateSlideCounter();
+
+            // Update button disabled state
+            const prevBtn = document.getElementById('prevBtn');
+            const nextBtn = document.getElementById('nextBtn');
+            
+            prevBtn.disabled = carousel.scrollLeft <= 0;
+            nextBtn.disabled = carousel.scrollLeft >= carousel.scrollWidth - carousel.clientWidth - 10;
+        });
+
+        // Initialize button states
+        carousel.dispatchEvent(new Event('scroll'));
+
+        // Modal functionality
+        function openModal(caseStudyId) {
+            const modal = document.getElementById('mediaModal');
+            const modalBody = document.getElementById('modalBody');
+            
+            // Define modal content for each case study
+            const modalContents = {
+                'nike-playbook': `
+                    <div class="modal-image-container">
+                        <img src="nike-playbook-1.jpg" alt="Nike Basketball Retail Playbook">
+                        <button class="modal-image-arrow left" onclick="changeImage(-1)">←</button>
+                        <button class="modal-image-arrow right" onclick="changeImage(1)">→</button>
+                        <div class="image-counter"><span id="imageCount">1</span> / 3</div>
+                    </div>
+                `,
+                'adidas-dsg-fixture': `
+                    <div class="modal-image-container">
+                        <img src="adidas-dsg-fixture-wall.png" alt="adidas DSG Fixture System">
+                    </div>
+                `,
+                'adidas-dsg-spotlight': `
+                    <div class="modal-image-container">
+                        <img src="adidas-dsg-earn-spotlight.png" alt="adidas DSG Earn Your Spotlight Campaign">
+                    </div>
+                `,
+                'damien-video': `
+                    <iframe class="modal-video" src="https://www.youtube.com/embed/HDYadppg5oU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                `,
+                'drose-10-video': `
+                    <iframe class="modal-video" src="https://www.youtube.com/embed/QGfa4L0YtHo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                `,
+                'tusimple-stories': `
+                    <div class="modal-image-container">
+                        <img src="tusimple-story-frame.png" alt="TuSimple My Story Campaign">
+                    </div>
+                `,
+                'createai-brand': `
+                    <div class="modal-image-container">
+                        <img src="createai-brand-frame.png" alt="CreateAI Brand Launch">
+                    </div>
+                `
+            };
+
+            // Get the appropriate content
+            if (modalContents[caseStudyId]) {
+                modalBody.innerHTML = modalContents[caseStudyId];
+            }
+            
+            modal.classList.add('active');
+        }
+
+        function closeModal() {
+            const modal = document.getElementById('mediaModal');
+            modal.classList.remove('active');
+        }
+
+        // Close modal when clicking outside content
+        document.getElementById('mediaModal').addEventListener('click', function(e) {
+            if (e.target === this) {
+                closeModal();
+            }
+        });
+
+        // Keyboard navigation for modal
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                closeModal();
+            }
+        });
+    </script>
+</body>
+</html>
