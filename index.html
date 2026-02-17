@@ -318,9 +318,6 @@
         .carousel-container {
             position: relative;
             width: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
         }
 
         .carousel-wrapper {
@@ -352,53 +349,44 @@
         }
 
         .carousel-scroll-hint {
-            position: fixed;
+            position: absolute;
             top: 50%;
             transform: translateY(-50%);
             font-size: 28px;
             color: rgba(0,0,0,0.35);
             pointer-events: auto;
-            z-index: 100;
+            z-index: 20;
             transition: all 0.3s;
             cursor: pointer;
             user-select: none;
-            width: 44px;
-            height: 44px;
+            width: 50px;
+            height: 50px;
             display: flex;
             align-items: center;
             justify-content: center;
+            background: rgba(255,255,255,0.1);
+            border-radius: 4px;
+            backdrop-filter: blur(4px);
         }
 
         .carousel-scroll-hint.left {
-            left: 20px;
+            left: 12px;
         }
 
         .carousel-scroll-hint.right {
-            right: 20px;
+            right: 12px;
         }
 
         .carousel-scroll-hint:hover {
             color: rgba(0,0,0,0.6);
+            background: rgba(255,255,255,0.2);
             transform: translateY(-50%) scale(1.1);
         }
 
         .carousel-scroll-hint[style*="opacity: 0"] {
             pointer-events: none;
             cursor: default;
-        }
-
-        @media (max-width: 1024px) {
-            .carousel-scroll-hint {
-                font-size: 24px;
-            }
-
-            .carousel-scroll-hint.left {
-                left: 12px;
-            }
-
-            .carousel-scroll-hint.right {
-                right: 12px;
-            }
+            opacity: 0 !important;
         }
 
         @media (max-width: 768px) {
