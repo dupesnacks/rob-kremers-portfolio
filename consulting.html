@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AI agent consulting for small businesses. Automate operations, reduce overhead, scale your team. Free 30-minute consultation.">
+    <title>OpenClaw Consulting | AI Automation for Small Business</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', sans-serif;
+            line-height: 1.6;
+            color: #1a1a1a;
+            background: #ffffff;
+        }
+
+        nav {
+            position: sticky;
+            top: 0;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid #f0f0f0;
+            z-index: 1000;
+        }
+
+        nav .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 70px;
+        }
+
+        .logo {
+            font-size: 18px;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+            text-decoration: none;
+            color: #0D5E54;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 40px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #666;
+            font-size: 14px;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #1a1a1a;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 40px;
+        }
+
+        /* Hero */
+        .hero {
+            padding: 100px 0 60px;
+            border-bottom: 1px solid #f0f0f0;
+        }
+
+        .hero h1 {
+            font-size: 52px;
+            line-height: 1.2;
+            margin-bottom: 16px;
+            font-weight: 700;
+            letter-spacing: -1px;
+        }
+
+        .hero .subheading {
+            font-size: 20px;
+            color: #666;
+            margin-bottom: 40px;
+            max-width: 700px;
+            font-weight: 400;
+            line-height: 1.5;
+        }
+
+        .hero-cta {
+            display: flex;
+            gap: 16px;
+            margin-top: 30px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 14px 32px;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 14px;
+            transition: all 0.3s;
+            cursor: pointer;
+            border: none;
+        }
+
+        .btn-primary {
+            background: #0D5E54;
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: #05433a;
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: #0D5E54;
+            border: 1px solid #0D5E54;
+        }
+
+        .btn-secondary:hover {
+            background: #f0fffe;
+        }
+
+        /* What Is Section */
+        .what-is {
+            padding: 120px 0;
+            border-bottom: 1px solid #f0f0f0;
+        }
+
+        .what-is h2 {
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 40px;
+            position: relative;
+            padding-bottom: 12px;
+        }
+
+        .what-is h2::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 60px;
+            height: 3px;
+            background: #0D5E54;
+            border-radius: 2px;
+        }
+
+        .what-is-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: start;
+        }
+
+        .what-is-left {
+            font-size: 16px;
+            line-height: 1.8;
+            color: #333;
+        }
+
+        .what-is-left p {
+            margin-bottom: 20px;
+        }
+
+        .what-is-left strong {
+            color: #0D5E54;
+        }
+
+        .what-is-right {
+            background: #f9f9f9;
+            padding: 40px;
+            border-radius: 4px;
+        }
+
+        .what-is-right h3 {
+            font-size: 14px;
+            font-weight: 700;
+            color: #666;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 20px;
+        }
+
+        .what-is-right ul {
+            list-style: none;
+        }
+
+        .what-is-right li {
+            padding: 12px 0;
+            border-bottom: 1px solid #e8e8e8;
+            font-size: 15px;
+            line-height: 1.6;
+        }
+
+        .what-is-right li:last-child {
+            border-bottom: none;
+        }
+
+        .what-is-right strong {
+            color: #0D5E54;
+        }
+
+        /* Examples Section */
+        .examples {
+            padding: 120px 0;
+            border-bottom: 1px solid #f0f0f0;
+        }
+
+        .examples h2 {
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 40px;
+            position: relative;
+            padding-bottom: 12px;
+        }
+
+        .examples h2::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 60px;
+            height: 3px;
+            background: #0D5E54;
+            border-radius: 2px;
+        }
+
+        .examples-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+        }
+
+        .example-card {
+            background: #f9f9f9;
+            padding: 40px;
+            border-radius: 4px;
+            border-left: 4px solid #0D5E54;
+        }
+
+        .example-card h3 {
+            font-size: 18px;
+            font-weight: 700;
+            color: #1a1a1a;
+            margin-bottom: 12px;
+        }
+
+        .example-card .before {
+            font-size: 13px;
+            color: #999;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 8px;
+        }
+
+        .example-card p {
+            font-size: 14px;
+            line-height: 1.7;
+            color: #666;
+            margin-bottom: 16px;
+        }
+
+        .example-card .benefit {
+            background: white;
+            padding: 16px;
+            border-radius: 4px;
+            font-size: 13px;
+            color: #0D5E54;
+            font-weight: 600;
+        }
+
+        /* Why Section */
+        .why {
+            padding: 120px 0;
+            border-bottom: 1px solid #f0f0f0;
+        }
+
+        .why h2 {
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 40px;
+            position: relative;
+            padding-bottom: 12px;
+        }
+
+        .why h2::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 60px;
+            height: 3px;
+            background: #0D5E54;
+            border-radius: 2px;
+        }
+
+        .why-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 40px;
+        }
+
+        .why-item {
+            text-align: center;
+        }
+
+        .why-item h3 {
+            font-size: 16px;
+            font-weight: 700;
+            color: #1a1a1a;
+            margin-bottom: 12px;
+        }
+
+        .why-item p {
+            font-size: 14px;
+            line-height: 1.7;
+            color: #666;
+        }
+
+        /* CTA Section */
+        .cta {
+            padding: 120px 0;
+            background: #0D5E54;
+            color: white;
+            text-align: center;
+        }
+
+        .cta h2 {
+            font-size: 36px;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        .cta p {
+            font-size: 18px;
+            margin-bottom: 40px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            line-height: 1.6;
+        }
+
+        .cta .btn {
+            padding: 16px 40px;
+            font-size: 16px;
+        }
+
+        .btn-light {
+            background: white;
+            color: #0D5E54;
+        }
+
+        .btn-light:hover {
+            background: #f0fffe;
+        }
+
+        /* FAQ Section */
+        .faq {
+            padding: 120px 0;
+            border-bottom: 1px solid #f0f0f0;
+        }
+
+        .faq h2 {
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 40px;
+            position: relative;
+            padding-bottom: 12px;
+        }
+
+        .faq h2::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 60px;
+            height: 3px;
+            background: #0D5E54;
+            border-radius: 2px;
+        }
+
+        .faq-item {
+            margin-bottom: 30px;
+            padding-bottom: 30px;
+            border-bottom: 1px solid #f0f0f0;
+        }
+
+        .faq-item:last-child {
+            border-bottom: none;
+        }
+
+        .faq-item h3 {
+            font-size: 16px;
+            font-weight: 700;
+            color: #1a1a1a;
+            margin-bottom: 12px;
+        }
+
+        .faq-item p {
+            font-size: 14px;
+            line-height: 1.7;
+            color: #666;
+        }
+
+        /* Footer */
+        footer {
+            border-top: 1px solid #f0f0f0;
+            padding: 40px 0;
+            text-align: center;
+            color: #999;
+            font-size: 13px;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 36px;
+            }
+
+            .hero .subheading {
+                font-size: 18px;
+            }
+
+            .hero-cta {
+                flex-direction: column;
+            }
+
+            .btn {
+                width: 100%;
+                text-align: center;
+            }
+
+            .what-is-content,
+            .examples-grid,
+            .why-grid {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+
+            nav ul {
+                gap: 20px;
+                font-size: 12px;
+            }
+
+            .container {
+                padding: 0 20px;
+            }
+
+            .what-is,
+            .examples,
+            .why,
+            .faq {
+                padding: 80px 0;
+            }
+
+            .example-card,
+            .what-is-right {
+                padding: 30px;
+            }
+
+            .cta {
+                padding: 80px 0;
+            }
+
+            .cta h2 {
+                font-size: 28px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="container">
+            <a href="/" class="logo">Rob Kremers</a>
+            <ul>
+                <li><a href="/">Portfolio</a></li>
+                <li><a href="/consulting.html">OpenClaw Consulting</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Automate your business. Free up your team.</h1>
+            <p class="subheading">You're spending too much time on repetitive tasks. Your team is burnt out. There's a better way.</p>
+            <div class="hero-cta">
+                <a href="#cta" class="btn btn-primary">Book Free Consultation</a>
+                <a href="#examples" class="btn btn-secondary">See Examples</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- What Is Section -->
+    <section class="what-is">
+        <div class="container">
+            <h2>What is OpenClaw?</h2>
+            <div class="what-is-content">
+                <div class="what-is-left">
+                    <p>OpenClaw is an AI agent platform that automates your business operations. Think of it as hiring a tireless team member who works 24/7 without taking a day off.</p>
+                    <p>Whether it's <strong>responding to customer inquiries, managing invoices, processing orders, scheduling appointments, or posting to social media</strong>, OpenClaw handles it. Intelligently. Consistently. Without mistakes.</p>
+                    <p>The result? Your team gets back 10-15 hours per week. Your overhead goes down. Your business scales without hiring more people.</p>
+                    <p>And the best part: it integrates with the tools you already use. Slack, email, spreadsheets, your CRM. OpenClaw learns your business and fits right in.</p>
+                </div>
+                <div class="what-is-right">
+                    <h3>What You Get</h3>
+                    <ul>
+                        <li><strong>24/7 Automation:</strong> Your processes run even when you're sleeping</li>
+                        <li><strong>Reduced Overhead:</strong> Do more with the team you have</li>
+                        <li><strong>Zero Training Needed:</strong> OpenClaw learns your workflows</li>
+                        <li><strong>Integrations:</strong> Works with Slack, email, your existing tools</li>
+                        <li><strong>Scalable:</strong> Start small, expand as you grow</li>
+                        <li><strong>Your Data Stays Yours:</strong> Full transparency and control</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Examples Section -->
+    <section class="examples" id="examples">
+        <div class="container">
+            <h2>Here's What It Actually Does</h2>
+            <div class="examples-grid">
+                <div class="example-card">
+                    <div class="before">E-Commerce Store</div>
+                    <h3>Order Processing & Support</h3>
+                    <p>Customer orders something. OpenClaw confirms the order, checks inventory, processes payment, creates a shipping label, and sends tracking info. All automatically. When a customer emails with a question, OpenClaw handles it.</p>
+                    <div class="benefit">Your team goes from 8 hours/week to 30 minutes</div>
+                </div>
+
+                <div class="example-card">
+                    <div class="before">Service Business</div>
+                    <h3>Appointment Scheduling & Reminders</h3>
+                    <p>Client wants to book. OpenClaw shows available times, schedules the appointment, sends calendar invites, and automatically reminds them 24 hours before. If they need to reschedule, OpenClaw handles it.</p>
+                    <div class="benefit">Your calendar is always up-to-date. No more double-bookings</div>
+                </div>
+
+                <div class="example-card">
+                    <div class="before">Agency / Freelancer</div>
+                    <h3>Invoice & Proposal Generation</h3>
+                    <p>Client asks for a proposal. OpenClaw pulls their details, creates a branded proposal, sends it, and follows up automatically. When work is done, it generates an invoice and sends payment reminders.</p>
+                    <div class="benefit">Invoicing goes from 30 minutes per client to instant</div>
+                </div>
+
+                <div class="example-card">
+                    <div class="before">Content Creator / Social Media</div>
+                    <h3>Social Post Calendar & Posting</h3>
+                    <p>You write posts in a simple form. OpenClaw schedules them across Instagram, TikTok, LinkedIn, X. It can even pull engagement metrics and let you know what's working.</p>
+                    <div class="benefit">One click instead of opening 5 different apps</div>
+                </div>
+
+                <div class="example-card">
+                    <div class="before">Local Service Business</div>
+                    <h3>Lead Qualification & Follow-up</h3>
+                    <p>Someone fills out your contact form. OpenClaw qualifies them (asks the right questions), determines if they're a fit, schedules a call, and follows up with unresponsive leads automatically.</p>
+                    <div class="benefit">Your sales process is consistent. No leads slip through</div>
+                </div>
+
+                <div class="example-card">
+                    <div class="before">Any Small Business</div>
+                    <h3>Slack Bot for Your Whole Team</h3>
+                    <p>Your team gets a Slack bot that answers questions instantly. What are sales this month? Who has a birthday tomorrow? Is the server down? OpenClaw knows and tells them in Slack.</p>
+                    <div class="benefit">Everyone has access to information when they need it</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Work With Me Section -->
+    <section class="why">
+        <div class="container">
+            <h2>Why Work With Rob</h2>
+            <div class="why-grid">
+                <div class="why-item">
+                    <h3>I Speak Your Language</h3>
+                    <p>I'm not a technical person explaining code. I'm a business operator who understands operations, bottlenecks, and revenue impact. I'll map your workflows in ways that make sense.</p>
+                </div>
+                <div class="why-item">
+                    <h3>I've Done This Before</h3>
+                    <p>15+ years automating and scaling operations at Nike, adidas, and startups. I know what works. I know what doesn't. I'll save you time and money.</p>
+                </div>
+                <div class="why-item">
+                    <h3>You Get Results</h3>
+                    <p>This isn't a long engagement. We scope the win, implement it, and measure impact. Typical clients see 10-15 hours/week freed up in the first month.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta" id="cta">
+        <div class="container">
+            <h2>Let's Talk About Your Business</h2>
+            <p>Book a free 30-minute consultation. We'll identify what's draining your team and what's possible with automation.</p>
+            <a href="mailto:rkremers@gmail.com?subject=OpenClaw%20Consultation" class="btn btn-light">Schedule Your Consultation</a>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq">
+        <div class="container">
+            <h2>Common Questions</h2>
+
+            <div class="faq-item">
+                <h3>How long does implementation take?</h3>
+                <p>Depends on complexity. Simple automations (like email responders) can be live in days. More complex workflows take 2-4 weeks. We'll map it out in the initial consultation.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>What if I'm not technical?</h3>
+                <p>You don't need to be. That's the whole point. You describe what you want, OpenClaw handles it. During setup, I'll make sure everything integrates with your existing tools.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>Is my data secure?</h3>
+                <p>Yes. Your data lives in your systems (Slack, email, spreadsheets, etc.). OpenClaw doesn't store sensitive data. Everything runs transparently and you maintain full control.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>What tools do you work with?</h3>
+                <p>OpenClaw integrates with most modern tools: Slack, email, Zapier, Make, webhooks, APIs, spreadsheets, CRMs. If you use it, OpenClaw probably works with it.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>How much does it cost?</h3>
+                <p>Let's discuss in your free consultation. We'll scope the work and give you a clear price. Most small business automations are $2-10K depending on complexity.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>What if I need changes later?</h3>
+                <p>Easy. Your business evolves. We can update automations as you grow. Think of me as your operational partner, not just a one-time project.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Rob Kremers. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
