@@ -1010,7 +1010,7 @@
                             <p><strong>What I Led:</strong> End-to-end North American rollout of the fixture system at DSG. Partnered with global and local teams to translate the fixture concept into a tailored shop-in-shop experience. Managed prototyping, vendor relationships, and strategic fixture selection to ensure DSG could bring adidas' brand stories to life while staying operationally feasible.</p>
                             <p><strong>Impact:</strong> Successfully deployed across DSG locations, creating a premium adidas brand experience within a multi-brand retail environment. Demonstrated how to adapt global brand systems for local retail partners without compromising brand integrity.</p>
                         </div>
-                        <div class="media-placeholder">Media: Fixture prototypes, installation photos, and execution details coming soon</div>
+                        <div class="media-placeholder" onclick="openModal('adidas-dsg-fixture')" style="background-image: url('adidas-dsg-fixture-wall.png'); background-size: cover;"></div>
                     </div>
 
                     <div class="case-study-preview">
@@ -1176,6 +1176,16 @@
                         </div>
                     </div>
                 `;
+            } else if (mediaId === 'adidas-dsg-fixture') {
+                modalBody.innerHTML = `
+                    <div style="position: relative;">
+                        <img id="adidasDsgImg" src="adidas-dsg-fixture-wall.png" style="width: 100%; height: auto; border-radius: 4px;">
+                        <div style="display: flex; gap: 10px; margin-top: 20px; justify-content: center;">
+                            <button onclick="changeAdidasDsgImage(0)" style="padding: 8px 16px; background: #1a1a1a; color: white; border: none; border-radius: 4px; cursor: pointer;">Fixture Wall</button>
+                            <button onclick="changeAdidasDsgImage(1)" style="padding: 8px 16px; background: #1a1a1a; color: white; border: none; border-radius: 4px; cursor: pointer;">Table Display</button>
+                        </div>
+                    </div>
+                `;
             } else if (mediaId === 'nike-playbook') {
                 modalBody.innerHTML = `
                     <div style="position: relative;">
@@ -1206,6 +1216,11 @@
         function changeNikeRetailImage(index) {
             const images = ['nike-retail-consumer-journey.jpg', 'nike-retail-category-zone.jpg'];
             document.getElementById('nikeRetailImg').src = images[index];
+        }
+
+        function changeAdidasDsgImage(index) {
+            const images = ['adidas-dsg-fixture-wall.png', 'adidas-dsg-fixture-table.png'];
+            document.getElementById('adidasDsgImg').src = images[index];
         }
 
         function closeModal() {
