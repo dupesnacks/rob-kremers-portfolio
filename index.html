@@ -1103,6 +1103,18 @@
                     </div>
 
                     <div class="case-study-preview">
+                        <div class="case-study-title">adidas DSG "Earn Your Spotlight" Campaign</div>
+                        <div class="case-study-meta">Campaign Strategy / Multi-Channel Activation / Retail + Digital Integration</div>
+                        <div class="case-study-text">
+                            <p><strong>The Challenge:</strong> Launch exclusive adidas training apparel at Dick's Sporting Goods with a campaign that would drive both emotional connection and commercial impact. The message had to resonate with today's athletes—people who seek validation and recognition beyond traditional metrics.</p>
+                            <p><strong>The Insight:</strong> Modern athletes don't just chase wins. They chase personal moments that matter—their own "spotlight moments." This became the campaign foundation.</p>
+                            <p><strong>What I Developed:</strong> A comprehensive multi-channel strategy across social, digital, in-store, and live activations. Featured top-tier athletes and influencers to drive aspiration and authenticity. Planned a 10-city nationwide activation tour bringing the campaign to life in DSG retail hubs and local communities.</p>
+                            <p><strong>Results:</strong> 55M+ impressions | 2.7M video views | $2.6M attributed revenue | 460K store visits | 35K e-commerce orders. Drove significant scale while maintaining retail partnership integrity.</p>
+                        </div>
+                        <div class="media-placeholder" onclick="openModal('adidas-dsg-spotlight')" style="background-image: url('adidas-dsg-earn-spotlight.png'); background-size: cover;"></div>
+                    </div>
+
+                    <div class="case-study-preview">
                         <div class="case-study-title">Damian Lillard Dame 6 Launch Film</div>
                         <div class="case-study-meta">Brand Storytelling / Content / Identity Positioning</div>
                         <div class="case-study-text">
@@ -1280,6 +1292,13 @@
                     </div>
                 `;
                 window.adidasDsgIndex = 0;
+            } else if (mediaId === 'adidas-dsg-spotlight') {
+                modalBody.innerHTML = `
+                    <div class="modal-image-container">
+                        <img id="spotlightImg" src="adidas-dsg-earn-spotlight.png" style="max-height: calc(100vh - 180px); max-width: 100%; height: auto; width: auto; border-radius: 4px; object-fit: contain;">
+                    </div>
+                `;
+                window.spotlightIndex = 0;
             } else if (mediaId === 'nike-playbook') {
                 modalBody.innerHTML = `
                     <div class="modal-image-container">
