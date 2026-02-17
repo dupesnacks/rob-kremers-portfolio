@@ -1153,6 +1153,18 @@
                         </div>
                         <div class="media-placeholder" onclick="openModal('nike-retail-storytelling')" style="background-image: url('nike-retail-consumer-journey.jpg'); background-size: cover;"></div>
                     </div>
+
+                    <div class="case-study-preview">
+                        <div class="case-study-title">TuSimple Domain Controller Product Launch</div>
+                        <div class="case-study-meta">Product Launch / Paid Social & Search / Technical Positioning</div>
+                        <div class="case-study-text">
+                            <p><strong>The Challenge:</strong> Launch a complex piece of autonomous vehicle hardware (the TuSimple Domain Controller) to a B2B audience of fleet operators, automotive OEMs, and enterprise customers. The product is technically sophisticated (NVIDIA DRIVE, Infineon architecture, 254 TOPS GPU performance) but abstract to non-engineers. How do you communicate hardware capability in a way that resonates with decision-makers?</p>
+                            <p><strong>What I Built:</strong> A landing page and paid campaign strategy that stacked credibility signals. Hero section with clear value prop ("Enable SAE Level 2+ to Level 4 Autonomous Solutions"). Technical specs for decision-makers (CPU/GPU performance, camera/LIDAR capacity, connectivity options). "What's Inside?" deep dive showing real components (NVIDIA, Infineon, GNX/QNX) to signal engineering rigor. Reliability credentials (ISO 16750 certification). Contact-driven lead gen model, not e-commerce.</p>
+                            <p><strong>Paid Strategy:</strong> Launched search and social campaigns targeting fleet operators, AV teams, and enterprise customers. Messaging tested value prop variations (performance vs. safety vs. integration readiness) across channels.</p>
+                            <p><strong>Impact:</strong> High-intent traffic from qualified audience. Landing page positioned the Domain Controller as enterprise-grade, not another tech product. Demonstrated how to translate hardware complexity into credible, structured narrative for B2B buyers.</p>
+                        </div>
+                        <div class="media-placeholder" onclick="openModal('tusimple-domain-controller')" style="background-image: url('tusimple-dc-hero.png'); background-size: cover;"></div>
+                    </div>
                 </div>
                 <div class="carousel-scroll-hint right" id="rightHint">›</div>
                 <div class="carousel-nav" id="carouselNav">
@@ -1260,6 +1272,16 @@
                     </div>
                 `;
                 window.nikeRetailIndex = 0;
+            } else if (mediaId === 'tusimple-domain-controller') {
+                modalBody.innerHTML = `
+                    <div class="modal-image-container">
+                        <div class="modal-image-arrow left" onclick="changeDomainControllerImage(-1)">‹</div>
+                        <img id="dcImg" src="tusimple-dc-hero.png">
+                        <div class="modal-image-arrow right" onclick="changeDomainControllerImage(1)">›</div>
+                        <div class="image-counter" id="dcCounter">1 of 6</div>
+                    </div>
+                `;
+                window.dcIndex = 0;
             } else if (mediaId === 'adidas-dsg-fixture') {
                 modalBody.innerHTML = `
                     <div class="modal-image-container">
@@ -1328,6 +1350,17 @@
             document.getElementById('adidasDsgImg').src = images[window.adidasDsgIndex];
             const counter = document.getElementById('adidasDsgCounter');
             if (counter) counter.textContent = (window.adidasDsgIndex + 1) + ' of ' + images.length;
+        }
+
+        function changeDomainControllerImage(direction) {
+            const images = ['tusimple-dc-hero.png', 'tusimple-dc-whats-inside-1.png', 'tusimple-dc-whats-inside-2.png', 'tusimple-dc-reliability.png', 'tusimple-dc-specs.png', 'tusimple-dc-contact.png'];
+            if (!window.dcIndex) window.dcIndex = 0;
+            window.dcIndex += direction;
+            if (window.dcIndex < 0) window.dcIndex = 0;
+            if (window.dcIndex >= images.length) window.dcIndex = images.length - 1;
+            document.getElementById('dcImg').src = images[window.dcIndex];
+            const counter = document.getElementById('dcCounter');
+            if (counter) counter.textContent = (window.dcIndex + 1) + ' of ' + images.length;
         }
 
         function closeModal() {
