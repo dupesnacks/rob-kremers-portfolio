@@ -280,10 +280,31 @@
         }
 
         .timeline-company {
-            font-size: 16px;
+            font-size: 18px;
             font-weight: 700;
             color: #1a1a1a;
-            margin-bottom: 8px;
+            margin-bottom: 16px;
+        }
+
+        .timeline-roles {
+            list-style: none;
+            margin-bottom: 16px;
+        }
+
+        .timeline-roles li {
+            font-size: 14px;
+            font-weight: 600;
+            color: #1a1a1a;
+            margin-bottom: 6px;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        .timeline-roles li:before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: #999;
         }
 
         .timeline-description {
@@ -940,6 +961,10 @@
                 padding: 80px 0;
             }
 
+            .timeline-roles li {
+                font-size: 13px;
+            }
+
             .case-study-preview {
                 flex: 0 0 100%;
                 min-width: 100%;
@@ -1114,27 +1139,51 @@
                 <h3>The Timeline</h3>
                 <div class="timeline-item">
                     <div class="timeline-company">WE Communications</div>
-                    <div class="timeline-description">Account Executive, Microsoft Windows PR Account. Early experience in communications and account management.</div>
+                    <ul class="timeline-roles">
+                        <li>Account Executive, Microsoft Windows PR Account</li>
+                    </ul>
+                    <div class="timeline-description">Early experience in communications and account management.</div>
                 </div>
                 <div class="timeline-item">
                     <div class="timeline-company">adidas</div>
-                    <div class="timeline-description">Internal Communications Specialist, US Basketball Brand Specialist, Key Account Digital Strategy Manager, Retail Brand Manager (Men's and Women's Training NA), Senior Retail Brand Manager (Global Basketball), Senior Brand Manager (Global Basketball). Worked across communications, retail brand strategy, digital, and key account management to translate global brand direction into local execution. Built frameworks that enabled markets and retail partners to execute with clarity.</div>
+                    <ul class="timeline-roles">
+                        <li>Internal Communications Specialist</li>
+                        <li>US Basketball Brand Specialist</li>
+                        <li>Key Account Digital Strategy Manager</li>
+                        <li>Retail Brand Manager, Men's and Women's Training North America</li>
+                        <li>Senior Retail Brand Manager, Global Basketball</li>
+                        <li>Senior Brand Manager, Global Basketball</li>
+                    </ul>
+                    <div class="timeline-description">Worked across communications, retail brand strategy, digital, and key account management to translate global brand direction into local execution. Built frameworks that enabled markets and retail partners to execute with clarity.</div>
                 </div>
                 <div class="timeline-item">
                     <div class="timeline-company">Columbia Sportswear</div>
-                    <div class="timeline-description">Retail Brand Manager North America. [Work in progress summary]</div>
+                    <ul class="timeline-roles">
+                        <li>Retail Brand Manager, North America</li>
+                    </ul>
+                    <div class="timeline-description">Directed in-store marketing initiatives across North America to align with Columbia's brand identity and retail strategy for Columbia Sportswear and Sorel.</div>
                 </div>
                 <div class="timeline-item">
                     <div class="timeline-company">Nike</div>
-                    <div class="timeline-description">Senior Retail Brand Manager, Global Basketball. Built the global basketball retail brand playbook, a structured system that enabled markets and partners worldwide to execute brand strategy with consistency and local relevance.</div>
+                    <ul class="timeline-roles">
+                        <li>Senior Retail Brand Manager, Global Basketball</li>
+                    </ul>
+                    <div class="timeline-description">Built the global basketball retail brand playbook, a structured system that enabled markets and partners worldwide to execute brand strategy with consistency and local relevance.</div>
                 </div>
                 <div class="timeline-item">
                     <div class="timeline-company">BarMe</div>
-                    <div class="timeline-description">Business Owner. Full end-to-end ownership of sourcing, logistics, website, marketing, fulfillment, customer service, and financials. Scaled from zero to 70,000+ units sold, sharpening my operational bias and accountability mindset.</div>
+                    <ul class="timeline-roles">
+                        <li>Business Owner</li>
+                    </ul>
+                    <div class="timeline-description">Full end-to-end ownership of sourcing, logistics, website, marketing, fulfillment, customer service, and financials. Scaled from zero to 70,000+ units sold, sharpening my operational bias and accountability mindset.</div>
                 </div>
                 <div class="timeline-item">
                     <div class="timeline-company">CreateAI (Formerly TuSimple)</div>
-                    <div class="timeline-description">Brand Manager, Head of Marketing. Led cross-functional work translating autonomous trucking and generative AI technology into credible, structured narratives for diverse audiences. Progressed from brand leadership to full marketing ownership, managing positioning, storytelling, and go-to-market strategy.</div>
+                    <ul class="timeline-roles">
+                        <li>Brand Manager</li>
+                        <li>Head of Marketing</li>
+                    </ul>
+                    <div class="timeline-description">Led cross-functional work translating autonomous trucking and generative AI technology into credible, structured narratives for diverse audiences. Progressed from brand leadership to full marketing ownership, managing positioning, storytelling, and go-to-market strategy.</div>
                 </div>
             </div>
         </div>
