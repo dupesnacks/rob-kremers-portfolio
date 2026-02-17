@@ -1045,6 +1045,17 @@
                         </div>
                         <div class="media-placeholder" onclick="openModal('tusimple-ev-brand')" style="background-image: url('tusimple-ev-brand-archetype.png'); background-size: cover;"></div>
                     </div>
+
+                    <div class="case-study-preview">
+                        <div class="case-study-title">Nike Basketball Retail Storytelling Execution</div>
+                        <div class="case-study-meta">Retail Planning / Consumer Journey / Merchandising Alignment</div>
+                        <div class="case-study-text">
+                            <p><strong>The Challenge:</strong> Transform the global basketball retail playbook into actual retail execution across product launches, brand moments, and seasonal windows. Required coordination between brand, product, merchandising, and geographic teams to ensure consistent storytelling at scale.</p>
+                            <p><strong>What I Did:</strong> Led end-to-end planning and execution of retail storytelling across the Nike basketball portfolio. Mapped the complete consumer journey (Attract → Engage → Connect) with detailed messaging hierarchies, visual standards, and merchandising specifications. Created zone-based retail blueprints that guided execution while allowing for regional relevance.</p>
+                            <p><strong>Impact:</strong> Brought strategic brand work to life in physical retail. Enabled markets, GEOs, and retail partners to execute with confidence. Drove alignment across product, merchandising, and brand — proving that brand architecture only works when operationalized in execution.</p>
+                        </div>
+                        <div class="media-placeholder" onclick="openModal('nike-retail-storytelling')" style="background-image: url('nike-retail-consumer-journey.jpg'); background-size: cover;"></div>
+                    </div>
                 </div>
                 <div class="carousel-scroll-hint right" id="rightHint">›</div>
                 <div class="carousel-nav" id="carouselNav">
@@ -1144,6 +1155,16 @@
                         </div>
                     </div>
                 `;
+            } else if (mediaId === 'nike-retail-storytelling') {
+                modalBody.innerHTML = `
+                    <div style="position: relative;">
+                        <img id="nikeRetailImg" src="nike-retail-consumer-journey.jpg" style="width: 100%; height: auto; border-radius: 4px;">
+                        <div style="display: flex; gap: 10px; margin-top: 20px; justify-content: center;">
+                            <button onclick="changeNikeRetailImage(0)" style="padding: 8px 16px; background: #1a1a1a; color: white; border: none; border-radius: 4px; cursor: pointer;">Consumer Journey</button>
+                            <button onclick="changeNikeRetailImage(1)" style="padding: 8px 16px; background: #1a1a1a; color: white; border: none; border-radius: 4px; cursor: pointer;">Category Zone</button>
+                        </div>
+                    </div>
+                `;
             } else if (mediaId === 'nike-playbook') {
                 modalBody.innerHTML = `
                     <div style="position: relative;">
@@ -1169,6 +1190,11 @@
         function changeEvBrandImage(index) {
             const images = ['tusimple-ev-brand-archetype.png', 'tusimple-ev-brand-attributes.png', 'tusimple-ev-competitor-positioning.png', 'tusimple-ev-tone-voice.png'];
             document.getElementById('evBrandImg').src = images[index];
+        }
+
+        function changeNikeRetailImage(index) {
+            const images = ['nike-retail-consumer-journey.jpg', 'nike-retail-category-zone.jpg'];
+            document.getElementById('nikeRetailImg').src = images[index];
         }
 
         function closeModal() {
