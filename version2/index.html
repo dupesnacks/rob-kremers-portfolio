@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Rob Kremers - Translate complex products into customer adoption and revenue. Strategic marketer at Nike, adidas, and early-stage deep tech.">
+    <title>Rob Kremers | Strategic Go-To-Market Leader</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', sans-serif;
+            line-height: 1.6;
+            color: #1a1a1a;
+            background: #ffffff;
+        }
+
+        /* Navigation */
+        nav {
+            position: sticky;
+            top: 0;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid #f0f0f0;
+            z-index: 1000;
+        }
+
+        nav .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 70px;
+        }
+
+        .logo {
+            font-size: 18px;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+            text-decoration: none;
+            color: #0D5E54;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 40px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #666;
+            font-size: 14px;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #1a1a1a;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 40px;
+        }
+
+        /* Hero Section */
+        .hero {
+            padding: 80px 0 60px;
+            border-bottom: 1px solid #f0f0f0;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            line-height: 1.2;
+            margin-bottom: 12px;
+            font-weight: 700;
+            letter-spacing: -1px;
+        }
+
+        .hero .subheading {
+            font-size: 18px;
+            color: #666;
+            margin-bottom: 30px;
+            max-width: 600px;
+            font-weight: 400;
+        }
+
+        .hero-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: start;
+            margin-top: 40px;
+        }
+
+        .hero-left {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .hero-statement {
+            font-size: 15px;
+            line-height: 1.8;
+            color: #333;
+            max-width: 500px;
+        }
+
+        .hero-cta {
+            display: flex;
+            gap: 16px;
+            margin-top: 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 14px 32px;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 14px;
+            transition: all 0.3s;
+            cursor: pointer;
+            border: none;
+        }
+
+        .btn-primary {
+            background: #0D5E54;
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: #05433a;
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: #0D5E54;
+            border: 1px solid #0D5E54;
+        }
+
+        .btn-secondary:hover {
+            background: #f0fffe;
+        }
+
+        .hero-featured {
+            background: #f9f9f9;
+            padding: 24px;
+            border-radius: 4px;
+        }
+
+        .hero-featured h3 {
+            font-size: 14px;
+            color: #0D5E54;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 12px;
+        }
+
+        .hero-featured p {
+            font-size: 14px;
+            line-height: 1.7;
+            color: #666;
+            margin-bottom: 12px;
+        }
+
+        .hero-featured strong {
+            color: #0D5E54;
+        }
+
+        .hero-featured .metric {
+            font-size: 20px;
+            font-weight: 700;
+            color: #0D5E54;
+            margin-top: 16px;
+        }
+
+        /* Credibility Section */
+        .credibility {
+            padding: 40px 0;
+            border-bottom: 1px solid #f0f0f0;
+        }
+
+        .credibility-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 40px;
+            align-items: center;
+        }
+
+        .credibility-item {
+            text-align: center;
+        }
+
+        .credibility-item .label {
+            font-size: 12px;
+            color: #999;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 8px;
+        }
+
+        .credibility-item .value {
+            font-size: 24px;
+            font-weight: 700;
+            color: #0D5E54;
+        }
+
+        /* Why Hire Me Section */
+        .why-hire {
+            padding: 120px 0;
+            border-bottom: 1px solid #f0f0f0;
+        }
+
+        .why-hire h2 {
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 40px;
+            position: relative;
+            padding-bottom: 12px;
+        }
+
+        .why-hire h2::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 60px;
+            height: 3px;
+            background: #0D5E54;
+            border-radius: 2px;
+        }
+
+        .why-hire-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+        }
+
+        .why-item {
+            padding-bottom: 20px;
+        }
+
+        .why-item h3 {
+            font-size: 16px;
+            font-weight: 700;
+            margin-bottom: 10px;
+            color: #1a1a1a;
+        }
+
+        .why-item p {
+            font-size: 14px;
+            line-height: 1.8;
+            color: #666;
+        }
+
+        /* Timeline Section */
+        .background {
+            padding: 120px 0;
+            border-bottom: 1px solid #f0f0f0;
+        }
+
+        .background h2 {
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 40px;
+            position: relative;
+            padding-bottom: 12px;
+        }
+
+        .background h2::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 60px;
+            height: 3px;
+            background: #0D5E54;
+            border-radius: 2px;
+        }
+
+        .experience-timeline {
+            margin-top: 40px;
+        }
+
+        .timeline-item {
+            margin-bottom: 40px;
+            padding-bottom: 30px;
+            border-bottom: 1px solid #f0f0f0;
+        }
+
+        .timeline-item:last-child {
+            border-bottom: none;
+        }
+
+        .timeline-company {
+            font-size: 18px;
+            font-weight: 700;
+            color: #1a1a1a;
+            margin-bottom: 16px;
+        }
+
+        .timeline-roles {
+            list-style: none;
+            margin-bottom: 16px;
+        }
+
+        .timeline-roles li {
+            font-size: 14px;
+            font-weight: 600;
+            color: #1a1a1a;
+            margin-bottom: 6px;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        .timeline-roles li:before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: #999;
+        }
+
+        .timeline-description {
+            font-size: 14px;
+            color: #666;
+            line-height: 1.7;
+        }
+
+        /* Work Section */
+        .work {
+            padding: 120px 0;
+            border-bottom: 1px solid #f0f0f0;
+        }
+
+        .work h2 {
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 40px;
+            position: relative;
+            padding-bottom: 12px;
+        }
+
+        .work h2::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 60px;
+            height: 3px;
+            background: #0D5E54;
+            border-radius: 2px;
+        }
+
+        .work-item {
+            background: #f9f9f9;
+            padding: 40px;
+            border-radius: 4px;
+            margin-bottom: 40px;
+        }
+
+        .work-item h3 {
+            font-size: 20px;
+            font-weight: 700;
+            color: #1a1a1a;
+            margin-bottom: 8px;
+        }
+
+        .work-item .meta {
+            font-size: 13px;
+            color: #999;
+            margin-bottom: 20px;
+        }
+
+        .work-item p {
+            font-size: 14px;
+            line-height: 1.8;
+            color: #666;
+            margin-bottom: 12px;
+        }
+
+        .work-item strong {
+            color: #0D5E54;
+        }
+
+        .work-metrics {
+            background: white;
+            padding: 16px;
+            border-radius: 4px;
+            margin-top: 16px;
+            font-size: 13px;
+            color: #666;
+        }
+
+        .work-metrics strong {
+            color: #0D5E54;
+        }
+
+        /* Contact Section */
+        .contact {
+            padding: 120px 0;
+        }
+
+        .contact h2 {
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 30px;
+            position: relative;
+            padding-bottom: 12px;
+        }
+
+        .contact h2::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 60px;
+            height: 3px;
+            background: #0D5E54;
+            border-radius: 2px;
+        }
+
+        .contact-content {
+            max-width: 700px;
+        }
+
+        .contact-content p {
+            font-size: 16px;
+            line-height: 1.8;
+            color: #666;
+            margin-bottom: 30px;
+        }
+
+        .contact-links {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .contact-links a {
+            display: inline-block;
+            color: #0D5E54;
+            text-decoration: none;
+            font-weight: 600;
+            padding: 12px 0;
+            border-bottom: 1px solid #f0f0f0;
+            transition: color 0.3s;
+            font-size: 15px;
+        }
+
+        .contact-links a:hover {
+            color: #D4AF37;
+        }
+
+        /* Footer */
+        footer {
+            border-top: 1px solid #f0f0f0;
+            padding: 40px 0;
+            text-align: center;
+            color: #999;
+            font-size: 13px;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            nav .container {
+                padding: 0 20px;
+            }
+
+            nav ul {
+                gap: 20px;
+                font-size: 12px;
+            }
+
+            .container {
+                padding: 0 20px;
+            }
+
+            .hero {
+                padding: 60px 0 40px;
+            }
+
+            .hero h1 {
+                font-size: 32px;
+            }
+
+            .hero-grid {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+
+            .hero-cta {
+                flex-direction: column;
+            }
+
+            .btn {
+                width: 100%;
+                text-align: center;
+            }
+
+            .credibility-content {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+
+            .why-hire-grid {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+
+            .why-hire,
+            .background,
+            .work,
+            .contact {
+                padding: 80px 0;
+            }
+
+            .work-item {
+                padding: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="container">
+            <a href="#" class="logo">Rob Kremers</a>
+            <ul>
+                <li><a href="#why">Why Me</a></li>
+                <li><a href="#background">Background</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Translate complex products into revenue.</h1>
+            <p class="subheading">15+ years building go-to-market strategies at Nike, adidas, and early-stage tech.</p>
+
+            <div class="hero-grid">
+                <div class="hero-left">
+                    <p class="hero-statement">I work at the intersection of product positioning, sales enablement, and customer adoption. Whether it's launching a domain controller for autonomous vehicles, scaling a retail activation across thousands of locations, or building go-to-market strategy from zero.</p>
+                    <div class="hero-cta">
+                        <a href="#contact" class="btn btn-primary">Let's Talk</a>
+                        <a href="#work" class="btn btn-secondary">See Work</a>
+                    </div>
+                </div>
+
+                <div class="hero-featured">
+                    <h3>Featured: adidas DSG Campaign</h3>
+                    <p><strong>Earned Your Spotlight</strong> campaign for Dick's Sporting Goods training apparel launch.</p>
+                    <p>Multi-channel strategy across social, digital, retail, and live activations with top-tier athletes.</p>
+                    <div class="work-metrics">
+                        <strong>55M</strong> impressions | <strong>$2.6M</strong> attributed revenue | <strong>460K</strong> store visits
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Credibility Section -->
+    <section class="credibility">
+        <div class="container">
+            <div class="credibility-content">
+                <div class="credibility-item">
+                    <div class="label">Experience</div>
+                    <div class="value">15+ Years</div>
+                </div>
+                <div class="credibility-item">
+                    <div class="label">Companies</div>
+                    <div class="value">Nike, adidas, TuSimple</div>
+                </div>
+                <div class="credibility-item">
+                    <div class="label">Proven Impact</div>
+                    <div class="value">$2.6M+ Revenue</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Hire Me Section -->
+    <section class="why-hire" id="why">
+        <div class="container">
+            <h2>Why You Should Hire Me</h2>
+            <div class="why-hire-grid">
+                <div class="why-item">
+                    <h3>I've Been in the Trenches</h3>
+                    <p>Worked at massive scale (Nike's global retail) and in chaos (early-stage deep tech like CreateAI). I've built brands, sold products, managed e-commerce operations myself. I know what works and what doesn't. I don't just write a brief and pay an agency to do all the work. I roll my sleeves up and do everything when needed.</p>
+                </div>
+                <div class="why-item">
+                    <h3>I Think Like an Operator</h3>
+                    <p>I'm not here to look good. I'm here to drive business results. That means thinking about adoption, channel health, measurable outcomes. I connect teams that don't normally talk to each other. I translate between engineering, product, sales, and marketing. I'm comfortable being the person who says "here's what needs to happen" and then leads the organization to make it real.</p>
+                </div>
+                <div class="why-item">
+                    <h3>I Speak Multiple Languages</h3>
+                    <p>I'm fluent in brand strategy, sales dynamics, product thinking, and operational reality. This means I can actually connect teams around a shared vision, not just hand off work.</p>
+                </div>
+                <div class="why-item">
+                    <h3>I Build Systems, Not One-Offs</h3>
+                    <p>A good system works across channels, teams, and geographies. It's repeatable. It scales. A campaign is a moment; a system is a permanent capability. The goal is always to build the latter.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Background Section -->
+    <section class="background" id="background">
+        <div class="container">
+            <h2>The Timeline</h2>
+            <div class="experience-timeline">
+                <div class="timeline-item">
+                    <div class="timeline-company">adidas</div>
+                    <ul class="timeline-roles">
+                        <li>Internal Communications Specialist</li>
+                        <li>US Basketball Brand Specialist</li>
+                        <li>Key Account Digital Strategy Manager</li>
+                        <li>Retail Brand Manager, Men's and Women's Training North America</li>
+                        <li>Senior Retail Brand Manager, Global Basketball</li>
+                        <li>Senior Brand Manager, Global Basketball</li>
+                    </ul>
+                    <div class="timeline-description">Worked across a wide variety of functional marketing roles (communications, retail brand, digital, key accounts) all with the same shared objective of driving sales. Built frameworks that enabled markets and retail partners to execute with clarity and consistency.</div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-company">Nike</div>
+                    <ul class="timeline-roles">
+                        <li>Senior Retail Brand Manager, Global Basketball</li>
+                    </ul>
+                    <div class="timeline-description">Delivered seasonal and fiscal year retail brand marketing toolkits to enable markets to activate key product launches and cultural moments.</div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-company">CreateAI (Formerly TuSimple)</div>
+                    <ul class="timeline-roles">
+                        <li>Brand Manager</li>
+                        <li>Head of Marketing</li>
+                    </ul>
+                    <div class="timeline-description">Reporting to the CEO, developed and executed holistic brand and marketing strategies for an autonomous vehicle and generative AI startup.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Work Section -->
+    <section class="work" id="work">
+        <div class="container">
+            <h2>Selected Work & Impact</h2>
+
+            <div class="work-item">
+                <h3>adidas DSG "Earn Your Spotlight" Campaign</h3>
+                <p class="meta">Campaign Strategy / Multi-Channel Activation / Retail + Digital Integration</p>
+                <p><strong>The Insight:</strong> Modern athletes don't just chase wins. They chase personal moments that matter, their own "spotlight moments."</p>
+                <p><strong>What I Developed:</strong> Multi-channel strategy across social, digital, in-store, and live activations. Featured top-tier athletes and influencers. Planned a 10-city nationwide activation tour.</p>
+                <div class="work-metrics">
+                    <strong>55M+</strong> impressions | <strong>2.7M</strong> video views | <strong>$2.6M</strong> attributed revenue | <strong>460K</strong> store visits | <strong>35K</strong> e-commerce orders
+                </div>
+            </div>
+
+            <div class="work-item">
+                <h3>TuSimple Domain Controller Product Launch</h3>
+                <p class="meta">Product Launch / Paid Social & Search / Technical Positioning</p>
+                <p><strong>The Challenge:</strong> Launch complex autonomous vehicle hardware (NVIDIA DRIVE, 254 TOPS GPU) to fleet operators and enterprise customers. Make technical capability resonate with decision-makers.</p>
+                <p><strong>What I Built:</strong> Landing page stacking credibility signals. Hero value prop, technical specs, component deep-dive, reliability credentials (ISO 16750), lead gen model. Paired with paid search and social campaigns targeting fleet operators and AV teams.</p>
+                <p><strong>Result:</strong> High-intent traffic from qualified audience. Positioned Domain Controller as enterprise-grade.</p>
+            </div>
+
+            <div class="work-item">
+                <h3>Nike Global Basketball Retail Brand Playbook</h3>
+                <p class="meta">Brand Strategy / Retail Systems / Global Execution</p>
+                <p><strong>The Challenge:</strong> Create a globally scalable playbook to guide retail partners and market teams on executing brand strategy with consistency across regions and store environments.</p>
+                <p><strong>What I Built:</strong> Structured playbook covering Category, Product, Service, and Environment with guidance on positioning, presentation, service standards, and store design. Foundation for all DTC retail execution worldwide.</p>
+            </div>
+
+            <div class="work-item">
+                <h3>Nike Basketball Retail Storytelling Execution</h3>
+                <p class="meta">Retail Planning / Consumer Journey / Merchandising Alignment</p>
+                <p><strong>The Challenge:</strong> Transform the global playbook into actual retail execution across product launches, brand moments, and seasonal windows. Required coordination across brand, product, and merchandising teams.</p>
+                <p><strong>Impact:</strong> Delivered seasonal and fiscal year toolkits that enabled markets to activate key product launches and cultural moments with brand consistency and local relevance.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2>Let's Talk</h2>
+            <div class="contact-content">
+                <p>I'm actively looking for go-to-market leadership roles where brand, positioning, and strategy matter. Places where you need someone who thinks like an operator and can drive results across teams.</p>
+                <div class="contact-links">
+                    <a href="https://www.linkedin.com/in/robertkremers/" target="_blank">LinkedIn</a>
+                    <a href="mailto:rkremers@gmail.com">Email me</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Rob Kremers. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
