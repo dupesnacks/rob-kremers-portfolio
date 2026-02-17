@@ -263,6 +263,26 @@
             font-weight: 600;
         }
 
+        .order-type {
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .order-custom {
+            background: #fef3e2;
+            color: #d97706;
+        }
+
+        .order-inventory {
+            background: #dcfce7;
+            color: #16a34a;
+        }
+
         /* Footer */
         footer {
             border-top: 1px solid #f0f0f0;
@@ -407,6 +427,14 @@
                     <div class="chart-title">Revenue per Model</div>
                     <canvas id="revenuePerModelChart"></canvas>
                 </div>
+                <div class="chart-container">
+                    <div class="chart-title">Top Trims by Orders</div>
+                    <canvas id="trimChart"></canvas>
+                </div>
+                <div class="chart-container">
+                    <div class="chart-title">Custom vs Inventory Orders</div>
+                    <canvas id="orderTypeChart"></canvas>
+                </div>
             </div>
         </div>
     </section>
@@ -421,8 +449,10 @@
                         <th>Order</th>
                         <th>Date</th>
                         <th>Model</th>
+                        <th>Trim</th>
+                        <th>Type</th>
                         <th>MSRP</th>
-                        <th>FSD Status</th>
+                        <th>FSD</th>
                     </tr>
                 </thead>
                 <tbody id="tableBody">
@@ -442,21 +472,21 @@
     <script>
         // Data
         const orders = [
-            { id: 1, date: '2026-01-11', model: 'Model Y Standard', msrp: 46130, fsd: 'None' },
-            { id: 2, date: '2026-01-16', model: 'Model Y Premium RWD', msrp: 41130, fsd: 'None' },
-            { id: 3, date: '2026-01-17', model: 'Model Y Premium AWD', msrp: 51630, fsd: 'None' },
-            { id: 4, date: '2026-01-17', model: 'Model S AWD', msrp: 102130, fsd: 'None' },
-            { id: 5, date: '2026-01-18', model: 'Model Y Premium AWD', msrp: 51630, fsd: 'Purchased' },
-            { id: 6, date: '2026-01-19', model: 'Model Y Premium AWD', msrp: 58130, fsd: 'None' },
-            { id: 7, date: '2026-01-23', model: 'Model Y Premium', msrp: 50630, fsd: 'None' },
-            { id: 8, date: '2026-01-24', model: 'Model Y Premium AWD', msrp: 50130, fsd: 'None' },
-            { id: 9, date: '2026-01-31', model: 'Model Y Premium AWD', msrp: 56130, fsd: 'None' },
-            { id: 10, date: '2026-02-02', model: 'Model Y Performance AWD', msrp: 66630, fsd: 'Purchased' },
-            { id: 11, date: '2026-02-09', model: 'Model S Plaid', msrp: 114130, fsd: 'None' },
-            { id: 12, date: '2026-02-12', model: 'Model S AWD', msrp: 99490, fsd: 'None' },
-            { id: 13, date: '2026-02-13', model: 'Model X Plaid', msrp: 117490, fsd: 'None' },
-            { id: 14, date: '2026-02-15', model: 'Model Y Premium AWD', msrp: 54130, fsd: 'Transfer' },
-            { id: 15, date: '2026-02-17', model: 'Model Y Premium AWD', msrp: 52630, fsd: 'Subscription' }
+            { id: 1, date: '2026-01-11', model: 'Model Y', trim: 'RWD', msrp: 46130, fsd: 'None', orderType: 'Custom' },
+            { id: 2, date: '2026-01-16', model: 'Model Y', trim: 'Premium RWD', msrp: 41130, fsd: 'None', orderType: 'Custom' },
+            { id: 3, date: '2026-01-17', model: 'Model Y', trim: 'Premium AWD', msrp: 51630, fsd: 'None', orderType: 'Custom' },
+            { id: 4, date: '2026-01-17', model: 'Model S', trim: 'AWD', msrp: 102130, fsd: 'None', orderType: 'Custom' },
+            { id: 5, date: '2026-01-18', model: 'Model Y', trim: 'Premium AWD', msrp: 51630, fsd: 'Purchased', orderType: 'Custom' },
+            { id: 6, date: '2026-01-19', model: 'Model Y', trim: 'Premium AWD', msrp: 58130, fsd: 'None', orderType: 'Custom' },
+            { id: 7, date: '2026-01-23', model: 'Model Y', trim: 'Premium AWD', msrp: 50630, fsd: 'None', orderType: 'Custom' },
+            { id: 8, date: '2026-01-24', model: 'Model Y', trim: 'Premium AWD', msrp: 50130, fsd: 'None', orderType: 'Custom' },
+            { id: 9, date: '2026-01-31', model: 'Model Y', trim: 'Premium AWD', msrp: 56130, fsd: 'None', orderType: 'Custom' },
+            { id: 10, date: '2026-02-02', model: 'Model Y', trim: 'Performance', msrp: 66630, fsd: 'Purchased', orderType: 'Custom' },
+            { id: 11, date: '2026-02-09', model: 'Model S', trim: 'Plaid', msrp: 114130, fsd: 'None', orderType: 'Custom' },
+            { id: 12, date: '2026-02-12', model: 'Model S', trim: 'AWD', msrp: 99490, fsd: 'None', orderType: 'Custom' },
+            { id: 13, date: '2026-02-13', model: 'Model X', trim: 'Plaid', msrp: 117490, fsd: 'None', orderType: 'Custom' },
+            { id: 14, date: '2026-02-15', model: 'Model Y', trim: 'Premium AWD', msrp: 54130, fsd: 'Transfer', orderType: 'Custom' },
+            { id: 15, date: '2026-02-17', model: 'Model Y', trim: 'Premium AWD', msrp: 52630, fsd: 'Subscription', orderType: 'Custom' }
         ];
 
         // Populate table
@@ -464,10 +494,13 @@
         orders.forEach(order => {
             const row = document.createElement('tr');
             const fsdClass = 'fsd-' + order.fsd.toLowerCase().replace(' ', '-');
+            const orderTypeClass = order.orderType === 'Inventory' ? 'order-inventory' : 'order-custom';
             row.innerHTML = `
                 <td class="order-id">#${order.id}</td>
                 <td>${new Date(order.date).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })}</td>
-                <td>${order.model}</td>
+                <td><strong>${order.model}</strong></td>
+                <td>${order.trim}</td>
+                <td><span class="order-type ${orderTypeClass}">${order.orderType}</span></td>
                 <td class="price">$${order.msrp.toLocaleString()}</td>
                 <td><span class="fsd-badge ${fsdClass}">${order.fsd}</span></td>
             `;
@@ -745,6 +778,68 @@
                         ticks: {
                             callback: (value) => '$' + (value / 1000).toFixed(0) + 'K'
                         }
+                    }
+                }
+            }
+        });
+
+        // Trim popularity
+        const trimCounts = {};
+        orders.forEach(o => {
+            const fullTrim = o.model + ' ' + o.trim;
+            trimCounts[fullTrim] = (trimCounts[fullTrim] || 0) + 1;
+        });
+        const sortedTrims = Object.entries(trimCounts).sort((a, b) => b[1] - a[1]).slice(0, 8);
+        const ctx8 = document.getElementById('trimChart').getContext('2d');
+        new Chart(ctx8, {
+            type: 'bar',
+            data: {
+                labels: sortedTrims.map(t => t[0]),
+                datasets: [{
+                    label: 'Orders',
+                    data: sortedTrims.map(t => t[1]),
+                    backgroundColor: '#0D5E54',
+                    borderRadius: 4,
+                    borderSkipped: false
+                }]
+            },
+            options: {
+                indexAxis: 'y',
+                responsive: true,
+                plugins: {
+                    legend: { display: false }
+                },
+                scales: {
+                    x: {
+                        beginAtZero: true,
+                        ticks: { stepSize: 1 }
+                    }
+                }
+            }
+        });
+
+        // Order type breakdown
+        const orderTypeCounts = {
+            'Custom': orders.filter(o => o.orderType === 'Custom').length,
+            'Inventory': orders.filter(o => o.orderType === 'Inventory').length
+        };
+        const ctx9 = document.getElementById('orderTypeChart').getContext('2d');
+        new Chart(ctx9, {
+            type: 'doughnut',
+            data: {
+                labels: Object.keys(orderTypeCounts),
+                datasets: [{
+                    data: Object.values(orderTypeCounts),
+                    backgroundColor: ['#fef3e2', '#dcfce7'],
+                    borderColor: '#ffffff',
+                    borderWidth: 2
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: {
+                        position: 'bottom'
                     }
                 }
             }
