@@ -921,14 +921,14 @@
             <div class="carousel-container">
                 <div class="work-grid" id="workCarousel">
                     <div class="case-study-preview">
-                        <div class="case-study-title">Nike: Global Retail Brand Systems</div>
-                        <div class="case-study-meta">Brand Strategy / Retail Execution / Wholesale Coordination</div>
+                        <div class="case-study-title">Nike Global Basketball Retail Brand Playbook</div>
+                        <div class="case-study-meta">Brand Strategy / Retail Systems / Global Execution</div>
                         <div class="case-study-text">
-                            <p><strong>The Challenge:</strong> Nike needed a unified brand framework that could work across dozens of wholesale partners, multiple regions, and varying customer segments—all while maintaining consistency and flexibility.</p>
-                            <p><strong>What I Did:</strong> Built a modular brand system that gave retail partners clear guidance on positioning, messaging, and activation while maintaining local relevance. The system became the standard across Nike's global wholesale network.</p>
-                            <p><strong>Impact:</strong> [Videos, case study deck, and examples to be added]</p>
+                            <p><strong>The Challenge:</strong> Nike Basketball needed a comprehensive, globally scalable playbook that could guide retail partners, wholesalers, and market teams on how to execute brand strategy with consistency across different regions and store environments.</p>
+                            <p><strong>What I Built:</strong> A structured playbook covering four core pillars — Category, Product, Service, and Environment — with detailed guidance on positioning, product presentation, service standards, and store design. The playbook served as the foundation for all DTC retail execution worldwide.</p>
+                            <p><strong>Impact:</strong> A living system that set the standard for how Nike Basketball should show up in retail, enabling markets and partners to execute with clarity without sacrificing local relevance.</p>
                         </div>
-                        <div class="media-placeholder">Media: Deck, examples, retail activation images coming soon</div>
+                        <div class="media-placeholder" onclick="openModal('nike-playbook')" style="background-image: url('nike-playbook-1.jpg');"></div>
                     </div>
 
                     <div class="case-study-preview">
@@ -1041,16 +1041,32 @@
 
     <script>
         // Modal functions
-        function openModal(videoId) {
+        function openModal(mediaId) {
             const modal = document.getElementById('mediaModal');
             const modalBody = document.getElementById('modalBody');
             
-            if (videoId === 'damien-video') {
+            if (mediaId === 'damien-video') {
                 modalBody.innerHTML = '<iframe class="modal-video" src="https://www.youtube.com/embed/HDYadppg5oU?si=Fzz8DwI2WUYPXUlT" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
+            } else if (mediaId === 'nike-playbook') {
+                modalBody.innerHTML = `
+                    <div style="position: relative;">
+                        <img id="playbookImg" src="nike-playbook-1.jpg" style="width: 100%; height: auto; border-radius: 4px;">
+                        <div style="display: flex; gap: 10px; margin-top: 20px; justify-content: center;">
+                            <button onclick="changePlaybookImage(0)" style="padding: 8px 16px; background: #1a1a1a; color: white; border: none; border-radius: 4px; cursor: pointer;">1</button>
+                            <button onclick="changePlaybookImage(1)" style="padding: 8px 16px; background: #1a1a1a; color: white; border: none; border-radius: 4px; cursor: pointer;">2</button>
+                            <button onclick="changePlaybookImage(2)" style="padding: 8px 16px; background: #1a1a1a; color: white; border: none; border-radius: 4px; cursor: pointer;">3</button>
+                        </div>
+                    </div>
+                `;
             }
             
             modal.classList.add('active');
             document.body.style.overflow = 'hidden';
+        }
+
+        function changePlaybookImage(index) {
+            const images = ['nike-playbook-1.jpg', 'nike-playbook-2.jpg', 'nike-playbook-3.jpg'];
+            document.getElementById('playbookImg').src = images[index];
         }
 
         function closeModal() {
