@@ -447,6 +447,105 @@
             text-align: center;
             padding: 20px;
             margin-top: 20px;
+            cursor: pointer;
+            transition: all 0.3s;
+            position: relative;
+        }
+
+        .media-placeholder:hover {
+            background: #d8d8d8;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .media-placeholder::after {
+            content: "Click to expand";
+            position: absolute;
+            bottom: 12px;
+            font-size: 12px;
+            color: #666;
+            background: rgba(255,255,255,0.9);
+            padding: 4px 8px;
+            border-radius: 3px;
+        }
+
+        /* Modal/Lightbox */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 2000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.8);
+            animation: fadeIn 0.3s;
+        }
+
+        .modal.active {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .modal-content {
+            position: relative;
+            background: white;
+            border-radius: 8px;
+            max-width: 90%;
+            max-height: 90vh;
+            overflow: auto;
+            width: 100%;
+        }
+
+        .modal-close {
+            position: absolute;
+            top: 16px;
+            right: 16px;
+            background: #1a1a1a;
+            color: white;
+            border: none;
+            width: 40px;
+            height: 40px;
+            border-radius: 4px;
+            font-size: 24px;
+            cursor: pointer;
+            z-index: 2001;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: background 0.3s;
+        }
+
+        .modal-close:hover {
+            background: #333;
+        }
+
+        .modal-body {
+            padding: 40px;
+            padding-top: 60px;
+        }
+
+        .modal-video {
+            width: 100%;
+            aspect-ratio: 16 / 9;
+            border-radius: 4px;
+        }
+
+        @media (max-width: 768px) {
+            .modal-body {
+                padding: 20px;
+                padding-top: 50px;
+            }
+
+            .modal-content {
+                max-width: 95%;
+                max-height: 85vh;
+            }
         }
 
         /* Why Work With Me */
@@ -821,6 +920,17 @@
                         </div>
                         <div class="media-placeholder">Media: YouTube video, investor presentation, media features coming soon</div>
                     </div>
+
+                    <div class="case-study-preview">
+                        <div class="case-study-title">Damien Lillard Game 6 Launch Film</div>
+                        <div class="case-study-meta">Brand Storytelling / Content / Identity Positioning</div>
+                        <div class="case-study-text">
+                            <p><strong>The Concept:</strong> A launch film for the Game 6 shoe that goes beyond product specs to tell Damien Lillard's identity. The piece highlights who he is beyond basketball — a son, father, rapper, and leader — rooted in the cities that shaped him: Oakland, Ogden, and Portland.</p>
+                            <p><strong>What Makes It Work:</strong> Rather than focusing on shoe features or performance metrics, the film reflects the campaign's core message: he's more than just an NBA player. It's brand storytelling that connects the product to authentic human narrative.</p>
+                            <p><strong>Impact:</strong> A masterclass in how to build brand around identity, not just product. The film anchors the entire Damien Lillard brand ecosystem.</p>
+                        </div>
+                        <div class="media-placeholder" onclick="openModal('damien-video')">🎬 Watch Launch Film</div>
+                    </div>
                 </div>
                 <div class="carousel-nav" id="carouselNav">
                     <button class="carousel-btn" id="prevBtn" onclick="scrollCarousel(-1)">←</button>
@@ -830,39 +940,7 @@
         </div>
     </section>
 
-    <script>
-        const carousel = document.getElementById('workCarousel');
-        const prevBtn = document.getElementById('prevBtn');
-        const nextBtn = document.getElementById('nextBtn');
-        const cases = document.querySelectorAll('.case-study-preview');
-        let currentIndex = 0;
 
-        function scrollCarousel(direction) {
-            currentIndex += direction;
-            
-            if (currentIndex < 0) currentIndex = 0;
-            if (currentIndex > cases.length - 1) currentIndex = cases.length - 1;
-            
-            const scrollAmount = cases[currentIndex].offsetWidth + 20;
-            carousel.scrollLeft = currentIndex * scrollAmount;
-            
-            updateButtons();
-        }
-
-        function updateButtons() {
-            prevBtn.disabled = currentIndex === 0;
-            nextBtn.disabled = currentIndex === cases.length - 1;
-        }
-
-        carousel.addEventListener('scroll', () => {
-            const scrollPosition = carousel.scrollLeft;
-            const itemWidth = cases[0].offsetWidth + 20;
-            currentIndex = Math.round(scrollPosition / itemWidth);
-            updateButtons();
-        });
-
-        updateButtons();
-    </script>
 
     <!-- Why Hire Me -->
     <section class="why-hire">
@@ -918,5 +996,84 @@
             <p>&copy; 2026 Rob Kremers. All rights reserved.</p>
         </div>
     </footer>
+
+    <!-- Media Modal -->
+    <div id="mediaModal" class="modal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal()">×</button>
+            <div class="modal-body" id="modalBody">
+                <!-- Content will be inserted here -->
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Modal functions
+        function openModal(videoId) {
+            const modal = document.getElementById('mediaModal');
+            const modalBody = document.getElementById('modalBody');
+            
+            if (videoId === 'damien-video') {
+                modalBody.innerHTML = '<iframe class="modal-video" src="https://www.youtube.com/embed/HDYadppg5oU?si=Fzz8DwI2WUYPXUlT" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
+            }
+            
+            modal.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeModal() {
+            const modal = document.getElementById('mediaModal');
+            modal.classList.remove('active');
+            document.body.style.overflow = 'auto';
+        }
+
+        // Close modal when clicking outside the content
+        window.onclick = function(event) {
+            const modal = document.getElementById('mediaModal');
+            if (event.target === modal) {
+                closeModal();
+            }
+        }
+
+        // Close modal with Escape key
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'Escape') {
+                closeModal();
+            }
+        });
+
+        // Carousel functions
+        const carousel = document.getElementById('workCarousel');
+        const prevBtn = document.getElementById('prevBtn');
+        const nextBtn = document.getElementById('nextBtn');
+        const cases = document.querySelectorAll('.case-study-preview');
+        let currentIndex = 0;
+
+        function scrollCarousel(direction) {
+            currentIndex += direction;
+            
+            if (currentIndex < 0) currentIndex = 0;
+            if (currentIndex > cases.length - 1) currentIndex = cases.length - 1;
+            
+            const scrollAmount = cases[currentIndex].offsetWidth + 20;
+            carousel.scrollLeft = currentIndex * scrollAmount;
+            
+            updateButtons();
+        }
+
+        function updateButtons() {
+            prevBtn.disabled = currentIndex === 0;
+            nextBtn.disabled = currentIndex === cases.length - 1;
+        }
+
+        carousel.addEventListener('scroll', () => {
+            const scrollPosition = carousel.scrollLeft;
+            const itemWidth = cases[0].offsetWidth + 20;
+            currentIndex = Math.round(scrollPosition / itemWidth);
+            updateButtons();
+        });
+
+        updateButtons();
+    </script>
 </body>
 </html>
