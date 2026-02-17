@@ -1158,6 +1158,18 @@
                     </div>
 
                     <div class="case-study-preview">
+                        <div class="case-study-title">adidas D Rose 10 Launch Film</div>
+                        <div class="case-study-meta">Product Launch / Archival Storytelling / Retail & Social Content</div>
+                        <div class="case-study-text">
+                            <p><strong>The Concept:</strong> A stop-motion inspired film for the D Rose 10 launch that moves beyond product features to celebrate Derrick Rose's legacy. Using archival stills from his adidas journey, the piece creates a visual timeline of his career accolades and signature moments.</p>
+                            <p><strong>The Approach:</strong> Rather than traditional product launch content, this film treats the shoe as the culmination of a legacy. Each frame from Derrick's career—the accolades, the signature plays, the evolution—builds toward the design itself. It's about honoring what came before.</p>
+                            <p><strong>Distribution:</strong> Deployed at retail in China and across social media, reaching a global audience of fans who grew up with Derrick Rose and new audiences discovering his impact.</p>
+                            <p><strong>Impact:</strong> Proved that product launch content doesn't need to be about specs. When you connect the product to authentic human legacy, you create emotional resonance that drives both retail impact and social conversation.</p>
+                        </div>
+                        <div class="media-placeholder" onclick="openModal('drose-10-video')" style="background-image: url('https://img.youtube.com/vi/QGfa4L0YtHo/hqdefault.jpg');"></div>
+                    </div>
+
+                    <div class="case-study-preview">
                         <div class="case-study-title">TuSimple: My Story Trailer Campaign</div>
                         <div class="case-study-meta">Internal Storytelling / Brand Humanization / Documentary</div>
                         <div class="case-study-text">
@@ -1205,7 +1217,7 @@
                 <button class="carousel-btn carousel-btn-right" id="nextBtn" onclick="scrollCarousel(1)">→</button>
             </div>
             <div class="carousel-indicator">
-                <span id="carouselCounter">1 of 8</span> • <span class="carousel-hint">Click arrows or swipe to explore</span>
+                <span id="carouselCounter">1 of 9</span> • <span class="carousel-hint">Click arrows or swipe to explore</span>
             </div>
         </div>
     </section>
@@ -1285,6 +1297,8 @@
             
             if (mediaId === 'damien-video') {
                 modalBody.innerHTML = '<iframe class="modal-video" src="https://www.youtube.com/embed/HDYadppg5oU?si=Fzz8DwI2WUYPXUlT" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
+            } else if (mediaId === 'drose-10-video') {
+                modalBody.innerHTML = '<iframe class="modal-video" src="https://www.youtube.com/embed/QGfa4L0YtHo?si=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
             } else if (mediaId === 'tusimple-story') {
                 modalBody.innerHTML = '<iframe class="modal-video" src="https://www.youtube.com/embed/sA1RdMNJCoE?si=Hyn3XJym2LJF07Nr" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
             } else if (mediaId === 'tusimple-ev-brand') {
