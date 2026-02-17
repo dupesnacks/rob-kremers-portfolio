@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Rob Kremers - Brand & Growth Leader. Translating complex innovation into market impact and revenue-driven execution.">
-    <title>Rob Kremers | Brand & Growth Leader</title>
+    <meta name="description" content="Rob Kremers - Strategic operator building scalable brand systems that drive revenue. From autonomous vehicles to global retail at Nike and adidas.">
+    <title>Rob Kremers | Strategic Brand & Growth Operator</title>
     <style>
         * {
             margin: 0;
@@ -77,7 +77,7 @@
 
         /* Hero Section */
         .hero {
-            padding: 120px 0;
+            padding: 140px 0 100px;
             border-bottom: 1px solid #f0f0f0;
         }
 
@@ -89,13 +89,25 @@
             letter-spacing: -1px;
         }
 
-        .hero .tagline {
-            font-size: 24px;
+        .hero .subheading {
+            font-size: 20px;
             color: #666;
             margin-bottom: 30px;
             max-width: 700px;
             font-weight: 400;
-            line-height: 1.4;
+            line-height: 1.5;
+        }
+
+        .hero-statement {
+            font-size: 16px;
+            line-height: 1.8;
+            color: #333;
+            max-width: 700px;
+            margin-bottom: 40px;
+        }
+
+        .hero-statement strong {
+            font-weight: 600;
         }
 
         .hero-cta {
@@ -135,134 +147,208 @@
             background: #f5f5f5;
         }
 
-        /* About Section */
-        .about {
+        /* Positioning Section */
+        .positioning {
             padding: 120px 0;
             border-bottom: 1px solid #f0f0f0;
         }
 
-        .section-title {
+        .positioning h2 {
             font-size: 28px;
-            margin-bottom: 40px;
             font-weight: 700;
+            margin-bottom: 40px;
         }
 
-        .about-content {
+        .positioning-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 80px;
             align-items: start;
         }
 
-        .about-bio {
+        .positioning-left {
             font-size: 16px;
             line-height: 1.8;
             color: #333;
         }
 
-        .about-bio p {
+        .positioning-left p {
             margin-bottom: 20px;
         }
 
-        .experience-list {
+        .positioning-right {
+            background: #f9f9f9;
+            padding: 40px;
+            border-radius: 4px;
+        }
+
+        .positioning-right h3 {
+            font-size: 14px;
+            font-weight: 700;
+            color: #666;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 20px;
+        }
+
+        .positioning-right ul {
             list-style: none;
         }
 
-        .experience-item {
-            margin-bottom: 24px;
-            padding-bottom: 24px;
-            border-bottom: 1px solid #f0f0f0;
+        .positioning-right li {
+            padding: 12px 0;
+            border-bottom: 1px solid #e8e8e8;
+            font-size: 15px;
+            line-height: 1.6;
         }
 
-        .experience-item:last-child {
+        .positioning-right li:last-child {
             border-bottom: none;
         }
 
-        .experience-item strong {
-            display: block;
-            font-size: 14px;
+        /* Background Section */
+        .background {
+            padding: 120px 0;
+            border-bottom: 1px solid #f0f0f0;
+        }
+
+        .background h2 {
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 40px;
+        }
+
+        .background-narrative {
+            font-size: 16px;
+            line-height: 1.8;
+            color: #333;
+            max-width: 800px;
+        }
+
+        .background-narrative p {
+            margin-bottom: 20px;
+        }
+
+        .background-narrative strong {
+            font-weight: 600;
+        }
+
+        .experience-timeline {
+            margin-top: 60px;
+            padding-top: 40px;
+            border-top: 1px solid #f0f0f0;
+        }
+
+        .experience-timeline h3 {
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 40px;
+        }
+
+        .timeline-item {
+            margin-bottom: 40px;
+            padding-bottom: 30px;
+            border-bottom: 1px solid #f0f0f0;
+        }
+
+        .timeline-item:last-child {
+            border-bottom: none;
+        }
+
+        .timeline-company {
+            font-size: 16px;
             font-weight: 700;
             color: #1a1a1a;
-            margin-bottom: 4px;
+            margin-bottom: 8px;
         }
 
-        .experience-item span {
-            font-size: 13px;
-            color: #999;
+        .timeline-description {
+            font-size: 14px;
+            color: #666;
+            line-height: 1.7;
         }
 
-        /* Work Section */
+        /* Approach Section */
+        .approach {
+            padding: 120px 0;
+            border-bottom: 1px solid #f0f0f0;
+        }
+
+        .approach h2 {
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 40px;
+        }
+
+        .approach-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+        }
+
+        .approach-item {
+            padding-bottom: 30px;
+        }
+
+        .approach-item h3 {
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 12px;
+            color: #1a1a1a;
+        }
+
+        .approach-item p {
+            font-size: 14px;
+            line-height: 1.8;
+            color: #666;
+        }
+
+        /* Case Studies Preview */
         .work {
             padding: 120px 0;
             border-bottom: 1px solid #f0f0f0;
         }
 
+        .work h2 {
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 40px;
+        }
+
         .work-grid {
             display: grid;
             grid-template-columns: 1fr;
-            gap: 80px;
+            gap: 60px;
         }
 
-        .case-study {
+        .case-study-preview {
             padding: 40px;
             background: #f9f9f9;
             border-radius: 4px;
         }
 
-        .case-study-header {
-            margin-bottom: 30px;
-        }
-
         .case-study-title {
-            font-size: 24px;
+            font-size: 20px;
             font-weight: 700;
-            margin-bottom: 12px;
+            margin-bottom: 10px;
+            color: #1a1a1a;
         }
 
         .case-study-meta {
             font-size: 13px;
             color: #999;
+            margin-bottom: 20px;
         }
 
-        .case-study-content {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 40px;
-        }
-
-        .case-study-section {
-            display: none;
-        }
-
-        .case-study-section.active {
-            display: block;
-        }
-
-        .case-study-section h4 {
-            font-size: 13px;
-            font-weight: 700;
+        .case-study-text {
+            font-size: 14px;
+            line-height: 1.8;
             color: #666;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-            margin-bottom: 12px;
         }
 
-        .case-study-section p {
-            font-size: 14px;
-            line-height: 1.8;
-            color: #333;
-            margin-bottom: 16px;
-        }
-
-        .case-study-section ul {
-            margin-left: 20px;
-            font-size: 14px;
-            line-height: 1.8;
-        }
-
-        .case-study-section li {
-            margin-bottom: 8px;
-            color: #333;
+        .case-study-text strong {
+            font-weight: 600;
+            color: #1a1a1a;
         }
 
         .media-placeholder {
@@ -273,34 +359,42 @@
             align-items: center;
             justify-content: center;
             color: #999;
-            font-size: 14px;
+            font-size: 13px;
             text-align: center;
             padding: 20px;
+            margin-top: 20px;
         }
 
-        /* Capabilities Section */
-        .capabilities {
+        /* Why Work With Me */
+        .why-hire {
             padding: 120px 0;
             border-bottom: 1px solid #f0f0f0;
         }
 
-        .capabilities-grid {
+        .why-hire h2 {
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 40px;
+        }
+
+        .why-hire-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 40px;
+            gap: 60px;
         }
 
-        .capability-item {
-            padding-bottom: 30px;
+        .why-item {
+            padding-bottom: 20px;
         }
 
-        .capability-item h3 {
+        .why-item h3 {
             font-size: 16px;
             font-weight: 700;
-            margin-bottom: 12px;
+            margin-bottom: 10px;
+            color: #1a1a1a;
         }
 
-        .capability-item p {
+        .why-item p {
             font-size: 14px;
             line-height: 1.8;
             color: #666;
@@ -311,8 +405,14 @@
             padding: 120px 0;
         }
 
+        .contact h2 {
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 30px;
+        }
+
         .contact-content {
-            max-width: 600px;
+            max-width: 700px;
         }
 
         .contact-content p {
@@ -336,6 +436,7 @@
             padding: 12px 0;
             border-bottom: 1px solid #f0f0f0;
             transition: color 0.3s;
+            font-size: 15px;
         }
 
         .contact-links a:hover {
@@ -366,14 +467,14 @@
             }
 
             .hero {
-                padding: 80px 0;
+                padding: 80px 0 60px;
             }
 
             .hero h1 {
                 font-size: 36px;
             }
 
-            .hero .tagline {
+            .hero .subheading {
                 font-size: 18px;
             }
 
@@ -386,21 +487,19 @@
                 text-align: center;
             }
 
-            .about {
-                padding: 80px 0;
-            }
-
-            .about-content {
+            .positioning-grid,
+            .approach-grid,
+            .why-hire-grid {
                 grid-template-columns: 1fr;
                 gap: 40px;
             }
 
-            .case-study-content {
-                grid-template-columns: 1fr;
+            .positioning {
+                padding: 80px 0;
             }
 
-            .capabilities-grid {
-                grid-template-columns: 1fr;
+            .approach {
+                padding: 80px 0;
             }
 
             .work {
@@ -422,12 +521,13 @@
                 font-size: 28px;
             }
 
-            .hero .tagline {
+            .hero .subheading {
                 font-size: 16px;
             }
 
-            .section-title {
-                font-size: 22px;
+            .approach-grid,
+            .why-hire-grid {
+                grid-template-columns: 1fr;
             }
         }
     </style>
@@ -438,9 +538,9 @@
         <div class="container">
             <a href="#" class="logo">Rob Kremers</a>
             <ul>
-                <li><a href="#about">About</a></li>
+                <li><a href="#positioning">Who I Am</a></li>
                 <li><a href="#work">Work</a></li>
-                <li><a href="#capabilities">Capabilities</a></li>
+                <li><a href="#approach">Approach</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
@@ -449,48 +549,128 @@
     <!-- Hero Section -->
     <section class="hero">
         <div class="container">
-            <h1>Brand & Growth Leader</h1>
-            <p class="tagline">Translating complex innovation into scalable execution and market impact. Strategy that drives revenue.</p>
+            <h1>I build brands that scale.</h1>
+            <p class="subheading">Turning complex innovation into market impact and revenue-driven execution.</p>
+            <p class="hero-statement">
+                For 15+ years, I've led teams at Nike, adidas, Tesla, and early-stage tech companies to build <strong>scalable brand systems that connect strategy to sales to revenue</strong>. From global retail infrastructure to autonomous vehicle storytelling to e-commerce go-to-market execution—I specialize in the unsexy work: making complex things simple, aligning teams around a mission, and driving measurable results.
+            </p>
+            <p class="hero-statement">
+                I'm looking for roles where brand marketing, growth, and strategy intersect. Places where <strong>you need someone who thinks like an operator, not just a marketer.</strong>
+            </p>
             <div class="hero-cta">
-                <a href="#work" class="btn btn-primary">View Work</a>
-                <a href="#contact" class="btn btn-secondary">Connect</a>
+                <a href="#work" class="btn btn-primary">See The Work</a>
+                <a href="#contact" class="btn btn-secondary">Let's Talk</a>
             </div>
         </div>
     </section>
 
-    <!-- About Section -->
-    <section class="about" id="about">
+    <!-- Positioning Section -->
+    <section class="positioning" id="positioning">
         <div class="container">
-            <h2 class="section-title">About</h2>
-            <div class="about-content">
-                <div class="about-bio">
-                    <p>15+ years of global brand marketing leadership across retail, direct-to-consumer, and technical innovation. I specialize in building scalable brand systems, aligning marketing with revenue execution, and turning complex products into compelling market strategies.</p>
-                    <p>My work spans autonomous vehicles and generative AI to global retail at Nike and adidas. The throughline is clear: <strong>Strategy → Structure → Execution → Revenue</strong>.</p>
-                    <p>I lead cross-functional teams, connect marketing with sales and product, and drive measurable sell-through and adoption at scale.</p>
+            <h2>What I Actually Do</h2>
+            <div class="positioning-grid">
+                <div class="positioning-left">
+                    <p>
+                        I don't build creative campaigns or design brand identities. <strong>I build brand systems that work across organizations.</strong>
+                    </p>
+                    <p>
+                        This means taking a complex product or market opportunity and translating it into a structured framework that marketing, sales, and product can all execute against. It means aligning incentives. It means removing ambiguity. It means <strong>revenue.</strong>
+                    </p>
+                    <p>
+                        I've done this at scale (Nike's global retail operations, adidas's Amazon launch) and in chaos (early TuSimple, pre-profitability Tesla). The pattern is always the same: <strong>Strategy → Clear Structure → Execution → Results.</strong>
+                    </p>
                 </div>
-                <div>
-                    <ul class="experience-list">
-                        <li class="experience-item">
-                            <strong>Nike</strong>
-                            <span>Global retail brand systems and market execution</span>
-                        </li>
-                        <li class="experience-item">
-                            <strong>adidas</strong>
-                            <span>Amazon launch strategy and wholesale growth</span>
-                        </li>
-                        <li class="experience-item">
-                            <strong>Columbia Sportswear</strong>
-                            <span>In-store brand communications and retail activation</span>
-                        </li>
-                        <li class="experience-item">
-                            <strong>TuSimple / CreateAI</strong>
-                            <span>Technical storytelling for autonomous vehicles and generative AI</span>
-                        </li>
-                        <li class="experience-item">
-                            <strong>Tesla</strong>
-                            <span>Frontline sales execution and product fluency in mission-driven tech</span>
-                        </li>
+                <div class="positioning-right">
+                    <h3>Core Strengths</h3>
+                    <ul>
+                        <li><strong>Brand Strategy & Systems</strong> — Building frameworks that work globally and scale.</li>
+                        <li><strong>Go-To-Market Execution</strong> — From launch planning to channel strategy to sales enablement.</li>
+                        <li><strong>Technical Translation</strong> — Making complex products (AI, autonomous vehicles, innovative tech) clear and compelling.</li>
+                        <li><strong>Retail & Channel Marketing</strong> — Deep experience with wholesale, e-commerce, and direct retail.</li>
+                        <li><strong>Cross-Functional Leadership</strong> — Connecting silos between marketing, sales, product, and operations.</li>
+                        <li><strong>Growth & Sell-Through</strong> — Designing activation and measurement discipline.</li>
                     </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Background Section -->
+    <section class="background">
+        <div class="container">
+            <h2>My Background (The Throughline)</h2>
+            <div class="background-narrative">
+                <p>
+                    I started in traditional brand marketing at <strong>Columbia Sportswear</strong>, where I built in-store communications and retail activation strategies. It taught me the power of <strong>clarity at point of purchase</strong> — when a customer is standing in front of your product, everything you've done in marketing either works or doesn't.
+                </p>
+                <p>
+                    Then I moved to <strong>adidas</strong>, where I managed the Amazon launch and wholesale growth strategy. This was the inflection point: I learned that <strong>brand marketing and revenue are not separate things.</strong> A great brand strategy means nothing if it doesn't drive sell-through and adoption. I learned to think in terms of channel dynamics, retail partnerships, and measurable performance.
+                </p>
+                <p>
+                    At <strong>Nike</strong>, I built global retail brand systems. This was massive in scope — coordinating brand execution across stores, regions, and dozens of wholesale partners. <strong>The challenge wasn't creativity; it was structure.</strong> How do you give a global organization a clear framework for execution? How do you make consistency possible at scale?
+                </p>
+                <p>
+                    Then everything changed. I went to <strong>Tesla</strong> as a frontline sales team member, then moved into product communications and sales enablement. It was deliberately humbling. I needed to understand <strong>what happens when brand meets reality</strong> — how a customer experiences your product, what questions they have, what really matters to them. This reset how I think about everything.
+                </p>
+                <p>
+                    Most recently, I've been at <strong>TuSimple and CreateAI</strong>, leading technical storytelling and positioning for autonomous vehicles and generative AI. This taught me how to <strong>translate cutting-edge innovation into compelling narratives</strong> for investors, customers, and the market. When your product is genuinely new, clarity becomes your competitive advantage.
+                </p>
+            </div>
+
+            <div class="experience-timeline">
+                <h3>The Companies</h3>
+                <div class="timeline-item">
+                    <div class="timeline-company">Nike</div>
+                    <div class="timeline-description">Global retail brand systems, market execution, wholesale partnership coordination, brand consistency at scale.</div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-company">adidas</div>
+                    <div class="timeline-description">Amazon launch strategy, wholesale growth, e-commerce positioning, channel go-to-market, sell-through optimization.</div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-company">Columbia Sportswear</div>
+                    <div class="timeline-description">Retail activation, in-store communications, merchandising strategy, point-of-purchase brand clarity.</div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-company">Tesla</div>
+                    <div class="timeline-description">Frontline sales execution, product fluency, customer experience, sales enablement, product communications.</div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-company">TuSimple / CreateAI</div>
+                    <div class="timeline-description">Technical storytelling, positioning for deep tech, investor communications, market narrative building, AI/autonomous vehicle translation.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Approach Section -->
+    <section class="approach" id="approach">
+        <div class="container">
+            <h2>How I Think About Work</h2>
+            <div class="approach-grid">
+                <div class="approach-item">
+                    <h3>Start With Strategy, Not Tactics</h3>
+                    <p>Every project begins with clarity: What's the actual problem? What are we trying to achieve? What's the market opportunity? Only after those questions are answered do we move to execution. Too many marketing teams skip this step.</p>
+                </div>
+                <div class="approach-item">
+                    <h3>Build Systems, Not Campaigns</h3>
+                    <p>I think in frameworks. A good system works across channels, teams, and geographies. It's repeatable. It scales. A campaign is a moment; a system is a permanent capability. The goal is always to build the latter.</p>
+                </div>
+                <div class="approach-item">
+                    <h3>Connect Marketing to Revenue</h3>
+                    <p>Marketing's job isn't to look good—it's to drive business results. This means thinking about sell-through, adoption, channel health, and measurable outcomes. It means understanding how sales and operations actually work.</p>
+                </div>
+                <div class="approach-item">
+                    <h3>Lead Across Silos</h3>
+                    <p>The best marketing decisions require input from product, sales, operations, and customer teams. But someone has to connect those dots. That's often me. I'm comfortable being the person who says "here's what needs to happen" and then leads the organization to make it real.</p>
+                </div>
+                <div class="approach-item">
+                    <h3>Clarity Over Complexity</h3>
+                    <p>If you can't explain something simply, you don't understand it well enough. Whether it's a brand system, a product story, or a go-to-market plan, my job is to take complexity and make it clear, compelling, and actionable.</p>
+                </div>
+                <div class="approach-item">
+                    <h3>Measure What Matters</h3>
+                    <p>Data without context is noise. I focus on metrics that actually matter: sell-through, adoption, revenue impact, customer acquisition cost. Numbers should tell a story and inform decisions.</p>
                 </div>
             </div>
         </div>
@@ -499,163 +679,83 @@
     <!-- Work Section -->
     <section class="work" id="work">
         <div class="container">
-            <h2 class="section-title">Selected Work</h2>
+            <h2>Selected Work & Impact</h2>
             <div class="work-grid">
-                <!-- Case Study Template 1: Nike -->
-                <div class="case-study">
-                    <div class="case-study-header">
-                        <h3 class="case-study-title">Nike Global Retail Brand Systems</h3>
-                        <p class="case-study-meta">Global Retail / Brand Strategy / Market Execution</p>
+                <div class="case-study-preview">
+                    <div class="case-study-title">Nike: Global Retail Brand Systems</div>
+                    <div class="case-study-meta">Brand Strategy / Retail Execution / Wholesale Coordination</div>
+                    <div class="case-study-text">
+                        <p><strong>The Challenge:</strong> Nike needed a unified brand framework that could work across dozens of wholesale partners, multiple regions, and varying customer segments—all while maintaining consistency and flexibility.</p>
+                        <p><strong>What I Did:</strong> Built a modular brand system that gave retail partners clear guidance on positioning, messaging, and activation while maintaining local relevance. The system became the standard across Nike's global wholesale network.</p>
+                        <p><strong>Impact:</strong> [Videos, case study deck, and examples to be added]</p>
                     </div>
-                    <div class="case-study-content">
-                        <div>
-                            <div class="case-study-section">
-                                <h4>Business Problem</h4>
-                                <p>[To be added: Context on retail challenge and Nike's position]</p>
-                            </div>
-                            <div class="case-study-section">
-                                <h4>Strategic Approach</h4>
-                                <ul>
-                                    <li>[Insight 1]</li>
-                                    <li>[Insight 2]</li>
-                                    <li>[Insight 3]</li>
-                                </ul>
-                            </div>
-                            <div class="case-study-section">
-                                <h4>Execution Framework</h4>
-                                <p>[To be added: How the strategy was operationalized]</p>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="media-placeholder">Media: Images, videos, or presentation decks to be added</div>
-                        </div>
-                    </div>
+                    <div class="media-placeholder">Media: Deck, examples, retail activation images coming soon</div>
                 </div>
 
-                <!-- Case Study Template 2: adidas Amazon -->
-                <div class="case-study">
-                    <div class="case-study-header">
-                        <h3 class="case-study-title">adidas Amazon Launch & Wholesale Growth</h3>
-                        <p class="case-study-meta">Channel Strategy / Growth / Go-To-Market</p>
+                <div class="case-study-preview">
+                    <div class="case-study-title">adidas: Amazon Launch & Wholesale Growth</div>
+                    <div class="case-study-meta">Channel Strategy / Go-To-Market / E-Commerce Positioning</div>
+                    <div class="case-study-text">
+                        <p><strong>The Challenge:</strong> adidas needed a structured approach to Amazon, a channel that was both massive opportunity and significant risk (brand control, pricing pressure, competition with third-party sellers).</p>
+                        <p><strong>What I Did:</strong> Developed a comprehensive channel strategy that positioned adidas as a premium player on Amazon while protecting brand integrity. This included positioning, product strategy, and retail partnership coordination.</p>
+                        <p><strong>Impact:</strong> [Growth metrics, strategy deck, and execution examples to be added]</p>
                     </div>
-                    <div class="case-study-content">
-                        <div>
-                            <div class="case-study-section">
-                                <h4>Business Problem</h4>
-                                <p>[To be added: Amazon channel strategy challenge]</p>
-                            </div>
-                            <div class="case-study-section">
-                                <h4>Strategic Approach</h4>
-                                <ul>
-                                    <li>[Insight 1]</li>
-                                    <li>[Insight 2]</li>
-                                    <li>[Insight 3]</li>
-                                </ul>
-                            </div>
-                            <div class="case-study-section">
-                                <h4>Business Outcome</h4>
-                                <p>[To be added: Measurable results and sell-through impact]</p>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="media-placeholder">Media: Presentation decks, dashboards, or strategy documents</div>
-                        </div>
-                    </div>
+                    <div class="media-placeholder">Media: Channel analysis, growth charts, strategy presentation coming soon</div>
                 </div>
 
-                <!-- Case Study Template 3: TuSimple/CreateAI -->
-                <div class="case-study">
-                    <div class="case-study-header">
-                        <h3 class="case-study-title">TuSimple / CreateAI: Technical Product Storytelling</h3>
-                        <p class="case-study-meta">Technical Communications / Positioning / Product Translation</p>
+                <div class="case-study-preview">
+                    <div class="case-study-title">TuSimple / CreateAI: Technical Product Storytelling</div>
+                    <div class="case-study-meta">Technical Communications / Positioning / Investor Narrative</div>
+                    <div class="case-study-text">
+                        <p><strong>The Challenge:</strong> How do you make autonomous vehicles and generative AI compelling to investors, customers, and the market when the technology is cutting-edge and genuinely novel? Traditional marketing doesn't work.</p>
+                        <p><strong>What I Did:</strong> Built a narrative framework that translated complex tech into clear, compelling stories about what the technology actually does, why it matters, and how it changes the game. This became the foundation for investor pitches, customer communications, and media strategy.</p>
+                        <p><strong>Impact:</strong> [YouTube videos, investor deck, and narrative examples to be added]</p>
                     </div>
-                    <div class="case-study-content">
-                        <div>
-                            <div class="case-study-section">
-                                <h4>Business Problem</h4>
-                                <p>[To be added: How to communicate complex autonomous/AI technology to investors, customers, and market]</p>
-                            </div>
-                            <div class="case-study-section">
-                                <h4>Strategic Approach</h4>
-                                <ul>
-                                    <li>[Insight 1]</li>
-                                    <li>[Insight 2]</li>
-                                    <li>[Insight 3]</li>
-                                </ul>
-                            </div>
-                            <div class="case-study-section">
-                                <h4>Impact</h4>
-                                <p>[To be added: How positioning shifted market perception or drove adoption]</p>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="media-placeholder">Media: YouTube video, investor deck, or narrative examples</div>
-                        </div>
-                    </div>
+                    <div class="media-placeholder">Media: YouTube video, investor presentation, media features coming soon</div>
                 </div>
 
-                <!-- Case Study Template 4: Tesla -->
-                <div class="case-study">
-                    <div class="case-study-header">
-                        <h3 class="case-study-title">Tesla: Frontline Sales & Product Fluency</h3>
-                        <p class="case-study-meta">Sales Enablement / Product Marketing / Customer Engagement</p>
+                <div class="case-study-preview">
+                    <div class="case-study-title">Tesla: Frontline Sales & Product Fluency</div>
+                    <div class="case-study-meta">Sales Enablement / Product Communications / Customer Experience</div>
+                    <div class="case-study-text">
+                        <p><strong>The Challenge:</strong> Tesla's product is genuinely innovative, but customers had lots of questions. Sales team needed to be fluent in product specs, but also in the story—why this product matters, what problem it solves, how to articulate value.</p>
+                        <p><strong>What I Did:</strong> Built product communication frameworks and sales enablement that gave the team clarity on both specs and narrative. Focused on what actually matters to customers and how to articulate competitive advantage.</p>
+                        <p><strong>Impact:</strong> [Customer testimonials, sales playbook examples, and customer feedback to be added]</p>
                     </div>
-                    <div class="case-study-content">
-                        <div>
-                            <div class="case-study-section">
-                                <h4>Business Problem</h4>
-                                <p>[To be added: Sales readiness and product knowledge challenge]</p>
-                            </div>
-                            <div class="case-study-section">
-                                <h4>Strategic Approach</h4>
-                                <ul>
-                                    <li>[Insight 1]</li>
-                                    <li>[Insight 2]</li>
-                                    <li>[Insight 3]</li>
-                                </ul>
-                            </div>
-                            <div class="case-study-section">
-                                <h4>Outcome</h4>
-                                <p>[To be added: Measurable improvements in customer experience and conversion]</p>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="media-placeholder">Media: Customer testimonials, training materials, or execution examples</div>
-                        </div>
-                    </div>
+                    <div class="media-placeholder">Media: Customer testimonials, training materials, sales examples coming soon</div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Capabilities Section -->
-    <section class="capabilities" id="capabilities">
+    <!-- Why Hire Me -->
+    <section class="why-hire">
         <div class="container">
-            <h2 class="section-title">Capabilities</h2>
-            <div class="capabilities-grid">
-                <div class="capability-item">
-                    <h3>Brand Strategy & Systems</h3>
-                    <p>Building scalable brand frameworks that align marketing, sales, and product. Creating structured systems that work globally across retail, DTC, and channel partners.</p>
+            <h2>Why You Should Hire Me</h2>
+            <div class="why-hire-grid">
+                <div class="why-item">
+                    <h3>I Speak Multiple Languages</h3>
+                    <p>I'm fluent in brand strategy, sales dynamics, product thinking, and operational reality. This means I can actually connect teams around a shared vision—not just hand off work.</p>
                 </div>
-                <div class="capability-item">
-                    <h3>Retail & Channel Marketing</h3>
-                    <p>Go-to-market strategy for retail launches, wholesale partnerships, and channel growth. Translating brand into retail execution with measurement discipline.</p>
+                <div class="why-item">
+                    <h3>I've Been in the Trenches</h3>
+                    <p>I've worked at massive scale (Nike) and in chaos (early Tesla, TuSimple). I've sold products myself. I've built global retail systems. I know what works and what doesn't.</p>
                 </div>
-                <div class="capability-item">
-                    <h3>Technical Product Translation</h3>
-                    <p>Turning complex products (autonomous vehicles, AI, innovative tech) into compelling narratives for investors, customers, and market. Clarity from complexity.</p>
+                <div class="why-item">
+                    <h3>I Think Like an Operator</h3>
+                    <p>I'm not here to create beautiful campaigns. I'm here to drive business results. That means thinking about execution, measurement, revenue impact, and what actually matters to the business.</p>
                 </div>
-                <div class="capability-item">
-                    <h3>Go-To-Market Systems</h3>
-                    <p>Building integrated GTM frameworks that align brand, sales, product, and operations. Execution discipline that drives predictable revenue.</p>
+                <div class="why-item">
+                    <h3>I Build Systems That Scale</h3>
+                    <p>Consistency is hard at scale. I specialize in building frameworks that work across teams, channels, and geographies. Once built, the system outlives the person.</p>
                 </div>
-                <div class="capability-item">
-                    <h3>Cross-Functional Leadership</h3>
-                    <p>Leading teams across marketing, sales, product, and operations. Connecting silos. Aligning incentives. Driving execution at scale.</p>
+                <div class="why-item">
+                    <h3>I Lead Without Title</h3>
+                    <p>I'm comfortable being the person who connects the dots, aligns teams, and drives decisions—even when it's not officially my job. I don't need credit; I need results.</p>
                 </div>
-                <div class="capability-item">
-                    <h3>Growth & Sell-Through</h3>
-                    <p>Designing demand generation programs and retail activation that drive measurable adoption and sell-through. Data-driven optimization.</p>
+                <div class="why-item">
+                    <h3>I'm Rare</h3>
+                    <p>Most people are either strategists or operators, either marketers or business people. <strong>I'm both.</strong> I think strategically, but I'm obsessed with making things real.</p>
                 </div>
             </div>
         </div>
@@ -664,12 +764,13 @@
     <!-- Contact Section -->
     <section class="contact" id="contact">
         <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
+            <h2>Let's Talk</h2>
             <div class="contact-content">
-                <p>Looking to build scalable brand systems, drive market execution, or translate complex innovation into revenue? Let's talk.</p>
+                <p>I'm actively looking for roles where brand, growth, and strategy matter. Director-level positions in brand marketing, growth, channel strategy, or product marketing at innovative companies. Places where you need someone who thinks like an operator and can build systems that drive revenue.</p>
+                <p>If that sounds like what you need, let's connect.</p>
                 <div class="contact-links">
-                    <a href="https://www.linkedin.com/in/rob-kremers/" target="_blank">LinkedIn</a>
-                    <a href="mailto:rob@example.com">Email</a>
+                    <a href="https://www.linkedin.com/in/robkremers/" target="_blank">LinkedIn</a>
+                    <a href="mailto:rob@example.com">Email me</a>
                 </div>
             </div>
         </div>
