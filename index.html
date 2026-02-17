@@ -1133,7 +1133,15 @@
             } else if (mediaId === 'tusimple-story') {
                 modalBody.innerHTML = '<iframe class="modal-video" src="https://www.youtube.com/embed/sA1RdMNJCoE?si=Hyn3XJym2LJF07Nr" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
             } else if (mediaId === 'tusimple-ev-brand') {
-                modalBody.innerHTML = '<img src="tusimple-ev-brand-archetype.png" style="width: 100%; height: auto; border-radius: 4px;">';
+                modalBody.innerHTML = `
+                    <div style="position: relative;">
+                        <img id="evBrandImg" src="tusimple-ev-brand-archetype.png" style="width: 100%; height: auto; border-radius: 4px;">
+                        <div style="display: flex; gap: 10px; margin-top: 20px; justify-content: center;">
+                            <button onclick="changeEvBrandImage(0)" style="padding: 8px 16px; background: #1a1a1a; color: white; border: none; border-radius: 4px; cursor: pointer;">Archetype</button>
+                            <button onclick="changeEvBrandImage(1)" style="padding: 8px 16px; background: #1a1a1a; color: white; border: none; border-radius: 4px; cursor: pointer;">Attributes</button>
+                        </div>
+                    </div>
+                `;
             } else if (mediaId === 'nike-playbook') {
                 modalBody.innerHTML = `
                     <div style="position: relative;">
@@ -1154,6 +1162,11 @@
         function changePlaybookImage(index) {
             const images = ['nike-playbook-1.jpg', 'nike-playbook-2.jpg', 'nike-playbook-3.jpg'];
             document.getElementById('playbookImg').src = images[index];
+        }
+
+        function changeEvBrandImage(index) {
+            const images = ['tusimple-ev-brand-archetype.png', 'tusimple-ev-brand-attributes.png'];
+            document.getElementById('evBrandImg').src = images[index];
         }
 
         function closeModal() {
