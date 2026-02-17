@@ -318,6 +318,7 @@
         .carousel-container {
             position: relative;
             width: 100%;
+            padding: 0 70px;
         }
 
         .carousel-wrapper {
@@ -446,8 +447,11 @@
         }
 
         .carousel-btn {
-            width: 40px;
-            height: 40px;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 50px;
+            height: 50px;
             border: 1px solid #ddd;
             background: white;
             border-radius: 4px;
@@ -455,8 +459,17 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 16px;
+            font-size: 18px;
             transition: all 0.3s;
+            z-index: 10;
+        }
+
+        .carousel-btn-left {
+            left: 16px;
+        }
+
+        .carousel-btn-right {
+            right: 16px;
         }
 
         .carousel-btn:hover {
@@ -468,6 +481,7 @@
         .carousel-btn:disabled {
             opacity: 0.3;
             cursor: not-allowed;
+            pointer-events: none;
         }
 
         .case-study-title {
@@ -1064,7 +1078,7 @@
         <div class="container">
             <h2>Selected Work & Impact</h2>
             <div class="carousel-container">
-                <div class="carousel-scroll-hint left" id="leftHint">‹</div>
+                <button class="carousel-btn carousel-btn-left" id="prevBtn" onclick="scrollCarousel(-1)">←</button>
                 <div class="work-grid" id="workCarousel">
                     <div class="case-study-preview">
                         <div class="case-study-title">Nike Global Basketball Retail Brand Playbook</div>
@@ -1078,17 +1092,6 @@
                     </div>
 
                     <div class="case-study-preview">
-                        <div class="case-study-title">adidas Amazon Launch & Wholesale Growth</div>
-                        <div class="case-study-meta">Channel Strategy / Go-To-Market / E-Commerce Positioning</div>
-                        <div class="case-study-text">
-                            <p><strong>The Challenge:</strong> adidas needed a structured approach to Amazon, a channel that was both massive opportunity and significant risk (brand control, pricing pressure, competition with third-party sellers).</p>
-                            <p><strong>What I Did:</strong> Developed a comprehensive channel strategy that positioned adidas as a premium player on Amazon while protecting brand integrity. This included positioning, product strategy, and retail partnership coordination.</p>
-                            <p><strong>Impact:</strong> [Growth metrics, strategy deck, and execution examples to be added]</p>
-                        </div>
-                        <div class="media-placeholder">Media: Channel analysis, growth charts, strategy presentation coming soon</div>
-                    </div>
-
-                    <div class="case-study-preview">
                         <div class="case-study-title">adidas DSG Fixture System Rollout</div>
                         <div class="case-study-meta">Retail Execution / Account Management / Shop-in-Shop Strategy</div>
                         <div class="case-study-text">
@@ -1097,17 +1100,6 @@
                             <p><strong>Impact:</strong> Successfully deployed across DSG locations, creating a premium adidas brand experience within a multi-brand retail environment. Demonstrated how to adapt global brand systems for local retail partners without compromising brand integrity.</p>
                         </div>
                         <div class="media-placeholder" onclick="openModal('adidas-dsg-fixture')" style="background-image: url('adidas-dsg-fixture-wall.png'); background-size: cover;"></div>
-                    </div>
-
-                    <div class="case-study-preview">
-                        <div class="case-study-title">TuSimple / CreateAI: Technical Product Storytelling</div>
-                        <div class="case-study-meta">Technical Communications / Positioning / Investor Narrative</div>
-                        <div class="case-study-text">
-                            <p><strong>The Challenge:</strong> How do you make autonomous vehicles and generative AI compelling to investors, customers, and the market when the technology is cutting-edge and genuinely novel? Traditional marketing doesn't work.</p>
-                            <p><strong>What I Did:</strong> Built a narrative framework that translated complex tech into clear, compelling stories about what the technology actually does, why it matters, and how it changes the game. This became the foundation for investor pitches, customer communications, and media strategy.</p>
-                            <p><strong>Impact:</strong> [YouTube videos, investor deck, and narrative examples to be added]</p>
-                        </div>
-                        <div class="media-placeholder">Media: YouTube video, investor presentation, media features coming soon</div>
                     </div>
 
                     <div class="case-study-preview">
@@ -1166,11 +1158,7 @@
                         <div class="media-placeholder" onclick="openModal('tusimple-domain-controller')" style="background-image: url('tusimple-dc-hero.png'); background-size: cover;"></div>
                     </div>
                 </div>
-                <div class="carousel-scroll-hint right" id="rightHint">›</div>
-                <div class="carousel-nav" id="carouselNav">
-                    <button class="carousel-btn" id="prevBtn" onclick="scrollCarousel(-1)">←</button>
-                    <button class="carousel-btn" id="nextBtn" onclick="scrollCarousel(1)">→</button>
-                </div>
+                <button class="carousel-btn carousel-btn-right" id="nextBtn" onclick="scrollCarousel(1)">→</button>
             </div>
         </div>
     </section>
@@ -1415,7 +1403,6 @@
             carousel.scrollLeft = currentIndex * scrollAmount;
             
             updateButtons();
-            updateScrollHints();
         }
 
         function updateButtons() {
@@ -1428,36 +1415,9 @@
             const itemWidth = cases[0].offsetWidth + 20;
             currentIndex = Math.round(scrollPosition / itemWidth);
             updateButtons();
-            updateScrollHints();
         });
 
-        function updateScrollHints() {
-            const leftHint = document.getElementById('leftHint');
-            const rightHint = document.getElementById('rightHint');
-            
-            if (currentIndex === 0) {
-                leftHint.style.opacity = '0';
-                leftHint.style.pointerEvents = 'none';
-            } else {
-                leftHint.style.opacity = '0.3';
-                leftHint.style.pointerEvents = 'auto';
-            }
-            
-            if (currentIndex === cases.length - 1) {
-                rightHint.style.opacity = '0';
-                rightHint.style.pointerEvents = 'none';
-            } else {
-                rightHint.style.opacity = '0.3';
-                rightHint.style.pointerEvents = 'auto';
-            }
-        }
-
-        // Make scroll hints clickable
-        document.getElementById('leftHint').addEventListener('click', () => scrollCarousel(-1));
-        document.getElementById('rightHint').addEventListener('click', () => scrollCarousel(1));
-
         updateButtons();
-        updateScrollHints();
     </script>
 </body>
 </html>
