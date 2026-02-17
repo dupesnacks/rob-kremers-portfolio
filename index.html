@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Rob Kremers - Brand & Growth Leader. Translating complex innovation into market impact and revenue-driven execution.">
+    <title>Rob Kremers | Brand & Growth Leader</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', sans-serif;
+            line-height: 1.6;
+            color: #1a1a1a;
+            background: #ffffff;
+        }
+
+        /* Navigation */
+        nav {
+            position: sticky;
+            top: 0;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid #f0f0f0;
+            z-index: 1000;
+        }
+
+        nav .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 70px;
+        }
+
+        .logo {
+            font-size: 18px;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+            text-decoration: none;
+            color: #1a1a1a;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 40px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #666;
+            font-size: 14px;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #1a1a1a;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 40px;
+        }
+
+        /* Hero Section */
+        .hero {
+            padding: 120px 0;
+            border-bottom: 1px solid #f0f0f0;
+        }
+
+        .hero h1 {
+            font-size: 56px;
+            line-height: 1.2;
+            margin-bottom: 20px;
+            font-weight: 700;
+            letter-spacing: -1px;
+        }
+
+        .hero .tagline {
+            font-size: 24px;
+            color: #666;
+            margin-bottom: 30px;
+            max-width: 700px;
+            font-weight: 400;
+            line-height: 1.4;
+        }
+
+        .hero-cta {
+            display: flex;
+            gap: 20px;
+            margin-top: 40px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 14px 32px;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 14px;
+            transition: all 0.3s;
+            cursor: pointer;
+            border: none;
+        }
+
+        .btn-primary {
+            background: #1a1a1a;
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: #333;
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: #1a1a1a;
+            border: 1px solid #1a1a1a;
+        }
+
+        .btn-secondary:hover {
+            background: #f5f5f5;
+        }
+
+        /* About Section */
+        .about {
+            padding: 120px 0;
+            border-bottom: 1px solid #f0f0f0;
+        }
+
+        .section-title {
+            font-size: 28px;
+            margin-bottom: 40px;
+            font-weight: 700;
+        }
+
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 80px;
+            align-items: start;
+        }
+
+        .about-bio {
+            font-size: 16px;
+            line-height: 1.8;
+            color: #333;
+        }
+
+        .about-bio p {
+            margin-bottom: 20px;
+        }
+
+        .experience-list {
+            list-style: none;
+        }
+
+        .experience-item {
+            margin-bottom: 24px;
+            padding-bottom: 24px;
+            border-bottom: 1px solid #f0f0f0;
+        }
+
+        .experience-item:last-child {
+            border-bottom: none;
+        }
+
+        .experience-item strong {
+            display: block;
+            font-size: 14px;
+            font-weight: 700;
+            color: #1a1a1a;
+            margin-bottom: 4px;
+        }
+
+        .experience-item span {
+            font-size: 13px;
+            color: #999;
+        }
+
+        /* Work Section */
+        .work {
+            padding: 120px 0;
+            border-bottom: 1px solid #f0f0f0;
+        }
+
+        .work-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 80px;
+        }
+
+        .case-study {
+            padding: 40px;
+            background: #f9f9f9;
+            border-radius: 4px;
+        }
+
+        .case-study-header {
+            margin-bottom: 30px;
+        }
+
+        .case-study-title {
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 12px;
+        }
+
+        .case-study-meta {
+            font-size: 13px;
+            color: #999;
+        }
+
+        .case-study-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+        }
+
+        .case-study-section {
+            display: none;
+        }
+
+        .case-study-section.active {
+            display: block;
+        }
+
+        .case-study-section h4 {
+            font-size: 13px;
+            font-weight: 700;
+            color: #666;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 12px;
+        }
+
+        .case-study-section p {
+            font-size: 14px;
+            line-height: 1.8;
+            color: #333;
+            margin-bottom: 16px;
+        }
+
+        .case-study-section ul {
+            margin-left: 20px;
+            font-size: 14px;
+            line-height: 1.8;
+        }
+
+        .case-study-section li {
+            margin-bottom: 8px;
+            color: #333;
+        }
+
+        .media-placeholder {
+            background: #e8e8e8;
+            aspect-ratio: 16 / 9;
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #999;
+            font-size: 14px;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* Capabilities Section */
+        .capabilities {
+            padding: 120px 0;
+            border-bottom: 1px solid #f0f0f0;
+        }
+
+        .capabilities-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+        }
+
+        .capability-item {
+            padding-bottom: 30px;
+        }
+
+        .capability-item h3 {
+            font-size: 16px;
+            font-weight: 700;
+            margin-bottom: 12px;
+        }
+
+        .capability-item p {
+            font-size: 14px;
+            line-height: 1.8;
+            color: #666;
+        }
+
+        /* Contact Section */
+        .contact {
+            padding: 120px 0;
+        }
+
+        .contact-content {
+            max-width: 600px;
+        }
+
+        .contact-content p {
+            font-size: 16px;
+            line-height: 1.8;
+            color: #666;
+            margin-bottom: 30px;
+        }
+
+        .contact-links {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .contact-links a {
+            display: inline-block;
+            color: #1a1a1a;
+            text-decoration: none;
+            font-weight: 600;
+            padding: 12px 0;
+            border-bottom: 1px solid #f0f0f0;
+            transition: color 0.3s;
+        }
+
+        .contact-links a:hover {
+            color: #666;
+        }
+
+        /* Footer */
+        footer {
+            border-top: 1px solid #f0f0f0;
+            padding: 40px 0;
+            text-align: center;
+            color: #999;
+            font-size: 13px;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            nav .container {
+                padding: 0 20px;
+            }
+
+            nav ul {
+                gap: 20px;
+            }
+
+            .container {
+                padding: 0 20px;
+            }
+
+            .hero {
+                padding: 80px 0;
+            }
+
+            .hero h1 {
+                font-size: 36px;
+            }
+
+            .hero .tagline {
+                font-size: 18px;
+            }
+
+            .hero-cta {
+                flex-direction: column;
+            }
+
+            .btn {
+                width: 100%;
+                text-align: center;
+            }
+
+            .about {
+                padding: 80px 0;
+            }
+
+            .about-content {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+
+            .case-study-content {
+                grid-template-columns: 1fr;
+            }
+
+            .capabilities-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .work {
+                padding: 80px 0;
+            }
+
+            .contact {
+                padding: 80px 0;
+            }
+        }
+
+        @media (max-width: 480px) {
+            nav ul {
+                gap: 12px;
+                font-size: 12px;
+            }
+
+            .hero h1 {
+                font-size: 28px;
+            }
+
+            .hero .tagline {
+                font-size: 16px;
+            }
+
+            .section-title {
+                font-size: 22px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="container">
+            <a href="#" class="logo">Rob Kremers</a>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#capabilities">Capabilities</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Brand & Growth Leader</h1>
+            <p class="tagline">Translating complex innovation into scalable execution and market impact. Strategy that drives revenue.</p>
+            <div class="hero-cta">
+                <a href="#work" class="btn btn-primary">View Work</a>
+                <a href="#contact" class="btn btn-secondary">Connect</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <h2 class="section-title">About</h2>
+            <div class="about-content">
+                <div class="about-bio">
+                    <p>15+ years of global brand marketing leadership across retail, direct-to-consumer, and technical innovation. I specialize in building scalable brand systems, aligning marketing with revenue execution, and turning complex products into compelling market strategies.</p>
+                    <p>My work spans autonomous vehicles and generative AI to global retail at Nike and adidas. The throughline is clear: <strong>Strategy → Structure → Execution → Revenue</strong>.</p>
+                    <p>I lead cross-functional teams, connect marketing with sales and product, and drive measurable sell-through and adoption at scale.</p>
+                </div>
+                <div>
+                    <ul class="experience-list">
+                        <li class="experience-item">
+                            <strong>Nike</strong>
+                            <span>Global retail brand systems and market execution</span>
+                        </li>
+                        <li class="experience-item">
+                            <strong>adidas</strong>
+                            <span>Amazon launch strategy and wholesale growth</span>
+                        </li>
+                        <li class="experience-item">
+                            <strong>Columbia Sportswear</strong>
+                            <span>In-store brand communications and retail activation</span>
+                        </li>
+                        <li class="experience-item">
+                            <strong>TuSimple / CreateAI</strong>
+                            <span>Technical storytelling for autonomous vehicles and generative AI</span>
+                        </li>
+                        <li class="experience-item">
+                            <strong>Tesla</strong>
+                            <span>Frontline sales execution and product fluency in mission-driven tech</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Work Section -->
+    <section class="work" id="work">
+        <div class="container">
+            <h2 class="section-title">Selected Work</h2>
+            <div class="work-grid">
+                <!-- Case Study Template 1: Nike -->
+                <div class="case-study">
+                    <div class="case-study-header">
+                        <h3 class="case-study-title">Nike Global Retail Brand Systems</h3>
+                        <p class="case-study-meta">Global Retail / Brand Strategy / Market Execution</p>
+                    </div>
+                    <div class="case-study-content">
+                        <div>
+                            <div class="case-study-section">
+                                <h4>Business Problem</h4>
+                                <p>[To be added: Context on retail challenge and Nike's position]</p>
+                            </div>
+                            <div class="case-study-section">
+                                <h4>Strategic Approach</h4>
+                                <ul>
+                                    <li>[Insight 1]</li>
+                                    <li>[Insight 2]</li>
+                                    <li>[Insight 3]</li>
+                                </ul>
+                            </div>
+                            <div class="case-study-section">
+                                <h4>Execution Framework</h4>
+                                <p>[To be added: How the strategy was operationalized]</p>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="media-placeholder">Media: Images, videos, or presentation decks to be added</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Case Study Template 2: adidas Amazon -->
+                <div class="case-study">
+                    <div class="case-study-header">
+                        <h3 class="case-study-title">adidas Amazon Launch & Wholesale Growth</h3>
+                        <p class="case-study-meta">Channel Strategy / Growth / Go-To-Market</p>
+                    </div>
+                    <div class="case-study-content">
+                        <div>
+                            <div class="case-study-section">
+                                <h4>Business Problem</h4>
+                                <p>[To be added: Amazon channel strategy challenge]</p>
+                            </div>
+                            <div class="case-study-section">
+                                <h4>Strategic Approach</h4>
+                                <ul>
+                                    <li>[Insight 1]</li>
+                                    <li>[Insight 2]</li>
+                                    <li>[Insight 3]</li>
+                                </ul>
+                            </div>
+                            <div class="case-study-section">
+                                <h4>Business Outcome</h4>
+                                <p>[To be added: Measurable results and sell-through impact]</p>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="media-placeholder">Media: Presentation decks, dashboards, or strategy documents</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Case Study Template 3: TuSimple/CreateAI -->
+                <div class="case-study">
+                    <div class="case-study-header">
+                        <h3 class="case-study-title">TuSimple / CreateAI: Technical Product Storytelling</h3>
+                        <p class="case-study-meta">Technical Communications / Positioning / Product Translation</p>
+                    </div>
+                    <div class="case-study-content">
+                        <div>
+                            <div class="case-study-section">
+                                <h4>Business Problem</h4>
+                                <p>[To be added: How to communicate complex autonomous/AI technology to investors, customers, and market]</p>
+                            </div>
+                            <div class="case-study-section">
+                                <h4>Strategic Approach</h4>
+                                <ul>
+                                    <li>[Insight 1]</li>
+                                    <li>[Insight 2]</li>
+                                    <li>[Insight 3]</li>
+                                </ul>
+                            </div>
+                            <div class="case-study-section">
+                                <h4>Impact</h4>
+                                <p>[To be added: How positioning shifted market perception or drove adoption]</p>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="media-placeholder">Media: YouTube video, investor deck, or narrative examples</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Case Study Template 4: Tesla -->
+                <div class="case-study">
+                    <div class="case-study-header">
+                        <h3 class="case-study-title">Tesla: Frontline Sales & Product Fluency</h3>
+                        <p class="case-study-meta">Sales Enablement / Product Marketing / Customer Engagement</p>
+                    </div>
+                    <div class="case-study-content">
+                        <div>
+                            <div class="case-study-section">
+                                <h4>Business Problem</h4>
+                                <p>[To be added: Sales readiness and product knowledge challenge]</p>
+                            </div>
+                            <div class="case-study-section">
+                                <h4>Strategic Approach</h4>
+                                <ul>
+                                    <li>[Insight 1]</li>
+                                    <li>[Insight 2]</li>
+                                    <li>[Insight 3]</li>
+                                </ul>
+                            </div>
+                            <div class="case-study-section">
+                                <h4>Outcome</h4>
+                                <p>[To be added: Measurable improvements in customer experience and conversion]</p>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="media-placeholder">Media: Customer testimonials, training materials, or execution examples</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Capabilities Section -->
+    <section class="capabilities" id="capabilities">
+        <div class="container">
+            <h2 class="section-title">Capabilities</h2>
+            <div class="capabilities-grid">
+                <div class="capability-item">
+                    <h3>Brand Strategy & Systems</h3>
+                    <p>Building scalable brand frameworks that align marketing, sales, and product. Creating structured systems that work globally across retail, DTC, and channel partners.</p>
+                </div>
+                <div class="capability-item">
+                    <h3>Retail & Channel Marketing</h3>
+                    <p>Go-to-market strategy for retail launches, wholesale partnerships, and channel growth. Translating brand into retail execution with measurement discipline.</p>
+                </div>
+                <div class="capability-item">
+                    <h3>Technical Product Translation</h3>
+                    <p>Turning complex products (autonomous vehicles, AI, innovative tech) into compelling narratives for investors, customers, and market. Clarity from complexity.</p>
+                </div>
+                <div class="capability-item">
+                    <h3>Go-To-Market Systems</h3>
+                    <p>Building integrated GTM frameworks that align brand, sales, product, and operations. Execution discipline that drives predictable revenue.</p>
+                </div>
+                <div class="capability-item">
+                    <h3>Cross-Functional Leadership</h3>
+                    <p>Leading teams across marketing, sales, product, and operations. Connecting silos. Aligning incentives. Driving execution at scale.</p>
+                </div>
+                <div class="capability-item">
+                    <h3>Growth & Sell-Through</h3>
+                    <p>Designing demand generation programs and retail activation that drive measurable adoption and sell-through. Data-driven optimization.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <p>Looking to build scalable brand systems, drive market execution, or translate complex innovation into revenue? Let's talk.</p>
+                <div class="contact-links">
+                    <a href="https://www.linkedin.com/in/rob-kremers/" target="_blank">LinkedIn</a>
+                    <a href="mailto:rob@example.com">Email</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Rob Kremers. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
