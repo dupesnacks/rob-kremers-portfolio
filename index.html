@@ -432,13 +432,6 @@
             min-width: 100%;
         }
 
-        @media (min-width: 1024px) {
-            .case-study-preview {
-                flex: 0 0 calc(50% - 10px);
-                min-width: calc(50% - 10px);
-            }
-        }
-
         .carousel-nav {
             display: flex;
             gap: 12px;
@@ -482,6 +475,27 @@
             opacity: 0.3;
             cursor: not-allowed;
             pointer-events: none;
+        }
+
+        .carousel-indicator {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            margin-top: 24px;
+            font-size: 13px;
+            color: #999;
+            text-align: center;
+        }
+
+        .carousel-counter {
+            font-weight: 600;
+            color: #666;
+        }
+
+        .carousel-hint {
+            font-style: italic;
+            color: #bbb;
         }
 
         .case-study-title {
@@ -881,12 +895,30 @@
                 padding: 30px;
             }
 
-            .carousel-nav {
-                justify-content: center;
-            }
-
             .work-grid {
                 gap: 15px;
+            }
+
+            .carousel-btn {
+                width: 40px;
+                height: 40px;
+                font-size: 16px;
+            }
+
+            .carousel-btn-left {
+                left: 8px;
+            }
+
+            .carousel-btn-right {
+                right: 8px;
+            }
+
+            .carousel-container {
+                padding: 0 50px;
+            }
+
+            .carousel-indicator {
+                font-size: 12px;
             }
         }
 
@@ -1172,6 +1204,9 @@
                 </div>
                 <button class="carousel-btn carousel-btn-right" id="nextBtn" onclick="scrollCarousel(1)">→</button>
             </div>
+            <div class="carousel-indicator">
+                <span id="carouselCounter">1 of 8</span> • <span class="carousel-hint">Click arrows or swipe to explore</span>
+            </div>
         </div>
     </section>
 
@@ -1427,6 +1462,14 @@
         function updateButtons() {
             prevBtn.disabled = currentIndex === 0;
             nextBtn.disabled = currentIndex === cases.length - 1;
+            updateCarouselCounter();
+        }
+
+        function updateCarouselCounter() {
+            const counter = document.getElementById('carouselCounter');
+            if (counter) {
+                counter.textContent = (currentIndex + 1) + ' of ' + cases.length;
+            }
         }
 
         carousel.addEventListener('scroll', () => {
