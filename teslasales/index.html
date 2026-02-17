@@ -355,6 +355,21 @@
                     <div class="metric-label">FSD Subscriptions</div>
                     <div class="metric-detail">20% adoption rate</div>
                 </div>
+                <div class="metric-card">
+                    <div class="metric-value" id="trailing7">0.57</div>
+                    <div class="metric-label">7-Day Trend</div>
+                    <div class="metric-detail">Orders per day</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-value" id="trailing14">0.43</div>
+                    <div class="metric-label">14-Day Trend</div>
+                    <div class="metric-detail">Orders per day</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-value" id="trailing30">0.33</div>
+                    <div class="metric-label">30-Day Trend</div>
+                    <div class="metric-detail">Orders per day</div>
+                </div>
             </div>
         </div>
     </section>
@@ -387,6 +402,10 @@
                 <div class="chart-container">
                     <div class="chart-title">Order Price Range by Model</div>
                     <canvas id="priceRangeChart"></canvas>
+                </div>
+                <div class="chart-container">
+                    <div class="chart-title">Revenue per Model</div>
+                    <canvas id="revenuePerModelChart"></canvas>
                 </div>
             </div>
         </div>
@@ -459,16 +478,35 @@
         const totalRevenue = orders.reduce((sum, o) => sum + o.msrp, 0);
         const avgMsrp = Math.round(totalRevenue / orders.length);
         const modelCounts = {};
+        const modelRevenue = {};
         orders.forEach(o => {
             const baseModel = o.model.split(' ')[0] + ' ' + o.model.split(' ')[1];
             modelCounts[baseModel] = (modelCounts[baseModel] || 0) + 1;
+            modelRevenue[baseModel] = (modelRevenue[baseModel] || 0) + o.msrp;
         });
         const mostCommon = Object.keys(modelCounts).reduce((a, b) => modelCounts[a] > modelCounts[b] ? a : b);
         const fsdCount = orders.filter(o => o.fsd !== 'None').length;
 
+        // Calculate trailing metrics
+        const now = new Date('2026-02-17');
+        const days7Ago = new Date(now.getTime() - 7 * 24 * 60 * 60 * 1000);
+        const days14Ago = new Date(now.getTime() - 14 * 24 * 60 * 60 * 1000);
+        const days30Ago = new Date(now.getTime() - 30 * 24 * 60 * 60 * 1000);
+        
+        const orders7d = orders.filter(o => new Date(o.date) >= days7Ago).length;
+        const orders14d = orders.filter(o => new Date(o.date) >= days14Ago).length;
+        const orders30d = orders.filter(o => new Date(o.date) >= days30Ago).length;
+        
+        const rate7d = (orders7d / 7).toFixed(2);
+        const rate14d = (orders14d / 14).toFixed(2);
+        const rate30d = (orders30d / 30).toFixed(2);
+
         // Update metric cards
         document.querySelector('.metric-value').textContent = orders.length;
         document.getElementById('totalRevenue').textContent = '$' + (totalRevenue / 1000).toFixed(1) + 'K';
+        document.getElementById('trailing7').textContent = rate7d;
+        document.getElementById('trailing14').textContent = rate14d;
+        document.getElementById('trailing30').textContent = rate30d;
 
         // Model breakdown chart
         const ctx1 = document.getElementById('modelChart').getContext('2d');
@@ -673,6 +711,35 @@
             },
             options: {
                 responsive: true,
+                scales: {
+                    y: {
+                        ticks: {
+                            callback: (value) => '$' + (value / 1000).toFixed(0) + 'K'
+                        }
+                    }
+                }
+            }
+        });
+
+        // Revenue per model
+        const ctx7 = document.getElementById('revenuePerModelChart').getContext('2d');
+        new Chart(ctx7, {
+            type: 'bar',
+            data: {
+                labels: Object.keys(modelRevenue),
+                datasets: [{
+                    label: 'Total Revenue',
+                    data: Object.values(modelRevenue),
+                    backgroundColor: ['#0D5E54', '#D4AF37', '#4f46e5'],
+                    borderRadius: 4,
+                    borderSkipped: false
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: { display: false }
+                },
                 scales: {
                     y: {
                         ticks: {
