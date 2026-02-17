@@ -336,9 +336,14 @@
                     <div class="metric-detail">Jan 11 – Feb 17</div>
                 </div>
                 <div class="metric-card">
+                    <div class="metric-value" id="totalRevenue">$967.5K</div>
+                    <div class="metric-label">Total Revenue</div>
+                    <div class="metric-detail">All orders combined</div>
+                </div>
+                <div class="metric-card">
                     <div class="metric-value">$64.5K</div>
                     <div class="metric-label">Avg MSRP</div>
-                    <div class="metric-detail">Across all models</div>
+                    <div class="metric-detail">Per order</div>
                 </div>
                 <div class="metric-card">
                     <div class="metric-value" id="mostCommonModel">Model Y</div>
@@ -374,6 +379,14 @@
                 <div class="chart-container">
                     <div class="chart-title">FSD Adoption</div>
                     <canvas id="fsdChart"></canvas>
+                </div>
+                <div class="chart-container">
+                    <div class="chart-title">Cumulative Revenue Over Time</div>
+                    <canvas id="revenueChart"></canvas>
+                </div>
+                <div class="chart-container">
+                    <div class="chart-title">Order Price Range by Model</div>
+                    <canvas id="priceRangeChart"></canvas>
                 </div>
             </div>
         </div>
@@ -443,7 +456,8 @@
         });
 
         // Calculate metrics
-        const avgMsrp = Math.round(orders.reduce((sum, o) => sum + o.msrp, 0) / orders.length);
+        const totalRevenue = orders.reduce((sum, o) => sum + o.msrp, 0);
+        const avgMsrp = Math.round(totalRevenue / orders.length);
         const modelCounts = {};
         orders.forEach(o => {
             const baseModel = o.model.split(' ')[0] + ' ' + o.model.split(' ')[1];
@@ -454,7 +468,7 @@
 
         // Update metric cards
         document.querySelector('.metric-value').textContent = orders.length;
-        document.querySelector('.metric-detail').textContent = avgMsrp.toLocaleString('en-US', { style: 'currency', currency: 'USD' });
+        document.getElementById('totalRevenue').textContent = '$' + (totalRevenue / 1000).toFixed(1) + 'K';
 
         // Model breakdown chart
         const ctx1 = document.getElementById('modelChart').getContext('2d');
@@ -579,6 +593,91 @@
                 plugins: {
                     legend: {
                         position: 'bottom'
+                    }
+                }
+            }
+        });
+
+        // Cumulative revenue over time
+        const sortedOrders = [...orders].sort((a, b) => new Date(a.date) - new Date(b.date));
+        let cumulativeRevenue = 0;
+        const cumulativeData = sortedOrders.map(o => {
+            cumulativeRevenue += o.msrp;
+            return cumulativeRevenue;
+        });
+        const revenueLabels = sortedOrders.map((o, i) => 'Order ' + (i + 1));
+        const ctx5 = document.getElementById('revenueChart').getContext('2d');
+        new Chart(ctx5, {
+            type: 'line',
+            data: {
+                labels: revenueLabels,
+                datasets: [{
+                    label: 'Cumulative Revenue',
+                    data: cumulativeData,
+                    borderColor: '#0D5E54',
+                    backgroundColor: 'rgba(13, 94, 84, 0.05)',
+                    fill: true,
+                    tension: 0.4,
+                    pointRadius: 3,
+                    pointBackgroundColor: '#D4AF37',
+                    pointBorderColor: '#0D5E54',
+                    pointBorderWidth: 1
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: { legend: { display: false } },
+                scales: {
+                    y: {
+                        ticks: {
+                            callback: (value) => '$' + (value / 1000).toFixed(0) + 'K'
+                        }
+                    }
+                }
+            }
+        });
+
+        // Price range by model
+        const modelPrices = {};
+        orders.forEach(o => {
+            const baseModel = o.model.split(' ')[0] + ' ' + o.model.split(' ')[1];
+            if (!modelPrices[baseModel]) modelPrices[baseModel] = [];
+            modelPrices[baseModel].push(o.msrp);
+        });
+        const priceRanges = Object.keys(modelPrices).map(model => ({
+            model,
+            min: Math.min(...modelPrices[model]),
+            max: Math.max(...modelPrices[model])
+        }));
+        const ctx6 = document.getElementById('priceRangeChart').getContext('2d');
+        new Chart(ctx6, {
+            type: 'bar',
+            data: {
+                labels: priceRanges.map(p => p.model),
+                datasets: [
+                    {
+                        label: 'Min Price',
+                        data: priceRanges.map(p => p.min),
+                        backgroundColor: '#e0e7ff',
+                        borderRadius: 4,
+                        borderSkipped: false
+                    },
+                    {
+                        label: 'Max Price',
+                        data: priceRanges.map(p => p.max),
+                        backgroundColor: '#0D5E54',
+                        borderRadius: 4,
+                        borderSkipped: false
+                    }
+                ]
+            },
+            options: {
+                responsive: true,
+                scales: {
+                    y: {
+                        ticks: {
+                            callback: (value) => '$' + (value / 1000).toFixed(0) + 'K'
+                        }
                     }
                 }
             }
