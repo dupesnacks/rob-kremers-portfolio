@@ -963,6 +963,17 @@
                         </div>
                         <div class="media-placeholder" onclick="openModal('damien-video')" style="background-image: url('https://img.youtube.com/vi/HDYadppg5oU/hqdefault.jpg');"></div>
                     </div>
+
+                    <div class="case-study-preview">
+                        <div class="case-study-title">TuSimple: My Story Trailer Campaign</div>
+                        <div class="case-study-meta">Internal Storytelling / Brand Humanization / Documentary</div>
+                        <div class="case-study-text">
+                            <p><strong>The Challenge:</strong> TuSimple was operating in a complex, novel space (autonomous trucking) where the company narrative often got lost in technical specs and investor decks. The brand needed humanization — a way to show the actual people building this technology and why they're committed to it.</p>
+                            <p><strong>The Campaign:</strong> Built a documentary-style campaign called "My TuSimple Story" designed to put the spotlight on the people who do the work — engineers, drivers, operations teams. Through intimate, authentic storytelling, the campaign showed the inner workings of the company and the human motivations behind the innovation.</p>
+                            <p><strong>Outcome:</strong> While the project was ultimately pivoted due to business priorities shifting, it demonstrated how to translate a technical company into a human one. This approach became foundational for how I later approached the CreateAI positioning work.</p>
+                        </div>
+                        <div class="media-placeholder" onclick="openModal('tusimple-story')" style="background-image: url('https://img.youtube.com/vi/sA1RdMNJCoE/hqdefault.jpg');"></div>
+                    </div>
                 </div>
                 <div class="carousel-nav" id="carouselNav">
                     <button class="carousel-btn" id="prevBtn" onclick="scrollCarousel(-1)">←</button>
@@ -1047,6 +1058,8 @@
             
             if (mediaId === 'damien-video') {
                 modalBody.innerHTML = '<iframe class="modal-video" src="https://www.youtube.com/embed/HDYadppg5oU?si=Fzz8DwI2WUYPXUlT" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
+            } else if (mediaId === 'tusimple-story') {
+                modalBody.innerHTML = '<iframe class="modal-video" src="https://www.youtube.com/embed/sA1RdMNJCoE?si=Hyn3XJym2LJF07Nr" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
             } else if (mediaId === 'nike-playbook') {
                 modalBody.innerHTML = `
                     <div style="position: relative;">
