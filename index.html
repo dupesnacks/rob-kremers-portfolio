@@ -1043,7 +1043,7 @@
                             <p><strong>What I Built:</strong> Led a comprehensive brand development process including focus groups, executive interviews, and strategic workshops. Defined the brand's tone, archetype, and visual system to create a cohesive identity that stood apart in a commoditized category. The work went beyond logos and colors — it was about establishing a clear voice and emotional positioning.</p>
                             <p><strong>Impact:</strong> Created a strategic foundation for the brand that could guide all future communications, product development, and customer touchpoints. Demonstrated how brand strategy should lead product strategy, not follow it.</p>
                         </div>
-                        <div class="media-placeholder">Media: Brand guidelines, positioning deck, and identity assets to be added</div>
+                        <div class="media-placeholder" onclick="openModal('tusimple-ev-brand')" style="background-image: url('tusimple-ev-brand-archetype.png'); background-size: cover;"></div>
                     </div>
                 </div>
                 <div class="carousel-scroll-hint right" id="rightHint">›</div>
@@ -1132,6 +1132,8 @@
                 modalBody.innerHTML = '<iframe class="modal-video" src="https://www.youtube.com/embed/HDYadppg5oU?si=Fzz8DwI2WUYPXUlT" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
             } else if (mediaId === 'tusimple-story') {
                 modalBody.innerHTML = '<iframe class="modal-video" src="https://www.youtube.com/embed/sA1RdMNJCoE?si=Hyn3XJym2LJF07Nr" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
+            } else if (mediaId === 'tusimple-ev-brand') {
+                modalBody.innerHTML = '<img src="tusimple-ev-brand-archetype.png" style="width: 100%; height: auto; border-radius: 4px;">';
             } else if (mediaId === 'nike-playbook') {
                 modalBody.innerHTML = `
                     <div style="position: relative;">
