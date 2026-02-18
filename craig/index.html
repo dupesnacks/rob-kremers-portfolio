@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Art of Tanking: NBA Draft Strategy Explained</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', sans-serif;
+            line-height: 1.6;
+            color: #1a1a1a;
+            background: #ffffff;
+        }
+
+        /* Navigation */
+        nav {
+            background: #0D5E54;
+            padding: 20px 40px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 14px;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #D4AF37;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 40px;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #0D5E54 0%, #1a3a34 100%);
+            color: white;
+            padding: 100px 40px;
+            text-align: center;
+            min-height: 600px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .hero h1 {
+            font-size: 56px;
+            margin-bottom: 20px;
+            font-weight: 700;
+            line-height: 1.2;
+        }
+
+        .hero p {
+            font-size: 24px;
+            margin-bottom: 40px;
+            opacity: 0.95;
+            max-width: 800px;
+        }
+
+        .cta-button {
+            background: #D4AF37;
+            color: #0D5E54;
+            padding: 16px 40px;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+            display: inline-block;
+            text-decoration: none;
+        }
+
+        .cta-button:hover {
+            background: #f5c85f;
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(212, 175, 55, 0.3);
+        }
+
+        /* Section Divider */
+        .divider {
+            height: 4px;
+            background: #0D5E54;
+            width: 60px;
+            margin: 40px auto;
+        }
+
+        /* Main Content */
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 80px 40px;
+        }
+
+        section {
+            margin-bottom: 80px;
+        }
+
+        h2 {
+            font-size: 42px;
+            margin-bottom: 30px;
+            color: #0D5E54;
+            font-weight: 700;
+        }
+
+        h3 {
+            font-size: 24px;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            color: #0D5E54;
+            font-weight: 600;
+        }
+
+        p {
+            font-size: 18px;
+            margin-bottom: 20px;
+            line-height: 1.8;
+        }
+
+        .highlight {
+            background: #f9f9f9;
+            padding: 40px;
+            border-left: 4px solid #D4AF37;
+            margin: 40px 0;
+            border-radius: 4px;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin: 40px 0;
+        }
+
+        .stat-card {
+            background: #f9f9f9;
+            padding: 40px;
+            border-radius: 4px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .stat-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(13, 94, 84, 0.1);
+        }
+
+        .stat-number {
+            font-size: 48px;
+            font-weight: 700;
+            color: #D4AF37;
+            margin-bottom: 10px;
+        }
+
+        .stat-label {
+            font-size: 16px;
+            color: #0D5E54;
+            font-weight: 600;
+        }
+
+        .team-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin: 40px 0;
+        }
+
+        .team-card {
+            background: #f9f9f9;
+            padding: 30px;
+            border-radius: 4px;
+            border-top: 4px solid #D4AF37;
+        }
+
+        .team-card h4 {
+            color: #0D5E54;
+            margin-bottom: 15px;
+            font-size: 20px;
+            font-weight: 600;
+        }
+
+        .team-card p {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+
+        ul, ol {
+            margin-left: 40px;
+            margin-bottom: 20px;
+        }
+
+        li {
+            margin-bottom: 12px;
+            font-size: 18px;
+            line-height: 1.8;
+        }
+
+        strong {
+            color: #0D5E54;
+            font-weight: 600;
+        }
+
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 40px 0;
+            background: white;
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        .comparison-table th {
+            background: #0D5E54;
+            color: white;
+            padding: 20px;
+            text-align: left;
+            font-weight: 600;
+        }
+
+        .comparison-table td {
+            padding: 20px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .comparison-table tr:hover {
+            background: #f9f9f9;
+        }
+
+        /* Footer */
+        footer {
+            background: #0D5E54;
+            color: white;
+            padding: 60px 40px;
+            text-align: center;
+        }
+
+        footer p {
+            color: #e0e0e0;
+            margin-bottom: 10px;
+        }
+
+        footer a {
+            color: #D4AF37;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        footer a:hover {
+            color: #f5c85f;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            nav {
+                padding: 15px 20px;
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            .nav-links {
+                flex-direction: column;
+                gap: 15px;
+                width: 100%;
+            }
+
+            .hero {
+                padding: 60px 20px;
+                min-height: auto;
+            }
+
+            .hero h1 {
+                font-size: 36px;
+            }
+
+            .hero p {
+                font-size: 18px;
+            }
+
+            .container {
+                padding: 40px 20px;
+            }
+
+            h2 {
+                font-size: 32px;
+            }
+
+            h3 {
+                font-size: 20px;
+            }
+
+            .comparison-table {
+                font-size: 14px;
+            }
+
+            .comparison-table th,
+            .comparison-table td {
+                padding: 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div style="font-weight: 700; font-size: 20px; color: #D4AF37;">TANKING 101</div>
+        <div class="nav-links">
+            <a href="#what">What is Tanking?</a>
+            <a href="#why">Why Teams Tank</a>
+            <a href="#teams">Notable Teams</a>
+            <a href="#lottery">Draft Lottery</a>
+            <a href="#ethics">Ethics</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>The Art of Tanking: Strategic Losing in the NBA</h1>
+        <p>Understand the deliberate strategy behind competitive rebuilds, the draft lottery system, and how teams transform losing seasons into future championships.</p>
+        <a href="#what" class="cta-button">Learn More</a>
+    </section>
+
+    <!-- Main Content -->
+    <div class="container">
+        <!-- What is Tanking Section -->
+        <section id="what">
+            <h2>What is Tanking?</h2>
+            <div class="divider"></div>
+            
+            <p><strong>Tanking</strong> is a deliberate strategy where an NBA team consciously performs poorly during a season to secure a higher draft pick. Unlike teams that naturally struggle, tanking organizations make calculated decisions to lose games, fully aware of the long-term benefits.</p>
+
+            <p>The term originated in sports discourse but has become mainstream in basketball analysis. While controversial, tanking represents a legitimate—if ethically debated—strategy within the current NBA structure.</p>
+
+            <div class="highlight">
+                <p><strong>Key Insight:</strong> Tanking isn't about being bad at basketball. It's about making strategic roster decisions that prioritize future assets over immediate wins. This might include sitting healthy star players, trading away expiring contracts, or playing untested young prospects.</p>
+            </div>
+
+            <h3>How Teams Tank</h3>
+            <ul>
+                <li><strong>Roster Moves:</strong> Trading away established veterans to accumulate draft picks and young talent</li>
+                <li><strong>Playing Time Allocation:</strong> Developing young prospects instead of winning with experienced players</li>
+                <li><strong>Strategic Injuries:</strong> Resting key players under the guise of injury prevention</li>
+                <li><strong>Coaching Philosophy:</strong> Emphasizing development and experimentation over win-now strategies</li>
+                <li><strong>Salary Cap Management:</strong> Shedding salary to stay under the luxury tax and maintain flexibility</li>
+            </ul>
+
+            <p>The most effective tanking organizations view it as a multi-year transition period, not a single season of losing. Teams intentionally lose for 1-3 seasons to accumulate multiple high draft picks, rebuild the roster foundation, and position themselves for sustained success.</p>
+        </section>
+
+        <!-- Why Teams Tank Section -->
+        <section id="why">
+            <h2>Why Teams Tank: The Strategic Rationale</h2>
+            <div class="divider"></div>
+
+            <p>Tanking isn't reckless. It's a calculated bet that losing now creates the conditions for winning later. Here's why teams choose this path:</p>
+
+            <h3>The Draft Lottery Economics</h3>
+            <p>The NBA Draft is where franchise-altering talent enters the league. In recent years, generational prospects like Victor Wembanyama (2023), Paolo Banchero (2022), and Ja Morant (2019) have transformed organizations almost immediately. The draft lottery system gives worse teams higher chances at these elite prospects.</p>
+
+            <div class="highlight">
+                <p><strong>Mathematical Reality:</strong> A team with the league's worst record has a ~14% chance at the #1 pick. That's significantly better than a middle-of-the-pack team's ~2% chance. The disparity compounds over multiple seasons—tank for two years, you'll likely accumulate 2-3 top-10 picks versus 0-1 for a perpetually mediocre team.</p>
+            </div>
+
+            <h3>The Mediocrity Trap</h3>
+            <p>The worst position in basketball is being mediocre. A team that wins 35-40 games:</p>
+            <ul>
+                <li>Misses the playoffs, generating no playoff revenue or development</li>
+                <li>Drafts in the 8-15 range, typically producing role players, not stars</li>
+                <li>Has insufficient assets to trade for superstars</li>
+                <li>Becomes permanently stuck between competing and rebuilding</li>
+            </ul>
+            <p>Tanking breaks this cycle by acknowledging the rebuild, maximizing draft capital, and building a foundation fast enough to return to contention within 3-5 years.</p>
+
+            <h3>Asset Accumulation</h3>
+            <p>High draft picks are valuable trade assets. A team that accumulates 3-4 top-10 picks over 2-3 years can:</p>
+            <ul>
+                <li>Keep the best prospect for their core</li>
+                <li>Trade 1-2 picks for established All-Star players</li>
+                <li>Use picks as sweeteners in trades for franchise anchors</li>
+                <li>Create a culture of youth and energy around new talent</li>
+            </ul>
+
+            <h3>Salary Cap Reset</h3>
+            <p>Tanking teams typically shed expensive, aging contracts in trades. This "salary cap reset" provides financial flexibility in future free agency, allowing the team to build around young stars without luxury tax penalties.</p>
+
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number">3-5</div>
+                    <div class="stat-label">Years to Contention</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">$100M+</div>
+                    <div class="stat-label">Saved in Salary</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">2-4</div>
+                    <div class="stat-label">Top-10 Picks Accumulated</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Notable Tanking Teams Section -->
+        <section id="teams">
+            <h2>Notable Tanking Teams: Case Studies</h2>
+            <div class="divider"></div>
+
+            <h3>Philadelphia 76ers (2013-2018): "The Process"</h3>
+            <p>The gold standard of tanking strategies. General Manager Sam Hinkie deliberately lost games while accumulating picks, resulting in three consecutive #1 overall picks (2014: Joel Embiid, 2015: Karl-Anthony Towns traded, 2016: Ben Simmons). The strategy worked: the Sixers built a core that made the playoffs by 2018.</p>
+            <p><strong>Outcome:</strong> Successfully rebuilt into a playoff contender. The Embiid-Simmons duo was Eastern Conference Finals-caliber, and the team remains competitive today.</p>
+
+            <h3>Orlando Magic (2010-2012)</h3>
+            <p>While not intentional tanking, the Magic made a series of trades and decisions that resulted in losing seasons while accumulating lottery picks. They drafted Evan Fournier (#4, 2011) and Nikola Vucevic (#16, 2011).</p>
+            <p><strong>Outcome:</strong> Gradual rebuild, though it took longer without aggressive tanking, showing the advantage of intentional strategy.</p>
+
+            <h3>Chicago Bulls (2022-Present)</h3>
+            <p>After trading away key pieces, the Bulls embraced youth development and strategic losing. The strategy positioned them to develop Coby White and Ayo Dosunmu while maintaining flexibility.</p>
+            <p><strong>Outcome:</strong> Building around young core, demonstrating modern tanking principles.</p>
+
+            <h3>San Antonio Spurs (2024-Present)</h3>
+            <p>Following Tim Duncan's retirement, the Spurs entered a strategic rebuild, securing Victor Wembanyama (#1, 2023) through the tanking lottery system. This marks a significant shift for the franchise.</p>
+            <p><strong>Outcome:</strong> Still developing, but positioned for a multi-decade rebuild around generational talent.</p>
+
+            <div class="team-list">
+                <div class="team-card">
+                    <h4>76ers (2013-2018)</h4>
+                    <p><strong>Picks:</strong> Embiid, Simmons, multiple top-10</p>
+                    <p><strong>Result:</strong> Conference Finals appearance</p>
+                    <p><strong>Rating:</strong> ⭐⭐⭐⭐⭐</p>
+                </div>
+                <div class="team-card">
+                    <h4>Spurs (2024+)</h4>
+                    <p><strong>Picks:</strong> Victor Wembanyama</p>
+                    <p><strong>Result:</strong> Rebuilding</p>
+                    <p><strong>Rating:</strong> ⭐⭐⭐⭐</p>
+                </div>
+                <div class="team-card">
+                    <h4>Magic (2010-2012)</h4>
+                    <p><strong>Picks:</strong> Fournier, Vucevic</p>
+                    <p><strong>Result:</strong> Gradual rebuild</p>
+                    <p><strong>Rating:</strong> ⭐⭐⭐</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Draft Lottery Section -->
+        <section id="lottery">
+            <h2>The NBA Draft Lottery: How It Works</h2>
+            <div class="divider"></div>
+
+            <p>The NBA Draft Lottery exists specifically to prevent tanking—yet it also enables it. Understanding how the lottery works is crucial to understanding why tanking is attractive.</p>
+
+            <h3>Lottery Odds (2023-2024 Season)</h3>
+            <p>Teams with the 14 worst records enter the lottery. Their odds of landing the #1 pick are:</p>
+
+            <table class="comparison-table">
+                <thead>
+                    <tr>
+                        <th>Seed</th>
+                        <th>Record Type</th>
+                        <th>#1 Pick Odds</th>
+                        <th>Top-3 Odds</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1st Worst</td>
+                        <td>Worst Record</td>
+                        <td>14.0%</td>
+                        <td>52.1%</td>
+                    </tr>
+                    <tr>
+                        <td>2nd Worst</td>
+                        <td>2nd Worst</td>
+                        <td>13.6%</td>
+                        <td>50.9%</td>
+                    </tr>
+                    <tr>
+                        <td>3rd Worst</td>
+                        <td>3rd Worst</td>
+                        <td>13.2%</td>
+                        <td>49.0%</td>
+                    </tr>
+                    <tr>
+                        <td>5th Worst</td>
+                        <td>5th Worst</td>
+                        <td>11.9%</td>
+                        <td>41.0%</td>
+                    </tr>
+                    <tr>
+                        <td>10th Worst</td>
+                        <td>10th Worst</td>
+                        <td>5.6%</td>
+                        <td>12.1%</td>
+                    </tr>
+                    <tr>
+                        <td>15th-30th</td>
+                        <td>Playoff Teams</td>
+                        <td>~0%</td>
+                        <td>~0%</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>Why Tanking Works Despite the Lottery</h3>
+            <p>The lottery reduces—but doesn't eliminate—tanking incentives:</p>
+            <ul>
+                <li><strong>Compound Advantage:</strong> Even with only 14% odds, teams that tank for 2-3 seasons have dramatically higher chances of multiple top-10 picks</li>
+                <li><strong>Skill in Rebuilding:</strong> Smart organizations turn #5-10 picks into difference-makers through development and trades</li>
+                <li><strong>Trade Currency:</strong> A top-10 pick is enormously valuable in trades, even if it's not #1</li>
+                <li><strong>Young Core Creation:</strong> Tanking teams accumulate 2-4 young players in years 1-3, creating an entirely new roster foundation</li>
+            </ul>
+
+            <div class="highlight">
+                <p><strong>The Math:</strong> A team with a 14% chance of #1 over 2 seasons has approximately 26% odds of getting #1 at least once, plus high likelihood of top-10 picks in both years. Compare that to a perpetually mediocre team's 0.5% chance over the same period.</p>
+            </div>
+
+            <h3>Impact on League Competitiveness</h3>
+            <p>The lottery's intended purpose was to promote parity and discourage tanking. Instead, it's created a bifurcated league:</p>
+            <ul>
+                <li><strong>Rebuilding Teams:</strong> Accept losses now, stack assets, return in 3-5 years</li>
+                <li><strong>Mediocre Teams:</strong> Stuck in limbo, unable to tank or compete effectively</li>
+                <li><strong>Elite Teams:</strong> Win the championships while rebuilding teams gain assets</li>
+            </ul>
+            <p>This structure has made the NBA increasingly predictable at the top while creating opportunities for strategic rebuilds to work.</p>
+        </section>
+
+        <!-- Ethics Section -->
+        <section id="ethics">
+            <h2>The Ethics of Tanking: A Complex Debate</h2>
+            <div class="divider"></div>
+
+            <p>Tanking raises legitimate questions about competitive integrity, fan experience, and organizational ethics. There's no universal consensus, but the debate illuminates fundamental questions about sports structures.</p>
+
+            <h3>Arguments Against Tanking</h3>
+            <ul>
+                <li><strong>Fan Deception:</strong> Fans pay for entertainment and a genuine effort to win. Intentional losing violates that implicit contract.</li>
+                <li><strong>Player Development:</strong> Young players develop better with winning habits. Constantly losing creates bad habits and low confidence.</li>
+                <li><strong>Competitive Integrity:</strong> If the goal is fair competition, teams shouldn't be incentivized to lose.</li>
+                <li><strong>Market Economics:</strong> Losing seasons hurt ticket sales, merchandise, and sponsorship revenue.</li>
+                <li><strong>Immorality:</strong> Some argue that deliberately losing is fundamentally dishonest to stakeholders.</li>
+            </ul>
+
+            <h3>Arguments For Tanking (Or: Why It's Rational)</h3>
+            <ul>
+                <li><strong>Structural Reality:</strong> The draft system creates economic incentives for losing. Teams are rational to exploit this.</li>
+                <li><strong>Long-term Thinking:</strong> Prioritizing a 3-5 year rebuild over mediocre 40-42 win seasons is strategically sound.</li>
+                <li><strong>Player Opportunity:</strong> Losing seasons give young prospects playing time and development—something veteran-laden teams don't offer.</li>
+                <li><strong>Transparency:</strong> Some teams are honest with fans about rebuilds (e.g., the 76ers called it "The Process").</li>
+                <li><strong>Historical Precedent:</strong> Every successful rebuild involves losing seasons. The question is whether to lose strategically or accidentally.</li>
+            </ul>
+
+            <h3>Potential Solutions (If the NBA Wanted to Eliminate Tanking)</h3>
+            
+            <div class="highlight">
+                <p><strong>The Core Problem:</strong> As long as the draft exists and lottery odds favor worse teams, tanking will be rational. Solving tanking requires structural changes to eliminate the incentive.</p>
+            </div>
+
+            <h4>Option 1: Random Lottery Draft</h4>
+            <p>Assign draft picks randomly among all teams. This eliminates the advantage of losing, but also removes incentive for any team to invest in improvement (why develop if draft picks are random?).</p>
+            <p><strong>Verdict:</strong> Theoretically sound, practically unworkable.</p>
+
+            <h4>Option 2: Ascending Draft Picks</h4>
+            <p>Give better teams earlier picks to reward success. This inverts current incentives but creates issues for struggling franchises.</p>
+            <p><strong>Verdict:</strong> Would create permanent dynasties.</p>
+
+            <h4>Option 3: Rookie Salary Parity</h4>
+            <p>Remove the financial advantage of cheap rookie contracts. If all players earned equal salary regardless of draft position, teams couldn't build cheap cores through tanking.</p>
+            <p><strong>Verdict:</strong> Eliminates core incentive for tanking but requires CBA restructuring.</p>
+
+            <h4>Option 4: Accept and Regulate Tanking</h4>
+            <p>Acknowledge that tanking is rational and unavoidable. Implement rules that protect fan experience during rebuilds (e.g., mandatory competitive rosters, minimum payroll).</p>
+            <p><strong>Verdict:</strong> Realistic approach acknowledging structural incentives.</p>
+
+            <h3>The Philosophical Question</h3>
+            <p>Ultimately, tanking debates reduce to a philosophical question: <strong>Is it ethical to lose intentionally if the system incentivizes it?</strong></p>
+            <p>Different stakeholders answer differently. Owners view it as smart business. Fans often see it as betrayal. Players see it as opportunity. The league sees it as a structural problem without easy solutions.</p>
+        </section>
+
+        <!-- Conclusion -->
+        <section>
+            <h2>The Bottom Line</h2>
+            <div class="divider"></div>
+
+            <p>Tanking is a legitimate—and increasingly common—strategy within the NBA. It represents a rational response to a draft system that incentivizes losing. While ethically complex, tanking has created some of the most compelling rebuilds in recent basketball history.</p>
+
+            <p>Whether you view tanking as smart strategy or competitive immorality likely depends on your perspective. But one thing is clear: <strong>in a league where draft picks determine championships, tanking will remain a rational choice as long as the incentive structure rewards it.</strong></p>
+
+            <div class="highlight">
+                <p><strong>The Future of Tanking:</strong> Expect more teams to embrace rebuilds as front offices become more analytical and fans become more accepting of multi-year building projects. The organizations that tank strategically—with transparency, player development, and a clear endpoint—will thrive. Those that drift into mediocre tanking will fail.</p>
+            </div>
+
+            <p style="margin-top: 60px; text-align: center; font-size: 20px; font-weight: 600; color: #0D5E54;">Tanking isn't going away. Understanding it is essential to understanding modern basketball.</p>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p><strong>The Art of Tanking: Strategic Losing in the NBA</strong></p>
+        <p>A comprehensive exploration of draft strategy, lottery dynamics, and the future of competitive balance in basketball.</p>
+        <p style="margin-top: 30px; font-size: 14px;">© 2026 Rob Kremers. All rights reserved. | <a href="https://robkremers.com">Back to Portfolio</a></p>
+    </footer>
+</body>
+</html>
