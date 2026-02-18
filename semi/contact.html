@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Tesla Semi | Fleet Inquiry</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: #fff;
+            color: #1a1a1a;
+            line-height: 1.6;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+            background: white;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            border-bottom: 1px solid #eee;
+        }
+
+        nav .logo {
+            font-size: 24px;
+            font-weight: 700;
+            letter-spacing: -1px;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 40px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #1a1a1a;
+            font-size: 15px;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #E82127;
+        }
+
+        section {
+            padding: 100px 40px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            font-size: 56px;
+            font-weight: 700;
+            margin-bottom: 30px;
+            letter-spacing: -1px;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.8;
+            margin-bottom: 15px;
+        }
+
+        /* Two Column Layout */
+        .contact-layout {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 80px;
+            margin: 60px 0;
+            align-items: start;
+        }
+
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .form-group label {
+            font-weight: 600;
+            margin-bottom: 10px;
+            font-size: 14px;
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            padding: 12px;
+            border: 1px solid #ddd;
+            font-size: 16px;
+            border-radius: 4px;
+            font-family: inherit;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: #E82127;
+            box-shadow: 0 0 0 3px rgba(232, 33, 39, 0.1);
+        }
+
+        .form-group textarea {
+            min-height: 150px;
+            resize: vertical;
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .submit-btn {
+            background: #E82127;
+            color: white;
+            padding: 16px 40px;
+            border: none;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            border-radius: 4px;
+            transition: all 0.3s;
+            letter-spacing: 0.5px;
+        }
+
+        .submit-btn:hover {
+            background: #cc1a21;
+            transform: translateY(-2px);
+        }
+
+        /* Contact Info */
+        .contact-info {
+            padding: 40px;
+            background: #f5f5f5;
+            border-radius: 4px;
+        }
+
+        .contact-info h3 {
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 30px;
+        }
+
+        .contact-item {
+            margin-bottom: 40px;
+            padding-bottom: 40px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .contact-item:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        .contact-label {
+            font-size: 12px;
+            color: #999;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+
+        .contact-value {
+            font-size: 16px;
+            color: #E82127;
+            font-weight: 600;
+        }
+
+        .contact-desc {
+            font-size: 15px;
+            line-height: 1.7;
+            margin-top: 8px;
+        }
+
+        /* Options Grid */
+        .options-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 40px;
+            margin: 60px 0;
+        }
+
+        .option-card {
+            border: 1px solid #eee;
+            padding: 40px;
+            text-align: center;
+            transition: all 0.3s;
+            cursor: pointer;
+        }
+
+        .option-card:hover {
+            border-color: #E82127;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.08);
+        }
+
+        .option-icon {
+            font-size: 48px;
+            margin-bottom: 15px;
+        }
+
+        .option-title {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        .option-desc {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .option-link {
+            color: #E82127;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 14px;
+        }
+
+        footer {
+            background: #1a1a1a;
+            color: white;
+            padding: 60px 40px;
+            text-align: center;
+        }
+
+        footer p {
+            margin-bottom: 10px;
+            font-size: 15px;
+        }
+
+        footer a {
+            color: #E82127;
+            text-decoration: none;
+        }
+
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            nav ul {
+                flex-direction: column;
+                gap: 15px;
+                text-align: center;
+            }
+
+            section {
+                padding: 60px 20px;
+            }
+
+            h1 {
+                font-size: 36px;
+            }
+
+            .contact-layout {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+
+            .form-row {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">TESLA</div>
+        <ul>
+            <li><a href="/semi/">Home</a></li>
+            <li><a href="/semi/product.html">Product</a></li>
+            <li><a href="/semi/economics.html">Economics</a></li>
+            <li><a href="/semi/blog.html">Learn</a></li>
+            <li><a href="/semi/resources.html">Resources</a></li>
+        </ul>
+    </nav>
+
+    <section style="padding: 60px 40px;">
+        <h1>Get Started with Tesla Semi</h1>
+        <p style="font-size: 18px; opacity: 0.8;">Have questions? Ready to explore? Our fleet specialists are here to help.</p>
+    </section>
+
+    <!-- Quick Options -->
+    <section>
+        <h2>How Can We Help?</h2>
+        <div class="options-grid">
+            <div class="option-card">
+                <div class="option-icon">📊</div>
+                <div class="option-title">Explore Economics</div>
+                <div class="option-desc">Get a customized ROI analysis for your fleet</div>
+                <a href="/semi/economics.html" class="option-link">View Calculator →</a>
+            </div>
+            <div class="option-card">
+                <div class="option-icon">🚗</div>
+                <div class="option-title">Schedule Demo</div>
+                <div class="option-desc">Test drive Tesla Semi on your routes</div>
+                <a href="#inquiry-form" class="option-link">Request Demo →</a>
+            </div>
+            <div class="option-card">
+                <div class="option-icon">💼</div>
+                <div class="option-title">Sales Consultation</div>
+                <div class="option-desc">1-on-1 session with fleet specialists</div>
+                <a href="#inquiry-form" class="option-link">Book Call →</a>
+            </div>
+            <div class="option-card">
+                <div class="option-icon">🔧</div>
+                <div class="option-title">Technical Deep Dive</div>
+                <div class="option-desc">Discuss specifications and capabilities</div>
+                <a href="#inquiry-form" class="option-link">Ask Questions →</a>
+            </div>
+            <div class="option-card">
+                <div class="option-icon">📋</div>
+                <div class="option-title">Download Resources</div>
+                <div class="option-desc">Spec sheets, guides, and case studies</div>
+                <a href="/semi/resources.html" class="option-link">Browse Resources →</a>
+            </div>
+            <div class="option-card">
+                <div class="option-icon">💡</div>
+                <div class="option-title">Learn More</div>
+                <div class="option-desc">Read industry insights and analysis</div>
+                <a href="/semi/blog.html" class="option-link">Read Blog →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form & Info -->
+    <section id="inquiry-form">
+        <h2 style="margin-bottom: 50px;">Let's Talk</h2>
+        <div class="contact-layout">
+            <form class="contact-form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="firstName">First Name *</label>
+                        <input type="text" id="firstName" name="firstName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="lastName">Last Name *</label>
+                        <input type="text" id="lastName" name="lastName" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="company">Company *</label>
+                    <input type="text" id="company" name="company" required>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="fleetSize">Fleet Size *</label>
+                    <select id="fleetSize" name="fleetSize" required>
+                        <option value="">Select...</option>
+                        <option value="1-10">1-10 trucks</option>
+                        <option value="11-50">11-50 trucks</option>
+                        <option value="51-100">51-100 trucks</option>
+                        <option value="100-500">100-500 trucks</option>
+                        <option value="500+">500+ trucks</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="interest">I'm Interested In *</label>
+                    <select id="interest" name="interest" required>
+                        <option value="">Select...</option>
+                        <option value="demo">Schedule a demo</option>
+                        <option value="consultation">Sales consultation</option>
+                        <option value="economics">Economics analysis</option>
+                        <option value="technical">Technical details</option>
+                        <option value="infrastructure">Infrastructure planning</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" placeholder="Tell us about your fleet and goals..."></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">SUBMIT INQUIRY</button>
+            </form>
+
+            <div class="contact-info">
+                <h3>Get in Touch</h3>
+
+                <div class="contact-item">
+                    <div class="contact-label">Email</div>
+                    <div class="contact-value">fleet@tesla.com</div>
+                    <div class="contact-desc">For general inquiries and information requests</div>
+                </div>
+
+                <div class="contact-item">
+                    <div class="contact-label">Phone</div>
+                    <div class="contact-value">1-800-TESLA-SEMI</div>
+                    <div class="contact-desc">Speak with a fleet specialist Monday-Friday, 8am-6pm PT</div>
+                </div>
+
+                <div class="contact-item">
+                    <div class="contact-label">Mailing Address</div>
+                    <div class="contact-value">Tesla Fleet Sales</div>
+                    <div class="contact-desc">1 Tesla Road<br>Austin, TX 78725<br>United States</div>
+                </div>
+
+                <div class="contact-item">
+                    <div class="contact-label">Response Time</div>
+                    <div class="contact-value">24-48 Hours</div>
+                    <div class="contact-desc">Fleet inquiries receive priority response from our team</div>
+                </div>
+
+                <div class="contact-item">
+                    <div class="contact-label">What to Expect</div>
+                    <div class="contact-desc">
+                        <strong>✓</strong> Initial consultation call<br>
+                        <strong>✓</strong> Customized proposal<br>
+                        <strong>✓</strong> Demo scheduling<br>
+                        <strong>✓</strong> Dedicated account manager<br>
+                        <strong>✓</strong> Ongoing support
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQs Quick Links -->
+    <section style="text-align: center; background: #f5f5f5; margin: 0 -40px; padding: 60px 40px;">
+        <h2>Still Have Questions?</h2>
+        <p style="margin-bottom: 30px;">Explore our comprehensive resources:</p>
+        <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
+            <a href="/semi/product.html" style="background: white; border: 1px solid #ddd; padding: 14px 30px; text-decoration: none; color: #1a1a1a; font-weight: 600; border-radius: 4px; transition: all 0.3s;" onmouseover="this.style.borderColor='#E82127'; this.style.boxShadow='0 4px 12px rgba(232,33,39,0.1)'" onmouseout="this.style.borderColor='#ddd'; this.style.boxShadow='none'">Product Specs</a>
+            <a href="/semi/economics.html" style="background: white; border: 1px solid #ddd; padding: 14px 30px; text-decoration: none; color: #1a1a1a; font-weight: 600; border-radius: 4px; transition: all 0.3s;" onmouseover="this.style.borderColor='#E82127'; this.style.boxShadow='0 4px 12px rgba(232,33,39,0.1)'" onmouseout="this.style.borderColor='#ddd'; this.style.boxShadow='none'">ROI Calculator</a>
+            <a href="/semi/blog.html" style="background: white; border: 1px solid #ddd; padding: 14px 30px; text-decoration: none; color: #1a1a1a; font-weight: 600; border-radius: 4px; transition: all 0.3s;" onmouseover="this.style.borderColor='#E82127'; this.style.boxShadow='0 4px 12px rgba(232,33,39,0.1)'" onmouseout="this.style.borderColor='#ddd'; this.style.boxShadow='none'">Learn More</a>
+            <a href="/semi/resources.html" style="background: white; border: 1px solid #ddd; padding: 14px 30px; text-decoration: none; color: #1a1a1a; font-weight: 600; border-radius: 4px; transition: all 0.3s;" onmouseover="this.style.borderColor='#E82127'; this.style.boxShadow='0 4px 12px rgba(232,33,39,0.1)'" onmouseout="this.style.borderColor='#ddd'; this.style.boxShadow='none'">Resources</a>
+        </div>
+    </section>
+
+    <footer>
+        <p><strong>Tesla Semi</strong> — Electrifying the Future of Freight</p>
+        <p style="opacity: 0.6; font-size: 13px;">© 2026 Tesla, Inc. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.querySelector('.contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for your inquiry. A Tesla fleet specialist will contact you within 24-48 hours.');
+            this.reset();
+        });
+    </script>
+</body>
+</html>

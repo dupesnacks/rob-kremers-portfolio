@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tesla Semi Resources | Sales Enablement Materials</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: #fff;
+            color: #1a1a1a;
+            line-height: 1.6;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+            background: white;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            border-bottom: 1px solid #eee;
+        }
+
+        nav .logo {
+            font-size: 24px;
+            font-weight: 700;
+            letter-spacing: -1px;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 40px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #1a1a1a;
+            font-size: 15px;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #E82127;
+        }
+
+        section {
+            padding: 100px 40px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            font-size: 56px;
+            font-weight: 700;
+            margin-bottom: 30px;
+            letter-spacing: -1px;
+        }
+
+        h2 {
+            font-size: 40px;
+            font-weight: 700;
+            margin-bottom: 40px;
+            letter-spacing: -1px;
+        }
+
+        h3 {
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 20px;
+            margin-top: 40px;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.8;
+            margin-bottom: 15px;
+        }
+
+        /* Resource Grid */
+        .resource-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 40px;
+            margin: 60px 0;
+        }
+
+        .resource-card {
+            border: 1px solid #eee;
+            padding: 40px;
+            transition: all 0.3s;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .resource-card:hover {
+            border-color: #E82127;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.08);
+        }
+
+        .resource-icon {
+            font-size: 36px;
+            margin-bottom: 15px;
+        }
+
+        .resource-title {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        .resource-type {
+            font-size: 12px;
+            color: #999;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 15px;
+        }
+
+        .resource-desc {
+            font-size: 15px;
+            line-height: 1.7;
+            color: #666;
+            margin-bottom: 20px;
+            flex-grow: 1;
+        }
+
+        .resource-link {
+            background: #E82127;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 14px;
+            font-weight: 600;
+            border-radius: 4px;
+            transition: all 0.3s;
+            text-align: center;
+        }
+
+        .resource-link:hover {
+            background: #cc1a21;
+            transform: translateY(-2px);
+        }
+
+        .resource-link-secondary {
+            background: transparent;
+            color: #E82127;
+            border: 1px solid #E82127;
+            padding: 10px 20px;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 14px;
+            font-weight: 600;
+            border-radius: 4px;
+            transition: all 0.3s;
+            text-align: center;
+        }
+
+        .resource-link-secondary:hover {
+            background: #E82127;
+            color: white;
+        }
+
+        /* Section Categories */
+        .category-section {
+            margin-bottom: 80px;
+        }
+
+        .category-title {
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #E82127;
+        }
+
+        /* Feature Highlight */
+        .highlight {
+            background: #f5f5f5;
+            padding: 60px;
+            margin: 60px 0;
+            border-left: 4px solid #E82127;
+        }
+
+        .highlight h3 {
+            margin-top: 0;
+        }
+
+        /* Two Column */
+        .two-col {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            margin: 60px 0;
+            align-items: start;
+        }
+
+        .two-col h3 {
+            margin-top: 0;
+        }
+
+        .two-col ul {
+            list-style: none;
+            margin-left: 0;
+        }
+
+        .two-col li {
+            padding: 12px 0;
+            padding-left: 30px;
+            position: relative;
+            font-size: 16px;
+        }
+
+        .two-col li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #E82127;
+            font-weight: bold;
+        }
+
+        footer {
+            background: #1a1a1a;
+            color: white;
+            padding: 60px 40px;
+            text-align: center;
+        }
+
+        footer p {
+            margin-bottom: 10px;
+            font-size: 15px;
+        }
+
+        footer a {
+            color: #E82127;
+            text-decoration: none;
+        }
+
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            nav ul {
+                flex-direction: column;
+                gap: 15px;
+                text-align: center;
+            }
+
+            section {
+                padding: 60px 20px;
+            }
+
+            h1 {
+                font-size: 36px;
+            }
+
+            h2 {
+                font-size: 32px;
+            }
+
+            .two-col {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">TESLA</div>
+        <ul>
+            <li><a href="/semi/">Home</a></li>
+            <li><a href="/semi/product.html">Product</a></li>
+            <li><a href="/semi/economics.html">Economics</a></li>
+            <li><a href="/semi/blog.html">Learn</a></li>
+            <li><a href="/semi/resources.html">Resources</a></li>
+        </ul>
+    </nav>
+
+    <section style="padding: 60px 40px;">
+        <h1>Resources & Sales Enablement</h1>
+        <p style="font-size: 18px; opacity: 0.8;">Tools, materials, and documentation to help your fleet make the transition to electric.</p>
+    </section>
+
+    <!-- Educational Resources -->
+    <section>
+        <div class="category-section">
+            <h2 class="category-title">Educational Resources</h2>
+            
+            <div class="resource-grid">
+                <div class="resource-card">
+                    <div class="resource-icon">📊</div>
+                    <div class="resource-type">Guide</div>
+                    <div class="resource-title">Tesla Semi Specifications Sheet</div>
+                    <div class="resource-desc">Complete technical specifications for both Standard Range and Long Range variants. Print-friendly format for fleet managers and procurement teams.</div>
+                    <a href="#" class="resource-link">Download PDF</a>
+                </div>
+
+                <div class="resource-card">
+                    <div class="resource-icon">💰</div>
+                    <div class="resource-type">Calculator</div>
+                    <div class="resource-title">Total Cost of Ownership Analysis</div>
+                    <div class="resource-desc">Spreadsheet tool for calculating 5-year, 10-year, and lifetime operating costs. Compare diesel vs electric for your specific fleet configuration.</div>
+                    <a href="#" class="resource-link">Download Excel</a>
+                </div>
+
+                <div class="resource-card">
+                    <div class="resource-icon">📈</div>
+                    <div class="resource-type">Report</div>
+                    <div class="resource-title">Fleet Electrification ROI Framework</div>
+                    <div class="resource-desc">Step-by-step methodology for calculating break-even, payback period, and long-term value creation from fleet transition.</div>
+                    <a href="#" class="resource-link">Download PDF</a>
+                </div>
+
+                <div class="resource-card">
+                    <div class="resource-icon">🔧</div>
+                    <div class="resource-type">Manual</div>
+                    <div class="resource-title">Charging Infrastructure Planning Guide</div>
+                    <div class="resource-desc">How to assess on-site charging needs, MCS 3.2 vs depot charging, and phase infrastructure deployment across your facilities.</div>
+                    <a href="#" class="resource-link">Download Guide</a>
+                </div>
+
+                <div class="resource-card">
+                    <div class="resource-icon">🎓</div>
+                    <div class="resource-type">Training</div>
+                    <div class="resource-title">Driver Training Program</div>
+                    <div class="resource-desc">Comprehensive onboarding for drivers transitioning to electric trucks. Covers efficient driving, charging procedures, and vehicle systems.</div>
+                    <a href="#" class="resource-link">Enroll Now</a>
+                </div>
+
+                <div class="resource-card">
+                    <div class="resource-icon">🌍</div>
+                    <div class="resource-type">Whitepaper</div>
+                    <div class="resource-title">Environmental Impact & Carbon Accounting</div>
+                    <div class="resource-desc">Quantify emissions reductions and how Tesla Semi contributes to corporate sustainability targets and ESG initiatives.</div>
+                    <a href="#" class="resource-link">Download PDF</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sales & Procurement -->
+    <section>
+        <div class="category-section">
+            <h2 class="category-title">Sales & Procurement</h2>
+
+            <div class="resource-grid">
+                <div class="resource-card">
+                    <div class="resource-icon">💼</div>
+                    <div class="resource-type">Presentation</div>
+                    <div class="resource-title">Executive Briefing Deck</div>
+                    <div class="resource-desc">20-slide deck for presenting Tesla Semi business case to C-suite. Covers economics, strategy, and competitive positioning.</div>
+                    <a href="#" class="resource-link">Download Deck</a>
+                </div>
+
+                <div class="resource-card">
+                    <div class="resource-icon">📋</div>
+                    <div class="resource-type">Template</div>
+                    <div class="resource-title">Fleet Transition Proposal Template</div>
+                    <div class="resource-desc">Customizable proposal document for presenting phased fleet transition plans to executive stakeholders.</div>
+                    <a href="#" class="resource-link">Download Template</a>
+                </div>
+
+                <div class="resource-card">
+                    <div class="resource-icon">📝</div>
+                    <div class="resource-type">Checklist</div>
+                    <div class="resource-title">Procurement & Compliance Checklist</div>
+                    <div class="resource-desc">Complete checklist for fleet procurement, including federal incentive applications, state compliance, and logistics planning.</div>
+                    <a href="#" class="resource-link">Download Checklist</a>
+                </div>
+
+                <div class="resource-card">
+                    <div class="resource-icon">🔐</div>
+                    <div class="resource-type">Guide</div>
+                    <div class="resource-title">Federal Tax Credit Application Guide</div>
+                    <div class="resource-desc">Step-by-step instructions for qualifying for and claiming the $40,000 federal tax credit per vehicle.</div>
+                    <a href="#" class="resource-link">Download Guide</a>
+                </div>
+
+                <div class="resource-card">
+                    <div class="resource-icon">📊</div>
+                    <div class="resource-type">Comparison</div>
+                    <div class="resource-title">Tesla Semi vs Competitor Comparison</div>
+                    <div class="resource-desc">Detailed side-by-side comparison of Tesla Semi specs, performance, cost, and features vs other electric trucks.</div>
+                    <a href="#" class="resource-link">Download Comparison</a>
+                </div>
+
+                <div class="resource-card">
+                    <div class="resource-icon">🎯</div>
+                    <div class="resource-type">Framework</div>
+                    <div class="resource-title">Fleet Phasing Strategy Template</div>
+                    <div class="resource-desc">Framework for planning and executing multi-year fleet transition. How to phase in Tesla Semi while managing diesel fleet.</div>
+                    <a href="#" class="resource-link">Download Framework</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Operations Support -->
+    <section>
+        <div class="category-section">
+            <h2 class="category-title">Operations & Support</h2>
+
+            <div class="resource-grid">
+                <div class="resource-card">
+                    <div class="resource-icon">🛠️</div>
+                    <div class="resource-type">Manual</div>
+                    <div class="resource-title">Operations & Maintenance Handbook</div>
+                    <div class="resource-desc">Comprehensive reference for fleet operations teams. Covers maintenance schedules, diagnostics, troubleshooting, and best practices.</div>
+                    <a href="#" class="resource-link">Download Handbook</a>
+                </div>
+
+                <div class="resource-card">
+                    <div class="resource-icon">⚡</div>
+                    <div class="resource-type">Guide</div>
+                    <div class="resource-title">Charging Network Planning</div>
+                    <div class="resource-desc">Strategic approach to charging infrastructure expansion. Route planning, charging stop identification, and network optimization.</div>
+                    <a href="#" class="resource-link">Download Guide</a>
+                </div>
+
+                <div class="resource-card">
+                    <div class="resource-icon">📱</div>
+                    <div class="resource-type">Software</div>
+                    <div class="resource-title">Fleet Management Dashboard</div>
+                    <div class="resource-desc">Real-time visibility into vehicle status, charging, energy consumption, and predictive maintenance alerts. Integration with existing TMS systems.</div>
+                    <a href="#" class="resource-link">Get Access</a>
+                </div>
+
+                <div class="resource-card">
+                    <div class="resource-icon">🚨</div>
+                    <div class="resource-type">Protocol</div>
+                    <div class="resource-title">Emergency & Roadside Assistance</div>
+                    <div class="resource-desc">24/7 support protocol for Tesla Semi vehicles. Emergency contact procedures, roadside assistance, and incident reporting.</div>
+                    <a href="#" class="resource-link">Download Protocol</a>
+                </div>
+
+                <div class="resource-card">
+                    <div class="resource-icon">📊</div>
+                    <div class="resource-type">Analytics</div>
+                    <div class="resource-title">Performance Tracking Dashboard</div>
+                    <div class="resource-desc">Monitor fleet KPIs in real-time. Energy consumption, uptime, maintenance costs, driver efficiency, and ROI tracking.</div>
+                    <a href="#" class="resource-link">View Sample</a>
+                </div>
+
+                <div class="resource-card">
+                    <div class="resource-icon">🤝</div>
+                    <div class="resource-type">Support</div>
+                    <div class="resource-title">Dedicated Fleet Support Team</div>
+                    <div class="resource-desc">Direct access to Tesla's fleet operations team for ongoing support, optimization, and strategic guidance.</div>
+                    <a href="#" class="resource-link">Request Support</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Industry Insights -->
+    <section>
+        <div class="category-section">
+            <h2 class="category-title">Industry Analysis</h2>
+
+            <div class="resource-grid">
+                <div class="resource-card">
+                    <div class="resource-icon">📈</div>
+                    <div class="resource-type">Report</div>
+                    <div class="resource-title">2026 Trucking Industry Electrification Report</div>
+                    <div class="resource-desc">Comprehensive analysis of adoption rates, market trends, competitive landscape, and policy drivers shaping the industry.</div>
+                    <a href="#" class="resource-link">Download Report</a>
+                </div>
+
+                <div class="resource-card">
+                    <div class="resource-icon">🌎</div>
+                    <div class="resource-type">Whitepaper</div>
+                    <div class="resource-title">Global EV Truck Deployment Case Studies</div>
+                    <div class="resource-desc">Real-world examples from Europe and Asia. What's working, what's not, and lessons applicable to North American fleets.</div>
+                    <a href="#" class="resource-link">Download Whitepaper</a>
+                </div>
+
+                <div class="resource-card">
+                    <div class="resource-icon">🔬</div>
+                    <div class="resource-type">Research</div>
+                    <div class="resource-title">Reliability & Longevity Study</div>
+                    <div class="resource-desc">Independent assessment of Tesla Semi reliability, battery longevity, and lifetime value vs diesel alternatives.</div>
+                    <a href="#" class="resource-link">Download Study</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Webinars & Events -->
+    <section class="highlight">
+        <h2>Webinars & Live Events</h2>
+        <p>Join industry experts and fleet operators for live discussions on fleet electrification strategy, operations, and real-world implementation.</p>
+
+        <div class="two-col">
+            <div>
+                <h3>Upcoming Webinars</h3>
+                <ul>
+                    <li><strong>Mar 5:</strong> "TCO Reality Check" — Independent analysis of Tesla Semi economics</li>
+                    <li><strong>Mar 12:</strong> "Infrastructure Planning" — Designing charging networks for your fleet</li>
+                    <li><strong>Mar 19:</strong> "Operations Panel" — Fleet operators share real-world experience</li>
+                    <li><strong>Mar 26:</strong> "Autonomy Ready" — Hardware & strategy for Full Self-Driving</li>
+                </ul>
+                <a href="#" class="resource-link" style="margin-top: 30px;">Register for Webinars</a>
+            </div>
+
+            <div>
+                <h3>Fleet Demonstration Program</h3>
+                <ul>
+                    <li>Schedule hands-on testing with Tesla Semi at your facility</li>
+                    <li>Supervised test drives on your actual routes</li>
+                    <li>One-on-one consultations with Tesla fleet specialists</li>
+                    <li>Customized site assessment and infrastructure planning</li>
+                </ul>
+                <a href="/semi/contact.html" class="resource-link" style="margin-top: 30px;">Schedule Demo</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Support Request -->
+    <section style="text-align: center;">
+        <h2>Can't Find What You're Looking For?</h2>
+        <p style="font-size: 18px; margin-bottom: 30px;">Our team is ready to help. Request specific resources, schedule a consultation, or connect with a fleet specialist.</p>
+        <a href="/semi/contact.html" style="background: #E82127; color: white; padding: 14px 35px; text-decoration: none; display: inline-block; font-weight: 600; letter-spacing: 0.5px; margin-right: 20px;">Request Resources</a>
+        <a href="/semi/contact.html" style="background: transparent; border: 2px solid #E82127; color: #E82127; padding: 12px 33px; text-decoration: none; display: inline-block; font-weight: 600; letter-spacing: 0.5px;">Get Expert Help</a>
+    </section>
+
+    <footer>
+        <p><strong>Tesla Semi Resources</strong> — Complete Fleet Support</p>
+        <p style="opacity: 0.6; font-size: 13px;">© 2026 Tesla, Inc. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tesla Semi - The Future of Trucking</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: #fff;
+            color: #1a1a1a;
+            line-height: 1.6;
+        }
+
+        /* Navigation */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+            background: white;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            border-bottom: 1px solid #eee;
+        }
+
+        nav .logo {
+            font-size: 24px;
+            font-weight: 700;
+            letter-spacing: -1px;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 40px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #1a1a1a;
+            font-size: 15px;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #E82127;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 100%);
+            color: white;
+            padding: 120px 40px;
+            text-align: center;
+            min-height: 700px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .hero h1 {
+            font-size: 64px;
+            font-weight: 700;
+            margin-bottom: 20px;
+            letter-spacing: -2px;
+            line-height: 1.1;
+        }
+
+        .hero p {
+            font-size: 24px;
+            margin-bottom: 40px;
+            opacity: 0.9;
+            max-width: 800px;
+            font-weight: 300;
+        }
+
+        .cta {
+            background: #E82127;
+            color: white;
+            padding: 14px 35px;
+            border: none;
+            font-size: 15px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+            text-decoration: none;
+            display: inline-block;
+            letter-spacing: 0.5px;
+        }
+
+        .cta:hover {
+            background: #cc1a21;
+            transform: translateY(-2px);
+        }
+
+        /* Sections */
+        section {
+            padding: 100px 40px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h2 {
+            font-size: 48px;
+            font-weight: 700;
+            margin-bottom: 40px;
+            letter-spacing: -1px;
+        }
+
+        h3 {
+            font-size: 28px;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 40px;
+            margin: 60px 0;
+        }
+
+        .card {
+            padding: 40px;
+            border: 1px solid #eee;
+            transition: all 0.3s;
+        }
+
+        .card:hover {
+            border-color: #E82127;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.08);
+        }
+
+        .card h4 {
+            font-size: 22px;
+            margin-bottom: 15px;
+            color: #1a1a1a;
+        }
+
+        .card p {
+            font-size: 16px;
+            line-height: 1.8;
+        }
+
+        .stat {
+            text-align: center;
+            margin: 40px 0;
+        }
+
+        .stat-number {
+            font-size: 56px;
+            font-weight: 700;
+            color: #E82127;
+            margin-bottom: 10px;
+        }
+
+        .stat-label {
+            font-size: 18px;
+            color: #666;
+        }
+
+        .comparison {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            margin: 60px 0;
+            align-items: center;
+        }
+
+        .comparison h4 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .comparison ul {
+            list-style: none;
+            margin-left: 0;
+        }
+
+        .comparison li {
+            padding: 10px 0;
+            padding-left: 30px;
+            position: relative;
+            font-size: 16px;
+        }
+
+        .comparison li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #E82127;
+            font-weight: bold;
+        }
+
+        /* Highlight section */
+        .highlight {
+            background: #f5f5f5;
+            padding: 80px 40px;
+            text-align: center;
+        }
+
+        .highlight h2 {
+            margin-bottom: 50px;
+        }
+
+        .metric-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 50px;
+            margin: 60px 0;
+        }
+
+        .metric {
+            text-align: center;
+        }
+
+        .metric-value {
+            font-size: 48px;
+            font-weight: 700;
+            color: #E82127;
+            margin-bottom: 10px;
+        }
+
+        .metric-desc {
+            font-size: 16px;
+            color: #666;
+        }
+
+        /* Footer */
+        footer {
+            background: #1a1a1a;
+            color: white;
+            padding: 60px 40px;
+            text-align: center;
+        }
+
+        footer p {
+            margin-bottom: 10px;
+            font-size: 15px;
+        }
+
+        footer a {
+            color: #E82127;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        footer a:hover {
+            color: #ff3333;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin-top: 30px;
+            flex-wrap: wrap;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            nav ul {
+                flex-direction: column;
+                gap: 15px;
+                text-align: center;
+            }
+
+            .hero {
+                padding: 60px 20px;
+            }
+
+            .hero h1 {
+                font-size: 40px;
+            }
+
+            .hero p {
+                font-size: 18px;
+            }
+
+            section {
+                padding: 60px 20px;
+            }
+
+            h2 {
+                font-size: 36px;
+            }
+
+            .comparison {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">TESLA</div>
+        <ul>
+            <li><a href="#product">Product</a></li>
+            <li><a href="/semi/economics.html">Economics</a></li>
+            <li><a href="/semi/blog.html">Learn</a></li>
+            <li><a href="/semi/resources.html">Resources</a></li>
+            <li><a href="/semi/contact.html">Inquire</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero">
+        <h1>The Future of Freight is Electric</h1>
+        <p>Tesla Semi delivers the operational efficiency, environmental responsibility, and long-term value fleets demand. Made for the road. Built for scale.</p>
+        <a href="/semi/economics.html" class="cta">EXPLORE ECONOMICS</a>
+    </section>
+
+    <!-- Core Value Prop -->
+    <section id="product">
+        <h2>Why Fleets Choose Tesla Semi</h2>
+        
+        <div class="grid">
+            <div class="card">
+                <h4>325-500 Mile Range</h4>
+                <p>Two variants designed for real-world operations. Standard Range for regional routes. Long Range for cross-country demands. No range anxiety. Pure capability.</p>
+            </div>
+            <div class="card">
+                <h4>1.7 kWh Per Mile Efficiency</h4>
+                <p>The most efficient heavy-duty truck ever built. Industry-leading efficiency translates to lower energy costs, reduced operational overhead, and faster payback on investment.</p>
+            </div>
+            <div class="card">
+                <h4>800 kW Continuous Power</h4>
+                <p>Three-motor architecture delivers sustained power for loaded routes. No degradation. Accelerate loaded. Climb grades. Match diesel performance without the emissions.</p>
+            </div>
+            <div class="card">
+                <h4>Up to 1.2 MW Fast Charging</h4>
+                <p>Gigafactory Nevada's V4 Supercharger infrastructure enables 20-minute charging to 80%. Minimal downtime. Maximum productivity. Built for scale.</p>
+            </div>
+            <div class="card">
+                <h4>82,000 lbs GCW Rated</h4>
+                <p>Full legal payload capacity. Zero compromises on hauling capability. Match your diesel expectations with electric efficiency and reliability.</p>
+            </div>
+            <div class="card">
+                <h4>Built for Autonomy</h4>
+                <p>Hardware ready for Tesla Full Self-Driving on freeways. Reduce driver fatigue. Enhance safety. Future-proof your fleet today.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Performance Metrics -->
+    <section class="highlight">
+        <h2>Fleet Economics at a Glance</h2>
+        <div class="metric-grid">
+            <div class="metric">
+                <div class="metric-value">$250K</div>
+                <div class="metric-desc">Potential 5-Year Fuel Savings vs Diesel</div>
+            </div>
+            <div class="metric">
+                <div class="metric-value">3,000+</div>
+                <div class="metric-desc">Operating Hours Annually Per Vehicle</div>
+            </div>
+            <div class="metric">
+                <div class="metric-value">40%</div>
+                <div class="metric-desc">Lower Energy Costs Per Mile</div>
+            </div>
+            <div class="metric">
+                <div class="metric-value">10X</div>
+                <div class="metric-desc">Fewer Moving Parts = Reduced Maintenance</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Comparison -->
+    <section>
+        <h2>Tesla Semi vs Diesel Class 8</h2>
+        <div class="comparison">
+            <div>
+                <h4>Tesla Semi</h4>
+                <ul>
+                    <li>$0.02 per mile energy cost</li>
+                    <li>Minimal scheduled maintenance</li>
+                    <li>Instant torque, responsive acceleration</li>
+                    <li>Silent operation, improved driver experience</li>
+                    <li>Multi-day payload reliability</li>
+                    <li>Federal incentives available</li>
+                    <li>Built for autonomous driving</li>
+                </ul>
+            </div>
+            <div>
+                <h4>Traditional Diesel</h4>
+                <ul>
+                    <li>$0.12+ per mile fuel cost</li>
+                    <li>Oil changes, filter replacements, repairs</li>
+                    <li>Engine lag, transmission complexity</li>
+                    <li>Noise pollution, emissions</li>
+                    <li>Wear over time, degradation</li>
+                    <li>No subsidies, shrinking market</li>
+                    <li>Limited automation potential</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section style="text-align: center;">
+        <h2>Ready to Electrify Your Fleet?</h2>
+        <p style="font-size: 18px; margin-bottom: 30px; opacity: 0.8;">Explore the financial case. Schedule a demo. Join the future of trucking.</p>
+        <a href="/semi/contact.html" class="cta">START YOUR FLEET TRANSITION</a>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p><strong>Tesla Semi</strong> — Advancing the Energy Economy</p>
+        <p>Production Launch: 2026 | Gigafactory Nevada</p>
+        <div class="footer-links">
+            <a href="/semi/economics.html">Fleet Economics</a>
+            <a href="/semi/product.html">Specifications</a>
+            <a href="/semi/blog.html">Blog</a>
+            <a href="/semi/resources.html">Resources</a>
+        </div>
+        <p style="margin-top: 30px; opacity: 0.6; font-size: 13px;">© 2026 Tesla, Inc. All rights reserved.</p>
+    </footer>
+</body>
+</html>

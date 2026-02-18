@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tesla Semi Blog | Trucking Industry Insights</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: #fff;
+            color: #1a1a1a;
+            line-height: 1.6;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+            background: white;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            border-bottom: 1px solid #eee;
+        }
+
+        nav .logo {
+            font-size: 24px;
+            font-weight: 700;
+            letter-spacing: -1px;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 40px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #1a1a1a;
+            font-size: 15px;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #E82127;
+        }
+
+        section {
+            padding: 100px 40px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            font-size: 56px;
+            font-weight: 700;
+            margin-bottom: 30px;
+            letter-spacing: -1px;
+        }
+
+        h2 {
+            font-size: 40px;
+            font-weight: 700;
+            margin-bottom: 40px;
+            letter-spacing: -1px;
+        }
+
+        h3 {
+            font-size: 28px;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.8;
+            margin-bottom: 15px;
+        }
+
+        /* Blog Grid */
+        .blog-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+            gap: 40px;
+            margin: 60px 0;
+        }
+
+        .blog-card {
+            border: 1px solid #eee;
+            overflow: hidden;
+            transition: all 0.3s;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .blog-card:hover {
+            border-color: #E82127;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.08);
+        }
+
+        .blog-header {
+            background: linear-gradient(135deg, #2a2a2a 0%, #1a1a1a 100%);
+            color: white;
+            padding: 40px;
+            min-height: 200px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+        }
+
+        .blog-category {
+            font-size: 12px;
+            color: #E82127;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+
+        .blog-title {
+            font-size: 22px;
+            font-weight: 700;
+            line-height: 1.4;
+        }
+
+        .blog-body {
+            padding: 30px 40px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .blog-meta {
+            font-size: 13px;
+            color: #999;
+            margin-bottom: 20px;
+        }
+
+        .blog-excerpt {
+            font-size: 15px;
+            line-height: 1.7;
+            color: #666;
+            margin-bottom: 20px;
+            flex-grow: 1;
+        }
+
+        .blog-link {
+            color: #E82127;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 15px;
+            transition: color 0.3s;
+        }
+
+        .blog-link:hover {
+            color: #cc1a21;
+        }
+
+        /* Featured Article */
+        .featured {
+            background: #f5f5f5;
+            padding: 60px;
+            margin-bottom: 80px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .featured-content h2 {
+            margin-bottom: 30px;
+            color: #1a1a1a;
+        }
+
+        .featured-content p {
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+
+        .featured-btn {
+            background: #E82127;
+            color: white;
+            padding: 14px 35px;
+            text-decoration: none;
+            display: inline-block;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            transition: all 0.3s;
+            margin-top: 20px;
+        }
+
+        .featured-btn:hover {
+            background: #cc1a21;
+        }
+
+        .featured-side {
+            background: white;
+            padding: 40px;
+            border: 1px solid #eee;
+        }
+
+        .featured-stat {
+            margin-bottom: 30px;
+            padding-bottom: 30px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .featured-stat:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        .featured-stat-number {
+            font-size: 36px;
+            font-weight: 700;
+            color: #E82127;
+            margin-bottom: 8px;
+        }
+
+        .featured-stat-label {
+            font-size: 14px;
+            color: #666;
+        }
+
+        footer {
+            background: #1a1a1a;
+            color: white;
+            padding: 60px 40px;
+            text-align: center;
+        }
+
+        footer p {
+            margin-bottom: 10px;
+            font-size: 15px;
+        }
+
+        footer a {
+            color: #E82127;
+            text-decoration: none;
+        }
+
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            nav ul {
+                flex-direction: column;
+                gap: 15px;
+                text-align: center;
+            }
+
+            section {
+                padding: 60px 20px;
+            }
+
+            h1 {
+                font-size: 36px;
+            }
+
+            .featured {
+                grid-template-columns: 1fr;
+                padding: 40px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">TESLA</div>
+        <ul>
+            <li><a href="/semi/">Home</a></li>
+            <li><a href="/semi/product.html">Product</a></li>
+            <li><a href="/semi/economics.html">Economics</a></li>
+            <li><a href="/semi/blog.html">Learn</a></li>
+            <li><a href="/semi/resources.html">Resources</a></li>
+        </ul>
+    </nav>
+
+    <section style="padding: 60px 40px;">
+        <h1>Insights on the Future of Trucking</h1>
+        <p style="font-size: 18px; opacity: 0.8;">Industry analysis, fleet case studies, and deep dives into electric heavy-duty transportation.</p>
+    </section>
+
+    <!-- Featured Article -->
+    <section>
+        <div class="featured">
+            <div class="featured-content">
+                <h2>The Total Cost of Ownership Revolution in Heavy Trucking</h2>
+                <p>For decades, diesel dominated trucking economics. Cheap fuel, established supply chains, and driver familiarity made gasoline combustion the default choice. But the equation has changed fundamentally.</p>
+                <p>Today, the math favors electric. Not by a small margin. By a historic one. A Tesla Semi operating at typical fleet utilization (200K+ miles annually) generates $250K+ in fuel savings alone over 5 years. Add maintenance, add federal incentives, and the financial case becomes overwhelming.</p>
+                <p>But here's what matters most: this isn't about environmentalism. It's about competitive advantage. The fleets that transition first will benefit from lower operating costs, reduced downtime, and infrastructure advantage. The laggards will pay the price.</p>
+                <a href="#" class="featured-btn">READ FULL ANALYSIS</a>
+            </div>
+            <div class="featured-side">
+                <div class="featured-stat">
+                    <div class="featured-stat-number">$250K</div>
+                    <div class="featured-stat-label">Average 5-year fuel savings per truck</div>
+                </div>
+                <div class="featured-stat">
+                    <div class="featured-stat-number">6x</div>
+                    <div class="featured-stat-label">Energy cost advantage vs diesel</div>
+                </div>
+                <div class="featured-stat">
+                    <div class="featured-stat-number">2.1 yrs</div>
+                    <div class="featured-stat-label">Break-even payback period</div>
+                </div>
+                <div class="featured-stat">
+                    <div class="featured-stat-number">90%</div>
+                    <div class="featured-stat-label">Reduction in brake maintenance</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Grid -->
+    <section>
+        <h2>Latest Articles</h2>
+        <div class="blog-grid">
+            <div class="blog-card">
+                <div class="blog-header">
+                    <div class="blog-category">Fleet Operations</div>
+                    <h3 class="blog-title">Range vs Reality: What 500 Miles Actually Means for Your Routes</h3>
+                </div>
+                <div class="blog-body">
+                    <div class="blog-meta">Feb 18, 2026 • 8 min read</div>
+                    <p class="blog-excerpt">Range anxiety is the biggest objection to fleet electrification. But the conversation misses the point. We analyze how Tesla Semi's 500-mile Long Range variant maps to real logistics operations, proving that range limitations are not the bottleneck.</p>
+                    <a href="#" class="blog-link">Read Article →</a>
+                </div>
+            </div>
+
+            <div class="blog-card">
+                <div class="blog-header">
+                    <div class="blog-category">Infrastructure</div>
+                    <h3 class="blog-title">V4 Superchargers: The Foundation of Trucking's Future</h3>
+                </div>
+                <div class="blog-body">
+                    <div class="blog-meta">Feb 15, 2026 • 6 min read</div>
+                    <p class="blog-excerpt">The bottleneck for electric trucking wasn't vehicle performance—it was charging infrastructure. With V4 Superchargers delivering 1.2 MW and 80% charge in 20 minutes, that bottleneck is gone. Here's what this means for fleet deployment.</p>
+                    <a href="#" class="blog-link">Read Article →</a>
+                </div>
+            </div>
+
+            <div class="blog-card">
+                <div class="blog-header">
+                    <div class="blog-category">Finance</div>
+                    <h3 class="blog-title">Federal Tax Credits: Maximizing Your $40K Per Vehicle Advantage</h3>
+                </div>
+                <div class="blog-body">
+                    <div class="blog-meta">Feb 12, 2026 • 7 min read</div>
+                    <p class="blog-excerpt">The $40,000 federal tax credit per Tesla Semi is game-changing. But not all fleets qualify. We break down the eligibility requirements, the application process, and how to structure your fleet acquisition to capture maximum incentives.</p>
+                    <a href="#" class="blog-link">Read Article →</a>
+                </div>
+            </div>
+
+            <div class="blog-card">
+                <div class="blog-header">
+                    <div class="blog-category">Maintenance</div>
+                    <h3 class="blog-title">The Maintenance Revolution: Why 10X Fewer Parts Transforms Operations</h3>
+                </div>
+                <div class="blog-body">
+                    <div class="blog-meta">Feb 10, 2026 • 9 min read</div>
+                    <p class="blog-excerpt">Electric powertrains eliminate complexity. No transmission. No oil changes. No timing belts. No transmission fluid. What does this mean for fleet logistics, uptime, and maintenance planning? Everything changes.</p>
+                    <a href="#" class="blog-link">Read Article →</a>
+                </div>
+            </div>
+
+            <div class="blog-card">
+                <div class="blog-header">
+                    <div class="blog-category">Case Study</div>
+                    <h3 class="blog-title">From Skepticism to Leadership: How JB Hunt is Winning with Electric</h3>
+                </div>
+                <div class="blog-body">
+                    <div class="blog-meta">Feb 8, 2026 • 11 min read</div>
+                    <p class="blog-excerpt">Major carriers initially dismissed electric trucking. Not anymore. We interview operations leaders at major fleets who've transitioned to Tesla Semi, revealing the real-world operational benefits nobody talks about in marketing materials.</p>
+                    <a href="#" class="blog-link">Read Article →</a>
+                </div>
+            </div>
+
+            <div class="blog-card">
+                <div class="blog-header">
+                    <div class="blog-category">Future</div>
+                    <h3 class="blog-title">Full Self-Driving for Trucking: Why Autonomy Favors Tesla Semi</h3>
+                </div>
+                <div class="blog-body">
+                    <div class="blog-meta">Feb 5, 2026 • 10 min read</div>
+                    <p class="blog-excerpt">Autonomous driving is coming to trucking. The question isn't if—it's when. Tesla Semi's hardware architecture and software readiness position it perfectly for this transition. Here's how early adoption creates defensible competitive advantage.</p>
+                    <a href="#" class="blog-link">Read Article →</a>
+                </div>
+            </div>
+
+            <div class="blog-card">
+                <div class="blog-header">
+                    <div class="blog-category">Sustainability</div>
+                    <h3 class="blog-title">Carbon Accounting: The Environmental Case for Fleet Electrification</h3>
+                </div>
+                <div class="blog-body">
+                    <div class="blog-meta">Feb 1, 2026 • 7 min read</div>
+                    <p class="blog-excerpt">Electric trucking isn't just an economic story. A single Tesla Semi eliminates 6,000+ tons of CO2 annually. For fleets serious about emissions reduction, we quantify the environmental impact and how it maps to corporate sustainability targets.</p>
+                    <a href="#" class="blog-link">Read Article →</a>
+                </div>
+            </div>
+
+            <div class="blog-card">
+                <div class="blog-header">
+                    <div class="blog-category">Operations</div>
+                    <h3 class="blog-title">Cold Chain Logistics: How Electric Trucks Maintain Temp Control</h3>
+                </div>
+                <div class="blog-body">
+                    <div class="blog-meta">Jan 28, 2026 • 8 min read</div>
+                    <p class="blog-excerpt">Specialized logistics (refrigerated, hazmat) require different considerations. We explore how Tesla Semi's dedicated power systems enable precise climate control without compromising range or efficiency.</p>
+                    <a href="#" class="blog-link">Read Article →</a>
+                </div>
+            </div>
+
+            <div class="blog-card">
+                <div class="blog-header">
+                    <div class="blog-category">Strategy</div>
+                    <h3 class="blog-title">Phase Your Transition: A 5-Year Roadmap for Fleet Electrification</h3>
+                </div>
+                <div class="blog-body">
+                    <div class="blog-meta">Jan 25, 2026 • 10 min read</div>
+                    <p class="blog-excerpt">Flipping your entire fleet to electric overnight isn't practical. We outline a phased approach that minimizes operational disruption, maximizes infrastructure ROI, and positions your fleet for 100% electrification by 2030.</p>
+                    <a href="#" class="blog-link">Read Article →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Thought Leadership Section -->
+    <section>
+        <h2>Deep Dives & Reports</h2>
+        <p style="margin-bottom: 40px;">Comprehensive analysis on trucking industry trends, fleet economics, and the electrification transition.</p>
+
+        <div class="blog-grid">
+            <div class="blog-card">
+                <div class="blog-header" style="background: linear-gradient(135deg, #E82127 0%, #cc1a21 100%);">
+                    <div class="blog-category">White Paper</div>
+                    <h3 class="blog-title">The Future of Trucking: Economics & Infrastructure</h3>
+                </div>
+                <div class="blog-body">
+                    <div class="blog-meta">January 2026</div>
+                    <p class="blog-excerpt">50-page comprehensive analysis of the shift from diesel to electric trucking. Covers economics, infrastructure requirements, policy implications, and timeline to market dominance.</p>
+                    <a href="#" class="blog-link">Download PDF →</a>
+                </div>
+            </div>
+
+            <div class="blog-card">
+                <div class="blog-header" style="background: linear-gradient(135deg, #E82127 0%, #cc1a21 100%);">
+                    <div class="blog-category">Report</div>
+                    <h3 class="blog-title">2026 Fleet Electrification Benchmark Survey</h3>
+                </div>
+                <div class="blog-body">
+                    <div class="blog-meta">February 2026</div>
+                    <p class="blog-excerpt">Survey of 500+ fleet operators on adoption rates, pain points, and ROI expectations. Reveals shifting attitudes and the concrete business drivers accelerating electrification.</p>
+                    <a href="#" class="blog-link">Download Report →</a>
+                </div>
+            </div>
+
+            <div class="blog-card">
+                <div class="blog-header" style="background: linear-gradient(135deg, #E82127 0%, #cc1a21 100%);">
+                    <div class="blog-category">Guide</div>
+                    <h3 class="blog-title">Fleet Operator's Guide: Transitioning to Electric</h3>
+                </div>
+                <div class="blog-body">
+                    <div class="blog-meta">February 2026</div>
+                    <p class="blog-excerpt">Step-by-step operational guide for fleet managers evaluating and implementing Tesla Semi. Covers procurement, infrastructure, training, and operational integration.</p>
+                    <a href="#" class="blog-link">Download Guide →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section style="text-align: center;">
+        <h2>Stay Updated on Trucking's Future</h2>
+        <p style="font-size: 18px; margin-bottom: 30px;">Subscribe to our newsletter for monthly insights on fleet electrification, industry trends, and Tesla Semi developments.</p>
+        <input type="email" placeholder="your@email.com" style="padding: 12px 20px; width: 300px; max-width: 100%; border: 1px solid #ddd; font-size: 16px; border-radius: 4px; margin-right: 10px;">
+        <button style="background: #E82127; color: white; padding: 12px 30px; border: none; font-size: 16px; font-weight: 600; cursor: pointer; border-radius: 4px; transition: all 0.3s;">Subscribe</button>
+    </section>
+
+    <footer>
+        <p><strong>Tesla Semi Blog</strong> — Industry Insights & Analysis</p>
+        <p style="opacity: 0.6; font-size: 13px;">© 2026 Tesla, Inc. All rights reserved.</p>
+    </footer>
+</body>
+</html>

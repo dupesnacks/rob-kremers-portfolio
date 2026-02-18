@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tesla Semi Fleet Economics | ROI Calculator</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: #fff;
+            color: #1a1a1a;
+            line-height: 1.6;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+            background: white;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            border-bottom: 1px solid #eee;
+        }
+
+        nav .logo {
+            font-size: 24px;
+            font-weight: 700;
+            letter-spacing: -1px;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 40px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #1a1a1a;
+            font-size: 15px;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #E82127;
+        }
+
+        section {
+            padding: 100px 40px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            font-size: 56px;
+            font-weight: 700;
+            margin-bottom: 30px;
+            letter-spacing: -1px;
+        }
+
+        h2 {
+            font-size: 40px;
+            font-weight: 700;
+            margin-bottom: 40px;
+            letter-spacing: -1px;
+        }
+
+        h3 {
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 20px;
+            margin-top: 40px;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.8;
+            margin-bottom: 15px;
+        }
+
+        /* Calculator */
+        .calculator {
+            background: #f5f5f5;
+            padding: 60px;
+            border-radius: 4px;
+            margin: 60px 0;
+        }
+
+        .calc-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .calc-input-group {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .calc-input-group label {
+            font-weight: 600;
+            margin-bottom: 8px;
+            font-size: 14px;
+        }
+
+        .calc-input-group input {
+            padding: 12px;
+            border: 1px solid #ddd;
+            font-size: 16px;
+            border-radius: 4px;
+            background: white;
+        }
+
+        .calc-input-group input:focus {
+            outline: none;
+            border-color: #E82127;
+        }
+
+        .calc-results {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 60px;
+            padding-top: 40px;
+            border-top: 2px solid #ddd;
+        }
+
+        .calc-result-box {
+            background: white;
+            padding: 30px;
+            border-radius: 4px;
+            border-left: 4px solid #E82127;
+        }
+
+        .calc-result-label {
+            font-size: 13px;
+            color: #666;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 8px;
+        }
+
+        .calc-result-value {
+            font-size: 36px;
+            font-weight: 700;
+            color: #E82127;
+        }
+
+        .calc-result-sub {
+            font-size: 14px;
+            color: #666;
+            margin-top: 8px;
+        }
+
+        /* Cost Breakdown */
+        .cost-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            margin: 60px 0;
+        }
+
+        .cost-card {
+            border: 1px solid #eee;
+            padding: 40px;
+            transition: all 0.3s;
+        }
+
+        .cost-card:hover {
+            border-color: #E82127;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.08);
+        }
+
+        .cost-label {
+            font-size: 14px;
+            color: #666;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 10px;
+        }
+
+        .cost-value {
+            font-size: 28px;
+            font-weight: 700;
+            color: #E82127;
+            margin-bottom: 10px;
+        }
+
+        .cost-desc {
+            font-size: 15px;
+            line-height: 1.6;
+        }
+
+        /* Metrics */
+        .metric-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 40px;
+            margin: 60px 0;
+        }
+
+        .metric {
+            text-align: center;
+            padding: 40px;
+            background: #f5f5f5;
+            border-radius: 4px;
+        }
+
+        .metric-number {
+            font-size: 48px;
+            font-weight: 700;
+            color: #E82127;
+            margin-bottom: 10px;
+        }
+
+        .metric-label {
+            font-size: 16px;
+            color: #666;
+        }
+
+        .highlight {
+            background: #f5f5f5;
+            padding: 60px;
+            margin: 60px 0;
+            border-left: 4px solid #E82127;
+        }
+
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 60px 0;
+        }
+
+        .comparison-table th {
+            background: #f5f5f5;
+            padding: 20px;
+            text-align: left;
+            font-weight: 600;
+            border-bottom: 2px solid #ddd;
+        }
+
+        .comparison-table td {
+            padding: 20px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .comparison-table tr:hover {
+            background: #f9f9f9;
+        }
+
+        footer {
+            background: #1a1a1a;
+            color: white;
+            padding: 60px 40px;
+            text-align: center;
+        }
+
+        footer p {
+            margin-bottom: 10px;
+            font-size: 15px;
+        }
+
+        footer a {
+            color: #E82127;
+            text-decoration: none;
+        }
+
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            nav ul {
+                flex-direction: column;
+                gap: 15px;
+                text-align: center;
+            }
+
+            section {
+                padding: 60px 20px;
+            }
+
+            h1 {
+                font-size: 36px;
+            }
+
+            .calc-row {
+                grid-template-columns: 1fr;
+            }
+
+            .calculator {
+                padding: 40px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">TESLA</div>
+        <ul>
+            <li><a href="/semi/">Home</a></li>
+            <li><a href="/semi/product.html">Product</a></li>
+            <li><a href="/semi/economics.html">Economics</a></li>
+            <li><a href="/semi/blog.html">Learn</a></li>
+            <li><a href="/semi/resources.html">Resources</a></li>
+        </ul>
+    </nav>
+
+    <section style="padding: 60px 40px;">
+        <h1>Fleet Economics: The Case for Tesla Semi</h1>
+        <p style="font-size: 18px; opacity: 0.8;">Calculate your real ROI. See the financial advantage of electrification.</p>
+    </section>
+
+    <!-- Interactive Calculator -->
+    <section>
+        <h2>Fleet Economics Calculator</h2>
+        <p>Enter your fleet parameters to see projected savings over 5 years.</p>
+
+        <div class="calculator">
+            <div class="calc-row">
+                <div class="calc-input-group">
+                    <label for="fleetSize">Fleet Size (number of trucks)</label>
+                    <input type="number" id="fleetSize" value="10" min="1" max="1000">
+                </div>
+                <div class="calc-input-group">
+                    <label for="annualMiles">Annual Miles Per Truck</label>
+                    <input type="number" id="annualMiles" value="200000" min="50000" max="500000">
+                </div>
+            </div>
+
+            <div class="calc-row">
+                <div class="calc-input-group">
+                    <label for="semiPrice">Tesla Semi Purchase Price</label>
+                    <input type="number" id="semiPrice" value="150000" min="100000" max="200000">
+                </div>
+                <div class="calc-input-group">
+                    <label for="dieselPrice">Comparable Diesel Class 8 Price</label>
+                    <input type="number" id="dieselPrice" value="120000" min="80000" max="150000">
+                </div>
+            </div>
+
+            <div class="calc-row">
+                <div class="calc-input-group">
+                    <label for="dieselCost">Diesel Cost Per Mile</label>
+                    <input type="number" id="dieselCost" value="0.12" min="0.08" max="0.20" step="0.01">
+                </div>
+                <div class="calc-input-group">
+                    <label for="electricCost">Electric Cost Per Mile</label>
+                    <input type="number" id="electricCost" value="0.02" min="0.01" max="0.05" step="0.01">
+                </div>
+            </div>
+
+            <div class="calc-row">
+                <div class="calc-input-group">
+                    <label for="dieselMaint">Diesel Annual Maintenance Per Truck</label>
+                    <input type="number" id="dieselMaint" value="8000" min="5000" max="15000">
+                </div>
+                <div class="calc-input-group">
+                    <label for="semiMaint">Tesla Semi Annual Maintenance</label>
+                    <input type="number" id="semiMaint" value="500" min="100" max="2000">
+                </div>
+            </div>
+
+            <div class="calc-row">
+                <div class="calc-input-group">
+                    <label for="federalTax">Federal Tax Credit Per Vehicle</label>
+                    <input type="number" id="federalTax" value="40000" min="0" max="50000">
+                </div>
+                <div class="calc-input-group">
+                    <label for="stateTax">State Incentives Per Vehicle</label>
+                    <input type="number" id="stateTax" value="5000" min="0" max="20000">
+                </div>
+            </div>
+
+            <div class="calc-results">
+                <div class="calc-result-box">
+                    <div class="calc-result-label">5-Year Total Savings</div>
+                    <div class="calc-result-value" id="totalSavings">$0</div>
+                    <div class="calc-result-sub">Entire fleet</div>
+                </div>
+                <div class="calc-result-box">
+                    <div class="calc-result-label">Savings Per Truck</div>
+                    <div class="calc-result-value" id="savingsPerTruck">$0</div>
+                    <div class="calc-result-sub">Over 5 years</div>
+                </div>
+                <div class="calc-result-box">
+                    <div class="calc-result-label">Payback Period</div>
+                    <div class="calc-result-value" id="paybackPeriod">0</div>
+                    <div class="calc-result-sub">Years</div>
+                </div>
+                <div class="calc-result-box">
+                    <div class="calc-result-label">CO2 Reduction</div>
+                    <div class="calc-result-value" id="co2Reduction">0</div>
+                    <div class="calc-result-sub">Metric tons annually</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Economic Breakdown -->
+    <section>
+        <h2>How the Math Works</h2>
+
+        <div class="cost-grid">
+            <div class="cost-card">
+                <div class="cost-label">Energy Cost Per Mile</div>
+                <div class="cost-value">$0.02</div>
+                <div class="cost-desc">Tesla Semi's 1.7 kWh/mile efficiency at typical grid electricity rates ($0.12/kWh) yields the lowest energy cost of any Class 8 truck.</div>
+            </div>
+
+            <div class="cost-card">
+                <div class="cost-label">Diesel Cost Per Mile</div>
+                <div class="cost-value">$0.12+</div>
+                <div class="cost-desc">At $4.50/gallon and 5.5 MPG average, diesel costs 6x more per mile than electric. As diesel prices rise, the gap widens.</div>
+            </div>
+
+            <div class="cost-card">
+                <div class="cost-label">Maintenance Savings</div>
+                <div class="cost-value">$7,500/yr</div>
+                <div class="cost-desc">Tesla Semi eliminates oil changes, filters, transmission repairs. Regenerative braking reduces brake wear. 10x fewer moving parts.</div>
+            </div>
+        </div>
+
+        <div class="highlight">
+            <h3>The Five-Year Economics (Single Truck Example)</h3>
+            <table class="comparison-table">
+                <thead>
+                    <tr>
+                        <th>Category</th>
+                        <th>Tesla Semi</th>
+                        <th>Diesel Class 8</th>
+                        <th>Savings</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Purchase Price</strong></td>
+                        <td>$150,000</td>
+                        <td>$120,000</td>
+                        <td>-$30,000</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Federal Tax Credit</strong></td>
+                        <td>-$40,000</td>
+                        <td>$0</td>
+                        <td>+$40,000</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Energy (5yr @ 200K mi/yr)</strong></td>
+                        <td>$10,000</td>
+                        <td>$60,000</td>
+                        <td>+$50,000</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Maintenance (5yr)</strong></td>
+                        <td>$2,500</td>
+                        <td>$40,000</td>
+                        <td>+$37,500</td>
+                    </tr>
+                    <tr>
+                        <td><strong>State Incentives</strong></td>
+                        <td>-$5,000</td>
+                        <td>$0</td>
+                        <td>+$5,000</td>
+                    </tr>
+                    <tr style="background: #E82127; color: white;">
+                        <td><strong>Total 5-Year Cost</strong></td>
+                        <td><strong>-$32,500</strong></td>
+                        <td><strong>$220,000</strong></td>
+                        <td><strong>+$252,500</strong></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <h3>Key Leverage Points</h3>
+        <p><strong>1. Energy Cost Advantage:</strong> 6x lower energy cost per mile compounds dramatically over years and miles. A 10-truck fleet driving 200K miles/year saves $300K annually on fuel alone.</p>
+        <p><strong>2. Maintenance Reduction:</strong> No oil changes, transmission repairs, timing belts, or engine diagnostics. Brake maintenance cut by 80% via regenerative braking. Maintenance goes from $8K/year to <$500/year.</p>
+        <p><strong>3. Federal Incentives:</strong> $40K tax credit per vehicle reduces net purchase price dramatically. Most fleets recover the initial investment premium within 18-24 months.</p>
+        <p><strong>4. Uptime Advantage:</strong> Fewer breakdowns mean more billable hours. If a single breakdown costs $5K in lost revenue, the reliability advantage adds another margin.</p>
+    </section>
+
+    <!-- Real Fleet Examples -->
+    <section>
+        <h2>Real Fleet Scenarios</h2>
+
+        <h3>Regional Distribution Fleet (10 trucks, 200K miles/year)</h3>
+        <div class="metric-grid">
+            <div class="metric">
+                <div class="metric-number">$250K</div>
+                <div class="metric-label">Annual Energy Savings</div>
+            </div>
+            <div class="metric">
+                <div class="metric-number">$75K</div>
+                <div class="metric-label">Annual Maintenance Savings</div>
+            </div>
+            <div class="metric">
+                <div class="metric-number">2.1 yrs</div>
+                <div class="metric-label">Payback Period</div>
+            </div>
+            <div class="metric">
+                <div class="metric-number">60K</div>
+                <div class="metric-label">CO2 Tons/Year Reduced</div>
+            </div>
+        </div>
+
+        <h3>Long-Haul Cross-Country Fleet (50 trucks, 300K miles/year)</h3>
+        <div class="metric-grid">
+            <div class="metric">
+                <div class="metric-number">$2.7M</div>
+                <div class="metric-label">Annual Energy Savings</div>
+            </div>
+            <div class="metric">
+                <div class="metric-number">$375K</div>
+                <div class="metric-label">Annual Maintenance Savings</div>
+            </div>
+            <div class="metric">
+                <div class="metric-number">1.8 yrs</div>
+                <div class="metric-label">Payback Period</div>
+            </div>
+            <div class="metric">
+                <div class="metric-number">450K</div>
+                <div class="metric-label">CO2 Tons/Year Reduced</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Break-Even Analysis -->
+    <section>
+        <h2>Break-Even: When Does Electric Win?</h2>
+        <p>With current federal incentives and electricity rates, Tesla Semi achieves break-even within 2-2.5 years for most operations. After break-even, every mile driven saves money—margin that compounds annually.</p>
+
+        <table class="comparison-table">
+            <thead>
+                <tr>
+                    <th>Metric</th>
+                    <th>Impact on Economics</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Increased Diesel Prices</strong></td>
+                    <td>Accelerates break-even (reduces payback period)</td>
+                </tr>
+                <tr>
+                    <td><strong>Grid Electricity Decreases</strong></td>
+                    <td>Amplifies energy savings advantage</td>
+                </tr>
+                <tr>
+                    <td><strong>V4 Supercharger Adoption</strong></td>
+                    <td>Enables long-haul, expands addressable market</td>
+                </tr>
+                <tr>
+                    <td><strong>Driver Efficiency (FSD)</strong></td>
+                    <td>Adds uptime advantage, safety benefits</td>
+                </tr>
+                <tr>
+                    <td><strong>Resale Value</strong></td>
+                    <td>Used Tesla Semis will command premium (technology, uptime)</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Risk Mitigation -->
+    <section class="highlight">
+        <h2>Financing & Risk Mitigation</h2>
+        <p><strong>Lease Option:</strong> For fleets unwilling to carry capital risk, Tesla offers lease programs. Monthly costs align with total cost of ownership while transferring battery degradation risk to Tesla.</p>
+        <p><strong>Warranty:</strong> 8-year/1,000,000-mile battery warranty covers degradation. Powertrain warranty covers all major components. Predictable maintenance costs simplify budgeting.</p>
+        <p><strong>Charging Infrastructure Support:</strong> Tesla works with fleets to design on-site charging solutions, optimizing for your specific operation and timeline.</p>
+    </section>
+
+    <!-- CTA -->
+    <section style="text-align: center;">
+        <h2>Run Your Fleet's Numbers</h2>
+        <p style="font-size: 18px; margin-bottom: 30px;">Download our full economic analysis for your fleet configuration. Or request a 1-on-1 financial consultation.</p>
+        <a href="/semi/contact.html" style="background: #E82127; color: white; padding: 14px 35px; text-decoration: none; display: inline-block; font-weight: 600; letter-spacing: 0.5px; margin-right: 20px;">GET ECONOMIC ANALYSIS</a>
+        <a href="/semi/contact.html" style="background: transparent; border: 2px solid #E82127; color: #E82127; padding: 12px 33px; text-decoration: none; display: inline-block; font-weight: 600; letter-spacing: 0.5px;">SCHEDULE CONSULTATION</a>
+    </section>
+
+    <footer>
+        <p><strong>Tesla Semi</strong> — Engineered for Profitability</p>
+        <p style="opacity: 0.6; font-size: 13px;">© 2026 Tesla, Inc. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function updateCalculator() {
+            const fleetSize = parseInt(document.getElementById('fleetSize').value) || 1;
+            const annualMiles = parseInt(document.getElementById('annualMiles').value) || 200000;
+            const semiPrice = parseInt(document.getElementById('semiPrice').value) || 150000;
+            const dieselPrice = parseInt(document.getElementById('dieselPrice').value) || 120000;
+            const dieselCost = parseFloat(document.getElementById('dieselCost').value) || 0.12;
+            const electricCost = parseFloat(document.getElementById('electricCost').value) || 0.02;
+            const dieselMaint = parseInt(document.getElementById('dieselMaint').value) || 8000;
+            const semiMaint = parseInt(document.getElementById('semiMaint').value) || 500;
+            const federalTax = parseInt(document.getElementById('federalTax').value) || 40000;
+            const stateTax = parseInt(document.getElementById('stateTax').value) || 5000;
+
+            // 5-year calculations per truck
+            const yearsCalc = 5;
+            const totalMiles = annualMiles * yearsCalc;
+
+            const dieselEnergyCost = totalMiles * dieselCost;
+            const electricEnergyCost = totalMiles * electricCost;
+            const energySavingsPerTruck = dieselEnergyCost - electricEnergyCost;
+
+            const dieselMaintCost = dieselMaint * yearsCalc;
+            const semiMaintCost = semiMaint * yearsCalc;
+            const maintSavingsPerTruck = dieselMaintCost - semiMaintCost;
+
+            const purchasePriceDiff = dieselPrice - semiPrice;
+            const totalIncentives = federalTax + stateTax;
+
+            const totalSavingsPerTruck = energySavingsPerTruck + maintSavingsPerTruck + purchasePriceDiff + totalIncentives;
+            const totalSavingsFleet = totalSavingsPerTruck * fleetSize;
+
+            // Payback period (simple)
+            const initialCost = semiPrice - federalTax - stateTax - dieselPrice;
+            const annualSavings = (energySavingsPerTruck + maintSavingsPerTruck) / yearsCalc;
+            const paybackYears = annualSavings > 0 ? (initialCost / annualSavings).toFixed(2) : 0;
+
+            // CO2 savings (6000 tons/truck annually vs diesel)
+            const co2PerTruck = 6000;
+            const totalCO2 = co2PerTruck * fleetSize;
+
+            // Update display
+            document.getElementById('totalSavings').textContent = '$' + (totalSavingsFleet).toLocaleString();
+            document.getElementById('savingsPerTruck').textContent = '$' + (totalSavingsPerTruck).toLocaleString();
+            document.getElementById('paybackPeriod').textContent = paybackYears + ' yrs';
+            document.getElementById('co2Reduction').textContent = (totalCO2).toLocaleString();
+        }
+
+        // Event listeners
+        ['fleetSize', 'annualMiles', 'semiPrice', 'dieselPrice', 'dieselCost', 'electricCost', 'dieselMaint', 'semiMaint', 'federalTax', 'stateTax'].forEach(id => {
+            document.getElementById(id).addEventListener('input', updateCalculator);
+        });
+
+        // Initial calculation
+        updateCalculator();
+    </script>
+</body>
+</html>
