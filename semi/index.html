@@ -16,6 +16,7 @@
             background: #fff;
             color: #1a1a1a;
             line-height: 1.6;
+            overflow-x: hidden;
         }
 
         /* Navigation */
@@ -23,265 +24,557 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 20px 40px;
-            background: white;
-            position: sticky;
+            padding: 20px 60px;
+            background: rgba(255, 255, 255, 0.95);
+            position: fixed;
             top: 0;
-            z-index: 100;
-            border-bottom: 1px solid #eee;
+            width: 100%;
+            z-index: 1000;
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(0, 0, 0, 0.05);
         }
 
         nav .logo {
-            font-size: 24px;
+            font-size: 28px;
             font-weight: 700;
             letter-spacing: -1px;
+            color: #1a1a1a;
         }
 
         nav ul {
             display: flex;
             list-style: none;
-            gap: 40px;
+            gap: 50px;
         }
 
         nav a {
             text-decoration: none;
             color: #1a1a1a;
-            font-size: 15px;
+            font-size: 14px;
             font-weight: 500;
+            position: relative;
             transition: color 0.3s;
         }
 
-        nav a:hover {
-            color: #E82127;
+        nav a:after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: #E82127;
+            transition: width 0.3s;
         }
 
-        /* Hero Section */
+        nav a:hover:after {
+            width: 100%;
+        }
+
+        /* Hero Video Section */
         .hero {
-            background: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 100%);
-            color: white;
-            padding: 120px 40px;
-            text-align: center;
-            min-height: 700px;
+            position: relative;
+            height: 100vh;
             display: flex;
-            flex-direction: column;
-            justify-content: center;
             align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 100%);
+            overflow: hidden;
+            margin-top: 70px;
+        }
+
+        .hero-video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0.4;
+        }
+
+        .hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, rgba(26, 26, 26, 0.7) 0%, rgba(232, 33, 39, 0.3) 100%);
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 10;
+            text-align: center;
+            color: white;
+            max-width: 900px;
+            animation: fadeInUp 1s ease-out;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
 
         .hero h1 {
-            font-size: 64px;
+            font-size: 72px;
             font-weight: 700;
-            margin-bottom: 20px;
-            letter-spacing: -2px;
+            margin-bottom: 25px;
             line-height: 1.1;
+            letter-spacing: -2px;
         }
 
         .hero p {
             font-size: 24px;
-            margin-bottom: 40px;
-            opacity: 0.9;
-            max-width: 800px;
+            margin-bottom: 50px;
+            opacity: 0.95;
             font-weight: 300;
+            line-height: 1.6;
         }
 
-        .cta {
-            background: #E82127;
-            color: white;
-            padding: 14px 35px;
-            border: none;
+        .hero-cta {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .btn {
+            padding: 16px 45px;
             font-size: 15px;
             font-weight: 600;
+            border: none;
             cursor: pointer;
-            transition: all 0.3s;
+            border-radius: 4px;
             text-decoration: none;
             display: inline-block;
+            transition: all 0.3s;
             letter-spacing: 0.5px;
         }
 
-        .cta:hover {
-            background: #cc1a21;
-            transform: translateY(-2px);
+        .btn-primary {
+            background: #E82127;
+            color: white;
         }
 
-        /* Sections */
+        .btn-primary:hover {
+            background: #cc1a21;
+            transform: translateY(-3px);
+            box-shadow: 0 20px 40px rgba(232, 33, 39, 0.3);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: white;
+            border: 2px solid white;
+        }
+
+        .btn-secondary:hover {
+            background: white;
+            color: #1a1a1a;
+            transform: translateY(-3px);
+        }
+
+        /* Scroll Indicator */
+        .scroll-indicator {
+            position: absolute;
+            bottom: 40px;
+            left: 50%;
+            transform: translateX(-50%);
+            animation: bounce 2s infinite;
+            color: white;
+            cursor: pointer;
+            z-index: 20;
+        }
+
+        @keyframes bounce {
+            0%, 100% {
+                transform: translateX(-50%) translateY(0);
+            }
+            50% {
+                transform: translateX(-50%) translateY(10px);
+            }
+        }
+
+        /* Section Styling */
         section {
-            padding: 100px 40px;
-            max-width: 1200px;
-            margin: 0 auto;
+            padding: 120px 60px;
+            position: relative;
         }
 
         h2 {
-            font-size: 48px;
+            font-size: 56px;
             font-weight: 700;
-            margin-bottom: 40px;
+            margin-bottom: 60px;
             letter-spacing: -1px;
         }
 
-        h3 {
-            font-size: 28px;
-            font-weight: 600;
+        /* Value Props Grid */
+        .value-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 60px;
+            margin: 80px 0;
+        }
+
+        .value-card {
+            position: relative;
+            padding: 60px 40px 40px;
+            background: #f5f5f5;
+            border-radius: 8px;
+            transition: all 0.3s;
+            overflow: hidden;
+        }
+
+        .value-card:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: #E82127;
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform 0.3s;
+        }
+
+        .value-card:hover {
+            transform: translateY(-10px);
+            background: white;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+        }
+
+        .value-card:hover:before {
+            transform: scaleX(1);
+        }
+
+        .value-icon {
+            font-size: 48px;
             margin-bottom: 20px;
         }
 
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 40px;
-            margin: 60px 0;
-        }
-
-        .card {
-            padding: 40px;
-            border: 1px solid #eee;
-            transition: all 0.3s;
-        }
-
-        .card:hover {
-            border-color: #E82127;
-            box-shadow: 0 10px 40px rgba(0,0,0,0.08);
-        }
-
-        .card h4 {
-            font-size: 22px;
+        .value-title {
+            font-size: 24px;
+            font-weight: 700;
             margin-bottom: 15px;
-            color: #1a1a1a;
         }
 
-        .card p {
+        .value-desc {
             font-size: 16px;
             line-height: 1.8;
+            color: #666;
         }
 
-        .stat {
-            text-align: center;
+        /* Image + Content Section */
+        .image-section {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 80px;
+            align-items: center;
+            margin: 100px 0;
+        }
+
+        .image-section.reverse {
+            direction: rtl;
+        }
+
+        .image-section.reverse > * {
+            direction: ltr;
+        }
+
+        .image-block {
+            background: #f5f5f5;
+            height: 500px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #999;
+            font-size: 18px;
+            overflow: hidden;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.08);
+        }
+
+        .image-block img,
+        .image-block video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .content-block h3 {
+            font-size: 40px;
+            font-weight: 700;
+            margin-bottom: 30px;
+            letter-spacing: -1px;
+        }
+
+        .content-block p {
+            font-size: 18px;
+            line-height: 1.8;
+            margin-bottom: 20px;
+            color: #555;
+        }
+
+        .content-block ul {
+            list-style: none;
             margin: 40px 0;
+        }
+
+        .content-block li {
+            padding: 15px 0;
+            padding-left: 40px;
+            position: relative;
+            font-size: 17px;
+            line-height: 1.7;
+        }
+
+        .content-block li:before {
+            content: '→';
+            position: absolute;
+            left: 0;
+            color: #E82127;
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        /* Stat Section */
+        .stats-section {
+            background: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 100%);
+            color: white;
+            padding: 120px 60px;
+            margin: 120px -60px;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 60px;
+            align-items: center;
+            text-align: center;
+        }
+
+        .stat-item {
+            animation: fadeInUp 1s ease-out;
         }
 
         .stat-number {
             font-size: 56px;
             font-weight: 700;
             color: #E82127;
-            margin-bottom: 10px;
+            margin-bottom: 15px;
         }
 
         .stat-label {
+            font-size: 16px;
+            opacity: 0.9;
+            font-weight: 500;
+        }
+
+        /* Map Section */
+        .map-section {
+            background: #f5f5f5;
+            padding: 120px 60px;
+            margin: 0 -60px;
+            text-align: center;
+        }
+
+        .map-container {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+            margin-top: 60px;
+            height: 600px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .map-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .map-desc {
             font-size: 18px;
             color: #666;
+            margin-top: 40px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
         }
 
-        .comparison {
+        /* Comparison Cards */
+        .comparison-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 40px;
-            margin: 60px 0;
-            align-items: center;
+            gap: 60px;
+            margin: 80px 0;
         }
 
-        .comparison h4 {
-            font-size: 24px;
-            margin-bottom: 20px;
+        .comparison-card {
+            padding: 60px 40px;
+            background: white;
+            border: 2px solid #f0f0f0;
+            border-radius: 8px;
+            transition: all 0.3s;
         }
 
-        .comparison ul {
+        .comparison-card:hover {
+            border-color: #E82127;
+            box-shadow: 0 20px 60px rgba(232, 33, 39, 0.1);
+        }
+
+        .comparison-card h4 {
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 40px;
+        }
+
+        .comparison-card ul {
             list-style: none;
-            margin-left: 0;
         }
 
-        .comparison li {
-            padding: 10px 0;
-            padding-left: 30px;
+        .comparison-card li {
+            padding: 15px 0;
+            padding-left: 40px;
             position: relative;
             font-size: 16px;
+            line-height: 1.7;
         }
 
-        .comparison li:before {
-            content: "✓";
+        .comparison-card li:before {
+            content: '✓';
             position: absolute;
             left: 0;
             color: #E82127;
             font-weight: bold;
+            font-size: 18px;
         }
 
-        /* Highlight section */
-        .highlight {
-            background: #f5f5f5;
-            padding: 80px 40px;
+        /* CTA Section */
+        .cta-section {
             text-align: center;
+            padding: 120px 60px;
+            background: linear-gradient(135deg, #E82127 0%, #cc1a21 100%);
+            color: white;
+            margin: 120px -60px 0 -60px;
+            border-radius: 0;
         }
 
-        .highlight h2 {
+        .cta-section h2 {
+            color: white;
+            margin-bottom: 30px;
+        }
+
+        .cta-section p {
+            font-size: 20px;
             margin-bottom: 50px;
-        }
-
-        .metric-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 50px;
-            margin: 60px 0;
-        }
-
-        .metric {
-            text-align: center;
-        }
-
-        .metric-value {
-            font-size: 48px;
-            font-weight: 700;
-            color: #E82127;
-            margin-bottom: 10px;
-        }
-
-        .metric-desc {
-            font-size: 16px;
-            color: #666;
+            opacity: 0.95;
         }
 
         /* Footer */
         footer {
             background: #1a1a1a;
             color: white;
-            padding: 60px 40px;
-            text-align: center;
+            padding: 80px 60px;
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: 60px;
         }
 
-        footer p {
-            margin-bottom: 10px;
-            font-size: 15px;
+        footer h4 {
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 25px;
+            color: #E82127;
+            font-weight: 600;
         }
 
         footer a {
-            color: #E82127;
+            display: block;
+            font-size: 14px;
+            margin-bottom: 12px;
+            color: #bbb;
             text-decoration: none;
             transition: color 0.3s;
         }
 
         footer a:hover {
-            color: #ff3333;
+            color: #E82127;
         }
 
-        .footer-links {
-            display: flex;
-            justify-content: center;
-            gap: 40px;
-            margin-top: 30px;
-            flex-wrap: wrap;
+        footer .brand {
+            margin-bottom: 20px;
+        }
+
+        footer p {
+            font-size: 13px;
+            color: #999;
+            line-height: 1.8;
         }
 
         /* Responsive */
+        @media (max-width: 1024px) {
+            section {
+                padding: 80px 40px;
+            }
+
+            h2 {
+                font-size: 40px;
+            }
+
+            .value-grid {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+
+            .image-section {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+
+            .stats-section {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .comparison-grid {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+
+            footer {
+                grid-template-columns: 1fr;
+            }
+        }
+
         @media (max-width: 768px) {
             nav {
-                flex-direction: column;
-                gap: 20px;
+                padding: 15px 20px;
             }
 
             nav ul {
                 flex-direction: column;
                 gap: 15px;
-                text-align: center;
+                position: absolute;
+                top: 70px;
+                left: 0;
+                right: 0;
+                background: white;
+                padding: 20px;
+                display: none;
             }
 
             .hero {
+                height: auto;
                 padding: 60px 20px;
+                text-align: center;
             }
 
             .hero h1 {
@@ -292,16 +585,21 @@
                 font-size: 18px;
             }
 
+            .hero-cta {
+                flex-direction: column;
+            }
+
             section {
                 padding: 60px 20px;
             }
 
             h2 {
-                font-size: 36px;
+                font-size: 32px;
             }
 
-            .comparison {
+            .stats-section {
                 grid-template-columns: 1fr;
+                padding: 60px 20px;
             }
         }
     </style>
@@ -311,124 +609,223 @@
         <div class="logo">TESLA</div>
         <ul>
             <li><a href="#product">Product</a></li>
-            <li><a href="/semi/economics.html">Economics</a></li>
+            <li><a href="#charging">Charging</a></li>
+            <li><a href="#economics">Economics</a></li>
             <li><a href="/semi/blog.html">Learn</a></li>
-            <li><a href="/semi/resources.html">Resources</a></li>
-            <li><a href="/semi/contact.html">Inquire</a></li>
+            <li><a href="/semi/contact.html">Contact</a></li>
         </ul>
     </nav>
 
-    <!-- Hero -->
-    <section class="hero">
-        <h1>The Future of Freight is Electric</h1>
-        <p>Tesla Semi delivers the operational efficiency, environmental responsibility, and long-term value fleets demand. Made for the road. Built for scale.</p>
-        <a href="/semi/economics.html" class="cta">EXPLORE ECONOMICS</a>
+    <!-- Hero with Video -->
+    <section class="hero" id="home">
+        <video class="hero-video" autoplay muted loop playsinline>
+            <source src="/semi/assets/semicharged.mp4" type="video/mp4">
+        </video>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>The Future of Freight is Electric</h1>
+            <p>Tesla Semi delivers operational efficiency, environmental responsibility, and long-term value fleets demand.</p>
+            <div class="hero-cta">
+                <a href="/semi/contact.html" class="btn btn-primary">EXPLORE ECONOMICS</a>
+                <a href="#product" class="btn btn-secondary">LEARN MORE</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">↓</div>
     </section>
 
-    <!-- Core Value Prop -->
+    <!-- Value Propositions -->
     <section id="product">
         <h2>Why Fleets Choose Tesla Semi</h2>
-        
-        <div class="grid">
-            <div class="card">
-                <h4>325-500 Mile Range</h4>
-                <p>Two variants designed for real-world operations. Standard Range for regional routes. Long Range for cross-country demands. No range anxiety. Pure capability.</p>
+        <div class="value-grid">
+            <div class="value-card">
+                <div class="value-icon">⚡</div>
+                <div class="value-title">6x Lower Energy Cost</div>
+                <div class="value-desc">$0.02/mi vs $0.12/mi for diesel. The gap only widens as you scale.</div>
             </div>
-            <div class="card">
-                <h4>1.7 kWh Per Mile Efficiency</h4>
-                <p>The most efficient heavy-duty truck ever built. Industry-leading efficiency translates to lower energy costs, reduced operational overhead, and faster payback on investment.</p>
+            <div class="value-card">
+                <div class="value-icon">💰</div>
+                <div class="value-title">$250K+ in 5-Year Savings</div>
+                <div class="value-desc">Per truck. Factor energy, maintenance, and federal incentives into real economics.</div>
             </div>
-            <div class="card">
-                <h4>800 kW Continuous Power</h4>
-                <p>Three-motor architecture delivers sustained power for loaded routes. No degradation. Accelerate loaded. Climb grades. Match diesel performance without the emissions.</p>
+            <div class="value-card">
+                <div class="value-icon">⏱️</div>
+                <div class="value-title">2.1 Year Payback</div>
+                <div class="value-desc">Premium purchase price recovers through operational savings faster than you think.</div>
             </div>
-            <div class="card">
-                <h4>Up to 1.2 MW Fast Charging</h4>
-                <p>Gigafactory Nevada's V4 Supercharger infrastructure enables 20-minute charging to 80%. Minimal downtime. Maximum productivity. Built for scale.</p>
+            <div class="value-card">
+                <div class="value-icon">🔧</div>
+                <div class="value-title">90% Less Maintenance</div>
+                <div class="value-desc">No oil changes. No transmission repairs. Electric powertrains are bulletproof.</div>
             </div>
-            <div class="card">
-                <h4>82,000 lbs GCW Rated</h4>
-                <p>Full legal payload capacity. Zero compromises on hauling capability. Match your diesel expectations with electric efficiency and reliability.</p>
+            <div class="value-card">
+                <div class="value-icon">📈</div>
+                <div class="value-title">325-500 Mile Range</div>
+                <div class="value-desc">Two variants built for your specific operation. Regional or cross-country.</div>
             </div>
-            <div class="card">
-                <h4>Built for Autonomy</h4>
-                <p>Hardware ready for Tesla Full Self-Driving on freeways. Reduce driver fatigue. Enhance safety. Future-proof your fleet today.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Performance Metrics -->
-    <section class="highlight">
-        <h2>Fleet Economics at a Glance</h2>
-        <div class="metric-grid">
-            <div class="metric">
-                <div class="metric-value">$250K</div>
-                <div class="metric-desc">Potential 5-Year Fuel Savings vs Diesel</div>
-            </div>
-            <div class="metric">
-                <div class="metric-value">3,000+</div>
-                <div class="metric-desc">Operating Hours Annually Per Vehicle</div>
-            </div>
-            <div class="metric">
-                <div class="metric-value">40%</div>
-                <div class="metric-desc">Lower Energy Costs Per Mile</div>
-            </div>
-            <div class="metric">
-                <div class="metric-value">10X</div>
-                <div class="metric-desc">Fewer Moving Parts = Reduced Maintenance</div>
+            <div class="value-card">
+                <div class="value-icon">🤖</div>
+                <div class="value-title">Autonomy Ready</div>
+                <div class="value-desc">Hardware prepared for Tesla Full Self-Driving. Future-proof your fleet.</div>
             </div>
         </div>
     </section>
 
-    <!-- Comparison -->
+    <!-- Product Showcase with Image -->
     <section>
-        <h2>Tesla Semi vs Diesel Class 8</h2>
-        <div class="comparison">
-            <div>
-                <h4>Tesla Semi</h4>
-                <ul>
-                    <li>$0.02 per mile energy cost</li>
-                    <li>Minimal scheduled maintenance</li>
-                    <li>Instant torque, responsive acceleration</li>
-                    <li>Silent operation, improved driver experience</li>
-                    <li>Multi-day payload reliability</li>
-                    <li>Federal incentives available</li>
-                    <li>Built for autonomous driving</li>
-                </ul>
+        <div class="image-section">
+            <div class="image-block" style="background: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 100%); display: flex; align-items: center; justify-content: center; color: #666;">
+                [Tesla Semi Hero Image]
             </div>
-            <div>
-                <h4>Traditional Diesel</h4>
+            <div class="content-block">
+                <h3>Built for Performance</h3>
+                <p>Three-motor architecture delivers 800 kW continuous power. Acceleration and grade-climbing that matches or exceeds diesel.</p>
                 <ul>
-                    <li>$0.12+ per mile fuel cost</li>
-                    <li>Oil changes, filter replacements, repairs</li>
-                    <li>Engine lag, transmission complexity</li>
-                    <li>Noise pollution, emissions</li>
-                    <li>Wear over time, degradation</li>
-                    <li>No subsidies, shrinking market</li>
-                    <li>Limited automation potential</li>
+                    <li>1,000+ hp equivalent, 1,200+ ft-lbs torque</li>
+                    <li>800 kW continuous power output</li>
+                    <li>82,000 lbs GCW payload capacity</li>
+                    <li>1.7 kWh/mi industry-leading efficiency</li>
                 </ul>
+                <a href="/semi/product.html" class="btn btn-primary">VIEW SPECS</a>
             </div>
         </div>
     </section>
 
-    <!-- Call to Action -->
-    <section style="text-align: center;">
+    <!-- Stats -->
+    <section class="stats-section">
+        <div class="stat-item">
+            <div class="stat-number">500</div>
+            <div class="stat-label">Mile Max Range</div>
+        </div>
+        <div class="stat-item">
+            <div class="stat-number">20min</div>
+            <div class="stat-label">Charge to 80%</div>
+        </div>
+        <div class="stat-item">
+            <div class="stat-number">6,000</div>
+            <div class="stat-label">Tons CO₂ Saved/Year</div>
+        </div>
+        <div class="stat-item">
+            <div class="stat-number">$40K</div>
+            <div class="stat-label">Federal Tax Credit</div>
+        </div>
+    </section>
+
+    <!-- Charging Infrastructure -->
+    <section id="charging" class="map-section">
+        <div>
+            <h2>Charging Network: Ready for Scale</h2>
+            <p style="font-size: 18px; color: #666; margin: 30px 0;">Tesla's Mega Charger network spans North America with V4 Superchargers delivering 1.2 MW power. Current locations shown below with rapid expansion planned for 2025-2026.</p>
+            <div class="map-container">
+                <img src="/semi/assets/charger-map.jpg" alt="Tesla Mega Charger Network Map - Current and Future Locations">
+            </div>
+            <div class="map-desc">
+                20+ locations operational. Las Vegas, Sacramento, Los Angeles, San Francisco operational. Expansion to Denver, Phoenix, Dallas, and Chicago underway. Your routes are covered.
+            </div>
+        </div>
+    </section>
+
+    <!-- Charging Deep Dive -->
+    <section>
+        <div class="image-section reverse">
+            <div class="image-block" style="background: #f5f5f5; display: flex; align-items: center; justify-content: center; color: #999;">
+                [Charging Station Image]
+            </div>
+            <div class="content-block">
+                <h3>Fast Charging, Flexible Strategy</h3>
+                <p>V4 Superchargers enable 80% charge in 20 minutes. MCS 3.2 chargers at Gigafactory Nevada for rapid turn-around.</p>
+                <ul>
+                    <li>1.2 MW peak charging power</li>
+                    <li>20-minute 80% charge capability</li>
+                    <li>Depot charging for overnight full charge</li>
+                    <li>Route optimization software included</li>
+                </ul>
+                <a href="/semi/resources.html" class="btn btn-primary">DOWNLOAD GUIDES</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Economics Comparison -->
+    <section id="economics">
+        <h2>The Economics: Tesla vs Diesel</h2>
+        <div class="comparison-grid">
+            <div class="comparison-card">
+                <h4>🔌 Tesla Semi</h4>
+                <ul>
+                    <li>$0.02/mi energy cost</li>
+                    <li>$500/yr maintenance</li>
+                    <li>Instant torque delivery</li>
+                    <li>Silent operation</li>
+                    <li>$40K federal credit</li>
+                    <li>10M+ mile lifespan</li>
+                    <li>Autonomy ready</li>
+                </ul>
+            </div>
+            <div class="comparison-card">
+                <h4>🚛 Diesel Class 8</h4>
+                <ul>
+                    <li>$0.12+/mi fuel cost</li>
+                    <li>$8,000/yr maintenance</li>
+                    <li>Engine lag, complex gearing</li>
+                    <li>Noise and emissions</li>
+                    <li>No incentives</li>
+                    <li>Degradation over time</li>
+                    <li>No autonomy path</li>
+                </ul>
+            </div>
+        </div>
+        <div style="text-align: center; margin-top: 80px;">
+            <a href="/semi/economics.html" class="btn btn-primary" style="padding: 18px 50px; font-size: 16px;">RUN YOUR FLEET NUMBERS</a>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
         <h2>Ready to Electrify Your Fleet?</h2>
-        <p style="font-size: 18px; margin-bottom: 30px; opacity: 0.8;">Explore the financial case. Schedule a demo. Join the future of trucking.</p>
-        <a href="/semi/contact.html" class="cta">START YOUR FLEET TRANSITION</a>
+        <p>Schedule a demonstration, explore economics, or connect with a fleet specialist.</p>
+        <a href="/semi/contact.html" class="btn btn-secondary">GET STARTED</a>
     </section>
 
     <!-- Footer -->
     <footer>
-        <p><strong>Tesla Semi</strong> — Advancing the Energy Economy</p>
-        <p>Production Launch: 2026 | Gigafactory Nevada</p>
-        <div class="footer-links">
-            <a href="/semi/economics.html">Fleet Economics</a>
-            <a href="/semi/product.html">Specifications</a>
-            <a href="/semi/blog.html">Blog</a>
-            <a href="/semi/resources.html">Resources</a>
+        <div>
+            <div class="brand">
+                <div style="font-size: 24px; font-weight: 700; margin-bottom: 10px;">TESLA SEMI</div>
+                <p>Engineered for the future of freight. Production launch 2026 at Gigafactory Nevada.</p>
+            </div>
         </div>
-        <p style="margin-top: 30px; opacity: 0.6; font-size: 13px;">© 2026 Tesla, Inc. All rights reserved.</p>
+        <div>
+            <h4>Product</h4>
+            <a href="/semi/product.html">Specifications</a>
+            <a href="/semi/product.html">Performance</a>
+            <a href="/semi/#charging">Charging</a>
+        </div>
+        <div>
+            <h4>Resources</h4>
+            <a href="/semi/economics.html">Economics</a>
+            <a href="/semi/blog.html">Blog</a>
+            <a href="/semi/resources.html">Downloads</a>
+        </div>
+        <div>
+            <h4>Support</h4>
+            <a href="/semi/contact.html">Contact</a>
+            <a href="/semi/resources.html">Guides</a>
+            <a href="/semi/contact.html">Request Demo</a>
+        </div>
     </footer>
+
+    <script>
+        // Scroll to section on nav click
+        document.querySelectorAll('nav a[href*="#"]').forEach(link => {
+            link.addEventListener('click', (e) => {
+                if (link.getAttribute('href').startsWith('#')) {
+                    e.preventDefault();
+                    const target = document.querySelector(link.getAttribute('href'));
+                    if (target) {
+                        target.scrollIntoView({ behavior: 'smooth' });
+                    }
+                }
+            });
+        });
+    </script>
 </body>
 </html>
