@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tesla Semi Events 2026 | Trade Shows & Conferences</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: #fff;
+            color: #1a1a1a;
+            line-height: 1.6;
+        }
+
+        /* Navigation */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 60px;
+            background: rgba(255, 255, 255, 0.95);
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+        }
+
+        nav .logo {
+            font-size: 28px;
+            font-weight: 700;
+            letter-spacing: -1px;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 50px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #1a1a1a;
+            font-size: 14px;
+            font-weight: 500;
+            position: relative;
+            transition: color 0.3s;
+        }
+
+        nav a:after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: #E82127;
+            transition: width 0.3s;
+        }
+
+        nav a:hover:after {
+            width: 100%;
+        }
+
+        /* Hero Header */
+        .hero-header {
+            padding: 100px 60px 60px;
+            background: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 100%);
+            color: white;
+            text-align: center;
+            margin-top: 70px;
+        }
+
+        .hero-header h1 {
+            font-size: 56px;
+            font-weight: 700;
+            margin-bottom: 20px;
+            letter-spacing: -1px;
+        }
+
+        .hero-header p {
+            font-size: 18px;
+            opacity: 0.95;
+        }
+
+        section {
+            padding: 100px 60px;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        h2 {
+            font-size: 48px;
+            font-weight: 700;
+            margin-bottom: 60px;
+            letter-spacing: -1px;
+        }
+
+        /* Timeline Container */
+        .timeline {
+            position: relative;
+            padding: 40px 0;
+        }
+
+        .timeline:before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 4px;
+            height: 100%;
+            background: linear-gradient(180deg, #E82127 0%, #E82127 50%, #f0f0f0 50%, #f0f0f0 100%);
+        }
+
+        /* Event Cards */
+        .event-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 60px;
+            margin: 60px 0;
+        }
+
+        .event-card {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+            position: relative;
+        }
+
+        .event-card:nth-child(even) {
+            direction: rtl;
+        }
+
+        .event-card:nth-child(even) > * {
+            direction: ltr;
+        }
+
+        .event-marker {
+            position: absolute;
+            left: 50%;
+            top: 40px;
+            transform: translateX(-50%);
+            width: 20px;
+            height: 20px;
+            background: #E82127;
+            border: 4px solid white;
+            border-radius: 50%;
+            z-index: 10;
+            box-shadow: 0 0 0 4px #E82127;
+        }
+
+        .event-content {
+            background: white;
+            border: 2px solid #f0f0f0;
+            padding: 50px 40px;
+            border-radius: 8px;
+            transition: all 0.3s;
+        }
+
+        .event-content:hover {
+            border-color: #E82127;
+            transform: translateY(-10px);
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+        }
+
+        .event-month {
+            font-size: 13px;
+            color: #E82127;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .event-title {
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 15px;
+            color: #1a1a1a;
+        }
+
+        .event-details {
+            display: flex;
+            gap: 30px;
+            margin: 20px 0;
+            padding: 20px 0;
+            border-top: 1px solid #f0f0f0;
+            border-bottom: 1px solid #f0f0f0;
+        }
+
+        .event-detail {
+            flex: 1;
+        }
+
+        .event-detail-label {
+            font-size: 12px;
+            color: #999;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+
+        .event-detail-value {
+            font-size: 16px;
+            font-weight: 600;
+            color: #E82127;
+        }
+
+        .event-description {
+            font-size: 16px;
+            line-height: 1.8;
+            color: #666;
+            margin: 20px 0;
+        }
+
+        .event-tags {
+            display: flex;
+            gap: 10px;
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+
+        .event-tag {
+            background: #f5f5f5;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 13px;
+            font-weight: 600;
+            color: #666;
+        }
+
+        .event-link {
+            display: inline-block;
+            margin-top: 20px;
+            color: #E82127;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 14px;
+            transition: all 0.3s;
+        }
+
+        .event-link:hover {
+            gap: 10px;
+            transform: translateX(5px);
+        }
+
+        .event-link:after {
+            content: ' →';
+        }
+
+        /* Stats Section */
+        .stats-highlight {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 40px;
+            background: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 100%);
+            color: white;
+            padding: 80px 60px;
+            margin: 100px -60px;
+            border-radius: 0;
+            text-align: center;
+        }
+
+        .stat-item h4 {
+            font-size: 44px;
+            font-weight: 700;
+            color: #E82127;
+            margin-bottom: 15px;
+        }
+
+        .stat-item p {
+            font-size: 16px;
+            opacity: 0.9;
+        }
+
+        /* Calendar View */
+        .calendar-container {
+            background: #f5f5f5;
+            padding: 80px 60px;
+            margin: 100px -60px;
+            border-radius: 0;
+        }
+
+        .calendar-grid {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            gap: 15px;
+            margin-top: 40px;
+        }
+
+        .month-col {
+            text-align: center;
+        }
+
+        .month-header {
+            font-size: 13px;
+            font-weight: 700;
+            color: #E82127;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 15px;
+        }
+
+        .month-box {
+            background: white;
+            padding: 30px 20px;
+            border-radius: 8px;
+            border: 2px solid #f0f0f0;
+            transition: all 0.3s;
+            cursor: pointer;
+        }
+
+        .month-box:hover {
+            border-color: #E82127;
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .month-box.has-event {
+            border-color: #E82127;
+            background: linear-gradient(135deg, rgba(232, 33, 39, 0.05) 0%, rgba(232, 33, 39, 0.02) 100%);
+        }
+
+        .month-name {
+            font-size: 12px;
+            font-weight: 600;
+            color: #999;
+            margin-bottom: 10px;
+        }
+
+        .event-count {
+            font-size: 28px;
+            font-weight: 700;
+            color: #E82127;
+        }
+
+        /* CTA Section */
+        .cta-area {
+            text-align: center;
+            padding: 100px 60px;
+            background: linear-gradient(135deg, #E82127 0%, #cc1a21 100%);
+            color: white;
+            margin: 100px -60px 0 -60px;
+        }
+
+        .cta-area h2 {
+            color: white;
+            margin-bottom: 30px;
+        }
+
+        .btn {
+            background: white;
+            color: #E82127;
+            padding: 16px 45px;
+            text-decoration: none;
+            display: inline-block;
+            font-weight: 600;
+            border-radius: 4px;
+            transition: all 0.3s;
+            border: none;
+            cursor: pointer;
+            margin: 20px 10px;
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Footer */
+        footer {
+            background: #1a1a1a;
+            color: white;
+            padding: 80px 60px;
+            text-align: center;
+        }
+
+        footer p {
+            font-size: 14px;
+            opacity: 0.8;
+        }
+
+        /* Responsive */
+        @media (max-width: 1024px) {
+            section {
+                padding: 80px 40px;
+            }
+
+            .event-card {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+
+            .timeline:before {
+                left: 20px;
+            }
+
+            .event-marker {
+                left: 20px;
+            }
+
+            .stats-highlight {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .calendar-grid {
+                grid-template-columns: repeat(6, 1fr);
+            }
+        }
+
+        @media (max-width: 768px) {
+            nav {
+                padding: 15px 20px;
+            }
+
+            section {
+                padding: 60px 20px;
+            }
+
+            h2 {
+                font-size: 32px;
+            }
+
+            .timeline:before {
+                display: none;
+            }
+
+            .event-marker {
+                display: none;
+            }
+
+            .event-details {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .stats-highlight {
+                grid-template-columns: 1fr;
+                padding: 60px 20px;
+            }
+
+            .calendar-grid {
+                grid-template-columns: repeat(3, 1fr);
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">TESLA</div>
+        <ul>
+            <li><a href="/semi/">Home</a></li>
+            <li><a href="/semi/product.html">Product</a></li>
+            <li><a href="/semi/economics.html">Economics</a></li>
+            <li><a href="/semi/events.html">Events</a></li>
+            <li><a href="/semi/contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="hero-header">
+        <h1>Meet Tesla Semi in 2026</h1>
+        <p>Find us at the industry's leading logistics, trucking, and supply chain events</p>
+    </div>
+
+    <!-- Featured Events Timeline -->
+    <section>
+        <h2>2026 Event Calendar</h2>
+        
+        <div class="event-grid">
+            <!-- Manifest -->
+            <div class="event-card">
+                <div class="event-marker"></div>
+                <div class="event-content">
+                    <div class="event-month">February</div>
+                    <h3 class="event-title">Manifest</h3>
+                    <div class="event-details">
+                        <div class="event-detail">
+                            <div class="event-detail-label">Dates</div>
+                            <div class="event-detail-value">Feb 9-11, 2026</div>
+                        </div>
+                        <div class="event-detail">
+                            <div class="event-detail-label">Location</div>
+                            <div class="event-detail-value">Las Vegas, NV</div>
+                        </div>
+                    </div>
+                    <p class="event-description">The global destination for supply chain and logistics innovation. Connect with thousands of supply chain executives, logistics providers, and technology leaders solving tomorrow's logistics challenges today.</p>
+                    <div class="event-tags">
+                        <span class="event-tag">Supply Chain</span>
+                        <span class="event-tag">Logistics Tech</span>
+                        <span class="event-tag">Fleet Innovation</span>
+                    </div>
+                    <a href="#" class="event-link">Learn More</a>
+                </div>
+                <div style="background: #f5f5f5; height: 300px; border-radius: 8px;"></div>
+            </div>
+
+            <!-- Truckload 2026 -->
+            <div class="event-card">
+                <div class="event-marker"></div>
+                <div class="event-content">
+                    <div class="event-month">February-March</div>
+                    <h3 class="event-title">Truckload 2026</h3>
+                    <div class="event-details">
+                        <div class="event-detail">
+                            <div class="event-detail-label">Dates</div>
+                            <div class="event-detail-value">Feb 28 - Mar 3, 2026</div>
+                        </div>
+                        <div class="event-detail">
+                            <div class="event-detail-label">Location</div>
+                            <div class="event-detail-value">Orlando, FL</div>
+                        </div>
+                    </div>
+                    <p class="event-description">The Truckload Carriers Association annual convention brings together 1,000+ trucking industry leaders. Educational sessions, networking, and major product reveals. Tesla Semi demo area with live charging demonstrations.</p>
+                    <div class="event-tags">
+                        <span class="event-tag">Trucking Industry</span>
+                        <span class="event-tag">Carriers</span>
+                        <span class="event-tag">Fleet Operations</span>
+                    </div>
+                    <a href="https://www.tcaconvention.com/" class="event-link">Visit Event Site</a>
+                </div>
+                <div style="background: #f5f5f5; height: 300px; border-radius: 8px;"></div>
+            </div>
+
+            <!-- TMC Annual -->
+            <div class="event-card">
+                <div class="event-marker"></div>
+                <div class="event-content">
+                    <div class="event-month">March</div>
+                    <h3 class="event-title">TMC Annual Meeting</h3>
+                    <div class="event-details">
+                        <div class="event-detail">
+                            <div class="event-detail-label">Dates</div>
+                            <div class="event-detail-value">Mar 16-19, 2026</div>
+                        </div>
+                        <div class="event-detail">
+                            <div class="event-detail-label">Location</div>
+                            <div class="event-detail-value">Nashville, TN</div>
+                        </div>
+                    </div>
+                    <p class="event-description">North America's #1 premier technical event for trucking. The American Trucking Associations' Technology & Maintenance Council hosts technical sessions, equipment displays, and innovation showcases. Tesla Semi technology demonstrations and maintenance insights.</p>
+                    <div class="event-tags">
+                        <span class="event-tag">Technical Innovation</span>
+                        <span class="event-tag">Maintenance</span>
+                        <span class="event-tag">Equipment</span>
+                    </div>
+                    <a href="https://tmc.trucking.org/TMC-Annual-Meeting" class="event-link">Learn More</a>
+                </div>
+                <div style="background: #f5f5f5; height: 300px; border-radius: 8px;"></div>
+            </div>
+
+            <!-- MATS -->
+            <div class="event-card">
+                <div class="event-marker"></div>
+                <div class="event-content">
+                    <div class="event-month">March</div>
+                    <h3 class="event-title">Mid-America Trucking Show (MATS)</h3>
+                    <div class="event-details">
+                        <div class="event-detail">
+                            <div class="event-detail-label">Dates</div>
+                            <div class="event-detail-value">Mar 26-28, 2026</div>
+                        </div>
+                        <div class="event-detail">
+                            <div class="event-detail-label">Location</div>
+                            <div class="event-detail-value">Louisville, KY</div>
+                        </div>
+                    </div>
+                    <p class="event-description">The largest trucking event in North America. MATS sets the industry tone with major equipment reveals, hands-on exhibits, and networking. Tesla Semi featured prominently with product demonstrations and fleet operator roundtables.</p>
+                    <div class="event-tags">
+                        <span class="event-tag">Heavy-Duty Trucks</span>
+                        <span class="event-tag">Equipment</span>
+                        <span class="event-tag">Industry Leadership</span>
+                    </div>
+                    <a href="https://truckingshow.com/" class="event-link">Learn More</a>
+                </div>
+                <div style="background: #f5f5f5; height: 300px; border-radius: 8px;"></div>
+            </div>
+
+            <!-- MODEX -->
+            <div class="event-card">
+                <div class="event-marker"></div>
+                <div class="event-content">
+                    <div class="event-month">April</div>
+                    <h3 class="event-title">MODEX 2026</h3>
+                    <div class="event-details">
+                        <div class="event-detail">
+                            <div class="event-detail-label">Dates</div>
+                            <div class="event-detail-value">Apr 13-16, 2026</div>
+                        </div>
+                        <div class="event-detail">
+                            <div class="event-detail-label">Location</div>
+                            <div class="event-detail-value">Atlanta, GA</div>
+                        </div>
+                    </div>
+                    <p class="event-description">The premier supply chain experience trade show. MODEX brings together shippers, carriers, logistics providers, and technology leaders. Tesla Semi showcased as the future of last-mile and long-haul logistics innovation.</p>
+                    <div class="event-tags">
+                        <span class="event-tag">Supply Chain</span>
+                        <span class="event-tag">Automation</span>
+                        <span class="event-tag">Logistics Innovation</span>
+                    </div>
+                    <a href="https://www.modexshow.com/" class="event-link">Learn More</a>
+                </div>
+                <div style="background: #f5f5f5; height: 300px; border-radius: 8px;"></div>
+            </div>
+
+            <!-- Supply Chain USA -->
+            <div class="event-card">
+                <div class="event-marker"></div>
+                <div class="event-content">
+                    <div class="event-month">June</div>
+                    <h3 class="event-title">Supply Chain USA</h3>
+                    <div class="event-details">
+                        <div class="event-detail">
+                            <div class="event-detail-label">Dates</div>
+                            <div class="event-detail-value">Jun 23-24, 2026</div>
+                        </div>
+                        <div class="event-detail">
+                            <div class="event-detail-label">Location</div>
+                            <div class="event-detail-value">Chicago, IL</div>
+                        </div>
+                    </div>
+                    <p class="event-description">Leadership summit bringing together C-suite supply chain executives. Strategic sessions on fleet electrification, logistics optimization, and future-proofing supply chains. Tesla Semi executive briefings and case studies.</p>
+                    <div class="event-tags">
+                        <span class="event-tag">Executive Leadership</span>
+                        <span class="event-tag">Strategy</span>
+                        <span class="event-tag">Supply Chain</span>
+                    </div>
+                    <a href="https://events.reutersevents.com/supply-chain/usa" class="event-link">Learn More</a>
+                </div>
+                <div style="background: #f5f5f5; height: 300px; border-radius: 8px;"></div>
+            </div>
+
+            <!-- Intermodal EXPO -->
+            <div class="event-card">
+                <div class="event-marker"></div>
+                <div class="event-content">
+                    <div class="event-month">September</div>
+                    <h3 class="event-title">Intermodal EXPO</h3>
+                    <div class="event-details">
+                        <div class="event-detail">
+                            <div class="event-detail-label">Dates</div>
+                            <div class="event-detail-value">Sep 14-16, 2026</div>
+                        </div>
+                        <div class="event-detail">
+                            <div class="event-detail-label">Location</div>
+                            <div class="event-detail-value">Long Beach, CA</div>
+                        </div>
+                    </div>
+                    <p class="event-description">The Intermodal Association of North America brings together the freight community. Covers cargo theft, tariffs, AI in logistics, rail mergers, and intermodal innovation. Tesla Semi discussions on multi-modal logistics strategy.</p>
+                    <div class="event-tags">
+                        <span class="event-tag">Intermodal</span>
+                        <span class="event-tag">Freight</span>
+                        <span class="event-tag">Logistics Network</span>
+                    </div>
+                    <a href="https://www.intermodal.org/" class="event-link">Learn More</a>
+                </div>
+                <div style="background: #f5f5f5; height: 300px; border-radius: 8px;"></div>
+            </div>
+
+            <!-- IntraLogisteX -->
+            <div class="event-card">
+                <div class="event-marker"></div>
+                <div class="event-content">
+                    <div class="event-month">September</div>
+                    <h3 class="event-title">IntraLogisteX USA</h3>
+                    <div class="event-details">
+                        <div class="event-detail">
+                            <div class="event-detail-label">Dates</div>
+                            <div class="event-detail-value">Sep 16-17, 2026</div>
+                        </div>
+                        <div class="event-detail">
+                            <div class="event-detail-label">Location</div>
+                            <div class="event-detail-value">Dallas, TX</div>
+                        </div>
+                    </div>
+                    <p class="event-description">The industry's leading warehouse automation and intralogistics trade show, now in Dallas—one of North America's most important logistics hubs. Tesla Semi featured as the critical link between automated warehouses and cross-country distribution.</p>
+                    <div class="event-tags">
+                        <span class="event-tag">Automation</span>
+                        <span class="event-tag">Warehouse Tech</span>
+                        <span class="event-tag">Logistics Hub</span>
+                    </div>
+                    <a href="https://www.intralogistexusa.com/" class="event-link">Learn More</a>
+                </div>
+                <div style="background: #f5f5f5; height: 300px; border-radius: 8px;"></div>
+            </div>
+
+            <!-- JOC Summit -->
+            <div class="event-card">
+                <div class="event-marker"></div>
+                <div class="event-content">
+                    <div class="event-month">September</div>
+                    <h3 class="event-title">JOC Summit: Chicago</h3>
+                    <div class="event-details">
+                        <div class="event-detail">
+                            <div class="event-detail-label">Dates</div>
+                            <div class="event-detail-value">Sep 28-30, 2026</div>
+                        </div>
+                        <div class="event-detail">
+                            <div class="event-detail-label">Location</div>
+                            <div class="event-detail-value">Chicago, IL</div>
+                        </div>
+                    </div>
+                    <p class="event-description">The Journal of Commerce hosts this premier supply chain leadership summit. Shippers, carriers, logistics providers, and technology leaders discuss pressing issues facing North America's inland transportation and supply chain networks.</p>
+                    <div class="event-tags">
+                        <span class="event-tag">Supply Chain Strategy</span>
+                        <span class="event-tag">Carriers</span>
+                        <span class="event-tag">Shippers</span>
+                    </div>
+                    <a href="#" class="event-link">Learn More</a>
+                </div>
+                <div style="background: #f5f5f5; height: 300px; border-radius: 8px;"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 2026 Event Stats -->
+    <section class="stats-highlight">
+        <div class="stat-item">
+            <h4>9</h4>
+            <p>Major Events</p>
+        </div>
+        <div class="stat-item">
+            <h4>6</h4>
+            <p>States Covered</p>
+        </div>
+        <div class="stat-item">
+            <h4>50K+</h4>
+            <p>Industry Attendees</p>
+        </div>
+        <div class="stat-item">
+            <h4>Feb-Sep</h4>
+            <p>Year-Round Coverage</p>
+        </div>
+    </section>
+
+    <!-- Calendar at a Glance -->
+    <section class="calendar-container">
+        <h2 style="color: #1a1a1a; text-align: center;">2026 at a Glance</h2>
+        <div class="calendar-grid">
+            <div class="month-col">
+                <div class="month-header">January</div>
+                <div class="month-box"><div class="month-name">No Events</div></div>
+            </div>
+            <div class="month-col">
+                <div class="month-header">February</div>
+                <div class="month-box has-event"><div class="month-name">Manifest</div><div class="event-count">1</div></div>
+            </div>
+            <div class="month-col">
+                <div class="month-header">March</div>
+                <div class="month-box has-event"><div class="month-name">3 Events</div><div class="event-count">3</div></div>
+            </div>
+            <div class="month-col">
+                <div class="month-header">April</div>
+                <div class="month-box has-event"><div class="month-name">MODEX</div><div class="event-count">1</div></div>
+            </div>
+            <div class="month-col">
+                <div class="month-header">May</div>
+                <div class="month-box"><div class="month-name">No Events</div></div>
+            </div>
+            <div class="month-col">
+                <div class="month-header">June</div>
+                <div class="month-box has-event"><div class="month-name">Supply Chain</div><div class="event-count">1</div></div>
+            </div>
+            <div class="month-col">
+                <div class="month-header">July</div>
+                <div class="month-box"><div class="month-name">No Events</div></div>
+            </div>
+            <div class="month-col">
+                <div class="month-header">August</div>
+                <div class="month-box"><div class="month-name">No Events</div></div>
+            </div>
+            <div class="month-col">
+                <div class="month-header">September</div>
+                <div class="month-box has-event"><div class="month-name">3 Events</div><div class="event-count">3</div></div>
+            </div>
+            <div class="month-col">
+                <div class="month-header">October</div>
+                <div class="month-box"><div class="month-name">No Events</div></div>
+            </div>
+            <div class="month-col">
+                <div class="month-header">November</div>
+                <div class="month-box"><div class="month-name">No Events</div></div>
+            </div>
+            <div class="month-col">
+                <div class="month-header">December</div>
+                <div class="month-box"><div class="month-name">No Events</div></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-area">
+        <h2>Schedule Your Meeting</h2>
+        <p style="font-size: 18px; opacity: 0.95; margin-bottom: 20px;">Meet with Tesla Semi specialists at any of these events. Request a private meeting, demo, or consultation.</p>
+        <a href="/semi/contact.html" class="btn">BOOK YOUR MEETING</a>
+        <a href="/semi/resources.html" class="btn">DOWNLOAD EVENT GUIDE</a>
+    </section>
+
+    <footer>
+        <p><strong>Tesla Semi 2026 Events</strong> — Meet us at the world's leading logistics, trucking, and supply chain conferences</p>
+        <p style="opacity: 0.6; font-size: 13px; margin-top: 20px;">© 2026 Tesla, Inc. All rights reserved. | Event details subject to change.</p>
+    </footer>
+</body>
+</html>
