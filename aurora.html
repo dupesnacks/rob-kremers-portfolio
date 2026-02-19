@@ -670,45 +670,24 @@
                         <div class="carousel-wrapper">
                             <div class="carousel-track" id="dcCarousel">
                                 <div class="carousel-slide">
-                                    <img src="tusimple-dc-hero.png" alt="Domain Controller Hero">
+                                    <img src="tusimple-dc-1-hardware.jpg" alt="Domain Controller Hardware and Architecture">
                                 </div>
                                 <div class="carousel-slide">
-                                    <img src="tusimple-dc-value-proposition.png" alt="Domain Controller Value Proposition">
+                                    <img src="tusimple-dc-2-specs.jpg" alt="Domain Controller Specifications">
                                 </div>
                                 <div class="carousel-slide">
-                                    <img src="tusimple-dc-specs.png" alt="Domain Controller Specs">
+                                    <img src="tusimple-dc-3-reliability.jpg" alt="Domain Controller Reliability Testing">
                                 </div>
                                 <div class="carousel-slide">
-                                    <img src="tusimple-dc-specifications.png" alt="Domain Controller Specifications">
+                                    <img src="tusimple-dc-4-inside.jpg" alt="Domain Controller What's Inside">
                                 </div>
                                 <div class="carousel-slide">
-                                    <img src="tusimple-dc-reliability.png" alt="Domain Controller Reliability">
-                                </div>
-                                <div class="carousel-slide">
-                                    <img src="tusimple-dc-reliability-testing.png" alt="Domain Controller Reliability Testing">
-                                </div>
-                                <div class="carousel-slide">
-                                    <img src="tusimple-dc-whats-inside-1.png" alt="Domain Controller Inside View 1">
-                                </div>
-                                <div class="carousel-slide">
-                                    <img src="tusimple-dc-whats-inside-2.png" alt="Domain Controller Inside View 2">
-                                </div>
-                                <div class="carousel-slide">
-                                    <img src="tusimple-dc-whats-inside-architecture.png" alt="Domain Controller Hardware Architecture">
-                                </div>
-                                <div class="carousel-slide">
-                                    <img src="tusimple-dc-whats-inside-3.png" alt="Domain Controller What's Inside Technical Details">
-                                </div>
-                                <div class="carousel-slide">
-                                    <img src="tusimple-dc-contact.png" alt="Domain Controller Contact Materials">
-                                </div>
-                                <div class="carousel-slide">
-                                    <img src="tusimple-dc-contact-form.png" alt="Domain Controller Contact Form">
+                                    <img src="tusimple-dc-5-value.jpg" alt="Domain Controller Value Proposition">
                                 </div>
                             </div>
                             <div class="carousel-controls">
                                 <button class="carousel-btn" id="dcPrevBtn" onclick="scrollCarouselDC(-1)">←</button>
-                                <span class="carousel-counter"><span id="dcCurrentSlide">1</span> / 12</span>
+                                <span class="carousel-counter"><span id="dcCurrentSlide">1</span> / 5</span>
                                 <button class="carousel-btn" id="dcNextBtn" onclick="scrollCarouselDC(1)">→</button>
                             </div>
                         </div>
@@ -723,6 +702,30 @@
                             <p>
                                 <strong>Why It Matters for Aurora:</strong> This is the core challenge Aurora faces. You're building revolutionary technology but need to communicate its value to non-technical decision makers. I've proven I can take complex technical innovation and make it compelling to the stakeholders who actually control purchasing and deployment decisions.
                             </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TuSimple: My Story Trailer Campaign -->
+                <div class="portfolio-item">
+                    <div class="portfolio-item-header">
+                        <h3>TuSimple: My Story Trailer Campaign</h3>
+                        <div class="portfolio-item-meta">Internal Storytelling / Brand Humanization / Documentary</div>
+                    </div>
+                    <div class="portfolio-item-content">
+                        <div class="portfolio-item-text">
+                            <p>
+                                <strong>The Challenge:</strong> TuSimple was operating in a complex, novel space (autonomous trucking) where the company narrative often got lost in technical specs and investor decks. The brand needed humanization: a way to show the actual people building this technology and why they're committed to it.
+                            </p>
+                            <p>
+                                <strong>What I Built:</strong> A documentary-style campaign called "My TuSimple Story" designed to put the spotlight on the people who do the work: engineers, drivers, operations teams. Through intimate, authentic storytelling, the campaign showed the inner workings of the company and the human motivations behind the innovation.
+                            </p>
+                            <p>
+                                <strong>Why It Matters for Aurora:</strong> This demonstrates that brand isn't just about product features or technical specs. It's about translating complex innovation into human narrative. Aurora will need to connect emotionally with customers, partners, and employees as you scale. This work proves I can do that.
+                            </p>
+                        </div>
+                        <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 12px; margin-top: 20px;">
+                            <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;" src="https://www.youtube.com/embed/sA1RdMNJCoE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         </div>
                     </div>
                 </div>
@@ -931,7 +934,7 @@
             const nextBtn = document.getElementById('dcNextBtn');
             
             prevBtn.disabled = currentSlide === 1;
-            nextBtn.disabled = currentSlide === 12;
+            nextBtn.disabled = currentSlide === 5;
         }
 
         // Initialize
