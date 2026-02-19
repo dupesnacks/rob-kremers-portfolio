@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    { "source": "/aurora", "destination": "/aurora.html" },
+    { "source": "/consulting", "destination": "/consulting.html" },
+    { "source": "/teslasales", "destination": "/teslasales.html" }
+  ],
+  "trailingSlash": false
+}
