@@ -690,10 +690,13 @@
                                 <div class="carousel-slide">
                                     <img src="tusimple-dc-contact.png" alt="Domain Controller Contact Materials">
                                 </div>
+                                <div class="carousel-slide">
+                                    <img src="tusimple-dc-contact-form.png" alt="Domain Controller Contact Form">
+                                </div>
                             </div>
                             <div class="carousel-controls">
                                 <button class="carousel-btn" id="dcPrevBtn" onclick="scrollCarouselDC(-1)">←</button>
-                                <span class="carousel-counter"><span id="dcCurrentSlide">1</span> / 7</span>
+                                <span class="carousel-counter"><span id="dcCurrentSlide">1</span> / 8</span>
                                 <button class="carousel-btn" id="dcNextBtn" onclick="scrollCarouselDC(1)">→</button>
                             </div>
                         </div>
@@ -916,7 +919,7 @@
             const nextBtn = document.getElementById('dcNextBtn');
             
             prevBtn.disabled = currentSlide === 1;
-            nextBtn.disabled = currentSlide === 7;
+            nextBtn.disabled = currentSlide === 8;
         }
 
         // Initialize
