@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pitch Bot Dashboard — Rob Kremers</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', sans-serif; background: #f5f5f5; color: #1a1a1a; }
+
+  nav { background: white; border-bottom: 1px solid #f0f0f0; padding: 0 40px; display: flex; align-items: center; justify-content: space-between; height: 60px; }
+  .logo { font-weight: 800; font-size: 18px; color: #0D5E54; text-decoration: none; }
+  .nav-title { font-size: 13px; color: #999; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; }
+
+  .hero { background: linear-gradient(135deg, #0D5E54 0%, #05433a 100%); color: white; padding: 40px; }
+  .hero h1 { font-size: 28px; font-weight: 800; margin-bottom: 6px; }
+  .hero p { opacity: 0.8; font-size: 15px; }
+
+  .container { max-width: 1200px; margin: 0 auto; padding: 32px 40px; }
+
+  /* Stats */
+  .stats-grid { display: grid; grid-template-columns: repeat(6, 1fr); gap: 16px; margin-bottom: 32px; }
+  .stat-card { background: white; border-radius: 8px; padding: 20px; text-align: center; border: 1px solid #f0f0f0; }
+  .stat-card .number { font-size: 32px; font-weight: 800; color: #0D5E54; }
+  .stat-card .label { font-size: 12px; color: #999; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; margin-top: 4px; }
+  .stat-card.highlight .number { color: #D4AF37; }
+  .stat-card.success .number { color: #22c55e; }
+
+  /* Sections */
+  .section { background: white; border-radius: 8px; border: 1px solid #f0f0f0; margin-bottom: 24px; overflow: hidden; }
+  .section-header { padding: 20px 24px; border-bottom: 1px solid #f0f0f0; display: flex; align-items: center; justify-content: space-between; }
+  .section-header h2 { font-size: 16px; font-weight: 800; }
+  .section-header .count { font-size: 12px; color: #999; background: #f5f5f5; padding: 4px 10px; border-radius: 20px; font-weight: 600; }
+
+  /* Table */
+  table { width: 100%; border-collapse: collapse; }
+  th { padding: 12px 16px; text-align: left; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; color: #999; background: #f9f9f9; border-bottom: 1px solid #f0f0f0; }
+  td { padding: 12px 16px; font-size: 14px; border-bottom: 1px solid #f9f9f9; vertical-align: middle; }
+  tr:last-child td { border-bottom: none; }
+  tr:hover td { background: #fafafa; }
+
+  /* Status badges */
+  .badge { display: inline-block; padding: 3px 10px; border-radius: 20px; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.3px; }
+  .badge-pending { background: #f0f0f0; color: #666; }
+  .badge-called { background: #dbeafe; color: #1d4ed8; }
+  .badge-interested { background: #fef9c3; color: #854d0e; }
+  .badge-booked { background: #dcfce7; color: #15803d; }
+  .badge-declined { background: #fee2e2; color: #b91c1c; }
+  .badge-no_answer { background: #f3e8ff; color: #7e22ce; }
+
+  /* Score bar */
+  .score-bar { display: flex; align-items: center; gap: 8px; }
+  .score-track { width: 60px; height: 6px; background: #f0f0f0; border-radius: 3px; overflow: hidden; }
+  .score-fill { height: 100%; border-radius: 3px; }
+  .score-fill.good { background: #22c55e; }
+  .score-fill.ok { background: #f59e0b; }
+  .score-fill.bad { background: #ef4444; }
+  .score-num { font-size: 12px; font-weight: 700; color: #666; }
+
+  /* Website link */
+  .site-link { color: #0D5E54; text-decoration: none; font-size: 13px; }
+  .site-link:hover { text-decoration: underline; }
+  .no-site { color: #ccc; font-size: 13px; font-style: italic; }
+
+  /* Search history */
+  .search-row { display: grid; grid-template-columns: 1fr 1fr 120px 80px 100px; align-items: center; padding: 12px 24px; border-bottom: 1px solid #f9f9f9; font-size: 14px; }
+  .search-row:last-child { border-bottom: none; }
+  .search-row .category { font-weight: 700; color: #0D5E54; }
+  .search-row .date { color: #999; font-size: 13px; }
+
+  /* Empty state */
+  .empty { padding: 40px; text-align: center; color: #999; font-size: 14px; }
+
+  /* Run command box */
+  .run-box { background: #1a1a1a; color: #22c55e; padding: 16px 20px; border-radius: 8px; font-family: 'Courier New', monospace; font-size: 13px; margin-bottom: 24px; }
+  .run-box span { color: #999; }
+
+  @media (max-width: 768px) {
+    .stats-grid { grid-template-columns: repeat(3, 1fr); }
+    .container { padding: 20px; }
+    nav { padding: 0 20px; }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="/" class="logo">Rob Kremers</a>
+  <span class="nav-title">Pitch Bot Dashboard</span>
+</nav>
+
+<div class="hero">
+  <h1>🤖 Website Pitch Bot</h1>
+  <p>Tracks leads, calls, and conversions from the automated cold outreach pipeline.</p>
+</div>
+
+<div class="container">
+
+  <!-- Run command hint -->
+  <div class="run-box">
+    <span>$</span> python pipeline.py --category "restaurant" --location "San Diego, CA" --limit 20 --call
+  </div>
+
+  <!-- Stats -->
+  <div class="stats-grid" id="stats">
+    <div class="stat-card"><div class="number" id="stat-leads">—</div><div class="label">Total Leads</div></div>
+    <div class="stat-card"><div class="number" id="stat-calls">—</div><div class="label">Calls Made</div></div>
+    <div class="stat-card highlight"><div class="number" id="stat-interested">—</div><div class="label">Interested</div></div>
+    <div class="stat-card success"><div class="number" id="stat-booked">—</div><div class="label">Booked</div></div>
+    <div class="stat-card"><div class="number" id="stat-declined">—</div><div class="label">Declined</div></div>
+    <div class="stat-card"><div class="number" id="stat-rate">—</div><div class="label">Conversion</div></div>
+  </div>
+
+  <!-- Leads Table -->
+  <div class="section">
+    <div class="section-header">
+      <h2>Leads</h2>
+      <span class="count" id="leads-count">Loading...</span>
+    </div>
+    <table>
+      <thead>
+        <tr>
+          <th>Business</th>
+          <th>Phone</th>
+          <th>Website</th>
+          <th>Score</th>
+          <th>Demo</th>
+          <th>Status</th>
+          <th>Notes</th>
+          <th>Date</th>
+        </tr>
+      </thead>
+      <tbody id="leads-table">
+        <tr><td colspan="8" class="empty">Loading leads...</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Search History -->
+  <div class="section">
+    <div class="section-header">
+      <h2>Search History</h2>
+      <span class="count" id="searches-count">Loading...</span>
+    </div>
+    <div id="searches-list">
+      <div class="empty">Loading searches...</div>
+    </div>
+  </div>
+
+</div>
+
+<script>
+  async function loadData() {
+    try {
+      const resp = await fetch('/pitchbot-data.json?' + Date.now());
+      const data = await resp.json();
+      renderStats(data.stats);
+      renderLeads(data.leads || []);
+      renderSearches(data.searches || []);
+    } catch (e) {
+      document.getElementById('leads-table').innerHTML = '<tr><td colspan="8" class="empty">No data yet. Run the pipeline to get started.</td></tr>';
+    }
+  }
+
+  function renderStats(stats) {
+    document.getElementById('stat-leads').textContent = stats.total_leads || 0;
+    document.getElementById('stat-calls').textContent = stats.calls_made || 0;
+    document.getElementById('stat-interested').textContent = stats.interested || 0;
+    document.getElementById('stat-booked').textContent = stats.booked || 0;
+    document.getElementById('stat-declined').textContent = stats.declined || 0;
+    const rate = stats.calls_made > 0
+      ? Math.round(((stats.interested + stats.booked) / stats.calls_made) * 100) + '%'
+      : '—';
+    document.getElementById('stat-rate').textContent = rate;
+  }
+
+  function renderLeads(leads) {
+    document.getElementById('leads-count').textContent = leads.length + ' leads';
+    if (!leads.length) {
+      document.getElementById('leads-table').innerHTML = '<tr><td colspan="8" class="empty">No leads yet.</td></tr>';
+      return;
+    }
+    document.getElementById('leads-table').innerHTML = leads.map(l => {
+      const score = l.website_score || 0;
+      const scoreClass = score < 30 ? 'bad' : score < 60 ? 'ok' : 'good';
+      const website = l.website
+        ? `<a href="${l.website}" target="_blank" class="site-link">${new URL(l.website).hostname}</a>`
+        : '<span class="no-site">no site</span>';
+      const demo = l.demo_url
+        ? `<a href="${l.demo_url}" target="_blank" class="site-link">View →</a>`
+        : '—';
+      const date = l.added_date ? new Date(l.added_date).toLocaleDateString() : '—';
+      const callDate = l.call_date ? new Date(l.call_date).toLocaleDateString() : '';
+      return `<tr>
+        <td><strong>${l.business_name}</strong><br><small style="color:#999">${l.address}</small></td>
+        <td>${l.phone || '<span style="color:#ccc">—</span>'}</td>
+        <td>${website}</td>
+        <td>
+          <div class="score-bar">
+            <div class="score-track"><div class="score-fill ${scoreClass}" style="width:${score}%"></div></div>
+            <span class="score-num">${score}</span>
+          </div>
+        </td>
+        <td>${demo}</td>
+        <td><span class="badge badge-${l.call_status}">${l.call_status}</span>${callDate ? `<br><small style="color:#999">${callDate}</small>` : ''}</td>
+        <td style="max-width:180px;font-size:13px;color:#666">${l.call_notes || '—'}</td>
+        <td style="color:#999;font-size:13px">${date}</td>
+      </tr>`;
+    }).join('');
+  }
+
+  function renderSearches(searches) {
+    document.getElementById('searches-count').textContent = searches.length + ' searches';
+    if (!searches.length) {
+      document.getElementById('searches-list').innerHTML = '<div class="empty">No searches yet.</div>';
+      return;
+    }
+    document.getElementById('searches-list').innerHTML =
+      `<div class="search-row" style="font-size:11px;font-weight:700;color:#999;text-transform:uppercase;letter-spacing:0.5px;background:#f9f9f9">
+        <span>Category</span><span>Location</span><span>Date</span><span>Found</span><span>Status</span>
+      </div>` +
+      searches.map(s => `
+        <div class="search-row">
+          <span class="category">${s.category}</span>
+          <span>${s.location}</span>
+          <span class="date">${new Date(s.date).toLocaleDateString()}</span>
+          <span><strong>${s.count}</strong> leads</span>
+          <span><span class="badge badge-called">done</span></span>
+        </div>
+      `).join('');
+  }
+
+  loadData();
+  // Auto-refresh every 60s
+  setInterval(loadData, 60000);
+</script>
+
+</body>
+</html>

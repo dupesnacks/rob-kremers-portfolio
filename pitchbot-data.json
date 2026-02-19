@@ -1,0 +1,22 @@
+{
+  "searches": [
+    {"id": "a1b2c3d4", "category": "restaurant", "location": "San Diego, CA", "date": "2026-02-19T10:00:00", "count": 8},
+    {"id": "e5f6g7h8", "category": "hair salon", "location": "San Diego, CA", "date": "2026-02-18T14:30:00", "count": 6}
+  ],
+  "leads": [
+    {"id": "l1", "search_id": "a1b2c3d4", "business_name": "Casa Del Mar Grill", "address": "1234 Ocean Blvd, San Diego, CA", "phone": "+16195550101", "email": "info@casadelmar.com", "website": "http://casadelmar.weebly.com", "website_score": 22, "score_details": {"mobile_friendly": false, "https": false, "load_time_sec": 4.2, "old_tech": true, "copyright_year": 2017}, "demo_url": "https://robkremers.com/preview/casa-del-mar-grill", "call_status": "interested", "call_date": "2026-02-19T10:15:00", "call_notes": "Owner Mario very interested. Wants Rob to call back Thursday.", "added_date": "2026-02-19T10:00:00"},
+    {"id": "l2", "search_id": "a1b2c3d4", "business_name": "Sunset Tacos", "address": "456 Mission Ave, San Diego, CA", "phone": "+16195550202", "email": "", "website": "http://sunsettacos.com", "website_score": 35, "score_details": {"mobile_friendly": false, "https": false, "load_time_sec": 3.8, "old_tech": true, "copyright_year": 2019}, "demo_url": "https://robkremers.com/preview/sunset-tacos", "call_status": "no_answer", "call_date": "2026-02-19T10:20:00", "call_notes": "No answer, left voicemail.", "added_date": "2026-02-19T10:00:00"},
+    {"id": "l3", "search_id": "a1b2c3d4", "business_name": "The Hungry Pelican", "address": "789 Harbor Dr, San Diego, CA", "phone": "+16195550303", "email": "hello@hungrypelican.net", "website": "http://hungrypelican.net", "website_score": 18, "score_details": {"mobile_friendly": false, "https": false, "load_time_sec": 5.1, "old_tech": true, "copyright_year": 2015}, "demo_url": "https://robkremers.com/preview/the-hungry-pelican", "call_status": "declined", "call_date": "2026-02-19T10:25:00", "call_notes": "Not interested. Has a nephew who does websites.", "added_date": "2026-02-19T10:00:00"},
+    {"id": "l4", "search_id": "a1b2c3d4", "business_name": "Diego's Cantina", "address": "321 5th Ave, San Diego, CA", "phone": "+16195550404", "email": "", "website": "", "website_score": 0, "score_details": {"error": "no website"}, "demo_url": "https://robkremers.com/preview/diegos-cantina", "call_status": "pending", "call_date": null, "call_notes": "", "added_date": "2026-02-19T10:00:00"},
+    {"id": "l5", "search_id": "e5f6g7h8", "business_name": "Shear Perfection Salon", "address": "555 University Ave, San Diego, CA", "phone": "+16195550505", "email": "book@shearperfection.com", "website": "http://shearperfection.wix.com", "website_score": 28, "score_details": {"mobile_friendly": false, "https": false, "load_time_sec": 4.9, "old_tech": true, "copyright_year": 2018}, "demo_url": "https://robkremers.com/preview/shear-perfection-salon", "call_status": "booked", "call_date": "2026-02-18T15:00:00", "call_notes": "Meeting booked! Owner Sarah wants a full redesign. Rob to call Friday 2pm.", "added_date": "2026-02-18T14:30:00"},
+    {"id": "l6", "search_id": "e5f6g7h8", "business_name": "Curl Up & Dye", "address": "888 Adams Ave, San Diego, CA", "phone": "+16195550606", "email": "", "website": "http://curlupdye.com", "website_score": 41, "score_details": {"mobile_friendly": true, "https": false, "load_time_sec": 3.2, "old_tech": true, "copyright_year": 2020}, "demo_url": "https://robkremers.com/preview/curl-up-and-dye", "call_status": "pending", "call_date": null, "call_notes": "", "added_date": "2026-02-18T14:30:00"}
+  ],
+  "stats": {
+    "total_leads": 6,
+    "calls_made": 4,
+    "interested": 1,
+    "booked": 1,
+    "declined": 1,
+    "no_answer": 1
+  }
+}
