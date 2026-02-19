@@ -676,6 +676,9 @@
                                     <img src="tusimple-dc-specs.png" alt="Domain Controller Specs">
                                 </div>
                                 <div class="carousel-slide">
+                                    <img src="tusimple-dc-specifications.png" alt="Domain Controller Specifications">
+                                </div>
+                                <div class="carousel-slide">
                                     <img src="tusimple-dc-reliability.png" alt="Domain Controller Reliability">
                                 </div>
                                 <div class="carousel-slide">
@@ -696,7 +699,7 @@
                             </div>
                             <div class="carousel-controls">
                                 <button class="carousel-btn" id="dcPrevBtn" onclick="scrollCarouselDC(-1)">←</button>
-                                <span class="carousel-counter"><span id="dcCurrentSlide">1</span> / 8</span>
+                                <span class="carousel-counter"><span id="dcCurrentSlide">1</span> / 9</span>
                                 <button class="carousel-btn" id="dcNextBtn" onclick="scrollCarouselDC(1)">→</button>
                             </div>
                         </div>
@@ -919,7 +922,7 @@
             const nextBtn = document.getElementById('dcNextBtn');
             
             prevBtn.disabled = currentSlide === 1;
-            nextBtn.disabled = currentSlide === 8;
+            nextBtn.disabled = currentSlide === 9;
         }
 
         // Initialize
