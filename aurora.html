@@ -673,6 +673,9 @@
                                     <img src="tusimple-dc-hero.png" alt="Domain Controller Hero">
                                 </div>
                                 <div class="carousel-slide">
+                                    <img src="tusimple-dc-value-proposition.png" alt="Domain Controller Value Proposition">
+                                </div>
+                                <div class="carousel-slide">
                                     <img src="tusimple-dc-specs.png" alt="Domain Controller Specs">
                                 </div>
                                 <div class="carousel-slide">
@@ -705,7 +708,7 @@
                             </div>
                             <div class="carousel-controls">
                                 <button class="carousel-btn" id="dcPrevBtn" onclick="scrollCarouselDC(-1)">←</button>
-                                <span class="carousel-counter"><span id="dcCurrentSlide">1</span> / 11</span>
+                                <span class="carousel-counter"><span id="dcCurrentSlide">1</span> / 12</span>
                                 <button class="carousel-btn" id="dcNextBtn" onclick="scrollCarouselDC(1)">→</button>
                             </div>
                         </div>
@@ -928,7 +931,7 @@
             const nextBtn = document.getElementById('dcNextBtn');
             
             prevBtn.disabled = currentSlide === 1;
-            nextBtn.disabled = currentSlide === 11;
+            nextBtn.disabled = currentSlide === 12;
         }
 
         // Initialize
