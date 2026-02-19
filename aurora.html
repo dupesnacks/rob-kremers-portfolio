@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Rob Kremers - Senior Brand Marketing Manager application for Aurora. Brand strategy, autonomous vehicle expertise, and integrated campaign leadership.">
+    <title>Rob Kremers | Aurora - Senior Brand Marketing Manager</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', sans-serif;
+            line-height: 1.6;
+            color: #1a1a1a;
+            background: #ffffff;
+        }
+
+        /* Navigation */
+        nav {
+            position: sticky;
+            top: 0;
+            background: rgba(255, 255, 255, 0.98);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid #f0f0f0;
+            z-index: 1000;
+        }
+
+        nav .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 70px;
+        }
+
+        .logo {
+            font-size: 16px;
+            font-weight: 800;
+            letter-spacing: -0.5px;
+            text-decoration: none;
+            background: linear-gradient(135deg, #0D5E54 0%, #D4AF37 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #666;
+            font-size: 13px;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #0D5E54;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 40px;
+        }
+
+        /* Hero Section */
+        .hero {
+            padding: 100px 0 60px;
+            background: linear-gradient(135deg, rgba(13, 94, 84, 0.02) 0%, rgba(212, 175, 55, 0.02) 100%);
+            border-bottom: 1px solid #f0f0f0;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            line-height: 1.2;
+            margin-bottom: 20px;
+            font-weight: 800;
+            background: linear-gradient(135deg, #1a1a1a 0%, #0D5E54 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero-subtitle {
+            font-size: 20px;
+            color: #666;
+            margin-bottom: 30px;
+            max-width: 700px;
+        }
+
+        .hero-meta {
+            font-size: 14px;
+            color: #999;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        /* Cover Letter Section */
+        .cover-letter {
+            padding: 100px 0;
+            border-bottom: 1px solid #f0f0f0;
+        }
+
+        .cover-letter h2 {
+            font-size: 32px;
+            font-weight: 800;
+            margin-bottom: 40px;
+            color: #1a1a1a;
+        }
+
+        .letter-content {
+            font-size: 16px;
+            line-height: 1.9;
+            color: #444;
+            background: white;
+            padding: 50px;
+            border: 1px solid #f0f0f0;
+            border-radius: 12px;
+        }
+
+        .letter-content p {
+            margin-bottom: 20px;
+        }
+
+        .letter-content strong {
+            color: #0D5E54;
+            font-weight: 700;
+        }
+
+        .letter-content em {
+            font-style: italic;
+            color: #666;
+        }
+
+        .letter-highlight {
+            background: linear-gradient(120deg, rgba(13, 94, 84, 0.1) 0%, rgba(212, 175, 55, 0.05) 100%);
+            border-left: 4px solid #0D5E54;
+            padding: 20px;
+            margin: 30px 0;
+            border-radius: 6px;
+        }
+
+        .letter-highlight strong {
+            display: block;
+            margin-bottom: 10px;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        /* Portfolio Section */
+        .portfolio {
+            padding: 100px 0;
+            border-bottom: 1px solid #f0f0f0;
+        }
+
+        .portfolio h2 {
+            font-size: 32px;
+            font-weight: 800;
+            margin-bottom: 50px;
+            color: #1a1a1a;
+        }
+
+        .portfolio-intro {
+            font-size: 16px;
+            line-height: 1.8;
+            color: #666;
+            margin-bottom: 60px;
+            max-width: 800px;
+        }
+
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 60px;
+        }
+
+        .portfolio-item {
+            border-bottom: 1px solid #f0f0f0;
+            padding-bottom: 60px;
+        }
+
+        .portfolio-item:last-child {
+            border-bottom: none;
+            padding-bottom: 0;
+        }
+
+        .portfolio-item-header {
+            margin-bottom: 30px;
+        }
+
+        .portfolio-item h3 {
+            font-size: 24px;
+            font-weight: 800;
+            margin-bottom: 10px;
+            color: #1a1a1a;
+        }
+
+        .portfolio-item-meta {
+            font-size: 13px;
+            color: #999;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .portfolio-item-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: start;
+        }
+
+        .portfolio-item-text {
+            font-size: 15px;
+            line-height: 1.8;
+            color: #555;
+        }
+
+        .portfolio-item-text p {
+            margin-bottom: 16px;
+        }
+
+        .portfolio-item-text strong {
+            color: #0D5E54;
+            font-weight: 700;
+        }
+
+        .portfolio-item-text em {
+            font-style: italic;
+            color: #999;
+        }
+
+        .media-placeholder {
+            background: linear-gradient(135deg, #f0f0f0 0%, #e8e8e8 100%);
+            aspect-ratio: 16 / 9;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #999;
+            font-size: 14px;
+            text-align: center;
+            padding: 20px;
+            font-weight: 600;
+            border: 2px dashed #ddd;
+        }
+
+        .media-placeholder.image {
+            aspect-ratio: 4 / 3;
+        }
+
+        .media-placeholder.video {
+            aspect-ratio: 16 / 9;
+        }
+
+        .competencies {
+            padding: 100px 0;
+            background: linear-gradient(135deg, rgba(13, 94, 84, 0.02) 0%, rgba(212, 175, 55, 0.02) 100%);
+            border-bottom: 1px solid #f0f0f0;
+        }
+
+        .competencies h2 {
+            font-size: 32px;
+            font-weight: 800;
+            margin-bottom: 50px;
+            color: #1a1a1a;
+        }
+
+        .competencies-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+        }
+
+        .competency-card {
+            padding: 30px;
+            background: white;
+            border: 1px solid #f0f0f0;
+            border-radius: 12px;
+            transition: all 0.3s ease;
+        }
+
+        .competency-card:hover {
+            border-color: #0D5E54;
+            box-shadow: 0 10px 30px rgba(13, 94, 84, 0.1);
+        }
+
+        .competency-card h3 {
+            font-size: 16px;
+            font-weight: 700;
+            margin-bottom: 12px;
+            color: #0D5E54;
+        }
+
+        .competency-card p {
+            font-size: 14px;
+            line-height: 1.7;
+            color: #666;
+        }
+
+        .competency-card ul {
+            list-style: none;
+            margin-top: 12px;
+        }
+
+        .competency-card li {
+            font-size: 13px;
+            color: #666;
+            padding: 6px 0;
+            padding-left: 16px;
+            position: relative;
+        }
+
+        .competency-card li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #0D5E54;
+            font-weight: 700;
+        }
+
+        /* Why Aurora Section */
+        .why-aurora {
+            padding: 100px 0;
+            border-bottom: 1px solid #f0f0f0;
+        }
+
+        .why-aurora h2 {
+            font-size: 32px;
+            font-weight: 800;
+            margin-bottom: 40px;
+            color: #1a1a1a;
+        }
+
+        .why-aurora-content {
+            font-size: 16px;
+            line-height: 1.9;
+            color: #555;
+            max-width: 900px;
+        }
+
+        .why-aurora-content p {
+            margin-bottom: 24px;
+        }
+
+        .why-aurora-content strong {
+            color: #0D5E54;
+            font-weight: 700;
+        }
+
+        .why-list {
+            margin: 30px 0;
+            padding-left: 20px;
+        }
+
+        .why-list li {
+            margin-bottom: 16px;
+            font-size: 16px;
+            line-height: 1.7;
+        }
+
+        .why-list strong {
+            color: #0D5E54;
+        }
+
+        /* Close Section */
+        .close {
+            padding: 100px 0;
+            background: linear-gradient(135deg, #0D5E54 0%, #05433a 100%);
+            color: white;
+            text-align: center;
+        }
+
+        .close h2 {
+            font-size: 32px;
+            font-weight: 800;
+            margin-bottom: 30px;
+        }
+
+        .close p {
+            font-size: 16px;
+            line-height: 1.8;
+            margin-bottom: 30px;
+            opacity: 0.95;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .close-cta {
+            display: inline-block;
+            padding: 16px 40px;
+            background: white;
+            color: #0D5E54;
+            text-decoration: none;
+            font-weight: 700;
+            border-radius: 6px;
+            transition: all 0.3s ease;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .close-cta:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Footer */
+        footer {
+            background: #1a1a1a;
+            color: #666;
+            padding: 40px 0;
+            text-align: center;
+            font-size: 13px;
+        }
+
+        footer a {
+            color: #999;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            color: #0D5E54;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .container {
+                padding: 0 20px;
+            }
+
+            .hero h1 {
+                font-size: 32px;
+            }
+
+            .hero-subtitle {
+                font-size: 18px;
+            }
+
+            .portfolio-item-content,
+            .competencies-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .letter-content {
+                padding: 30px;
+            }
+
+            .close h2 {
+                font-size: 28px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="container">
+            <a href="/" class="logo">Rob Kremers</a>
+            <a href="/" style="margin-left: auto; color: #666; text-decoration: none; font-size: 13px; font-weight: 600;">← Back to Portfolio</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-meta">Aurora Application – Senior Brand Marketing Manager</div>
+            <h1>Building the Brand of Autonomous Transportation</h1>
+            <p class="hero-subtitle">A strategic case for how my experience translating complex autonomous vehicle technology into compelling brand narratives directly addresses Aurora's most critical challenges.</p>
+        </div>
+    </section>
+
+    <!-- Cover Letter Section -->
+    <section class="cover-letter">
+        <div class="container">
+            <h2>Why Aurora. Why Now.</h2>
+            
+            <div class="letter-content">
+                <p>
+                    Aurora's mission to deliver the benefits of self-driving technology safely, quickly, and broadly resonates deeply with me—not only as a brand marketer, but as someone who has spent years translating complex autonomous vehicle technology into credible, compelling narratives for diverse audiences.
+                </p>
+
+                <p>
+                    I bring over 15 years of experience leading brand strategy and integrated campaigns across global brands and frontier technology companies. Most recently at TuSimple (now CreateAI), an autonomous semi-truck company, I led brand and narrative development during a pivotal stage of growth. A core part of my role was translating highly technical Level 4 autonomous driving systems into strategic communications for regulators, fleet operators, investors, industry analysts, and potential partners. I developed campaign frameworks, product storytelling, executive messaging, and cross-functional toolkits that aligned marketing, safety, and government relations around a unified brand voice.
+                </p>
+
+                <div class="letter-highlight">
+                    <strong>What This Means for Aurora:</strong>
+                    I've already walked the path Aurora is on. I understand the unique challenge of building trust in autonomous technology—where brand credibility is survival. I know how to navigate the complexity of speaking to regulators, industry partners, fleet operators, and the public simultaneously. I know how safety messaging, regulatory positioning, and brand aspiration intersect.
+                </div>
+
+                <p>
+                    Earlier in my career, I built global brand systems at Nike and adidas, including leading the development of Nike's Global Basketball Retail Brand Playbook and contributing to global footwear campaigns for athletes like Damian Lillard and James Harden. In those roles, I executed multi-channel, 360° marketing programs from strategic brief through launch and measurement—partnering closely with creative teams, agencies, and cross-functional stakeholders to ensure brand consistency and commercial impact.
+                </p>
+
+                <p>
+                    The opportunity at Aurora uniquely combines both sides of my background: deep brand stewardship within a complex, high-stakes industry and integrated campaign leadership at scale.
+                </p>
+
+                <p>
+                    <strong>I am particularly excited about:</strong>
+                </p>
+
+                <ul style="margin: 20px 0; padding-left: 20px;">
+                    <li style="margin-bottom: 12px;"><strong>Developing integrated brand strategies</strong> around major company moments and product milestones—turning technical achievements into moments that matter to customers, partners, and the industry</li>
+                    <li style="margin-bottom: 12px;"><strong>Partnering cross-functionally with Safety and Government Relations</strong> to shape trusted, forward-looking narratives that align regulatory excellence with brand aspiration</li>
+                    <li style="margin-bottom: 12px;"><strong>Building a compelling employer brand</strong> that attracts top technical talent in an increasingly competitive AV landscape—showing the world what it means to build the future</li>
+                    <li><strong>Leveraging AI tools</strong> to scale insight development, campaign optimization, and creative ideation—working smarter, not just harder</li>
+                </ul>
+
+                <p>
+                    Throughout my career, I have operated as a strategic advisor to executives and cross-functional teams—bringing clarity to ambiguity, structure to complex initiatives, and discipline to campaign execution. I thrive in environments where technology, policy, and brand intersect.
+                </p>
+
+                <p>
+                    Aurora is not simply building a product—it is shaping a new transportation ecosystem. I would welcome the opportunity to steward and elevate a brand that carries such consequential impact.
+                </p>
+
+                <p style="margin-top: 40px;">
+                    Thank you for your consideration. I look forward to the opportunity to discuss how my experience in autonomous technology and global brand leadership can contribute to Aurora's next chapter.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="portfolio">
+        <div class="container">
+            <h2>Relevant Work & Impact</h2>
+            <p class="portfolio-intro">
+                Below is a selection of work that directly demonstrates the capabilities required for this role: brand strategy development, complex technical narrative translation, integrated campaign leadership, and cross-functional stewardship. Please upload your media files to the sections below.
+            </p>
+
+            <div class="portfolio-grid">
+                <!-- TuSimple Work -->
+                <div class="portfolio-item">
+                    <div class="portfolio-item-header">
+                        <h3>TuSimple: Autonomous Vehicle Brand Strategy</h3>
+                        <div class="portfolio-item-meta">Brand Strategy / Technical Narrative / Product Positioning</div>
+                    </div>
+                    <div class="portfolio-item-content">
+                        <div class="portfolio-item-text">
+                            <p>
+                                <strong>The Challenge:</strong> Translate Level 4 autonomous driving systems into credible narratives for multiple stakeholder audiences (regulators, fleet operators, investors, industry analysts, potential partners).
+                            </p>
+                            <p>
+                                <strong>What I Developed:</strong> Campaign frameworks, product storytelling architecture, executive messaging guidelines, and cross-functional communication toolkits that aligned marketing, safety, and government relations around a unified brand voice.
+                            </p>
+                            <p>
+                                <strong>Why It Matters:</strong> This is exactly what Aurora needs. Building trust in autonomous technology requires strategic narrative development that speaks credibly to diverse audiences without overstating capabilities. I've done this work at scale.
+                            </p>
+                            <p>
+                                <em>Portfolio Media Placeholder:</em>
+                            </p>
+                        </div>
+                        <div class="media-placeholder video">
+                            [Video: TuSimple brand narrative / campaign reel]
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Nike Basketball Playbook -->
+                <div class="portfolio-item">
+                    <div class="portfolio-item-header">
+                        <h3>Nike: Global Basketball Retail Brand Playbook</h3>
+                        <div class="portfolio-item-meta">Brand Strategy / Brand Stewardship / Global Systems</div>
+                    </div>
+                    <div class="portfolio-item-content">
+                        <div class="portfolio-item-text">
+                            <p>
+                                <strong>The Challenge:</strong> Develop a globally scalable playbook that could guide retail partners and market teams on how to execute Nike Basketball brand strategy with consistency across regions and store environments.
+                            </p>
+                            <p>
+                                <strong>What I Built:</strong> A comprehensive playbook covering brand strategy, product positioning, service standards, and environmental design. This became the foundational system for global brand execution.
+                            </p>
+                            <p>
+                                <strong>Why It Matters for Aurora:</strong> Aurora needs a similar brand steward—someone who can develop brand systems that work across functions (Marketing, Safety, Government Relations, Partners) and geographies. This playbook demonstrates that capability at scale.
+                            </p>
+                            <p>
+                                <em>Portfolio Media Placeholder:</em>
+                            </p>
+                        </div>
+                        <div class="media-placeholder image">
+                            [Image: Nike Basketball Retail Brand Playbook visual]
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Campaign Execution -->
+                <div class="portfolio-item">
+                    <div class="portfolio-item-header">
+                        <h3>adidas: "Earn Your Spotlight" Integrated Campaign</h3>
+                        <div class="portfolio-item-meta">Integrated Campaign / Multi-Channel / Retail & Digital Integration</div>
+                    </div>
+                    <div class="portfolio-item-content">
+                        <div class="portfolio-item-text">
+                            <p>
+                                <strong>The Challenge:</strong> Launch exclusive training apparel with a campaign that would drive both emotional connection and measurable commercial impact across multiple channels and retail environments.
+                            </p>
+                            <p>
+                                <strong>What I Executed:</strong> Multi-channel strategy across social, digital, in-store activations, and live events. Partnered with athletes and influencers. Managed creative teams and agencies. Measured performance across channels.
+                            </p>
+                            <p>
+                                <strong>Results:</strong> 55M+ impressions, 2.7M video views, $2.6M attributed revenue, 460K store visits.
+                            </p>
+                            <p>
+                                <strong>Why It Matters:</strong> Aurora will need someone who can manage complex, multi-channel brand campaigns at scale—from strategy through creative development to measurement. This work demonstrates that end-to-end capability.
+                            </p>
+                        </div>
+                        <div class="media-placeholder video">
+                            [Video: Campaign reel / results]
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Competencies Section -->
+    <section class="competencies">
+        <div class="container">
+            <h2>Core Competencies Mapped to Role Requirements</h2>
+            
+            <div class="competencies-grid">
+                <div class="competency-card">
+                    <h3>Brand Strategy & Storytelling</h3>
+                    <p>Develop and execute integrated strategies for major company moments and product announcements. Craft compelling campaign briefs and breakthrough content concepts.</p>
+                    <ul>
+                        <li>TuSimple AV narrative architecture</li>
+                        <li>Nike Global Basketball positioning</li>
+                        <li>adidas athlete brand storytelling</li>
+                    </ul>
+                </div>
+
+                <div class="competency-card">
+                    <h3>Integrated Campaign Management</h3>
+                    <p>Lead planning, execution, and measurement of multi-channel campaigns. Leverage agencies and internal teams. Deploy content and measure performance.</p>
+                    <ul>
+                        <li>adidas "Earn Your Spotlight" $2.6M campaign</li>
+                        <li>Multi-channel campaign orchestration</li>
+                        <li>Agency & creative team leadership</li>
+                    </ul>
+                </div>
+
+                <div class="competency-card">
+                    <h3>Brand Stewardship</h3>
+                    <p>Act as steward of brand identity. Ensure consistency in voice, look, and feel. Champion brand guidelines across all touchpoints.</p>
+                    <ul>
+                        <li>Nike Basketball Retail Brand Playbook</li>
+                        <li>Global brand system development</li>
+                        <li>Cross-functional brand alignment</li>
+                    </ul>
+                </div>
+
+                <div class="competency-card">
+                    <h3>Cross-Functional Collaboration</h3>
+                    <p>Serve as key link between marketing and specialized teams. Provide strategic support. Coordinate across product, legal, safety, and government relations.</p>
+                    <ul>
+                        <li>TuSimple Safety + GR alignment</li>
+                        <li>Nike cross-team execution</li>
+                        <li>Strategic advisor to executives</li>
+                    </ul>
+                </div>
+
+                <div class="competency-card">
+                    <h3>Measurement & Analytics</h3>
+                    <p>Conduct market research. Use data analytics for optimization. Make data-driven decisions. Report on campaign performance.</p>
+                    <ul>
+                        <li>Campaign performance tracking</li>
+                        <li>Audience insights development</li>
+                        <li>Competitive analysis & monitoring</li>
+                    </ul>
+                </div>
+
+                <div class="competency-card">
+                    <h3>Autonomous Vehicle & Tech Expertise</h3>
+                    <p>Deep knowledge of autonomous technology, transportation industry trends, and the unique challenges of building trust in frontier technology.</p>
+                    <ul>
+                        <li>Level 4 AV systems expertise</li>
+                        <li>Regulatory landscape fluency</li>
+                        <li>Industry analyst relationships</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Aurora Section -->
+    <section class="why-aurora">
+        <div class="container">
+            <h2>Why I'm the Right Person for This Role</h2>
+            
+            <div class="why-aurora-content">
+                <p>
+                    This role sits at a critical intersection: brand stewardship in a high-stakes, technology-driven industry that requires trust-building, complex technical narrative translation, and cross-functional leadership. I have deep, relevant experience in all three.
+                </p>
+
+                <p>
+                    <strong>I understand the autonomous vehicle space.</strong> I've spent years at TuSimple translating Level 4 autonomous systems into credible messaging for regulators, fleet operators, and industry partners. I know the regulatory landscape. I know the industry players. I know what it takes to build credibility in a field where one misstep can erode trust.
+                </p>
+
+                <p>
+                    <strong>I've built brand systems at global scale.</strong> Nike and adidas taught me how to develop brand strategy that works across regions, functions, and stakeholders. I know how to create guidelines that guide without constraining. I know how to steward brand while enabling creative excellence.
+                </p>
+
+                <p>
+                    <strong>I thrive in cross-functional environments.</strong> My best work happens at the intersection of different functions: when Marketing has to align with Safety, when Brand has to speak to Government Relations, when Product innovation has to become customer narrative. I've built my career at these intersections.
+                </p>
+
+                <p>
+                    <strong>I lead integrated campaigns from brief to impact.</strong> Not just strategy. Not just execution. Full-cycle campaign leadership—from developing the brief through creative development, deployment, and measurement. I've done this at scale with significant budgets and stakeholder complexity.
+                </p>
+
+                <p style="margin-top: 40px;">
+                    Aurora is at an inflection point. The brand you build now will define how the world understands autonomous transportation for years. You need someone who understands both the strategic depth required and the tactical execution discipline needed. I am that person.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Close Section -->
+    <section class="close">
+        <div class="container">
+            <h2>Let's Build Aurora's Brand</h2>
+            <p>
+                I'm excited about the opportunity to bring my experience, expertise, and passion for brand stewardship to Aurora's next chapter. Let's discuss how I can help shape the brand of a transportation revolution.
+            </p>
+            <a href="mailto:rkremers@gmail.com" class="close-cta">Contact Me</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Rob Kremers. <a href="/">Back to Main Portfolio</a></p>
+        </div>
+    </footer>
+</body>
+</html>
