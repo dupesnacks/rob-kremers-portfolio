@@ -685,12 +685,15 @@
                                     <img src="tusimple-dc-whats-inside-2.png" alt="Domain Controller Inside View 2">
                                 </div>
                                 <div class="carousel-slide">
+                                    <img src="tusimple-dc-whats-inside-3.png" alt="Domain Controller What's Inside Technical Details">
+                                </div>
+                                <div class="carousel-slide">
                                     <img src="tusimple-dc-contact.png" alt="Domain Controller Contact Materials">
                                 </div>
                             </div>
                             <div class="carousel-controls">
                                 <button class="carousel-btn" id="dcPrevBtn" onclick="scrollCarouselDC(-1)">←</button>
-                                <span class="carousel-counter"><span id="dcCurrentSlide">1</span> / 6</span>
+                                <span class="carousel-counter"><span id="dcCurrentSlide">1</span> / 7</span>
                                 <button class="carousel-btn" id="dcNextBtn" onclick="scrollCarouselDC(1)">→</button>
                             </div>
                         </div>
@@ -913,7 +916,7 @@
             const nextBtn = document.getElementById('dcNextBtn');
             
             prevBtn.disabled = currentSlide === 1;
-            nextBtn.disabled = currentSlide === 6;
+            nextBtn.disabled = currentSlide === 7;
         }
 
         // Initialize
