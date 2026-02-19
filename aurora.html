@@ -352,6 +352,123 @@
             font-weight: 600;
         }
 
+        /* Image Gallery Styles */
+        .image-gallery {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+        }
+
+        .gallery-image {
+            position: relative;
+            border-radius: 12px;
+            overflow: hidden;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            aspect-ratio: 4 / 3;
+        }
+
+        .gallery-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-image:hover img {
+            transform: scale(1.05);
+        }
+
+        .gallery-image::after {
+            content: '🔍';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 32px;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            background: rgba(13, 94, 84, 0.7);
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .gallery-image:hover::after {
+            opacity: 1;
+        }
+
+        /* Modal Styles */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 2000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.9);
+            animation: fadeIn 0.3s ease;
+        }
+
+        .modal.show {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .modal-content {
+            max-width: 90%;
+            max-height: 90%;
+            position: relative;
+            animation: slideIn 0.3s ease;
+        }
+
+        .modal-content img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            border-radius: 8px;
+        }
+
+        .modal-close {
+            position: absolute;
+            top: -40px;
+            right: 0;
+            color: white;
+            font-size: 32px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: color 0.3s ease;
+        }
+
+        .modal-close:hover {
+            color: #D4AF37;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: scale(0.8);
+                opacity: 0;
+            }
+            to {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
         .competencies {
             padding: 80px 0;
             background: linear-gradient(135deg, rgba(13, 94, 84, 0.02) 0%, rgba(212, 175, 55, 0.02) 100%);
@@ -539,6 +656,10 @@
 
             .portfolio-item-content,
             .competencies-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .image-gallery {
                 grid-template-columns: 1fr;
             }
 
@@ -736,6 +857,20 @@
                                 <strong>Why It Matters for Aurora:</strong> As Aurora scales, you'll face the exact same challenge. Multiple teams, external partners, distributed execution—all needing to represent the brand consistently. A well-structured toolkit isn't just nice to have. It's how you maintain brand integrity while enabling speed. This work proves I can build the systems that let teams move fast without sacrificing consistency.
                             </p>
                         </div>
+                        <div class="image-gallery">
+                            <div class="gallery-image" onclick="openModal('toolkit-cover.jpg')">
+                                <img src="toolkit-cover.jpg" alt="Brand Marketing Toolkit Cover">
+                            </div>
+                            <div class="gallery-image" onclick="openModal('toolkit-toc.jpg')">
+                                <img src="toolkit-toc.jpg" alt="Toolkit Table of Contents">
+                            </div>
+                            <div class="gallery-image" onclick="openModal('toolkit-logos.jpg')">
+                                <img src="toolkit-logos.jpg" alt="Brand Logos Section">
+                            </div>
+                            <div class="gallery-image" onclick="openModal('toolkit-marketing-truck.jpg')">
+                                <img src="toolkit-marketing-truck.jpg" alt="Marketing Truck Photography">
+                            </div>
+                        </div>
                     </div>
                 </div>
 
@@ -879,6 +1014,14 @@
         </div>
     </section>
 
+    <!-- Image Modal -->
+    <div id="imageModal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close" onclick="closeModal()">&times;</span>
+            <img id="modalImage" src="" alt="Expanded view">
+        </div>
+    </div>
+
     <!-- Footer -->
     <footer>
         <div class="container">
@@ -918,6 +1061,35 @@
 
         // Initialize
         updateDCSlideCounter();
+
+        // Modal Functions
+        function openModal(imageSrc) {
+            const modal = document.getElementById('imageModal');
+            const modalImage = document.getElementById('modalImage');
+            modalImage.src = imageSrc;
+            modal.classList.add('show');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeModal() {
+            const modal = document.getElementById('imageModal');
+            modal.classList.remove('show');
+            document.body.style.overflow = 'auto';
+        }
+
+        // Close modal when clicking outside image
+        document.getElementById('imageModal').addEventListener('click', function(e) {
+            if (e.target === this) {
+                closeModal();
+            }
+        });
+
+        // Close modal with Escape key
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                closeModal();
+            }
+        });
     </script>
 </body>
 </html>
