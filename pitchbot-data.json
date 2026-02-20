@@ -1,8 +1,113 @@
 {
-  "searches": [],
-  "leads": [],
+  "searches": [
+    {
+      "id": "a01f45fd",
+      "category": "roofing contractor",
+      "location": "Portland OR 97223",
+      "date": "2026-02-19T16:04:27.817520",
+      "count": 4
+    }
+  ],
+  "leads": [
+    {
+      "id": "490256f4",
+      "search_id": "a01f45fd",
+      "business_name": "IBEX Roof",
+      "address": "3701 SE Milwaukie Ave suite d, Portland, OR 97202, USA",
+      "phone": "(503) 744-6468",
+      "email": "",
+      "website": "https://www.ibexroof.com/roofing-company-portland/?utm_source=google&utm_medium=gmb&utm_campaign=gmbpor",
+      "website_score": 90,
+      "score_details": {
+        "mobile_friendly": true,
+        "https": true,
+        "load_time_sec": 0.23,
+        "old_tech": true,
+        "copyright_year": 2025,
+        "word_count": 19214,
+        "final_score": 90
+      },
+      "demo_url": "https://robkremers.com/preview/ibex-roof",
+      "call_status": "pending",
+      "call_date": null,
+      "call_notes": "",
+      "added_date": "2026-02-19T16:04:30.299515"
+    },
+    {
+      "id": "a34d63b9",
+      "search_id": "a01f45fd",
+      "business_name": "Precision Roofing & Gutters",
+      "address": "12700 SW Hall Blvd C, Tigard, OR 97223, USA",
+      "phone": "(503) 926-6194",
+      "email": "",
+      "website": "https://www.pscpdx.com/",
+      "website_score": 90,
+      "score_details": {
+        "mobile_friendly": true,
+        "https": true,
+        "load_time_sec": 0.07,
+        "old_tech": true,
+        "copyright_year": null,
+        "word_count": 6322,
+        "final_score": 90
+      },
+      "demo_url": "https://robkremers.com/preview/precision-roofing-gutters",
+      "call_status": "pending",
+      "call_date": null,
+      "call_notes": "",
+      "added_date": "2026-02-19T16:04:29.863267"
+    },
+    {
+      "id": "feef5aba",
+      "search_id": "a01f45fd",
+      "business_name": "Living Hope Roofing",
+      "address": "11650 SW 67th Ave, Tigard, OR 97223, USA",
+      "phone": "(503) 713-1837",
+      "email": "",
+      "website": "https://www.livinghoperoofing.com/",
+      "website_score": 95,
+      "score_details": {
+        "mobile_friendly": true,
+        "https": true,
+        "load_time_sec": 0.07,
+        "old_tech": false,
+        "copyright_year": null,
+        "word_count": 108,
+        "final_score": 95
+      },
+      "demo_url": "https://robkremers.com/preview/living-hope-roofing",
+      "call_status": "pending",
+      "call_date": null,
+      "call_notes": "",
+      "added_date": "2026-02-19T16:04:29.692591"
+    },
+    {
+      "id": "2596014e",
+      "search_id": "a01f45fd",
+      "business_name": "All Surface Roofing & Roof Repair Company",
+      "address": "9610 SW Sunshine Ct Suite 100 A, Beaverton, OR 97005, USA",
+      "phone": "(503) 486-3468",
+      "email": "estimates@allsurfacepdx.comService",
+      "website": "https://www.allsurfacepdx.com/?utm_campaign=gmb&utm_content=website_button&utm_medium=organic&utm_source=GMB_Listing",
+      "website_score": 80,
+      "score_details": {
+        "mobile_friendly": true,
+        "https": true,
+        "load_time_sec": 0.84,
+        "old_tech": true,
+        "copyright_year": 2006,
+        "word_count": 29496,
+        "final_score": 80
+      },
+      "demo_url": "https://robkremers.com/preview/all-surface-roofing-roof-repair-company",
+      "call_status": "pending",
+      "call_date": null,
+      "call_notes": "",
+      "added_date": "2026-02-19T16:04:29.550677"
+    }
+  ],
   "stats": {
-    "total_leads": 0,
+    "total_leads": 4,
     "calls_made": 0,
     "interested": 0,
     "booked": 0,
