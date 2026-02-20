@@ -1,6 +1,13 @@
 {
   "searches": [
     {
+      "id": "f1f4450b",
+      "category": "hvac",
+      "location": "Portland OR 97219",
+      "date": "2026-02-19T16:04:56.226287",
+      "count": 4
+    },
+    {
       "id": "04e45d03",
       "category": "hvac",
       "location": "Portland OR 97223",
@@ -51,6 +58,78 @@
     }
   ],
   "leads": [
+    {
+      "id": "603be726",
+      "search_id": "f1f4450b",
+      "business_name": "Jacobs Heating & Air Conditioning, Inc.",
+      "address": "4474 SE Milwaukie Ave, Portland, OR 97202, USA",
+      "phone": "(503) 234-7331",
+      "email": "",
+      "website": "https://jacobsheating.com/?utm_source=GoogleMyBusiness&utm_medium=organic",
+      "website_score": 90,
+      "score_details": {
+        "mobile_friendly": true,
+        "https": true,
+        "load_time_sec": 0.16,
+        "old_tech": true,
+        "copyright_year": null,
+        "word_count": 5933,
+        "final_score": 90
+      },
+      "demo_url": "https://robkremers.com/preview/jacobs-heating-air-conditioning-inc",
+      "call_status": "pending",
+      "call_date": null,
+      "call_notes": "",
+      "added_date": "2026-02-19T16:04:57.298962"
+    },
+    {
+      "id": "5f2c2635",
+      "search_id": "f1f4450b",
+      "business_name": "Comfort Solutions Heating & Cooling",
+      "address": "211 SE Madison St Suite 12, Portland, OR 97214, USA",
+      "phone": "(503) 262-9276",
+      "email": "",
+      "website": "https://comfortsolutionspdx.com/",
+      "website_score": 90,
+      "score_details": {
+        "mobile_friendly": true,
+        "https": true,
+        "load_time_sec": 0.16,
+        "old_tech": true,
+        "copyright_year": 2026,
+        "word_count": 6229,
+        "final_score": 90
+      },
+      "demo_url": "https://robkremers.com/preview/comfort-solutions-heating-cooling",
+      "call_status": "pending",
+      "call_date": null,
+      "call_notes": "",
+      "added_date": "2026-02-19T16:04:56.842504"
+    },
+    {
+      "id": "02eda923",
+      "search_id": "f1f4450b",
+      "business_name": "Rose City Heating & Air",
+      "address": "8946 SW Barbur Blvd, Portland, OR 97219, USA",
+      "phone": "(503) 636-5371",
+      "email": "comfort@rosecityheating.com",
+      "website": "http://www.rosecityheating.com/",
+      "website_score": 80,
+      "score_details": {
+        "mobile_friendly": true,
+        "https": false,
+        "load_time_sec": 0.12,
+        "old_tech": false,
+        "copyright_year": null,
+        "word_count": 2480,
+        "final_score": 80
+      },
+      "demo_url": "https://robkremers.com/preview/rose-city-heating-air",
+      "call_status": "pending",
+      "call_date": null,
+      "call_notes": "",
+      "added_date": "2026-02-19T16:04:56.495319"
+    },
     {
       "id": "a54815e1",
       "search_id": "04e45d03",
@@ -599,7 +678,7 @@
     }
   ],
   "stats": {
-    "total_leads": 23,
+    "total_leads": 26,
     "calls_made": 0,
     "interested": 0,
     "booked": 0,
