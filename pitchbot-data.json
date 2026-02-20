@@ -1,6 +1,13 @@
 {
   "searches": [
     {
+      "id": "6a40d415",
+      "category": "fence contractor",
+      "location": "Portland OR 97219",
+      "date": "2026-02-19T16:06:46.759607",
+      "count": 4
+    },
+    {
       "id": "64c55c50",
       "category": "fence contractor",
       "location": "Portland OR 97223",
@@ -191,6 +198,102 @@
     }
   ],
   "leads": [
+    {
+      "id": "3218ff4e",
+      "search_id": "6a40d415",
+      "business_name": "Fix-A-Fence LLC",
+      "address": "6211 SE 72nd Ave, Portland, OR 97206, USA",
+      "phone": "(503) 935-2331",
+      "email": "",
+      "website": "https://fixafencellc.com/",
+      "website_score": 90,
+      "score_details": {
+        "mobile_friendly": true,
+        "https": true,
+        "load_time_sec": 0.05,
+        "old_tech": false,
+        "copyright_year": 2018,
+        "word_count": 13006,
+        "final_score": 90
+      },
+      "demo_url": "https://robkremers.com/preview/fix-a-fence-llc",
+      "call_status": "pending",
+      "call_date": null,
+      "call_notes": "",
+      "added_date": "2026-02-19T16:06:48.721485"
+    },
+    {
+      "id": "fbbc19a3",
+      "search_id": "6a40d415",
+      "business_name": "Cascade Fence & Deck",
+      "address": "6529 NE Sandy Blvd Suite 207, Portland, OR 97213, USA",
+      "phone": "(971) 366-2599",
+      "email": "",
+      "website": "https://cascadefenceanddeck.com/branches/portland-or/?utm_source=google_my_business&utm_medium=business_listing&utm_campaign=Portland_GMB",
+      "website_score": 90,
+      "score_details": {
+        "mobile_friendly": true,
+        "https": true,
+        "load_time_sec": 0.29,
+        "old_tech": true,
+        "copyright_year": null,
+        "word_count": 14831,
+        "final_score": 90
+      },
+      "demo_url": "https://robkremers.com/preview/cascade-fence-deck",
+      "call_status": "pending",
+      "call_date": null,
+      "call_notes": "",
+      "added_date": "2026-02-19T16:06:48.608151"
+    },
+    {
+      "id": "d4e0aa54",
+      "search_id": "6a40d415",
+      "business_name": "Legacy Decks and Fence LLC",
+      "address": "5200 SW Meadow Ave Ste 200, Lake Oswego, OR 97035, USA",
+      "phone": "(971) 246-3721",
+      "email": "",
+      "website": "https://legacydecksandfence.com/",
+      "website_score": 90,
+      "score_details": {
+        "mobile_friendly": true,
+        "https": true,
+        "load_time_sec": 0.47,
+        "old_tech": true,
+        "copyright_year": null,
+        "word_count": 4978,
+        "final_score": 90
+      },
+      "demo_url": "https://robkremers.com/preview/legacy-decks-and-fence-llc",
+      "call_status": "pending",
+      "call_date": null,
+      "call_notes": "",
+      "added_date": "2026-02-19T16:06:48.185108"
+    },
+    {
+      "id": "13712cfa",
+      "search_id": "6a40d415",
+      "business_name": "Above All Fences, Decks & Construction",
+      "address": "7424 SW Fir St, Tigard, OR 97223, USA",
+      "phone": "(503) 270-1864",
+      "email": "info@aboveallconstruction.net",
+      "website": "http://www.aboveallconstruction.net/",
+      "website_score": 70,
+      "score_details": {
+        "mobile_friendly": true,
+        "https": false,
+        "load_time_sec": 0.25,
+        "old_tech": true,
+        "copyright_year": null,
+        "word_count": 4516,
+        "final_score": 70
+      },
+      "demo_url": "https://robkremers.com/preview/above-all-fences-decks-construction",
+      "call_status": "pending",
+      "call_date": null,
+      "call_notes": "",
+      "added_date": "2026-02-19T16:06:47.281973"
+    },
     {
       "id": "3efa3ec0",
       "search_id": "64c55c50",
@@ -2371,7 +2474,7 @@
     }
   ],
   "stats": {
-    "total_leads": 91,
+    "total_leads": 95,
     "calls_made": 0,
     "interested": 0,
     "booked": 0,
