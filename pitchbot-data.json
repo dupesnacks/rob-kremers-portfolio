@@ -1,6 +1,13 @@
 {
   "searches": [
     {
+      "id": "6b8366c2",
+      "category": "electrician",
+      "location": "Portland OR 97223",
+      "date": "2026-02-19T16:04:45.439491",
+      "count": 4
+    },
+    {
       "id": "d2daa7a0",
       "category": "plumber",
       "location": "Portland OR 97219",
@@ -30,6 +37,78 @@
     }
   ],
   "leads": [
+    {
+      "id": "8c3040e3",
+      "search_id": "6b8366c2",
+      "business_name": "Mike's Electric",
+      "address": "11070 SW Allen Blvd, Beaverton, OR 97005, USA",
+      "phone": "(503) 649-6991",
+      "email": "",
+      "website": "http://www.mikeselectric.biz/",
+      "website_score": 70,
+      "score_details": {
+        "mobile_friendly": true,
+        "https": false,
+        "load_time_sec": 0.16,
+        "old_tech": true,
+        "copyright_year": 2020,
+        "word_count": 9277,
+        "final_score": 70
+      },
+      "demo_url": "https://robkremers.com/preview/mike-s-electric",
+      "call_status": "pending",
+      "call_date": null,
+      "call_notes": "",
+      "added_date": "2026-02-19T16:04:47.201620"
+    },
+    {
+      "id": "0bb36305",
+      "search_id": "6b8366c2",
+      "business_name": "Falcon Electric",
+      "address": "10180 SW Park Way # C, Portland, OR 97225, USA",
+      "phone": "(503) 208-4709",
+      "email": "",
+      "website": "https://callfalcon.com/?utm_source=google&utm_medium=organic&utm_campaign=gmb&utm_id=GBP",
+      "website_score": 90,
+      "score_details": {
+        "mobile_friendly": true,
+        "https": true,
+        "load_time_sec": 0.26,
+        "old_tech": true,
+        "copyright_year": null,
+        "word_count": 4247,
+        "final_score": 90
+      },
+      "demo_url": "https://robkremers.com/preview/falcon-electric",
+      "call_status": "pending",
+      "call_date": null,
+      "call_notes": "",
+      "added_date": "2026-02-19T16:04:46.785467"
+    },
+    {
+      "id": "fb5bfb34",
+      "search_id": "6b8366c2",
+      "business_name": "Young Electric LLC",
+      "address": "9999 SW Wilshire St # 221, Portland, OR 97225, USA",
+      "phone": "(503) 706-9867",
+      "email": "hello@youngelectricco.com",
+      "website": "https://youngelectricco.com/?utm_source=google&utm_medium=organic&utm_campaign=portland-gbp-main",
+      "website_score": 90,
+      "score_details": {
+        "mobile_friendly": true,
+        "https": true,
+        "load_time_sec": 0.35,
+        "old_tech": true,
+        "copyright_year": 2026,
+        "word_count": 26210,
+        "final_score": 90
+      },
+      "demo_url": "https://robkremers.com/preview/young-electric-llc",
+      "call_status": "pending",
+      "call_date": null,
+      "call_notes": "",
+      "added_date": "2026-02-19T16:04:46.313476"
+    },
     {
       "id": "e54598b2",
       "search_id": "d2daa7a0",
@@ -368,7 +447,7 @@
     }
   ],
   "stats": {
-    "total_leads": 14,
+    "total_leads": 17,
     "calls_made": 0,
     "interested": 0,
     "booked": 0,
