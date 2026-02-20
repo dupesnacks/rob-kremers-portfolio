@@ -1,6 +1,13 @@
 {
   "searches": [
     {
+      "id": "30ac69d9",
+      "category": "pest control",
+      "location": "Portland OR 97219",
+      "date": "2026-02-19T16:05:28.697931",
+      "count": 4
+    },
+    {
       "id": "0a3f3013",
       "category": "pest control",
       "location": "Portland OR 97223",
@@ -93,6 +100,102 @@
     }
   ],
   "leads": [
+    {
+      "id": "fe9b06dc",
+      "search_id": "30ac69d9",
+      "business_name": "PURCOR Pest Solutions",
+      "address": "4949 S Macadam Ave #6, Portland, OR 97239, USA",
+      "phone": "(971) 978-1068",
+      "email": "",
+      "website": "https://www.purcorpest.com/?utm_source=semrush_local_listings",
+      "website_score": 90,
+      "score_details": {
+        "mobile_friendly": true,
+        "https": true,
+        "load_time_sec": 0.36,
+        "old_tech": true,
+        "copyright_year": null,
+        "word_count": 12310,
+        "final_score": 90
+      },
+      "demo_url": "https://robkremers.com/preview/purcor-pest-solutions",
+      "call_status": "pending",
+      "call_date": null,
+      "call_notes": "",
+      "added_date": "2026-02-19T16:05:34.635587"
+    },
+    {
+      "id": "3996d8cc",
+      "search_id": "30ac69d9",
+      "business_name": "Campbell Natural Pest Control",
+      "address": "1720 NW Lovejoy St Suite 207, Mailbox 106, Portland, OR 97209, USA",
+      "phone": "(503) 303-8303",
+      "email": "Info@CampNaturalPestControl.com",
+      "website": "https://www.campnaturalpestcontrol.com/?utm_source=google&utm_medium=organic&utm_campaign=gbp",
+      "website_score": 90,
+      "score_details": {
+        "mobile_friendly": true,
+        "https": true,
+        "load_time_sec": 2.81,
+        "old_tech": true,
+        "copyright_year": null,
+        "word_count": 7182,
+        "final_score": 90
+      },
+      "demo_url": "https://robkremers.com/preview/campbell-natural-pest-control",
+      "call_status": "pending",
+      "call_date": null,
+      "call_notes": "",
+      "added_date": "2026-02-19T16:05:33.858738"
+    },
+    {
+      "id": "a49e82a1",
+      "search_id": "30ac69d9",
+      "business_name": "Insight Pest Control - Portland",
+      "address": "2340 SE Gladstone St Suite 2110, Portland, OR 97202, USA",
+      "phone": "(503) 912-5770",
+      "email": "",
+      "website": "https://insightpestnorthwest.com/portland/pest-control-service/?utm_source=gbp&utm_medium=organic&utm_campaign=portland",
+      "website_score": 90,
+      "score_details": {
+        "mobile_friendly": true,
+        "https": true,
+        "load_time_sec": 0.58,
+        "old_tech": true,
+        "copyright_year": null,
+        "word_count": 17526,
+        "final_score": 90
+      },
+      "demo_url": "https://robkremers.com/preview/insight-pest-control-portland",
+      "call_status": "pending",
+      "call_date": null,
+      "call_notes": "",
+      "added_date": "2026-02-19T16:05:30.011001"
+    },
+    {
+      "id": "d16af38b",
+      "search_id": "30ac69d9",
+      "business_name": "The Killers Pest Control",
+      "address": "9498 SW Barbur Blvd Suite 312, Portland, OR 97219, USA",
+      "phone": "(503) 777-3141",
+      "email": "",
+      "website": "https://thekillers.net/",
+      "website_score": 90,
+      "score_details": {
+        "mobile_friendly": true,
+        "https": true,
+        "load_time_sec": 0.07,
+        "old_tech": true,
+        "copyright_year": null,
+        "word_count": 7476,
+        "final_score": 90
+      },
+      "demo_url": "https://robkremers.com/preview/the-killers-pest-control",
+      "call_status": "pending",
+      "call_date": null,
+      "call_notes": "",
+      "added_date": "2026-02-19T16:05:28.882749"
+    },
     {
       "id": "038a174f",
       "search_id": "0a3f3013",
@@ -1145,7 +1248,7 @@
     }
   ],
   "stats": {
-    "total_leads": 44,
+    "total_leads": 48,
     "calls_made": 0,
     "interested": 0,
     "booked": 0,
