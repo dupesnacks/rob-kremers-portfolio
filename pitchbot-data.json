@@ -1,6 +1,13 @@
 {
   "searches": [
     {
+      "id": "27d4104e",
+      "category": "landscaping",
+      "location": "Portland OR 97223",
+      "date": "2026-02-19T16:04:58.773051",
+      "count": 4
+    },
+    {
       "id": "f1f4450b",
       "category": "hvac",
       "location": "Portland OR 97219",
@@ -58,6 +65,102 @@
     }
   ],
   "leads": [
+    {
+      "id": "d50ae604",
+      "search_id": "27d4104e",
+      "business_name": "Drake's 7 Dees Landscaping and Garden Center",
+      "address": "5645 SW Scholls Ferry Rd, Portland, OR 97225, USA",
+      "phone": "(503) 683-8785",
+      "email": "",
+      "website": "http://www.drakes7dees.com/",
+      "website_score": 70,
+      "score_details": {
+        "mobile_friendly": true,
+        "https": false,
+        "load_time_sec": 0.88,
+        "old_tech": true,
+        "copyright_year": 2024,
+        "word_count": 11222,
+        "final_score": 70
+      },
+      "demo_url": "https://robkremers.com/preview/drake-s-7-dees-landscaping-and-garden-center",
+      "call_status": "pending",
+      "call_date": null,
+      "call_notes": "",
+      "added_date": "2026-02-19T16:05:03.610624"
+    },
+    {
+      "id": "4a49ec35",
+      "search_id": "27d4104e",
+      "business_name": "Raya Landscaping",
+      "address": "9517 SW Hall Blvd, Tigard, OR 97223, USA",
+      "phone": "(503) 270-7589",
+      "email": "office@rayalm.com",
+      "website": "https://rayalm.com/",
+      "website_score": 90,
+      "score_details": {
+        "mobile_friendly": true,
+        "https": true,
+        "load_time_sec": 0.52,
+        "old_tech": true,
+        "copyright_year": 2026,
+        "word_count": 10202,
+        "final_score": 90
+      },
+      "demo_url": "https://robkremers.com/preview/raya-landscaping",
+      "call_status": "pending",
+      "call_date": null,
+      "call_notes": "",
+      "added_date": "2026-02-19T16:05:02.071118"
+    },
+    {
+      "id": "fd0a2d9d",
+      "search_id": "27d4104e",
+      "business_name": "Advanced Landscape services",
+      "address": "8900 SW Burnham St, Tigard, OR 97223, USA",
+      "phone": "(503) 686-8569",
+      "email": "",
+      "website": "http://advancedinoregon.com/",
+      "website_score": 70,
+      "score_details": {
+        "mobile_friendly": true,
+        "https": false,
+        "load_time_sec": 0.66,
+        "old_tech": true,
+        "copyright_year": null,
+        "word_count": 5680,
+        "final_score": 70
+      },
+      "demo_url": "https://robkremers.com/preview/advanced-landscape-services",
+      "call_status": "pending",
+      "call_date": null,
+      "call_notes": "",
+      "added_date": "2026-02-19T16:05:01.135730"
+    },
+    {
+      "id": "679d08d9",
+      "search_id": "27d4104e",
+      "business_name": "Artistic Landscapes",
+      "address": "10670 SW Black Diamond Way, Tigard, OR 97223, USA",
+      "phone": "(503) 892-6315",
+      "email": "info@artisticlandscapespdx.com",
+      "website": "http://artisticlandscapespdx.com/",
+      "website_score": 70,
+      "score_details": {
+        "mobile_friendly": true,
+        "https": false,
+        "load_time_sec": 0.49,
+        "old_tech": true,
+        "copyright_year": null,
+        "word_count": 13126,
+        "final_score": 70
+      },
+      "demo_url": "https://robkremers.com/preview/artistic-landscapes",
+      "call_status": "pending",
+      "call_date": null,
+      "call_notes": "",
+      "added_date": "2026-02-19T16:04:59.737925"
+    },
     {
       "id": "603be726",
       "search_id": "f1f4450b",
@@ -678,7 +781,7 @@
     }
   ],
   "stats": {
-    "total_leads": 26,
+    "total_leads": 30,
     "calls_made": 0,
     "interested": 0,
     "booked": 0,
