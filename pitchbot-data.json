@@ -1,6 +1,13 @@
 {
   "searches": [
     {
+      "id": "00e2ea68",
+      "category": "auto body shop",
+      "location": "Portland OR 97223",
+      "date": "2026-02-19T16:05:36.238095",
+      "count": 4
+    },
+    {
       "id": "30ac69d9",
       "category": "pest control",
       "location": "Portland OR 97219",
@@ -100,6 +107,78 @@
     }
   ],
   "leads": [
+    {
+      "id": "6ea30f65",
+      "search_id": "00e2ea68",
+      "business_name": "Tigard Auto Body Repair by Ace Reconditioning",
+      "address": "15785 SW 72nd Ave, Tigard, OR 97224, USA",
+      "phone": "(503) 620-3593",
+      "email": "",
+      "website": "http://acecars.net/",
+      "website_score": 60,
+      "score_details": {
+        "mobile_friendly": true,
+        "https": false,
+        "load_time_sec": 1.6,
+        "old_tech": true,
+        "copyright_year": 2017,
+        "word_count": 3641,
+        "final_score": 60
+      },
+      "demo_url": "https://robkremers.com/preview/tigard-auto-body-repair-by-ace-reconditioning",
+      "call_status": "pending",
+      "call_date": null,
+      "call_notes": "",
+      "added_date": "2026-02-19T16:05:40.629733"
+    },
+    {
+      "id": "5a257e94",
+      "search_id": "00e2ea68",
+      "business_name": "West Hills Collision Center",
+      "address": "8300 SW Barbur Blvd, Portland, OR 97219, USA",
+      "phone": "(503) 245-9030",
+      "email": "",
+      "website": "http://www.westhillscollision.com/",
+      "website_score": 40,
+      "score_details": {
+        "mobile_friendly": false,
+        "https": false,
+        "load_time_sec": 1.23,
+        "old_tech": true,
+        "copyright_year": null,
+        "word_count": 1306,
+        "final_score": 40
+      },
+      "demo_url": "https://robkremers.com/preview/west-hills-collision-center",
+      "call_status": "pending",
+      "call_date": null,
+      "call_notes": "",
+      "added_date": "2026-02-19T16:05:38.364369"
+    },
+    {
+      "id": "b2073ddc",
+      "search_id": "00e2ea68",
+      "business_name": "Canyon Auto Repair and Collision Tigard, Body and Paint",
+      "address": "11643 SW Pacific Hwy, Tigard, OR 97223, USA",
+      "phone": "(503) 597-5000",
+      "email": "",
+      "website": "https://canyonautorepairandcollision.com/",
+      "website_score": 90,
+      "score_details": {
+        "mobile_friendly": true,
+        "https": true,
+        "load_time_sec": 0.16,
+        "old_tech": true,
+        "copyright_year": null,
+        "word_count": 13584,
+        "final_score": 90
+      },
+      "demo_url": "https://robkremers.com/preview/canyon-auto-repair-and-collision-tigard-body-and-paint",
+      "call_status": "pending",
+      "call_date": null,
+      "call_notes": "",
+      "added_date": "2026-02-19T16:05:36.525228"
+    },
     {
       "id": "fe9b06dc",
       "search_id": "30ac69d9",
@@ -1248,7 +1327,7 @@
     }
   ],
   "stats": {
-    "total_leads": 48,
+    "total_leads": 51,
     "calls_made": 0,
     "interested": 0,
     "booked": 0,
