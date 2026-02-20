@@ -1,6 +1,13 @@
 {
   "searches": [
     {
+      "id": "e3a66b44",
+      "category": "handyman",
+      "location": "Portland OR 97219",
+      "date": "2026-02-19T16:06:37.706430",
+      "count": 4
+    },
+    {
       "id": "4dfe50f7",
       "category": "handyman",
       "location": "Portland OR 97223",
@@ -177,6 +184,54 @@
     }
   ],
   "leads": [
+    {
+      "id": "060a986b",
+      "search_id": "e3a66b44",
+      "business_name": "PNW Home Improvements, LLC",
+      "address": "8821 SE 17th Ave, Portland, OR 97202, USA",
+      "phone": "(503) 444-9369",
+      "email": "info@pnwhomeimprovements.com",
+      "website": "http://www.pnwhomeimprovements.com/",
+      "website_score": 70,
+      "score_details": {
+        "mobile_friendly": true,
+        "https": false,
+        "load_time_sec": 1.28,
+        "old_tech": true,
+        "copyright_year": null,
+        "word_count": 3286,
+        "final_score": 70
+      },
+      "demo_url": "https://robkremers.com/preview/pnw-home-improvements-llc",
+      "call_status": "pending",
+      "call_date": null,
+      "call_notes": "",
+      "added_date": "2026-02-19T16:06:41.329567"
+    },
+    {
+      "id": "eb792322",
+      "search_id": "e3a66b44",
+      "business_name": "Ace Handyman Services Portland",
+      "address": "7350 SW Landmark Ln #112, Tigard, OR 97224, USA",
+      "phone": "(503) 468-6805",
+      "email": "",
+      "website": "https://www.acehandymanservices.com/offices/portland?utm_source=google&utm_medium=gmb&utm_campaign=Google%20Business%20Profile%20-%20Tigard%20(GBP/Pin)",
+      "website_score": 95,
+      "score_details": {
+        "mobile_friendly": true,
+        "https": true,
+        "load_time_sec": 0.16,
+        "old_tech": false,
+        "copyright_year": null,
+        "word_count": 94,
+        "final_score": 95
+      },
+      "demo_url": "https://robkremers.com/preview/ace-handyman-services-portland",
+      "call_status": "pending",
+      "call_date": null,
+      "call_notes": "",
+      "added_date": "2026-02-19T16:06:38.052031"
+    },
     {
       "id": "64f06a5e",
       "search_id": "4dfe50f7",
@@ -2213,7 +2268,7 @@
     }
   ],
   "stats": {
-    "total_leads": 85,
+    "total_leads": 87,
     "calls_made": 0,
     "interested": 0,
     "booked": 0,
