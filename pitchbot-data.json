@@ -1,6 +1,13 @@
 {
   "searches": [
     {
+      "id": "14a3635e",
+      "category": "carpet cleaning",
+      "location": "Portland OR 97219",
+      "date": "2026-02-19T16:05:17.512717",
+      "count": 4
+    },
+    {
       "id": "895e1d34",
       "category": "carpet cleaning",
       "location": "Portland OR 97223",
@@ -79,6 +86,78 @@
     }
   ],
   "leads": [
+    {
+      "id": "24a754c5",
+      "search_id": "14a3635e",
+      "business_name": "Gallagher's Rug and Carpet Care",
+      "address": "826 SE Belmont St, Portland, OR 97214, USA",
+      "phone": "(503) 477-4097",
+      "email": "",
+      "website": "https://www.gallagherscarpetcleaning.com/",
+      "website_score": 90,
+      "score_details": {
+        "mobile_friendly": true,
+        "https": true,
+        "load_time_sec": 0.05,
+        "old_tech": true,
+        "copyright_year": null,
+        "word_count": 7287,
+        "final_score": 90
+      },
+      "demo_url": "https://robkremers.com/preview/gallagher-s-rug-and-carpet-care",
+      "call_status": "pending",
+      "call_date": null,
+      "call_notes": "",
+      "added_date": "2026-02-19T16:05:20.095657"
+    },
+    {
+      "id": "dd0cceef",
+      "search_id": "14a3635e",
+      "business_name": "A+ Carpet Cleaning - Portland",
+      "address": "2885 NW 111th Ct, Portland, OR 97229, USA",
+      "phone": "(503) 314-7453",
+      "email": "",
+      "website": "https://www.carpetcleanerportland.com/?utm_campaign=gmb",
+      "website_score": 90,
+      "score_details": {
+        "mobile_friendly": true,
+        "https": true,
+        "load_time_sec": 0.71,
+        "old_tech": true,
+        "copyright_year": null,
+        "word_count": 11273,
+        "final_score": 90
+      },
+      "demo_url": "https://robkremers.com/preview/a-carpet-cleaning-portland",
+      "call_status": "pending",
+      "call_date": null,
+      "call_notes": "",
+      "added_date": "2026-02-19T16:05:19.967607"
+    },
+    {
+      "id": "cbd7275b",
+      "search_id": "14a3635e",
+      "business_name": "Absolute Carpet Cleaning Inc",
+      "address": "6825 SW 62nd Pl, Portland, OR 97219, USA",
+      "phone": "(503) 245-0620",
+      "email": "",
+      "website": "http://cleancarpetpdx.com/",
+      "website_score": 70,
+      "score_details": {
+        "mobile_friendly": true,
+        "https": false,
+        "load_time_sec": 0.5,
+        "old_tech": true,
+        "copyright_year": null,
+        "word_count": 3077,
+        "final_score": 70
+      },
+      "demo_url": "https://robkremers.com/preview/absolute-carpet-cleaning-inc",
+      "call_status": "pending",
+      "call_date": null,
+      "call_notes": "",
+      "added_date": "2026-02-19T16:05:18.533085"
+    },
     {
       "id": "c6b5e5b0",
       "search_id": "895e1d34",
@@ -963,7 +1042,7 @@
     }
   ],
   "stats": {
-    "total_leads": 37,
+    "total_leads": 40,
     "calls_made": 0,
     "interested": 0,
     "booked": 0,
