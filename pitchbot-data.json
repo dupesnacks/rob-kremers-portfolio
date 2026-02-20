@@ -1,6 +1,13 @@
 {
   "searches": [
     {
+      "id": "13ff66ba",
+      "category": "roofing contractor",
+      "location": "Portland OR 97219",
+      "date": "2026-02-19T16:04:31.911528",
+      "count": 4
+    },
+    {
       "id": "a01f45fd",
       "category": "roofing contractor",
       "location": "Portland OR 97223",
@@ -9,6 +16,78 @@
     }
   ],
   "leads": [
+    {
+      "id": "028d8419",
+      "search_id": "13ff66ba",
+      "business_name": "Geek Roofing",
+      "address": "500 SW 116th Ave suite #66, Portland, OR 97225, USA",
+      "phone": "(971) 377-9950",
+      "email": "info@GeekRoofingPDX.com",
+      "website": "http://geekroofingpdx.com/",
+      "website_score": 70,
+      "score_details": {
+        "mobile_friendly": true,
+        "https": false,
+        "load_time_sec": 0.39,
+        "old_tech": true,
+        "copyright_year": null,
+        "word_count": 4304,
+        "final_score": 70
+      },
+      "demo_url": "https://robkremers.com/preview/geek-roofing",
+      "call_status": "pending",
+      "call_date": null,
+      "call_notes": "",
+      "added_date": "2026-02-19T16:04:34.147354"
+    },
+    {
+      "id": "4e4dad6c",
+      "search_id": "13ff66ba",
+      "business_name": "IBEX Roof",
+      "address": "3701 SE Milwaukie Ave suite d, Portland, OR 97202, USA",
+      "phone": "(503) 744-6468",
+      "email": "",
+      "website": "https://www.ibexroof.com/roofing-company-portland/?utm_source=google&utm_medium=gmb&utm_campaign=gmbpor",
+      "website_score": 90,
+      "score_details": {
+        "mobile_friendly": true,
+        "https": true,
+        "load_time_sec": 0.12,
+        "old_tech": true,
+        "copyright_year": 2025,
+        "word_count": 19214,
+        "final_score": 90
+      },
+      "demo_url": "https://robkremers.com/preview/ibex-roof",
+      "call_status": "pending",
+      "call_date": null,
+      "call_notes": "",
+      "added_date": "2026-02-19T16:04:33.328044"
+    },
+    {
+      "id": "aba97bf8",
+      "search_id": "13ff66ba",
+      "business_name": "Best Choice Roofing",
+      "address": "9498 SW Barbur Blvd Suite 310, Portland, OR 97219, USA",
+      "phone": "(971) 328-3901",
+      "email": "yournewroof@bestchoiceroofing.com",
+      "website": "https://bestchoiceroofing.com/portland/?utm_source=google&utm_medium=organic&utm_campaign=gmb",
+      "website_score": 90,
+      "score_details": {
+        "mobile_friendly": true,
+        "https": true,
+        "load_time_sec": 0.59,
+        "old_tech": true,
+        "copyright_year": 2026,
+        "word_count": 21034,
+        "final_score": 90
+      },
+      "demo_url": "https://robkremers.com/preview/best-choice-roofing",
+      "call_status": "pending",
+      "call_date": null,
+      "call_notes": "",
+      "added_date": "2026-02-19T16:04:33.036751"
+    },
     {
       "id": "490256f4",
       "search_id": "a01f45fd",
@@ -107,7 +186,7 @@
     }
   ],
   "stats": {
-    "total_leads": 4,
+    "total_leads": 7,
     "calls_made": 0,
     "interested": 0,
     "booked": 0,
