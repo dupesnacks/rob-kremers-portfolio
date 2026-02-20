@@ -1,6 +1,13 @@
 {
   "searches": [
     {
+      "id": "c4086910",
+      "category": "auto body shop",
+      "location": "Portland OR 97219",
+      "date": "2026-02-19T16:05:42.212921",
+      "count": 4
+    },
+    {
       "id": "00e2ea68",
       "category": "auto body shop",
       "location": "Portland OR 97223",
@@ -107,6 +114,78 @@
     }
   ],
   "leads": [
+    {
+      "id": "ded51930",
+      "search_id": "c4086910",
+      "business_name": "Classic Collision",
+      "address": "7835 SW 37th Ave, Portland, OR 97219, USA",
+      "phone": "(503) 244-6226",
+      "email": "",
+      "website": "https://classiccollision.com/locations/classic-collision-multnomah-village/",
+      "website_score": 90,
+      "score_details": {
+        "mobile_friendly": true,
+        "https": true,
+        "load_time_sec": 0.17,
+        "old_tech": true,
+        "copyright_year": null,
+        "word_count": 2449,
+        "final_score": 90
+      },
+      "demo_url": "https://robkremers.com/preview/classic-collision",
+      "call_status": "pending",
+      "call_date": null,
+      "call_notes": "",
+      "added_date": "2026-02-19T16:05:43.511037"
+    },
+    {
+      "id": "0c24e357",
+      "search_id": "c4086910",
+      "business_name": "Classic Collision",
+      "address": "9741 SW Capitol Hwy, Portland, OR 97219, USA",
+      "phone": "(503) 719-4240",
+      "email": "",
+      "website": "https://classiccollision.com/locations/classic-collision-capitol/",
+      "website_score": 90,
+      "score_details": {
+        "mobile_friendly": true,
+        "https": true,
+        "load_time_sec": 0.2,
+        "old_tech": true,
+        "copyright_year": null,
+        "word_count": 2435,
+        "final_score": 90
+      },
+      "demo_url": "https://robkremers.com/preview/classic-collision",
+      "call_status": "pending",
+      "call_date": null,
+      "call_notes": "",
+      "added_date": "2026-02-19T16:05:43.128654"
+    },
+    {
+      "id": "e6837e4b",
+      "search_id": "c4086910",
+      "business_name": "West Hills Collision Center",
+      "address": "8300 SW Barbur Blvd, Portland, OR 97219, USA",
+      "phone": "(503) 245-9030",
+      "email": "",
+      "website": "http://www.westhillscollision.com/",
+      "website_score": 40,
+      "score_details": {
+        "mobile_friendly": false,
+        "https": false,
+        "load_time_sec": 0.23,
+        "old_tech": true,
+        "copyright_year": null,
+        "word_count": 1306,
+        "final_score": 40
+      },
+      "demo_url": "https://robkremers.com/preview/west-hills-collision-center",
+      "call_status": "pending",
+      "call_date": null,
+      "call_notes": "",
+      "added_date": "2026-02-19T16:05:42.715180"
+    },
     {
       "id": "6ea30f65",
       "search_id": "00e2ea68",
@@ -1327,7 +1406,7 @@
     }
   ],
   "stats": {
-    "total_leads": 51,
+    "total_leads": 54,
     "calls_made": 0,
     "interested": 0,
     "booked": 0,
