@@ -1,6 +1,13 @@
 {
   "searches": [
     {
+      "id": "ebb82dda",
+      "category": "pressure washing",
+      "location": "Portland OR 97223",
+      "date": "2026-02-19T16:06:50.307980",
+      "count": 4
+    },
+    {
       "id": "6a40d415",
       "category": "fence contractor",
       "location": "Portland OR 97219",
@@ -198,6 +205,102 @@
     }
   ],
   "leads": [
+    {
+      "id": "70e72d76",
+      "search_id": "ebb82dda",
+      "business_name": "Hot Stuff Pressure Washing",
+      "address": "13458 SW Hillshire Dr, Tigard, OR 97223, USA",
+      "phone": "(971) 226-4781",
+      "email": "971-226-4781Hudson@hotstuffpressurewashing.com",
+      "website": "http://www.hotstuffpressurewashing.com/",
+      "website_score": 80,
+      "score_details": {
+        "mobile_friendly": true,
+        "https": false,
+        "load_time_sec": 0.42,
+        "old_tech": false,
+        "copyright_year": null,
+        "word_count": 10387,
+        "final_score": 80
+      },
+      "demo_url": "https://robkremers.com/preview/hot-stuff-pressure-washing",
+      "call_status": "pending",
+      "call_date": null,
+      "call_notes": "",
+      "added_date": "2026-02-19T16:06:58.525459"
+    },
+    {
+      "id": "f5c0574f",
+      "search_id": "ebb82dda",
+      "business_name": "AJS Power Wash Pro - Power Washing and Exterior Cleaning Services Portland, OR",
+      "address": "11335 SW 121st Ave, Tigard, OR 97223, USA",
+      "phone": "(503) 307-4542",
+      "email": "ajspowerwashpro@gmail.com",
+      "website": "https://www.ajspowerwashpro.com/",
+      "website_score": 90,
+      "score_details": {
+        "mobile_friendly": true,
+        "https": true,
+        "load_time_sec": 1.5,
+        "old_tech": true,
+        "copyright_year": null,
+        "word_count": 13127,
+        "final_score": 90
+      },
+      "demo_url": "https://robkremers.com/preview/ajs-power-wash-pro-power-washing-and-exterior-cleaning-services-portland-or",
+      "call_status": "pending",
+      "call_date": null,
+      "call_notes": "",
+      "added_date": "2026-02-19T16:06:57.647482"
+    },
+    {
+      "id": "df853cb2",
+      "search_id": "ebb82dda",
+      "business_name": "Little Prince Pressure Washing",
+      "address": "9010 SW Oak St APT 111, Tigard, OR 97223, USA",
+      "phone": "(503) 987-3376",
+      "email": "hello@littleprinceportland.com",
+      "website": "http://www.littleprinceportland.com/",
+      "website_score": 70,
+      "score_details": {
+        "mobile_friendly": true,
+        "https": false,
+        "load_time_sec": 2.48,
+        "old_tech": true,
+        "copyright_year": null,
+        "word_count": 11971,
+        "final_score": 70
+      },
+      "demo_url": "https://robkremers.com/preview/little-prince-pressure-washing",
+      "call_status": "pending",
+      "call_date": null,
+      "call_notes": "",
+      "added_date": "2026-02-19T16:06:55.262433"
+    },
+    {
+      "id": "afccdfa2",
+      "search_id": "ebb82dda",
+      "business_name": "NW Pressure Washing Service LLC",
+      "address": "13110 SW Ash Dr, Tigard, OR 97223, USA",
+      "phone": "(503) 779-4407",
+      "email": "info@nwpressurewashingservice.com",
+      "website": "http://nwpressurewashingservice.com/",
+      "website_score": 70,
+      "score_details": {
+        "mobile_friendly": true,
+        "https": false,
+        "load_time_sec": 0.39,
+        "old_tech": true,
+        "copyright_year": null,
+        "word_count": 10098,
+        "final_score": 70
+      },
+      "demo_url": "https://robkremers.com/preview/nw-pressure-washing-service-llc",
+      "call_status": "pending",
+      "call_date": null,
+      "call_notes": "",
+      "added_date": "2026-02-19T16:06:50.954855"
+    },
     {
       "id": "3218ff4e",
       "search_id": "6a40d415",
@@ -2474,7 +2577,7 @@
     }
   ],
   "stats": {
-    "total_leads": 95,
+    "total_leads": 99,
     "calls_made": 0,
     "interested": 0,
     "booked": 0,
