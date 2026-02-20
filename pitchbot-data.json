@@ -1,6 +1,13 @@
 {
   "searches": [
     {
+      "id": "b7365907",
+      "category": "electrician",
+      "location": "Portland OR 97219",
+      "date": "2026-02-19T16:04:48.732602",
+      "count": 4
+    },
+    {
       "id": "6b8366c2",
       "category": "electrician",
       "location": "Portland OR 97223",
@@ -37,6 +44,72 @@
     }
   ],
   "leads": [
+    {
+      "id": "b5b1fff6",
+      "search_id": "b7365907",
+      "business_name": "Jarmer Electric Inc",
+      "address": "5105 SW 45th Ave #100, Portland, OR 97221, USA",
+      "phone": "(503) 246-5381",
+      "email": "",
+      "website": "",
+      "website_score": 0,
+      "score_details": {
+        "error": "no website"
+      },
+      "demo_url": "https://robkremers.com/preview/jarmer-electric-inc",
+      "call_status": "pending",
+      "call_date": null,
+      "call_notes": "",
+      "added_date": "2026-02-19T16:04:50.118118"
+    },
+    {
+      "id": "2f7565bb",
+      "search_id": "b7365907",
+      "business_name": "Current Electrical Construction",
+      "address": "8024 SW 35th Ave, Portland, OR 97219, USA",
+      "phone": "(503) 245-5997",
+      "email": "",
+      "website": "http://www.current-electrical.com/",
+      "website_score": 70,
+      "score_details": {
+        "mobile_friendly": true,
+        "https": false,
+        "load_time_sec": 0.21,
+        "old_tech": true,
+        "copyright_year": null,
+        "word_count": 1931,
+        "final_score": 70
+      },
+      "demo_url": "https://robkremers.com/preview/current-electrical-construction",
+      "call_status": "pending",
+      "call_date": null,
+      "call_notes": "",
+      "added_date": "2026-02-19T16:04:50.115996"
+    },
+    {
+      "id": "183de902",
+      "search_id": "b7365907",
+      "business_name": "West Side Electric Company",
+      "address": "1834 SE 8th Ave, Portland, OR 97214, USA",
+      "phone": "(503) 231-1548",
+      "email": "",
+      "website": "http://www.westsideelectric.com/?utm_source=GMB&utm_medium=Website",
+      "website_score": 80,
+      "score_details": {
+        "mobile_friendly": true,
+        "https": false,
+        "load_time_sec": 0.4,
+        "old_tech": false,
+        "copyright_year": null,
+        "word_count": 8080,
+        "final_score": 80
+      },
+      "demo_url": "https://robkremers.com/preview/west-side-electric-company",
+      "call_status": "pending",
+      "call_date": null,
+      "call_notes": "",
+      "added_date": "2026-02-19T16:04:49.644898"
+    },
     {
       "id": "8c3040e3",
       "search_id": "6b8366c2",
@@ -447,7 +520,7 @@
     }
   ],
   "stats": {
-    "total_leads": 17,
+    "total_leads": 20,
     "calls_made": 0,
     "interested": 0,
     "booked": 0,
