@@ -1,6 +1,13 @@
 {
   "searches": [
     {
+      "id": "31fb6621",
+      "category": "landscaping",
+      "location": "Portland OR 97219",
+      "date": "2026-02-19T16:05:05.082164",
+      "count": 4
+    },
+    {
       "id": "27d4104e",
       "category": "landscaping",
       "location": "Portland OR 97223",
@@ -65,6 +72,102 @@
     }
   ],
   "leads": [
+    {
+      "id": "2c715fbd",
+      "search_id": "31fb6621",
+      "business_name": "Drake's 7 Dees Landscaping and Garden Center",
+      "address": "5645 SW Scholls Ferry Rd, Portland, OR 97225, USA",
+      "phone": "(503) 683-8785",
+      "email": "",
+      "website": "http://www.drakes7dees.com/",
+      "website_score": 70,
+      "score_details": {
+        "mobile_friendly": true,
+        "https": false,
+        "load_time_sec": 0.55,
+        "old_tech": true,
+        "copyright_year": 2024,
+        "word_count": 11222,
+        "final_score": 70
+      },
+      "demo_url": "https://robkremers.com/preview/drake-s-7-dees-landscaping-and-garden-center",
+      "call_status": "pending",
+      "call_date": null,
+      "call_notes": "",
+      "added_date": "2026-02-19T16:05:10.269620"
+    },
+    {
+      "id": "9e5001e3",
+      "search_id": "31fb6621",
+      "business_name": "Artistic Landscapes",
+      "address": "10670 SW Black Diamond Way, Tigard, OR 97223, USA",
+      "phone": "(503) 892-6315",
+      "email": "info@artisticlandscapespdx.com",
+      "website": "http://artisticlandscapespdx.com/",
+      "website_score": 70,
+      "score_details": {
+        "mobile_friendly": true,
+        "https": false,
+        "load_time_sec": 0.39,
+        "old_tech": true,
+        "copyright_year": null,
+        "word_count": 13126,
+        "final_score": 70
+      },
+      "demo_url": "https://robkremers.com/preview/artistic-landscapes",
+      "call_status": "pending",
+      "call_date": null,
+      "call_notes": "",
+      "added_date": "2026-02-19T16:05:09.135296"
+    },
+    {
+      "id": "fb646690",
+      "search_id": "31fb6621",
+      "business_name": "Earthborn Landscape Services",
+      "address": "10367 SE Helena St, Portland, OR 97222, USA",
+      "phone": "(503) 757-2164",
+      "email": "Earthbornpdx@gmail.com",
+      "website": "https://earthbornoregon.com/?y_source=1_MTQ4Mjg0MjMtNzE1LWxvY2F0aW9uLndlYnNpdGU%3D",
+      "website_score": 90,
+      "score_details": {
+        "mobile_friendly": true,
+        "https": true,
+        "load_time_sec": 1.44,
+        "old_tech": true,
+        "copyright_year": null,
+        "word_count": 5033,
+        "final_score": 90
+      },
+      "demo_url": "https://robkremers.com/preview/earthborn-landscape-services",
+      "call_status": "pending",
+      "call_date": null,
+      "call_notes": "",
+      "added_date": "2026-02-19T16:05:08.260978"
+    },
+    {
+      "id": "bd29b3e6",
+      "search_id": "31fb6621",
+      "business_name": "Harmony Design Northwest",
+      "address": "2835 SW Spring Garden St, Portland, OR 97219, USA",
+      "phone": "(503) 347-1182",
+      "email": "",
+      "website": "http://www.harmonydesignnw.com/",
+      "website_score": 70,
+      "score_details": {
+        "mobile_friendly": true,
+        "https": false,
+        "load_time_sec": 0.38,
+        "old_tech": true,
+        "copyright_year": null,
+        "word_count": 5914,
+        "final_score": 70
+      },
+      "demo_url": "https://robkremers.com/preview/harmony-design-northwest",
+      "call_status": "pending",
+      "call_date": null,
+      "call_notes": "",
+      "added_date": "2026-02-19T16:05:05.534826"
+    },
     {
       "id": "d50ae604",
       "search_id": "27d4104e",
@@ -781,7 +884,7 @@
     }
   ],
   "stats": {
-    "total_leads": 30,
+    "total_leads": 34,
     "calls_made": 0,
     "interested": 0,
     "booked": 0,
