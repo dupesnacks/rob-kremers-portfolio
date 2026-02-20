@@ -71,6 +71,15 @@
   /* Empty state */
   .empty { padding: 40px; text-align: center; color: #999; font-size: 14px; }
 
+  /* Review buttons */
+  .btn-yes { background: #dcfce7; color: #15803d; border: none; padding: 4px 12px; border-radius: 4px; font-size: 12px; font-weight: 700; cursor: pointer; transition: all 0.2s; }
+  .btn-yes:hover { background: #15803d; color: white; }
+  .btn-no { background: #fee2e2; color: #b91c1c; border: none; padding: 4px 12px; border-radius: 4px; font-size: 12px; font-weight: 700; cursor: pointer; transition: all 0.2s; margin-left: 6px; }
+  .btn-no:hover { background: #b91c1c; color: white; }
+  .badge-approved { background: #dcfce7; color: #15803d; }
+  .server-warning { background: #fef9c3; border: 1px solid #fde047; padding: 12px 16px; border-radius: 8px; font-size: 13px; color: #854d0e; margin-bottom: 20px; display: none; }
+  .server-warning code { background: #1a1a1a; color: #22c55e; padding: 2px 8px; border-radius: 4px; font-family: monospace; }
+
   /* Run command box */
   .run-box { background: #1a1a1a; color: #22c55e; padding: 16px 20px; border-radius: 8px; font-family: 'Courier New', monospace; font-size: 13px; margin-bottom: 24px; }
   .run-box span { color: #999; }
@@ -95,6 +104,11 @@
 </div>
 
 <div class="container">
+
+  <!-- Server warning -->
+  <div class="server-warning" id="server-warning">
+    ⚠️ Review server not running. To enable YES/NO buttons, run: <code>cd /Users/rk/clawd/pitch-bot && source venv/bin/activate && python3 server.py</code>
+  </div>
 
   <!-- Run command hint -->
   <div class="run-box">
@@ -127,7 +141,7 @@
           <th>Demo</th>
           <th>Status</th>
           <th>Notes</th>
-          <th>Date</th>
+          <th>Review</th>
         </tr>
       </thead>
       <tbody id="leads-table">
@@ -150,6 +164,47 @@
 </div>
 
 <script>
+  const API = 'http://localhost:5001';
+  let serverOnline = false;
+
+  async function checkServer() {
+    try {
+      await fetch(API, { method: 'OPTIONS', signal: AbortSignal.timeout(1000) });
+      serverOnline = true;
+      document.getElementById('server-warning').style.display = 'none';
+    } catch {
+      serverOnline = false;
+      document.getElementById('server-warning').style.display = 'block';
+    }
+  }
+
+  async function reviewLead(leadId, action) {
+    if (!serverOnline) {
+      alert('Review server not running!\n\nRun this first:\ncd /Users/rk/clawd/pitch-bot && source venv/bin/activate && python3 server.py');
+      return;
+    }
+    const btn = document.getElementById(`btn-${action}-${leadId}`);
+    if (btn) { btn.disabled = true; btn.textContent = '...'; }
+    try {
+      const resp = await fetch(`${API}/action`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ leadId, action })
+      });
+      if (resp.ok) {
+        setTimeout(loadData, 1000); // Reload after Vercel redeploys
+        if (action === 'reject') {
+          document.getElementById(`row-${leadId}`)?.remove();
+        } else {
+          const cell = document.getElementById(`review-${leadId}`);
+          if (cell) cell.innerHTML = '<span class="badge badge-approved">✓ approved</span>';
+        }
+      }
+    } catch (e) {
+      alert('Server error: ' + e.message);
+    }
+  }
+
   async function loadData() {
     try {
       const resp = await fetch('/pitchbot-data.json?' + Date.now());
@@ -191,7 +246,11 @@
         : '—';
       const date = l.added_date ? new Date(l.added_date).toLocaleDateString() : '—';
       const callDate = l.call_date ? new Date(l.call_date).toLocaleDateString() : '';
-      return `<tr>
+      const isApproved = l.review_status === 'approved';
+      const reviewCell = isApproved
+        ? `<span class="badge badge-approved">✓ yes</span>`
+        : `<button class="btn-yes" id="btn-approve-${l.id}" onclick="reviewLead('${l.id}','approve')">YES</button><button class="btn-no" id="btn-reject-${l.id}" onclick="reviewLead('${l.id}','reject')">NO</button>`;
+      return `<tr id="row-${l.id}">
         <td><strong>${l.business_name}</strong><br><small style="color:#999">${l.address}</small></td>
         <td>${l.phone || '<span style="color:#ccc">—</span>'}</td>
         <td>${website}</td>
@@ -204,7 +263,7 @@
         <td>${demo}</td>
         <td><span class="badge badge-${l.call_status}">${l.call_status}</span>${callDate ? `<br><small style="color:#999">${callDate}</small>` : ''}</td>
         <td style="max-width:180px;font-size:13px;color:#666">${l.call_notes || '—'}</td>
-        <td style="color:#999;font-size:13px">${date}</td>
+        <td id="review-${l.id}">${reviewCell}</td>
       </tr>`;
     }).join('');
   }
@@ -230,9 +289,12 @@
       `).join('');
   }
 
+  checkServer();
   loadData();
   // Auto-refresh every 60s
   setInterval(loadData, 60000);
+  // Check server status every 10s
+  setInterval(checkServer, 10000);
 </script>
 
 </body>
