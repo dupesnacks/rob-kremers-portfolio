@@ -1,6 +1,13 @@
 {
   "searches": [
     {
+      "id": "d2daa7a0",
+      "category": "plumber",
+      "location": "Portland OR 97219",
+      "date": "2026-02-19T16:04:41.694204",
+      "count": 4
+    },
+    {
       "id": "9eed911c",
       "category": "plumber",
       "location": "Portland OR 97223",
@@ -23,6 +30,78 @@
     }
   ],
   "leads": [
+    {
+      "id": "e54598b2",
+      "search_id": "d2daa7a0",
+      "business_name": "Pipeline Plumbing & Drains",
+      "address": "9780 SW Tigard St, Tigard, OR 97223, USA",
+      "phone": "(503) 624-1906",
+      "email": "info@pipelineplumbing.net",
+      "website": "https://pipelineplumbing.net/?utm_source=google-gbp&utm_medium=organic&utm_campaign=*327*pipeline-plumbing-tigard",
+      "website_score": 90,
+      "score_details": {
+        "mobile_friendly": true,
+        "https": true,
+        "load_time_sec": 0.11,
+        "old_tech": true,
+        "copyright_year": 2026,
+        "word_count": 14073,
+        "final_score": 90
+      },
+      "demo_url": "https://robkremers.com/preview/pipeline-plumbing-drains",
+      "call_status": "pending",
+      "call_date": null,
+      "call_notes": "",
+      "added_date": "2026-02-19T16:04:43.876129"
+    },
+    {
+      "id": "b1fd99bc",
+      "search_id": "d2daa7a0",
+      "business_name": "D&F Plumbing, Heating and Cooling",
+      "address": "650 NE Holladay St Suite 1600, Portland, OR 97232, USA",
+      "phone": "(503) 664-0938",
+      "email": "csrteam@dandfplumbing.com",
+      "website": "https://dandfplumbing.com/",
+      "website_score": 90,
+      "score_details": {
+        "mobile_friendly": true,
+        "https": true,
+        "load_time_sec": 0.32,
+        "old_tech": true,
+        "copyright_year": 2025,
+        "word_count": 25976,
+        "final_score": 90
+      },
+      "demo_url": "https://robkremers.com/preview/d-f-plumbing-heating-and-cooling",
+      "call_status": "pending",
+      "call_date": null,
+      "call_notes": "",
+      "added_date": "2026-02-19T16:04:43.603585"
+    },
+    {
+      "id": "d33190e0",
+      "search_id": "d2daa7a0",
+      "business_name": "Plumbing and Sewer Renewal Specialists",
+      "address": "9350 SW Tigard St, Portland, OR 97223, USA",
+      "phone": "(971) 213-8851",
+      "email": "",
+      "website": "https://plumbingrenewal.com/?utm_source=google&utm_medium=organic&utm_campaign=GMBListing-Portland-OR",
+      "website_score": 90,
+      "score_details": {
+        "mobile_friendly": true,
+        "https": true,
+        "load_time_sec": 0.35,
+        "old_tech": true,
+        "copyright_year": 2025,
+        "word_count": 13869,
+        "final_score": 90
+      },
+      "demo_url": "https://robkremers.com/preview/plumbing-and-sewer-renewal-specialists",
+      "call_status": "pending",
+      "call_date": null,
+      "call_notes": "",
+      "added_date": "2026-02-19T16:04:42.884811"
+    },
     {
       "id": "cab92086",
       "search_id": "9eed911c",
@@ -289,7 +368,7 @@
     }
   ],
   "stats": {
-    "total_leads": 11,
+    "total_leads": 14,
     "calls_made": 0,
     "interested": 0,
     "booked": 0,
