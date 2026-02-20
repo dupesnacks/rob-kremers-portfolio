@@ -1,6 +1,13 @@
 {
   "searches": [
     {
+      "id": "dfd5a8a4",
+      "category": "massage therapy",
+      "location": "Portland OR 97219",
+      "date": "2026-02-19T16:06:16.085740",
+      "count": 4
+    },
+    {
       "id": "66f6d2b6",
       "category": "massage therapy",
       "location": "Portland OR 97223",
@@ -149,6 +156,78 @@
     }
   ],
   "leads": [
+    {
+      "id": "eb407395",
+      "search_id": "dfd5a8a4",
+      "business_name": "West Portland Therapeutic Massage",
+      "address": "9045 SW Barbur Blvd # 109, Portland, OR 97219, USA",
+      "phone": "(503) 662-8098",
+      "email": "jessica@westpdxmassage.com",
+      "website": "http://westpdxmassage.com/",
+      "website_score": 80,
+      "score_details": {
+        "mobile_friendly": true,
+        "https": false,
+        "load_time_sec": 1.14,
+        "old_tech": false,
+        "copyright_year": null,
+        "word_count": 9875,
+        "final_score": 80
+      },
+      "demo_url": "https://robkremers.com/preview/west-portland-therapeutic-massage",
+      "call_status": "pending",
+      "call_date": null,
+      "call_notes": "",
+      "added_date": "2026-02-19T16:06:23.210982"
+    },
+    {
+      "id": "153f778f",
+      "search_id": "dfd5a8a4",
+      "business_name": "Gentle Cloud Spa",
+      "address": "7724 SW 31st Ave, Portland, OR 97219, USA",
+      "phone": "(503) 384-2098",
+      "email": "Contact@gentlecloudspa.com",
+      "website": "https://gentlecloudspa.com/",
+      "website_score": 90,
+      "score_details": {
+        "mobile_friendly": true,
+        "https": true,
+        "load_time_sec": 2.67,
+        "old_tech": true,
+        "copyright_year": null,
+        "word_count": 10407,
+        "final_score": 90
+      },
+      "demo_url": "https://robkremers.com/preview/gentle-cloud-spa",
+      "call_status": "pending",
+      "call_date": null,
+      "call_notes": "",
+      "added_date": "2026-02-19T16:06:21.197674"
+    },
+    {
+      "id": "a973e8d0",
+      "search_id": "dfd5a8a4",
+      "business_name": "Athena Bodywork of Portland",
+      "address": "2929 SW Multnomah Blvd UNIT 301, Portland, OR 97219, USA",
+      "phone": "(541) 797-0808",
+      "email": "Athena.Bodywork@gmail.comQUICK",
+      "website": "http://www.athenabodywork.com/",
+      "website_score": 80,
+      "score_details": {
+        "mobile_friendly": true,
+        "https": false,
+        "load_time_sec": 0.19,
+        "old_tech": false,
+        "copyright_year": null,
+        "word_count": 15593,
+        "final_score": 80
+      },
+      "demo_url": "https://robkremers.com/preview/athena-bodywork-of-portland",
+      "call_status": "pending",
+      "call_date": null,
+      "call_notes": "",
+      "added_date": "2026-02-19T16:06:17.061236"
+    },
     {
       "id": "32ea6966",
       "search_id": "66f6d2b6",
@@ -1897,7 +1976,7 @@
     }
   ],
   "stats": {
-    "total_leads": 73,
+    "total_leads": 76,
     "calls_made": 0,
     "interested": 0,
     "booked": 0,
