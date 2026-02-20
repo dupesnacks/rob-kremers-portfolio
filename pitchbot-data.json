@@ -1,6 +1,13 @@
 {
   "searches": [
     {
+      "id": "04e45d03",
+      "category": "hvac",
+      "location": "Portland OR 97223",
+      "date": "2026-02-19T16:04:51.960015",
+      "count": 4
+    },
+    {
       "id": "b7365907",
       "category": "electrician",
       "location": "Portland OR 97219",
@@ -44,6 +51,78 @@
     }
   ],
   "leads": [
+    {
+      "id": "a54815e1",
+      "search_id": "04e45d03",
+      "business_name": "Rose City Heating & Air",
+      "address": "8946 SW Barbur Blvd, Portland, OR 97219, USA",
+      "phone": "(503) 636-5371",
+      "email": "comfort@rosecityheating.com",
+      "website": "http://www.rosecityheating.com/",
+      "website_score": 80,
+      "score_details": {
+        "mobile_friendly": true,
+        "https": false,
+        "load_time_sec": 0.18,
+        "old_tech": false,
+        "copyright_year": null,
+        "word_count": 2480,
+        "final_score": 80
+      },
+      "demo_url": "https://robkremers.com/preview/rose-city-heating-air",
+      "call_status": "pending",
+      "call_date": null,
+      "call_notes": "",
+      "added_date": "2026-02-19T16:04:54.668306"
+    },
+    {
+      "id": "d8f10731",
+      "search_id": "04e45d03",
+      "business_name": "Able Heating & Cooling LLC",
+      "address": "16285 SW 85th Ave #105, Tigard, OR 97224, USA",
+      "phone": "(503) 579-2250",
+      "email": "info@ableheatingandcooling.com",
+      "website": "http://www.ableheatingandcooling.com/",
+      "website_score": 70,
+      "score_details": {
+        "mobile_friendly": true,
+        "https": false,
+        "load_time_sec": 0.64,
+        "old_tech": true,
+        "copyright_year": null,
+        "word_count": 6838,
+        "final_score": 70
+      },
+      "demo_url": "https://robkremers.com/preview/able-heating-cooling-llc",
+      "call_status": "pending",
+      "call_date": null,
+      "call_notes": "",
+      "added_date": "2026-02-19T16:04:54.337085"
+    },
+    {
+      "id": "9e9f11b7",
+      "search_id": "04e45d03",
+      "business_name": "Sunset Heating & Cooling",
+      "address": "607 S Idaho St #100, Portland, OR 97239, USA",
+      "phone": "(503) 500-5855",
+      "email": "info@sunsetHC.com",
+      "website": "https://www.sunsethc.com/?utm_source=google-gbp&utm_medium=organic&utm_campaign=*197*sunset-heating-portland",
+      "website_score": 90,
+      "score_details": {
+        "mobile_friendly": true,
+        "https": true,
+        "load_time_sec": 0.14,
+        "old_tech": true,
+        "copyright_year": 2026,
+        "word_count": 15427,
+        "final_score": 90
+      },
+      "demo_url": "https://robkremers.com/preview/sunset-heating-cooling",
+      "call_status": "pending",
+      "call_date": null,
+      "call_notes": "",
+      "added_date": "2026-02-19T16:04:53.230245"
+    },
     {
       "id": "b5b1fff6",
       "search_id": "b7365907",
@@ -520,7 +599,7 @@
     }
   ],
   "stats": {
-    "total_leads": 20,
+    "total_leads": 23,
     "calls_made": 0,
     "interested": 0,
     "booked": 0,
