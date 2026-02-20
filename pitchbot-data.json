@@ -1,6 +1,13 @@
 {
   "searches": [
     {
+      "id": "e9284eb0",
+      "category": "painting contractor",
+      "location": "Portland OR 97219",
+      "date": "2026-02-19T16:06:08.342073",
+      "count": 4
+    },
+    {
       "id": "41638f3a",
       "category": "painting contractor",
       "location": "Portland OR 97223",
@@ -135,6 +142,102 @@
     }
   ],
   "leads": [
+    {
+      "id": "28ec79b7",
+      "search_id": "e9284eb0",
+      "business_name": "Cascade Painting and Restoration",
+      "address": "2340 SE Gladstone St, Portland, OR 97202, USA",
+      "phone": "(503) 936-3255",
+      "email": "Cascadepaintandres@gmail.com",
+      "website": "http://cascadepandr.com/",
+      "website_score": 80,
+      "score_details": {
+        "mobile_friendly": true,
+        "https": false,
+        "load_time_sec": 0.28,
+        "old_tech": false,
+        "copyright_year": null,
+        "word_count": 6218,
+        "final_score": 80
+      },
+      "demo_url": "https://robkremers.com/preview/cascade-painting-and-restoration",
+      "call_status": "pending",
+      "call_date": null,
+      "call_notes": "",
+      "added_date": "2026-02-19T16:06:10.929807"
+    },
+    {
+      "id": "48ede1b6",
+      "search_id": "e9284eb0",
+      "business_name": "SFW Painting Contractor",
+      "address": "111 SW 5th Ave, Portland, OR 97204, USA",
+      "phone": "(503) 622-9568",
+      "email": "",
+      "website": "https://www.sfwpainting.com/?utm_campaign=gmb&utm_source=googlemaps",
+      "website_score": 90,
+      "score_details": {
+        "mobile_friendly": true,
+        "https": true,
+        "load_time_sec": 0.35,
+        "old_tech": true,
+        "copyright_year": null,
+        "word_count": 13832,
+        "final_score": 90
+      },
+      "demo_url": "https://robkremers.com/preview/sfw-painting-contractor",
+      "call_status": "pending",
+      "call_date": null,
+      "call_notes": "",
+      "added_date": "2026-02-19T16:06:10.407370"
+    },
+    {
+      "id": "f448ebe3",
+      "search_id": "e9284eb0",
+      "business_name": "JK Paint & Contracting",
+      "address": "1012 SW King Ave #205, Portland, OR 97205, USA",
+      "phone": "(503) 822-0289",
+      "email": "Joe@JKPaint.com",
+      "website": "https://jkpaint.com/portland-painting-company/?utm_campaign=gmb",
+      "website_score": 90,
+      "score_details": {
+        "mobile_friendly": true,
+        "https": true,
+        "load_time_sec": 0.25,
+        "old_tech": true,
+        "copyright_year": null,
+        "word_count": 8114,
+        "final_score": 90
+      },
+      "demo_url": "https://robkremers.com/preview/jk-paint-contracting",
+      "call_status": "pending",
+      "call_date": null,
+      "call_notes": "",
+      "added_date": "2026-02-19T16:06:09.752844"
+    },
+    {
+      "id": "e8c43a79",
+      "search_id": "e9284eb0",
+      "business_name": "Arrowhead Painting",
+      "address": "4386 S Macadam Ave, Portland, OR 97239, USA",
+      "phone": "(503) 294-3970",
+      "email": "robert@arrowheadpainting.co",
+      "website": "https://arrowheadpainting.co/",
+      "website_score": 90,
+      "score_details": {
+        "mobile_friendly": true,
+        "https": true,
+        "load_time_sec": 0.52,
+        "old_tech": true,
+        "copyright_year": 2023,
+        "word_count": 18347,
+        "final_score": 90
+      },
+      "demo_url": "https://robkremers.com/preview/arrowhead-painting",
+      "call_status": "pending",
+      "call_date": null,
+      "call_notes": "",
+      "added_date": "2026-02-19T16:06:09.296211"
+    },
     {
       "id": "d5307531",
       "search_id": "41638f3a",
@@ -1691,7 +1794,7 @@
     }
   ],
   "stats": {
-    "total_leads": 65,
+    "total_leads": 69,
     "calls_made": 0,
     "interested": 0,
     "booked": 0,
