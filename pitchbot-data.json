@@ -1,6 +1,13 @@
 {
   "searches": [
     {
+      "id": "4dfe50f7",
+      "category": "handyman",
+      "location": "Portland OR 97223",
+      "date": "2026-02-19T16:06:34.095145",
+      "count": 4
+    },
+    {
       "id": "14925d4f",
       "category": "pet grooming",
       "location": "Portland OR 97219",
@@ -170,6 +177,54 @@
     }
   ],
   "leads": [
+    {
+      "id": "64f06a5e",
+      "search_id": "4dfe50f7",
+      "business_name": "Frank's Handyman Services",
+      "address": "4640 SW 177th Ave, Aloha, OR 97007, USA",
+      "phone": "(503) 522-2672",
+      "email": "Gmailfdrhandymanservice@gmail.com",
+      "website": "https://frankhandymanservice.com/",
+      "website_score": 90,
+      "score_details": {
+        "mobile_friendly": true,
+        "https": true,
+        "load_time_sec": 0.24,
+        "old_tech": true,
+        "copyright_year": null,
+        "word_count": 13349,
+        "final_score": 90
+      },
+      "demo_url": "https://robkremers.com/preview/frank-s-handyman-services",
+      "call_status": "pending",
+      "call_date": null,
+      "call_notes": "",
+      "added_date": "2026-02-19T16:06:36.095831"
+    },
+    {
+      "id": "33096632",
+      "search_id": "4dfe50f7",
+      "business_name": "Ace Handyman Services Portland",
+      "address": "7350 SW Landmark Ln #112, Tigard, OR 97224, USA",
+      "phone": "(503) 468-6805",
+      "email": "",
+      "website": "https://www.acehandymanservices.com/offices/portland?utm_source=google&utm_medium=gmb&utm_campaign=Google%20Business%20Profile%20-%20Tigard%20(GBP/Pin)",
+      "website_score": 95,
+      "score_details": {
+        "mobile_friendly": true,
+        "https": true,
+        "load_time_sec": 0.18,
+        "old_tech": false,
+        "copyright_year": null,
+        "word_count": 94,
+        "final_score": 95
+      },
+      "demo_url": "https://robkremers.com/preview/ace-handyman-services-portland",
+      "call_status": "pending",
+      "call_date": null,
+      "call_notes": "",
+      "added_date": "2026-02-19T16:06:34.455640"
+    },
     {
       "id": "f3a344c6",
       "search_id": "14925d4f",
@@ -2158,7 +2213,7 @@
     }
   ],
   "stats": {
-    "total_leads": 83,
+    "total_leads": 85,
     "calls_made": 0,
     "interested": 0,
     "booked": 0,
