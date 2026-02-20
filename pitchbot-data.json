@@ -1,6 +1,13 @@
 {
   "searches": [
     {
+      "id": "66f6d2b6",
+      "category": "massage therapy",
+      "location": "Portland OR 97223",
+      "date": "2026-02-19T16:06:12.608984",
+      "count": 4
+    },
+    {
       "id": "e9284eb0",
       "category": "painting contractor",
       "location": "Portland OR 97219",
@@ -142,6 +149,102 @@
     }
   ],
   "leads": [
+    {
+      "id": "32ea6966",
+      "search_id": "66f6d2b6",
+      "business_name": "Bamboo Spa",
+      "address": "11995 SW Pacific Hwy, Tigard, OR 97223, USA",
+      "phone": "(971) 487-0643",
+      "email": "",
+      "website": "https://bamboomassageor.com/",
+      "website_score": 90,
+      "score_details": {
+        "mobile_friendly": true,
+        "https": true,
+        "load_time_sec": 0.23,
+        "old_tech": true,
+        "copyright_year": 2023,
+        "word_count": 10256,
+        "final_score": 90
+      },
+      "demo_url": "https://robkremers.com/preview/bamboo-spa",
+      "call_status": "pending",
+      "call_date": null,
+      "call_notes": "",
+      "added_date": "2026-02-19T16:06:14.481548"
+    },
+    {
+      "id": "839a6628",
+      "search_id": "66f6d2b6",
+      "business_name": "Alchemy Wellness",
+      "address": "7840 SW 74th Ave, Portland, OR 97223, USA",
+      "phone": "(503) 939-8205",
+      "email": "info@alchemywellnessPDX.com",
+      "website": "http://www.alchemywellnesspdx.com/",
+      "website_score": 80,
+      "score_details": {
+        "mobile_friendly": true,
+        "https": false,
+        "load_time_sec": 0.36,
+        "old_tech": false,
+        "copyright_year": null,
+        "word_count": 4668,
+        "final_score": 80
+      },
+      "demo_url": "https://robkremers.com/preview/alchemy-wellness",
+      "call_status": "pending",
+      "call_date": null,
+      "call_notes": "",
+      "added_date": "2026-02-19T16:06:14.017939"
+    },
+    {
+      "id": "be8d5514",
+      "search_id": "66f6d2b6",
+      "business_name": "Gentle Care Massage & Spa",
+      "address": "15975 SW 72nd Ave, Tigard, OR 97224, USA",
+      "phone": "(503) 267-8903",
+      "email": "info@gentlecarellc.comBook",
+      "website": "http://gentlecarellc.com/",
+      "website_score": 80,
+      "score_details": {
+        "mobile_friendly": true,
+        "https": false,
+        "load_time_sec": 0.1,
+        "old_tech": false,
+        "copyright_year": 2025,
+        "word_count": 22103,
+        "final_score": 80
+      },
+      "demo_url": "https://robkremers.com/preview/gentle-care-massage-spa",
+      "call_status": "pending",
+      "call_date": null,
+      "call_notes": "",
+      "added_date": "2026-02-19T16:06:13.273738"
+    },
+    {
+      "id": "7a4b956e",
+      "search_id": "66f6d2b6",
+      "business_name": "Kneading Paradise Massage",
+      "address": "7150 SW Hampton St #115, Tigard, OR 97223, USA",
+      "phone": "(503) 516-5718",
+      "email": "",
+      "website": "http://kneadingparadise.abmp.com/",
+      "website_score": 70,
+      "score_details": {
+        "mobile_friendly": true,
+        "https": false,
+        "load_time_sec": 0.22,
+        "old_tech": true,
+        "copyright_year": null,
+        "word_count": 1238,
+        "final_score": 70
+      },
+      "demo_url": "https://robkremers.com/preview/kneading-paradise-massage",
+      "call_status": "pending",
+      "call_date": null,
+      "call_notes": "",
+      "added_date": "2026-02-19T16:06:13.033405"
+    },
     {
       "id": "28ec79b7",
       "search_id": "e9284eb0",
@@ -1794,7 +1897,7 @@
     }
   ],
   "stats": {
-    "total_leads": 69,
+    "total_leads": 73,
     "calls_made": 0,
     "interested": 0,
     "booked": 0,
