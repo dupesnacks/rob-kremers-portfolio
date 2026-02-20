@@ -1,6 +1,13 @@
 {
   "searches": [
     {
+      "id": "3b9d239a",
+      "category": "pet grooming",
+      "location": "Portland OR 97223",
+      "date": "2026-02-19T16:06:24.749016",
+      "count": 4
+    },
+    {
       "id": "dfd5a8a4",
       "category": "massage therapy",
       "location": "Portland OR 97219",
@@ -156,6 +163,102 @@
     }
   ],
   "leads": [
+    {
+      "id": "a247c3d9",
+      "search_id": "3b9d239a",
+      "business_name": "Goat & Bear Grooming Salon",
+      "address": "10115 SW Nimbus Ave, Tigard, OR 97223, USA",
+      "phone": "(503) 747-7825",
+      "email": "CONTACTGoatnbearsalon@gmail.com",
+      "website": "http://goatnbeargrooming.com/",
+      "website_score": 80,
+      "score_details": {
+        "mobile_friendly": true,
+        "https": false,
+        "load_time_sec": 0.46,
+        "old_tech": false,
+        "copyright_year": null,
+        "word_count": 7392,
+        "final_score": 80
+      },
+      "demo_url": "https://robkremers.com/preview/goat-bear-grooming-salon",
+      "call_status": "pending",
+      "call_date": null,
+      "call_notes": "",
+      "added_date": "2026-02-19T16:06:26.878608"
+    },
+    {
+      "id": "7e520174",
+      "search_id": "3b9d239a",
+      "business_name": "Pawz N Bubbles",
+      "address": "11945 SW Pacific Hwy #222, Tigard, OR 97223, USA",
+      "phone": "(503) 530-8865",
+      "email": "pawznbubbles@gmail.com",
+      "website": "https://pawznbubbles.com/",
+      "website_score": 90,
+      "score_details": {
+        "mobile_friendly": true,
+        "https": true,
+        "load_time_sec": 0.14,
+        "old_tech": true,
+        "copyright_year": 2025,
+        "word_count": 7522,
+        "final_score": 90
+      },
+      "demo_url": "https://robkremers.com/preview/pawz-n-bubbles",
+      "call_status": "pending",
+      "call_date": null,
+      "call_notes": "",
+      "added_date": "2026-02-19T16:06:26.014420"
+    },
+    {
+      "id": "10e1001a",
+      "search_id": "3b9d239a",
+      "business_name": "Bark Avenue PDX",
+      "address": "12950 SW Pacific Hwy suite 245, Portland, OR 97223, USA",
+      "phone": "(503) 352-4371",
+      "email": "352-4371barkavenuepdx@gmail.comMon",
+      "website": "http://barkavenuepdx.com/",
+      "website_score": 80,
+      "score_details": {
+        "mobile_friendly": true,
+        "https": false,
+        "load_time_sec": 0.33,
+        "old_tech": false,
+        "copyright_year": null,
+        "word_count": 16948,
+        "final_score": 80
+      },
+      "demo_url": "https://robkremers.com/preview/bark-avenue-pdx",
+      "call_status": "pending",
+      "call_date": null,
+      "call_notes": "",
+      "added_date": "2026-02-19T16:06:25.680932"
+    },
+    {
+      "id": "8adc59ea",
+      "search_id": "3b9d239a",
+      "business_name": "Grooming by Josie",
+      "address": "11945 SW Pacific Hwy #222, Tigard, OR 97223, USA",
+      "phone": "(971) 409-8225",
+      "email": "pawznbubbles@gmail.com",
+      "website": "https://pawznbubbles.com/",
+      "website_score": 90,
+      "score_details": {
+        "mobile_friendly": true,
+        "https": true,
+        "load_time_sec": 0.19,
+        "old_tech": true,
+        "copyright_year": 2025,
+        "word_count": 7522,
+        "final_score": 90
+      },
+      "demo_url": "https://robkremers.com/preview/grooming-by-josie",
+      "call_status": "pending",
+      "call_date": null,
+      "call_notes": "",
+      "added_date": "2026-02-19T16:06:25.138608"
+    },
     {
       "id": "eb407395",
       "search_id": "dfd5a8a4",
@@ -1976,7 +2079,7 @@
     }
   ],
   "stats": {
-    "total_leads": 76,
+    "total_leads": 80,
     "calls_made": 0,
     "interested": 0,
     "booked": 0,
