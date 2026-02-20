@@ -1,6 +1,13 @@
 {
   "searches": [
     {
+      "id": "14925d4f",
+      "category": "pet grooming",
+      "location": "Portland OR 97219",
+      "date": "2026-02-19T16:06:28.532964",
+      "count": 4
+    },
+    {
       "id": "3b9d239a",
       "category": "pet grooming",
       "location": "Portland OR 97223",
@@ -163,6 +170,78 @@
     }
   ],
   "leads": [
+    {
+      "id": "f3a344c6",
+      "search_id": "14925d4f",
+      "business_name": "Original Bark",
+      "address": "8526 SW Terwilliger Blvd, Portland, OR 97219, USA",
+      "phone": "(503) 295-2275",
+      "email": "terwilliger@originalbark.com",
+      "website": "http://www.originalbark.com/",
+      "website_score": 80,
+      "score_details": {
+        "mobile_friendly": true,
+        "https": false,
+        "load_time_sec": 0.48,
+        "old_tech": false,
+        "copyright_year": null,
+        "word_count": 9790,
+        "final_score": 80
+      },
+      "demo_url": "https://robkremers.com/preview/original-bark",
+      "call_status": "pending",
+      "call_date": null,
+      "call_notes": "",
+      "added_date": "2026-02-19T16:06:32.475504"
+    },
+    {
+      "id": "65bcdfc4",
+      "search_id": "14925d4f",
+      "business_name": "All Paws Full & Self Services Pet",
+      "address": "6325 SW Capitol Hwy, Portland, OR 97239, USA",
+      "phone": "(503) 452-7023",
+      "email": "",
+      "website": "http://allpawspdx.com/",
+      "website_score": 80,
+      "score_details": {
+        "mobile_friendly": true,
+        "https": false,
+        "load_time_sec": 0.56,
+        "old_tech": false,
+        "copyright_year": null,
+        "word_count": 8245,
+        "final_score": 80
+      },
+      "demo_url": "https://robkremers.com/preview/all-paws-full-self-services-pet",
+      "call_status": "pending",
+      "call_date": null,
+      "call_notes": "",
+      "added_date": "2026-02-19T16:06:31.502287"
+    },
+    {
+      "id": "3bee8d33",
+      "search_id": "14925d4f",
+      "business_name": "Wiggles & Wags Grooming - Dog Wash | Dog Groomer | Pet Salon | Dog Grooming Service in Portland OR",
+      "address": "6141 S Macadam Ave, Portland, OR 97239, USA",
+      "phone": "(503) 977-1775",
+      "email": "",
+      "website": "https://wigglesandwagsgroomingor.info/",
+      "website_score": 90,
+      "score_details": {
+        "mobile_friendly": true,
+        "https": true,
+        "load_time_sec": 1.26,
+        "old_tech": true,
+        "copyright_year": null,
+        "word_count": 2463,
+        "final_score": 90
+      },
+      "demo_url": "https://robkremers.com/preview/wiggles-wags-grooming-dog-wash-dog-groomer-pet-salon-dog-grooming-service-in-portland-or",
+      "call_status": "pending",
+      "call_date": null,
+      "call_notes": "",
+      "added_date": "2026-02-19T16:06:30.495447"
+    },
     {
       "id": "a247c3d9",
       "search_id": "3b9d239a",
@@ -2079,7 +2158,7 @@
     }
   ],
   "stats": {
-    "total_leads": 80,
+    "total_leads": 83,
     "calls_made": 0,
     "interested": 0,
     "booked": 0,
