@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Heinke Painting, LLC — Website Redesign Demo</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; color: #1a1a1a; }
+  nav { background: #0D5E54; padding: 16px 40px; display: flex; align-items: center; justify-content: space-between; }
+  nav .logo { color: white; font-weight: 800; font-size: 20px; }
+  nav a { color: rgba(255,255,255,0.85); text-decoration: none; font-size: 14px; }
+  .hero { background: linear-gradient(135deg, #0D5E54 0%, #05433a 100%); color: white; padding: 80px 40px; text-align: center; }
+  .hero h1 { font-size: 48px; font-weight: 800; margin-bottom: 16px; }
+  .hero p { font-size: 20px; opacity: 0.9; max-width: 600px; margin: 0 auto 32px; }
+  .btn { background: #D4AF37; color: #1a1a1a; padding: 14px 32px; border-radius: 4px; font-weight: 700; text-decoration: none; font-size: 16px; }
+  .section { padding: 60px 40px; max-width: 1000px; margin: 0 auto; }
+  .section h2 { font-size: 32px; font-weight: 800; margin-bottom: 24px; color: #0D5E54; }
+  .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 24px; }
+  .card { background: #f9f9f9; padding: 24px; border-radius: 8px; border-left: 4px solid #0D5E54; }
+  .card h3 { font-size: 18px; font-weight: 700; margin-bottom: 8px; }
+  .card p { font-size: 14px; color: #666; line-height: 1.6; }
+  .contact { background: #0D5E54; color: white; padding: 60px 40px; text-align: center; }
+  .contact h2 { font-size: 32px; font-weight: 800; margin-bottom: 16px; }
+  .contact p { font-size: 18px; opacity: 0.9; margin-bottom: 8px; }
+  .banner { background: #D4AF37; color: #1a1a1a; padding: 12px 24px; text-align: center; font-size: 14px; font-weight: 600; }
+  @media (max-width: 768px) { .grid { grid-template-columns: 1fr; } .hero h1 { font-size: 32px; } }
+</style>
+</head>
+<body>
+<div class="banner">✨ This is a free demo redesign — built by Rob Kremers | <a href="https://robkremers.com" style="color:#0D5E54">robkremers.com</a></div>
+<nav>
+  <span class="logo">Heinke Painting, LLC</span>
+  <a href="#contact">Contact Us</a>
+</nav>
+<div class="hero">
+  <h1>Welcome to Heinke Painting, LLC</h1>
+  <p>14910 SW 100th Ave, Tigard, OR 97224, USA</p>
+  <a href="#contact" class="btn">Get In Touch</a>
+</div>
+<div class="section">
+  <h2>Why Choose Us</h2>
+  <div class="grid">
+    <div class="card"><h3>⭐ Quality Service</h3><p>We take pride in everything we do, delivering the best experience for every customer.</p></div>
+    <div class="card"><h3>📍 Local & Trusted</h3><p>Proudly serving the local community. Your neighbors trust us — and you can too.</p></div>
+    <div class="card"><h3>💬 Easy to Reach</h3><p>Questions? We're just a call or message away. Friendly, responsive, and reliable.</p></div>
+  </div>
+</div>
+<div class="contact" id="contact">
+  <h2>Get In Touch</h2>
+  <p>📍 14910 SW 100th Ave, Tigard, OR 97224, USA</p>
+  <p>📞 (503) 975-6570</p>
+</div>
+</body>
+</html>

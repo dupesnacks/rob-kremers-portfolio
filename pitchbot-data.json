@@ -1,6 +1,13 @@
 {
   "searches": [
     {
+      "id": "41638f3a",
+      "category": "painting contractor",
+      "location": "Portland OR 97223",
+      "date": "2026-02-19T16:06:04.143163",
+      "count": 4
+    },
+    {
       "id": "9571dba4",
       "category": "locksmith",
       "location": "Portland OR 97219",
@@ -128,6 +135,102 @@
     }
   ],
   "leads": [
+    {
+      "id": "d5307531",
+      "search_id": "41638f3a",
+      "business_name": "Heinke Painting, LLC",
+      "address": "14910 SW 100th Ave, Tigard, OR 97224, USA",
+      "phone": "(503) 975-6570",
+      "email": "TouchInfo@heinkepainting.com",
+      "website": "http://heinkepainting.com/",
+      "website_score": 80,
+      "score_details": {
+        "mobile_friendly": true,
+        "https": false,
+        "load_time_sec": 0.5,
+        "old_tech": false,
+        "copyright_year": null,
+        "word_count": 3931,
+        "final_score": 80
+      },
+      "demo_url": "https://robkremers.com/preview/heinke-painting-llc",
+      "call_status": "pending",
+      "call_date": null,
+      "call_notes": "",
+      "added_date": "2026-02-19T16:06:06.668335"
+    },
+    {
+      "id": "882d4e13",
+      "search_id": "41638f3a",
+      "business_name": "Sisu Painting, Inc.",
+      "address": "5711 SW Arctic Dr, Beaverton, OR 97005, USA",
+      "phone": "(503) 646-1211",
+      "email": "",
+      "website": "http://www.sisupainting.com/",
+      "website_score": 70,
+      "score_details": {
+        "mobile_friendly": true,
+        "https": false,
+        "load_time_sec": 0.28,
+        "old_tech": true,
+        "copyright_year": 2026,
+        "word_count": 9640,
+        "final_score": 70
+      },
+      "demo_url": "https://robkremers.com/preview/sisu-painting-inc",
+      "call_status": "pending",
+      "call_date": null,
+      "call_notes": "",
+      "added_date": "2026-02-19T16:06:05.868839"
+    },
+    {
+      "id": "4875abb5",
+      "search_id": "41638f3a",
+      "business_name": "ESP Painting Interior & Exterior Painting",
+      "address": "8230 SW Nimbus Ave, Beaverton, OR 97008, USA",
+      "phone": "(503) 372-7981",
+      "email": "Info@esppainting.com",
+      "website": "https://www.esppainting.com/?utm_campaign=gmb",
+      "website_score": 90,
+      "score_details": {
+        "mobile_friendly": true,
+        "https": true,
+        "load_time_sec": 0.6,
+        "old_tech": true,
+        "copyright_year": 2025,
+        "word_count": 11447,
+        "final_score": 90
+      },
+      "demo_url": "https://robkremers.com/preview/esp-painting-interior-exterior-painting",
+      "call_status": "pending",
+      "call_date": null,
+      "call_notes": "",
+      "added_date": "2026-02-19T16:06:05.278385"
+    },
+    {
+      "id": "4b2b1ea1",
+      "search_id": "41638f3a",
+      "business_name": "Pearl Painters",
+      "address": "8900 SW Burnham St F17, Tigard, OR 97223, USA",
+      "phone": "(503) 579-3765",
+      "email": "",
+      "website": "https://pearlpainters.com/?utm_source=google&utm_medium=gbp-webclick",
+      "website_score": 90,
+      "score_details": {
+        "mobile_friendly": true,
+        "https": true,
+        "load_time_sec": 0.27,
+        "old_tech": true,
+        "copyright_year": null,
+        "word_count": 8267,
+        "final_score": 90
+      },
+      "demo_url": "https://robkremers.com/preview/pearl-painters",
+      "call_status": "pending",
+      "call_date": null,
+      "call_notes": "",
+      "added_date": "2026-02-19T16:06:04.536794"
+    },
     {
       "id": "efd8f16d",
       "search_id": "9571dba4",
@@ -1588,7 +1691,7 @@
     }
   ],
   "stats": {
-    "total_leads": 61,
+    "total_leads": 65,
     "calls_made": 0,
     "interested": 0,
     "booked": 0,
