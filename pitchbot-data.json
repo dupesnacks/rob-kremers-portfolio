@@ -213,30 +213,6 @@
   ],
   "leads": [
     {
-      "id": "c235fe70",
-      "search_id": "b68e5f89",
-      "business_name": "NW Pressure Washing Service LLC",
-      "address": "13110 SW Ash Dr, Tigard, OR 97223, USA",
-      "phone": "(503) 779-4407",
-      "email": "info@nwpressurewashingservice.com",
-      "website": "http://nwpressurewashingservice.com/",
-      "website_score": 70,
-      "score_details": {
-        "mobile_friendly": true,
-        "https": false,
-        "load_time_sec": 0.16,
-        "old_tech": true,
-        "copyright_year": null,
-        "word_count": 10098,
-        "final_score": 70
-      },
-      "demo_url": "https://robkremers.com/preview/nw-pressure-washing-service-llc",
-      "call_status": "pending",
-      "call_date": null,
-      "call_notes": "",
-      "added_date": "2026-02-19T16:07:04.121479"
-    },
-    {
       "id": "fcc8892d",
       "search_id": "b68e5f89",
       "business_name": "Little Prince Pressure Washing",
@@ -2686,5 +2662,14 @@
     "booked": 0,
     "declined": 0,
     "no_answer": 0
-  }
+  },
+  "rejected": [
+    {
+      "id": "c235fe70",
+      "business_name": "NW Pressure Washing Service LLC",
+      "address": "13110 SW Ash Dr, Tigard, OR 97223, USA",
+      "website": "http://nwpressurewashingservice.com/",
+      "phone": "(503) 779-4407"
+    }
+  ]
 }
