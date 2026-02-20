@@ -1,6 +1,13 @@
 {
   "searches": [
     {
+      "id": "432d369f",
+      "category": "locksmith",
+      "location": "Portland OR 97223",
+      "date": "2026-02-19T16:05:45.718451",
+      "count": 4
+    },
+    {
       "id": "c4086910",
       "category": "auto body shop",
       "location": "Portland OR 97219",
@@ -114,6 +121,102 @@
     }
   ],
   "leads": [
+    {
+      "id": "adb467e5",
+      "search_id": "432d369f",
+      "business_name": "Locksmith Plus, Inc. Portland, OR",
+      "address": "5901 S Macadam Ave #110, Portland, OR 97239, USA",
+      "phone": "(503) 575-9210",
+      "email": "contact@locksmithplusincportlandor.com",
+      "website": "https://www.locksmithplusincportlandor.com/",
+      "website_score": 90,
+      "score_details": {
+        "mobile_friendly": true,
+        "https": true,
+        "load_time_sec": 0.41,
+        "old_tech": true,
+        "copyright_year": null,
+        "word_count": 9112,
+        "final_score": 90
+      },
+      "demo_url": "https://robkremers.com/preview/locksmith-plus-inc-portland-or",
+      "call_status": "pending",
+      "call_date": null,
+      "call_notes": "",
+      "added_date": "2026-02-19T16:05:55.182480"
+    },
+    {
+      "id": "e1de9f4c",
+      "search_id": "432d369f",
+      "business_name": "Locksmith General LLC",
+      "address": "322 NW 5th Ave Suite 301-B, Portland, OR 97209, USA",
+      "phone": "(971) 442-7268",
+      "email": "",
+      "website": "https://www.locksmithgeneralllc.com/?utm_campaign=gmb",
+      "website_score": 90,
+      "score_details": {
+        "mobile_friendly": true,
+        "https": true,
+        "load_time_sec": 0.15,
+        "old_tech": true,
+        "copyright_year": null,
+        "word_count": 9595,
+        "final_score": 90
+      },
+      "demo_url": "https://robkremers.com/preview/locksmith-general-llc",
+      "call_status": "pending",
+      "call_date": null,
+      "call_notes": "",
+      "added_date": "2026-02-19T16:05:54.304463"
+    },
+    {
+      "id": "a7d94bb3",
+      "search_id": "432d369f",
+      "business_name": "Advantage Locksmith Portland",
+      "address": "8104 SW Durham Rd, Portland, OR 97224, USA",
+      "phone": "(503) 946-9522",
+      "email": "",
+      "website": "https://advantagelocksmithportland.com/locksmith-in-tigard-or/",
+      "website_score": 90,
+      "score_details": {
+        "mobile_friendly": true,
+        "https": true,
+        "load_time_sec": 2.25,
+        "old_tech": true,
+        "copyright_year": null,
+        "word_count": 5301,
+        "final_score": 90
+      },
+      "demo_url": "https://robkremers.com/preview/advantage-locksmith-portland",
+      "call_status": "pending",
+      "call_date": null,
+      "call_notes": "",
+      "added_date": "2026-02-19T16:05:53.953901"
+    },
+    {
+      "id": "5f453235",
+      "search_id": "432d369f",
+      "business_name": "Advantage Locksmith Portland",
+      "address": "7645 SW Capitol Hwy, Portland, OR 97219, USA",
+      "phone": "(503) 342-4106",
+      "email": "",
+      "website": "https://advantagelocksmithportland.com/",
+      "website_score": 90,
+      "score_details": {
+        "mobile_friendly": true,
+        "https": true,
+        "load_time_sec": 2.31,
+        "old_tech": true,
+        "copyright_year": null,
+        "word_count": 7884,
+        "final_score": 90
+      },
+      "demo_url": "https://robkremers.com/preview/advantage-locksmith-portland",
+      "call_status": "pending",
+      "call_date": null,
+      "call_notes": "",
+      "added_date": "2026-02-19T16:05:49.818396"
+    },
     {
       "id": "ded51930",
       "search_id": "c4086910",
@@ -1406,7 +1509,7 @@
     }
   ],
   "stats": {
-    "total_leads": 54,
+    "total_leads": 58,
     "calls_made": 0,
     "interested": 0,
     "booked": 0,
