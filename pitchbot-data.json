@@ -1,6 +1,13 @@
 {
   "searches": [
     {
+      "id": "0a3f3013",
+      "category": "pest control",
+      "location": "Portland OR 97223",
+      "date": "2026-02-19T16:05:22.347552",
+      "count": 4
+    },
+    {
       "id": "14a3635e",
       "category": "carpet cleaning",
       "location": "Portland OR 97219",
@@ -86,6 +93,102 @@
     }
   ],
   "leads": [
+    {
+      "id": "038a174f",
+      "search_id": "0a3f3013",
+      "business_name": "The Killers Pest Control",
+      "address": "9498 SW Barbur Blvd Suite 312, Portland, OR 97219, USA",
+      "phone": "(503) 777-3141",
+      "email": "",
+      "website": "https://thekillers.net/",
+      "website_score": 90,
+      "score_details": {
+        "mobile_friendly": true,
+        "https": true,
+        "load_time_sec": 0.07,
+        "old_tech": true,
+        "copyright_year": null,
+        "word_count": 7476,
+        "final_score": 90
+      },
+      "demo_url": "https://robkremers.com/preview/the-killers-pest-control",
+      "call_status": "pending",
+      "call_date": null,
+      "call_notes": "",
+      "added_date": "2026-02-19T16:05:27.194910"
+    },
+    {
+      "id": "dbba90c9",
+      "search_id": "0a3f3013",
+      "business_name": "Insight Pest Control - Portland",
+      "address": "2340 SE Gladstone St Suite 2110, Portland, OR 97202, USA",
+      "phone": "(503) 912-5770",
+      "email": "",
+      "website": "https://insightpestnorthwest.com/portland/pest-control-service/?utm_source=gbp&utm_medium=organic&utm_campaign=portland",
+      "website_score": 90,
+      "score_details": {
+        "mobile_friendly": true,
+        "https": true,
+        "load_time_sec": 0.52,
+        "old_tech": true,
+        "copyright_year": null,
+        "word_count": 17526,
+        "final_score": 90
+      },
+      "demo_url": "https://robkremers.com/preview/insight-pest-control-portland",
+      "call_status": "pending",
+      "call_date": null,
+      "call_notes": "",
+      "added_date": "2026-02-19T16:05:26.997139"
+    },
+    {
+      "id": "f1d6f661",
+      "search_id": "0a3f3013",
+      "business_name": "EcoCare Pest Control",
+      "address": "650 NE Holladay St Suite 1600, Portland, OR 97232, USA",
+      "phone": "(503) 222-5566",
+      "email": "",
+      "website": "https://ecocarepestcontrol.com/?utm_campaign=gmb",
+      "website_score": 90,
+      "score_details": {
+        "mobile_friendly": true,
+        "https": true,
+        "load_time_sec": 0.19,
+        "old_tech": true,
+        "copyright_year": 2024,
+        "word_count": 7845,
+        "final_score": 90
+      },
+      "demo_url": "https://robkremers.com/preview/ecocare-pest-control",
+      "call_status": "pending",
+      "call_date": null,
+      "call_notes": "",
+      "added_date": "2026-02-19T16:05:25.924616"
+    },
+    {
+      "id": "2beecabe",
+      "search_id": "0a3f3013",
+      "business_name": "Summit Pest Management",
+      "address": "8185 SW Hunziker Rd, Tigard, OR 97223, USA",
+      "phone": "(503) 639-2500",
+      "email": "",
+      "website": "https://www.summitpestmanagement.com/?utm_source=google&utm_medium=gbp&utm_campaign=tigard",
+      "website_score": 90,
+      "score_details": {
+        "mobile_friendly": true,
+        "https": true,
+        "load_time_sec": 1.82,
+        "old_tech": true,
+        "copyright_year": null,
+        "word_count": 18815,
+        "final_score": 90
+      },
+      "demo_url": "https://robkremers.com/preview/summit-pest-management",
+      "call_status": "pending",
+      "call_date": null,
+      "call_notes": "",
+      "added_date": "2026-02-19T16:05:25.513059"
+    },
     {
       "id": "24a754c5",
       "search_id": "14a3635e",
@@ -1042,7 +1145,7 @@
     }
   ],
   "stats": {
-    "total_leads": 40,
+    "total_leads": 44,
     "calls_made": 0,
     "interested": 0,
     "booked": 0,
