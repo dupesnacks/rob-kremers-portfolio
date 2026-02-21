@@ -514,7 +514,8 @@
         const modelCounts = {};
         const modelRevenue = {};
         orders.forEach(o => {
-            const baseModel = o.model.split(' ')[0] + ' ' + o.model.split(' ')[1];
+            const parts = o.model.split(' ');
+            const baseModel = parts.length > 1 ? parts[0] + ' ' + parts[1] : o.model;
             modelCounts[baseModel] = (modelCounts[baseModel] || 0) + 1;
             modelRevenue[baseModel] = (modelRevenue[baseModel] || 0) + o.msrp;
         });
@@ -607,7 +608,8 @@
         // MSRP by model
         const modelMsrp = {};
         orders.forEach(o => {
-            const baseModel = o.model.split(' ')[0] + ' ' + o.model.split(' ')[1];
+            const parts = o.model.split(' ');
+            const baseModel = parts.length > 1 ? parts[0] + ' ' + parts[1] : o.model;
             if (!modelMsrp[baseModel]) modelMsrp[baseModel] = [];
             modelMsrp[baseModel].push(o.msrp);
         });
@@ -712,7 +714,8 @@
         // Price range by model
         const modelPrices = {};
         orders.forEach(o => {
-            const baseModel = o.model.split(' ')[0] + ' ' + o.model.split(' ')[1];
+            const parts = o.model.split(' ');
+            const baseModel = parts.length > 1 ? parts[0] + ' ' + parts[1] : o.model;
             if (!modelPrices[baseModel]) modelPrices[baseModel] = [];
             modelPrices[baseModel].push(o.msrp);
         });
