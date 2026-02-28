@@ -230,19 +230,30 @@
         }
         
         .explorer-image {
-            width: 140px;
-            height: 140px;
+            width: 200px;
+            height: 200px;
             margin: 0 auto 20px;
             display: flex;
             align-items: center;
             justify-content: center;
             overflow: hidden;
+            cursor: pointer;
+            border-radius: 12px;
+            transition: transform 0.2s ease;
         }
         
         .explorer-image img {
             width: 100%;
             height: 100%;
             object-fit: contain;
+        }
+        
+        .explorer-image:hover {
+            transform: scale(1.05);
+        }
+        
+        .explorer-image:active {
+            transform: scale(0.98);
         }
         
         .explorer-card h3 {
@@ -300,18 +311,101 @@
         }
         
         .planet-icon {
-            width: 140px;
-            height: 140px;
+            width: 210px;
+            height: 210px;
             margin: 0 auto 15px;
             display: flex;
             align-items: center;
             justify-content: center;
+            cursor: pointer;
+            border-radius: 50%;
+            transition: transform 0.2s ease;
         }
         
         .planet-icon img {
             width: 100%;
             height: 100%;
             object-fit: contain;
+        }
+        
+        .planet-icon:hover {
+            transform: scale(1.05);
+        }
+        
+        .planet-icon:active {
+            transform: scale(0.98);
+        }
+        
+        /* Modal Styles */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(10, 10, 30, 0.9);
+            animation: fadeIn 0.3s ease;
+        }
+        
+        .modal.active {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        
+        .modal-content {
+            background-color: rgba(30, 20, 80, 0.95);
+            padding: 40px;
+            border: 2px solid #667eea;
+            border-radius: 16px;
+            text-align: center;
+            max-width: 90%;
+            max-height: 90vh;
+            overflow-y: auto;
+            animation: slideIn 0.3s ease;
+        }
+        
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .modal-content img {
+            width: 100%;
+            max-width: 500px;
+            height: auto;
+            margin-bottom: 20px;
+            border-radius: 12px;
+        }
+        
+        .modal-close {
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            font-size: 28px;
+            font-weight: bold;
+            color: #00d9ff;
+            cursor: pointer;
+            background: none;
+            border: none;
+            transition: color 0.2s;
+        }
+        
+        .modal-close:hover {
+            color: #d4af37;
         }
         
         .planet h4 {
@@ -615,6 +709,16 @@
                 transform: scale(1);
             }
             
+            .explorer-image {
+                width: 160px;
+                height: 160px;
+            }
+            
+            .planet-icon {
+                width: 160px;
+                height: 160px;
+            }
+            
             nav {
                 display: none;
             }
@@ -868,6 +972,60 @@
         <a href="#">Blog</a>
     </div>
 </footer>
+
+<!-- IMAGE EXPANSION MODAL -->
+<div id="imageModal" class="modal">
+    <button class="modal-close" onclick="closeModal()">&times;</button>
+    <div class="modal-content" id="modalContent">
+        <img id="modalImage" src="" alt="Expanded view">
+    </div>
+</div>
+
+<script>
+function openModal(imageSrc, altText) {
+    const modal = document.getElementById('imageModal');
+    const modalImage = document.getElementById('modalImage');
+    modalImage.src = imageSrc;
+    modalImage.alt = altText;
+    modal.classList.add('active');
+}
+
+function closeModal() {
+    const modal = document.getElementById('imageModal');
+    modal.classList.remove('active');
+}
+
+// Click outside modal to close
+window.onclick = function(event) {
+    const modal = document.getElementById('imageModal');
+    if (event.target == modal) {
+        closeModal();
+    }
+}
+
+// Make all planet and explorer icons clickable
+document.addEventListener('DOMContentLoaded', function() {
+    // Planet icons
+    const planetIcons = document.querySelectorAll('.planet-icon img');
+    planetIcons.forEach(function(img) {
+        img.style.cursor = 'pointer';
+        img.addEventListener('click', function(e) {
+            e.stopPropagation();
+            openModal(this.src, this.alt);
+        });
+    });
+    
+    // Explorer images
+    const explorerImages = document.querySelectorAll('.explorer-image img');
+    explorerImages.forEach(function(img) {
+        img.style.cursor = 'pointer';
+        img.addEventListener('click', function(e) {
+            e.stopPropagation();
+            openModal(this.src, this.alt);
+        });
+    });
+});
+</script>
 
 </body>
 </html>
