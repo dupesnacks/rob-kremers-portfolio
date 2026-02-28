@@ -1,8 +1,11 @@
 {
   "buildCommand": "",
   "installCommand": "",
-  "trailingSlash": false,
   "routes": [
+    {
+      "src": "/flavorgalaxy/?$",
+      "dest": "/flavorgalaxy/index.html"
+    },
     {
       "src": "/flavorgalaxy/(.*)",
       "dest": "/flavorgalaxy/index.html"
