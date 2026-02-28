@@ -1,16 +1,3 @@
 {
-  "rewrites": [
-    {
-      "source": "/flavorgalaxy",
-      "destination": "/flavorgalaxy/index.html"
-    },
-    {
-      "source": "/flavorgalaxy/",
-      "destination": "/flavorgalaxy/index.html"
-    },
-    {
-      "source": "/flavorgalaxy/:path*",
-      "destination": "/flavorgalaxy/index.html"
-    }
-  ]
+  "cleanUrls": true
 }
