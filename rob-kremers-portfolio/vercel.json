@@ -1,0 +1,12 @@
+{
+  "rewrites": [
+    {
+      "source": "/flavorgalaxy",
+      "destination": "/flavorgalaxy/"
+    },
+    {
+      "source": "/flavorgalaxy/",
+      "destination": "/flavorgalaxy/index.html"
+    }
+  ]
+}
