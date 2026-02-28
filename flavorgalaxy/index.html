@@ -230,16 +230,19 @@
         }
         
         .explorer-image {
-            width: 120px;
-            height: 120px;
-            background: rgba(102, 126, 234, 0.15);
-            border-radius: 12px;
+            width: 140px;
+            height: 140px;
             margin: 0 auto 20px;
             display: flex;
             align-items: center;
             justify-content: center;
-            color: #667eea;
-            font-size: 50px;
+            overflow: hidden;
+        }
+        
+        .explorer-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
         }
         
         .explorer-card h3 {
@@ -653,25 +656,25 @@
     <h2>Meet Your Explorers</h2>
     <div class="explorers-grid">
         <div class="explorer-card">
-            <div class="explorer-image">🚀</div>
+            <div class="explorer-image"><img src="explorer-nova.jpg" alt="Nova - Speed Explorer"></div>
             <h3>Nova</h3>
             <p>Speed Explorer</p>
             <div class="explorer-description">Fast, energetic, loves trying new things quickly.</div>
         </div>
         <div class="explorer-card">
-            <div class="explorer-image">🔭</div>
+            <div class="explorer-image"><img src="explorer-cosmo.jpg" alt="Cosmo - Science Explorer"></div>
             <h3>Cosmo</h3>
             <p>Science Explorer</p>
             <div class="explorer-description">Curious, thoughtful, loves understanding how things work.</div>
         </div>
         <div class="explorer-card">
-            <div class="explorer-image">⭐</div>
+            <div class="explorer-image"><img src="explorer-star.jpg" alt="Star - Brave Explorer"></div>
             <h3>Star</h3>
             <p>Brave Explorer</p>
             <div class="explorer-description">Bold, courageous, not afraid to try new things.</div>
         </div>
         <div class="explorer-card">
-            <div class="explorer-image">🛸</div>
+            <div class="explorer-image"><img src="explorer-orbit.jpg" alt="Orbit - Adventurous Explorer"></div>
             <h3>Orbit</h3>
             <p>Adventurous Explorer</p>
             <div class="explorer-description">Loves exploring and gathering new experiences.</div>
