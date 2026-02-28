@@ -29,7 +29,7 @@
         /* HEADER/NAV */
         header {
             background: white;
-            padding: 20px 40px;
+            padding: 8px 40px;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -37,12 +37,14 @@
             position: sticky;
             top: 0;
             z-index: 100;
+            gap: 20px;
         }
         
         .logo {
-            height: 50px;
+            height: 140px;
             display: flex;
             align-items: center;
+            flex-shrink: 0;
         }
         
         .logo img {
@@ -83,12 +85,12 @@
         .hero {
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             color: white;
-            padding: 60px 40px 80px;
+            padding: 20px 40px 60px;
             text-align: center;
         }
         
         .hero-logo {
-            margin-bottom: 40px;
+            margin-bottom: 15px;
             animation: slideDown 0.6s ease-out;
         }
         
@@ -112,14 +114,16 @@
         
         .hero h1 {
             font-size: 3.5em;
-            margin-bottom: 20px;
+            margin-bottom: 15px;
+            margin-top: 0;
             line-height: 1.2;
             font-weight: 700;
         }
         
         .hero p {
             font-size: 1.2em;
-            margin-bottom: 50px;
+            margin-bottom: 35px;
+            margin-top: 0;
             opacity: 0.95;
             max-width: 700px;
             margin-left: auto;
@@ -131,7 +135,7 @@
             display: flex;
             gap: 20px;
             justify-content: center;
-            margin-bottom: 60px;
+            margin-bottom: 40px;
         }
         
         .hero-buttons button {
@@ -171,7 +175,7 @@
         .hero-image {
             width: 100%;
             max-width: 900px;
-            margin: 40px auto 0;
+            margin: 20px auto 0;
         }
         
         .hero-image img {
@@ -768,7 +772,11 @@
             }
             
             .logo {
-                height: 40px;
+                height: 100px;
+            }
+            
+            header {
+                padding: 8px 20px;
             }
             
             .hero h1 {
