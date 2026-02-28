@@ -1,0 +1,69 @@
+DALL-E 3 / MIDJOURNEY PROMPTS: 8 Planet Designs for Flavor Galaxy
+
+SPECIFICATIONS FOR ALL:
+- Output: Circular planet, transparent background (PNG)
+- Style: Playful, illustrated, kid-friendly
+- Size: 512x512px minimum
+- Colors: Incorporate neon accents (cyan #00d9ff, gold #d4af37, pink #e91e63) + brand purples
+- NO realistic photography; stylized/animated art only
+- Each planet should be UNIQUE in visual design, not similar to others
+
+---
+
+1. BASE CAMP
+Prompt: "A cozy, welcoming camping planet with a warm, earthy aesthetic. The circular planet features a small illustrated campfire at the center with gentle orange and amber glow, surrounded by soft green grass, a tiny tent silhouette, and a few friendly stars scattered around the edges. The overall vibe is 'safe starting point' with warm earth tones (greens, oranges, golds) and a friendly, inviting feeling. Illustrated style, playful, transparent background, suitable for children ages 3-10."
+
+---
+
+2. SENSORY GROVE
+Prompt: "A lush forest planet with a nature/grove theme centered on 'LOOK' (visual sensory). The circular planet is dominated by stylized trees in various shades of green and teal, with glowing cyan accents highlighting tree trunks and leaves. Include simple illustrated flowers, mushrooms, and butterflies scattered throughout. The trees should have slightly exaggerated, whimsical shapes to appeal to young children. The overall aesthetic is magical and inviting, with neon cyan highlights. Transparent background, illustrated art style."
+
+---
+
+3. TEXTURE TRAILS
+Prompt: "A tactile, pattern-rich planet for the 'TOUCH' phase. Design a circular planet with diverse texture patterns visible on the surface: wavy lines representing smooth surfaces, bumpy dots for rough textures, crisscross patterns for woven textures, and soft curves for mushy textures. Use a vibrant gradient of purples, teals, and pinks (#667eea to #764ba2 to #e91e63). Include glowing neon trails that wind across the planet surface like paths kids can follow. Illustrated, playful style, transparent background."
+
+---
+
+4. AROMA AIRSHIP
+Prompt: "A whimsical airship-themed planet for the 'SMELL' phase. Design a circular planet that looks like a vintage hot air balloon or airship, with vertical stripes in neon cyan, gold, and purple. Add floating clouds around it in soft pastels, with small stars and scent wisps (illustrated as spiral lines with a magical glow) floating away. The airship should have windows, a gondola beneath it, and an overall 'dreamy, floating' aesthetic. Include shimmering cyan and gold accents. Transparent background, kid-friendly illustration."
+
+---
+
+5. FLAVOR MOUNTAINS
+Prompt: "A majestic mountain-themed planet for the taste journey. Design a circular planet dominated by illustrated peaks of varying heights in warm gradients: golds, oranges, warm purples (#764ba2), and hints of sunset pink (#e91e63). Add layered mountain ridges to suggest different 'flavor layers.' Include delicate waterfalls or streams running between peaks in cyan/turquoise, and small trees on the slopes. The overall mood is 'achievement unlocked' with a magical, slightly glowing quality. Transparent background, playful illustrated style."
+
+---
+
+6. TASTE OCEAN
+Prompt: "A fluid, wave-filled planet representing the ocean and liquid tastes. Design a circular planet with flowing, organic wave patterns in multiple shades of cyan (#00d9ff), teal (#4CA5FF), and deep blues. Include playful sea creatures (whale, starfish, jellyfish silhouettes) subtly illustrated within the waves. Add bioluminescent glows (small cyan dots and lines) as if the ocean is glowing from within. Include a few bubbles floating upward. Transparent background, smooth and dreamy illustrated style, suitable for kids."
+
+---
+
+7. TASTE JUNGLE
+Prompt: "A vibrant, lush jungle planet teeming with life and greenery for the penultimate journey stage. Design a circular planet densely packed with illustrated vines, leaves, flowers, and exotic plants in multiple shades of green, with neon pink and gold accents highlighting certain flowers and vines. Include playful silhouettes of jungle animals (monkeys, birds, butterflies) peeking out. The overall feel is 'alive, vibrant, abundant.' Add glowing accents in magenta (#e91e63) and gold (#d4af37) to match the brand. Transparent background, playful illustration."
+
+---
+
+8. GALAXY'S HEART
+Prompt: "The ultimate, cosmic destination planet: a majestic, glowing celestial core. Design a circular planet that looks like a brilliant cosmic gem or crystal heart at the center of the galaxy. Use a radiant gradient of purples (#667eea to #764ba2), with intense neon cyan (#00d9ff) and gold (#d4af37) radiating outward as light rays. Include smaller stars, cosmic dust, and celestial swirls orbiting the core. The overall aesthetic should feel 'triumphant, magical, cosmic.' Add a subtle crown or halo effect to indicate it's the final destination. Transparent background, illustrated, suitable for celebrating kids' achievements."
+
+---
+
+GENERATION INSTRUCTIONS:
+1. Use DALL-E 3 or Midjourney with these exact prompts
+2. Request transparent PNG output (not JPG)
+3. All planets should feel cohesive as a series (same art style, same illustrated aesthetic)
+4. After generation, verify transparent backgrounds (should be PNG alpha channel, not white/colored background)
+5. Keep all planets at same visual "weight" (balanced complexity)
+
+EXPECTED OUTCOME:
+8 unique, kid-friendly illustrated planets with:
+✓ Transparent backgrounds
+✓ Circular/round shape (easy to integrate into journey map)
+✓ Visual connection to planet names
+✓ Brand color integration
+✓ Playful, non-realistic art style
+✓ Appropriate for ages 3-10
+
+These will replace the current emoji icons (🏕️ 🏖️ 🥾 ✈️ ⛰️ 🌊 🌴 ⭐) with custom illustrated designs that match the game's aesthetic.

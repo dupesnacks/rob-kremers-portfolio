@@ -1,0 +1,58 @@
+RORK IMPLEMENTATION BRIEF: Explorer Avatar Sizing & Interactivity
+
+FEATURE: Make explorer avatar more prominent on Journey screen
+
+CURRENT STATE:
+- Explorer avatar displayed in top-left corner of journey map
+- Avatar is ~60-80px, easily missed by kids
+- Currently static (no interaction)
+
+DESIRED STATE:
+Option A: **Bigger by Default** (Recommended for kids 3-10)
+- Increase explorer avatar to 120-140px
+- Position in top-left with better padding
+- Add subtle glow or neon outline (matches brand: cyan #00d9ff or purple #667eea)
+- Makes character visible & identifiable at a glance
+
+Option B: **Tappable Expansion** (More interactive)
+- Keep explorer at 100px default
+- Tappable button with ripple effect
+- On tap: Modal/fullscreen view of explorer (512x512 illustration)
+- Show explorer name, personality type, level
+- Modal has "Got it!" or "Back" button
+- Smooth slide-in animation
+
+RECOMMENDATION:
+Implement **Option A + subtle tap affordance** (best of both):
+1. Default size: 120px (3x larger)
+2. Glow/border: Cyan neon (#00d9ff) or dynamic color
+3. Tappable: Opens explorer detail modal (Option B)
+4. Modal shows: Full avatar, name, personality, current streak/achievements
+5. Animation: Slide-in from top-left, fade-out on dismiss
+
+VISUAL SPECS:
+- Avatar container: 120px x 120px
+- Border: 2px solid #00d9ff with glow (box-shadow)
+- Background: rgba(0, 217, 255, 0.1)
+- Border-radius: 12px
+- Padding: 8px
+- On hover/tap: Slightly scale up (1.05x), brighten glow
+- Modal backdrop: Semi-transparent dark (rgba(0,0,0,0.7))
+
+CONTENT IN MODAL:
+- Large explorer image (400x400px)
+- Name (e.g., "Cosmo")
+- Type (e.g., "Science Explorer")
+- Personality (e.g., "Curious, thoughtful, loves understanding how things work")
+- Current Level (e.g., "Level 5 - Galaxy Legend")
+- Streak count (optional, if available)
+- Close button: "Back to Journey"
+
+INTERACTION:
+- Tap anywhere outside modal to close (or close button)
+- Smooth fade transition
+- No animation lag on mobile
+
+This makes kids feel connected to their chosen explorer while keeping the journey map uncluttered.
+
+Timeline: Standard Rork implementation
