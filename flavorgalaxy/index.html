@@ -134,19 +134,37 @@
             background: rgba(255,255,255,0.3);
         }
         
-        .hero-image-placeholder {
+        .hero-image {
             width: 100%;
-            max-width: 600px;
-            height: 400px;
-            background: rgba(255,255,255,0.1);
-            border-radius: 12px;
-            margin: 0 auto;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: rgba(255,255,255,0.5);
-            font-size: 18px;
-            border: 2px dashed rgba(255,255,255,0.3);
+            max-width: 900px;
+            margin: 30px auto 0;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 20px 60px rgba(0, 217, 255, 0.3);
+            border: 2px solid #667eea;
+        }
+        
+        .hero-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        
+        .hero-caption {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 1.1em;
+            font-weight: 500;
+            margin: 0;
+            line-height: 1.5;
+        }
+        
+        .hero-caption strong {
+            font-size: 1.05em;
+            display: block;
+            margin-top: 8px;
         }
         
         /* SECTION */
@@ -748,7 +766,10 @@
         <button class="primary-btn">Download for iOS</button>
         <button class="secondary-btn">Watch Demo</button>
     </div>
-    <div class="hero-image-placeholder">[App screenshot or hero image goes here]</div>
+    <div class="hero-image">
+        <img src="https://www.robkremers.com/flavorgalaxy/hero-explorers.jpg" alt="Meet your Flavor Galaxy explorers: Star, Cosmo, Nova, and Orbit">
+        <p class="hero-caption">✨ Meet Your Explorers ✨<br><strong>Star, Cosmo, Nova & Orbit are ready to guide your child on an epic sensory adventure!</strong></p>
+    </div>
 </section>
 
 <!-- WHAT IS FLAVOR GALAXY -->
