@@ -341,6 +341,14 @@
             margin-top: 10px;
         }
         
+        .tap-hint {
+            font-size: 0.85em;
+            color: #667eea;
+            margin-top: 12px;
+            font-weight: 500;
+            opacity: 0.8;
+        }
+        
         /* JOURNEY */
         .journey {
             background: linear-gradient(135deg, #0a0a1e 0%, #1a0a2e 100%);
@@ -700,12 +708,39 @@
             background: #f9f9f9;
         }
         
+        .pricing-subtitle {
+            font-size: 1.1em;
+            color: #666;
+            max-width: 700px;
+            margin: 0 auto 50px;
+            text-align: center;
+        }
+        
         .pricing-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 40px;
-            max-width: 1000px;
+            max-width: 1100px;
+            margin: 0 auto 50px;
+        }
+        
+        .pricing-guarantee {
+            text-align: center;
+            font-size: 1.05em;
+            color: #667eea;
+            max-width: 700px;
             margin: 0 auto;
+            padding: 30px;
+            background: linear-gradient(135deg, rgba(102, 126, 234, 0.05) 0%, rgba(118, 75, 162, 0.05) 100%);
+            border-radius: 12px;
+            border: 2px solid #667eea;
+        }
+        
+        .trial-note {
+            font-size: 0.85em;
+            color: #999;
+            margin-top: 12px;
+            font-style: italic;
         }
         
         .pricing-card {
@@ -725,7 +760,6 @@
         .pricing-card.featured {
             border-color: #667eea;
             box-shadow: 0 20px 50px rgba(102, 126, 234, 0.25);
-            transform: scale(1.05);
             background: linear-gradient(to bottom, #fafbff, #ffffff);
         }
         
@@ -955,28 +989,32 @@
     <h2>Meet Your Explorers</h2>
     <div class="explorers-grid">
         <div class="explorer-card">
-            <div class="explorer-image"><img src="https://www.robkremers.com/flavorgalaxy/explorer-nova.jpg" alt="Nova - Speed Explorer"></div>
+            <div class="explorer-image" onclick="openVideoModal('https://www.robkremers.com/flavorgalaxy/explorer-nova-video.mp4', 'Nova in action')"><img src="https://www.robkremers.com/flavorgalaxy/explorer-nova.jpg" alt="Nova - Speed Explorer"></div>
             <h3>Nova</h3>
             <p>Speed Explorer</p>
             <div class="explorer-description">Fast, energetic, loves trying new things quickly.</div>
+            <p class="tap-hint">👆 Tap to see Nova in action!</p>
         </div>
         <div class="explorer-card">
-            <div class="explorer-image"><img src="https://www.robkremers.com/flavorgalaxy/explorer-cosmo.jpg" alt="Cosmo - Science Explorer"></div>
+            <div class="explorer-image" onclick="openVideoModal('https://www.robkremers.com/flavorgalaxy/explorer-cosmo-video.mp4', 'Cosmo in action')"><img src="https://www.robkremers.com/flavorgalaxy/explorer-cosmo.jpg" alt="Cosmo - Science Explorer"></div>
             <h3>Cosmo</h3>
             <p>Science Explorer</p>
             <div class="explorer-description">Curious, thoughtful, loves understanding how things work.</div>
+            <p class="tap-hint">👆 Tap to see Cosmo in action!</p>
         </div>
         <div class="explorer-card">
-            <div class="explorer-image"><img src="https://www.robkremers.com/flavorgalaxy/explorer-star.jpg" alt="Star - Brave Explorer"></div>
+            <div class="explorer-image" onclick="openVideoModal('https://www.robkremers.com/flavorgalaxy/explorer-star-video.mp4', 'Star in action')"><img src="https://www.robkremers.com/flavorgalaxy/explorer-star.jpg" alt="Star - Brave Explorer"></div>
             <h3>Star</h3>
             <p>Brave Explorer</p>
             <div class="explorer-description">Bold, courageous, not afraid to try new things.</div>
+            <p class="tap-hint">👆 Tap to see Star in action!</p>
         </div>
         <div class="explorer-card">
-            <div class="explorer-image"><img src="https://www.robkremers.com/flavorgalaxy/explorer-orbit.jpg" alt="Orbit - Adventurous Explorer"></div>
+            <div class="explorer-image" onclick="openVideoModal('https://www.robkremers.com/flavorgalaxy/explorer-orbit-video.mp4', 'Orbit in action')"><img src="https://www.robkremers.com/flavorgalaxy/explorer-orbit.jpg" alt="Orbit - Adventurous Explorer"></div>
             <h3>Orbit</h3>
             <p>Adventurous Explorer</p>
             <div class="explorer-description">Loves exploring and gathering new experiences.</div>
+            <p class="tap-hint">👆 Tap to see Orbit in action!</p>
         </div>
     </div>
 </section>
@@ -1136,37 +1174,46 @@
 
 <!-- PRICING -->
 <section class="pricing" id="pricing">
-    <h2>Simple Pricing</h2>
+    <h2>Simple, Transparent Pricing</h2>
+    <p class="pricing-subtitle">Full access to everything. Try free for 7 days. No credit card required.</p>
     <div class="pricing-grid">
-        <div class="pricing-card">
-            <h3>Free</h3>
-            <div class="price">$0<span>/forever</span></div>
-            <p>Full SOS protocol. Full game. Zero paywall on therapy.</p>
+        <div class="pricing-card featured">
+            <h3>Monthly</h3>
+            <div class="price">$3.99<span>/month</span></div>
+            <p>Complete SOS therapy game + AI parent intelligence.</p>
             <ul class="pricing-features">
                 <li>Complete SOS protocol (all 5 phases)</li>
-                <li>50+ food database</li>
-                <li>Custom food creation</li>
-                <li>Full gamification (levels, cosmetics, journey)</li>
-                <li>Basic progress tracking</li>
-                <li>Parent education</li>
+                <li>50+ food database + custom foods</li>
+                <li>Full gamification & progression</li>
+                <li>Smart recommendations (AI-guided)</li>
+                <li>Deep sensory analytics</li>
+                <li>Pattern detection & insights</li>
+                <li>Therapist export with reports</li>
+                <li>All 4 explorer characters</li>
             </ul>
-            <button>Get Started</button>
+            <button class="primary-btn">Start 7-Day Free Trial</button>
+            <p class="trial-note">Full access. Cancel anytime. No credit card required.</p>
         </div>
-        <div class="pricing-card featured">
-            <h3>Premium</h3>
-            <div class="price">$4.99<span>/month</span></div>
-            <p>Full SOS protocol + AI-powered parent intelligence to understand what works.</p>
+        <div class="pricing-card">
+            <h3>Annual (Best Value)</h3>
+            <div class="price">$24.99<span>/year</span></div>
+            <p>Save 48% with annual billing.</p>
             <ul class="pricing-features">
-                <li>Everything in Free</li>
-                <li>Smart recommendations (AI-guided progression)</li>
-                <li>Deep sensory analytics (visualize patterns)</li>
-                <li>Pattern detection (discover what works)</li>
-                <li>Therapist export with full reports</li>
-                <li>Advanced insights & personalized tips</li>
+                <li>Complete SOS protocol (all 5 phases)</li>
+                <li>50+ food database + custom foods</li>
+                <li>Full gamification & progression</li>
+                <li>Smart recommendations (AI-guided)</li>
+                <li>Deep sensory analytics</li>
+                <li>Pattern detection & insights</li>
+                <li>Therapist export with reports</li>
+                <li>All 4 explorer characters</li>
+                <li><strong>✨ Save $23.88/year</strong></li>
             </ul>
-            <button>Try 7 Days Free</button>
+            <button class="primary-btn">Start 7-Day Free Trial</button>
+            <p class="trial-note">Full access. Cancel anytime. No credit card required.</p>
         </div>
     </div>
+    <p class="pricing-guarantee">✅ <strong>7-day free trial includes everything.</strong> Full premium features. No restrictions. Cancel anytime.</p>
 </section>
 
 <!-- FINAL CTA -->
@@ -1188,11 +1235,12 @@
     </div>
 </footer>
 
-<!-- IMAGE EXPANSION MODAL -->
+<!-- IMAGE & VIDEO EXPANSION MODAL -->
 <div id="imageModal" class="modal">
     <button class="modal-close" onclick="closeModal()">&times;</button>
     <div class="modal-content" id="modalContent">
-        <img id="modalImage" src="" alt="Expanded view">
+        <img id="modalImage" src="" alt="Expanded view" style="display: none;">
+        <video id="modalVideo" controls style="display: none; max-width: 100%; max-height: 80vh;"></video>
     </div>
 </div>
 
@@ -1200,13 +1248,36 @@
 function openModal(imageSrc, altText) {
     const modal = document.getElementById('imageModal');
     const modalImage = document.getElementById('modalImage');
+    const modalVideo = document.getElementById('modalVideo');
+    
+    modalImage.style.display = 'none';
+    modalVideo.style.display = 'none';
+    
     modalImage.src = imageSrc;
     modalImage.alt = altText;
+    modalImage.style.display = 'block';
+    modal.classList.add('active');
+}
+
+function openVideoModal(videoSrc, altText) {
+    const modal = document.getElementById('imageModal');
+    const modalImage = document.getElementById('modalImage');
+    const modalVideo = document.getElementById('modalVideo');
+    
+    modalImage.style.display = 'none';
+    modalVideo.style.display = 'none';
+    
+    modalVideo.src = videoSrc;
+    modalVideo.style.display = 'block';
+    modalVideo.play();
     modal.classList.add('active');
 }
 
 function closeModal() {
     const modal = document.getElementById('imageModal');
+    const modalVideo = document.getElementById('modalVideo');
+    modalVideo.pause();
+    modalVideo.src = '';
     modal.classList.remove('active');
 }
 
@@ -1223,16 +1294,6 @@ document.addEventListener('DOMContentLoaded', function() {
     // Planet icons
     const planetIcons = document.querySelectorAll('.planet-icon img');
     planetIcons.forEach(function(img) {
-        img.style.cursor = 'pointer';
-        img.addEventListener('click', function(e) {
-            e.stopPropagation();
-            openModal(this.src, this.alt);
-        });
-    });
-    
-    // Explorer images
-    const explorerImages = document.querySelectorAll('.explorer-image img');
-    explorerImages.forEach(function(img) {
         img.style.cursor = 'pointer';
         img.addEventListener('click', function(e) {
             e.stopPropagation();
