@@ -606,6 +606,95 @@
             font-size: 0.95em;
         }
         
+        /* PARENT INTELLIGENCE */
+        .parent-intelligence {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 80px 40px;
+        }
+        
+        .parent-intelligence h2 {
+            color: white;
+            margin-bottom: 15px;
+        }
+        
+        .section-subtitle {
+            font-size: 1.2em;
+            opacity: 0.95;
+            max-width: 700px;
+            margin: 0 auto 60px;
+            text-align: center;
+            line-height: 1.6;
+        }
+        
+        .intelligence-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 40px;
+            max-width: 1200px;
+            margin: 0 auto 60px;
+        }
+        
+        .intelligence-card {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 40px;
+            border-radius: 12px;
+            border: 2px solid rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+            transition: all 0.3s ease;
+        }
+        
+        .intelligence-card:hover {
+            background: rgba(255, 255, 255, 0.15);
+            border-color: rgba(255, 255, 255, 0.4);
+            transform: translateY(-5px);
+        }
+        
+        .intelligence-card h3 {
+            font-size: 1.4em;
+            margin-bottom: 12px;
+            color: white;
+        }
+        
+        .intelligence-card p {
+            font-size: 0.95em;
+            line-height: 1.7;
+            margin-bottom: 12px;
+        }
+        
+        .intelligence-card p:last-child {
+            margin-bottom: 0;
+        }
+        
+        .intelligence-card strong {
+            color: #d4af37;
+            font-weight: 600;
+        }
+        
+        .intelligence-cta {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 40px;
+            border-radius: 12px;
+            border: 2px solid rgba(255, 255, 255, 0.2);
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+            font-size: 1.05em;
+            line-height: 1.8;
+        }
+        
+        @media (max-width: 768px) {
+            .intelligence-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+                margin-bottom: 40px;
+            }
+            
+            .parent-intelligence {
+                padding: 50px 20px;
+            }
+        }
+        
         /* PRICING */
         .pricing {
             background: #f9f9f9;
@@ -1015,6 +1104,36 @@
     </div>
 </section>
 
+<!-- PARENT INTELLIGENCE -->
+<section class="parent-intelligence" id="insights">
+    <h2>Parent Intelligence: Unlock Advanced Insights</h2>
+    <p class="section-subtitle">Go beyond gaming. Get AI-powered recommendations that help your child try new foods with science-backed confidence.</p>
+    
+    <div class="intelligence-grid">
+        <div class="intelligence-card">
+            <h3>🎯 Smart Recommendations</h3>
+            <p><strong>Your personal guide to what's next.</strong></p>
+            <p>Our AI learns your child's progress patterns and suggests the perfect next foods—ones they're genuinely ready for, based on sensory preferences they've already discovered. No more guessing. Just strategic progression.</p>
+        </div>
+        
+        <div class="intelligence-card">
+            <h3>📊 Deep Analytics</h3>
+            <p><strong>Understand the complete picture.</strong></p>
+            <p>See exactly how your child progresses. Visual timelines show texture, flavor, and temperature patterns. Real charts. Real data. Real progress. Perfect for conversations with therapists, doctors, and family who want to understand what's working.</p>
+        </div>
+        
+        <div class="intelligence-card">
+            <h3>🔍 Pattern Detection</h3>
+            <p><strong>Discover what actually works.</strong></p>
+            <p>The system identifies hidden patterns—like "your child consistently prefers cool, soft foods" or "they're ready for salty tastes." These insights become your roadmap, turning guesswork into strategy.</p>
+        </div>
+    </div>
+    
+    <div class="intelligence-cta">
+        <p><strong>Premium unlocks the therapist-grade insights that help parents become confident guides.</strong> Watch your child progress with clarity. Know exactly why each milestone matters.</p>
+    </div>
+</section>
+
 <!-- PRICING -->
 <section class="pricing" id="pricing">
     <h2>Simple Pricing</h2>
@@ -1036,14 +1155,14 @@
         <div class="pricing-card featured">
             <h3>Premium</h3>
             <div class="price">$4.99<span>/month</span></div>
-            <p>Everything free, plus parent intelligence tools.</p>
+            <p>Full SOS protocol + AI-powered parent intelligence to understand what works.</p>
             <ul class="pricing-features">
                 <li>Everything in Free</li>
-                <li>Sensory profile analytics</li>
-                <li>Smart recommendations engine</li>
-                <li>Therapist export (PDF)</li>
-                <li>Regression pattern detection</li>
-                <li>Advanced insights & tips</li>
+                <li>Smart recommendations (AI-guided progression)</li>
+                <li>Deep sensory analytics (visualize patterns)</li>
+                <li>Pattern detection (discover what works)</li>
+                <li>Therapist export with full reports</li>
+                <li>Advanced insights & personalized tips</li>
             </ul>
             <button>Try 7 Days Free</button>
         </div>
