@@ -1,7 +1,4 @@
 {
-  "buildCommand": "echo 'static site'",
-  "outputDirectory": ".",
-  "public": true,
   "rewrites": [
     { "source": "/aurora", "destination": "/aurora.html" },
     { "source": "/consulting", "destination": "/consulting.html" },
@@ -9,25 +6,5 @@
     { "source": "/tesla", "destination": "/tesla.html" },
     { "source": "/rork", "destination": "/rork/index.html" }
   ],
-  "trailingSlash": false,
-  "headers": [
-    {
-      "source": "/rork/(.*)",
-      "headers": [
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=3600"
-        }
-      ]
-    },
-    {
-      "source": "/(.*)",
-      "headers": [
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=86400"
-        }
-      ]
-    }
-  ]
+  "trailingSlash": false
 }
