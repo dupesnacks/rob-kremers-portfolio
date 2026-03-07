@@ -3,8 +3,8 @@
     { "source": "/aurora", "destination": "/aurora.html" },
     { "source": "/consulting", "destination": "/consulting.html" },
     { "source": "/teslasales", "destination": "/teslasales.html" },
-    { "source": "/tesla", "destination": "/tesla.html" }
+    { "source": "/tesla", "destination": "/tesla.html" },
+    { "source": "/rork", "destination": "/rork.html" }
   ],
-  "cleanUrls": true,
   "trailingSlash": false
 }
