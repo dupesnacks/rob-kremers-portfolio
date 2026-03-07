@@ -93,13 +93,30 @@
         }
 
         .container {
-            max-width: 800px;
+            max-width: 1400px;
             margin: 0 auto;
             padding: 0 40px;
         }
 
         section {
             margin-bottom: 80px;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 60px;
+        }
+
+        section.two-col {
+            grid-template-columns: 1fr 1fr;
+            align-items: start;
+        }
+
+        section.two-col > *:nth-child(1) {
+            grid-column: 1;
+        }
+
+        section.two-col > *:nth-child(n+2) {
+            grid-column: 2;
+            grid-row: 1 / span 10;
         }
 
         section h2 {
@@ -214,13 +231,30 @@
         }
 
         .ps {
-            background: linear-gradient(135deg, #fafbff 0%, #f0f4ff 100%);
-            padding: 40px;
+            display: none;
+        }
+
+        .content-left {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+        }
+
+        .content-right {
+            position: sticky;
+            top: 40px;
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+        }
+
+        .insight-panel {
+            background: linear-gradient(135deg, #f0f4ff 0%, #f5f0ff 100%);
+            padding: 32px;
             border-radius: 12px;
-            margin-top: 60px;
-            border: 2px solid #6b7bff;
-            font-style: italic;
+            border-left: 4px solid #6b7bff;
             box-shadow: 0 8px 24px rgba(107, 123, 255, 0.1);
+            flex-shrink: 0;
         }
 
         footer {
@@ -257,9 +291,23 @@
         .app-showcase {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 24px;
+            gap: 32px;
             margin: 48px 0;
-            align-items: center;
+            align-items: start;
+        }
+
+        section.builder-story {
+            grid-template-columns: 1fr 1.2fr;
+        }
+
+        section.builder-story .content-left {
+            grid-column: 1;
+        }
+
+        section.builder-story .app-showcase {
+            grid-column: 2;
+            grid-template-columns: 1fr;
+            margin: 0;
         }
 
         .app-screenshot {
@@ -285,6 +333,14 @@
             .app-showcase {
                 grid-template-columns: 1fr;
             }
+
+            section.builder-story {
+                grid-template-columns: 1fr;
+            }
+
+            .content-right {
+                position: static;
+            }
         }
 
         @media (max-width: 768px) {
@@ -308,8 +364,20 @@
                 font-size: 24px;
             }
 
+            section {
+                gap: 30px;
+            }
+
             p {
                 font-size: 15px;
+            }
+
+            section.builder-story {
+                grid-template-columns: 1fr;
+            }
+
+            .content-right {
+                position: static;
             }
         }
     </style>
@@ -347,78 +415,78 @@
         </section>
 
         <!-- The Builder Story -->
-        <section>
-            <div class="section-number">03. The Builder Story</div>
-            <h2>Building for My Daughter</h2>
-            <p>One of the apps I'm currently building is a passion project for my family.</p>
-            <p>My seven-year-old daughter has celiac disease.</p>
-            <p>There are several apps that help people navigate gluten-free eating, but most focus on restaurants or crowdsourced information. None solve the simplest problem: <strong>Where can I quickly buy food that I know is 100% gluten-free?</strong></p>
-            
-            <div class="highlight">
-                <p><strong>Here's the idea:</strong> Open the app. Find safe snacks. Buy them. That's it. Everything listed is certified gluten-free. No guessing. No surprises.</p>
+        <section class="builder-story">
+            <div class="content-left">
+                <div>
+                    <div class="section-number">03. The Builder Story</div>
+                    <h2>Building for My Daughter</h2>
+                    <p>One of the apps I'm currently building is a passion project for my family.</p>
+                    <p>My seven-year-old daughter has celiac disease.</p>
+                    <p>There are several apps that help people navigate gluten-free eating, but most focus on restaurants or crowdsourced information. None solve the simplest problem: <strong>Where can I quickly buy food that I know is 100% gluten-free?</strong></p>
+                    
+                    <div class="highlight">
+                        <p><strong>Here's the idea:</strong> Open the app. Find safe snacks. Buy them. That's it. Everything listed is certified gluten-free. No guessing. No surprises.</p>
+                    </div>
+
+                    <p>About a year ago I asked a developer what it would take to build something like this.</p>
+                    <p><strong>Their estimate: $80,000 and several months just to launch an MVP.</strong></p>
+                    <p><strong>With Rork, I'm building it myself. I'll likely have a working MVP in days, not months.</strong></p>
+
+                    <h3>Why This Matters</h3>
+                    <p>I have zero coding background. My whole career: brand stuff, messaging, figuring out how to explain complex things simply.</p>
+                    <p>Tried a few AI tools last year. They're... fine. But Rork is different.</p>
+                    <p><strong>I can actually build this myself. Not with a developer's help. Not learning to code. Just me, an idea, and Rork.</strong></p>
+                </div>
             </div>
 
             <div class="app-showcase">
                 <img src="/rork/dupe-snacks-1.png" alt="Dupe Snacks - Browse gluten-free snacks and chips" class="app-screenshot">
                 <img src="/rork/dupe-snacks-2.png" alt="Dupe Snacks - Product detail with gluten-free certification and buy button" class="app-screenshot">
-            </div>
-
-            <p>About a year ago I asked a developer what it would take to build something like this.</p>
-            <p><strong>Their estimate: $80,000 and several months just to launch an MVP.</strong></p>
-            <p><strong>With Rork, I'm building it myself. I'll likely have a working MVP in days, not months.</strong></p>
-
-            <h3>Why This Matters</h3>
-            <p>I have zero coding background. My whole career: brand stuff, messaging, figuring out how to explain complex things simply.</p>
-            <p>Tried a few AI tools last year. They're... fine. But Rork is different.</p>
-            <p><strong>I can actually build this myself. Not with a developer's help. Not learning to code. Just me, an idea, and Rork.</strong></p>
-            <p style="margin-top: 24px; padding-top: 24px; border-top: 1px solid #e5e5e5; font-style: italic; color: #666;">That's the shift. No developer. No coding. No months. Just a builder and Rork.</p>
-
-            <div class="insight-box">
-                <p><strong>The insight:</strong> Rork isn't just making developers faster. It's creating an entirely new class of builders.</p>
+                <div class="insight-panel">
+                    <p><strong>The insight:</strong> Rork isn't just making developers faster. It's creating an entirely new class of builders.</p>
+                </div>
             </div>
         </section>
 
         <!-- Second Builder Story: Flavor Galaxy -->
-        <section>
-            <div class="section-number">03b. Another Builder Story</div>
-            <h2>From One App to Two</h2>
-            <p>While building Dupe Snacks, I started thinking about another problem: <strong>How do you help kids expand their palate when they have selective eating patterns?</strong></p>
-            <p>Real problem: Kids with sensory sensitivities get stuck eating the same 5 foods. Trying anything new feels impossible.</p>
-            
-            <div class="highlight">
-                <p><strong>The idea:</strong> A game that turns eating into an adventure. Explore zones, unlock stuff, get recommendations based on what your kid actually likes.</p>
-                <p style="margin-top: 12px;"><strong>The trick: "Bridge foods."</strong> We suggest foods that are similar to what they already eat (familiar flavors/textures) but introduce one new thing. Food science meets psychology meets game design.</p>
+        <section class="builder-story">
+            <div class="content-left">
+                <div>
+                    <div class="section-number">03b. Another Builder Story</div>
+                    <h2>From One App to Two</h2>
+                    <p>While building Dupe Snacks, I started thinking about another problem: <strong>How do you help kids expand their palate when they have selective eating patterns?</strong></p>
+                    <p>Real problem: Kids with sensory sensitivities get stuck eating the same 5 foods. Trying anything new feels impossible.</p>
+                    
+                    <div class="highlight">
+                        <p><strong>The idea:</strong> A game that turns eating into an adventure. Explore zones, unlock stuff, get recommendations based on what your kid actually likes.</p>
+                        <p style="margin-top: 12px;"><strong>The trick: "Bridge foods."</strong> We suggest foods that are similar to what they already eat (familiar flavors/textures) but introduce one new thing. Food science meets psychology meets game design.</p>
+                    </div>
+
+                    <h3>The Feature Set</h3>
+                    <p><strong>Feature set:</strong></p>
+                    <ul style="margin-left: 20px; margin-bottom: 24px;">
+                        <li><strong>Sensory Profiles:</strong> Tracks what textures/flavors the kid actually likes</li>
+                        <li><strong>Smart Recommendations:</strong> AI suggests the next food based on their preferences</li>
+                        <li><strong>Gamification:</strong> Quests, badges, streaks, progression. Makes it fun.</li>
+                        <li><strong>Parent Dashboard:</strong> See what your kid is exploring, what they're ready for next</li>
+                        <li><strong>Community:</strong> Challenges with other kids using the app</li>
+                    </ul>
+
+                    <h3>Why This Matters</h3>
+                    <p>This is way more complex than Dupe Snacks. AI recommendations, multi-player gamification, parent-child accounts, analytics, behavioral design. The stuff you'd normally need a team for.</p>
+                    <p>Building it the same way: with Rork, no coding, moving fast.</p>
+                </div>
             </div>
 
             <div class="app-showcase">
                 <img src="/rork/flavor-galaxy-1.png" alt="Flavor Galaxy - Journey map with Base Camp and Sensory Grove exploration zones" class="app-screenshot">
                 <img src="/rork/flavor-galaxy-2.png" alt="Flavor Galaxy - Analytics dashboard showing kid's sensory profile and food strengths" class="app-screenshot">
-            </div>
-
-            <h3>The Feature Set</h3>
-            <p><strong>Feature set:</strong></p>
-            <ul style="margin-left: 20px; margin-bottom: 24px;">
-                <li><strong>Sensory Profiles:</strong> Tracks what textures/flavors the kid actually likes</li>
-                <li><strong>Smart Recommendations:</strong> AI suggests the next food based on their preferences</li>
-                <li><strong>Gamification:</strong> Quests, badges, streaks, progression. Makes it fun.</li>
-                <li><strong>Parent Dashboard:</strong> See what your kid is exploring, what they're ready for next</li>
-                <li><strong>Community:</strong> Challenges with other kids using the app</li>
-            </ul>
-
-            <div class="app-showcase">
                 <img src="/rork/flavor-galaxy-3.png" alt="Flavor Galaxy - Smart recommendations for bridge foods with personalized suggestions" class="app-screenshot">
                 <img src="/rork/flavor-galaxy-4.png" alt="Flavor Galaxy - Food quest challenge with match/bridge/confidence scoring" class="app-screenshot">
+                <div class="insight-panel">
+                    <p><strong>The point:</strong> This isn't just speed. It's complexity. I can build sophisticated products that would need a whole team. Solo. Rork makes that possible.</p>
+                </div>
             </div>
-
-            <h3>Why This Matters</h3>
-            <p>This is way more complex than Dupe Snacks. AI recommendations, multi-player gamification, parent-child accounts, analytics, behavioral design. The stuff you'd normally need a team for.</p>
-            <p>Building it the same way: with Rork, no coding, moving fast.</p>
-            
-            <div class="insight-box">
-                <p><strong>The point:</strong> This isn't just speed. It's complexity. I can build sophisticated products that would need a whole team. Solo. Rork makes that possible.</p>
-            </div>
-
-            <p style="margin-top: 24px; padding-top: 24px; border-top: 1px solid #e5e5e5; font-style: italic; color: #666;">Two apps. Two different problems. Two different complexity levels. All Rorked.</p>
         </section>
 
         <!-- The Insight -->
@@ -530,20 +598,11 @@
             <p>If this resonates, let's talk.</p>
         </section>
 
-        <!-- PS -->
-        <section>
-            <div class="ps">
-                <p><strong>PS:</strong> This page is proof. Built it with Rork in a few hours.</p>
-                <p>The screenshots are real apps I'm building: Dupe Snacks (e-commerce, simple) and Flavor Galaxy (gamified, complex). Both Rorked. Both solving actual problems.</p>
-                <p style="margin-top: 12px;">If you want to see what happens when anyone can build, let's talk.</p>
-                <p style="margin-top: 16px;"><strong>Campaign URL:</strong> robkremers.com/rork</p>
-            </div>
-        </section>
     </div>
 
     <footer>
-        <p>Built for the Rork team | Campaign URL: <strong>robkremers.com/rork</strong></p>
-        <p style="margin-top: 12px; font-size: 12px; color: #999;">This page was Rorked. Takes about an hour to build something like this from scratch.</p>
+        <p>Built for the Rork team</p>
+        <p style="margin-top: 12px; font-size: 12px; color: #999;">Let's talk about making Rork a verb.</p>
     </footer>
 </body>
 </html>
