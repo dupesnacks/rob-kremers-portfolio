@@ -3,7 +3,19 @@
     { "source": "/aurora", "destination": "/aurora.html" },
     { "source": "/consulting", "destination": "/consulting.html" },
     { "source": "/teslasales", "destination": "/teslasales.html" },
-    { "source": "/tesla", "destination": "/tesla.html" }
+    { "source": "/tesla", "destination": "/tesla.html" },
+    { "source": "/rorked", "destination": "/rorked/index.html" }
   ],
-  "trailingSlash": false
+  "trailingSlash": false,
+  "headers": [
+    {
+      "source": "/rorked/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=3600"
+        }
+      ]
+    }
+  ]
 }
