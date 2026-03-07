@@ -1,4 +1,7 @@
 {
+  "buildCommand": "echo 'static site'",
+  "outputDirectory": ".",
+  "public": true,
   "rewrites": [
     { "source": "/aurora", "destination": "/aurora.html" },
     { "source": "/consulting", "destination": "/consulting.html" },
@@ -14,6 +17,15 @@
         {
           "key": "Cache-Control",
           "value": "public, max-age=3600"
+        }
+      ]
+    },
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=86400"
         }
       ]
     }
