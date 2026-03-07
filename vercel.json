@@ -4,12 +4,12 @@
     { "source": "/consulting", "destination": "/consulting.html" },
     { "source": "/teslasales", "destination": "/teslasales.html" },
     { "source": "/tesla", "destination": "/tesla.html" },
-    { "source": "/rorked", "destination": "/rorked/index.html" }
+    { "source": "/rork", "destination": "/rork/index.html" }
   ],
   "trailingSlash": false,
   "headers": [
     {
-      "source": "/rorked/(.*)",
+      "source": "/rork/(.*)",
       "headers": [
         {
           "key": "Cache-Control",
