@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rork Should Become a Verb</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', sans-serif;
+            line-height: 1.6;
+            color: #1a1a1a;
+            background: white;
+        }
+
+        .page-notice {
+            background: #f5f5f5;
+            padding: 12px 0;
+            text-align: center;
+            font-size: 13px;
+            color: #666;
+            border-bottom: 1px solid #e5e5e5;
+        }
+
+        header {
+            background: linear-gradient(135deg, #0f0f0f 0%, #1a1a1a 100%);
+            color: white;
+            padding: 80px 40px;
+            text-align: center;
+            margin: 40px 0 60px 0;
+        }
+
+        header h1 {
+            font-size: 52px;
+            font-weight: 700;
+            margin-bottom: 16px;
+            letter-spacing: -0.5px;
+        }
+
+        header .subheadline {
+            font-size: 24px;
+            font-weight: 300;
+            color: #e5e5e5;
+            margin-bottom: 12px;
+        }
+
+        header .support-line {
+            font-size: 16px;
+            color: #b3b3b3;
+            margin-bottom: 24px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        header .closing {
+            font-size: 16px;
+            color: #e5e5e5;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 40px;
+        }
+
+        section {
+            margin-bottom: 80px;
+        }
+
+        section h2 {
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 32px;
+            color: #0f0f0f;
+        }
+
+        section h3 {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 16px;
+            color: #1a1a1a;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.8;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .highlight {
+            background: #fffbea;
+            border-left: 4px solid #0f0f0f;
+            padding: 20px;
+            margin: 24px 0;
+            font-size: 16px;
+            line-height: 1.8;
+        }
+
+        .insight-box {
+            background: #f5f5f5;
+            padding: 32px;
+            border-radius: 8px;
+            margin: 32px 0;
+            border-left: 4px solid #0f0f0f;
+        }
+
+        .insight-box p {
+            margin-bottom: 12px;
+        }
+
+        .stat {
+            display: inline-block;
+            background: #0f0f0f;
+            color: white;
+            padding: 8px 16px;
+            border-radius: 4px;
+            font-weight: 600;
+            margin: 8px 8px 8px 0;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: #0f0f0f;
+            color: white;
+            padding: 16px 32px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 16px;
+            margin-top: 20px;
+            border: none;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .cta-button:hover {
+            background: #333;
+        }
+
+        .ps {
+            background: #f9f9f9;
+            padding: 32px;
+            border-radius: 8px;
+            margin-top: 60px;
+            border-top: 2px solid #0f0f0f;
+            font-style: italic;
+        }
+
+        footer {
+            background: #f5f5f5;
+            padding: 40px;
+            text-align: center;
+            color: #666;
+            font-size: 14px;
+            margin-top: 80px;
+        }
+
+        .section-number {
+            color: #999;
+            font-size: 14px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 8px;
+        }
+
+        .app-showcase {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 24px;
+            margin: 48px 0;
+            align-items: center;
+        }
+
+        .app-screenshot {
+            max-width: 100%;
+            height: auto;
+            border-radius: 12px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+            display: block;
+        }
+
+        .app-text {
+            padding: 20px 0;
+        }
+
+        @media (max-width: 1024px) {
+            .app-showcase {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 0 20px;
+            }
+
+            header {
+                padding: 60px 20px;
+            }
+
+            header h1 {
+                font-size: 36px;
+            }
+
+            header .subheadline {
+                font-size: 18px;
+            }
+
+            section h2 {
+                font-size: 24px;
+            }
+
+            p {
+                font-size: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="page-notice">
+        This page was written specifically for the Rork team. It's also a live example of an app being <strong>Rorked.</strong>
+    </div>
+
+    <header>
+        <h1>Amazing Apps Are Being Rorked</h1>
+        <div class="subheadline">Right now Rork is a product. But with the right narrative and growth engine it could become the verb: "I Rorked it."</div>
+        <div class="support-line">The way people say Google it, Uber there, or Venmo me. Apps like Dupe Snacks and Flavor Galaxy prove it: people are building incredible software without writing a line of code.</div>
+        <div class="closing">Below is why I believe that — and how I'd help make it happen.</div>
+    </header>
+
+    <div class="container">
+        <!-- The Open Loop -->
+        <section>
+            <div class="section-number">01. The Open Loop</div>
+            <h2>The Surprising Realization</h2>
+            <p>While experimenting with Rork recently, I realized something surprising.</p>
+            <p>About a year ago I spoke with a developer about building a small app idea. The estimate was <strong>$80,000 and several months of development.</strong></p>
+            <p>Using Rork, I'll likely launch the MVP in a few days.</p>
+            <p style="margin-top: 32px; font-style: italic; color: #666;">The story behind that — and what it reveals about the future of Rork — is below.</p>
+        </section>
+
+        <!-- Quick Context -->
+        <section>
+            <div class="section-number">02. Quick Context</div>
+            <h2>About Me (The Short Version)</h2>
+            <p>I'm a brand and marketing strategist who has spent the last 15 years helping companies build brand systems and launch products.</p>
+            <p><strong>Experience includes:</strong> Nike, adidas, and CreateAI / TuSimple, where I translated highly technical autonomous vehicle and AI technology into narratives for regulators, fleet operators, and customers.</p>
+            <p>Recently I began experimenting with AI product tools. That's when I discovered Rork, and it immediately stood out.</p>
+        </section>
+
+        <!-- The Builder Story -->
+        <section>
+            <div class="section-number">03. The Builder Story</div>
+            <h2>Building for My Daughter</h2>
+            <p>One of the apps I'm currently building is a passion project for my family.</p>
+            <p>My seven-year-old daughter has celiac disease.</p>
+            <p>There are several apps that help people navigate gluten-free eating, but most focus on restaurants or crowdsourced information. None solve the simplest problem: <strong>Where can I quickly buy food that I know is 100% gluten-free?</strong></p>
+            
+            <div class="highlight">
+                <p><strong>The app I'm building is intentionally simple.</strong> You open it, browse snacks and food items, and anything listed can be purchased online with complete confidence that it's gluten-free.</p>
+            </div>
+
+            <div class="app-showcase">
+                <img src="dupe-snacks-1.png" alt="Dupe Snacks - Browse gluten-free snacks and chips" class="app-screenshot">
+                <img src="dupe-snacks-2.png" alt="Dupe Snacks - Product detail with gluten-free certification and buy button" class="app-screenshot">
+            </div>
+
+            <p>About a year ago I asked a developer what it would take to build something like this.</p>
+            <p><strong>Their estimate: $80,000 and several months just to launch an MVP.</strong></p>
+            <p><strong>With Rork, I'm building it myself. I'll likely have a working MVP in days, not months.</strong></p>
+
+            <h3>Why This Matters</h3>
+            <p>What's interesting is that I have no background in coding. My entire career has been in brand and marketing — obsessing over consumer journeys, messaging clarity, information architecture, conversion flow, and simplifying complex experiences.</p>
+            <p>Those instincts translate surprisingly well to building apps.</p>
+            <p>I experimented with a few LLM tools over the past year with limited success. But the moment I started using Rork, it clicked.</p>
+            <p><strong>For the first time, I felt like I could actually build the product myself.</strong></p>
+            <p style="margin-top: 24px; padding-top: 24px; border-top: 1px solid #e5e5e5; font-style: italic; color: #666;">This is what "Rorked" means. No developer. No code. No months of waiting. Just an idea, a problem to solve, and the ability to build it in days.</p>
+
+            <div class="insight-box">
+                <p><strong>The insight:</strong> Rork isn't just making developers faster. It's creating an entirely new class of builders.</p>
+            </div>
+        </section>
+
+        <!-- Second Builder Story: Flavor Galaxy -->
+        <section>
+            <div class="section-number">03b. Another Builder Story</div>
+            <h2>From One App to Two</h2>
+            <p>While building Dupe Snacks, I started thinking about another problem: <strong>How do you help kids expand their palate when they have selective eating patterns?</strong></p>
+            <p>Many kids with sensory sensitivities get stuck in a loop — they eat the same 5-10 foods and feel overwhelmed trying anything new.</p>
+            
+            <div class="highlight">
+                <p><strong>The solution:</strong> A gamified app called <strong>Flavor Galaxy</strong> that turns eating new foods into an adventure. Kids explore different flavor zones, unlock achievements, and get smart recommendations for their next foods based on their sensory profile.</p>
+                <p style="margin-top: 12px;"><strong>The key innovation: "Bridge foods."</strong> Instead of suggesting random new foods, the app recommends foods that share textures or flavors kids already enjoy, but gently introduce new elements. It's backed by food science, sensory psychology, and data — all wrapped in fun game mechanics.</p>
+            </div>
+
+            <div class="app-showcase">
+                <img src="flavor-galaxy-1.png" alt="Flavor Galaxy - Journey map with Base Camp and Sensory Grove exploration zones" class="app-screenshot">
+                <img src="flavor-galaxy-2.png" alt="Flavor Galaxy - Analytics dashboard showing kid's sensory profile and food strengths" class="app-screenshot">
+            </div>
+
+            <h3>The Feature Set</h3>
+            <p><strong>Flavor Galaxy includes:</strong></p>
+            <ul style="margin-left: 20px; margin-bottom: 24px;">
+                <li><strong>Personalized Sensory Profiles</strong> — Tracks texture, flavor, and temperature preferences with AI analysis</li>
+                <li><strong>Smart Bridge Food Recommendations</strong> — Algorithm-powered suggestions based on what they already like</li>
+                <li><strong>Gamification</strong> — Quest mechanics, achievement badges, progress tracking, and streak counters</li>
+                <li><strong>Parent Analytics</strong> — Command center with insights into their child's food strengths and growth areas</li>
+                <li><strong>Community Challenges</strong> — Leaderboards and shared food quests with other kids</li>
+            </ul>
+
+            <div class="app-showcase">
+                <img src="flavor-galaxy-3.png" alt="Flavor Galaxy - Smart recommendations for bridge foods with personalized suggestions" class="app-screenshot">
+                <img src="flavor-galaxy-4.png" alt="Flavor Galaxy - Food quest challenge with match/bridge/confidence scoring" class="app-screenshot">
+            </div>
+
+            <h3>Why This Matters</h3>
+            <p>This app is <em>substantially more complex</em> than Dupe Snacks. It requires personalized AI recommendations, multi-player gamification logic, detailed progress tracking, parent-child account systems, analytics dashboards, and behavioral incentive mechanics.</p>
+            <p>Yet I'm building it the same way — with Rork, no coding background, moving quickly.</p>
+            
+            <div class="insight-box">
+                <p><strong>The meta-insight:</strong> This isn't just about speed. It's about <em>complexity</em>. I can build sophisticated, multi-layered products that would traditionally require a team of developers. Rork makes that possible solo.</p>
+            </div>
+
+            <p style="margin-top: 24px; padding-top: 24px; border-top: 1px solid #e5e5e5; font-style: italic; color: #666;">Two apps. Two different problems. Two different complexity levels. All Rorked.</p>
+        </section>
+
+        <!-- The Insight -->
+        <section>
+            <div class="section-number">04. The Insight</div>
+            <h2>When Products Become Verbs</h2>
+            <p>Every generational product eventually becomes a verb.</p>
+            <p><strong>Examples:</strong></p>
+            <ul style="margin-left: 20px; margin-bottom: 20px;">
+                <li>Google → search</li>
+                <li>Uber → call a ride</li>
+                <li>Photoshop → edit images</li>
+                <li>Zoom → join a meeting</li>
+            </ul>
+            <p style="font-style: italic; color: #666; margin-top: 32px;">The companies that dominate categories don't just sell tools. They create language.</p>
+        </section>
+
+        <!-- The Core Idea -->
+        <section>
+            <div class="section-number">05. The Core Idea</div>
+            <h2>Rork Has the Ingredients</h2>
+            <p><strong>Why does Rork have the potential to become a verb?</strong></p>
+            <ul style="margin-left: 20px; margin-bottom: 24px;">
+                <li><strong>AI removes the barrier to building software</strong> — anyone can now be a builder</li>
+                <li><strong>The market of non-developers is exploding</strong> — millions want to create without coding</li>
+                <li><strong>Speed creates addictive experiences</strong> — the dopamine of launching in days, not months</li>
+                <li><strong>The interface feels magical</strong> — it just works</li>
+            </ul>
+
+            <div class="insight-box">
+                <p><strong>The behavior shift:</strong> "I Rorked it." / "That's so Rorked."</p>
+                <p style="margin-top: 12px;">Instead of hiring a developer, learning to code, or opening Xcode, people simply say: "I built it myself. I Rorked it."</p>
+                <p style="margin-top: 12px;">When friends see an amazing app, they'll ask: "Wait, who built this?" The answer? "I Rorked it."</p>
+            </div>
+        </section>
+
+        <!-- The Brand Opportunity -->
+        <section>
+            <div class="section-number">06. The Brand Opportunity</div>
+            <h2>The Brand Story Isn't About Coding</h2>
+            <p>It's about creation. It's about pride. It's about saying: <strong>"I built this. I Rorked it."</strong></p>
+            <p><strong>Core positioning:</strong> Rork is the fastest way to turn an idea into a working app.</p>
+            <p>Position it not as a developer tool, but as a creation platform.</p>
+            
+            <div class="highlight">
+                <p><strong>The "Rorked" Callout:</strong> Apps and projects built with Rork get a badge: <em>"This was Rorked."</em> It signals quality, speed, and solo-builder credibility.</p>
+            </div>
+
+            <p>The brand story should inspire people to think: "Wait, I could build that myself — I could Rork it."</p>
+        </section>
+
+        <!-- How to Turn Rork Into a Verb -->
+        <section>
+            <div class="section-number">07. How to Turn Rork Into a Verb</div>
+            <h2>The Growth Playbook</h2>
+
+            <h3>Builder Stories - The "Rorked" Series</h3>
+            <p>Show real people building real apps. Example: "I Rorked an app for my daughter in 3 days." Turn these into TikToks, X threads, YouTube shorts, and case studies. The tagline: <strong>"How I Rorked [App Name]."</strong></p>
+
+            <h3>The "Rorked" Behavior</h3>
+            <p>When someone launches an app, the response becomes: "Oh, you Rorked that?" It's a compliment. It signals: solo-built, fast, ambitious, and powered by Rork. Make it aspirational.</p>
+
+            <h3>Founder-Led Narrative</h3>
+            <p>The fastest-growing tech brands often have founders telling the story of the future. Rork's founder can tell the story of the future of software creation.</p>
+
+            <h3>Viral Builder Challenges</h3>
+            <p>Example — "Build an App in 30 Minutes Challenge." Create a competitive, community-driven movement.</p>
+
+            <h3>Community Identity</h3>
+            <p>Give builders a shared identity: "Rorkers." When someone Rorked an app, they're part of an exclusive club of makers.</p>
+
+            <h3>Product-Led Marketing Flywheel</h3>
+            <p>Every app built with Rork displays a badge: <strong>"Rorked"</strong> — a visual marker that says "this was built fast, solo, and with Rork." It becomes a status symbol.</p>
+        </section>
+
+        <!-- The Cultural Moment -->
+        <section>
+            <div class="section-number">08. The Cultural Moment</div>
+            <h2>AI Is Creating a New Generation of Builders</h2>
+            <p>Millions of people will build software who never wrote code before.</p>
+            <p><strong>Rork could become the default tool for that generation.</strong></p>
+            <p>The question isn't whether this happens. It's whether Rork owns the narrative.</p>
+        </section>
+
+        <!-- How I Could Help -->
+        <section>
+            <div class="section-number">09. How I Could Help</div>
+            <h2>Let's Build the Story</h2>
+            <p>I'd love to work with Rork on:</p>
+            <ul style="margin-left: 20px; margin-bottom: 24px;">
+                <li>Brand narrative and positioning</li>
+                <li>Integrated marketing strategy</li>
+                <li>Product storytelling</li>
+                <li>Founder storytelling and voice</li>
+                <li>Builder community growth and engagement</li>
+            </ul>
+
+            <div class="insight-box">
+                <p><strong>Goal:</strong> Make "Rorked" a cultural marker. When someone says "I built this amazing app myself," people's first thought is: "Oh, you Rorked it."</p>
+            </div>
+
+<a href="mailto:rkremers@gmail.com?subject=Let's%20Talk%20About%20Rork%20-%20Rorked%20Campaign" class="cta-button">Let's Talk</a>
+        </section>
+
+        <!-- The Closing -->
+        <section>
+            <div class="section-number">10. The Closing</div>
+            <h2>Products Don't Become Verbs by Accident</h2>
+            <p>It happens when technology and narrative align.</p>
+            <p>Rork already feels like one of those rare products where the technology is ahead of the story.</p>
+            <p><strong>The opportunity now is to build the story.</strong> If any of this resonates, I'd love to talk.</p>
+        </section>
+
+        <!-- PS -->
+        <section>
+            <div class="ps">
+                <p><strong>PS:</strong> I built this landing page itself using Rork. It's a live example of an app being Rorked.</p>
+                <p>The screenshots? That's two real apps I'm building: Dupe Snacks (a simple e-commerce app) and Flavor Galaxy (a complex gamified platform). Both Rorked in days, not months. Both solving real problems for real families.</p>
+                <p style="margin-top: 12px;">If you want to see what's possible when the barrier to building is removed, I'd love to talk.</p>
+                <p style="margin-top: 16px;"><strong>Visit this campaign at:</strong> robkremers.com/rorked</p>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>Built with intention for the Rork team | Campaign URL: <strong>robkremers.com/rorked</strong></p>
+        <p style="margin-top: 12px; font-size: 12px; color: #999;">This landing page was built using Rork in a few hours. It's a live example of the product in action.</p>
+    </footer>
+</body>
+</html>
