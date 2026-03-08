@@ -190,8 +190,8 @@
 </head>
 <body>
     <div class="container">
-        <h1>TFD App Brief & Technical Specification</h1>
-        <p class="subtitle">Single App, Role-Based Access | Patient Portal + Practice Dashboard</p>
+        <h1>TFD iOS App Brief & Technical Specification</h1>
+        <p class="subtitle">Native iOS App | Single App, Role-Based Access | Patient Portal + Practice Dashboard</p>
         
         <!-- KEY ARCHITECTURAL DECISION -->
         <div class="warning">
@@ -468,26 +468,30 @@
         </table>
         
         <!-- TECHNICAL ARCHITECTURE -->
-        <h2>Technical Architecture (Single App)</h2>
+        <h2>Technical Architecture (iOS Native)</h2>
         
         <h3>Backend (Shared)</h3>
-        <pre>Framework: Node.js + Express
+        <pre>Framework: Node.js + Express (or similar REST API)
 Database: PostgreSQL (single database for all roles)
-Auth: JWT tokens + role claims
-APIs: RESTful (same API serves both patient & staff)
-Message Queue: Bull/Redis for SMS/email scheduling</pre>
+Auth: JWT tokens + role claims + refresh tokens
+APIs: RESTful JSON (consumed by iOS)
+Message Queue: Bull/Redis for SMS/email scheduling
+Push Notifications: APNs (Apple Push Notification service) for reminders</pre>
         
-        <h3>Frontend (One Codebase, Different UIs)</h3>
-        <pre>Framework: React or Vue
-Architecture: Role-based conditional rendering
-- Login screen (determine role)
-- Auth context stores role + token
-- Components check role: {user.role === 'patient' && &lt;PatientUI /&gt;}
-- Shared components: Navigation, buttons, modals
-- Role-specific pages: Separate PatientDashboard vs StaffDashboard
-Mobile: PWA (single install, works for all roles)</pre>
+        <h3>Frontend (iOS Native)</h3>
+        <pre>Framework: SwiftUI (modern, declarative UI)
+Architecture: MVVM (Model-View-ViewModel) pattern
+- AppDelegate: Launch logic, APNs setup
+- Login: Phone/SMS for patients, email/password for staff
+- Navigation: TabBar for patients, SideMenu for staff
+- Role-based conditional rendering: NavigationStack changes based on user.role
+- KeyChain: Securely store JWT tokens
+- Offline support: Core Data for local caching
+- Push handling: Receive & display appointment reminders
+iOS Minimum: iOS 14+
+Distribution: Apple App Store</pre>
         
-        <h3>Database (Single Schema)</h3>
+        <h3>Database (Single Schema, Backend Only)</h3>
         <pre>Tables:
 - users (id, phone/email, role, password_hash, created_at)
 - patients (id, user_id, name, dob, insurance, treatment_notes)
@@ -499,60 +503,97 @@ Mobile: PWA (single install, works for all roles)</pre>
 - substitute_hygienists (id, name, phone, is_verified)
 - coverage_alerts (id, staff_id, reason, alert_sent_at, substitute_id)</pre>
         
-        <h3>APIs (Same for Both Roles)</h3>
-        <pre>POST /auth/login → {user, token, role}
+        <h3>APIs (RESTful, Consumed by iOS)</h3>
+        <pre>POST /auth/login → {user, token, refreshToken, role}
+POST /auth/refresh → {newToken}
 GET /api/appointments → Role-based filtering (patient sees own, staff sees all)
 GET /api/patients/:id → Permission check (patient sees self, staff sees all)
 POST /api/messages/send → Role-based (patient can't send, staff can)
-GET /api/dashboard → Role-based dashboard data (patient dashboard ≠ staff dashboard)</pre>
+GET /api/dashboard → Role-based dashboard data (patient dashboard ≠ staff dashboard)
+POST /api/messages/reschedule-request → Patient submits reschedule
+POST /api/notifications/register-device-token → iOS sends APNs token for push</pre>
         
         <!-- DEVELOPMENT PRIORITY -->
-        <h2>What Rork Should Build First: Phase 1 MVP</h2>
+        <h2>What Rork Should Build First: Phase 1 MVP (iOS)</h2>
         
         <div class="section">
-            <h3>Week 1: Auth + Database Setup</h3>
+            <h3>Week 1: Backend Setup + iOS Project Foundation</h3>
             <ul>
-                <li>Create user roles (patient, dentist, ops, hygienist, substitute)</li>
-                <li>Phone-based SMS login for patients (Twilio)</li>
-                <li>Email+password login for staff</li>
-                <li>JWT token generation + role claim</li>
-                <li>Database schema (users, patients, staff, appointments)</li>
-            </ul>
-            
-            <h3>Week 2: Patient Portal + Staff Dashboard (Core Appointment Features)</h3>
-            <ul>
-                <li><strong>Patient Portal:</strong></li>
+                <li><strong>Backend:</strong></li>
                 <ul>
-                    <li>Login with phone</li>
-                    <li>View my appointments</li>
-                    <li>Profile page (name, phone, email)</li>
-                    <li>Mobile-first responsive design</li>
+                    <li>Create user roles (patient, dentist, ops, hygienist, substitute)</li>
+                    <li>Phone-based SMS login for patients (Twilio)</li>
+                    <li>Email+password login for staff</li>
+                    <li>JWT token generation + refresh token flow</li>
+                    <li>Database schema (users, patients, staff, appointments)</li>
                 </ul>
-                <li><strong>Staff Dashboard (Ops):</strong></li>
+                <li><strong>iOS:</strong></li>
                 <ul>
-                    <li>Login with email</li>
-                    <li>Calendar view of all appointments (day/week)</li>
-                    <li>Create new appointment</li>
-                    <li>Mark as no-show/cancel</li>
-                    <li>Basic metrics (today's count, no-show %)</li>
+                    <li>Create Xcode project (SwiftUI, iOS 14+)</li>
+                    <li>Set up project structure (MVVM pattern)</li>
+                    <li>Configure CocoaPods or SPM for dependencies</li>
+                    <li>Create API client (URLSession wrapper for REST calls)</li>
+                    <li>Set up KeyChain for secure token storage</li>
                 </ul>
             </ul>
             
-            <h3>Week 3: SMS Reminders + Reschedule Workflow</h3>
+            <h3>Week 2: Authentication + Core Navigation (Both Roles)</h3>
             <ul>
-                <li>SMS reminder sent 24h before appointment (Twilio)</li>
-                <li>Patient clicks reschedule in portal</li>
-                <li>Patient sees available slots, picks new time</li>
-                <li>Ops gets notification to confirm/approve</li>
-                <li>Appointment updated, patient gets confirmation SMS</li>
+                <li><strong>Patient Login Flow (iOS):</strong></li>
+                <ul>
+                    <li>Phone number entry screen</li>
+                    <li>SMS code verification (Twilio OTP)</li>
+                    <li>Auto-login with token storage in KeyChain</li>
+                    <li>Patient home screen (TabBar navigation)</li>
+                </ul>
+                <li><strong>Staff Login Flow (iOS):</strong></li>
+                <ul>
+                    <li>Email + password entry screen</li>
+                    <li>Login validation + error handling</li>
+                    <li>Staff home screen (SideMenu navigation for Ops/Dentist)</li>
+                </ul>
+                <li><strong>Role-Based Navigation:</strong></li>
+                <ul>
+                    <li>After login, determine role + show appropriate nav stack</li>
+                    <li>Patient: TabBar with Home, Appointments, Consumables, Profile</li>
+                    <li>Staff: SideMenu with Schedule, Coverage, Messages, Dashboard</li>
+                </ul>
             </ul>
             
-            <h3>Testing & Polish</h3>
+            <h3>Week 3: Core Features (Appointments + Reminders)</h3>
             <ul>
-                <li>Unit tests for auth, appointment CRUD, SMS queue</li>
-                <li>Mobile testing (iPhone + Android)</li>
-                <li>Error handling + logging</li>
-                <li>Deployment (Vercel frontend, Railway backend)</li>
+                <li><strong>Patient Appointments (iOS):</strong></li>
+                <ul>
+                    <li>List view of upcoming appointments</li>
+                    <li>Detail view (date, time, provider, notes)</li>
+                    <li>Reschedule button → workflow</li>
+                    <li>APNs integration (receive push 24h before)</li>
+                </ul>
+                <li><strong>Staff Schedule (iOS):</strong></li>
+                <ul>
+                    <li>Calendar view (day/week toggle)</li>
+                    <li>Create appointment modal</li>
+                    <li>Edit/delete appointments</li>
+                    <li>Mark as no-show</li>
+                    <li>Quick metrics widget (today's count, no-show %)</li>
+                </ul>
+                <li><strong>Reschedule Workflow:</strong></li>
+                <ul>
+                    <li>Patient taps "Reschedule" → sees available slots</li>
+                    <li>Patient picks new time → submit request</li>
+                    <li>Ops receives notification (push or in-app)</li>
+                    <li>Appointment synced when approved</li>
+                </ul>
+            </ul>
+            
+            <h3>Testing & App Store Preparation</h3>
+            <ul>
+                <li>Unit tests (auth, API calls, data models)</li>
+                <li>UI tests (login, appointment flow, reschedule)</li>
+                <li>Device testing (iPhone 12, 13, 14+ / iOS 14, 15, 16+)</li>
+                <li>Error handling (network failures, expired tokens, invalid input)</li>
+                <li>App Store setup (Developer Account, bundle ID, certificates)</li>
+                <li>TestFlight build for beta testing with TFD</li>
             </ul>
         </div>
         
@@ -568,38 +609,158 @@ GET /api/dashboard → Role-based dashboard data (patient dashboard ≠ staff da
         </ul>
         
         <!-- ESTIMATED EFFORT -->
-        <h2>Estimated Effort</h2>
+        <h2>Estimated Effort (iOS Native Development)</h2>
         
-        <pre><strong>Phase 1 MVP (3 weeks) - 120 hours</strong>
-Week 1: Auth + Database
-- Backend: 30 hours (user model, JWT, roles, SMS login)
-- Frontend: 10 hours (login UI for both patient & staff)
-- Setup: 5 hours (database, Twilio, deployment config)
+        <pre><strong>Phase 1 MVP (3 weeks) - 130 hours</strong>
 
-Week 2: Appointment Management
-- Backend: 25 hours (appointment CRUD, filtering by role)
-- Frontend: 20 hours (patient portal, staff dashboard, calendar)
+Week 1: Backend + iOS Foundation (45 hours)
+Backend:
+- User roles + database schema: 15 hours
+- Auth endpoints (login, refresh): 10 hours
+- Twilio SMS integration: 5 hours
+- Appointment CRUD APIs: 10 hours
+- App Store setup (certificates, provisioning): 5 hours
 
-Week 3: SMS + Reschedule
-- Backend: 20 hours (Twilio queue, reschedule workflow)
-- Frontend: 10 hours (reschedule UI, confirmation screens)
-- Testing/Deploy: 10 hours
+iOS:
+- Xcode project setup: 5 hours
+- API client layer (URLSession): 8 hours
+- KeyChain integration: 5 hours
+- Core Data for caching: 5 hours
 
-<strong>Phase 2 (3 weeks) - 80 hours</strong>
-- Engagement messages, consumables shop, e-commerce integration
+Week 2: Authentication + Navigation (45 hours)
+iOS:
+- Phone login screen (patient): 8 hours
+- SMS OTP verification UI: 7 hours
+- Email/password login (staff): 5 hours
+- TabBar navigation (patient): 8 hours
+- SideMenu navigation (staff): 8 hours
+- Role-based routing/conditional nav: 9 hours
 
-<strong>Phase 3 (2 weeks) - 60 hours</strong>
-- Coverage alerts, substitute network, auto-reschedule
+Week 3: Appointments + Push Notifications (40 hours)
+iOS:
+- Appointments list screen (patient): 10 hours
+- Appointments detail screen: 5 hours
+- Calendar view (staff): 12 hours
+- Reschedule workflow UI: 8 hours
+- APNs setup + push handling: 8 hours
+- Testing + error handling: 5 hours
 
-<strong>Phase 4 (2 weeks) - 40 hours</strong>
-- Analytics dashboard, reporting
+<strong>Phase 2 (3 weeks) - 85 hours</strong>
+- Engagement messages (in-app + SMS): 25 hours
+- Consumables shop (browse, cart, checkout): 35 hours
+- Stripe integration: 15 hours
+- Core Data syncing: 10 hours
 
-<strong>TOTAL: 10 weeks, ~300 hours</strong></pre>
+<strong>Phase 3 (2 weeks) - 65 hours</strong>
+- Coverage alert notifications: 20 hours
+- Substitute shift acceptance UI: 15 hours
+- Auto-reschedule handling: 15 hours
+- Real-time updates (polling or WebSocket): 15 hours
+
+<strong>Phase 4 (2 weeks) - 45 hours</strong>
+- Analytics dashboard: 25 hours
+- Charts/graphs (using Charts library): 10 hours
+- Reporting export: 10 hours
+
+<strong>TOTAL: 10 weeks, ~325 hours (~8 weeks at 40 hrs/week)</strong>
+
+<strong>iOS-Specific Considerations:</strong>
+- App Store review time: 1-3 days (add to launch timeline)
+- TestFlight beta: 1-2 weeks (before App Store release)
+- Xcode/Swift updates: Occasional compatibility fixes
+- Device testing: iPhone SE, iPhone 12/13/14, iPad (recommended for staff)</pre>
+        
+        <!-- iOS-SPECIFIC DEPENDENCIES & TOOLS -->
+        <h2>iOS-Specific Dependencies & Tools</h2>
+        
+        <h3>Swift Package Manager (SPM) Dependencies</h3>
+        <pre>// Networking & API
+- Alamofire (or URLSession wrapper)
+- Combine framework (async/await for networking)
+
+// Local Storage
+- KeyChain (native, for tokens)
+- Core Data (for offline caching)
+
+// UI Components
+- SwiftUI (native, built-in)
+
+// Push Notifications
+- APNs (native, built-in)
+
+// Payment Processing
+- StripeSDK (for Stripe integration)
+
+// Analytics & Logging
+- Firebase Analytics (optional)
+- Sentry (for error tracking)
+
+// Testing
+- XCTest (native unit testing)
+- Swift Testing framework (iOS 18+)
+- MockURLProtocol (for API testing)</pre>
+        
+        <h3>Development Tools</h3>
+        <pre>Xcode: Latest (15.0+)
+Language: Swift 5.9+
+Deployment Target: iOS 14.0 (max compatibility)
+UI Framework: SwiftUI
+Architecture: MVVM
+State Management: @State, @StateObject, Combine Publishers
+Networking: Combine + URLSession (or Async/Await)</pre>
+        
+        <h3>App Store Distribution</h3>
+        <pre>Process:
+1. Apple Developer Account ($99/year)
+2. Create App ID + Bundle ID
+3. Generate signing certificates (development + distribution)
+4. Create TestFlight build (beta testing)
+5. Submit to App Store Review (1-3 days)
+6. Approval → App Store release
+
+Versioning:
+- Build number: Incremented each test flight build (1, 2, 3...)
+- Version: 1.0.0 (Phase 1 MVP), 1.1.0 (Phase 2), etc.
+
+Review Guidelines:
+- Health/medical app category (dental)
+- HealthKit integration optional (for appointment calendar sync)
+- User data privacy important (HIPAA-adjacent)
+- Test accounts needed for app reviewers</pre>
+        
+        <h3>Offline & Real-Time Sync Strategy</h3>
+        <pre>Offline Support (Phase 1):
+- Core Data stores appointments locally
+- When online, fetch latest from server
+- Reschedule requests queued if offline, sent when online
+
+Real-Time Updates (Phase 3+):
+- Option 1: Polling (every 30s check for coverage alerts)
+- Option 2: WebSocket (persistent connection for instant updates)
+- Push Notifications: Primary trigger for critical alerts (coverage, schedule changes)</pre>
+        
+        <h3>Security Considerations (iOS)</h3>
+        <pre>Token Management:
+- JWT stored in KeyChain (encrypted by OS)
+- Refresh token flow (short-lived access token)
+- Automatic refresh on 401 response
+
+HTTPS Only:
+- Force HTTPS in URLSessionConfiguration
+- Certificate pinning (optional, for extra security)
+
+Biometric Auth (Recommended for Phase 2+):
+- Face ID / Touch ID for faster re-auth
+- Fallback to password if device doesn't support biometrics
+
+App Transport Security:
+- Disable localhost only (for local API testing)
+- Enforce ATS for production</pre>
         
         <!-- FOOTER -->
         <div class="footer">
-            <p>TFD App Brief & Technical Specification</p>
-            <p>Single App, Role-Based Access Architecture</p>
+            <p>TFD iOS App Brief & Technical Specification</p>
+            <p>Native iOS | Single App, Role-Based Access Architecture</p>
             <p>Built for Thomas Family Dentistry MVP</p>
             <p style="margin-top: 15px;"><a href="/tfd" class="back-link">← Back to TFD overview</a></p>
         </div>
