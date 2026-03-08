@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thomas Family Dentistry MVP Platform</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f8f9fa;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            padding: 60px 40px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+        
+        h1 {
+            color: #0066cc;
+            font-size: 2.8em;
+            margin-bottom: 15px;
+            border-bottom: 3px solid #0066cc;
+            padding-bottom: 20px;
+        }
+        
+        .subtitle {
+            font-size: 1.3em;
+            color: #666;
+            margin-bottom: 10px;
+            font-style: italic;
+        }
+        
+        .location {
+            color: #888;
+            font-size: 1.1em;
+            margin-bottom: 30px;
+        }
+        
+        h2 {
+            color: #0066cc;
+            font-size: 1.8em;
+            margin-top: 45px;
+            margin-bottom: 20px;
+            border-left: 4px solid #0066cc;
+            padding-left: 15px;
+        }
+        
+        h3 {
+            color: #333;
+            font-size: 1.3em;
+            margin-top: 25px;
+            margin-bottom: 15px;
+        }
+        
+        .hero-box {
+            background: linear-gradient(135deg, #0066cc 0%, #004399 100%);
+            color: white;
+            padding: 40px;
+            border-radius: 8px;
+            margin: 30px 0;
+        }
+        
+        .hero-box h2 {
+            color: white;
+            border-left: 4px solid white;
+            margin-top: 0;
+        }
+        
+        .hero-box p {
+            font-size: 1.1em;
+            line-height: 1.8;
+            margin: 15px 0;
+        }
+        
+        .problem-box {
+            background: #fff3cd;
+            border-left: 5px solid #ffc107;
+            padding: 25px;
+            margin: 25px 0;
+            border-radius: 4px;
+        }
+        
+        .problem-box h3 {
+            color: #856404;
+            margin-top: 0;
+        }
+        
+        .solution-box {
+            background: #d4edda;
+            border-left: 5px solid #28a745;
+            padding: 25px;
+            margin: 25px 0;
+            border-radius: 4px;
+        }
+        
+        .solution-box h3 {
+            color: #155724;
+            margin-top: 0;
+        }
+        
+        ul, ol {
+            margin: 15px 0 15px 25px;
+        }
+        
+        li {
+            margin-bottom: 10px;
+            line-height: 1.7;
+        }
+        
+        .feature-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 25px;
+            margin: 30px 0;
+        }
+        
+        .feature-card {
+            background: #f9f9f9;
+            border: 2px solid #e0e0e0;
+            border-radius: 6px;
+            padding: 25px;
+            transition: all 0.3s;
+        }
+        
+        .feature-card:hover {
+            border-color: #0066cc;
+            box-shadow: 0 4px 12px rgba(0,102,204,0.15);
+        }
+        
+        .feature-card h4 {
+            color: #0066cc;
+            font-size: 1.1em;
+            margin-bottom: 12px;
+        }
+        
+        .feature-card p {
+            color: #666;
+            font-size: 0.95em;
+            line-height: 1.6;
+        }
+        
+        .benefit-section {
+            margin: 30px 0;
+        }
+        
+        .benefit-item {
+            background: #f0f7ff;
+            padding: 20px;
+            margin: 15px 0;
+            border-radius: 4px;
+            border-left: 4px solid #0066cc;
+        }
+        
+        .benefit-item strong {
+            color: #0066cc;
+            display: block;
+            margin-bottom: 5px;
+        }
+        
+        .timeline {
+            background: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            padding: 30px;
+            margin: 30px 0;
+        }
+        
+        .timeline-item {
+            margin: 25px 0;
+            padding-left: 30px;
+            position: relative;
+        }
+        
+        .timeline-item:before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 5px;
+            width: 12px;
+            height: 12px;
+            background: #0066cc;
+            border-radius: 50%;
+            border: 3px solid white;
+            box-shadow: 0 0 0 2px #0066cc;
+        }
+        
+        .timeline-item h4 {
+            color: #0066cc;
+            margin-bottom: 5px;
+        }
+        
+        .timeline-item p {
+            color: #666;
+            font-size: 0.95em;
+        }
+        
+        .cta-section {
+            background: #e8f4f8;
+            border: 2px solid #0066cc;
+            border-radius: 6px;
+            padding: 35px;
+            margin: 40px 0;
+            text-align: center;
+        }
+        
+        .cta-section h3 {
+            color: #0066cc;
+            margin-top: 0;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background: #0066cc;
+            color: white;
+            padding: 14px 32px;
+            text-decoration: none;
+            border-radius: 4px;
+            margin-top: 15px;
+            font-weight: 600;
+            font-size: 1.05em;
+            transition: background 0.3s;
+        }
+        
+        .cta-button:hover {
+            background: #0052a3;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-size: 0.95em;
+        }
+        
+        th {
+            background: #0066cc;
+            color: white;
+            padding: 12px;
+            text-align: left;
+            font-weight: 600;
+        }
+        
+        td {
+            border-bottom: 1px solid #ddd;
+            padding: 12px;
+        }
+        
+        tr:nth-child(even) {
+            background: #f9f9f9;
+        }
+        
+        .stat {
+            display: inline-block;
+            background: #f0f7ff;
+            padding: 15px 25px;
+            margin: 10px 15px 10px 0;
+            border-radius: 4px;
+            border-left: 4px solid #0066cc;
+        }
+        
+        .stat strong {
+            color: #0066cc;
+            font-size: 1.2em;
+        }
+        
+        .quote {
+            background: #f9f9f9;
+            border-left: 4px solid #0066cc;
+            padding: 25px;
+            margin: 25px 0;
+            font-style: italic;
+            color: #666;
+        }
+        
+        .emoji {
+            margin-right: 8px;
+        }
+        
+        .footer {
+            margin-top: 50px;
+            padding-top: 30px;
+            border-top: 2px solid #ddd;
+            text-align: center;
+            color: #888;
+            font-size: 0.9em;
+        }
+        
+        .back-link {
+            color: #0066cc;
+            text-decoration: none;
+            font-weight: 600;
+            margin-top: 20px;
+            display: inline-block;
+        }
+        
+        .back-link:hover {
+            text-decoration: underline;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 30px 20px;
+            }
+            
+            h1 {
+                font-size: 2em;
+            }
+            
+            h2 {
+                font-size: 1.4em;
+            }
+            
+            .feature-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .hero-box {
+                padding: 25px;
+            }
+            
+            .hero-box h2 {
+                font-size: 1.5em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1><span class="emoji">🦷</span>Thomas Family Dentistry</h1>
+        <p class="subtitle">Patient Engagement & Practice Management MVP</p>
+        <p class="location">Beaverton, Oregon</p>
+        
+        <!-- HERO SECTION -->
+        <div class="hero-box">
+            <h2><span class="emoji">💡</span>The Opportunity</h2>
+            <p>A small practice management platform purpose-built for <strong>4-person dental teams</strong> to:</p>
+            <ul style="margin-top: 15px; margin-bottom: 0;">
+                <li><strong>Keep patients engaged</strong> between visits with automated reminders & follow-ups</li>
+                <li><strong>Handle coverage gaps</strong> when the hygienist is out sick (on-call marketplace)</li>
+                <li><strong>Reduce no-shows</strong> through intelligent scheduling & patient alerts</li>
+                <li><strong>Simplify operations</strong> for the wife/ops manager</li>
+                <li><strong>Drive consumables revenue</strong> (whitening, retainers, care products) directly through the practice</li>
+            </ul>
+        </div>
+        
+        <!-- CURRENT PROBLEMS -->
+        <h2><span class="emoji">⚠️</span>The Current Problems</h2>
+        
+        <div class="problem-box">
+            <h3>Problem 1: Hygienist Coverage Gaps</h3>
+            <p><strong>The Issue:</strong> When your wife or the hygienist is sick, there's no easy way to find a substitute. This means:</p>
+            <ul>
+                <li>Patients have to be rescheduled (creates friction, some don't return)</li>
+                <li>Practice loses $200-400/day in hygiene revenue</li>
+                <li>Wife spends hours on the phone trying to find coverage</li>
+                <li>Patients get frustrated with the back-and-forth</li>
+            </ul>
+            <p><strong>The Data:</strong> ~15% of healthcare workers call out sick per year. For a 1-person hygiene team, that's ~50+ days of potential coverage gaps.</p>
+        </div>
+        
+        <div class="problem-box">
+            <h3>Problem 2: Scheduling & Rescheduling Chaos</h3>
+            <p><strong>The Issue:</strong> When the wife is late or unavailable to answer calls:</p>
+            <ul>
+                <li>Patients can't reach the office (lost appointments/revenue)</li>
+                <li>Manual rescheduling is slow and error-prone</li>
+                <li>No visibility into who called or what they wanted</li>
+                <li>Staff has to remember who needs to reschedule</li>
+            </ul>
+            <p><strong>The Impact:</strong> Average dental practice loses 10-15% of potential revenue to no-shows and rescheduling friction.</p>
+        </div>
+        
+        <div class="problem-box">
+            <h3>Problem 3: Patient Engagement (The MARLO Angle)</h3>
+            <p><strong>The Issue:</strong> Patients don't remember when to come back. They either:</p>
+            <ul>
+                <li>Forget to schedule their 6-month cleaning (practice loses recurring revenue)</li>
+                <li>Buy whitening/care products from Amazon instead of the practice</li>
+                <li>Get their retainers from mail-order companies</li>
+                <li>Switch to a "friendly" DSO chain because they feel more engaged</li>
+            </ul>
+            <p><strong>The Opportunity:</strong> Automated engagement keeps patients in YOUR orbit. They buy from you. They show up. They refer friends.</p>
+        </div>
+        
+        <!-- THE SOLUTION -->
+        <h2><span class="emoji">✅</span>The MVP Solution</h2>
+        
+        <div class="solution-box">
+            <h3>An Integrated Platform Built for Small Teams</h3>
+            <p>A simple, mobile-first app that handles the 3 biggest pain points:</p>
+        </div>
+        
+        <div class="feature-grid">
+            <div class="feature-card">
+                <h4><span class="emoji">📞</span>Smart Scheduling & Coverage</h4>
+                <p><strong>Auto-Find Substitute Hygienists</strong></p>
+                <p style="margin-top: 15px;">When someone calls out:</p>
+                <ul style="margin-top: 10px;">
+                    <li>System automatically alerts pre-vetted substitute hygienists in the local network</li>
+                    <li>First to accept gets the shift</li>
+                    <li>Patients are automatically rescheduled or notified (not the wife's job)</li>
+                    <li>Practice keeps $300+ that would be lost revenue</li>
+                </ul>
+            </div>
+            
+            <div class="feature-card">
+                <h4><span class="emoji">📅</span>Patient Self-Service</h4>
+                <p><strong>Reduce the Load on Operations</strong></p>
+                <p style="margin-top: 15px;">Patients can:</p>
+                <ul style="margin-top: 10px;">
+                    <li>View available appointment slots online</li>
+                    <li>Reschedule themselves (if hygienist is out)</li>
+                    <li>Book next appointment during checkout (habit stacking)</li>
+                    <li>Get SMS/email reminders (reduces no-shows)</li>
+                </ul>
+            </div>
+            
+            <div class="feature-card">
+                <h4><span class="emoji">💬</span>Automated Patient Engagement</h4>
+                <p><strong>Keep Patients Coming Back (MARLO-Style)</strong></p>
+                <p style="margin-top: 15px;">Automatically:</p>
+                <ul style="margin-top: 10px;">
+                    <li>Send 6-month cleaning reminders</li>
+                    <li>Post-procedure follow-ups ("How's your cleaning feeling?")</li>
+                    <li>Educational content (whitening benefits, oral care tips)</li>
+                    <li>Promotion alerts (special offers on whitening, retainers)</li>
+                </ul>
+            </div>
+            
+            <div class="feature-card">
+                <h4><span class="emoji">🛍️</span>In-Practice Consumables Shop</h4>
+                <p><strong>Capture Revenue Being Lost to Amazon</strong></p>
+                <p style="margin-top: 15px;">Patients can buy:</p>
+                <ul style="margin-top: 10px;">
+                    <li>Professional whitening kits (vs. OTC)</li>
+                    <li>Replacement retainers (vs. mail-order)</li>
+                    <li>Toothbrush subscriptions</li>
+                    <li>Care products (mouth rinse, floss, etc.)</li>
+                </ul>
+            </div>
+        </div>
+        
+        <!-- BENEFITS BREAKDOWN -->
+        <h2><span class="emoji">📊</span>Expected Benefits for TFD</h2>
+        
+        <div class="benefit-section">
+            <div class="benefit-item">
+                <strong>💰 Revenue Lift: +$200-300/month (conservative estimate)</strong>
+                <p>From consumables, reduced no-shows, and better patient retention. At 4-person practice scale, that's meaningful.</p>
+            </div>
+            
+            <div class="benefit-item">
+                <strong>⏱️ Time Savings: 5-10 hours/week for the operations wife</strong>
+                <p>Automation handles reminders, rescheduling, patient follow-ups. She focuses on clinical scheduling and high-touch issues.</p>
+            </div>
+            
+            <div class="benefit-item">
+                <strong>😊 Patient Satisfaction: -20% no-show rate</strong>
+                <p>Automated reminders + easy rescheduling = patients actually show up. Fewer missed appointments. Better cash flow predictability.</p>
+            </div>
+            
+            <div class="benefit-item">
+                <strong>🏥 Coverage Resilience: Hygienist sick days = solved</strong>
+                <p>No more scrambling to find coverage or disappointing patients. Substitute network handles it. Practice stays operational.</p>
+            </div>
+            
+            <div class="benefit-item">
+                <strong>📱 Competitive Edge: Feels "modern"</strong>
+                <p>Patients see automated reminders, easy online booking, personalized follow-ups. Competes with DSO chains on experience, not just price.</p>
+            </div>
+        </div>
+        
+        <!-- THE MARLO CONNECTION -->
+        <h2><span class="emoji">🔗</span>The MARLO Connection</h2>
+        
+        <div class="quote">
+            <p>"MARLO solved contact lens leakage for optometrists by automating reorders and keeping patients in the practice ecosystem. SmilePath (our bigger product) does the same for dentists—consumables + engagement + insurance."</p>
+            <p style="margin-top: 20px;">For TFD, we're taking the CORE of that insight: <strong>automated patient touch points keep patients engaged, coming back, and buying from YOU instead of elsewhere.</strong></p>
+        </div>
+        
+        <h3>How MARLO Principles Apply to Your Practice:</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>MARLO Principle</th>
+                    <th>Optometry Problem</th>
+                    <th>TFD Solution</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Reorder Automation</strong></td>
+                    <td>Patients buy contacts online instead of at practice</td>
+                    <td>Automated reminders → patients buy whitening/retainers from you</td>
+                </tr>
+                <tr>
+                    <td><strong>Patient Engagement</strong></td>
+                    <td>Out of sight = out of mind</td>
+                    <td>Between-visit touch points (SMS, email) keep habit alive</td>
+                </tr>
+                <tr>
+                    <td><strong>Appointment Stickiness</strong></td>
+                    <td>Auto-schedule reflex exams</td>
+                    <td>Auto-prompt patients to book 6-month cleanings</td>
+                </tr>
+                <tr>
+                    <td><strong>Convenience</strong></td>
+                    <td>Easy online reorder = patient stays</td>
+                    <td>Easy online booking + consumables = patient stays</td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <!-- MVP SCOPE -->
+        <h2><span class="emoji">🎯</span>MVP Scope & Timeline</h2>
+        
+        <div class="timeline">
+            <div class="timeline-item">
+                <h4>Phase 1: Foundation (Weeks 1-3)</h4>
+                <p><strong>Core features:</strong> Patient database, appointment management, SMS reminders, basic patient portal</p>
+                <p style="margin-top: 8px; color: #0066cc;"><strong>Deliverable:</strong> TFD can manage appointments & send reminders. Wife can go on vacation.</p>
+            </div>
+            
+            <div class="timeline-item">
+                <h4>Phase 2: Engagement & E-Commerce (Weeks 4-6)</h4>
+                <p><strong>Add:</strong> Automated follow-ups, patient education content, simple consumables shop (whitening, retainers)</p>
+                <p style="margin-top: 8px; color: #0066cc;"><strong>Deliverable:</strong> Patients see engagement content. Can buy stuff. Practice starts capturing revenue.</p>
+            </div>
+            
+            <div class="timeline-item">
+                <h4>Phase 3: Coverage Network (Weeks 7-8)</h4>
+                <p><strong>Add:</strong> Substitute hygienist network (initial: manual coordination, later: marketplace)</p>
+                <p style="margin-top: 8px; color: #0066cc;"><strong>Deliverable:</strong> Coverage gaps solved. No more revenue loss from call-outs.</p>
+            </div>
+            
+            <div class="timeline-item">
+                <h4>Phase 4: Analytics & Refinement (Weeks 9-10)</h4>
+                <p><strong>Add:</strong> Dashboard showing no-show rates, revenue, engagement metrics</p>
+                <p style="margin-top: 8px; color: #0066cc;"><strong>Deliverable:</strong> TFD can see the impact. ROI metrics clear.</p>
+            </div>
+        </div>
+        
+        <!-- TECHNICAL BRIEF LINK -->
+        <h2><span class="emoji">🔧</span>For the AI Developer</h2>
+        
+        <div class="cta-section">
+            <h3>Detailed App Brief & Technical Specifications</h3>
+            <p>A comprehensive spec document for building the MVP, including:</p>
+            <ul style="text-align: left; display: inline-block; margin-top: 15px;">
+                <li>✅ User personas & workflows</li>
+                <li>✅ Feature breakdown & priority</li>
+                <li>✅ Data models & database schema</li>
+                <li>✅ API endpoints & integrations</li>
+                <li>✅ UI/UX wireframes & considerations</li>
+                <li>✅ Technical stack recommendations</li>
+                <li>✅ MVP scope vs. nice-to-haves</li>
+                <li>✅ Success metrics</li>
+            </ul>
+            <p style="margin-top: 25px;"><strong>→</strong> Read the detailed brief:</p>
+            <a href="/tfd_app_brief" class="cta-button">📋 TFD App Brief & Technical Spec</a>
+        </div>
+        
+        <!-- WHY THIS WORKS FOR TFD -->
+        <h2><span class="emoji">💎</span>Why This Works for a 4-Person Practice</h2>
+        
+        <ul>
+            <li><strong>Low complexity, high impact:</strong> These aren't fancy features. They're solutions to real problems the practice already has.</li>
+            <li><strong>Immediate ROI:</strong> First substitute hygienist booked through the network pays for 3 months of the platform.</li>
+            <li><strong>Scalable:</strong> Works for TFD now (4 people), scales up if they grow.</li>
+            <li><strong>Defensible:</strong> Once patients are using it, and substitute hygienists are plugged in, switching is hard.</li>
+            <li><strong>Network effect:</strong> As more local practices join (and substitute hygienists), the platform becomes more valuable.</li>
+            <li><strong>Proof of concept:</strong> If it works at TFD, you can pitch it to other small practices. Then scale the business model.</li>
+        </ul>
+        
+        <!-- NEXT STEPS -->
+        <h2><span class="emoji">🚀</span>Next Steps</h2>
+        
+        <ol style="font-size: 1.05em; line-height: 1.8;">
+            <li><strong>Read the app brief</strong> (link above) to understand the full MVP scope</li>
+            <li><strong>Talk to your wife</strong> about her biggest pain point (scheduling? coverage? engagement?)</li>
+            <li><strong>Prioritize Phase 1</strong> (appointments + reminders) to get her some relief quickly</li>
+            <li><strong>Brief the AI developer</strong> on the spec and timeline (8-10 weeks for full MVP)</li>
+            <li><strong>Plan for beta launch</strong> with TFD (real data, real feedback, real metrics)</li>
+            <li><strong>Document learnings</strong> (what works, what doesn't, ROI for the practice)</li>
+            <li><strong>Plan for scale</strong> (how to replicate this across other practices)</li>
+        </ol>
+        
+        <!-- BOTTOM LINE -->
+        <div class="solution-box" style="margin-top: 40px;">
+            <h3>The Bottom Line</h3>
+            <p>You have a real problem to solve (hygienist coverage + scheduling), a real customer willing to beta test (TFD), and real market research showing the opportunity (MARLO + dental industry data).</p>
+            <p style="margin-top: 15px;">This MVP isn't just a nice-to-have for TFD. It's a competitive advantage. And if it works there, it works everywhere.</p>
+            <p style="margin-top: 15px;"><strong>Build it. Test it. Scale it.</strong></p>
+        </div>
+        
+        <!-- FOOTER -->
+        <div class="footer">
+            <p>Thomas Family Dentistry MVP Platform</p>
+            <p>Based on MARLO framework + comprehensive dental market research</p>
+            <p style="margin-top: 15px;"><a href="/dentalapp" class="back-link">← Back to full business plan</a></p>
+        </div>
+    </div>
+</body>
+</html>

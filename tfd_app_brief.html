@@ -1,0 +1,907 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TFD App Brief & Technical Specification</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Monaco', 'Courier New', monospace;
+            font-size: 14px;
+            line-height: 1.6;
+            color: #333;
+            background: #f5f5f5;
+        }
+        
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+        
+        h1 {
+            color: #0066cc;
+            font-size: 2.2em;
+            margin-bottom: 10px;
+            border-bottom: 3px solid #0066cc;
+            padding-bottom: 15px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto;
+        }
+        
+        .subtitle {
+            color: #666;
+            font-size: 1.1em;
+            margin-bottom: 30px;
+            font-style: italic;
+        }
+        
+        h2 {
+            color: #0066cc;
+            font-size: 1.6em;
+            margin-top: 40px;
+            margin-bottom: 15px;
+            border-left: 4px solid #0066cc;
+            padding-left: 15px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto;
+        }
+        
+        h3 {
+            color: #333;
+            font-size: 1.2em;
+            margin-top: 25px;
+            margin-bottom: 12px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto;
+        }
+        
+        h4 {
+            color: #555;
+            font-size: 1em;
+            margin-top: 18px;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+        
+        code {
+            background: #f0f0f0;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-family: inherit;
+        }
+        
+        pre {
+            background: #f5f5f5;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            padding: 15px;
+            overflow-x: auto;
+            margin: 15px 0;
+            font-size: 0.9em;
+            line-height: 1.5;
+        }
+        
+        ul, ol {
+            margin: 12px 0 12px 25px;
+        }
+        
+        li {
+            margin-bottom: 8px;
+        }
+        
+        .section {
+            background: #fafafa;
+            border-left: 4px solid #0066cc;
+            padding: 20px;
+            margin: 25px 0;
+            border-radius: 4px;
+        }
+        
+        .feature-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-size: 0.95em;
+        }
+        
+        .feature-table th {
+            background: #0066cc;
+            color: white;
+            padding: 12px;
+            text-align: left;
+            font-weight: 600;
+        }
+        
+        .feature-table td {
+            border-bottom: 1px solid #ddd;
+            padding: 12px;
+        }
+        
+        .feature-table tr:nth-child(even) {
+            background: #f9f9f9;
+        }
+        
+        .mvp {
+            background: #d4edda;
+            padding: 2px 6px;
+            color: #155724;
+            border-radius: 3px;
+            font-weight: bold;
+            font-size: 0.85em;
+        }
+        
+        .phase2 {
+            background: #fff3cd;
+            padding: 2px 6px;
+            color: #856404;
+            border-radius: 3px;
+            font-weight: bold;
+            font-size: 0.85em;
+        }
+        
+        .phase3 {
+            background: #e2e3e5;
+            padding: 2px 6px;
+            color: #383d41;
+            border-radius: 3px;
+            font-weight: bold;
+            font-size: 0.85em;
+        }
+        
+        .workflow {
+            background: #f0f7ff;
+            border: 1px solid #0066cc;
+            border-radius: 4px;
+            padding: 15px;
+            margin: 15px 0;
+        }
+        
+        .workflow strong {
+            color: #0066cc;
+        }
+        
+        .endpoint {
+            background: #f5f5f5;
+            border-left: 3px solid #28a745;
+            padding: 12px;
+            margin: 12px 0;
+            font-family: monospace;
+            font-size: 0.9em;
+        }
+        
+        .endpoint code {
+            background: none;
+            padding: 0;
+        }
+        
+        .data-model {
+            background: #f5f5f5;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            padding: 15px;
+            margin: 15px 0;
+            font-size: 0.9em;
+        }
+        
+        .priority-high {
+            color: #dc3545;
+            font-weight: bold;
+        }
+        
+        .priority-medium {
+            color: #ffc107;
+            font-weight: bold;
+        }
+        
+        .priority-low {
+            color: #28a745;
+            font-weight: bold;
+        }
+        
+        .footer {
+            margin-top: 50px;
+            padding-top: 30px;
+            border-top: 2px solid #ddd;
+            text-align: center;
+            color: #888;
+            font-size: 0.9em;
+        }
+        
+        .back-link {
+            color: #0066cc;
+            text-decoration: none;
+            font-weight: 600;
+            display: inline-block;
+            margin-top: 15px;
+        }
+        
+        .back-link:hover {
+            text-decoration: underline;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+            
+            h1 {
+                font-size: 1.6em;
+            }
+            
+            h2 {
+                font-size: 1.3em;
+            }
+            
+            pre {
+                font-size: 0.85em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>TFD App Brief & Technical Specification</h1>
+        <p class="subtitle">Patient Engagement & Practice Management MVP for Thomas Family Dentistry</p>
+        
+        <!-- EXECUTIVE SUMMARY -->
+        <h2>Executive Summary</h2>
+        
+        <div class="section">
+            <h3>What We're Building</h3>
+            <p>A mobile-first web application for managing appointments, patient engagement, and substitute hygienist coverage for a small dental practice (4 employees).</p>
+            
+            <h3>Why It Matters</h3>
+            <ul>
+                <li><strong>Hygienist coverage crisis:</strong> When the hygienist is out, patients are rescheduled manually. Loss of $300-400/day revenue. Need automated substitute network.</li>
+                <li><strong>Scheduling bottleneck:</strong> Wife/ops manager can't always answer calls. Need patient self-service booking & rescheduling.</li>
+                <li><strong>Patient leakage:</strong> Patients forget appointments (15-25% no-show rate). No touch points between visits. Need automated engagement.</li>
+                <li><strong>Lost consumables revenue:</strong> Patients buy whitening kits from Amazon instead of the practice. Need in-app marketplace.</li>
+            </ul>
+            
+            <h3>The Solution</h3>
+            <p>An integrated platform that combines:</p>
+            <ul>
+                <li>Patient database & appointment management</li>
+                <li>Automated SMS/email reminders</li>
+                <li>Patient portal for self-service booking</li>
+                <li>Substitute hygienist network & alert system</li>
+                <li>Consumables e-commerce (Phase 2)</li>
+                <li>Analytics dashboard (Phase 4)</li>
+            </ul>
+        </div>
+        
+        <!-- USER PERSONAS -->
+        <h2>User Personas & Workflows</h2>
+        
+        <h3>Persona 1: Practice Owner/Dentist</h3>
+        <div class="workflow">
+            <strong>Goals:</strong> Keep practice running smoothly, maximize revenue, maintain patient satisfaction<br/>
+            <strong>Pain Points:</strong> Inconsistent operations, coverage gaps, patient no-shows<br/>
+            <strong>Key Workflows:</strong>
+            <ul>
+                <li>View daily schedule in morning (see if anyone is out)</li>
+                <li>Get alert if coverage is needed (substitute booked automatically or manual confirmation needed)</li>
+                <li>Check revenue metrics (how much did we make? how many no-shows?)</li>
+                <li>Review patient feedback/satisfaction</li>
+            </ul>
+        </div>
+        
+        <h3>Persona 2: Operations Manager (Wife)</h3>
+        <div class="workflow">
+            <strong>Goals:</strong> Manage day-to-day chaos, reduce phone time, simplify scheduling<br/>
+            <strong>Pain Points:</strong> Always answering calls, manual rescheduling, finding coverage takes hours<br/>
+            <strong>Key Workflows:</strong>
+            <ul>
+                <li>Patients call/text to book → system shows availability → patient self-books (less phone time)</li>
+                <li>Hygienist calls out sick → system alerts substitute network → coverage confirmed (vs. her making calls)</li>
+                <li>Patients need to reschedule → system sends them rescheduling link → they self-serve (vs. phone call)</li>
+                <li>Follow up on no-shows or missed engagement (app tells her who needs a nudge)</li>
+            </ul>
+        </div>
+        
+        <h3>Persona 3: Dental Hygienist</h3>
+        <div class="workflow">
+            <strong>Goals:</strong> Do hygiene exams, be comfortable, know schedule in advance<br/>
+            <strong>Pain Points:</strong> Inconsistent schedule, unclear when she's needed for coverage calls<br/>
+            <strong>Key Workflows:</strong>
+            <ul>
+                <li>Check daily schedule (who's booked? any special notes?)</li>
+                <li>See patient notes before appointments (pre-op information, treatment notes from last visit)</li>
+                <li>Mark tasks (need to send retainer reminder to patient X)</li>
+                <li>Access substitute hygienist network (optional shift picking if she wants extra hours)</li>
+            </ul>
+        </div>
+        
+        <h3>Persona 4: Patient</h3>
+        <div class="workflow">
+            <strong>Goals:</strong> Easy booking, helpful reminders, convenient care products<br/>
+            <strong>Pain Points:</strong> Can't reach the office, forget appointments, buy care products elsewhere<br/>
+            <strong>Key Workflows:</strong>
+            <ul>
+                <li>Receive SMS/email reminder before appointment</li>
+                <li>Quick reschedule via link if needed (no phone call)</li>
+                <li>Get post-visit follow-up ("how's your teeth feeling?")</li>
+                <li>Receive engagement messages (time for 6-month cleaning, whitening offer, etc.)</li>
+                <li>Buy consumables (whitening, retainers, care products) through patient portal</li>
+            </ul>
+        </div>
+        
+        <!-- FEATURE BREAKDOWN -->
+        <h2>Feature Breakdown by Phase</h2>
+        
+        <h3>Phase 1: MVP (Weeks 1-3)</h3>
+        <p><strong>Goal:</strong> Get the practice operational and reduce the wife's burden immediately.</p>
+        
+        <table class="feature-table">
+            <thead>
+                <tr>
+                    <th>Feature</th>
+                    <th>Description</th>
+                    <th>User(s)</th>
+                    <th>Priority</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Patient Database</strong></td>
+                    <td>Store patient info (name, DOB, phone, email, treatment history, notes)</td>
+                    <td>Dentist, Hygienist, Ops</td>
+                    <td><span class="priority-high">CRITICAL</span></td>
+                </tr>
+                <tr>
+                    <td><strong>Appointment Scheduling</strong></td>
+                    <td>Book, view, edit appointments. Track who's assigned (dentist/hygienist). See daily/weekly view.</td>
+                    <td>Dentist, Hygienist, Ops</td>
+                    <td><span class="priority-high">CRITICAL</span></td>
+                </tr>
+                <tr>
+                    <td><strong>SMS/Email Reminders</strong></td>
+                    <td>Auto-send reminders 24h before appointment. Customizable message templates.</td>
+                    <td>Ops (configure), Patients (receive)</td>
+                    <td><span class="priority-high">CRITICAL</span></td>
+                </tr>
+                <tr>
+                    <td><strong>Patient Portal Login</strong></td>
+                    <td>Patients log in with phone + SMS code. Secure, simple, no password required.</td>
+                    <td>Patients</td>
+                    <td><span class="priority-high">CRITICAL</span></td>
+                </tr>
+                <tr>
+                    <td><strong>Patient Portal: View Appointments</strong></td>
+                    <td>Patients see their upcoming appointments and can reschedule via link.</td>
+                    <td>Patients</td>
+                    <td><span class="priority-high">CRITICAL</span></td>
+                </tr>
+                <tr>
+                    <td><strong>Patient Portal: Reschedule Request</strong></td>
+                    <td>Patients click "reschedule" → system shows available slots → they pick new time. Ops gets notification to confirm.</td>
+                    <td>Patients, Ops</td>
+                    <td><span class="priority-high">CRITICAL</span></td>
+                </tr>
+                <tr>
+                    <td><strong>No-Show Tracking</strong></td>
+                    <td>Mark appointments as "no-show" or "cancel." Track metrics (X% no-show rate).</td>
+                    <td>Ops</td>
+                    <td><span class="priority-medium">High</span></td>
+                </tr>
+                <tr>
+                    <td><strong>Staff Dashboard (Basic)</strong></td>
+                    <td>Ops/dentist sees today's schedule, no-show alerts, key metrics at a glance.</td>
+                    <td>Dentist, Ops</td>
+                    <td><span class="priority-medium">High</span></td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <h3>Phase 2: Engagement & E-Commerce (Weeks 4-6)</h3>
+        <p><strong>Goal:</strong> Drive patient engagement and capture consumables revenue.</p>
+        
+        <table class="feature-table">
+            <thead>
+                <tr>
+                    <th>Feature</th>
+                    <th>Description</th>
+                    <th>User(s)</th>
+                    <th>Priority</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Automated Follow-Ups</strong></td>
+                    <td>After appointment, auto-send SMS/email ("How was your cleaning?" etc.). Customizable templates by visit type.</td>
+                    <td>Ops (configure), Patients (receive)</td>
+                    <td><span class="priority-medium">High</span></td>
+                </tr>
+                <tr>
+                    <td><strong>Recall Reminders</strong></td>
+                    <td>System auto-triggers "time for 6-month cleaning" messages on a schedule. Configurable per patient type.</td>
+                    <td>Ops (configure), Patients (receive)</td>
+                    <td><span class="priority-medium">High</span></td>
+                </tr>
+                <tr>
+                    <td><strong>Patient Portal: Educational Content</strong></td>
+                    <td>Show tips, videos, articles in patient portal (oral health, whitening benefits, care products, etc.).</td>
+                    <td>Patients, Ops (upload content)</td>
+                    <td><span class="priority-medium">High</span></td>
+                </tr>
+                <tr>
+                    <td><strong>Consumables Shop (In Portal)</strong></td>
+                    <td>Simple storefront showing whitening kits, retainers, care products. Patients can add to cart + checkout.</td>
+                    <td>Patients</td>
+                    <td><span class="priority-medium">High</span></td>
+                </tr>
+                <tr>
+                    <td><strong>E-Commerce: Payment Processing</strong></td>
+                    <td>Stripe/Square integration. Patients pay securely. Practice gets order confirmation + fulfillment instructions.</td>
+                    <td>Patients, Ops</td>
+                    <td><span class="priority-medium">High</span></td>
+                </tr>
+                <tr>
+                    <td><strong>E-Commerce: Order Tracking</strong></td>
+                    <td>Patients can see order status. Ops can mark orders as "ready for pickup" or "shipped."</td>
+                    <td>Patients, Ops</td>
+                    <td><span class="priority-low">Medium</span></td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <h3>Phase 3: Coverage Network (Weeks 7-8)</h3>
+        <p><strong>Goal:</strong> Solve the hygienist coverage crisis. MVP: Manual coordination. Later: Marketplace.</p>
+        
+        <table class="feature-table">
+            <thead>
+                <tr>
+                    <th>Feature</th>
+                    <th>Description</th>
+                    <th>User(s)</th>
+                    <th>Priority</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Substitute Hygienist Network</strong></td>
+                    <td>Admin adds trusted substitute hygienists to a list (local, pre-vetted). When coverage needed, system alerts them.</td>
+                    <td>Dentist/Ops (manage list), Substitutes (receive alerts)</td>
+                    <td><span class="priority-high">CRITICAL</span></td>
+                </tr>
+                <tr>
+                    <td><strong>Call-Out Alert System</strong></td>
+                    <td>When someone calls out sick, ops logs it. System auto-sends SMS alert to substitute network. First to respond gets shift.</td>
+                    <td>Ops (log call-out), Substitutes (receive alert)</td>
+                    <td><span class="priority-high">CRITICAL</span></td>
+                </tr>
+                <tr>
+                    <td><strong>Auto-Reschedule on Coverage Gap</strong></td>
+                    <td>If coverage not found in X hours, system auto-reschedules affected patients + sends them new appointment confirmation.</td>
+                    <td>System, Patients (receive notification)</td>
+                    <td><span class="priority-medium">High</span></td>
+                </tr>
+                <tr>
+                    <td><strong>Substitute Shift Confirmation</strong></td>
+                    <td>Once substitute accepts, ops confirms details (time, pay, any special notes). Substitute gets appointment list.</td>
+                    <td>Ops, Substitutes</td>
+                    <td><span class="priority-medium">High</span></td>
+                </tr>
+                <tr>
+                    <td><strong>Substitute Shift Marketplace (Future)</strong></td>
+                    <td>Long-term: Hygienists in the network can see available shifts and bid on them (vs. alerts).</td>
+                    <td>Future phase</td>
+                    <td><span class="priority-low">Future</span></td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <h3>Phase 4: Analytics & Refinement (Weeks 9-10)</h3>
+        <p><strong>Goal:</strong> Provide data-driven insights into practice performance.</p>
+        
+        <table class="feature-table">
+            <thead>
+                <tr>
+                    <th>Feature</th>
+                    <th>Description</th>
+                    <th>User(s)</th>
+                    <th>Priority</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Practice Dashboard: Metrics</strong></td>
+                    <td>Show no-show rate, appointment count, revenue, consumables sold, patient retention, etc. Weekly/monthly views.</td>
+                    <td>Dentist</td>
+                    <td><span class="priority-medium">High</span></td>
+                </tr>
+                <tr>
+                    <td><strong>Engagement Metrics</strong></td>
+                    <td>Track which reminders/messages get opened, which products sell, patient response rates.</td>
+                    <td>Ops, Dentist</td>
+                    <td><span class="priority-low">Medium</span></td>
+                </tr>
+                <tr>
+                    <td><strong>Patient Lifecycle Tracking</strong></td>
+                    <td>See which patients haven't been in for 6+ months. Auto-flag for reactivation campaign.</td>
+                    <td>Ops</td>
+                    <td><span class="priority-low">Medium</span></td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <!-- DATA MODELS -->
+        <h2>Data Models & Database Schema</h2>
+        
+        <h3>Core Tables</h3>
+        
+        <div class="data-model">
+            <strong>patients</strong><br/>
+            <code>id</code> (UUID), <code>phone</code> (E.164), <code>email</code>, <code>name</code>, <code>dob</code>, <code>created_at</code>, <code>updated_at</code>, <code>treatment_notes</code> (TEXT), <code>allergies</code> (TEXT), <code>insurance_info</code> (JSON), <code>is_active</code> (boolean)
+        </div>
+        
+        <div class="data-model">
+            <strong>appointments</strong><br/>
+            <code>id</code> (UUID), <code>patient_id</code> (FK), <code>appointment_type</code> (enum: cleaning, exam, procedure), <code>scheduled_at</code> (datetime), <code>assigned_to</code> (dentist or hygienist), <code>status</code> (enum: scheduled, completed, no_show, cancelled, rescheduled), <code>notes</code> (TEXT), <code>created_at</code>, <code>updated_at</code>
+        </div>
+        
+        <div class="data-model">
+            <strong>staff</strong><br/>
+            <code>id</code> (UUID), <code>name</code>, <code>role</code> (enum: dentist, hygienist, assistant, admin), <code>phone</code>, <code>email</code>, <code>is_active</code>, <code>created_at</code>
+        </div>
+        
+        <div class="data-model">
+            <strong>messages</strong> (for tracking engagement)<br/>
+            <code>id</code> (UUID), <code>patient_id</code> (FK), <code>message_type</code> (enum: reminder, follow_up, recall, promotional), <code>channel</code> (enum: sms, email), <code>content</code> (TEXT), <code>sent_at</code>, <code>opened_at</code>, <code>clicked_at</code>, <code>created_at</code>
+        </div>
+        
+        <div class="data-model">
+            <strong>products</strong> (for consumables shop)<br/>
+            <code>id</code> (UUID), <code>name</code>, <code>category</code> (enum: whitening, retainers, care_products), <code>price</code> (decimal), <code>description</code> (TEXT), <code>image_url</code>, <code>is_active</code>, <code>created_at</code>
+        </div>
+        
+        <div class="data-model">
+            <strong>orders</strong> (e-commerce)<br/>
+            <code>id</code> (UUID), <code>patient_id</code> (FK), <code>product_id</code> (FK), <code>quantity</code>, <code>total_price</code>, <code>status</code> (enum: pending, paid, ready_for_pickup, shipped), <code>created_at</code>, <code>updated_at</code>
+        </div>
+        
+        <div class="data-model">
+            <strong>substitute_hygienists</strong><br/>
+            <code>id</code> (UUID), <code>name</code>, <code>phone</code>, <code>email</code>, <code>is_active</code>, <code>is_verified</code>, <code>notes</code> (TEXT), <code>created_at</code>
+        </div>
+        
+        <div class="data-model">
+            <strong>coverage_alerts</strong> (call-out tracking)<br/>
+            <code>id</code> (UUID), <code>staff_member_id</code> (FK), <code>call_out_reason</code> (enum: sick, emergency, other), <code>alert_sent_at</code>, <code>coverage_found</code> (boolean), <code>substitute_id</code> (FK, nullable), <code>created_at</code>
+        </div>
+        
+        <!-- API ENDPOINTS -->
+        <h2>API Endpoints & Integrations</h2>
+        
+        <h3>Authentication</h3>
+        <div class="endpoint">
+            <strong>POST /auth/login</strong><br/>
+            Request: <code>{ phone, code_or_password }</code><br/>
+            Response: <code>{ token, user_type, practice_id }</code><br/>
+            → SMS-based login for patients, password login for staff
+        </div>
+        
+        <h3>Appointments (Phase 1)</h3>
+        <div class="endpoint">
+            <strong>GET /api/appointments</strong><br/>
+            Query: <code>?date=2025-03-10&staff_id=xyz</code><br/>
+            Response: Array of appointments for that day
+        </div>
+        
+        <div class="endpoint">
+            <strong>POST /api/appointments</strong><br/>
+            Request: <code>{ patient_id, scheduled_at, type, assigned_to }</code><br/>
+            Response: Created appointment object. Triggers SMS reminder queue.
+        </div>
+        
+        <div class="endpoint">
+            <strong>PATCH /api/appointments/:id</strong><br/>
+            Request: <code>{ status, notes, assigned_to }</code><br/>
+            Response: Updated appointment
+        </div>
+        
+        <h3>Patient Portal (Phase 1)</h3>
+        <div class="endpoint">
+            <strong>GET /api/patients/:id/appointments</strong><br/>
+            Response: List of patient's upcoming appointments
+        </div>
+        
+        <div class="endpoint">
+            <strong>POST /api/patients/:id/reschedule-request</strong><br/>
+            Request: <code>{ appointment_id, preferred_times: [] }</code><br/>
+            Response: Confirmation. Triggers ops notification.
+        </div>
+        
+        <h3>Messaging (Phase 2)</h3>
+        <div class="endpoint">
+            <strong>POST /api/messages/send</strong><br/>
+            Request: <code>{ patient_id, type, channel, template_id }</code><br/>
+            Response: Message ID. Triggers SMS/email queue.
+        </div>
+        
+        <div class="endpoint">
+            <strong>GET /api/messages/engagement</strong><br/>
+            Query: <code>?metric=open_rate&date_range=30d</code><br/>
+            Response: Engagement metrics
+        </div>
+        
+        <h3>E-Commerce (Phase 2)</h3>
+        <div class="endpoint">
+            <strong>GET /api/products</strong><br/>
+            Response: List of available consumables
+        </div>
+        
+        <div class="endpoint">
+            <strong>POST /api/orders</strong><br/>
+            Request: <code>{ patient_id, items: [{ product_id, quantity }] }</code><br/>
+            Response: Order object with Stripe payment link
+        </div>
+        
+        <div class="endpoint">
+            <strong>POST /api/webhook/stripe</strong><br/>
+            Stripe sends payment confirmation → Update order status to "paid"
+        </div>
+        
+        <h3>Coverage Network (Phase 3)</h3>
+        <div class="endpoint">
+            <strong>POST /api/coverage-alert</strong><br/>
+            Request: <code>{ staff_member_id, reason }</code><br/>
+            Response: Alert sent to substitute network. Returns confirmation.
+        </div>
+        
+        <div class="endpoint">
+            <strong>POST /api/substitute/accept-shift</strong><br/>
+            Request: <code>{ alert_id, substitute_id }</code><br/>
+            Response: Shift confirmed. Patients notified of substitute. Appointments updated.
+        </div>
+        
+        <!-- INTEGRATIONS -->
+        <h2>External Integrations</h2>
+        
+        <h3>SMS (Twilio)</h3>
+        <pre>Send reminders, follow-ups, coverage alerts, reschedule confirmations.
+Queue: Bull or similar to throttle/batch messages.
+Template system: Ops can customize messages without code.</pre>
+        
+        <h3>Email (SendGrid or AWS SES)</h3>
+        <pre>Backup for patients who don't have SMS enabled.
+Same templates as SMS.</pre>
+        
+        <h3>Payments (Stripe)</h3>
+        <pre>Consumables checkout.
+Webhook for payment confirmations.
+Fee: 2.2% + $0.30 per transaction (practice absorbs or passes to patient).</pre>
+        
+        <h3>Authentication (Optional: Auth0 or Firebase)</h3>
+        <pre>For staff logins (dentist, hygienist, ops).
+Patients use phone-based SMS login (simpler).</pre>
+        
+        <!-- TECH STACK -->
+        <h2>Technical Stack Recommendations</h2>
+        
+        <h3>Backend</h3>
+        <pre>Framework: Node.js (Express) or Python (FastAPI/Django)
+Database: PostgreSQL (relational, reliable, open-source)
+Message Queue: Bull (Redis-backed) for SMS/email scheduling
+Cache: Redis for session management
+Authentication: JWT tokens + SMS-based OTP for patients</pre>
+        
+        <h3>Frontend</h3>
+        <pre>Framework: React or Vue (mobile-first)
+Mobile: PWA (Progressive Web App) to feel native
+UI: Tailwind CSS or Material-UI for quick iteration
+State: React Context or Vuex (simple, no Redux overhead needed)</pre>
+        
+        <h3>Infrastructure</h3>
+        <pre>Hosting: Vercel (frontend) + Railway/Render (backend)
+Database: Managed PostgreSQL (Supabase, Railway, or AWS RDS)
+Object Storage: S3 or Cloudinary for product images
+Monitoring: Sentry for error tracking</pre>
+        
+        <h3>Why These Choices</h3>
+        <ul>
+            <li><strong>PostgreSQL:</strong> Reliable, scalable, good for relational data (patients, appointments, orders).</li>
+            <li><strong>Node.js + Express:</strong> Fast to prototype, great for real-time features (appointment alerts, coverage matching).</li>
+            <li><strong>React:</strong> Large ecosystem, component-heavy (perfect for a practice management dashboard).</li>
+            <li><strong>Twilio/SendGrid:</strong> Proven, reliable, reasonable pricing. SMS reminders are mission-critical.</li>
+            <li><strong>Stripe:</strong> Simple integration, PCI compliant, trusted by patients.</li>
+            <li><strong>Vercel:</strong> Auto-deploys on git push, built for React, free tier for testing.</li>
+        </ul>
+        
+        <!-- MVP SCOPE DEFINITION -->
+        <h2>MVP Scope Definition (Weeks 1-3)</h2>
+        
+        <h3>Must-Have (CRITICAL)</h3>
+        <ol>
+            <li>Patient database (CRUD)</li>
+            <li>Appointment scheduling (book, view, edit, mark no-show)</li>
+            <li>SMS reminders 24h before appointment</li>
+            <li>Patient portal login (phone + SMS code)</li>
+            <li>Patient portal: View appointments</li>
+            <li>Patient portal: Reschedule request workflow</li>
+            <li>Staff dashboard (view daily schedule, alerts)</li>
+        </ol>
+        
+        <h3>Nice-to-Have (Defer to Phase 2)</h3>
+        <ol>
+            <li>Email reminders (SMS first, add email later)</li>
+            <li>Automated follow-ups ("How was your visit?")</li>
+            <li>Patient notes/treatment history in portal</li>
+            <li>Consumables shop (whole Phase 2)</li>
+            <li>Analytics dashboard (Phase 4)</li>
+        </ol>
+        
+        <h3>Out of Scope for MVP</h3>
+        <ol>
+            <li>Substitute hygienist network (Phase 3)</li>
+            <li>Insurance integration</li>
+            <li>Lab/supplier integrations</li>
+            <li>Multi-practice support (build for TFD only, generalize later)</li>
+            <li>Mobile app (PWA is sufficient)</li>
+        </ol>
+        
+        <!-- UI/UX CONSIDERATIONS -->
+        <h2>UI/UX Considerations</h2>
+        
+        <h3>Staff Dashboard (Desktop-First, but Responsive)</h3>
+        <pre>Left sidebar: Navigation (Appointments, Patients, Messages, Settings)
+Main area: Daily schedule view (calendar + list view toggle)
+Right sidebar: Today's alerts (no-shows, reminders sent, coverage needs)
+Mobile: Hamburger menu, schedule as swipeable list</pre>
+        
+        <h3>Patient Portal (Mobile-First)</h3>
+        <pre>Login: Phone number → SMS code (no password)
+Home: "Your appointments" + "Quick actions" (book, reschedule, message)
+Appointments: List of upcoming appointments with "Reschedule" button
+Reschedule flow: Pick appointment → See available slots → Confirm
+Message center: View past messages + engagement content</pre>
+        
+        <h3>Substitute Hygienist Network (Phase 3)</h3>
+        <pre>Ops view: List of substitutes, "Send alert" button
+Alert content: Time, date, compensation, patient list, special notes
+Substitute view: Receive SMS alert with shift details, "Accept" button
+Confirmation: Shift accepted → Appointment list auto-generated</pre>
+        
+        <!-- SECURITY & COMPLIANCE -->
+        <h2>Security & Compliance Considerations</h2>
+        
+        <h3>HIPAA (if handling patient health info)</h3>
+        <ul>
+            <li>Encrypt data in transit (HTTPS everywhere)</li>
+            <li>Encrypt sensitive fields at rest (patient notes, health history)</li>
+            <li>Audit logging (who accessed what, when)</li>
+            <li>Regular backups</li>
+            <li>Data retention policies (comply with state law)</li>
+        </ul>
+        
+        <h3>PCI-DSS (for payments)</h3>
+        <ul>
+            <li>Use Stripe (PCI compliant), never store card data</li>
+            <li>HTTPS for all transactions</li>
+            <li>Regular security audits</li>
+        </ul>
+        
+        <h3>General Security</h3>
+        <ul>
+            <li>Rate limiting on login endpoints (prevent brute force)</li>
+            <li>CSRF tokens for form submissions</li>
+            <li>Input validation / SQL injection prevention</li>
+            <li>Regular dependency updates</li>
+            <li>Monitoring & alerting (Sentry)</li>
+        </ul>
+        
+        <!-- SUCCESS METRICS -->
+        <h2>Success Metrics</h2>
+        
+        <h3>Phase 1 (MVP Success)</h3>
+        <ul>
+            <li><strong>Adoption:</strong> 80%+ of staff using the platform daily by week 3</li>
+            <li><strong>Patient uptake:</strong> 50%+ of patients have logged into portal by end of Phase 1</li>
+            <li><strong>Reminders sent:</strong> 100+ SMS reminders per week</li>
+            <li><strong>Rescheduling:</strong> 30%+ of reschedules happen via portal (vs. phone)</li>
+            <li><strong>No-show reduction:</strong> Track reduction in no-shows week-over-week</li>
+        </ul>
+        
+        <h3>Phase 2 (Engagement Success)</h3>
+        <ul>
+            <li><strong>Engagement rate:</strong> 40%+ of patients open engagement messages</li>
+            <li><strong>Consumables revenue:</strong> $500+/month in e-commerce sales by end of Phase 2</li>
+            <li><strong>Repeat purchases:</strong> 20%+ of patients make 2+ purchases</li>
+        </ul>
+        
+        <h3>Phase 3 (Coverage Network Success)</h3>
+        <ul>
+            <li><strong>Coverage alerts resolved:</strong> 100% of call-outs result in coverage within 2 hours</li>
+            <li><strong>Revenue retained:</strong> Zero lost revenue from coverage gaps (vs. baseline)</li>
+            <li><strong>Substitute response time:</strong> Average 15 mins from alert to acceptance</li>
+        </ul>
+        
+        <!-- TIMELINE & EFFORT -->
+        <h2>Estimated Effort & Timeline</h2>
+        
+        <pre><strong>Phase 1 (Weeks 1-3): MVP - 120 hours</strong>
+Backend: 60 hours (API, database, SMS integration)
+Frontend: 40 hours (dashboard, patient portal, auth)
+Testing & deployment: 20 hours
+
+<strong>Phase 2 (Weeks 4-6): Engagement & E-Commerce - 80 hours</strong>
+Backend: 40 hours (messages, e-commerce, Stripe integration)
+Frontend: 30 hours (consumables shop, engagement UI)
+Testing & deployment: 10 hours
+
+<strong>Phase 3 (Weeks 7-8): Coverage Network - 60 hours</strong>
+Backend: 40 hours (coverage alerts, substitute network, auto-reschedule)
+Frontend: 15 hours (coverage UI, alert management)
+Testing & deployment: 5 hours
+
+<strong>Phase 4 (Weeks 9-10): Analytics & Refinement - 40 hours</strong>
+Backend: 20 hours (metrics aggregation, dashboard queries)
+Frontend: 15 hours (dashboard design & implementation)
+Testing & deployment: 5 hours
+
+<strong>TOTAL: 10 weeks, ~300 hours (~7.5 weeks at 40 hrs/week)</strong></pre>
+        
+        <!-- EDGE CASES & GOTCHAS -->
+        <h2>Edge Cases & Gotchas to Handle</h2>
+        
+        <ol>
+            <li><strong>Time zones:</strong> Store all times in UTC, convert for display. Reminders should respect patient's local time.</li>
+            <li><strong>Double-booking:</strong> Prevent dentist/hygienist from being assigned to 2 appointments at same time.</li>
+            <li><strong>SMS delivery failures:</strong> If Twilio fails to deliver, retry queue + fallback to email.</li>
+            <li><strong>Patient reschedule conflicts:</strong> If patient reschedules to a time that's now booked, show error + suggest alternatives.</li>
+            <li><strong>Coverage alert timing:</strong> If call-out happens last-minute (1h before), auto-reschedule patients immediately (don't wait for substitute).</li>
+            <li><strong>Payment failures:</strong> If Stripe charge fails, order stays in "pending" state. Ops gets notification to follow up with patient.</li>
+            <li><strong>Staff with multiple roles:</strong> Dentist might also do hygiene sometimes. Allow flexibility in scheduling.</li>
+            <li><strong>Patient phone number changes:</strong> If patient updates phone, old SMS reminders might bounce. Graceful error handling.</li>
+        </ol>
+        
+        <!-- DEPLOYMENT CHECKLIST -->
+        <h2>Pre-Launch Deployment Checklist</h2>
+        
+        <h3>Development</h3>
+        <ul>
+            <li>✅ All Phase 1 features built & tested</li>
+            <li>✅ Unit tests for critical paths (appointment booking, SMS sending)</li>
+            <li>✅ Manual testing on mobile & desktop</li>
+            <li>✅ Error handling & logging in place</li>
+        </ul>
+        
+        <h3>Data & Security</h3>
+        <ul>
+            <li>✅ Database encrypted at rest</li>
+            <li>✅ HTTPS everywhere</li>
+            <li>✅ Rate limiting on auth endpoints</li>
+            <li>✅ Backup & recovery plan documented</li>
+        </ul>
+        
+        <h3>Third-Party Integrations</h3>
+        <ul>
+            <li>✅ Twilio account set up & tested</li>
+            <li>✅ SendGrid account ready (Phase 2)</li>
+            <li>✅ Stripe test mode working</li>
+            <li>✅ API keys securely stored in environment variables</li>
+        </ul>
+        
+        <h3>Operations</h3>
+        <ul>
+            <li>✅ Staff training (demo + docs)</li>
+            <li>✅ Patient communication (how to access portal)</li>
+            <li>✅ Monitoring & alerting set up (Sentry, uptime checks)</li>
+            <li>✅ Support plan (who handles bugs, questions?)</li>
+        </ul>
+        
+        <!-- FOOTER -->
+        <div class="footer">
+            <p>TFD App Brief & Technical Specification</p>
+            <p>Built for Thomas Family Dentistry MVP</p>
+            <p style="margin-top: 15px;"><a href="/tfd" class="back-link">← Back to TFD overview</a></p>
+        </div>
+    </div>
+</body>
+</html>
