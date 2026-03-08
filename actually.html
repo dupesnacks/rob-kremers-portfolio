@@ -501,24 +501,55 @@
 
         <h2>Monetization Strategy</h2>
 
-        <h3>Freemium Model:</h3>
-        <ul>
-            <li><strong>Free:</strong> Track unlimited memberships, reminders, cost-per-visit calculation, share basic stats</li>
-            <li><strong>Premium ($2.99/month or $29.99/year):</strong>
-                <ul>
-                    <li>Advanced analytics (trending, predictions)</li>
-                    <li>Family leaderboards with friends</li>
-                    <li>Smart recommendations (Phase 2: weather-based, event-based)</li>
-                    <li>Calendar sync with Google Calendar/Outlook</li>
+        <h3>Free Trial → Low-Cost Paid Tiers</h3>
+
+        <div style="background: #f5f7ff; padding: 30px; border-radius: 12px; margin: 20px 0;">
+            <p><strong>Free Trial: 7 Days (Full Access to Everything)</strong></p>
+            <p style="color: #666; margin-top: 10px;">New users get one full week to experience the entire Actually loop: add memberships → see guilt → get reminders → go → share → celebrate savings. By day 7, the habit is formed.</p>
+        </div>
+
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin: 30px 0;">
+            <div style="background: #e6f3ff; padding: 25px; border-radius: 12px; border-left: 4px solid #667eea;">
+                <h4 style="color: #667eea; margin-bottom: 15px;">Basic - $0.99/month</h4>
+                <ul style="list-style: none; padding: 0;">
+                    <li>✓ Unlimited memberships</li>
+                    <li>✓ Smart reminders</li>
+                    <li>✓ Track visits</li>
+                    <li>✓ Share to social media</li>
+                    <li>✓ Cost-per-visit calculation</li>
+                    <li>✓ Dashboard overview</li>
+                    <li>✓ Weekly usage summary</li>
                 </ul>
-            </li>
+            </div>
+
+            <div style="background: #f0e6ff; padding: 25px; border-radius: 12px; border-left: 4px solid #764ba2;">
+                <h4 style="color: #764ba2; margin-bottom: 15px;">Pro - $1.99/month</h4>
+                <ul style="list-style: none; padding: 0;">
+                    <li>✓ Everything in Basic PLUS:</li>
+                    <li>✓ Advanced analytics & insights</li>
+                    <li>✓ Calendar heatmap (when you visit)</li>
+                    <li>✓ Monthly savings reports</li>
+                    <li>✓ Family leaderboards</li>
+                    <li>✓ Custom reminder schedules</li>
+                    <li>✓ Upcoming: Weather-based suggestions</li>
+                </ul>
+            </div>
+        </div>
+
+        <h3>Why This Pricing Works:</h3>
+        <ul>
+            <li><strong>$0.99/month is psychological magic:</strong> Less than a coffee every 3 months. No guilt, pure impulse purchase.</li>
+            <li><strong>Doesn't undermine the app's value:</strong> The app helps save $300-600/year. $0.99/month ($12/year) is 2% of savings. Users see it as trivial.</li>
+            <li><strong>Free trial creates the habit:</strong> By day 7, users have added memberships, felt guilt, received reminders, maybe gone somewhere, and shared. They're hooked. Then a $0.99 charge is a no-brainer.</li>
+            <li><strong>Two tiers are simple:</strong> Basic covers 90% of use cases. Pro is for power users who want detailed analytics and family challenges.</li>
+            <li><strong>Scalable revenue:</strong> 100K signups, 40% trial conversion = 40K users × $0.99 × 12 = $475K ARR (conservative). Add Pro tier adoption and you're at $600K+.</li>
         </ul>
 
-        <h3>Future Revenue (Phase 2+):</h3>
+        <h3>Revenue Projections:</h3>
         <ul>
-            <li><strong>Affiliate:</strong> Partner with local attractions for special "Actually Users" discounts</li>
-            <li><strong>B2B:</strong> Museums/zoos pay to be in the app, get engagement insights</li>
-            <li><strong>Data:</strong> Anonymized membership trends sold to local tourism boards</li>
+            <li><strong>Year 1 (Conservative):</strong> 10K signups, 35% conversion, 70% basic / 30% pro = ~$45K ARR</li>
+            <li><strong>Year 2 (Viral Growth):</strong> 100K signups, 40% conversion, 70% basic / 30% pro = ~$570K ARR</li>
+            <li><strong>Year 3 (Scale):</strong> 500K signups, 45% conversion, 70% basic / 30% pro = ~$2.85M ARR</li>
         </ul>
 
         <h2>Success Metrics</h2>
@@ -596,32 +627,41 @@ Build a mobile app called "Actually" that helps families track memberships and s
    - Floating action button (FAB): "+" to add new membership
    - Bottom navigation tabs: Dashboard | Analytics | Settings
 
-4. **Analytics Screen**
-   - Heading: "Your Membership Usage"
-   - Calendar heatmap (simple grid showing which days user marked "went today"):
-     * Green = went
-     * Gray = didn't go
-     * Shows last 12 weeks
-   - Below calendar:
-     * Stat cards:
-       - "Total memberships: 5"
-       - "Total annual cost: $1,200"
-       - "Times used this year: 12"
-       - "Average cost per visit: $100"
-     * List of all memberships ranked by cost per visit (highest to lowest)
-   - Chart option (optional): Bar chart showing visits by membership type
+4. **Analytics Screen (PRO TIER ONLY)**
+   - If on Basic tier: Show lock icon, "Upgrade to Pro to unlock analytics" with benefits listed
+   - If on Pro tier:
+     * Heading: "Your Membership Usage"
+     * Calendar heatmap (simple grid showing which days user marked "went today"):
+       - Green = went
+       - Gray = didn't go
+       - Shows last 12 weeks
+     * Below calendar:
+       - Stat cards:
+         - "Total memberships: 5"
+         - "Total annual cost: $1,200"
+         - "Times used this year: 12"
+         - "Average cost per visit: $100"
+       - List of all memberships ranked by cost per visit (highest to lowest)
+     * Monthly savings report (shareable/downloadable)
+     * Trending insights section
 
 5. **Settings Screen**
+   - Subscription status section (top):
+     * Show current tier: "Basic" or "Pro"
+     * Show renewal date: "Next renewal: [date]"
+     * Link: "Manage subscription" (App Store/Google Play)
    - User profile section (name, email, phone)
    - Notification preferences:
      * Toggle: "Receive reminders" (default on)
      * Toggle: "Prefer weekend reminders" (default on)
      * Day preference: Saturday / Sunday
      * Time preference: Morning / Afternoon
+     * [PRO FEATURE] Custom reminder schedule - show lock icon if on Basic tier, "Upgrade to Pro" button
    - Sharing preferences:
-     * Toggle: "Allow sharing stats with friends" (optional, for future social features)
-   - Membership management:
-     * Button: "Sync memberships from camera roll" (optional future feature)
+     * Toggle: "Allow sharing stats with friends"
+   - Tier comparison:
+     * Button: "Upgrade to Pro" (if on Basic) OR "You're on Pro!" (if already Pro)
+     * Shows benefits of Pro tier
    - Help/FAQ link
    - Logout
 
@@ -719,14 +759,43 @@ Build a mobile app called "Actually" that helps families track memberships and s
 - Optional watermark ("Posted via Actually")
 - Suggested hashtags (#WeActually #ActuallyWent)
 
-**FEATURES TO EXCLUDE (Save for Phase 2):**
-- GPS geofencing / location verification
-- Forced check-in / manual location entry
-- Complex calendar integration
-- AI recommendations based on weather/events
-- Leaderboards with rankings
-- Third-party API integrations
-- Premium subscription features (analytics, advanced filters)
+**PRICING & PAYWALL LOGIC:**
+- Free Trial: 7 days (full access to all features, countdown displayed)
+- After trial: Subscription required - choose Basic ($0.99/month) or Pro ($1.99/month)
+- Trial countdown shown on dashboard ("X days remaining")
+- Payment via App Store/Google Play (standard in-app subscriptions)
+- Can cancel anytime
+
+**FEATURES BY TIER:**
+
+Basic Tier ($0.99/month):
+- Add/edit/delete unlimited memberships
+- Track visits ("Mark Went Today!" button)
+- Dashboard with membership cards (name, cost, cost per visit, days since visit, expiration)
+- Cost-per-visit auto-calculated
+- Get reminders (2-3 per week based on user settings)
+- Share to social media (Instagram, X, Facebook, TikTok)
+- Pre-populated share captions with photo support
+- Weekly summary ("You used $X of memberships this week")
+- Simple visit history
+
+Pro Tier ($1.99/month - Everything in Basic PLUS):
+- Advanced analytics dashboard
+- Calendar heatmap (visual grid showing visit patterns)
+- Monthly savings reports (shareable/downloadable)
+- Family leaderboards (invite friends, friendly competition)
+- Custom reminder scheduling (choose exact days/times)
+- Detailed insights (trending data, cost predictions)
+- Upcoming feature access (Phase 2 features when released)
+
+**FEATURES TO EXCLUDE (Save for Phase 2+):**
+- GPS geofencing / location auto-detection
+- Weather-based recommendations
+- Event-based suggestions (museum exhibits, local happenings)
+- Third-party integrations
+- AI smart recommendations
+- Calendar sync (Google/Outlook)
+- Leaderboard with public rankings (only private family leaderboards in Pro)
 
 **TECH NOTES FOR RORK:**
 - Cross-platform: iOS + Android (React Native via Rork)
