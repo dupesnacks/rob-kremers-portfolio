@@ -8,7 +8,8 @@
     { "source": "/tesla", "destination": "/tesla.html" },
     { "source": "/rork", "destination": "/rork.html" },
     { "source": "/rork2", "destination": "/rork2.html" },
-    { "source": "/kofi", "destination": "/kofi.html" }
+    { "source": "/kofi", "destination": "/kofi.html" },
+    { "source": "/dentalapp", "destination": "/dentalapp_webpage.html" }
   ],
   "trailingSlash": false
 }
