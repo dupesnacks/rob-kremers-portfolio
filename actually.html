@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actually - Use Your Memberships | Rob Kremers</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #1a1a1a;
+            background: #ffffff;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 80px 24px;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3.5em;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+
+        .hero p {
+            font-size: 1.3em;
+            margin-bottom: 30px;
+            opacity: 0.95;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 60px 24px;
+        }
+
+        h2 {
+            font-size: 2em;
+            margin: 50px 0 25px 0;
+            font-weight: 700;
+            padding-bottom: 15px;
+            border-bottom: 3px solid #667eea;
+        }
+
+        h3 {
+            font-size: 1.4em;
+            margin: 30px 0 15px 0;
+            font-weight: 600;
+            color: #667eea;
+        }
+
+        p {
+            margin-bottom: 16px;
+            font-size: 1.05em;
+            line-height: 1.7;
+        }
+
+        ul, ol {
+            margin: 20px 0 20px 30px;
+        }
+
+        li {
+            margin-bottom: 12px;
+            font-size: 1.05em;
+            line-height: 1.7;
+        }
+
+        .exec-box {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px;
+            border-radius: 12px;
+            margin: 40px 0;
+            font-size: 1.1em;
+        }
+
+        .exec-box strong {
+            display: block;
+            font-size: 1.3em;
+            margin-bottom: 20px;
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin: 40px 0;
+        }
+
+        .feature-card {
+            background: #f5f7ff;
+            padding: 30px;
+            border-radius: 12px;
+            border-left: 4px solid #667eea;
+        }
+
+        .feature-card h4 {
+            color: #667eea;
+            margin-bottom: 12px;
+            font-size: 1.2em;
+        }
+
+        .journey-step {
+            background: #f9f9f9;
+            padding: 25px;
+            border-radius: 12px;
+            margin: 20px 0;
+            border-left: 4px solid #764ba2;
+        }
+
+        .journey-step strong {
+            color: #764ba2;
+            font-size: 1.1em;
+        }
+
+        .alert-example {
+            background: #fff9e6;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 15px 0;
+            border-left: 4px solid #ffa500;
+            font-style: italic;
+        }
+
+        .social-box {
+            background: #e6f3ff;
+            padding: 25px;
+            border-radius: 12px;
+            margin: 20px 0;
+            border-left: 4px solid #0066cc;
+        }
+
+        .market-stat {
+            display: inline-block;
+            background: #667eea;
+            color: white;
+            padding: 15px 25px;
+            border-radius: 8px;
+            margin: 10px 10px 10px 0;
+            font-weight: 600;
+        }
+
+        .rork-prompt {
+            background: #1a1a1a;
+            color: #00ff00;
+            padding: 40px;
+            border-radius: 12px;
+            margin: 50px 0 30px 0;
+            font-family: 'Courier New', monospace;
+            font-size: 0.95em;
+            line-height: 1.8;
+            overflow-x: auto;
+        }
+
+        .rork-prompt-title {
+            color: #667eea;
+            font-weight: bold;
+            font-size: 1.1em;
+            margin-bottom: 20px;
+        }
+
+        .nudge-section {
+            background: #ffe6f0;
+            padding: 30px;
+            border-radius: 12px;
+            margin: 30px 0;
+            border-left: 4px solid #d81b60;
+        }
+
+        .cta-button {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 15px 40px;
+            border-radius: 50px;
+            font-size: 1.1em;
+            font-weight: 600;
+            border: none;
+            cursor: pointer;
+            display: inline-block;
+            text-decoration: none;
+            margin: 20px 10px 20px 0;
+            transition: transform 0.2s;
+        }
+
+        .cta-button:hover {
+            transform: scale(1.05);
+        }
+
+        footer {
+            margin-top: 60px;
+            padding-top: 30px;
+            border-top: 2px solid #f0f0f0;
+            text-align: center;
+            color: #666;
+            font-size: 0.95em;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.2em;
+            }
+
+            .feature-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .container {
+                padding: 30px 16px;
+            }
+
+            h2 {
+                font-size: 1.6em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <h1>Actually</h1>
+        <p>Stop letting your memberships go to waste.</p>
+        <p style="font-size: 1.1em; opacity: 0.9;">The app that reminds families to use what they already paid for.</p>
+    </div>
+
+    <div class="container">
+
+        <div class="exec-box">
+            <strong>Executive Summary</strong>
+            <p>Actually is a mobile app designed for families with young children who purchase memberships (zoos, museums, trampoline parks, community centers, etc.) but rarely use them. The app tracks memberships and subscriptions, calculates cost-per-visit, and sends timely reminders paired with contextual nudges to get families out the door. The core insight: parents don't want to cancel; they want permission and motivation to go. Actually makes that simple, social, and satisfying.</p>
+        </div>
+
+        <h2>The Problem</h2>
+
+        <p>Parents with young families sign up for memberships with the best intentions. "The kids will love the zoo!" "Science is important!" But life gets busy. Soccer practice, work deadlines, decision fatigue. Months pass. The membership renewal comes and goes—still unused. Guilt sets in.</p>
+
+        <p>Existing solutions are broken:</p>
+        <ul>
+            <li><strong>Subscription trackers</strong> (Rocket Money, Bobby): Help you <em>cancel</em> memberships, not use them</li>
+            <li><strong>Gym apps</strong>: Remind you to go, but most families aren't paying for gyms—they're paying for experiences</li>
+            <li><strong>Calendar apps</strong>: Require manual planning. No motivation. No guilt.</li>
+            <li><strong>Nothing</strong> addresses the emotional core: Parents want to say yes to their kids, but need the nudge</li>
+        </ul>
+
+        <h2>The Insight</h2>
+
+        <p>The real value isn't in canceling memberships. It's in <strong>actually using them</strong>—and making that feel easier, guilt-free, and even fun.</p>
+
+        <p>When a parent sees "You haven't been to OMSI in 4 months. Cost per visit: $60. Expires Dec 31," something shifts. Guilt activates, but so does urgency. A simple reminder that says "Saturday is perfect. Weather is good. Kids would love it" doesn't feel like nagging—it feels like permission.</p>
+
+        <h2>Market Opportunity</h2>
+
+        <div style="margin: 30px 0;">
+            <div class="market-stat">40%+ of parents have unused memberships</div>
+            <div class="market-stat">Avg family: $300-600/year sitting unused</div>
+            <div class="market-stat">Kids 3-12: Primary target (peak membership spending)</div>
+            <div class="market-stat">Urban/suburban: High concentration</div>
+        </div>
+
+        <p><strong>TAM:</strong> ~15M+ US families with young children. Even 1% adoption = 150K users. At $2.99/month freemium, that's $4.5M ARR.</p>
+
+        <h2>Core Functionality</h2>
+
+        <div class="feature-grid">
+            <div class="feature-card">
+                <h4>📋 Simple Entry</h4>
+                <p>User adds membership: name, annual cost, category (zoo, museum, gym, etc.), expiration date. No verification required. Quick setup—under 2 minutes for 5 memberships.</p>
+            </div>
+
+            <div class="feature-card">
+                <h4>📊 Dashboard at a Glance</h4>
+                <p>Each membership shows: last visit date, cost per visit, days since last use, expiration countdown, "Mark Went Today" button. One screen, full visibility.</p>
+            </div>
+
+            <div class="feature-card">
+                <h4>⏰ Smart Reminders</h4>
+                <p>Triggers based on: last visit date (>30 days = notification), expiration countdown (<90 days = weekly reminder), weather/context (sunny day + outdoor membership = suggestion), day of week (Saturday = family time).</p>
+            </div>
+
+            <div class="feature-card">
+                <h4>💰 Cost Per Visit Tracking</h4>
+                <p>App calculates: "You've been 3 times. Cost per visit: $40. At current pace, you're losing $15/month by not going." Guilt + math = motivation.</p>
+            </div>
+
+            <div class="feature-card">
+                <h4>🎉 Mark & Share</h4>
+                <p>After a visit, user taps "Went Today!" Builds habit. Optional: "Share" button generates: "We finally used our zoo membership! Kids loved it 🦁" with cost savings highlighted.</p>
+            </div>
+
+            <div class="feature-card">
+                <h4>📈 Weekly Summary</h4>
+                <p>Visual dashboard: "You used $47 of memberships this week!" Calendar heatmap shows when family uses memberships. Trends emerge ("We always go on Saturdays").</p>
+            </div>
+        </div>
+
+        <h2>App User Journey</h2>
+
+        <div class="journey-step">
+            <strong>Step 1: Signup & Onboarding (2 min)</strong>
+            <p>Parent installs app. Quick onboarding: "Tell us about your memberships." User adds 3-5 memberships (name, cost, category, expiration). App immediately shows dashboard.</p>
+        </div>
+
+        <div class="journey-step">
+            <strong>Step 2: First Dashboard View</strong>
+            <p>Parent sees: "OMSI ($120/year, last visit 4 months ago, cost per visit: $60). Oregon Zoo ($180/year, last visit 2 months ago, cost per visit: $36). Trampoline Park ($200/year, last visit 1 week ago)."</p>
+            <p><em>Emotional reaction: "Wait, we haven't been to OMSI in that long? And we're spending $60 per visit now?"</em></p>
+        </div>
+
+        <div class="journey-step">
+            <strong>Step 3: First Reminder (Day 3-7)</strong>
+            <p>App sends: "You haven't been to OMSI in 4 months. Saturday is beautiful. Kids would love the new space exhibit. Let's go!"</p>
+            <p><em>This feels like a friend suggesting a fun outing, not a nag.</em></p>
+        </div>
+
+        <div class="journey-step">
+            <strong>Step 4: Family Goes</strong>
+            <p>Family decides to go. App is open, they tap "Going Today!" when they arrive (or later that day).</p>
+        </div>
+
+        <div class="journey-step">
+            <strong>Step 5: Share & Celebrate</strong>
+            <p>App shows: "Cost per visit is now $40 (down from $60)!" Option to share: "We finally used our OMSI membership! Kids loved it 🚀"</p>
+        </div>
+
+        <div class="journey-step">
+            <strong>Step 6: Habit Loop</strong>
+            <p>Each week, app shows cost savings. Parent gets dopamine hit from using membership. Friends see social post, ask "What app is that?"</p>
+        </div>
+
+        <h2>Alert & Reminder Strategy</h2>
+
+        <h3>When Alerts Trigger:</h3>
+
+        <div class="alert-example">
+            <strong>Days Since Last Visit > 30:</strong> "You haven't been to [Membership] in [X] days. Cost per visit is now $[Y]. This week is perfect to go!"
+        </div>
+
+        <div class="alert-example">
+            <strong>Expiration Countdown < 90 days:</strong> "Your [Membership] expires in [X] days. You've gone [Y] times. Time to make it count?"
+        </div>
+
+        <div class="alert-example">
+            <strong>Weather-Based (Phase 2):</strong> "Sunny Saturday + you have a zoo membership unused for 6 weeks = Perfect timing. The kids would love it."
+        </div>
+
+        <div class="alert-example">
+            <strong>Day of Week Pattern:</strong> "Saturday is your favorite day to use memberships. You have [3 options]. Which sounds fun?"
+        </div>
+
+        <div class="alert-example">
+            <strong>High Cost Per Visit Alert:</strong> "Your [Membership] is now $55 per visit. At this pace, you'll lose $120 this year. One visit this month gets you back on track."
+        </div>
+
+        <h3>Frequency & Tone:</h3>
+        <ul>
+            <li><strong>Max 2 notifications per week</strong> (not spammy, but enough to matter)</li>
+            <li><strong>Never on school days</strong> (parents are overwhelmed)</li>
+            <li><strong>Saturday mornings preferred</strong> (family decision-making time)</li>
+            <li><strong>Tone: Friendly, not guilty</strong> ("Let's go have fun" not "You're wasting money")</li>
+        </ul>
+
+        <h2>Social & Shareability</h2>
+
+        <div class="social-box">
+            <h3>How We Make It Shareable:</h3>
+
+            <p><strong>Post-Visit Share Cards:</strong></p>
+            <ul>
+                <li>"We used our zoo membership today! Cost per visit: $36. Kids had a blast 🦁"</li>
+                <li>"OMSI visit #4 this year. Breaking even on the membership! 🚀"</li>
+                <li>"Our family used $87 of memberships this month 💪"</li>
+            </ul>
+
+            <p><strong>The Social Loop:</strong></p>
+            <ol>
+                <li>Parent shares: "Finally took kids to the aquarium"</li>
+                <li>Friend responds: "What app is that?"</li>
+                <li>Friend installs Actually</li>
+                <li>Friend sees their unused memberships, guilt kicks in</li>
+                <li>Friend goes to their membership, shares the same way</li>
+            </ol>
+
+            <p><strong>Leaderboard (Optional Premium):</strong></p>
+            <ul>
+                <li>"Families using memberships this month" (not public, just within friend circle)</li>
+                <li>Friendly competition: "The Smiths used their memberships 5 times this month"</li>
+                <li>No shame, just social proof: "If they can do it, so can we"</li>
+            </ul>
+
+            <p><strong>Shareable Stats:</strong></p>
+            <ul>
+                <li>Weekly: "We saved $47 by using our memberships this week"</li>
+                <li>Monthly: "Our family used 12 memberships this month!"</li>
+                <li>Yearly: "We used $540 of memberships instead of wasting them all"</li>
+            </ul>
+        </div>
+
+        <h2>Nudge Strategy: How We Get Families to Actually Go</h2>
+
+        <div class="nudge-section">
+            <h3>Psychological Nudges (Subtle, Effective):</h3>
+
+            <p><strong>1. Visibility Nudge:</strong> Just seeing "Last visit: 4 months ago" makes guilt activate. No need for aggressive messaging.</p>
+
+            <p><strong>2. Cost Per Visit Nudge:</strong> "$60 per visit" is scarier than "$120/year." Reframing cost makes impact visceral.</p>
+
+            <p><strong>3. Expiration Countdown:</strong> "Expires Dec 31" creates urgency without pressure. "Better use it before it's gone."</p>
+
+            <p><strong>4. Weekend Targeting:</strong> Reminders land Saturday morning when families are planning. NOT mid-week when stress is high.</p>
+
+            <p><strong>5. Social Proof:</strong> "The Johnsons went to OMSI this weekend." (Optional: If friends are using the app.)</p>
+
+            <p><strong>6. Permission Framing:</strong> "Saturday is perfect. Here's what's happening at OMSI." Gives parents permission + ideas. Not guilt, but guidance.</p>
+
+            <p><strong>7. Progress Celebration:</strong> After a visit: "Cost per visit is now $45 (down from $60)!" Immediate positive reinforcement.</p>
+
+            <p><strong>8. Friction Reduction:</strong> "Parking costs $5. Opens at 10 AM. Weather is 65°F." Remove decision-making friction.</p>
+        </div>
+
+        <h2>Monetization Strategy</h2>
+
+        <h3>Freemium Model:</h3>
+        <ul>
+            <li><strong>Free:</strong> Track unlimited memberships, reminders, cost-per-visit calculation, share basic stats</li>
+            <li><strong>Premium ($2.99/month or $29.99/year):</strong>
+                <ul>
+                    <li>Advanced analytics (trending, predictions)</li>
+                    <li>Family leaderboards with friends</li>
+                    <li>Smart recommendations (Phase 2: weather-based, event-based)</li>
+                    <li>Calendar sync with Google Calendar/Outlook</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h3>Future Revenue (Phase 2+):</h3>
+        <ul>
+            <li><strong>Affiliate:</strong> Partner with local attractions for special "Actually Users" discounts</li>
+            <li><strong>B2B:</strong> Museums/zoos pay to be in the app, get engagement insights</li>
+            <li><strong>Data:</strong> Anonymized membership trends sold to local tourism boards</li>
+        </ul>
+
+        <h2>Success Metrics</h2>
+
+        <ul>
+            <li><strong>DAU (Daily Active Users):</strong> Target 40%+ of installed base opens app weekly</li>
+            <li><strong>Visits Logged:</strong> Average user marks "went today" 2-3x per month</li>
+            <li><strong>Share Rate:</strong> 20%+ of visits result in social share</li>
+            <li><strong>Retention:</strong> Day 7 retention >40%, Day 30 retention >25%</li>
+            <li><strong>Viral Coefficient:</strong> Each user invites 0.5+ friends (organic growth)</li>
+        </ul>
+
+        <h2>Why This Works (The Core Psychology)</h2>
+
+        <ol>
+            <li><strong>Solves Real Guilt:</strong> Parents feel terrible about unused memberships. This app removes shame by motivating action.</li>
+            <li><strong>Simple Visibility:</strong> You don't need AI or GPS. Just showing "4 months since last visit" + "cost per visit" creates behavior change.</li>
+            <li><strong>Social Proof:</strong> Sharing becomes natural because it's genuinely good news ("We're finally using our memberships!").</li>
+            <li><strong>Friction Reduction:</strong> Weekend reminders + weather + hours remove decision-making burden.</li>
+            <li><strong>Habit Loop:</strong> Reminder → Go → Mark → See savings → Celebrate. Each step reinforces the next.</li>
+            <li><strong>Scalable TAM:</strong> Every family with kids has memberships they're not using. Not a niche. A universal problem.</li>
+        </ol>
+
+        <hr style="margin: 50px 0; border: none; border-top: 2px solid #f0f0f0;">
+
+        <h2>Build Brief for Rork.com</h2>
+
+        <p style="margin-bottom: 30px; font-style: italic; color: #666;">The following is the AI-native prompt for building Actually on Rork. It's written for vibe coding—plain English, focus on UX and functionality, no technical overhead.</p>
+
+        <div class="rork-prompt">
+            <div class="rork-prompt-title">RORK PROMPT: BUILD "ACTUALLY" - MEMBERSHIP & SUBSCRIPTION TRACKER APP</div>
+
+            <div style="margin-top: 20px;">
+Build a mobile app called "Actually" that helps families track memberships and subscriptions they own but rarely use. The app motivates them to actually use what they paid for through reminders, cost tracking, and social sharing.
+
+**CORE COLOR SCHEME:**
+- Primary: Purple/Indigo (#667eea)
+- Secondary: Deep Purple (#764ba2)
+- Accent: White backgrounds, subtle purple borders
+- Text: Dark charcoal (#1a1a1a)
+
+**MAIN SCREENS:**
+
+1. **Splash/Login Screen**
+   - App name: "Actually" (bold, large, centered)
+   - Tagline: "Use what you already paid for"
+   - Login with email or phone (simple)
+   - Skip to quick demo option
+
+2. **Onboarding - Add First Membership**
+   - Heading: "Let's add your memberships"
+   - Input fields:
+     * Membership name (text): "e.g., Oregon Zoo"
+     * Annual cost (number): "$"
+     * Category dropdown: Zoo, Museum, Science Center, Trampoline Park, Community Center, Gym, Pool, Spa, Other
+     * Expiration date (date picker)
+     * Number of visits so far (number, optional): Defaults to 0
+   - Button: "Add Membership"
+   - After adding first: "Add another?" with quick-add button
+   - After user decides they're done: "Go to Dashboard"
+
+3. **Dashboard (Main Screen - Opens by Default)**
+   - Header: "Your Memberships"
+   - Subtitle: "Quick look at what you're using (and what you're not)"
+   - For each membership, show a card with:
+     * Membership name (bold, large)
+     * Category icon (small emoji or icon)
+     * Cost per year (e.g., "$120/year")
+     * Days/months since last visit (e.g., "Last visit: 4 months ago")
+     * Cost per visit calculated (e.g., "Cost per visit: $60" in red if high)
+     * Days until expiration (e.g., "Expires in 92 days" in amber if <90 days)
+     * Button: "Mark Went Today!" (purple, prominent)
+     * Small ellipsis menu (edit/delete options)
+   - At bottom: "Weekly Summary" showing total used memberships that week in a badge (e.g., "$47 used this week")
+   - Floating action button (FAB): "+" to add new membership
+   - Bottom navigation tabs: Dashboard | Analytics | Settings
+
+4. **Analytics Screen**
+   - Heading: "Your Membership Usage"
+   - Calendar heatmap (simple grid showing which days user marked "went today"):
+     * Green = went
+     * Gray = didn't go
+     * Shows last 12 weeks
+   - Below calendar:
+     * Stat cards:
+       - "Total memberships: 5"
+       - "Total annual cost: $1,200"
+       - "Times used this year: 12"
+       - "Average cost per visit: $100"
+     * List of all memberships ranked by cost per visit (highest to lowest)
+   - Chart option (optional): Bar chart showing visits by membership type
+
+5. **Settings Screen**
+   - User profile section (name, email, phone)
+   - Notification preferences:
+     * Toggle: "Receive reminders" (default on)
+     * Toggle: "Prefer weekend reminders" (default on)
+     * Day preference: Saturday / Sunday
+     * Time preference: Morning / Afternoon
+   - Sharing preferences:
+     * Toggle: "Allow sharing stats with friends" (optional, for future social features)
+   - Membership management:
+     * Button: "Sync memberships from camera roll" (optional future feature)
+   - Help/FAQ link
+   - Logout
+
+6. **Membership Detail Screen (Tap a Membership Card)**
+   - Full membership details:
+     * Name (large, bold)
+     * Category badge
+     * Annual cost
+     * Cost per visit (highlighted)
+     * Total visits so far
+     * Last visit date/time
+     * Days until expiration (red if <90 days)
+     * Description/notes (if user added any)
+   - Action buttons:
+     * "Mark Went Today!" (primary, purple)
+     * "View History" (secondary)
+     * "Edit" (tertiary)
+     * "Delete" (red, careful destructive action)
+   - History section below: List of past visits (dates when user marked "went today"), newest first
+
+7. **Share Sheet (After Marking "Went Today")**
+   - Heading: "Nice! You used your membership!"
+   - Auto-generated share preview:
+     * "We finally used our [Membership] today! Cost per visit: $[X]. Kids loved it 🎉"
+     * Option: Edit the text
+     * Show updated cost per visit (celebrates the ROI)
+   - Buttons:
+     * "Share to Instagram Stories"
+     * "Share to Facebook"
+     * "Copy to clipboard"
+     * "Skip"
+   - After sharing, return to dashboard
+
+**USER INTERACTIONS & BEHAVIORS:**
+
+1. User adds a membership (name, cost, category, expiration, visits)
+2. Dashboard loads, user sees all memberships at a glance
+3. User sees costs, days since last visit, expiration countdown
+4. App triggers reminder notification (weekends, 2/week max)
+5. User reads reminder: "You haven't been to OMSI in 4 months. Cost per visit: $60. Saturday is beautiful. Let's go!"
+6. User taps reminder or opens app, taps "Mark Went Today!" on OMSI card
+7. Share sheet appears with pre-written message
+8. User shares to social media
+9. Dashboard updates cost per visit (now lower, celebrates savings)
+10. Weekly summary shows "$47 used this week"
+11. Analytics screen shows calendar heatmap of visits
+
+**DATA TO TRACK & STORE:**
+- User profile (name, email, phone, password)
+- Memberships list (name, annual cost, category, expiration date, creation date)
+- Visit history (membership ID, date visited, optional notes)
+- User preferences (notification settings, reminder times, sharing preferences)
+
+**NOTIFICATIONS (Backend/Logic):**
+- Trigger: Days since last visit > 30 days → Send reminder (2x per week, Saturday AM)
+- Trigger: Days until expiration < 90 days → Send weekly reminder
+- Trigger: Membership not used in 6 months → Higher-urgency reminder
+- All notifications include membership name, last visit date, cost per visit, and action button "Open App"
+
+**TONE & DESIGN:**
+- Friendly, not judgmental
+- Celebrate family time and experiences, not just money-saving
+- Use warm language ("Let's go!" not "You're wasting money")
+- Emoji use: Appropriate, fun (zoo 🦁, museum 🏛️, etc.)
+- Icons: Simple, clean, recognizable
+- Accessibility: Large buttons, clear contrast, readable fonts
+
+**FEATURES TO EXCLUDE (MVP):**
+- GPS geofencing
+- Forced checkin/location verification
+- Complex calendar integration
+- AI recommendations (Phase 2)
+- Leaderboards (Phase 2)
+- Third-party API integration (Phase 2)
+
+**TECH NOTES FOR RORK:**
+- Cross-platform: iOS + Android (React Native via Rork)
+- Database: User profiles, memberships, visit history
+- Authentication: Email/phone signup (simple, no OAuth initially)
+- Push notifications: Scheduled based on user preferences
+- Share functionality: Native iOS/Android share sheets
+- No backend auth complexity needed (Rork handles basic auth)
+
+**SUCCESS BEHAVIORS TO BUILD FOR:**
+- User adds >3 memberships in first session
+- User marks "went today" within 2 weeks of signup
+- User shares at least once
+- User opens app weekly for at least 4 weeks
+- User receives and engages with reminder notifications
+            </div>
+        </div>
+
+        <h2>Next Steps</h2>
+
+        <ol>
+            <li><strong>Build with Rork:</strong> Use the prompt above to generate the app (should take <1 hour on Rork)</li>
+            <li><strong>Test with 20-30 families:</strong> Friends, family, local parent groups</li>
+            <li><strong>Measure core metrics:</strong> DAU, visit logging, share rate, retention</li>
+            <li><strong>Iterate on nudges:</strong> Which reminder times/messages actually get families to go?</li>
+            <li><strong>Soft launch:</strong> ProductHunt, parent blogs, parenting subreddits</li>
+            <li><strong>Scale:</strong> If retention + sharing is strong, invest in marketing to parent audience</li>
+        </ol>
+
+        <footer>
+            <p>Actually | Build Brief & Landing Page | March 8, 2026</p>
+            <p>Created for: Myron | Brand Lead: Actually App</p>
+        </footer>
+    </div>
+</body>
+</html>

@@ -15,7 +15,8 @@
     { "source": "/tfd_consumables", "destination": "/tfd_consumables.html" },
     { "source": "/dentalresearch", "destination": "/dental_research_strategic_report.html" },
     { "source": "/marlo-playbook", "destination": "/marlo-playbook.html" },
-    { "source": "/viral", "destination": "/viral.html" }
+    { "source": "/viral", "destination": "/viral.html" },
+    { "source": "/actually", "destination": "/actually.html" }
   ],
   "trailingSlash": false
 }
