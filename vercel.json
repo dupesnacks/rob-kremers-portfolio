@@ -12,6 +12,7 @@
     { "source": "/dentalapp", "destination": "/dentalapp_webpage.html" },
     { "source": "/tfd", "destination": "/tfd_page.html" },
     { "source": "/tfd_app_brief", "destination": "/tfd_app_brief.html" },
+    { "source": "/tfd_consumables", "destination": "/tfd_consumables.html" },
     { "source": "/marlo-playbook", "destination": "/marlo-playbook.html" }
   ],
   "trailingSlash": false
