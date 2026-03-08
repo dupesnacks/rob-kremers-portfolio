@@ -9,7 +9,8 @@
     { "source": "/rork", "destination": "/rork.html" },
     { "source": "/rork2", "destination": "/rork2.html" },
     { "source": "/kofi", "destination": "/kofi.html" },
-    { "source": "/dentalapp", "destination": "/dentalapp_webpage.html" }
+    { "source": "/dentalapp", "destination": "/dentalapp_webpage.html" },
+    { "source": "/marlo-playbook", "destination": "/marlo-playbook.html" }
   ],
   "trailingSlash": false
 }
