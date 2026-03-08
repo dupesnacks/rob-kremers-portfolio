@@ -235,8 +235,27 @@
                 font-size: 2rem;
             }
 
+            nav {
+                transition: transform 0.3s ease-in-out;
+            }
+
+            nav.hide {
+                transform: translateY(-100%);
+            }
+
             nav ul {
-                flex-direction: column;
+                overflow-x: auto;
+                -webkit-overflow-scrolling: touch;
+                white-space: nowrap;
+            }
+
+            nav li {
+                display: inline-block;
+            }
+
+            nav a {
+                padding: 10px 12px;
+                font-size: 0.85rem;
             }
 
             section {
@@ -688,7 +707,51 @@
         <p><strong>Strategic Analysis: Alcon Path to Market Juggernaut</strong></p>
         <p>Prepared by AI market analyst using Tavily research, market databases, company filings, and optometry industry publications</p>
         <p>Last updated: March 2025</p>
-        <p style="margin-top: 20px; opacity: 0.8; font-size: 0.9rem;">Published at robkremers.com/alcon</p>
+        <p style="margin-top: 20px; opacity: 0.8; font-size: 0.9rem;">Published at robkremers.com/kofi</p>
     </footer>
+
+    <script>
+        // Hide nav on scroll down, show on scroll up (mobile only)
+        const nav = document.querySelector('nav');
+        let lastScrollPos = 0;
+        let ticking = false;
+
+        function updateNavVisibility() {
+            const currentScrollPos = window.pageYOffset;
+            
+            // Only apply hide-on-scroll on mobile
+            if (window.innerWidth > 768) {
+                nav.classList.remove('hide');
+                ticking = false;
+                return;
+            }
+
+            // Hide nav when scrolling down, show when scrolling up
+            if (currentScrollPos > lastScrollPos && currentScrollPos > 100) {
+                // Scrolling down
+                nav.classList.add('hide');
+            } else {
+                // Scrolling up
+                nav.classList.remove('hide');
+            }
+
+            lastScrollPos = currentScrollPos;
+            ticking = false;
+        }
+
+        window.addEventListener('scroll', function() {
+            if (!ticking) {
+                window.requestAnimationFrame(updateNavVisibility);
+                ticking = true;
+            }
+        });
+
+        // Show nav on resize (in case going from mobile to desktop)
+        window.addEventListener('resize', function() {
+            if (window.innerWidth > 768) {
+                nav.classList.remove('hide');
+            }
+        });
+    </script>
 </body>
 </html>
