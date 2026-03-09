@@ -295,7 +295,61 @@ R1 FEEDBACK - CRITICAL FIXES FOR R2:
    - Must recalculate cost-per-visit when initial visit count is edited
    - Access from: Ellipsis menu on dashboard card OR detail screen
 
-5. REDESIGN ANALYTICS SCREEN - BETTER MEMBERSHIP USAGE VISUALIZATION
+5. REMOVE SHARE FEATURE - REPLACE WITH SMART CELEBRATION POPUP
+   - Delete share sheet and all sharing functionality (Instagram, X, Facebook, TikTok buttons)
+   - Remove photo upload feature (not needed for MVP)
+   - Remove hashtag suggestions
+   - Remove watermarking
+   
+   REPLACE WITH: "Visit Celebration Popup" that shows cost-per-visit impact
+   
+   After user marks "Went Today!", popup shows:
+   
+   Header: "🎉 You ACTUALLY went!"
+   
+   Show cost-per-visit improvement:
+   - Before: "$[OLD cost per visit]"
+   - After: "$[NEW cost per visit]" (highlighted in green)
+   - Change: "$X saved per visit" AND "X% improvement" (both metrics)
+   
+   Show membership status:
+   - "You have [X] months left on this membership"
+   - "You've now been [X] times total"
+   
+   Show smart recommendations (conditional logic):
+   
+   Logic - Calculate achievable visit targets:
+   - Days/months remaining on membership
+   - Current cost per visit
+   - Show 1-2 scenarios user could realistically achieve
+   
+   Example 1 (Annual pass, 9 months left):
+   - "Go 1x/month: You'd hit $20/visit"
+   - "Go 2x/month: You'd hit $10/visit"
+   
+   Example 2 (Monthly membership, renews in 30 days):
+   - "Renews in 30 days. Go 2 more times this month = $30/visit next cycle!"
+   
+   Example 3 (Expiring soon, 2 months left):
+   - "Only 2 months left! Go 3 more times before it expires."
+   
+   Example 4 (On track):
+   - "You're crushing it! Keep it up! 💪"
+   
+   Design:
+   - Large, readable numbers
+   - Green text for improvements/positivity
+   - No pressure/guilt language
+   - Button: "Got it, back to dashboard"
+   
+   Why:
+   - Celebrates the action immediately
+   - Shows real financial impact in real-time
+   - Gives user a concrete goal for next visit
+   - Keeps user motivated without needing external sharing
+   - Drives repeat behavior through self-satisfaction, not social validation
+
+6. REDESIGN ANALYTICS SCREEN - BETTER MEMBERSHIP USAGE VISUALIZATION
    REMOVE: Generic calendar heatmap (confusing, not actionable)
    
    REPLACE WITH: Clear membership-by-membership breakdown that shows:
@@ -467,111 +521,45 @@ PRIORITY: Issues 1, 2, 3 are blockers for R2. Issue 4 & 5 are critical for UX/vi
         <h2>Social & Shareability</h2>
 
         <div class="social-box">
-            <h3>How We Make It Shareable: "We ACTUALLY..."</h3>
+            <h3>Viral Growth (No Share Button, Focus on Behavior Change)</h3>
 
-            <p><strong>The Brand as Verb:</strong> Every share starts with "We ACTUALLY" — which is both the app name and the action. This creates organic brand awareness while feeling completely natural.</p>
+            <p><strong>How Actually Becomes Viral:</strong></p>
+            
+            <p>We're removing the share feature from MVP. Instead, virality comes from:</p>
 
-            <p><strong>Post-Visit Photo Share (Instagram, X, Facebook):</strong></p>
-            <p style="background: white; padding: 15px; border-radius: 8px; border-left: 4px solid #667eea; margin: 15px 0;">
-                <strong>User snaps a photo at the attraction.</strong><br>
-                App shows pre-populated share card:
-            </p>
-            <ul>
-                <li>"We ACTUALLY went to OMSI today. 7th visit this year with our annual membership. 🚀" [Photo from zoo]</li>
-                <li>"We ACTUALLY used our Oregon Zoo membership today. Cost per visit: $36. Kids loved the lions! 🦁" [Family photo]</li>
-                <li>"We ACTUALLY went to the trampoline park. Finally using that membership! 💪" [Kids jumping photo]</li>
-                <li>"We ACTUALLY used our community center membership 4 times this month. Family time well spent ✨"</li>
-            </ul>
-
-            <p><strong>The Viral Mechanics:</strong></p>
             <ol>
-                <li>Parent takes photo at attraction</li>
-                <li>Taps "Mark Went Today!" in Actually</li>
-                <li>App shows share card: "We ACTUALLY went to [Membership] today."</li>
-                <li>Pre-populated details:
-                    <ul>
-                        <li>Membership name</li>
-                        <li>Number of visits this year</li>
-                        <li>Cost per visit (if good savings, highlighted)</li>
-                        <li>Membership expiration (if urgency, adds it)</li>
-                        <li>Family tag or kids' names (optional)</li>
-                    </ul>
-                </li>
-                <li>One-tap sharing to Instagram Stories, X (Twitter), Facebook, TikTok</li>
-                <li>Photo auto-includes (or user can add one)</li>
-                <li>Watermark option: "Posted via Actually" (subtle branding)</li>
+                <li><strong>Parent behavior changes:</strong> Family starts using memberships they were ignoring</li>
+                <li><strong>Natural conversation:</strong> "Hey, we're using that zoo membership again!" (Friend asks what changed)</li>
+                <li><strong>Curiosity hook:</strong> Friend hears about the app, notices it in parent's phone, asks to download</li>
+                <li><strong>Relatability:</strong> Friend realizes they have the exact same problem (unused memberships)</li>
+                <li><strong>FOMO:</strong> Friend sees their own family isn't using memberships, gets guilt/motivation</li>
+                <li><strong>Loop repeats:</strong> Friend installs, adds memberships, gets reminders, goes somewhere, behavior changes</li>
             </ol>
 
-            <p><strong>Example Share Cards (Auto-Generated):</strong></p>
-            <div style="background: #f0f0f0; padding: 15px; border-radius: 8px; margin: 15px 0; font-style: italic;">
-                <strong>"We ACTUALLY went to OMSI today."</strong><br>
-                Our 7th visit this year with our annual membership. Kids loved the space exhibit! 🚀<br>
-                <em style="color: #666;">Cost per visit: $34</em>
-            </div>
-            <div style="background: #f0f0f0; padding: 15px; border-radius: 8px; margin: 15px 0; font-style: italic;">
-                <strong>"We ACTUALLY used our zoo membership!"</strong><br>
-                Finally got the kids out of the house. Best $180 decision of the year 🦁<br>
-                <em style="color: #666;">5 visits so far. Cost per visit: $36</em>
-            </div>
-            <div style="background: #f0f0f0; padding: 15px; border-radius: 8px; margin: 15px 0; font-style: italic;">
-                <strong>"We ACTUALLY went to the trampoline park today."</strong><br>
-                Membership expires in 60 days. Glad we're finally getting our money's worth 💪<br>
-                <em style="color: #666;">Posted via Actually</em>
-            </div>
-
-            <p><strong>The Social Loop (Viral Mechanics):</strong></p>
-            <ol>
-                <li>Parent posts: "We ACTUALLY went to the aquarium today!" [photo]</li>
-                <li>Friend sees post, confused: "Wait, what's 'Actually'?"</li>
-                <li>Friend clicks link in caption or asks parent</li>
-                <li>Friend learns about Actually app</li>
-                <li>Friend realizes they have same problem (unused memberships)</li>
-                <li>Friend installs Actually, adds their memberships</li>
-                <li>Friend gets reminder, goes to their membership, shares the same way</li>
-                <li>Loop repeats</li>
-            </ol>
-
-            <p><strong>Why "We ACTUALLY" Works:</strong></p>
+            <p><strong>Word-of-Mouth Drivers:</strong></p>
             <ul>
-                <li>✅ Double meaning: app name + action verb = natural language integration</li>
-                <li>✅ Self-aware humor: Implies parent is surprised they actually went</li>
-                <li>✅ Emotional honesty: "We finally did it!" feels authentic</li>
-                <li>✅ Branding without promotion: App name appears 3x per share, feels organic</li>
-                <li>✅ Viral hooks: Friends ask "What's Actually?" naturally</li>
-                <li>✅ Hashtag potential: #WeActually #ActuallyWent—becomes a trend</li>
+                <li><strong>Real behavior change:</strong> "We ACTUALLY went to the zoo this month" (real achievement, not forced sharing)</li>
+                <li><strong>Cost savings:</strong> "I can't believe how much we're saving" (word spreads naturally)</li>
+                <li><strong>Guilt relief:</strong> "This app made me feel less bad about the memberships" (resonates with other parents)</li>
+                <li><strong>Family motivation:</strong> "Kids actually want to go more often" (parents bond over this)</li>
             </ul>
 
-            <p><strong>Photo Integration (MVP Feature):</strong></p>
+            <p><strong>Why Removing Share Is Better:</strong></p>
             <ul>
-                <li>User taps "Mark Went Today!" → "Add a photo? (optional)"</li>
-                <li>Photo gets attached to visit record</li>
-                <li>When user shares, photo auto-populates in the share card</li>
-                <li>Caption pre-fills with membership name + visit count</li>
-                <li>One tap to share to Instagram Stories, X, Facebook, TikTok</li>
-                <li>Optional watermark: "Posted via Actually" (subtle, not annoying)</li>
+                <li>❌ Share features feel forced/spammy</li>
+                <li>❌ Not everyone wants to broadcast their membership usage</li>
+                <li>❌ Real virality comes from behavior change, not button clicks</li>
+                <li>✅ Word-of-mouth from actual results is more powerful</li>
+                <li>✅ Focus on core problem (getting families to use memberships)</li>
+                <li>✅ Celebration popup keeps user in-app, not distracted by sharing</li>
             </ul>
 
-            <p><strong>Hashtag Strategy:</strong></p>
+            <p><strong>Leaderboard (Optional Premium Feature):</strong></p>
             <ul>
-                <li>#WeActually — Main brand hashtag</li>
-                <li>#ActuallyWent — Action-based</li>
-                <li>#FamilyMemberships — Community discovery</li>
-                <li>#StopWastingMemberships — Awareness</li>
-                <li>App encourages hashtag inclusion in share template</li>
-            </ul>
-
-            <p><strong>Leaderboard (Optional Premium):</strong></p>
-            <ul>
-                <li>"Families using memberships this month" (not public, just within friend circle)</li>
+                <li>"Families using memberships this month" (private, within friend circle only)</li>
                 <li>Friendly competition: "The Smiths ACTUALLY went 8 times this month"</li>
-                <li>No shame, just social proof: "If they can do it, so can we"</li>
-            </ul>
-
-            <p><strong>Shareable Stats (Weekly/Monthly):</strong></p>
-            <ul>
-                <li>Weekly: "We ACTUALLY used $47 of memberships this week 💪"</li>
-                <li>Monthly: "Our family ACTUALLY used 12 memberships this month! 🎉"</li>
-                <li>Yearly: "We ACTUALLY used $540 of memberships instead of wasting them all 🚀"</li>
+                <li>No shame, just social proof and motivation</li>
+                <li>Available only in Pro tier</li>
             </ul>
         </div>
 
@@ -812,27 +800,46 @@ The app icon should be a clean, modern interpretation of "Actually" concept. Des
    - Save button updates all calculations (cost per visit, total visits, etc.)
    - Cancel returns to previous screen
 
-7. **Share Sheet (After Marking "Went Today")**
-   - Heading: "We ACTUALLY went! 🎉"
-   - Photo section:
-     * "Add a photo? (optional)" - allow user to snap photo or upload from camera roll
-     * Show preview of selected photo (if any)
-   - Auto-generated share preview (editable):
-     * "We ACTUALLY went to [Membership] today!"
-     * Show visit count: "[X] visits this year"
-     * Show cost per visit: "Cost per visit: $[X]"
-     * Option: Edit the caption text before sharing
-     * Show updated cost per visit (celebrates the ROI)
-     * Suggested hashtags: #WeActually #ActuallyWent #FamilyMemberships
-   - Share buttons:
-     * "Share to Instagram Stories"
-     * "Share to X (Twitter)"
-     * "Share to Facebook"
-     * "Share to TikTok"
-     * "Copy to clipboard"
-     * "Skip"
-   - Optional: Include "Posted via Actually" watermark
-   - After sharing, return to dashboard with success message: "Your family inspired someone to use their membership!"
+7. **Visit Celebration Popup (After Marking "Went Today!")**
+   - Heading: "🎉 You ACTUALLY went!"
+   - No share feature (removed for MVP focus)
+   
+   SHOW - Cost Per Visit Impact:
+   - Before: "$[OLD cost per visit]"
+   - After: "$[NEW cost per visit]" (highlighted in green)
+   - Change: "You saved $X per visit!" OR "You reduced cost by X%"
+   - Both dollar amount AND percentage (whichever is more impressive)
+   
+   SHOW - Membership Status:
+   - Days/months remaining: "You have [X] months left on this membership"
+   - Visits to breakeven: "You've now been [X] times total"
+   
+   SHOW - Smart Recommendations (Conditional):
+   - Calculate scenarios based on membership expiration and cost goals
+   
+   Example 1 (Annual membership, many months left):
+   - "You have 9 months left. If you go 1x/month: $20/visit"
+   - "Or go 2x/month: $10/visit"
+   
+   Example 2 (Monthly membership):
+   - "Renews in 30 days. You're at $40/visit."
+   - "Go 2 more times this month and you'll hit $30/visit next cycle!"
+   
+   Example 3 (Expiring soon):
+   - "Only 2 months left! Go 3 more times before it expires."
+   
+   Logic:
+   - Show scenarios that are ACHIEVABLE (not "go 10 times")
+   - Focus on next milestone (next month or next quarter)
+   - Make it feel attainable, not guilt-inducing
+   
+   Button: "Got it, back to dashboard" (closes popup, returns to main screen)
+   
+   Psychology:
+   - Celebrates the action they just took
+   - Shows real ROI in real-time
+   - Gives them a concrete target for next visit
+   - Motivates repeat behavior
 
 **USER INTERACTIONS & BEHAVIORS:**
 
