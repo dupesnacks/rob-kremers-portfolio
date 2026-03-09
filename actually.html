@@ -591,9 +591,22 @@ Build a mobile app called "Actually" that helps families track memberships and s
 - Accent: White backgrounds, subtle purple borders
 - Text: Dark charcoal (#1a1a1a)
 
+**APP ICON DESIGN:**
+The app icon should be a clean, modern interpretation of "Actually" concept. Design brief:
+- Primary element: A checkmark or achievement symbol (suggesting "actually did it")
+- Secondary element: Subtle family silhouette or group of people in the background
+- Color: Purple/indigo background (#667eea) with white checkmark/family icon
+- Style: Minimalist, rounded corners (iOS style), no gradients (solid colors only)
+- Concept: The checkmark represents the "We ACTUALLY went" moment - achievement/completion
+- Alternative: A simple calendar square with a purple checkmark and white background
+- Must be recognizable at 60x60px, 120x120px, and large sizes
+- No text/letters on the icon
+- Should convey: Action taken, family activity, accomplishment
+
 **MAIN SCREENS:**
 
-1. **Splash/Login Screen**
+1. **Splash/Login Screen + App Icon**
+   - App icon displayed prominently (checkmark in purple circle, see icon design brief above)
    - App name: "Actually" (bold, large, centered)
    - Tagline: "Use what you already paid for"
    - Login with email or phone (simple)
@@ -603,10 +616,14 @@ Build a mobile app called "Actually" that helps families track memberships and s
    - Heading: "Let's add your memberships"
    - Input fields:
      * Membership name (text): "e.g., Oregon Zoo"
-     * Annual cost (number): "$"
+     * Billing type toggle: "Annual" or "Monthly" (toggle switch, default Annual)
+       - If Annual: Show "Annual cost (number): $"
+       - If Monthly: Show "Monthly cost (number): $"
      * Category dropdown: Zoo, Museum, Science Center, Trampoline Park, Community Center, Gym, Pool, Spa, Other
-     * Expiration date (date picker)
-     * Number of visits so far (number, optional): Defaults to 0
+     * Renewal/Expiration date (date picker)
+     * Number of visits already completed (number, optional): Defaults to 0
+       - Label: "How many times have you already visited?"
+       - This is CRITICAL: Must be factored into cost-per-visit calculation
    - Button: "Add Membership"
    - After adding first: "Add another?" with quick-add button
    - After user decides they're done: "Go to Dashboard"
@@ -617,9 +634,12 @@ Build a mobile app called "Actually" that helps families track memberships and s
    - For each membership, show a card with:
      * Membership name (bold, large)
      * Category icon (small emoji or icon)
-     * Cost per year (e.g., "$120/year")
+     * Cost display (e.g., "$120/year" OR "$9.99/month" depending on billing type)
      * Days/months since last visit (e.g., "Last visit: 4 months ago")
-     * Cost per visit calculated (e.g., "Cost per visit: $60" in red if high)
+     * Cost per visit calculated (e.g., "Cost per visit: $60" in red if high, green if good)
+       - MUST include the initial visit count from onboarding
+       - Formula: Total annual cost / total visits (including initial visits)
+     * Total visits to date (e.g., "2 visits so far" - includes initial count + logged visits)
      * Days until expiration (e.g., "Expires in 92 days" in amber if <90 days)
      * Button: "Mark Went Today!" (purple, prominent)
      * Small ellipsis menu (edit/delete options)
@@ -669,18 +689,30 @@ Build a mobile app called "Actually" that helps families track memberships and s
    - Full membership details:
      * Name (large, bold)
      * Category badge
-     * Annual cost
-     * Cost per visit (highlighted)
-     * Total visits so far
+     * Billing type and cost (e.g., "$120/year" OR "$9.99/month")
+     * Cost per visit (highlighted, color-coded: red if high, green if good)
+       - MUST reflect initial visit count + all logged visits
+     * Total visits to date (e.g., "4 visits total: 2 initial + 2 logged")
      * Last visit date/time
      * Days until expiration (red if <90 days)
      * Description/notes (if user added any)
    - Action buttons:
      * "Mark Went Today!" (primary, purple)
      * "View History" (secondary)
-     * "Edit" (tertiary)
+     * "Edit" (tertiary - see below)
      * "Delete" (red, careful destructive action)
    - History section below: List of past visits (dates when user marked "went today"), newest first
+
+6b. **Edit Membership Screen (Accessed from Detail or Dashboard)**
+   - Same input fields as onboarding:
+     * Membership name (text)
+     * Billing type toggle: "Annual" or "Monthly"
+     * Cost (updates based on billing type)
+     * Category dropdown
+     * Renewal/Expiration date
+     * **Initial visit count (editable, critical)**
+   - Save button updates all calculations (cost per visit, total visits, etc.)
+   - Cancel returns to previous screen
 
 7. **Share Sheet (After Marking "Went Today")**
    - Heading: "We ACTUALLY went! 🎉"
@@ -720,11 +752,39 @@ Build a mobile app called "Actually" that helps families track memberships and s
 
 **DATA TO TRACK & STORE:**
 - User profile (name, email, phone, password)
-- Memberships list (name, annual cost, category, expiration date, creation date)
+- Memberships list:
+  * Name
+  * Billing type (Annual or Monthly)
+  * Cost (annual or monthly, depending on billing type)
+  * Category
+  * Renewal/Expiration date
+  * Creation date
+  * **CRITICAL: Initial visit count (entered during onboarding/editing)**
+  * Total visits to date (calculated from initial count + all logged visits)
 - Visit history (membership ID, date visited, optional notes, optional photo URL)
 - Photos (user uploads from visit, stored in cloud, linked to visit record)
 - User preferences (notification settings, reminder times, sharing preferences)
 - Share tracking (which visits were shared, to which platforms, timestamp)
+
+**COST-PER-VISIT CALCULATION (CRITICAL FIX):**
+- Formula: Total Annual Cost / Total Visits to Date
+- How to handle billing types:
+  * If Annual: Annual cost is the number to use
+  * If Monthly: Annualize it first (monthly cost × 12), then divide by visits
+- Example 1 (Annual): Zoo membership $180/year, user said they've been 2 times already
+  * Total visits = 2 (initial) + any additional logged visits
+  * Cost per visit = $180 / total visits
+  * Result: $180 / 2 = $90 per visit
+- Example 2 (Monthly): Gym $12.99/month, user said they've gone 4 times
+  * Annualized cost = $12.99 × 12 = $155.88/year
+  * Total visits = 4 (initial) + any additional logged visits
+  * Cost per visit = $155.88 / total visits
+  * Result: $155.88 / 4 = $38.97 per visit
+- **CRITICAL: Must include the initial visit count from onboarding, not just logged visits**
+- When user marks "went today," total visits increases by 1, cost per visit recalculates
+- Show cost per visit on dashboard and all detail screens
+- Update in real-time as visits are logged
+- Color code: Red if >$50/visit, yellow if $20-$50, green if <$20
 
 **NOTIFICATIONS (Backend/Logic):**
 - Trigger: Days since last visit > 30 days → Send reminder (Saturday AM)
