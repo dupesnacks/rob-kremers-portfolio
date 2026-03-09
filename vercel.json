@@ -16,7 +16,8 @@
     { "source": "/dentalresearch", "destination": "/dental_research_strategic_report.html" },
     { "source": "/marlo-playbook", "destination": "/marlo-playbook.html" },
     { "source": "/viral", "destination": "/viral.html" },
-    { "source": "/actually", "destination": "/actually.html" }
+    { "source": "/actually", "destination": "/actually.html" },
+    { "source": "/flavorgalaxy", "destination": "/flavorgalaxy.html" }
   ],
   "trailingSlash": false
 }
