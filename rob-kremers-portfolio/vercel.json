@@ -1,0 +1,17 @@
+{
+  "buildCommand": "echo 'Static site'",
+  "outputDirectory": ".",
+  "framework": null,
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "routes": [
+    {
+      "src": "/flavorgalaxy/(.*)",
+      "dest": "/flavorgalaxy/$1"
+    },
+    {
+      "src": "/teslasales/(.*)",
+      "dest": "/teslasales/$1"
+    }
+  ]
+}
