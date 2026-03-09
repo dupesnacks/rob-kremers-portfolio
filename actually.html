@@ -294,8 +294,44 @@ R1 FEEDBACK - CRITICAL FIXES FOR R2:
    - Fields to edit: Name, Billing type, Cost, Category, Expiration date, Initial visit count
    - Must recalculate cost-per-visit when initial visit count is edited
    - Access from: Ellipsis menu on dashboard card OR detail screen
+
+5. REDESIGN ANALYTICS SCREEN - BETTER MEMBERSHIP USAGE VISUALIZATION
+   REMOVE: Generic calendar heatmap (confusing, not actionable)
    
-PRIORITY: Issues 1, 2, 3 are blocker for R2. Issue 4 is important for UX.
+   REPLACE WITH: Clear membership-by-membership breakdown that shows:
+   
+   TOP SECTION - Summary Stats:
+   - "This Month: X visits across Y memberships"
+   - "Money Used: $XXX" (sum of memberships actually visited)
+   - "Money Wasted: $XXX" (sum of not-yet-visited memberships)
+   
+   MIDDLE SECTION - Memberships List (Ranked by urgency):
+   - Sort by: "Most neglected first" (highest cost per visit / days since visit)
+   
+   For EACH membership, show a card with:
+   - Membership name + category icon (e.g., "Oregon Zoo 🦁")
+   - Visit count THIS MONTH (big bold number) "3 visits this month"
+   - Cost per visit (color-coded: green <$20, yellow $20-50, red >$50)
+   - Days since last visit ("Last visit: 3 days ago" OR "Not visited this month")
+   - Visual urgency indicator:
+     * 🟢 GREEN: Visited in last 7 days, under $30/visit (HEALTHY)
+     * 🟡 YELLOW: Not visited in 14+ days OR cost/visit >$30 (CHECK IN)
+     * 🔴 RED: Not visited in 30+ days OR cost/visit >$50 (URGENT)
+   - Small button: "Mark went" to log a visit right from analytics
+   
+   BOTTOM SECTION - Insights:
+   - Trend: "Increasing use ↑" OR "Decreasing use ↓" vs last month
+   - Most used membership: "You're crushing the Zoo 🦁 (5 visits this month)"
+   - Least used: "OMSI hasn't been visited in 60 days. Time to go?"
+   
+   Visual style:
+   - Use actual membership names/icons, not abstract grid
+   - Color-coded status indicators (green/yellow/red)
+   - Large, readable numbers
+   - Action buttons on each card
+   - Mobile-first, thumb-friendly design
+
+PRIORITY: Issues 1, 2, 3 are blockers for R2. Issue 4 & 5 are critical for UX/viral loop.
             </pre>
         </div>
 
