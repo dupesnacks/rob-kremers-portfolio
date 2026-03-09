@@ -17,7 +17,9 @@
     { "source": "/marlo-playbook", "destination": "/marlo-playbook.html" },
     { "source": "/viral", "destination": "/viral.html" },
     { "source": "/actually", "destination": "/actually.html" },
-    { "source": "/flavorgalaxy", "destination": "/flavorgalaxy/index.html" }
+    { "source": "/flavorgalaxy", "destination": "/flavorgalaxy/index.html" },
+    { "source": "/projects", "destination": "/index-projects.html" },
+    { "source": "/", "destination": "/index-projects.html" }
   ],
   "trailingSlash": false
 }

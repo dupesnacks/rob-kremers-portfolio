@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rork Should Become a Verb</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', sans-serif;
+            line-height: 1.6;
+            color: #1a1a1a;
+            background: linear-gradient(135deg, #ffffff 0%, #f8f9ff 100%);
+            background-attachment: fixed;
+        }
+
+        .page-notice {
+            background: linear-gradient(135deg, rgba(107, 123, 255, 0.1) 0%, rgba(100, 200, 255, 0.1) 100%);
+            padding: 16px 0;
+            text-align: center;
+            font-size: 13px;
+            color: #4a5ae8;
+            border-bottom: 1px solid rgba(107, 123, 255, 0.2);
+            font-weight: 600;
+        }
+
+        header {
+            background: linear-gradient(135deg, #0f0f0f 0%, #1a1a2e 50%, #16213e 100%);
+            color: white;
+            padding: 80px 40px;
+            text-align: center;
+            margin: 0 0 60px 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 500px;
+            height: 500px;
+            background: radial-gradient(circle, rgba(100, 200, 255, 0.1) 0%, transparent 70%);
+            border-radius: 50%;
+            pointer-events: none;
+        }
+
+        header h1 {
+            font-size: 56px;
+            font-weight: 800;
+            margin-bottom: 16px;
+            letter-spacing: -0.8px;
+            position: relative;
+            z-index: 1;
+            background: linear-gradient(135deg, #ffffff 0%, #64c8ff 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        header .subheadline {
+            font-size: 24px;
+            font-weight: 300;
+            color: #d0d0ff;
+            margin-bottom: 20px;
+            position: relative;
+            z-index: 1;
+        }
+
+        header .support-line {
+            font-size: 16px;
+            color: #b3d9ff;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+            position: relative;
+            z-index: 1;
+            line-height: 1.8;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 40px;
+        }
+
+        section {
+            margin-bottom: 60px;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 60px;
+        }
+
+        section.builder-story {
+            grid-template-columns: 1fr 1.2fr;
+        }
+
+        section.builder-story .content-left {
+            grid-column: 1;
+        }
+
+        section.builder-story .app-showcase {
+            grid-column: 2;
+            grid-template-columns: 1fr;
+            margin: 0;
+        }
+
+        section h2 {
+            font-size: 36px;
+            font-weight: 800;
+            margin-bottom: 20px;
+            background: linear-gradient(135deg, #0f0f0f 0%, #4a5ae8 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        section h3 {
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 16px;
+            margin-top: 20px;
+            color: #0f0f0f;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        section h3::before {
+            content: '';
+            display: inline-block;
+            width: 4px;
+            height: 20px;
+            background: linear-gradient(180deg, #6b7bff 0%, #4a5ae8 100%);
+            border-radius: 2px;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.8;
+            margin-bottom: 16px;
+            color: #333;
+        }
+
+        .highlight {
+            background: linear-gradient(135deg, #fffbea 0%, #fff9e6 100%);
+            border-left: 4px solid #ffa500;
+            padding: 20px;
+            margin: 20px 0;
+            font-size: 16px;
+            line-height: 1.8;
+            border-radius: 8px;
+            box-shadow: 0 4px 16px rgba(255, 165, 0, 0.08);
+        }
+
+        .insight-panel {
+            background: linear-gradient(135deg, #f0f4ff 0%, #f5f0ff 100%);
+            padding: 32px;
+            border-radius: 12px;
+            border-left: 4px solid #6b7bff;
+            box-shadow: 0 8px 24px rgba(107, 123, 255, 0.1);
+            flex-shrink: 0;
+        }
+
+        .insight-panel p {
+            margin-bottom: 0;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: linear-gradient(135deg, #6b7bff 0%, #4a5ae8 100%);
+            color: white;
+            padding: 18px 40px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 16px;
+            margin-top: 20px;
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 8px 24px rgba(107, 123, 255, 0.3);
+        }
+
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 12px 32px rgba(107, 123, 255, 0.4);
+        }
+
+        .section-number {
+            color: #6b7bff;
+            font-size: 12px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 12px;
+            display: inline-block;
+            background: linear-gradient(135deg, rgba(107, 123, 255, 0.1) 0%, rgba(74, 90, 232, 0.05) 100%);
+            padding: 4px 12px;
+            border-radius: 4px;
+        }
+
+        .app-showcase {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 32px;
+            margin: 0;
+            align-items: start;
+        }
+
+        .app-screenshot {
+            max-width: 100%;
+            height: auto;
+            border-radius: 16px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+            display: block;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: 1px solid rgba(255, 255, 255, 0.5);
+        }
+
+        .app-screenshot:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 24px 72px rgba(0, 0, 0, 0.2);
+        }
+
+        footer {
+            background: linear-gradient(135deg, #0f0f0f 0%, #1a1a2e 100%);
+            padding: 60px 40px;
+            text-align: center;
+            color: #b3b3b3;
+            font-size: 14px;
+            margin-top: 80px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        footer p {
+            color: #b3b3b3;
+        }
+
+        footer p strong {
+            color: #64c8ff;
+        }
+
+        @media (max-width: 1024px) {
+            section.builder-story {
+                grid-template-columns: 1fr;
+            }
+
+            .content-right {
+                position: static;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 0 20px;
+            }
+
+            header {
+                padding: 60px 20px;
+            }
+
+            header h1 {
+                font-size: 36px;
+            }
+
+            header .subheadline {
+                font-size: 18px;
+            }
+
+            section h2 {
+                font-size: 24px;
+            }
+
+            section {
+                gap: 30px;
+            }
+
+            section.builder-story {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Rork as a Verb</h1>
+        <div class="subheadline">Right now Rork is a product. With the right story, it becomes something bigger: a verb.</div>
+        <div class="support-line">Google. Uber. Venmo. These aren't tools anymore—they're verbs. Rork could be next. Built by Daniel Dhawan (CEO) and Levan Kvirkvelia (CTO).</div>
+    </header>
+
+    <div class="container">
+        <!-- The Hook -->
+        <section>
+            <div>
+                <div class="section-number">01. The Opening</div>
+                <h2>Why Rork Actually Could Become a Verb</h2>
+                <p>I'm not here to talk about features or speed or pricing.</p>
+                <p>I'm here because I see something: <strong>Rork removes the barrier between an idea and a real product.</strong></p>
+                <p>For the first time in 20 years, a non-technical person can build something sophisticated. Solo. In days.</p>
+                
+                <div class="highlight">
+                    <p><strong>That's a verb moment.</strong> When millions of people suddenly can do something they couldn't before, and they all use the same word for it.</p>
+                </div>
+
+                <p>The question isn't whether this happens. It's who owns the narrative.</p>
+            </div>
+        </section>
+
+        <!-- The Proof -->
+        <section class="builder-story">
+            <div class="content-left">
+                <div>
+                    <div class="section-number">02. The Proof</div>
+                    <h2>Two Real Apps</h2>
+                    <p>I'm building two apps right now. Both with Rork. Both solving real problems.</p>
+
+                    <h3>App 1: Dupe Snacks</h3>
+                    <p>My daughter has celiac disease. No app solves the simple problem: <strong>Where can I buy food that's 100% safe?</strong></p>
+                    <p>A developer quoted $80K and "several months" to build this.</p>
+                    <p><strong>With Rork, I'll have an MVP in days. No coding. No developer. No drama.</strong></p>
+                </div>
+
+                <div class="app-showcase">
+                    <img src="/rork/dupe-snacks-1.png" alt="Dupe Snacks" class="app-screenshot">
+                    <img src="/rork/dupe-snacks-2.png" alt="Dupe Snacks" class="app-screenshot">
+                </div>
+            </div>
+        </section>
+
+        <section class="builder-story">
+            <div class="content-left">
+                <div>
+                    <h3>App 2: Flavor Galaxy</h3>
+                    <p>Kids with sensory issues get stuck eating 5 foods forever.</p>
+                    <p>This is a game that turns eating into an adventure. AI recommendations. Gamification. Parent dashboard. Community challenges.</p>
+                    <p><strong>This is complex.</strong> The kind of thing that needs a team. But I'm building it solo with Rork.</p>
+                </div>
+
+                <div class="app-showcase">
+                    <img src="/rork/flavor-galaxy-1.png" alt="Flavor Galaxy" class="app-screenshot">
+                    <img src="/rork/flavor-galaxy-2.png" alt="Flavor Galaxy" class="app-screenshot">
+                    <img src="/rork/flavor-galaxy-3.png" alt="Flavor Galaxy" class="app-screenshot">
+                    <div class="insight-panel">
+                        <p><strong>The point:</strong> Not just speed. Complexity. Solo builders can now build sophisticated products.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- The Insight -->
+        <section>
+            <div>
+                <div class="section-number">03. The Core</div>
+                <h2>What You Need to Know</h2>
+                <p>Millions of people have ideas but think they need a developer. They're wrong now. They have Rork.</p>
+                <p><strong>The marketing problem:</strong> Nobody knows this yet. Rork feels like a tool. But it's actually a paradigm shift.</p>
+
+                <div class="highlight">
+                    <p>When someone says "I'm building an app," the first follow-up used to be "Who's your developer?" Soon it'll be "Did you Rork it?" That's the verb moment.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- What You Bring -->
+        <section>
+            <div>
+                <div class="section-number">04. What I Do</div>
+                <h2>Positioning + Narrative</h2>
+                <p>15 years spent telling complex stories for big brands. Launched global campaigns for Nike and Adidas for NBA players like Damian Lillard, James Harden, LeBron James, and Kevin Durant. Also worked with autonomous vehicles startups.</p>
+                <p><strong>Rork needs a founder voice that says: "You can build now."</strong></p>
+                <p>Not marketing. Not product speak. Just the truth that changes how people think about building.</p>
+
+                <div class="insight-panel">
+                    <p><strong>Your advantage:</strong> You have the tech. You need the story that makes it a verb.</p>
+                </div>
+
+                <a href="mailto:rkremers@gmail.com?subject=Let%27s%20Talk%20-%20Rork%20Verb%20Campaign" class="cta-button">Let's Talk</a>
+            </div>
+        </section>
+
+        <!-- Close -->
+        <section>
+            <div>
+                <div class="section-number">05. Bottom Line</div>
+                <h2>You Have Everything Except the Narrative</h2>
+                <p>Amazing product. Real users. Real growth potential.</p>
+                <p>What's missing: <strong>A story that makes builders choose Rork because it becomes how they talk about building.</strong></p>
+                <p>That's what I do. Let's build it together.</p>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
