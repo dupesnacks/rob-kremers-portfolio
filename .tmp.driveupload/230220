@@ -1,13 +1,12 @@
 #!/bin/bash
-# BACKUP SCRIPT - RUN THIS BEFORE EVERY DEPLOY
-# Usage: ./backup-before-deploy.sh
+# BACKUP SCRIPT - DEPRECATED
+# This script is now replaced by backup-full-site.sh
+# Please use: bash /Users/rk/clawd/backup-full-site.sh
 
-DATE=$(date +%Y-%m-%d)
-BACKUP_DIR="/Users/rk/clawd/_BACKUPS/$DATE"
-
-mkdir -p "$BACKUP_DIR"
-
-echo "📦 Creating dated backups for $DATE..."
+echo "⚠️  This script is deprecated. Running the full backup instead..."
+echo ""
+bash /Users/rk/clawd/backup-full-site.sh
+exit
 
 # Backup all HTML files from key locations
 cp /Users/rk/clawd/flavorgalaxy/index.html "$BACKUP_DIR/flavorgalaxy-index.html" 2>/dev/null && echo "✅ flavorgalaxy"

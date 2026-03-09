@@ -4,7 +4,7 @@
 
 **THIS IS NON-NEGOTIABLE.** Before deploying ANYTHING to Vercel:
 
-1. Run: `bash /Users/rk/clawd/backup-before-deploy.sh`
+1. Run: `bash /Users/rk/clawd/backup-full-site.sh` (backs up EVERYTHING - HTML + images + assets)
 2. Wait for ✅ confirmation
 3. THEN run vercel deploy
 
