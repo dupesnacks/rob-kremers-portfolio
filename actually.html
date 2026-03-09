@@ -237,6 +237,68 @@
             <p>Actually is a mobile app designed for families with young children who purchase memberships (zoos, museums, trampoline parks, community centers, etc.) but rarely use them. The app tracks memberships and subscriptions, calculates cost-per-visit, and sends timely reminders paired with contextual nudges to get families out the door. The core insight: parents don't want to cancel; they want permission and motivation to go. Actually makes that simple, social, and satisfying.</p>
         </div>
 
+        <div style="background: #fff3e0; padding: 40px; border-radius: 12px; margin: 40px 0; border: 3px solid #ff9800;">
+            <h2 style="color: #ff6f00; margin-top: 0; border: none; padding: 0 0 15px 0;">🔧 R1 FEEDBACK - PRODUCT REQUIREMENTS</h2>
+            
+            <p style="color: #ff6f00; font-weight: bold; font-size: 1.1em;">Copy this section for Rork to build R2:</p>
+
+            <pre style="background: #fff; padding: 20px; border-radius: 8px; overflow-x: auto; border-left: 4px solid #ff9800; font-size: 0.95em; line-height: 1.6;">
+R1 FEEDBACK - CRITICAL FIXES FOR R2:
+
+1. MONTHLY vs ANNUAL BILLING TOGGLE
+   - Add toggle during onboarding: "Annual" or "Monthly"
+   - If user selects Annual, show "Annual cost: $___"
+   - If user selects Monthly, show "Monthly cost: $___"
+   - Store billing type in membership data
+   - Display billing type on dashboard and detail screens
+   - Apply same toggle in the Edit Membership screen
+   - This allows families with both annual passes AND monthly subs
+
+2. VISIT COUNT CALCULATION BUG (CRITICAL)
+   - Initial visits entered during onboarding NOT being counted in cost-per-visit
+   - Example: User says "Zoo, $180/year, I've already gone 2 times"
+   - Dashboard should show: Cost per visit = $180 / 2 = $90 per visit
+   - Currently showing: Cost per visit ignoring the 2 initial visits (BROKEN)
+   
+   FIX - Cost-Per-Visit Formula:
+   - For Annual memberships: Total annual cost / (initial visits + logged visits)
+   - For Monthly memberships: (Monthly cost × 12) / (initial visits + logged visits)
+   
+   Example 1 (Annual):
+   - Zoo: $180/year, user entered "I've gone 2 times"
+   - Cost per visit = $180 / 2 = $90 ✓
+   - User marks "went today" (now 3 visits)
+   - Cost per visit updates to $180 / 3 = $60 ✓
+   
+   Example 2 (Monthly):
+   - Gym: $12.99/month, user entered "I've gone 4 times"
+   - Annualized cost = $12.99 × 12 = $155.88
+   - Cost per visit = $155.88 / 4 = $38.97 ✓
+   
+   - Must include initial visit count from onboarding in ALL calculations
+   - Recalculate in real-time when visits are logged
+   - Color code: Red if >$50/visit, yellow if $20-50, green if <$20
+
+3. APP ICON DESIGN
+   - Replace generic circle with branded icon
+   - Design: Purple checkmark (achievement) in a rounded square
+   - Colors: Purple/indigo background (#667eea) with white checkmark
+   - Secondary element: Very subtle family silhouette in background
+   - Style: Minimalist, solid colors, NO gradients
+   - Must be recognizable at 60px, 120px, and large sizes
+   - No text or letters on the icon
+   - Concept: Represents "We ACTUALLY did it" - achievement/action taken
+
+4. EDIT MEMBERSHIP SCREEN
+   - Add ability to edit existing memberships
+   - Fields to edit: Name, Billing type, Cost, Category, Expiration date, Initial visit count
+   - Must recalculate cost-per-visit when initial visit count is edited
+   - Access from: Ellipsis menu on dashboard card OR detail screen
+   
+PRIORITY: Issues 1, 2, 3 are blocker for R2. Issue 4 is important for UX.
+            </pre>
+        </div>
+
         <h2>The Problem</h2>
 
         <p>Parents with young families sign up for memberships with the best intentions. "The kids will love the zoo!" "Science is important!" But life gets busy. Soccer practice, work deadlines, decision fatigue. Months pass. The membership renewal comes and goes—still unused. Guilt sets in.</p>
