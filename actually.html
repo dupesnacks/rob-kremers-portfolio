@@ -295,7 +295,42 @@ R1 FEEDBACK - CRITICAL FIXES FOR R2:
    - Must recalculate cost-per-visit when initial visit count is edited
    - Access from: Ellipsis menu on dashboard card OR detail screen
 
-5. REMOVE SHARE FEATURE - REPLACE WITH SMART CELEBRATION POPUP
+5. VISUAL HIERARCHY FIX - MAKE COST-PER-VISIT THE HERO
+   The per-visit cost is the most motivating metric in the app (it changes, drives behavior, shows ROI)
+   Currently it's too small and blends in.
+   
+   FIX - On Dashboard and Analytics membership cards:
+   
+   BEFORE (Wrong):
+   - Annual/Monthly cost prominent: "$140/yr" (big, bold, right side)
+   - Per-visit cost small: "Per trip: $35" (tiny, blends in)
+   
+   AFTER (Correct):
+   - Per-visit cost DOMINANT: "$35" (HUGE, bold, color-coded green/yellow/red)
+   - Sub-label below: "per visit"
+   - Annual/Monthly cost secondary: "$140/yr" (smaller, supporting text)
+   
+   Color coding for per-visit cost:
+   - 🟢 GREEN and BIG if <$20 (good deal)
+   - 🟡 YELLOW and MEDIUM if $20-50 (okay)
+   - 🔴 RED and BOLD if >$50 (bleeding money - needs action)
+   
+   Example card layout (corrected):
+   ┌────────────────────────────────┐
+   │ 🦁 OMSI                    $35  │ ← HUGE, color-coded
+   │    Science Center         per   │
+   │                          visit  │
+   │                                  │
+   │ Annual: $140 | Visits: 4        │ ← Supporting info, smaller
+   │ Last visit: 3 days ago          │
+   │ Expires in 9 months             │
+   │                                  │
+   │ [Mark Went Today!]              │
+   └────────────────────────────────┘
+   
+   Why: Per-visit cost is what motivates behavior. Make it impossible to miss.
+
+6. REMOVE SHARE FEATURE - REPLACE WITH SMART CELEBRATION POPUP
    - Delete share sheet and all sharing functionality (Instagram, X, Facebook, TikTok buttons)
    - Remove photo upload feature (not needed for MVP)
    - Remove hashtag suggestions
@@ -362,12 +397,14 @@ R1 FEEDBACK - CRITICAL FIXES FOR R2:
    MIDDLE SECTION - Memberships List (Ranked by urgency):
    - Sort by: "Most neglected first" (highest cost per visit / days since visit)
    
-   For EACH membership, show a card with:
-   - Membership name + category icon (e.g., "Oregon Zoo 🦁")
-   - Visit count THIS MONTH (big bold number) "3 visits this month"
-   - Cost per visit (color-coded: green <$20, yellow $20-50, red >$50)
+   For EACH membership, show a card with (visual hierarchy):
+   - **HERO: Cost per visit** (HUGE, bold, color-coded on right side)
+     * "$35 per visit" displayed prominently
+     * Color: 🟢 GREEN <$20 | 🟡 YELLOW $20-50 | 🔴 RED >$50
+   - Membership name + category icon on left (e.g., "Oregon Zoo 🦁")
+   - Visit count THIS MONTH below name (big bold number) "3 visits this month"
    - Days since last visit ("Last visit: 3 days ago" OR "Not visited this month")
-   - Visual urgency indicator:
+   - Visual urgency indicator (left side stripe or badge):
      * 🟢 GREEN: Visited in last 7 days, under $30/visit (HEALTHY)
      * 🟡 YELLOW: Not visited in 14+ days OR cost/visit >$30 (CHECK IN)
      * 🔴 RED: Not visited in 30+ days OR cost/visit >$50 (URGENT)
@@ -718,13 +755,15 @@ The app icon should be a clean, modern interpretation of "Actually" concept. Des
    - Header: "Your Memberships"
    - Subtitle: "Quick look at what you're using (and what you're not)"
    - For each membership, show a card with:
+     * **DOMINANT: Cost per visit** (HUGE font, bold, color-coded)
+       - Display as just the number: "$35" with small sub-label "per visit"
+       - Color: 🟢 GREEN if <$20 | 🟡 YELLOW if $20-50 | 🔴 RED if >$50
+       - This is the hero metric - make it impossible to miss
      * Membership name (bold, large)
      * Category icon (small emoji or icon)
-     * Cost display (e.g., "$120/year" OR "$9.99/month" depending on billing type)
+     * Secondary info: Annual/Monthly cost (smaller, supporting text)
+       - e.g., "Annual: $120" OR "Monthly: $9.99"
      * Days/months since last visit (e.g., "Last visit: 4 months ago")
-     * Cost per visit calculated (e.g., "Cost per visit: $60" in red if high, green if good)
-       - MUST include the initial visit count from onboarding
-       - Formula: Total annual cost / total visits (including initial visits)
      * Total visits to date (e.g., "2 visits so far" - includes initial count + logged visits)
      * Days until expiration (e.g., "Expires in 92 days" in amber if <90 days)
      * Button: "Mark Went Today!" (purple, prominent)
@@ -772,12 +811,13 @@ The app icon should be a clean, modern interpretation of "Actually" concept. Des
    - Logout
 
 6. **Membership Detail Screen (Tap a Membership Card)**
-   - Full membership details:
-     * Name (large, bold)
+   - Full membership details (visual hierarchy):
+     * **HERO: Cost per visit** (HUGE font, bold, color-coded)
+       - Just the number: "$35 per visit" (impossible to miss)
+       - Color: 🟢 GREEN <$20 | 🟡 YELLOW $20-50 | 🔴 RED >$50
+     * Name (large, bold, below cost-per-visit)
      * Category badge
-     * Billing type and cost (e.g., "$120/year" OR "$9.99/month")
-     * Cost per visit (highlighted, color-coded: red if high, green if good)
-       - MUST reflect initial visit count + all logged visits
+     * Secondary billing info: "Annual: $120" OR "Monthly: $9.99" (smaller, supporting)
      * Total visits to date (e.g., "4 visits total: 2 initial + 2 logged")
      * Last visit date/time
      * Days until expiration (red if <90 days)
