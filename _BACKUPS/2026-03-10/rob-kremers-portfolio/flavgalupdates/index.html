@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sensory Explorer - Development Roadmap & Updates">
+    <title>Sensory Explorer - Development Updates</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #0a0a1e 0%, #1a0a3e 50%, #0a0a1e 100%);
+            color: #e0e0e0;
+            line-height: 1.6;
+            padding: 40px 20px;
+        }
+        .container { max-width: 1000px; margin: 0 auto; }
+        h1 { font-size: 2.5rem; background: linear-gradient(135deg, #00d9ff, #667eea); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; margin-bottom: 20px; }
+        h2 { color: #00d9ff; font-size: 1.5rem; margin-top: 30px; margin-bottom: 15px; }
+        .section { background: rgba(15, 15, 40, 0.8); border: 1px solid rgba(0, 217, 255, 0.2); border-radius: 12px; padding: 30px; margin-bottom: 20px; }
+        ul { list-style: none; padding-left: 20px; }
+        li { padding: 8px 0; }
+        li::before { content: '→ '; color: #00d9ff; }
+        .status { display: inline-block; padding: 4px 12px; border-radius: 4px; font-size: 0.85rem; margin-left: 10px; }
+        .done { background: rgba(40, 167, 69, 0.3); color: #28a745; }
+        .inprogress { background: rgba(102, 126, 234, 0.3); color: #667eea; }
+        .planned { background: rgba(233, 30, 99, 0.3); color: #e91e63; }
+        a { color: #00d9ff; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🚀 Sensory Explorer</h1>
+        <p style="color: #999; font-size: 1.1rem; margin-bottom: 40px;">Development Updates & Roadmap</p>
+
+        <div class="section">
+            <h2>📱 Onboarding Redesign</h2>
+            <span class="status inprogress">In Progress</span>
+            <ul>
+                <li>Redesign Cards 1-4 with parent-friendly copy</li>
+                <li>Shift from form-capture to transformation-focused messaging</li>
+                <li>Reduce upfront food collection (3-5 foods vs 35)</li>
+                <li>Add first in-app food logging action before onboarding ends</li>
+                <li>Remove all certificate references (Phase 2 feature)</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>🧠 Bridge Food LLM Integration</h2>
+            <span class="status inprogress">In Progress</span>
+            <ul>
+                <li>Implement Qwen 3.5 Plus API (~$2,600/year @ 100K users)</li>
+                <li>Create parent-friendly LLM prompts</li>
+                <li>Build /api/bridge-foods/recommend endpoint</li>
+                <li>Add "Why This Works" explanations</li>
+                <li>Implement caching & fallback logic</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>🏆 Badge System (20 Badges)</h2>
+            <span class="status inprogress">In Progress</span>
+            <ul>
+                <li>20 unique achievement badges designed</li>
+                <li>Badges tracked (not "worn")</li>
+                <li>Categories: COMMON, UNCOMMON, RARE, LEGENDARY</li>
+                <li>Food-journey themed names & graphics</li>
+                <li>Gemini prompts ready for visual generation</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>📊 Food Logging & Analytics</h2>
+            <span class="status inprogress">In Progress</span>
+            <ul>
+                <li>Fix sensory progress report export (all foods, not ~10)</li>
+                <li>Align Analytics "Ready For" with Suggest tab</li>
+                <li>Fix "Try Next" foods card truncation</li>
+                <li>Add sort category labels</li>
+                <li>Make "What are bridge foods?" expandable</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>⭐ Points & Rewards Economy</h2>
+            <span class="status planned">Planned</span>
+            <ul>
+                <li>Define points per action (log, phase, bridge, streak)</li>
+                <li>Set badge unlock thresholds</li>
+                <li>Fix planet progression (tied to phases, not food count)</li>
+                <li>Create celebration moments (animations)</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>✅ Completed</h2>
+            <ul>
+                <li>Color + Food Group attributes in database <span class="status done">Done</span></li>
+                <li>Flavor Galaxy landing page live <span class="status done">Done</span></li>
+                <li>All 8 planet images deployed <span class="status done">Done</span></li>
+                <li>All 4 explorer characters deployed <span class="status done">Done</span></li>
+                <li>Interactive modals & videos <span class="status done">Done</span></li>
+                <li>Responsive design (mobile/tablet/desktop) <span class="status done">Done</span></li>
+            </ul>
+        </div>
+
+        <div style="margin-top: 60px; padding-top: 20px; border-top: 1px solid rgba(0, 217, 255, 0.1); color: #666; text-align: center; font-size: 0.9rem;">
+            <p>Last Updated: March 10, 2026</p>
+            <p style="margin-top: 10px;">📄 Full briefs available: Check Discord #flavor-galaxy-quest for links to onboarding, badge, and economy documentation</p>
+        </div>
+    </div>
+</body>
+</html>

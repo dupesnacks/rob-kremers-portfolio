@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rob Kremers - Project Directory</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', sans-serif;
+            background: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        header {
+            margin-bottom: 50px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 42px;
+            margin-bottom: 12px;
+            color: #0D5E54;
+        }
+
+        .subtitle {
+            font-size: 18px;
+            color: #666;
+            font-weight: 400;
+        }
+
+        .search-box {
+            margin: 30px 0;
+            display: flex;
+            gap: 10px;
+        }
+
+        input[type="text"] {
+            flex: 1;
+            padding: 12px;
+            font-size: 16px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            max-width: 500px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+
+        thead {
+            background: #0D5E54;
+            color: white;
+        }
+
+        th {
+            padding: 16px;
+            text-align: left;
+            font-weight: 600;
+            cursor: pointer;
+            user-select: none;
+            border: none;
+        }
+
+        th:hover {
+            background: #0a4940;
+        }
+
+        th.sortable::after {
+            content: ' ⇅';
+            opacity: 0.5;
+            font-size: 12px;
+        }
+
+        th.sort-asc::after {
+            content: ' ↑';
+            opacity: 1;
+            color: #ffd700;
+        }
+
+        th.sort-desc::after {
+            content: ' ↓';
+            opacity: 1;
+            color: #ffd700;
+        }
+
+        td {
+            padding: 16px;
+            border-bottom: 1px solid #eee;
+        }
+
+        tbody tr:hover {
+            background: #f9f9f9;
+        }
+
+        .page-name {
+            font-weight: 600;
+            color: #0D5E54;
+        }
+
+        .page-url {
+            font-family: 'Monaco', 'Courier New', monospace;
+            font-size: 13px;
+            color: #666;
+            background: #f5f5f5;
+            padding: 4px 8px;
+            border-radius: 3px;
+        }
+
+        .date {
+            color: #999;
+            font-size: 14px;
+        }
+
+        .status {
+            display: inline-block;
+            padding: 4px 8px;
+            border-radius: 3px;
+            font-size: 12px;
+            font-weight: 600;
+        }
+
+        .status.live {
+            background: #e8f5e9;
+            color: #2e7d32;
+        }
+
+        .status.archived {
+            background: #f3e5f5;
+            color: #7b1fa2;
+        }
+
+        .summary {
+            color: #555;
+            font-size: 14px;
+        }
+
+        .no-results {
+            text-align: center;
+            padding: 40px;
+            color: #999;
+        }
+
+        footer {
+            margin-top: 50px;
+            padding-top: 20px;
+            border-top: 1px solid #ddd;
+            text-align: center;
+            color: #999;
+            font-size: 14px;
+        }
+
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 20px;
+            margin: 40px 0;
+            text-align: center;
+        }
+
+        .stat-card {
+            background: white;
+            padding: 20px;
+            border-radius: 4px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+
+        .stat-value {
+            font-size: 32px;
+            font-weight: 700;
+            color: #0D5E54;
+        }
+
+        .stat-label {
+            font-size: 12px;
+            color: #999;
+            margin-top: 8px;
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Rob Kremers</h1>
+            <p class="subtitle">Project Directory & Page Tracker</p>
+        </header>
+
+        <div class="stats">
+            <div class="stat-card">
+                <div class="stat-value" id="total-count">16</div>
+                <div class="stat-label">Live Pages</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value" id="last-updated">Mar 9</div>
+                <div class="stat-label">Last Updated</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value">✅</div>
+                <div class="stat-label">All Backed Up</div>
+            </div>
+        </div>
+
+        <div class="search-box">
+            <input type="text" id="searchInput" placeholder="Search pages by name or summary...">
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th class="sortable" data-column="name">Page Name</th>
+                    <th class="sortable" data-column="url">URL Route</th>
+                    <th>Summary</th>
+                    <th class="sortable" data-column="created">Created</th>
+                    <th class="sortable" data-column="updated">Last Updated</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody id="tableBody">
+                <!-- Rows will be inserted here -->
+            </tbody>
+        </table>
+
+        <footer>
+            <p>All pages backed up daily to <code>/Users/rk/clawd/_BACKUPS/</code> and synced to Google Drive.</p>
+            <p>Last backup: <span id="backup-date">Mar 9, 2026</span></p>
+        </footer>
+    </div>
+
+    <script>
+        const pages = [
+            {
+                name: "Flavor Galaxy Adventure",
+                url: "/flavorgalaxy",
+                summary: "Gamified sensory exploration app for kids 3-10 with interactive planets and explorer characters",
+                created: "2026-02-20",
+                updated: "2026-03-09",
+                status: "live"
+            },
+            {
+                name: "Tesla Sales Tracker",
+                url: "/teslasales",
+                summary: "Dashboard tracking Tesla vehicle orders, revenue metrics, and sales analytics with charts",
+                created: "2026-02-15",
+                updated: "2026-03-09",
+                status: "live"
+            },
+            {
+                name: "Rork Pitch (Short)",
+                url: "/rork",
+                summary: "Short-form pitch page for Rork with builder stories and co-founder information",
+                created: "2026-02-01",
+                updated: "2026-03-07",
+                status: "live"
+            },
+            {
+                name: "Rork Case Study (Full)",
+                url: "/rork2",
+                summary: "In-depth case study of Rork with market analysis, financials, and detailed business plan",
+                created: "2026-02-01",
+                updated: "2026-03-07",
+                status: "live"
+            },
+            {
+                name: "Tesla Tracker (Root)",
+                url: "/tesla",
+                summary: "Root-level Tesla orders page with order history and basic metrics",
+                created: "2026-02-10",
+                updated: "2026-03-09",
+                status: "live"
+            },
+            {
+                name: "Aurora",
+                url: "/aurora",
+                summary: "Aurora project page with features and overview",
+                created: "2026-01-15",
+                updated: "2026-03-07",
+                status: "live"
+            },
+            {
+                name: "Consulting",
+                url: "/consulting",
+                summary: "Consulting services and offerings page",
+                created: "2026-01-20",
+                updated: "2026-03-07",
+                status: "live"
+            },
+            {
+                name: "Kofi Strategic Analysis",
+                url: "/kofi",
+                summary: "Alcon/Kofi strategic analysis and market research",
+                created: "2026-01-10",
+                updated: "2026-02-28",
+                status: "live"
+            },
+            {
+                name: "Dental App",
+                url: "/dentalapp",
+                summary: "Dental app landing page with features and pricing",
+                created: "2025-12-15",
+                updated: "2026-02-25",
+                status: "live"
+            },
+            {
+                name: "TFD (Thomas Family Dentistry)",
+                url: "/tfd",
+                summary: "Thomas Family Dentistry MVP platform overview",
+                created: "2025-12-10",
+                updated: "2026-02-20",
+                status: "live"
+            },
+            {
+                name: "TFD App Brief",
+                url: "/tfd_app_brief",
+                summary: "Detailed technical brief for TFD mobile app architecture",
+                created: "2025-12-10",
+                updated: "2026-02-20",
+                status: "live"
+            },
+            {
+                name: "TFD Consumables Strategy",
+                url: "/tfd_consumables",
+                summary: "Consumables supply chain strategy and affiliate models for TFD",
+                created: "2025-12-12",
+                updated: "2026-02-18",
+                status: "live"
+            },
+            {
+                name: "Dental Research Report",
+                url: "/dentalresearch",
+                summary: "Comprehensive dental market research with strategic recommendations",
+                created: "2025-12-05",
+                updated: "2026-02-15",
+                status: "live"
+            },
+            {
+                name: "MARLO Playbook",
+                url: "/marlo-playbook",
+                summary: "Comprehensive patient engagement and omnichannel strategy playbook",
+                created: "2025-11-20",
+                updated: "2026-02-10",
+                status: "live"
+            },
+            {
+                name: "Viral App Research",
+                url: "/viral",
+                summary: "Research on viral app dynamics and growth strategies",
+                created: "2025-11-15",
+                updated: "2026-02-05",
+                status: "live"
+            },
+            {
+                name: "Actually Landing Page",
+                url: "/actually",
+                summary: "'We ACTUALLY' branding strategy and photo sharing features",
+                created: "2025-11-01",
+                updated: "2026-02-01",
+                status: "live"
+            }
+        ];
+
+        let currentSort = null;
+
+        const tableBody = document.getElementById('tableBody');
+        const searchInput = document.getElementById('searchInput');
+        const headers = document.querySelectorAll('th.sortable');
+
+        function renderTable(data) {
+            tableBody.innerHTML = '';
+            
+            if (data.length === 0) {
+                tableBody.innerHTML = '<tr><td colspan="6" class="no-results">No pages found</td></tr>';
+                return;
+            }
+
+            data.forEach(page => {
+                const row = document.createElement('tr');
+                const createdDate = new Date(page.created).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
+                const updatedDate = new Date(page.updated).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
+                
+                row.innerHTML = `
+                    <td><span class="page-name"><a href="https://robkremers.com${page.url}" style="color: #0D5E54; text-decoration: none;">${page.name}</a></span></td>
+                    <td><span class="page-url">${page.url}</span></td>
+                    <td><span class="summary">${page.summary}</span></td>
+                    <td><span class="date">${createdDate}</span></td>
+                    <td><span class="date">${updatedDate}</span></td>
+                    <td><span class="status ${page.status}">${page.status.toUpperCase()}</span></td>
+                `;
+                tableBody.appendChild(row);
+            });
+        }
+
+        function filterPages() {
+            const query = searchInput.value.toLowerCase();
+            const filtered = pages.filter(page => 
+                page.name.toLowerCase().includes(query) || 
+                page.summary.toLowerCase().includes(query) ||
+                page.url.toLowerCase().includes(query)
+            );
+            renderTable(filtered);
+        }
+
+        function sortTable(column) {
+            if (currentSort === column) {
+                pages.reverse();
+            } else {
+                pages.sort((a, b) => {
+                    const aVal = a[column];
+                    const bVal = b[column];
+                    if (typeof aVal === 'string') {
+                        return aVal.localeCompare(bVal);
+                    }
+                    return aVal > bVal ? 1 : -1;
+                });
+                currentSort = column;
+            }
+            
+            headers.forEach(h => h.classList.remove('sort-asc', 'sort-desc'));
+            if (currentSort === column) {
+                const header = Array.from(headers).find(h => h.dataset.column === column);
+                if (header) {
+                    if (pages[0][column] > pages[pages.length - 1][column]) {
+                        header.classList.add('sort-desc');
+                    } else {
+                        header.classList.add('sort-asc');
+                    }
+                }
+            }
+            
+            renderTable(pages);
+        }
+
+        headers.forEach(header => {
+            header.addEventListener('click', () => {
+                sortTable(header.dataset.column);
+            });
+        });
+
+        searchInput.addEventListener('input', filterPages);
+
+        // Initial render
+        renderTable(pages);
+        document.getElementById('backup-date').textContent = new Date().toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
+    </script>
+</body>
+</html>

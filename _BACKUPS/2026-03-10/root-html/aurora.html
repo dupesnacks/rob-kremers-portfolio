@@ -1,0 +1,1101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Rob Kremers - Senior Brand Marketing Manager application for Aurora. Brand strategy, autonomous vehicle expertise, and integrated campaign leadership.">
+    <title>Rob Kremers | Aurora - Senior Brand Marketing Manager</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', sans-serif;
+            line-height: 1.6;
+            color: #1a1a1a;
+            background: #ffffff;
+        }
+
+        /* Navigation */
+        nav {
+            position: sticky;
+            top: 0;
+            background: rgba(255, 255, 255, 0.98);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid #f0f0f0;
+            z-index: 1000;
+        }
+
+        nav .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 70px;
+        }
+
+        .logo {
+            font-size: 16px;
+            font-weight: 800;
+            letter-spacing: -0.5px;
+            text-decoration: none;
+            background: linear-gradient(135deg, #0D5E54 0%, #D4AF37 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #666;
+            font-size: 13px;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #0D5E54;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 40px;
+        }
+
+        /* Hero Section */
+        .hero {
+            padding: 48px 0 32px;
+            background: linear-gradient(135deg, rgba(13, 94, 84, 0.02) 0%, rgba(212, 175, 55, 0.02) 100%);
+            border-bottom: 1px solid #f0f0f0;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            line-height: 1.2;
+            margin-bottom: 16px;
+            font-weight: 800;
+            background: linear-gradient(135deg, #1a1a1a 0%, #0D5E54 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero-subtitle {
+            font-size: 20px;
+            color: #666;
+            margin-bottom: 20px;
+            max-width: 700px;
+        }
+
+        .hero-meta {
+            font-size: 14px;
+            color: #999;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        /* Cover Letter Section */
+        .cover-letter {
+            padding: 40px 0;
+            border-bottom: 1px solid #f0f0f0;
+        }
+
+        .cover-letter h2 {
+            font-size: 32px;
+            font-weight: 800;
+            margin-bottom: 20px;
+            color: #1a1a1a;
+        }
+
+        .letter-content {
+            font-size: 16px;
+            line-height: 1.9;
+            color: #444;
+            background: white;
+            padding: 40px;
+            border: 1px solid #f0f0f0;
+            border-radius: 12px;
+        }
+
+        .letter-content p {
+            margin-bottom: 16px;
+        }
+
+        .letter-content strong {
+            color: #0D5E54;
+            font-weight: 700;
+        }
+
+        .letter-content em {
+            font-style: italic;
+            color: #666;
+        }
+
+        .letter-highlight {
+            background: linear-gradient(120deg, rgba(13, 94, 84, 0.1) 0%, rgba(212, 175, 55, 0.05) 100%);
+            border-left: 4px solid #0D5E54;
+            padding: 16px;
+            margin: 20px 0;
+            border-radius: 6px;
+        }
+
+        .letter-highlight strong {
+            display: block;
+            margin-bottom: 10px;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        /* Portfolio Section */
+        .portfolio {
+            padding: 40px 0;
+            border-bottom: 1px solid #f0f0f0;
+        }
+
+        .portfolio h2 {
+            font-size: 32px;
+            font-weight: 800;
+            margin-bottom: 16px;
+            color: #1a1a1a;
+        }
+
+        .portfolio-intro {
+            font-size: 16px;
+            line-height: 1.8;
+            color: #666;
+            margin-bottom: 24px;
+            max-width: 800px;
+        }
+
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 24px;
+        }
+
+        .portfolio-item {
+            border-bottom: 1px solid #f0f0f0;
+            padding-bottom: 24px;
+        }
+
+        .portfolio-item:last-child {
+            border-bottom: none;
+            padding-bottom: 0;
+        }
+
+        .portfolio-item-header {
+            margin-bottom: 16px;
+        }
+
+        .portfolio-item h3 {
+            font-size: 24px;
+            font-weight: 800;
+            margin-bottom: 8px;
+            color: #1a1a1a;
+        }
+
+        .portfolio-item-meta {
+            font-size: 13px;
+            color: #999;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .portfolio-item-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 24px;
+            align-items: start;
+        }
+
+        .portfolio-item-text {
+            font-size: 15px;
+            line-height: 1.8;
+            color: #555;
+        }
+
+        .portfolio-item-text p {
+            margin-bottom: 8px;
+        }
+        
+        .portfolio-item-text ul {
+            margin: 8px 0;
+        }
+
+        .portfolio-item-text strong {
+            color: #0D5E54;
+            font-weight: 700;
+        }
+
+        .portfolio-item-text em {
+            font-style: italic;
+            color: #999;
+        }
+
+        .media-placeholder {
+            background: linear-gradient(135deg, #f0f0f0 0%, #e8e8e8 100%);
+            aspect-ratio: 16 / 9;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #999;
+            font-size: 14px;
+            text-align: center;
+            padding: 20px;
+            font-weight: 600;
+            border: none;
+        }
+
+        .media-placeholder.image {
+            aspect-ratio: 4 / 3;
+        }
+
+        .media-placeholder.video {
+            aspect-ratio: 16 / 9;
+        }
+
+        /* Carousel Styles */
+        .carousel-wrapper {
+            position: relative;
+            margin-bottom: 12px;
+        }
+
+        .carousel-track {
+            display: flex;
+            overflow-x: auto;
+            gap: 0;
+            scroll-behavior: smooth;
+            scroll-snap-type: x mandatory;
+            border-radius: 12px;
+        }
+
+        .carousel-track::-webkit-scrollbar {
+            height: 6px;
+        }
+
+        .carousel-track::-webkit-scrollbar-track {
+            background: #f0f0f0;
+            border-radius: 10px;
+        }
+
+        .carousel-track::-webkit-scrollbar-thumb {
+            background: #ccc;
+            border-radius: 10px;
+        }
+
+        .carousel-track::-webkit-scrollbar-thumb:hover {
+            background: #999;
+        }
+
+        .carousel-slide {
+            min-width: 100%;
+            height: auto;
+            aspect-ratio: 16 / 9;
+            scroll-snap-align: start;
+            scroll-snap-stop: always;
+            border-radius: 12px;
+            overflow: hidden;
+        }
+
+        .carousel-slide img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .carousel-controls {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 16px;
+        }
+
+        .carousel-btn {
+            width: 40px;
+            height: 40px;
+            border: 1px solid #ddd;
+            background: white;
+            border-radius: 6px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+            transition: all 0.3s ease;
+        }
+
+        .carousel-btn:hover {
+            background: #1a1a1a;
+            color: white;
+            border-color: #1a1a1a;
+        }
+
+        .carousel-btn:disabled {
+            opacity: 0.3;
+            cursor: not-allowed;
+            pointer-events: none;
+        }
+
+        .carousel-counter {
+            font-size: 13px;
+            color: #999;
+            font-weight: 600;
+        }
+
+        /* Image Gallery Styles */
+        .image-gallery {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px;
+        }
+
+        .gallery-image {
+            position: relative;
+            border-radius: 12px;
+            overflow: hidden;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            aspect-ratio: 4 / 3;
+        }
+
+        .gallery-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-image:hover img {
+            transform: scale(1.05);
+        }
+
+        .gallery-image::after {
+            content: '🔍';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 32px;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            background: rgba(13, 94, 84, 0.7);
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .gallery-image:hover::after {
+            opacity: 1;
+        }
+
+        /* Modal Styles */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 2000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.9);
+            animation: fadeIn 0.3s ease;
+        }
+
+        .modal.show {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .modal-content {
+            max-width: 90%;
+            max-height: 90%;
+            position: relative;
+            animation: slideIn 0.3s ease;
+        }
+
+        .modal-content img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            border-radius: 8px;
+        }
+
+        .modal-close {
+            position: absolute;
+            top: -40px;
+            right: 0;
+            color: white;
+            font-size: 32px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: color 0.3s ease;
+        }
+
+        .modal-close:hover {
+            color: #D4AF37;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: scale(0.8);
+                opacity: 0;
+            }
+            to {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        .competencies {
+            padding: 40px 0;
+            background: linear-gradient(135deg, rgba(13, 94, 84, 0.02) 0%, rgba(212, 175, 55, 0.02) 100%);
+            border-bottom: 1px solid #f0f0f0;
+        }
+
+        .competencies h2 {
+            font-size: 32px;
+            font-weight: 800;
+            margin-bottom: 20px;
+            color: #1a1a1a;
+        }
+
+        .competencies-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+        }
+
+        .competency-card {
+            padding: 24px;
+            background: white;
+            border: 1px solid #f0f0f0;
+            border-radius: 12px;
+            transition: all 0.3s ease;
+        }
+
+        .competency-card:hover {
+            border-color: #0D5E54;
+            box-shadow: 0 10px 30px rgba(13, 94, 84, 0.1);
+        }
+
+        .competency-card h3 {
+            font-size: 16px;
+            font-weight: 700;
+            margin-bottom: 12px;
+            color: #0D5E54;
+        }
+
+        .competency-card p {
+            font-size: 14px;
+            line-height: 1.7;
+            color: #666;
+        }
+
+        .competency-card ul {
+            list-style: none;
+            margin-top: 8px;
+        }
+
+        .competency-card li {
+            font-size: 13px;
+            color: #666;
+            padding: 4px 0;
+            padding-left: 16px;
+            position: relative;
+        }
+
+        .competency-card li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #0D5E54;
+            font-weight: 700;
+        }
+
+        /* Why Aurora Section */
+        .why-aurora {
+            padding: 40px 0;
+            border-bottom: 1px solid #f0f0f0;
+        }
+
+        .why-aurora h2 {
+            font-size: 32px;
+            font-weight: 800;
+            margin-bottom: 20px;
+            color: #1a1a1a;
+        }
+
+        .why-aurora-content {
+            font-size: 16px;
+            line-height: 1.9;
+            color: #555;
+            max-width: 900px;
+        }
+
+        .why-aurora-content p {
+            margin-bottom: 16px;
+        }
+
+        .why-aurora-content strong {
+            color: #0D5E54;
+            font-weight: 700;
+        }
+
+        .why-list {
+            margin: 30px 0;
+            padding-left: 20px;
+        }
+
+        .why-list li {
+            margin-bottom: 16px;
+            font-size: 16px;
+            line-height: 1.7;
+        }
+
+        .why-list strong {
+            color: #0D5E54;
+        }
+
+        /* Close Section */
+        .close {
+            padding: 40px 0;
+            background: linear-gradient(135deg, #0D5E54 0%, #05433a 100%);
+            color: white;
+            text-align: center;
+        }
+
+        .close h2 {
+            font-size: 32px;
+            font-weight: 800;
+            margin-bottom: 16px;
+        }
+
+        .close p {
+            font-size: 16px;
+            line-height: 1.8;
+            margin-bottom: 20px;
+            opacity: 0.95;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .close-cta {
+            display: inline-block;
+            padding: 16px 40px;
+            background: white;
+            color: #0D5E54;
+            text-decoration: none;
+            font-weight: 700;
+            border-radius: 6px;
+            transition: all 0.3s ease;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .close-cta:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Footer */
+        footer {
+            background: #1a1a1a;
+            color: #666;
+            padding: 40px 0;
+            text-align: center;
+            font-size: 13px;
+        }
+
+        footer a {
+            color: #999;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            color: #0D5E54;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .container {
+                padding: 0 20px;
+            }
+
+            .hero h1 {
+                font-size: 32px;
+            }
+
+            .hero-subtitle {
+                font-size: 18px;
+            }
+
+            .portfolio-item-content,
+            .competencies-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .image-gallery {
+                grid-template-columns: 1fr;
+            }
+
+            .letter-content {
+                padding: 30px;
+            }
+
+            .close h2 {
+                font-size: 28px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="container">
+            <a href="/" class="logo">Rob Kremers</a>
+            <a href="https://www.linkedin.com/in/robertkremers/" target="_blank" style="margin-left: auto; color: #666; text-decoration: none; font-size: 13px; font-weight: 600;">Rob's LinkedIn →</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Rob Kremers Aurora Senior Brand Marketing Manager Application</h1>
+            <p class="hero-subtitle">Former brand leader at autonomous trucking company TuSimple</p>
+        </div>
+    </section>
+
+    <!-- Cover Letter Section -->
+    <section class="cover-letter">
+        <div class="container">
+            <h2>Aurora's Moment</h2>
+            
+            <div class="letter-content">
+                <p>
+                    At TuSimple (now CreateAI), I led all brand strategy and integrated campaigns for an autonomous vehicle company. The work was complex: translating Level 4 technology into narratives that resonated with regulators, fleet operators, investors, industry analysts, and potential partners. I didn't just develop strategy. I executed it end-to-end: writing briefs, directing content, managing campaigns across every channel, and measuring impact.
+                </p>
+
+                <div class="letter-highlight">
+                    <strong>Here's What I Built & Executed:</strong>
+                </div>
+
+                <p>
+                    <strong>Integrated Brand Strategies for Company Milestones & Product Announcements:</strong> I developed strategic frameworks for major moments-funding announcements, regulatory milestones, partnership launches, technology breakthroughs. Each moment required translating technical achievements into narratives that resonated with diverse audiences (regulators, industry analysts, fleet operators, investors, potential partners). I wrote the strategic briefs, but I also rolled up my sleeves and wrote the storyboards, copy, and directed content capture myself.
+                </p>
+
+                <p>
+                    <strong>Campaign Planning & Execution Across All Channels:</strong> I planned everything from high-level brand strategy conversations with the CEO to tactical execution across social media, paid search, SEO, website content, and earned media. I led cross-functional teams, managed agency partners, and coordinated between marketing, safety, and government relations to ensure unified messaging. I measured every campaign-tracking performance, recapping results, and using data to optimize future initiatives.
+                </p>
+
+                <p>
+                    <strong>Brand Stewardship Across Complex Stakeholders:</strong> I developed brand guidelines, messaging frameworks, and communication toolkits that aligned marketing, safety, and government relations around a unified voice. I ensured consistency across all touchpoints while enabling the flexibility needed to speak credibly to regulators, industry partners, and the public simultaneously.
+                </p>
+
+                <p>
+                    <strong>Started the Employer Brand Function from Scratch:</strong> I launched TuSimple's employer brand workstream-developing internal communications strategy, external LinkedIn presence, recruiting event activations, and paid LinkedIn campaigns to attract top engineering talent in a competitive AV landscape. This wasn't a side project-it was a full strategic initiative with measurable hiring impact.
+                </p>
+
+                <div class="letter-highlight">
+                    <strong>Why This Matters for Aurora:</strong>
+                    I'm not coming in to learn this job. I'm coming in to apply what I've already proven. Every responsibility Aurora needs filled, I've already delivered. I understand the unique challenge of building trust in autonomous technology. I know how to navigate regulatory complexity. I can build integrated campaigns that speak to multiple audiences simultaneously. And I've done it while wearing multiple hats-strategist, writer, creative director, measurement lead, and cross-functional operator.
+                </div>
+
+                <p>
+                    Before TuSimple, I built global brand systems at Nike and adidas. But this role at Aurora is different-it's a chance to apply that scale and sophistication to an industry that actually needs it. Autonomous transportation isn't just a product category. It's a shift in how we think about mobility, safety, and the future. That mission resonates deeply with me.
+                </p>
+
+                <p style="margin-top: 40px;">
+                    I'm ready to steward and elevate Aurora's brand. Let's talk about how I can contribute to the next chapter.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="portfolio">
+        <div class="container">
+            <h2>TuSimple: The Work That Prepared Me for Aurora</h2>
+            <p class="portfolio-intro">
+                Below is the work I led at TuSimple. The scope, the challenges, the stakeholder complexity. They align directly with what you need at Aurora. This isn't theory. It's a track record of executing the exact capabilities you're hiring for.
+            </p>
+
+            <div class="portfolio-grid">
+                <!-- TuSimple Work - Primary Focus -->
+                <div class="portfolio-item">
+                    <div class="portfolio-item-header">
+                        <h3>TuSimple: Integrated Brand Strategy & Campaign Execution</h3>
+                        <div class="portfolio-item-meta">Strategy / Creative Execution / Cross-Functional Leadership / Measurement</div>
+                    </div>
+                    <div class="portfolio-item-content">
+                        <div class="portfolio-item-text">
+                            <p>
+                                <strong>The Scope:</strong> As Head of Brand for an autonomous vehicle company, I owned all brand strategy and integrated campaigns. The mandate was to translate Level 4 autonomous truck technology into compelling narratives for regulators, fleet operators, investors, industry analysts, and potential partners.
+                            </p>
+                            <p>
+                                <strong>What I Built & Executed:</strong>
+                            </p>
+                            <ul style="margin: 12px 0; padding-left: 20px;">
+                                <li><strong>Brand Strategy for Major Moments:</strong> Developed integrated strategies for funding announcements, regulatory milestones, partnership launches, and product achievements. Writing briefs, storyboards, and copy myself.</li>
+                                <li><strong>Creative Direction & Content Leadership:</strong> Directed content capture and creative concepts. Rolled up my sleeves and executed rather than just briefing agencies.</li>
+                                <li><strong>Multi-Channel Campaign Execution:</strong> Planned and executed campaigns across social media, paid search, SEO, website, earned media, and events. Managed from CEO-level strategy through tactical deployment.</li>
+                                <li><strong>Cross-Functional Alignment:</strong> Led marketing, safety, and government relations around unified brand voice. Managed teams and agency partners.</li>
+                                <li><strong>Measurement & Reporting:</strong> Tracked campaign performance, measured audience sentiment, conducted competitive analysis, and reported results to leadership.</li>
+                                <li><strong>Brand Stewardship:</strong> Developed brand guidelines, messaging frameworks, and communication toolkits used across all functions.</li>
+                                <li><strong>Employer Brand Development:</strong> Launched employer brand function from scratch: internal communications strategy, external LinkedIn presence, recruiting campaigns, paid LinkedIn advertising.</li>
+                            </ul>
+                            <p style="margin-top: 16px;">
+                                <strong>Why This Matters for Aurora:</strong> The breadth of what I executed at TuSimple maps directly to your needs. I've translated complex autonomous vehicle technology into brand strategies. I've navigated regulatory complexity while building brand trust. I've built campaigns that speak credibly to multiple audiences simultaneously. And I've done it at scale, reporting to leadership and managing teams.
+                            </p>
+                        </div>
+                        <div class="image-gallery">
+                            <div class="gallery-image" onclick="openModal('tusimple-marketing-roadmap.jpg')">
+                                <img src="tusimple-marketing-roadmap.jpg" alt="Marketing & Comms Roadmap - Channel Matrix">
+                            </div>
+                            <div class="gallery-image" onclick="openModal('tusimple-roadmap-timeline.jpg')">
+                                <img src="tusimple-roadmap-timeline.jpg" alt="Marketing & Comms Roadmap - Timeline">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TuSimple: Brand Marketing Toolkit -->
+                <div class="portfolio-item">
+                    <div class="portfolio-item-header">
+                        <h3>TuSimple: Brand Marketing Toolkit</h3>
+                        <div class="portfolio-item-meta">Brand Systems / Asset Management / Internal Enablement</div>
+                    </div>
+                    <div class="portfolio-item-content">
+                        <div class="portfolio-item-text">
+                            <p>
+                                <strong>The Challenge:</strong> TuSimple was scaling rapidly with distributed teams, external agency partners, and cross-functional stakeholders (marketing, safety, government relations) all creating content simultaneously. Without a central, organized source of truth for brand assets—logos, photography standards, design guidelines, iconography—the brand was at risk of fragmentation. Every team was making ad-hoc decisions about how to represent the company, leading to inconsistency, wasted time, and rework.
+                            </p>
+                            <p>
+                                <strong>What I Built:</strong> A comprehensive Brand Marketing Toolkit that served as the single source of truth for all brand assets and usage guidelines. The toolkit organized:
+                            </p>
+                            <ul style="margin: 12px 0; padding-left: 20px;">
+                                <li><strong>Brand Assets:</strong> Logo variations, brand patterns, color palettes, and typography standards—all properly versioned and documented.</li>
+                                <li><strong>Photography Standards:</strong> Organized folders for truck imagery (on-road, facility, close-ups), with detailed descriptions of what each category was designed for and how to use them in different contexts.</li>
+                                <li><strong>Iconography & Diagrams:</strong> A library of visual elements for presentations, website design, and marketing materials—ensuring consistency across all touchpoints.</li>
+                                <li><strong>Usage Guidelines:</strong> Clear documentation on when and how to use each asset, color combinations, sizing requirements, and what NOT to do.</li>
+                            </ul>
+                            <p style="margin-top: 16px;">
+                                <strong>Why It Mattered (Internal Efficiency):</strong> Before the toolkit, every request for brand assets meant hunting through shared drives or asking the design team. After launch, teams had instant access to exactly what they needed, properly organized and ready to deploy. This cut approval cycles from days to hours and eliminated the constant back-and-forth about brand guidelines.
+                            </p>
+                            <p>
+                                <strong>Cross-Functional Collaboration:</strong> The toolkit became the bridge between marketing, design, safety, and government relations teams. When external agencies needed brand guidelines or internal teams were building presentations, they had a definitive reference. This reduced rework, ensured consistency, and made it easy for non-designers to make on-brand decisions independently.
+                            </p>
+                            <p>
+                                <strong>Why It Matters for Aurora:</strong> As Aurora scales, you'll face the exact same challenge. Multiple teams, external partners, distributed execution—all needing to represent the brand consistently. A well-structured toolkit isn't just nice to have. It's how you maintain brand integrity while enabling speed. This work proves I can build the systems that let teams move fast without sacrificing consistency.
+                            </p>
+                        </div>
+                        <div class="image-gallery">
+                            <div class="gallery-image" onclick="openModal('toolkit-cover.jpg')">
+                                <img src="toolkit-cover.jpg" alt="Brand Marketing Toolkit Cover">
+                            </div>
+                            <div class="gallery-image" onclick="openModal('toolkit-toc.jpg')">
+                                <img src="toolkit-toc.jpg" alt="Toolkit Table of Contents">
+                            </div>
+                            <div class="gallery-image" onclick="openModal('toolkit-logos.jpg')">
+                                <img src="toolkit-logos.jpg" alt="Brand Logos Section">
+                            </div>
+                            <div class="gallery-image" onclick="openModal('toolkit-marketing-truck.jpg')">
+                                <img src="toolkit-marketing-truck.jpg" alt="Marketing Truck Photography">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TuSimple: My Story Trailer Campaign -->
+                <div class="portfolio-item">
+                    <div class="portfolio-item-header">
+                        <h3>TuSimple: My Story Trailer Campaign</h3>
+                        <div class="portfolio-item-meta">Internal Storytelling / Brand Humanization / Documentary</div>
+                    </div>
+                    <div class="portfolio-item-content">
+                        <div class="portfolio-item-text">
+                            <p>
+                                <strong>The Challenge:</strong> TuSimple was operating in a complex, novel space (autonomous trucking) where the company narrative often got lost in technical specs and investor decks. The brand needed humanization: a way to show the actual people building this technology and why they're committed to it.
+                            </p>
+                            <p>
+                                <strong>What I Built:</strong> A documentary-style campaign called "My TuSimple Story" designed to put the spotlight on the people who do the work: engineers, drivers, operations teams. Through intimate, authentic storytelling, the campaign showed the inner workings of the company and the human motivations behind the innovation.
+                            </p>
+                            <p>
+                                <strong>Why It Matters for Aurora:</strong> This demonstrates that brand isn't just about product features or technical specs. It's about translating complex innovation into human narrative. Aurora will need to connect emotionally with customers, partners, and employees as you scale. This work proves I can do that.
+                            </p>
+                        </div>
+                        <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 12px; margin-top: 8px;">
+                            <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;" src="https://www.youtube.com/embed/sA1RdMNJCoE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TuSimple Domain Controller -->
+                <div class="portfolio-item">
+                    <div class="portfolio-item-header">
+                        <h3>TuSimple: Domain Controller Product Launch</h3>
+                        <div class="portfolio-item-meta">Product Positioning / Technical Communication / Enterprise Sales Enablement</div>
+                    </div>
+                    <div class="portfolio-item-content" style="display: block;">
+                        <div class="carousel-wrapper">
+                            <div class="carousel-track" id="dcCarousel">
+                                <div class="carousel-slide">
+                                    <img src="tusimple-dc-1-hardware.jpg" alt="Domain Controller Hardware and Architecture">
+                                </div>
+                                <div class="carousel-slide">
+                                    <img src="tusimple-dc-2-specs.jpg" alt="Domain Controller Specifications">
+                                </div>
+                                <div class="carousel-slide">
+                                    <img src="tusimple-dc-3-reliability.jpg" alt="Domain Controller Reliability Testing">
+                                </div>
+                                <div class="carousel-slide">
+                                    <img src="tusimple-dc-4-inside.jpg" alt="Domain Controller What's Inside">
+                                </div>
+                                <div class="carousel-slide">
+                                    <img src="tusimple-dc-5-value.jpg" alt="Domain Controller Value Proposition">
+                                </div>
+                            </div>
+                            <div class="carousel-controls">
+                                <button class="carousel-btn" id="dcPrevBtn" onclick="scrollCarouselDC(-1)">←</button>
+                                <span class="carousel-counter"><span id="dcCurrentSlide">1</span> / 5</span>
+                                <button class="carousel-btn" id="dcNextBtn" onclick="scrollCarouselDC(1)">→</button>
+                            </div>
+                        </div>
+
+                        <div class="portfolio-item-text" style="margin-top: 12px;">
+                            <p>
+                                <strong>The Challenge:</strong> TuSimple developed the Domain Controller (DC), a complex piece of autonomous truck technology that needed to be communicated to fleet operators, regulatory bodies, and enterprise prospects who weren't engineers. The technical specs were sophisticated, but the business value needed to be crystal clear.
+                            </p>
+                            <p>
+                                <strong>What I Built:</strong> Developed the positioning framework and messaging strategy that translated the Domain Controller's technical capabilities into business value. Created sales enablement materials, technical storytelling assets, and positioning documents that helped different audiences (operations teams, procurement, safety departments) understand why this technology mattered.
+                            </p>
+                            <p>
+                                <strong>Why It Matters for Aurora:</strong> This is the core challenge Aurora faces. You're building revolutionary technology but need to communicate its value to non-technical decision makers. I've proven I can take complex technical innovation and make it compelling to the stakeholders who actually control purchasing and deployment decisions.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Competencies Section -->
+    <section class="competencies">
+        <div class="container">
+            <h2>What Aurora Needs. What I've Already Delivered.</h2>
+            
+            <div class="competencies-grid">
+                <div class="competency-card">
+                    <h3>Brand Strategy & Storytelling</h3>
+                    <p><strong>Aurora's Need:</strong> Develop and execute integrated strategies for major company moments and product announcements. Craft compelling campaign briefs and breakthrough content concepts.</p>
+                    <ul>
+                        <li>Did this at TuSimple for funding announcements, regulatory milestones, product launches</li>
+                        <li>Wrote the briefs AND the storyboards and copy myself</li>
+                        <li>Drove content capture and creative direction</li>
+                    </ul>
+                </div>
+
+                <div class="competency-card">
+                    <h3>Integrated Campaign Management</h3>
+                    <p><strong>Aurora's Need:</strong> Lead planning, execution, and measurement of multi-channel campaigns. Leverage agencies and internal teams. Deploy content and measure performance.</p>
+                    <ul>
+                        <li>Led TuSimple campaigns across social, paid search, SEO, website, events</li>
+                        <li>Managed from strategy to tactical execution across all channels</li>
+                        <li>Measured, reported, and optimized based on performance data</li>
+                    </ul>
+                </div>
+
+                <div class="competency-card">
+                    <h3>Brand Stewardship</h3>
+                    <p><strong>Aurora's Need:</strong> Act as steward of brand identity. Ensure consistency in voice, look, and feel. Champion brand guidelines across all touchpoints.</p>
+                    <ul>
+                        <li>Developed TuSimple brand guidelines and messaging frameworks</li>
+                        <li>Aligned marketing, safety, and GR around unified brand voice</li>
+                        <li>Built reusable communication toolkits for cross-functional use</li>
+                    </ul>
+                </div>
+
+                <div class="competency-card">
+                    <h3>Cross-Functional Collaboration</h3>
+                    <p><strong>Aurora's Need:</strong> Serve as key link between marketing and Safety/GR teams. Provide strategic support. Ensure alignment across functions.</p>
+                    <ul>
+                        <li>TuSimple: Aligned marketing, safety, and government relations on messaging</li>
+                        <li>Managed competing priorities while maintaining brand consistency</li>
+                        <li>Strategic advisor to CEO and executive team on brand positioning</li>
+                    </ul>
+                </div>
+
+                <div class="competency-card">
+                    <h3>Employer Brand Development</h3>
+                    <p><strong>Aurora's Need:</strong> Develop and execute comprehensive employer brand strategy. Build compelling technical content. Contribute to talent acquisition events and strategy.</p>
+                    <ul>
+                        <li>Started TuSimple's employer brand function from scratch</li>
+                        <li>Owned internal communications strategy + external LinkedIn presence</li>
+                        <li>Managed paid LinkedIn recruiting campaigns to attract engineering talent</li>
+                    </ul>
+                </div>
+
+                <div class="competency-card">
+                    <h3>Autonomous Vehicle Industry Expertise</h3>
+                    <p><strong>Aurora's Need:</strong> Deep understanding of automotive, tech, and transportation industry trends. Preferably with AV/autonomous technology experience.</p>
+                    <ul>
+                        <li>Most recent role: Head of Brand at TuSimple (AV company)</li>
+                        <li>Fluent in regulatory landscape and industry analyst ecosystem</li>
+                        <li>Know the key players, the challenges, and what resonates with each audience</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Aurora Section -->
+    <section class="why-aurora">
+        <div class="container">
+            <h2>Why Aurora Benefits from My Experience</h2>
+            
+            <div class="why-aurora-content">
+                <p>
+                    There's a difference between understanding a challenge and having navigated it. At TuSimple, I walked the path Aurora is on right now.
+                </p>
+
+                <p>
+                    <strong>I know the landscape.</strong> Regulatory complexity. Building trust with fleet operators and industry skeptics. Translating technical systems into compelling narratives. Conversations with industry analysts. Stakeholder management across safety and government relations. Building employer brand in a competitive talent market. These aren't abstract concepts for me. They're problems I've solved.
+                </p>
+
+                <p>
+                    <strong>I understand the full scope of this role.</strong> It requires someone who can move between strategy and execution seamlessly. Strategist, creative director, campaign executor, measurement lead, cross-functional operator. At TuSimple, I owned all of it. Not just planning campaigns-executing them. Not just briefing agencies-directing content myself. That's the job at Aurora, and I have a proven track record of doing it well.
+                </p>
+
+                <p>
+                    <strong>I've built brand systems at scale.</strong> At Nike and adidas, I developed strategies that worked across regions, functions, and stakeholders. I understand how to create brand architecture that guides execution without constraining creativity. How to steward brand consistency while enabling innovation.
+                </p>
+
+                <p>
+                    <strong>I work at the intersection where Aurora operates.</strong> Technology, policy, brand, organizational alignment. My best work happens when these functions need to move together: when marketing, safety, and government relations need to speak with one voice. I've spent my career connecting these dots.
+                </p>
+
+                <p style="margin-top: 40px;">
+                    Aurora is building the brand of a transportation revolution. That requires depth, discipline, and someone who's navigated similar terrain. I bring that.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Close Section -->
+    <section class="close">
+        <div class="container">
+            <h2>Let's Build Aurora's Brand</h2>
+            <p>
+                I'm excited about the opportunity to bring my experience, expertise, and passion for brand stewardship to Aurora's next chapter. Let's discuss how I can help shape the brand of a transportation revolution.
+            </p>
+            <a href="mailto:rkremers@gmail.com" class="close-cta">Contact Me</a>
+        </div>
+    </section>
+
+    <!-- Image Modal -->
+    <div id="imageModal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close" onclick="closeModal()">&times;</span>
+            <img id="modalImage" src="" alt="Expanded view">
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Rob Kremers</p>
+        </div>
+    </footer>
+
+    <script>
+        // Domain Controller Carousel
+        function scrollCarouselDC(direction) {
+            const carousel = document.getElementById('dcCarousel');
+            const slideWidth = carousel.querySelector('.carousel-slide').offsetWidth;
+            const newScroll = carousel.scrollLeft + (slideWidth * direction);
+            
+            carousel.scrollTo({
+                left: newScroll,
+                behavior: 'smooth'
+            });
+
+            // Update slide counter
+            setTimeout(updateDCSlideCounter, 300);
+        }
+
+        function updateDCSlideCounter() {
+            const carousel = document.getElementById('dcCarousel');
+            const slideWidth = carousel.querySelector('.carousel-slide').offsetWidth;
+            const currentSlide = Math.round(carousel.scrollLeft / slideWidth) + 1;
+            document.getElementById('dcCurrentSlide').textContent = currentSlide;
+
+            // Update button states
+            const prevBtn = document.getElementById('dcPrevBtn');
+            const nextBtn = document.getElementById('dcNextBtn');
+            
+            prevBtn.disabled = currentSlide === 1;
+            nextBtn.disabled = currentSlide === 5;
+        }
+
+        // Initialize
+        updateDCSlideCounter();
+
+        // Modal Functions
+        function openModal(imageSrc) {
+            const modal = document.getElementById('imageModal');
+            const modalImage = document.getElementById('modalImage');
+            modalImage.src = imageSrc;
+            modal.classList.add('show');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeModal() {
+            const modal = document.getElementById('imageModal');
+            modal.classList.remove('show');
+            document.body.style.overflow = 'auto';
+        }
+
+        // Close modal when clicking outside image
+        document.getElementById('imageModal').addEventListener('click', function(e) {
+            if (e.target === this) {
+                closeModal();
+            }
+        });
+
+        // Close modal with Escape key
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                closeModal();
+            }
+        });
+    </script>
+</body>
+</html>
