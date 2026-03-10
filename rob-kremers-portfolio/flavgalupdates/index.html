@@ -6,411 +6,108 @@
     <meta name="description" content="Sensory Explorer - Development Roadmap & Updates">
     <title>Sensory Explorer - Development Updates</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
+        * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
             background: linear-gradient(135deg, #0a0a1e 0%, #1a0a3e 50%, #0a0a1e 100%);
             color: #e0e0e0;
             line-height: 1.6;
-        }
-
-        .container {
-            max-width: 1000px;
-            margin: 0 auto;
             padding: 40px 20px;
         }
-
-        header {
-            text-align: center;
-            margin-bottom: 60px;
-            padding: 40px 0;
-            border-bottom: 2px solid rgba(0, 217, 255, 0.3);
-        }
-
-        h1 {
-            font-size: 2.5rem;
-            background: linear-gradient(135deg, #00d9ff, #667eea);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            margin-bottom: 10px;
-        }
-
-        .subtitle {
-            font-size: 1.1rem;
-            color: #999;
-        }
-
-        .updates-grid {
-            display: grid;
-            gap: 30px;
-            margin-bottom: 60px;
-        }
-
-        .update-section {
-            background: rgba(15, 15, 40, 0.8);
-            border: 1px solid rgba(0, 217, 255, 0.2);
-            border-radius: 12px;
-            padding: 30px;
-            transition: all 0.3s ease;
-        }
-
-        .update-section:hover {
-            border-color: rgba(0, 217, 255, 0.5);
-            background: rgba(15, 15, 40, 1);
-            transform: translateY(-2px);
-        }
-
-        .section-header {
-            display: flex;
-            align-items: center;
-            gap: 15px;
-            margin-bottom: 20px;
-        }
-
-        .section-icon {
-            font-size: 2rem;
-        }
-
-        .section-title {
-            font-size: 1.5rem;
-            color: #00d9ff;
-        }
-
-        .status {
-            display: inline-block;
-            padding: 4px 12px;
-            border-radius: 20px;
-            font-size: 0.85rem;
-            font-weight: 600;
-            margin-left: auto;
-        }
-
-        .status.in-progress {
-            background: rgba(102, 126, 234, 0.3);
-            color: #667eea;
-        }
-
-        .status.planned {
-            background: rgba(233, 30, 99, 0.3);
-            color: #e91e63;
-        }
-
-        .status.completed {
-            background: rgba(40, 167, 69, 0.3);
-            color: #28a745;
-        }
-
-        .update-list {
-            list-style: none;
-            padding: 0;
-        }
-
-        .update-item {
-            padding: 12px 0;
-            padding-left: 28px;
-            position: relative;
-            font-size: 0.95rem;
-            color: #ccc;
-        }
-
-        .update-item::before {
-            content: '→';
-            position: absolute;
-            left: 0;
-            color: #00d9ff;
-            font-weight: bold;
-        }
-
-        .update-item.done::before {
-            content: '✓';
-            color: #28a745;
-        }
-
-        .update-item.done {
-            color: #999;
-            text-decoration: line-through;
-        }
-
-        .priority {
-            display: inline-block;
-            padding: 2px 8px;
-            margin-left: 8px;
-            border-radius: 4px;
-            font-size: 0.75rem;
-            font-weight: bold;
-        }
-
-        .priority.critical {
-            background: rgba(220, 20, 60, 0.3);
-            color: #ff4444;
-        }
-
-        .priority.high {
-            background: rgba(233, 30, 99, 0.3);
-            color: #e91e63;
-        }
-
-        .last-updated {
-            text-align: center;
-            color: #666;
-            margin-top: 60px;
-            padding-top: 20px;
-            border-top: 1px solid rgba(0, 217, 255, 0.1);
-            font-size: 0.9rem;
-        }
-
-        .legend {
-            background: rgba(15, 15, 40, 0.5);
-            border: 1px solid rgba(0, 217, 255, 0.1);
-            border-radius: 8px;
-            padding: 20px;
-            margin-bottom: 40px;
-            font-size: 0.9rem;
-        }
-
-        .legend-item {
-            display: inline-block;
-            margin-right: 20px;
-            margin-bottom: 10px;
-        }
-
-        .badge-example {
-            display: inline-block;
-            padding: 4px 12px;
-            border-radius: 4px;
-            margin-right: 8px;
-            font-size: 0.8rem;
-        }
+        .container { max-width: 1000px; margin: 0 auto; }
+        h1 { font-size: 2.5rem; background: linear-gradient(135deg, #00d9ff, #667eea); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; margin-bottom: 20px; }
+        h2 { color: #00d9ff; font-size: 1.5rem; margin-top: 30px; margin-bottom: 15px; }
+        .section { background: rgba(15, 15, 40, 0.8); border: 1px solid rgba(0, 217, 255, 0.2); border-radius: 12px; padding: 30px; margin-bottom: 20px; }
+        ul { list-style: none; padding-left: 20px; }
+        li { padding: 8px 0; }
+        li::before { content: '→ '; color: #00d9ff; }
+        .status { display: inline-block; padding: 4px 12px; border-radius: 4px; font-size: 0.85rem; margin-left: 10px; }
+        .done { background: rgba(40, 167, 69, 0.3); color: #28a745; }
+        .inprogress { background: rgba(102, 126, 234, 0.3); color: #667eea; }
+        .planned { background: rgba(233, 30, 99, 0.3); color: #e91e63; }
+        a { color: #00d9ff; text-decoration: none; }
+        a:hover { text-decoration: underline; }
     </style>
 </head>
 <body>
     <div class="container">
-        <header>
-            <h1>🚀 Sensory Explorer</h1>
-            <p class="subtitle">Development Updates & Roadmap</p>
-        </header>
+        <h1>🚀 Sensory Explorer</h1>
+        <p style="color: #999; font-size: 1.1rem; margin-bottom: 40px;">Development Updates & Roadmap</p>
 
-        <div class="legend">
-            <div class="legend-item">
-                Status: 
-                <span class="badge-example status completed">Completed</span>
-                <span class="badge-example status in-progress">In Progress</span>
-                <span class="badge-example status planned">Planned</span>
-            </div>
-            <div class="legend-item">
-                Priority: 
-                <span class="badge-example priority critical">CRITICAL</span>
-                <span class="badge-example priority high">HIGH</span>
-            </div>
+        <div class="section">
+            <h2>📱 Onboarding Redesign</h2>
+            <span class="status inprogress">In Progress</span>
+            <ul>
+                <li>Redesign Cards 1-4 with parent-friendly copy</li>
+                <li>Shift from form-capture to transformation-focused messaging</li>
+                <li>Reduce upfront food collection (3-5 foods vs 35)</li>
+                <li>Add first in-app food logging action before onboarding ends</li>
+                <li>Remove all certificate references (Phase 2 feature)</li>
+            </ul>
         </div>
 
-        <div class="updates-grid">
-            <!-- ONBOARDING -->
-            <div class="update-section">
-                <div class="section-header">
-                    <span class="section-icon">📱</span>
-                    <h2 class="section-title">Onboarding Redesign</h2>
-                    <span class="status in-progress">In Progress</span>
-                </div>
-                <ul class="update-list">
-                    <li class="update-item">Redesign Cards 1-4 with parent-friendly copy <span class="priority critical">CRITICAL</span></li>
-                    <li class="update-item">Shift from form-capture to transformation-focused messaging</li>
-                    <li class="update-item">Reduce upfront food collection (3-5 foods vs 35) to prevent false progression</li>
-                    <li class="update-item">Add first in-app food logging action before onboarding ends</li>
-                    <li class="update-item">Remove all certificate references (Phase 2 feature)</li>
-                    <li class="update-item">Test with 3 parent beta testers for feedback</li>
-                </ul>
-            </div>
-
-            <!-- BRIDGE FOODS & LLM -->
-            <div class="update-section">
-                <div class="section-header">
-                    <span class="section-icon">🧠</span>
-                    <h2 class="section-title">Bridge Food LLM Integration</h2>
-                    <span class="status in-progress">In Progress</span>
-                </div>
-                <ul class="update-list">
-                    <li class="update-item">Evaluate current bridge food algorithm limitations <span class="priority critical">CRITICAL</span></li>
-                    <li class="update-item">Implement Qwen 3.5 Plus API (~$2,600/year @ 100K users)</li>
-                    <li class="update-item">Create LLM prompts for sensory-based food matching</li>
-                    <li class="update-item">Build /api/bridge-foods/recommend endpoint</li>
-                    <li class="update-item">Integrate parent-friendly "Why This Works" explanations</li>
-                    <li class="update-item">Add caching (24h) to reduce API calls</li>
-                    <li class="update-item">Implement fallback logic (revert to current algo if API fails)</li>
-                    <li class="update-item">Track parent feedback for continuous improvement</li>
-                </ul>
-            </div>
-
-            <!-- BADGE SYSTEM -->
-            <div class="update-section">
-                <div class="section-header">
-                    <span class="section-icon">🏆</span>
-                    <h2 class="section-title">Badge System Redesign</h2>
-                    <span class="status in-progress">In Progress</span>
-                </div>
-                <ul class="update-list">
-                    <li class="update-item">Create 20 unique achievement badges <span class="priority critical">CRITICAL</span></li>
-                    <li class="update-item">Badge categories: COMMON, UNCOMMON, RARE, LEGENDARY</li>
-                    <li class="update-item">Badges tracked (not "worn") - collected in app</li>
-                    <li class="update-item">Food journey themed names & graphics</li>
-                    <li class="update-item">Generate Gemini prompts for visual asset creation (256×256px)</li>
-                    <li class="update-item">Remove old "cosmetics & gear" wearable system</li>
-                    <li class="update-item">Create badge unlock conditions (phase completion, milestones, streaks)</li>
-                    <li class="update-item">Add badge showcase to Settings/Cosmetics tab</li>
-                    <li class="update-item">Parent dashboard shows recent badge unlocks + next badges to earn</li>
-                </ul>
-            </div>
-
-            <!-- FOOD LOGGING & ANALYTICS -->
-            <div class="update-section">
-                <div class="section-header">
-                    <span class="section-icon">📊</span>
-                    <h2 class="section-title">Food Logging & Analytics UI Polish</h2>
-                    <span class="status in-progress">In Progress</span>
-                </div>
-                <ul class="update-list">
-                    <li class="update-item">Fix sensory progress report export (show ALL 35+ foods, not ~10) <span class="priority critical">CRITICAL</span></li>
-                    <li class="update-item">Align Analytics "Ready For" with Suggest tab recommendations <span class="priority critical">CRITICAL</span></li>
-                    <li class="update-item">Fix Try Next foods card truncation (add expand on tap)</li>
-                    <li class="update-item">Add sort category labels (show "CRUNCHY" header when sorted by texture)</li>
-                    <li class="update-item">Make "What are bridge foods?" an expandable box with visual cue</li>
-                    <li class="update-item">Fix Level badge positioning (Settings tab cut-off)</li>
-                    <li class="update-item">Display color emoji & food group tags during SOS phase tracking</li>
-                </ul>
-            </div>
-
-            <!-- POINTS & REWARDS ECONOMY -->
-            <div class="update-section">
-                <div class="section-header">
-                    <span class="section-icon">⭐</span>
-                    <h2 class="section-title">Points & Rewards Economy</h2>
-                    <span class="status planned">Planned</span>
-                </div>
-                <ul class="update-list">
-                    <li class="update-item">Define points per action (log food, try new phase, accept bridge, etc.) <span class="priority high">HIGH</span></li>
-                    <li class="update-item">Set badge unlock thresholds & progression pace</li>
-                    <li class="update-item">Test economy with Mack account (avoid slow/fast progression)</li>
-                    <li class="update-item">Create celebration moments (confetti, animations at milestones)</li>
-                    <li class="update-item">Add explorer walk-progress visualization</li>
-                    <li class="update-item">Implement 3-day streak fire animation + badge unlocks at 7/30 days</li>
-                </ul>
-            </div>
-
-            <!-- SETTINGS & NAVIGATION -->
-            <div class="update-section">
-                <div class="section-header">
-                    <span class="section-icon">⚙️</span>
-                    <h2 class="section-title">Settings & Navigation Fixes</h2>
-                    <span class="status planned">Planned</span>
-                </div>
-                <ul class="update-list">
-                    <li class="update-item">Fix Settings back button bug (Settings → explorer detail navigation) <span class="priority critical">CRITICAL</span></li>
-                    <li class="update-item">Test all tab transitions (Analytics → Settings, Suggest → Settings, etc.)</li>
-                    <li class="update-item">Verify no crashes on iOS + Android</li>
-                    <li class="update-item">Comprehensive UI testing (mobile/tablet/desktop)</li>
-                </ul>
-            </div>
-
-            <!-- MARKETING & ASSETS -->
-            <div class="update-section">
-                <div class="section-header">
-                    <span class="section-icon">📸</span>
-                    <h2 class="section-title">Marketing Assets & App Store</h2>
-                    <span class="status planned">Planned</span>
-                </div>
-                <ul class="update-list">
-                    <li class="update-item">Generate App Store screenshots (5-8 ads via app-store-screenshots tool)</li>
-                    <li class="update-item">Domain acquisition & email setup (post-name finalization)</li>
-                    <li class="update-item">Website copy redesign (clinical credibility → smart algorithm positioning)</li>
-                    <li class="update-item">Create UGC videos (2 scripts ready, Nano Banana + Kling AI generation)</li>
-                    <li class="update-item">Therapist outreach package (clinical summary, credentials, features)</li>
-                    <li class="update-item">Generate app screenshots from current builds</li>
-                </ul>
-            </div>
-
-            <!-- DATABASE & CONTENT -->
-            <div class="update-section">
-                <div class="section-header">
-                    <span class="section-icon">🍽️</span>
-                    <h2 class="section-title">Food Database & Content</h2>
-                    <span class="status completed">Completed</span>
-                </div>
-                <ul class="update-list">
-                    <li class="update-item done">Color attributes (9 colors) added to all 62+ foods</li>
-                    <li class="update-item done">Food Group attributes (7 groups) added to all foods</li>
-                    <li class="update-item done">Composite foods tagged as "Mixed" food group</li>
-                    <li class="update-item done">Onboarding goal food selection UI with color/group tags</li>
-                    <li class="update-item">Expand food database to 100+ foods (ongoing)</li>
-                    <li class="update-item">Add food icon generation via DALL-E 3 (~40-50 core icons)</li>
-                    <li class="update-item">Generate 5 senses icons (Look, Touch, Smell, Lick, Taste)</li>
-                </ul>
-            </div>
-
-            <!-- WEBSITE & DEPLOYMENT -->
-            <div class="update-section">
-                <div class="section-header">
-                    <span class="section-icon">🌐</span>
-                    <h2 class="section-title">Website & Deployment</h2>
-                    <span class="status completed">Completed</span>
-                </div>
-                <ul class="update-list">
-                    <li class="update-item done">Flavor Galaxy landing page live @ robkremers.com/flavorgalaxy</li>
-                    <li class="update-item done">All 8 planet images deployed (absolute URLs)</li>
-                    <li class="update-item done">All 4 explorer characters deployed (JPG + PNG versions)</li>
-                    <li class="update-item done">Modal click functionality for planets & explorers</li>
-                    <li class="update-item done">Explorer video playback in modals (4 videos)</li>
-                    <li class="update-item done">Responsive design (mobile/tablet/desktop)</li>
-                    <li class="update-item done">Pricing section with trial messaging</li>
-                    <li class="update-item done">Parent Intelligence premium features section</li>
-                </ul>
-            </div>
-
-            <!-- BETA TESTING -->
-            <div class="update-section">
-                <div class="section-header">
-                    <span class="section-icon">🧪</span>
-                    <h2 class="section-title">Beta Testing & Feedback</h2>
-                    <span class="status in-progress">In Progress</span>
-                </div>
-                <ul class="update-list">
-                    <li class="update-item">Beta launch Week of March 5 with 5 Portland families <span class="priority high">HIGH</span></li>
-                    <li class="update-item">Current tester: Mack (6y, Speed Explorer) - 35 safe foods logged</li>
-                    <li class="update-item">Feedback: Export incomplete, Analytics/Suggest misalignment, planet progression too fast</li>
-                    <li class="update-item">Collect screenshots from beta testing for LLM validation</li>
-                    <li class="update-item">Target metrics: 50% day-90 retention, 40-50% trial→paid conversion</li>
-                    <li class="update-item">Weekly feedback rounds with beta families</li>
-                </ul>
-            </div>
-
-            <!-- BLOCKED ITEMS -->
-            <div class="update-section">
-                <div class="section-header">
-                    <span class="section-icon">🚫</span>
-                    <h2 class="section-title">Blocked / Awaiting</h2>
-                    <span class="status planned">Awaiting</span>
-                </div>
-                <ul class="update-list">
-                    <li class="update-item">App name finalization: "Sensory Explorer" vs "Flavor Galaxy" <span class="priority critical">CRITICAL</span></li>
-                    <li class="update-item">Domain acquisition (post-name-lock)</li>
-                    <li class="update-item">Designer batch for food icons (~$300-400)</li>
-                    <li class="update-item">Orbit explorer redesign as Black child (minimal effort, high impact)</li>
-                    <li class="update-item">Screenshots from beta testing for LLM validation</li>
-                    <li class="update-item">Clarify points economy thresholds (before Rork codes)</li>
-                </ul>
-            </div>
+        <div class="section">
+            <h2>🧠 Bridge Food LLM Integration</h2>
+            <span class="status inprogress">In Progress</span>
+            <ul>
+                <li>Implement Qwen 3.5 Plus API (~$2,600/year @ 100K users)</li>
+                <li>Create parent-friendly LLM prompts</li>
+                <li>Build /api/bridge-foods/recommend endpoint</li>
+                <li>Add "Why This Works" explanations</li>
+                <li>Implement caching & fallback logic</li>
+            </ul>
         </div>
 
-        <div class="last-updated">
-            <p>Last Updated: March 10, 2026 | Next Update: March 15, 2026</p>
-            <p style="margin-top: 10px; font-size: 0.85rem; color: #555;">
-                🔗 Questions? Check the Discord #flavor-galaxy-quest channel
-            </p>
+        <div class="section">
+            <h2>🏆 Badge System (20 Badges)</h2>
+            <span class="status inprogress">In Progress</span>
+            <ul>
+                <li>20 unique achievement badges designed</li>
+                <li>Badges tracked (not "worn")</li>
+                <li>Categories: COMMON, UNCOMMON, RARE, LEGENDARY</li>
+                <li>Food-journey themed names & graphics</li>
+                <li>Gemini prompts ready for visual generation</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>📊 Food Logging & Analytics</h2>
+            <span class="status inprogress">In Progress</span>
+            <ul>
+                <li>Fix sensory progress report export (all foods, not ~10)</li>
+                <li>Align Analytics "Ready For" with Suggest tab</li>
+                <li>Fix "Try Next" foods card truncation</li>
+                <li>Add sort category labels</li>
+                <li>Make "What are bridge foods?" expandable</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>⭐ Points & Rewards Economy</h2>
+            <span class="status planned">Planned</span>
+            <ul>
+                <li>Define points per action (log, phase, bridge, streak)</li>
+                <li>Set badge unlock thresholds</li>
+                <li>Fix planet progression (tied to phases, not food count)</li>
+                <li>Create celebration moments (animations)</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>✅ Completed</h2>
+            <ul>
+                <li>Color + Food Group attributes in database <span class="status done">Done</span></li>
+                <li>Flavor Galaxy landing page live <span class="status done">Done</span></li>
+                <li>All 8 planet images deployed <span class="status done">Done</span></li>
+                <li>All 4 explorer characters deployed <span class="status done">Done</span></li>
+                <li>Interactive modals & videos <span class="status done">Done</span></li>
+                <li>Responsive design (mobile/tablet/desktop) <span class="status done">Done</span></li>
+            </ul>
+        </div>
+
+        <div style="margin-top: 60px; padding-top: 20px; border-top: 1px solid rgba(0, 217, 255, 0.1); color: #666; text-align: center; font-size: 0.9rem;">
+            <p>Last Updated: March 10, 2026</p>
+            <p style="margin-top: 10px;">📄 Full briefs available: Check Discord #flavor-galaxy-quest for links to onboarding, badge, and economy documentation</p>
         </div>
     </div>
 </body>
