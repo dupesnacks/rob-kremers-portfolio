@@ -1,0 +1,13 @@
+llm:
+  provider: anthropic
+  model: claude-haiku-4-5
+  apiKey: $ANTHROPIC_API_KEY
+
+systemPrompt: "You are a semantic memory system for an AI agent. Help organize and retrieve relevant context."
+
+vectorStore:
+  type: in-memory
+
+chatHistory:
+  type: sqlite
+  path: "./.brv/chat-history.db"
