@@ -1,5 +1,9 @@
 # MEMORY.md - Critical Procedures & Context
 
+**⚠️ NOTE (March 10, 2026):** This file is now archived. ByteRover provides semantic memory management instead. See AGENTS.md and TOOLS.md for ByteRover usage.
+
+---
+
 ## 🚨 CRITICAL: BACKUP BEFORE EVERY DEPLOY
 
 **THIS IS NON-NEGOTIABLE.** Before deploying ANYTHING to Vercel:

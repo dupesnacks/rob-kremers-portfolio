@@ -45,6 +45,41 @@ Capture what matters. Decisions, context, things to remember. Skip the secrets u
 - When you make a mistake → document it so future-you doesn't repeat it
 - **Text > Brain** 📝
 
+## Knowledge Protocol (ByteRover)
+
+**ByteRover provides semantic memory management.** Use these commands:
+
+**Query existing knowledge:**
+```bash
+brv query "How is authentication implemented?"
+brv query "What are the project patterns for error handling?"
+```
+
+**Store knowledge from interactions:**
+```bash
+brv curate "JWT auth uses 24h expiry, httpOnly cookies via authMiddleware.ts"
+brv curate "Established pattern for form validation using zod + React Hook Form"
+```
+
+**View curation history:**
+```bash
+brv curate view          # Last 10 curations
+brv curate view --since 1h  # Last hour
+```
+
+**Sync with team (optional cloud):**
+```bash
+brv push     # Push local context tree to team space
+brv pull     # Pull team updates
+```
+
+**When to use:**
+- `brv query`: Before starting work to understand patterns
+- `brv curate`: After implementing features or learning new patterns
+- `brv push/pull`: When collaborating with others (optional)
+
+Note: ByteRover runs automatically during context compaction to preserve knowledge. Use `brv query` for fast context retrieval and `brv curate` to capture insights.
+
 ## Safety
 
 - Don't exfiltrate private data. Ever.
