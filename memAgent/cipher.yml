@@ -3,10 +3,16 @@ llm:
   model: claude-haiku-4-5
   apiKey: $ANTHROPIC_API_KEY
 
-systemPrompt: "You are a semantic memory system for an AI agent. Help organize and retrieve relevant context."
+embeddings:
+  provider: ollama
+  model: nomic-embed-text
+  baseUrl: http://localhost:11434
+
+systemPrompt: "You are a semantic memory system for an AI agent. Help organize and retrieve relevant context from knowledge base."
 
 vectorStore:
   type: in-memory
+  dimension: 768
 
 chatHistory:
   type: sqlite
