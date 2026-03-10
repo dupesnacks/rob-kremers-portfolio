@@ -52,27 +52,9 @@
     <div class="container">
         <h1>🚀 Sensory Explorer</h1>
         <p class="subtitle">Complete Development Roadmap & Full Specifications</p>
-        <p style="color: #999; font-size: 0.85rem; margin-bottom: 30px;">Last Updated: March 10, 2026 @ 1:35 PM PST</p>
-
-        <!-- TABLE OF CONTENTS -->
-        <div class="section" style="background: rgba(0, 217, 255, 0.05); border: 1px solid rgba(0, 217, 255, 0.3); margin-bottom: 40px;">
-            <h3 style="color: #00d9ff; margin-bottom: 15px;">📑 Quick Navigation</h3>
-            <div style="columns: 2; column-gap: 30px;">
-                <ul style="padding-left: 0;">
-                    <li style="margin-bottom: 8px;"><a href="#onboarding">📱 Onboarding (9 Cards)</a></li>
-                    <li style="margin-bottom: 8px;"><a href="#badges">🏆 Badge System (20 Badges)</a></li>
-                    <li style="margin-bottom: 8px;"><a href="#ai-intelligence">🧠 AI-Powered Intelligence</a></li>
-                    <li style="margin-bottom: 8px;"><a href="#food-database">🍽️ Food Database (100+)</a></li>
-                    <li style="margin-bottom: 8px;"><a href="#guardrails">🛡️ LLM Guardrails</a></li>
-                    <li style="margin-bottom: 8px;"><a href="#points-economy">⭐ Points & Rewards</a></li>
-                    <li style="margin-bottom: 8px;"><a href="#status">✅ Implementation Status</a></li>
-                    <li style="margin-bottom: 8px;"><a href="#references">📚 Detailed Documentation</a></li>
-                </ul>
-            </div>
-        </div>
 
         <!-- ONBOARDING REDESIGN -->
-        <h2 id="onboarding">📱 Onboarding Redesign (Card + Modal Pattern)</h2>
+        <h2>📱 Onboarding Redesign (Card + Modal Pattern)</h2>
         
         <div class="section">
             <h3>Overview</h3>
@@ -424,7 +406,7 @@ Not because you forced it. Because they felt safe to explore.
         </div>
 
         <!-- BADGE SYSTEM -->
-        <h2 id="badges">🏆 Badge System (20 Unique Badges)</h2>
+        <h2>🏆 Badge System (20 Unique Badges)</h2>
         
         <div class="section">
             <h3>Overview</h3>
@@ -563,281 +545,32 @@ Not because you forced it. Because they felt safe to explore.
             <p style="margin-top: 20px;"><strong>See full badge spec at:</strong> <code>BADGE-DESIGN-SPEC.md</code></p>
         </div>
 
-        <!-- AI-POWERED INTELLIGENCE -->
-        <h2 id="ai-intelligence">🧠 AI-Powered Intelligence Layer (Qwen 3.5 Plus)</h2>
+        <!-- BRIDGE FOOD LLM -->
+        <h2>🧠 Bridge Food LLM Integration (Qwen 3.5 Plus)</h2>
         
         <div class="section">
-            <h3>Overview</h3>
-            <p>Sensory Explorer uses Qwen 3.5 Plus LLM for 4 key features:</p>
-            <ul style="margin-top: 15px;">
-                <li><strong>Bridge Food Recommendations:</strong> AI-powered food matching based on sensory attributes</li>
-                <li><strong>Parent Insights:</strong> Weekly narratives about progress, patterns, and next steps</li>
-                <li><strong>Regression Alerts:</strong> Detection when child stops trying new foods</li>
-                <li><strong>Analytics Narratives:</strong> Story-based summaries of food group diversity and sensory growth</li>
-            </ul>
+            <h3>Pricing</h3>
+            <pre>Input:  $0.11 per 1M tokens
+Output: ~$0.66 per 1M tokens
 
-            <h3>Why Qwen 3.5 Plus?</h3>
-            <pre>Claude 3.5 Sonnet: $62,000/year at 100K users
-Qwen 3.5 Plus:    $2,150/year at 100K users
-Savings:          96% cheaper ✅
+100K users × 52 weeks × 2 recs/week = 10.4M calls/year
+TOTAL: ~$2,600/year ✅</pre>
 
-Quality: Acceptable for food attribute classification + narrative generation
-Speed: Fast responses (suitable for batch + on-demand flows)</pre>
-
-            <h3>Pricing Breakdown</h3>
-            <table>
-                <tr>
-                    <th>Feature</th>
-                    <th>Calls/Year (100K users)</th>
-                    <th>Annual Cost</th>
-                </tr>
-                <tr>
-                    <td>Bridge Foods (on-demand, after 3-5 foods logged)</td>
-                    <td>~250K</td>
-                    <td>$600</td>
-                </tr>
-                <tr>
-                    <td>Weekly Parent Insights (2x/week batch)</td>
-                    <td>~10.4M</td>
-                    <td>$1,250</td>
-                </tr>
-                <tr>
-                    <td>Regression Alerts (weekly check)</td>
-                    <td>~52K</td>
-                    <td>$100</td>
-                </tr>
-                <tr>
-                    <td>Analytics Narratives (weekly batch)</td>
-                    <td>~5M</td>
-                    <td>$200</td>
-                </tr>
-                <tr style="background: rgba(0, 217, 255, 0.1);">
-                    <td><strong>TOTAL (100K users)</strong></td>
-                    <td><strong>~15.7M tokens</strong></td>
-                    <td><strong>$2,150/year</strong></td>
-                </tr>
-            </table>
-
-            <p style="margin-top: 20px; color: #28a745; font-weight: bold;">✅ Well under $2,600/year cap</p>
-
-            <h3>Threshold Rule</h3>
-            <p>Bridge food suggestions <strong>only activate after 3-5 foods logged</strong>. Why?</p>
-            <ul style="margin-top: 10px;">
-                <li>Prevents nonsensical suggestions (e.g., "salty liquid" when user only knows "crackers")</li>
-                <li>Allows AI to identify actual sensory patterns (needs multiple data points)</li>
-                <li>Respects SOS Approach: parents start with familiar foods before introducing bridges</li>
-            </ul>
-
-            <h3>Batch Processing Strategy</h3>
-            <pre>Real-time: Bridge foods only (on-demand, when parent requests)
-Batch (2x/week): Weekly insights, regression alerts, analytics narratives
-Result: Lower cost, still timely, no latency impact on UX</pre>
+            <h3>System Prompt</h3>
+            <p>You are a Sensory Feeding Expert specializing in the SOS Approach. Recommend bridge foods matching the child's sensory profile with parent-friendly explanations (not clinical).</p>
 
             <h3>Implementation</h3>
             <ul>
                 <li>API endpoint: <code>POST /api/bridge-foods/recommend</code></li>
                 <li>Input: Child's sensory profile + safe foods + history</li>
                 <li>Cache: 24 hours (avoid excessive API calls)</li>
-                <li>Fallback: Revert to rule-based algorithm if API fails</li>
+                <li>Fallback: Revert to current algorithm if API fails</li>
                 <li>Learning: Track parent feedback → refine future recommendations</li>
-                <li>Validation: All suggestions filtered through LLM guardrails (see below)</li>
-            </ul>
-        </div>
-
-        <!-- FOOD DATABASE -->
-        <h2 id="food-database">🍽️ Expanded Food Database (100+ Foods)</h2>
-        
-        <div class="section">
-            <h3>Database Structure</h3>
-            <p>Each food includes 5 sensory attributes:</p>
-            <table>
-                <tr>
-                    <th>Attribute</th>
-                    <th>Options</th>
-                    <th>Examples</th>
-                </tr>
-                <tr>
-                    <td><strong>Texture</strong></td>
-                    <td>Crunchy, Soft, Chewy, Liquid, Mushy, Mixed</td>
-                    <td>Crackers=Crunchy, Applesauce=Mushy, Pasta=Soft</td>
-                </tr>
-                <tr>
-                    <td><strong>Flavor</strong></td>
-                    <td>Bland, Sweet, Salty, Savory, Sour, Bitter</td>
-                    <td>Crackers=Bland/Salty, Banana=Sweet, Yogurt=Bland</td>
-                </tr>
-                <tr>
-                    <td><strong>Temperature</strong></td>
-                    <td>Cold, Room Temp, Warm, Hot</td>
-                    <td>Ice cream=Cold, Soup=Hot, Crackers=Room Temp</td>
-                </tr>
-                <tr>
-                    <td><strong>Color</strong></td>
-                    <td>Red, Orange, Yellow, Green, Blue, Purple, Brown, White, Mixed</td>
-                    <td>Apple=Red, Banana=Yellow, Broccoli=Green</td>
-                </tr>
-                <tr>
-                    <td><strong>Food Group</strong></td>
-                    <td>Fruit, Vegetable, Protein, Grain, Dairy, Mixed, Other</td>
-                    <td>Apple=Fruit, Chicken=Protein, Pizza=Mixed</td>
-                </tr>
-            </table>
-
-            <h3>Food Inventory (100+ Items)</h3>
-            <div class="subsection" style="margin-top: 20px;">
-                <h4>PROTEINS (15 items)</h4>
-                <p style="color: #999; margin-bottom: 10px;">Chicken Nugget, Turkey Slices, Ground Beef, Salmon, Fish Stick, Shrimp, Eggs, Peanut Butter, Tofu, Beans (Black, Kidney), Lentils, Deli Turkey, Hot Dog</p>
-            </div>
-
-            <div class="subsection">
-                <h4>GRAINS & CARBS (12 items)</h4>
-                <p style="color: #999; margin-bottom: 10px;">White Bread, Pasta, Rice (White, Brown), Crackers, Pretzels, Cereal (Cheerios, Fruity Pebbles), Bagel, Tortilla, Pancake, Waffle</p>
-            </div>
-
-            <div class="subsection">
-                <h4>FRUITS (16 items)</h4>
-                <p style="color: #999; margin-bottom: 10px;">Apple (Red, Green), Banana, Orange, Grapes, Strawberry, Blueberry, Watermelon, Cantaloupe, Peach, Pear, Mango, Pineapple, Kiwi, Dragon Fruit</p>
-            </div>
-
-            <div class="subsection">
-                <h4>VEGETABLES (12 items)</h4>
-                <p style="color: #999; margin-bottom: 10px;">Carrots, Broccoli, Green Beans, Corn, Peas, Spinach, Sweet Potato, Bell Pepper (Red, Yellow, Green), Cucumber, Tomato</p>
-            </div>
-
-            <div class="subsection">
-                <h4>DAIRY (8 items)</h4>
-                <p style="color: #999; margin-bottom: 10px;">Cheese (Cheddar, Mozzarella, Cream), Yogurt, Milk, Cottage Cheese, Butter, Sour Cream</p>
-            </div>
-
-            <div class="subsection">
-                <h4>PROCESSED & SNACKS (20+ items)</h4>
-                <p style="color: #999; margin-bottom: 10px;">Potato Chips, Cheese Puffs, Granola Bar, Fruit Snack, Yogurt Tube, Applesauce Pouch, String Cheese, Mozzarella Stick, Popcorn, Veggie Chip, Trail Mix, Fruit Leather, Pudding Cup</p>
-            </div>
-
-            <div class="subsection">
-                <h4>COMPOSITE FOODS (7 items - tagged as "Mixed")</h4>
-                <p style="color: #999; margin-bottom: 10px;">PB&J Sandwich, Grilled Cheese, Taco, Pizza, Mac & Cheese, Quesadilla, Chicken Tenders with Ketchup</p>
-            </div>
-
-            <div class="subsection">
-                <h4>BEVERAGES (6 items)</h4>
-                <p style="color: #999; margin-bottom: 10px;">Water, Milk, Orange Juice, Apple Juice, Smoothie, Hot Chocolate</p>
-            </div>
-
-            <p style="margin-top: 20px; color: #d4af37;"><strong>Note:</strong> Database will continue to expand based on user submissions. Core 100+ provide solid foundation for bridging strategy.</p>
-        </div>
-
-        <!-- LLM GUARDRAILS -->
-        <h2 id="guardrails">🛡️ LLM Guardrails & Validation Rules</h2>
-        
-        <div class="section">
-            <h3>Why Guardrails?</h3>
-            <p>LLMs can hallucinate or suggest nonsensical combinations (e.g., "salty liquid" as a primary food). These 10 validation rules prevent bad suggestions from reaching parents.</p>
-
-            <h3>Validation Rules (10 Total)</h3>
-            <table>
-                <tr>
-                    <th>#</th>
-                    <th>Rule</th>
-                    <th>Prevents</th>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>Never suggest liquid foods as primary foods (except beverages)</td>
-                    <td>"Try gravy" or "Try apple juice as lunch"</td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td>Avoid bitter flavors for selective eaters</td>
-                    <td>Suggesting dark leafy greens, coffee, strong spices to hesitant kids</td>
-                </tr>
-                <tr>
-                    <td>3</td>
-                    <td>Don't combine 3+ bold flavors simultaneously</td>
-                    <td>"Try salty + sour + spicy" (overwhelming sensory load)</td>
-                </tr>
-                <tr>
-                    <td>4</td>
-                    <td>Validate Temperature + Texture combos</td>
-                    <td>Hot crunchy foods (e.g., crispy chips straight from fryer may be texture-jarring)</td>
-                </tr>
-                <tr>
-                    <td>5</td>
-                    <td>ONLY suggest foods in approved 100+ database</td>
-                    <td>Random foods not validated for SOS approach</td>
-                </tr>
-                <tr>
-                    <td>6</td>
-                    <td>Enforce color variety (prevent monochrome diets)</td>
-                    <td>Suggesting 10 brown foods when child already has brown</td>
-                </tr>
-                <tr>
-                    <td>7</td>
-                    <td>Require food group diversity</td>
-                    <td>Suggesting only proteins; enforce cross-group balance</td>
-                </tr>
-                <tr>
-                    <td>8</td>
-                    <td>Bridge foods must share ≥1 sensory attribute with safe foods</td>
-                    <td>Suggesting taco (mixed texture) to child who only eats crunchy foods</td>
-                </tr>
-                <tr>
-                    <td>9</td>
-                    <td>Sensory distance ≤1 step (texture diff ≤1, flavor ≤1)</td>
-                    <td>Jumping from crackers to spicy salsa (too big of jump)</td>
-                </tr>
-                <tr>
-                    <td>10</td>
-                    <td>Weekly batch processing only (not real-time)</td>
-                    <td>Recommendation spam; ensures thoughtful, considered suggestions</td>
-                </tr>
-            </table>
-
-            <h3>Implementation (Pseudocode)</h3>
-            <pre>function validateBridgeFoodSuggestion(suggestion, safefoods) {
-  // Rule 5: Database check
-  if (!FOOD_DATABASE.includes(suggestion)) return reject("Not in database");
-  
-  // Rule 1: Liquid check
-  if (suggestion.texture === "liquid" && suggestion !== beverage) 
-    return reject("Liquid foods not primary");
-  
-  // Rule 2: Bitter check
-  if (suggestion.flavor === "bitter") return reject("Bitter flavor avoided");
-  
-  // Rule 3: Bold flavor check
-  boldFlavors = suggestion.flavors.filter(f => f in ['salty','sour','spicy'])
-  if (boldFlavors.length >= 3) return reject("Too many bold flavors");
-  
-  // Rule 6: Color variety
-  usedColors = safefoods.map(f => f.color)
-  if (suggestion.color in usedColors && colorCount < 8) 
-    return reject("Use unused color first");
-  
-  // Rule 8: Sensory attribute overlap
-  commonAttrs = suggestion.sensoryAttrs 
-    & safefoods.map(f => f.sensoryAttrs)
-  if (commonAttrs.length < 1) return reject("No sensory overlap");
-  
-  // Rule 9: Sensory distance
-  distance = calculateSensoryDistance(suggestion, safefoods)
-  if (distance > 1) return reject("Too big of sensory jump");
-  
-  return approve(suggestion);
-}</pre>
-
-            <h3>Forbidden Combos</h3>
-            <ul>
-                <li><strong>Salty + Liquid:</strong> Broth, salted water, salty dressings (primary foods only)</li>
-                <li><strong>Bitter + Any:</strong> Blocked entirely for safety</li>
-                <li><strong>Hot + Crunchy:</strong> Immediate sensory conflict (temperature changes texture perception)</li>
-                <li><strong>3+ Bold Flavors:</strong> Salty+Sour+Spicy too overwhelming for selective eaters</li>
-                <li><strong>Mushy + Sweet:</strong> Can trigger gag reflex in sensitive kids (proceed cautiously)</li>
             </ul>
         </div>
 
         <!-- POINTS & REWARDS -->
-        <h2 id="points-economy">⭐ Points & Rewards Economy</h2>
+        <h2>⭐ Points & Rewards Economy</h2>
         
         <div class="section">
             <h3>Points Per Action</h3>
@@ -902,77 +635,25 @@ Planet 8: Unlock master (50+ foods), complete goal → 2,000 pts</pre>
         </div>
 
         <!-- STATUS -->
-        <h2 id="status">✅ Implementation Status</h2>
+        <h2>✅ Implementation Status</h2>
         
         <div class="section">
             <h3>CRITICAL (Blocking Beta)</h3>
             <ul>
-                <li><span class="status critical">CRITICAL</span> Website deployment (robkremers.com/flavorgalaxy/ returns 404 — needs Vercel reconnect)</li>
-                <li><span class="status inprogress">In Progress</span> Phase 2-5 UI Sprint (5-6 hours: Food Logging, Analytics, Suggest, Bug Fixes)</li>
-                <li><span class="status inprogress">In Progress</span> Bridge food LLM integration (Qwen 3.5 Plus with guardrails)</li>
+                <li><span class="status inprogress">In Progress</span> Onboarding card redesign (9 cards, Card + Modal pattern)</li>
+                <li><span class="status inprogress">In Progress</span> Bridge food LLM integration (Qwen 3.5 Plus)</li>
+                <li><span class="status inprogress">In Progress</span> Badge system (20 badges)</li>
+                <li><span class="status inprogress">In Progress</span> Points/rewards economy</li>
+                <li><span class="status inprogress">In Progress</span> Food logging/analytics UI fixes</li>
             </ul>
 
-            <h3>Completed (Phase 1)</h3>
+            <h3>Completed</h3>
             <ul>
-                <li><span class="status done">Done</span> Onboarding redesign (9 cards, Card + Modal pattern, parent-friendly copy)</li>
-                <li><span class="status done">Done</span> Badge system (20 badges, unlock conditions)</li>
-                <li><span class="status done">Done</span> Points/rewards economy (10+ action types, phase-based progression)</li>
-                <li><span class="status done">Done</span> Expanded food database (100+ foods with sensory attributes)</li>
-                <li><span class="status done">Done</span> LLM guardrails (10 validation rules, forbidden combos)</li>
-                <li><span class="status done">Done</span> AI strategy (bridge foods, weekly insights, regression alerts, narratives)</li>
-                <li><span class="status done">Done</span> Cost optimization ($2,150/year at 100K users, 96% vs Claude)</li>
-                <li><span class="status done">Done</span> Database color + food group attributes (all 62+ foods)</li>
-                <li><span class="status done">Done</span> Website landing page (production-ready HTML)</li>
-                <li><span class="status done">Done</span> All 8 planets + 4 explorers (responsive, absolute URLs)</li>
-                <li><span class="status done">Done</span> Explorer cosmetics spec (26 unlock conditions)</li>
-                <li><span class="status done">Done</span> Daily streak feature (Duolingo-inspired, 24hr reset)</li>
-                <li><span class="status done">Done</span> SOS phases diagram + modal functionality</li>
+                <li><span class="status done">Done</span> Website live (Flavor Galaxy)</li>
+                <li><span class="status done">Done</span> All 8 planets + 4 explorers deployed</li>
+                <li><span class="status done">Done</span> Database color + food group attributes</li>
+                <li><span class="status done">Done</span> Updates page (this page)</li>
             </ul>
-
-            <h3>In Progress (Phase 2)</h3>
-            <ul>
-                <li><span class="status inprogress">In Progress</span> Phase 2: Food Logging UI (colors, food groups, sensory profiles)</li>
-                <li><span class="status inprogress">In Progress</span> Phase 3: Analytics Tab (food group %, color variety, calendar, regression alerts)</li>
-                <li><span class="status inprogress">In Progress</span> Phase 4: Suggest Tab (bridge food matching, risk ranking, diversity tracking)</li>
-                <li><span class="status inprogress">In Progress</span> Phase 5: Bug Fixes (Settings back button navigation)</li>
-            </ul>
-
-            <h3>Pending (Phase 3+)</h3>
-            <ul>
-                <li><span class="status planned">Planned</span> Food icon generation (40-50 batch via designer + DALL-E 3)</li>
-                <li><span class="status planned">Planned</span> Five senses icons (LOOK, TOUCH, SMELL, LICK, TASTE)</li>
-                <li><span class="status planned">Planned</span> Marketing videos (UGC scripts + Kling AI generation)</li>
-                <li><span class="status planned">Planned</span> App Store & Google Play setup (IAP, TestFlight beta)</li>
-                <li><span class="status planned">Planned</span> Beta launch (5 Portland families, week of March 12)</li>
-                <li><span class="status planned">Planned</span> Therapist outreach pack (clinical summary, partnership info)</li>
-            </ul>
-        </div>
-
-        <!-- REFERENCES -->
-        <h2 id="references">📚 Detailed Documentation</h2>
-        
-        <div class="section">
-            <h3>Core Spec Files (Workspace Root)</h3>
-            <p style="color: #999; margin-bottom: 15px; font-size: 0.9rem;">All files located in: <code>/Users/rk/clawd/</code></p>
-            <ul>
-                <li><strong><code>FOOD-DATABASE-EXPANDED-WITH-LLM-GUARDRAILS.md</code></strong> — Complete food database (100+ foods) with sensory attributes, validation rules, forbidden combos, implementation pseudocode, and cost strategy</li>
-                <li><strong><code>BADGE-DESIGN-SPEC.md</code></strong> — All 20 badges with unlock conditions, rarity tiers (common/uncommon/rare/legendary), progress tracking</li>
-                <li><strong><code>POINTS-REWARDS-ECONOMY-BRIEF.md</code></strong> — Points per action (10+ types), planet progression (phase-based, not food-count), daily streak mechanics</li>
-                <li><strong><code>ONBOARDING-CARDS-REVISED-COPY.md</code></strong> — 9-card journey with headlines, full modal copy, subtext, implementation notes</li>
-                <li><strong><code>RORK-PHASE2-5-REMAINING-SPRINT.md</code></strong> — Consolidated implementation brief for Phase 2-5 UI (Food Logging, Analytics, Suggest, Bug Fixes)</li>
-                <li><strong><code>BRIDGE-FOODS-CARD-VISUAL-PROMPT.md</code></strong> — Image generation prompt for Card 3 (sensory hub visualization)</li>
-            </ul>
-
-            <h3>Key Takeaways for Tomorrow</h3>
-            <div class="subsection">
-                <p><strong>🍽️ Food Database:</strong> 100+ foods organized by category with texture, flavor, temperature, color, and food group attributes. Includes composite foods (PB&J, Pizza, Mac & Cheese, etc.) tagged as "Mixed" food group.</p>
-                
-                <p style="margin-top: 15px;"><strong>🛡️ LLM Guardrails:</strong> 10 hard validation rules + forbidden combos list to prevent nonsensical bridge food suggestions. Rules include: no liquid primaries, no bitter flavors, no 3+ bold flavor combos, sensory distance ≤1 step, etc.</p>
-                
-                <p style="margin-top: 15px;"><strong>💰 Cost Optimization:</strong> Qwen 3.5 Plus ($2,150/year) instead of Claude ($62K/year). Batch processing (2x/week) for insights + weekly alerts. Bridge food suggestions on-demand only after 3-5 foods logged.</p>
-                
-                <p style="margin-top: 15px;"><strong>📱 UI Implementation:</strong> All briefs ready in RORK-PHASE2-5-REMAINING-SPRINT.md. 5-6 hour sprint covers Food Logging (colors + sensory display), Analytics (charts + regression alerts), Suggest (bridge matching + risk ranking), and bug fixes.</p>
-            </div>
         </div>
 
         <div style="margin-top: 60px; padding-top: 20px; border-top: 1px solid rgba(0, 217, 255, 0.1); color: #666; text-align: center; font-size: 0.9rem;">

@@ -952,15 +952,27 @@ Planet 8: Unlock master (50+ foods), complete goal → 2,000 pts</pre>
         <h2 id="references">📚 Detailed Documentation</h2>
         
         <div class="section">
-            <p>Complete specifications available in project files:</p>
+            <h3>Core Spec Files (Workspace Root)</h3>
+            <p style="color: #999; margin-bottom: 15px; font-size: 0.9rem;">All files located in: <code>/Users/rk/clawd/</code></p>
             <ul>
-                <li><code>FOOD-DATABASE-EXPANDED-WITH-LLM-GUARDRAILS.md</code> — 100+ foods, sensory attributes, validation rules, implementation details</li>
-                <li><code>BADGE-DESIGN-SPEC.md</code> — All 20 badges with unlock conditions, rarity tiers, progress tracking</li>
-                <li><code>POINTS-REWARDS-ECONOMY-BRIEF.md</code> — Points per action, planet progression, streak mechanics</li>
-                <li><code>ONBOARDING-CARDS-REVISED-COPY.md</code> — 9-card journey, headlines, modals, copy lengths</li>
-                <li><code>RORK-PHASE2-5-REMAINING-SPRINT.md</code> — Consolidated implementation brief for remaining UI phases</li>
-                <li><code>BRIDGE-FOODS-CARD-VISUAL-PROMPT.md</code> — Image generation prompt for Card 3 visualization</li>
+                <li><strong><code>FOOD-DATABASE-EXPANDED-WITH-LLM-GUARDRAILS.md</code></strong> — Complete food database (100+ foods) with sensory attributes, validation rules, forbidden combos, implementation pseudocode, and cost strategy</li>
+                <li><strong><code>BADGE-DESIGN-SPEC.md</code></strong> — All 20 badges with unlock conditions, rarity tiers (common/uncommon/rare/legendary), progress tracking</li>
+                <li><strong><code>POINTS-REWARDS-ECONOMY-BRIEF.md</code></strong> — Points per action (10+ types), planet progression (phase-based, not food-count), daily streak mechanics</li>
+                <li><strong><code>ONBOARDING-CARDS-REVISED-COPY.md</code></strong> — 9-card journey with headlines, full modal copy, subtext, implementation notes</li>
+                <li><strong><code>RORK-PHASE2-5-REMAINING-SPRINT.md</code></strong> — Consolidated implementation brief for Phase 2-5 UI (Food Logging, Analytics, Suggest, Bug Fixes)</li>
+                <li><strong><code>BRIDGE-FOODS-CARD-VISUAL-PROMPT.md</code></strong> — Image generation prompt for Card 3 (sensory hub visualization)</li>
             </ul>
+
+            <h3>Key Takeaways for Tomorrow</h3>
+            <div class="subsection">
+                <p><strong>🍽️ Food Database:</strong> 100+ foods organized by category with texture, flavor, temperature, color, and food group attributes. Includes composite foods (PB&J, Pizza, Mac & Cheese, etc.) tagged as "Mixed" food group.</p>
+                
+                <p style="margin-top: 15px;"><strong>🛡️ LLM Guardrails:</strong> 10 hard validation rules + forbidden combos list to prevent nonsensical bridge food suggestions. Rules include: no liquid primaries, no bitter flavors, no 3+ bold flavor combos, sensory distance ≤1 step, etc.</p>
+                
+                <p style="margin-top: 15px;"><strong>💰 Cost Optimization:</strong> Qwen 3.5 Plus ($2,150/year) instead of Claude ($62K/year). Batch processing (2x/week) for insights + weekly alerts. Bridge food suggestions on-demand only after 3-5 foods logged.</p>
+                
+                <p style="margin-top: 15px;"><strong>📱 UI Implementation:</strong> All briefs ready in RORK-PHASE2-5-REMAINING-SPRINT.md. 5-6 hour sprint covers Food Logging (colors + sensory display), Analytics (charts + regression alerts), Suggest (bridge matching + risk ranking), and bug fixes.</p>
+            </div>
         </div>
 
         <div style="margin-top: 60px; padding-top: 20px; border-top: 1px solid rgba(0, 217, 255, 0.1); color: #666; text-align: center; font-size: 0.9rem;">
