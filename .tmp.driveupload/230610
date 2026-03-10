@@ -52,9 +52,27 @@
     <div class="container">
         <h1>🚀 Sensory Explorer</h1>
         <p class="subtitle">Complete Development Roadmap & Full Specifications</p>
+        <p style="color: #999; font-size: 0.85rem; margin-bottom: 30px;">Last Updated: March 10, 2026 @ 1:35 PM PST</p>
+
+        <!-- TABLE OF CONTENTS -->
+        <div class="section" style="background: rgba(0, 217, 255, 0.05); border: 1px solid rgba(0, 217, 255, 0.3); margin-bottom: 40px;">
+            <h3 style="color: #00d9ff; margin-bottom: 15px;">📑 Quick Navigation</h3>
+            <div style="columns: 2; column-gap: 30px;">
+                <ul style="padding-left: 0;">
+                    <li style="margin-bottom: 8px;"><a href="#onboarding">📱 Onboarding (9 Cards)</a></li>
+                    <li style="margin-bottom: 8px;"><a href="#badges">🏆 Badge System (20 Badges)</a></li>
+                    <li style="margin-bottom: 8px;"><a href="#ai-intelligence">🧠 AI-Powered Intelligence</a></li>
+                    <li style="margin-bottom: 8px;"><a href="#food-database">🍽️ Food Database (100+)</a></li>
+                    <li style="margin-bottom: 8px;"><a href="#guardrails">🛡️ LLM Guardrails</a></li>
+                    <li style="margin-bottom: 8px;"><a href="#points-economy">⭐ Points & Rewards</a></li>
+                    <li style="margin-bottom: 8px;"><a href="#status">✅ Implementation Status</a></li>
+                    <li style="margin-bottom: 8px;"><a href="#references">📚 Detailed Documentation</a></li>
+                </ul>
+            </div>
+        </div>
 
         <!-- ONBOARDING REDESIGN -->
-        <h2>📱 Onboarding Redesign (Card + Modal Pattern)</h2>
+        <h2 id="onboarding">📱 Onboarding Redesign (Card + Modal Pattern)</h2>
         
         <div class="section">
             <h3>Overview</h3>
@@ -406,7 +424,7 @@ Not because you forced it. Because they felt safe to explore.
         </div>
 
         <!-- BADGE SYSTEM -->
-        <h2>🏆 Badge System (20 Unique Badges)</h2>
+        <h2 id="badges">🏆 Badge System (20 Unique Badges)</h2>
         
         <div class="section">
             <h3>Overview</h3>
@@ -546,7 +564,7 @@ Not because you forced it. Because they felt safe to explore.
         </div>
 
         <!-- AI-POWERED INTELLIGENCE -->
-        <h2>🧠 AI-Powered Intelligence Layer (Qwen 3.5 Plus)</h2>
+        <h2 id="ai-intelligence">🧠 AI-Powered Intelligence Layer (Qwen 3.5 Plus)</h2>
         
         <div class="section">
             <h3>Overview</h3>
@@ -627,7 +645,7 @@ Result: Lower cost, still timely, no latency impact on UX</pre>
         </div>
 
         <!-- FOOD DATABASE -->
-        <h2>🍽️ Expanded Food Database (100+ Foods)</h2>
+        <h2 id="food-database">🍽️ Expanded Food Database (100+ Foods)</h2>
         
         <div class="section">
             <h3>Database Structure</h3>
@@ -710,7 +728,7 @@ Result: Lower cost, still timely, no latency impact on UX</pre>
         </div>
 
         <!-- LLM GUARDRAILS -->
-        <h2>🛡️ LLM Guardrails & Validation Rules</h2>
+        <h2 id="guardrails">🛡️ LLM Guardrails & Validation Rules</h2>
         
         <div class="section">
             <h3>Why Guardrails?</h3>
@@ -819,7 +837,7 @@ Result: Lower cost, still timely, no latency impact on UX</pre>
         </div>
 
         <!-- POINTS & REWARDS -->
-        <h2>⭐ Points & Rewards Economy</h2>
+        <h2 id="points-economy">⭐ Points & Rewards Economy</h2>
         
         <div class="section">
             <h3>Points Per Action</h3>
@@ -884,7 +902,7 @@ Planet 8: Unlock master (50+ foods), complete goal → 2,000 pts</pre>
         </div>
 
         <!-- STATUS -->
-        <h2>✅ Implementation Status</h2>
+        <h2 id="status">✅ Implementation Status</h2>
         
         <div class="section">
             <h3>CRITICAL (Blocking Beta)</h3>
@@ -931,7 +949,7 @@ Planet 8: Unlock master (50+ foods), complete goal → 2,000 pts</pre>
         </div>
 
         <!-- REFERENCES -->
-        <h2>📚 Detailed Documentation</h2>
+        <h2 id="references">📚 Detailed Documentation</h2>
         
         <div class="section">
             <p>Complete specifications available in project files:</p>
