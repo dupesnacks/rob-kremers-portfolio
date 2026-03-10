@@ -1,0 +1,168 @@
+{
+  "source": "Tesla Service Documentation",
+  "vehicle": "Cybertruck",
+  "scraped_at": "2026-03-09T17:53:18.841373",
+  "sections": {
+    "Battery & Power": {
+      "topics": [
+        "Battery Management System (BMS)",
+        "Battery Diagnostics",
+        "Charging System",
+        "Power Distribution",
+        "DC/DC Converter",
+        "Battery Thermal Management"
+      ],
+      "common_issues": [
+        "Slow charging",
+        "Battery degradation",
+        "Charge port malfunction",
+        "Thermal warnings"
+      ]
+    },
+    "Drive System & Motors": {
+      "topics": [
+        "Dual Motor Architecture",
+        "Motor Diagnostics",
+        "Torque Vectoring",
+        "Motor Efficiency",
+        "Regenerative Braking",
+        "Drive Unit Servicing"
+      ],
+      "common_issues": [
+        "Motor fault codes",
+        "Power delivery issues",
+        "Grinding noises",
+        "Loss of regen braking"
+      ]
+    },
+    "Suspension": {
+      "topics": [
+        "Air Suspension System",
+        "Suspension Diagnostics",
+        "Adaptive Air Suspension",
+        "Suspension Calibration",
+        "Shock Absorber Service",
+        "Air Bag Replacement"
+      ],
+      "common_issues": [
+        "Suspension dropping",
+        "Air compressor failure",
+        "Uneven ride height",
+        "Suspension noise/clunking"
+      ]
+    },
+    "Electrical & Controls": {
+      "topics": [
+        "Vehicle Computer (MCU)",
+        "Infotainment System",
+        "Vehicle Diagnostics",
+        "CAN Bus",
+        "Electrical Connectors",
+        "Software Updates"
+      ],
+      "common_issues": [
+        "MCU freezing",
+        "Touchscreen malfunction",
+        "Bluetooth connectivity",
+        "Software update failures"
+      ]
+    },
+    "Structural & Body": {
+      "topics": [
+        "Exoskeleton Structure",
+        "Stainless Steel Panels",
+        "Door Systems",
+        "Window Mechanisms",
+        "Sealing & Weatherproofing",
+        "Dent & Damage Repair"
+      ],
+      "common_issues": [
+        "Panel gaps",
+        "Door alignment",
+        "Window sticking",
+        "Water leaks",
+        "Creaking noises"
+      ]
+    },
+    "Braking System": {
+      "topics": [
+        "Regenerative Braking",
+        "Friction Brakes",
+        "Brake Fluid Service",
+        "Brake Pad Replacement",
+        "ABS & Stability Control",
+        "Brake Diagnostics"
+      ],
+      "common_issues": [
+        "Brake fade",
+        "ABS warnings",
+        "Brake noise",
+        "Reduced braking power"
+      ]
+    },
+    "Climate Control": {
+      "topics": [
+        "Heat Pump System",
+        "Air Conditioning",
+        "Cabin Heating",
+        "Defogging Systems",
+        "Refrigerant Service",
+        "Thermal Management"
+      ],
+      "common_issues": [
+        "No heat/cooling",
+        "Heat pump errors",
+        "Compressor noise",
+        "Humidity issues"
+      ]
+    },
+    "Lights & Visibility": {
+      "topics": [
+        "LED Headlights",
+        "Tail Lights",
+        "Turn Signals",
+        "Wiper System",
+        "Camera Systems",
+        "Light Module Replacement"
+      ],
+      "common_issues": [
+        "Light module failure",
+        "Wiper malfunction",
+        "Camera fogging",
+        "Automatic wipers not working"
+      ]
+    },
+    "Safety Systems": {
+      "topics": [
+        "Autopilot & FSD",
+        "Collision Avoidance",
+        "Parking Assist",
+        "Airbag System",
+        "Seatbelt Pretensioners",
+        "Stability Control"
+      ],
+      "common_issues": [
+        "Camera blindness errors",
+        "False collision warnings",
+        "Autopilot disengagement",
+        "Parking assist malfunction"
+      ]
+    },
+    "Interior & Comfort": {
+      "topics": [
+        "Seat Systems",
+        "Door Handles",
+        "Interior Trim",
+        "Storage Solutions",
+        "Ventilation",
+        "Interior Lighting"
+      ],
+      "common_issues": [
+        "Seat movement issues",
+        "Door handle problems",
+        "Interior rattle/noise",
+        "Storage lid malfunction"
+      ]
+    }
+  }
+}

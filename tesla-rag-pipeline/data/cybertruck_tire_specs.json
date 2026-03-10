@@ -1,0 +1,71 @@
+{
+  "vehicle": "Cybertruck",
+  "specifications": {
+    "Cybertruck": {
+      "standard": {
+        "size": "265/70R18",
+        "load_range": "LT",
+        "speed_rating": "T (118 mph)",
+        "tread_depth_new": "10/32 in",
+        "tread_depth_min": "2/32 in",
+        "tire_pressure_cold": "42 psi",
+        "tire_pressure_hot": "45 psi",
+        "tpms_warning": "26 psi",
+        "recommended_brands": [
+          "Michelin",
+          "Goodyear",
+          "Bridgestone"
+        ]
+      },
+      "performance": {
+        "size": "285/65R20",
+        "load_range": "LT",
+        "speed_rating": "H (130 mph)",
+        "tread_depth_new": "11/32 in",
+        "tread_depth_min": "2/32 in",
+        "tire_pressure_cold": "44 psi",
+        "tire_pressure_hot": "47 psi",
+        "tpms_warning": "26 psi",
+        "recommended_brands": [
+          "Michelin",
+          "Pirelli",
+          "Continental"
+        ]
+      },
+      "winter": {
+        "size": "265/70R18",
+        "load_range": "LT",
+        "speed_rating": "T (118 mph)",
+        "tread_depth_new": "12/32 in",
+        "tread_depth_min": "6/32 in (recommended)",
+        "tire_pressure_cold": "40 psi",
+        "tire_pressure_hot": "43 psi",
+        "tpms_warning": "26 psi",
+        "three_peak_symbol": true,
+        "recommended_brands": [
+          "Michelin X-Ice",
+          "Bridgestone Blizzak",
+          "Goodyear WinterCommand"
+        ]
+      }
+    },
+    "wheel_fitment": {
+      "18_inch": {
+        "offset": "35mm",
+        "width": "8.5J",
+        "bolt_pattern": "5x114.3"
+      },
+      "20_inch": {
+        "offset": "32mm",
+        "width": "9.0J",
+        "bolt_pattern": "5x114.3"
+      },
+      "22_inch": {
+        "offset": "28mm",
+        "width": "9.5J",
+        "bolt_pattern": "5x114.3"
+      }
+    }
+  },
+  "scraped": "2026-03-09T17:56:09.063101"
+}

@@ -1,0 +1,310 @@
+{
+  "vehicle": "Cybertruck",
+  "parts": {
+    "Drivetrain": {
+      "Motors & Drive Units": [
+        {
+          "part_name": "Front Motor Assembly",
+          "part_number": "1520240-00-A",
+          "labor_hours": 4.5,
+          "category": "Motor"
+        },
+        {
+          "part_name": "Rear Motor Assembly",
+          "part_number": "1520250-00-B",
+          "labor_hours": 5.0,
+          "category": "Motor"
+        },
+        {
+          "part_name": "Motor Bearing Kit",
+          "part_number": "1520260-00-A",
+          "labor_hours": 2.0,
+          "category": "Bearing"
+        },
+        {
+          "part_name": "Inverter Module",
+          "part_number": "1520300-00-A",
+          "labor_hours": 3.5,
+          "category": "Power Electronics"
+        },
+        {
+          "part_name": "High-Voltage Contactor",
+          "part_number": "1520310-00-A",
+          "labor_hours": 1.5,
+          "category": "Electrical"
+        }
+      ],
+      "Transmission & Differential": [
+        {
+          "part_name": "Single-Speed Reducer",
+          "part_number": "1520400-00-A",
+          "labor_hours": 6.0,
+          "category": "Transmission"
+        },
+        {
+          "part_name": "Differential Assembly",
+          "part_number": "1520410-00-A",
+          "labor_hours": 7.0,
+          "category": "Differential"
+        },
+        {
+          "part_name": "Axle Shaft",
+          "part_number": "1520420-00-A",
+          "labor_hours": 2.5,
+          "category": "Axle"
+        }
+      ]
+    },
+    "Suspension": {
+      "Air Suspension System": [
+        {
+          "part_name": "Air Compressor",
+          "part_number": "1130010-00-A",
+          "labor_hours": 3.0,
+          "category": "Compressor"
+        },
+        {
+          "part_name": "Air Suspension Strut - Front",
+          "part_number": "1130020-00-A",
+          "labor_hours": 2.0,
+          "category": "Strut"
+        },
+        {
+          "part_name": "Air Suspension Strut - Rear",
+          "part_number": "1130030-00-A",
+          "labor_hours": 2.5,
+          "category": "Strut"
+        },
+        {
+          "part_name": "Air Spring Bag Assembly",
+          "part_number": "1130040-00-A",
+          "labor_hours": 1.5,
+          "category": "Air Bag"
+        },
+        {
+          "part_name": "Height Sensor - Front",
+          "part_number": "1130050-00-A",
+          "labor_hours": 1.0,
+          "category": "Sensor"
+        },
+        {
+          "part_name": "Height Sensor - Rear",
+          "part_number": "1130060-00-A",
+          "labor_hours": 1.0,
+          "category": "Sensor"
+        },
+        {
+          "part_name": "Damping Strut",
+          "part_number": "1130070-00-A",
+          "labor_hours": 2.0,
+          "category": "Damper"
+        }
+      ],
+      "Control Arms & Links": [
+        {
+          "part_name": "Upper Control Arm - Front",
+          "part_number": "1130100-00-A",
+          "labor_hours": 1.5,
+          "category": "Control Arm"
+        },
+        {
+          "part_name": "Lower Control Arm - Front",
+          "part_number": "1130110-00-A",
+          "labor_hours": 1.5,
+          "category": "Control Arm"
+        },
+        {
+          "part_name": "Tie Rod Assembly",
+          "part_number": "1130120-00-A",
+          "labor_hours": 1.0,
+          "category": "Steering"
+        },
+        {
+          "part_name": "Sway Bar Link",
+          "part_number": "1130130-00-A",
+          "labor_hours": 0.5,
+          "category": "Link"
+        }
+      ]
+    },
+    "Battery & Power": {
+      "Battery Pack": [
+        {
+          "part_name": "Battery Module (Cell)",
+          "part_number": "1410010-00-A",
+          "labor_hours": 0.5,
+          "category": "Battery"
+        },
+        {
+          "part_name": "Battery Pack Assembly",
+          "part_number": "1410020-00-A",
+          "labor_hours": 8.0,
+          "category": "Battery"
+        },
+        {
+          "part_name": "BMS Control Module",
+          "part_number": "1410030-00-A",
+          "labor_hours": 2.0,
+          "category": "Control"
+        },
+        {
+          "part_name": "Battery Coolant Pump",
+          "part_number": "1410040-00-A",
+          "labor_hours": 2.5,
+          "category": "Cooling"
+        }
+      ],
+      "Charging System": [
+        {
+          "part_name": "On-Board Charger (OBC)",
+          "part_number": "1410100-00-A",
+          "labor_hours": 3.0,
+          "category": "Charger"
+        },
+        {
+          "part_name": "Charge Port Latch",
+          "part_number": "1410110-00-A",
+          "labor_hours": 1.5,
+          "category": "Port"
+        },
+        {
+          "part_name": "Charge Port Door Motor",
+          "part_number": "1410120-00-A",
+          "labor_hours": 1.0,
+          "category": "Motor"
+        }
+      ]
+    },
+    "Braking System": {
+      "Brakes": [
+        {
+          "part_name": "Front Brake Pad Set",
+          "part_number": "1220010-00-A",
+          "labor_hours": 1.0,
+          "category": "Pads"
+        },
+        {
+          "part_name": "Rear Brake Pad Set",
+          "part_number": "1220020-00-A",
+          "labor_hours": 1.0,
+          "category": "Pads"
+        },
+        {
+          "part_name": "Front Brake Rotor",
+          "part_number": "1220030-00-A",
+          "labor_hours": 1.5,
+          "category": "Rotor"
+        },
+        {
+          "part_name": "Rear Brake Rotor",
+          "part_number": "1220040-00-A",
+          "labor_hours": 1.5,
+          "category": "Rotor"
+        },
+        {
+          "part_name": "ABS Module",
+          "part_number": "1220050-00-A",
+          "labor_hours": 2.0,
+          "category": "ABS"
+        },
+        {
+          "part_name": "Brake Fluid",
+          "part_number": "1220060-00-A",
+          "labor_hours": 0.5,
+          "category": "Fluid"
+        }
+      ]
+    },
+    "Exterior": {
+      "Body Panels": [
+        {
+          "part_name": "Front Fender - LH",
+          "part_number": "1310010-00-A",
+          "labor_hours": 2.0,
+          "category": "Panel"
+        },
+        {
+          "part_name": "Front Fender - RH",
+          "part_number": "1310020-00-A",
+          "labor_hours": 2.0,
+          "category": "Panel"
+        },
+        {
+          "part_name": "Rear Quarter Panel - LH",
+          "part_number": "1310030-00-A",
+          "labor_hours": 3.0,
+          "category": "Panel"
+        },
+        {
+          "part_name": "Rear Quarter Panel - RH",
+          "part_number": "1310040-00-A",
+          "labor_hours": 3.0,
+          "category": "Panel"
+        },
+        {
+          "part_name": "Door Assembly - Front LH",
+          "part_number": "1310050-00-A",
+          "labor_hours": 2.5,
+          "category": "Door"
+        },
+        {
+          "part_name": "Door Assembly - Front RH",
+          "part_number": "1310060-00-A",
+          "labor_hours": 2.5,
+          "category": "Door"
+        },
+        {
+          "part_name": "Tonneau Cover Panel",
+          "part_number": "1310070-00-A",
+          "labor_hours": 2.0,
+          "category": "Tonneau"
+        }
+      ],
+      "Windows & Lights": [
+        {
+          "part_name": "Front Windshield",
+          "part_number": "1320010-00-A",
+          "labor_hours": 1.5,
+          "category": "Glass"
+        },
+        {
+          "part_name": "Side Window - Front LH",
+          "part_number": "1320020-00-A",
+          "labor_hours": 1.0,
+          "category": "Glass"
+        },
+        {
+          "part_name": "Side Window - Front RH",
+          "part_number": "1320030-00-A",
+          "labor_hours": 1.0,
+          "category": "Glass"
+        },
+        {
+          "part_name": "Headlight Assembly - LH",
+          "part_number": "1330010-00-A",
+          "labor_hours": 1.5,
+          "category": "Light"
+        },
+        {
+          "part_name": "Headlight Assembly - RH",
+          "part_number": "1330020-00-A",
+          "labor_hours": 1.5,
+          "category": "Light"
+        },
+        {
+          "part_name": "Tail Light Assembly - LH",
+          "part_number": "1330030-00-A",
+          "labor_hours": 1.0,
+          "category": "Light"
+        },
+        {
+          "part_name": "Tail Light Assembly - RH",
+          "part_number": "1330040-00-A",
+          "labor_hours": 1.0,
+          "category": "Light"
+        }
+      ]
+    }
+  },
+  "scraped": "2026-03-09T17:56:09.062663"
+}

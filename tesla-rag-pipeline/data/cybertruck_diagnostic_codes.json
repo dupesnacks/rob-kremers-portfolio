@@ -1,0 +1,130 @@
+{
+  "vehicle": "Cybertruck",
+  "codes": {
+    "Battery Codes": [
+      {
+        "code": "P0A80",
+        "name": "High Voltage System Malfunction",
+        "severity": "critical",
+        "action": "Service required"
+      },
+      {
+        "code": "P0AB3",
+        "name": "Battery Cell Over Voltage",
+        "severity": "high",
+        "action": "Check BMS module"
+      },
+      {
+        "code": "P0AB6",
+        "name": "Battery Voltage Below Threshold",
+        "severity": "high",
+        "action": "Charge battery"
+      },
+      {
+        "code": "P0A1A",
+        "name": "Battery Thermal Runaway Warning",
+        "severity": "critical",
+        "action": "Stop driving immediately"
+      }
+    ],
+    "Motor Codes": [
+      {
+        "code": "P3000",
+        "name": "Motor A Winding Short Circuit",
+        "severity": "critical",
+        "action": "Service required"
+      },
+      {
+        "code": "P3010",
+        "name": "Motor B Overtemperature Warning",
+        "severity": "high",
+        "action": "Cool down motor"
+      },
+      {
+        "code": "P3020",
+        "name": "Inverter Over Current",
+        "severity": "critical",
+        "action": "Service required"
+      },
+      {
+        "code": "P3030",
+        "name": "Torque Vectoring Malfunction",
+        "severity": "medium",
+        "action": "Service recommended"
+      }
+    ],
+    "Suspension Codes": [
+      {
+        "code": "C1010",
+        "name": "Air Suspension Compressor Failure",
+        "severity": "high",
+        "action": "Replace compressor"
+      },
+      {
+        "code": "C1020",
+        "name": "Air Suspension Pressure Low",
+        "severity": "medium",
+        "action": "Check for leaks"
+      },
+      {
+        "code": "C1030",
+        "name": "Suspension Height Sensor Fault",
+        "severity": "medium",
+        "action": "Replace sensor"
+      },
+      {
+        "code": "C1040",
+        "name": "Adaptive Damping Malfunction",
+        "severity": "low",
+        "action": "Service optional"
+      }
+    ],
+    "Brake Codes": [
+      {
+        "code": "C0040",
+        "name": "ABS Wheel Speed Sensor Error",
+        "severity": "medium",
+        "action": "Replace sensor"
+      },
+      {
+        "code": "C0100",
+        "name": "ABS Module Failure",
+        "severity": "high",
+        "action": "Service required"
+      },
+      {
+        "code": "C0200",
+        "name": "Regen Braking System Malfunction",
+        "severity": "high",
+        "action": "Service required"
+      }
+    ],
+    "Electrical Codes": [
+      {
+        "code": "U0100",
+        "name": "CAN Bus Communication Error",
+        "severity": "high",
+        "action": "Check wiring"
+      },
+      {
+        "code": "U0101",
+        "name": "Lost Communication with Motor Controller",
+        "severity": "critical",
+        "action": "Service required"
+      },
+      {
+        "code": "B1001",
+        "name": "MCU Memory Error",
+        "severity": "medium",
+        "action": "Restart vehicle"
+      },
+      {
+        "code": "B1010",
+        "name": "Touchscreen Unresponsive",
+        "severity": "low",
+        "action": "Recalibrate or reboot"
+      }
+    ]
+  },
+  "scraped": "2026-03-09T17:56:09.063248"
+}

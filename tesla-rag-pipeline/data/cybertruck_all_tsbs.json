@@ -1,0 +1,363 @@
+{
+  "vehicle": "Cybertruck",
+  "total_tsbs": 19,
+  "categories": {
+    "Air Suspension Issues": [
+      {
+        "id": "SB-25-01-001",
+        "title": "Air Suspension Compressor Noise",
+        "issue": "Loud compressor operation during height adjustment",
+        "symptoms": [
+          "Loud noise when adjusting height",
+          "Compressor runs frequently",
+          "Hissing sounds"
+        ],
+        "fix": "Replace compressor, update firmware",
+        "parts": [
+          "1130010-00-A",
+          "1130040-00-A"
+        ],
+        "labor_hours": 3.0,
+        "years": [
+          "2024",
+          "2025",
+          "2026"
+        ]
+      },
+      {
+        "id": "SB-25-01-002",
+        "title": "Air Spring Pressure Loss",
+        "issue": "Vehicle dropping lower over time due to air leak",
+        "symptoms": [
+          "Vehicle sits lower than normal",
+          "Height warnings",
+          "Suspension compressor runs continuously"
+        ],
+        "fix": "Inspect air lines, replace leaking air spring or seal",
+        "parts": [
+          "1130040-00-A",
+          "1130050-00-A"
+        ],
+        "labor_hours": 2.5,
+        "years": [
+          "2024",
+          "2025"
+        ]
+      },
+      {
+        "id": "SB-25-01-003",
+        "title": "Height Sensor Calibration Issue",
+        "issue": "Uneven ride height or height sensor faults",
+        "symptoms": [
+          "Code C1030/C1031",
+          "Uneven suspension",
+          "Height adjustment not working"
+        ],
+        "fix": "Recalibrate height sensors via diagnostic tool",
+        "parts": [],
+        "labor_hours": 0.75,
+        "years": [
+          "2024"
+        ]
+      }
+    ],
+    "Battery & Charging Issues": [
+      {
+        "id": "SB-25-02-001",
+        "title": "Charge Port Door Sticking",
+        "issue": "Charge port door won't open or close smoothly",
+        "symptoms": [
+          "Door stuck closed",
+          "Door won't open fully",
+          "Motor grinding sound"
+        ],
+        "fix": "Replace charge port door motor and lubricate contacts",
+        "parts": [
+          "1410120-00-A",
+          "1410110-00-A"
+        ],
+        "labor_hours": 1.5,
+        "years": [
+          "2024"
+        ]
+      },
+      {
+        "id": "SB-25-02-002",
+        "title": "Slow DC Fast Charging Speed",
+        "issue": "DC fast charging speed reduced to 50-70% of normal",
+        "symptoms": [
+          "Slower Supercharger speeds",
+          "Higher charging time",
+          "Thermal warnings during charging"
+        ],
+        "fix": "Update OBC firmware, verify thermal management",
+        "parts": [],
+        "labor_hours": 0.5,
+        "years": [
+          "2024",
+          "2025"
+        ]
+      },
+      {
+        "id": "SB-25-02-003",
+        "title": "Battery Temperature Warning at Startup",
+        "issue": "Battery temperature warning appears on cold mornings",
+        "symptoms": [
+          "Thermal warning in cold weather",
+          "Reduced power temporarily",
+          "Thermal code P0AC7"
+        ],
+        "fix": "Verify battery thermal management system operation, no parts needed",
+        "parts": [],
+        "labor_hours": 0.25,
+        "years": [
+          "2024",
+          "2025"
+        ]
+      },
+      {
+        "id": "SB-25-02-004",
+        "title": "Battery Degradation Accelerated",
+        "issue": "Faster than expected battery capacity loss",
+        "symptoms": [
+          "Range loss >5% per year",
+          "Code P0A80 or P0AB3",
+          "Reduced maximum charge"
+        ],
+        "fix": "BMS reset, battery diagnostics, possible pack replacement if defective",
+        "parts": [
+          "1410020-00-A"
+        ],
+        "labor_hours": 8.0,
+        "years": [
+          "2024"
+        ]
+      }
+    ],
+    "Motor & Drive System Issues": [
+      {
+        "id": "SB-25-03-001",
+        "title": "Motor Grinding or Whining Noise",
+        "issue": "Unusual noise from motor during acceleration",
+        "symptoms": [
+          "Grinding sound under acceleration",
+          "Whining noise at highway speeds",
+          "Code P3000-P3012"
+        ],
+        "fix": "Diagnose motor condition, possible motor replacement",
+        "parts": [
+          "1520240-00-A",
+          "1520250-00-B"
+        ],
+        "labor_hours": 5.0,
+        "years": [
+          "2024",
+          "2025"
+        ]
+      },
+      {
+        "id": "SB-25-03-002",
+        "title": "Torque Vectoring Malfunction",
+        "issue": "Dual motor torque distribution not working",
+        "symptoms": [
+          "Torque vector disabled message",
+          "Code P3030",
+          "Vehicle understeers"
+        ],
+        "fix": "Update motor controller firmware, verify inverter operation",
+        "parts": [],
+        "labor_hours": 1.0,
+        "years": [
+          "2024"
+        ]
+      }
+    ],
+    "Exterior & Panel Issues": [
+      {
+        "id": "SB-25-04-001",
+        "title": "Door Alignment & Panel Gaps",
+        "issue": "Front door doesn't align properly, large gaps at seams",
+        "symptoms": [
+          "Uneven door gaps",
+          "Door doesn't close smoothly",
+          "Water leaks from door gaps"
+        ],
+        "fix": "Adjust door hinges, align panel gaps to specification",
+        "parts": [],
+        "labor_hours": 2.0,
+        "years": [
+          "2024"
+        ]
+      },
+      {
+        "id": "SB-25-04-002",
+        "title": "Tonneau Cover Sticking or Misaligned",
+        "issue": "Tonneau cover doesn't open/close smoothly or sits uneven",
+        "symptoms": [
+          "Cover sticks on one side",
+          "Gaps in cover alignment",
+          "Motor grinding sounds"
+        ],
+        "fix": "Lubricate guides, adjust cover alignment, replace motor if needed",
+        "parts": [
+          "1310070-00-A"
+        ],
+        "labor_hours": 1.5,
+        "years": [
+          "2024",
+          "2025"
+        ]
+      },
+      {
+        "id": "SB-25-04-003",
+        "title": "Window Regulator Malfunction",
+        "issue": "Side windows don't move smoothly or stick",
+        "symptoms": [
+          "Window moves slowly",
+          "Window reverses on obstruction",
+          "Code B1050"
+        ],
+        "fix": "Replace window motor/regulator assembly",
+        "parts": [
+          "1320020-00-A",
+          "1320030-00-A"
+        ],
+        "labor_hours": 1.0,
+        "years": [
+          "2024"
+        ]
+      }
+    ],
+    "Electronics & Infotainment Issues": [
+      {
+        "id": "SB-25-05-001",
+        "title": "Touchscreen Freezing or Unresponsive",
+        "issue": "Infotainment system becomes unresponsive or crashes",
+        "symptoms": [
+          "Touchscreen doesn't respond to touches",
+          "MCU freezes periodically",
+          "Codes B1001, B1010"
+        ],
+        "fix": "Update MCU firmware, factory reset if needed, possible MCU replacement",
+        "parts": [],
+        "labor_hours": 0.5,
+        "years": [
+          "2024",
+          "2025"
+        ]
+      },
+      {
+        "id": "SB-25-05-002",
+        "title": "Bluetooth Connectivity Issues",
+        "issue": "Phone won't pair or keeps disconnecting",
+        "symptoms": [
+          "Bluetooth won't connect",
+          "Frequent disconnects",
+          "Pairing timeout errors"
+        ],
+        "fix": "Update MCU firmware, unpair/repair device, reset Bluetooth module",
+        "parts": [],
+        "labor_hours": 0.25,
+        "years": [
+          "2024"
+        ]
+      },
+      {
+        "id": "SB-25-05-003",
+        "title": "Software Update Stuck or Failed",
+        "issue": "OTA update stalls or fails to install",
+        "symptoms": [
+          "Update stuck at percentage",
+          "Error message",
+          "Vehicle in update mode"
+        ],
+        "fix": "Perform hard reset, manual update via service mode, possible MCU replacement",
+        "parts": [],
+        "labor_hours": 1.0,
+        "years": [
+          "2024",
+          "2025"
+        ]
+      }
+    ],
+    "Climate Control Issues": [
+      {
+        "id": "SB-25-06-001",
+        "title": "Heat Pump Not Heating in Cold Weather",
+        "issue": "Vehicle won't heat efficiently in cold weather",
+        "symptoms": [
+          "No heat above 50\u00b0C",
+          "Heater fan runs but no warm air",
+          "Code P2496"
+        ],
+        "fix": "Update heat pump firmware, verify refrigerant charge, possible compressor replacement",
+        "parts": [
+          "1510001-00-A"
+        ],
+        "labor_hours": 3.0,
+        "years": [
+          "2024",
+          "2025"
+        ]
+      },
+      {
+        "id": "SB-25-06-002",
+        "title": "A/C Compressor Cycling On/Off Frequently",
+        "issue": "Air conditioning compressor cycles too often, inconsistent cooling",
+        "symptoms": [
+          "A/C on/off cycling",
+          "Temperature fluctuates",
+          "Code P2500 or P2501"
+        ],
+        "fix": "Check refrigerant level, verify pressure sensors, possible compressor replacement",
+        "parts": [
+          "1510010-00-A"
+        ],
+        "labor_hours": 2.0,
+        "years": [
+          "2024"
+        ]
+      }
+    ],
+    "Lighting Issues": [
+      {
+        "id": "SB-25-07-001",
+        "title": "Headlight Module Malfunction",
+        "issue": "One or both headlights out or dim",
+        "symptoms": [
+          "Headlight doesn't illuminate",
+          "Reduced brightness",
+          "Code B1070"
+        ],
+        "fix": "Replace headlight module, verify wiring connection",
+        "parts": [
+          "1330010-00-A",
+          "1330020-00-A"
+        ],
+        "labor_hours": 1.5,
+        "years": [
+          "2024"
+        ]
+      },
+      {
+        "id": "SB-25-07-002",
+        "title": "Wiper Motor Malfunction",
+        "issue": "Wipers don't work or move intermittently",
+        "symptoms": [
+          "Wipers won't activate",
+          "Intermittent operation",
+          "Code B1060"
+        ],
+        "fix": "Replace wiper motor, check wiper linkage for obstruction",
+        "parts": [
+          "1330050-00-A"
+        ],
+        "labor_hours": 1.0,
+        "years": [
+          "2024"
+        ]
+      }
+    ]
+  },
+  "scraped": "2026-03-09T17:58:35.760662"
+}

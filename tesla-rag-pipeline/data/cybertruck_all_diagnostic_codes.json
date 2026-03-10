@@ -1,0 +1,465 @@
+{
+  "vehicle": "Cybertruck",
+  "total_codes": 88,
+  "categories": {
+    "Battery Management System (P0A/B)": [
+      {
+        "code": "P0A80",
+        "name": "High Voltage System Malfunction",
+        "severity": "critical"
+      },
+      {
+        "code": "P0A81",
+        "name": "HV Battery Pack Imbalance",
+        "severity": "high"
+      },
+      {
+        "code": "P0A8C",
+        "name": "Battery Temperature Sensor Malfunction",
+        "severity": "high"
+      },
+      {
+        "code": "P0AB3",
+        "name": "Battery Cell Over Voltage",
+        "severity": "critical"
+      },
+      {
+        "code": "P0AB6",
+        "name": "Battery Voltage Below Threshold",
+        "severity": "high"
+      },
+      {
+        "code": "P0A1A",
+        "name": "Battery Thermal Runaway Warning",
+        "severity": "critical"
+      },
+      {
+        "code": "P0A97",
+        "name": "Battery Heater Malfunction",
+        "severity": "medium"
+      },
+      {
+        "code": "P0AC6",
+        "name": "Battery Temperature Too High",
+        "severity": "high"
+      },
+      {
+        "code": "P0AC7",
+        "name": "Battery Temperature Too Low",
+        "severity": "medium"
+      },
+      {
+        "code": "P0B00",
+        "name": "Battery Pack Voltage Imbalance",
+        "severity": "high"
+      }
+    ],
+    "Motor/Drive System (P30/P31)": [
+      {
+        "code": "P3000",
+        "name": "Motor A Winding Short Circuit",
+        "severity": "critical"
+      },
+      {
+        "code": "P3001",
+        "name": "Motor A Overtemperature Warning",
+        "severity": "high"
+      },
+      {
+        "code": "P3002",
+        "name": "Motor A Overcurrent",
+        "severity": "critical"
+      },
+      {
+        "code": "P3010",
+        "name": "Motor B Winding Short Circuit",
+        "severity": "critical"
+      },
+      {
+        "code": "P3011",
+        "name": "Motor B Overtemperature Warning",
+        "severity": "high"
+      },
+      {
+        "code": "P3012",
+        "name": "Motor B Overcurrent",
+        "severity": "critical"
+      },
+      {
+        "code": "P3020",
+        "name": "Inverter Over Current",
+        "severity": "critical"
+      },
+      {
+        "code": "P3021",
+        "name": "Inverter Overtemperature",
+        "severity": "high"
+      },
+      {
+        "code": "P3022",
+        "name": "Inverter DC Link Over Voltage",
+        "severity": "high"
+      },
+      {
+        "code": "P3023",
+        "name": "Inverter DC Link Under Voltage",
+        "severity": "high"
+      },
+      {
+        "code": "P3030",
+        "name": "Torque Vectoring Malfunction",
+        "severity": "medium"
+      },
+      {
+        "code": "P3040",
+        "name": "Motor Control Module Malfunction",
+        "severity": "critical"
+      },
+      {
+        "code": "P3050",
+        "name": "Rotor Position Sensor Error",
+        "severity": "high"
+      }
+    ],
+    "Suspension System (C10/C11)": [
+      {
+        "code": "C1010",
+        "name": "Air Suspension Compressor Failure",
+        "severity": "high"
+      },
+      {
+        "code": "C1011",
+        "name": "Air Suspension Compressor Not Operating",
+        "severity": "high"
+      },
+      {
+        "code": "C1012",
+        "name": "Air Suspension Compressor Overtemperature",
+        "severity": "medium"
+      },
+      {
+        "code": "C1020",
+        "name": "Air Suspension Pressure Low",
+        "severity": "medium"
+      },
+      {
+        "code": "C1021",
+        "name": "Air Suspension Pressure Sensor Malfunction",
+        "severity": "medium"
+      },
+      {
+        "code": "C1030",
+        "name": "Suspension Height Sensor Fault - Front",
+        "severity": "medium"
+      },
+      {
+        "code": "C1031",
+        "name": "Suspension Height Sensor Fault - Rear",
+        "severity": "medium"
+      },
+      {
+        "code": "C1040",
+        "name": "Adaptive Damping Malfunction",
+        "severity": "low"
+      },
+      {
+        "code": "C1041",
+        "name": "Damper Solenoid Valve Error",
+        "severity": "medium"
+      },
+      {
+        "code": "C1050",
+        "name": "Air Spring Leak Detected",
+        "severity": "high"
+      },
+      {
+        "code": "C1060",
+        "name": "Suspension Leveling Failed",
+        "severity": "medium"
+      }
+    ],
+    "Braking System (C0/C2)": [
+      {
+        "code": "C0040",
+        "name": "ABS Wheel Speed Sensor Error - Front Left",
+        "severity": "medium"
+      },
+      {
+        "code": "C0041",
+        "name": "ABS Wheel Speed Sensor Error - Front Right",
+        "severity": "medium"
+      },
+      {
+        "code": "C0042",
+        "name": "ABS Wheel Speed Sensor Error - Rear Left",
+        "severity": "medium"
+      },
+      {
+        "code": "C0043",
+        "name": "ABS Wheel Speed Sensor Error - Rear Right",
+        "severity": "medium"
+      },
+      {
+        "code": "C0100",
+        "name": "ABS Module Failure",
+        "severity": "high"
+      },
+      {
+        "code": "C0101",
+        "name": "ABS Module CAN Communication Error",
+        "severity": "high"
+      },
+      {
+        "code": "C0200",
+        "name": "Regen Braking System Malfunction",
+        "severity": "high"
+      },
+      {
+        "code": "C0201",
+        "name": "Regen Brake Force Distribution Error",
+        "severity": "medium"
+      },
+      {
+        "code": "C0210",
+        "name": "Brake Fluid Level Low",
+        "severity": "medium"
+      },
+      {
+        "code": "C0215",
+        "name": "Brake Fluid Contamination Detected",
+        "severity": "high"
+      },
+      {
+        "code": "C0220",
+        "name": "Electronic Brake Distribution Malfunction",
+        "severity": "high"
+      }
+    ],
+    "Steering System (C4)": [
+      {
+        "code": "C4004",
+        "name": "Steering Angle Sensor Malfunction",
+        "severity": "medium"
+      },
+      {
+        "code": "C4010",
+        "name": "Power Steering Pressure Low",
+        "severity": "high"
+      },
+      {
+        "code": "C4020",
+        "name": "Steering Motor Overtemperature",
+        "severity": "medium"
+      },
+      {
+        "code": "C4030",
+        "name": "Steering Control Module Fault",
+        "severity": "high"
+      }
+    ],
+    "Electrical System (U0/U1/U2)": [
+      {
+        "code": "U0100",
+        "name": "CAN Bus Communication Error",
+        "severity": "high"
+      },
+      {
+        "code": "U0101",
+        "name": "Lost Communication with Motor Controller",
+        "severity": "critical"
+      },
+      {
+        "code": "U0102",
+        "name": "Lost Communication with BMS Module",
+        "severity": "critical"
+      },
+      {
+        "code": "U0103",
+        "name": "Lost Communication with Suspension Module",
+        "severity": "high"
+      },
+      {
+        "code": "U0104",
+        "name": "Lost Communication with Infotainment System",
+        "severity": "low"
+      },
+      {
+        "code": "U0105",
+        "name": "Lost Communication with Gateway Module",
+        "severity": "high"
+      },
+      {
+        "code": "U0121",
+        "name": "CAN Bus Off",
+        "severity": "critical"
+      },
+      {
+        "code": "U0122",
+        "name": "CAN Bus Data Error",
+        "severity": "high"
+      },
+      {
+        "code": "U0131",
+        "name": "Voltage Supply Malfunction",
+        "severity": "high"
+      },
+      {
+        "code": "U0141",
+        "name": "Network Enable Line Short",
+        "severity": "high"
+      }
+    ],
+    "Body Electronics (B1/B2)": [
+      {
+        "code": "B1001",
+        "name": "MCU Memory Error",
+        "severity": "medium"
+      },
+      {
+        "code": "B1002",
+        "name": "MCU Boot Loader Failure",
+        "severity": "critical"
+      },
+      {
+        "code": "B1003",
+        "name": "MCU Software Version Mismatch",
+        "severity": "high"
+      },
+      {
+        "code": "B1010",
+        "name": "Touchscreen Unresponsive",
+        "severity": "low"
+      },
+      {
+        "code": "B1011",
+        "name": "Touchscreen Display Malfunction",
+        "severity": "low"
+      },
+      {
+        "code": "B1020",
+        "name": "Audio System Malfunction",
+        "severity": "low"
+      },
+      {
+        "code": "B1030",
+        "name": "Climate Control Module Error",
+        "severity": "medium"
+      },
+      {
+        "code": "B1040",
+        "name": "Door Lock Actuator Malfunction",
+        "severity": "low"
+      },
+      {
+        "code": "B1050",
+        "name": "Window Motor Failure",
+        "severity": "low"
+      },
+      {
+        "code": "B1060",
+        "name": "Wiper Motor Malfunction",
+        "severity": "low"
+      },
+      {
+        "code": "B1070",
+        "name": "Exterior Light Module Failure",
+        "severity": "medium"
+      },
+      {
+        "code": "B1080",
+        "name": "Interior Light Module Error",
+        "severity": "low"
+      },
+      {
+        "code": "B1090",
+        "name": "Seat Position Motor Malfunction",
+        "severity": "low"
+      }
+    ],
+    "Safety Systems (B3)": [
+      {
+        "code": "B3010",
+        "name": "Airbag System Malfunction",
+        "severity": "critical"
+      },
+      {
+        "code": "B3020",
+        "name": "Crash Sensor Error",
+        "severity": "high"
+      },
+      {
+        "code": "B3030",
+        "name": "Seat Belt Pretensioner Failure",
+        "severity": "high"
+      },
+      {
+        "code": "B3040",
+        "name": "Autopilot Camera Blind",
+        "severity": "high"
+      },
+      {
+        "code": "B3041",
+        "name": "Autopilot Camera Fogging",
+        "severity": "medium"
+      },
+      {
+        "code": "B3050",
+        "name": "Collision Avoidance Radar Error",
+        "severity": "high"
+      },
+      {
+        "code": "B3060",
+        "name": "Adaptive Cruise Control Malfunction",
+        "severity": "high"
+      },
+      {
+        "code": "B3070",
+        "name": "Lane Keeping Assist Malfunction",
+        "severity": "medium"
+      }
+    ],
+    "Climate Control (P2)": [
+      {
+        "code": "P2495",
+        "name": "Heat Pump Relay Not Energizing",
+        "severity": "medium"
+      },
+      {
+        "code": "P2496",
+        "name": "Heat Pump Malfunction",
+        "severity": "high"
+      },
+      {
+        "code": "P2497",
+        "name": "Heat Pump Overtemperature",
+        "severity": "medium"
+      },
+      {
+        "code": "P2498",
+        "name": "Heat Pump Suction Thermistor Low",
+        "severity": "medium"
+      },
+      {
+        "code": "P2499",
+        "name": "Compressor Control Fault",
+        "severity": "high"
+      },
+      {
+        "code": "P2500",
+        "name": "A/C System Pressure High",
+        "severity": "high"
+      },
+      {
+        "code": "P2501",
+        "name": "A/C System Pressure Low",
+        "severity": "medium"
+      },
+      {
+        "code": "P2502",
+        "name": "Cabin Air Temperature Not Responding",
+        "severity": "medium"
+      }
+    ]
+  },
+  "scraped": "2026-03-09T17:58:35.759439"
+}

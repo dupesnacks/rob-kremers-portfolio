@@ -1,0 +1,89 @@
+{
+  "vehicle": "Cybertruck",
+  "bulletins": {
+    "Air Suspension": [
+      {
+        "tsb_id": "SB-25-XX-001",
+        "title": "Air Suspension Compressor Noise",
+        "issue": "Loud compressor operation during height adjustment",
+        "fix": "Replace compressor, update firmware",
+        "parts": [
+          "1130010-00-A"
+        ],
+        "labor_hours": 3.0,
+        "affected_years": [
+          "2024",
+          "2025",
+          "2026"
+        ]
+      },
+      {
+        "tsb_id": "SB-25-XX-002",
+        "title": "Suspension Height Sensor Calibration",
+        "issue": "Uneven ride height or height sensor faults",
+        "fix": "Recalibrate sensors via diagnostic tool",
+        "parts": [],
+        "labor_hours": 0.5,
+        "affected_years": [
+          "2024",
+          "2025"
+        ]
+      }
+    ],
+    "Battery & Charging": [
+      {
+        "tsb_id": "SB-25-XX-010",
+        "title": "Charge Port Door Sticking",
+        "issue": "Charge port door won't open or close smoothly",
+        "fix": "Replace charge port door motor and lubricate contacts",
+        "parts": [
+          "1410120-00-A"
+        ],
+        "labor_hours": 1.5,
+        "affected_years": [
+          "2024"
+        ]
+      },
+      {
+        "tsb_id": "SB-25-XX-011",
+        "title": "Slow DC Fast Charging",
+        "issue": "DC fast charging speed reduced to 50-70% of normal",
+        "fix": "Update onboard charger firmware, check thermal management",
+        "parts": [],
+        "labor_hours": 0.5,
+        "affected_years": [
+          "2024",
+          "2025"
+        ]
+      }
+    ],
+    "Exterior & Panels": [
+      {
+        "tsb_id": "SB-25-XX-020",
+        "title": "Door Alignment & Panel Gaps",
+        "issue": "Front door doesn't align properly, large gaps at seams",
+        "fix": "Adjust door hinges, align panel gaps to spec",
+        "parts": [],
+        "labor_hours": 2.0,
+        "affected_years": [
+          "2024"
+        ]
+      }
+    ],
+    "Electronics & Software": [
+      {
+        "tsb_id": "SB-25-XX-030",
+        "title": "Touchscreen Freezing Issues",
+        "issue": "Infotainment system freezes or becomes unresponsive",
+        "fix": "Update MCU firmware, factory reset if needed",
+        "parts": [],
+        "labor_hours": 0.25,
+        "affected_years": [
+          "2024",
+          "2025"
+        ]
+      }
+    ]
+  },
+  "scraped": "2026-03-09T17:56:09.063411"
+}
