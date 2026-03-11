@@ -13,6 +13,12 @@ echo ""
 # Backup entire directories (with all assets)
 echo "📁 Backing up full directories..."
 
+# Sensory Galaxy (HTML + all images - external repo)
+if [ -d "/Users/rk/clawd/sensory-galaxy" ]; then
+    cp -r /Users/rk/clawd/sensory-galaxy "$BACKUP_DIR/sensory-galaxy" 2>/dev/null
+    echo "✅ sensory-galaxy/ ($(find "$BACKUP_DIR/sensory-galaxy" -type f | wc -l) files)"
+fi
+
 # Flavor Galaxy (HTML + all images)
 if [ -d "/Users/rk/clawd/flavorgalaxy" ]; then
     cp -r /Users/rk/clawd/flavorgalaxy "$BACKUP_DIR/flavorgalaxy" 2>/dev/null
