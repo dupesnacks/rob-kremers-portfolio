@@ -1,6 +1,22 @@
 # MEMORY.md - Critical Procedures & Context
 
-**⚠️ NOTE (March 10, 2026):** This file is now archived. ByteRover provides semantic memory management instead. See AGENTS.md and TOOLS.md for ByteRover usage.
+**⚠️ NOTE (March 11, 2026):** ByteRover is now active with Ollama for semantic memory. MEMORY.md is ARCHIVED. See AGENTS.md and TOOLS.md for ByteRover usage. Global memory flush enabled across all channels.
+
+---
+
+## R2 vs Model Y Comparison Page (robkremers.com/r2)
+
+**Design & Data Decisions (March 11, 2026):**
+- **Modern dark theme required:** Original teal/beige was "PowerPoint-like". Switched to dark mode (#0f0f12) with cyan accents.
+- **Three-tier structure works:** Budget/Mid/Performance tables are easier to parse than one massive table.
+- **Header readability critical:** White text on dark headers needed for accessibility.
+- **Data accuracy matters:**
+  - Tesla Y Premium & Performance HAVE Matrix LED headlights (not just Rivian)
+  - FSD is $99/month subscription only (not $8-12k upfront)
+  - Charging data should show "miles added in 15 min" not total charge time
+  - Pricing order: Y Performance ($57,490) comes BEFORE R2 Launch ($57,990)
+- **Executive summary essential:** One-paragraph overview of key findings before deep-dive tables
+- **Winner callouts below each tier:** Summarize which vehicle wins and why
 
 ---
 
