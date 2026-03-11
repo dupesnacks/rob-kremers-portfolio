@@ -19,6 +19,7 @@
     { "source": "/actually", "destination": "/actually.html" },
     { "source": "/flavorgalaxy", "destination": "/flavorgalaxy/index.html" },
     { "source": "/flavgalupdates", "destination": "/rob-kremers-portfolio/flavgalupdates/index.html" },
+    { "source": "/r2", "destination": "/rob-kremers-portfolio/r2/index.html" },
     { "source": "/projects", "destination": "/index-projects.html" },
     { "source": "/", "destination": "/index-projects.html" }
   ],
