@@ -40,19 +40,19 @@
         }
 
         .container {
-            max-width: 1400px;
+            max-width: 1200px;
             margin: 0 auto;
             padding: 0 40px;
         }
 
         section {
-            padding: 80px 40px;
+            padding: 60px 0;
         }
 
         section h2 {
             font-size: 36px;
             font-weight: 700;
-            margin-bottom: 40px;
+            margin-bottom: 30px;
             position: relative;
             padding-bottom: 15px;
         }
@@ -68,13 +68,39 @@
             border-radius: 2px;
         }
 
+        /* Executive Summary */
+        .summary-box {
+            background: linear-gradient(135deg, #0D5E54 0%, #1a7f7f 100%);
+            color: white;
+            border-radius: 8px;
+            padding: 40px;
+            margin-bottom: 60px;
+        }
+
+        .summary-box h2 {
+            color: white;
+            border: none;
+            padding: 0;
+            margin: 0 0 20px 0;
+        }
+
+        .summary-box h2::after {
+            display: none;
+        }
+
+        .summary-box p {
+            font-size: 16px;
+            line-height: 1.8;
+            margin-bottom: 15px;
+        }
+
         /* Pricing Ladder */
         .pricing-ladder {
             background: white;
             border-radius: 8px;
             overflow: hidden;
             box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-            margin-bottom: 40px;
+            margin-bottom: 60px;
         }
 
         .ladder-row {
@@ -126,13 +152,13 @@
             color: #666;
         }
 
-        /* Feature Comparison Table */
+        /* Comparison Tables */
         .comparison-table {
             background: white;
             border-radius: 8px;
-            overflow-x: auto;
+            overflow: hidden;
             box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-            margin-bottom: 40px;
+            margin-bottom: 60px;
         }
 
         table {
@@ -143,26 +169,20 @@
         th {
             background: #0D5E54;
             color: white;
-            padding: 16px;
+            padding: 14px;
             text-align: left;
             font-weight: 600;
-            font-size: 14px;
+            font-size: 13px;
         }
 
         td {
-            padding: 16px;
+            padding: 14px;
             border-bottom: 1px solid #e0e0e0;
             font-size: 14px;
-            min-width: 100px;
         }
 
         tbody tr:hover {
             background: #f9f9f9;
-        }
-
-        thead tr:first-child th {
-            position: relative;
-            z-index: 15;
         }
 
         .category-header {
@@ -185,71 +205,12 @@
             color: #2e7d32;
         }
 
-        /* Tier Analysis */
-        .tier-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-            gap: 30px;
-            margin-bottom: 40px;
-        }
-
-        .tier-card {
-            background: white;
-            border-radius: 8px;
-            padding: 30px;
-            border-left: 4px solid #0D5E54;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-        }
-
-        .tier-card h3 {
-            font-size: 22px;
-            font-weight: 700;
-            margin-bottom: 20px;
-            color: #0D5E54;
-        }
-
-        .tier-card ul {
-            list-style: none;
-            margin-bottom: 20px;
-        }
-
-        .tier-card li {
-            padding: 8px 0;
-            font-size: 14px;
-        }
-
-        .tier-card li::before {
-            content: '✓ ';
-            color: #2e7d32;
-            font-weight: 700;
-            margin-right: 8px;
-        }
-
-        .tier-card.tesla {
-            border-left-color: #1a1a1a;
-        }
-
-        .tier-card.rivian {
-            border-left-color: #ff6b35;
-        }
-
-        .winner-badge {
-            display: inline-block;
-            background: #2e7d32;
-            color: white;
-            padding: 4px 12px;
-            border-radius: 20px;
-            font-size: 12px;
-            font-weight: 700;
-            margin-top: 15px;
-        }
-
         /* Charts */
         .chart-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
             gap: 30px;
-            margin-bottom: 40px;
+            margin-bottom: 60px;
         }
 
         .chart-container {
@@ -266,47 +227,6 @@
             font-weight: 600;
             margin-bottom: 20px;
             color: #0D5E54;
-        }
-
-        /* Summary */
-        .summary-box {
-            background: linear-gradient(135deg, #0D5E54 0%, #1a7f7f 100%);
-            color: white;
-            border-radius: 8px;
-            padding: 40px;
-            margin-bottom: 40px;
-        }
-
-        .summary-box h3 {
-            font-size: 24px;
-            font-weight: 700;
-            margin-bottom: 20px;
-        }
-
-        .summary-box p {
-            font-size: 16px;
-            line-height: 1.8;
-            margin-bottom: 15px;
-        }
-
-        /* Highlights */
-        .highlights {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-            margin-top: 30px;
-        }
-
-        .highlight {
-            background: rgba(255,255,255,0.1);
-            border-radius: 6px;
-            padding: 20px;
-            border-left: 3px solid white;
-        }
-
-        .highlight strong {
-            display: block;
-            margin-bottom: 5px;
         }
 
         footer {
@@ -336,7 +256,7 @@
             }
 
             th, td {
-                padding: 12px;
+                padding: 10px;
             }
         }
     </style>
@@ -349,6 +269,18 @@
     </header>
 
     <div class="container">
+        <!-- Executive Summary -->
+        <section>
+            <div class="summary-box">
+                <h2>Executive Summary</h2>
+                <p><strong>Tesla Model Y dominates on price, range, performance, and immediate availability.</strong> The cheapest Model Y RWD ($39,990) undercuts all Rivian R2 options and delivers 321 miles of range. The Premium RWD ($44,990) hits 357 miles—the best range in the entire comparison. Tesla's Performance trim (3.3 sec 0-60) is untouchable.</p>
+                
+                <p><strong>Rivian R2 offers newer platform technology, but with 1-2 year delivery delays.</strong> The Launch Edition ($57,990) brings Matrix LED headlights and modern interior design, competing on tech rather than value. All Rivian trims feature unproven reliability and a nascent service network.</p>
+
+                <p><strong>Full Self-Driving (FSD) Consideration:</strong> Tesla's Full Self-Driving capability ($8,000-12,000 or subscription) adds autonomous driving features to Model Y—something not yet available on Rivian R2. This significantly increases the value proposition of Tesla, especially for buyers prioritizing autonomous technology.</p>
+            </div>
+        </section>
+
         <!-- Pricing Ladder -->
         <section>
             <h2>Complete Pricing Ladder</h2>
@@ -435,127 +367,435 @@
             </div>
         </section>
 
-        <!-- Tier Analysis -->
+        <!-- Budget Tier Comparison -->
         <section>
-            <h2>Tier-by-Tier Analysis</h2>
+            <h2>Budget Tier: $40-45k</h2>
+            <p style="margin-bottom: 20px; color: #666;">Tesla Model Y RWD & AWD vs Rivian R2 Standard</p>
+            <div class="comparison-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Specification</th>
+                            <th class="tesla-col">Tesla Y RWD ($39,990)</th>
+                            <th class="tesla-col">Tesla Y AWD ($41,990)</th>
+                            <th class="rivian-col">Rivian R2 Standard ($45,000 / 2027)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="category-header">
+                            <td colspan="4">🏁 Performance</td>
+                        </tr>
+                        <tr>
+                            <td>0-60 mph</td>
+                            <td class="tesla-col">6.8 sec</td>
+                            <td class="tesla-col winner">4.6 sec</td>
+                            <td class="rivian-col">~7.5 sec</td>
+                        </tr>
+                        <tr>
+                            <td>EPA Range</td>
+                            <td class="tesla-col winner">321 mi</td>
+                            <td class="tesla-col">294 mi</td>
+                            <td class="rivian-col">265 mi</td>
+                        </tr>
+                        <tr>
+                            <td>Horsepower</td>
+                            <td class="tesla-col">~272 hp</td>
+                            <td class="tesla-col winner">~384 hp</td>
+                            <td class="rivian-col">~250 hp</td>
+                        </tr>
+                        <tr>
+                            <td>Drivetrain</td>
+                            <td class="tesla-col">Single Motor RWD</td>
+                            <td class="tesla-col winner">Dual Motor AWD</td>
+                            <td class="rivian-col">Single Motor</td>
+                        </tr>
 
-            <h3 style="font-size: 22px; margin: 30px 0 20px 0; color: #0D5E54;">Budget Tier ($40-45k)</h3>
-            <div class="tier-container">
-                <div class="tier-card tesla">
-                    <h3>Tesla Model Y RWD</h3>
-                    <p><strong>Price:</strong> $39,990</p>
-                    <p><strong>Range:</strong> 321 mi (best in class)</p>
-                    <p><strong>0-60:</strong> 6.8 sec</p>
-                    <ul>
-                        <li>Cheapest EV SUV option</li>
-                        <li>Longest range at price point</li>
-                        <li>Available immediately</li>
-                        <li>Established Supercharger network</li>
-                    </ul>
-                    <div class="winner-badge">Best Value</div>
-                </div>
+                        <tr class="category-header">
+                            <td colspan="4">🔋 Battery & Charging</td>
+                        </tr>
+                        <tr>
+                            <td>Battery Size</td>
+                            <td class="tesla-col winner">~60 kWh</td>
+                            <td class="tesla-col">~75 kWh</td>
+                            <td class="rivian-col">Not disclosed</td>
+                        </tr>
+                        <tr>
+                            <td>10-80% Charge Time</td>
+                            <td class="tesla-col winner">~160 min</td>
+                            <td class="tesla-col">~152 min</td>
+                            <td class="rivian-col">Not disclosed</td>
+                        </tr>
+                        <tr>
+                            <td>Supercharge 15 min</td>
+                            <td class="tesla-col winner">Up to 160 mi</td>
+                            <td class="tesla-col">Up to 152 mi</td>
+                            <td class="rivian-col">Not disclosed</td>
+                        </tr>
 
-                <div class="tier-card rivian">
-                    <h3>Rivian R2 Standard</h3>
-                    <p><strong>Price:</strong> $45,000</p>
-                    <p><strong>Range:</strong> 265 mi</p>
-                    <p><strong>0-60:</strong> ~7.5 sec (slowest)</p>
-                    <ul>
-                        <li>Not available until late 2027</li>
-                        <li>Shortest range at this tier</li>
-                        <li>Slowest acceleration</li>
-                        <li>Unproven platform</li>
-                    </ul>
-                </div>
+                        <tr class="category-header">
+                            <td colspan="4">🚗 Exterior</td>
+                        </tr>
+                        <tr>
+                            <td>Headlights</td>
+                            <td class="tesla-col">LED</td>
+                            <td class="tesla-col">LED</td>
+                            <td class="rivian-col">Standard</td>
+                        </tr>
+                        <tr>
+                            <td>Wheels</td>
+                            <td class="tesla-col">18/19"</td>
+                            <td class="tesla-col">18/19"</td>
+                            <td class="rivian-col">19"</td>
+                        </tr>
+
+                        <tr class="category-header">
+                            <td colspan="4">🎨 Interior & Comfort</td>
+                        </tr>
+                        <tr>
+                            <td>Main Display</td>
+                            <td class="tesla-col winner">15.4"</td>
+                            <td class="tesla-col winner">15.4"</td>
+                            <td class="rivian-col">Not detailed</td>
+                        </tr>
+                        <tr>
+                            <td>Front Seats</td>
+                            <td class="tesla-col">Heated textile</td>
+                            <td class="tesla-col">Heated textile</td>
+                            <td class="rivian-col">Not detailed</td>
+                        </tr>
+                        <tr>
+                            <td>Seating Capacity</td>
+                            <td class="tesla-col">5-seat</td>
+                            <td class="tesla-col winner">5 or 7-seat</td>
+                            <td class="rivian-col">5-seat</td>
+                        </tr>
+
+                        <tr class="category-header">
+                            <td colspan="4">📅 Availability</td>
+                        </tr>
+                        <tr>
+                            <td>Delivery Timeline</td>
+                            <td class="tesla-col winner">Available now</td>
+                            <td class="tesla-col winner">Available now</td>
+                            <td class="rivian-col">Late 2027</td>
+                        </tr>
+                        <tr>
+                            <td>Service Network</td>
+                            <td class="tesla-col winner">Established globally</td>
+                            <td class="tesla-col winner">Established globally</td>
+                            <td class="rivian-col">Building (startup)</td>
+                        </tr>
+
+                        <tr class="category-header">
+                            <td colspan="4">🤖 Autonomous Features</td>
+                        </tr>
+                        <tr>
+                            <td>FSD / Self-Driving</td>
+                            <td class="tesla-col winner">Available ($8k-12k or subscription)</td>
+                            <td class="tesla-col winner">Available ($8k-12k or subscription)</td>
+                            <td class="rivian-col">Not available</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
+            <p style="color: #666; font-style: italic;">**Budget Winner: Tesla Model Y RWD** — Lowest price, best range, proven reliability, available now.</p>
+        </section>
 
-            <h3 style="font-size: 22px; margin: 30px 0 20px 0; color: #0D5E54;">Mid Tier ($44-54k)</h3>
-            <div class="tier-container">
-                <div class="tier-card tesla">
-                    <h3>Tesla Model Y Premium RWD</h3>
-                    <p><strong>Price:</strong> $44,990</p>
-                    <p><strong>Range:</strong> 357 mi (best overall)</p>
-                    <p><strong>0-60:</strong> 5.4 sec</p>
-                    <ul>
-                        <li>357 mi range beats all competitors</li>
-                        <li>16" QHD display + 8" rear screen</li>
-                        <li>LED lightbars + adaptive lights</li>
-                        <li>Available now</li>
-                    </ul>
-                    <div class="winner-badge">Range Champion</div>
-                </div>
+        <!-- Mid Tier Comparison -->
+        <section>
+            <h2>Mid Tier: $44-54k</h2>
+            <p style="margin-bottom: 20px; color: #666;">Tesla Model Y Premium trims vs Rivian R2 Single Motor & Premium</p>
+            <div class="comparison-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Specification</th>
+                            <th class="tesla-col">Tesla Y Premium RWD ($44,990)</th>
+                            <th class="tesla-col">Tesla Y Premium AWD ($48,990)</th>
+                            <th class="rivian-col">Rivian R2 Single Motor ($48,490 / 2026)</th>
+                            <th class="rivian-col">Rivian R2 Premium ($53,990 / 2026)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="category-header">
+                            <td colspan="5">🏁 Performance</td>
+                        </tr>
+                        <tr>
+                            <td>0-60 mph</td>
+                            <td class="tesla-col">5.4 sec</td>
+                            <td class="tesla-col winner">4.6 sec</td>
+                            <td class="rivian-col">~6.0 sec</td>
+                            <td class="rivian-col">~5.5 sec</td>
+                        </tr>
+                        <tr>
+                            <td>EPA Range</td>
+                            <td class="tesla-col winner">357 mi</td>
+                            <td class="tesla-col">327 mi</td>
+                            <td class="rivian-col">345 mi</td>
+                            <td class="rivian-col">330 mi</td>
+                        </tr>
+                        <tr>
+                            <td>Horsepower</td>
+                            <td class="tesla-col">~400 hp</td>
+                            <td class="tesla-col">~420 hp</td>
+                            <td class="rivian-col">350 hp</td>
+                            <td class="rivian-col">450 hp</td>
+                        </tr>
+                        <tr>
+                            <td>Drivetrain</td>
+                            <td class="tesla-col">Single Motor RWD</td>
+                            <td class="tesla-col">Dual Motor AWD</td>
+                            <td class="rivian-col">Single Motor</td>
+                            <td class="rivian-col winner">Dual Motor</td>
+                        </tr>
 
-                <div class="tier-card rivian">
-                    <h3>Rivian R2 Single Motor</h3>
-                    <p><strong>Price:</strong> $48,490</p>
-                    <p><strong>Range:</strong> 345 mi</p>
-                    <p><strong>0-60:</strong> ~6.0 sec</p>
-                    <ul>
-                        <li>Competitive range (345 mi)</li>
-                        <li>Single motor (less efficient)</li>
-                        <li>Available next year</li>
-                        <li>Newer interior design</li>
-                    </ul>
-                </div>
+                        <tr class="category-header">
+                            <td colspan="5">🔋 Battery & Charging</td>
+                        </tr>
+                        <tr>
+                            <td>Battery Size</td>
+                            <td class="tesla-col">~75+ kWh</td>
+                            <td class="tesla-col">~80 kWh</td>
+                            <td class="rivian-col">Not disclosed</td>
+                            <td class="rivian-col">87.9 kWh</td>
+                        </tr>
+                        <tr>
+                            <td>10-80% Charge Time</td>
+                            <td class="tesla-col winner">~182 min</td>
+                            <td class="tesla-col">~169 min</td>
+                            <td class="rivian-col">Not disclosed</td>
+                            <td class="rivian-col">Not disclosed</td>
+                        </tr>
 
-                <div class="tier-card rivian">
-                    <h3>Rivian R2 Premium</h3>
-                    <p><strong>Price:</strong> $53,990</p>
-                    <p><strong>Range:</strong> 330 mi</p>
-                    <p><strong>0-60:</strong> ~5.5 sec</p>
-                    <ul>
-                        <li>Dual motor (better control)</li>
-                        <li>450 hp (solid performance)</li>
-                        <li>Available late 2026</li>
-                        <li>Modern features</li>
-                    </ul>
-                </div>
+                        <tr class="category-header">
+                            <td colspan="5">🚗 Exterior</td>
+                        </tr>
+                        <tr>
+                            <td>Headlights</td>
+                            <td class="tesla-col winner">LED Lightbars</td>
+                            <td class="tesla-col winner">LED Lightbars</td>
+                            <td class="rivian-col">Standard</td>
+                            <td class="rivian-col">Standard</td>
+                        </tr>
+                        <tr>
+                            <td>Wheels</td>
+                            <td class="tesla-col">19/20"</td>
+                            <td class="tesla-col">19/20"</td>
+                            <td class="rivian-col">19"</td>
+                            <td class="rivian-col">20"</td>
+                        </tr>
+                        <tr>
+                            <td>Roof</td>
+                            <td class="tesla-col winner">Panoramic glass</td>
+                            <td class="tesla-col winner">Panoramic glass</td>
+                            <td class="rivian-col">Not detailed</td>
+                            <td class="rivian-col">Not detailed</td>
+                        </tr>
 
-                <div class="tier-card tesla">
-                    <h3>Tesla Model Y Premium AWD</h3>
-                    <p><strong>Price:</strong> $48,990</p>
-                    <p><strong>Range:</strong> 327 mi</p>
-                    <p><strong>0-60:</strong> 4.6 sec</p>
-                    <ul>
-                        <li>Fast acceleration (4.6 sec)</li>
-                        <li>Seven-seat option available</li>
-                        <li>LED lightbars standard</li>
-                        <li>Available immediately</li>
-                    </ul>
-                    <div class="winner-badge">Performance Value</div>
-                </div>
+                        <tr class="category-header">
+                            <td colspan="5">🎨 Interior & Comfort</td>
+                        </tr>
+                        <tr>
+                            <td>Main Display</td>
+                            <td class="tesla-col winner">16" QHD + 8" rear</td>
+                            <td class="tesla-col winner">16" QHD + 8" rear</td>
+                            <td class="rivian-col">Not detailed</td>
+                            <td class="rivian-col">Not detailed</td>
+                        </tr>
+                        <tr>
+                            <td>Front Seats</td>
+                            <td class="tesla-col winner">Heated/ventilated</td>
+                            <td class="tesla-col winner">Heated/ventilated</td>
+                            <td class="rivian-col">Not detailed</td>
+                            <td class="rivian-col">Not detailed</td>
+                        </tr>
+                        <tr>
+                            <td>Rear Seats</td>
+                            <td class="tesla-col winner">Power fold/recline</td>
+                            <td class="tesla-col winner">Power fold/recline</td>
+                            <td class="rivian-col">Not detailed</td>
+                            <td class="rivian-col">Not detailed</td>
+                        </tr>
+                        <tr>
+                            <td>Seating Capacity</td>
+                            <td class="tesla-col">5-seat</td>
+                            <td class="tesla-col winner">5 or 7-seat</td>
+                            <td class="rivian-col">5-seat</td>
+                            <td class="rivian-col">5-seat</td>
+                        </tr>
+
+                        <tr class="category-header">
+                            <td colspan="5">❄️ Climate Control</td>
+                        </tr>
+                        <tr>
+                            <td>Air Filtration</td>
+                            <td class="tesla-col winner">HEPA + Bioweapon Defense</td>
+                            <td class="tesla-col winner">HEPA + Bioweapon Defense</td>
+                            <td class="rivian-col">Not detailed</td>
+                            <td class="rivian-col">Not detailed</td>
+                        </tr>
+
+                        <tr class="category-header">
+                            <td colspan="5">📅 Availability</td>
+                        </tr>
+                        <tr>
+                            <td>Delivery Timeline</td>
+                            <td class="tesla-col winner">Available now</td>
+                            <td class="tesla-col winner">Available now</td>
+                            <td class="rivian-col">Late 2026</td>
+                            <td class="rivian-col">Late 2026</td>
+                        </tr>
+
+                        <tr class="category-header">
+                            <td colspan="5">🤖 Autonomous Features</td>
+                        </tr>
+                        <tr>
+                            <td>FSD / Self-Driving</td>
+                            <td class="tesla-col winner">Available ($8k-12k or subscription)</td>
+                            <td class="tesla-col winner">Available ($8k-12k or subscription)</td>
+                            <td class="rivian-col">Not available</td>
+                            <td class="rivian-col">Not available</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
+            <p style="color: #666; font-style: italic;">**Mid Tier Winner: Tesla Model Y Premium RWD** — 357-mile range (best in class), advanced features available now, FSD capable.</p>
+        </section>
 
-            <h3 style="font-size: 22px; margin: 30px 0 20px 0; color: #0D5E54;">Performance Tier ($57-58k)</h3>
-            <div class="tier-container">
-                <div class="tier-card tesla">
-                    <h3>Tesla Model Y Performance</h3>
-                    <p><strong>Price:</strong> $57,490</p>
-                    <p><strong>Range:</strong> 306 mi</p>
-                    <p><strong>0-60:</strong> 3.3 sec (fastest)</p>
-                    <ul>
-                        <li>Fastest acceleration in comparison</li>
-                        <li>Sport-tuned suspension</li>
-                        <li>21" Arachnid wheels</li>
-                        <li>Available immediately</li>
-                    </ul>
-                    <div class="winner-badge">Fastest</div>
-                </div>
+        <!-- Performance Tier Comparison -->
+        <section>
+            <h2>Performance Tier: $57-58k</h2>
+            <p style="margin-bottom: 20px; color: #666;">Tesla Model Y Performance vs Rivian R2 Launch Edition</p>
+            <div class="comparison-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Specification</th>
+                            <th class="tesla-col">Tesla Y Performance ($57,490)</th>
+                            <th class="rivian-col">Rivian R2 Launch Edition ($57,990 / Early 2025)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="category-header">
+                            <td colspan="3">🏁 Performance</td>
+                        </tr>
+                        <tr>
+                            <td>0-60 mph</td>
+                            <td class="tesla-col winner">3.3 sec</td>
+                            <td class="rivian-col">~4.5 sec</td>
+                        </tr>
+                        <tr>
+                            <td>EPA Range</td>
+                            <td class="tesla-col">306 mi</td>
+                            <td class="rivian-col winner">330 mi</td>
+                        </tr>
+                        <tr>
+                            <td>Horsepower</td>
+                            <td class="tesla-col winner">656 hp</td>
+                            <td class="rivian-col winner">656 hp</td>
+                        </tr>
+                        <tr>
+                            <td>Drivetrain</td>
+                            <td class="tesla-col">Dual Motor AWD</td>
+                            <td class="rivian-col">Dual Motor</td>
+                        </tr>
 
-                <div class="tier-card rivian">
-                    <h3>Rivian R2 Launch Edition</h3>
-                    <p><strong>Price:</strong> $57,990</p>
-                    <p><strong>Range:</strong> 330 mi</p>
-                    <p><strong>0-60:</strong> ~4.5 sec</p>
-                    <ul>
-                        <li>656 hp engine</li>
-                        <li>Matrix LED headlights (premium tech)</li>
-                        <li>Available early 2025</li>
-                        <li>Newer platform technology</li>
-                    </ul>
-                    <div class="winner-badge">Tech Leader</div>
-                </div>
+                        <tr class="category-header">
+                            <td colspan="3">🔋 Battery & Charging</td>
+                        </tr>
+                        <tr>
+                            <td>Battery Size</td>
+                            <td class="tesla-col">~80+ kWh</td>
+                            <td class="rivian-col">87.9 kWh</td>
+                        </tr>
+                        <tr>
+                            <td>10-80% Charge Time</td>
+                            <td class="tesla-col">~144 min</td>
+                            <td class="rivian-col winner">29 min</td>
+                        </tr>
+
+                        <tr class="category-header">
+                            <td colspan="3">🚗 Exterior</td>
+                        </tr>
+                        <tr>
+                            <td>Headlights</td>
+                            <td class="tesla-col">LED Lightbars</td>
+                            <td class="rivian-col winner">Matrix LED</td>
+                        </tr>
+                        <tr>
+                            <td>Wheels</td>
+                            <td class="tesla-col winner">21" Arachnid</td>
+                            <td class="rivian-col">21"</td>
+                        </tr>
+                        <tr>
+                            <td>Roof</td>
+                            <td class="tesla-col winner">Panoramic glass</td>
+                            <td class="rivian-col">Not detailed</td>
+                        </tr>
+
+                        <tr class="category-header">
+                            <td colspan="3">🎨 Interior & Comfort</td>
+                        </tr>
+                        <tr>
+                            <td>Main Display</td>
+                            <td class="tesla-col winner">16" QHD + 8" rear</td>
+                            <td class="rivian-col">Not detailed</td>
+                        </tr>
+                        <tr>
+                            <td>Front Seats</td>
+                            <td class="tesla-col winner">Sport heated/ventilated</td>
+                            <td class="rivian-col">Heated/ventilated</td>
+                        </tr>
+                        <tr>
+                            <td>Decor</td>
+                            <td class="tesla-col winner">Carbon fiber</td>
+                            <td class="rivian-col">Perforated leather</td>
+                        </tr>
+
+                        <tr class="category-header">
+                            <td colspan="3">⚙️ Suspension</td>
+                        </tr>
+                        <tr>
+                            <td>Suspension</td>
+                            <td class="tesla-col winner">Electronic variable</td>
+                            <td class="rivian-col">Not disclosed</td>
+                        </tr>
+
+                        <tr class="category-header">
+                            <td colspan="3">📦 Cargo</td>
+                        </tr>
+                        <tr>
+                            <td>Towing Capacity</td>
+                            <td class="tesla-col winner">4,400 lbs</td>
+                            <td class="rivian-col winner">4,400 lbs</td>
+                        </tr>
+
+                        <tr class="category-header">
+                            <td colspan="3">📅 Availability</td>
+                        </tr>
+                        <tr>
+                            <td>Delivery Timeline</td>
+                            <td class="tesla-col winner">Available now</td>
+                            <td class="rivian-col">Early 2025</td>
+                        </tr>
+                        <tr>
+                            <td>Service Network</td>
+                            <td class="tesla-col winner">Established globally</td>
+                            <td class="rivian-col">Building (startup)</td>
+                        </tr>
+
+                        <tr class="category-header">
+                            <td colspan="3">🤖 Autonomous Features</td>
+                        </tr>
+                        <tr>
+                            <td>FSD / Self-Driving</td>
+                            <td class="tesla-col winner">Available ($8k-12k or subscription)</td>
+                            <td class="rivian-col">Not available</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
+            <p style="color: #666; font-style: italic;">**Performance Winner: Tesla Model Y Performance** — Fastest 0-60 (3.3 sec), available now, proven reliability, FSD capable. Rivian matches on power (656 hp) but adds Matrix LED tech.</p>
         </section>
 
         <!-- Charts -->
@@ -571,398 +811,14 @@
                     <canvas id="rangeChart"></canvas>
                 </div>
                 <div class="chart-container">
-                    <h3>Price by Tier</h3>
+                    <h3>MSRP Pricing ($)</h3>
                     <canvas id="priceChart"></canvas>
                 </div>
             </div>
         </section>
 
-        <!-- Comprehensive Trim Comparison -->
-        <section>
-            <h2>Trim-by-Trim Detailed Comparison</h2>
-            <p style="margin-bottom: 30px; color: #666; font-size: 16px;">Scroll horizontally to see all trims. Green highlights indicate the best-in-class specification for each category.</p>
-            <div class="comparison-table" style="overflow-x: auto;">
-                <table style="min-width: 1600px;">
-                    <thead>
-                        <tr>
-                            <th style="position: sticky; left: 0; z-index: 10; background: #0D5E54; min-width: 180px;">Category</th>
-                            <!-- Tesla Model Y -->
-                            <th colspan="5" style="background: #1a1a1a; color: white; text-align: center; font-weight: 700;">TESLA MODEL Y</th>
-                            <!-- Rivian R2 -->
-                            <th colspan="4" style="background: #ff6b35; color: white; text-align: center; font-weight: 700;">RIVIAN R2</th>
-                        </tr>
-                        <tr>
-                            <th style="position: sticky; left: 0; z-index: 10; background: #0D5E54; min-width: 180px;">—</th>
-                            <th>RWD</th>
-                            <th>AWD</th>
-                            <th>Premium RWD</th>
-                            <th>Premium AWD</th>
-                            <th>Performance</th>
-                            <th>Standard (2027)</th>
-                            <th>Single Motor (2026)</th>
-                            <th>Premium (2026)</th>
-                            <th>Launch Edition (2025)</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr class="category-header">
-                            <td style="position: sticky; left: 0; z-index: 5;">💰 PRICING</td>
-                            <td colspan="9"></td>
-                        </tr>
-                        <tr>
-                            <td style="position: sticky; left: 0; z-index: 5;">MSRP</td>
-                            <td>$39,990</td>
-                            <td>$41,990</td>
-                            <td class="winner">$44,990</td>
-                            <td>$48,990</td>
-                            <td>$57,490</td>
-                            <td>$45,000</td>
-                            <td>$48,490</td>
-                            <td>$53,990</td>
-                            <td>$57,990</td>
-                        </tr>
-
-                        <tr class="category-header">
-                            <td style="position: sticky; left: 0; z-index: 5;">🏁 PERFORMANCE</td>
-                            <td colspan="9"></td>
-                        </tr>
-                        <tr>
-                            <td style="position: sticky; left: 0; z-index: 5;">0-60 mph</td>
-                            <td>6.8 sec</td>
-                            <td>4.6 sec</td>
-                            <td>5.4 sec</td>
-                            <td>4.6 sec</td>
-                            <td class="winner">3.3 sec</td>
-                            <td>~7.5 sec</td>
-                            <td>~6.0 sec</td>
-                            <td>~5.5 sec</td>
-                            <td>~4.5 sec</td>
-                        </tr>
-                        <tr>
-                            <td style="position: sticky; left: 0; z-index: 5;">EPA Range</td>
-                            <td>321 mi</td>
-                            <td>294 mi</td>
-                            <td class="winner">357 mi</td>
-                            <td>327 mi</td>
-                            <td>306 mi</td>
-                            <td>265 mi</td>
-                            <td>345 mi</td>
-                            <td>330 mi</td>
-                            <td>330 mi</td>
-                        </tr>
-                        <tr>
-                            <td style="position: sticky; left: 0; z-index: 5;">Horsepower</td>
-                            <td>~272 hp</td>
-                            <td>~384 hp</td>
-                            <td>~400 hp</td>
-                            <td>~420 hp</td>
-                            <td class="winner">656 hp</td>
-                            <td>~250 hp</td>
-                            <td>350 hp</td>
-                            <td>450 hp</td>
-                            <td class="winner">656 hp</td>
-                        </tr>
-                        <tr>
-                            <td style="position: sticky; left: 0; z-index: 5;">Drivetrain</td>
-                            <td>Single Motor RWD</td>
-                            <td>Dual Motor AWD</td>
-                            <td>Single Motor RWD</td>
-                            <td>Dual Motor AWD</td>
-                            <td>Dual Motor AWD</td>
-                            <td>Single Motor</td>
-                            <td>Single Motor</td>
-                            <td>Dual Motor</td>
-                            <td>Dual Motor</td>
-                        </tr>
-
-                        <tr class="category-header">
-                            <td style="position: sticky; left: 0; z-index: 5;">🔋 BATTERY & CHARGING</td>
-                            <td colspan="9"></td>
-                        </tr>
-                        <tr>
-                            <td style="position: sticky; left: 0; z-index: 5;">Battery Size</td>
-                            <td>~60 kWh</td>
-                            <td>~75 kWh</td>
-                            <td>~75+ kWh</td>
-                            <td>~80 kWh</td>
-                            <td>~80+ kWh</td>
-                            <td>Not disclosed</td>
-                            <td>Not disclosed</td>
-                            <td>87.9 kWh</td>
-                            <td>87.9 kWh</td>
-                        </tr>
-                        <tr>
-                            <td style="position: sticky; left: 0; z-index: 5;">10-80% Charge Time</td>
-                            <td>~160 min</td>
-                            <td>~152 min</td>
-                            <td class="winner">~182 min</td>
-                            <td>~169 min</td>
-                            <td>~144 min</td>
-                            <td>Not disclosed</td>
-                            <td>Not disclosed</td>
-                            <td>Not disclosed</td>
-                            <td class="winner">29 min</td>
-                        </tr>
-                        <tr>
-                            <td style="position: sticky; left: 0; z-index: 5;">Supercharge 15 min</td>
-                            <td>Up to 160 mi</td>
-                            <td>Up to 152 mi</td>
-                            <td>Up to 182 mi</td>
-                            <td>Up to 169 mi</td>
-                            <td>Up to 144 mi</td>
-                            <td>Not disclosed</td>
-                            <td>Not disclosed</td>
-                            <td>Not disclosed</td>
-                            <td>Not disclosed</td>
-                        </tr>
-
-                        <tr class="category-header">
-                            <td style="position: sticky; left: 0; z-index: 5;">🚗 EXTERIOR</td>
-                            <td colspan="9"></td>
-                        </tr>
-                        <tr>
-                            <td style="position: sticky; left: 0; z-index: 5;">Headlights</td>
-                            <td>LED</td>
-                            <td>LED</td>
-                            <td>LED Lightbars</td>
-                            <td>LED Lightbars</td>
-                            <td>LED Lightbars</td>
-                            <td>Standard</td>
-                            <td>Standard</td>
-                            <td>Standard</td>
-                            <td class="winner">Matrix LED</td>
-                        </tr>
-                        <tr>
-                            <td style="position: sticky; left: 0; z-index: 5;">Wheels</td>
-                            <td>18/19"</td>
-                            <td>18/19"</td>
-                            <td>19/20"</td>
-                            <td>19/20"</td>
-                            <td class="winner">21" Arachnid</td>
-                            <td>19"</td>
-                            <td>19"</td>
-                            <td>20"</td>
-                            <td class="winner">21"</td>
-                        </tr>
-                        <tr>
-                            <td style="position: sticky; left: 0; z-index: 5;">Roof</td>
-                            <td>Closed glass</td>
-                            <td>Closed glass</td>
-                            <td class="winner">Panoramic glass</td>
-                            <td class="winner">Panoramic glass</td>
-                            <td class="winner">Panoramic glass</td>
-                            <td>Not detailed</td>
-                            <td>Not detailed</td>
-                            <td>Not detailed</td>
-                            <td>Not detailed</td>
-                        </tr>
-                        <tr>
-                            <td style="position: sticky; left: 0; z-index: 5;">Ground Clearance</td>
-                            <td>9.6"</td>
-                            <td>9.6"</td>
-                            <td>9.6"</td>
-                            <td>9.6"</td>
-                            <td>9.6"</td>
-                            <td>Not disclosed</td>
-                            <td>Not disclosed</td>
-                            <td>Not disclosed</td>
-                            <td>9.6"</td>
-                        </tr>
-
-                        <tr class="category-header">
-                            <td style="position: sticky; left: 0; z-index: 5;">🎨 INTERIOR & COMFORT</td>
-                            <td colspan="9"></td>
-                        </tr>
-                        <tr>
-                            <td style="position: sticky; left: 0; z-index: 5;">Main Display</td>
-                            <td>15.4"</td>
-                            <td>15.4"</td>
-                            <td class="winner">16" QHD + 8" rear</td>
-                            <td class="winner">16" QHD + 8" rear</td>
-                            <td class="winner">16" QHD + 8" rear</td>
-                            <td>Not detailed</td>
-                            <td>Not detailed</td>
-                            <td>Not detailed</td>
-                            <td>Not detailed</td>
-                        </tr>
-                        <tr>
-                            <td style="position: sticky; left: 0; z-index: 5;">Seating Capacity</td>
-                            <td>5-seat</td>
-                            <td>5 or 7-seat</td>
-                            <td>5-seat</td>
-                            <td class="winner">5 or 7-seat</td>
-                            <td>5-seat</td>
-                            <td>5-seat</td>
-                            <td>5-seat</td>
-                            <td>5-seat</td>
-                            <td>5-seat</td>
-                        </tr>
-                        <tr>
-                            <td style="position: sticky; left: 0; z-index: 5;">Front Seats</td>
-                            <td>Heated textile</td>
-                            <td>Heated textile</td>
-                            <td class="winner">Heated/ventilated</td>
-                            <td class="winner">Heated/ventilated</td>
-                            <td class="winner">Sport heated/vent</td>
-                            <td>Not detailed</td>
-                            <td>Not detailed</td>
-                            <td>Not detailed</td>
-                            <td>Heated/ventilated</td>
-                        </tr>
-                        <tr>
-                            <td style="position: sticky; left: 0; z-index: 5;">Rear Seats</td>
-                            <td>Manual fold</td>
-                            <td>Manual fold</td>
-                            <td>Power fold/recline</td>
-                            <td>Power fold/recline</td>
-                            <td>Power fold/recline</td>
-                            <td>Not detailed</td>
-                            <td>Not detailed</td>
-                            <td>Not detailed</td>
-                            <td>Power fold/recline</td>
-                        </tr>
-                        <tr>
-                            <td style="position: sticky; left: 0; z-index: 5;">Decor Material</td>
-                            <td>Textile</td>
-                            <td>Textile</td>
-                            <td>Microsuede</td>
-                            <td>Microsuede</td>
-                            <td class="winner">Carbon fiber</td>
-                            <td>Not detailed</td>
-                            <td>Not detailed</td>
-                            <td>Not detailed</td>
-                            <td>Perforated leather</td>
-                        </tr>
-
-                        <tr class="category-header">
-                            <td style="position: sticky; left: 0; z-index: 5;">❄️ CLIMATE CONTROL</td>
-                            <td colspan="9"></td>
-                        </tr>
-                        <tr>
-                            <td style="position: sticky; left: 0; z-index: 5;">Air Filtration</td>
-                            <td>Standard filter</td>
-                            <td>Standard filter</td>
-                            <td class="winner">HEPA + Bioweapon Defense</td>
-                            <td class="winner">HEPA + Bioweapon Defense</td>
-                            <td class="winner">HEPA + Bioweapon Defense</td>
-                            <td>Not detailed</td>
-                            <td>Not detailed</td>
-                            <td>Not detailed</td>
-                            <td>Not detailed</td>
-                        </tr>
-                        <tr>
-                            <td style="position: sticky; left: 0; z-index: 5;">Rear Climate Control</td>
-                            <td>Manual vents</td>
-                            <td>Manual vents</td>
-                            <td class="winner">Touchscreen vents</td>
-                            <td class="winner">Touchscreen vents</td>
-                            <td class="winner">Touchscreen vents</td>
-                            <td>Not detailed</td>
-                            <td>Not detailed</td>
-                            <td>Not detailed</td>
-                            <td>Touchscreen vents</td>
-                        </tr>
-
-                        <tr class="category-header">
-                            <td style="position: sticky; left: 0; z-index: 5;">⚙️ SUSPENSION & HANDLING</td>
-                            <td colspan="9"></td>
-                        </tr>
-                        <tr>
-                            <td style="position: sticky; left: 0; z-index: 5;">Suspension Type</td>
-                            <td>Passive shock</td>
-                            <td>Passive shock</td>
-                            <td>Frequency dependent</td>
-                            <td>Frequency dependent</td>
-                            <td class="winner">Electronic variable</td>
-                            <td>Not disclosed</td>
-                            <td>Not disclosed</td>
-                            <td>Not disclosed</td>
-                            <td>Not disclosed</td>
-                        </tr>
-
-                        <tr class="category-header">
-                            <td style="position: sticky; left: 0; z-index: 5;">📦 CARGO & TOWING</td>
-                            <td colspan="9"></td>
-                        </tr>
-                        <tr>
-                            <td style="position: sticky; left: 0; z-index: 5;">Towing Capacity</td>
-                            <td>3,500 lbs</td>
-                            <td>3,500 lbs</td>
-                            <td>3,500 lbs</td>
-                            <td>3,500 lbs</td>
-                            <td class="winner">4,400 lbs</td>
-                            <td>Not disclosed</td>
-                            <td>Not disclosed</td>
-                            <td>Not disclosed</td>
-                            <td class="winner">4,400 lbs</td>
-                        </tr>
-
-                        <tr class="category-header">
-                            <td style="position: sticky; left: 0; z-index: 5;">📅 AVAILABILITY</td>
-                            <td colspan="9"></td>
-                        </tr>
-                        <tr>
-                            <td style="position: sticky; left: 0; z-index: 5;">Delivery</td>
-                            <td class="winner">Available now</td>
-                            <td class="winner">Available now</td>
-                            <td class="winner">Available now</td>
-                            <td class="winner">Available now</td>
-                            <td class="winner">Available now</td>
-                            <td>Late 2027</td>
-                            <td>Late 2026</td>
-                            <td>Late 2026</td>
-                            <td class="winner">Early 2025</td>
-                        </tr>
-                        <tr>
-                            <td style="position: sticky; left: 0; z-index: 5;">Service Network</td>
-                            <td class="winner">Established globally</td>
-                            <td class="winner">Established globally</td>
-                            <td class="winner">Established globally</td>
-                            <td class="winner">Established globally</td>
-                            <td class="winner">Established globally</td>
-                            <td>Building (startup)</td>
-                            <td>Building (startup)</td>
-                            <td>Building (startup)</td>
-                            <td>Building (startup)</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </section>
-
-        <!-- Summary -->
-        <section>
-            <div class="summary-box">
-                <h3>📊 Final Verdict</h3>
-                <p><strong>Tesla Model Y</strong> dominates on price, range, performance, and availability. Every price tier offers better value than comparable Rivian models, with the Tesla Model Y Premium RWD ($44,990) hitting 357 miles of range—beating the best Rivian by 27 miles at a lower price.</p>
-
-                <p><strong>Rivian R2</strong> offers newer platform technology and Matrix LED headlights as differentiators, but comes to market 1-2 years later with unproven reliability and a developing service/charging network.</p>
-
-                <p><strong>Best Pick by Category:</strong></p>
-                <div class="highlights">
-                    <div class="highlight">
-                        <strong>📍 Best Overall Value</strong>
-                        <p>Tesla Model Y Premium RWD ($44,990) — 357 mi range, best-in-class specs</p>
-                    </div>
-                    <div class="highlight">
-                        <strong>💰 Cheapest Entry</strong>
-                        <p>Tesla Model Y RWD ($39,990) — 321 mi range, proven reliability</p>
-                    </div>
-                    <div class="highlight">
-                        <strong>🏁 Fastest</strong>
-                        <p>Tesla Model Y Performance ($57,490) — 3.3 sec 0-60, immediately available</p>
-                    </div>
-                    <div class="highlight">
-                        <strong>🎨 Most Advanced Design</strong>
-                        <p>Rivian R2 Launch Edition ($57,990) — Matrix LED, newer interior (but launches 2025)</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Footer -->
         <footer>
-            <p>Data current as of March 11, 2026 | Tesla pricing from Tesla.com | Rivian pricing and specs from official announcements | Comparison based on MSRP (excluding destination/delivery fees)</p>
+            <p>Data current as of March 11, 2026 | Tesla specs from Tesla.com | Rivian specs from official announcements | All prices are MSRP (excluding destination/delivery fees)</p>
         </footer>
     </div>
 
