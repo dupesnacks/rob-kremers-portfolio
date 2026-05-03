@@ -1,0 +1,867 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ghost Research Dashboard</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #0f0f1e 0%, #1a1a2e 100%);
+            color: #e0e0e0;
+            line-height: 1.6;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding: 40px 0;
+            border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            background: linear-gradient(135deg, #00d4ff, #7700ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .subtitle {
+            font-size: 1.1em;
+            color: #aaa;
+            margin-bottom: 20px;
+        }
+
+        .framework-links {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .framework-links a {
+            padding: 8px 16px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-size: 0.9em;
+            transition: all 0.3s ease;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .framework-links a:hover {
+            transform: translateY(-2px);
+            border-color: #00d4ff;
+            background: rgba(0, 212, 255, 0.1);
+        }
+
+        .section {
+            margin-bottom: 40px;
+        }
+
+        .section-title {
+            font-size: 1.8em;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #00d4ff;
+            color: #00d4ff;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+
+        .card {
+            background: linear-gradient(135deg, rgba(255,255,255,0.05) 0%, rgba(255,255,255,0.02) 100%);
+            border: 1px solid rgba(0, 212, 255, 0.3);
+            border-radius: 12px;
+            padding: 20px;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            border-color: #00d4ff;
+            box-shadow: 0 10px 30px rgba(0, 212, 255, 0.1);
+        }
+
+        .card h3 {
+            font-size: 1.3em;
+            margin-bottom: 10px;
+            color: #00d4ff;
+        }
+
+        .conviction-badge {
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.8em;
+            font-weight: bold;
+            margin: 10px 0;
+            text-transform: uppercase;
+        }
+
+        .conviction-high {
+            background: rgba(0, 255, 100, 0.2);
+            color: #00ff64;
+            border: 1px solid rgba(0, 255, 100, 0.5);
+        }
+
+        .conviction-moderate {
+            background: rgba(255, 200, 0, 0.2);
+            color: #ffc800;
+            border: 1px solid rgba(255, 200, 0, 0.5);
+        }
+
+        .conviction-low {
+            background: rgba(255, 100, 100, 0.2);
+            color: #ff6464;
+            border: 1px solid rgba(255, 100, 100, 0.5);
+        }
+
+        .ticker {
+            font-family: 'Monaco', 'Courier New', monospace;
+            font-weight: bold;
+            color: #00ff00;
+            background: rgba(0, 255, 0, 0.1);
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-size: 0.9em;
+        }
+
+        .thesis-text {
+            color: #ccc;
+            margin: 15px 0;
+            line-height: 1.8;
+        }
+
+        .drivers {
+            margin: 15px 0;
+        }
+
+        .driver {
+            margin: 10px 0;
+            padding: 10px;
+            background: rgba(255, 255, 255, 0.03);
+            border-left: 3px solid #00d4ff;
+            border-radius: 4px;
+            font-size: 0.95em;
+        }
+
+        .driver-title {
+            color: #00d4ff;
+            font-weight: bold;
+        }
+
+        .timeline {
+            margin: 15px 0;
+            padding: 10px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 6px;
+        }
+
+        .timeline-item {
+            display: flex;
+            margin: 8px 0;
+            font-size: 0.9em;
+        }
+
+        .timeline-date {
+            color: #ffc800;
+            font-weight: bold;
+            min-width: 120px;
+        }
+
+        .timeline-event {
+            color: #ccc;
+            flex: 1;
+        }
+
+        .tickers-table {
+            width: 100%;
+            margin: 20px 0;
+            border-collapse: collapse;
+            font-size: 0.9em;
+        }
+
+        .tickers-table th {
+            background: rgba(0, 212, 255, 0.1);
+            color: #00d4ff;
+            padding: 12px;
+            text-align: left;
+            border-bottom: 2px solid #00d4ff;
+        }
+
+        .tickers-table td {
+            padding: 12px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .tickers-table tr:hover {
+            background: rgba(0, 212, 255, 0.05);
+        }
+
+        .status-badge {
+            padding: 4px 10px;
+            border-radius: 4px;
+            font-size: 0.85em;
+            font-weight: bold;
+        }
+
+        .status-active {
+            background: rgba(0, 255, 100, 0.2);
+            color: #00ff64;
+        }
+
+        .status-upcoming {
+            background: rgba(255, 200, 0, 0.2);
+            color: #ffc800;
+        }
+
+        .confluence-box {
+            background: linear-gradient(135deg, rgba(119, 0, 255, 0.1) 0%, rgba(0, 212, 255, 0.05) 100%);
+            border: 2px solid rgba(119, 0, 255, 0.3);
+            border-radius: 12px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+
+        .confluence-title {
+            color: #7700ff;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .confluence-item {
+            margin: 10px 0;
+            padding: 10px;
+            background: rgba(255, 255, 255, 0.03);
+            border-left: 3px solid #7700ff;
+            font-size: 0.95em;
+        }
+
+        .footnote {
+            font-size: 0.85em;
+            color: #888;
+            margin-top: 15px;
+            padding-top: 15px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .catalyst-row {
+            display: grid;
+            grid-template-columns: 1fr 1.5fr 1fr;
+            gap: 15px;
+            margin: 15px 0;
+            padding: 15px;
+            background: rgba(255, 255, 255, 0.03);
+            border-radius: 8px;
+            border-left: 4px solid #00d4ff;
+        }
+
+        .catalyst-date {
+            color: #ffc800;
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+
+        .catalyst-event {
+            color: #e0e0e0;
+        }
+
+        .catalyst-impact {
+            color: #00ff64;
+            font-weight: bold;
+            text-align: right;
+        }
+
+        .update-timestamp {
+            text-align: center;
+            color: #666;
+            font-size: 0.85em;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 1.8em;
+            }
+
+            .grid {
+                grid-template-columns: 1fr;
+            }
+
+            .catalyst-row {
+                grid-template-columns: 1fr;
+            }
+
+            .tickers-table {
+                font-size: 0.8em;
+            }
+
+            .tickers-table th,
+            .tickers-table td {
+                padding: 8px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>👻 GHOST RESEARCH</h1>
+            <p class="subtitle">Market Structure Analysis | Geopolitical Catalysts | Option Flow Intelligence</p>
+            <div class="framework-links">
+                <a href="https://robkremers.com/">← Back to Portfolio</a>
+                <a href="#theses">Theses</a>
+                <a href="#catalysts">Catalysts</a>
+                <a href="#tickers">Tickers</a>
+                <a href="#confluence">Confluence</a>
+            </div>
+        </header>
+
+        <!-- THESES SECTION -->
+        <section class="section" id="theses">
+            <h2 class="section-title">Active Investment Theses</h2>
+            <p style="margin-bottom: 20px; color: #aaa;">Ghost's core frameworks for understanding markets through structure, geopolitics, and data scarcity</p>
+
+            <div class="grid">
+                <!-- AI Data Scarcity -->
+                <div class="card">
+                    <h3>🤖 AI Data Scarcity</h3>
+                    <span class="conviction-badge conviction-high">HIGH CONVICTION</span>
+                    <div class="thesis-text">
+                        Authentic human-generated content becomes increasingly valuable as AI models require high-quality training data. Finite supply + exploding demand = premium asset.
+                    </div>
+                    <div class="drivers">
+                        <div class="driver">
+                            <div class="driver-title">Model Collapse Problem</div>
+                            <p>AI trained on AI-generated content degrades. Human content = premium input.</p>
+                        </div>
+                        <div class="driver">
+                            <div class="driver-title">Dynamic Pricing Power</div>
+                            <p>Companies like Reddit can charge for real-time access to curated human conversation.</p>
+                        </div>
+                        <div class="driver">
+                            <div class="driver-title">Self-Reinforcing Moat</div>
+                            <p>Each new user post makes dataset richer. Cannot be replicated from zero.</p>
+                        </div>
+                    </div>
+                    <div class="timeline">
+                        <strong style="color: #00d4ff;">Timeline: 2026–2027</strong>
+                        <div class="timeline-item">
+                            <span class="timeline-date">Q2 2026</span>
+                            <span class="timeline-event">Watch RDDT earnings growth (60%+ YoY target)</span>
+                        </div>
+                        <div class="timeline-item">
+                            <span class="timeline-date">2027</span>
+                            <span class="timeline-event">AI licensing revenue projected $400M+ (near 100% margins)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Critical Minerals -->
+                <div class="card">
+                    <h3>⚒️ Critical Minerals Decoupling</h3>
+                    <span class="conviction-badge conviction-high">HIGH CONVICTION</span>
+                    <div class="thesis-text">
+                        Structural supply chain decoupling from China + geopolitical policy tailwinds + explosive demand from EVs/AI creates multi-year pricing cycle for Western producers.
+                    </div>
+                    <div class="drivers">
+                        <div class="driver">
+                            <div class="driver-title">Mandatory Supply Chain Rewrite</div>
+                            <p>US procurement rules exclude Chinese-origin minerals. Captive demand floor.</p>
+                        </div>
+                        <div class="driver">
+                            <div class="driver-title">Government as Anchor Buyer</div>
+                            <p>$14.8B EXIM, $10B+ strategic reserve (Project Vault), direct equity stakes.</p>
+                        </div>
+                        <div class="driver">
+                            <div class="driver-title">Supply Cannot Respond</div>
+                            <p>10–20 year mine development. Inelasticity = prolonged price cycle.</p>
+                        </div>
+                    </div>
+                    <div class="timeline">
+                        <strong style="color: #00d4ff;">Timeline: 2026–2028+</strong>
+                        <div class="timeline-item">
+                            <span class="timeline-date">July 13, 2026</span>
+                            <span class="timeline-event">Section 232 negotiation deadline (hard catalyst)</span>
+                        </div>
+                        <div class="timeline-item">
+                            <span class="timeline-date">2028+</span>
+                            <span class="timeline-event">MP Materials, LAC, USAR reach commercial production</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Precious Metals -->
+                <div class="card">
+                    <h3>🥇 Precious Metals Bull Cycle</h3>
+                    <span class="conviction-badge conviction-moderate">MODERATE-HIGH</span>
+                    <div class="thesis-text">
+                        Fed rate cuts + real yield compression + silver structural deficit (since 2021) + record central bank buying creates multi-year upside for gold/silver and miners.
+                    </div>
+                    <div class="drivers">
+                        <div class="driver">
+                            <div class="driver-title">Falling Real Yields</div>
+                            <p>Lower rates reduce opportunity cost of non-yielding gold.</p>
+                        </div>
+                        <div class="driver">
+                            <div class="driver-title">Silver's Dual Tailwind</div>
+                            <p>Monetary asset + industrial demand (EVs, solar, AI data centers).</p>
+                        </div>
+                        <div class="driver">
+                            <div class="driver-title">Miner Leverage</div>
+                            <p>2–3x profit leverage relative to metal price moves.</p>
+                        </div>
+                    </div>
+                    <div class="timeline">
+                        <strong style="color: #00d4ff;">Timeline: 2026 H2 – 2027</strong>
+                        <div class="timeline-item">
+                            <span class="timeline-date">June 2026</span>
+                            <span class="timeline-event">FOMC decision (next rate cut window)</span>
+                        </div>
+                        <div class="timeline-item">
+                            <span class="timeline-date">H2 2026</span>
+                            <span class="timeline-event">Bull case targets: Gold $5,400–$6,000, Silver $100+</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Value + Catalysts -->
+                <div class="card">
+                    <h3>💰 Value + Catalyst Setup</h3>
+                    <span class="conviction-badge conviction-moderate">MODERATE</span>
+                    <div class="thesis-text">
+                        Deeply undervalued mega-cap stocks with near-term earnings catalysts and structural narratives in the process of re-rating. High risk/reward asymmetry.
+                    </div>
+                    <div class="drivers">
+                        <div class="driver">
+                            <div class="driver-title">Valuation Extremes</div>
+                            <p>PYPL at 9x P/E, AKAM at 36x despite secular growth narratives.</p>
+                        </div>
+                        <div class="driver">
+                            <div class="driver-title">Catalyst Windows</div>
+                            <p>Earnings events (May 5, May 7) as binary inflection points.</p>
+                        </div>
+                        <div class="driver">
+                            <div class="driver-title">Multiple Optionality</div>
+                            <p>Unmonetized assets priced at zero. Any execution breakthrough = re-rating.</p>
+                        </div>
+                    </div>
+                    <div class="timeline">
+                        <strong style="color: #00d4ff;">Timeline: Q2 2026 (Binary Events)</strong>
+                        <div class="timeline-item">
+                            <span class="timeline-date">May 5, 2026</span>
+                            <span class="timeline-event">PYPL Q1 earnings (execution test)</span>
+                        </div>
+                        <div class="timeline-item">
+                            <span class="timeline-date">May 7, 2026</span>
+                            <span class="timeline-event">AKAM earnings (CIS acceleration proof)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TICKERS SECTION -->
+        <section class="section" id="tickers">
+            <h2 class="section-title">Active Ticker Positions</h2>
+            <p style="margin-bottom: 20px; color: #aaa;">Entry levels, targets, and conviction across Ghost's investment themes</p>
+
+            <table class="tickers-table">
+                <thead>
+                    <tr>
+                        <th>Ticker</th>
+                        <th>Theme</th>
+                        <th>Entry / Target</th>
+                        <th>Instrument</th>
+                        <th>Conviction</th>
+                        <th>Next Catalyst</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- AI Data Scarcity -->
+                    <tr>
+                        <td><span class="ticker">RDDT</span></td>
+                        <td>AI Data Scarcity</td>
+                        <td>$65–$75 / $90–$110</td>
+                        <td>Equity</td>
+                        <td><span class="status-badge status-active">HIGH</span></td>
+                        <td>Q2 2026 Earnings</td>
+                    </tr>
+                    <tr>
+                        <td><span class="ticker">GOOGL</span></td>
+                        <td>AI Data + Distribution</td>
+                        <td>$175–$185 / $215–$235</td>
+                        <td>Equity</td>
+                        <td><span class="status-badge status-active">MODERATE</span></td>
+                        <td>Q2 2026 Earnings</td>
+                    </tr>
+                    <tr>
+                        <td><span class="ticker">META</span></td>
+                        <td>Ad Platform + AI</td>
+                        <td>$490–$510 / $580–$620</td>
+                        <td>Equity</td>
+                        <td><span class="status-badge status-active">MODERATE</span></td>
+                        <td>Q2 2026 Earnings</td>
+                    </tr>
+                    <tr>
+                        <td><span class="ticker">PINS</span></td>
+                        <td>Purchase Intent + Data</td>
+                        <td>$28–$32 / $45–$55</td>
+                        <td>Equity</td>
+                        <td><span class="status-badge status-active">MODERATE</span></td>
+                        <td>Q2 2026 Earnings</td>
+                    </tr>
+
+                    <!-- Critical Minerals -->
+                    <tr>
+                        <td><span class="ticker">MP</span></td>
+                        <td>Critical Minerals (REE)</td>
+                        <td>$45–$50 / $75–$90</td>
+                        <td>Equity</td>
+                        <td><span class="status-badge status-active">HIGH</span></td>
+                        <td>Project milestones</td>
+                    </tr>
+                    <tr>
+                        <td><span class="ticker">LAC</span></td>
+                        <td>Critical Minerals (Li)</td>
+                        <td>$12–$15 / $30–$40</td>
+                        <td>Equity</td>
+                        <td><span class="status-badge status-upcoming">MODERATE</span></td>
+                        <td>Thacker Pass permit</td>
+                    </tr>
+                    <tr>
+                        <td><span class="ticker">TMQ</span></td>
+                        <td>Critical Minerals (Cu)</td>
+                        <td>$4–$6 / $12–$18</td>
+                        <td>Equity</td>
+                        <td><span class="status-badge status-upcoming">MODERATE</span></td>
+                        <td>Ambler Road updates</td>
+                    </tr>
+                    <tr>
+                        <td><span class="ticker">USAR</span></td>
+                        <td>Critical Minerals (REE)</td>
+                        <td>$3–$4 / $12–$20</td>
+                        <td>Equity</td>
+                        <td><span class="status-badge status-upcoming">HIGH</span></td>
+                        <td>Production timeline</td>
+                    </tr>
+                    <tr>
+                        <td><span class="ticker">CRML</span></td>
+                        <td>Critical Minerals (GEO)</td>
+                        <td>$2–$3 / $8–$15</td>
+                        <td>Equity (Spec)</td>
+                        <td><span class="status-badge status-upcoming">MODERATE</span></td>
+                        <td>Greenland policy</td>
+                    </tr>
+                    <tr>
+                        <td><span class="ticker">TMC</span></td>
+                        <td>Critical Minerals (Seabed)</td>
+                        <td>$1.5–$2.5 / $6–$12</td>
+                        <td>Equity (Spec)</td>
+                        <td><span class="status-badge status-upcoming">MODERATE</span></td>
+                        <td>Mining license approval</td>
+                    </tr>
+                    <tr>
+                        <td><span class="ticker">REMX</span></td>
+                        <td>Critical Minerals (ETF)</td>
+                        <td>$28–$32 / $45–$60</td>
+                        <td>ETF</td>
+                        <td><span class="status-badge status-active">MODERATE</span></td>
+                        <td>Continuous monitoring</td>
+                    </tr>
+
+                    <!-- Precious Metals -->
+                    <tr>
+                        <td><span class="ticker">GLD</span></td>
+                        <td>Precious Metals (Gold)</td>
+                        <td>$190–$200 / $240–$280</td>
+                        <td>ETF</td>
+                        <td><span class="status-badge status-active">MODERATE</span></td>
+                        <td>FOMC June decision</td>
+                    </tr>
+                    <tr>
+                        <td><span class="ticker">SLV</span></td>
+                        <td>Precious Metals (Silver)</td>
+                        <td>$28–$32 / $45–$60</td>
+                        <td>ETF</td>
+                        <td><span class="status-badge status-active">MODERATE</span></td>
+                        <td>FOMC June decision</td>
+                    </tr>
+                    <tr>
+                        <td><span class="ticker">GDX</span></td>
+                        <td>Gold Miners</td>
+                        <td>$32–$36 / $50–$70</td>
+                        <td>ETF</td>
+                        <td><span class="status-badge status-active">MODERATE</span></td>
+                        <td>Metals price action</td>
+                    </tr>
+                    <tr>
+                        <td><span class="ticker">AG (2028 Calls)</span></td>
+                        <td>Precious Metals (Opt)</td>
+                        <td>0.35c / 1.00c+</td>
+                        <td>LEAPS (35c 2028/01)</td>
+                        <td><span class="status-badge status-active">HIGH</span></td>
+                        <td>Chart breakout</td>
+                    </tr>
+                    <tr>
+                        <td><span class="ticker">BTG (2028 Calls)</span></td>
+                        <td>Precious Metals (Opt)</td>
+                        <td>0.45c / 1.50c+</td>
+                        <td>LEAPS (4.5c 2028/01)</td>
+                        <td><span class="status-badge status-active">HIGH</span></td>
+                        <td>Ascending channel hold</td>
+                    </tr>
+
+                    <!-- Value + Catalysts -->
+                    <tr>
+                        <td><span class="ticker">PYPL</span></td>
+                        <td>Value + Catalyst</td>
+                        <td>$48–$52 / $60–$80</td>
+                        <td>Equity</td>
+                        <td><span class="status-badge status-upcoming">MODERATE-HIGH</span></td>
+                        <td>May 5 earnings (BINARY)</td>
+                    </tr>
+                    <tr>
+                        <td><span class="ticker">AKAM</span></td>
+                        <td>Value + Catalyst</td>
+                        <td>$98–$105 / $125–$145</td>
+                        <td>Equity</td>
+                        <td><span class="status-badge status-upcoming">MODERATE</span></td>
+                        <td>May 7 earnings (CIS proof)</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="footnote">
+                <strong>Legend:</strong>
+                <br>• Entry/Target = Ghost's estimated buy zone / price target (not financial advice)
+                <br>• LEAPS = Long-term options strategies (2028 expiration); deep out-of-the-money calls with 50–1000% target returns
+                <br>• Conviction = Ghost's subjective confidence level based on thesis strength and catalyst clarity
+                <br>• Position sizing should reflect conviction and time horizon (LEAPS are leveraged, speculative plays require smaller allocations)
+            </div>
+        </section>
+
+        <!-- CATALYSTS SECTION -->
+        <section class="section" id="catalysts">
+            <h2 class="section-title">Key Catalysts Calendar</h2>
+            <p style="margin-bottom: 30px; color: #aaa;">Critical dates and events that could move markets and trigger Ghost's theses</p>
+
+            <div class="catalyst-row">
+                <div class="catalyst-date">May 5, 2026</div>
+                <div class="catalyst-event"><strong>PYPL Q1 Earnings</strong> — Branded checkout stabilization, Venmo ARPU, new leadership execution credibility. Binary event.</div>
+                <div class="catalyst-impact">PYPL ±10–20%</div>
+            </div>
+
+            <div class="catalyst-row">
+                <div class="catalyst-date">May 7, 2026</div>
+                <div class="catalyst-event"><strong>AKAM Earnings</strong> — Cloud Infrastructure Services (CIS) revenue acceleration, security margin expansion. Proof of transition thesis.</div>
+                <div class="catalyst-impact">AKAM ±5–15%</div>
+            </div>
+
+            <div class="catalyst-row">
+                <div class="catalyst-date">May 15, 2026</div>
+                <div class="catalyst-event"><strong>Fed Meeting + Decision</strong> — May 1 hawkish hold creates June window. TVRN framework targets May 15 as liquidity inflection point. Metals + critical minerals response.</div>
+                <div class="catalyst-impact">GLD, GDX, REE ±5–10%</div>
+            </div>
+
+            <div class="catalyst-row">
+                <div class="catalyst-date">June 2026</div>
+                <div class="catalyst-event"><strong>FOMC Decision</strong> — Next formal rate cut guidance expected. Precious metals thesis depends on this signal.</div>
+                <div class="catalyst-impact">Gold, Silver, Miners ±5–20%</div>
+            </div>
+
+            <div class="catalyst-row">
+                <div class="catalyst-date">July 13, 2026</div>
+                <div class="catalyst-event"><strong>Section 232 Negotiation Deadline</strong> — Critical minerals trade deal finalized or tariffs/price floors triggered. Hard catalyst for MP, LAC, TMQ, USAR.</div>
+                <div class="catalyst-impact">Critical minerals ±10–25%</div>
+            </div>
+
+            <div class="catalyst-row">
+                <div class="catalyst-date">Q2 2026 (Monthly)</div>
+                <div class="catalyst-event"><strong>RDDT, GOOGL, META, PINS Earnings</strong> — AI licensing revenue acceleration, user growth, margin expansion. AI data scarcity thesis proof points.</div>
+                <div class="catalyst-impact">RDDT ±10–20%</div>
+            </div>
+
+            <div class="catalyst-row">
+                <div class="catalyst-date">2026–2027 (Ongoing)</div>
+                <div class="catalyst-event"><strong>Critical Minerals Project Milestones</strong> — MP production ramps, LAC permit progress, USAR magnet production target, TMC seabed licensing.</div>
+                <div class="catalyst-impact">Individual plays ±15–50%</div>
+            </div>
+
+            <div class="catalyst-row">
+                <div class="catalyst-date">Nov 2026</div>
+                <div class="catalyst-event"><strong>US-China Trade Truce Expiry</strong> — REE export controls resume or escalate. Structural tailwind for Western producers.</div>
+                <div class="catalyst-impact">Critical minerals ±10–20%</div>
+            </div>
+        </section>
+
+        <!-- CONFLUENCE SECTION -->
+        <section class="section" id="confluence">
+            <h2 class="section-title">Cross-Framework Confluence</h2>
+            <p style="margin-bottom: 30px; color: #aaa;">Where Ghost's analysis intersects with TVRN macro framework and Raul's institutional positioning</p>
+
+            <div class="confluence-box">
+                <div class="confluence-title">🎯 May 1–15 Tactical Squeeze Window (TVRN + Ghost)</div>
+                <div class="confluence-item">
+                    <strong>TVRN Framework:</strong> May 1–15 is peak tactical bullish window. Liquidity injection expected May 15 post-FOMC dovish surprise. Wall of denial climb + small junk squeeze setup.
+                </div>
+                <div class="confluence-item">
+                    <strong>Ghost Framework:</strong> May 5 PYPL earnings + May 7 AKAM earnings position within this window. Value + catalyst setups amplified by TVRN's liquidity tailwind. If both beat, institutional re-rating catalyzes.
+                </div>
+                <div class="confluence-item">
+                    <strong>Raul Positioning:</strong> Tech longs (MSFL 2X, NVDX 2X) support breakout environment. TSLA hedges (TSLQ) flip neutral→bullish = institutional conviction shift.
+                </div>
+                <div class="confluence-item">
+                    <strong>Play:</strong> Add PYPL/AKAM positions ahead of May 5–7 earnings. Trailing stops below support ($44 for PYPL, $95 for AKAM) lock in risk. TVRN window + earnings binary = high asymmetry.
+                </div>
+            </div>
+
+            <div class="confluence-box">
+                <div class="confluence-title">💰 Critical Minerals Decoupling + Tariff Cycle (TVRN + Ghost + Policy)</div>
+                <div class="confluence-item">
+                    <strong>TVRN Framework:</strong> Abundance phase begins post-FOMC (if dovish). Small junk → big names. Sentiment shift from fear to greed.
+                </div>
+                <div class="confluence-item">
+                    <strong>Ghost Framework:</strong> Critical minerals thesis requires policy catalysts (Section 232 by July 13, Project Vault buying). Supply chain decoupling = structural, not cyclical. Works in both bull and bear macro.
+                </div>
+                <div class="confluence-item">
+                    <strong>Raul Positioning:</strong> Institutional L/S ratio flips bullish on tech = risk-on environment. Macro tailwind for speculative names (USAR, CRML, TMC).
+                </div>
+                <div class="confluence-item">
+                    <strong>Play:</strong> Position MP (largest, lowest risk) now. Scale into USAR/CRML ahead of Section 232 deadline. If tariffs triggered = hard catalyst for 50%+ moves in 2-3 months.
+                </div>
+            </div>
+
+            <div class="confluence-box">
+                <div class="confluence-title">🥇 Precious Metals + Fed Window (TVRN + Ghost + Rates)</div>
+                <div class="confluence-item">
+                    <strong>TVRN Framework:</strong> Rate cuts expected H2 2026. Each FOMC meeting a key inflection. May 15 + June FOMC = critical windows.
+                </div>
+                <div class="confluence-item">
+                    <strong>Ghost Framework:</strong> Gold/silver bull thesis tied to real yield compression. Central bank buying + industrial demand (silver) create structural upside. LEAPS (AG, BTG 2028 calls) capture full cycle.
+                </div>
+                <div class="confluence-item">
+                    <strong>Raul Positioning:</strong> Monitor DXY (dollar weakness supports metals). If TSLA hedge ratio drops → risk-on → precious metals dip → buy opportunity.
+                </div>
+                <div class="confluence-item">
+                    <strong>Play:</strong> GLD/SLV as macro hedges into FOMC. GDX for leverage. LEAPS (AG, BTG) for 2028 bull case. Entry on any FOMC hold surprises (retest support).
+                </div>
+            </div>
+
+            <div class="confluence-box">
+                <div class="confluence-title">🤖 AI Data Scarcity + Tech Rally (TVRN + Ghost + Earnings)</div>
+                <div class="confluence-item">
+                    <strong>TVRN Framework:</strong> Abundance phase benefits large-cap tech (GOOGL, META). Distribution tail = beneficiaries of bull momentum.
+                </div>
+                <div class="confluence-item">
+                    <strong>Ghost Framework:</strong> RDDT is purest play on data scarcity. Q2 earnings should show 60%+ revenue growth + new AI licensing deal announcements. Re-rating from $65 to $90+ feasible on clean quarter.
+                </div>
+                <div class="confluence-item">
+                    <strong>Raul Positioning:</strong> Tech longs (MSFL, NVDX) already positioned. RDDT adds concentrated upside with less institutional crowding than META/GOOGL.
+                </div>
+                <div class="confluence-item">
+                    <strong>Play:</strong> RDDT as higher-conviction Q2 earnings trade. Buy into weakness ahead of earnings ($65–$70 zone). Target $90–$110 on beat + AI deal announcement.
+                </div>
+            </div>
+        </section>
+
+        <!-- METHODOLOGY SECTION -->
+        <section class="section">
+            <h2 class="section-title">Ghost's Trading Methodology</h2>
+            <p style="margin-bottom: 20px; color: #aaa;">Core principles from Ghost's Discord trading signals</p>
+
+            <div class="grid">
+                <div class="card">
+                    <h3>📊 Technical Entry Rules</h3>
+                    <div class="thesis-text">
+                        • <strong>Cup-and-handle patterns</strong> for momentum entry (AG, BTG examples)<br>
+                        • <strong>Ascending channels</strong> with breakout confirmation<br>
+                        • <strong>Support/resistance levels</strong> for stop-loss precision<br>
+                        • <strong>Limit orders only</strong> — never chase price (market orders forbidden)
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3>💎 Position Scaling Philosophy</h3>
+                    <div class="thesis-text">
+                        • <strong>No rush</strong> — build positions gradually over weeks/months<br>
+                        • <strong>LEAPS as leverage vehicle</strong> (50–1000% target returns, 2028 expiration)<br>
+                        • <strong>Scale into winners</strong> as technical confirmation builds<br>
+                        • <strong>Patient thesis-driven entries</strong> — wait for chart alignment with macro
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3>🎯 Risk Management</h3>
+                    <div class="thesis-text">
+                        • <strong>Each trade unique</strong> — no comparison or sizing based on other positions<br>
+                        • <strong>Never compare losses</strong> — individual P&L tracking<br>
+                        • <strong>Discipline over emotion</strong> — mechanical stop-loss execution<br>
+                        • <strong>Time horizon flexibility</strong> — some plays resolve instantly, others take years
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3>🔮 Macro + Micro Integration</h3>
+                    <div class="thesis-text">
+                        • <strong>TVRN macro timing</strong> — pick thesis window (squeeze window, abundance phase)<br>
+                        • <strong>Ghost's structure analysis</strong> — identify market setup (supply deficit, policy tailwind)<br>
+                        • <strong>Technical confirmation</strong> — chart patterns confirm thesis thesis timing<br>
+                        • <strong>Catalyst alignment</strong> — entry near near-term catalyst windows
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- INTEGRATION WITH RAUL/TVRN -->
+        <section class="section">
+            <h2 class="section-title">Integration with TVRN + Raul Systems</h2>
+            <p style="margin-bottom: 20px; color: #aaa;">How Ghost fits into your broader analytical framework</p>
+
+            <div class="card" style="grid-column: 1 / -1;">
+                <h3>Three-Layer Framework</h3>
+                <div class="thesis-text">
+                    <strong style="color: #00d4ff;">Layer 1 — TVRN Macro Timing</strong><br>
+                    Tells you <em>when</em> markets are ready (fear → speculation → abundance phases). May 1–15 squeeze window is your entry timing constraint.
+                    <br><br>
+                    <strong style="color: #00d4ff;">Layer 2 — Ghost's Market Structure</strong><br>
+                    Tells you <em>what</em> to buy (data scarcity thesis, critical minerals decoupling, precious metals cycle). Identifies secular tailwinds that work independent of TVRN cycles.
+                    <br><br>
+                    <strong style="color: #00d4ff;">Layer 3 — Raul's Institutional Positioning</strong><br>
+                    Tells you <em>how much</em> to size (L/S ratio bias flips, penny break stops, outfit armor). Confirms Ghost's macro thesis is being validated by institutional flows.
+                    <br><br>
+                    <strong>Example Playbook:</strong> TVRN says May 1–15 is bullish window. Ghost says PYPL at 9x earnings is deeply undervalued with May 5 earnings catalyst. Raul shows tech longs (MSFL/NVDX) already positioned with TSLA hedges flipping bullish. Play: Add PYPL position May 3–4, trailing stops below $44 support. Target $60–$72 on beat. Risk limited, conviction high.
+                </div>
+            </div>
+        </section>
+
+        <div class="update-timestamp">
+            Dashboard compiled: May 2, 2026 | Based on Ghost's research repo & Discord trading signals | Framework integration: TVRN macro + Raul institutional + Ghost structure
+        </div>
+    </div>
+</body>
+</html>
