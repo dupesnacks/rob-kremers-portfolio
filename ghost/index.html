@@ -82,6 +82,49 @@
             color: #00d4ff;
         }
 
+        .thesis-box {
+            background: linear-gradient(135deg, rgba(255,255,255,0.05) 0%, rgba(255,255,255,0.02) 100%);
+            border: 1px solid rgba(0, 212, 255, 0.3);
+            border-radius: 12px;
+            padding: 25px;
+            margin-bottom: 25px;
+            backdrop-filter: blur(10px);
+        }
+
+        .thesis-box h3 {
+            color: #00d4ff;
+            margin-bottom: 15px;
+            font-size: 1.4em;
+        }
+
+        .thesis-text {
+            color: #ccc;
+            margin: 15px 0;
+            line-height: 1.8;
+        }
+
+        .key-point {
+            margin: 12px 0;
+            padding: 12px;
+            background: rgba(255, 255, 255, 0.03);
+            border-left: 3px solid #00d4ff;
+            border-radius: 4px;
+        }
+
+        .key-point strong {
+            color: #00d4ff;
+        }
+
+        .ticker {
+            font-family: 'Monaco', 'Courier New', monospace;
+            font-weight: bold;
+            color: #00ff00;
+            background: rgba(0, 255, 0, 0.1);
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-size: 0.9em;
+        }
+
         .grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
@@ -110,90 +153,16 @@
             color: #00d4ff;
         }
 
-        .conviction-badge {
-            display: inline-block;
-            padding: 4px 12px;
-            border-radius: 20px;
-            font-size: 0.8em;
-            font-weight: bold;
-            margin: 10px 0;
-            text-transform: uppercase;
-        }
-
-        .conviction-high {
-            background: rgba(0, 255, 100, 0.2);
-            color: #00ff64;
-            border: 1px solid rgba(0, 255, 100, 0.5);
-        }
-
-        .conviction-moderate {
-            background: rgba(255, 200, 0, 0.2);
-            color: #ffc800;
-            border: 1px solid rgba(255, 200, 0, 0.5);
-        }
-
-        .conviction-low {
-            background: rgba(255, 100, 100, 0.2);
-            color: #ff6464;
-            border: 1px solid rgba(255, 100, 100, 0.5);
-        }
-
-        .ticker {
-            font-family: 'Monaco', 'Courier New', monospace;
-            font-weight: bold;
-            color: #00ff00;
-            background: rgba(0, 255, 0, 0.1);
-            padding: 2px 6px;
-            border-radius: 4px;
+        .card-subtitle {
+            color: #888;
             font-size: 0.9em;
+            margin-bottom: 15px;
         }
 
-        .thesis-text {
+        .card-content {
             color: #ccc;
-            margin: 15px 0;
-            line-height: 1.8;
-        }
-
-        .drivers {
-            margin: 15px 0;
-        }
-
-        .driver {
-            margin: 10px 0;
-            padding: 10px;
-            background: rgba(255, 255, 255, 0.03);
-            border-left: 3px solid #00d4ff;
-            border-radius: 4px;
             font-size: 0.95em;
-        }
-
-        .driver-title {
-            color: #00d4ff;
-            font-weight: bold;
-        }
-
-        .timeline {
-            margin: 15px 0;
-            padding: 10px;
-            background: rgba(255, 255, 255, 0.05);
-            border-radius: 6px;
-        }
-
-        .timeline-item {
-            display: flex;
-            margin: 8px 0;
-            font-size: 0.9em;
-        }
-
-        .timeline-date {
-            color: #ffc800;
-            font-weight: bold;
-            min-width: 120px;
-        }
-
-        .timeline-event {
-            color: #ccc;
-            flex: 1;
+            line-height: 1.7;
         }
 
         .tickers-table {
@@ -220,43 +189,51 @@
             background: rgba(0, 212, 255, 0.05);
         }
 
-        .status-badge {
+        .theme-badge {
+            display: inline-block;
             padding: 4px 10px;
             border-radius: 4px;
-            font-size: 0.85em;
+            font-size: 0.8em;
             font-weight: bold;
+            margin-right: 5px;
         }
 
-        .status-active {
+        .theme-data {
+            background: rgba(119, 0, 255, 0.2);
+            color: #bb86fc;
+            border: 1px solid rgba(119, 0, 255, 0.4);
+        }
+
+        .theme-minerals {
+            background: rgba(255, 100, 0, 0.2);
+            color: #ffb347;
+            border: 1px solid rgba(255, 100, 0, 0.4);
+        }
+
+        .theme-metals {
+            background: rgba(255, 215, 0, 0.2);
+            color: #ffd700;
+            border: 1px solid rgba(255, 215, 0, 0.4);
+        }
+
+        .theme-value {
             background: rgba(0, 255, 100, 0.2);
             color: #00ff64;
+            border: 1px solid rgba(0, 255, 100, 0.4);
         }
 
-        .status-upcoming {
-            background: rgba(255, 200, 0, 0.2);
-            color: #ffc800;
+        .scenario-box {
+            margin: 15px 0;
+            padding: 15px;
+            background: rgba(255, 255, 255, 0.05);
+            border-left: 4px solid #00d4ff;
+            border-radius: 6px;
         }
 
-        .confluence-box {
-            background: linear-gradient(135deg, rgba(119, 0, 255, 0.1) 0%, rgba(0, 212, 255, 0.05) 100%);
-            border: 2px solid rgba(119, 0, 255, 0.3);
-            border-radius: 12px;
-            padding: 20px;
-            margin: 20px 0;
-        }
-
-        .confluence-title {
-            color: #7700ff;
+        .scenario-title {
+            color: #00d4ff;
             font-weight: bold;
-            margin-bottom: 10px;
-        }
-
-        .confluence-item {
-            margin: 10px 0;
-            padding: 10px;
-            background: rgba(255, 255, 255, 0.03);
-            border-left: 3px solid #7700ff;
-            font-size: 0.95em;
+            margin-bottom: 8px;
         }
 
         .footnote {
@@ -267,31 +244,11 @@
             border-top: 1px solid rgba(255, 255, 255, 0.1);
         }
 
-        .catalyst-row {
-            display: grid;
-            grid-template-columns: 1fr 1.5fr 1fr;
-            gap: 15px;
-            margin: 15px 0;
-            padding: 15px;
-            background: rgba(255, 255, 255, 0.03);
-            border-radius: 8px;
-            border-left: 4px solid #00d4ff;
-        }
-
-        .catalyst-date {
-            color: #ffc800;
-            font-weight: bold;
-            font-size: 1.1em;
-        }
-
-        .catalyst-event {
-            color: #e0e0e0;
-        }
-
-        .catalyst-impact {
-            color: #00ff64;
-            font-weight: bold;
-            text-align: right;
+        .source-note {
+            font-size: 0.85em;
+            color: #666;
+            margin-top: 10px;
+            font-style: italic;
         }
 
         .update-timestamp {
@@ -312,10 +269,6 @@
                 grid-template-columns: 1fr;
             }
 
-            .catalyst-row {
-                grid-template-columns: 1fr;
-            }
-
             .tickers-table {
                 font-size: 0.8em;
             }
@@ -331,536 +284,640 @@
     <div class="container">
         <header>
             <h1>👻 GHOST RESEARCH</h1>
-            <p class="subtitle">Market Structure Analysis | Geopolitical Catalysts | Option Flow Intelligence</p>
+            <p class="subtitle">Market Structure Analysis | Investment Research</p>
             <div class="framework-links">
                 <a href="https://robkremers.com/">← Back to Portfolio</a>
-                <a href="#theses">Theses</a>
-                <a href="#catalysts">Catalysts</a>
-                <a href="#tickers">Tickers</a>
-                <a href="#confluence">Confluence</a>
+                <a href="#data-scarcity">Data Scarcity</a>
+                <a href="#critical-minerals">Critical Minerals</a>
+                <a href="#precious-metals">Precious Metals</a>
+                <a href="#value-plays">Value Plays</a>
+                <a href="#leaps">LEAPS Strategies</a>
             </div>
         </header>
 
-        <!-- THESES SECTION -->
-        <section class="section" id="theses">
-            <h2 class="section-title">Active Investment Theses</h2>
-            <p style="margin-bottom: 20px; color: #aaa;">Ghost's core frameworks for understanding markets through structure, geopolitics, and data scarcity</p>
-
-            <div class="grid">
-                <!-- AI Data Scarcity -->
-                <div class="card">
-                    <h3>🤖 AI Data Scarcity</h3>
-                    <span class="conviction-badge conviction-high">HIGH CONVICTION</span>
-                    <div class="thesis-text">
-                        Authentic human-generated content becomes increasingly valuable as AI models require high-quality training data. Finite supply + exploding demand = premium asset.
-                    </div>
-                    <div class="drivers">
-                        <div class="driver">
-                            <div class="driver-title">Model Collapse Problem</div>
-                            <p>AI trained on AI-generated content degrades. Human content = premium input.</p>
-                        </div>
-                        <div class="driver">
-                            <div class="driver-title">Dynamic Pricing Power</div>
-                            <p>Companies like Reddit can charge for real-time access to curated human conversation.</p>
-                        </div>
-                        <div class="driver">
-                            <div class="driver-title">Self-Reinforcing Moat</div>
-                            <p>Each new user post makes dataset richer. Cannot be replicated from zero.</p>
-                        </div>
-                    </div>
-                    <div class="timeline">
-                        <strong style="color: #00d4ff;">Timeline: 2026–2027</strong>
-                        <div class="timeline-item">
-                            <span class="timeline-date">Q2 2026</span>
-                            <span class="timeline-event">Watch RDDT earnings growth (60%+ YoY target)</span>
-                        </div>
-                        <div class="timeline-item">
-                            <span class="timeline-date">2027</span>
-                            <span class="timeline-event">AI licensing revenue projected $400M+ (near 100% margins)</span>
-                        </div>
-                    </div>
+        <!-- AI DATA SCARCITY THESIS -->
+        <section class="section" id="data-scarcity">
+            <h2 class="section-title">🤖 AI Data Scarcity Thesis</h2>
+            
+            <div class="thesis-box">
+                <h3>The Setup</h3>
+                <div class="thesis-text">
+                    Two simultaneous structural forces converge: <strong>AI models need vast quantities of high-quality, authentic human-generated text</strong> (synthetic content degrades model performance), and <strong>community-based advertising delivers superior ROI vs. algorithmic feeds</strong>.
                 </div>
-
-                <!-- Critical Minerals -->
-                <div class="card">
-                    <h3>⚒️ Critical Minerals Decoupling</h3>
-                    <span class="conviction-badge conviction-high">HIGH CONVICTION</span>
-                    <div class="thesis-text">
-                        Structural supply chain decoupling from China + geopolitical policy tailwinds + explosive demand from EVs/AI creates multi-year pricing cycle for Western producers.
-                    </div>
-                    <div class="drivers">
-                        <div class="driver">
-                            <div class="driver-title">Mandatory Supply Chain Rewrite</div>
-                            <p>US procurement rules exclude Chinese-origin minerals. Captive demand floor.</p>
-                        </div>
-                        <div class="driver">
-                            <div class="driver-title">Government as Anchor Buyer</div>
-                            <p>$14.8B EXIM, $10B+ strategic reserve (Project Vault), direct equity stakes.</p>
-                        </div>
-                        <div class="driver">
-                            <div class="driver-title">Supply Cannot Respond</div>
-                            <p>10–20 year mine development. Inelasticity = prolonged price cycle.</p>
-                        </div>
-                    </div>
-                    <div class="timeline">
-                        <strong style="color: #00d4ff;">Timeline: 2026–2028+</strong>
-                        <div class="timeline-item">
-                            <span class="timeline-date">July 13, 2026</span>
-                            <span class="timeline-event">Section 232 negotiation deadline (hard catalyst)</span>
-                        </div>
-                        <div class="timeline-item">
-                            <span class="timeline-date">2028+</span>
-                            <span class="timeline-event">MP Materials, LAC, USAR reach commercial production</span>
-                        </div>
-                    </div>
+                
+                <div class="key-point">
+                    <strong>Model Collapse Problem:</strong> AI models trained on AI-generated content degrade in quality. Authentic human-generated content becomes the scarce, premium input.
                 </div>
-
-                <!-- Precious Metals -->
-                <div class="card">
-                    <h3>🥇 Precious Metals Bull Cycle</h3>
-                    <span class="conviction-badge conviction-moderate">MODERATE-HIGH</span>
-                    <div class="thesis-text">
-                        Fed rate cuts + real yield compression + silver structural deficit (since 2021) + record central bank buying creates multi-year upside for gold/silver and miners.
-                    </div>
-                    <div class="drivers">
-                        <div class="driver">
-                            <div class="driver-title">Falling Real Yields</div>
-                            <p>Lower rates reduce opportunity cost of non-yielding gold.</p>
-                        </div>
-                        <div class="driver">
-                            <div class="driver-title">Silver's Dual Tailwind</div>
-                            <p>Monetary asset + industrial demand (EVs, solar, AI data centers).</p>
-                        </div>
-                        <div class="driver">
-                            <div class="driver-title">Miner Leverage</div>
-                            <p>2–3x profit leverage relative to metal price moves.</p>
-                        </div>
-                    </div>
-                    <div class="timeline">
-                        <strong style="color: #00d4ff;">Timeline: 2026 H2 – 2027</strong>
-                        <div class="timeline-item">
-                            <span class="timeline-date">June 2026</span>
-                            <span class="timeline-event">FOMC decision (next rate cut window)</span>
-                        </div>
-                        <div class="timeline-item">
-                            <span class="timeline-date">H2 2026</span>
-                            <span class="timeline-event">Bull case targets: Gold $5,400–$6,000, Silver $100+</span>
-                        </div>
-                    </div>
+                
+                <div class="key-point">
+                    <strong>Dynamic Pricing Power:</strong> Companies owning authentic conversation data can charge for real-time access. This revenue carries near-100% margins because users create the content.
                 </div>
-
-                <!-- Value + Catalysts -->
-                <div class="card">
-                    <h3>💰 Value + Catalyst Setup</h3>
-                    <span class="conviction-badge conviction-moderate">MODERATE</span>
-                    <div class="thesis-text">
-                        Deeply undervalued mega-cap stocks with near-term earnings catalysts and structural narratives in the process of re-rating. High risk/reward asymmetry.
-                    </div>
-                    <div class="drivers">
-                        <div class="driver">
-                            <div class="driver-title">Valuation Extremes</div>
-                            <p>PYPL at 9x P/E, AKAM at 36x despite secular growth narratives.</p>
-                        </div>
-                        <div class="driver">
-                            <div class="driver-title">Catalyst Windows</div>
-                            <p>Earnings events (May 5, May 7) as binary inflection points.</p>
-                        </div>
-                        <div class="driver">
-                            <div class="driver-title">Multiple Optionality</div>
-                            <p>Unmonetized assets priced at zero. Any execution breakthrough = re-rating.</p>
-                        </div>
-                    </div>
-                    <div class="timeline">
-                        <strong style="color: #00d4ff;">Timeline: Q2 2026 (Binary Events)</strong>
-                        <div class="timeline-item">
-                            <span class="timeline-date">May 5, 2026</span>
-                            <span class="timeline-event">PYPL Q1 earnings (execution test)</span>
-                        </div>
-                        <div class="timeline-item">
-                            <span class="timeline-date">May 7, 2026</span>
-                            <span class="timeline-event">AKAM earnings (CIS acceleration proof)</span>
-                        </div>
-                    </div>
+                
+                <div class="key-point">
+                    <strong>Community Advertising Efficiency:</strong> 40% of Reddit conversations are commercial; 84% of shoppers feel more confident after researching on Reddit. Intent-based community advertising outperforms algorithmic feeds.
                 </div>
             </div>
-        </section>
 
-        <!-- TICKERS SECTION -->
-        <section class="section" id="tickers">
-            <h2 class="section-title">Active Ticker Positions</h2>
-            <p style="margin-bottom: 20px; color: #aaa;">Entry levels, targets, and conviction across Ghost's investment themes</p>
+            <h3 style="color: #00d4ff; margin: 30px 0 20px 0;">Core Investment Vehicle</h3>
+            
+            <div class="card">
+                <h3><span class="ticker">RDDT</span> — Reddit Inc.</h3>
+                <div class="card-subtitle">Primary thesis expression — sits at intersection of both trends</div>
+                <div class="card-content">
+                    <strong>Why Reddit:</strong> Largest repository of authentic human conversation on earth (25B posts/comments, 20+ years). Google and OpenAI already paying customers for data access.
+                    <br><br>
+                    <strong>Q1 2026 Performance:</strong> $663M revenue (+69% YoY) | EPS $1.01 vs. $0.62 est. (63% beat) | 91.5% gross margin | 40% adj. EBITDA margin
+                    <br><br>
+                    <strong>Track Record:</strong> 7 consecutive 60%+ revenue growth quarters | FY2025 = first profitable year ever ($530M net income) | $1B share buyback authorized
+                    <br><br>
+                    <strong>Analyst Estimates:</strong>
+                    <ul style="margin: 10px 0; margin-left: 20px;">
+                        <li>FY2026: $2.95B revenue / $1.25B adj. EBITDA</li>
+                        <li>FY2027: $3.8B revenue (implied 29% growth)</li>
+                        <li>AI licensing: Projected $400M annually by 2027 (Needham) at near-100% margins</li>
+                        <li>Lower-funnel conversion revenue: Tripled YoY, now 60%+ of ad revenue</li>
+                    </ul>
+                    <br>
+                    <strong>Valuation Upside:</strong> Bull case = re-rating to 40-50x forward earnings as AI licensing accelerates
+                    <br><br>
+                    <strong>Key Metrics:</strong> Global ARPU $5.23 vs. Meta's $14+ (massive monetization runway) | $1B buyback (reduces share count, supports EPS)
+                </div>
+            </div>
+
+            <h3 style="color: #00d4ff; margin: 30px 0 20px 0;">Supporting Positions</h3>
 
             <table class="tickers-table">
                 <thead>
                     <tr>
                         <th>Ticker</th>
-                        <th>Theme</th>
-                        <th>Entry / Target</th>
-                        <th>Instrument</th>
-                        <th>Conviction</th>
-                        <th>Next Catalyst</th>
+                        <th>Company</th>
+                        <th>Role in Thesis</th>
+                        <th>Key Detail</th>
                     </tr>
                 </thead>
                 <tbody>
-                    <!-- AI Data Scarcity -->
-                    <tr>
-                        <td><span class="ticker">RDDT</span></td>
-                        <td>AI Data Scarcity</td>
-                        <td>$65–$75 / $90–$110</td>
-                        <td>Equity</td>
-                        <td><span class="status-badge status-active">HIGH</span></td>
-                        <td>Q2 2026 Earnings</td>
-                    </tr>
-                    <tr>
-                        <td><span class="ticker">GOOGL</span></td>
-                        <td>AI Data + Distribution</td>
-                        <td>$175–$185 / $215–$235</td>
-                        <td>Equity</td>
-                        <td><span class="status-badge status-active">MODERATE</span></td>
-                        <td>Q2 2026 Earnings</td>
-                    </tr>
                     <tr>
                         <td><span class="ticker">META</span></td>
-                        <td>Ad Platform + AI</td>
-                        <td>$490–$510 / $580–$620</td>
-                        <td>Equity</td>
-                        <td><span class="status-badge status-active">MODERATE</span></td>
-                        <td>Q2 2026 Earnings</td>
+                        <td>Meta Platforms</td>
+                        <td>AI-powered ad performance flywheel</td>
+                        <td>Advantage+ reduces cost-per-lead 14%. All 42 analysts Strong Buy. ~19x forward earnings (cheapest Mag 7)</td>
                     </tr>
                     <tr>
                         <td><span class="ticker">PINS</span></td>
-                        <td>Purchase Intent + Data</td>
-                        <td>$28–$32 / $45–$55</td>
-                        <td>Equity</td>
-                        <td><span class="status-badge status-active">MODERATE</span></td>
-                        <td>Q2 2026 Earnings</td>
-                    </tr>
-
-                    <!-- Critical Minerals -->
-                    <tr>
-                        <td><span class="ticker">MP</span></td>
-                        <td>Critical Minerals (REE)</td>
-                        <td>$45–$50 / $75–$90</td>
-                        <td>Equity</td>
-                        <td><span class="status-badge status-active">HIGH</span></td>
-                        <td>Project milestones</td>
+                        <td>Pinterest</td>
+                        <td>Structural peer on purchase-intent advertising</td>
+                        <td>619M MAUs, 80B monthly visual searches. Forward EV/EBITDA 10.4x — 43% discount to peers. Net cash $2.7B</td>
                     </tr>
                     <tr>
-                        <td><span class="ticker">LAC</span></td>
-                        <td>Critical Minerals (Li)</td>
-                        <td>$12–$15 / $30–$40</td>
-                        <td>Equity</td>
-                        <td><span class="status-badge status-upcoming">MODERATE</span></td>
-                        <td>Thacker Pass permit</td>
+                        <td><span class="ticker">GOOGL</span></td>
+                        <td>Alphabet</td>
+                        <td>Reddit's largest AI licensing partner + AI infrastructure beneficiary</td>
+                        <td>Pays for Reddit data access. Cloud AI monetization upside. AI Overviews could cannibalize or drive Reddit traffic</td>
                     </tr>
                     <tr>
-                        <td><span class="ticker">TMQ</span></td>
-                        <td>Critical Minerals (Cu)</td>
-                        <td>$4–$6 / $12–$18</td>
-                        <td>Equity</td>
-                        <td><span class="status-badge status-upcoming">MODERATE</span></td>
-                        <td>Ambler Road updates</td>
+                        <td><span class="ticker">TTD</span></td>
+                        <td>The Trade Desk</td>
+                        <td>"Picks-and-shovels" infrastructure play</td>
+                        <td>Largest independent programmatic ad platform. CTV at 59% of streaming ad budgets. UID2.0 adoption growing</td>
                     </tr>
                     <tr>
-                        <td><span class="ticker">USAR</span></td>
-                        <td>Critical Minerals (REE)</td>
-                        <td>$3–$4 / $12–$20</td>
-                        <td>Equity</td>
-                        <td><span class="status-badge status-upcoming">HIGH</span></td>
-                        <td>Production timeline</td>
+                        <td><span class="ticker">XLC</span></td>
+                        <td>Communication Services ETF</td>
+                        <td>Broad sector exposure</td>
+                        <td>Lower volatility than RDDT. Includes Meta, Alphabet, Netflix</td>
                     </tr>
                     <tr>
-                        <td><span class="ticker">CRML</span></td>
-                        <td>Critical Minerals (GEO)</td>
-                        <td>$2–$3 / $8–$15</td>
-                        <td>Equity (Spec)</td>
-                        <td><span class="status-badge status-upcoming">MODERATE</span></td>
-                        <td>Greenland policy</td>
-                    </tr>
-                    <tr>
-                        <td><span class="ticker">TMC</span></td>
-                        <td>Critical Minerals (Seabed)</td>
-                        <td>$1.5–$2.5 / $6–$12</td>
-                        <td>Equity (Spec)</td>
-                        <td><span class="status-badge status-upcoming">MODERATE</span></td>
-                        <td>Mining license approval</td>
-                    </tr>
-                    <tr>
-                        <td><span class="ticker">REMX</span></td>
-                        <td>Critical Minerals (ETF)</td>
-                        <td>$28–$32 / $45–$60</td>
-                        <td>ETF</td>
-                        <td><span class="status-badge status-active">MODERATE</span></td>
-                        <td>Continuous monitoring</td>
-                    </tr>
-
-                    <!-- Precious Metals -->
-                    <tr>
-                        <td><span class="ticker">GLD</span></td>
-                        <td>Precious Metals (Gold)</td>
-                        <td>$190–$200 / $240–$280</td>
-                        <td>ETF</td>
-                        <td><span class="status-badge status-active">MODERATE</span></td>
-                        <td>FOMC June decision</td>
-                    </tr>
-                    <tr>
-                        <td><span class="ticker">SLV</span></td>
-                        <td>Precious Metals (Silver)</td>
-                        <td>$28–$32 / $45–$60</td>
-                        <td>ETF</td>
-                        <td><span class="status-badge status-active">MODERATE</span></td>
-                        <td>FOMC June decision</td>
-                    </tr>
-                    <tr>
-                        <td><span class="ticker">GDX</span></td>
-                        <td>Gold Miners</td>
-                        <td>$32–$36 / $50–$70</td>
-                        <td>ETF</td>
-                        <td><span class="status-badge status-active">MODERATE</span></td>
-                        <td>Metals price action</td>
-                    </tr>
-                    <tr>
-                        <td><span class="ticker">AG (2028 Calls)</span></td>
-                        <td>Precious Metals (Opt)</td>
-                        <td>0.35c / 1.00c+</td>
-                        <td>LEAPS (35c 2028/01)</td>
-                        <td><span class="status-badge status-active">HIGH</span></td>
-                        <td>Chart breakout</td>
-                    </tr>
-                    <tr>
-                        <td><span class="ticker">BTG (2028 Calls)</span></td>
-                        <td>Precious Metals (Opt)</td>
-                        <td>0.45c / 1.50c+</td>
-                        <td>LEAPS (4.5c 2028/01)</td>
-                        <td><span class="status-badge status-active">HIGH</span></td>
-                        <td>Ascending channel hold</td>
-                    </tr>
-
-                    <!-- Value + Catalysts -->
-                    <tr>
-                        <td><span class="ticker">PYPL</span></td>
-                        <td>Value + Catalyst</td>
-                        <td>$48–$52 / $60–$80</td>
-                        <td>Equity</td>
-                        <td><span class="status-badge status-upcoming">MODERATE-HIGH</span></td>
-                        <td>May 5 earnings (BINARY)</td>
-                    </tr>
-                    <tr>
-                        <td><span class="ticker">AKAM</span></td>
-                        <td>Value + Catalyst</td>
-                        <td>$98–$105 / $125–$145</td>
-                        <td>Equity</td>
-                        <td><span class="status-badge status-upcoming">MODERATE</span></td>
-                        <td>May 7 earnings (CIS proof)</td>
+                        <td><span class="ticker">SOCL</span></td>
+                        <td>Social Media ETF</td>
+                        <td>Pure-play social media</td>
+                        <td>Most direct expression of theme. Higher concentration/volatility</td>
                     </tr>
                 </tbody>
             </table>
 
             <div class="footnote">
-                <strong>Legend:</strong>
-                <br>• Entry/Target = Ghost's estimated buy zone / price target (not financial advice)
-                <br>• LEAPS = Long-term options strategies (2028 expiration); deep out-of-the-money calls with 50–1000% target returns
-                <br>• Conviction = Ghost's subjective confidence level based on thesis strength and catalyst clarity
-                <br>• Position sizing should reflect conviction and time horizon (LEAPS are leveraged, speculative plays require smaller allocations)
+                <strong>Key Risks:</strong> AI traffic cannibalization (ChatGPT/Google AI Overviews answering without sending to Reddit) | YouTube potentially overtaking Reddit as LLM citation source | Advertising concentration risk (95% of revenue) | Regulatory/legal challenges
+                <br><br>
+                <strong>Source:</strong> SwingVaultDataScarcity.pdf
             </div>
         </section>
 
-        <!-- CATALYSTS SECTION -->
-        <section class="section" id="catalysts">
-            <h2 class="section-title">Key Catalysts Calendar</h2>
-            <p style="margin-bottom: 30px; color: #aaa;">Critical dates and events that could move markets and trigger Ghost's theses</p>
-
-            <div class="catalyst-row">
-                <div class="catalyst-date">May 5, 2026</div>
-                <div class="catalyst-event"><strong>PYPL Q1 Earnings</strong> — Branded checkout stabilization, Venmo ARPU, new leadership execution credibility. Binary event.</div>
-                <div class="catalyst-impact">PYPL ±10–20%</div>
-            </div>
-
-            <div class="catalyst-row">
-                <div class="catalyst-date">May 7, 2026</div>
-                <div class="catalyst-event"><strong>AKAM Earnings</strong> — Cloud Infrastructure Services (CIS) revenue acceleration, security margin expansion. Proof of transition thesis.</div>
-                <div class="catalyst-impact">AKAM ±5–15%</div>
-            </div>
-
-            <div class="catalyst-row">
-                <div class="catalyst-date">May 15, 2026</div>
-                <div class="catalyst-event"><strong>Fed Meeting + Decision</strong> — May 1 hawkish hold creates June window. TVRN framework targets May 15 as liquidity inflection point. Metals + critical minerals response.</div>
-                <div class="catalyst-impact">GLD, GDX, REE ±5–10%</div>
-            </div>
-
-            <div class="catalyst-row">
-                <div class="catalyst-date">June 2026</div>
-                <div class="catalyst-event"><strong>FOMC Decision</strong> — Next formal rate cut guidance expected. Precious metals thesis depends on this signal.</div>
-                <div class="catalyst-impact">Gold, Silver, Miners ±5–20%</div>
-            </div>
-
-            <div class="catalyst-row">
-                <div class="catalyst-date">July 13, 2026</div>
-                <div class="catalyst-event"><strong>Section 232 Negotiation Deadline</strong> — Critical minerals trade deal finalized or tariffs/price floors triggered. Hard catalyst for MP, LAC, TMQ, USAR.</div>
-                <div class="catalyst-impact">Critical minerals ±10–25%</div>
-            </div>
-
-            <div class="catalyst-row">
-                <div class="catalyst-date">Q2 2026 (Monthly)</div>
-                <div class="catalyst-event"><strong>RDDT, GOOGL, META, PINS Earnings</strong> — AI licensing revenue acceleration, user growth, margin expansion. AI data scarcity thesis proof points.</div>
-                <div class="catalyst-impact">RDDT ±10–20%</div>
-            </div>
-
-            <div class="catalyst-row">
-                <div class="catalyst-date">2026–2027 (Ongoing)</div>
-                <div class="catalyst-event"><strong>Critical Minerals Project Milestones</strong> — MP production ramps, LAC permit progress, USAR magnet production target, TMC seabed licensing.</div>
-                <div class="catalyst-impact">Individual plays ±15–50%</div>
-            </div>
-
-            <div class="catalyst-row">
-                <div class="catalyst-date">Nov 2026</div>
-                <div class="catalyst-event"><strong>US-China Trade Truce Expiry</strong> — REE export controls resume or escalate. Structural tailwind for Western producers.</div>
-                <div class="catalyst-impact">Critical minerals ±10–20%</div>
-            </div>
-        </section>
-
-        <!-- CONFLUENCE SECTION -->
-        <section class="section" id="confluence">
-            <h2 class="section-title">Cross-Framework Confluence</h2>
-            <p style="margin-bottom: 30px; color: #aaa;">Where Ghost's analysis intersects with TVRN macro framework and Raul's institutional positioning</p>
-
-            <div class="confluence-box">
-                <div class="confluence-title">🎯 May 1–15 Tactical Squeeze Window (TVRN + Ghost)</div>
-                <div class="confluence-item">
-                    <strong>TVRN Framework:</strong> May 1–15 is peak tactical bullish window. Liquidity injection expected May 15 post-FOMC dovish surprise. Wall of denial climb + small junk squeeze setup.
+        <!-- CRITICAL MINERALS THESIS -->
+        <section class="section" id="critical-minerals">
+            <h2 class="section-title">⚒️ Critical Minerals Supercycle</h2>
+            
+            <div class="thesis-box">
+                <h3>The Setup</h3>
+                <div class="thesis-text">
+                    Critical minerals have become the defining geopolitical battleground. <strong>Demand is surging</strong> (EVs, AI, wind, defense) while <strong>supply is constrained</strong> by China's dominance of processing (40–90% market share), export controls, and 10–20 year timelines to bring new mines online. <strong>US policy response = most aggressive minerals policy since Cold War.</strong>
                 </div>
-                <div class="confluence-item">
-                    <strong>Ghost Framework:</strong> May 5 PYPL earnings + May 7 AKAM earnings position within this window. Value + catalyst setups amplified by TVRN's liquidity tailwind. If both beat, institutional re-rating catalyzes.
+                
+                <h3 style="color: #ffc800; margin-top: 20px;">Five Structural Tailwinds</h3>
+                
+                <div class="key-point">
+                    <strong>1. Mandatory Supply Chain Decoupling:</strong> US procurement rules exclude Chinese-origin minerals from defense/federal contracts. Creates captive, price-inelastic demand for Western producers.
                 </div>
-                <div class="confluence-item">
-                    <strong>Raul Positioning:</strong> Tech longs (MSFL 2X, NVDX 2X) support breakout environment. TSLA hedges (TSLQ) flip neutral→bullish = institutional conviction shift.
+                
+                <div class="key-point">
+                    <strong>2. Explosive Demand:</strong> EVs use 6× more minerals than conventional cars. Wind turbines require 9× more than gas plants. AI data centers consuming massive copper/REE/specialty metals.
                 </div>
-                <div class="confluence-item">
-                    <strong>Play:</strong> Add PYPL/AKAM positions ahead of May 5–7 earnings. Trailing stops below support ($44 for PYPL, $95 for AKAM) lock in risk. TVRN window + earnings binary = high asymmetry.
+                
+                <div class="key-point">
+                    <strong>3. Government as Anchor Buyer:</strong> $14.8B EXIM Bank Letters of Interest | $10B+ strategic reserve (Project Vault) | Direct equity stakes in multiple miners. Provides downside protection and offtake certainty.
+                </div>
+                
+                <div class="key-point">
+                    <strong>4. Supply Cannot Respond:</strong> Typical mine takes 10–20 years discovery→production. Even with record investment, meaningful supply years away. Supply inelasticity during demand surge = prolonged cycle.
+                </div>
+                
+                <div class="key-point">
+                    <strong>5. China's Export Controls Are Permanent:</strong> Licensing system on 12+ REEs = structural policy, not negotiating chip. Remains active even during diplomatic pauses.
                 </div>
             </div>
 
-            <div class="confluence-box">
-                <div class="confluence-title">💰 Critical Minerals Decoupling + Tariff Cycle (TVRN + Ghost + Policy)</div>
-                <div class="confluence-item">
-                    <strong>TVRN Framework:</strong> Abundance phase begins post-FOMC (if dovish). Small junk → big names. Sentiment shift from fear to greed.
-                </div>
-                <div class="confluence-item">
-                    <strong>Ghost Framework:</strong> Critical minerals thesis requires policy catalysts (Section 232 by July 13, Project Vault buying). Supply chain decoupling = structural, not cyclical. Works in both bull and bear macro.
-                </div>
-                <div class="confluence-item">
-                    <strong>Raul Positioning:</strong> Institutional L/S ratio flips bullish on tech = risk-on environment. Macro tailwind for speculative names (USAR, CRML, TMC).
-                </div>
-                <div class="confluence-item">
-                    <strong>Play:</strong> Position MP (largest, lowest risk) now. Scale into USAR/CRML ahead of Section 232 deadline. If tariffs triggered = hard catalyst for 50%+ moves in 2-3 months.
-                </div>
-            </div>
-
-            <div class="confluence-box">
-                <div class="confluence-title">🥇 Precious Metals + Fed Window (TVRN + Ghost + Rates)</div>
-                <div class="confluence-item">
-                    <strong>TVRN Framework:</strong> Rate cuts expected H2 2026. Each FOMC meeting a key inflection. May 15 + June FOMC = critical windows.
-                </div>
-                <div class="confluence-item">
-                    <strong>Ghost Framework:</strong> Gold/silver bull thesis tied to real yield compression. Central bank buying + industrial demand (silver) create structural upside. LEAPS (AG, BTG 2028 calls) capture full cycle.
-                </div>
-                <div class="confluence-item">
-                    <strong>Raul Positioning:</strong> Monitor DXY (dollar weakness supports metals). If TSLA hedge ratio drops → risk-on → precious metals dip → buy opportunity.
-                </div>
-                <div class="confluence-item">
-                    <strong>Play:</strong> GLD/SLV as macro hedges into FOMC. GDX for leverage. LEAPS (AG, BTG) for 2028 bull case. Entry on any FOMC hold surprises (retest support).
-                </div>
-            </div>
-
-            <div class="confluence-box">
-                <div class="confluence-title">🤖 AI Data Scarcity + Tech Rally (TVRN + Ghost + Earnings)</div>
-                <div class="confluence-item">
-                    <strong>TVRN Framework:</strong> Abundance phase benefits large-cap tech (GOOGL, META). Distribution tail = beneficiaries of bull momentum.
-                </div>
-                <div class="confluence-item">
-                    <strong>Ghost Framework:</strong> RDDT is purest play on data scarcity. Q2 earnings should show 60%+ revenue growth + new AI licensing deal announcements. Re-rating from $65 to $90+ feasible on clean quarter.
-                </div>
-                <div class="confluence-item">
-                    <strong>Raul Positioning:</strong> Tech longs (MSFL, NVDX) already positioned. RDDT adds concentrated upside with less institutional crowding than META/GOOGL.
-                </div>
-                <div class="confluence-item">
-                    <strong>Play:</strong> RDDT as higher-conviction Q2 earnings trade. Buy into weakness ahead of earnings ($65–$70 zone). Target $90–$110 on beat + AI deal announcement.
-                </div>
-            </div>
-        </section>
-
-        <!-- METHODOLOGY SECTION -->
-        <section class="section">
-            <h2 class="section-title">Ghost's Trading Methodology</h2>
-            <p style="margin-bottom: 20px; color: #aaa;">Core principles from Ghost's Discord trading signals</p>
+            <h3 style="color: #00d4ff; margin: 30px 0 20px 0;">Government-Backed Producers (Lower Risk)</h3>
 
             <div class="grid">
                 <div class="card">
-                    <h3>📊 Technical Entry Rules</h3>
-                    <div class="thesis-text">
-                        • <strong>Cup-and-handle patterns</strong> for momentum entry (AG, BTG examples)<br>
-                        • <strong>Ascending channels</strong> with breakout confirmation<br>
-                        • <strong>Support/resistance levels</strong> for stop-loss precision<br>
-                        • <strong>Limit orders only</strong> — never chase price (market orders forbidden)
+                    <h3><span class="ticker">MP</span></h3>
+                    <div class="card-subtitle">MP Materials Corp. — Rare Earth Elements</div>
+                    <div class="card-content">
+                        <strong>Government Backing:</strong> DoD invested $400M in preferred stock (largest shareholder) + 10-year price floor offtake contract
+                        <br><br>
+                        <strong>Business:</strong> America's only fully integrated mine-to-magnet rare earth producer. Mountain Pass (California) = only large-scale REE mine in Western Hemisphere
+                        <br><br>
+                        <strong>Financials (2026E):</strong> Revenue ~$702M | EBITDA ~$313M (45% margin)
+                        <br><br>
+                        <strong>Customers:</strong> Apple, GM, and US DoD
                     </div>
                 </div>
 
                 <div class="card">
-                    <h3>💎 Position Scaling Philosophy</h3>
-                    <div class="thesis-text">
-                        • <strong>No rush</strong> — build positions gradually over weeks/months<br>
-                        • <strong>LEAPS as leverage vehicle</strong> (50–1000% target returns, 2028 expiration)<br>
-                        • <strong>Scale into winners</strong> as technical confirmation builds<br>
-                        • <strong>Patient thesis-driven entries</strong> — wait for chart alignment with macro
+                    <h3><span class="ticker">LAC</span></h3>
+                    <div class="card-subtitle">Lithium Americas — Lithium</div>
+                    <div class="card-content">
+                        <strong>Government Backing:</strong> $2.3B DOE loan restructured | 5% government equity stake in company and project
+                        <br><br>
+                        <strong>Project:</strong> Thacker Pass (Nevada) — one of world's largest known US lithium deposits
+                        <br><br>
+                        <strong>Status:</strong> Pre-production; GM strategic partner. Target production 2027–2028
+                        <br><br>
+                        <strong>Risk Level:</strong> Highest in gov't-backed cohort (pre-production execution risk)
                     </div>
                 </div>
 
                 <div class="card">
-                    <h3>🎯 Risk Management</h3>
-                    <div class="thesis-text">
-                        • <strong>Each trade unique</strong> — no comparison or sizing based on other positions<br>
-                        • <strong>Never compare losses</strong> — individual P&L tracking<br>
-                        • <strong>Discipline over emotion</strong> — mechanical stop-loss execution<br>
-                        • <strong>Time horizon flexibility</strong> — some plays resolve instantly, others take years
+                    <h3><span class="ticker">TMQ</span></h3>
+                    <div class="card-subtitle">Trilogy Metals — Copper/Cobalt/Zinc</div>
+                    <div class="card-content">
+                        <strong>Government Backing:</strong> US government 10% equity stake
+                        <br><br>
+                        <strong>Project:</strong> Upper Kobuk Mineral Projects (Alaska) — world-class copper-cobalt-zinc-gold district
+                        <br><br>
+                        <strong>Status:</strong> Ambler Road access approved by Trump administration
+                        <br><br>
+                        <strong>Risk:</strong> High execution risk due to remote Alaska location
                     </div>
                 </div>
 
                 <div class="card">
-                    <h3>🔮 Macro + Micro Integration</h3>
-                    <div class="thesis-text">
-                        • <strong>TVRN macro timing</strong> — pick thesis window (squeeze window, abundance phase)<br>
-                        • <strong>Ghost's structure analysis</strong> — identify market setup (supply deficit, policy tailwind)<br>
-                        • <strong>Technical confirmation</strong> — chart patterns confirm thesis thesis timing<br>
-                        • <strong>Catalyst alignment</strong> — entry near near-term catalyst windows
+                    <h3><span class="ticker">USAR</span></h3>
+                    <div class="card-subtitle">USA Rare Earth — Heavy Rare Earth Elements</div>
+                    <div class="card-content">
+                        <strong>Government Backing:</strong> Commerce Department equity stake (January 2026) — first government investment in heavy REEs
+                        <br><br>
+                        <strong>Project:</strong> Round Top (Texas) — contains 15 of 17 REEs including all heavy REEs. Gross in-situ value ~$68B
+                        <br><br>
+                        <strong>Progress:</strong> Acquired Less Common Metals (UK processing). Serra Verde acquisition ($2.8B, April 2026)
+                        <br><br>
+                        <strong>Timeline:</strong> Target = commercial magnet production by end 2026
+                        <br><br>
+                        <strong>Status:</strong> Pre-revenue, de-risking rapidly
                     </div>
                 </div>
             </div>
+
+            <h3 style="color: #00d4ff; margin: 30px 0 20px 0;">Speculative Plays (Higher Risk/Optionality)</h3>
+
+            <div class="grid">
+                <div class="card">
+                    <h3><span class="ticker">CRML</span></h3>
+                    <div class="card-subtitle">Critical Metals — Greenland Pure Play</div>
+                    <div class="card-content">
+                        <strong>Setup:</strong> Controls Tanbreez REE deposit in Greenland; estimated gross in-situ value ~$68B
+                        <br><br>
+                        <strong>Volatility:</strong> Surged 35% in single session on US-Greenland headlines. Extreme volatility tied to geopolitical developments
+                        <br><br>
+                        <strong>Thesis:</strong> Trump administration's Greenland acquisition push = fundamental minerals play
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3><span class="ticker">TMC</span></h3>
+                    <div class="card-subtitle">Metals Company — Deep-Sea Mining</div>
+                    <div class="card-content">
+                        <strong>Setup:</strong> Polymetallic nodules in Clarion Clipperton Zone (Ni, Cu, Co, Mn — all four EV battery metals in single source)
+                        <br><br>
+                        <strong>Catalyst:</strong> Trump April 2025 EO explicitly supports seabed mining. Korea Zinc refining partnership (June 2025)
+                        <br><br>
+                        <strong>Risk Profile:</strong> Highest risk / highest optionality in entire suite. Pre-revenue, regulatory + environmental risk
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3><span class="ticker">UUUU</span></h3>
+                    <div class="card-subtitle">Energy Fuels — Uranium + REE Processor</div>
+                    <div class="card-content">
+                        <strong>Setup:</strong> Only integrated US uranium-and-rare-earth processor in commercial production
+                        <br><br>
+                        <strong>Operations:</strong> White Mesa mill (Utah). Processes monazite into separated rare earth oxides
+                        <br><br>
+                        <strong>Thesis:</strong> Dual exposure to nuclear renaissance AND critical minerals supercycle
+                    </div>
+                </div>
+            </div>
+
+            <h3 style="color: #00d4ff; margin: 30px 0 20px 0;">ETF Vehicles</h3>
+
+            <table class="tickers-table">
+                <thead>
+                    <tr>
+                        <th>Ticker</th>
+                        <th>Fund Name</th>
+                        <th>Notes</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><span class="ticker">REMX</span></td>
+                        <td>VanEck Rare Earth/Strategic Metals</td>
+                        <td>Benchmark REE ETF. Top holdings: Albemarle (~9%), MP Materials top-3. <strong>Caveat: ~30% allocated to Chinese stocks</strong></td>
+                    </tr>
+                    <tr>
+                        <td><span class="ticker">EART</span></td>
+                        <td>Global X Rare Earth & Critical Materials</td>
+                        <td>Smaller fund (~$46M AUM), less liquid. Also includes Chinese names</td>
+                    </tr>
+                    <tr>
+                        <td><span class="ticker">PICK</span></td>
+                        <td>iShares MSCI Global Metals & Mining</td>
+                        <td>Broader exposure (BHP, Rio Tinto, Freeport, Glencore). Less pure critical minerals focus, includes commodity cycle</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3 style="color: #ffc800; margin: 30px 0 20px 0;">Key Catalysts</h3>
+
+            <div class="key-point">
+                <strong>July 13, 2026 (Hard Deadline):</strong> Section 232 negotiation concludes. Failure triggers tariffs or price floors on critical minerals
+            </div>
+
+            <div class="key-point">
+                <strong>November 2026:</strong> US-China trade truce expires. China could reinstate October REE controls
+            </div>
+
+            <div class="key-point">
+                <strong>Ongoing:</strong> MP Materials / USAR production milestones | TMC seabed mining licence decision | Project Vault reserve buying announcements | DoD procurement rule changes
+            </div>
+
+            <div class="footnote">
+                <strong>Bull Case:</strong> Section 232 fails → tariffs triggered | China reinstate REE controls | Project Vault begins active buying | MP/USAR hit commercial production | TMC gets seabed licence
+                <br><br>
+                <strong>Bear Case:</strong> US-China deal lifts REE controls → prices collapse | Permitting delays extend timelines | EV demand slows | Environmental opposition blocks projects | Company dilution from capital raises
+                <br><br>
+                <strong>Source:</strong> SwingVault_Critical_Minerals.pdf
+            </div>
         </section>
 
-        <!-- INTEGRATION WITH RAUL/TVRN -->
-        <section class="section">
-            <h2 class="section-title">Integration with TVRN + Raul Systems</h2>
-            <p style="margin-bottom: 20px; color: #aaa;">How Ghost fits into your broader analytical framework</p>
+        <!-- PRECIOUS METALS THESIS -->
+        <section class="section" id="precious-metals">
+            <h2 class="section-title">🥇 Precious Metals Bull Cycle</h2>
+            
+            <div class="thesis-box">
+                <h3>The Setup</h3>
+                <div class="thesis-text">
+                    Bullish, macro-driven thesis predicated on Federal Reserve rate cuts creating tailwinds for gold, silver, and mining equities. <strong>Falling real yields reduce opportunity cost of non-yielding gold.</strong> Silver carries dual tailwind: monetary demand + industrial demand (solar, EVs, AI data centers). Record central bank buying + structural silver deficit drive extended bull cycle.
+                </div>
+                
+                <h3 style="color: #ffc800; margin-top: 20px;">Five Core Drivers</h3>
+                
+                <div class="key-point">
+                    <strong>1. Falling Real Yields:</strong> Fed rate cuts compress real yields, removing opportunity cost of holding non-yielding gold. Historical pattern: rate cuts → rotation out of bonds → gold inflows
+                </div>
+                
+                <div class="key-point">
+                    <strong>2. Weaker US Dollar:</strong> Fed easing weakens dollar, making metals cheaper for global buyers. Establishes price floor
+                </div>
+                
+                <div class="key-point">
+                    <strong>3. Inflation Hedge Demand:</strong> Rate cuts amid sticky inflation signal currency debasement risk. Drives institutional and central bank buying
+                </div>
+                
+                <div class="key-point">
+                    <strong>4. Miner Margin Expansion:</strong> Lower cost of capital + higher bullion prices against fixed operating costs = 2–3× leveraged profit moves relative to metal price itself
+                </div>
+                
+                <div class="key-point">
+                    <strong>5. Silver's Dual Tailwind:</strong> Lower rates stimulate capex in solar, EVs, AI data centers — all silver-intensive. Silver carries unique double leverage: monetary asset + industrial demand
+                </div>
+            </div>
+
+            <h3 style="color: #00d4ff; margin: 30px 0 20px 0;">Current Market Data (Post-FOMC, May 2026)</h3>
+
+            <div class="key-point">
+                <strong>Fed Funds Rate:</strong> 3.50–3.75% (hawkish hold on April 29)
+                <br><strong>Dot-Plot Expectations:</strong> End-2026 median 3.4% (~1 cut implied) | 2027 median 3.1%
+                <br><strong>Gold Price:</strong> ~$4,885/oz
+                <br><strong>Silver Price:</strong> ~$76–79
+            </div>
+
+            <div class="key-point">
+                <strong>Silver Structural Metrics:</strong>
+                <br>• Deficit in place since 2021, cumulative shortfall nearing 800M ounces
+                <br>• 2025 performance: +144%
+                <br>• Central bank gold purchases: Record volumes in 2024–2025
+            </div>
+
+            <h3 style="color: #00d4ff; margin: 30px 0 20px 0;">Investment Vehicles</h3>
+
+            <div class="grid">
+                <div class="card">
+                    <h3><span class="ticker">GLD</span></h3>
+                    <div class="card-subtitle">SPDR Gold Trust</div>
+                    <div class="card-content">
+                        Physical gold exposure. Conservative vehicle for bull thesis
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3><span class="ticker">SLV</span></h3>
+                    <div class="card-subtitle">iShares Silver Trust</div>
+                    <div class="card-content">
+                        Physical silver exposure. Benefits from industrial demand + deficit mechanics
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3><span class="ticker">GDX</span></h3>
+                    <div class="card-subtitle">VanEck Gold Miners ETF</div>
+                    <div class="card-content">
+                        Leveraged exposure to gold price moves. 2025 performance: +150% since March lows, ~300% since early 2024
+                    </div>
+                </div>
+            </div>
+
+            <h3 style="color: #ffc800; margin: 30px 0 20px 0;">Bull Case Price Targets</h3>
+
+            <div class="key-point">
+                <strong>Gold:</strong> $5,400–$6,000/oz (Goldman Sachs / BofA attribution)
+                <br><strong>Silver:</strong> $100+ (sustained bull case)
+            </div>
+
+            <h3 style="color: #00d4ff; margin: 30px 0 20px 0;">Timeline & Key Catalysts</h3>
+
+            <div class="key-point">
+                <strong>June 2026 FOMC Meeting:</strong> Next key decision point on rate cuts
+                <br><strong>H2 2026 – 2027:</strong> Timeline for multi-quarter swing trade, bullion price acceleration expected if FOMC follows dovish path
+            </div>
+
+            <div class="footnote">
+                <strong>Risk Disclosure:</strong> Elevated risk thesis. Conviction level explicitly labeled "BULLISH THESIS · MACRO-DRIVEN · ELEVATED RISK." Assumes Fed follows through on rate cuts; if inflation re-accelerates or Fed holds, thesis reverses
+                <br><br>
+                <strong>Source:</strong> GoldSilver.pdf (SwingVault)
+            </div>
+        </section>
+
+        <!-- VALUE PLAYS SECTION -->
+        <section class="section" id="value-plays">
+            <h2 class="section-title">💰 Value + Catalyst Setups</h2>
+            
+            <div class="thesis-box">
+                <h3>The Setup</h3>
+                <div class="thesis-text">
+                    Deeply undervalued mega-cap stocks with near-term earnings catalysts and structural narratives undergoing potential re-rating. High asymmetry of risk/reward baked into valuations that price in permanent decline.
+                </div>
+            </div>
+
+            <h3 style="color: #00d4ff; margin: 30px 0 20px 0;">PYPL — PayPal Holdings</h3>
 
             <div class="card" style="grid-column: 1 / -1;">
-                <h3>Three-Layer Framework</h3>
-                <div class="thesis-text">
-                    <strong style="color: #00d4ff;">Layer 1 — TVRN Macro Timing</strong><br>
-                    Tells you <em>when</em> markets are ready (fear → speculation → abundance phases). May 1–15 squeeze window is your entry timing constraint.
+                <h3>Fallen Giant Trading at Deep Value</h3>
+                <div class="card-content">
+                    <strong>Valuation & Setup:</strong> Trading ~$50, down 84% from $310 ATH | 9.3x trailing P/E | $45B market cap | $33B revenue | $5B+ free cash flow | 426M active accounts | $1.5T total payment volume. Stock in no-man's-land between $44–$47 support and $56–$60 resistance
                     <br><br>
-                    <strong style="color: #00d4ff;">Layer 2 — Ghost's Market Structure</strong><br>
-                    Tells you <em>what</em> to buy (data scarcity thesis, critical minerals decoupling, precious metals cycle). Identifies secular tailwinds that work independent of TVRN cycles.
+                    <strong>The Thesis:</strong> Market is pricing permanent structural decline while fundamentals quietly compound underneath. At 9x earnings, baked-in assumption: zero growth, zero optionality, zero credit for strategic assets
                     <br><br>
-                    <strong style="color: #00d4ff;">Layer 3 — Raul's Institutional Positioning</strong><br>
-                    Tells you <em>how much</em> to size (L/S ratio bias flips, penny break stops, outfit armor). Confirms Ghost's macro thesis is being validated by institutional flows.
+                    <strong>Multiple Optionality Levers (All Unmonetized):</strong>
+                    <ul style="margin: 10px 0; margin-left: 20px;">
+                        <li><strong>Branded Checkout Stabilization:</strong> Critical data point. Apple Pay / Google Pay winning at OS level? Or Fastlane (one-click without PayPal account) reversing trend?</li>
+                        <li><strong>Venmo Monetization:</strong> 90M+ US users with negligible ARPU vs. PayPal core. Any monetization breakthrough = pure unpriced upside</li>
+                        <li><strong>Honey / Fastlane AI Tools:</strong> Shopping efficiency tools largely unmeasured by market</li>
+                        <li><strong>Activist / Breakup Potential:</strong> Gordon Haskett breakup watchlist. Sum-of-parts (PayPal core + Venmo + Braintree) could exceed $45B market cap</li>
+                    </ul>
+                    <br>
+                    <strong>Buyback Floor:</strong> $5B+ annual repurchases at 9x earnings = ~10% annual share count reduction. EPS grows 10%+ annually via buybacks alone even if revenue flat
                     <br><br>
-                    <strong>Example Playbook:</strong> TVRN says May 1–15 is bullish window. Ghost says PYPL at 9x earnings is deeply undervalued with May 5 earnings catalyst. Raul shows tech longs (MSFL/NVDX) already positioned with TSLA hedges flipping bullish. Play: Add PYPL position May 3–4, trailing stops below $44 support. Target $60–$72 on beat. Risk limited, conviction high.
+                    <strong>New Leadership / Reorg:</strong> April 2026 reorganization into 3 business units with fresh leadership. Pattern risk (three CEOs in five years) but structural clarity preceding potential turnaround
                 </div>
+            </div>
+
+            <h3 style="color: #ffc800; margin: 30px 0 20px 0;">12-Month Scenario Analysis</h3>
+
+            <table class="tickers-table">
+                <thead>
+                    <tr>
+                        <th>Scenario</th>
+                        <th>Target Price</th>
+                        <th>Return from $50</th>
+                        <th>Probability</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Max Bull</strong></td>
+                        <td>$85–$100</td>
+                        <td>+70% to +100%</td>
+                        <td>~15% — Re-rating + multiple clean quarters + Venmo breakthrough</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Base Case</strong></td>
+                        <td>$60–$72</td>
+                        <td>+20% to +44%</td>
+                        <td>~40% — Earnings stabilize, analyst consensus achieved, multiple to 12x</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Grind</strong></td>
+                        <td>$45–$58</td>
+                        <td>-10% to +16%</td>
+                        <td>~30% — No catalyst, buybacks offset slow revenue, stock drifts</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Bear Case</strong></td>
+                        <td>$32–$42</td>
+                        <td>-16% to -36%</td>
+                        <td>~15% — May 5 miss, branded checkout accelerates decline, multiple to 7x</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3 style="color: #ffc800; margin: 30px 0 20px 0;">May 5 Earnings — The Binary Event</h3>
+
+            <div class="key-point">
+                <strong>Why This Matters:</strong> PYPL has missed or guided conservatively in 5 of last 8 quarters. Institutional trust at rock bottom
+                <br><br>
+                <strong>What to Watch:</strong> Branded checkout stabilization | Venmo ARPU growth | New leadership execution credibility
+                <br><br>
+                <strong>Impact:</strong> Clean beat = 10–20% upside single session; miss = retest $38–$40 support
+            </div>
+
+            <div class="footnote">
+                <strong>Conviction Level:</strong> MODERATE-HIGH on 12-month basis. Expected value skewed positive. Risk/reward asymmetry real: downside bounded by $44 support (buyback floor), upside 30–80%+ if optionality pulls through
+                <br><br>
+                <strong>Positioning:</strong> Starter position below $50 with stop at $43 (below support base). Add on May 5 beat confirming branded checkout stabilization. Full conviction only after two consecutive clean quarters
+                <br><br>
+                <strong>Source:</strong> PYPLAnalysis.pdf
+            </div>
+        </section>
+
+        <!-- AKAM SECTION -->
+        <section class="section" id="akam">
+            <h2 class="section-title">AKAM — Misunderstood Transition Story</h2>
+            
+            <div class="card" style="grid-column: 1 / -1;">
+                <h3>The Thesis: CDN Legacy → Security-First Cloud Infrastructure</h3>
+                <div class="card-content">
+                    <strong>Market Mispricing:</strong> Akamai valued as slow-growth CDN (~36x P/E) when actually transforming into security-first, edge-cloud infrastructure provider
+                    <br><br>
+                    <strong>Three Key Business Drivers:</strong>
+                    <br><br>
+                    <strong>1. Cybersecurity (~40% of revenue, growing 12%+ YoY):</strong>
+                    <ul style="margin: 10px 0; margin-left: 20px;">
+                        <li>Highest-margin segment | Current growth engine</li>
+                        <li>Covers: Web application protection, API security, bot management, account protection</li>
+                        <li><strong>Structural Advantage:</strong> Sitting at internet perimeter allows threat detection BEFORE reaching customer infrastructure (advantage vs. Cloudflare, Palo Alto, CrowdStrike)</li>
+                        <li>API security TAM alone projected $7B+ by 2028 (30%+ annual growth)</li>
+                    </ul>
+                    <br>
+                    <strong>2. Cloud Infrastructure Services (CIS) (~20% of revenue, growing 25%+):</strong>
+                    <ul style="margin: 10px 0; margin-left: 20px;">
+                        <li><strong>Most transformative driver.</strong> In Q4 2025, signed $200M multi-year CIS commitment; first Inference Cloud sold out immediately</li>
+                        <li>Purchased 11,000+ Nvidia Blackwell GPUs to scale offering</li>
+                        <li><strong>Key Differentiation:</strong> GPU compute deployed across 4,100 edge locations (vs. hyperscaler centralized data centers). DRAMATICALLY LOWER LATENCY for AI inference workloads</li>
+                        <li>Structural advantage over AWS, Azure, Google Cloud for real-time AI applications</li>
+                        <li>If CIS grows to 30%+ of revenue by 2027 = material valuation re-rating justified</li>
+                    </ul>
+                    <br>
+                    <strong>3. Valuation Disconnect & Re-Rating Potential:</strong>
+                    <ul style="margin: 10px 0; margin-left: 20px;">
+                        <li>Pure-play security comps trade at 40-60x P/E (CrowdStrike 60x+, Palo Alto 45x+)</li>
+                        <li>AKAM at 36x P/E reflects CDN drag; as revenue mix shifts toward security/cloud, multiple expansion is key upside lever</li>
+                        <li>Strong FCF ($1B+ annually) + buybacks provide EPS support during transition</li>
+                        <li>Low beta (~0.65) offers portfolio stability not found in pure AI/cloud names</li>
+                    </ul>
+                </div>
+            </div>
+
+            <h3 style="color: #ffc800; margin: 30px 0 20px 0;">May 7 Earnings — The Catalyst Test</h3>
+
+            <div class="key-point">
+                <strong>Stock Position:</strong> Range-bound $95–$115. Market waiting for PROOF that CIS is scaling
+                <br><br>
+                <strong>What Confirms Thesis:</strong> CIS revenue acceleration | Security margin expansion | Above-consensus guidance
+                <br><br>
+                <strong>Target Levels:</strong> Oppenheimer bull target $130 (+25%) | Max bull $125–$145 (+20% to +39%) if CIS proves itself
+                <br><br>
+                <strong>Downside Risk:</strong> Goldman bear case $76 (40%+ downside if market re-rates on legacy CDN multiple 15-18x P/E)
+            </div>
+
+            <h3 style="color: #ffc800; margin: 30px 0 20px 0;">Key Tension</h3>
+
+            <div class="key-point">
+                <strong>Against the Thesis:</strong> Hold consensus among analysts | Below-consensus margin guidance | Delivery revenue in secular decline | Execution risk of three simultaneous business transitions against better-capitalized competitors (Cloudflare, AWS, CrowdStrike)
+            </div>
+
+            <div class="footnote">
+                <strong>Bottom Line:</strong> May 7 earnings are pivotal. Thesis rests on proving CIS is real revenue contributor, not vaporware
+                <br><br>
+                <strong>Source:</strong> AKAMAnalysis.pdf + AKAMEdgeSecurity.pdf
+            </div>
+        </section>
+
+        <!-- LEAPS SECTION -->
+        <section class="section" id="leaps">
+            <h2 class="section-title">🎯 LEAPS Positions — Ghost's Long-Term Options Strategy</h2>
+            
+            <div class="thesis-box">
+                <h3>Methodology</h3>
+                <div class="thesis-text">
+                    Ghost deploys <strong>deep out-of-the-money LEAPS (2028 expiration)</strong> on mining/metals stocks using technical pattern confirmation and disciplined position scaling. Target returns: 50–1000% swings over multi-year horizon.
+                </div>
+                
+                <div class="key-point">
+                    <strong>Core Rules:</strong> Limit orders only (never market/chase price) | Gradual position scaling | Thesis-driven entries | Patient mindset | Individual position discipline (never compare trades)
+                </div>
+                
+                <div class="key-point">
+                    <strong>Technical Confirmation:</strong> Cup-and-handle patterns | Ascending channel breakouts | Support/resistance levels | Projected price targets
+                </div>
+                
+                <div class="key-point">
+                    <strong>Time Horizon:</strong> Flexible — some resolve instantly, others take years. Not a scalping framework
+                </div>
+            </div>
+
+            <h3 style="color: #00d4ff; margin: 30px 0 20px 0;">Active LEAPS Positions</h3>
+
+            <div class="grid">
+                <div class="card">
+                    <h3><span class="ticker">AG</span> (2028 Calls)</h3>
+                    <div class="card-subtitle">First Majestic Silver Corp. | January 2028 35c</div>
+                    <div class="card-content">
+                        <strong>Entry Strategy:</strong> Scale into 35c 2028/01 calls using limit orders
+                        <br><br>
+                        <strong>Chart Pattern:</strong> Cup-and-handle setup visible in chart analysis
+                        <br><br>
+                        <strong>Thesis Connection:</strong> Silver bull cycle. Benefits from structural deficit + industrial demand
+                        <br><br>
+                        <strong>Target Return:</strong> 50–300%+ if silver reaches bull case targets by 2028
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3><span class="ticker">BTG</span> (2028 Calls)</h3>
+                    <div class="card-subtitle">B2Gold Corp. | January 2028 4.5c</div>
+                    <div class="card-content">
+                        <strong>Entry Strategy:</strong> Scale into 4.5c 2028/01 calls
+                        <br><br>
+                        <strong>Chart Pattern:</strong> Ascending channel with breakout confirmation
+                        <br><br>
+                        <strong>Thesis Connection:</strong> Precious metals + geopolitical mining exposure
+                        <br><br>
+                        <strong>Target Return:</strong> 100–500%+ on sustained gold/mining rally
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3><span class="ticker">TMC</span> (2028 Calls)</h3>
+                    <div class="card-subtitle">Metals Company | January 2028 10c</div>
+                    <div class="card-content">
+                        <strong>Entry Strategy:</strong> Scale into 10c 2028/01 calls
+                        <br><br>
+                        <strong>Thesis Connection:</strong> Deep-sea mining for critical minerals (Ni, Cu, Co, Mn). Trump seabed mining support
+                        <br><br>
+                        <strong>Risk Profile:</strong> Pre-revenue, speculative. Highest risk/highest optionality
+                        <br><br>
+                        <strong>Target Return:</strong> 50–1000%+ if seabed mining approved and mining begins by 2027–2028
+                    </div>
+                </div>
+            </div>
+
+            <div class="footnote">
+                <strong>Key Insight:</strong> LEAPS allow thesis exposure with defined risk (call premium paid) and leverage for 2–5 year outcomes. Deep OTM entry prices mean tiny premium + massive % upside if thesis plays out
             </div>
         </section>
 
         <div class="update-timestamp">
-            Dashboard compiled: May 2, 2026 | Based on Ghost's research repo & Discord trading signals | Framework integration: TVRN macro + Raul institutional + Ghost structure
+            Dashboard compiled from Ghost Research PDFs & Discord trading screenshots | May 2, 2026 | Hosted at robkremers.com/ghost
         </div>
     </div>
 </body>
