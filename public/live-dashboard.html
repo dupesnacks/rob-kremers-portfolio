@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Trading Dashboard — BTC + TSLA</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Courier New', monospace;
+            background: #0a0e27;
+            color: #e0e6ff;
+            padding: 20px;
+        }
+        .container { max-width: 1200px; margin: 0 auto; }
+        h1 { color: #00ff88; margin-bottom: 20px; }
+        h2 { color: #00ccff; margin-top: 30px; margin-bottom: 15px; border-bottom: 2px solid #00ccff; padding-bottom: 8px; }
+        table { width: 100%; border-collapse: collapse; background: #0f1629; margin-bottom: 30px; border: 1px solid #1a2550; }
+        th { background: #1a2550; color: #00ccff; padding: 12px; text-align: left; border-bottom: 2px solid #00ccff; font-weight: bold; }
+        td { padding: 10px 12px; border-bottom: 1px solid #1a2550; }
+        tr:hover { background: #1a2550; }
+        .bullish { color: #00ff88; }
+        .bearish { color: #ff6b6b; }
+        .neutral { color: #ffaa00; }
+        .alert { background: #4d0a0a; color: #ff6b6b; padding: 15px; margin: 20px 0; border-left: 4px solid #ff6b6b; }
+        .positive { background: #0a4d2c; color: #00ff88; padding: 15px; margin: 20px 0; border-left: 4px solid #00ff88; }
+        .insight { background: #1a2550; color: #00ccff; padding: 15px; margin: 20px 0; border-left: 4px solid #00ccff; }
+        .timestamp { color: #888; font-size: 12px; margin-top: 10px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>📊 Live Institutional Positioning Dashboard</h1>
+        <div class="timestamp" id="last-update">Loading...</div>
+
+        <h2>₿ Bitcoin — Short Squeeze Status</h2>
+        <table>
+            <tbody id="btc-table">
+                <tr><td colspan="2">Loading BTC data...</td></tr>
+            </tbody>
+        </table>
+
+        <h2>📈 TSLA Family — Hedge Analysis</h2>
+        <table>
+            <tbody id="tsla-table">
+                <tr><td colspan="5">Loading TSLA data...</td></tr>
+            </tbody>
+        </table>
+
+        <h2>💡 Key Insights</h2>
+        <div id="insights">Loading analysis...</div>
+    </div>
+
+    <script>
+        async function updateDashboard() {
+            try {
+                const resp = await fetch('/data.json?_=' + Date.now());
+                const data = await resp.json();
+                
+                // Update timestamp
+                document.getElementById('last-update').textContent = `Last updated: ${new Date(data.timestamp).toLocaleString()}`;
+                
+                // Update BTC table
+                updateBTCTable(data.btc_live_metrics);
+                
+                // Update TSLA table
+                if (data.tsla_analysis) {
+                    updateTSLATable(data.tsla_analysis);
+                }
+                
+                // Update insights
+                updateInsights(data);
+            } catch (err) {
+                console.error('Failed to load data:', err);
+            }
+        }
+
+        function updateBTCTable(btc) {
+            const html = `
+                <tr><td><strong>Price</strong></td><td><strong>${btc.price_label}</strong></td></tr>
+                <tr><td><strong>Status</strong></td><td><span class="${btc.bias.toLowerCase()}">${btc.status}</span></td></tr>
+                <tr><td><strong>L/S Ratio</strong></td><td><strong>${btc.ls_ratio}x</strong></td></tr>
+                <tr><td><strong>Shorts Trapped</strong></td><td>${btc.shorts_trapped}</td></tr>
+                <tr><td><strong>Loss Per Share</strong></td><td class="bearish">${btc.shorts_loss}</td></tr>
+                <tr><td><strong>New Longs Active</strong></td><td class="bullish">${btc.longs_active}</td></tr>
+                <tr><td><strong>Next Level</strong></td><td>${btc.next_level}</td></tr>
+            `;
+            document.getElementById('btc-table').innerHTML = html;
+        }
+
+        function updateTSLATable(tsla) {
+            const h = tsla.hedge_performance;
+            const l = tsla.long_performance;
+            
+            const html = `
+                <tr style="background: #0a4d2c;"><td colspan="2"><strong style="color:#00ff88;">HEDGES (TSLZ + TSLQ)</strong></td></tr>
+                <tr><td>TSLZ (3x Inverse)</td><td class="bullish">${h.tslz_inverse_3x} ↑</td></tr>
+                <tr><td>TSLQ (3x Inverse Hedge)</td><td class="bullish">${h.tslq_inverse_etf} ↑</td></tr>
+                <tr><td><strong>Hedge Avg</strong></td><td class="bullish"><strong>${h.average}</strong></td></tr>
+                
+                <tr style="background: #4d0a0a;"><td colspan="2"><strong style="color:#ff6b6b;">LONGS (TSLL + TSLT + TSLR)</strong></td></tr>
+                <tr><td>TSLL (3x Long)</td><td class="bearish">${l.tsll_long_3x} ↓</td></tr>
+                <tr><td>TSLT (3x Long)</td><td class="bearish">${l.tslt_long_3x} ↓</td></tr>
+                <tr><td>TSLR (3x Long)</td><td class="bearish">${l.tslr_long_3x} ↓</td></tr>
+                <tr><td><strong>Long Avg</strong></td><td class="bearish"><strong>${l.average}</strong></td></tr>
+                
+                <tr style="background: #1a2550;"><td><strong>DIVERGENCE SPREAD</strong></td><td class="neutral"><strong>${tsla.divergence_spread}</strong></td></tr>
+            `;
+            document.getElementById('tsla-table').innerHTML = html;
+        }
+
+        function updateInsights(data) {
+            const btc = data.btc_live_metrics;
+            const tsla = data.tsla_analysis;
+            
+            let html = '';
+            
+            // BTC insight
+            if (btc) {
+                html += `
+                    <div class="positive">
+                        <strong>🚀 BTC BULLISH BREAKOUT:</strong> ${btc.signal_summary}
+                    </div>
+                `;
+            }
+            
+            // TSLA insight
+            if (tsla) {
+                html += `
+                    <div class="alert">
+                        <strong>⚠️ TSLA INSTITUTIONAL FLIP:</strong> ${tsla.signal_summary}
+                        <br><br>
+                        <strong>Jimmy's L4 Validation:</strong> All support/resistance levels match Raul backend SMAs. Wave count predicts reversal from $389 → $385 MA54 support.
+                    </div>
+                `;
+            }
+            
+            document.getElementById('insights').innerHTML = html;
+        }
+
+        // Initial load
+        updateDashboard();
+        
+        // Update every 30 seconds
+        setInterval(updateDashboard, 30000);
+    </script>
+</body>
+</html>

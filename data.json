@@ -1,0 +1,142 @@
+{
+  "timestamp": "2026-05-05T23:26:00Z",
+  "session": "BTC $80.9K BREAKOUT — WARING'S PROBLEM TRAPPED (May 5, 4:26 PM PDT)",
+  "ticker": "BTC",
+  "btc_live_metrics": {
+    "price": 80937,
+    "price_label": "$80.94K",
+    "price_high_today": 81226,
+    "ls_ratio": 0.29,
+    "ls_ratio_prior": 1.48,
+    "ls_ratio_change": "-80% (1.48x → 0.29x) — SHORTS DOMINATE",
+    "shorts_underwater_pct": 100,
+    "shorts_trapped": "8.59w Waring's Problem short @ $77,840",
+    "shorts_loss": "-$3,097 underwater per share",
+    "longs_active": "2.5w (US President 46, AN 22s, Palantir 770)",
+    "new_outfit_activation": "Political/thematic outfits stepping in",
+    "bias": "BULLISH",
+    "dominant_outfit": "Waring's Problem (TRAPPED SHORT = COVERING FUEL)",
+    "status": "BULLISH TRAPPED SHORT SQUEEZE — Forced covering + new entry",
+    "slope": "Vertical up",
+    "breakout_level": "$80K achieved May 5 (target from May 2 analysis)",
+    "five_day_move": "+$2,758 (+3.53%)",
+    "todays_move": "+$1,113 (+1.39%)",
+    "next_level": "$82-85K potential if squeeze accelerates",
+    "stage_timeline": [
+      "Apr 29: Shorts panic (0.75x→2.0x)",
+      "May 2: Peak squeeze (2.0x→7.0x)",
+      "May 3: Reversal cooldown (7.0x→1.48x)",
+      "May 4-5: RECOVERY BREAKOUT (1.48x→0.29x) — NEW SHORT SQUEEZE"
+    ],
+    "signal_summary": "🟢 BULLISH BREAKOUT: Waring's Problem short at $77.8K is now $3,100+ UNDERWATER — creating forced covering buy pressure. Price broke $80K target on May 5. L/S collapsed to 0.29x = shorts being LIQUIDATED (this is BULLISH fuel). NEW outfits (political/thematic) activating fresh longs at $81.4K+ levels. This is Phase 2 of squeeze cycle — first wave crushed shorts, May 3 cooldown = capitulation setup, now institutional reinvention with conviction. Expect continued upward pressure toward $82-85K as trapped shorts panic.",
+    "breakout_probability": "EXTREMELY HIGH — Trapped shorts = forced covering until capitulation"
+  },
+  "price_history": {
+    "may_1": "$78,179",
+    "may_2_peak": "$78,657 (7.0x squeeze)",
+    "may_3_reversal": "$78,538 (1.48x)",
+    "may_4_recovery": "$79,827",
+    "may_5_breakout": "$80,937 (0.29x SHORTS TRAPPED)"
+  },
+  "institutional_positioning": {
+    "waring_problem": {
+      "type": "SHORT (8.59w)",
+      "entry_level": "$77,840 (1h MA143)",
+      "current_loss": "-$3,097 per contract",
+      "status": "UNDERWATER — PANIC COVERING"
+    },
+    "political_outfits": {
+      "type": "NEW LONGS (2.5w total)",
+      "entry_levels": "$81,294-81,414",
+      "status": "FRESH CONVICTION — stepping in as shorts cover"
+    }
+  },
+  "summary": "🚨 BTC EXPLOSIVE BREAKOUT: $80,937 on May 5. Waring's Problem short (entry $77.8K) is now $3,100+ underwater at current price. L/S ratio collapsed to 0.29x = shorts being liquidated. New political/thematic outfits activating fresh longs at $81.4K levels. This is NOT a continuation of May 2 squeeze — this is a SECOND WAVE after May 3 capitulation setup. If shorts panic continues, $82-85K realistic. If $80K support holds, watch for consolidation before next leg.",
+  "alert": "🟢 BULLISH: Trapped shorts ($3.1K underwater) will fuel continued covering. 3-5% gap up likely if panic accelerates. Next institutional milestone: $82K (where new shorts may defend). Watch for institutions rotating into BTCQ (inverse) if they want to hedge upside.",
+  "chart_status": "Vertical breakout. Above all key moving averages. Volume elevated. Momentum strong.",
+  "fed_context": "May 15 Fed decision now 10 days away — uncertainty premium likely building into breakout",
+  
+  "tsla_analysis": {
+    "timestamp": "2026-05-05T00:21:00Z",
+    "session": "TSLA INSTITUTIONAL SWITCH — HEDGES vs LONGS DIVERGENCE (May 5, 5:21 PM PDT)",
+    "ticker": "TSLA",
+    "current_price": 389.37,
+    "price_change_today": -1.47,
+    "hedge_performance": {
+      "tslz_inverse_3x": "+2.98%",
+      "tslq_inverse_etf": "+2.97%",
+      "average": "+2.98%"
+    },
+    "long_performance": {
+      "tsll_long_3x": "-3.07%",
+      "tslt_long_3x": "-2.95%",
+      "tslr_long_3x": "-2.94%",
+      "average": "-2.99%"
+    },
+    "divergence_spread": "+5.96%",
+    "divergence_interpretation": "CRITICAL INSTITUTIONAL FLIP — Hedges outperforming longs by nearly 6% = institutions de-risking and protecting downside. This is NOT profit-taking; this is CONVICTION REVERSAL from bullish to cautious/bearish.",
+    "switch_timing": "May 5, 2026 (TODAY) — Full rebalancing from longs to hedges completed by market close",
+    
+    "jimmy_trader_validation": {
+      "source": "L4 data trader (X/Twitter) - Jimmy",
+      "methodology": "Autism-driven L4 tape analysis + wave counting",
+      "key_predictions": {
+        "upper_resistance": "$400-410 (MA200 = $403.16 backend)",
+        "current_breakout_attempt": "$389.37 (at price)",
+        "critical_support": "$385 (MA54 = $385.01 backend)",
+        "mid_support": "$370-375 (MA20 = $376.71 backend)",
+        "base_floor": "$320-330 (long-term support)"
+      },
+      "validation_status": "✅ ALL LEVELS MATCH RAUL SMA BACKEND",
+      "jimmy_analysis_summary": "Wave count predicts reversal from current $389 levels downward toward $385 MA54 support. If breaks $385, continuation to $370-375 and potentially $320-330 floor.",
+      "confirmation": "Institutional divergence (+5.96% hedges vs longs) CONFIRMS Jimmy's L4 prediction. Institutions are already rotating into protection ahead of the move he's predicting."
+    },
+    
+    "critical_levels": {
+      "resistance_upper": {
+        "level": 403.16,
+        "name": "MA200 (long-term pivot)",
+        "signal": "Bears defending above this"
+      },
+      "current_price": {
+        "level": 389.37,
+        "name": "Breakout attempt zone",
+        "signal": "Institutions rotating to hedges HERE"
+      },
+      "support_primary": {
+        "level": 385.01,
+        "name": "MA54 (Raul penny break)",
+        "signal": "Classic exit level if breaks = cascade likely"
+      },
+      "support_secondary": {
+        "level": 376.71,
+        "name": "MA20 (short-term floor)",
+        "signal": "Next institutional support zone"
+      },
+      "support_tertiary": {
+        "level": 325,
+        "name": "Long-term base",
+        "signal": "Floor from previous consolidation"
+      }
+    },
+    
+    "institutional_conviction": {
+      "date": "May 2",
+      "status": "BULLISH (all 5 leverage + spot bullish)",
+      "description": "Post-FOMC dovish surprise, all TSLA instruments riding squeeze momentum"
+    },
+    "institutional_conviction_may_5": {
+      "date": "May 5",
+      "status": "BEARISH (hedges spiking, longs getting crushed)",
+      "description": "De-risking ahead of May 15 Fed. Institutions exiting bullish leverage, protecting downside with inverse hedges."
+    },
+    
+    "next_moves": {
+      "if_breaks_385": "Cascade expected toward $370-375. May 15 Fed uncertainty could accelerate.",
+      "if_holds_385": "Consolidation zone. Watch for bounce attempt back to $395-400. If rejected, confirms downtrend.",
+      "jimmy_prediction": "Wave count suggests break of $385 is imminent. Tape (L4 data) confirming institutional exit acceleration."
+    },
+    
+    "signal_summary": "TSLA institutional positioning has FLIPPED from bullish (May 2) to bearish (May 5). Hedges +2.98%, Longs -2.99% = 5.96% divergence = institutions de-risking. Jimmy's L4 chart (wave count + key levels) is VALIDATED by Raul backend SMA data. His predicted support at $385 = our MA54. High probability reversal downward imminent. May 15 Fed uncertainty driving the de-risking."
+  }
+}
