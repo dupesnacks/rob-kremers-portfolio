@@ -1,0 +1,64 @@
+{
+  "tickers": {
+    "BYND": {
+      "latest": {
+        "date": "2026-05-06",
+        "close": 1.04,
+        "volume": 106782609,
+        "baseline": 98279603,
+        "rvol": 1.09,
+        "trend_pct": -55.2,
+        "consecutive": 0,
+        "alerts": []
+      },
+      "history": [
+        {
+          "date": "2026-05-06",
+          "volume": 106782609,
+          "close": 1.04,
+          "baseline": 98279603,
+          "rvol": 1.09,
+          "alerts": []
+        }
+      ]
+    },
+    "SABS": {
+      "latest": {
+        "date": "2026-05-06",
+        "close": 3.8,
+        "volume": 710945,
+        "baseline": 424457,
+        "rvol": 1.67,
+        "trend_pct": 18.0,
+        "consecutive": 0,
+        "alerts": [
+          "\u26a0\ufe0f ELEVATED \u2014 1.7\u00d7 average (67% above baseline)"
+        ]
+      },
+      "history": [
+        {
+          "date": "2026-05-06",
+          "volume": 710945,
+          "close": 3.8,
+          "baseline": 424457,
+          "rvol": 1.67,
+          "alerts": [
+            "\u26a0\ufe0f ELEVATED \u2014 1.7\u00d7 average (67% above baseline)"
+          ]
+        }
+      ]
+    }
+  },
+  "alert_log": [
+    {
+      "date": "2026-05-06",
+      "ticker": "SABS",
+      "alerts": [
+        "\u26a0\ufe0f ELEVATED \u2014 1.7\u00d7 average (67% above baseline)"
+      ],
+      "rvol": 1.67,
+      "close": 3.8
+    }
+  ],
+  "last_updated": "2026-05-07 19:43 ET"
+}

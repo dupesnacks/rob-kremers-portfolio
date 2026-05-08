@@ -22,7 +22,8 @@
     { "source": "/r2", "destination": "/rob-kremers-portfolio/r2/index.html" },
     { "source": "/projects", "destination": "/index-projects.html" },
     { "source": "/live-dashboard", "destination": "/live-dashboard.html" },
-    { "source": "/unfairmarket-live", "destination": "/unfairmarket-live.html" }
+    { "source": "/unfairmarket-live", "destination": "/unfairmarket-live.html" },
+    { "source": "/volume", "destination": "/volume.html" }
   ],
   "trailingSlash": false
 }

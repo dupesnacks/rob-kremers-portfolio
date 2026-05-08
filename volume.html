@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Volume Monitor — robkremers.com</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+<style>
+  :root {
+    --bg:        #0b0e14;
+    --surface:   #131720;
+    --border:    #1e2535;
+    --text:      #e2e8f0;
+    --muted:     #64748b;
+    --green:     #22c55e;
+    --yellow:    #eab308;
+    --orange:    #f97316;
+    --red:       #ef4444;
+    --blue:      #3b82f6;
+    --accent:    #6366f1;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    font-size: 14px;
+    min-height: 100vh;
+  }
+
+  /* ── HEADER ── */
+  header {
+    border-bottom: 1px solid var(--border);
+    padding: 20px 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  .header-left h1 {
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: -0.3px;
+    color: var(--text);
+  }
+  .header-left span {
+    font-size: 12px;
+    color: var(--muted);
+    margin-left: 10px;
+  }
+  .last-updated {
+    font-size: 12px;
+    color: var(--muted);
+    background: var(--surface);
+    border: 1px solid var(--border);
+    padding: 6px 12px;
+    border-radius: 6px;
+  }
+  .last-updated b { color: var(--text); }
+
+  /* ── MAIN LAYOUT ── */
+  main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 28px 32px;
+  }
+
+  section + section { margin-top: 40px; }
+
+  .section-title {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 16px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  /* ── TICKER CARDS GRID ── */
+  .cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 16px;
+  }
+
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+  }
+  .card::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 3px;
+    border-radius: 12px 12px 0 0;
+  }
+  .card.normal::before  { background: var(--green); }
+  .card.elevated::before { background: var(--yellow); }
+  .card.spike::before   { background: var(--orange); }
+  .card.critical::before { background: var(--red); }
+
+  .card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 16px;
+  }
+  .ticker-name {
+    font-size: 22px;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+  }
+  .ticker-price {
+    font-size: 13px;
+    color: var(--muted);
+    margin-top: 2px;
+  }
+
+  .badge {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    padding: 4px 8px;
+    border-radius: 4px;
+    text-transform: uppercase;
+  }
+  .badge.normal   { background: rgba(34,197,94,.15);  color: var(--green); }
+  .badge.elevated { background: rgba(234,179,8,.15);  color: var(--yellow); }
+  .badge.spike    { background: rgba(249,115,22,.15); color: var(--orange); }
+  .badge.critical { background: rgba(239,68,68,.15);  color: var(--red); }
+
+  /* RVOL bar */
+  .rvol-section { margin-bottom: 16px; }
+  .rvol-label {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    margin-bottom: 6px;
+  }
+  .rvol-label span { color: var(--muted); }
+  .rvol-label b    { font-size: 15px; color: var(--text); }
+  .rvol-track {
+    height: 6px;
+    background: var(--border);
+    border-radius: 4px;
+    overflow: hidden;
+  }
+  .rvol-fill {
+    height: 100%;
+    border-radius: 4px;
+    transition: width 0.4s ease;
+    max-width: 100%;
+  }
+  .rvol-fill.normal   { background: var(--green); }
+  .rvol-fill.elevated { background: var(--yellow); }
+  .rvol-fill.spike    { background: var(--orange); }
+  .rvol-fill.critical { background: var(--red); }
+
+  /* Stat rows */
+  .stat-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 6px 0;
+    border-bottom: 1px solid var(--border);
+    font-size: 12px;
+  }
+  .stat-row:last-child { border-bottom: none; }
+  .stat-row span { color: var(--muted); }
+  .stat-row b    { color: var(--text); }
+
+  .trend-up   { color: var(--orange) !important; }
+  .trend-down { color: var(--green)  !important; }
+  .trend-flat { color: var(--muted)  !important; }
+
+  /* Alert pills on card */
+  .alert-pills { margin-top: 14px; display: flex; flex-wrap: wrap; gap: 6px; }
+  .alert-pill {
+    font-size: 10px;
+    padding: 3px 8px;
+    border-radius: 20px;
+    background: var(--border);
+    color: var(--text);
+  }
+
+  /* ── CHARTS ── */
+  .charts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    gap: 24px;
+  }
+
+  .chart-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 20px;
+  }
+  .chart-title {
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 4px;
+  }
+  .chart-subtitle {
+    font-size: 11px;
+    color: var(--muted);
+    margin-bottom: 16px;
+  }
+  .chart-wrap { position: relative; height: 200px; }
+
+  /* ── ALERT LOG ── */
+  .alert-log {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    overflow: hidden;
+  }
+  .log-row {
+    display: grid;
+    grid-template-columns: 100px 70px 1fr auto;
+    align-items: center;
+    gap: 16px;
+    padding: 12px 20px;
+    border-bottom: 1px solid var(--border);
+    font-size: 12px;
+  }
+  .log-row:last-child { border-bottom: none; }
+  .log-row.header-row {
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    color: var(--muted);
+    padding: 10px 20px;
+    background: var(--bg);
+  }
+  .log-date  { color: var(--muted); font-variant-numeric: tabular-nums; }
+  .log-ticker { font-weight: 700; }
+  .log-alerts { color: var(--text); }
+  .log-rvol   { font-variant-numeric: tabular-nums; text-align: right; color: var(--muted); }
+
+  /* ── EMPTY STATE ── */
+  .empty {
+    text-align: center;
+    padding: 60px 20px;
+    color: var(--muted);
+  }
+  .empty h3 { font-size: 16px; margin-bottom: 8px; color: var(--text); }
+  .empty p   { font-size: 13px; line-height: 1.6; }
+  .empty code {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 8px 16px;
+    background: var(--border);
+    border-radius: 6px;
+    font-family: monospace;
+    font-size: 12px;
+    color: var(--accent);
+  }
+
+  /* ── RESPONSIVE ── */
+  @media (max-width: 600px) {
+    main { padding: 20px 16px; }
+    header { padding: 16px; }
+    .charts-grid { grid-template-columns: 1fr; }
+    .log-row { grid-template-columns: 90px 60px 1fr; }
+    .log-rvol { display: none; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-left">
+    <h1>Volume Monitor <span>robkremers.com</span></h1>
+  </div>
+  <div class="last-updated">Last updated: <b id="last-updated">—</b></div>
+</header>
+
+<main>
+
+  <!-- TICKER CARDS -->
+  <section>
+    <div class="section-title">Watchlist Status</div>
+    <div class="cards-grid" id="cards-grid">
+      <div class="empty">
+        <h3>No data yet</h3>
+        <p>Run the volume monitor to populate this dashboard.</p>
+        <code>python3 volume_monitor.py</code>
+      </div>
+    </div>
+  </section>
+
+  <!-- VOLUME CHARTS -->
+  <section>
+    <div class="section-title">30-Day Volume History</div>
+    <div class="charts-grid" id="charts-grid">
+    </div>
+  </section>
+
+  <!-- ALERT LOG -->
+  <section>
+    <div class="section-title">Alert History</div>
+    <div class="alert-log" id="alert-log">
+      <div class="log-row header-row">
+        <span>Date</span><span>Ticker</span><span>Alerts</span><span>RVOL</span>
+      </div>
+      <div class="log-row">
+        <span class="log-date" colspan="4" style="color:var(--muted);grid-column:1/-1;text-align:center;padding:20px">No alerts recorded yet.</span>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<script>
+// ── HELPERS ──────────────────────────────────────────────────────────────
+
+function fmtVol(n) {
+  if (!n && n !== 0) return "—";
+  if (n >= 1e6) return (n / 1e6).toFixed(1) + "M";
+  if (n >= 1e3) return (n / 1e3).toFixed(0) + "K";
+  return String(n);
+}
+
+function alertClass(alerts) {
+  if (!alerts || alerts.length === 0) return "normal";
+  const all = alerts.join(" ").toUpperCase();
+  if (all.includes("SPIKE") || all.includes("ACCUMULATION")) return "spike";
+  if (all.includes("TREND") && all.includes("ELEVATED"))      return "critical";
+  if (all.includes("ELEVATED") || all.includes("TREND"))      return "elevated";
+  return "normal";
+}
+
+function badgeLabel(cls) {
+  return { normal: "Normal", elevated: "Elevated", spike: "Spike", critical: "Critical" }[cls] || cls;
+}
+
+function rvolWidth(rvol) {
+  // 0× = 0%, 1× = 33%, 2.5× = 70%, 5× = 100%
+  return Math.min(100, (rvol / 5) * 100).toFixed(1) + "%";
+}
+
+// ── RENDER CARDS ─────────────────────────────────────────────────────────
+
+function renderCards(data) {
+  const grid = document.getElementById("cards-grid");
+  grid.innerHTML = "";
+
+  Object.entries(data.tickers).forEach(([ticker, d]) => {
+    const latest = d.latest;
+    const cls    = alertClass(latest.alerts);
+    const rvol   = latest.rvol || 0;
+
+    const trendHtml = latest.trend_pct != null
+      ? `<b class="${latest.trend_pct > 5 ? "trend-up" : latest.trend_pct < -5 ? "trend-down" : "trend-flat"}">
+           ${latest.trend_pct > 0 ? "+" : ""}${latest.trend_pct.toFixed(1)}%
+         </b>`
+      : "<b>—</b>";
+
+    const alertPills = (latest.alerts || []).map(a =>
+      `<span class="alert-pill">${a}</span>`
+    ).join("");
+
+    grid.innerHTML += `
+      <div class="card ${cls}">
+        <div class="card-header">
+          <div>
+            <div class="ticker-name">$${ticker}</div>
+            <div class="ticker-price">$${(latest.close || 0).toFixed(2)} · ${latest.date || ""}</div>
+          </div>
+          <span class="badge ${cls}">${badgeLabel(cls)}</span>
+        </div>
+
+        <div class="rvol-section">
+          <div class="rvol-label">
+            <span>Relative Volume</span>
+            <b>${rvol.toFixed(2)}×</b>
+          </div>
+          <div class="rvol-track">
+            <div class="rvol-fill ${cls}" style="width:${rvolWidth(rvol)}"></div>
+          </div>
+        </div>
+
+        <div class="stat-row">
+          <span>Today's Volume</span>
+          <b>${fmtVol(latest.volume)}</b>
+        </div>
+        <div class="stat-row">
+          <span>20-Day Avg</span>
+          <b>${fmtVol(latest.baseline)}</b>
+        </div>
+        <div class="stat-row">
+          <span>7-Day Trend</span>
+          ${trendHtml}
+        </div>
+        <div class="stat-row">
+          <span>Consecutive Elevated</span>
+          <b>${latest.consecutive || 0} day${latest.consecutive !== 1 ? "s" : ""}</b>
+        </div>
+
+        ${alertPills ? `<div class="alert-pills">${alertPills}</div>` : ""}
+      </div>`;
+  });
+}
+
+// ── RENDER CHARTS ────────────────────────────────────────────────────────
+
+const chartInstances = {};
+
+function renderCharts(data) {
+  const grid = document.getElementById("charts-grid");
+  grid.innerHTML = "";
+
+  Object.entries(data.tickers).forEach(([ticker, d]) => {
+    const history = (d.history || []).slice(-30);
+    if (!history.length) return;
+
+    const canvasId = `chart-${ticker}`;
+    grid.innerHTML += `
+      <div class="chart-card">
+        <div class="chart-title">$${ticker} — Daily Volume</div>
+        <div class="chart-subtitle">30-day window · baseline = 20-day rolling average</div>
+        <div class="chart-wrap"><canvas id="${canvasId}"></canvas></div>
+      </div>`;
+
+    // Slight delay so DOM renders
+    setTimeout(() => {
+      if (chartInstances[ticker]) chartInstances[ticker].destroy();
+
+      const labels   = history.map(r => r.date.slice(5));   // MM-DD
+      const volumes  = history.map(r => r.volume);
+      const baselines = history.map(r => r.baseline);
+
+      const barColors = history.map(r => {
+        const cls = alertClass(r.alerts);
+        return {
+          normal:   "rgba(99,102,241,0.6)",
+          elevated: "rgba(234,179,8,0.7)",
+          spike:    "rgba(249,115,22,0.8)",
+          critical: "rgba(239,68,68,0.85)",
+        }[cls];
+      });
+
+      chartInstances[ticker] = new Chart(
+        document.getElementById(canvasId).getContext("2d"),
+        {
+          type: "bar",
+          data: {
+            labels,
+            datasets: [
+              {
+                label: "Volume",
+                data: volumes,
+                backgroundColor: barColors,
+                borderRadius: 3,
+                order: 2,
+              },
+              {
+                label: "20-Day Avg",
+                data: baselines,
+                type: "line",
+                borderColor: "rgba(100,116,139,0.8)",
+                borderWidth: 1.5,
+                borderDash: [4, 3],
+                pointRadius: 0,
+                fill: false,
+                order: 1,
+              },
+            ],
+          },
+          options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: {
+              legend: {
+                labels: { color: "#64748b", font: { size: 11 }, boxWidth: 12 },
+              },
+              tooltip: {
+                callbacks: {
+                  label: ctx => ` ${fmtVol(ctx.raw)}`,
+                },
+              },
+            },
+            scales: {
+              x: {
+                ticks: { color: "#475569", font: { size: 10 } },
+                grid:  { color: "rgba(30,37,53,0.8)" },
+              },
+              y: {
+                ticks: {
+                  color: "#475569",
+                  font: { size: 10 },
+                  callback: v => fmtVol(v),
+                },
+                grid: { color: "rgba(30,37,53,0.8)" },
+              },
+            },
+          },
+        }
+      );
+    }, 50);
+  });
+}
+
+// ── RENDER ALERT LOG ─────────────────────────────────────────────────────
+
+function renderLog(data) {
+  const log = document.getElementById("alert-log");
+  const header = `<div class="log-row header-row">
+    <span>Date</span><span>Ticker</span><span>Alerts</span><span>RVOL</span>
+  </div>`;
+
+  const entries = (data.alert_log || []).slice().reverse().slice(0, 60);
+
+  if (!entries.length) {
+    log.innerHTML = header + `<div class="log-row">
+      <span style="color:var(--muted);grid-column:1/-1;text-align:center;padding:20px">No alerts recorded yet.</span>
+    </div>`;
+    return;
+  }
+
+  const rows = entries.map(e => {
+    const cls    = alertClass(e.alerts);
+    const alerts = (e.alerts || []).join(" · ") || "Normal";
+    return `<div class="log-row">
+      <span class="log-date">${e.date}</span>
+      <span class="log-ticker"><span class="badge ${cls}" style="font-size:9px">$${e.ticker}</span></span>
+      <span class="log-alerts">${alerts}</span>
+      <span class="log-rvol">${(e.rvol || 0).toFixed(2)}×</span>
+    </div>`;
+  }).join("");
+
+  log.innerHTML = header + rows;
+}
+
+// ── LOAD DATA ────────────────────────────────────────────────────────────
+
+async function loadData() {
+  try {
+    const resp = await fetch("volume_data.json?t=" + Date.now());
+    if (!resp.ok) throw new Error("not found");
+    const data = await resp.json();
+
+    document.getElementById("last-updated").textContent = data.last_updated || "unknown";
+    renderCards(data);
+    renderCharts(data);
+    renderLog(data);
+  } catch (e) {
+    // volume_data.json not found yet — empty state is already shown
+    console.log("volume_data.json not found — showing empty state");
+  }
+}
+
+loadData();
+// Auto-refresh every 5 minutes if page is left open
+setInterval(loadData, 5 * 60 * 1000);
+</script>
+</body>
+</html>
