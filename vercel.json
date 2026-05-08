@@ -1,6 +1,6 @@
 {
   "buildCommand": "echo 'Static site - no build needed'",
-  "outputDirectory": "public",
+  "outputDirectory": ".",
   "rewrites": [
     { "source": "/aurora", "destination": "/aurora.html" },
     { "source": "/consulting", "destination": "/consulting.html" },
@@ -22,8 +22,7 @@
     { "source": "/r2", "destination": "/rob-kremers-portfolio/r2/index.html" },
     { "source": "/projects", "destination": "/index-projects.html" },
     { "source": "/live-dashboard", "destination": "/live-dashboard.html" },
-    { "source": "/unfairmarket-live", "destination": "/unfairmarket-live.html" },
-    { "source": "/", "destination": "/index-projects.html" }
+    { "source": "/unfairmarket-live", "destination": "/unfairmarket-live.html" }
   ],
   "trailingSlash": false
 }
