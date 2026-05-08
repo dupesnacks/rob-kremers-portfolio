@@ -10,13 +10,25 @@ import os
 from contextlib import asynccontextmanager
 from pathlib import Path
 
-# Load .env file from project root
+# Load .env — try python-dotenv first, fall back to manual loader.
+# Ensures credentials load regardless of how uvicorn is started.
 try:
     from dotenv import load_dotenv
-    _env_path = Path(__file__).resolve().parent.parent.parent / ".env"
-    load_dotenv(_env_path)
+    load_dotenv(Path(__file__).resolve().parent.parent.parent / ".env")
 except ImportError:
-    pass  # python-dotenv not installed, rely on environment variables
+    _env_candidates = [
+        Path(__file__).resolve().parent.parent.parent / ".env",
+        Path.home() / "clawd" / "sma-outfits-engine" / ".env",
+        Path.home() / "clawd" / ".env",
+    ]
+    for _p in _env_candidates:
+        if _p.exists():
+            for _line in _p.read_text().splitlines():
+                _line = _line.strip()
+                if _line and not _line.startswith("#") and "=" in _line:
+                    _k, _v = _line.split("=", 1)
+                    os.environ.setdefault(_k.strip(), _v.strip())
+            break
 from datetime import datetime, timezone
 from typing import Any, Optional, List, Dict
 
