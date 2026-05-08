@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Sensory Explorer - Development Roadmap & Updates">
-    <title>Sensory Explorer - Development Updates</title>
+    <meta name="description" content="Rob Kremers - Strategic marketing consultant. Build brands that drive revenue. From startups to established businesses.">
+    <title>Rob Kremers | Strategic Marketing Consultant</title>
     <style>
         * {
             margin: 0;
@@ -12,406 +12,937 @@
             box-sizing: border-box;
         }
 
+        html {
+            scroll-behavior: smooth;
+        }
+
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-            background: linear-gradient(135deg, #0a0a1e 0%, #1a0a3e 50%, #0a0a1e 100%);
-            color: #e0e0e0;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', sans-serif;
             line-height: 1.6;
+            color: #1a1a1a;
+            background: #ffffff;
         }
 
-        .container {
-            max-width: 1000px;
+        /* Navigation */
+        nav {
+            position: sticky;
+            top: 0;
+            background: rgba(255, 255, 255, 0.98);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid #f0f0f0;
+            z-index: 1000;
+        }
+
+        nav .container {
+            max-width: 1200px;
             margin: 0 auto;
-            padding: 40px 20px;
+            padding: 0 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 70px;
         }
 
-        header {
-            text-align: center;
-            margin-bottom: 60px;
-            padding: 40px 0;
-            border-bottom: 2px solid rgba(0, 217, 255, 0.3);
-        }
-
-        h1 {
-            font-size: 2.5rem;
-            background: linear-gradient(135deg, #00d9ff, #667eea);
+        .logo {
+            font-size: 16px;
+            font-weight: 800;
+            letter-spacing: -0.5px;
+            text-decoration: none;
+            background: linear-gradient(135deg, #0D5E54 0%, #D4AF37 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
-            margin-bottom: 10px;
         }
 
-        .subtitle {
-            font-size: 1.1rem;
-            color: #999;
-        }
-
-        .updates-grid {
-            display: grid;
-            gap: 30px;
-            margin-bottom: 60px;
-        }
-
-        .update-section {
-            background: rgba(15, 15, 40, 0.8);
-            border: 1px solid rgba(0, 217, 255, 0.2);
-            border-radius: 12px;
-            padding: 30px;
-            transition: all 0.3s ease;
-        }
-
-        .update-section:hover {
-            border-color: rgba(0, 217, 255, 0.5);
-            background: rgba(15, 15, 40, 1);
-            transform: translateY(-2px);
-        }
-
-        .section-header {
+        nav ul {
             display: flex;
-            align-items: center;
-            gap: 15px;
-            margin-bottom: 20px;
-        }
-
-        .section-icon {
-            font-size: 2rem;
-        }
-
-        .section-title {
-            font-size: 1.5rem;
-            color: #00d9ff;
-        }
-
-        .status {
-            display: inline-block;
-            padding: 4px 12px;
-            border-radius: 20px;
-            font-size: 0.85rem;
-            font-weight: 600;
-            margin-left: auto;
-        }
-
-        .status.in-progress {
-            background: rgba(102, 126, 234, 0.3);
-            color: #667eea;
-        }
-
-        .status.planned {
-            background: rgba(233, 30, 99, 0.3);
-            color: #e91e63;
-        }
-
-        .status.completed {
-            background: rgba(40, 167, 69, 0.3);
-            color: #28a745;
-        }
-
-        .update-list {
             list-style: none;
+            gap: 40px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #666;
+            font-size: 13px;
+            font-weight: 600;
+            transition: color 0.3s;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        nav a:hover {
+            color: #0D5E54;
+        }
+
+        nav a.consulting-link {
+            color: #0D5E54;
+            font-weight: 700;
+            background: linear-gradient(135deg, #0D5E54 0%, #D4AF37 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            gap: 6px;
+            background: none;
+            border: none;
+            cursor: pointer;
             padding: 0;
         }
 
-        .update-item {
-            padding: 12px 0;
-            padding-left: 28px;
-            position: relative;
-            font-size: 0.95rem;
-            color: #ccc;
+        .hamburger span {
+            width: 24px;
+            height: 2px;
+            background: #1a1a1a;
+            transition: all 0.3s;
         }
 
-        .update-item::before {
-            content: '→';
-            position: absolute;
-            left: 0;
-            color: #00d9ff;
-            font-weight: bold;
+        .hamburger.active span:nth-child(1) {
+            transform: rotate(45deg) translate(8px, 8px);
         }
 
-        .update-item.done::before {
-            content: '✓';
-            color: #28a745;
+        .hamburger.active span:nth-child(2) {
+            opacity: 0;
         }
 
-        .update-item.done {
-            color: #999;
-            text-decoration: line-through;
+        .hamburger.active span:nth-child(3) {
+            transform: rotate(-45deg) translate(8px, -8px);
         }
 
-        .priority {
-            display: inline-block;
-            padding: 2px 8px;
-            margin-left: 8px;
-            border-radius: 4px;
-            font-size: 0.75rem;
-            font-weight: bold;
+        @media (max-width: 768px) {
+            .hamburger {
+                display: flex;
+            }
+
+            nav ul {
+                position: fixed;
+                top: 70px;
+                left: 0;
+                right: 0;
+                background: white;
+                border-bottom: 1px solid #f0f0f0;
+                flex-direction: column;
+                gap: 0;
+                max-height: 0;
+                overflow: hidden;
+                transition: max-height 0.3s ease;
+                padding: 0;
+                margin: 0;
+                z-index: 999;
+            }
+
+            nav ul.active {
+                max-height: 500px;
+            }
+
+            nav ul li {
+                padding: 16px 20px;
+                border-bottom: 1px solid #f0f0f0;
+            }
         }
 
-        .priority.critical {
-            background: rgba(220, 20, 60, 0.3);
-            color: #ff4444;
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 40px;
         }
 
-        .priority.high {
-            background: rgba(233, 30, 99, 0.3);
-            color: #e91e63;
+        /* Hero Section */
+        .hero {
+            padding: 160px 0 100px;
+            background: linear-gradient(135deg, rgba(13, 94, 84, 0.02) 0%, rgba(212, 175, 55, 0.02) 100%);
+            border-bottom: 1px solid #f0f0f0;
         }
 
-        .last-updated {
-            text-align: center;
-            color: #666;
-            margin-top: 60px;
-            padding-top: 20px;
-            border-top: 1px solid rgba(0, 217, 255, 0.1);
-            font-size: 0.9rem;
+        .hero h1 {
+            font-size: 64px;
+            line-height: 1.15;
+            margin-bottom: 30px;
+            font-weight: 800;
+            letter-spacing: -1.5px;
+            background: linear-gradient(135deg, #1a1a1a 0%, #0D5E54 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
         }
 
-        .legend {
-            background: rgba(15, 15, 40, 0.5);
-            border: 1px solid rgba(0, 217, 255, 0.1);
-            border-radius: 8px;
-            padding: 20px;
+        .hero .subheading {
+            font-size: 22px;
+            color: #555;
             margin-bottom: 40px;
-            font-size: 0.9rem;
+            max-width: 750px;
+            font-weight: 500;
+            line-height: 1.6;
         }
 
-        .legend-item {
+        .hero-statement {
+            font-size: 16px;
+            line-height: 1.8;
+            color: #555;
+            max-width: 750px;
+            margin-bottom: 40px;
+        }
+
+        .hero-statement strong {
+            font-weight: 700;
+            color: #0D5E54;
+        }
+
+        .hero-cta {
+            display: flex;
+            gap: 20px;
+            margin-top: 50px;
+        }
+
+        .btn {
             display: inline-block;
-            margin-right: 20px;
+            padding: 16px 40px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 14px;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            border: none;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #0D5E54 0%, #05433a 100%);
+            color: white;
+            box-shadow: 0 10px 30px rgba(13, 94, 84, 0.2);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 15px 40px rgba(13, 94, 84, 0.3);
+        }
+
+        .btn-secondary {
+            background: white;
+            color: #0D5E54;
+            border: 2px solid #0D5E54;
+        }
+
+        .btn-secondary:hover {
+            background: #f9f9f9;
+        }
+
+        /* Services Grid */
+        .services {
+            padding: 120px 0;
+            border-bottom: 1px solid #f0f0f0;
+        }
+
+        .services h2 {
+            font-size: 48px;
+            font-weight: 800;
+            margin-bottom: 20px;
+            background: linear-gradient(135deg, #1a1a1a 0%, #0D5E54 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .services-subtitle {
+            font-size: 18px;
+            color: #666;
+            margin-bottom: 60px;
+            max-width: 700px;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 40px;
+        }
+
+        .service-card {
+            padding: 40px;
+            background: #f9f9f9;
+            border-radius: 12px;
+            border: 1px solid #f0f0f0;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .service-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: linear-gradient(90deg, #0D5E54 0%, #D4AF37 100%);
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform 0.3s ease;
+        }
+
+        .service-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+            border-color: #e8e8e8;
+        }
+
+        .service-card:hover::before {
+            transform: scaleX(1);
+        }
+
+        .service-icon {
+            font-size: 32px;
+            margin-bottom: 16px;
+            display: block;
+        }
+
+        .service-card h3 {
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 16px;
+            color: #1a1a1a;
+        }
+
+        .service-card p {
+            font-size: 14px;
+            line-height: 1.8;
+            color: #666;
+        }
+
+        /* What I Do Section */
+        .what-i-do {
+            padding: 120px 0;
+            border-bottom: 1px solid #f0f0f0;
+        }
+
+        .what-i-do h2 {
+            font-size: 48px;
+            font-weight: 800;
+            margin-bottom: 60px;
+            background: linear-gradient(135deg, #1a1a1a 0%, #0D5E54 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .what-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 80px;
+            align-items: start;
+        }
+
+        .what-left {
+            font-size: 16px;
+            line-height: 1.9;
+            color: #555;
+        }
+
+        .what-left p {
+            margin-bottom: 24px;
+        }
+
+        .what-left strong {
+            color: #0D5E54;
+            font-weight: 700;
+        }
+
+        .what-right {
+            background: linear-gradient(135deg, rgba(13, 94, 84, 0.05) 0%, rgba(212, 175, 55, 0.05) 100%);
+            padding: 50px;
+            border-radius: 12px;
+            border: 1px solid rgba(13, 94, 84, 0.1);
+        }
+
+        .what-right h3 {
+            font-size: 16px;
+            font-weight: 800;
+            color: #0D5E54;
+            text-transform: uppercase;
+            letter-spacing: 0.8px;
+            margin-bottom: 30px;
+        }
+
+        .strength-list {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+        }
+
+        .strength-item {
+            padding: 16px;
+            background: white;
+            border-radius: 8px;
+            border-left: 3px solid #0D5E54;
+        }
+
+        .strength-item h4 {
+            font-size: 14px;
+            font-weight: 700;
+            color: #1a1a1a;
+            margin-bottom: 6px;
+        }
+
+        .strength-item p {
+            font-size: 13px;
+            line-height: 1.6;
+            color: #666;
+        }
+
+        /* Approach Section */
+        .approach {
+            padding: 120px 0;
+            border-bottom: 1px solid #f0f0f0;
+        }
+
+        .approach h2 {
+            font-size: 48px;
+            font-weight: 800;
+            margin-bottom: 60px;
+            background: linear-gradient(135deg, #1a1a1a 0%, #0D5E54 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .approach-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+        }
+
+        .approach-item {
+            padding: 40px;
+            background: white;
+            border: 1px solid #f0f0f0;
+            border-radius: 12px;
+            transition: all 0.3s ease;
+        }
+
+        .approach-item:hover {
+            border-color: #0D5E54;
+            box-shadow: 0 10px 30px rgba(13, 94, 84, 0.1);
+        }
+
+        .approach-item h3 {
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 16px;
+            color: #1a1a1a;
+        }
+
+        .approach-item p {
+            font-size: 14px;
+            line-height: 1.8;
+            color: #666;
+        }
+
+        /* Work Section */
+        .work {
+            padding: 120px 0;
+            border-bottom: 1px solid #f0f0f0;
+        }
+
+        .work h2 {
+            font-size: 48px;
+            font-weight: 800;
+            margin-bottom: 60px;
+            background: linear-gradient(135deg, #1a1a1a 0%, #0D5E54 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .work-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+        }
+
+        .work-card {
+            padding: 40px;
+            background: #f9f9f9;
+            border-radius: 12px;
+            border: 1px solid #f0f0f0;
+            transition: all 0.3s ease;
+        }
+
+        .work-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.1);
+        }
+
+        .work-card h3 {
+            font-size: 18px;
+            font-weight: 700;
             margin-bottom: 10px;
+            color: #1a1a1a;
         }
 
-        .badge-example {
-            display: inline-block;
-            padding: 4px 12px;
-            border-radius: 4px;
-            margin-right: 8px;
-            font-size: 0.8rem;
+        .work-card .meta {
+            font-size: 12px;
+            color: #999;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 20px;
+        }
+
+        .work-card p {
+            font-size: 14px;
+            line-height: 1.8;
+            color: #666;
+            margin-bottom: 16px;
+        }
+
+        .work-card strong {
+            color: #0D5E54;
+        }
+
+        /* Contact Section */
+        .contact {
+            padding: 120px 0;
+            background: linear-gradient(135deg, #0D5E54 0%, #05433a 100%);
+            color: white;
+        }
+
+        .contact h2 {
+            font-size: 48px;
+            font-weight: 800;
+            margin-bottom: 30px;
+        }
+
+        .contact-content {
+            max-width: 700px;
+        }
+
+        .contact-content p {
+            font-size: 16px;
+            line-height: 1.8;
+            margin-bottom: 40px;
+            opacity: 0.95;
+        }
+
+        .contact-cta {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .btn-light {
+            background: white;
+            color: #0D5E54;
+            padding: 16px 40px;
+            border-radius: 6px;
+            font-weight: 700;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn-light:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .btn-outline-light {
+            background: transparent;
+            color: white;
+            border: 2px solid white;
+            padding: 14px 38px;
+            border-radius: 6px;
+            font-weight: 700;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            cursor: pointer;
+        }
+
+        .btn-outline-light:hover {
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        /* Footer */
+        footer {
+            background: #1a1a1a;
+            color: #666;
+            padding: 40px 0;
+            text-align: center;
+            font-size: 13px;
+        }
+
+        footer a {
+            color: #999;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            color: #0D5E54;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            nav .container {
+                padding: 0 20px;
+            }
+
+            nav ul {
+                gap: 20px;
+            }
+
+            .container {
+                padding: 0 20px;
+            }
+
+            .hero {
+                padding: 100px 0 60px;
+            }
+
+            .hero h1 {
+                font-size: 36px;
+            }
+
+            .hero .subheading {
+                font-size: 18px;
+            }
+
+            .hero-cta {
+                flex-direction: column;
+            }
+
+            .btn {
+                width: 100%;
+                text-align: center;
+            }
+
+            .services-grid,
+            .approach-grid,
+            .work-grid,
+            .what-content {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+
+            .what-right {
+                padding: 30px;
+            }
+
+            .services h2,
+            .what-i-do h2,
+            .approach h2,
+            .work h2,
+            .contact h2 {
+                font-size: 36px;
+            }
+
+            .services-subtitle {
+                font-size: 16px;
+            }
+
+            .contact-cta {
+                flex-direction: column;
+            }
+
+            .contact-cta .btn-light,
+            .contact-cta .btn-outline-light {
+                width: 100%;
+                text-align: center;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero h1 {
+                font-size: 28px;
+            }
+
+            nav a {
+                font-size: 11px;
+            }
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>🚀 Sensory Explorer</h1>
-            <p class="subtitle">Development Updates & Roadmap</p>
-        </header>
-
-        <div class="legend">
-            <div class="legend-item">
-                Status: 
-                <span class="badge-example status completed">Completed</span>
-                <span class="badge-example status in-progress">In Progress</span>
-                <span class="badge-example status planned">Planned</span>
-            </div>
-            <div class="legend-item">
-                Priority: 
-                <span class="badge-example priority critical">CRITICAL</span>
-                <span class="badge-example priority high">HIGH</span>
-            </div>
+    <!-- Navigation -->
+    <nav>
+        <div class="container">
+            <a href="#" class="logo">Rob Kremers</a>
+            <button class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul id="nav-menu">
+                <li><a href="#services">Services</a></li>
+                <li><a href="#what">Approach</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="consulting.html" class="consulting-link">Consulting</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
         </div>
+    </nav>
 
-        <div class="updates-grid">
-            <!-- ONBOARDING -->
-            <div class="update-section">
-                <div class="section-header">
-                    <span class="section-icon">📱</span>
-                    <h2 class="section-title">Onboarding Redesign</h2>
-                    <span class="status in-progress">In Progress</span>
-                </div>
-                <ul class="update-list">
-                    <li class="update-item">Redesign Cards 1-4 with parent-friendly copy <span class="priority critical">CRITICAL</span></li>
-                    <li class="update-item">Shift from form-capture to transformation-focused messaging</li>
-                    <li class="update-item">Reduce upfront food collection (3-5 foods vs 35) to prevent false progression</li>
-                    <li class="update-item">Add first in-app food logging action before onboarding ends</li>
-                    <li class="update-item">Remove all certificate references (Phase 2 feature)</li>
-                    <li class="update-item">Test with 3 parent beta testers for feedback</li>
-                </ul>
-            </div>
-
-            <!-- BRIDGE FOODS & LLM -->
-            <div class="update-section">
-                <div class="section-header">
-                    <span class="section-icon">🧠</span>
-                    <h2 class="section-title">Bridge Food LLM Integration</h2>
-                    <span class="status in-progress">In Progress</span>
-                </div>
-                <ul class="update-list">
-                    <li class="update-item">Evaluate current bridge food algorithm limitations <span class="priority critical">CRITICAL</span></li>
-                    <li class="update-item">Implement Qwen 3.5 Plus API (~$2,600/year @ 100K users)</li>
-                    <li class="update-item">Create LLM prompts for sensory-based food matching</li>
-                    <li class="update-item">Build /api/bridge-foods/recommend endpoint</li>
-                    <li class="update-item">Integrate parent-friendly "Why This Works" explanations</li>
-                    <li class="update-item">Add caching (24h) to reduce API calls</li>
-                    <li class="update-item">Implement fallback logic (revert to current algo if API fails)</li>
-                    <li class="update-item">Track parent feedback for continuous improvement</li>
-                </ul>
-            </div>
-
-            <!-- BADGE SYSTEM -->
-            <div class="update-section">
-                <div class="section-header">
-                    <span class="section-icon">🏆</span>
-                    <h2 class="section-title">Badge System Redesign</h2>
-                    <span class="status in-progress">In Progress</span>
-                </div>
-                <ul class="update-list">
-                    <li class="update-item">Create 20 unique achievement badges <span class="priority critical">CRITICAL</span></li>
-                    <li class="update-item">Badge categories: COMMON, UNCOMMON, RARE, LEGENDARY</li>
-                    <li class="update-item">Badges tracked (not "worn") - collected in app</li>
-                    <li class="update-item">Food journey themed names & graphics</li>
-                    <li class="update-item">Generate Gemini prompts for visual asset creation (256×256px)</li>
-                    <li class="update-item">Remove old "cosmetics & gear" wearable system</li>
-                    <li class="update-item">Create badge unlock conditions (phase completion, milestones, streaks)</li>
-                    <li class="update-item">Add badge showcase to Settings/Cosmetics tab</li>
-                    <li class="update-item">Parent dashboard shows recent badge unlocks + next badges to earn</li>
-                </ul>
-            </div>
-
-            <!-- FOOD LOGGING & ANALYTICS -->
-            <div class="update-section">
-                <div class="section-header">
-                    <span class="section-icon">📊</span>
-                    <h2 class="section-title">Food Logging & Analytics UI Polish</h2>
-                    <span class="status in-progress">In Progress</span>
-                </div>
-                <ul class="update-list">
-                    <li class="update-item">Fix sensory progress report export (show ALL 35+ foods, not ~10) <span class="priority critical">CRITICAL</span></li>
-                    <li class="update-item">Align Analytics "Ready For" with Suggest tab recommendations <span class="priority critical">CRITICAL</span></li>
-                    <li class="update-item">Fix Try Next foods card truncation (add expand on tap)</li>
-                    <li class="update-item">Add sort category labels (show "CRUNCHY" header when sorted by texture)</li>
-                    <li class="update-item">Make "What are bridge foods?" an expandable box with visual cue</li>
-                    <li class="update-item">Fix Level badge positioning (Settings tab cut-off)</li>
-                    <li class="update-item">Display color emoji & food group tags during SOS phase tracking</li>
-                </ul>
-            </div>
-
-            <!-- POINTS & REWARDS ECONOMY -->
-            <div class="update-section">
-                <div class="section-header">
-                    <span class="section-icon">⭐</span>
-                    <h2 class="section-title">Points & Rewards Economy</h2>
-                    <span class="status planned">Planned</span>
-                </div>
-                <ul class="update-list">
-                    <li class="update-item">Define points per action (log food, try new phase, accept bridge, etc.) <span class="priority high">HIGH</span></li>
-                    <li class="update-item">Set badge unlock thresholds & progression pace</li>
-                    <li class="update-item">Test economy with Mack account (avoid slow/fast progression)</li>
-                    <li class="update-item">Create celebration moments (confetti, animations at milestones)</li>
-                    <li class="update-item">Add explorer walk-progress visualization</li>
-                    <li class="update-item">Implement 3-day streak fire animation + badge unlocks at 7/30 days</li>
-                </ul>
-            </div>
-
-            <!-- SETTINGS & NAVIGATION -->
-            <div class="update-section">
-                <div class="section-header">
-                    <span class="section-icon">⚙️</span>
-                    <h2 class="section-title">Settings & Navigation Fixes</h2>
-                    <span class="status planned">Planned</span>
-                </div>
-                <ul class="update-list">
-                    <li class="update-item">Fix Settings back button bug (Settings → explorer detail navigation) <span class="priority critical">CRITICAL</span></li>
-                    <li class="update-item">Test all tab transitions (Analytics → Settings, Suggest → Settings, etc.)</li>
-                    <li class="update-item">Verify no crashes on iOS + Android</li>
-                    <li class="update-item">Comprehensive UI testing (mobile/tablet/desktop)</li>
-                </ul>
-            </div>
-
-            <!-- MARKETING & ASSETS -->
-            <div class="update-section">
-                <div class="section-header">
-                    <span class="section-icon">📸</span>
-                    <h2 class="section-title">Marketing Assets & App Store</h2>
-                    <span class="status planned">Planned</span>
-                </div>
-                <ul class="update-list">
-                    <li class="update-item">Generate App Store screenshots (5-8 ads via app-store-screenshots tool)</li>
-                    <li class="update-item">Domain acquisition & email setup (post-name finalization)</li>
-                    <li class="update-item">Website copy redesign (clinical credibility → smart algorithm positioning)</li>
-                    <li class="update-item">Create UGC videos (2 scripts ready, Nano Banana + Kling AI generation)</li>
-                    <li class="update-item">Therapist outreach package (clinical summary, credentials, features)</li>
-                    <li class="update-item">Generate app screenshots from current builds</li>
-                </ul>
-            </div>
-
-            <!-- DATABASE & CONTENT -->
-            <div class="update-section">
-                <div class="section-header">
-                    <span class="section-icon">🍽️</span>
-                    <h2 class="section-title">Food Database & Content</h2>
-                    <span class="status completed">Completed</span>
-                </div>
-                <ul class="update-list">
-                    <li class="update-item done">Color attributes (9 colors) added to all 62+ foods</li>
-                    <li class="update-item done">Food Group attributes (7 groups) added to all foods</li>
-                    <li class="update-item done">Composite foods tagged as "Mixed" food group</li>
-                    <li class="update-item done">Onboarding goal food selection UI with color/group tags</li>
-                    <li class="update-item">Expand food database to 100+ foods (ongoing)</li>
-                    <li class="update-item">Add food icon generation via DALL-E 3 (~40-50 core icons)</li>
-                    <li class="update-item">Generate 5 senses icons (Look, Touch, Smell, Lick, Taste)</li>
-                </ul>
-            </div>
-
-            <!-- WEBSITE & DEPLOYMENT -->
-            <div class="update-section">
-                <div class="section-header">
-                    <span class="section-icon">🌐</span>
-                    <h2 class="section-title">Website & Deployment</h2>
-                    <span class="status completed">Completed</span>
-                </div>
-                <ul class="update-list">
-                    <li class="update-item done">Flavor Galaxy landing page live @ robkremers.com/flavorgalaxy</li>
-                    <li class="update-item done">All 8 planet images deployed (absolute URLs)</li>
-                    <li class="update-item done">All 4 explorer characters deployed (JPG + PNG versions)</li>
-                    <li class="update-item done">Modal click functionality for planets & explorers</li>
-                    <li class="update-item done">Explorer video playback in modals (4 videos)</li>
-                    <li class="update-item done">Responsive design (mobile/tablet/desktop)</li>
-                    <li class="update-item done">Pricing section with trial messaging</li>
-                    <li class="update-item done">Parent Intelligence premium features section</li>
-                </ul>
-            </div>
-
-            <!-- BETA TESTING -->
-            <div class="update-section">
-                <div class="section-header">
-                    <span class="section-icon">🧪</span>
-                    <h2 class="section-title">Beta Testing & Feedback</h2>
-                    <span class="status in-progress">In Progress</span>
-                </div>
-                <ul class="update-list">
-                    <li class="update-item">Beta launch Week of March 5 with 5 Portland families <span class="priority high">HIGH</span></li>
-                    <li class="update-item">Current tester: Mack (6y, Speed Explorer) - 35 safe foods logged</li>
-                    <li class="update-item">Feedback: Export incomplete, Analytics/Suggest misalignment, planet progression too fast</li>
-                    <li class="update-item">Collect screenshots from beta testing for LLM validation</li>
-                    <li class="update-item">Target metrics: 50% day-90 retention, 40-50% trial→paid conversion</li>
-                    <li class="update-item">Weekly feedback rounds with beta families</li>
-                </ul>
-            </div>
-
-            <!-- BLOCKED ITEMS -->
-            <div class="update-section">
-                <div class="section-header">
-                    <span class="section-icon">🚫</span>
-                    <h2 class="section-title">Blocked / Awaiting</h2>
-                    <span class="status planned">Awaiting</span>
-                </div>
-                <ul class="update-list">
-                    <li class="update-item">App name finalization: "Sensory Explorer" vs "Flavor Galaxy" <span class="priority critical">CRITICAL</span></li>
-                    <li class="update-item">Domain acquisition (post-name-lock)</li>
-                    <li class="update-item">Designer batch for food icons (~$300-400)</li>
-                    <li class="update-item">Orbit explorer redesign as Black child (minimal effort, high impact)</li>
-                    <li class="update-item">Screenshots from beta testing for LLM validation</li>
-                    <li class="update-item">Clarify points economy thresholds (before Rork codes)</li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="last-updated">
-            <p>Last Updated: March 10, 2026 | Next Update: March 15, 2026</p>
-            <p style="margin-top: 10px; font-size: 0.85rem; color: #555;">
-                🔗 Questions? Check the Discord #flavor-galaxy-quest channel
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>I build marketing that actually drives revenue.</h1>
+            <p class="subheading">Whether you're a local pizza shop, dental practice, or scaling startup—we'll clarify your market position and create systems that work.</p>
+            <p class="hero-statement">
+                For 15+ years, I've helped brands across multiple industries and company sizes solve the same core problem: <strong>How do we cut through the noise and connect with customers in a way that matters?</strong> The answer isn't fancy—it's strategic clarity, consistent messaging, and systems that scale. Let's build that together.
             </p>
+            <div class="hero-cta">
+                <a href="#contact" class="btn btn-primary">Let's Talk</a>
+                <a href="#what" class="btn btn-secondary">See How</a>
+            </div>
         </div>
-    </div>
+    </section>
+
+    <!-- Services Grid -->
+    <section class="services" id="services">
+        <div class="container">
+            <h2>What I Do</h2>
+            <p class="services-subtitle">Strategic consulting across brand positioning, demand generation, content, and customer messaging. Tailored to your size and market.</p>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <span class="service-icon">📍</span>
+                    <h3>Brand Positioning</h3>
+                    <p>Clarify who you are, who you serve, and why you're different. Build a positioning that resonates and sticks with your ideal customers.</p>
+                </div>
+
+                <div class="service-card">
+                    <span class="service-icon">📈</span>
+                    <h3>Go-To-Market Strategy</h3>
+                    <p>Launch a new service, enter a new market, or restructure your current approach. I'll map the entire customer journey and execution plan.</p>
+                </div>
+
+                <div class="service-card">
+                    <span class="service-icon">✍️</span>
+                    <h3>Content & Messaging</h3>
+                    <p>Develop messaging frameworks and content strategies that speak directly to your customers' actual problems and desires.</p>
+                </div>
+
+                <div class="service-card">
+                    <span class="service-icon">🔄</span>
+                    <h3>Marketing Systems</h3>
+                    <p>Build repeatable marketing processes that work across channels. Strategy that scales without burning out your team.</p>
+                </div>
+
+                <div class="service-card">
+                    <span class="service-icon">🤝</span>
+                    <h3>Cross-Functional Alignment</h3>
+                    <p>Get sales, product, operations, and marketing on the same page. Clear strategy means clear execution across your entire organization.</p>
+                </div>
+
+                <div class="service-card">
+                    <span class="service-icon">📊</span>
+                    <h3>Marketing Measurement</h3>
+                    <p>Stop guessing. Connect your marketing efforts to business outcomes. Build dashboards and systems that show what actually matters.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What I Do Section -->
+    <section class="what-i-do" id="what">
+        <div class="container">
+            <h2>My Approach</h2>
+            <div class="what-content">
+                <div class="what-left">
+                    <p>
+                        <strong>Most marketing feels disconnected from business reality.</strong> Agencies focus on campaigns. In-house teams focus on tactics. Nobody's focused on the system.
+                    </p>
+                    <p>
+                        My job is to build clarity and structure. That means starting with your actual business problem, mapping it precisely, and creating a repeatable system that works—whether you have 5 people or 50.
+                    </p>
+                    <p>
+                        I work closely with founders, leadership teams, and marketing managers across industries. I don't believe in one-size-fits-all solutions. Your strategy reflects your market, your strengths, and your constraints.
+                    </p>
+                    <p>
+                        <strong>The outcome: clarity on where you're going, how you'll get there, and what success actually looks like.</strong>
+                    </p>
+                </div>
+                <div class="what-right">
+                    <h3>Core Strengths</h3>
+                    <div class="strength-list">
+                        <div class="strength-item">
+                            <h4>Strategic Clarity</h4>
+                            <p>Cut through complexity. Define your market position and competitive advantage clearly.</p>
+                        </div>
+                        <div class="strength-item">
+                            <h4>Systems Design</h4>
+                            <p>Build repeatable processes that scale. Not campaigns—infrastructure.</p>
+                        </div>
+                        <div class="strength-item">
+                            <h4>Cross-Functional Leadership</h4>
+                            <p>Get your entire organization aligned around clear goals and messaging.</p>
+                        </div>
+                        <div class="strength-item">
+                            <h4>Measurable Results</h4>
+                            <p>Connect marketing to revenue. Track what matters. Make data-driven decisions.</p>
+                        </div>
+                        <div class="strength-item">
+                            <h4>Industry Fluency</h4>
+                            <p>15+ years across consumer brands, startups, tech, and service businesses. I speak your language.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Approach Section -->
+    <section class="approach">
+        <div class="container">
+            <h2>How I Think</h2>
+            <div class="approach-grid">
+                <div class="approach-item">
+                    <h3>Strategy First</h3>
+                    <p>Every project starts with clarity: What's the actual problem? What are we trying to achieve? What's the market reality? Tactics come second.</p>
+                </div>
+
+                <div class="approach-item">
+                    <h3>Build Systems, Not Campaigns</h3>
+                    <p>A campaign is a moment. A system is permanent capability. I help you build the latter—repeatable, scalable, sustainable.</p>
+                </div>
+
+                <div class="approach-item">
+                    <h3>Connect to Revenue</h3>
+                    <p>Marketing's job is to drive business results. That means thinking about customer acquisition, retention, and lifetime value. Not vanity metrics.</p>
+                </div>
+
+                <div class="approach-item">
+                    <h3>Lead Across Silos</h3>
+                    <p>The best decisions require input from sales, product, operations, and customer teams. Someone needs to connect those dots. That's me.</p>
+                </div>
+
+                <div class="approach-item">
+                    <h3>Clarity Over Complexity</h3>
+                    <p>If you can't explain it simply, you don't understand it. My job is to take complexity and make it clear, compelling, and actionable.</p>
+                </div>
+
+                <div class="approach-item">
+                    <h3>Measure What Matters</h3>
+                    <p>Not all metrics are created equal. I focus on KPIs that actually impact your business: customer acquisition cost, lifetime value, retention, revenue.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Work Section -->
+    <section class="work" id="work">
+        <div class="container">
+            <h2>Selected Work</h2>
+            
+            <div class="work-grid">
+                <div class="work-card">
+                    <h3>Nike Global Basketball Retail Playbook</h3>
+                    <p class="meta">Strategy / Retail Systems / Global Execution</p>
+                    <p>
+                        <strong>Challenge:</strong> Nike Basketball needed a globally scalable playbook that could guide retail partners and market teams on consistent execution across regions.
+                    </p>
+                    <p>
+                        <strong>Solution:</strong> Built a structured playbook covering category, product, service, and environment with detailed guidance on positioning and retail execution.
+                    </p>
+                    <p>
+                        <strong>Impact:</strong> Set the standard for how Nike Basketball shows up in retail worldwide, enabling markets to execute with clarity.
+                    </p>
+                </div>
+
+                <div class="work-card">
+                    <h3>adidas "Earn Your Spotlight" Campaign</h3>
+                    <p class="meta">Campaign Strategy / Multi-Channel / Retail Integration</p>
+                    <p>
+                        <strong>Challenge:</strong> Launch exclusive training apparel at Dick's Sporting Goods with emotional resonance and measurable commercial impact.
+                    </p>
+                    <p>
+                        <strong>Solution:</strong> Multi-channel strategy across social, digital, retail, and live activations featuring athletes and influencers.
+                    </p>
+                    <p>
+                        <strong>Results:</strong> 55M+ impressions, 2.7M video views, $2.6M attributed revenue, 460K store visits.
+                    </p>
+                </div>
+
+                <div class="work-card">
+                    <h3>adidas DSG Fixture Rollout</h3>
+                    <p class="meta">Retail Execution / Account Management / Strategy</p>
+                    <p>
+                        <strong>Challenge:</strong> Roll out a new fixture system across Dick's Sporting Goods while balancing adidas' global brand vision with retail operational constraints.
+                    </p>
+                    <p>
+                        <strong>Solution:</strong> Led end-to-end North American rollout. Managed prototyping, vendor relationships, and strategic fixture selection.
+                    </p>
+                    <p>
+                        <strong>Impact:</strong> Successfully deployed across DSG locations, creating premium brand experience within multi-brand retail environment.
+                    </p>
+                </div>
+
+                <div class="work-card">
+                    <h3>CreateAI Go-To-Market Strategy</h3>
+                    <p class="meta">B2B Positioning / Demand Generation / Sales Enablement</p>
+                    <p>
+                        <strong>Challenge:</strong> Position an autonomous vehicle / generative AI company for enterprise customers and regulators in a novel market.
+                    </p>
+                    <p>
+                        <strong>Solution:</strong> Developed brand identity, positioning framework, and sales enablement materials that translated technical innovation into business language.
+                    </p>
+                    <p>
+                        <strong>Impact:</strong> Clear market positioning that enabled sales conversations with major fleet operators and enterprise clients.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2>Ready to Build Something Great?</h2>
+            <div class="contact-content">
+                <p>
+                    Whether you're looking to clarify your brand positioning, launch a new service, or build marketing systems that actually work—let's talk about what's possible.
+                </p>
+                <div class="contact-cta">
+                    <a href="mailto:rkremers@gmail.com" class="btn btn-light">Email Me</a>
+                    <a href="tel:+15038300732" class="btn btn-outline-light">Call Me</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Rob Kremers. Strategic Marketing Consultant. <a href="consulting.html">See OpenClaw Consulting</a></p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const hamburger = document.getElementById('hamburger');
+        const navMenu = document.getElementById('nav-menu');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+
+        // Close menu when a link is clicked
+        navMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                hamburger.classList.remove('active');
+                navMenu.classList.remove('active');
+            });
+        });
+    </script>
 </body>
 </html>
