@@ -1,0 +1,970 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dental App MVP: Strategic Research & Feasibility Report</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.65;
+            color: #333;
+            background: #f8f9fa;
+        }
+        
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            background: white;
+            padding: 60px 45px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+        
+        h1 {
+            color: #0066cc;
+            font-size: 2.8em;
+            margin-bottom: 15px;
+            border-bottom: 3px solid #0066cc;
+            padding-bottom: 20px;
+        }
+        
+        .subtitle {
+            font-size: 1.3em;
+            color: #666;
+            margin-bottom: 10px;
+            font-style: italic;
+        }
+        
+        .date {
+            color: #999;
+            font-size: 0.95em;
+            margin-bottom: 40px;
+        }
+        
+        h2 {
+            color: #0066cc;
+            font-size: 2em;
+            margin-top: 50px;
+            margin-bottom: 25px;
+            border-left: 5px solid #0066cc;
+            padding-left: 20px;
+        }
+        
+        h3 {
+            color: #333;
+            font-size: 1.4em;
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+        
+        h4 {
+            color: #555;
+            font-size: 1.1em;
+            margin-top: 20px;
+            margin-bottom: 12px;
+        }
+        
+        .section {
+            background: #f9f9f9;
+            border-left: 4px solid #0066cc;
+            padding: 25px;
+            margin: 25px 0;
+            border-radius: 4px;
+        }
+        
+        .key-finding {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+        
+        .recommendation {
+            background: #d4edda;
+            border-left: 4px solid #28a745;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+        
+        .warning {
+            background: #f8d7da;
+            border-left: 4px solid #dc3545;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 25px 0;
+            font-size: 0.95em;
+        }
+        
+        th {
+            background: #0066cc;
+            color: white;
+            padding: 14px;
+            text-align: left;
+            font-weight: 600;
+        }
+        
+        td {
+            border-bottom: 1px solid #ddd;
+            padding: 12px;
+        }
+        
+        tr:nth-child(even) {
+            background: #f9f9f9;
+        }
+        
+        ul, ol {
+            margin: 15px 0 15px 25px;
+        }
+        
+        li {
+            margin-bottom: 10px;
+            line-height: 1.7;
+        }
+        
+        .code {
+            background: #f5f5f5;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            padding: 15px;
+            margin: 15px 0;
+            font-family: 'Monaco', 'Courier New', monospace;
+            font-size: 0.9em;
+            overflow-x: auto;
+        }
+        
+        .feature-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin: 20px 0;
+        }
+        
+        .feature-item {
+            background: #f0f7ff;
+            border: 1px solid #0066cc;
+            border-radius: 4px;
+            padding: 15px;
+        }
+        
+        .feature-item h4 {
+            color: #0066cc;
+            margin-top: 0;
+        }
+        
+        .timeline {
+            background: #f9f9f9;
+            border-left: 4px solid #0066cc;
+            padding: 20px;
+            margin: 20px 0;
+        }
+        
+        .phase {
+            margin-bottom: 25px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        .phase:last-child {
+            border-bottom: none;
+        }
+        
+        .phase-title {
+            color: #0066cc;
+            font-weight: 600;
+            font-size: 1.1em;
+            margin-bottom: 10px;
+        }
+        
+        .footer {
+            margin-top: 60px;
+            padding-top: 30px;
+            border-top: 2px solid #ddd;
+            text-align: center;
+            color: #888;
+            font-size: 0.9em;
+        }
+        
+        .toc {
+            background: #f0f7ff;
+            border: 2px solid #0066cc;
+            border-radius: 6px;
+            padding: 25px;
+            margin: 30px 0;
+        }
+        
+        .toc h3 {
+            margin-top: 0;
+            color: #0066cc;
+        }
+        
+        .toc ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .toc li {
+            margin: 8px 0;
+            padding-left: 20px;
+            position: relative;
+        }
+        
+        .toc li:before {
+            content: "→";
+            position: absolute;
+            left: 0;
+            color: #0066cc;
+            font-weight: bold;
+        }
+        
+        .toc a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+        
+        .toc a:hover {
+            text-decoration: underline;
+        }
+        
+        .verdict {
+            background: linear-gradient(135deg, #d4edda 0%, #c3e6cb 100%);
+            border: 2px solid #28a745;
+            border-radius: 6px;
+            padding: 30px;
+            margin: 40px 0;
+        }
+        
+        .verdict h3 {
+            color: #155724;
+            margin-top: 0;
+        }
+        
+        .verdict p {
+            color: #155724;
+            font-size: 1.05em;
+            margin: 10px 0;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 30px 20px;
+            }
+            
+            h1 {
+                font-size: 2em;
+            }
+            
+            h2 {
+                font-size: 1.5em;
+            }
+            
+            .feature-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            table {
+                font-size: 0.85em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🦷 Dental App MVP: Strategic Research & Feasibility Report</h1>
+        <p class="subtitle">Building a Layer-On Patient Engagement & Practice Efficiency App for Small Independent Dental Offices</p>
+        <p class="date">Comprehensive Research Report | March 2025</p>
+        
+        <!-- TABLE OF CONTENTS -->
+        <div class="toc">
+            <h3>Quick Navigation</h3>
+            <ul>
+                <li><a href="#executive">Executive Summary & Verdict</a></li>
+                <li><a href="#landscape">Current Dental Software Landscape</a></li>
+                <li><a href="#pain">Real Pain Points (What We'll Validate)</a></li>
+                <li><a href="#tech">Technology Approach & Integration Strategy</a></li>
+                <li><a href="#mvp">MVP Scope (Phase 1, 2, 3)</a></li>
+                <li><a href="#business">Business Model & Pricing</a></li>
+                <li><a href="#interview">Interview Framework for TFD</a></li>
+                <li><a href="#feasibility">Feasibility Assessment</a></li>
+            </ul>
+        </div>
+        
+        <!-- EXECUTIVE SUMMARY -->
+        <h2 id="executive">Executive Summary & Verdict</h2>
+        
+        <div class="verdict">
+            <h3>✅ YES, THIS IS FEASIBLE AND WORTH BUILDING</h3>
+            <p><strong>Core Insight:</strong> You're not building a dental practice management system. You're building a <strong>patient engagement & operational efficiency layer</strong> that sits on TOP of existing systems like Open Dental, Dentrix, and Curve.</p>
+            <p><strong>Why It Works:</strong> Dentists already spend $200-500/month on practice management software. They're also buying separate tools for patient communication ($100-300/month), patient engagement (if at all), and reminders. Your app consolidates these into ONE simple interface, reduces monthly tech spend, and solves real operational pain points.</p>
+            <p><strong>Timeline:</strong> MVP in 8-12 weeks. Real business viability proof in 6 months (TFD + 5-10 other practices).</p>
+            <p><strong>Exit Path:</strong> $3-10M acquisition by Henry Schein, Philips, or Align within 18-24 months once you have 50-100 practices with clear ROI metrics.</p>
+        </div>
+        
+        <h3>The Play (In One Paragraph)</h3>
+        <p>Independent dentists are losing patients to DSO chains because they can't compete on operational smoothness. They can't book appointments online. They have hygienist coverage crises. Patients forget appointments. They're drowning in phone calls. Your app solves this: patient-facing (easy online booking, SMS reminders, easy rescheduling, follow-up engagement, consumables shop) + practice-facing (call alerts, staff dashboards, coverage matching, engagement automation). You're not replacing Dentrix or Open Dental. You're making them 10x better for practices that can't afford the $10K+ setup and ongoing complexity. You layer on top, pull data via API where possible, build direct patient features around the edges. You own the patient experience. You own the consumables distribution. You own the moat.</p>
+        
+        ---
+        
+        <!-- LANDSCAPE -->
+        <h2 id="landscape">Current Dental Software Landscape</h2>
+        
+        <h3>What Small Dental Practices Currently Use (Reality Check)</h3>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>Software Category</th>
+                    <th>Product Examples</th>
+                    <th>Monthly Cost</th>
+                    <th>What It Does</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Practice Management (Core)</strong></td>
+                    <td>Open Dental, Curve Dental, Dentrix, Eaglesoft</td>
+                    <td>$199-500+</td>
+                    <td>Scheduling, charting, billing, insurance claims</td>
+                </tr>
+                <tr>
+                    <td><strong>Patient Communication</strong></td>
+                    <td>Weave, SolutionReach, Lighthouse 360, RevenueWell</td>
+                    <td>$100-400+</td>
+                    <td>SMS reminders, 2-way texting, marketing, recalls</td>
+                </tr>
+                <tr>
+                    <td><strong>Online Scheduling</strong></td>
+                    <td>Already built into most PMS, or Acuity, Calendly</td>
+                    <td>$0-100</td>
+                    <td>Patient-facing appointment booking</td>
+                </tr>
+                <tr>
+                    <td><strong>Patient Portal</strong></td>
+                    <td>Mostly included in PMS, or standalone portals</td>
+                    <td>$0-50</td>
+                    <td>Patients view appointment, complete forms, pay</td>
+                </tr>
+                <tr>
+                    <td><strong>Imaging</strong></td>
+                    <td>DEXIS, CS Imaging, Trophy, etc.</td>
+                    <td>$150-500+</td>
+                    <td>X-rays, digital imaging</td>
+                </tr>
+                <tr>
+                    <td><strong>IT/Support/Hosting</strong></td>
+                    <td>Local server or cloud, IT support</td>
+                    <td>$500-2,000</td>
+                    <td>Infrastructure, backups, security</td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <div class="key-finding">
+            <h4>What This Means</h4>
+            <p>A typical small dental practice (4 employees, like TFD) spends <strong>$1,000-3,000/month</strong> on software and IT. They're using:</p>
+            <ul>
+                <li>1 core PMS (Open Dental, Curve, or Dentrix)</li>
+                <li>1 patient communication tool (Weave or SolutionReach) → OR not using anything</li>
+                <li>Imaging software (expensive, but necessary)</li>
+                <li>IT infrastructure & support</li>
+            </ul>
+            <p><strong>Critical Gap:</strong> Most small practices don't have a comprehensive patient engagement strategy. They send appointment reminders IF they have Weave. They don't have automatic follow-ups, patient education, or consumables upselling. This is your opportunity.</p>
+        </div>
+        
+        <h3>The API Landscape (Can We Actually Integrate?)</h3>
+        
+        <div class="section">
+            <h4>Open Dental: YES (Best Option)</h4>
+            <p>Open Dental has a well-documented REST API. You can:</p>
+            <ul>
+                <li>✅ Fetch appointment data (scheduled, completed, no-shows)</li>
+                <li>✅ Fetch patient data (name, phone, email)</li>
+                <li>✅ Create/update appointments</li>
+                <li>✅ Get procedure codes, notes</li>
+                <li>⚠️ Limitations: No direct access to clinical charting. Limited workflow customization.</li>
+            </ul>
+            <p><strong>Cost for integration:</strong> ~40-60 hours of dev work to build a solid API layer.</p>
+            
+            <h4>Curve Dental: PARTIAL (Cloud-Based)</h4>
+            <p>Curve has APIs emerging. Less documented than Open Dental, but possible:</p>
+            <ul>
+                <li>✅ Scheduling data accessible</li>
+                <li>✅ Patient contact info accessible</li>
+                <li>⚠️ Newer platform, API still maturing</li>
+            </ul>
+            <p><strong>Cost for integration:</strong> ~60-80 hours (less documented = more discovery).</p>
+            
+            <h4>Dentrix: NO (Closed System)</h4>
+            <p>Dentrix is proprietary and doesn't offer open APIs for third-party integrations. You would:</p>
+            <ul>
+                <li>⚠️ Have to sync data manually or through workarounds</li>
+                <li>⚠️ Use middleware (expensive, fragile)</li>
+                <li>❌ Not recommended as priority</li>
+            </ul>
+            <p><strong>Verdict:</strong> Dentrix users are locked in. Skip them for now. Focus on Open Dental + Curve first.</p>
+            
+            <h4>What About the Others?</h4>
+            <p>Weave, SolutionReach, RevenueWell = patient communication tools (NOT practice management). You'll integrate with them by: (1) pulling patient data from PMS, (2) sending SMS/email through your own Twilio/SendGrid, (3) letting practices choose whether to keep their existing tool or use yours.</p>
+        </div>
+        
+        <div class="recommendation">
+            <h4>🎯 Integration Strategy</h4>
+            <p><strong>Phase 1 MVP:</strong> Deep integration with Open Dental API. Assume patient & appointment data flows from Open Dental → Your app.</p>
+            <p><strong>Phase 2:</strong> Add Curve Dental support.</p>
+            <p><strong>Phase 3:</strong> "Bring your own data" mode for practices on Dentrix or other closed systems (manual import or lite API via middleware).</p>
+            <p><strong>All phases:</strong> You own patient communication entirely (SMS via Twilio, email via SendGrid). Practices don't need Weave if they use you.</p>
+        </div>
+        
+        ---
+        
+        <!-- PAIN POINTS -->
+        <h2 id="pain">Real Pain Points (What We'll Validate with TFD)</h2>
+        
+        <h3>From Research + Your Real-World Experience</h3>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>Pain Point</th>
+                    <th>Cost to Practice</th>
+                    <th>Current Solution</th>
+                    <th>What Your App Does</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Hygienist call-outs (coverage crisis)</strong></td>
+                    <td>$300-400/day lost revenue + 5+ hrs ops time</td>
+                    <td>Manual phone calls, often unsuccessful</td>
+                    <td>Alert network of pre-vetted substitutes, auto-match, instant confirmation</td>
+                </tr>
+                <tr>
+                    <td><strong>15-25% no-show rate</strong></td>
+                    <td>$100-200 lost per no-show</td>
+                    <td>SMS reminder if they have Weave ($200-300/mo)</td>
+                    <td>Automated SMS 24h before, auto-confirmation requests, booking links</td>
+                </tr>
+                <tr>
+                    <td><strong>Scheduling bottleneck (wife drowning in calls)</strong></td>
+                    <td>5-10 hrs/week of staff time</td>
+                    <td>Phone calls, emails, manual entry</td>
+                    <td>Online booking, self-reschedule via link, staff dashboard alerts</td>
+                </tr>
+                <tr>
+                    <td><strong>Patient forgets to schedule next appointment</strong></td>
+                    <td>Lost recurring revenue, patient churn</td>
+                    <td>Staff has to call patient to remind</td>
+                    <td>Auto "time for 6-month cleaning" messages at right intervals, 1-click booking</td>
+                </tr>
+                <tr>
+                    <td><strong>Patients buy consumables elsewhere</strong></td>
+                    <td>$200-300/month per practice (whitening, retainers, products)</td>
+                    <td>None. Practice doesn't have a shop.</td>
+                    <td>Integrated marketplace, push notifications, affiliate/wholesale revenue</td>
+                </tr>
+                <tr>
+                    <td><strong>Patients feel "behind the times"</strong></td>
+                    <td>Patient switching to DSO chains</td>
+                    <td>Practice website + scattered tools</td>
+                    <td>Modern app, SMS communication, digital receipts, follow-up education</td>
+                </tr>
+            </tbody>
+        </table>
+        
+        ---
+        
+        <!-- TECHNOLOGY APPROACH -->
+        <h2 id="tech">Technology Approach & Integration Strategy</h2>
+        
+        <h3>You're NOT Building a Practice Management System</h3>
+        <p>You're building a <strong>Patient + Practice Operations Layer</strong> that lives on top of Open Dental / Curve / others.</p>
+        
+        <div class="section">
+            <h4>Architecture Philosophy</h4>
+            <p><strong>Do:</strong> Build patient-facing features (app, SMS, booking links, consumables shop, follow-up content)</p>
+            <p><strong>Do:</strong> Build practice dashboards (coverage alerts, appointment summaries, engagement metrics)</p>
+            <p><strong>Do:</strong> Integrate with existing PMS via API to read appointment + patient data</p>
+            <p><strong>Don't:</strong> Replicate appointment scheduling, clinical charting, insurance claims</p>
+            <p><strong>Don't:</strong> Try to replace the PMS (you can't and shouldn't)</p>
+        </div>
+        
+        <div class="code">
+<strong>Example Data Flow:</strong>
+
+1. Practice uses Open Dental for core operations
+2. Open Dental API syncs appointments + patients to your DB (webhook-driven)
+3. Your app:
+   - Sends SMS reminders 24h before
+   - Gives patient link to reschedule
+   - Tracks no-shows, engagement
+   - Shows practice a dashboard
+   - Manages patient consumables shop
+4. If coverage needed, alerts substitute network
+5. Everything feeds back to Open Dental via API (reschedules, notes, etc.)
+        </div>
+        
+        <h3>Tech Stack (iOS App)</h3>
+        
+        <h4>Frontend (Patient + Staff)</h4>
+        <ul>
+            <li>Native iOS (SwiftUI)</li>
+            <li>MVVM architecture with role-based nav</li>
+            <li>KeyChain for secure token storage</li>
+            <li>Core Data for offline appointment caching</li>
+            <li>APNs (push notifications) for alerts</li>
+        </ul>
+        
+        <h4>Backend API</h4>
+        <ul>
+            <li>Node.js + Express (RESTful)</li>
+            <li>PostgreSQL database</li>
+            <li>JWT authentication with refresh tokens</li>
+            <li>Open Dental API client integration</li>
+            <li>Twilio (SMS sending + OTP verification)</li>
+            <li>SendGrid (email backup)</li>
+            <li>Stripe (payment processing for consumables)</li>
+            <li>Bull/Redis (job queue for scheduled messages)</li>
+        </ul>
+        
+        <h4>Key Implementation Details</h4>
+        <ul>
+            <li><strong>APNs Setup:</strong> Practice gets alerts (coverage needed, rescheduled patient, etc.) via push</li>
+            <li><strong>SMS Reminders:</strong> Scheduled via Bull job queue. 24h before appointment: "Your cleaning on [date] at [time]. Click to reschedule: [link]"</li>
+            <li><strong>Open Dental Sync:</strong> Polling every 30min or webhook-driven when appointment created/modified</li>
+            <li><strong>Patient Data Security:</strong> Encrypt sensitive fields (treatment notes). Audit logging for compliance.</li>
+            <li><strong>Offline Mode:</strong> iOS app caches appointments locally. Full sync when online.</li>
+        </ul>
+        
+        ---
+        
+        <!-- MVP SCOPE -->
+        <h2 id="mvp">MVP Scope: Phase 1, 2, 3 (3 Months Total)</h2>
+        
+        <h3>Phase 1: Foundation (Weeks 1-4) - "Make The Wife's Life Easier"</h3>
+        
+        <div class="timeline">
+            <div class="phase">
+                <div class="phase-title">Core Features</div>
+                <ul>
+                    <li><strong>Patient Mobile App:</strong> Login (phone + SMS code), view appointments, reschedule button</li>
+                    <li><strong>Staff Dashboard:</strong> Today's schedule view, alerts, quick metrics</li>
+                    <li><strong>Open Dental Integration:</strong> API connection to pull appointments + patients</li>
+                    <li><strong>SMS Reminders:</strong> Automated 24h before appointment, "Click to reschedule"</li>
+                    <li><strong>Reschedule Workflow:</strong> Patient clicks link → sees available slots → picks new time → staff notified</li>
+                    <li><strong>No-Show Tracking:</strong> Staff marks appointment as no-show, system tracks rate</li>
+                </ul>
+                <p><strong>Success Metric:</strong> TFD using app, 50%+ of patients have app, 30%+ self-reschedule, 15% reduction in no-shows</p>
+                <p><strong>Effort:</strong> ~80 hours (backend + iOS + integration)</p>
+            </div>
+            
+            <div class="phase">
+                <div class="phase-title">Phase 2: Engagement & Commerce (Weeks 5-8) - "Keep Patients + Capture Revenue"</div>
+                <ul>
+                    <li><strong>Follow-Up Messages:</strong> Auto-send post-appointment ("How did your cleaning feel?", treatment education)</li>
+                    <li><strong>Recall Automation:</strong> Auto-trigger "Time for 6-month cleaning" based on appointment type + interval</li>
+                    <li><strong>Consumables Shop:</strong> In-app storefront with whitening kits, retainers, care products</li>
+                    <li><strong>Patient Portal Enhancement:</strong> View past appointments, visit summaries, educational content</li>
+                    <li><strong>Engagement Analytics:</strong> Dashboard showing message open rates, product interest, retention metrics</li>
+                </ul>
+                <p><strong>Success Metric:</strong> $200-300/month consumables revenue, 40%+ engagement message open rate, 15% of patients browse shop</p>
+                <p><strong>Effort:</strong> ~70 hours (templates, e-commerce, analytics)</p>
+            </div>
+            
+            <div class="phase">
+                <div class="phase-title">Phase 3: Operational Resilience (Weeks 9-12) - "Coverage Never Breaks"</div>
+                <ul>
+                    <li><strong>Coverage Alert System:</strong> Staff logs call-out → system alerts pre-vetted substitute network via SMS</li>
+                    <li><strong>Substitute Acceptance:</strong> First to accept gets shift, appointment list auto-generated</li>
+                    <li><strong>Auto-Reschedule on Gap:</strong> If no coverage found in 2 hours, auto-reschedule affected patients + notify them</li>
+                    <li><strong>Practice Resilience Score:</strong> Dashboard shows "X% coverage success rate this month"</li>
+                </ul>
+                <p><strong>Success Metric:</strong> 100% coverage resolution, no lost revenue from call-outs, <2 hour average resolution time</p>
+                <p><strong>Effort:</strong> ~60 hours (alerting system, matching logic)</p>
+            </div>
+        </div>
+        
+        <div class="recommendation">
+            <h4>Why 3 Months is Realistic</h4>
+            <ul>
+                <li>You're not building from scratch. You're integrating existing services (Twilio, Stripe, Open Dental).</li>
+                <li>You're building ONE app experience (iOS only), not web + iOS + Android.</li>
+                <li>You have real customer (TFD) to iterate with immediately.</li>
+                <li>You're layering ON TOP of existing PMS, not replacing it.</li>
+                <li>Rork has AWS/backend experience. You know the codebase by the end of Phase 1.</li>
+            </ul>
+        </div>
+        
+        ---
+        
+        <!-- BUSINESS MODEL -->
+        <h2 id="business">Business Model & Pricing</h2>
+        
+        <h3>Revenue Streams (In Order of Implementation)</h3>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>Stream</th>
+                    <th>Phase</th>
+                    <th>TFD Revenue (Est.)</th>
+                    <th>Per 100 Practices</th>
+                    <th>Notes</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>SaaS Fee (Platform)</strong></td>
+                    <td>Phase 1</td>
+                    <td>$150-300/mo</td>
+                    <td>$150K-300K/yr</td>
+                    <td>Flat monthly, undercuts Weave/SolutionReach</td>
+                </tr>
+                <tr>
+                    <td><strong>Consumables Commission</strong></td>
+                    <td>Phase 2</td>
+                    <td>$50-100/mo (affiliate), $200-300/mo (wholesale)</td>
+                    <td>$50K-300K/yr</td>
+                    <td>2-3% affiliate (Phase 2), 30-50% margin wholesale (Phase 3+)</td>
+                </tr>
+                <tr>
+                    <td><strong>Coverage Matching Fee</strong></td>
+                    <td>Phase 3</td>
+                    <td>$100-200/mo</td>
+                    <td>$100K-200K/yr</td>
+                    <td>$50 per successful shift (assume 2-4/mo per practice)</td>
+                </tr>
+                <tr>
+                    <td><strong>Analytics/Reporting</strong></td>
+                    <td>Phase 3+</td>
+                    <td>$50-100/mo</td>
+                    <td>$50K-100K/yr</td>
+                    <td>Advanced dashboards, benchmarking vs. peers</td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <h3>Pricing Strategy</h3>
+        
+        <div class="section">
+            <h4>Undercut Competitors (Aggressive Initial Pricing)</h4>
+            <p><strong>What they pay now:</strong></p>
+            <ul>
+                <li>Weave or SolutionReach: $200-400/mo</li>
+                <li>Open Dental: $199/mo</li>
+                <li>Curve Dental: $300-500/mo</li>
+                <li>Total for small practice: $400-900/mo just for PMS + comms</li>
+            </ul>
+            <p><strong>Your pricing:</strong></p>
+            <ul>
+                <li>Phase 1-2: <strong>$150-250/mo</strong> (consolidates Weave + adds operational benefits)</li>
+                <li>Phase 3+: <strong>$200-300/mo</strong> (add coverage matching)</li>
+                <li>Consumables: 2-3% affiliate initially, scale to wholesale or white-label</li>
+            </ul>
+            <p><strong>Why this works:</strong> Practices already spending $400-900/mo on software. You replace Weave ($200-300) + add operational value. They see net cost reduction or equivalent spend for much better experience.</p>
+        </div>
+        
+        <h3>Financial Projections (Conservative)</h3>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>Scenario</th>
+                    <th>Timeline</th>
+                    <th>Practices</th>
+                    <th>MRR</th>
+                    <th>Annual Run Rate</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Phase 1 (MVP)</strong></td>
+                    <td>Month 4</td>
+                    <td>1 (TFD) + 2-3 pilots</td>
+                    <td>$300-500</td>
+                    <td>$3.6K-6K</td>
+                </tr>
+                <tr>
+                    <td><strong>Phase 2 (Engagement)</strong></td>
+                    <td>Month 8</td>
+                    <td>10-15</td>
+                    <td>$2,000-3,500</td>
+                    <td>$24K-42K (mostly SaaS + lite consumables)</td>
+                </tr>
+                <tr>
+                    <td><strong>Phase 3 (Coverage)</strong></td>
+                    <td>Month 12</td>
+                    <td>25-50</td>
+                    <td>$6,000-12,000</td>
+                    <td>$72K-144K (SaaS + consumables + coverage)</td>
+                </tr>
+                <tr style="background: #d4edda;">
+                    <td><strong>6 Months Later</strong></td>
+                    <td>Month 18</td>
+                    <td>100-150</td>
+                    <td>$20,000-35,000</td>
+                    <td>$240K-420K (ready for acquisition)</td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <div class="key-finding">
+            <h4>Unit Economics (Per Practice)</h4>
+            <p><strong>SaaS Fee:</strong> $200/mo = $2,400/yr (60% gross margin = $1,440 profit)</p>
+            <p><strong>Consumables (Conservative):</strong> $250/mo average (affiliate 2.5% + eventual wholesale scale) = $3,000/yr (average 35% margin = $1,050 profit)</p>
+            <p><strong>Coverage Matching:</strong> $150/mo (2-3 shifts/mo @ $50 = 30% conversion rate)</p>
+            <p><strong>Total Value Per Practice/Year:</strong> $6,600-7,200</p>
+            <p><strong>Your Profit Per Practice/Year:</strong> $2,000-2,500</p>
+            <p><strong>CAC (Customer Acquisition Cost):</strong> $500-1,000 (low—mostly word of mouth + dental Facebook groups)</p>
+            <p><strong>LTV:CAC Ratio:</strong> 3-5x (healthy for software)</p>
+            <p><strong>Payback Period:</strong> 3-6 months</p>
+        </div>
+        
+        ---
+        
+        <!-- INTERVIEW FRAMEWORK -->
+        <h2 id="interview">Interview Framework for TFD Meeting</h2>
+        
+        <p><strong>Goal:</strong> Understand the REAL pain points + current workflows + what TFD would actually use. Come away with concrete data to validate your MVP scope.</p>
+        
+        <h3>Pre-Interview Prep</h3>
+        <ul>
+            <li>Schedule 60-90 minutes with your wife + dentist + office manager (all three, if possible)</li>
+            <li>Prepare 3-4 devices to share screen or show prototypes</li>
+            <li>Record (with permission) for later review</li>
+            <li>Frame as: "I'm building something to help your practice. I need your honest feedback."</li>
+        </ul>
+        
+        <h3>Interview Script (Structured)</h3>
+        
+        <div class="section">
+            <h4>Section 1: Current Pain (15 min)</h4>
+            <p><strong>Goal:</strong> Validate the pain points we've identified.</p>
+            
+            <p><strong>Questions:</strong></p>
+            <ul>
+                <li>"Walk me through a typical day when things go wrong. What frustrates you most about scheduling / patient communication?"</li>
+                <li>"How many times per week do you get calls from patients wanting to reschedule? How do you handle it now?"</li>
+                <li>"Tell me about the last time [hygienist] called out sick. What happened? How much revenue did you lose? How much time did it take to fix?"</li>
+                <li>"What percentage of patients no-show? How do you remind them?"</li>
+                <li>"Do patients buy whitening kits or retainers? Where? How much revenue are you losing to Amazon / mail-order?"</li>
+                <li>"If you could fix ONE thing about running your practice, what would it be?"</li>
+            </ul>
+            
+            <p><strong>What You're Looking For:</strong> Specific numbers (no-show %, coverage incidents/year, consumables lost), emotional reactions (frustration with current processes), willingness to try something new.</p>
+        </div>
+        
+        <div class="section">
+            <h4>Section 2: Current Software Stack (10 min)</h4>
+            <p><strong>Goal:</strong> Understand what they use + pain points with current tools.</p>
+            
+            <p><strong>Questions:</strong></p>
+            <ul>
+                <li>"What practice management software do you use? How long? Happy with it?"</li>
+                <li>"Do you use Weave, SolutionReach, or anything for patient reminders? Cost? Do you like it?"</li>
+                <li>"What other software do you pay for monthly?" (imaging, scheduling, portal, etc.)</li>
+                <li>"If you could design your IDEAL software to replace everything, what would it look like?"</li>
+                <li>"Have you heard of [Curve, CareStack, etc.]? What do you think?"</li>
+            </ul>
+            
+            <p><strong>What You're Looking For:</strong> Software frustrations, price sensitivity, openness to replacing tools, integration headaches they're experiencing.</p>
+        </div>
+        
+        <div class="section">
+            <h4>Section 3: Validate MVP Scope (20 min)</h4>
+            <p><strong>Goal:</strong> Show them Phase 1 concepts + get their reaction. Do they WANT this?</p>
+            
+            <p><strong>Pitch + Feedback:</strong></p>
+            <ul>
+                <li>"I'm building an app that does three things: (1) Patients can reschedule appointments with a click, (2) Automatic reminders reduce no-shows, (3) When someone calls out sick, we alert a network of substitute hygienists who can fill in that day. No more scrambling. Would that help you?"</li>
+                <li>Show mockup of patient app: appointments view, reschedule button, SMS reminder preview</li>
+                <li>Show mockup of staff dashboard: today's schedule, coverage alert, metrics</li>
+                <li>"How would you use this? What would change about your day?"</li>
+                <li>"What's missing? What else would you want?"</li>
+                <li>"How much would you pay for this? Would you replace Weave?"</li>
+            </ul>
+            
+            <p><strong>What You're Looking For:</strong> "Yes, I would use this." Specific feature requests. Price willingness. Concerns about switching from current tools.</p>
+        </div>
+        
+        <div class="section">
+            <h4>Section 4: Consumables & Revenue (10 min)</h4>
+            <p><strong>Goal:</strong> Understand if they'd want a consumables shop + how much revenue they're missing.</p>
+            
+            <p><strong>Questions:</strong></p>
+            <ul>
+                <li>"Do patients ask you about whitening kits or retainer replacements? Where do they end up buying them?"</li>
+                <li>"If we built a shop IN the app and handled fulfillment, would you sell whitening kits / retainers through it?"</li>
+                <li>"What would you want to sell? Whitening? Retainers? Toothbrushes? Care products?"</li>
+                <li>"How much do you think you're losing to Amazon right now? Per month?"</li>
+                <li>"Would you want us to handle it (affiliate or wholesale), or would you want to manage inventory yourself?"</li>
+            </ul>
+            
+            <p><strong>What You're Looking For:</strong> Interest level in consumables. Current lost revenue estimate. Preference for hands-off (affiliate) vs. wholesale. Product mix they'd prioritize.</p>
+        </div>
+        
+        <div class="section">
+            <h4>Section 5: Willingness to Be a Beta User (10 min)</h4>
+            <p><strong>Goal:</strong> Commitment to using the MVP + providing feedback.</p>
+            
+            <p><strong>Questions:</strong></p>
+            <ul>
+                <li>"If I built this and launched it in 3 months, would you be willing to be our first real user?"</li>
+                <li>"What would you need from us to make it a no-brainer to switch?"</li>
+                <li>"How often would you give me feedback? Weekly? As issues come up?"</li>
+                <li>"Would your team (staff, dentist) be open to using a new app?"</li>
+                <li>"What's the deal-breaker that would make you NOT use this?"</li>
+            </ul>
+            
+            <p><strong>What You're Looking For:</strong> Clear yes/no on beta participation. Specific requirements. Team buy-in likelihood. Potential deal-breakers.</p>
+        </div>
+        
+        <h3>Post-Interview Actions</h3>
+        <ul>
+            <li>Summarize: "So if I heard you right, the biggest pain is X. You'd use Y if it did Z. You'd be willing to pay $A. Is that right?"</li>
+            <li>Get their permission to contact them when MVP is ready (4-8 weeks)</li>
+            <li>Send follow-up email with notes + next steps</li>
+            <li>Adjust MVP scope based on their feedback</li>
+        </ul>
+        
+        <h3>Interview Success Criteria</h3>
+        <p>You leave the meeting with:</p>
+        <ul>
+            <li>✅ Quantified pain points (e.g., "We lose $400-600/week to no-shows and coverage gaps")</li>
+            <li>✅ Clear MVP scope feedback (e.g., "Reminders are nice but coverage matching is CRITICAL")</li>
+            <li>✅ Pricing comfort level (e.g., "I'd pay $250-350/mo if it replaced Weave")</li>
+            <li>✅ Beta participation commitment (e.g., "Yes, I'll use it. Launch in 3 months?")</li>
+            <li>✅ Team buy-in assessment (e.g., "Staff would use this immediately")</li>
+            <li>✅ Feature prioritization (e.g., "Do coverage matching FIRST, consumables later")</li>
+        </ul>
+        
+        ---
+        
+        <!-- FEASIBILITY ASSESSMENT -->
+        <h2 id="feasibility">Feasibility Assessment: Can You Actually Build This?</h2>
+        
+        <h3>Technical Feasibility: ✅ YES (9/10)</h3>
+        
+        <div class="recommendation">
+            <h4>Strengths</h4>
+            <ul>
+                <li>✅ Open Dental has a real API. Well-documented. ~40-60 hours to integrate.</li>
+                <li>✅ You're layering ON TOP of existing systems, not replacing them.</li>
+                <li>✅ Standard tech stack (Node.js, Swift, PostgreSQL, Twilio, Stripe). Well-trodden path.</li>
+                <li>✅ iOS-only MVP reduces scope (no web, no Android = faster launch)</li>
+                <li>✅ Most features are standard (SMS reminders, push notifications, e-commerce)</li>
+                <li>✅ Rook has backend + AWS experience. You can execute this in 8-12 weeks with one junior dev helping.</li>
+            </ul>
+            
+            <h4>Risks (Manageable)</h4>
+            <ul>
+                <li>⚠️ Open Dental API documentation could be sparse (mitigated: directly contact Open Dental for support)</li>
+                <li>⚠️ HIPAA compliance (mitigated: SOC 2 Type II certification is expensive but achievable pre-launch)</li>
+                <li>⚠️ Integration testing with real dental office software (mitigated: you have TFD as test ground)</li>
+                <li>⚠️ SMS/email delivery reliability (mitigated: Twilio + SendGrid are battle-tested)</li>
+            </ul>
+        </div>
+        
+        <h3>Market Feasibility: ✅ YES (8/10)</h3>
+        
+        <div class="recommendation">
+            <h4>Demand Signals</h4>
+            <ul>
+                <li>✅ 175K independent dentists in North America, all experiencing these pain points</li>
+                <li>✅ DSO consolidation is URGENT. Independents are desperate for competitive tools.</li>
+                <li>✅ Patient engagement software market is growing 10-15% CAGR</li>
+                <li>✅ Weave & competitors raised $100M+, proving market wants this</li>
+                <li>✅ Your wife + dentist can immediately validate pain points</li>
+            </ul>
+            
+            <h4>Risks (Mitigated by Strategy)</h4>
+            <ul>
+                <li>⚠️ Weave, SolutionReach, RevenueWell already have market presence (mitigated: undercut on price + superior UX + coverage matching is unique)</li>
+                <li>⚠️ Dentrix practices are locked in (mitigated: focus on Open Dental + Curve first, they're growing)</li>
+                <li>⚠️ Small practices are price-sensitive (mitigated: you're cheaper than current stack)</li>
+                <li>⚠️ Adoption is slow (mitigated: you're B2B with clear ROI—dentists buy when they see payback in <6 months)</li>
+            </ul>
+        </div>
+        
+        <h3>Business Feasibility: ✅ YES (8/10)</h3>
+        
+        <div class="recommendation">
+            <h4>Go-to-Market</h4>
+            <ul>
+                <li>✅ Your wife is free marketing (real testimonial, case study)</li>
+                <li>✅ Dental Facebook groups + LinkedIn are cheap CAC channels</li>
+                <li>✅ Dental conferences (AGD, AAD) are affordable + effective</li>
+                <li>✅ Referral model is strong (dentists talk to dentists)</li>
+                <li>✅ Content strategy (YouTube on "how independents compete with DSOs") is easy to execute</li>
+            </ul>
+            
+            <h4>Monetization Path</h4>
+            <ul>
+                <li>✅ Clear SaaS model ($200-300/mo) is proven in dental</li>
+                <li>✅ Consumables revenue is high-margin upside (2-3% affiliate is cash, wholesale is margin)</li>
+                <li>✅ Coverage matching is ancillary revenue (unique differentiation)</li>
+                <li>✅ Easy to increase pricing as you add features (Phase 2: +$50/mo, Phase 3: +$100/mo)</li>
+            </ul>
+        </div>
+        
+        <h3>Exit Feasibility: ✅ YES (9/10)</h3>
+        
+        <div class="recommendation">
+            <h4>Acquisition Interest (High)</h4>
+            <ul>
+                <li>✅ Henry Schein One: Desperately needs patient engagement layer. Would pay $3-10M.</li>
+                <li>✅ Philips: Owns Zoom whitening. Wants distribution. Would pay $5-15M.</li>
+                <li>✅ Align (3M): Owns Vivera retainers. Wants automation. Would pay $3-8M.</li>
+                <li>✅ Private equity: Dental software is a hot sector. 5-8x revenue multiples common.</li>
+            </ul>
+            
+            <h4>Proof Points They Want</h4>
+            <ul>
+                <li>✅ 50-100 practices (proof of product-market fit)</li>
+                <li>✅ $500K-1M annual revenue (viability)</li>
+                <li>✅ 15%+ patient retention improvement (competitive moat)</li>
+                <li>✅ $100K-200K consumables GMV/year (strategic value)</li>
+                <li>✅ <6 month payback period for customers (stickiness)</li>
+            </ul>
+        </div>
+        
+        <h3>Verdict on Feasibility</h3>
+        
+        <div class="verdict">
+            <h3>✅ THIS IS FEASIBLE & FUNDABLE</h3>
+            <p><strong>Timeline:</strong> 8-12 weeks to MVP. 6 months to acquisition readiness.</p>
+            <p><strong>Capital Needed:</strong> $0-100K (you can self-fund with part-time dev for 3 months, then raise if needed)</p>
+            <p><strong>Team:</strong> You (product + founder), Rork (full-time dev), potentially 1 junior dev or contractor for Phase 2</p>
+            <p><strong>Key Success Factor:</strong> Validate pain points with TFD in Week 1. Lock in their commitment to be beta user. Iterate fast based on real feedback.</p>
+            <p><strong>Exit Potential:</strong> $3-15M acquisition within 18-24 months if you execute Phase 1-3 correctly.</p>
+        </div>
+        
+        ---
+        
+        <div class="footer">
+            <h3>Next Steps</h3>
+            <p><strong>Week 1:</strong> Schedule & conduct TFD interview (use framework above)</p>
+            <p><strong>Week 1-2:</strong> Create low-fidelity mockups based on their feedback</p>
+            <p><strong>Week 2-3:</strong> Spike on Open Dental API (build simple test integration)</p>
+            <p><strong>Week 3-12:</strong> Build MVP with TFD iteration loop</p>
+            <p><strong>Month 4:</strong> Launch beta with TFD + 2-3 other practices</p>
+            <p><strong>Month 6-12:</strong> Scale to 25-50 practices, document ROI metrics</p>
+            <p><strong>Month 12-18:</strong> Approach acquisition targets with data</p>
+            <p style="margin-top: 30px; font-weight: 600; color: #0066cc;">This is doable. You have a real problem, a real customer, and a clear path to $3-15M. Now execute.</p>
+        </div>
+    </div>
+</body>
+</html>

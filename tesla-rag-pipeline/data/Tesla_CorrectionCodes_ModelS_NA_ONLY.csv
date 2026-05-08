@@ -1,0 +1,1962 @@
+Universal,Model,Model_ID,Code,Description,Work_Type,Labor_Hours,FRT
+YES,Model S,1,00000010,Remote – Education,Over The Air,0.0,0.0
+NO,Model S,1,00003280,Vehicle Accessories (PDI retrofit),Test/Adjust,0.0,0.0
+YES,Model S,1,00004107,Alert Diagnosis - Repair,General diagnosis conclusion,0.06,0.06
+YES,Model S,1,00004108,Alert Diagnosis (Repair) - Create New Service Activity for Repair,Test/Adjust,0.06,0.06
+YES,Model S,1,00005914,Service Collision Estimate,Inspection,0.0,0.0
+NO,Model S,1,00009187,Tesla Approved Collision Center Remote Diagnosis,Test/Adjust,0.0,0.0
+NO,Model S,1,00014105,1 Year/12500 Mile/20000 km Service (Pre-paid Plan Only) (Add Necessary Parts and Labor Separately),Maintenance,0.15,0.15
+NO,Model S,1,00014205,2 Year/25000 Mile/40000 km Service (Pre-paid Plan only),Maintenance,3.0,3.0
+NO,Model S,1,00014305,3 Year/37500 Mile/60000 km Service (Pre-paid Plan Only) (Add Necessary Parts and Labor Separately),Maintenance,0.15,0.15
+NO,Model S,1,00014405,4 Year/50000 Mile/80000 km Service (Pre-paid Plan Only),Maintenance,3.4,3.4
+NO,Model S,1,00014505,5 Year/62500 Mile/100000 km Service (Pre-paid Plan Only) (Add Necessary Parts and Labor Separately),Maintenance,0.15,0.15
+NO,Model S,1,00014705,6 Year/75000 Mile/120000 km Service (Pre-paid plan only),Maintenance,3.0,3.0
+NO,Model S,1,00014805,7 Year/87500 Mile/140000 km Service (Pre-paid Plan Only) (Add Necessary Parts and Labor Separately),Maintenance,0.15,0.15
+NO,Model S,1,00014905,8 Year/100000 Mile/160000 km Service (Pre-paid Plan Only),Maintenance,3.4,3.4
+NO,Model S,1,00015005,9 Year/112500 Mile/180000 km Service (Pre-paid Plan Only) (Add Necessary Parts and Labor Separately),Maintenance,0.15,0.15
+NO,Model S,1,00015205,10 Year/125000 Mile/200000 km Service (Pre-paid Plan Only),Maintenance,3.0,3.0
+NO,Model S,1,00015305,11 Year/137500 Mile/220000 km Service (Pre-paid Plan Only) (Add Necessary Parts and Labor Separately),Maintenance,0.15,0.15
+NO,Model S,1,00015405,12 Year/150000 Mile/240000 km Service (Pre-paid Plan Only),Maintenance,3.4,3.4
+YES,Model S,1,00020003,Firmware Update,Over The Air,0.06,0.06
+NO,Model S,1,00020006,Firmware Update - Comfort Package Retrofit,Retrofit,0.0,0.0
+YES,Model S,1,00020007,Firmware Update - Garage,Update,0.05,0.05
+YES,Model S,1,00020010,Remote – Known Characteristic of Current Firmware,Over The Air,0.25,0.25
+YES,Model S,1,00020020,Remote – Over the Air Update,Over The Air,0.25,0.25
+YES,Model S,1,00022008,User Data (Factory Reset),Restore,0.05,0.05
+YES,Model S,1,00023003,Clear Filesystem Caches,Module Reset/Reflashed,0.05,0.05
+YES,Model S,1,00030100,PDI (Without Test Drive),Inspection,0.0,0.0
+YES,Model S,1,00030410,Vehicle Health Check,Inspection,1.5,1.5
+NO,Model S,1,00030420,Four Wheel Check (on Lift),Test/Adjust,0.3,0.3
+NO,Model S,1,00031600,Perform Periodisk Kontroll av Kjøretøy (PKK) – Norway,Test/Adjust,1.0,1.0
+NO,Model S,1,00031700,Perform Etterkontroll Periodisk Kontroll av Kjøretøy (PKK) – Norway,Test/Adjust,0.4,0.4
+YES,Model S,1,00032201,Loaner Registration Confirmation,Inspection,0.2,0.2
+NO,Model S,1,00034300,TC support TAB Vehicle Configuration Change,Test/Adjust,0.2,0.2
+YES,Model S,1,00040100,Perform Post-Repair Validation Test Drive,Test/Adjust,0.3,0.3
+YES,Model S,1,00100004,General Diagnosis,General Diagnosis,0.5,0.5
+YES,Model S,1,00100014,Diagnosis: Unable to Replicate Concern,General diagnosis conclusion,0.0,0.0
+YES,Model S,1,00100024,Remote Diagnosis,Remote Diagnostics,0.3,0.3
+YES,Model S,1,10000004,Adjustment: Body / Closure Components,Test/Adjust,0.4,0.4
+YES,Model S,1,10010008,Tesla Body Repair - Miscellaneous Labor,Body Shop,0.0,0.0
+NO,Model S,1,10010009,Storage Fees,Body Shop,1.0,1.0
+YES,Model S,1,10010011,Tesla Body Repair - Structural,Body Shop,0.0,0.0
+YES,Model S,1,10010012,Tesla Body Structural - Sheet Metal Quotation,Test/Adjust,0.6,0.6
+YES,Model S,1,10010014,Tesla Body Structural - Sheet Metal Repair,Restore,1.0,1.0
+YES,Model S,1,10010015,Tesla Body Structural - Reassemble Parts,Test/Adjust,1.0,1.0
+NO,Model S,1,100111134,test ,Repair,0.5,0.5
+NO,Model S,1,10012912,Trim - Lower - Fascia - Rear (Remove & Replace),Remove and Replace,1.14,1.14
+NO,Model S,1,10013002,Fascia Assembly - Rear (Remove & Replace),Remove and Replace,1.38,1.38
+NO,Model S,1,10013102,Bumper Assembly - Rear (Remove & Replace),Remove and Replace,1.2,1.2
+NO,Model S,1,10013402,Applique - Bumper - Rear (Remove & Replace),Remove and Replace,1.08,1.08
+NO,Model S,1,10013502,Diffuser Trim - Rear (Remove & Replace),Remove and Replace,1.32,1.32
+NO,Model S,1,10013602,Reflex Marker - Bumper - Rear - LH (Remove & Replace),Remove and Replace,1.02,1.02
+NO,Model S,1,10013702,Reflex Marker - Bumper - Rear - RH (Remove & Replace),Remove and Replace,1.02,1.02
+NO,Model S,1,10015401,Spear - Fog Light - Upper - LH,Remove and Install,0.72,0.72
+NO,Model S,1,10015402,Spear - Fog Light - Upper - LH,Remove and Replace,0.72,0.72
+NO,Model S,1,10015501,Spear - Fog Light - Upper - RH,Remove and Install,0.54,0.54
+NO,Model S,1,10015502,Spear - Fog Light - Upper - RH,Remove and Replace,0.54,0.54
+NO,Model S,1,10015601,Spear - Fog Light - Lower - LH,Remove and Install,0.72,0.72
+NO,Model S,1,10015602,Spear - Fog Light - Lower - LH,Remove and Replace,0.72,0.72
+NO,Model S,1,10015701,Spear - Fog Light - Lower - RH,Remove and Install,0.54,0.54
+NO,Model S,1,10015702,Spear - Fog Light - Lower - RH,Remove and Replace,0.54,0.54
+YES,Model S,1,10100008,Tesla Body Repair - Mechanical Labor,Body Shop,0.0,0.0
+NO,Model S,1,10100103802,ASSEMBLY - A / B PILLAR COMPLETE - LEFT HAND,Remove and Replace,35.1,35.1
+NO,Model S,1,10100106402,ASSY - RR QUARTER OTR RIGHT,Remove and Replace,10.95,10.95
+NO,Model S,1,10100107002,"A–PILLAR AND B–PILLAR COMPLETE ASSEMBLY (VEHICLES BUILT THROUGH OCTOBER 11, 2016)- RIGHT",Remove and Replace,35.1,35.1
+NO,Model S,1,10100118602,Quarter Outer Complete,Remove and Replace,11.2,11.2
+NO,Model S,1,10100118702,Quarter Outer Complete,Remove and Replace,11.2,11.2
+NO,Model S,1,10100122702,ASSEMBLY - A / B PILLAR COMPLETE - LEFT HAND,Remove and Replace,35.1,35.1
+NO,Model S,1,10100123202,ASSY - RR QUARTER OTR LEFT HAND SVC,Remove and Replace,10.95,10.95
+NO,Model S,1,10100140202,"Rear Trunk Floor Extension (Vehicles Built Through November 5, 2014)",Remove and Replace,1.74,1.74
+NO,Model S,1,1010021008,ASSY - B PILLAR COMP LEFT HAND SVC,,33.82,33.82
+NO,Model S,1,1010021020,COMPLETE ROOF ASSEMBLY,,10.77,10.77
+NO,Model S,1,10100301036,Hood | Complete | Seam Sealer,Installation,0.72,0.72
+NO,Model S,1,10100302,Hood Assembly (Remove & Replace),Remove and Replace,0.42,0.42
+NO,Model S,1,1010031017,PANEL - REAR WHEELHOUSE EXTENSION - RIGHT,,5.28,5.28
+NO,Model S,1,1010031021,"WHEEL ARCH OUTER PANEL, RIGHT HAND",,23.53,23.53
+NO,Model S,1,1010031022,"WHEEL ARCH OUTER PANEL, LEFT HAND",,9.75,9.75
+NO,Model S,1,1010041002,ASY - MEMBER RAIL RR RH SVC,,2.92,2.92
+NO,Model S,1,1010041003,ASY - MEMBER RAIL RR LEFT HAND SVC,,2.92,2.92
+NO,Model S,1,1010041005,REAR COMPLETE BODY PANEL,,6.57,6.57
+NO,Model S,1,1010041006,"ASSEMBLY, REAR WHEELHOUSE COMPLETE, RIGHT",,33.38,33.38
+NO,Model S,1,1010041008,ASSY - RR WHEELHOUSE COMP LEFT HAND SVC,,33.38,33.38
+NO,Model S,1,1010041011,2ND ROW RETRACTOR LEFT PANEL ASSEMBLY - SERVICE ONLY,,3.52,3.52
+NO,Model S,1,10100502,Acoustic Panel - Hood (Remove & Replace),Remove and Replace,0.18,0.18
+NO,Model S,1,1010051001,ASY - PNL-SHOTGUN OTR LEFT HAND SVC,,1.21,1.21
+NO,Model S,1,1010051020,"PNL - SHOTGUN OTR, RH SVC",,1.21,1.21
+NO,Model S,1,1010051027,"SHOTGUN UPPER, LEFT",,1.15,1.15
+NO,Model S,1,1010051028,"SHOTGUN UPPER, RIGHT",,5.47,5.47
+NO,Model S,1,1010051034,"ASSY - COWL TOP, SVC - LEFT HAND DRIVE",,1.77,1.77
+NO,Model S,1,1010061001,ASY - PNL-SHOTGUN OTR LEFT HAND SVC,,1.21,1.21
+NO,Model S,1,1010061014,"ASSY - COWL TOP, SVC - RHD",,1.76,1.76
+NO,Model S,1,1010061019,"PNL - SHOTGUN OTR, RH SVC",,1.21,1.21
+NO,Model S,1,1010061020,"SHOTGUN UPPER, LEFT",,1.15,1.15
+NO,Model S,1,1010061021,"SHOTGUN UPPER, RIGHT",,5.47,5.47
+NO,Model S,1,1010061024,"ASSY - COWL TOP, SVC - LEFT HAND DRIVE",,1.77,1.77
+NO,Model S,1,10100651036,Rear Door | Complete | Seam Seal,Installation,0.54,0.54
+NO,Model S,1,10100701036,Liftgate | Complete | Seam Seal,Installation,1.14,1.14
+NO,Model S,1,1010076028,ASY - PNL-SHOTGUN OTR LEFT HAND SVC,,1.21,1.21
+NO,Model S,1,1010076037,"ASSY - COWL TOP, SVC - RHD",,1.76,1.76
+NO,Model S,1,1010076044,"PNL - SHOTGUN OTR, RH SVC",,1.21,1.21
+NO,Model S,1,1010076058,"SHOTGUN UPPER, LEFT",,1.15,1.15
+NO,Model S,1,1010076059,"SHOTGUN UPPER, RIGHT",,5.47,5.47
+NO,Model S,1,1010076065,"ASSY - COWL TOP, SVC - LEFT HAND DRIVE",,1.77,1.77
+NO,Model S,1,1010091002,ASSY - RR QUARTER OTR LEFT HAND SVC - SMALL CHARGEPORT,,8.6,8.6
+NO,Model S,1,1010091007,ASSY - RR QUARTER OTR RH,,10.48,10.48
+NO,Model S,1,1010091016,ASSY - RR QUARTER OTR LEFT HAND SVC,,9.38,9.38
+NO,Model S,1,1010091022,ASSY - RR QTR UPR LEFT HAND,,8.6,8.6
+NO,Model S,1,1010091023,ASSY - RR QTR UPR RH,,8.6,8.6
+NO,Model S,1,10101017602,ASSEMBLY - COWL TOP LEFT HAND DRIVE,Remove and Replace,2.16,2.16
+NO,Model S,1,10101017702,ASSEMBLY - COWL TOP RIGHT HAND DRIVE,Remove and Replace,2.16,2.16
+NO,Model S,1,10101017802,ASSEMBLY - SHOTGUN OUTER - LEFT HAND,Remove and Replace,2.76,2.76
+NO,Model S,1,10101018402,PANEL  - SHOTGUN OUTER - RIGHT HAND,Remove and Replace,2.76,2.76
+NO,Model S,1,10101019102,"SHOTGUN UPPER, LEFT",Remove and Replace,2.1,2.1
+NO,Model S,1,10101027802,Shotgun Upper Assembly (Section) Lower,Remove and Replace,3.0,3.0
+NO,Model S,1,10101027902,Shotgun Upper Assembly (Section) Lower,Remove and Replace,3.0,3.0
+NO,Model S,1,10101030002,Shotgun Upper Assembly,Remove and Replace,2.1,2.1
+NO,Model S,1,10101803902,ASSEMBLY- 2ND ROW RETRACTOR PANEL - LEFT HAND,Remove and Replace,1.86,1.86
+NO,Model S,1,10101804002,ASSEMBLY- 2ND ROW RETRACTOR PANEL - RIGHT HAND,Remove and Replace,1.86,1.86
+NO,Model S,1,10101804102,ASSEMBLY- EXTENSION - REAR TRUNK FLOOR PANEL  - LEFT HAND,Remove and Replace,1.68,1.68
+NO,Model S,1,10101804202,ASSEMBLY- EXTENSION - REAR TRUNK FLOOR PANEL  - RIGHT HAND,Remove and Replace,1.68,1.68
+NO,Model S,1,10101804302,"ASSEMBLY, REAR WHEELEFTOUSE COMPLETE, RIGHT",Remove and Replace,16.45,16.45
+NO,Model S,1,10101804502,REAR WHEELEFTOUSE COMPLETE - LEFT HAND,Remove and Replace,16.45,16.45
+NO,Model S,1,10101816802,ASY - RR TRUNK FLOOR SVC,Remove and Replace,3.06,3.06
+NO,Model S,1,10101817002,PANEL - SECOND ROW FLOOR,Remove and Replace,1.5,1.5
+NO,Model S,1,10101817102,REAR COMPLETE BODY PANEL,Remove and Replace,7.0,7.0
+NO,Model S,1,10101817502,TRUNK FLOOR PANEL EXTENSION REAR LEFT,Remove and Replace,1.74,1.74
+NO,Model S,1,10101912502,"WHEEL ARCH OUTER PANEL, LEFT HAND",Remove and Replace,16.9,16.9
+NO,Model S,1,10101912602,"WHEEL ARCH OUTER PANEL, RIGHT HAND",Remove and Replace,16.9,16.9
+NO,Model S,1,10101913102,,Remove and Replace,13.85,13.85
+NO,Model S,1,10102704602,"B-PILLAR COMPLETE, LEFT HAND",Remove and Replace,29.25,29.25
+NO,Model S,1,10102704702,"B-PILLAR COMPLETE, RIGHT HAND",Remove and Replace,29.25,29.25
+NO,Model S,1,10102704802,COMPLETE ROOF ASSEMBLY,Remove and Replace,2.94,2.94
+NO,Model S,1,10102901402,SILL (FLANGE AREA)-RIGHT,Remove and Replace,11.25,11.25
+NO,Model S,1,10102901502,SILL (OUTER SECTION)-RIGHT,Remove and Replace,24.75,24.75
+NO,Model S,1,10102901602,SILL (REAR SECTION)-RIGHT,Remove and Replace,35.6,35.6
+NO,Model S,1,10102901702,SILL (FLANGE AREA) - LEFT,Remove and Replace,11.25,11.25
+NO,Model S,1,10102901802,SILL (OUTER SECTION)- LEFT,Remove and Replace,24.75,24.75
+NO,Model S,1,10102901902,SILL (REAR SECTION)- LEFT,Remove and Replace,35.6,35.6
+NO,Model S,1,10102904002,Jack Pad Mount Repair,Remove and Replace,1.86,1.86
+NO,Model S,1,10104002,Roof Assembly (without Panoramic Roof) (Remove & Replace),Remove and Replace,7.6,7.6
+NO,Model S,1,10106107,Door Assembly - RH (Rework),Test/Adjust,0.1,0.1
+NO,Model S,1,10106202,Door Assembly - Rear - LH (Remove & Replace),Remove and Replace,1.08,1.08
+NO,Model S,1,10106302,Door Assembly - Rear - RH (Remove & Replace),Remove and Replace,1.08,1.08
+NO,Model S,1,10107002,Liftgate Assembly (Remove & Replace),Remove and Replace,3.36,3.36
+YES,Model S,1,10108608,Tesla Body Repair - Body Labor,Body Shop,0.0,0.0
+YES,Model S,1,10108808,Tesla Body Repair - Sublet,Body Shop,0.0,0.0
+YES,Model S,1,10109008,Structural Body Repair,Repair,0.0,0.0
+YES,Model S,1,10109108,Non-Structural Body Repair,Restore,0.0,0.0
+YES,Model S,1,10182019,Customer Generated Quote - Issue (Transaction) Resolved - Bound,General diagnosis conclusion,0.0,0.0
+NO,Model S,1,10200702,Sensor - HVAC - Light/Temperature/Humidity (Remove & Replace),Remove and Replace,0.66,0.66
+NO,Model S,1,10203002,Glass - Rear Quarter - LH (Remove & Replace),Remove and Replace,2.16,2.16
+NO,Model S,1,10203102,Glass - Rear Quarter - RH (Remove & Replace),Remove and Replace,2.1,2.1
+NO,Model S,1,10204002,Liftgate Glass (Remove & Replace),Remove and Replace,1.32,1.32
+NO,Model S,1,10205002,Glass - Roof - Fixed (Remove & Replace),Remove and Replace,1.02,1.02
+YES,Model S,1,1027521,Assistance with Refund of Reservation,Test/Adjust,0.0,0.0
+NO,Model S,1,11330502,Gas Strut - Hood - LH (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model S,1,11330602,Gas Strut - Hood - RH (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model S,1,11330702,C-Clips - Strut - Hood - LH (Remove and Replace),Remove and Replace,0.06,0.06
+NO,Model S,1,11330722,C-Clips - Strut - Liftgate - LH (Remove and Replace),Remove and Replace,0.06,0.06
+NO,Model S,1,11330822,C-Clips - Strut - Liftgate - RH (Remove and Replace),Remove and Replace,0.06,0.06
+NO,Model S,1,11332402,Module - Door Controller - LH (Remove & Replace),Remove and Replace,0.36,0.36
+NO,Model S,1,11332502,Module - Door Controller - RH (Remove & Replace),Remove and Replace,0.36,0.36
+NO,Model S,1,11332902,C-Clips - Strut - Hood - RH (Remove and Replace),Remove and Replace,0.06,0.06
+NO,Model S,1,11334202,Power Strut - Liftgate (Remove & Replace),Remove and Replace,0.42,0.42
+NO,Model S,1,11334402,Strut - Liftgate (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model S,1,11334802,Module - Liftgate Control (Remove & Replace),Remove and Replace,0.96,0.96
+NO,Model S,1,11335002,Liftgate Ball Stud - Set  (Remove & Replace),Remove and Replace,0.18,0.18
+NO,Model S,1,11351502,Latch - Door - Rear - LH (Remove & Replace),Remove and Replace,0.54,0.54
+NO,Model S,1,11351602,Latch - Door - Rear - RH (Remove & Replace),Remove and Replace,0.54,0.54
+NO,Model S,1,11352502,Striker - Door - Rear - LH (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model S,1,11352602,Striker - Door - Rear - RH (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model S,1,11353402,Striker - Liftgate (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model S,1,11355002,Latch - Liftgate (Remove & Replace),Remove and Replace,0.3,0.3
+NO,Model S,1,11355102,Striker - Hood (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model S,1,11355202,"Latch - Hood - Primary (RWD) (Vehicles built before April 16, 2016) (Remove & Replace)",Remove and Replace,0.3,0.3
+NO,Model S,1,11355302,"Latch - Hood - Secondary (RWD) (Vehicles built before April 16, 2016)  (Remove & Replace)",Remove and Replace,0.54,0.54
+NO,Model S,1,11355602,"Latch - Hood (Dual Motor) (Vehicles built before April 16, 2016)  (Remove & Replace)",Remove and Replace,0.24,0.24
+NO,Model S,1,11355702,"Latch - Hood (Vehicles built after April 16, 2016) (Remove & Replace)",Remove and Replace,0.24,0.24
+NO,Model S,1,11355802,Actuator - Latch - Hood - LH (Remove & Replace),Remove and Replace,0.3,0.3
+NO,Model S,1,11355893,Secondary Hood Latch - No Problem Found,Inspection,0.05,0.05
+NO,Model S,1,11355902,Actuator - Latch - Hood - RH (Remove & Replace),Remove and Replace,0.3,0.3
+NO,Model S,1,11356202,Cable - Latch - Hood (RWD) (Remove & Replace),Remove and Replace,0.42,0.42
+NO,Model S,1,11356502,Cable - Latch - Hood - LH (Dual Motor) (Remove & Replace),Remove and Replace,0.18,0.18
+NO,Model S,1,11356602,Cable - Latch - Hood - RH (Dual Motor) (Remove & Replace),Remove and Replace,0.18,0.18
+NO,Model S,1,11356897,Secondary Hood Latch - Adjusted ,Modify,0.2,0.2
+NO,Model S,1,11357002,Exterior Release Switch - Liftgate (Remove & Replace),Remove and Replace,0.48,0.48
+NO,Model S,1,11450202,Handle - Exterior Release - Door - Rear - RH Generation 2.1 (Remove and Replace),Remove and Replace,0.72,0.72
+NO,Model S,1,11450402,Handle - Exterior Release - Door - Rear - RH Generation 3.0 (Remove and Replace),Remove and Replace,0.72,0.72
+NO,Model S,1,11452006,Handle - Exterior Release - Door - Rear - 3rd Generation - LH - Retrofit,Retrofit,1.14,1.14
+NO,Model S,1,11452012,Handle - Exterior Release - Door - Rear - LH Generation 3.0 (Remove & Replace),Remove and Replace,0.72,0.72
+NO,Model S,1,11452016,Handle - Exterior Release - Door - Rear - LH - Generation 2.1 (Retrofit),Retrofit,1.2,1.2
+NO,Model S,1,11452022,Handle - Exterior Release - Door - Rear - LH Generation 2.1 (Remove & Replace),Remove and Replace,0.72,0.72
+NO,Model S,1,11452106,Handle - Exterior Release - Door - Rear - 3rd Generation - RH - Retrofit,Retrofit,1.14,1.14
+NO,Model S,1,11452112,Handle - Exterior Release - Door - Rear - RH - Generation 3.0 (Remove & Replace),Remove and Replace,0.72,0.72
+NO,Model S,1,11452116,Handle - Exterior Release - Door - Rear - RH - Generation 2.1 (Retrofit),Retrofit,1.2,1.2
+NO,Model S,1,11452122,Handle - Exterior Release - Door - Rear - RH - Generation 2.1 (Remove & Replace),Remove and Replace,0.72,0.72
+NO,Model S,1,11452202,Module - Door Handle Controller – Rear - RH - Generation 3.0 (Remove & Replace),Remove and Replace,0.24,0.24
+NO,Model S,1,11452302,Module - Door Handle Controller – Rear - LH - Generation 3.0 (Remove & Replace),Remove and Replace,0.24,0.24
+NO,Model S,1,11452603,Handle - Rear Door - Exterior Release - LH - Generation 2.5 (Dismantle and Rebuild),Remove and Rebuild,0.72,0.72
+NO,Model S,1,11452703,Handle - Rear Door - Exterior Release - RH - Generation 2.5 (Dismantle and Rebuild),Remove and Rebuild,0.72,0.72
+NO,Model S,1,11453202,Grip - Door - Exterior Handle - Rear - LH (Remove & Replace),Remove and Replace,0.96,0.96
+NO,Model S,1,11453302,Grip - Door - Exterior Handle - Rear - RH (Remove & Replace),Remove and Replace,0.96,0.96
+NO,Model S,1,11454702,LED - Door - Exterior Handle - Rear - LH (Remove & Replace),Remove and Replace,0.96,0.96
+NO,Model S,1,11454802,LED - Door - Exterior Handle - Rear - RH (Remove & Replace),Remove and Replace,1.02,1.02
+NO,Model S,1,11456202,Press Sensor - Door - Exterior Handle - Rear - LH (Remove & Replace),Remove and Replace,0.72,0.72
+NO,Model S,1,11456302,Press Sensor - Door - Exterior Handle - Rear - RH (Remove & Replace),Remove and Replace,0.72,0.72
+NO,Model S,1,11457442,Paddle Gear - Handle - Exterior Release - Door - Rear - LH - Generation 3.0 (Remove & Replace),Remove and Replace,0.9,0.9
+NO,Model S,1,11457502,Position Switch Harness - Door Handle (Remove & Replace),Remove and Replace,0.9,0.9
+NO,Model S,1,11457642,Paddle Gear - Handle - Exterior Release - Door - Rear - RH - Generation 3.0 (Remove & Replace),Remove and Replace,0.96,0.96
+NO,Model S,1,11459002,Handle Motor - Exterior Release - Door - Rear - LH - Generation 3.0 (Remove and Replace),Remove and Replace,0.84,0.84
+NO,Model S,1,11459102,Handle Motor - Exterior Release - Door - Rear - RH - Generation 3.0 (Remove and Replace),Remove and Replace,0.84,0.84
+NO,Model S,1,11500302,Door Glass - LH - Rear (Remove & Replace),Remove and Replace,0.24,0.24
+NO,Model S,1,11500402,Door Glass - RH - Rear (Remove & Replace),Remove and Replace,0.24,0.24
+YES,Model S,1,11700004,Adjustment: Seal,Test/Adjust,0.2,0.2
+NO,Model S,1,11701502,Seal - Rear Door - LH (Remove & Replace),Remove and Replace,0.36,0.36
+NO,Model S,1,11701602,Seal - Rear Door - RH (Remove & Replace),Remove and Replace,0.36,0.36
+NO,Model S,1,11701802,Seal - Hood (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model S,1,11701902,Seal - Lip - Trunk Trim Center (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model S,1,11702002,Seal - Liftgate (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model S,1,11702502,Seal - Outer Belt - Rear Door - RH (Remove and Replace),Remove and Replace,0.06,0.06
+NO,Model S,1,11704402,Seal - Outer Belt - Rear Door - LH (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model S,1,11704502,Seal - Outer Belt - Rear Door- RH (Remove & Replace),Remove and Replace,0.12,0.12
+YES,Model S,1,12000004,Adjustment: Exterior Trim,Test/Adjust,0.2,0.2
+NO,Model S,1,12030502,Panel - Aero Shield - Mid (Remove & Replace),Remove and Replace,0.24,0.24
+NO,Model S,1,12030802,Panel - Diffuser Tray - Rear (Remove & Replace),Remove and Replace,1.5,1.5
+NO,Model S,1,12030902,Rails - Diffuser Tray Rear - LH (Remove & Replace),Remove and Replace,0.18,0.18
+NO,Model S,1,12031002,Rails - Diffuser Tray Rear - RH (Remove & Replace),Remove and Replace,0.18,0.18
+NO,Model S,1,12050602,Vehicle Configuration Badge (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model S,1,12050606,Vehicle Configuration Badge (Retrofit),Retrofit,0.12,0.12
+NO,Model S,1,12050607,Vehicle Configuration Badge (Remove),Modify,0.06,0.06
+NO,Model S,1,12050702,Tesla Badge - Rear (Remove & Replace),Remove and Replace,0.24,0.24
+NO,Model S,1,12091102,Door Mirror Assembly - LH (Remove & Replace),Remove and Replace,0.36,0.36
+NO,Model S,1,12091202,Door Mirror Assembly - RH (Remove & Replace),Remove and Replace,0.36,0.36
+NO,Model S,1,12091702,Skull Cap - Door Mirror - LH (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model S,1,12091802,Skull Cap - Door Mirror - RH (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model S,1,12092002,Glass - Door Mirror - LH (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model S,1,12092102,Glass - Door Mirror - RH (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model S,1,12200102,'B'  Post Trim Panel - LH (Remove & Replace),Remove and Replace,0.24,0.24
+NO,Model S,1,12200202,'B'  Post Trim Panel - RH (Remove & Replace),Remove and Replace,0.24,0.24
+NO,Model S,1,12201002,Spoiler–Rear-Replace (Remove & Replace),Remove and Replace,0.0,0.0
+NO,Model S,1,12201602,Scuff Plate - Rocker Panel - LH (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model S,1,12201702,Scuff Plate - Rocker Panel - RH (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model S,1,12207002,Applique - Liftgate (Remove & Replace),Remove and Replace,0.54,0.54
+YES,Model S,1,12208583,Mud Flaps (PDI Retrofit),Retrofit,0.0,0.0
+NO,Model S,1,12220402,Spoiler - Rear (Remove & Replace),Remove and Replace,0.3,0.3
+NO,Model S,1,12220407,Spoiler - Rear (Remove),Modify,0.18,0.18
+NO,Model S,1,12250902,Panel - Cowl Screen (Remove & Replace),Remove and Replace,0.3,0.3
+NO,Model S,1,12251012,Cover - Shock Tower - LH (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model S,1,12251112,Cover - Shock Tower - RH (Remove & Replace),Remove and Replace,0.12,0.12
+YES,Model S,1,12302302,Ball Neck - Trailer Hitch (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model S,1,12505744,Vehicle Wrap – (Removal),Retrofit,0.0,0.0
+YES,Model S,1,13000004,Diagnosis: Seats,Test/Adjust,0.5,0.5
+NO,Model S,1,13010412,Fan - Cushion - Driver Seat (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model S,1,13010602,Module - Memory Seat  (Remove & Replace),Remove and Replace,0.48,0.48
+NO,Model S,1,13011002,Track - Outer - Driver's Seat (Remove & Replace),Remove and Replace,0.96,0.96
+NO,Model S,1,13011202,Motor - Seat Track - Driver Seat (Remove & Replace),Remove and Replace,0.6,0.6
+NO,Model S,1,13011502,Motor - Seat Tilt - Driver Seat (Remove & Replace),Remove and Replace,0.72,0.72
+NO,Model S,1,13011602,Motor - Seat Height - Driver's Seat (Remove & Replace),Remove and Replace,0.84,0.84
+NO,Model S,1,13012002,Riser - Outer - Driver Seat (Remove & Replace),Remove and Replace,0.36,0.36
+NO,Model S,1,13014102,Power Lumbar Assembly - Driver Seat (Remove and Replace),Remove and Replace,0.6,0.6
+NO,Model S,1,13015002,Switch - Seat Height Adjust - Driver's Seat (1st Generation Seat)  (Remove & Replace),Remove and Replace,0.24,0.24
+NO,Model S,1,13015102,Switch - Back Rest and Cushion Adjust - Driver's Seat (Remove & Replace),Remove and Replace,0.24,0.24
+NO,Model S,1,13015152,Switch - Back Rest and Cushion Adjust - Driver Seat (2nd Generation Seat) (Remove and Replace),Remove and Replace,0.12,0.12
+NO,Model S,1,13016002,Motor - Headrest - Driver's (Premium Seats) (Remove & Replace),Remove and Replace,0.9,0.9
+NO,Model S,1,13016052,Motor - Headrest - Driver (Remove & Replace),Remove and Replace,0.42,0.42
+NO,Model S,1,13016202,Controller - Driver Seat (Remove and Replace),Remove and Replace,0.42,0.42
+NO,Model S,1,13018102,Button - Cushion Adjust - Driver Seat (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model S,1,13040102,1st Row Seat Assembly - LH (Remove & Replace),Remove and Replace,0.54,0.54
+NO,Model S,1,13040202,1st Row Seat Assembly - RH (Remove & Replace),Remove and Replace,0.9,0.9
+NO,Model S,1,13040302,Seat - Driver (Tesla) (Remove & Replace),Remove and Replace,0.48,0.48
+NO,Model S,1,13041002,Cover - Seat Back - Driver's (Premium Seats) (Remove & Replace),Remove and Replace,0.9,0.9
+NO,Model S,1,13041052,Shell - Seat Back - Driver (Remove and Replace),Remove and Replace,0.12,0.12
+NO,Model S,1,13042002,Trim - Headrest - Driver's (Premium Seats) (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model S,1,13042052,Trim - Headrest - Driver (2nd Generation) (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model S,1,13043002,Assembly - Back Rest - Driver's Seat (Remove & Replace),Remove and Replace,1.2,1.2
+NO,Model S,1,13044002,Base Assembly - Driver's Seat (Remove & Replace),Remove and Replace,0.96,0.96
+NO,Model S,1,13050102,Seat Assembly - 2nd Row (Remove & Replace),Remove and Replace,0.48,0.48
+NO,Model S,1,13051002,Seat Cushion - Lower - 2nd Row (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model S,1,13051402,Seat Cushion - Lower - 2nd Row - Executive - LH (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model S,1,13054002,Seat Back Assembly - 2nd Row - LH (Remove & Replace),Remove and Replace,0.36,0.36
+NO,Model S,1,13054007,Seat Back Assembly - 2nd Row - LH - Enable 3rd Row Seat Striker,Modify,0.18,0.18
+NO,Model S,1,13054102,Seat Back Assembly - 2nd Row - RH (Remove & Replace),Remove and Replace,0.36,0.36
+NO,Model S,1,13054402,Seat Back Assembly - 2nd Row - Executive (Remove and Replace),Remove and Replace,0.42,0.42
+NO,Model S,1,13055502,Release - Seat Back - 2nd Row Seat - LH (Remove & Replace),Remove and Replace,0.48,0.48
+NO,Model S,1,13055602,Release - Seat Back - 2nd Row Seat - RH (Remove & Replace),Remove and Replace,0.48,0.48
+NO,Model S,1,13055902,Latch - Seat Back - 2nd Row Seat - LH (Remove & Replace),Remove and Replace,0.48,0.48
+NO,Model S,1,13056002,Latch - Seat Back - 2nd Row Seat - RH (Remove & Replace),Remove and Replace,0.48,0.48
+NO,Model S,1,13056302,Striker - Seat Back - 2nd Row Seat - LH (Remove & Replace),Remove and Replace,0.48,0.48
+NO,Model S,1,13056402,Striker - Seat Back - 2nd Row Seat - RH (Remove & Replace),Remove and Replace,0.48,0.48
+NO,Model S,1,13056602,Seat Cushion - Lower - 2nd Row - Executive - RH (Remove and Replace),Remove and Replace,0.12,0.12
+NO,Model S,1,13056702,Pivot Lock - Seat Back - 2nd Row Seat - LH (Remove & Replace),Remove and Replace,0.24,0.24
+NO,Model S,1,13056802,Pivot Lock - Seat Back - 2nd Row Seat - RH (Remove & Replace),Remove and Replace,0.24,0.24
+NO,Model S,1,13057102,Pivot Sleeve - Seat Back - 2nd Row Seat - LH (Remove & Replace),Remove and Replace,0.24,0.24
+NO,Model S,1,13060102,Seat Assembly - 3rd Row (Remove & Replace),Remove and Replace,0.96,0.96
+NO,Model S,1,13060208,Seat Assembly - 3rd Row - Remove,Restore,0.48,0.48
+NO,Model S,1,13061002,Lanyard - Seat - 3rd Row (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model S,1,13065102,Latch - Headrest - 3rd Row (Remove & Replace),Remove and Replace,0.18,0.18
+NO,Model S,1,13066802,Center Console - 3rd Row (Remove & Replace),Remove and Replace,0.6,0.6
+NO,Model S,1,13067102,Cover - Hip Pivot - 3rd Row - LH (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model S,1,13067202,Cover - Hip Pivot - 3rd Row - RH (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model S,1,13070102,Foam - Cushion - Driver Seat (Remove & Replace),Remove and Replace,1.2,1.2
+NO,Model S,1,13070152,Foam - Cushion - Driver Seat (2nd Generation) (Remove & Replace),Remove and Replace,0.78,0.78
+NO,Model S,1,13071002,Cover - Back Rest - Driver's Seat (Remove & Replace),Remove and Replace,1.14,1.14
+NO,Model S,1,13071302,Foam - Cushion - Driver Seat (Remove & Replace),Remove and Replace,0.96,0.96
+NO,Model S,1,13072002,Trim - Seat Back - Driver Seat (Remove & Replace),Remove and Replace,1.14,1.14
+NO,Model S,1,13072202,Trim - Cushion - Driver Seat (Remove & Replace),Remove and Replace,0.72,0.72
+NO,Model S,1,13072602,Foam - Seat Back - Driver Seat (Remove & Replace),Remove and Replace,0.9,0.9
+NO,Model S,1,13073202,Heater Pad - Seat Back - Driver Seat (Remove & Replace),Remove and Replace,0.0,0.0
+NO,Model S,1,13073602,Module - Seat Heater - Driver Seat  (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model S,1,13073702,Module - Seat Heater - Passenger Seat (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model S,1,13081002,Cover - Seat back - 2nd Row Seat - LH (Remove & Replace),Remove and Replace,0.96,0.96
+NO,Model S,1,13081102,Cover - Seat back - 2nd Row Seat - RH (Remove & Replace),Remove and Replace,0.96,0.96
+NO,Model S,1,13082002,Foam - Seat Back - 2nd Row Seat - LH (Remove & Replace),Remove and Replace,1.02,1.02
+NO,Model S,1,13082102,Foam - Seat back - 2nd Row Seat - RH (Remove & Replace),Remove and Replace,1.02,1.02
+YES,Model S,1,14050002,USB Drive,Remove and Replace,0.06,0.06
+NO,Model S,1,14051002,Glove Box (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model S,1,14051102,Glove Box - Latch Release (Remove & Replace),Remove and Replace,0.36,0.36
+NO,Model S,1,14051202,Glove Box - Damper (Remove & Replace),Remove and Replace,0.36,0.36
+NO,Model S,1,14052202,Cross Car Beam (Remove & Replace),Remove and Replace,4.44,4.44
+NO,Model S,1,14053002,Trim - Touch Screen Surround (Remove & Replace),Remove and Replace,0.72,0.72
+NO,Model S,1,14053102,Face Level Vent - Driver's - Outer (Remove & Replace),Remove and Replace,0.3,0.3
+NO,Model S,1,14054302,Panel - A Pillar Trim - Middle - LH (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model S,1,14054402,Panel - A Pillar Trim - Middle - RH (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model S,1,14055302,Assembly - Cover - Footwell - Driver's (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model S,1,14055402,Assembly - Cover - Footwell - Passenger's (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model S,1,14056002,Cover - Knee Airbag - Driver (Remove & Replace),Remove and Replace,0.3,0.3
+NO,Model S,1,14056002P2,Cover - Knee Airbag - Driver (Remove & Replace),Remove and Replace,0.0,0.0
+NO,Model S,1,15050202,Rear View Mirror - 1st Generation (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model S,1,15050402,Assembly - Mirror - Sun Visor - LH (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model S,1,15050502,Rear View Mirror - 2nd Generation (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model S,1,15050702,Assembly - Mirror - Sun Visor - RH (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model S,1,15050802,Trim - Rear View Mirror (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model S,1,15051002,Sun Visor - LH (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model S,1,15051102,Center Support - Sun Visor - Driver (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model S,1,15051202,Sun Visor - RH (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model S,1,15051306,Center Support - Sun Visor - Pair (Retrofit),Retrofit,0.66,0.66
+NO,Model S,1,15111002,Trim - Upper - Liftgate (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model S,1,15111302,Trim - Liftgate - Lower (Remove & Replace),Remove and Replace,0.24,0.24
+YES,Model S,1,15130004,Diagnosis: Closures,General Diagnosis,0.65,0.65
+NO,Model S,1,15132002,Panel - Door Trim - Rear - LH (Remove & Replace),Remove and Replace,0.54,0.54
+NO,Model S,1,15132102,Panel - Door Trim - Rear - RH (Remove & Replace),Remove and Replace,0.54,0.54
+NO,Model S,1,15132702,NVH Pad - Panel - Door Trim - Rear - LH (Remove & Replace),Remove and Replace,0.01,0.01
+NO,Model S,1,15132802,NVH Pad - Panel - Door Trim - Rear - RH (Remove & Replace),Remove and Replace,0.01,0.01
+NO,Model S,1,15136302,Armrest - Door - Rear - LH (Remove and Replace),Remove and Replace,0.3,0.3
+NO,Model S,1,15136402,Armrest - Door - Rear - RH (Remove and Replace),Remove and Replace,0.3,0.3
+NO,Model S,1,15180202,Trim - Sill Panel - RH (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model S,1,15183002,Trim - B-Pillar - Upper - LH (Remove & Replace),Remove and Replace,0.18,0.18
+NO,Model S,1,15183102,Trim - B-Pillar - Upper - RH (Remove & Replace),Remove and Replace,0.18,0.18
+NO,Model S,1,15183402,Trim - B-Pillar - Lower - LH (Remove & Replace),Remove and Replace,0.18,0.18
+NO,Model S,1,15183502,Trim - B-Pillar - Lower - RH (Remove & Replace),Remove and Replace,0.18,0.18
+NO,Model S,1,15184002,Trim - A-Pillar - Upper - LH (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model S,1,15184102,Trim - A-Pillar - Upper - RH (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model S,1,15184202,Trim - 'B'  Post - Upper - LH (Remove & Replace),Remove and Replace,0.24,0.24
+NO,Model S,1,15184302,Trim - 'B'  Post - Upper - RH (Remove & Replace),Remove and Replace,0.36,0.36
+NO,Model S,1,15184402,Trim - 'B'  Post - Lower - LH (Remove & Replace),Remove and Replace,0.24,0.24
+NO,Model S,1,15184502,Trim - 'B'  Post - Lower - RH (Remove & Replace),Remove and Replace,0.24,0.24
+NO,Model S,1,15184602,Trim - 'C' Post Upper - LH (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model S,1,15184702,Trim - 'C' Post Upper - RH  (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model S,1,15184802,Trim - Sill Panel - LH - Rear (Remove & Replace),Remove and Replace,0.18,0.18
+NO,Model S,1,15184902,Trim - Sill Panel - RH - Rear (Remove & Replace),Remove and Replace,0.18,0.18
+NO,Model S,1,15185002,Footrest - Driver's (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model S,1,15185102,Trim - 'C' Post Rear - LH (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model S,1,15185302,Trim - 'C' Post Rear - RH (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model S,1,15185802,Trim - C-Pillar - Lower - LH (Remove & Replace),Remove and Replace,0.0,0.0
+NO,Model S,1,15185902,Trim - C-Pillar - Lower - RH (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model S,1,15191102,Assembly - Closeout Extension - LH - Center Console (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model S,1,15191202,Assembly - Closeout Extension - RH - Center Console (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model S,1,15191702,Base - Armrest - Center Console (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model S,1,15191902,Trim - Center Console - 1st Row - Rear (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model S,1,15192002,Assembly - Panel - Wrapped - LH (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model S,1,15192102,Assembly - Panel - Wrapped - RH (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model S,1,15192302,Vent - Center Console - 1st Row (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model S,1,15192402,Center Console Assembly - 1st Row (Remove & Replace),Remove and Replace,0.42,0.42
+NO,Model S,1,15192502,Armrest Pads - Center Console - 1st Row (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model S,1,15193002,Panel - Center Console - Wrapped - Rear - LH (Remove & Replace),Remove and Replace,0.6,0.6
+NO,Model S,1,15193102,Panel - Center Console - Wrapped - Rear - RH (Remove & Replace),Remove and Replace,0.6,0.6
+NO,Model S,1,15194002,Center Console Assembly - 2nd Row (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model S,1,15194102,Center Console - 2nd Row - Executive (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model S,1,15202102,Overhead Console (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model S,1,15241102,Assembly - Hood Latch Cover (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model S,1,15245302,Trim - Rear Trunk - Floor (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model S,1,15245402,Carpet - Rear Trunk (Remove & Replace),Remove and Replace,0.42,0.42
+NO,Model S,1,15245602,Trim - Rear Trunk - Rear Wall (Remove & Replace),Remove and Replace,0.3,0.3
+NO,Model S,1,15246002,Charge Port Cover Trim (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model S,1,15301902,Floor Mat Set (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model S,1,15307102,Absorber - Wheelhouse - Rear - LH (Remove & Replace),Remove and Replace,0.84,0.84
+NO,Model S,1,15307202,Absorber - Wheelhouse - Rear - RH (Remove & Replace),Remove and Replace,0.84,0.84
+NO,Model S,1,16010101,HV Battery (RWD),Remove and Install,1.68,1.68
+NO,Model S,1,16010102,HV Battery (RWD),Remove and Replace,2.28,2.28
+NO,Model S,1,16010103408,HV Battery Cover Corrosion (Removal not Possible),Restore,0.06,0.06
+NO,Model S,1,16010103419,HV Battery Cover Corrosion (Corrosion not Present),Inspection,0.06,0.06
+NO,Model S,1,16010103508,HV Battery Cover Corrosion (Corrosion Removed),Restore,1.38,1.38
+NO,Model S,1,16010200102,BATTERY FLOW NUT REPLACEMENT (MIDDLE),Remove and Replace,1.26,1.26
+NO,Model S,1,16010200202,BATTERY FLOW NUT REPLACEMENT (REAR),Remove and Replace,1.26,1.26
+YES,Model S,1,16010201,HV Battery (AWD),Remove and Install,1.5,1.5
+YES,Model S,1,16010202,HV Battery (AWD),Remove and Replace,2.28,2.28
+NO,Model S,1,16010500,Not Applicable,Inspection,0.0,0.0
+NO,Model S,1,16011002,Rapid Mate Plate - HV Battery (Remove & Replace),Remove and Replace,2.4,2.4
+NO,Model S,1,16011051,"Ancillary
+Unit (HV Battery 2.0)",Remove and Install,2.82,2.82
+NO,Model S,1,16011052,"Ancillary
+Unit (HV Battery 2.0)",Remove and Replace,2.82,2.82
+NO,Model S,1,16012022,Aero Shield Support Tab - HV Battery 1.0/1.5 (Battery Already Removed),Remove and Replace,1.44,1.44
+NO,Model S,1,16012032,Aero Shield Support Tab - HV Battery 1.0/1.5 (Battery Not Yet Removed),Remove and Replace,2.16,2.16
+NO,Model S,1,16012042,Aero Shield Support Tab - HV Battery 2.0 (Battery Already Removed),Remove and Replace,1.14,1.14
+NO,Model S,1,16012052,Aero Shield Support Tab - HV Battery 2.0 (Battery Not Yet Removed),Remove and Replace,1.74,1.74
+NO,Model S,1,16012112,BMS PCBA - High Voltage Battery Assembly (HV Battery 1.0/1.5) (Remove & Replace),Remove and Replace,3.96,3.96
+NO,Model S,1,16012118,BMS Standoff - High Voltage Battery Assembly (Repair),Restore,0.06,0.06
+NO,Model S,1,16013008,HV Battery Enclosure - Re-seal - Level 1,Restore,0.6,0.6
+NO,Model S,1,16013108,HV Battery Enclosure - Re-seal - Level 2,Restore,1.2,1.2
+NO,Model S,1,16014002,HV Battery Blanket (Remove & Replace),Remove and Replace,1.86,1.86
+NO,Model S,1,16014006,High Voltage Battery Assembly - Battery Blanket (Retrofit),Retrofit,2.28,2.28
+NO,Model S,1,16015100,Discharge HV Battery (Through Rapid Mate),Test/Adjust,0.36,0.36
+NO,Model S,1,16015200,Discharge HV Battery (Through Discharge Port),Test/Adjust,0.3,0.3
+YES,Model S,1,16015300,Discharge HV Battery (At Pack Contactors),Test/Adjust,0.96,0.96
+NO,Model S,1,16100502,Cover - Pyrotechnic Fuse - HV Battery 1.0/1.5 (Remove and Replace),Remove and Replace,1.8,1.8
+NO,Model S,1,16100602,Cover - Pyrotechnic Fuse - HV Battery 2.0 (Remove and Replace),Remove and Replace,0.36,0.36
+NO,Model S,1,16101006,Mud Flaps - HV Battery (Retrofit),Retrofit,1.74,1.74
+YES,Model S,1,16102100,HV Battery Air Leak Test,Test/Adjust,0.66,0.66
+YES,Model S,1,16300100,Resistance Meter (Zero Adjust),Test/Adjust,0.05,0.05
+NO,Model S,1,1630012121,Contactors - HV Battery (HV Battery 1.0/1.5),Remove and Install,4.2,4.2
+NO,Model S,1,1630012122,Contactors - HV Battery (HV Battery 1.0/1.5),Remove and Replace,4.2,4.2
+NO,Model S,1,16302202,BMS PCBA - High Voltage Battery Assembly (HV Battery 2.0) (Remove & Replace),Remove and Replace,2.88,2.88
+NO,Model S,1,16302841,Battery Module Remove and Replace (Reman),Fee,0.4,0.4
+NO,Model S,1,16304176,Halfcup Charge/Discharge Test (Reman),Fee,5.29,5.29
+NO,Model S,1,16308502,Fuse - Pyrotechnic - HV Battery 2.0 (Remove & Replace),Remove and Replace,0.6,0.6
+NO,Model S,1,16308507,Fuse - Pyrotechnic - HV Battery 2.0 (Dismantle and Discard),Modify,0.05,0.05
+NO,Model S,1,16308602,Rapid Mate - Low Voltage (HV Battery 2.0) (Remove & Replace),Remove and Replace,3.06,3.06
+NO,Model S,1,16308702,Fuse - Pyrotechnic - HV Battery 1.0/1.5 (Remove and Replace),Remove and Replace,2.1,2.1
+NO,Model S,1,16900308,HV Battery Damage Evaluation (Reman),Retrofit,1.0,1.0
+NO,Model S,1,16900508,HV Battery Safety Check (Reman),Retrofit,1.0,1.0
+NO,Model S,1,16901808,Battery Enclosure Replacement (Reman),Sublet,0.0,0.0
+NO,Model S,1,16901908,Battery Module Replacement (Reman),Sublet,0.0,0.0
+NO,Model S,1,16902408,Charge/Discharge Test (Reman),Sublet,0.0,0.0
+NO,Model S,1,16902608,Battery Reassembly (Reman),Sublet,0.0,0.0
+NO,Model S,1,16902808,Battery Module Repair (Reman),Sublet,0.0,0.0
+NO,Model S,1,16903108,HV Battery Coolant Leak Rectification (Reman),Retrofit,1.0,1.0
+NO,Model S,1,16904008,Enclosure - HV Battery - Remanufactured (Reman),Retrofit,5.35,5.35
+NO,Model S,1,16904208,Enclosure - HV Battery - New (Reman),Retrofit,4.6,4.6
+NO,Model S,1,16904508,Baffle - Vent - HV Battery (Reman),Retrofit,0.15,0.15
+NO,Model S,1,16905008,Battery Management System (BMS) (Reman),Retrofit,0.45,0.45
+NO,Model S,1,16906208,Modules - HV Battery - Upper (Reman),Retrofit,0.25,0.25
+NO,Model S,1,16906408,Modules - HV Battery - Lower (Reman),Retrofit,0.7,0.7
+YES,Model S,1,17000004,Diagnosis: Driver Assistance,General Diagnosis,0.5,0.5
+YES,Model S,1,17000008,Jumpstart Vehicle (Restore),Restore,0.12,0.12
+YES,Model S,1,17010000,Vehicle HV Disablement Procedure,Test/Adjust,0.54,0.54
+NO,Model S,1,17010100,Disconnect 12V - 1st Generation - RWD ,Test/Adjust,0.2,0.2
+NO,Model S,1,17010200,Disconnect 12V - 1st Generation - Dual Motor ,Modify,0.18,0.18
+NO,Model S,1,17010300,Disconnect 12V - 2nd Generation ,Test/Adjust,0.15,0.15
+NO,Model S,1,17011502,12V Battery Tray (Remove & Replace),Remove and Replace,1.2,1.2
+NO,Model S,1,17011552,12V Battery Tray (2nd Generation) (Remove & Replace),Remove and Replace,0.18,0.18
+NO,Model S,1,17011602,E-Fuse Module (1st Generation) (Remove & Replace),Remove and Replace,1.56,1.56
+NO,Model S,1,17011652,E-Fuse Module (2nd Generation) (Remove & Replace),Remove and Replace,1.2,1.2
+NO,Model S,1,17012002,Trim - Fuse Box Lid (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model S,1,17012202,12V Fuse Box (Remove & Replace),Remove and Replace,1.08,1.08
+NO,Model S,1,17012212,Fuse Box - Battery (LHD) (Remove & Replace),Remove and Replace,0.6,0.6
+NO,Model S,1,17012302,Fusebox - Battery (RHD) (Remove & Replace),Remove and Replace,1.38,1.38
+NO,Model S,1,17013102,12V Positive Jump Post (Remove & Replace),Remove and Replace,0.18,0.18
+NO,Model S,1,17015102,DCDC Cover (Remove & Replace),Remove and Replace,0.78,0.78
+YES,Model S,1,17100008,Harness Connector - Reconnect,Restore,0.1,0.1
+NO,Model S,1,17100302,Harness - Center Console (Remove & Replace),Remove and Replace,0.6,0.6
+NO,Model S,1,17100402,Harness - Body - Lower Dash (Remove & Replace),Remove and Replace,8.2,8.2
+NO,Model S,1,17100802,Harness - Lower Dash,Remove and Replace,7.85,7.85
+NO,Model S,1,17100902,Harness - Body - Right (Remove & Replace),Remove and Replace,1.98,1.98
+NO,Model S,1,17101006,Harness - Media Control Unit,Retrofit,0.3,0.3
+NO,Model S,1,17101102,Harness - Fascia - Rear (Remove & Replace),Remove and Replace,0.84,0.84
+NO,Model S,1,17101702,Harness - Body - Left (Remove & Replace),Remove and Replace,8.2,8.2
+NO,Model S,1,17102802,Harness - Rear Door - LH (Remove & Replace),Remove and Replace,0.9,0.9
+NO,Model S,1,17102902,Harness - Rear Door - RH (Remove & Replace),Remove and Replace,0.9,0.9
+NO,Model S,1,17103902,Harnesses - Liftgate - RH/RH (Remove and Replace),Remove and Replace,2.76,2.76
+NO,Model S,1,17104002,Cable - EPAS (Remove & Replace),Remove and Replace,3.24,3.24
+NO,Model S,1,17104202,Cable - Body - Left - GPS Antenna (Remove & Replace),Remove and Replace,3.6,3.6
+NO,Model S,1,17104502,Harness - Liftgate - LH (Remove & Replace),Remove and Replace,0.66,0.66
+NO,Model S,1,17104602,Harness - Liftgate - RH (Remove & Replace),Remove and Replace,1.8,1.8
+NO,Model S,1,17104702,Harnesses - Liftgate - LH/RH (Remove & Replace),Remove and Replace,2.76,2.76
+NO,Model S,1,17105002,Cable - Body Left - RKE + GPS (Remove & Replace),Remove and Replace,0.96,0.96
+YES,Model S,1,17105006,Wire - Electrical Harness (Overlay),Retrofit,0.0,0.0
+YES,Model S,1,17108100,Diagnosis: Low Voltage Distribution and Controllers,General Diagnosis,1.0,1.0
+NO,Model S,1,17150016,Electronic Toll Collection System (Retrofit),Retrofit,0.6,0.6
+NO,Model S,1,17151902,Module - Sunroof Controller (RHD) (Remove & Replace),Remove and Replace,0.42,0.42
+NO,Model S,1,17152002,Module - Sunroof Controller (LHD) (Remove & Replace),Remove and Replace,1.56,1.56
+NO,Model S,1,17152302,Module - Body Controller - BCM (Remove & Replace),Remove and Replace,1.14,1.14
+NO,Model S,1,17152602,Module - Body Controller - BCM (Remove & Replace),Remove and Replace,1.08,1.08
+NO,Model S,1,17152702,Module - Body Controller - BCM (RHD) (Remove & Replace),Remove and Replace,2.04,2.04
+NO,Model S,1,17154503,Module – Gateway,Module Reset/Reflashed,0.2,0.2
+NO,Model S,1,17154603,Module – Bluetooth (Parrot),Module Reset/Reflashed,0.1,0.1
+NO,Model S,1,17261102,Camera - B-Pillar - LH (Remove & Replace),Remove and Replace,0.3,0.3
+NO,Model S,1,17261202,Camera - B-Pillar - RH (Remove & Replace),Remove and Replace,0.3,0.3
+NO,Model S,1,17270102,Module - Park Assist - 1st Generation (Remove & Replace),Remove and Replace,0.42,0.42
+NO,Model S,1,17270202,Module - Park Assist - 2nd Generation (Remove & Replace),Remove and Replace,0.78,0.78
+NO,Model S,1,17271302,Sensor - Park Assist - Rear - Set (Remove & Replace),Remove and Replace,1.08,1.08
+NO,Model S,1,17302102,Switch - Glove Box (Remove & Replace),Remove and Replace,0.24,0.24
+NO,Model S,1,17303002,Power Socket 12V - Center Console (Remove & Replace),Remove and Replace,0.6,0.6
+NO,Model S,1,17350902,Task Light - Footwell Cover - RH (Remove and Replace),Remove and Replace,0.12,0.12
+NO,Model S,1,17351502,Puddle Light - Rear Trunk (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model S,1,17351602,Rear Compartment Lamp - RH (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model S,1,17352202,Puddle Lamp - Rear Door - LH (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model S,1,17352302,Puddle Lamp - Rear Door - RH (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model S,1,17352402,Puddle Light - Liftgate (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model S,1,17352702,Reflector Lamp - Rear Door - LH (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model S,1,17352802,Reflector Lamp - Rear Door - RH (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model S,1,17355102,Task Light - Footwell Cover - LH (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model S,1,17400102,Headlight  - LH (Remove & Replace),Remove and Replace,0.72,0.72
+YES,Model S,1,17400150,Headlights - Adjust - NA (Tool Method),Test/Adjust,0.18,0.18
+NO,Model S,1,17400202,Headlight - RH (Remove & Replace),Remove and Replace,0.72,0.72
+NO,Model S,1,17400232,Ballast - HID (SAE) (Remove & Replace),Remove and Replace,0.3,0.3
+NO,Model S,1,17400242,Ballast - HID - RH (SAE) (Remove & Replace),Remove and Replace,0.3,0.3
+NO,Model S,1,17400252,Headlight  - Pair (Remove & Replace),Remove and Replace,0.9,0.9
+NO,Model S,1,17400302,HID Bulb - Headlight - LH (Remove & Replace),Remove and Replace,0.3,0.3
+NO,Model S,1,17400402,HID Bulb - Headlight - RH (Remove & Replace),Remove and Replace,0.3,0.3
+NO,Model S,1,17400502,Halogen Bulb - Headlight - LH (Remove & Replace),Remove and Replace,0.3,0.3
+NO,Model S,1,17400602,Halogen Bulb - Headlight - RH (Remove & Replace),Remove and Replace,0.3,0.3
+NO,Model S,1,17401002,Bulb - Turn Signal - Headlight - LH (Remove & Replace),Remove and Replace,0.54,0.54
+NO,Model S,1,17401102,Bulb - Turn Signal - Headlight - RH (Remove & Replace),Remove and Replace,0.54,0.54
+NO,Model S,1,17402202,Tail Light Assembly - RH (Remove & Replace),Remove and Replace,0.3,0.3
+NO,Model S,1,17402302,"Tail Light Assembly - LH (Vehicles With 3 Phase, Motorized Charge Port) (Remove & Replace)",Remove and Replace,0.72,0.72
+NO,Model S,1,17402402,"Tail Light Assembly - LH (Vehicles With 3 Phase, Non-Motorized Charge Port) (Remove & Replace)",Remove and Replace,0.48,0.48
+NO,Model S,1,17402602,Light - License Plate (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model S,1,17402702,Light - Fog/Reverse - Rear - LH (Remove & Replace),Remove and Replace,0.66,0.66
+NO,Model S,1,17402802,Light - Fog/Reverse - Rear - RH (Remove & Replace),Remove and Replace,0.66,0.66
+NO,Model S,1,17402902,Lights - Fog/Reverse - Rear - LH/RH (Remove & Replace),Remove and Replace,1.2,1.2
+NO,Model S,1,17403502,Lamp - Reflex - Rear - LH (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model S,1,17403602,Lamp - Reflex - Rear - RH  (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model S,1,17409000,Headlight - Adjust - North America,Test/Adjust,0.15,0.15
+NO,Model S,1,17450513,Key Fob - Program (No Keys Present),Program,0.12,0.12
+NO,Model S,1,17450902,Battery - Key Fob (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model S,1,17451002,Siren - Battery Backed (Remove & Replace),Remove and Replace,0.96,0.96
+NO,Model S,1,17451602,LF Antenna - Console - Center (Remove & Replace),Remove and Replace,1.2,1.2
+NO,Model S,1,17451802,LF Antenna - Center - Rear (Remove & Replace),Remove and Replace,0.78,0.78
+NO,Model S,1,17452402,LF Antenna - Bumper Carrier (Remove & Replace),Remove and Replace,0.96,0.96
+NO,Model S,1,17452802,LF Antenna - RH - A Post (Remove & Replace),Remove and Replace,0.72,0.72
+NO,Model S,1,17453002,LF Antenna - Center - Heelboard (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model S,1,17500102,Wiper Module (Remove & Replace),Remove and Replace,0.42,0.42
+NO,Model S,1,17500302,Wiper Arm - LH (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model S,1,17500352,Wiper Arm - RH (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model S,1,17501402,Non Return Valve (Remove & Replace),Remove and Replace,0.6,0.6
+NO,Model S,1,17501502,Pipe - Washer - Reservoir to Valve (Remove & Replace),Remove and Replace,0.72,0.72
+NO,Model S,1,17501602,Pipe - Washer - Valve to Nozzle (Remove & Replace),Remove and Replace,1.08,1.08
+NO,Model S,1,17501802,Wiper Arms - Pair  (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model S,1,17530102,Horn - 1st Generation (Remove & Replace),Remove and Replace,0.48,0.48
+NO,Model S,1,17530502,Horn - 1st Generation - Pair  (Remove & Replace),Remove and Replace,0.6,0.6
+NO,Model S,1,17530512,Horn - 2nd Generation - Pair (Remove & Replace),Remove and Replace,0.72,0.72
+NO,Model S,1,17530702,Horn - 2nd Generation (Remove & Replace),Remove and Replace,0.72,0.72
+NO,Model S,1,17551002,Accelerator (Remove & Replace),Remove and Replace,0.18,0.18
+NO,Model S,1,17551202,Pedal Pad - Accelerator (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model S,1,17570102,Pyrotechnic Battery Disconnect (Remove & Replace),Remove and Replace,0.24,0.24
+NO,Model S,1,18100102,Filter – Particulate – 1st Generation (Remove and Replace),Remove and Replace,0.06,0.06
+NO,Model S,1,18100202,Filter - Particulate - 2nd Generation (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model S,1,18100602,Module - HVAC Controller - RCCM (Remove & Replace),Remove and Replace,1.98,1.98
+NO,Model S,1,18100802,Module - Thermal Controller (Remove & Replace),Remove and Replace,1.74,1.74
+NO,Model S,1,18101002,HVAC Assembly (Remove & Replace),Remove and Replace,5.04,5.04
+NO,Model S,1,18102102,Actuator - Driver's Temperature (Remove & Replace),Remove and Replace,1.8,1.8
+NO,Model S,1,18103002,Module - Thermal Controller (Remove & Replace),Remove and Replace,0.3,0.3
+NO,Model S,1,18103202,Blower Motor - HVAC (Remove & Replace),Remove and Replace,0.42,0.42
+NO,Model S,1,18103222,Blower Control FET - Blower Motor - HVAC (Remove & Replace),Remove and Replace,0.3,0.3
+NO,Model S,1,18104002,Duct - Dash to Rear Vent (Remove & Replace),Remove and Replace,0.9,0.9
+NO,Model S,1,18105202,Duct - HEPA Filter - Outlet (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model S,1,18105302,Air Extractor - Outer - LH (Remove & Replace),Remove and Replace,1.02,1.02
+NO,Model S,1,18105322,Air Extractor - Outer - RH (Remove & Replace),Remove and Replace,0.9,0.9
+NO,Model S,1,18105501,Filter - HEPA,Remove and Install,0.24,0.24
+NO,Model S,1,18105502,Filter - HEPA,Remove and Replace,0.24,0.24
+NO,Model S,1,18106002,Heater - PTC (RWD) (Remove & Replace),Remove and Replace,2.4,2.4
+NO,Model S,1,18106302,Heater - PTC (LHD) (Dual Motor) (Remove & Replace),Remove and Replace,1.92,1.92
+NO,Model S,1,18106402,Heater - PTC (Dual Motor) (RHD) (Remove & Replace),Remove and Replace,1.62,1.62
+NO,Model S,1,18106412,Heater - PTC (RHD) (RWD) (Remove & Replace),Remove and Replace,1.68,1.68
+NO,Model S,1,18107202,Sensor - Ambient Air Temperature (Remove & Replace),Remove and Replace,0.48,0.48
+NO,Model S,1,18107602,Sensor - Temperature - Evaporator (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model S,1,18201012,Evaporator (Remove & Replace),Remove and Replace,4.38,4.38
+NO,Model S,1,18201052,Evaporator (2nd Generation) (Remove & Replace),Remove and Replace,4.92,4.92
+NO,Model S,1,18203002,A/C Compressor (1st Generation) (Remove & Replace),Remove and Replace,1.5,1.5
+NO,Model S,1,18203302,A/C Compressor (3rd Generation) (Remove and Replace),Remove and Replace,1.26,1.26
+NO,Model S,1,18203602,A/C Compressor (2nd Generation) (Remove & Replace),Remove and Replace,1.68,1.68
+NO,Model S,1,18203702,A/C Compressor (Dual Motor)  (Remove & Replace),Remove and Replace,1.74,1.74
+NO,Model S,1,18203802,A/C Compressor (Dual Motor) (RHD) (Remove & Replace),Remove and Replace,1.32,1.32
+NO,Model S,1,18204102,Pipe - High Pressure - Charge Port (Remove & Replace),Remove and Replace,1.38,1.38
+NO,Model S,1,18204702,Pipe - High/Low Pressure - Charge Port (Dual Motor) (Remove and Replace),Remove and Replace,1.2,1.2
+NO,Model S,1,18205002,TXV Valve­ Evaporator (Remove & Replace),Remove and Replace,1.38,1.38
+NO,Model S,1,18205502,Sensor - Pressure and Temperature - High Pressure (Remove and Replace),Remove and Replace,0.48,0.48
+NO,Model S,1,18205602,Sensor - Pressure and Temperature - Low Pressure (Remove and Replace),Remove and Replace,0.48,0.48
+NO,Model S,1,18206002,Battery Chiller and EXV Assembly (Remove & Replace),Remove and Replace,0.36,0.36
+YES,Model S,1,18300900,Thermal System Test,Test/Adjust,0.1,0.1
+NO,Model S,1,18301002,Radiator (Remove & Replace),Remove and Replace,0.84,0.84
+NO,Model S,1,18301100,Clean Radiator (Non-Heat Pump),Maintenance,1.08,1.08
+NO,Model S,1,18301102,Radiator (Remove & Replace),Remove and Replace,1.08,1.08
+NO,Model S,1,18301300,Remove and Clean Radiator (Non-Heat Pump),Maintenance,0.96,0.96
+NO,Model S,1,18301302,Hose - Radiator Bypass (Remove & Replace),Remove and Replace,1.08,1.08
+NO,Model S,1,18301402,Reservoir Assembly - Coolant (Dual Motor) (Remove & Replace),Remove and Replace,0.54,0.54
+NO,Model S,1,18301502,Superbottle (Remove & Replace),Remove and Replace,2.1,2.1
+NO,Model S,1,18301602,Reservoir Cap - Coolant (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model S,1,18302002,Sensor - Coolant Level (Remove & Replace),Remove and Replace,0.9,0.9
+NO,Model S,1,18302502,Hose - Outlet - Rear Drive Unit (Remove & Replace),Remove and Replace,0.48,0.48
+NO,Model S,1,18303002,Hose - T-Piece to 4 Way Coolant Valve (Remove & Replace),Remove and Replace,2.34,2.34
+NO,Model S,1,18303102,Hose - Rocker to Pipe (Remove & Replace),Remove and Replace,3.6,3.6
+NO,Model S,1,18303202,Hose - RH 3 Way Coolant Valve to Radiator (Remove & Replace),Remove and Replace,3.54,3.54
+NO,Model S,1,18303302,Hose - Rocker (RH) (Remove & Replace),Remove and Replace,0.96,0.96
+NO,Model S,1,18303402,Hose - Reservoir to Coolant Pump 3 (Remove & Replace),Remove and Replace,2.4,2.4
+NO,Model S,1,18303502,Hose - Coolant Pump 3 to Rocker (Remove & Replace),Remove and Replace,2.4,2.4
+NO,Model S,1,18303702,Hose - Rocker (LH) to Charger (Remove & Replace),Remove and Replace,0.96,0.96
+NO,Model S,1,18303802,Hose - Charger Outlet (Remove & Replace),Remove and Replace,1.92,1.92
+NO,Model S,1,18303902,Hose - Charger to Motor (Remove & Replace),Remove and Replace,2.82,2.82
+NO,Model S,1,18304102,Hose - Reservoir to 4 Way Coolant Valve (Remove & Replace),Remove and Replace,2.34,2.34
+NO,Model S,1,18304202,Hose - 4 Way Coolant Valve to Coolant Pump 1 (Remove & Replace),Remove and Replace,2.4,2.4
+NO,Model S,1,18304302,Hose - Coolant Pump 1 to LH 3 Way Coolant Valve (Remove & Replace),Remove and Replace,2.34,2.34
+NO,Model S,1,18304402,Hose - LH 3 Way Coolant Valve to Chiller (Remove & Replace),Remove and Replace,2.34,2.34
+NO,Model S,1,18304502,Hose - Chiller to Coolant Pump 2 and LH 3 Way Coolant Valve (Remove & Replace),Remove and Replace,2.34,2.34
+NO,Model S,1,18304602,Hose - Coolant Pump 2 to Battery Coolant Heater (Remove & Replace),Remove and Replace,2.34,2.34
+NO,Model S,1,18304702,Hose - Battery Coolant Heater to Battery (Remove & Replace),Remove and Replace,3.0,3.0
+NO,Model S,1,18304802,Hose - Battery to 4 Way Coolant Valve (Remove & Replace),Remove and Replace,3.0,3.0
+NO,Model S,1,18305502,Hose - DCDC to Battery Coolant Heater (Remove & Replace),Remove and Replace,0.84,0.84
+NO,Model S,1,18306002,3 Way Coolant Valve - Chiller Bypass (Remove & Replace),Remove and Replace,1.38,1.38
+NO,Model S,1,18306102,3 Way Coolant Valve - Radiator Bypass (Remove & Replace),Remove and Replace,0.96,0.96
+NO,Model S,1,18306502,4 Way Coolant Valve - Series/Parallel (Remove & Replace),Remove and Replace,0.66,0.66
+NO,Model S,1,18307002,Coolant Heater - Electric - Battery - 1st Generation (Remove & Replace),Remove and Replace,1.8,1.8
+NO,Model S,1,18307202,Coolant Heater - Electric - Battery - 2nd Generation (Remove & Replace),Remove and Replace,1.98,1.98
+NO,Model S,1,18307302,Coolant Heater - Electric - Battery (Remove & Replace),Remove and Replace,1.68,1.68
+NO,Model S,1,18307312,Coolant Heater - Electric - Battery (E-Fuse) (Remove & Replace),Remove and Replace,1.92,1.92
+NO,Model S,1,18308502,Battery Coolant Pump 1 (1st Generation) (Remove & Replace),Remove and Replace,0.6,0.6
+NO,Model S,1,18308602,Battery Coolant Pump 2 - 1st Generation (Remove & Replace),Remove and Replace,0.6,0.6
+NO,Model S,1,18308702,Battery Coolant Pump 1 (2nd Generation) (Remove & Replace),Remove and Replace,0.6,0.6
+NO,Model S,1,18308752,Battery Coolant Pump 1 (3rd Generation) (Remove & Replace),Remove and Replace,0.72,0.72
+NO,Model S,1,18308802,Battery Coolant Pump 2 (2nd Generation) (Remove & Replace),Remove and Replace,0.6,0.6
+NO,Model S,1,18308852,Battery Coolant Pump 2 (3rd Generation) (Remove & Replace),Remove and Replace,1.08,1.08
+NO,Model S,1,18500602,Active Louver - Center (Remove & Replace),Remove and Replace,1.32,1.32
+YES,Model S,1,19010100825,Remove Vehicle Label (No Anti-Tamper Residue),Removal,0.06,0.06
+YES,Model S,1,19010100902,Vehicle Emission Control Label,Remove and Replace,0.06,0.06
+YES,Model S,1,19010100925,Remove Vehicle Label and Anti-Tamper Residue,Removal,0.12,0.12
+YES,Model S,1,19010101002,Battery Chemistry Label,Remove and Replace,0.06,0.06
+YES,Model S,1,19010101102,Monroney Label,Remove and Replace,0.06,0.06
+YES,Model S,1,19010202,Labels - Any (Remove & Replace),Remove and Replace,0.24,0.24
+NO,Model S,1,190135740002,"Correct CE label already present, no further action required.",Test/Adjust,0.1,0.1
+NO,Model S,1,20010102,Airbag - Driver (Remove & Replace),Remove and Replace,0.18,0.18
+NO,Model S,1,20010202,Knee Airbag - Driver (NA) (Remove & Replace),Remove and Replace,0.6,0.6
+NO,Model S,1,20050302,Retractor - Seatbelt -1st Row - RH (Remove and Replace),Remove and Replace,0.72,0.72
+NO,Model S,1,20054102,Retractor - Seatbelt -1st Row - LH (Remove & Replace),Remove and Replace,0.78,0.78
+NO,Model S,1,20054202,Retractor - Seatbelt  - 1st Row - RH (Remove & Replace),Remove and Replace,0.72,0.72
+NO,Model S,1,20054702,Buckle - 1st Row - LH (Remove & Replace),Remove and Replace,0.24,0.24
+NO,Model S,1,20054802,Buckle - 1st Row - RH (Remove & Replace),Remove and Replace,0.24,0.24
+NO,Model S,1,20056102,Seat Belt Assembly - 2nd Row - LH (Remove & Replace),Remove and Replace,0.6,0.6
+NO,Model S,1,20056202,Seat Belt Assembly - 2nd Row - RH (Remove & Replace),Remove and Replace,0.6,0.6
+NO,Model S,1,20056302,Seat Belt Assembly - 2nd Row - Center (Remove & Replace),Remove and Replace,0.24,0.24
+NO,Model S,1,20057002,Buckle - 2nd Row - LH (Remove & Replace),Remove and Replace,0.24,0.24
+NO,Model S,1,20057102,Buckle - 2nd Row - RH (Remove & Replace),Remove and Replace,0.24,0.24
+NO,Model S,1,20057202,Buckle - 2nd Row - Center (Remove & Replace),Remove and Replace,0.24,0.24
+NO,Model S,1,20058102,Seatbelt Assembly - 3rd Row - LH (Remove & Replace),Remove and Replace,0.6,0.6
+NO,Model S,1,20058202,Seatbelt Assembly - 3rd Row - RH (Remove & Replace),Remove and Replace,0.6,0.6
+NO,Model S,1,20101002,Pretensioner - Outboard Lap - 1st Row - LH (Remove & Replace),Remove and Replace,0.36,0.36
+NO,Model S,1,20101102,Pretensioner - Outboard Lap - 1st Row - RH (Remove & Replace),Remove and Replace,0.36,0.36
+NO,Model S,1,20200502,Sensor - Impact - B Pillar - LH (Remove & Replace),Remove and Replace,0.36,0.36
+NO,Model S,1,20200602,Sensor - Impact - B Pillar - RH (Remove & Replace),Remove and Replace,0.36,0.36
+NO,Model S,1,20200702,Sensor - Impact - C-Pillar - LH (Remove & Replace),Remove and Replace,0.48,0.48
+NO,Model S,1,20200802,Sensor - Impact - C Pillar - RH (Remove & Replace),Remove and Replace,0.48,0.48
+NO,Model S,1,20201102,Sensor - T-Bar Accelerometer - LH (Remove & Replace),Remove and Replace,0.54,0.54
+NO,Model S,1,20201152,Sensor - Shotgun Accelerometer - LH (Remove & Replace),Remove and Replace,0.24,0.24
+NO,Model S,1,20201202,Sensor - T-Bar Accelerometer - RH (Remove & Replace),Remove and Replace,0.54,0.54
+NO,Model S,1,20201252,Sensor - Shotgun Accelerometer - RH (Remove & Replace),Remove and Replace,0.24,0.24
+NO,Model S,1,20202002,Sensor - Pressure Tube (Remove & Replace),Remove and Replace,0.6,0.6
+NO,Model S,1,20202112,Sensor - Occupant Classification System - 1st Row - LH (Remove & Replace),Remove and Replace,1.14,1.14
+NO,Model S,1,20202212,Sensor - Occupant Classification System - 1st Row - RH (Remove & Replace),Remove and Replace,1.14,1.14
+NO,Model S,1,21050402,Re-Synchronize Odometer Value (Remove & Replace),Remove and Replace,0.0,0.0
+YES,Model S,1,21051000,Update Display Avatar,Test/Adjust,0.12,0.12
+NO,Model S,1,21060102,Media Control Unit (Remove & Replace),Remove and Replace,1.02,1.02
+NO,Model S,1,21060107,Media Control Unit (Dispose),Modify,0.18,0.18
+NO,Model S,1,21060108,Tegra Parrot Module - Media Control Unit (Reflash),Restore,0.05,0.05
+NO,Model S,1,21060112,Media Control Unit (Atom-based) (Remove & Replace),Remove and Replace,1.02,1.02
+NO,Model S,1,21060208,Software Recovery - Media Control Unit (Restore),Restore,0.05,0.05
+NO,Model S,1,21062802,Connectivity Board (Without Gyro Board) (Remove & Replace),Remove and Replace,1.44,1.44
+NO,Model S,1,21062902,Connectivity Board (With Gyro Board) (Remove & Replace),Remove and Replace,1.62,1.62
+NO,Model S,1,21063002,Navigation Micro SD Card - Media Control Unit (Remove & Replace),Remove and Replace,0.84,0.84
+NO,Model S,1,21063202,Gateway SD Card - Media Control Unit (Remove & Replace),Remove and Replace,0.72,0.72
+NO,Model S,1,21063208,SD Card - Media Control Unit (Reformat),Restore,0.05,0.05
+NO,Model S,1,21063308,Field Programmable Gate Array (FPGA) - Media Control Unit (Reflash),Restore,0.05,0.05
+NO,Model S,1,21065002,SD Card - Media Control Unit (Remove & Replace),Remove and Replace,1.08,1.08
+NO,Model S,1,21211002,Speaker - Rear Door - LH (Remove & Replace),Remove and Replace,0.48,0.48
+NO,Model S,1,21211102,Speaker - Rear Door - RH (Remove & Replace),Remove and Replace,0.48,0.48
+NO,Model S,1,21211502,Speaker - Dash - LH (Premium Only) (Remove & Replace),Remove and Replace,0.6,0.6
+NO,Model S,1,21211602,Speaker - Dash - Center  (Remove & Replace),Remove and Replace,1.2,1.2
+NO,Model S,1,21211702,Speaker - Dash - RH (Premium Only) (Remove & Replace),Remove and Replace,0.6,0.6
+NO,Model S,1,21212002,Subwoofer Assembly (Premium Only) (Remove & Replace),Remove and Replace,0.18,0.18
+NO,Model S,1,21212502,Tweeter - A Pillar - LH (Remove & Replace),Remove and Replace,0.24,0.24
+NO,Model S,1,21212602,Tweeter - A Pillar - RH (Remove & Replace),Remove and Replace,0.24,0.24
+NO,Model S,1,21213002,Speaker - Liftgate - LH (Premium Only) (Remove & Replace),Remove and Replace,0.24,0.24
+NO,Model S,1,21213102,Speaker - Liftgate - RH (Premium Only) (Remove & Replace),Remove and Replace,0.24,0.24
+NO,Model S,1,21213502,External Amplifier (Premium Only) (Remove & Replace),Remove and Replace,1.44,1.44
+NO,Model S,1,21214202,Chime - Liftgate (Remove & Replace),Remove and Replace,0.18,0.18
+NO,Model S,1,21250102,Microphone - Bluetooth (Remove & Replace),Remove and Replace,0.24,0.24
+NO,Model S,1,21260102,USB Socket - Center Console - Rear (Remove & Replace),Remove and Replace,1.08,1.08
+NO,Model S,1,21261002,Dock Connector - Telephone-USB - Center Console (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model S,1,21300102,Antenna - AM/FM/RKE (Remove & Replace),Remove and Replace,3.12,3.12
+NO,Model S,1,21300202,Antenna - FM2  (Remove & Replace),Remove and Replace,3.12,3.12
+NO,Model S,1,21300602,Antenna Amplifier - AM/FM/RKE (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model S,1,21300702,Antenna Amplifier - FM2 (NA) (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model S,1,21301002,RF Filter - LH (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model S,1,21301102,RF Filter - RH (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model S,1,21310102,Antenna - Satellite Radio - Liftgate-Mounted (Remove & Replace),Remove and Replace,1.92,1.92
+NO,Model S,1,21320102,Antenna - GPS  (Remove & Replace),Remove and Replace,1.44,1.44
+NO,Model S,1,21330102,Antenna - WiFi (Remove & Replace),Remove and Replace,0.48,0.48
+NO,Model S,1,21350102,Antenna - GSM - LH (Remove & Replace),Remove and Replace,0.6,0.6
+NO,Model S,1,21350202,Antenna - GSM - RH (Remove & Replace),Remove and Replace,0.6,0.6
+NO,Model S,1,24100110,Panoramic Roof - Adjust,Test/Adjust,0.15,0.15
+NO,Model S,1,24101102,Fixed Glass - Panoramic Roof - 1st Generation (Remove & Replace) (Requires Urethane and Primer),Remove and Replace,1.38,1.38
+NO,Model S,1,24101202,Fixed Glass - Panoramic Roof - 2nd Generation (Remove & Replace) (Requires Urethane and Primer),Remove and Replace,1.14,1.14
+NO,Model S,1,24102802,Cam Block - Panoramic Roof - Rear - LH (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model S,1,24102902,Cam Block - Panoramic Roof - Rear - RH (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model S,1,24103002,Motor - Sunroof - LH (Remove & Replace),Remove and Replace,0.72,0.72
+NO,Model S,1,24103102,Motor - Sunroof - RH (Remove & Replace),Remove and Replace,0.48,0.48
+NO,Model S,1,24103802,Motor Block - Sunroof - LH (Remove & Replace),Remove and Replace,4.32,4.32
+NO,Model S,1,24103902,Motor Block - Sunroof - RH (Remove & Replace),Remove and Replace,4.32,4.32
+NO,Model S,1,24104001,Drive Cable - Panoramic Roof - 2nd Generation - LH,Remove and Install,0.96,0.96
+NO,Model S,1,24104002,Drive Cable - Panoramic Roof - 2nd Generation - LH,Remove and Replace,0.96,0.96
+NO,Model S,1,24104011,Drive Cable - Panoramic Roof - 1st Generation - LH,Remove and Install,1.68,1.68
+NO,Model S,1,24104012,Drive Cable - Panoramic Roof - 1st Generation - LH,Remove and Replace,1.68,1.68
+NO,Model S,1,24104201,Drive Cable - Panoramic Roof - 2nd Generation - RH,Remove and Install,0.66,0.66
+NO,Model S,1,24104202,Drive Cable - Panoramic Roof - 2nd Generation - RH,Remove and Replace,0.66,0.66
+NO,Model S,1,24104211,Drive Cable - Panoramic Roof - 1st Generation - RH,Remove and Install,1.5,1.5
+NO,Model S,1,24104212,Drive Cable - Panoramic Roof - 1st Generation - RH,Remove and Replace,1.5,1.5
+NO,Model S,1,24106802,Cover - Panoramic Roof - Middle (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model S,1,24107202,Seal - Stop Bumper - Panoramic Roof - 1st Generation (Remove & Replace),Remove and Replace,0.36,0.36
+NO,Model S,1,24107402,Seal - Fixed Glass - Panoramic Roof - 2nd Generation (Remove & Replace),Remove and Replace,1.44,1.44
+NO,Model S,1,24107502,Motor Block - Panoramic Roof - 2nd Generation - Both (Remove & Replace),Remove and Replace,1.56,1.56
+NO,Model S,1,24107512,Motor Block - Panoramic Roof - 1st Generation - Both (Remove & Replace),Remove and Replace,4.38,4.38
+NO,Model S,1,24300006,Roof Rack - Fixed Glass (Retrofit),Retrofit,1.92,1.92
+NO,Model S,1,24300102,Roof Rack Door - Rear- RH (Generation 2.1) (Remove and Replace),Remove and Replace,0.12,0.12
+NO,Model S,1,24300202,Roof Rack Door - Rear- RH (Remove and Replace),Remove and Replace,0.12,0.12
+NO,Model S,1,24302202,Roof Rack Door - Rear- LH (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model S,1,24302252,Roof Rack Door - Rear- LH (Generation 2.1) (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model S,1,24302302,Roof Rack Door - Rear - RH (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model S,1,24302352,Roof Rack Door - Rear - RH (Generation 2.1) (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model S,1,30011102,Skidplate - Rear (Remove & Replace),Remove and Replace,0.36,0.36
+YES,Model S,1,31002300,Four Wheel Alignment Check and Adjust,Test/Adjust,1.32,1.32
+NO,Model S,1,31030102,Knuckle - Suspension - Rear - LH (Remove & Replace),Remove and Replace,1.5,1.5
+NO,Model S,1,31030202,Knuckle - Suspension - Rear - RH (Remove & Replace),Remove and Replace,1.5,1.5
+NO,Model S,1,31030602,Hub - Rear - RH (Remove & Replace),Remove and Replace,0.9,0.9
+NO,Model S,1,31030702,Hub - Rear - LH (Remove & Replace),Remove and Replace,0.9,0.9
+NO,Model S,1,31031102,Control Arm Assembly - Rear - Lower - LH (Remove & Replace),Remove and Replace,0.84,0.84
+NO,Model S,1,31031202,Control Arm Assembly - Rear - Lower - RH (Remove & Replace),Remove and Replace,0.84,0.84
+NO,Model S,1,31033102,Stabilizer Bar - Rear (Remove & Replace),Remove and Replace,5.64,5.64
+NO,Model S,1,31034106,Performance Suspension Retrofit - Commercial,Retrofit,8.0,8.0
+YES,Model S,1,31039000,Suspension - Rear - Check Torque,Test/Adjust,0.84,0.84
+NO,Model S,1,31100102,Module - Air Suspension - ECU (Remove & Replace),Remove and Replace,2.04,2.04
+NO,Model S,1,31100112,Module - Air Suspension - ECU (Tesla) (LHD) (Remove & Replace),Remove and Replace,1.92,1.92
+NO,Model S,1,31100202,Module - Air Suspension - ECU (RHD) (Remove & Replace),Remove and Replace,0.72,0.72
+NO,Model S,1,31100212,Module - Air Suspension - ECU (Tesla) (RHD) (Remove & Replace),Remove and Replace,0.6,0.6
+NO,Model S,1,31101007,Compressor to E-Fuse Overlay (Rework),Modify,1.08,1.08
+NO,Model S,1,31101008,Air Dryer - Tesla Air Suspension (Regenerate),Restore,0.15,0.15
+NO,Model S,1,31102002,Compressor - Air Suspension - 1st Generation (Remove & Replace),Remove and Replace,0.72,0.72
+NO,Model S,1,31102102,Sensor - Ambient Air Temperature - Compressor (Remove & Replace),Remove and Replace,0.36,0.36
+NO,Model S,1,31102202,Valve Block - Air Suspension (Remove & Replace),Remove and Replace,1.02,1.02
+NO,Model S,1,31102302,Compressor - Air Suspension - 2nd Generation (Remove and Replace),Remove and Replace,0.6,0.6
+NO,Model S,1,31102502,Reservoir - Air Suspension (Remove & Replace),Remove and Replace,0.48,0.48
+NO,Model S,1,31103202,Fill Valve - Air Suspension,Remove and Replace,0.06,0.06
+NO,Model S,1,32010100,Lock To Lock-Angle Test,Test/Adjust,0.05,0.05
+NO,Model S,1,32010302,Tie Rod End - LH (Remove & Replace),Remove and Replace,0.18,0.18
+NO,Model S,1,32010602,Tie Rod End - RH (Remove & Replace),Remove and Replace,0.18,0.18
+NO,Model S,1,33100102,ABS Modulator Assembly (Remove & Replace),Remove and Replace,2.34,2.34
+NO,Model S,1,33100702,Sensor - Wheel Speed - Rear - LH (Remove & Replace),Remove and Replace,0.84,0.84
+NO,Model S,1,33100802,Sensor - Wheel Speed - Rear - RH (Remove & Replace),Remove and Replace,0.84,0.84
+NO,Model S,1,33172002,Vacuum Pump (Remove & Replace),Remove and Replace,0.36,0.36
+YES,Model S,1,34010105,Tire Rotation,Maintenance,0.3,0.3
+YES,Model S,1,34011302,Lug Nuts - Vehicle Set (Remove & Replace),Remove and Replace,0.36,0.36
+NO,Model S,1,34011402,Lug Nut Covers - Vehicle Set (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model S,1,34012402,Wheels - Axle Set (Remove & Replace),Remove and Replace,0.24,0.24
+NO,Model S,1,34012502,Wheel Sensor - TPMS - Rear - LH (Remove & Replace),Remove and Replace,0.3,0.3
+YES,Model S,1,34012902,Wheels - Set (Remove and Replace),Remove and Replace,1.56,1.56
+YES,Model S,1,34014005,Seasonal Wheel and Tire Set Swap (Already Built),Seasonal Swap,0.5,0.5
+YES,Model S,1,34014101,Tire Set - Vehicle - Swap (Not Already Built),Remove and Install,1.38,1.38
+NO,Model S,1,34015007,Wheel Disposal (Rework),Modify,0.06,0.06
+YES,Model S,1,34015032,Cap - Wheel - Set (Remove & Replace),Remove and Replace,0.05,0.05
+YES,Model S,1,34015202,Wheel - Rear - LH (Remove & Replace),Remove and Replace,0.36,0.36
+YES,Model S,1,34015222,Cap - Wheel - Rear - LH (Remove & Replace),Remove and Replace,0.06,0.06
+YES,Model S,1,34015302,Wheel - Rear - RH (Remove & Replace),Remove and Replace,0.36,0.36
+YES,Model S,1,34015322,Cap - Wheel - Rear - RH (Remove & Replace),Remove and Replace,0.06,0.06
+YES,Model S,1,34020010,Mobile Tire Service Performed,Modify,0.0,0.0
+YES,Model S,1,34020030,Mobile Tire Service Performed – Logistics,Tire Repair,0.0,0.0
+NO,Model S,1,34020105,Tire Rotation (Mobile Only),Maintenance,0.48,0.48
+YES,Model S,1,34020305,Tires - All Four (Balance),Rebalance,0.6,0.6
+YES,Model S,1,34020900,Check and Adjust Tire Pressure,Test/Adjust,0.05,0.05
+YES,Model S,1,34021202,Tire - Rear - LH (Remove & Replace),Tire Purchase,0.35,0.35
+YES,Model S,1,34021302,Tire - Rear - RH (Remove & Replace),Tire Purchase,0.35,0.35
+YES,Model S,1,34021605,Tires - Rear - Set,Tire Purchase,0.7,0.7
+YES,Model S,1,34021805,Tires - Vehicle - Set,Tire Purchase,1.15,1.15
+YES,Model S,1,34022015,Tire - Supplemental (Rebalance),Maintenance,0.18,0.18
+YES,Model S,1,34022205,Tire - Rear - LH (Road Force) (Balance),Tire Repair,0.2,0.2
+YES,Model S,1,34022225,Tire - Rear - LH (Balance),Rebalance,0.2,0.2
+YES,Model S,1,34022305,Tire - Rear - RH (Road Force) (Balance),Tire Repair,0.2,0.2
+YES,Model S,1,34022325,Tire - Rear - RH (Balance),Rebalance,0.2,0.2
+NO,Model S,1,34022425,Tires - Pair (Balance),Rebalance,0.3,0.3
+YES,Model S,1,34023208,Tire - Rear - LH (Repair),Tire Repair,0.72,0.72
+YES,Model S,1,34023308,Tire - Rear - RH (Repair),Tire Repair,0.72,0.72
+NO,Model S,1,34040402,Wheel Sensor - TPMS - Rear - LH (Remove & Replace),Remove and Replace,0.48,0.48
+NO,Model S,1,34040502,Wheel Sensor - TPMS - Rear - RH (Remove & Replace),Remove and Replace,0.48,0.48
+NO,Model S,1,34040602,Wheel Sensors - TPMS - Vehicle Set (Remove & Replace),Remove and Replace,0.96,0.96
+NO,Model S,1,34041000,TPMS Sensor - ID Learn Procedure - Baolong,Test/Adjust,0.05,0.05
+NO,Model S,1,34041300,TPMS - Set Thresholds,Program,0.3,0.3
+NO,Model S,1,34042002,TPMS Antenna - Dual External (Remove & Replace),Remove and Replace,2.4,2.4
+NO,Model S,1,34043202,Module - TPMS - Baolong (Remove & Replace),Remove and Replace,0.84,0.84
+NO,Model S,1,39300602,Hose - Coupler to Battery Pump 2 (Remove and Replace),Remove and Replace,1.92,1.92
+NO,Model S,1,39300702,Hose - DCDC Converter to Battery Pump 2 (Remove and Replace),Remove and Replace,1.98,1.98
+NO,Model S,1,40010300,Drive Unit Health Check,Test/Adjust,1.0,1.0
+NO,Model S,1,40010702,Drive Unit - Rear - Large (Remove & Replace),Remove and Replace,3.0,3.0
+NO,Model S,1,40016002,Drive Unit - Rear - Small (Remove & Replace),Remove and Replace,3.66,3.66
+NO,Model S,1,40018332,Drive Unit Function Test (Reman),Fee,1.32,1.32
+NO,Model S,1,40019244,Drive Unit Disassembly (Reman),Fee,1.2,1.2
+NO,Model S,1,40102002,Sensor - Rear Motor - Speed (Remove & Replace),Remove and Replace,0.3,0.3
+NO,Model S,1,40300402,Gearbox Fluid - Small Drive Unit (Remove & Replace),Remove and Replace,1.02,1.02
+NO,Model S,1,40301202,Rear Oil Seal - Differential to Halfshaft Assembly - Small Drive Unit - LH (Remove & Replace),Remove and Replace,1.38,1.38
+NO,Model S,1,40301302,Rear Oil Seal - Differential to Halfshaft Assembly - Small Drive Unit - RH (Remove & Replace),Remove and Replace,1.26,1.26
+NO,Model S,1,40301402,Rear Oil Seal - Differential to Halfshaft Assembly - Large Drive Unit - LH (Remove & Replace),Remove and Replace,1.02,1.02
+NO,Model S,1,40301502,Rear Oil Seal - Differential to Halfshaft Assembly - Large Drive Unit - RH (Remove & Replace),Remove and Replace,1.02,1.02
+NO,Model S,1,40302002,Halfshaft - Rear Drive Unit - LH (Remove & Replace),Remove and Replace,1.92,1.92
+NO,Model S,1,40302102,Halfshaft - Rear Drive Unit - RH (Remove & Replace),Remove and Replace,1.92,1.92
+NO,Model S,1,40302502,Gaiter - Halfshaft - Outer - Rear - LH (Remove & Replace),Remove and Replace,4.38,4.38
+NO,Model S,1,40302602,Gaiter - Halfshaft - Outer - Rear - RH (Remove & Replace),Remove and Replace,4.38,4.38
+NO,Model S,1,40304602,Oil Pump - Rear Drive Unit (Remove & Replace),Remove and Replace,1.2,1.2
+NO,Model S,1,40304802,Oil Filter - Rear Drive Unit (Remove & Replace),Remove and Replace,0.54,0.54
+YES,Model S,1,44000204,HVIL Diagnostics,Diagnosis Only,1.0,1.0
+NO,Model S,1,44011601,Charge Port (NACS),Remove and Install,0.54,0.54
+NO,Model S,1,44011602,Charge Port - Motorized (NACS),Remove and Replace,0.54,0.54
+NO,Model S,1,44012100,Charge Port Voltage Check,Test/Adjust,0.18,0.18
+NO,Model S,1,44012102,"Charge Port (Type 2, Non-Motorized Charge Port)",Remove and Replace,0.66,0.66
+NO,Model S,1,44012106,Charge Port (GB) (Remove and Retrofit),Retrofit,1.62,1.62
+NO,Model S,1,44012202,"Charge Port (NACS, Non-Motorized)",Remove and Replace,0.6,0.6
+NO,Model S,1,44012502,"Charge Port (Vehicles With 3 Phase, Motorized Charge Port) (Remove & Replace)",Remove and Replace,0.66,0.66
+NO,Model S,1,44012602,Seal - Charge Port (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model S,1,44013102,Busbars - Charge Port to HV Battery (Remove & Replace),Remove and Replace,0.72,0.72
+NO,Model S,1,44013202,Release Cable - Charge Port (Remove & Replace),Remove and Replace,0.42,0.42
+YES,Model S,1,44013205,"Charge Port - Manual Release of Cable (Vehicles With 3 Phase, Non-Motorized Charge Port)",Maintenance,0.96,0.96
+NO,Model S,1,44013305,"Charge Port - Manual Release of Cable (Vehicles With 3 Phase, Motorized Charge Port)",Maintenance,0.96,0.96
+NO,Model S,1,44014102,"Door - Charge Port (Vehicles With 3 Phase, Motorized Charge Port) (Remove & Replace)",Remove and Replace,0.66,0.66
+NO,Model S,1,44014106,Door - Charge Port (3 Phase) (Motorized Charge Port) (Retrofit),Retrofit,0.78,0.78
+NO,Model S,1,44014202,"Door - Charge Port (Vehicles With 3 Phase, Non-Motorized Charge Port) (Remove & Replace)",Remove and Replace,0.66,0.66
+NO,Model S,1,44015002,ECU - Charge Port (Remove & Replace),Remove and Replace,0.3,0.3
+NO,Model S,1,44015102,Safety Cap - Busbar - Charge Port to HV Battery (Remove & Replace),Remove and Replace,0.3,0.3
+NO,Model S,1,44100202,Master Charger - RH - 1st Generation (Remove & Replace),Remove and Replace,1.38,1.38
+NO,Model S,1,44100302,Slave Charger - RH - 1st Generation (Remove and Replace),Remove and Replace,1.44,1.44
+NO,Model S,1,44100402,Slave Charger - RH - 2nd Generation (Remove and Replace),Remove and Replace,1.38,1.38
+NO,Model S,1,44101002,Relay Box (Remove & Replace),Remove and Replace,1.26,1.26
+NO,Model S,1,44101102,Slave Charger - LH - 1st Generation (Remove & Replace),Remove and Replace,1.44,1.44
+NO,Model S,1,44102102,Slave Charger - LH - 2nd Generation (Remove & Replace),Remove and Replace,1.38,1.38
+NO,Model S,1,44102202,Master Charger - RH - 2nd Generation (Remove & Replace),Remove and Replace,1.38,1.38
+NO,Model S,1,44103002,Charger - 3rd Generation (Remove & Replace),Remove and Replace,1.38,1.38
+NO,Model S,1,44103102,30A Fuse - Charger - 3rd Generation (Remove & Replace),Remove and Replace,1.86,1.86
+NO,Model S,1,44104102,PLC Relay - ECU - Charge Port (CCS) (Remove & Replace),Remove and Replace,0.3,0.3
+NO,Model S,1,44109006,Enable 2nd Charger ,Retrofit,1.2,1.2
+NO,Model S,1,44200102,DCDC Converter - 1st Generation (Remove & Replace),Remove and Replace,1.92,1.92
+NO,Model S,1,44200202,Fuses - DCDC Converter - 1st Generation,Remove and Replace,1.86,1.86
+NO,Model S,1,44200302,DCDC Converter - 2nd Generation (RWD) (Remove & Replace),Remove and Replace,1.92,1.92
+NO,Model S,1,44200306,DCDC Converter - 2nd Generation (Retrofit),Retrofit,7.45,7.45
+NO,Model S,1,44200402,DCDC Converter - 2nd Generation (Dual Motor) (Remove & Replace),Remove and Replace,3.48,3.48
+NO,Model S,1,44200602,Forward Junction Box - 1st Generation (Dual Motor) (Remove & Replace),Remove and Replace,1.74,1.74
+NO,Model S,1,44200702,Forward Junction Box - 1st Generation (RWD) (Remove & Replace),Remove and Replace,2.94,2.94
+NO,Model S,1,44200802,Forward Junction Box - 1st Generation - 20 Amp Fuse (RWD) (Remove & Replace),Remove and Replace,0.6,0.6
+NO,Model S,1,44200902,Forward Junction Box - 1st Generation - 40 Amp Fuse (RWD) (Remove & Replace),Remove and Replace,0.66,0.66
+NO,Model S,1,44201002,Forward Junction Box - 1st Generation - 20 Amp Fuse (Dual Motor) (Remove & Replace),Remove and Replace,1.32,1.32
+NO,Model S,1,44201102,Forward Junction Box - 1st Generation - 40 Amp Fuse (Dual Motor) (Remove & Replace),Remove and Replace,1.32,1.32
+NO,Model S,1,44201202,Forward Junction Box - 2nd Generation (RWD) (Remove & Replace),Remove and Replace,0.96,0.96
+NO,Model S,1,44201302,Forward Junction Box - 2nd Generation (Dual Motor) (Remove & Replace),Remove and Replace,2.34,2.34
+NO,Model S,1,44201402,40 Amp Fuse - Forward Junction Box - 2nd Generation (Dual Motor) (Remove & Replace),Remove and Replace,2.58,2.58
+NO,Model S,1,44202002,DCDC Converter - 3rd Generation (RWD) (Remove & Replace),Remove and Replace,1.74,1.74
+NO,Model S,1,44202202,DCDC Converter - 3rd Generation (Dual Motor) (Remove & Replace),Remove and Replace,3.96,3.96
+NO,Model S,1,44202302,DCDC Converter - 4th Generation (Remove & Replace),Remove and Replace,3.96,3.96
+NO,Model S,1,44202402,HVIL Switch - Forward Junction Box (Remove & Replace),Remove and Replace,2.58,2.58
+NO,Model S,1,44300102,HV Junction Box - 1st Generation (Remove & Replace),Remove and Replace,2.16,2.16
+NO,Model S,1,44300202,HV Junction Box - Cover - 1st Generation (Remove & Replace),Remove and Replace,0.96,0.96
+NO,Model S,1,44300502,HV Junction Box - Reed Switch - 1st Generation (Remove & Replace),Remove and Replace,1.08,1.08
+NO,Model S,1,44301002,HV Junction Box - 2nd Generation (Remove & Replace),Remove and Replace,1.08,1.08
+NO,Model S,1,44301102,HV Junction Box - Cover - 2nd Generation (Remove & Replace),Remove and Replace,0.66,0.66
+NO,Model S,1,44301202,HV Junction Box - 2nd Generation - 30 Amp Fuse (Remove & Replace),Remove and Replace,1.08,1.08
+NO,Model S,1,44301302,HV Junction Box - 2nd Generation - 100 Amp Fuse (Remove & Replace),Remove and Replace,1.08,1.08
+NO,Model S,1,44301406,HV Junction Box (Retrofit),Retrofit,1.26,1.26
+NO,Model S,1,44301506,HV Junction Box and HV Harness (Retrofit),Retrofit,1.86,1.86
+NO,Model S,1,44302002,Harness - Logic - HV Junction Box to Charger (Remove & Replace),Remove and Replace,0.6,0.6
+NO,Model S,1,44302102,Lid Switches - HV Junction Box (Remove & Replace),Remove and Replace,1.2,1.2
+NO,Model S,1,44500302,HV Harness - HVJB to Charge Port - 1st Generation (Remove & Replace),Remove and Replace,2.64,2.64
+NO,Model S,1,44500402,HV Harness - HVJB to Charge Port - 2nd Generation (Remove & Replace),Remove and Replace,0.84,0.84
+NO,Model S,1,44500552,HV Harness - 3rd Generation Charger to Charge Port (3 Phase) (Remove & Replace),Remove and Replace,1.2,1.2
+NO,Model S,1,44500902,HV Harness - Rear Drive Unit to HVJB - Small Rear Drive Unit (Remove & Replace),Remove and Replace,1.08,1.08
+NO,Model S,1,44501202,HV Harness - Rear Drive Unit to HVJB (Remove & Replace),Remove and Replace,4.44,4.44
+NO,Model S,1,44501406,AC Cable - Charge Port to HV Battery (3-Phase) (Retrofit),Retrofit,0.6,0.6
+NO,Model S,1,44501502,HV Harness - DCDC Converter to A/C Compressor (Remove & Replace),Remove and Replace,0.78,0.78
+NO,Model S,1,44501602,Harness - FJB to A/C Compressor (Remove & Replace),Remove and Replace,0.36,0.36
+NO,Model S,1,44503202,HV Harness - Rapid Splitter to FJB (Remove & Replace),Remove and Replace,3.72,3.72
+NO,Model S,1,44503602,HV Harness - HVJB to DCDC (Remove & Replace),Remove and Replace,2.4,2.4
+YES,Model S,1,46010100004,Diagnosis: Coolant Leak,General Diagnosis,0.5,0.5
+YES,Model S,1,50010003,Firmware Update - Mobile Connector,Module Reset/Reflashed,0.1,0.1
+YES,Model S,1,50010102,Mobile Connector - UMC (Remove & Replace),Remove and Replace,0.0,0.0
+NO,Model S,1,50020102,Fuses - Wall Connector (Remove & Replace),Remove and Replace,0.0,0.0
+NO,Model S,1,50020402,Cover - Wall Connector (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model S,1,50020702,Wall Connector (Remove & Replace),Remove and Replace,0.84,0.84
+YES,Model S,1,50022002,Handle and Cable Assembly - 80A Wall Connector (Remove & Replace),Remove and Replace,0.48,0.48
+YES,Model S,1,50024002,Handle and Cable Assembly - 40A Wall Connector (Remove & Replace),Remove and Replace,0.48,0.48
+YES,Model S,1,61013108,Equip Tire Repair Kit,General diagnosis conclusion,0.0,0.0
+YES,Model S,1,7000005,Mobile Tire Dispatch Fee,Fee,0.01,0.01
+YES,Model S,1,70000105,Third Party Transport,Sublet,1.2,1.2
+YES,Model S,1,7000030,Parts Not Available - Add to future service visit. ,General diagnosis conclusion,0.0,0.0
+YES,Model S,1,70000305,Miscellaneous Labor,Fee,0.0,0.0
+YES,Model S,1,70002005,Non-Tesla (Rental),Sublet,0.0,0.0
+YES,Model S,1,70003805,Tesla Airport Service,Fee,1.2,1.2
+YES,Model S,1,7000405,Vehicle Storage,Fee,0.0,0.0
+YES,Model S,1,70004205,No Labor Performed - Unable to Perform via Mobile Service,General diagnosis conclusion,0.0,0.0
+YES,Model S,1,70004505,No Labor Performed - Part Replaced,Repair,0.0,0.0
+YES,Model S,1,70005700,Scrap Part Sale Over the Counter,Test/Adjust,0.0,0.0
+YES,Model S,1,70005805,Payment Collection Required,Fee,1.2,1.2
+YES,Model S,1,70008009,Additional Work Required - Corrosion Present,Maintenance,0.5,0.5
+YES,Model S,1,70020305,Upholstery - Sublet,Sublet,0.0,0.0
+NO,Model S,1,70020306,Vehicle Wrap – Color Film (Repair),Sublet,0.0,0.0
+YES,Model S,1,70020805,Glass Repair / Replacement  - Sublet,Sublet,0.0,0.0
+NO,Model S,1,70021015,Tesla Bodyshop Fascia Repair - Sublet,Sublet,0.0,0.0
+NO,Model S,1,70021025,Tesla Bodyshop Door Repair - Sublet,Sublet,0.0,0.0
+NO,Model S,1,70021055,Tesla Bodyshop Hood / Rear Trunk Repair - Sublet,Sublet,0.0,0.0
+NO,Model S,1,70021745,Tesla Bodyshop Exterior Lights Repair - Sublet ,Sublet,0.0,0.0
+NO,Model S,1,70023405,Tesla Bodyshop Wheel Hub Repair - Sublet,Sublet,0.0,0.0
+YES,Model S,1,70060005,Thread Repair,Maintenance,0.0,0.0
+YES,Model S,1,7007300,Other – Sublet,Sublet,0.0,0.0
+YES,Model S,1,7100001,NO LABOR PERFORMED,Repair,0.0,0.0
+NO,Model S,1,7100002,Seasonal Tire Storage,Fee,0.0,0.0
+NO,Model S,1,72000004,California Battery Fee,Fee,0.01,0.01
+YES,Model S,1,72000005,Loaner Fee,Fee,0.0,0.0
+NO,Model S,1,74010008,Dubai Hailstorm Damage (Repair),Restore,7.0,7.0
+NO,Model S,1,90001006,Level 1 Mobile Service Vehicle Conversion (Retrofit),Retrofit,4.8,4.8
+YES,Model S,1,91000004,On Site – Education,Customer Education,0.0,0.0
+YES,Model S,1,91020105,Car Wash (Hand Wash),Detail Work,0.25,0.25
+YES,Model S,1,91020115,Car Wash (Mechanical Wash),Maintenance,0.24,0.24
+YES,Model S,1,91022005,Charge Vehicle,Restore,0.0,0.0
+YES,Model S,1,91022407,Vehicle Configuration Update,Program,0.05,0.05
+YES,Model S,1,91029006,Mobile Service Hub Repair,Retrofit,0.0,0.0
+NO,Model S,1,91040115,Former Loaner Battery Kept As Permanent Replacement,Remove and Replace,0.0,0.0
+NO,Model S,1,91040205,Loaner Battery Removed/Returned,Maintenance,0.0,0.0
+NO,Model S,1,91041705,Loaner Drive Unit Removed/Returned,Maintenance,0.0,0.0
+YES,Model S,18,00000010,Remote – Education,Over The Air,0.0,0.0
+NO,Model S,18,00003280,Vehicle Accessories (PDI retrofit),Test/Adjust,0.0,0.0
+YES,Model S,18,00004107,Alert Diagnosis - Repair,General diagnosis conclusion,0.06,0.06
+YES,Model S,18,00004108,Alert Diagnosis (Repair) - Create New Service Activity for Repair,Test/Adjust,0.06,0.06
+YES,Model S,18,00005914,Service Collision Estimate,Inspection,0.0,0.0
+NO,Model S,18,00014105,1 Year/12500 Mile/20000 km Service (Pre-paid Plan Only) (Add Necessary Parts and Labor Separately),Maintenance,0.15,0.15
+NO,Model S,18,00014205,2 Year/25000 Mile/40000 km Service (Pre-paid Plan only),Maintenance,3.0,3.0
+NO,Model S,18,00014305,3 Year/37500 Mile/60000 km Service (Pre-paid Plan Only) (Add Necessary Parts and Labor Separately),Maintenance,0.15,0.15
+NO,Model S,18,00014405,4 Year/50000 Mile/80000 km Service (Pre-paid Plan Only),Maintenance,3.4,3.4
+NO,Model S,18,00014505,5 Year/62500 Mile/100000 km Service (Pre-paid Plan Only) (Add Necessary Parts and Labor Separately),Maintenance,0.15,0.15
+NO,Model S,18,00014705,6 Year/75000 Mile/120000 km Service (Pre-paid plan only),Maintenance,3.0,3.0
+NO,Model S,18,00014805,7 Year/87500 Mile/140000 km Service (Pre-paid Plan Only) (Add Necessary Parts and Labor Separately),Maintenance,0.15,0.15
+NO,Model S,18,00014905,8 Year/100000 Mile/160000 km Service (Pre-paid Plan Only),Maintenance,3.4,3.4
+NO,Model S,18,00015005,9 Year/112500 Mile/180000 km Service (Pre-paid Plan Only) (Add Necessary Parts and Labor Separately),Maintenance,0.15,0.15
+NO,Model S,18,00015205,10 Year/125000 Mile/200000 km Service (Pre-paid Plan Only),Maintenance,3.0,3.0
+NO,Model S,18,00015305,11 Year/137500 Mile/220000 km Service (Pre-paid Plan Only) (Add Necessary Parts and Labor Separately),Maintenance,0.15,0.15
+NO,Model S,18,00015405,12 Year/150000 Mile/240000 km Service (Pre-paid Plan Only),Maintenance,3.4,3.4
+YES,Model S,18,00020003,Firmware Update,Over The Air,0.06,0.06
+NO,Model S,18,00020006,Firmware Update - Comfort Package Retrofit,Retrofit,0.0,0.0
+YES,Model S,18,00020007,Firmware Update - Garage,Update,0.05,0.05
+YES,Model S,18,00020010,Remote – Known Characteristic of Current Firmware,Over The Air,0.25,0.25
+YES,Model S,18,00020020,Remote – Over the Air Update,Over The Air,0.25,0.25
+YES,Model S,18,00022008,User Data (Factory Reset),Restore,0.05,0.05
+YES,Model S,18,00023003,Clear Filesystem Caches,Module Reset/Reflashed,0.05,0.05
+YES,Model S,18,00030100,PDI (Without Test Drive),Inspection,0.12,0.12
+YES,Model S,18,00030410,Vehicle Health Check,Inspection,1.5,1.5
+NO,Model S,18,00030420,Four Wheel Check (on Lift),Test/Adjust,0.3,0.3
+NO,Model S,18,00031600,Perform Periodisk Kontroll av Kjøretøy (PKK) – Norway,Test/Adjust,1.0,1.0
+NO,Model S,18,00031700,Perform Etterkontroll Periodisk Kontroll av Kjøretøy (PKK) – Norway,Test/Adjust,0.4,0.4
+YES,Model S,18,00032201,Loaner Registration Confirmation,Inspection,0.2,0.2
+NO,Model S,18,00034300,TC support TAB Vehicle Configuration Change,Test/Adjust,0.2,0.2
+YES,Model S,18,00040100,Perform Post-Repair Validation Test Drive,Test/Adjust,0.3,0.3
+NO,Model S,18,00050300,OBD Connector (Retrofit),Retrofit,0.24,0.24
+YES,Model S,18,00100004,General Diagnosis,General Diagnosis,0.5,0.5
+YES,Model S,18,00100014,Diagnosis: Unable to Replicate Concern,General diagnosis conclusion,0.0,0.0
+YES,Model S,18,00100024,Remote Diagnosis,Remote Diagnostics,0.3,0.3
+YES,Model S,18,10000004,Adjustment: Body / Closure Components,Test/Adjust,0.4,0.4
+YES,Model S,18,10010008,Tesla Body Repair - Miscellaneous Labor,Body Shop,0.0,0.0
+YES,Model S,18,10010011,Tesla Body Repair - Structural,Body Shop,0.0,0.0
+YES,Model S,18,10010012,Tesla Body Structural - Sheet Metal Quotation,Test/Adjust,0.6,0.6
+YES,Model S,18,10010014,Tesla Body Structural - Sheet Metal Repair,Restore,1.0,1.0
+YES,Model S,18,10010015,Tesla Body Structural - Reassemble Parts,Test/Adjust,1.0,1.0
+NO,Model S,18,10010100401,Ankle Catcher (2025+),Remove and Install,0.48,0.48
+NO,Model S,18,10010100402,Ankle Catcher (2025+),Remove and Replace,0.48,0.48
+NO,Model S,18,10010501801,Subassembly - Lower - Fascia - Rear (Plaid) (2025+),Remove and Install,0.0,0.0
+NO,Model S,18,10010501802,Subassembly - Lower - Fascia - Rear (Plaid) (2025+),Remove and Replace,0.84,0.84
+NO,Model S,18,10010501901,Diffuser - Fascia - Rear (Plaid) (2025+),Remove and Install,0.0,0.0
+NO,Model S,18,10010501902,Diffuser - Fascia - Rear (Plaid) (2025+),Remove and Replace,0.0,0.0
+NO,Model S,18,100111134,test ,Repair,0.5,0.5
+NO,Model S,18,10012012,Cover - Tow Hook - Rear (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model S,18,10012912,Trim - Lower - Fascia - Rear (Remove & Replace),Remove and Replace,1.02,1.02
+NO,Model S,18,10013002,Fascia Assembly - Rear (Remove & Replace),Remove and Replace,0.96,0.96
+NO,Model S,18,10013102,Bumper Beam - Rear (Remove & Replace),Remove and Replace,0.66,0.66
+NO,Model S,18,10013402,Applique - Bumper - Rear (Remove & Replace),Remove and Replace,1.2,1.2
+NO,Model S,18,10013502,Diffuser Trim - Rear (Remove & Replace),Remove and Replace,0.36,0.36
+NO,Model S,18,10013602,Reflex Marker - Bumper - Rear - LH (Remove & Replace),Remove and Replace,1.02,1.02
+NO,Model S,18,10013702,Reflex Marker - Bumper - Rear - RH (Remove & Replace),Remove and Replace,1.02,1.02
+NO,Model S,18,10014602,Air Extractor -  Rear - Outer - LH (Remove & Replace),Remove and Replace,0.54,0.54
+NO,Model S,18,10014902,Air Extractor -  Rear - Outer - RH (Remove & Replace),Remove and Replace,0.54,0.54
+NO,Model S,18,10016002,Cover - Trailer Hitch (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model S,18,10017652,Trailer Hitch - Rear Energy Absorber (Retrofit),Retrofit,0.66,0.66
+YES,Model S,18,10100008,Tesla Body Repair - Mechanical Labor,Body Shop,0.0,0.0
+NO,Model S,18,10100125302,"GUSSET RAMP, LEFT",Remove and Replace,1.08,1.08
+NO,Model S,18,10100125702,"REAR QUARTER OUTER, LEFT HAND",Remove and Replace,2.22,2.22
+NO,Model S,18,10100125802,"REAR QUARTER OUTER, RIGHT HAND",Remove and Replace,2.22,2.22
+NO,Model S,18,10100126102,"ROOF RAIL OUTER, LEFT HAND",Remove and Replace,50.0,50.0
+NO,Model S,18,10100126202,"ROOF RAIL OUTER, RIGHT HAND",Remove and Replace,50.0,50.0
+NO,Model S,18,10100139702,Gusset Ramp Assembly,Remove and Replace,1.08,1.08
+NO,Model S,18,10100144701,Panel - Quarter - Rear - Outer - LH,Remove and Install,0.0,0.0
+NO,Model S,18,10100144702,Panel - Quarter - Rear - Outer - LH,Remove and Replace,0.0,0.0
+NO,Model S,18,10100144901,Panel - Cantrail - LH,,0.0,0.0
+NO,Model S,18,10100144902,Panel - Cantrail - LH,,0.0,0.0
+NO,Model S,18,10100301036,Hood | Complete | Seam Sealer,Installation,0.72,0.72
+NO,Model S,18,10100301202,SECOND ROW SEATBELT BUCKLE MOUNT,Remove and Replace,0.84,0.84
+NO,Model S,18,10100301302,REAR TORQUE BOX CROSSMEMBER (UPPER),Remove and Replace,7.6,7.6
+NO,Model S,18,10100302,Hood Assembly (Remove & Replace),Remove and Replace,0.3,0.3
+NO,Model S,18,10100302702,ASSEMBLY - PANEL  REAR SEAT FLOOR,Remove and Replace,5.04,5.04
+NO,Model S,18,10100502,Acoustic Panel - Hood (Remove & Replace),Remove and Replace,0.18,0.18
+NO,Model S,18,10100651036,Rear Door | Complete | Seam Seal,Installation,0.54,0.54
+NO,Model S,18,10100701036,Liftgate | Complete | Seam Seal,Installation,1.14,1.14
+NO,Model S,18,10101005202,ASSEMBLY - COWL TOP,Remove and Replace,4.68,4.68
+NO,Model S,18,10101005602,DASH PANEL,Remove and Replace,6.45,6.45
+NO,Model S,18,10101029202,"Cowl Top (Vehicles Built On or After November 20, 2021)",Remove and Replace,2.1,2.1
+NO,Model S,18,10101804702,ASSEMBLY - TRUNK PANEL,Remove and Replace,6.35,6.35
+NO,Model S,18,10101805202,ASSEMBLY- 2ND ROW RETRACTOR PANEL - LEFT HAND,Remove and Replace,4.74,4.74
+NO,Model S,18,10101805302,ASSEMBLY- 2ND ROW RETRACTOR PANEL - RIGHT HAND,Remove and Replace,4.74,4.74
+NO,Model S,18,10101805402,ASSEMBLY- EXTENSION - REAR TRUNK FLOOR PANEL  - LEFT HAND,Remove and Replace,2.76,2.76
+NO,Model S,18,10101805502,ASSEMBLY- EXTENSION - REAR TRUNK FLOOR PANEL  - RIGHT HAND,Remove and Replace,2.76,2.76
+NO,Model S,18,10101805602,"ASY, TRUNK WATERFALL CROSSMEMBER UPPER",Remove and Replace,10.4,10.4
+NO,Model S,18,10101805702,BUMPER PLATE - LEFT HAND,Remove and Replace,7.6,7.6
+NO,Model S,18,10101805802,BUMPER PLATE - RIGHT HAND,Remove and Replace,7.6,7.6
+NO,Model S,18,10101805902,PANEL  - TRUNK - REAR WATERFALL,Remove and Replace,3.84,3.84
+NO,Model S,18,10101806002,PNL-RR TRUNK FLOOR,Remove and Replace,3.66,3.66
+NO,Model S,18,10101806302,TRUNK WATERFALL CROSSMEMBER LOWER,Remove and Replace,11.3,11.3
+NO,Model S,18,10101817602,PANEL - TRUNK WATERFALL,Remove and Replace,4.2,4.2
+NO,Model S,18,10101817702,ASSEMBLY - REAR CLOSEOUT PANEL,Remove and Replace,7.3,7.3
+NO,Model S,18,10101817802,ASSEMBLY PANEL   P1P2 CLOSEOUT RIGHT HAND,Remove and Replace,1.38,1.38
+NO,Model S,18,10101817902,ASSEMBLY PANEL  MLDS P1P2 CLOSEOUT LEFT HAND,Remove and Replace,1.38,1.38
+NO,Model S,18,10101818002,ASSEMBLY-MEMBER RAIL REAR LEFT HAND,Remove and Replace,33.4,33.4
+NO,Model S,18,10101818102,ASSEMBLY-MEMBER RAIL REAR RIGHT HAND,Remove and Replace,33.4,33.4
+NO,Model S,18,10101818202,"ASY, MOTORBAY COVER",Remove and Replace,4.14,4.14
+NO,Model S,18,10101818502,REAR RAIL COMPLETE - RIGHT HAND,Remove and Replace,15.0,15.0
+NO,Model S,18,10101818602,REAR RAIL COMPLETE LEFT HAND,Remove and Replace,15.0,15.0
+NO,Model S,18,10101821302,"Rear Panel Assembly (Vehicles Built After May 21, 2024)",Remove and Replace,7.0,7.0
+NO,Model S,18,10101821902,"Rear Panel Assembly (Vehicles Built Through May 21, 2024)",Remove and Replace,6.2,6.2
+NO,Model S,18,10101902002,"WHEEL ARCH OUTER, LEFT HAND",Remove and Replace,18.85,18.85
+NO,Model S,18,10101902102,"WHEEL ARCH OUTER, RIGHT HAND",Remove and Replace,18.85,18.85
+NO,Model S,18,10101917702,Wheelhouse Outer (Section) (Vehicles Built for North America Only),Remove and Replace,14.8,14.8
+NO,Model S,18,10101917802,Wheelhouse Outer (Section) (Vehicles Built for North America Only),Remove and Replace,14.8,14.8
+NO,Model S,18,10101918202,Wheelhouse Outer (Section) (Vehicles Not Built for North America),Remove and Replace,14.55,14.55
+NO,Model S,18,10101918302,Wheelhouse Outer (Section) (Vehicles Not Built for North America),Remove and Replace,14.55,14.55
+NO,Model S,18,10101920502,Rear Wheelhouse Extension,Remove and Replace,1.56,1.56
+NO,Model S,18,10102706302,B–PILLAR UPPER NUT PLATE,Remove and Replace,38.95,38.95
+NO,Model S,18,10102808,NOT APPLICABLE - DO NOT USE,Restore,0.0,0.0
+NO,Model S,18,10102902202,BATTERY FLOW NUT REPLACEMENT,Remove and Replace,0.48,0.48
+NO,Model S,18,10102908,NOT APPLICABLE - DO NOT USE,Restore,0.0,0.0
+NO,Model S,18,10104002,Roof Assembly (without Panoramic Roof) (Remove & Replace),Remove and Replace,7.6,7.6
+NO,Model S,18,10106202,Door Assembly - Rear - LH (Remove & Replace),Remove and Replace,1.38,1.38
+NO,Model S,18,10106302,Door Assembly - Rear - RH (Remove & Replace),Remove and Replace,1.38,1.38
+NO,Model S,18,10107002,Liftgate (Remove & Replace),Remove and Replace,3.36,3.36
+YES,Model S,18,10108608,Tesla Body Repair - Body Labor,Body Shop,0.0,0.0
+YES,Model S,18,10108808,Tesla Body Repair - Sublet,Body Shop,0.0,0.0
+YES,Model S,18,10109008,Structural Body Repair,Repair,0.0,0.0
+YES,Model S,18,10109108,Non-Structural Body Repair,Restore,0.0,0.0
+YES,Model S,18,10182019,Customer Generated Quote - Issue (Transaction) Resolved - Bound,General diagnosis conclusion,0.0,0.0
+NO,Model S,18,10200702,Sensor - HVAC - Light/Temperature/Humidity (Remove & Replace),Remove and Replace,0.66,0.66
+NO,Model S,18,10203002,Glass - Rear Quarter - LH (Remove & Replace),Remove and Replace,1.8,1.8
+NO,Model S,18,10203102,Glass - Rear Quarter - RH (Remove & Replace),Remove and Replace,1.74,1.74
+NO,Model S,18,10204002,Backlight Glass (Remove & Replace),Remove and Replace,1.32,1.32
+NO,Model S,18,10205002,Glass - Roof - Fixed (Remove & Replace),Remove and Replace,1.02,1.02
+YES,Model S,18,1027521,Assistance with Refund of Reservation,Test/Adjust,0.0,0.0
+NO,Model S,18,11330052,Body Damper - Liftgate - LH (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model S,18,11330062,Body Damper - Liftgate - RH (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model S,18,11330072,Damper Wedge - Liftgate - LH (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model S,18,11330082,Damper Wedge - Liftgate - RH (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model S,18,11330502,Gas Strut - Hood - LH (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model S,18,11330602,Gas Strut - Hood - RH (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model S,18,11330702,C-Clips - Strut - Hood - LH (Remove and Replace),Remove and Replace,0.06,0.06
+NO,Model S,18,11330722,C-Clips - Strut - Liftgate - LH (Remove and Replace),Remove and Replace,0.06,0.06
+NO,Model S,18,11330822,C-Clips - Strut - Liftgate - RH (Remove and Replace),Remove and Replace,0.06,0.06
+NO,Model S,18,11332402,Module - Door Controller - LH (Remove & Replace),Remove and Replace,0.36,0.36
+NO,Model S,18,11332502,Module - Door Controller - RH (Remove & Replace),Remove and Replace,0.36,0.36
+NO,Model S,18,11332902,C-Clips - Strut - Hood - RH (Remove and Replace),Remove and Replace,0.06,0.06
+NO,Model S,18,11334202,Power Strut - Liftgate (Remove & Replace),Remove and Replace,0.6,0.6
+NO,Model S,18,11334402,Strut - Liftgate (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model S,18,11334802,Module - Liftgate Control (Remove & Replace),Remove and Replace,0.96,0.96
+NO,Model S,18,11335202,Overslam - Liftgate - LH (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model S,18,11335212,Overslam - Liftgate - RH (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model S,18,11339102,Bump Stop - Hood (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model S,18,11351502,Latch - Door - Rear - LH (Remove & Replace),Remove and Replace,0.3,0.3
+NO,Model S,18,11351602,Latch - Door - Rear - RH (Remove & Replace),Remove and Replace,0.3,0.3
+NO,Model S,18,11352502,Striker - Door - Rear - LH (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model S,18,11352602,Striker - Door - Rear - RH (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model S,18,11352902,Striker - Hood (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model S,18,11353402,Striker - Liftgate (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model S,18,11353412,Cover - Striker - Trunk (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model S,18,11355002,Latch - Liftgate (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model S,18,11357002,Exterior Release Switch - Liftgate (Remove & Replace),Remove and Replace,0.36,0.36
+NO,Model S,18,11404102,Handle - Emergency Release - Liftgate (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model S,18,11452002,Handle - Exterior Release - Door - Rear - LH (Remove & Replace),Remove and Replace,0.72,0.72
+NO,Model S,18,11452102,Handle - Exterior Release - Door - Rear - RH (Remove & Replace),Remove and Replace,0.72,0.72
+NO,Model S,18,11452202,Module - Door Handle Controller – Rear - RH - Generation 3.0 (Remove & Replace),Remove and Replace,0.18,0.18
+NO,Model S,18,11452302,Module - Door Handle Controller – Rear - LH - Generation 3.0 (Remove & Replace),Remove and Replace,0.18,0.18
+NO,Model S,18,11453202,Grip - Door - Exterior Handle - Rear - LH (Remove & Replace),Remove and Replace,0.96,0.96
+NO,Model S,18,11453302,Grip - Door - Exterior Handle - Rear - RH (Remove & Replace),Remove and Replace,0.96,0.96
+NO,Model S,18,11454702,LED - Door - Exterior Handle - Rear - LH (Remove & Replace),Remove and Replace,0.66,0.66
+NO,Model S,18,11454802,LED - Door - Exterior Handle - Rear - RH (Remove & Replace),Remove and Replace,0.66,0.66
+NO,Model S,18,11456202,Press Sensor - Door - Exterior Handle - Rear - LH (Remove & Replace),Remove and Replace,1.08,1.08
+NO,Model S,18,11456302,Press Sensor - Door - Exterior Handle - Rear - RH (Remove & Replace),Remove and Replace,1.08,1.08
+NO,Model S,18,11457442,Paddle Gear - Handle - Exterior Release - Door - Rear - LH - Generation 3.0 (Remove & Replace),Remove and Replace,1.02,1.02
+NO,Model S,18,11457502,Position Switch Harness - Door Handle (Remove & Replace),Remove and Replace,0.9,0.9
+NO,Model S,18,11457642,Paddle Gear - Handle - Exterior Release - Door - Rear - RH - Generation 3.0 (Remove & Replace),Remove and Replace,1.02,1.02
+NO,Model S,18,11459002,Handle Motor - Exterior Release - Door - Rear - LH - Generation 3.0 (Remove and Replace),Remove and Replace,0.78,0.78
+NO,Model S,18,11459102,Handle Motor - Exterior Release - Door - Rear - RH - Generation 3.0 (Remove and Replace),Remove and Replace,0.78,0.78
+NO,Model S,18,11500302,Door Glass - LH - Rear (Remove & Replace),Remove and Replace,0.3,0.3
+NO,Model S,18,11500402,Door Glass - RH - Rear (Remove & Replace),Remove and Replace,0.3,0.3
+YES,Model S,18,11700004,Adjustment: Seal,Test/Adjust,0.2,0.2
+NO,Model S,18,11700072,Closeout Panel - Latch - C-Pillar - LH (Remove & Replace),Remove and Replace,0.18,0.18
+NO,Model S,18,11700082,Closeout Panel - Latch - C-Pillar - RH (Remove & Replace),Remove and Replace,0.18,0.18
+NO,Model S,18,11700512,Carrier - Seal - Rear - B-Pillar - LH (Remove & Replace),Remove and Replace,0.3,0.3
+NO,Model S,18,11700612,Carrier - Seal - Rear - B-Pillar - RH (Remove & Replace),Remove and Replace,0.3,0.3
+NO,Model S,18,11701452,Closeout Panel - Door - Rear - LH (Remove & Replace),Remove and Replace,0.18,0.18
+NO,Model S,18,11701552,Closeout Panel - Door - Rear - RH (Remove & Replace),Remove and Replace,0.18,0.18
+NO,Model S,18,11701802,Seal - Hood (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model S,18,11701812,Aero Seal - Hood (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model S,18,11701902,Seal - Lip - Trunk Trim Center (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model S,18,11702002,Seal - Liftgate (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model S,18,11702502,Seal - Outer Belt - Rear Door - RH (Remove and Replace),Remove and Replace,0.06,0.06
+NO,Model S,18,11704402,Seal - Outer Belt - Rear Door - LH (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model S,18,11704502,Seal - Outer Belt - Rear Door- RH (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model S,18,11705402,Seal - Secondary - Rear Door - LH (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model S,18,11705502,Seal - Secondary - Rear Door - RH (Remove & Replace),Remove and Replace,0.12,0.12
+YES,Model S,18,12000004,Adjustment: Exterior Trim,Test/Adjust,0.2,0.2
+NO,Model S,18,12010202,Noise Absorber - Motor Bay - Rear (Remove & Replace),Remove and Replace,2.82,2.82
+NO,Model S,18,12030502,Panel - Aero Shield - Mid (Remove & Replace),Remove and Replace,0.18,0.18
+NO,Model S,18,12030802,Panel - Diffuser Tray - Rear (Remove & Replace),Remove and Replace,0.6,0.6
+NO,Model S,18,12030902,Rails - Diffuser Tray Rear - LH (Remove & Replace),Remove and Replace,0.18,0.18
+NO,Model S,18,12031002,Rails - Diffuser Tray Rear - RH (Remove & Replace),Remove and Replace,0.18,0.18
+NO,Model S,18,12050602,Vehicle Configuration Badge (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model S,18,12050606,Vehicle Configuration Badge (Retrofit),Retrofit,0.12,0.12
+NO,Model S,18,12050607,Vehicle Configuration Badge (Remove),Modify,0.06,0.06
+NO,Model S,18,12050702,Tesla Badge - Rear (Remove & Replace),Remove and Replace,0.18,0.18
+NO,Model S,18,12054102,Plaid Graphic Badge (Remove & Replace),Remove and Replace,0.18,0.18
+NO,Model S,18,12054202,Plaid Letter Badge (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model S,18,12091102,Door Mirror Assembly - LH (Remove & Replace),Remove and Replace,0.3,0.3
+NO,Model S,18,12091202,Door Mirror Assembly - RH (Remove & Replace),Remove and Replace,0.3,0.3
+NO,Model S,18,12091702,Skull Cap - Door Mirror - LH (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model S,18,12091802,Skull Cap - Door Mirror - RH (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model S,18,12092002,Glass - Door Mirror - LH (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model S,18,12092102,Glass - Door Mirror - RH (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model S,18,12200102,Applique - B-Pillar - LH (Remove & Replace),Remove and Replace,0.18,0.18
+NO,Model S,18,12200112,Cover - Applique - B-Pillar - LH (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model S,18,12200122,Cover - Applique - B-Pillar - RH (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model S,18,12200202,Applique - B-Pillar - RH (Remove & Replace),Remove and Replace,0.18,0.18
+NO,Model S,18,12201002,Spoiler–Rear-Replace (Remove & Replace),Remove and Replace,0.0,0.0
+NO,Model S,18,12201602,Scuff Plate - Rocker Panel - LH (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model S,18,12201702,Scuff Plate - Rocker Panel - RH (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model S,18,12207002,Applique - Liftgate (Non-Global) (Remove & Replace),Remove and Replace,0.3,0.3
+NO,Model S,18,12207006,Mud Flaps (Retrofit),Retrofit,0.06,0.06
+NO,Model S,18,12207022,Applique - Liftgate (Global) (Remove & Replace),Remove and Replace,0.12,0.12
+YES,Model S,18,12208583,Mud Flaps (PDI Retrofit),Retrofit,0.0,0.0
+NO,Model S,18,12220402,Spoiler - Rear (Remove & Replace),Remove and Replace,0.36,0.36
+NO,Model S,18,12220407,Spoiler - Rear (Remove),Modify,0.18,0.18
+NO,Model S,18,12250902,Panel - Cowl Screen (Remove & Replace),Remove and Replace,0.3,0.3
+NO,Model S,18,12251012,Cover - Shock Tower - LH (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model S,18,12251112,Cover - Shock Tower - RH (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model S,18,12270402,Trim - Liftgate Trough - LH (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model S,18,12270502,Trim - Liftgate Trough - RH (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model S,18,12300202,Assembly - Trailer Hitch (Remove & Replace),Remove and Replace,0.54,0.54
+NO,Model S,18,12302102,ECU - Trailer Hitch (Remove and Replace),Remove and Replace,0.18,0.18
+YES,Model S,18,12302302,Ball Neck - Trailer Hitch (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model S,18,12505744,Vehicle Wrap – (Removal),Retrofit,0.0,0.0
+YES,Model S,18,13000004,Diagnosis: Seats,Test/Adjust,0.5,0.5
+NO,Model S,18,13010412,Fan - Cushion - Driver Seat (Remove & Replace),Remove and Replace,0.66,0.66
+NO,Model S,18,13010602,Module - Memory Seat  (Remove & Replace),Remove and Replace,0.48,0.48
+NO,Model S,18,13010800401,Light - Driver Seat (2025+),Remove and Install,0.48,0.48
+NO,Model S,18,13010800402,Light - Driver Seat (2025+),Remove and Replace,0.48,0.48
+NO,Model S,18,13011002,Track - Outer - Driver's Seat (Remove & Replace),Remove and Replace,0.96,0.96
+NO,Model S,18,13011202,Motor - Seat Track - Driver Seat (Remove & Replace),Remove and Replace,0.54,0.54
+NO,Model S,18,13011502,Motor - Seat Tilt - Driver Seat (Remove & Replace),Remove and Replace,0.54,0.54
+NO,Model S,18,13011602,Motor - Seat Height - Driver's Seat (Remove & Replace),Remove and Replace,0.84,0.84
+NO,Model S,18,13012002,Riser - Outer - Driver Seat (Remove & Replace),Remove and Replace,0.36,0.36
+NO,Model S,18,13012502,Sensor - Position - Seat Track - 1st Row Seat - LH (Remove and Replace),Remove and Replace,0.18,0.18
+NO,Model S,18,13012602,Sensor - Position - Seat Track - 1st Row Seat - RH (Remove and Replace),Remove and Replace,0.18,0.18
+NO,Model S,18,13014102,Power Lumbar Assembly - Driver Seat (Remove and Replace),Remove and Replace,0.6,0.6
+NO,Model S,18,13015002,Switch - Seat Height Adjust - Driver's Seat (1st Generation Seat)  (Remove & Replace),Remove and Replace,0.24,0.24
+NO,Model S,18,13015102,Switch - Back Rest and Cushion Adjust - Driver's Seat (Remove & Replace),Remove and Replace,0.18,0.18
+NO,Model S,18,13015152,Switch - Back Rest and Cushion Adjust - Driver Seat (2nd Generation Seat) (Remove and Replace),Remove and Replace,0.12,0.12
+NO,Model S,18,13016002,Motor - Headrest - Driver's (Premium Seats) (Remove & Replace),Remove and Replace,0.9,0.9
+NO,Model S,18,13016052,Motor - Headrest - Driver (Remove & Replace),Remove and Replace,0.42,0.42
+NO,Model S,18,13016202,Controller - Driver Seat (Remove and Replace),Remove and Replace,0.54,0.54
+NO,Model S,18,13018102,Button - Cushion Adjust - Driver Seat (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model S,18,13020072,Switch - Seat Fold - 2nd Row - LH (Remove & Replace),Remove and Replace,0.24,0.24
+NO,Model S,18,13020082,Switch - Seat Fold - 2nd Row - RH (Remove & Replace),Remove and Replace,0.18,0.18
+NO,Model S,18,13040012,Microphone - Seat - Driver (Remove & Replace),Remove and Replace,1.08,1.08
+NO,Model S,18,13040102,1st Row Seat Assembly - LH (Remove & Replace),Remove and Replace,0.42,0.42
+NO,Model S,18,13040202,1st Row Seat Assembly - RH (Remove & Replace),Remove and Replace,0.48,0.48
+NO,Model S,18,13041002,Shell - Seat Back - Driver (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model S,18,13041052,Shell - Seat Back - Driver (Remove and Replace),Remove and Replace,0.12,0.12
+NO,Model S,18,13042002,Trim - Headrest - Driver's (Premium Seats) (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model S,18,13043072,Back Rest - Driver (Remove & Replace),Remove and Replace,1.26,1.26
+NO,Model S,18,13044002,Base Assembly - Driver's Seat (Remove & Replace),Remove and Replace,0.96,0.96
+NO,Model S,18,13050006,Flap - ISOFIX - Pair,Retrofit,0.48,0.48
+NO,Model S,18,13050012,Support Base - 2nd Row Cushion (Remove & Replace),Remove and Replace,0.24,0.24
+NO,Model S,18,13050092,Bun - Armrest - 2nd Row (Remove & Replace),Remove and Replace,0.24,0.24
+NO,Model S,18,13050102,Seat Assembly - 2nd Row (Remove & Replace),Remove and Replace,0.48,0.48
+NO,Model S,18,13050702,Headrest - 2nd Row - LH (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model S,18,13050802,Headrest - 2nd Row - RH (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model S,18,13051002,Seat Cushion - Lower - 2nd Row (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model S,18,13051402,Seat Cushion - Lower - 2nd Row - Executive - LH (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model S,18,13051902,Switch - Seat Fold - 2nd Row - Trunk (Remove and Replace),Remove and Replace,0.12,0.12
+NO,Model S,18,13053512,Support Block - 2nd Row Cushion - LH (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model S,18,13053522,Support Block - 2nd Row Cushion - RH (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model S,18,13054002,Seat Back - 2nd Row - LH (Remove & Replace),Remove and Replace,0.18,0.18
+NO,Model S,18,13054007,Seat Back Assembly - 2nd Row - LH - Enable 3rd Row Seat Striker,Modify,0.18,0.18
+NO,Model S,18,13054102,Seat Back - 2nd Row - RH (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model S,18,13054402,Seat Back Assembly - 2nd Row - Executive (Remove and Replace),Remove and Replace,0.42,0.42
+NO,Model S,18,13054702,Substrate - Seat Back - 2nd Row Seat - LH (Remove & Replace),Remove and Replace,0.48,0.48
+NO,Model S,18,13054802,Substrate - Seat Back - 2nd Row - RH (Remove & Replace),Remove and Replace,0.18,0.18
+NO,Model S,18,13055102,Bolster - Outer - Seat - 2nd Row - LH (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model S,18,13055202,Bolster - Outer - Seat - 2nd Row - RH (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model S,18,13055502,Release - Seat Back - 2nd Row Seat - LH (Remove & Replace),Remove and Replace,0.48,0.48
+NO,Model S,18,13055602,Release - Seat Back - 2nd Row Seat - RH (Remove & Replace),Remove and Replace,0.48,0.48
+NO,Model S,18,13055902,Latch - Seat Back - 2nd Row Seat - LH (Remove & Replace),Remove and Replace,0.24,0.24
+NO,Model S,18,13056002,Latch - Seat Back - 2nd Row Seat - RH (Remove & Replace),Remove and Replace,0.24,0.24
+NO,Model S,18,13056302,Striker - Seat Back - 2nd Row Seat - LH (Remove & Replace),Remove and Replace,0.24,0.24
+NO,Model S,18,13056402,Striker - Seat Back - 2nd Row Seat - RH (Remove & Replace),Remove and Replace,0.24,0.24
+NO,Model S,18,13056602,Seat Cushion - Lower - 2nd Row - Executive - RH (Remove and Replace),Remove and Replace,0.12,0.12
+NO,Model S,18,13057002,Substrate - Seat Back - 2nd Row Seat - RH (Remove and Replace),Remove and Replace,0.48,0.48
+NO,Model S,18,13057102,Pivot Sleeve - Seat Back - 2nd Row Seat - LH (Remove & Replace),Remove and Replace,0.24,0.24
+NO,Model S,18,13057302,Pivot Sleeve - Seat Back - 2nd Row - Center (Remove & Replace),Remove and Replace,0.18,0.18
+NO,Model S,18,13057552,Collar - Static - Pivot - 2nd Row - LH (Remove & Replace),Remove and Replace,0.18,0.18
+NO,Model S,18,13057562,Collar - Static - Pivot - 2nd Row - RH (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model S,18,13057602,Cover - Pivot - 2nd Row (Remove & Replace),Remove and Replace,0.18,0.18
+NO,Model S,18,13058002,Armrest - 2nd Row (Remove & Replace),Remove and Replace,0.42,0.42
+NO,Model S,18,13058012,Closeout - Armrest - 2nd Row (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model S,18,13059702,Microphone - Seat - 2nd Row - LH (Remove & Replace),Remove and Replace,0.3,0.3
+NO,Model S,18,13059802,Microphone - Seat - 2nd Row - RH (Remove & Replace),Remove and Replace,0.18,0.18
+NO,Model S,18,13060102,Seat Assembly - 3rd Row (Remove & Replace),Remove and Replace,0.96,0.96
+NO,Model S,18,13060208,Seat Assembly - 3rd Row - Remove,Restore,0.48,0.48
+NO,Model S,18,13061002,Lanyard - Seat - 3rd Row (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model S,18,13065102,Latch - Headrest - 3rd Row (Remove & Replace),Remove and Replace,0.18,0.18
+NO,Model S,18,13070102,Foam - Cushion - Driver Seat,Remove and Replace,1.2,1.2
+NO,Model S,18,13070152,Foam - Cushion - Driver Seat (2nd Generation) (Remove & Replace),Remove and Replace,0.0,0.0
+NO,Model S,18,13071002,Cover - Back Rest - Driver's Seat (Remove & Replace),Remove and Replace,1.14,1.14
+NO,Model S,18,13071012,Cover - Back Rest - Driver (Remove & Replace),Remove and Replace,1.08,1.08
+NO,Model S,18,13071132,Cushion Assembly - Driver Seat（Remove & Replace）,Remove and Replace,0.72,0.72
+NO,Model S,18,13071162,Headrest - Driver Seat (Sport Seat) (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model S,18,13071302,Foam - Cushion - Driver Seat (Remove & Replace),Remove and Replace,0.96,0.96
+NO,Model S,18,13072002,Trim - Seat Back - Driver Seat (Remove & Replace),Remove and Replace,1.14,1.14
+NO,Model S,18,13072202,Cover - Cushion - Driver Seat (Remove & Replace),Remove and Replace,1.2,1.2
+NO,Model S,18,13072602,Foam - Seat Back - Driver Seat (Remove & Replace),Remove and Replace,1.08,1.08
+NO,Model S,18,13073202,Heater Pad - Seat Back - Driver Seat (Remove & Replace),Remove and Replace,0.9,0.9
+NO,Model S,18,13073602,Module - Seat Heater - Driver Seat  (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model S,18,13073702,Module - Seat Heater - Passenger Seat (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model S,18,13081002,Cover - Seat back - 2nd Row Seat - LH (Remove & Replace),Remove and Replace,0.3,0.3
+NO,Model S,18,13081102,Cover - Seat back - 2nd Row Seat - RH (Remove & Replace),Remove and Replace,0.96,0.96
+NO,Model S,18,13082102,Foam - Seat back - 2nd Row Seat - RH (Remove & Replace),Remove and Replace,1.02,1.02
+NO,Model S,18,13082122,Trim - Seat Back – 2nd Row – LH (Remove & Replace),Remove and Replace,0.24,0.24
+NO,Model S,18,13082202,Trim - Seat Back – 2nd Row – RH (Remove & Replace),Remove and Replace,0.36,0.36
+NO,Model S,18,13082302,Back Panel – 2nd Row Seat – LH (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model S,18,13082312,Back Panel – 2nd Row Seat – RH (Remove & Replace),Remove and Replace,0.06,0.06
+YES,Model S,18,14050002,USB Drive,Remove and Replace,0.06,0.06
+NO,Model S,18,14050104201,Cover Assembly - Knee Airbag - LH (2025+),Remove and Install,0.0,0.0
+NO,Model S,18,14050104202,Cover Assembly - Knee Airbag - LH (2025+),Remove and Replace,0.36,0.36
+NO,Model S,18,14050104301,Cover Assembly - Knee Airbag - RH (2025+),Remove and Install,0.0,0.0
+NO,Model S,18,14050104302,Cover Assembly - Knee Airbag - RH (2025+),Remove and Replace,0.0,0.0
+NO,Model S,18,14050104601,Speaker GrilleAssembly - Dash Panel (2025+),Remove and Install,1.14,1.14
+NO,Model S,18,14050104602,Speaker GrilleAssembly - Dash Panel (2025+),Remove and Replace,1.14,1.14
+NO,Model S,18,14051002,Glove Box (Remove & Replace),Remove and Replace,0.48,0.48
+NO,Model S,18,14051102,Glove Box - Latch Release (Remove & Replace),Remove and Replace,0.36,0.36
+NO,Model S,18,14051112,Latch - Shape Memory Alloy (SMA) - Glove Box (Remove & Replace),Remove and Replace,0.48,0.48
+NO,Model S,18,14051202,Glove Box - Damper (Remove & Replace),Remove and Replace,0.36,0.36
+NO,Model S,18,14052202,Cross Car Beam (Remove & Replace),Remove and Replace,2.58,2.58
+NO,Model S,18,14053102,Face Level Vent - Driver's - Outer (Remove & Replace),Remove and Replace,0.3,0.3
+NO,Model S,18,14053312,Shroud - Upper - Touchscreen (Remove & Replace),Remove and Replace,0.3,0.3
+NO,Model S,18,14053322,Shroud - Lower - Touchscreen (Remove & Replace),Remove and Replace,0.3,0.3
+NO,Model S,18,14054302,Panel - A Pillar Trim - Middle - LH (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model S,18,14054402,Panel - A Pillar Trim - Middle - RH (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model S,18,14055302,Assembly - Cover - Footwell - Driver's (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model S,18,14055402,Cover - Footwell - Passenger (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model S,18,14056002,Cover - Knee Airbag - Driver (Remove & Replace),Remove and Replace,0.3,0.3
+NO,Model S,18,15050202,Mirror - Rear View (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model S,18,15050402,Assembly - Mirror - Sun Visor - LH (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model S,18,15050502,Rear View Mirror - 2nd Generation (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model S,18,15050702,Assembly - Mirror - Sun Visor - RH (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model S,18,15050802,Trim - Rear View Mirror (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model S,18,15050902,Quad Camera Cover – Lower (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model S,18,15051002,Sun Visor - Driver (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model S,18,15051072,Check Base - Magnetic - Sun Visor - Driver (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model S,18,15051102,Center Support - Sun Visor - Driver (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model S,18,15051306,Center Support - Sun Visor - Pair (Retrofit),Retrofit,0.66,0.66
+NO,Model S,18,15051802,Upper Cover - Rear View Mirror,Remove and Replace,0.06,0.06
+NO,Model S,18,15110062,Surround - Handle - Liftgate (Remove & Replace),Remove and Replace,0.42,0.42
+NO,Model S,18,15111002,Trim - Upper - Liftgate (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model S,18,15111302,Trim - Liftgate - Lower (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model S,18,15112002,Grille - Speaker - Liftgate (Remove & Replace),Remove and Replace,0.06,0.06
+YES,Model S,18,15130004,Diagnosis: Closures,General Diagnosis,0.65,0.65
+NO,Model S,18,15130222,Cover - Service - Armrest - Rear Door - LH (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model S,18,15130322,Cover - Service - Armrest - Rear Door - RH (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model S,18,15130500301,Module - AmbientLight LED - LH (2025+),Remove and Install,0.24,0.24
+NO,Model S,18,15130500302,Module - AmbientLight LED - LH (2025+),Remove and Replace,0.24,0.24
+NO,Model S,18,15131000301,Trim - Door - Rear - LH (2025+),Remove and Install,0.18,0.18
+NO,Model S,18,15131000302,Trim - Door - Rear - LH (2025+),Remove and Replace,0.18,0.18
+NO,Model S,18,15131000501,Module - Ambient Light LED - Trim Pad - Rear Door  - LH (2025+),Remove and Install,0.18,0.18
+NO,Model S,18,15131000502,Module - Ambient Light LED - Trim Pad - RearDoor  - LH (2025+),Remove and Replace,0.18,0.18
+NO,Model S,18,15132002,Panel - Door Trim - Rear - LH (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model S,18,15132102,Panel - Door Trim - Rear - RH (Remove & Replace),Remove and Replace,0.18,0.18
+NO,Model S,18,15132702,NVH Pad - Panel - Door Trim - Rear - LH (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model S,18,15132802,NVH Pad - Panel - Door Trim - Rear - RH (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model S,18,15180032,Bezel - Seatbelt - C-Pillar - LH (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model S,18,15180042,Bezel - Seatbelt - C-Pillar - RH (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model S,18,15180104801,Trim - A-Pillar - Upper - LH (2025+),Remove and Install,0.12,0.12
+NO,Model S,18,15180104802,Trim - A-Pillar - Upper - LH (2025+),Remove and Replace,0.12,0.12
+NO,Model S,18,15180105101,Trim - C-Pillar - Upper - LH (2025+),Remove and Install,0.24,0.24
+NO,Model S,18,15180105102,Trim - C-Pillar - Upper - LH (2025+),Remove and Replace,0.24,0.24
+NO,Model S,18,15180202,Trim - Sill Panel - RH (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model S,18,15182402,Trim - A-Pillar - Lower - LH (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model S,18,15182502,Trim - A-Pillar - Lower - RH (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model S,18,15182602,Trim - A-Pillar - Middle - LH (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model S,18,15182702,Trim - A-Pillar - Middle - RH (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model S,18,15183002,Trim - B-Pillar - Upper - LH (Remove & Replace),Remove and Replace,0.18,0.18
+NO,Model S,18,15183102,Trim - B-Pillar - Upper - RH (Remove & Replace),Remove and Replace,0.18,0.18
+NO,Model S,18,15183402,Trim - B-Pillar - Lower - LH (Remove & Replace),Remove and Replace,0.24,0.24
+NO,Model S,18,15183502,Trim - B-Pillar - Lower - RH (Remove & Replace),Remove and Replace,0.18,0.18
+NO,Model S,18,15184002,Trim - A-Pillar - Upper - LH (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model S,18,15184102,Trim - A-Pillar - Upper - RH (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model S,18,15184202,Trim - 'B'  Post - Upper - LH (Remove & Replace),Remove and Replace,0.36,0.36
+NO,Model S,18,15184302,Trim - 'B'  Post - Upper - RH (Remove & Replace),Remove and Replace,0.36,0.36
+NO,Model S,18,15184402,Trim - 'B'  Post - Lower - LH (Remove & Replace),Remove and Replace,0.24,0.24
+NO,Model S,18,15184502,Trim - 'B'  Post - Lower - RH (Remove & Replace),Remove and Replace,0.24,0.24
+NO,Model S,18,15184602,Trim - C-Pillar - Upper - LH (Remove & Replace),Remove and Replace,0.24,0.24
+NO,Model S,18,15184702,Trim - 'C' Post Upper - RH  (Remove & Replace),Remove and Replace,0.24,0.24
+NO,Model S,18,15184802,Trim - Sill Panel - LH - Rear (Remove & Replace),Remove and Replace,0.18,0.18
+NO,Model S,18,15184902,Trim - Sill Panel - RH - Rear (Remove & Replace),Remove and Replace,0.18,0.18
+NO,Model S,18,15185002,Footrest - Driver's (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model S,18,15185102,Trim - 'C' Post Rear - LH (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model S,18,15185302,Trim - 'C' Post Rear - RH (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model S,18,15185402,Trim - C-Pillar - Mid - LH (Remove & Replace),Remove and Replace,0.18,0.18
+NO,Model S,18,15185502,Trim - C-Pillar - Mid - RH (Remove & Replace),Remove and Replace,0.18,0.18
+NO,Model S,18,15185802,Trim - C-Pillar - Lower - LH (Remove & Replace),Remove and Replace,0.18,0.18
+NO,Model S,18,15185902,Trim - C-Pillar - Lower - RH (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model S,18,15186002,Trim - C-Pillar - Upper - LH (Remove & Replace),Remove and Replace,0.18,0.18
+NO,Model S,18,15186102,Trim - C-Pillar - Upper - RH (Remove & Replace),Remove and Replace,0.18,0.18
+NO,Model S,18,15190012,Phone Dock - Center Console (Remove & Replace),Remove and Replace,0.18,0.18
+NO,Model S,18,15190062,Panel - Service - Center Console (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model S,18,15190400501,Back Panel - Center Console (2025+),Remove and Install,0.18,0.18
+NO,Model S,18,15190400502,Back Panel - Center Console (2025+),Remove and Replace,0.18,0.18
+NO,Model S,18,15190400601,Configured CenterConsole Assembly (2025+),Remove and Install,0.42,0.42
+NO,Model S,18,15190400602,Configured CenterConsole Assembly (2025+),Remove and Replace,0.42,0.42
+NO,Model S,18,15190400801,Airwave Cap - Center Console (2025+),Remove and Install,0.24,0.24
+NO,Model S,18,15190400802,Airwave Cap - Center Console (2025+),Remove and Replace,0.24,0.24
+NO,Model S,18,15190400901,Angled Power 12VOutlet - Center Console (2025+),Remove and Install,0.18,0.18
+NO,Model S,18,15190400902,Angled Power 12VOutlet - Center Console (2025+),Remove and Replace,0.18,0.18
+NO,Model S,18,15190612,Switch - Lid - Center Console (Remove & Replace),Remove and Replace,0.42,0.42
+NO,Model S,18,15191102,Assembly - Closeout Extension - LH - Center Console (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model S,18,15191202,Assembly - Closeout Extension - RH - Center Console (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model S,18,15191902,Trim - Center Console - 1st Row - Rear (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model S,18,15192002,Assembly - Panel - Wrapped - LH (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model S,18,15192102,Assembly - Panel - Wrapped - RH (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model S,18,15192302,Vent - Center Console - 1st Row (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model S,18,15192402,Center Console Assembly (Remove & Replace),Remove and Replace,0.42,0.42
+NO,Model S,18,15192512,Armrest - Center Console (Remove & Replace),Remove and Replace,0.48,0.48
+NO,Model S,18,15193002,Panel - Center Console - Wrapped - Rear - LH (Remove & Replace),Remove and Replace,0.6,0.6
+NO,Model S,18,15193102,Panel - Center Console - Wrapped - Rear - RH (Remove & Replace),Remove and Replace,0.6,0.6
+NO,Model S,18,15194002,Center Console Assembly - 2nd Row (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model S,18,15194102,Center Console - 2nd Row - Executive (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model S,18,15195202,Panel - Lower Rear - Center Console (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model S,18,15202102,Overhead Console (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model S,18,15204302,Coat Hook - Rear - LH (Remove & Replace),Remove and Replace,0.3,0.3
+NO,Model S,18,15204402,Coat Hook - Rear - RH (Remove & Replace),Remove and Replace,0.3,0.3
+NO,Model S,18,15241102,Assembly - Hood Latch Cover (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model S,18,15244802,Trim - Sill - Trunk (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model S,18,15245402,Carpet - Rear Trunk (Remove & Replace),Remove and Replace,0.18,0.18
+NO,Model S,18,15245602,Trim - Rear Trunk - Rear Wall (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model S,18,15245702,Parcel Shelf - Rear Trunk (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model S,18,15246002,Charge Port Cover Trim (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model S,18,15301000201,BolsterFoam Bag - Seat - RH (2025+),Remove and Install,0.06,0.06
+NO,Model S,18,15301000202,BolsterFoam Bag - Seat - RH (2025+),Remove and Replace,0.06,0.06
+NO,Model S,18,15301902,Floor Mat Set (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model S,18,15305102,Trunk Load Floor - Rear (Remove and Replace),Remove and Replace,0.06,0.06
+NO,Model S,18,15306219,Vehicle Accessories (Retrofit),Retrofit,0.05,0.05
+YES,Model S,18,16010201,HV Battery (AWD),Remove and Install,2.88,2.88
+YES,Model S,18,16010202,HV Battery (AWD),Remove and Replace,3.72,3.72
+NO,Model S,18,16010302,Flood Port - RH,Remove and Replace,0.84,0.84
+NO,Model S,18,16010500,HV Battery Health Test,Inspection,0.15,0.15
+NO,Model S,18,16011002,Flood Port - LH,Remove and Replace,0.84,0.84
+NO,Model S,18,16011102,Flood Port - RH (Remove & Replace),Remove and Replace,0.96,0.96
+NO,Model S,18,16013008,HV Battery Enclosure - Re-seal - Level 1,Restore,0.6,0.6
+NO,Model S,18,16013108,HV Battery Enclosure - Re-seal - Level 2,Restore,1.2,1.2
+YES,Model S,18,16015300,Discharge HV Battery (At Pack Contactors),Test/Adjust,1.02,1.02
+NO,Model S,18,16100012,Cover - Pyrotechnic Fuse - HV Battery (Remove & Replace),Remove and Replace,0.3,0.3
+NO,Model S,18,16100022,Ground Cable - HV Battery (Remove & Replace),Remove and Replace,0.48,0.48
+NO,Model S,18,16101022,Cover - Rear Access - HV Battery (Remove & Replace),Remove and Replace,4.2,4.2
+YES,Model S,18,16102100,HV Battery Air Leak Test,Test/Adjust,0.36,0.36
+NO,Model S,18,16102110,HV Battery Air Leak Test (On Table),Test/Adjust,0.18,0.18
+NO,Model S,18,16102712,Flood Port Plunger,Remove and Replace,0.48,0.48
+NO,Model S,18,16102732,Flood Port Assembly,Remove and Replace,0.06,0.06
+NO,Model S,18,16200210,Power Conversion System Coolant Leak Test,Test/Adjust,2.45,2.45
+NO,Model S,18,16202202,Tube - Output - Coolant - Power Conversion System (Remove & Replace),Remove and Replace,4.38,4.38
+NO,Model S,18,16300002,Pyrotechnic Battery Disconnect (Remove & Replace),Remove and Replace,0.9,0.9
+NO,Model S,18,16300062,Harness - Pyrotechnic - HV Battery (Remove & Replace),Remove and Replace,5.1,5.1
+NO,Model S,18,16300072,HV Harness - Heat Pump - HV Battery (Remove & Replace),Remove and Replace,5.46,5.46
+YES,Model S,18,16300100,Resistance Meter (Zero Adjust),Test/Adjust,0.05,0.05
+NO,Model S,18,16301002,Power Conversion System (Remove & Replace),Remove and Replace,4.62,4.62
+NO,Model S,18,16301601,HV Controller,Remove and Install,5.46,5.46
+NO,Model S,18,16301602,HV Controller,Remove and Replace,4.98,4.98
+NO,Model S,18,16302002,Contactor - Negative  - HV Battery (Remove & Replace),Remove and Replace,4.62,4.62
+NO,Model S,18,16302102,Contactor - Positive - HV Battery (Remove and Replace),Remove and Replace,4.02,4.02
+NO,Model S,18,16302602,Contactor - Fast Charge - HV Battery (Remove and Replace),Remove and Replace,4.08,4.08
+NO,Model S,18,16303602,Shunt - HV Battery (Remove & Replace),Remove and Replace,4.8,4.8
+NO,Model S,18,16304202,Fuse - A/C Compressor - HV Battery (Remove & Replace),Remove and Replace,4.74,4.74
+NO,Model S,18,16304402,Fuse - Power Conversion System - HV Battery (Remove & Replace),Remove and Replace,4.74,4.74
+NO,Model S,18,16305002,Harness - HV Battery - High Voltage Controller (Remove & Replace),Remove and Replace,4.62,4.62
+NO,Model S,18,16900308,HV Battery Damage Evaluation (Reman),Retrofit,1.0,1.0
+NO,Model S,18,16900508,HV Battery Safety Check (Reman),Retrofit,1.0,1.0
+NO,Model S,18,16901808,Battery Enclosure Replacement (Reman),Sublet,0.0,0.0
+NO,Model S,18,16901908,Battery Module Replacement (Reman),Sublet,0.0,0.0
+NO,Model S,18,16902408,Charge/Discharge Test (Reman),Sublet,0.0,0.0
+NO,Model S,18,16902608,Battery Reassembly (Reman),Sublet,0.0,0.0
+NO,Model S,18,16902808,Battery Module Repair (Reman),Sublet,0.0,0.0
+NO,Model S,18,16903108,HV Battery Coolant Leak Rectification (Reman),Retrofit,1.0,1.0
+NO,Model S,18,16904008,Enclosure - HV Battery - Remanufactured (Reman),Retrofit,5.35,5.35
+NO,Model S,18,16904208,Enclosure - HV Battery - New (Reman),Retrofit,4.6,4.6
+NO,Model S,18,16904508,Baffle - Vent - HV Battery (Reman),Retrofit,0.15,0.15
+NO,Model S,18,16905008,Battery Management System (BMS) (Reman),Retrofit,0.45,0.45
+NO,Model S,18,16906208,Modules - HV Battery - Upper (Reman),Retrofit,0.25,0.25
+NO,Model S,18,16906408,Modules - HV Battery - Lower (Reman),Retrofit,0.7,0.7
+YES,Model S,18,17000004,Diagnosis: Driver Assistance,General Diagnosis,0.5,0.5
+YES,Model S,18,17000008,Jumpstart Vehicle (Restore),Restore,0.12,0.12
+YES,Model S,18,17010000,Vehicle HV Disablement Procedure,Test/Adjust,0.36,0.36
+NO,Model S,18,17010008,LV Battery - Recover,Restore,0.06,0.06
+NO,Model S,18,17010100,Disconnect 12V - 1st Generation - RWD ,Test/Adjust,0.2,0.2
+NO,Model S,18,17010200,Disconnect LV Power,Modify,0.06,0.06
+NO,Model S,18,17010300,Disconnect 12V - 2nd Generation ,Test/Adjust,0.15,0.15
+NO,Model S,18,17011222,Battery - LV (Remove & Replace),Remove and Replace,0.18,0.18
+NO,Model S,18,17011502,12V Battery Tray (Remove & Replace),Remove and Replace,1.2,1.2
+NO,Model S,18,17011552,12V Battery Tray (2nd Generation) (Remove & Replace),Remove and Replace,0.18,0.18
+NO,Model S,18,17011602,E-Fuse Module (1st Generation) (Remove & Replace),Remove and Replace,1.56,1.56
+NO,Model S,18,17011652,E-Fuse Module (2nd Generation) (Remove & Replace),Remove and Replace,1.2,1.2
+NO,Model S,18,17012002,Trim - Fuse Box Lid (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model S,18,17012202,12V Fuse Box (Remove & Replace),Remove and Replace,1.08,1.08
+NO,Model S,18,17012302,Fusebox - Battery (RHD) (Remove & Replace),Remove and Replace,1.38,1.38
+NO,Model S,18,17013102,12V Positive Jump Post (Remove & Replace),Remove and Replace,0.18,0.18
+YES,Model S,18,17100008,Harness Connector - Reconnect,Restore,0.1,0.1
+NO,Model S,18,17100072,Harness - 2nd Row Seat - LH (Remove & Replace),Remove and Replace,0.48,0.48
+NO,Model S,18,17100082,Harness - 2nd Row Seat - RH (Remove & Replace),Remove and Replace,0.18,0.18
+NO,Model S,18,17100302,Harness - Center Console (Remove & Replace),Remove and Replace,1.38,1.38
+NO,Model S,18,17100402,Harness - Body - Lower Dash (Remove & Replace),Remove and Replace,8.4,8.4
+NO,Model S,18,17100701301,Ethernet JumperHarness (2025+),Remove and Install,0.48,0.48
+NO,Model S,18,17100701302,Ethernet JumperHarness (2025+),Remove and Replace,0.48,0.48
+NO,Model S,18,17100802,Harness - Body - LH (NA) (Remove & Replace),Remove and Replace,3.06,3.06
+NO,Model S,18,17100812,Harness - Body - LH (RoW) (Remove & Replace),Remove and Replace,3.42,3.42
+NO,Model S,18,17100902,Harness - Body - Right (Remove & Replace),Remove and Replace,2.7,2.7
+NO,Model S,18,17101006,Harness - Media Control Unit,Retrofit,1.62,1.62
+NO,Model S,18,17101102,Harness - Fascia - Rear (HW3) (Remove & Replace),Remove and Replace,0.6,0.6
+NO,Model S,18,17101302,Harness - Thermal Bar (Remove & Replace),Remove and Replace,1.32,1.32
+NO,Model S,18,17101702,Harness - Body - Left (Remove & Replace),Remove and Replace,8.2,8.2
+NO,Model S,18,17102012,Jumper Harness - Trailer Hitch (Remove and Replace),Remove and Replace,0.54,0.54
+NO,Model S,18,17102802,Harness - Rear Door - LH (Remove & Replace),Remove and Replace,0.48,0.48
+NO,Model S,18,17102902,Harness - Rear Door - RH (Remove & Replace),Remove and Replace,0.48,0.48
+NO,Model S,18,17103000101,Harness - Driver Seat (2025+),Remove and Install,1.14,1.14
+NO,Model S,18,17103000102,Harness - Driver Seat (2025+),Remove and Replace,1.14,1.14
+NO,Model S,18,17103902,Harnesses - Liftgate - RH/RH (Remove and Replace),Remove and Replace,2.76,2.76
+NO,Model S,18,17104002,Cable - EPAS (Remove & Replace),Remove and Replace,3.24,3.24
+NO,Model S,18,17104102,Harness - HVAC Assembly (Remove & Replace),Remove and Replace,2.1,2.1
+NO,Model S,18,17104202,Cable - Body - Left - GPS Antenna (Remove & Replace),Remove and Replace,3.6,3.6
+NO,Model S,18,17104502,Harness - Liftgate - LH (Remove & Replace),Remove and Replace,0.84,0.84
+NO,Model S,18,17104512,Harness - Tuner - Liftgate (Remove & Replace),Remove and Replace,0.54,0.54
+NO,Model S,18,17104602,Harness - Liftgate - RH (Remove & Replace),Remove and Replace,1.8,1.8
+NO,Model S,18,17104702,Harnesses - Liftgate - LH/RH (Remove & Replace),Remove and Replace,2.76,2.76
+NO,Model S,18,17105002,Cable - Body Left - RKE + GPS (Remove & Replace),Remove and Replace,0.96,0.96
+YES,Model S,18,17105006,Wire - Electrical Harness (Overlay),Retrofit,0.0,0.0
+NO,Model S,18,17107301,Harness - Chassis - Rear - LH (with Wheel Speed Sensor),Remove and Install,0.25,0.25
+NO,Model S,18,17107302,Harness - Chassis - Rear - LH (with Wheel Speed Sensor),Remove and Replace,0.36,0.36
+NO,Model S,18,17107401,Harness - Chassis - Rear - RH (with Wheel Speed Sensor),Remove and Install,0.25,0.25
+NO,Model S,18,17107402,Harness - Chassis - Rear - RH (with Wheel Speed Sensor),Remove and Replace,0.36,0.36
+YES,Model S,18,17108100,Diagnosis: Low Voltage Distribution and Controllers,General Diagnosis,1.0,1.0
+NO,Model S,18,17130100101,MSP2 - ELECTRICAL - Exterior Lights - Headlamps - Global Headlamp - LH/RH (RR),Remove and Install,0.0,0.0
+NO,Model S,18,17130100102,MSP2 - ELECTRICAL - Exterior Lights - Headlamps - Global Headlamp - LH/RH (RR),Remove and Replace,0.0,0.0
+NO,Model S,18,17150012,Module - Battery Controller (Remove and Replace),Remove and Replace,0.66,0.66
+NO,Model S,18,17150016,Electronic Toll Collection System (Retrofit),Retrofit,0.6,0.6
+NO,Model S,18,17150300101,LV Controller - LH (GEN 4) (2025+),Remove and Install,0.54,0.54
+NO,Model S,18,17150300201,LV Controller - RH (GEN 4) (2025+),Remove and Install,0.84,0.84
+NO,Model S,18,17150300202,"LV Controller - RH
+  (GEN 4) (2025+)",Remove and Replace,0.84,0.84
+NO,Model S,18,17151902,Module - Sunroof Controller (RHD) (Remove & Replace),Remove and Replace,0.66,0.66
+NO,Model S,18,17152102,Module - Body Controller - LH (Remove & Replace),Remove and Replace,0.48,0.48
+NO,Model S,18,17152202,Module - Body Controller - RH (Remove & Replace),Remove and Replace,0.48,0.48
+NO,Model S,18,17152302,Module - Body Controller - BCM (Remove & Replace),Remove and Replace,1.14,1.14
+NO,Model S,18,17152602,Module - Body Controller - BCM (Remove & Replace),Remove and Replace,2.22,2.22
+NO,Model S,18,17152702,Module - Body Controller - BCM (RHD) (Remove & Replace),Remove and Replace,2.16,2.16
+NO,Model S,18,17154503,Module – Gateway,Module Reset/Reflashed,0.2,0.2
+NO,Model S,18,17154603,Module – Bluetooth (Parrot),Module Reset/Reflashed,0.1,0.1
+NO,Model S,18,17201706,"Heater - Radar (Rework) (vehicles built before July 1, 2021）",Modify,0.48,0.48
+NO,Model S,18,17201806,"Heater - Radar (Rework) (vehicles built after July 1, 2021)",Modify,0.42,0.42
+NO,Model S,18,17221102,Camera - B-Pillar - LH (HW4) (Remove & Replace),Remove and Replace,0.24,0.24
+NO,Model S,18,17242014S022317013,Replace Occupant Camera,Test/Adjust,0.12,0.12
+NO,Model S,18,17270102,Module - Park Assist - 1st Generation (Remove & Replace),Remove and Replace,0.42,0.42
+NO,Model S,18,17270202,Module - Park Assist - 2nd Generation (Remove & Replace),Remove and Replace,0.78,0.78
+NO,Model S,18,17271302,Sensor - Park Assist - Rear - Set (Remove & Replace),Remove and Replace,1.08,1.08
+NO,Model S,18,17303002,12V Power Socket - Center Console (Remove & Replace),Remove and Replace,0.18,0.18
+NO,Model S,18,17350112,Map Light - LH (Remove & Replace),Remove and Replace,0.36,0.36
+NO,Model S,18,17350212,Map Light - RH (Remove & Replace),Remove and Replace,0.36,0.36
+NO,Model S,18,17350902,Task Light - Footwell Cover - RH (Remove and Replace),Remove and Replace,0.12,0.12
+NO,Model S,18,17351112,Footwell Light - Rear - Center Console (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model S,18,17351502,Puddle Light - Rear Trunk (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model S,18,17351602,Rear Compartment Lamp - RH (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model S,18,17352202,Puddle Lamp - Rear Door - LH (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model S,18,17352302,Puddle Lamp - Rear Door - RH (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model S,18,17352402,Puddle Light - Liftgate (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model S,18,17352702,Reflector Lamp - Rear Door - LH (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model S,18,17352802,Reflector Lamp - Rear Door - RH (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model S,18,17355102,Task Light - Footwell Cover - LH (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model S,18,17400022,Reflex Marker - Taillight - RH (Non-Global) (Remove & Replace),Remove and Replace,0.36,0.36
+NO,Model S,18,17400042,Reflex Marker - Taillight - RH (Global) (Remove & Replace),Remove and Replace,0.36,0.36
+NO,Model S,18,17400100,Headlights - Adjust - NA (Wall Method),Test/Adjust,0.18,0.18
+NO,Model S,18,17400102,Headlight  - LH (Non-Global) (Remove & Replace),Remove and Replace,0.66,0.66
+YES,Model S,18,17400150,Headlights - Adjust - NA (Tool Method),Test/Adjust,0.18,0.18
+NO,Model S,18,17400160,Headlights - Adjust (Global) (Wall Method),Test/Adjust,0.18,0.18
+NO,Model S,18,17400170,Headlights - Adjust (Global) (Tool Method),Test/Adjust,0.18,0.18
+NO,Model S,18,17400202,Headlight - RH (Remove & Replace),Remove and Replace,0.72,0.72
+NO,Model S,18,17400232,Ballast - HID (SAE) (Remove & Replace),Remove and Replace,0.3,0.3
+NO,Model S,18,17400242,Ballast - HID - RH (SAE) (Remove & Replace),Remove and Replace,0.3,0.3
+NO,Model S,18,17400302,Headlight - LH (Global) (Remove & Replace),Remove and Replace,0.6,0.6
+NO,Model S,18,17400402,Headlight - RH (Global) (Remove & Replace),Remove and Replace,0.72,0.72
+NO,Model S,18,17400502,Halogen Bulb - Headlight - LH (Remove & Replace),Remove and Replace,0.3,0.3
+NO,Model S,18,17400602,Halogen Bulb - Headlight - RH (Remove & Replace),Remove and Replace,0.3,0.3
+NO,Model S,18,17400702,Headlight - RH (Global) (Remove and Replace),Remove and Replace,0.6,0.6
+NO,Model S,18,17401002,Bulb - Turn Signal - Headlight - LH (Remove & Replace),Remove and Replace,0.54,0.54
+NO,Model S,18,17401102,Bulb - Turn Signal - Headlight - RH (Remove & Replace),Remove and Replace,0.54,0.54
+NO,Model S,18,17401602,Headlight  - RH (Non-Global) (Remove and Replace),Remove and Replace,0.66,0.66
+NO,Model S,18,17402002,Taillight - LH (Non-Global) (Remove & Replace),Remove and Replace,0.78,0.78
+NO,Model S,18,17402012,Taillight - LH (Global) (Remove & Replace),Remove and Replace,0.42,0.42
+NO,Model S,18,17402202,Taillight - RH (Non-Global) (Remove & Replace),Remove and Replace,0.36,0.36
+NO,Model S,18,17402212,Taillight - RH (Global) (Remove & Replace),Remove and Replace,0.42,0.42
+NO,Model S,18,17402302,"Tail Light Assembly - LH (Vehicles With 3 Phase, Motorized Charge Port) (Remove & Replace)",Remove and Replace,0.72,0.72
+NO,Model S,18,17402602,Light - License Plate (Remove & Replace),Remove and Replace,0.36,0.36
+NO,Model S,18,17402702,Light - Fog/Reverse - Rear - LH (Remove & Replace),Remove and Replace,0.54,0.54
+NO,Model S,18,17402712,Light - Fog/Reverse - Rear - LH (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model S,18,17402802,Light - Fog/Reverse - Rear - RH (Non-Global) (Remove & Replace),Remove and Replace,0.54,0.54
+NO,Model S,18,17402812,Light - Fog/Reverse - Rear - RH (Global) (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model S,18,17402902,Lights - Fog/Reverse - Rear - LH/RH (Remove & Replace),Remove and Replace,1.2,1.2
+NO,Model S,18,17403502,Lamp - Reflex - Rear - LH (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model S,18,17403602,Lamp - Reflex - Rear - RH  (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model S,18,17407002,Switch - Hazard - Center Console (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model S,18,17409000,Headlight - Adjust - North America,Test/Adjust,0.3,0.3
+NO,Model S,18,17450306,Key Card - Program (No Keys Present),Program,0.06,0.06
+NO,Model S,18,17450513,Key Fob - Program (No Keys Present),Program,0.06,0.06
+NO,Model S,18,17450902,Battery - Key Fob (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model S,18,17451002,Siren - Battery Backed (Remove & Replace),Remove and Replace,0.36,0.36
+NO,Model S,18,17451602,LF Antenna - Console - Center (Remove & Replace),Remove and Replace,1.2,1.2
+NO,Model S,18,17451802,Module - Bluetooth Low Energy (BLE) - Rear (Remove & Replace),Remove and Replace,0.6,0.6
+NO,Model S,18,17451812,Module - Bluetooth Low Energy (BLE) - Rear - LH (Remove & Replace),Remove and Replace,0.6,0.6
+NO,Model S,18,17451822,Module - Bluetooth Low Energy (BLE) - Rear - RH (Remove & Replace),Remove and Replace,0.6,0.6
+NO,Model S,18,17452402,LF Antenna - Bumper Carrier (Remove & Replace),Remove and Replace,0.96,0.96
+NO,Model S,18,17452802,LF Antenna - RH - A Post (Remove & Replace),Remove and Replace,0.72,0.72
+NO,Model S,18,17453002,LF Antenna - Center - Heelboard (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model S,18,17454002,Module - Body Controller - Security (Remove & Replace),Remove and Replace,0.48,0.48
+NO,Model S,18,17500012,Hose - Wiper - Cowl Screen (Remove & Replace),Remove and Replace,0.36,0.36
+NO,Model S,18,17500102,Wiper Module (Remove & Replace),Remove and Replace,0.48,0.48
+NO,Model S,18,17500302,Wiper Arm - LH (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model S,18,17500352,Wiper Arm - RH (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model S,18,17501402,Non Return Valve (Remove & Replace),Remove and Replace,0.6,0.6
+NO,Model S,18,17501502,Pipe - Washer - Reservoir to Valve (Remove & Replace),Remove and Replace,0.72,0.72
+NO,Model S,18,17501512,Hose - Washer - Reservoir (Remove & Replace),Remove and Replace,0.24,0.24
+NO,Model S,18,17501602,Pipe - Washer - Valve to Nozzle (Remove & Replace),Remove and Replace,1.08,1.08
+NO,Model S,18,17501612,Hose - Washer - Shock Tower - LH (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model S,18,17501802,Wiper Arms - Pair  (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model S,18,17530502,Horn - 1st Generation - Pair  (Remove & Replace),Remove and Replace,0.6,0.6
+NO,Model S,18,17531202,Horn Assembly (Remove and Replace),Remove and Replace,0.24,0.24
+NO,Model S,18,17551002,Accelerator (Remove & Replace),Remove and Replace,0.24,0.24
+NO,Model S,18,17551202,Pedal Pad - Accelerator (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model S,18,17570102,Pyrotechnic Battery Disconnect (Remove & Replace),Remove and Replace,0.24,0.24
+NO,Model S,18,18100052,Cap - Air Wave - Center Console (Remove & Replace),Remove and Replace,0.24,0.24
+NO,Model S,18,18100092,Duct - Jumper - Footwell - Driver (Remove & Replace),Remove and Replace,0.18,0.18
+NO,Model S,18,18100602,Module - HVAC Controller - RCCM (Remove & Replace),Remove and Replace,1.98,1.98
+NO,Model S,18,18100802,Module - Thermal Controller (Remove & Replace),Remove and Replace,1.74,1.74
+NO,Model S,18,18101002,HVAC Assembly (Remove & Replace),Remove and Replace,3.9,3.9
+NO,Model S,18,18101302,Sump Seal - HVAC Assembly (Remove and Replace),Remove and Replace,4.08,4.08
+NO,Model S,18,18102102,Actuator - Driver's Temperature (Remove & Replace),Remove and Replace,2.04,2.04
+NO,Model S,18,18102212,Actuator - Bleed - LH (Remove & Replace),Remove and Replace,2.04,2.04
+NO,Model S,18,18102312,Actuator - Bleed - RH (Remove & Replace),Remove and Replace,0.54,0.54
+NO,Model S,18,18102412,Actuator - Panel - LH (Remove & Replace),Remove and Replace,1.08,1.08
+NO,Model S,18,18102422,Actuator - Panel - RH (Remove & Replace),Remove and Replace,0.48,0.48
+NO,Model S,18,18102702,Actuator - Flap - Center Console - LH (Remove & Replace),Remove and Replace,0.36,0.36
+NO,Model S,18,18102712,Actuator - Vane - Center Console - LH (Remove & Replace),Remove and Replace,0.3,0.3
+NO,Model S,18,18102802,Actuator - Flap - Center Console - RH (Remove & Replace),Remove and Replace,0.36,0.36
+NO,Model S,18,18102812,Actuator - Vane - Center Console - RH (Remove & Replace),Remove and Replace,0.3,0.3
+NO,Model S,18,18102822,Actuator - Duct - Center Console (Remove & Replace),Remove and Replace,0.3,0.3
+NO,Model S,18,18102832,Actuator - Bypass - 1st Row - HVAC Case (Remove & Replace),Remove and Replace,2.4,2.4
+NO,Model S,18,18103202,Blower Motor - HVAC (Remove & Replace),Remove and Replace,1.02,1.02
+NO,Model S,18,18104002,Duct - Dash to Rear Vent (Remove & Replace),Remove and Replace,0.9,0.9
+NO,Model S,18,18105102,Thermistor - Evaporator (Remove and Replace),Remove and Replace,0.24,0.24
+NO,Model S,18,18105202,Duct - HEPA Filter - Outlet (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model S,18,18105402,Assembly - Filter - HEPA (Remove & Replace),Remove and Replace,0.84,0.84
+NO,Model S,18,18105501,Filter - HEPA,Remove and Install,0.12,0.12
+NO,Model S,18,18105502,Filter - HEPA,Remove and Replace,0.18,0.18
+NO,Model S,18,18107002,Sensor - Air Quality (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model S,18,18107202,Sensor - Ambient Air Temperature (Remove & Replace),Remove and Replace,0.48,0.48
+NO,Model S,18,18107602,Sensor - Temperature - Evaporator (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model S,18,18107812,Sensor - Air Temperature - Duct - Footwell - LH (Remove & Replace),Remove and Replace,0.18,0.18
+NO,Model S,18,18107912,Sensor - Air Temperature - Duct - Footwell - RH (Remove & Replace),Remove and Replace,0.18,0.18
+NO,Model S,18,18108202,Air Wave Assembly - Center Console (Remove & Replace),Remove and Replace,0.3,0.3
+NO,Model S,18,18108612,Actuator - Duct - Footwell - LH (Remove & Replace),Remove and Replace,0.24,0.24
+NO,Model S,18,18108712,Actuator - Duct - Footwell - RH (Remove & Replace),Remove and Replace,0.24,0.24
+NO,Model S,18,18109202,Sensor - Air Temperature - Duct - Driver (Remove & Replace),Remove and Replace,1.02,1.02
+NO,Model S,18,18109502,Sensor - Air Temperature - Floor Duct - 2nd Row (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model S,18,18109602,Actuator - Bypass - 2nd Row - HVAC Case (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model S,18,18109702,Duct - Floor - 2nd Row - LH (Remove & Replace),Remove and Replace,1.38,1.38
+NO,Model S,18,18109712,Actuator - Duct - Floor - 2nd Row (Remove & Replace),Remove and Replace,0.3,0.3
+NO,Model S,18,18109802,Duct - Floor - 2nd Row - RH (Remove & Replace),Remove and Replace,1.38,1.38
+NO,Model S,18,18201012,Evaporator (Remove & Replace),Remove and Replace,5.16,5.16
+NO,Model S,18,18201052,Evaporator (2nd Generation) (Remove & Replace),Remove and Replace,5.16,5.16
+NO,Model S,18,18202802,Actuator - Flap - Center Console - RH (Remove & Replace),Remove and Replace,0.36,0.36
+NO,Model S,18,18203502,Acoustic Blanket - Compressor (Remove & Replace),Remove and Replace,1.2,1.2
+NO,Model S,18,18203912,A/C Compressor (Remove & Replace),Remove and Replace,1.2,1.2
+NO,Model S,18,18204102,Pipe - High Pressure - Charge Port (Remove & Replace),Remove and Replace,2.7,2.7
+NO,Model S,18,18205002,TXV Valve­ Evaporator (Remove & Replace),Remove and Replace,2.7,2.7
+NO,Model S,18,18206002,Battery Chiller and TXV Assembly (Remove & Replace),Remove and Replace,1.56,1.56
+NO,Model S,18,18260100101,Supermanifold (2025+),Remove and Install,1.98,1.98
+NO,Model S,18,18260100102,Supermanifold (2025+),Remove and Replace,1.98,1.98
+NO,Model S,18,18300092,Hose - Supermanifold To Offboard Battery Pump (Remove & Replace),Remove and Replace,0.48,0.48
+YES,Model S,18,18300900,Thermal System Test,Test/Adjust,0.1,0.1
+YES,Model S,18,18301000,Clean Radiator,Maintenance,0.96,0.96
+NO,Model S,18,18301002,Radiator (Remove & Replace),Remove and Replace,1.08,1.08
+NO,Model S,18,18301200,Remove and Clean Radiator (Heat Pump),Maintenance,1.44,1.44
+NO,Model S,18,18301302,Hose - Radiator Bypass (Remove & Replace),Remove and Replace,1.08,1.08
+NO,Model S,18,18301602,Reservoir Cap - Coolant (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model S,18,18302002,Sensor - Coolant Level (Remove & Replace),Remove and Replace,0.9,0.9
+NO,Model S,18,18302202,Hose - Supermanifold To 3 Way Valve And Radiator (Remove & Replace),Remove and Replace,1.38,1.38
+NO,Model S,18,18302502,Hose - Outlet - Rear Drive Unit (Remove & Replace),Remove and Replace,2.94,2.94
+NO,Model S,18,18302512,Hose - Outlet - Rear Drive Unit (Plaid) (Remove & Replace),Remove and Replace,2.94,2.94
+NO,Model S,18,18302702,Hose - Outlet - Radiator (Remove & Replace),Remove and Replace,0.78,0.78
+NO,Model S,18,18302802,Hose - Supermanifold To 3 Way Valve (Remove & Repalce),Remove and Replace,0.9,0.9
+NO,Model S,18,18303002,Hose - T-Piece to 4 Way Coolant Valve (Remove & Replace),Remove and Replace,2.34,2.34
+NO,Model S,18,18303202,Hose - RH 3 Way Coolant Valve to Radiator (Remove & Replace),Remove and Replace,3.54,3.54
+NO,Model S,18,18303302,Hose - Rocker (RH) (Remove & Replace),Remove and Replace,3.0,3.0
+NO,Model S,18,18303402,Hose - Reservoir to Coolant Pump 3 (Remove & Replace),Remove and Replace,2.4,2.4
+NO,Model S,18,18303502,Hose - Coolant Pump 3 to Rocker (Remove & Replace),Remove and Replace,2.4,2.4
+NO,Model S,18,18303602,Hose - Battery Supply (Remove & Replace),Remove and Replace,1.26,1.26
+NO,Model S,18,18303702,Hose - Rocker (LH) to Charger (Remove & Replace),Remove and Replace,2.4,2.4
+NO,Model S,18,18303802,Hose - Charger Outlet (Remove & Replace),Remove and Replace,1.92,1.92
+NO,Model S,18,18303902,Hose - Charger to Motor (Remove & Replace),Remove and Replace,2.82,2.82
+NO,Model S,18,18304102,Hose - Reservoir to 4 Way Coolant Valve (Remove & Replace),Remove and Replace,2.34,2.34
+NO,Model S,18,18304202,Hose - 4 Way Coolant Valve to Coolant Pump 1 (Remove & Replace),Remove and Replace,2.4,2.4
+NO,Model S,18,18304302,Hose - Coolant Pump 1 to LH 3 Way Coolant Valve (Remove & Replace),Remove and Replace,2.34,2.34
+NO,Model S,18,18304402,Hose - LH 3 Way Coolant Valve to Chiller (Remove & Replace),Remove and Replace,2.34,2.34
+NO,Model S,18,18304502,Hose - Chiller to Coolant Pump 2 and LH 3 Way Coolant Valve (Remove & Replace),Remove and Replace,2.34,2.34
+NO,Model S,18,18304602,Hose - Coolant Pump 2 to Battery Coolant Heater (Remove & Replace),Remove and Replace,2.34,2.34
+NO,Model S,18,18304702,Hose - Battery Coolant Heater to Battery (Remove & Replace),Remove and Replace,3.0,3.0
+NO,Model S,18,18304802,Hose - Battery to 4 Way Coolant Valve (Remove & Replace),Remove and Replace,3.0,3.0
+NO,Model S,18,18306002,3 Way Coolant Valve - Chiller Bypass (Remove & Replace),Remove and Replace,1.38,1.38
+NO,Model S,18,18306102,3 Way Coolant Valve - Radiator Bypass (Remove & Replace),Remove and Replace,1.08,1.08
+NO,Model S,18,18306112,Hose - HV Battery to 3 Way Valve (Remove & Replace),Remove and Replace,0.72,0.72
+NO,Model S,18,18307202,Coolant Heater - Electric - Battery - 2nd Generation (Remove & Replace),Remove and Replace,1.14,1.14
+NO,Model S,18,18307302,Coolant Heater - Electric - Battery (Remove & Replace),Remove and Replace,1.68,1.68
+NO,Model S,18,18308502,Coolant Pump - Battery - Offboard,Remove and Replace,0.54,0.54
+NO,Model S,18,18308542,Pump - Coolant - Battery - Chiller (Remove & Replace),Remove and Replace,0.48,0.48
+NO,Model S,18,18308562,Pump - Coolant - Radiator (Remove and Replace),Remove and Replace,0.84,0.84
+NO,Model S,18,18308602,Battery Coolant Pump 2 - 1st Generation (Remove & Replace),Remove and Replace,0.6,0.6
+NO,Model S,18,18308702,Battery Coolant Pump 1 (2nd Generation) (Remove & Replace),Remove and Replace,0.6,0.6
+NO,Model S,18,18308752,Battery Coolant Pump 1 (3rd Generation) (Remove & Replace),Remove and Replace,0.72,0.72
+NO,Model S,18,18308802,Battery Coolant Pump 2 (2nd Generation) (Remove & Replace),Remove and Replace,0.6,0.6
+NO,Model S,18,18308852,Battery Coolant Pump 2 (3rd Generation) (Remove & Replace),Remove and Replace,1.08,1.08
+NO,Model S,18,18400102,Supermanifold (Remove & Replace),Remove and Replace,2.04,2.04
+NO,Model S,18,18400302,Sensor - Pressure and Temperature (PT) - High Pressure (Remove & Replace),Remove and Replace,0.48,0.48
+NO,Model S,18,18400402,Sensor - Pressure and Temperature (PT) - Low Pressure (Remove & Replace),Remove and Replace,0.42,0.42
+NO,Model S,18,18400502,Sensor - Subcool - Pressure and Temperature (PT) - High Pressure (Remove & Replace),Remove and Replace,0.48,0.48
+NO,Model S,18,18401202,Coil - EXV - Supermanifold (Remove & Replace),Remove and Replace,0.24,0.24
+NO,Model S,18,18401302,Valve Body - EXV - Supermanifold (Remove & Replace),Remove and Replace,0.54,0.54
+NO,Model S,18,18401602,Chiller (Remove & Replace),Remove and Replace,1.26,1.26
+NO,Model S,18,18401802,Pump - Coolant - Chiller - Supermanifold (Remove & Replace),Remove and Replace,1.26,1.26
+NO,Model S,18,18402902,Service Kit - Check Valves - Supermanifold,Remove and Replace,1.92,1.92
+NO,Model S,18,18500602,Active Grille Shutter (Remove & Replace),Remove and Replace,0.66,0.66
+YES,Model S,18,19010100825,Remove Vehicle Label (No Anti-Tamper Residue),Removal,0.06,0.06
+YES,Model S,18,19010100902,Vehicle Emission Control Label,Remove and Replace,0.06,0.06
+YES,Model S,18,19010100925,Remove Vehicle Label and Anti-Tamper Residue,Removal,0.12,0.12
+YES,Model S,18,19010101002,Battery Chemistry Label,Remove and Replace,0.06,0.06
+YES,Model S,18,19010101102,Monroney Label,Remove and Replace,0.06,0.06
+YES,Model S,18,19010202,Labels - Any (Remove & Replace),Remove and Replace,0.24,0.24
+NO,Model S,18,190135740002,"Correct CE label already present, no further action required.",Test/Adjust,0.1,0.1
+NO,Model S,18,20010102,Airbag - Driver (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model S,18,20010202,Knee Airbag - Driver (NA) (Remove & Replace),Remove and Replace,0.3,0.3
+NO,Model S,18,20050302,Retractor - Seatbelt -1st Row - RH (Remove and Replace),Remove and Replace,0.48,0.48
+NO,Model S,18,20054102,Retractor - Seatbelt -1st Row - LH (Remove & Replace),Remove and Replace,0.54,0.54
+NO,Model S,18,20054202,Retractor - Seatbelt  - 1st Row - RH (Remove & Replace),Remove and Replace,0.54,0.54
+NO,Model S,18,20054702,Buckle - 1st Row - LH (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model S,18,20054802,Buckle - 1st Row - RH (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model S,18,20056102,Retractor - Seatbelt - 2nd Row - LH (Remove & Replace),Remove and Replace,0.36,0.36
+NO,Model S,18,20056202,Retractor - Seatbelt - 2nd Row - RH (Remove & Replace),Remove and Replace,0.72,0.72
+NO,Model S,18,20056302,Seatbelt - 2nd Row - Center (Remove & Replace),Remove and Replace,0.42,0.42
+NO,Model S,18,20056402,Escutcheon - Seatbelt - 2nd Row - LH (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model S,18,20056502,Escutcheon - Seatbelt - 2nd Row - RH (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model S,18,20057002,Buckle - 2nd Row - LH (Remove & Replace),Remove and Replace,0.18,0.18
+NO,Model S,18,20057102,Buckle - 2nd Row - RH (Remove & Replace),Remove and Replace,0.18,0.18
+NO,Model S,18,20057202,Buckle - 2nd Row - Center (Remove & Replace),Remove and Replace,0.18,0.18
+NO,Model S,18,20058102,Seatbelt Assembly - 3rd Row - LH (Remove & Replace),Remove and Replace,0.6,0.6
+NO,Model S,18,20058202,Seatbelt Assembly - 3rd Row - RH (Remove & Replace),Remove and Replace,0.6,0.6
+NO,Model S,18,20101002,Lap Pretensioner - 1st Row - LH (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model S,18,20101102,Lap Pretensioner - 1st Row - RH (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model S,18,20200152,Sensor - Pressure - Door - Rear -LH (Remove & Replace),Remove and Replace,0.18,0.18
+NO,Model S,18,20200252,Sensor - Airbag - Door - Rear - RH (Remove & Replace),Remove and Replace,0.18,0.18
+NO,Model S,18,20200502,Sensor - Impact - B Pillar - LH (Remove & Replace),Remove and Replace,0.36,0.36
+NO,Model S,18,20200602,Sensor - Impact - B Pillar - RH (Remove & Replace),Remove and Replace,0.36,0.36
+NO,Model S,18,20200702,Sensor - Impact - C Pillar - LH (Remove & Replace),Remove and Replace,0.48,0.48
+NO,Model S,18,20200802,Sensor - Impact - C Pillar - RH (Remove & Replace),Remove and Replace,0.48,0.48
+NO,Model S,18,20201102,Sensor - T-Bar Accelerometer - LH (Remove & Replace),Remove and Replace,0.24,0.24
+NO,Model S,18,20201152,Sensor - Shotgun Accelerometer - LH (Remove & Replace),Remove and Replace,0.24,0.24
+NO,Model S,18,20201202,Sensor - T-Bar Accelerometer - RH (Remove & Replace),Remove and Replace,0.24,0.24
+NO,Model S,18,20201252,Sensor - Shotgun Accelerometer - RH (Remove & Replace),Remove and Replace,0.24,0.24
+NO,Model S,18,20202102,Sensor - Resistive Occupancy - Driver's Seat (Remove & Replace),Remove and Replace,1.14,1.14
+NO,Model S,18,20202212,Sensor - Occupant Classification System - 1st Row - RH (Remove & Replace),Remove and Replace,1.14,1.14
+NO,Model S,18,21050402,Re-Synchronize Odometer Value (Remove & Replace),Remove and Replace,0.0,0.0
+YES,Model S,18,21051000,Update Display Avatar,Test/Adjust,0.12,0.12
+NO,Model S,18,21051202,Touchscreen (HW3) (Remove & Replace),Remove and Replace,0.3,0.3
+NO,Model S,18,21051222,Mechanism - Pivot - Touchscreen (Remove and Replace),Remove and Replace,0.42,0.42
+NO,Model S,18,21051302,Touchscreen - Rear (Remove & Replace),Remove and Replace,0.3,0.3
+NO,Model S,18,21051402,Touchscreen (HW4) (Remove and Replace),Remove and Replace,0.36,0.36
+NO,Model S,18,21060208,Software Recovery - Media Control Unit (Restore),Restore,0.05,0.05
+NO,Model S,18,21063208,SD Card - Media Control Unit (Reformat),Restore,0.05,0.05
+NO,Model S,18,21063308,Field Programmable Gate Array (FPGA) - Media Control Unit (Reflash),Restore,0.05,0.05
+NO,Model S,18,21070100301,Touchscreen - Rear (2025+),Remove and Install,0.24,0.24
+NO,Model S,18,21070100302,Touchscreen - Rear (2025+),Remove and Replace,0.24,0.24
+NO,Model S,18,2110010011,Car Computer -Etisalat Sim Card.,Remove and Install,0.36,0.36
+NO,Model S,18,21151007,Car Computer (Dispose),Modify,0.24,0.24
+NO,Model S,18,21152002,SIM Card - Car Computer (Remove & Replace),Remove and Replace,0.3,0.3
+NO,Model S,18,21152502,SD Card - Car Computer (Remove & Replace),Remove and Replace,0.3,0.3
+NO,Model S,18,21152901,Connectivity Board - Car Computer,Remove and Install,0.42,0.42
+NO,Model S,18,21152902,Connectivity Board - Car Computer (Remove & Replace),Remove and Replace,0.42,0.42
+NO,Model S,18,21153002,Connectivity Board - Car Computer (HW4) ,Remove and Replace,0.42,0.42
+NO,Model S,18,21153202,Replace Car Computer (HW3),Remove and Replace,0.96,0.96
+NO,Model S,18,21153226,Ethernet Diagnostics - Car Computer (Retrofit),Retrofit,0.12,0.12
+NO,Model S,18,21153302,Replace Car Computer (HW4) (LHD),Remove and Replace,0.84,0.84
+NO,Model S,18,21211002,Speaker - Rear Door - LH (Remove & Replace),Remove and Replace,0.18,0.18
+NO,Model S,18,21211102,Speaker - Rear Door - RH (Remove & Replace),Remove and Replace,0.18,0.18
+NO,Model S,18,21211502,Speaker - Dash - LH (Remove & Replace),Remove and Replace,0.6,0.6
+NO,Model S,18,21211602,Speaker - Dash - Center  (Remove & Replace),Remove and Replace,1.2,1.2
+NO,Model S,18,21211702,Speaker - Dash - RH (Remove & Replace),Remove and Replace,0.6,0.6
+NO,Model S,18,21212002,Subwoofer (Remove & Replace),Remove and Replace,0.3,0.3
+NO,Model S,18,21212502,Tweeter - A Pillar - LH (Remove & Replace),Remove and Replace,0.24,0.24
+NO,Model S,18,21212602,Tweeter - A Pillar - RH (Remove & Replace),Remove and Replace,0.24,0.24
+NO,Model S,18,21213002,Speaker - Liftgate - LH (Premium Only) (Remove & Replace),Remove and Replace,0.24,0.24
+NO,Model S,18,21213102,Speaker - Liftgate - RH (Premium Only) (Remove & Replace),Remove and Replace,0.24,0.24
+NO,Model S,18,21220102,Tuner - FM / HD / XM (Remove & Replace),Remove and Replace,0.18,0.18
+NO,Model S,18,21250102,Microphone - Bluetooth (Remove & Replace),Remove and Replace,0.24,0.24
+NO,Model S,18,21260602,USB Hub - Center Console - Rear (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model S,18,21261002,Dock Connector - Telephone-USB - Center Console (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model S,18,21300012,Antenna - Ground Noise Filter (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model S,18,21300102,Antenna - AM/FM/RKE (Remove & Replace),Remove and Replace,3.12,3.12
+NO,Model S,18,21300202,Antenna - FM2  (Remove & Replace),Remove and Replace,3.12,3.12
+NO,Model S,18,21300502,Noise Filter - 12V - Antenna (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model S,18,21300602,Antenna Amplifier - AM/FM/RKE (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model S,18,21300702,Antenna Amplifier - FM (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model S,18,21301002,RF Filter - LH (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model S,18,21301102,RF Filter - RH (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model S,18,21311002,Antenna - Satellite Radio (Remove & Replace),Remove and Replace,1.8,1.8
+NO,Model S,18,21320102,Antenna - GPS  (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model S,18,21330102,Antenna - WiFi (Remove & Replace),Remove and Replace,0.6,0.6
+NO,Model S,18,21331102,Antenna - MIMO - LH (Remove and Replace),Remove and Replace,0.48,0.48
+NO,Model S,18,21350102,Antenna - GSM - LH (Remove & Replace),Remove and Replace,0.6,0.6
+NO,Model S,18,21350202,Antenna - GSM - RH (Remove & Replace),Remove and Replace,0.6,0.6
+NO,Model S,18,24102802,Cam Block - Panoramic Roof - Rear - LH (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model S,18,24102902,Cam Block - Panoramic Roof - Rear - RH (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model S,18,24103002,Motor - Sunroof - LH (Remove & Replace),Remove and Replace,0.72,0.72
+NO,Model S,18,24103802,Motor Block - Sunroof - LH (Remove & Replace),Remove and Replace,0.84,0.84
+NO,Model S,18,24103902,Motor Block - Sunroof - RH (Remove & Replace),Remove and Replace,3.06,3.06
+NO,Model S,18,24104002,Cable - Sunroof - LH (Remove & Replace),Remove and Replace,1.02,1.02
+NO,Model S,18,24104202,Cable - Sunroof - RH (Remove & Replace),Remove and Replace,0.9,0.9
+NO,Model S,18,24106802,Cover - Panoramic Roof - Middle (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model S,18,24107202,Seal - Stop Bumper - Panoramic Roof - 1st Generation (Remove & Replace),Remove and Replace,0.36,0.36
+NO,Model S,18,24107402,Seal - Fixed Glass - Panoramic Roof - 2nd Generation (Remove & Replace),Remove and Replace,1.44,1.44
+NO,Model S,18,24300006,Roof Rack - Fixed Glass (Retrofit),Retrofit,1.92,1.92
+NO,Model S,18,24300012,Mount Block - Roof Rack (Set of 4) (Remove & Replace),Remove and Replace,1.8,1.8
+NO,Model S,18,30011102,Skidplate - Rear (Remove & Replace),Remove and Replace,0.36,0.36
+NO,Model S,18,31001500,EPAS Alignment Check,Test/Adjust,0.18,0.18
+YES,Model S,18,31002300,Four Wheel Alignment Check and Adjust,Test/Adjust,1.32,1.32
+NO,Model S,18,31030102,Knuckle - Suspension - Rear - LH (Remove & Replace),Remove and Replace,1.5,1.5
+NO,Model S,18,31030202,Knuckle - Suspension - Rear - RH (Remove & Replace),Remove and Replace,1.5,1.5
+NO,Model S,18,31030602,Hub - Rear - RH (Remove & Replace),Remove and Replace,0.84,0.84
+NO,Model S,18,31030702,Hub - Rear - LH (Remove & Replace),Remove and Replace,0.84,0.84
+NO,Model S,18,31033102,Stabilizer Bar - Rear (Remove & Replace),Remove and Replace,1.08,1.08
+NO,Model S,18,31034106,Performance Suspension Retrofit - Commercial,Retrofit,8.0,8.0
+YES,Model S,18,31039000,Suspension - Rear - Check Torque,Test/Adjust,0.84,0.84
+NO,Model S,18,31100102,Module - Air Suspension - ECU (Remove & Replace),Remove and Replace,0.54,0.54
+NO,Model S,18,31100112,Module - Air Suspension - ECU (Tesla) (LHD) (Remove & Replace),Remove and Replace,0.48,0.48
+NO,Model S,18,31100202,Module - Air Suspension - ECU (RHD) (Remove & Replace),Remove and Replace,0.72,0.72
+NO,Model S,18,31100212,Module - Air Suspension - ECU (Tesla) (RHD) (Remove & Replace),Remove and Replace,0.6,0.6
+NO,Model S,18,31101202,Air Suspension - Bundle - Rear (Remove & Replace),Remove and Replace,4.56,4.56
+NO,Model S,18,31102002,Compressor - Air Suspension - 1st Generation (Remove & Replace),Remove and Replace,0.96,0.96
+NO,Model S,18,31102102,Sensor - Ambient Air Temperature - Compressor (Remove & Replace),Remove and Replace,0.36,0.36
+NO,Model S,18,31102202,Valve Block - Air Suspension (Remove & Replace),Remove and Replace,1.14,1.14
+NO,Model S,18,31102302,Compressor - Air Suspension - 2nd Generation (Remove and Replace),Remove and Replace,0.84,0.84
+NO,Model S,18,31102502,Reservoir - Air Suspension (Remove & Replace),Remove and Replace,0.48,0.48
+NO,Model S,18,31103202,Fill Valve - Air Suspension,Remove and Replace,0.06,0.06
+NO,Model S,18,31106002,Active Damper - Rear - LH (Remove & Replace),Remove and Replace,1.2,1.2
+NO,Model S,18,31106102,Active Damper - Rear - RH (Remove & Replace),Remove and Replace,1.2,1.2
+NO,Model S,18,31108302,Superbeam (Remove & Replace),Remove and Replace,0.84,0.84
+NO,Model S,18,32010302,Tie Rod End - LH (Remove & Replace),Remove and Replace,1.56,1.56
+NO,Model S,18,32010602,Tie Rod End - RH (Remove & Replace),Remove and Replace,1.56,1.56
+NO,Model S,18,33031702,Pipe Assembly - ABS to LH Sill Pipes (Remove & Replace),Remove and Replace,2.46,2.46
+NO,Model S,18,33032002,Pipe Assembly - ABS to RH Sill Pipes (Remove and Replace),Remove and Replace,2.46,2.46
+NO,Model S,18,33100102,ABS Modulator Assembly (Remove & Replace),Remove and Replace,2.34,2.34
+NO,Model S,18,33100202,ECU - ABS (Remove & Replace),Remove and Replace,1.26,1.26
+NO,Model S,18,33172002,Vacuum Pump (Remove & Replace),Remove and Replace,0.36,0.36
+NO,Model S,18,33251012,Pedal Assembly (Remove & Replace),Remove and Replace,0.48,0.48
+NO,Model S,18,34010100001,Cap - Wheel（2025+）,Remove and Install,0.12,0.12
+YES,Model S,18,34010105,Tire Rotation,Maintenance,0.3,0.3
+YES,Model S,18,34011302,Lug Nuts - Vehicle Set (Remove & Replace),Remove and Replace,0.36,0.36
+NO,Model S,18,34011402,Lug Nut Covers - Vehicle Set (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model S,18,34012402,Wheels - Axle Set (Remove & Replace),Remove and Replace,0.24,0.24
+NO,Model S,18,34012502,Wheel Sensor - TPMS - Rear - LH (Remove & Replace),Remove and Replace,0.3,0.3
+YES,Model S,18,34012902,Wheels - Set (Remove and Replace),Remove and Replace,1.56,1.56
+YES,Model S,18,34014005,Seasonal Wheel and Tire Set Swap (Already Built),Seasonal Swap,0.5,0.5
+YES,Model S,18,34014101,Tire Set - Vehicle - Swap (Not Already Built),Remove and Install,1.38,1.38
+NO,Model S,18,34015007,Wheel Disposal (Rework),Modify,0.06,0.06
+YES,Model S,18,34015032,Cap - Wheel - Set (Remove & Replace),Remove and Replace,0.05,0.05
+YES,Model S,18,34015202,Wheel - Rear - LH (Remove & Replace),Remove and Replace,0.36,0.36
+YES,Model S,18,34015222,Cap - Wheel - Rear - LH (Remove & Replace),Remove and Replace,0.06,0.06
+YES,Model S,18,34015302,Wheel - Rear - RH (Remove & Replace),Remove and Replace,0.36,0.36
+YES,Model S,18,34015322,Cap - Wheel - Rear - RH (Remove & Replace),Remove and Replace,0.06,0.06
+YES,Model S,18,34020010,Mobile Tire Service Performed,Modify,0.0,0.0
+YES,Model S,18,34020030,Mobile Tire Service Performed – Logistics,Tire Repair,0.0,0.0
+NO,Model S,18,34020100800,Check and Adjust Tire Pressure (2025+),Test/Adjust,0.12,0.12
+NO,Model S,18,34020105,Tire Rotation (Mobile Only),Maintenance,0.48,0.48
+YES,Model S,18,34020305,Tires - All Four (Balance),Rebalance,0.6,0.6
+YES,Model S,18,34020900,Check and Adjust Tire Pressure,Test/Adjust,0.05,0.05
+YES,Model S,18,34021202,Tire - Rear - LH (Remove & Replace),Tire Purchase,0.35,0.35
+YES,Model S,18,34021302,Tire - Rear - RH (Remove & Replace),Tire Purchase,0.35,0.35
+YES,Model S,18,34021605,Tires - Rear - Set,Tire Purchase,0.7,0.7
+YES,Model S,18,34021805,Tires - Vehicle - Set,Tire Purchase,1.15,1.15
+YES,Model S,18,34022015,Tire - Supplemental (Rebalance),Maintenance,0.18,0.18
+YES,Model S,18,34022205,Tire - Rear - LH (Road Force) (Balance),Tire Repair,0.2,0.2
+YES,Model S,18,34022225,Tire - Rear - LH (Balance),Rebalance,0.2,0.2
+YES,Model S,18,34022305,Tire - Rear - RH (Road Force) (Balance),Tire Repair,0.2,0.2
+YES,Model S,18,34022325,Tire - Rear - RH (Balance),Rebalance,0.2,0.2
+NO,Model S,18,34022425,Tires - Pair (Balance),Rebalance,0.3,0.3
+YES,Model S,18,34023208,Tire - Rear - LH (Repair),Tire Repair,0.72,0.72
+YES,Model S,18,34023308,Tire - Rear - RH (Repair),Tire Repair,0.72,0.72
+NO,Model S,18,34040402,Wheel Sensor - TPMS - Rear - LH (Remove & Replace),Remove and Replace,0.42,0.42
+NO,Model S,18,34040502,Wheel Sensor - TPMS - Rear - RH (Remove & Replace),Remove and Replace,0.42,0.42
+NO,Model S,18,34040602,Wheel Sensors - TPMS - Vehicle Set (Remove & Replace),Remove and Replace,0.96,0.96
+NO,Model S,18,34041100,TPMS (Sensor ID Tool Learn),Test/Adjust,0.18,0.18
+NO,Model S,18,34041150,TPMS (Sensor ID Drive Learn),Test/Adjust,0.12,0.12
+NO,Model S,18,34041300,TPMS - Set Thresholds,Program,0.3,0.3
+NO,Model S,18,34042002,TPMS Antenna - Dual External (Remove & Replace),Remove and Replace,2.4,2.4
+NO,Model S,18,39300602,Hose - Coupler to Battery Pump 2 (Remove and Replace),Remove and Replace,1.92,1.92
+NO,Model S,18,39300702,Hose - DCDC Converter to Battery Pump 2 (Remove and Replace),Remove and Replace,1.98,1.98
+NO,Model S,18,40010102,Mount - Rear Drive Unit - RH (Remove and Replace),Remove and Replace,3.84,3.84
+NO,Model S,18,40010300,Drive Unit Health Check,Test/Adjust,1.0,1.0
+NO,Model S,18,40011002,Drive Unit - Rear (Long Range) (Remove & Replace),Remove and Replace,3.54,3.54
+NO,Model S,18,40012002,Mount - Rear Drive Unit - LH (Remove & Replace),Remove and Replace,3.84,3.84
+NO,Model S,18,40012202,Ground Strap - Rear Drive Unit (Plaid) (Remove & Replace),Remove and Replace,2.34,2.34
+NO,Model S,18,40012212,Ground Strap - Rear Drive Unit (Long Range) (Remove & Replace),Remove and Replace,2.88,2.88
+NO,Model S,18,40016102,Drive Unit - Rear (Plaid) (Remove & Replace),Remove and Replace,3.6,3.6
+NO,Model S,18,40102002,Sensor - Rear Motor - Speed (Remove & Replace),Remove and Replace,0.3,0.3
+NO,Model S,18,40300202,Seal - Axle - Rear Drive Unit - RH (Long Range) (Remove and Replace),Remove and Replace,1.26,1.26
+NO,Model S,18,40301002,Seal - Axle - Rear Drive Unit - LH (Long Range) (Remove & Replace),Remove and Replace,1.26,1.26
+NO,Model S,18,40301012,Seal - Axle - Rear Drive Unit - LH (Plaid) (Remove & Replace),Remove and Replace,1.26,1.26
+NO,Model S,18,40301022,Seal - Axle - Rear Drive Unit - RH (Plaid) (Remove & Replace),Remove and Replace,1.26,1.26
+NO,Model S,18,40301402,Rear Oil Seal - Differential to Halfshaft Assembly - Large Drive Unit - LH (Remove & Replace),Remove and Replace,1.02,1.02
+NO,Model S,18,40301502,Rear Oil Seal - Differential to Halfshaft Assembly - Large Drive Unit - RH (Remove & Replace),Remove and Replace,1.02,1.02
+NO,Model S,18,40302002,Halfshaft - Rear Drive Unit - LH (Long Range) (Remove & Replace),Remove and Replace,1.26,1.26
+NO,Model S,18,40302012,Halfshaft - Rear Drive Unit - LH (Plaid) (Remove & Replace),Remove and Replace,1.26,1.26
+NO,Model S,18,40302022,Halfshaft - Rear Drive Unit - RH (Plaid) (Remove & Replace),Remove and Replace,1.26,1.26
+NO,Model S,18,40302102,Halfshaft - Rear Drive Unit - RH (Long Range) (Remove & Replace),Remove and Replace,1.26,1.26
+NO,Model S,18,40302502,Gaiter - Halfshaft - Outer - Rear - LH (Remove & Replace),Remove and Replace,4.38,4.38
+NO,Model S,18,40302602,Gaiter - Halfshaft - Outer - Rear - RH (Remove & Replace),Remove and Replace,4.38,4.38
+NO,Model S,18,40304602,Oil Pump - Rear Drive Unit (Long Range) (Remove & Replace),Remove and Replace,0.54,0.54
+NO,Model S,18,40304622,Oil Pump - RH - Rear Drive Unit (Plaid) (Remove & Replace),Remove and Replace,0.48,0.48
+NO,Model S,18,40304632,Oil Pump - Rear - Rear Drive Unit (Plaid) (Remove & Replace),Remove and Replace,0.78,0.78
+NO,Model S,18,40304652,Oil Pump - LH - Rear Drive Unit (Plaid) (Remove & Replace),Remove and Replace,0.48,0.48
+NO,Model S,18,40304802,Oil Filter - Rear Drive Unit (Long Range) (Remove & Replace),Remove and Replace,0.72,0.72
+NO,Model S,18,40305202,Heat Exchanger - Rear Drive Unit (Long Range) (Remove & Replace),Remove and Replace,1.08,1.08
+NO,Model S,18,40305212,Heat Exchanger - Rear Drive Unit - LH (Plaid) (Remove & Replace),Remove and Replace,1.14,1.14
+NO,Model S,18,40305222,Heat Exchanger - Rear Drive Unit - RH (Plaid) (Remove & Replace),Remove and Replace,1.32,1.32
+NO,Model S,18,44000134,HV Isolation Diagnostics,Diagnosis Only,3.4,3.4
+YES,Model S,18,44000204,HVIL Diagnostics,Diagnosis Only,1.0,1.0
+NO,Model S,18,44011502,Door Assembly - Charge Port (NA) (Remove & Replace),Remove and Replace,0.84,0.84
+NO,Model S,18,44011506,Seal - Door - Charge Port (Retrofit),Retrofit,0.12,0.12
+NO,Model S,18,44011512,Door Assembly - Charge Port (Global) (Remove & Replace),Remove and Replace,0.78,0.78
+NO,Model S,18,44011522,Charge Port Door Panel Service Kit,Remove and Replace,0.18,0.18
+NO,Model S,18,44011601,Charge Port (NACS),Remove and Install,0.54,0.54
+NO,Model S,18,44011602,Charge Port (NACS),Remove and Replace,0.54,0.54
+NO,Model S,18,44011622,Charge Port - Global (NACS),Remove and Replace,0.54,0.54
+NO,Model S,18,44011632,Charge Port (CCS) (Remove & Replace),Remove and Replace,0.6,0.6
+NO,Model S,18,44012100,Charge Port Voltage Check,Test/Adjust,0.18,0.18
+NO,Model S,18,44012502,"Charge Port (Vehicles With 3 Phase, Motorized Charge Port) (Remove & Replace)",Remove and Replace,0.48,0.48
+NO,Model S,18,44012602,Seal - Charge Port (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model S,18,44013102,Busbars - Charge Port to HV Battery (NACS) (Non-Global) (Remove & Replace),Remove and Replace,0.78,0.78
+NO,Model S,18,44013112,Busbars - Charge Port to HV Battery (GB) (Remove & Replace),Remove and Replace,0.84,0.84
+NO,Model S,18,44013122,Busbars - Charge Port to HV Battery (Global) (Remove & Replace),Remove and Replace,0.84,0.84
+NO,Model S,18,44013202,Release Cable - Charge Port (Remove & Replace),Remove and Replace,0.42,0.42
+YES,Model S,18,44013205,"Charge Port - Manual Release of Cable (Vehicles With 3 Phase, Non-Motorized Charge Port)",Maintenance,0.96,0.96
+NO,Model S,18,44013305,"Charge Port - Manual Release of Cable (Vehicles With 3 Phase, Motorized Charge Port)",Maintenance,0.96,0.96
+NO,Model S,18,44015002,ECU - Charge Port (Non-Global) (Remove & Replace),Remove and Replace,0.3,0.3
+NO,Model S,18,44015022,ECU - Charge Port (Global) (Remove and Replace),Remove and Replace,0.36,0.36
+NO,Model S,18,44015102,Safety Cap - Busbar - Charge Port to HV Battery (NA) (Non-Global) (Remove & Replace),Remove and Replace,0.3,0.3
+NO,Model S,18,44015122,Safety Cap - Busbar - Charge Port to HV Battery (Global) (Remove & Replace),Remove and Replace,0.3,0.3
+NO,Model S,18,44100302,Slave Charger - RH - 1st Generation (Remove and Replace),Remove and Replace,1.5,1.5
+NO,Model S,18,44100402,Slave Charger - RH - 2nd Generation (Remove and Replace),Remove and Replace,1.44,1.44
+NO,Model S,18,44101002,Relay Box (Remove & Replace),Remove and Replace,1.26,1.26
+NO,Model S,18,44101102,Slave Charger - LH - 1st Generation (Remove & Replace),Remove and Replace,1.5,1.5
+NO,Model S,18,44102102,Slave Charger - LH - 2nd Generation (Remove & Replace),Remove and Replace,1.44,1.44
+NO,Model S,18,44102202,Master Charger - RH - 2nd Generation (Remove & Replace),Remove and Replace,1.44,1.44
+NO,Model S,18,44104102,PLC Relay - ECU - Charge Port (CCS) (Remove & Replace),Remove and Replace,0.3,0.3
+NO,Model S,18,44109006,Enable 2nd Charger ,Retrofit,1.2,1.2
+NO,Model S,18,44200802,Forward Junction Box - 1st Generation - 20 Amp Fuse (RWD) (Remove & Replace),Remove and Replace,0.6,0.6
+NO,Model S,18,44201202,Forward Junction Box - 2nd Generation (RWD) (Remove & Replace),Remove and Replace,0.96,0.96
+NO,Model S,18,44201302,Forward Junction Box - 2nd Generation (Dual Motor) (Remove & Replace),Remove and Replace,2.34,2.34
+NO,Model S,18,44202002,DCDC Converter - 3rd Generation (RWD) (Remove & Replace),Remove and Replace,1.74,1.74
+NO,Model S,18,44202402,HVIL Switch - Forward Junction Box (Remove & Replace),Remove and Replace,2.64,2.64
+NO,Model S,18,44300202,HV Junction Box - Cover - 1st Generation (Remove & Replace),Remove and Replace,0.96,0.96
+NO,Model S,18,44300502,HV Junction Box - Reed Switch - 1st Generation (Remove & Replace),Remove and Replace,1.08,1.08
+NO,Model S,18,44301002,HV Junction Box - 2nd Generation (Remove & Replace),Remove and Replace,1.08,1.08
+NO,Model S,18,44301102,HV Junction Box - Cover - 2nd Generation (Remove & Replace),Remove and Replace,0.66,0.66
+NO,Model S,18,44301202,HV Junction Box - 2nd Generation - 30 Amp Fuse (Remove & Replace),Remove and Replace,1.08,1.08
+NO,Model S,18,44301302,HV Junction Box - 2nd Generation - 100 Amp Fuse (Remove & Replace),Remove and Replace,1.08,1.08
+NO,Model S,18,44302002,Harness - Logic - HV Junction Box to Charger (Remove & Replace),Remove and Replace,0.6,0.6
+NO,Model S,18,44302102,Lid Switches - HV Junction Box (Remove & Replace),Remove and Replace,1.2,1.2
+NO,Model S,18,44500012,HV Harness - HV Battery to Rear Drive Unit - LH (Plaid) (Remove & Replace),Remove and Replace,3.06,3.06
+NO,Model S,18,44500022,HV Harness - HV Battery to Rear Drive Unit - RH (Plaid) (Remove & Replace),Remove and Replace,3.06,3.06
+NO,Model S,18,44500302,HV Harness - HVJB to Charge Port - 1st Generation (Remove & Replace),Remove and Replace,2.64,2.64
+NO,Model S,18,44500402,HV Harness - HVJB to Charge Port - 2nd Generation (Remove & Replace),Remove and Replace,0.84,0.84
+NO,Model S,18,44500902,HV Harness - Rear Drive Unit to HVJB - Small Rear Drive Unit (Remove & Replace),Remove and Replace,1.08,1.08
+NO,Model S,18,44501402,AC Cable - Charge Port to HV Battery (3-Phase) (Remove & Replace),Remove and Replace,0.54,0.54
+NO,Model S,18,44501602,Harness - FJB to A/C Compressor (Remove & Replace),Remove and Replace,0.36,0.36
+NO,Model S,18,44502202,HV Harness - HV Battery to Rear Drive Unit (Remove & Replace),Remove and Replace,0.84,0.84
+NO,Model S,18,44503602,HV Harness - HVJB to DCDC (Remove & Replace),Remove and Replace,2.4,2.4
+NO,Model S,18,44504202,HV Harness - HV Battery To A/C Compressor (Remove & Replace),Remove and Replace,0.72,0.72
+YES,Model S,18,46010100004,Diagnosis: Coolant Leak,General Diagnosis,0.5,0.5
+YES,Model S,18,50010003,Firmware Update - Mobile Connector,Module Reset/Reflashed,0.1,0.1
+YES,Model S,18,50010102,Mobile Connector - UMC (Remove & Replace),Remove and Replace,0.0,0.0
+NO,Model S,18,50020102,Fuses - Wall Connector (Remove & Replace),Remove and Replace,0.0,0.0
+NO,Model S,18,50020402,Cover - Wall Connector (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model S,18,50020702,Wall Connector (Remove & Replace),Remove and Replace,0.84,0.84
+YES,Model S,18,50022002,Handle and Cable Assembly - 80A Wall Connector (Remove & Replace),Remove and Replace,0.48,0.48
+YES,Model S,18,50024002,Handle and Cable Assembly - 40A Wall Connector (Remove & Replace),Remove and Replace,0.48,0.48
+YES,Model S,18,61013108,Equip Tire Repair Kit,General diagnosis conclusion,0.0,0.0
+YES,Model S,18,7000005,Mobile Tire Dispatch Fee,Fee,0.01,0.01
+YES,Model S,18,70000105,Third Party Transport,Sublet,1.2,1.2
+YES,Model S,18,7000030,Parts Not Available - Add to future service visit. ,General diagnosis conclusion,0.0,0.0
+YES,Model S,18,70000305,Miscellaneous Labor,Fee,0.0,0.0
+YES,Model S,18,70002005,Non-Tesla (Rental),Sublet,0.0,0.0
+YES,Model S,18,70003805,Tesla Airport Service,Fee,1.2,1.2
+YES,Model S,18,7000405,Vehicle Storage,Fee,0.0,0.0
+YES,Model S,18,70004205,No Labor Performed - Unable to Perform via Mobile Service,General diagnosis conclusion,0.0,0.0
+YES,Model S,18,70004505,No Labor Performed - Part Replaced,Repair,0.0,0.0
+YES,Model S,18,70005700,Scrap Part Sale Over the Counter,Test/Adjust,0.0,0.0
+YES,Model S,18,70005805,Payment Collection Required,Fee,1.2,1.2
+YES,Model S,18,70008009,Additional Work Required - Corrosion Present,Maintenance,0.5,0.5
+YES,Model S,18,70020305,Upholstery - Sublet,Sublet,0.0,0.0
+NO,Model S,18,70020306,Vehicle Wrap – Color Film (Repair),Sublet,0.0,0.0
+YES,Model S,18,70020805,Glass Repair / Replacement  - Sublet,Sublet,0.0,0.0
+NO,Model S,18,70021015,Tesla Bodyshop Fascia Repair - Sublet,Sublet,0.0,0.0
+NO,Model S,18,70021025,Tesla Bodyshop Door Repair - Sublet,Sublet,0.0,0.0
+NO,Model S,18,70021055,Tesla Bodyshop Hood / Rear Trunk Repair - Sublet,Sublet,0.0,0.0
+NO,Model S,18,70021745,Tesla Bodyshop Exterior Lights Repair - Sublet ,Sublet,0.0,0.0
+NO,Model S,18,70023405,Tesla Bodyshop Wheel Hub Repair - Sublet,Sublet,0.0,0.0
+YES,Model S,18,70060005,Thread Repair,Maintenance,0.0,0.0
+YES,Model S,18,7007300,Other – Sublet,Sublet,0.0,0.0
+YES,Model S,18,7100001,NO LABOR PERFORMED,Repair,0.0,0.0
+NO,Model S,18,7100002,Seasonal Tire Storage,Fee,0.0,0.0
+YES,Model S,18,72000005,Loaner Fee,Fee,0.0,0.0
+NO,Model S,18,74010008,Dubai Hailstorm Damage (Repair),Restore,7.0,7.0
+NO,Model S,18,90001006,Level 1 Mobile Service Vehicle Conversion (Retrofit),Retrofit,4.8,4.8
+YES,Model S,18,91000004,On Site – Education,Customer Education,0.0,0.0
+YES,Model S,18,91020105,Car Wash (Hand Wash),Detail Work,0.25,0.25
+YES,Model S,18,91020115,Car Wash (Mechanical Wash),Maintenance,0.24,0.24
+YES,Model S,18,91022005,Charge Vehicle,Restore,0.0,0.0
+YES,Model S,18,91022407,Vehicle Configuration Update,Program,0.05,0.05
+YES,Model S,18,91029006,Mobile Service Hub Repair,Retrofit,0.0,0.0
+NO,Model S,18,91040115,Former Loaner Battery Kept As Permanent Replacement,Remove and Replace,0.0,0.0
+NO,Model S,18,91040205,Loaner Battery Removed/Returned,Maintenance,0.0,0.0
+NO,Model S,18,91041705,Loaner Drive Unit Removed/Returned,Maintenance,0.0,0.0

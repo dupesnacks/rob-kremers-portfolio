@@ -1,0 +1,1924 @@
+Universal,Model,Model_ID,Code,Description,Work_Type,Labor_Hours,FRT
+YES,Model 3,35,00000010,Remote – Education,Over The Air,0.0,0.0
+YES,Model 3,35,00004107,Alert Diagnosis - Repair,General diagnosis conclusion,0.06,0.06
+YES,Model 3,35,00004108,Alert Diagnosis (Repair) - Create New Service Activity for Repair,Test/Adjust,0.06,0.06
+YES,Model 3,35,00005914,Service Collision Estimate,Inspection,0.0,0.0
+YES,Model 3,35,00020003,Software Update,Over The Air,0.06,0.06
+YES,Model 3,35,00020007,Firmware Update - Garage,Update,0.05,0.05
+YES,Model 3,35,00020010,Remote – Known Characteristic of Current Firmware,Over The Air,0.25,0.25
+YES,Model 3,35,00020020,Remote – Over the Air Update,Over The Air,0.25,0.25
+YES,Model 3,35,00022008,User Data (Factory Reset),Restore,0.05,0.05
+YES,Model 3,35,00023003,Clear Filesystem Caches,Module Reset/Reflashed,0.05,0.05
+YES,Model 3,35,00030100,PDI (Without Test Drive),Inspection,0.0,0.0
+YES,Model 3,35,00030410,Vehicle Health Check,Inspection,1.62,1.62
+NO,Model 3,35,00030420,Four Wheel Check (on Lift),Test/Adjust,0.3,0.3
+NO,Model 3,35,00031600,Perform Periodisk Kontroll av Kjøretøy (PKK) – Norway,Test/Adjust,1.0,1.0
+NO,Model 3,35,00031700,Perform Etterkontroll Periodisk Kontroll av Kjøretøy (PKK) – Norway,Test/Adjust,0.4,0.4
+YES,Model 3,35,00032201,Loaner Registration Confirmation,Inspection,0.2,0.2
+NO,Model 3,35,00034300,TC support TAB Vehicle Configuration Change,Test/Adjust,0.2,0.2
+YES,Model 3,35,00040100,Perform Post-Repair Validation Test Drive,Test/Adjust,0.3,0.3
+NO,Model 3,35,00050300,OBD Connector (Retrofit),Retrofit,0.24,0.24
+YES,Model 3,35,00100004,General Diagnosis,General Diagnosis,0.5,0.5
+YES,Model 3,35,00100014,Diagnosis: Unable to Replicate Concern,General diagnosis conclusion,0.0,0.0
+YES,Model 3,35,00100024,Remote Diagnosis,Remote Diagnostics,0.3,0.3
+YES,Model 3,35,10000004,Adjustment: Body / Closure Components,Test/Adjust,0.4,0.4
+YES,Model 3,35,10010008,Tesla Body Repair - Miscellaneous Labor,Body Shop,0.0,0.0
+NO,Model 3,35,10010009,Storage Fees,Body Shop,1.0,1.0
+YES,Model 3,35,10010011,Tesla Body Repair - Structural,Body Shop,0.0,0.0
+YES,Model 3,35,10010012,Tesla Body Structural - Sheet Metal Quotation,Test/Adjust,0.6,0.6
+YES,Model 3,35,10010014,Tesla Body Structural - Sheet Metal Repair,Restore,1.0,1.0
+YES,Model 3,35,10010015,Tesla Body Structural--Reassemble Parts,Test/Adjust,1.0,1.0
+NO,Model 3,35,1001020121,Cover - Hood Latch,Remove and Install,0.06,0.06
+NO,Model 3,35,1001020122,Cover - Hood Latch,Remove and Replace,0.06,0.06
+NO,Model 3,35,1001030031,Ankle Catcher,Remove and Install,0.6,0.6
+NO,Model 3,35,1001030032,Ankle Catcher,Remove and Replace,0.6,0.6
+NO,Model 3,35,1001040011,Fascia - Rear - Upper,Remove and Install,0.54,0.54
+NO,Model 3,35,1001040012,Fascia - Rear - Upper,Remove and Replace,0.54,0.54
+NO,Model 3,35,1001040021,Fascia - Rear - Lower - Base,Remove and Install,0.6,0.6
+NO,Model 3,35,1001040022,Fascia - Rear - Lower (Base),Remove and Replace,0.6,0.6
+NO,Model 3,35,1001040031,Fascia - Rear - Lower,Remove and Install,0.6,0.6
+NO,Model 3,35,1001040032,Fascia - Rear - Lower (Performance),Remove and Replace,0.6,0.6
+NO,Model 3,35,1001050011,Bumper Beam - Rear,Remove and Install,0.42,0.42
+NO,Model 3,35,1001050012,Bumper Beam - Rear,Remove and Replace,0.42,0.42
+NO,Model 3,35,100111134,test ,Repair,0.5,0.5
+NO,Model 3,35,10012012,Cover - Tow Hook - Rear (Remove & Replace),Remove and Replace,0.06,0.06
+YES,Model 3,35,10100008,Tesla Body Repair - Mechanical Labor,Body Shop,0.0,0.0
+NO,Model 3,35,10100100202,B-PILLAR OUTER (LOWER) - LEFT HAND,Remove and Replace,24.45,24.45
+NO,Model 3,35,10100100702,SILL OUTER (COMPLETE) - LEFT,Remove and Replace,52.25,52.25
+NO,Model 3,35,10100100902,B-PILLAR OUTER (LOWER) - RIGHT,Remove and Replace,24.45,24.45
+NO,Model 3,35,10100101202,SILL OUTER (COMPLETE) - RIGHT,Remove and Replace,52.25,52.25
+NO,Model 3,35,10100117602,Quarter Outer Assembly (Without Upper Trough)(Rear Sill Section)- Right,Remove and Replace,11.35,11.35
+NO,Model 3,35,10100117702,Quarter Outer Assembly (Without Upper Trough)(Rear Sill Section) - Left,Remove and Replace,11.35,11.35
+NO,Model 3,35,10100117802,PANEL - QUARTER OUTER EXTENSION PANEL - RIGHT HAND,Remove and Replace,1.98,1.98
+NO,Model 3,35,10100121302,Rear Quarter Section,Remove and Replace,10.9,10.9
+NO,Model 3,35,10100121402,Rear Quarter Section,Remove and Replace,10.9,10.9
+NO,Model 3,35,10100138202,B-Pillar Outer (Upper),Remove and Replace,21.5,21.5
+NO,Model 3,35,10100138302,B-Pillar Outer (Upper),Remove and Replace,21.5,21.5
+NO,Model 3,35,1010025011,Trunk,Remove and Install,0.48,0.48
+NO,Model 3,35,1010025012,Trunk,Remove and Replace,0.84,0.84
+NO,Model 3,35,1010025041,Door - Rear - LH,Remove and Install,0.24,0.24
+NO,Model 3,35,1010025042,Door - Rear - LH,Remove and Replace,1.08,1.08
+NO,Model 3,35,1010025051,Door - Rear - RH,Remove and Install,0.24,0.24
+NO,Model 3,35,1010025052,Door - Rear - RH,Remove and Replace,1.08,1.08
+NO,Model 3,35,10100251036,Trunk | Complete | Seam Seal,Installation,2.22,2.22
+NO,Model 3,35,10100301036,Hood | Complete | Seam Sealer,Installation,0.6,0.6
+NO,Model 3,35,10100302,Hood Assembly (Remove & Replace),Remove and Replace,0.42,0.42
+NO,Model 3,35,10100400102,ASSEMBLY - CONSOLE MOUNT - REAR,Remove and Replace,0.84,0.84
+NO,Model 3,35,10100651036,Rear Door | Complete | Seam Seal,Installation,0.48,0.48
+NO,Model 3,35,10101000102,ASSEMBLY - DASH WITH COWL,Remove and Replace,16.0,16.0
+NO,Model 3,35,10101000402,ASSEMBLY - REAR SHOCK TOWER SUPPORT - LEFT,Remove and Replace,7.45,7.45
+NO,Model 3,35,10101000502,ASSEMBLY - REAR SHOCK TOWER SUPPORT - RIGHT HAND,Remove and Replace,7.45,7.45
+NO,Model 3,35,10101011902,PANEL - OUTER TOEBOARD - LEFT,Remove and Replace,5.04,5.04
+NO,Model 3,35,10101013002,ASSEMBLY - SHOCK TOWER UPPER - LEFT HAND,Remove and Replace,11.9,11.9
+NO,Model 3,35,10101013102,ASSEMBLY - SHOCK TOWER UPPER - RIGHT HAND,Remove and Replace,11.9,11.9
+NO,Model 3,35,10101013202,PANEL - QUARTER OUTER EXTENSION PANEL - LEFT HAND,Remove and Replace,1.98,1.98
+NO,Model 3,35,10101013302,"WELD NUT,HF,M10,STL[10] TEFLON",Remove and Replace,1.8,1.8
+NO,Model 3,35,10101014702,Cowl Lower,Remove and Replace,7.2,7.2
+NO,Model 3,35,10101014802,ASSEMBLY - COWL TOP,Remove and Replace,4.14,4.14
+NO,Model 3,35,10101016302,Dash Crossmember,Remove and Replace,4.68,4.68
+NO,Model 3,35,10101017102,PANEL - OUTER TOEBOARD - RIGHT,Remove and Replace,5.04,5.04
+NO,Model 3,35,10101029402,Shotgun Outer,Remove and Replace,5.22,5.22
+NO,Model 3,35,10101029502,Shotgun Outer,Remove and Replace,5.22,5.22
+NO,Model 3,35,10101800102,ASSEMBLY - CROSSMEMBER HEELBOARD,Remove and Replace,8.15,8.15
+NO,Model 3,35,10101800302,ASSEMBLY - REAR PANEL COMPLETE,Remove and Replace,5.16,5.16
+NO,Model 3,35,10101800402,"ASY,CROSSMEMBER HEELBOARD,E-COATED",Remove and Replace,5.88,5.88
+NO,Model 3,35,10101810202,ASSEMBLY - LAMP CAN - LEFT HAND,Remove and Replace,3.6,3.6
+NO,Model 3,35,10101810302,ASSEMBLY - LAMP CAN - RIGHT HAND,Remove and Replace,3.6,3.6
+NO,Model 3,35,10101810402,ASSEMBLY - RAIL TO REAR QUARTER LOWER EXTENSION - LEFT HAND,Remove and Replace,1.5,1.5
+NO,Model 3,35,10101810502,ASSEMBLY - RAIL TO REAR QUARTER LOWER EXTENSION - RIGHT HAND,Remove and Replace,1.5,1.5
+NO,Model 3,35,10101810802,ASSEMBLY - REAR MOTOR COVER,Remove and Replace,2.58,2.58
+NO,Model 3,35,10101810902,ASSEMBLY - REAR RAIL LOWER - LEFT,Remove and Replace,18.05,18.05
+NO,Model 3,35,10101811002,ASSEMBLY - REAR RAIL LOWER - RIGHT,Remove and Replace,18.05,18.05
+NO,Model 3,35,10101813602,ASSEMBLY - REAR RAIL GLOVE - LOWER,Remove and Replace,15.4,15.4
+NO,Model 3,35,10101813702,ASSEMBLY - REAR RAIL UPPER - LEFT HAND,Remove and Replace,23.5,23.5
+NO,Model 3,35,10101813802,ASSEMBLY - REAR RAIL UPPER - RIGHT HAND,Remove and Replace,23.5,23.5
+NO,Model 3,35,10101814702,"ASSEMBLY, TRUNK FLOOR",Remove and Replace,3.48,3.48
+NO,Model 3,35,10101900102,ASSEMBLY - REAR WHEELEFTOUSE OUTER EXTENSION - RIGHT,Remove and Replace,2.46,2.46
+NO,Model 3,35,10101905602,ASSEMBLY - AMPLIFIER MOUNT,Remove and Replace,0.72,0.72
+NO,Model 3,35,10101905702,ASSEMBLY - C PILLAR EXTENSION - LEFT HAND,Remove and Replace,13.15,13.15
+NO,Model 3,35,10101905802,ASSEMBLY - C PILLAR EXTENSION - RIGHT HAND,Remove and Replace,13.15,13.15
+NO,Model 3,35,10101906602,ASSEMBLY - PARCEL SHELF CROSSMEMBER WITH TROUGH,Remove and Replace,5.88,5.88
+NO,Model 3,35,10101907302,ASSEMBLY - REAR WHEELEFTOUSE OUTER EXTENSION - LEFT HAND,Remove and Replace,2.46,2.46
+NO,Model 3,35,10101907502,ASSEMBLY - WHEELEFTOUSE EXTENSION TO SILL - LEFT HAND,Remove and Replace,2.28,2.28
+NO,Model 3,35,10101907602,ASSEMBLY - WHEELEFTOUSE EXTENSION TO SILL - RIGHT HAND,Remove and Replace,2.28,2.28
+NO,Model 3,35,10101907902,PANEL - REAR PARCEL SHELF EXTENSION - LEFT HAND,Remove and Replace,1.5,1.5
+NO,Model 3,35,10101908002,PANEL - REAR PARCEL SHELF EXTENSION - RIGHT HAND,Remove and Replace,1.5,1.5
+NO,Model 3,35,10101911202,PANEL - ROOF RAIL EXTENSION - LEFT HAND,Remove and Replace,11.9,11.9
+NO,Model 3,35,10101911302,PANEL - ROOF RAIL EXTENSION - RIGHT HAND,Remove and Replace,11.9,11.9
+NO,Model 3,35,10101917602,Rear Center Trough,Remove and Replace,4.62,4.62
+NO,Model 3,35,10101917902,Parcel Shelf Crossmember Assembly (Without Center Trough),Remove and Replace,6.95,6.95
+NO,Model 3,35,10101920902,Rear Wheel Arch (Section),Remove and Replace,12.6,12.6
+NO,Model 3,35,10101921002,Rear Wheel Arch (Section),Remove and Replace,12.6,12.6
+NO,Model 3,35,10102900102,PANEL - REAR SILL OUTER - LEFT,Remove and Replace,21.1,21.1
+NO,Model 3,35,10102900202,PANEL - REAR SILL OUTER - RIGHT,Remove and Replace,21.1,21.1
+NO,Model 3,35,10102902702,ASSEMBLY - REAR JACK PAD,Remove and Replace,10.6,10.6
+YES,Model 3,35,10108608,Tesla Body Repair - Body Labor,Body Shop,0.0,0.0
+YES,Model 3,35,10108808,Tesla Body Repair - Sublet,Body Shop,0.0,0.0
+YES,Model 3,35,10109008,Structural Body Repair,Repair,0.0,0.0
+YES,Model 3,35,10109108,Non-Structural Body Repair,Restore,0.0,0.0
+YES,Model 3,35,10182019,Customer Generated Quote - Issue (Transaction) Resolved - Bound,General diagnosis conclusion,0.0,0.0
+NO,Model 3,35,1020010012,Glass - Body - Rear Quarter - LH,Remove and Replace,1.2,1.2
+NO,Model 3,35,1020010022,Glass - Body - Rear Quarter - RH,Remove and Replace,1.2,1.2
+NO,Model 3,35,1020010031,Glass - Door - Rear - LH,Remove and Install,0.36,0.36
+NO,Model 3,35,1020010032,Glass - Door - Rear - LH,Remove and Replace,0.36,0.36
+NO,Model 3,35,1020010041,Glass - Door - Rear - RH,Remove and Install,0.36,0.36
+NO,Model 3,35,1020010042,Glass - Door - Rear - RH,Remove and Replace,0.36,0.36
+NO,Model 3,35,1020020011,Glass - Roof - Fixed,Remove and Install,1.08,1.08
+NO,Model 3,35,1020020012,Glass - Roof - Fixed,Remove and Replace,1.08,1.08
+NO,Model 3,35,1020020702,Temperature and Humidity Sensor,Remove and Replace,0.24,0.24
+NO,Model 3,35,1020030021,Seal - Upper Perimeter - Backlight,Remove and Install,2.04,2.04
+NO,Model 3,35,1020030022,Seal - Upper Perimeter - Backlight,Remove and Replace,2.04,2.04
+NO,Model 3,35,1020030031,Seal - Trunk Flip - Backlight,Remove and Install,0.72,0.72
+NO,Model 3,35,1020030032,Seal - Trunk Flip - Backlight,Remove and Replace,0.72,0.72
+NO,Model 3,35,1020030041,Glass - Backlight,Remove and Install,1.44,1.44
+NO,Model 3,35,1020030042,Glass - Backlight,Remove and Replace,1.44,1.44
+YES,Model 3,35,1027521,Assistance with Refund of Reservation,Test/Adjust,0.0,0.0
+NO,Model 3,35,1120010011,Handle - Exterior Release - Trunk,Remove and Install,0.24,0.24
+NO,Model 3,35,1120010012,Handle - Exterior Release - Trunk,Remove and Replace,0.24,0.24
+NO,Model 3,35,1120020021,Striker - Trunk,Remove and Install,0.12,0.12
+NO,Model 3,35,1120020022,Striker - Trunk,Remove and Replace,0.12,0.12
+NO,Model 3,35,1133020001,Striker - Door - RH,Remove and Install,0.06,0.06
+NO,Model 3,35,1133020002,Striker - Door - RH,Remove and Replace,0.06,0.06
+NO,Model 3,35,1133020011,Striker - Door - LH,Remove and Install,0.06,0.06
+NO,Model 3,35,1133020012,Striker - Door - LH,Remove and Replace,0.06,0.06
+NO,Model 3,35,1133030061,Gas Strut - Hood,Remove and Install,0.06,0.06
+NO,Model 3,35,1133030062,Gas Strut - Hood,Remove and Replace,0.06,0.06
+NO,Model 3,35,1133040021,Striker - Active Hood,Remove and Install,0.12,0.12
+NO,Model 3,35,1133040022,Striker - Active Hood,Remove and Replace,0.12,0.12
+NO,Model 3,35,1133040101,Actuator and Cable Assembly - Hood Latch,Remove and Install,0.18,0.18
+NO,Model 3,35,1133040102,Actuator and Cable Assembly - Hood Latch,Remove and Replace,0.18,0.18
+NO,Model 3,35,1133040201,Hood Latch,Remove and Install,0.18,0.18
+NO,Model 3,35,1133040202,Hood Latch,Remove and Replace,0.18,0.18
+NO,Model 3,35,1133050011,Check Strap - Door - Rear,Remove and Install,0.54,0.54
+NO,Model 3,35,1133050012,Check Strap - Door - Rear,Remove and Replace,0.54,0.54
+NO,Model 3,35,1133060011,Latch - Door - Rear - RH,Remove and Install,0.47,0.47
+NO,Model 3,35,1133060012,Latch - Door - Rear - RH,Remove and Replace,0.47,0.47
+NO,Model 3,35,1133060021,Latch - Door - Rear - LH,Remove and Install,0.66,0.66
+NO,Model 3,35,1133060022,Latch - Door - Rear - LH,Remove and Replace,0.66,0.66
+NO,Model 3,35,1133070011,Bump Stop - Liftgate,Remove and Install,0.06,0.06
+NO,Model 3,35,1133070012,Bump Stop - Liftgate,Remove and Replace,0.06,0.06
+NO,Model 3,35,1133070021,Power Strut - Liftgate - LH,Remove and Install,0.12,0.12
+NO,Model 3,35,1133070022,Power Strut - Liftgate - LH,Remove and Replace,0.12,0.12
+NO,Model 3,35,1133070031,Power Strut - Liftgate - RH,Remove and Install,0.12,0.12
+NO,Model 3,35,1133070032,Power Strut - Liftgate - RH,Remove and Replace,0.12,0.12
+NO,Model 3,35,1133070041,Bump Stop - Overslam - Liftgate,Remove and Install,0.06,0.06
+NO,Model 3,35,1133070042,Bump Stop - Overslam - Liftgate,Remove and Replace,0.06,0.06
+NO,Model 3,35,1133070071,Spoiler - Carbon Fiber,Remove and Install,0.36,0.36
+NO,Model 3,35,1133070072,Spoiler - Carbon Fiber,Remove and Replace,0.36,0.36
+NO,Model 3,35,1145010131,Handle - Exterior Release - Door - Rear - LH,Remove and Install,0.6,0.6
+NO,Model 3,35,1145010132,Handle - Exterior Release - Door - Rear - LH,Remove and Replace,0.6,0.6
+NO,Model 3,35,1145010141,Handle - Exterior Release - Door - Rear - RH,Remove and Install,0.6,0.6
+NO,Model 3,35,1145010142,Handle - Exterior Release - Door - Rear - RH,Remove and Replace,0.6,0.6
+NO,Model 3,35,1145010161,Sensor - Exterior Door Handle - Rear - LH,Remove and Install,0.66,0.66
+NO,Model 3,35,1145010162,Sensor - Exterior Door Handle - Rear - LH,Remove and Replace,0.6,0.6
+NO,Model 3,35,1145010171,Sensor - Exterior Door Handle - Rear - RH,Remove and Install,0.66,0.66
+NO,Model 3,35,1145010172,Sensor - Exterior Door Handle - Rear - RH,Remove and Replace,0.66,0.66
+NO,Model 3,35,11500102707,Rear Door Glass Bolt Torque,Modify,0.18,0.18
+YES,Model 3,35,11700004,Adjustment: Seal,Test/Adjust,0.2,0.2
+NO,Model 3,35,1170030011,Seal - Outer Belt - Rear Door - LH,Remove and Install,0.06,0.06
+NO,Model 3,35,1170030012,Seal - Outer Belt - Rear Door - LH,Remove and Replace,0.06,0.06
+NO,Model 3,35,1170030021,Seal - Outer Belt - Rear Door - RH,Remove and Install,0.06,0.06
+NO,Model 3,35,1170030022,Seal - Outer Belt - Rear Door - RH,Remove and Replace,0.06,0.06
+NO,Model 3,35,1170030031,Seal - Secondary - Rear Door - RH,Remove and Install,0.47,0.47
+NO,Model 3,35,1170030032,Seal - Secondary - Rear Door - RH,Remove and Replace,0.47,0.47
+NO,Model 3,35,1170030041,Seal - Secondary - Rear Door - LH,Remove and Install,0.18,0.18
+NO,Model 3,35,1170030042,Seal - Secondary - Rear Door - LH,Remove and Replace,0.18,0.18
+NO,Model 3,35,1170030051,Seal - Outer Belt - Rear Door - RH,Remove and Install,0.06,0.06
+NO,Model 3,35,1170030052,Seal - Outer Belt - Rear Door - RH,Remove and Replace,0.06,0.06
+NO,Model 3,35,1170040011,Seal - Trunk,Remove and Install,0.12,0.12
+NO,Model 3,35,1170040012,Seal - Trunk,Remove and Replace,0.12,0.12
+YES,Model 3,35,12000004,Adjustment: Exterior Trim,Test/Adjust,0.2,0.2
+NO,Model 3,35,1201010021,Noise Absorber - Motor Bay - Rear,Remove and Install,2.16,2.16
+NO,Model 3,35,1201010022,Noise Absorber - Motor Bay - Rear,Remove and Replace,2.16,2.16
+NO,Model 3,35,1203020011,Panel - Aero Shield - Rear,Remove and Install,0.18,0.18
+NO,Model 3,35,1203020012,Panel - Aero Shield - Rear,Remove and Replace,0.18,0.18
+NO,Model 3,35,1203020021,Diffuser - Rear Fascia,Remove and Install,0.48,0.48
+NO,Model 3,35,1203020022,Diffuser - Rear Fascia,Remove and Replace,0.48,0.48
+NO,Model 3,35,1203020031,Cover - Rear Suspension - LH,Remove and Install,0.12,0.12
+NO,Model 3,35,1203020032,Cover - Rear Suspension - LH,Remove and Replace,0.12,0.12
+NO,Model 3,35,1203020041,Cover - Rear Suspension - RH,Remove and Install,0.12,0.12
+NO,Model 3,35,1203020042,Cover - Rear Suspension - RH,Remove and Replace,0.12,0.12
+NO,Model 3,35,1205010012,Tesla Badge - Rear,Remove and Replace,0.24,0.24
+NO,Model 3,35,1205010061,Sill Plate - Rear - LH,Remove and Install,0.12,0.12
+NO,Model 3,35,1205010062,Sill Plate - Rear - LH,Remove and Replace,0.12,0.12
+NO,Model 3,35,1205010071,Sill Plate - Rear - RH,Remove and Install,0.47,0.47
+NO,Model 3,35,1205010072,Sill Plate - Rear - RH,Remove and Replace,0.47,0.47
+NO,Model 3,35,1205010081,Performance Badge - Rear,Remove and Install,0.18,0.18
+NO,Model 3,35,1205010082,Performance Badge - Rear,Remove and Replace,0.18,0.18
+NO,Model 3,35,1205010091,Dual Motor Badge - Rear,Remove and Install,0.18,0.18
+NO,Model 3,35,1205010092,Dual Motor Badge - Rear,Remove and Replace,0.18,0.18
+NO,Model 3,35,12050606,Vehicle Configuration Badge (Retrofit),Retrofit,0.12,0.12
+NO,Model 3,35,1209010011,Skull Cap - Door Mirror - LH,Remove and Install,0.06,0.06
+NO,Model 3,35,1209010012,Skull Cap - Door Mirror - LH,Remove and Replace,0.06,0.06
+NO,Model 3,35,1209010021,Skull Cap - Door Mirror - RH,Remove and Install,0.06,0.06
+NO,Model 3,35,1209010022,Skull Cap - Door Mirror - RH,Remove and Replace,0.06,0.06
+NO,Model 3,35,1209010031,Glass - Door Mirror - LH,Remove and Install,0.06,0.06
+NO,Model 3,35,1209010032,Glass - Door Mirror - LH,Remove and Replace,0.06,0.06
+NO,Model 3,35,1209010041,Glass - Door Mirror - RH,Remove and Install,0.06,0.06
+NO,Model 3,35,1209010042,Glass - Door Mirror - RH,Remove and Replace,0.06,0.06
+NO,Model 3,35,1209010051,Applique - A-Pillar - Mirror - Door - LH,Remove and Install,0.24,0.24
+NO,Model 3,35,1209010052,Applique - A-Pillar - Mirror - Door - LH,Remove and Replace,0.24,0.24
+NO,Model 3,35,1209010061,Applique - A-Pillar - Mirror - Door - RH,Remove and Install,0.24,0.24
+NO,Model 3,35,1209010062,Applique - A-Pillar - Mirror - Door - RH,Remove and Replace,0.24,0.24
+NO,Model 3,35,1209034011,Mirror - Door - LH,Remove and Install,0.3,0.3
+NO,Model 3,35,1209034012,Mirror - Door - LH,Remove and Replace,0.3,0.3
+NO,Model 3,35,1209034021,Mirror - Door - RH,Remove and Install,0.3,0.3
+NO,Model 3,35,1209034022,Mirror - Door - RH,Remove and Replace,0.3,0.3
+NO,Model 3,35,1220010031,Applique - B-Pillar - LH,Remove and Install,0.12,0.12
+NO,Model 3,35,1220010032,Applique - B-Pillar - LH,Remove and Replace,0.18,0.18
+NO,Model 3,35,1220010041,Applique - B-Pillar - RH,Remove and Install,0.12,0.12
+NO,Model 3,35,1220010042,Applique - B-Pillar - RH,Remove and Replace,0.18,0.18
+NO,Model 3,35,1220010051,Cover - Applique - B-Pillar - LH,Remove and Install,0.06,0.06
+NO,Model 3,35,1220010052,Cover - Applique - B-Pillar - LH,Remove and Replace,0.06,0.06
+NO,Model 3,35,1220010061,Cover - Applique - B-Pillar - RH,Remove and Install,0.06,0.06
+NO,Model 3,35,1220010062,Cover - Applique - B-Pillar - RH,Remove and Replace,0.06,0.06
+NO,Model 3,35,1220020011,Cover - Rocker Panel - Lower - LH,Remove and Install,0.12,0.12
+NO,Model 3,35,1220020012,Cover - Rocker Panel - Lower - LH,Remove and Replace,0.12,0.12
+NO,Model 3,35,1220020021,Cover - Rocker Panel - Lower - RH,Remove and Install,0.12,0.12
+NO,Model 3,35,1220020022,Cover - Rocker Panel - Lower - RH,Remove and Replace,0.12,0.12
+NO,Model 3,35,1220020072,Mud Flaps - Pair,Remove and Replace,0.12,0.12
+NO,Model 3,35,12207006,Mud Flaps,Retrofit,0.12,0.12
+NO,Model 3,35,12207351,Self-Test for USS,Test/Adjust,0.06,0.06
+NO,Model 3,35,12208006,Splash Guards (Retrofit),Retrofit,0.12,0.12
+YES,Model 3,35,12208583,Mud Flaps (PDI Retrofit),Retrofit,0.0,0.0
+NO,Model 3,35,1225010001,Panel - Cowl Screen (RHD),Remove and Install,0.3,0.3
+NO,Model 3,35,1225010002,Panel - Cowl Screen (RHD),Remove and Replace,0.3,0.3
+NO,Model 3,35,1225010011,Cover - Shock Tower - LH,Remove and Install,0.12,0.12
+NO,Model 3,35,1225010012,Cover - Shock Tower - LH,Remove and Replace,0.12,0.12
+NO,Model 3,35,1225010021,Cover - Shock Tower - RH,Remove and Install,0.12,0.12
+NO,Model 3,35,1225010022,Cover - Shock Tower - RH,Remove and Replace,0.12,0.12
+NO,Model 3,35,1225010031,Panel - Cowl Screen,Remove and Install,0.3,0.3
+NO,Model 3,35,1225010032,Panel - Cowl Screen,Remove and Replace,0.3,0.3
+NO,Model 3,35,1230010016,Trailer Hitch - Rear Energy Absorber,Retrofit,0.54,0.54
+NO,Model 3,35,1230010026,Trailer Hitch - Rear Energy Absorber (ECE) (Retrofit),Retrofit,0.66,0.66
+NO,Model 3,35,1230124011,Trailer Hitch - Tow Hitch,Remove and Install,0.54,0.54
+NO,Model 3,35,1230124012,Trailer Hitch - Tow Hitch,Remove and Replace,0.54,0.54
+NO,Model 3,35,12302102,ECU - Trailer Hitch (Remove and Replace),Remove and Replace,0.6,0.6
+YES,Model 3,35,12302302,Ball Neck - Trailer Hitch (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model 3,35,12400002,Roof Rack (Remove),Remove and Replace,0.36,0.36
+NO,Model 3,35,12505744,Vehicle Wrap – (Removal),Retrofit,0.0,0.0
+YES,Model 3,35,13000004,Diagnosis: Seats,Test/Adjust,0.5,0.5
+NO,Model 3,35,1301010031,Button - Cushion Adjust - Passenger Seat,Remove and Install,0.06,0.06
+NO,Model 3,35,1301010032,Button - Cushion Adjust - Passenger Seat,Remove and Replace,0.06,0.06
+NO,Model 3,35,1301010061,Button - Cushion Adjust - Driver Seat,Remove and Install,0.06,0.06
+NO,Model 3,35,1301010062,Button - Cushion Adjust - Driver Seat,Remove and Replace,0.06,0.06
+NO,Model 3,35,1301020071,Motor - Seat Tilt - 1st Row Seat - LH,Remove and Install,0.24,0.24
+NO,Model 3,35,1301020072,Motor - Seat Tilt - 1st Row Seat - LH,Remove and Replace,0.24,0.24
+NO,Model 3,35,1301020081,Motor - Seat Tilt - 1st Row Seat - RH,Remove and Install,0.42,0.42
+NO,Model 3,35,1301020082,Motor - Seat Tilt - 1st Row Seat - RH,Remove and Replace,0.42,0.42
+NO,Model 3,35,1301020201,Motor - Seat Track - Passenger Seat,Remove and Install,0.3,0.3
+NO,Model 3,35,1301020202,Motor - Seat Track - Passenger Seat,Remove and Replace,0.3,0.3
+NO,Model 3,35,1301020301,Motor - Seat Track - Driver Seat,Remove and Install,0.36,0.36
+NO,Model 3,35,1301020302,Motor - Seat Track - Driver Seat,Remove and Replace,0.48,0.48
+NO,Model 3,35,1304010011,Seat Assembly - 1st Row - No Lumbar - RH,Remove and Install,0.3,0.3
+NO,Model 3,35,1304010012,Seat Assembly - 1st Row - No Lumbar - RH,Remove and Replace,0.3,0.3
+NO,Model 3,35,1304010021,Seat Assembly - 1st Row - LH,Remove and Install,0.42,0.42
+NO,Model 3,35,1304010022,Seat Assembly - 1st Row - LH,Remove and Replace,0.42,0.42
+NO,Model 3,35,1305010011,Pivot Cover - Seat Back - 2nd Row,Remove and Install,0.3,0.3
+NO,Model 3,35,1305010012,Pivot Cover - Seat Back - 2nd Row,Remove and Replace,0.3,0.3
+NO,Model 3,35,1305010021,Seatback - 2nd Row - RH,Remove and Install,0.18,0.18
+NO,Model 3,35,1305010022,Seatback - 2nd Row - RH,Remove and Replace,0.18,0.18
+NO,Model 3,35,1305010031,Seatback - 2nd Row - LH,Remove and Install,0.24,0.24
+NO,Model 3,35,1305010032,Seatback - 2nd Row - LH,Remove and Replace,0.24,0.24
+NO,Model 3,35,1305010041,Seat Cushion - 2nd Row,Remove and Install,0.12,0.12
+NO,Model 3,35,1305010042,Seat Cushion - 2nd Row,Remove and Replace,0.12,0.12
+NO,Model 3,35,1305010071,Armrest - 2nd Row,Remove and Install,0.42,0.42
+NO,Model 3,35,1305010072,Armrest - 2nd Row,Remove and Replace,0.42,0.42
+NO,Model 3,35,1305011311,Trim - Lower Closeout - Armrest - 2nd Row,Remove and Install,0.42,0.42
+NO,Model 3,35,1305011312,Trim - Lower Closeout - Armrest - 2nd Row,Remove and Replace,0.42,0.42
+NO,Model 3,35,1305012211,Pivot Sleeve - Seat Back - 2nd Row - Center,Remove and Install,0.24,0.24
+NO,Model 3,35,1305012212,Pivot Sleeve - Seat Back - 2nd Row - Center,Remove and Replace,0.24,0.24
+NO,Model 3,35,1305020011,Closeout - Armrest - 2nd Row,Remove and Install,0.36,0.36
+NO,Model 3,35,1305020012,Closeout - Armrest - 2nd Row,Remove and Replace,0.36,0.36
+NO,Model 3,35,1305020021,Striker - Seat Back - 2nd Row,Remove and Install,0.42,0.42
+NO,Model 3,35,1305020022,Striker - Seat Back - 2nd Row,Remove and Replace,0.42,0.42
+NO,Model 3,35,1305020031,Bezel - Handle - Seat Back - 2nd Row - RH ,Remove and Install,0.06,0.06
+NO,Model 3,35,1305020032,Bezel - Handle - Seat Back - 2nd Row - RH ,Remove and Replace,0.06,0.06
+NO,Model 3,35,1305020051,Bezel - Handle - Seat Back - 2nd Row - RH ,Remove and Install,0.06,0.06
+NO,Model 3,35,1305020052,Bezel - Handle - Seat Back - 2nd Row - RH ,Remove and Replace,0.06,0.06
+NO,Model 3,35,1305020061,Bezel - Handle - Seat Back - 2nd Row - LH ,Remove and Install,0.06,0.06
+NO,Model 3,35,1305020062,Bezel - Handle - Seat Back - 2nd Row - LH ,Remove and Replace,0.06,0.06
+NO,Model 3,35,1305020071,Handle - Seat Back - 2nd Row - RH ,Remove and Install,0.42,0.42
+NO,Model 3,35,1305020072,Handle - Seat Back - 2nd Row - RH ,Remove and Replace,0.42,0.42
+NO,Model 3,35,1305020081,Handle - Seat Back - 2nd Row - LH ,Remove and Install,0.66,0.66
+NO,Model 3,35,1305020082,Handle - Seat Back - 2nd Row - LH ,Remove and Replace,0.66,0.66
+NO,Model 3,35,1305020091,Support - Escutcheon - Seat Belt - Center,Remove and Install,0.6,0.6
+NO,Model 3,35,1305020092,Support - Escutcheon - Seat Belt - Center,Remove and Replace,0.6,0.6
+NO,Model 3,35,1305020101,Escutcheon - Seat Belt - Center,Remove and Install,0.06,0.06
+NO,Model 3,35,1305020102,Escutcheon - Seat Belt - Center,Remove and Replace,0.06,0.06
+NO,Model 3,35,1305020111,Projections Cover - Seat Back - 2nd Row,Remove and Install,0.36,0.36
+NO,Model 3,35,1305020112,Projections Cover - Seat Back - 2nd Row,Remove and Replace,0.36,0.36
+NO,Model 3,35,1305020121,Latch - Seat Back - 2nd Row - RH,Remove and Install,0.42,0.42
+NO,Model 3,35,1305020122,Latch - Seat Back - 2nd Row - RH,Remove and Replace,0.42,0.42
+NO,Model 3,35,1305020131,Latch - Seat Back - 2nd Row - LH,Remove and Install,1.08,1.08
+NO,Model 3,35,1305020132,Latch - Seat Back - 2nd Row - LH,Remove and Replace,1.08,1.08
+NO,Model 3,35,1305111001,Clip - Cushion - 2nd Row Seat - LH,Remove and Install,0.12,0.12
+NO,Model 3,35,1305111002,Clip - Cushion - 2nd Row Seat - LH,Remove and Replace,0.12,0.12
+NO,Model 3,35,1305211001,Clip - Cushion - 2nd Row Seat - RH,Remove and Install,0.12,0.12
+NO,Model 3,35,1305211002,Clip - Cushion - 2nd Row Seat - RH,Remove and Replace,0.12,0.12
+NO,Model 3,35,13057102,Pivot Sleeve - Seat Back - 2nd Row Seat - LH (Remove & Replace),Remove and Replace,0.24,0.24
+NO,Model 3,35,1308010021,Heat Pad - Seat Back - 2nd Row,Remove and Install,0.47,0.47
+NO,Model 3,35,1308010022,Heat Pad - Seat Back - 2nd Row,Remove and Replace,0.47,0.47
+NO,Model 3,35,1308010031,Foam - Seat Back - 2nd Row - LH,Remove and Install,0.72,0.72
+NO,Model 3,35,1308010032,Foam - Seat Back - 2nd Row - LH,Remove and Replace,0.72,0.72
+NO,Model 3,35,1308010041,Upholstery Wire - Armrest - 2nd Row - LH,Remove and Install,0.48,0.48
+NO,Model 3,35,1308010042,Upholstery Wire - Armrest - 2nd Row - LH,Remove and Replace,0.48,0.48
+NO,Model 3,35,1308010051,Foam - Seat Back - 2nd Row - RH,Remove and Install,0.48,0.48
+NO,Model 3,35,1308010052,Foam - Seat Back - 2nd Row - RH,Remove and Replace,0.48,0.48
+NO,Model 3,35,1308010061,Trim - Seat Back - 2nd Row - RH,Remove and Install,0.48,0.48
+NO,Model 3,35,1308010062,Trim - Seat Back - 2nd Row - RH,Remove and Replace,0.48,0.48
+NO,Model 3,35,1308010071,Trim - Seat Back - 2nd Row - LH,Remove and Install,0.66,0.66
+NO,Model 3,35,1308010072,Trim - Seat Back - 2nd Row - LH,Remove and Replace,0.66,0.66
+NO,Model 3,35,1308012301,Upholstery Wire - Armrest - 2nd Row - RH,Remove and Install,0.48,0.48
+NO,Model 3,35,1308012302,Upholstery Wire - Armrest - 2nd Row - RH,Remove and Replace,0.48,0.48
+YES,Model 3,35,14050002,USB Drive,Remove and Replace,0.06,0.06
+NO,Model 3,35,1405010001,Duct - Air Wave - RH (RHD),Remove and Install,0.96,0.96
+NO,Model 3,35,1405010002,Duct - Air Wave - RH (RHD),Remove and Replace,1.2,1.2
+NO,Model 3,35,1405010011,IP Carrier,Remove and Install,1.38,1.38
+NO,Model 3,35,1405010012,IP Carrier,Remove and Replace,1.68,1.68
+NO,Model 3,35,1405010031,Cover - Airbag - Knee - Driver,Remove and Install,0.24,0.24
+NO,Model 3,35,1405010032,Cover - Airbag - Knee - Driver,Remove and Replace,0.24,0.24
+NO,Model 3,35,1405010051,Cover - Footwell - Driver,Remove and Install,0.06,0.06
+NO,Model 3,35,1405010052,Cover - Footwell - Driver,Remove and Replace,0.06,0.06
+NO,Model 3,35,1405010091,NVH Pad - IP Carrier,Remove and Install,1.26,1.26
+NO,Model 3,35,1405010092,NVH Pad - IP Carrier,Remove and Replace,1.26,1.26
+NO,Model 3,35,1405010101,Knee Impact Foam - LH (NA),Remove and Install,0.36,0.36
+NO,Model 3,35,1405010102,Knee Impact Foam - LH (NA),Remove and Replace,0.36,0.36
+NO,Model 3,35,1405010111,Knee Impact Foam - RH (NA),Remove and Install,0.36,0.36
+NO,Model 3,35,1405010112,Knee Impact Foam - RH (NA),Remove and Replace,0.36,0.36
+NO,Model 3,35,1405010201,Glove Box (RHD),Remove and Install,0.24,0.24
+NO,Model 3,35,1405010202,Glove Box (RHD),Remove and Replace,0.24,0.24
+NO,Model 3,35,1405020001,Duct - Footwell - RH (RHD),Remove and Install,0.12,0.12
+NO,Model 3,35,1405020002,Duct - Footwell - RH (RHD),Remove and Replace,0.12,0.12
+NO,Model 3,35,1405020011,Beam - Cross Car (LHD),Remove and Install,2.58,2.58
+NO,Model 3,35,1405020012,Beam - Cross Car (LHD),Remove and Replace,2.58,2.58
+NO,Model 3,35,1405020061,Glove Box,Remove and Install,0.36,0.36
+NO,Model 3,35,1405020062,Glove Box,Remove and Replace,0.36,0.36
+NO,Model 3,35,1405021011,Beam - Cross Car (RHD),Remove and Install,2.1,2.1
+NO,Model 3,35,1405021012,Beam - Cross Car (RHD),Remove and Replace,2.4,2.4
+NO,Model 3,35,1405021111,USB Module - Glove Box,Remove and Install,0.3,0.3
+NO,Model 3,35,1405021112,USB Module - Glove Box,Remove and Replace,0.3,0.3
+NO,Model 3,35,1405030001,Cover - Footwell - Driver (RHD),Remove and Install,0.12,0.12
+NO,Model 3,35,1405030002,Cover - Footwell - Driver (RHD),Remove and Replace,0.12,0.12
+NO,Model 3,35,1405030011,Air Vent - Passenger,Remove and Install,1.14,1.14
+NO,Model 3,35,1405030012,Air Vent - Passenger,Remove and Replace,1.14,1.14
+NO,Model 3,35,1405030021,Duct - Air Wave - LH,Remove and Install,1.38,1.38
+NO,Model 3,35,1405030022,Duct - Air Wave - LH,Remove and Replace,1.38,1.38
+NO,Model 3,35,1405030041,Thermistor - Duct ,Remove and Install,1.32,1.32
+NO,Model 3,35,1405030042,Thermistor - Duct ,Remove and Replace,1.32,1.32
+NO,Model 3,35,1405030051,Air Vent - Driver,Remove and Install,1.62,1.62
+NO,Model 3,35,1405030052,Air Vent - Driver,Remove and Replace,1.62,1.62
+NO,Model 3,35,1405030061,Duct - Footwell - RH,Remove and Install,0.3,0.3
+NO,Model 3,35,1405030062,Duct - Footwell - RH,Remove and Replace,0.3,0.3
+NO,Model 3,35,1405030071,Duct - Footwell - LH,Remove and Install,0.24,0.24
+NO,Model 3,35,1405030072,Duct - Footwell - LH,Remove and Replace,0.24,0.24
+NO,Model 3,35,1405030081,Duct - Air Wave - RH,Remove and Install,0.36,0.36
+NO,Model 3,35,1405030082,Duct - Air Wave - RH,Remove and Replace,0.36,0.36
+NO,Model 3,35,1405031061,Duct - Footwell - LH (RHD),Remove and Install,0.18,0.18
+NO,Model 3,35,1405031062,Duct - Footwell - LH (RHD),Remove and Replace,0.24,0.24
+NO,Model 3,35,1405040001,Duct - Air Wave - LH (RHD),Remove and Install,0.3,0.3
+NO,Model 3,35,1405040002,Duct - Air Wave - LH (RHD),Remove and Replace,0.3,0.3
+NO,Model 3,35,1505010011,Mirror - Rear View,Remove and Install,0.06,0.06
+NO,Model 3,35,1505010012,Mirror - Rear View,Remove and Replace,0.06,0.06
+NO,Model 3,35,1505010021,Camera Cover - Upper,Remove and Install,0.12,0.12
+NO,Model 3,35,1505010022,Camera Cover - Upper,Remove and Replace,0.12,0.12
+NO,Model 3,35,1505010031,Camera Cover - Lower,Remove and Install,0.06,0.06
+NO,Model 3,35,1505010032,Camera Cover - Lower,Remove and Replace,0.06,0.06
+NO,Model 3,35,1505020011,"Sun Visor Assembly, LH",Remove and Install,0.06,0.06
+NO,Model 3,35,1505020012,"Sun Visor Assembly, LH",Remove and Replace,0.06,0.06
+NO,Model 3,35,1505020021,"Sun Visor Assembly, RH",Remove and Install,0.06,0.06
+NO,Model 3,35,1505020022,"Sun Visor Assembly, RH",Remove and Replace,0.06,0.06
+NO,Model 3,35,1511010011,Trim - Lid - Trunk,Remove and Install,0.06,0.06
+NO,Model 3,35,1511010012,Trim - Lid - Trunk,Remove and Replace,0.06,0.06
+NO,Model 3,35,1511010021,Trim - Package Tray (Premium),Remove and Install,0.42,0.42
+NO,Model 3,35,1511010022,Trim - Package Tray (Premium),Remove and Replace,0.42,0.42
+NO,Model 3,35,1511010041,Garnish - Trunk,Remove and Install,0.06,0.06
+NO,Model 3,35,1511010042,Garnish - Trunk,Remove and Replace,0.06,0.06
+NO,Model 3,35,1511010051,Close Switch - Trunk,Remove and Install,0.12,0.12
+NO,Model 3,35,1511010052,Close Switch - Trunk,Remove and Replace,0.12,0.12
+NO,Model 3,35,1511010061,Cover - Latch - Trunk,Remove and Install,0.12,0.12
+NO,Model 3,35,1511010062,Cover - Latch - Trunk,Remove and Replace,0.12,0.12
+YES,Model 3,35,15130004,Diagnosis: Closures,General Diagnosis,0.65,0.65
+NO,Model 3,35,1513011111,Ambient Light - Rear Door,Remove and Install,0.24,0.24
+NO,Model 3,35,1513011112,Ambient Light - Rear Door,Remove and Replace,0.24,0.24
+NO,Model 3,35,1513011211,Puddle Lamp - Rear Door,Remove and Install,0.06,0.06
+NO,Model 3,35,1513011212,Puddle Lamp - Rear Door,Remove and Replace,0.06,0.06
+NO,Model 3,35,1513020011,Panel - Door Trim - Rear - LH,Remove and Install,0.12,0.12
+NO,Model 3,35,1513020012,Panel - Door Trim - Rear - LH,Remove and Replace,0.18,0.18
+NO,Model 3,35,1513020021,Panel - Door Trim - Rear - RH,Remove and Install,0.12,0.12
+NO,Model 3,35,1513020022,Panel - Door Trim - Rear - RH,Remove and Replace,0.18,0.18
+NO,Model 3,35,1513020031,NVH Pad - Door - Rear - LH,Remove and Install,0.12,0.12
+NO,Model 3,35,1513020032,NVH Pad - Door - Rear - LH,Remove and Replace,0.12,0.12
+NO,Model 3,35,1513020041,NVH Pad - Door - Rear - RH,Remove and Install,0.12,0.12
+NO,Model 3,35,1513020042,NVH Pad - Door - Rear - RH,Remove and Replace,0.12,0.12
+NO,Model 3,35,1518010011,Trim - A-Pillar - Upper - LH,Remove and Install,0.06,0.06
+NO,Model 3,35,1518010012,Trim - A-Pillar - Upper - LH,Remove and Replace,0.06,0.06
+NO,Model 3,35,1518010021,Trim - A-Pillar - Upper - RH,Remove and Install,0.06,0.06
+NO,Model 3,35,1518010022,Trim - A-Pillar - Upper - RH,Remove and Replace,0.06,0.06
+NO,Model 3,35,1518010031,Trim - A-Pillar - Lower - LH,Remove and Install,0.06,0.06
+NO,Model 3,35,1518010032,Trim - A-Pillar - Lower - LH,Remove and Replace,0.06,0.06
+NO,Model 3,35,1518010041,Trim - A-Pillar - Lower - RH,Remove and Install,0.06,0.06
+NO,Model 3,35,1518010042,Trim - A-Pillar - Lower - RH,Remove and Replace,0.06,0.06
+NO,Model 3,35,1518010051,Trim - B-Pillar - Upper - LH,Remove and Install,0.3,0.3
+NO,Model 3,35,1518010052,Trim - B-Pillar - Upper - LH,Remove and Replace,0.3,0.3
+NO,Model 3,35,1518010061,Trim - B-Pillar - Upper - RH,Remove and Install,0.3,0.3
+NO,Model 3,35,1518010062,Trim - B-Pillar - Upper - RH,Remove and Replace,0.3,0.3
+NO,Model 3,35,1518010071,Trim - B-Pillar - Middle - LH,Remove and Install,0.3,0.3
+NO,Model 3,35,1518010072,Trim - B-Pillar - Middle - LH,Remove and Replace,0.3,0.3
+NO,Model 3,35,1518010081,Trim - B-Pillar - Middle - RH,Remove and Install,0.24,0.24
+NO,Model 3,35,1518010082,Trim - B-Pillar - Middle - RH,Remove and Replace,0.24,0.24
+NO,Model 3,35,1518010091,Trim - B-Pillar - Lower - LH,Remove and Install,0.24,0.24
+NO,Model 3,35,1518010092,Trim - B-Pillar - Lower - LH,Remove and Replace,0.24,0.24
+NO,Model 3,35,1518010101,Trim - B-Pillar - Lower - RH,Remove and Install,0.24,0.24
+NO,Model 3,35,1518010102,Trim - B-Pillar - Lower - RH,Remove and Replace,0.24,0.24
+NO,Model 3,35,1518010131,PE Foam - B-Pillar - Middle - LH,Remove and Install,0.3,0.3
+NO,Model 3,35,1518010132,PE Foam - B-Pillar - Middle - LH,Remove and Replace,0.3,0.3
+NO,Model 3,35,1518010141,PE Foam - B-Pillar - Middle - RH,Remove and Install,0.3,0.3
+NO,Model 3,35,1518010142,PE Foam - B-Pillar - Middle - RH,Remove and Replace,0.3,0.3
+NO,Model 3,35,1518010151,Height Adjuster - Seatbelt - LH,Remove and Install,0.36,0.36
+NO,Model 3,35,1518010152,Height Adjuster - Seatbelt - LH,Remove and Replace,0.36,0.36
+NO,Model 3,35,1518010161,Height Adjuster - Seatbelt - RH,Remove and Install,0.36,0.36
+NO,Model 3,35,1518010162,Height Adjuster - Seatbelt - RH,Remove and Replace,0.36,0.36
+NO,Model 3,35,1518010171,Trim - C-Pillar - LH,Remove and Install,0.18,0.18
+NO,Model 3,35,1518010172,Trim - C-Pillar - LH,Remove and Replace,0.18,0.18
+NO,Model 3,35,1518010181,Trim - C-Pillar - RH,Remove and Install,0.18,0.18
+NO,Model 3,35,1518010182,Trim - C-Pillar - RH,Remove and Replace,0.18,0.18
+NO,Model 3,35,1518010191,Bezel - Trim - C-Pillar - LH,Remove and Install,0.47,0.47
+NO,Model 3,35,1518010192,Bezel - Trim - C-Pillar - LH,Remove and Replace,0.47,0.47
+NO,Model 3,35,1518010201,Bezel - Trim - C-Pillar - RH,Remove and Install,0.47,0.47
+NO,Model 3,35,1518010202,Bezel - Trim - C-Pillar - RH,Remove and Replace,0.47,0.47
+NO,Model 3,35,1518010231,Trim - Trunk Sill,Remove and Install,0.06,0.06
+NO,Model 3,35,1518010232,Trim - Trunk Sill,Remove and Replace,0.06,0.06
+NO,Model 3,35,1519010001,Armrest - Center Console,Remove and Install,0.42,0.42
+NO,Model 3,35,1519010011,Center Console,Remove and Install,0.36,0.36
+NO,Model 3,35,1519010012,Center Console,Remove and Replace,0.36,0.36
+NO,Model 3,35,1519010021,Structure - Center Console,Remove and Install,0.72,0.72
+NO,Model 3,35,1519010022,Structure - Center Console,Remove and Replace,0.72,0.72
+NO,Model 3,35,1519010031,CloseOut - Center Console,Remove and Install,0.42,0.42
+NO,Model 3,35,1519010032,CloseOut - Center Console,Remove and Replace,0.42,0.42
+NO,Model 3,35,1519010041,Panel - Rear End - Center Console,Remove and Install,0.12,0.12
+NO,Model 3,35,1519010042,Panel - Rear End - Center Console,Remove and Replace,0.12,0.12
+NO,Model 3,35,1519010081,Top Face Panel - Center Console (with a Clip-secured Phone Dock),Remove and Install,0.3,0.3
+NO,Model 3,35,1519010082,Top Face Panel - Center Console (with a Clip-secured Phone Dock),Remove and Replace,0.3,0.3
+NO,Model 3,35,1519010091,"Center Console - Hockey Stick, LH, Assembly (with a Clip-secured Phone Dock)",Remove and Install,0.18,0.18
+NO,Model 3,35,1519010092,Hockey Stick Assembly -LH (with a Clip-secured Phone Dock),Remove and Replace,0.18,0.18
+NO,Model 3,35,1519010101,"Center Console - Hockey Stick, RH, Assembly (with a Clip-secured Phone Dock)",Remove and Install,0.18,0.18
+NO,Model 3,35,1519010102,"Center Console - Hockey Stick, RH, Assembly (with a Clip-secured Phone Dock)",Remove and Replace,0.18,0.18
+NO,Model 3,35,1519010131,Module - Rear End - Center Console(with a Clip-secured Phone Dock),Remove and Install,0.42,0.42
+NO,Model 3,35,1519010132,Module - Rear End - Center Console(with a Clip-secured Phone Dock),Remove and Replace,0.42,0.42
+NO,Model 3,35,1519010141,Vent Cover - Center Console(with a Screw-secured Phone Dock),Remove and Install,0.6,0.6
+NO,Model 3,35,1519010142,Vent Cover - Center Console(with a Screw-secured Phone Dock),Remove and Replace,0.6,0.6
+NO,Model 3,35,1519010151,Air Wave - Center Console,Remove and Install,0.54,0.54
+NO,Model 3,35,1519010152,Air Wave - Center Console,Remove and Replace,0.54,0.54
+NO,Model 3,35,1519010161,USB Module - Center Console,Remove and Install,0.12,0.12
+NO,Model 3,35,1519010162,USB Module - Center Console,Remove and Replace,0.12,0.12
+NO,Model 3,35,1519010191,Armrest - Outer - Center Console(with a Screw-secured Phone Dock),Remove and Install,0.66,0.66
+NO,Model 3,35,1519010192,Armrest - Outer - Center Console(with a Screw-secured Phone Dock),Remove and Replace,0.66,0.66
+NO,Model 3,35,1519010221,Phone Dock (Clip) - Center Console,Remove and Install,0.12,0.12
+NO,Model 3,35,1519010222,Phone Dock (Clip) - Center Console,Remove and Replace,0.12,0.12
+NO,Model 3,35,1519010231,Wireless Charger Module - Center Console (with a Screw-secured Phone Dock),Remove and Install,0.42,0.42
+NO,Model 3,35,1519010232,Wireless Charger Module - Center Console (with a Screw-secured Phone Dock),Remove and Replace,0.42,0.42
+NO,Model 3,35,1519010241,Puddle Lamp - Center Console,Remove and Install,0.42,0.42
+NO,Model 3,35,1519010242,Puddle Lamp - Center Console,Remove and Replace,0.06,0.06
+NO,Model 3,35,1519010251,Switch - Console Light,Remove and Install,0.42,0.42
+NO,Model 3,35,1519010252,Switch - Console Light,Remove and Replace,0.42,0.42
+NO,Model 3,35,1519010261,Outlet - 12V - Center Console,Remove and Install,0.42,0.42
+NO,Model 3,35,1519010262,Outlet - 12V - Center Console,Remove and Replace,0.42,0.42
+NO,Model 3,35,1519010271,Wireless Charger Module - Center Console(with a Clip-secured Phone Dock),Remove and Install,0.18,0.18
+NO,Model 3,35,1519010272,Wireless Charger Module - Center Console(with a Clip-secured Phone Dock),Remove and Replace,0.18,0.18
+NO,Model 3,35,1519010291,"Center Console - Armrest, Outer, Assembly(with a Clip-secured Phone Dock)",Remove and Install,0.54,0.54
+NO,Model 3,35,1519010292,"Center Console - Armrest, Outer, Assembly(with a Clip-secured Phone Dock)",Remove and Replace,0.54,0.54
+NO,Model 3,35,1519011001,"Center Console - Hockey Stick, LH, Assembly (with a Screw-secured Phone Dock)",Remove and Install,0.42,0.42
+NO,Model 3,35,1519011002,"Center Console - Hockey Stick, LH, Assembly (with a Screw-secured Phone Dock)",Remove and Replace,0.42,0.42
+NO,Model 3,35,1519011101,"Center Console - Hockey Stick, RH, Assembly (with a Screw-secured Phone Dock)",Remove and Install,0.42,0.42
+NO,Model 3,35,1519011102,"Center Console - Hockey Stick, RH, Assembly (with a Screw-secured Phone Dock)",Remove and Replace,0.42,0.42
+NO,Model 3,35,1519011131,"Center Console - Rear End Module, Assembly(with a Screw-secured Phone Dock)",Remove and Install,0.54,0.54
+NO,Model 3,35,1519011132,"Center Console - Rear End Module, Assembly(with a Screw-secured Phone Dock)",Remove and Replace,0.54,0.54
+NO,Model 3,35,1519011141,"Center Console - Vent Cover Panel, Assembly(with a Clip-secured Phone Dock)",Remove and Install,0.48,0.48
+NO,Model 3,35,1519011142,"Center Console - Vent Cover Panel, Assembly(with a Clip-secured Phone Dock)",Remove and Replace,0.48,0.48
+NO,Model 3,35,1519011219,Phone Dock - Center Console,Inspection,0.06,0.06
+NO,Model 3,35,1519011221,Phone Dock (Screw) - Center Console,Remove and Install,0.42,0.42
+NO,Model 3,35,1519011222,Phone Dock (Screw) - Center Console,Remove and Replace,0.42,0.42
+NO,Model 3,35,1519110081,Top Face Panel - Center Console (with a Screw-secured Phone Dock),Remove and Install,0.48,0.48
+NO,Model 3,35,1519110082,Top Face Panel - Center Console (with a Screw-secured Phone Dock),Remove and Replace,0.48,0.48
+NO,Model 3,35,1520010031,Visor Check - Magnetic,Remove and Install,0.06,0.06
+NO,Model 3,35,1520010032,Visor Check - Magnetic,Remove and Replace,0.06,0.06
+NO,Model 3,35,1520010041,Coat Hook - LH,Remove and Install,0.72,0.72
+NO,Model 3,35,1520010042,Coat Hook - LH,Remove and Replace,0.72,0.72
+NO,Model 3,35,1520010051,Coat Hook - RH,Remove and Install,0.72,0.72
+NO,Model 3,35,1520010052,Coat Hook - RH,Remove and Replace,0.72,0.72
+NO,Model 3,35,1520010061,Map Light - Rear,Remove and Install,0.3,0.3
+NO,Model 3,35,1520010062,Map Light - Rear,Remove and Replace,0.3,0.3
+NO,Model 3,35,1520010601,Map Light - Rear - Pair,Remove and Install,0.48,0.48
+NO,Model 3,35,1520010602,Map Light - Rear - Pair,Remove and Replace,0.48,0.48
+NO,Model 3,35,1530020031,Carpet - Rear,Remove and Install,0.78,0.78
+NO,Model 3,35,1530020032,Carpet - Rear,Remove and Replace,0.78,0.78
+NO,Model 3,35,1530020041,Kit - Floor Mat - LHD,Remove and Install,0.05,0.05
+NO,Model 3,35,1530020042,Kit - Floor Mat - LHD,Remove and Replace,0.06,0.06
+NO,Model 3,35,1530030021,Tub Carpet - Rear Trunk,Remove and Install,0.18,0.18
+NO,Model 3,35,1530030022,Tub Carpet - Rear Trunk,Remove and Replace,0.18,0.18
+NO,Model 3,35,1530030031,Load Floar - Trunk,Remove and Install,0.06,0.06
+NO,Model 3,35,1530030032,Load Floor - Trunk,Remove and Replace,0.06,0.06
+NO,Model 3,35,1530030081,Lamp - Trunk,Remove and Install,0.06,0.06
+NO,Model 3,35,1530030082,Lamp - Trunk,Remove and Replace,0.06,0.06
+NO,Model 3,35,15301902,Floor Mat Set (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model 3,35,1601010011,Skid Plate - HV Battery - Rear,Remove and Install,0.24,0.24
+NO,Model 3,35,1601010012,Skid Plate - HV Battery - Rear,Remove and Replace,0.24,0.24
+NO,Model 3,35,1601010061,Ski Cover - HV Battery - Center,Remove and Install,1.38,1.38
+NO,Model 3,35,1601010062,Ski Cover - HV Battery - Center,Remove and Replace,1.38,1.38
+NO,Model 3,35,1601010071,Flood Port,Remove and Install,0.36,0.36
+NO,Model 3,35,1601010072,Flood Port,Remove and Replace,0.36,0.36
+NO,Model 3,35,1601010081,Perimeter Seal - Ancillary Bay,Remove and Install,0.47,0.47
+NO,Model 3,35,1601010091,Power Conversion System,Remove and Install,1.02,1.02
+NO,Model 3,35,1601010092,Passthrough - DCDC - LV (Cable Type),Remove and Replace,1.02,1.02
+NO,Model 3,35,16010101,HV Battery (RWD),Remove and Install,3.12,3.12
+NO,Model 3,35,1601010101,NVH Pad - HV Battery,Remove and Install,3.0,3.0
+NO,Model 3,35,1601010102,NVH Pad - HV Battery,Remove and Replace,3.12,3.12
+NO,Model 3,35,1601010111,Engagement Seal - Ancillary Bay,Remove and Install,2.82,2.82
+NO,Model 3,35,1601010112,Engagement Seal - Ancillary Bay,Remove and Replace,0.06,0.06
+NO,Model 3,35,16010102,HV Battery (RWD),Remove and Replace,4.74,4.74
+YES,Model 3,35,16010201,HV Battery (AWD),Remove and Install,3.0,3.0
+YES,Model 3,35,16010202,HV Battery (AWD),Remove and Replace,4.86,4.86
+YES,Model 3,35,16015300,Discharge HV Battery (At Pack Contactors),Test/Adjust,1.02,1.02
+NO,Model 3,35,16019725,Check SOC Imbalance,Inspection,0.2,0.2
+NO,Model 3,35,16100400,Ancillary Bay Air Leak Test,Inspection,0.48,0.48
+NO,Model 3,35,16100410,Ancillary Bay Air Leak Test (Busbar Type),Test/Adjust,0.42,0.42
+NO,Model 3,35,16102000,Platter Enclosure Air Leak Test,Test/Adjust,0.6,0.6
+NO,Model 3,35,16102010,Platter Enclosure Coolant Leak Test,Inspection,1.38,1.38
+YES,Model 3,35,16102100,HV Battery Air Leak Test,Test/Adjust,0.66,0.66
+NO,Model 3,35,16106486,HV Battery Assembly - High Voltage Battery Assembly - Vent with Shroud - Pair,Remove and Replace,0.72,0.72
+NO,Model 3,35,16200200,Ancillary Bay Coolant Leak Test,Inspection,0.9,0.9
+YES,Model 3,35,16300100,Resistance Meter (Zero Adjust),Test/Adjust,0.05,0.05
+NO,Model 3,35,1630010001,Cover - Ancillary Bay Bus - RH,Remove and Install,0.47,0.47
+NO,Model 3,35,1630010002,Cover - Ancillary Bay Bus - RH,Remove and Replace,0.47,0.47
+NO,Model 3,35,1630010011,Pyro Disconnect - HV Battery,Remove and Install,0.84,0.84
+NO,Model 3,35,1630010012,Pyro Disconnect - HV Battery,Remove and Replace,0.84,0.84
+NO,Model 3,35,1630010021,Harness - Charger Output to DCS Bus,Remove and Install,2.94,2.94
+NO,Model 3,35,1630010022,Harness - Charger Output to DCS Bus,Remove and Replace,2.94,2.94
+NO,Model 3,35,1630010031,Shunt - Ancillary Bay,Remove and Install,0.96,0.96
+NO,Model 3,35,1630010032,Shunt - Ancillary Bay,Remove and Replace,0.96,0.96
+NO,Model 3,35,1630010061,Busbar - Fast Charge Contactor to DC Bus - Negative,Remove and Install,1.56,1.56
+NO,Model 3,35,1630010071,Busbar - Fast Charge Contactor to DC Bus - Positive,Remove and Install,1.44,1.44
+NO,Model 3,35,1630010072,Busbar - Fast Charge Contactor to DC Bus - Positive,Remove and Replace,1.44,1.44
+NO,Model 3,35,1630010101,Pack Contactor - High Voltage - Negative,Remove and Install,0.96,0.96
+NO,Model 3,35,1630010102,Pack Contactor - High Voltage - Negative,Remove and Replace,0.96,0.96
+NO,Model 3,35,1630010111,Harness - AC Filter,Remove and Install,0.84,0.84
+NO,Model 3,35,1630010112,Harness - AC Filter,Remove and Replace,0.84,0.84
+NO,Model 3,35,1630010121,Contactor - Fast Charge - HV Battery,Remove and Install,1.56,1.56
+NO,Model 3,35,1630010122,Contactor - Fast Charge - HV Battery,Remove and Replace,1.56,1.56
+NO,Model 3,35,1630010141,Hose - Outlet - Power Conversion System,Remove and Install,2.04,2.04
+NO,Model 3,35,1630010142,Hose - Outlet - Power Conversion System,Remove and Replace,2.04,2.04
+NO,Model 3,35,1630010161,Cover - Busbar Module 3 to Shunt - Ancillary Bay,Remove and Install,2.04,2.04
+NO,Model 3,35,1630010162,Cover - Busbar Module 3 to Shunt - Ancillary Bay,Remove and Replace,2.04,2.04
+NO,Model 3,35,1630010191,Probe Lid - Ancillary Bat Cover,Remove and Install,0.3,0.3
+NO,Model 3,35,1630010192,Probe Lid - Ancillary Bay Cover,Remove and Replace,0.3,0.3
+NO,Model 3,35,1630010211,Seal - Probe Lid - Ancillary Bay Cover,Remove and Install,0.3,0.3
+NO,Model 3,35,1630010212,Seal - Probe Lid - Ancillary Bay Cover,Remove and Replace,0.3,0.3
+NO,Model 3,35,1630010241,Cover - Ancillary Bay Bus - LH,Remove and Install,0.47,0.47
+NO,Model 3,35,1630010242,Cover - Ancillary Bay Bus - LH,Remove and Replace,0.47,0.47
+NO,Model 3,35,1630010251,PCS Assembly,Remove and Install,2.22,2.22
+NO,Model 3,35,1630010252,Power Conversion System,Remove and Replace,2.22,2.22
+NO,Model 3,35,1630010261,Sensor - Flood Port,Remove and Install,0.47,0.47
+NO,Model 3,35,1630010262,Sensor - Flood Port,Remove and Replace,0.47,0.47
+NO,Model 3,35,1630010271,Harness - AC Filter (3-Phase),Remove and Install,0.96,0.96
+NO,Model 3,35,1630010272,Harness - AC Filter (3-Phase),Remove and Replace,0.96,0.96
+NO,Model 3,35,1630010281,Ancillary Bay Cover,Remove and Install,0.66,0.66
+NO,Model 3,35,1630010282,Ancillary Bay Cover,Remove and Replace,0.72,0.72
+NO,Model 3,35,1630010301,Tab - Fuse 63A 700VDC,Remove and Install,0.9,0.9
+NO,Model 3,35,1630010302,Fuse - A/C Compressor - HV Battery,Remove and Replace,0.9,0.9
+NO,Model 3,35,1630010322,Harness - Ancillary Bay (AWD),Remove and Replace,3.72,3.72
+NO,Model 3,35,1630010332,Harness - Ancillary Bay (RWD),Remove and Replace,3.72,3.72
+NO,Model 3,35,16300106901,Power Conversion System (PCS2Lite),Remove and Install,1.92,1.92
+NO,Model 3,35,16300106902,Power Conversion System (PCS2Lite),Remove and Replace,1.92,1.92
+NO,Model 3,35,1630012101,Pack Contactor - High Voltage - Negative,Remove and Install,1.02,1.02
+NO,Model 3,35,1630012102,Pack Contactor - High Voltage - Negative ,Remove and Replace,1.02,1.02
+NO,Model 3,35,1630012111,Pack Contactor - High Voltage - Positive,Remove and Install,1.02,1.02
+NO,Model 3,35,1630012112,Pack Contactor - High Voltage - Positive,Remove and Replace,1.02,1.02
+NO,Model 3,35,1630012121,Contactors - HV Battery - Pair,Remove and Install,1.14,1.14
+NO,Model 3,35,1630012122,Contactors - HV Battery - Pair,Remove and Replace,1.14,1.14
+NO,Model 3,35,16301601,HV Controller,Remove and Install,1.02,1.02
+NO,Model 3,35,16301602,HV Controller,Remove and Replace,1.02,1.02
+NO,Model 3,35,16309000,HV Battery Contactor Seize Check,Test/Adjust,0.84,0.84
+NO,Model 3,35,16900308,HV Battery Damage Evaluation (Reman),Retrofit,1.0,1.0
+NO,Model 3,35,16901808,Battery Enclosure Replacement (Reman),Sublet,0.0,0.0
+NO,Model 3,35,16901908,Battery Module Replacement (Reman),Sublet,0.0,0.0
+NO,Model 3,35,16902408,Charge/Discharge Test (Reman),Sublet,0.0,0.0
+NO,Model 3,35,16902608,Battery Reassembly (Reman),Sublet,0.0,0.0
+NO,Model 3,35,16902808,Battery Module Repair (Reman),Sublet,0.0,0.0
+YES,Model 3,35,17000004,Diagnosis: Driver Assistance,General Diagnosis,0.5,0.5
+YES,Model 3,35,17000008,Jumpstart Vehicle (Restore),Restore,0.12,0.12
+YES,Model 3,35,17010000,Vehicle HV Disablement Procedure,Test/Adjust,0.3,0.3
+NO,Model 3,35,17010008,LV Battery - Recover,Restore,0.06,0.06
+NO,Model 3,35,17010400,LV Power (Disconnect and Connect),,0.06,0.06
+NO,Model 3,35,17010410,LV Power (Disconnect & Connect),Modify,0.06,0.06
+NO,Model 3,35,1701080041,Harness - Center Console Extension,Remove and Install,0.42,0.42
+NO,Model 3,35,1701080042,Harness - Center Console Extension,Remove and Replace,0.42,0.42
+NO,Model 3,35,1702010011,LV Battery,Remove and Install,0.18,0.18
+NO,Model 3,35,1702010012,LV Battery,Remove and Replace,0.18,0.18
+NO,Model 3,35,1702010021,Cover - LV Battery,Remove and Install,0.47,0.47
+NO,Model 3,35,1702010022,Cover - LV Battery,Remove and Replace,0.47,0.47
+NO,Model 3,35,1702010031,Cover - LV Battery,Remove and Install,0.47,0.47
+NO,Model 3,35,1702010032,Cover - LV Battery,Remove and Replace,0.47,0.47
+YES,Model 3,35,17100008,Harness Connector - Reconnect,Restore,0.1,0.1
+NO,Model 3,35,1710010051,Harness - Center Console,Remove and Install,0.78,0.78
+NO,Model 3,35,1710010052,Harness - Center Console,Remove and Replace,0.78,0.78
+NO,Model 3,35,1710020001,Harness - Rear Door Trim - RH,Remove and Install,0.18,0.18
+NO,Model 3,35,1710020002,Harness - Rear Door Trim - RH,Remove and Replace,0.18,0.18
+NO,Model 3,35,1710020011,Harness - Rear Door Trim - LH,Remove and Install,0.18,0.18
+NO,Model 3,35,1710020012,Harness - Rear Door Trim - LH,Remove and Replace,0.18,0.18
+NO,Model 3,35,1710020021,Harness - Rear Door - RH,Remove and Install,0.47,0.47
+NO,Model 3,35,1710020022,Harness - Rear Door - RH,Remove and Replace,0.6,0.6
+NO,Model 3,35,1710020031,Harness - Rear Door - LH,Remove and Install,0.6,0.6
+NO,Model 3,35,1710020032,Harness - Rear Door - LH,Remove and Replace,0.6,0.6
+NO,Model 3,35,1710020081,Harness - Trunk Lid,Remove and Install,0.66,0.66
+NO,Model 3,35,1710020082,Harness - Trunk Lid,Remove and Replace,0.66,0.66
+NO,Model 3,35,1710020091,Harness - Trunk Lid Trim,Remove and Install,0.12,0.12
+NO,Model 3,35,1710020092,Harness - Trunk Lid Trim,Remove and Replace,0.12,0.12
+NO,Model 3,35,1710040031,Harness - Body - RH (LHD),Remove and Install,0.9,0.9
+NO,Model 3,35,1710040041,Harness - Body - RH (LHD),Remove and Install,2.46,2.46
+NO,Model 3,35,1710040042,Harness - Body - RH (LHD),Remove and Replace,2.46,2.46
+NO,Model 3,35,1710040071,Harness - Busbar - 12V DCDC,Remove and Install,0.24,0.24
+NO,Model 3,35,1710040072,Harness - Busbar - 12V DCDC,Remove and Replace,0.24,0.24
+NO,Model 3,35,1710050021,Harness - Fascia - Rear,Remove and Install,0.42,0.42
+NO,Model 3,35,1710050022,Harness - Fascia - Rear,Remove and Replace,0.42,0.42
+NO,Model 3,35,1710060011,Harness - 1st Row Seat - LH,Remove and Install,0.78,0.78
+NO,Model 3,35,1710060012,Harness - 1st Row Seat - LH,Remove and Replace,0.78,0.78
+NO,Model 3,35,1710060021,Harness - 1st Row Seat - RH,Remove and Install,0.78,0.78
+NO,Model 3,35,1710060022,Harness - 1st Row Seat - RH,Remove and Replace,0.78,0.78
+NO,Model 3,35,1710070011,Jumper Harness - B2B - Ethernet,Remove and Install,0.36,0.36
+NO,Model 3,35,1710070012,Jumper Harness - B2B - Ethernet,Remove and Replace,0.36,0.36
+NO,Model 3,35,1710080011,Harness - Sub Assembly - Thermal,Remove and Install,0.78,0.78
+NO,Model 3,35,1710080012,Harness - Sub Assembly - Thermal,Remove and Replace,0.78,0.78
+NO,Model 3,35,17102012,Jumper Harness - Trailer Hitch,Remove and Replace,0.54,0.54
+YES,Model 3,35,17105006,Wire - Electrical Harness (Overlay),Retrofit,0.0,0.0
+YES,Model 3,35,17108100,Diagnosis: Low Voltage Distribution and Controllers,General Diagnosis,1.0,1.0
+NO,Model 3,35,1715010031,Module - Body Controller - RH,Remove and Install,0.78,0.78
+NO,Model 3,35,1715010032,Module - Body Controller - RH,Remove and Replace,0.78,0.78
+NO,Model 3,35,1715010041,Module - Body Controller - LH,Remove and Install,0.54,0.54
+NO,Model 3,35,1715010042,Module - Body Controller - LH,Remove and Replace,0.54,0.54
+NO,Model 3,35,1715010051,ECU - Headlight - LH,Remove and Install,0.66,0.66
+NO,Model 3,35,1715010052,ECU - Headlight - LH,Remove and Replace,0.66,0.66
+NO,Model 3,35,1715010611,Vehicle Controller - USB Assembly(with a Clip-secured Phone Dock),Remove and Install,0.54,0.54
+NO,Model 3,35,1715010612,Vehicle Controller - USB Assembly(with a Clip-secured Phone Dock),Remove and Replace,0.54,0.54
+NO,Model 3,35,1715010621,VC USB Assembly(with a Screw-secured Phone Dock),Remove and Install,0.6,0.6
+NO,Model 3,35,1715010622,VC USB Assembly(with a Screw-secured Phone Dock),Remove and Replace,0.6,0.6
+NO,Model 3,35,1715010901,ECU - Headlight - RH,Remove and Install,0.66,0.66
+NO,Model 3,35,1715010902,ECU - Headlight - RH,Remove and Replace,0.66,0.66
+NO,Model 3,35,1720010011,Radar Heater - Routed,Remove and Install,0.47,0.47
+NO,Model 3,35,1720010012,Radar Heater - Routed,Remove and Replace,0.47,0.47
+NO,Model 3,35,1720010021,Radar Heater - Flat,Remove and Install,0.47,0.47
+NO,Model 3,35,1720010022,Radar Heater - Flat,Remove and Replace,0.47,0.47
+NO,Model 3,35,1720010031,Radar Sensors -Radar Fixation Proposal,Remove and Install,0.47,0.47
+NO,Model 3,35,1720010032,Radar Sensors -Radar Fixation Proposal,Remove and Replace,0.47,0.47
+NO,Model 3,35,1720010041,Radar Assembly,Remove and Install,0.47,0.47
+NO,Model 3,35,1720010042,Radar Assembly,Remove and Replace,0.47,0.47
+NO,Model 3,35,1722040041,Camera - B-Pillar - LH,Remove and Install,0.18,0.18
+NO,Model 3,35,1722040042,Camera - B-Pillar - LH,Remove and Replace,0.24,0.24
+NO,Model 3,35,1722040045,Camera - B-Pillar - LH (Clean),Maintenance,0.42,0.42
+NO,Model 3,35,1722040051,Camera - B-Pillar - RH,Remove and Install,0.18,0.18
+NO,Model 3,35,1722040052,Camera - B-Pillar - RH,Remove and Replace,0.24,0.24
+NO,Model 3,35,1722040145,Camera - B-Pillar RH (Clean),Maintenance,0.36,0.36
+NO,Model 3,35,1722040245,Camera - B-Pillar - Pair (Clean),Maintenance,0.72,0.72
+NO,Model 3,35,1724010051,Fan - Triple Cam,Remove and Install,0.18,0.18
+NO,Model 3,35,1724010052,Fan - Triple Cam,Remove and Replace,0.18,0.18
+NO,Model 3,35,17352202,Puddle Light - Rear Door - LH (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model 3,35,17352302,Puddle Light - Rear Door - RH (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model 3,35,17400100,Headlights - Adjust (NA) (Wall Method),Test/Adjust,0.24,0.24
+NO,Model 3,35,1740010011,Headlight - LH (ECE),Remove and Install,0.72,0.72
+NO,Model 3,35,1740010012,Headlight - LH (ECE),Remove and Replace,0.72,0.72
+NO,Model 3,35,1740010021,Headlight - LH (SAE),Remove and Install,0.48,0.48
+NO,Model 3,35,1740010022,Headlight - LH (SAE),Remove and Replace,0.48,0.48
+NO,Model 3,35,1740010031,Headlight - RH (ECE),Remove and Install,0.72,0.72
+NO,Model 3,35,1740010032,Headlight - RH (ECE),Remove and Replace,0.72,0.72
+NO,Model 3,35,1740010041,Headlight - RH (SAE),Remove and Install,0.48,0.48
+NO,Model 3,35,1740010042,Headlight - RH (SAE),Remove and Replace,0.48,0.48
+NO,Model 3,35,1740010091,Reflex Assembly - Electrical - Exterior Lights - Tail Lights - RH,Remove and Install,0.18,0.18
+NO,Model 3,35,1740010092,Reflex Assembly - Electrical - Exterior Lights - Tail Lights - RH,Remove and Replace,0.06,0.06
+YES,Model 3,35,17400150,Headlights - Adjust - NA (Tool Method),Test/Adjust,0.18,0.18
+NO,Model 3,35,17400160,Headlights - Adjust - Global (Wall Method),Test/Adjust,0.24,0.24
+NO,Model 3,35,1740020011,Rear Fascia Light - LH,Remove and Install,0.36,0.36
+NO,Model 3,35,1740020012,Rear Fascia Light - LH,Remove and Replace,0.42,0.42
+NO,Model 3,35,1740020021,Rear Fascia Light - RH,Remove and Install,0.42,0.42
+NO,Model 3,35,1740020022,Rear Fascia Light - RH,Remove and Replace,0.42,0.42
+NO,Model 3,35,1740020031,Trunk Lid Light - LH,Remove and Install,0.24,0.24
+NO,Model 3,35,1740020032,Trunk Lid Light - LH,Remove and Replace,0.24,0.24
+NO,Model 3,35,1740020041,Trunk Lid Light - RH,Remove and Install,0.24,0.24
+NO,Model 3,35,1740020042,Trunk Lid Light - RH,Remove and Replace,0.24,0.24
+NO,Model 3,35,1740020051,Licens Plate Light,Remove and Install,0.12,0.12
+NO,Model 3,35,1740020052,License Plate Light,Remove and Replace,0.12,0.12
+NO,Model 3,35,1740020101,Headlight - Pair (ECE),Remove and Install,0.78,0.78
+NO,Model 3,35,1740020102,Headlight - Pair (ECE),Remove and Replace,0.78,0.78
+NO,Model 3,35,1745010011,Sleeve - Key Card,Remove and Install,0.06,0.06
+NO,Model 3,35,1745010012,Key Card,Remove and Replace,0.06,0.06
+NO,Model 3,35,1745010021,Key Card,Remove and Install,0.06,0.06
+NO,Model 3,35,1745010022,Key Card,Remove and Replace,0.06,0.06
+NO,Model 3,35,1745020001,BLE Assembly - Rear - RH,Remove and Install,0.24,0.24
+NO,Model 3,35,1745020002,BLE Assembly - Rear - RH,Remove and Replace,0.24,0.24
+NO,Model 3,35,1745020011,BLE Assembly - Rear - LH,Remove and Install,0.24,0.24
+NO,Model 3,35,1745020012,BLE Assembly - Rear - LH,Remove and Replace,0.24,0.24
+NO,Model 3,35,1745020031,Module - BLE - Rear,Remove and Install,0.42,0.42
+NO,Model 3,35,1745020032,Module - BLE - Rear,Remove and Replace,0.42,0.42
+NO,Model 3,35,17450306,Key Card - Program (No Keys Present),Program,0.06,0.06
+NO,Model 3,35,17450513,Key Fob - Program (No Keys Present),Program,0.06,0.06
+NO,Model 3,35,1750011011,Wiper Module (LHD),Remove and Install,0.42,0.42
+NO,Model 3,35,1750011012,Wiper Module (LHD),Remove and Replace,0.42,0.42
+NO,Model 3,35,1750020001,Wiper Module (RHD),Remove and Install,0.36,0.36
+NO,Model 3,35,1750020002,Wiper Module (RHD),Remove and Replace,0.42,0.42
+NO,Model 3,35,1753010011,Horn Assembly,Remove and Install,0.47,0.47
+NO,Model 3,35,1753010012,Horn Assembly,Remove and Replace,0.47,0.47
+NO,Model 3,35,1753010031,Horn - High Tone,Remove and Install,0.47,0.47
+NO,Model 3,35,1753010041,Horn - Low Tone,Remove and Install,0.47,0.47
+NO,Model 3,35,1810010001,Duct - Thermistor - Lower - RH,Remove and Install,0.12,0.12
+NO,Model 3,35,1810010002,Duct - Thermistor - Lower - RH,Remove and Replace,0.12,0.12
+NO,Model 3,35,1810010011,HVAC Assembly,Remove and Install,2.58,2.58
+NO,Model 3,35,1810010012,HVAC Assembly,Remove and Replace,2.58,2.58
+NO,Model 3,35,1810010021,Blower Motor - HVAC,Remove and Install,2.46,2.46
+NO,Model 3,35,1810010022,Blower Motor - HVAC,Remove and Replace,2.46,2.46
+NO,Model 3,35,1810010061,Harness - HVAC,Remove and Install,2.82,2.82
+NO,Model 3,35,1810010062,Harness - HVAC,Remove and Replace,2.82,2.82
+NO,Model 3,35,1810010071,Actuator - HVAC,Remove and Install,2.76,2.76
+NO,Model 3,35,1810010072,Actuator - HVAC,Remove and Replace,2.76,2.76
+NO,Model 3,35,1810010081,Thermistor Evaporator - HVAC,Remove and Install,0.12,0.12
+NO,Model 3,35,1810010082,Thermistor Evaporator - HVAC,Remove and Replace,0.12,0.12
+NO,Model 3,35,1810010091,Thermistor Duct - HVAC,Remove and Install,0.06,0.06
+NO,Model 3,35,1810010092,Thermistor Duct - HVAC,Remove and Replace,0.06,0.06
+NO,Model 3,35,1810010101,Actuator - Upper and Lower - HVAC,Remove and Install,0.36,0.36
+NO,Model 3,35,1810010102,Actuator - Upper and Lower - HVAC,Remove and Replace,0.36,0.36
+NO,Model 3,35,1810010111,NVH Seal - HVAC,Remove and Install,2.58,2.58
+NO,Model 3,35,1810010112,NVH Seal - HVAC,Remove and Replace,2.58,2.58
+NO,Model 3,35,1810010131,Duct - Floor - 2nd Row - LH,Remove and Install,0.6,0.6
+NO,Model 3,35,1810010132,Duct - Floor - 2nd Row - LH,Remove and Replace,0.6,0.6
+NO,Model 3,35,1810011111,Duct - Thermistor - Lower - LH,Remove and Install,0.12,0.12
+NO,Model 3,35,1810011112,Duct - Thermistor - Lower - LH,Remove and Replace,0.12,0.12
+NO,Model 3,35,1810020011,Duct - Floor - 2nd Row - RH,Remove and Install,0.42,0.42
+NO,Model 3,35,1810020012,Duct - Floor - 2nd Row - RH,Remove and Replace,0.42,0.42
+NO,Model 3,35,1810020021,Air Extractor,Remove and Install,0.54,0.54
+NO,Model 3,35,1810020022,Air Extractor,Remove and Replace,0.54,0.54
+NO,Model 3,35,1810071502,Duct - Thermistor - RH,Remove and Replace,2.28,2.28
+NO,Model 3,35,18103205,Blower Motor - HVAC (Clean),Maintenance,0.24,0.24
+NO,Model 3,35,18106728,Vehicle Sanitation - Evaporator - Tunap 994,Restore,0.36,0.36
+NO,Model 3,35,1820020011,A/C Compressor,Remove and Install,1.02,1.02
+NO,Model 3,35,1820020012,A/C Compressor,Remove and Replace,1.02,1.02
+NO,Model 3,35,1820020021,Acoustic Blanket - A/C Compressor,Remove and Install,0.9,0.9
+NO,Model 3,35,1820020022,Acoustic Blanket - A/C Compressor,Remove and Replace,0.9,0.9
+NO,Model 3,35,1820020302,A/C Compressor and Supermanifold ,Remove and Replace,1.92,1.92
+NO,Model 3,35,18200332,Stone Guard,Remove and Replace,1.08,1.08
+NO,Model 3,35,1830010011,Radiator,Remove and Install,1.02,1.02
+NO,Model 3,35,1830010012,Radiator,Remove and Replace,1.02,1.02
+NO,Model 3,35,1830010052,Hose - Chiller to HV Battery (LHD) (RWD),Remove and Replace,0.9,0.9
+NO,Model 3,35,1830010131,Tube - HV Battery Return,Remove and Install,2.88,2.88
+NO,Model 3,35,1830010132,Tube - HV Battery Return,Remove and Replace,2.88,2.88
+NO,Model 3,35,1830020021,Hose - Rear Drive Unit to Oil Coller,Remove and Install,1.98,1.98
+NO,Model 3,35,1830020022,Hose - Rear Drive Unit to Oil Coller,Remove and Replace,1.98,1.98
+NO,Model 3,35,1830020041,Hose - Outlet - Rear Drive Unit,Remove and Install,0.72,0.72
+NO,Model 3,35,1830020042,Hose - Outlet - Rear Drive Unit,Remove and Replace,0.72,0.72
+NO,Model 3,35,1830020051,Hose - Chiller to HV Battery (LHD),Remove and Install,2.7,2.7
+NO,Model 3,35,1830020052,Hose - Chiller to HV Battery (LHD),Remove and Replace,2.7,2.7
+NO,Model 3,35,1830020061,Hose - Radiator Outlet,Remove and Install,0.6,0.6
+NO,Model 3,35,1830020062,Hose - Radiator Outlet,Remove and Replace,0.6,0.6
+NO,Model 3,35,1830020081,Hose - HV Battery Return,Remove and Install,0.96,0.96
+NO,Model 3,35,1830020082,Hose - HV Battery Return,Remove and Replace,0.96,0.96
+NO,Model 3,35,1830020131,Hose - HV Battery Return,Remove and Install,1.56,1.56
+YES,Model 3,35,18300900,Thermal System Test,Test/Adjust,0.1,0.1
+YES,Model 3,35,18301000,Clean Radiator,Maintenance,1.02,1.02
+NO,Model 3,35,18301200,Remove and Clean Radiator (Heat Pump),Maintenance,1.14,1.14
+NO,Model 3,35,1840010011,Supermanifold,Remove and Install,2.22,2.22
+NO,Model 3,35,1840010012,Supermanifold,Remove and Replace,2.22,2.22
+NO,Model 3,35,1840010021,Service Kit - Coolant Pump,Remove and Install,0.6,0.6
+NO,Model 3,35,1840010031,Service Kit - Coolant Reservoir,Remove and Install,0.9,0.9
+NO,Model 3,35,1840010032,Service Kit - Coolant Reservoir,Remove and Replace,0.9,0.9
+NO,Model 3,35,1840010041,Octovalve,Remove and Install,1.08,1.08
+NO,Model 3,35,1840010042,Octovalve,Remove and Replace,1.08,1.08
+NO,Model 3,35,1840010071,Service Kit - Chiller,Remove and Install,0.96,0.96
+NO,Model 3,35,1840010072,Chiller,Remove and Replace,0.96,0.96
+NO,Model 3,35,1840010081,EXV Core - Supermanifold,Remove and Install,0.36,0.36
+NO,Model 3,35,1840010082,EXV Core - Supermanifold,Remove and Replace,0.36,0.36
+NO,Model 3,35,1840010091,EXV Coil - Supermanifold,Remove and Install,0.24,0.24
+NO,Model 3,35,1840010092,EXV Coil - Supermanifold,Remove and Replace,0.24,0.24
+NO,Model 3,35,1840010101,SOV Core - Supermanifold,Remove and Install,0.36,0.36
+NO,Model 3,35,1840010102,SOV Core - Supermanifold,Remove and Replace,0.36,0.36
+NO,Model 3,35,1840010111,SOV Coil - Supermanifold,Remove and Install,0.24,0.24
+NO,Model 3,35,1840010112,SOV Coil - Supermanifold,Remove and Replace,0.24,0.24
+NO,Model 3,35,1840010121,Check Valve - Supermanifold,Remove and Install,0.78,0.78
+NO,Model 3,35,1840010131,PT Sensor - High Pressure,Remove and Install,0.3,0.3
+NO,Model 3,35,1840010132,PT Sensor - High Pressure,Remove and Replace,0.3,0.3
+NO,Model 3,35,1840010141,PT Sensor - Low Pressure,Remove and Install,0.24,0.24
+NO,Model 3,35,1840010142,PT Sensor - Low Pressure,Remove and Replace,0.24,0.24
+NO,Model 3,35,1840010151,Cap - Coolant Reservoir,Remove and Install,0.06,0.06
+NO,Model 3,35,1840010152,Cap - Coolant Reservoir,Remove and Replace,0.06,0.06
+NO,Model 3,35,1840010161,Coolant Pump - HV Battery,Remove and Install,0.6,0.6
+NO,Model 3,35,1840010162,Coolant Pump - HV Battery,Remove and Replace,0.6,0.6
+NO,Model 3,35,1840010171,PT Sensor - Subcool - High Pressure ,Remove and Install,0.36,0.36
+NO,Model 3,35,1840010172,PT Sensor - Subcool - High Pressure ,Remove and Replace,0.36,0.36
+NO,Model 3,35,1840011221,Check Valve - Evaporator,Remove and Install,0.3,0.3
+NO,Model 3,35,18402902,Service Kit - Check Valves - Supermanifold,Remove and Replace,1.32,1.32
+NO,Model 3,35,1850010011,Active Grill Shutter,Remove and Install,0.78,0.78
+NO,Model 3,35,1850010012,Active Grill Shutter,Remove and Replace,0.78,0.78
+NO,Model 3,35,1850010021,Sensor - Ambient Air Temperature,Remove and Install,0.18,0.18
+NO,Model 3,35,1850010022,Sensor - Ambient Air Temperature,Remove and Replace,0.18,0.18
+NO,Model 3,35,1901010011,Veci Label,Remove and Install,0.12,0.12
+NO,Model 3,35,1901010012,Veci Label,Remove and Replace,0.12,0.12
+NO,Model 3,35,1901010021,Motor ID Label,Remove and Install,0.47,0.47
+NO,Model 3,35,1901010022,Motor ID Label,Remove and Replace,0.47,0.47
+YES,Model 3,35,19010100825,Remove Vehicle Label (No Anti-Tamper Residue),Removal,0.06,0.06
+YES,Model 3,35,19010100902,Vehicle Emission Control Label,Remove and Replace,0.06,0.06
+YES,Model 3,35,19010100925,Remove Vehicle Label and Anti-Tamper Residue,Removal,0.12,0.12
+YES,Model 3,35,19010101002,Battery Chemistry Label,Remove and Replace,0.06,0.06
+YES,Model 3,35,19010101102,Monroney Label,Remove and Replace,0.06,0.06
+YES,Model 3,35,19010202,Labels - Any (Remove & Replace),Remove and Replace,0.29,0.29
+NO,Model 3,35,19010303,Labels - Battery Enclosure - Any,Module Reset/Reflashed,0.24,0.24
+NO,Model 3,35,190135740002,"Correct CE label already present, no further action required.",Test/Adjust,0.1,0.1
+NO,Model 3,35,2001010021,Label - Knee Airbag,Remove and Install,0.24,0.24
+NO,Model 3,35,2001010022,Label - Knee Airbag,Remove and Replace,0.24,0.24
+NO,Model 3,35,2001010031,Airbag - Knee - RH,Remove and Install,0.24,0.24
+NO,Model 3,35,2001010032,Airbag - Knee - RH,Remove and Replace,0.24,0.24
+NO,Model 3,35,2001010041,Airbag - Knee - LH,Remove and Install,0.24,0.24
+NO,Model 3,35,2001010042,Airbag - Knee - LH,Remove and Replace,0.24,0.24
+NO,Model 3,35,2001010051,Airbag - Driver,Remove and Install,0.12,0.12
+NO,Model 3,35,2001010052,Airbag - Driver,Remove and Replace,0.12,0.12
+NO,Model 3,35,2001010061,Harness - Airbag - Driver,Remove and Install,0.12,0.12
+NO,Model 3,35,2001010062,Harness - Airbag - Driver,Remove and Replace,0.12,0.12
+NO,Model 3,35,2005010011,1st Row Seat Belts -Service Kit - OCS (Rework),,0.18,0.18
+NO,Model 3,35,2005010012,1st Row Seat Belts -Service Kit - OCS Rework,Remove and Replace,0.47,0.47
+NO,Model 3,35,2005010051,Retractor - Seatbelt - 1st Row - Passenger,Remove and Install,0.42,0.42
+NO,Model 3,35,2005010052,Retractor - Seatbelt - 1st Row - Passenger,Remove and Replace,0.42,0.42
+NO,Model 3,35,2005010061,Retractor - Seatbelt - Driver,Remove and Install,0.42,0.42
+NO,Model 3,35,2005010062,Retractor - Seatbelt - Driver,Remove and Replace,0.42,0.42
+NO,Model 3,35,2005010071,Buckle - Seatbelt - 1st Row - LH,Remove and Install,0.18,0.18
+NO,Model 3,35,2005010072,Buckle - Seatbelt - 1st Row - LH,Remove and Replace,0.18,0.18
+NO,Model 3,35,2005010091,Buckle - Seat Belt - 1st Row - RH,Remove and Install,0.18,0.18
+NO,Model 3,35,2005010092,Buckle - Seatbelt - 1st Row - RH,Remove and Replace,0.18,0.18
+NO,Model 3,35,2005020021,Retractor - Seatbelt - 2nd Row - Center,Remove and Install,0.66,0.66
+NO,Model 3,35,2005020022,Retractor - Seatbelt - 2nd Row - Center,Remove and Replace,0.66,0.66
+NO,Model 3,35,2005020031,Buckle - Seatbelt - 2nd Row - LH,Remove and Install,0.18,0.18
+NO,Model 3,35,2005020032,Buckle - Seatbelt - 2nd Row - LH,Remove and Replace,0.18,0.18
+NO,Model 3,35,2005020041,Buckle - Seatbelt - 2nd Row - RH and Center,Remove and Install,0.18,0.18
+NO,Model 3,35,2005020042,Buckle - Seatbelt - 2nd Row - RH and Center,Remove and Replace,0.18,0.18
+NO,Model 3,35,2005021101,Buckle - Seatbelt - 2nd Row - RH,Remove and Install,0.18,0.18
+NO,Model 3,35,2005021102,Buckle - Seatbelt - 2nd Row - RH,Remove and Replace,0.18,0.18
+NO,Model 3,35,2010010011,Pretensioner - Passenger,Remove and Install,0.42,0.42
+NO,Model 3,35,2010010012,Pretensioner - Passenger,Remove and Replace,0.42,0.42
+NO,Model 3,35,2010010021,Pretensioner - Driver,Remove and Install,0.42,0.42
+NO,Model 3,35,2010010022,Pretensioner - Driver,Remove and Replace,0.42,0.42
+NO,Model 3,35,2020010071,Sensor - Pressure - Door - Rear - LH,Remove and Install,0.18,0.18
+NO,Model 3,35,2020010072,Sensor - Pressure - Door - Rear - LH,Remove and Replace,0.18,0.18
+NO,Model 3,35,2020010171,Sensor - Pressure - Door - Rear - RH,Remove and Install,0.18,0.18
+NO,Model 3,35,2020010172,Sensor - Pressure - Door - Rear - RH,Remove and Replace,0.18,0.18
+NO,Model 3,35,2020010611,Sensor - Impact Accelerometer - B-Pillar - LH,Remove and Install,0.3,0.3
+NO,Model 3,35,2020010612,Sensor - Impact Accelerometer - B-Pillar - LH,Remove and Replace,0.3,0.3
+NO,Model 3,35,2020011062,Sensor - Impact Accelerometer - B-Pillar - RH,Remove and Replace,0.3,0.3
+NO,Model 3,35,2020020011,Sensor - Seat Track Position - 1st Row - RH,Remove and Install,0.47,0.47
+NO,Model 3,35,2020020012,Sensor - Seat Track Position - 1st Row - RH,Remove and Replace,0.47,0.47
+YES,Model 3,35,21051000,Update Display Avatar,Test/Adjust,0.12,0.12
+NO,Model 3,35,2107010211,Touchscreen - Rear(with a Screw-secured Phone Dock),Remove and Install,0.6,0.6
+NO,Model 3,35,2107010212,Touchscreen - Rear(with a Screw-secured Phone Dock),Remove and Replace,0.66,0.66
+NO,Model 3,35,2107010221,Touchscreen - Rear(with a Screw-secured Phone Dock),Remove and Install,0.48,0.48
+NO,Model 3,35,2107010222,Touchscreen - Rear(with a Screw-secured Phone Dock),Remove and Replace,0.48,0.48
+NO,Model 3,35,2110010011,SIM Card - Car Computer,Remove and Install,0.42,0.42
+NO,Model 3,35,2110010012,SIM Card - Car Computer,Remove and Replace,0.42,0.42
+NO,Model 3,35,2110010021,SD Card - Car Computer,Remove and Install,0.18,0.18
+NO,Model 3,35,2110010022,SD Card - Car Computer,Remove and Replace,0.18,0.18
+NO,Model 3,35,2110010031,Car Computer (LHD),Remove and Install,1.02,1.02
+NO,Model 3,35,2110022012,Drip Guard - Car Computer,Remove and Replace,0.96,0.96
+NO,Model 3,35,21151007,Car Computer (Dispose),Modify,0.24,0.24
+NO,Model 3,35,21153302,Car Computer (HW4) (LHD),Remove and Replace,1.44,1.44
+NO,Model 3,35,21153312,Replace Car Computer (HW4) (RHD),Remove and Replace,1.2,1.2
+NO,Model 3,35,2121010011,Woofer - Parcel Shelf,Remove and Install,0.42,0.42
+NO,Model 3,35,2121010012,Woofer - Parcel Shelf,Remove and Replace,0.42,0.42
+NO,Model 3,35,2121010511,Speaker - Rear Door - RH,Remove and Install,0.18,0.18
+NO,Model 3,35,2121010512,Speaker - Rear Door - RH,Remove and Replace,0.18,0.18
+NO,Model 3,35,2121010521,Speaker - Rear Door - LH,Remove and Install,0.18,0.18
+NO,Model 3,35,2121010522,Speaker - Dash - LH,Remove and Replace,0.3,0.3
+NO,Model 3,35,2121010531,Speaker - Dash - Center,Remove and Install,0.3,0.3
+NO,Model 3,35,2121010532,Speaker - Dash - Center,Remove and Replace,0.3,0.3
+NO,Model 3,35,2121010542,Speaker - Dash - RH,Remove and Replace,0.3,0.3
+NO,Model 3,35,2121010811,Super Horn,Remove and Install,0.24,0.24
+NO,Model 3,35,2121010812,Super Horn,Remove and Replace,0.24,0.24
+NO,Model 3,35,2121012021,Speaker - Rear Door - LH,Remove and Install,0.18,0.18
+NO,Model 3,35,2121012022,Speaker - Rear Door - LH,Remove and Replace,0.18,0.18
+NO,Model 3,35,2121012502,Speaker - Dash - RH,Remove and Replace,0.24,0.24
+NO,Model 3,35,2135011021,Telematics Control Unit (TCU),Remove and Install,0.6,0.6
+NO,Model 3,35,2135011022,Telematics Control Unit (TCU),Remove and Replace,0.6,0.6
+NO,Model 3,35,2135011031,Tuner FM/HD/DAB,Remove and Install,0.24,0.24
+NO,Model 3,35,2135011032,Tuner FM/HD/DAB,Remove and Replace,0.24,0.24
+NO,Model 3,35,2135011042,GNSS Antenna,Remove and Replace,0.12,0.12
+NO,Model 3,35,31000200,Four Wheel Alignment (Camber Caster Add-On),Test/Adjust,0.65,0.65
+NO,Model 3,35,31001500,EPAS Alignment Check,Test/Adjust,0.12,0.12
+YES,Model 3,35,31002300,Four Wheel Alignment Check and Adjust,Test/Adjust,0.9,0.9
+NO,Model 3,35,3103010001,Hub - Rear - RH,Remove and Install,0.54,0.54
+NO,Model 3,35,3103010002,Hub - Rear - RH,Remove and Replace,0.54,0.54
+NO,Model 3,35,3103010011,Hub - Rear - LH,Remove and Install,0.54,0.54
+NO,Model 3,35,3103010012,Hub - Rear - LH,Remove and Replace,0.54,0.54
+NO,Model 3,35,3103010021,Knuckle - Rear - LH,Remove and Install,1.08,1.08
+NO,Model 3,35,3103010022,Knuckle - Rear - LH,Remove and Replace,1.08,1.08
+NO,Model 3,35,3103010031,Knuckle - Rear - RH,Remove and Install,1.08,1.08
+NO,Model 3,35,3103010032,Knuckle - Rear - RH,Remove and Replace,1.08,1.08
+NO,Model 3,35,3103020031,Stabilizer Bar - Rear,Remove and Install,0.36,0.36
+NO,Model 3,35,3103020032,Stabilizer Bar - Rear,Remove and Replace,0.36,0.36
+NO,Model 3,35,3103030021,Cover - Suspension - Rear - RH,Remove and Install,0.12,0.12
+NO,Model 3,35,3103030022,Cover - Suspension - Rear - RH,Remove and Replace,0.12,0.12
+YES,Model 3,35,31039000,Suspension - Rear (Check Torque),Test/Adjust,0.36,0.36
+NO,Model 3,35,3115020041,Damper - Rear - LH,Remove and Install,0.48,0.48
+NO,Model 3,35,3115020042,Damper - Rear - LH,Remove and Replace,0.48,0.48
+NO,Model 3,35,3115020051,Damper - Rear - RH,Remove and Install,0.48,0.48
+NO,Model 3,35,3115020052,Damper - Rear - RH,Remove and Replace,0.48,0.48
+NO,Model 3,35,3201010051,Tie Rod End - LH,Remove and Install,0.24,0.24
+NO,Model 3,35,3201010052,Tie Rod End - LH,Remove and Replace,0.24,0.24
+NO,Model 3,35,3201010061,Tie Rod End - RH,Remove and Install,0.24,0.24
+NO,Model 3,35,3201010062,Tie Rod End - RH,Remove and Replace,0.24,0.24
+NO,Model 3,35,3201010701,Tie Rod End - RH,Remove and Install,0.24,0.24
+NO,Model 3,35,3201010702,Tie Rod End - RH,Remove and Replace,0.24,0.24
+NO,Model 3,35,3310007102,Chassis Harness - Wheel Speed Sensor - Rear - LH,Remove and Replace,0.3,0.3
+NO,Model 3,35,3310007112,Chassis Harness - Wheel Speed Sensor - Rear - RH,Remove and Replace,0.3,0.3
+NO,Model 3,35,3310010021,Sensor - Wheel Speed - Rear - LH,Remove and Install,0.24,0.24
+NO,Model 3,35,3310010022,Sensor - Wheel Speed - Rear - LH,Remove and Replace,0.24,0.24
+NO,Model 3,35,3310030031,Sensor - Wheel Speed - Rear - RH,Remove and Install,0.24,0.24
+NO,Model 3,35,3310030032,Sensor - Wheel Speed - Rear - RH,Remove and Replace,0.24,0.24
+NO,Model 3,35,3325010022,Pedal Assembly (LHD),Remove and Replace,0.36,0.36
+NO,Model 3,35,3401000121,Wheel Trim - Rear - LH (Performance),Remove and Install,0.12,0.12
+NO,Model 3,35,3401000122,Wheel Trim - Rear - LH (Performance),Remove and Replace,0.12,0.12
+NO,Model 3,35,3401000131,Wheel Trim - Rear - RH (Performance),Remove and Install,0.12,0.12
+NO,Model 3,35,3401000132,Wheel Trim - Rear - RH (Performance),Remove and Replace,0.12,0.12
+YES,Model 3,35,34010105,Tire Rotation,Maintenance,0.3,0.3
+YES,Model 3,35,34011302,Lug Nuts - Vehicle Set (Remove & Replace),Remove and Replace,0.36,0.36
+YES,Model 3,35,34012902,Wheels - Set (Remove and Replace),Remove and Replace,1.56,1.56
+YES,Model 3,35,34014005,Seasonal Wheel and Tire Set Swap (Already Built),Seasonal Swap,0.5,0.5
+YES,Model 3,35,34014101,Tire Set - Vehicle - Swap  (Not Already Built),Remove and Install,1.38,1.38
+NO,Model 3,35,34015007,Wheel Disposal (Rework),Modify,0.06,0.06
+YES,Model 3,35,34015032,Cap - Wheel - Set (Remove & Replace),Remove and Replace,0.05,0.05
+YES,Model 3,35,34015202,Wheel - Rear - LH (Remove & Replace),Remove and Replace,0.36,0.36
+YES,Model 3,35,34015222,Cap - Wheel - Rear - LH (Remove & Replace),Remove and Replace,0.06,0.06
+YES,Model 3,35,34015302,Wheel - Rear - RH (Remove & Replace),Remove and Replace,0.36,0.36
+YES,Model 3,35,34015322,Cap - Wheel - Rear - RH (Remove & Replace),Remove and Replace,0.06,0.06
+YES,Model 3,35,34020010,Mobile Tire Service Performed,Modify,0.0,0.0
+YES,Model 3,35,34020030,Mobile Tire Service Performed – Logistics,Tire Repair,0.0,0.0
+NO,Model 3,35,34020105,Tire Rotation (Mobile Only),Maintenance,0.48,0.48
+YES,Model 3,35,34020305,Tires - All Four (Balance),Rebalance,0.6,0.6
+YES,Model 3,35,34020900,Check and Adjust Tire Pressure,Test/Adjust,0.05,0.05
+YES,Model 3,35,34021202,Tire - Rear - LH (Remove & Replace),Tire Purchase,0.35,0.35
+YES,Model 3,35,34021302,Tire - Rear - RH (Remove & Replace),Tire Purchase,0.35,0.35
+YES,Model 3,35,34021605,Tires - Rear - Set,Tire Purchase,0.7,0.7
+YES,Model 3,35,34021805,Tires - Vehicle - Set,Tire Purchase,1.15,1.15
+YES,Model 3,35,34022015,Tire - Supplemental (Rebalance),Maintenance,0.18,0.18
+YES,Model 3,35,34022205,Tire - Rear - LH (Road Force) (Balance),Tire Repair,0.2,0.2
+YES,Model 3,35,34022225,Tire - Rear - LH (Balance),Rebalance,0.2,0.2
+YES,Model 3,35,34022305,Tire - Rear - RH (Road Force) (Balance),Tire Repair,0.2,0.2
+YES,Model 3,35,34022325,Tire - Rear - RH (Balance),Rebalance,0.2,0.2
+NO,Model 3,35,34022425,Tires - Pair (Balance),Rebalance,0.3,0.3
+YES,Model 3,35,34023208,Tire - Rear - LH (Repair),Tire Repair,0.72,0.72
+YES,Model 3,35,34023308,Tire - Rear - RH (Repair),Tire Repair,0.72,0.72
+NO,Model 3,35,34040402,Sensor - TPMS - Rear - LH (Remove & Replace),Remove and Replace,0.42,0.42
+NO,Model 3,35,34040502,Sensor - TPMS - Rear - RH (Remove & Replace),Remove and Replace,0.42,0.42
+NO,Model 3,35,34040602,Wheel Sensors - TPMS - Vehicle Set (Remove & Replace),Remove and Replace,0.96,0.96
+NO,Model 3,35,34041150,TPMS (Sensor ID Drive Learn),Test/Adjust,0.12,0.12
+NO,Model 3,35,39019175,Replace Motor Oil (DM),Remove and Replace,4.18,4.18
+NO,Model 3,35,4001010001,Mount - Rear Drive Unit - RH (4DU),Remove and Install,2.16,2.16
+NO,Model 3,35,4001010002,Mount - Rear Drive Unit - RH (4DU),Remove and Replace,2.16,2.16
+NO,Model 3,35,4001010031,Oil Pump - Electric - Rear Drive Unit (4DU),Remove and Install,0.6,0.6
+NO,Model 3,35,4001010032,Oil Pump - Electric - Rear Drive Unit (4DU),Remove and Replace,0.6,0.6
+NO,Model 3,35,4001010041,Axle Seal - Output - Rear Drive Unit (4DU),Remove and Install,0.96,0.96
+NO,Model 3,35,4001010042,Axle Seal - Output - Rear Drive Unit (4DU),Remove and Replace,0.96,0.96
+NO,Model 3,35,4001010051,Heat Exchanger - Rear Drive Unit (4DU),Remove and Install,0.72,0.72
+NO,Model 3,35,4001010052,Heat Exchanger - Rear Drive Unit (4DU),Remove and Replace,0.72,0.72
+NO,Model 3,35,4001010081,Drive Unit - Rear (4DU),Remove and Install,3.54,3.54
+NO,Model 3,35,4001010082,Drive Unit - Rear (4DU),Remove and Replace,4.14,4.14
+NO,Model 3,35,4001010091,Mount - Rear Drive Unit - LH (4DU),Remove and Install,2.1,2.1
+NO,Model 3,35,4001010092,Mount - Rear Drive Unit - LH (4DU),Remove and Replace,2.1,2.1
+NO,Model 3,35,4001020001,Mount - Rear Drive Unit - RH (3DU),Remove and Install,2.1,2.1
+NO,Model 3,35,4001020002,Mount - Rear Drive Unit - RH (3DU),Remove and Replace,2.1,2.1
+NO,Model 3,35,4001020011,Ground Strap - Rear Drive Unit,Remove and Install,1.68,1.68
+NO,Model 3,35,4001020012,Ground Strap - Rear Drive Unit,Remove and Replace,1.68,1.68
+NO,Model 3,35,4001020021,Mount - Rear Drive Unit - LH (3DU),Remove and Install,2.1,2.1
+NO,Model 3,35,4001020022,Mount - Rear Drive Unit - LH (3DU),Remove and Replace,2.1,2.1
+NO,Model 3,35,4001020031,Heat Exchanger - Rear Drive Unit (3DU),Remove and Install,1.92,1.92
+NO,Model 3,35,4001020032,Heat Exchanger - Rear Drive Unit (3DU),Remove and Replace,1.92,1.92
+NO,Model 3,35,4001020041,Cover - Phase Out - Rear Drive Unit (3DU),Remove and Install,0.84,0.84
+NO,Model 3,35,4001020042,Cover - Phase Out - Rear Drive Unit (3DU),Remove and Replace,0.84,0.84
+NO,Model 3,35,4001020061,Oil Pump - Electric - Tesla - Rear Drive Unit,Remove and Install,0.78,0.78
+NO,Model 3,35,4001020062,Oil Pump - Electric - Tesla - Rear Drive Unit,Remove and Replace,0.78,0.78
+NO,Model 3,35,4001020071,Axle Seal - Output - Rear Drive Unit (3DU),Remove and Install,0.96,0.96
+NO,Model 3,35,4001020072,Axle Seal - Output - Rear Drive Unit (3DU),Remove and Replace,1.02,1.02
+NO,Model 3,35,4001020101,Drive Unit - Rear (3DU),Remove and Install,3.78,3.78
+NO,Model 3,35,4001020102,Drive Unit - Rear (3DU),Remove and Replace,3.78,3.78
+NO,Model 3,35,4001020111,Rear Drive Unit - Mosfet - LC,Remove and Install,3.96,3.96
+NO,Model 3,35,4001020112,Rear Drive Unit - Mosfet - LC,Remove and Replace,3.96,3.96
+NO,Model 3,35,4001020121,Filter - Oil - Rear Drive Unit (3DU),Remove and Install,0.78,0.78
+NO,Model 3,35,4001020122,Filter - Oil - Rear Drive Unit (3DU),Remove and Replace,0.78,0.78
+NO,Model 3,35,4030010011,Halfshaft - Rear Drive Unit - LH,Remove and Install,0.96,0.96
+NO,Model 3,35,4030010012,Halfshaft - Rear Drive Unit - LH,Remove and Replace,0.96,0.96
+NO,Model 3,35,4030010021,Halfshaft - Rear Drive Unit - RH,Remove and Install,0.96,0.96
+NO,Model 3,35,4030010022,Halfshaft - Rear Drive Unit - RH,Remove and Replace,0.96,0.96
+NO,Model 3,35,40300300300,Oil Pump Diagnostics,Diagnosis Only,0.42,0.42
+NO,Model 3,35,44000134,HV Isolation Diagnostics,Diagnosis Only,2.5,2.5
+YES,Model 3,35,44000204,HVIL Diagnostics,Diagnosis Only,1.0,1.0
+NO,Model 3,35,4401010021,Actuator - Charge Port (Gen 3),Remove and Install,0.72,0.72
+NO,Model 3,35,4401010022,Actuator - Charge Port (Gen 3),Remove and Replace,0.72,0.72
+NO,Model 3,35,4401010031,Tube Assembly - Charge Port,Remove and Install,0.18,0.18
+NO,Model 3,35,4401010032,Tube Assembly - Charge Port,Remove and Replace,0.18,0.18
+NO,Model 3,35,4401010072,Charge Port - Charge Port IEC CP.,Remove and Replace,0.66,0.66
+NO,Model 3,35,4401010081,Safety Cap - Charge Port (NA),Remove and Install,0.48,0.48
+NO,Model 3,35,4401010082,Safety Cap - Charge Port (NA),Remove and Replace,0.48,0.48
+NO,Model 3,35,4401010101,Door Assembly - Charge Port (NA),Remove and Install,0.66,0.66
+NO,Model 3,35,4401010102,Door Assembly - Charge Port (NA),Remove and Replace,0.66,0.66
+NO,Model 3,35,44010102202,DC Charge Port Latch Stick - GB,Remove and Replace,0.66,0.66
+NO,Model 3,35,44010102302,AC Charge Port Latch Stick - GB,Remove and Replace,0.66,0.66
+NO,Model 3,35,4401024021,ECU - Charge Port (Gen4),Remove and Install,0.24,0.24
+NO,Model 3,35,4401024022,ECU - Charge Port (Gen4),Remove and Replace,0.24,0.24
+NO,Model 3,35,44011601,Charge Port (NACS),Remove and Install,0.6,0.6
+NO,Model 3,35,44011602,Charge Port (NACS),Remove and Replace,0.6,0.6
+NO,Model 3,35,44011652,Charge Port (CCS),Remove and Replace,0.66,0.66
+NO,Model 3,35,44012100,Charge Port Voltage Check,Test/Adjust,0.18,0.18
+NO,Model 3,35,44012702,Charge Port (GB),,0.66,0.66
+YES,Model 3,35,44013205,Charge Port - Manual Release of Cable,Maintenance,0.06,0.06
+NO,Model 3,35,4450010021,HV Harness - Ancillary Bay,Remove and Install,1.08,1.08
+NO,Model 3,35,4450010022,HV Harness - Ancillary Bay,Remove and Replace,1.08,1.08
+NO,Model 3,35,4450010071,HV Harness - A/C Compressor,Remove and Install,0.72,0.72
+NO,Model 3,35,4450010072,HV Harness - A/C Compressor,Remove and Replace,0.72,0.72
+NO,Model 3,35,4450010091,HV Harness - HV Battery to Rear Drive Unit,Remove and Install,0.78,0.78
+NO,Model 3,35,4450010092,HV Harness - HV Battery to Rear Drive Unit,Remove and Replace,0.78,0.78
+YES,Model 3,35,46010100004,Diagnosis: Coolant Leak,General Diagnosis,0.5,0.5
+YES,Model 3,35,50010102,Mobile Connector - UMC (Remove & Replace),Remove and Replace,0.0,0.0
+YES,Model 3,35,50022002,Handle and Cable Assembly - 80A Wall Connector (Remove and Replace),Remove and Replace,0.58,0.58
+YES,Model 3,35,50024002,Handle and Cable Assembly - 40A Wall Connector (Remove and Replace),Remove and Replace,0.58,0.58
+YES,Model 3,35,61013108,Equip Tire Repair Kit,General diagnosis conclusion,0.0,0.0
+YES,Model 3,35,7000005,Mobile Tire Dispatch Fee,Fee,0.01,0.01
+YES,Model 3,35,70000105,Third Party Transport,Sublet,1.2,1.2
+YES,Model 3,35,7000030,Parts Not Available - Add to future service visit,General diagnosis conclusion,0.0,0.0
+YES,Model 3,35,70000305,Miscellaneous Labor,Fee,0.0,0.0
+YES,Model 3,35,70002005,Non-Tesla (Rental),Sublet,0.0,0.0
+YES,Model 3,35,70003805,Tesla Airport Service,Fee,1.2,1.2
+YES,Model 3,35,7000405,Vehicle Storage,Fee,0.0,0.0
+YES,Model 3,35,70004205,No Labor Performed - Unable to Perform via Mobile Service,General diagnosis conclusion,0.0,0.0
+YES,Model 3,35,70004505,No Labor Performed - Part Replaced,Repair,0.0,0.0
+YES,Model 3,35,70005700,Scrap Part Sale Over the Counter,Test/Adjust,0.0,0.0
+YES,Model 3,35,70005805,Payment Collection Required,Fee,1.2,1.2
+YES,Model 3,35,70008009,Additional Work Required - Corrosion Present,Maintenance,0.5,0.5
+YES,Model 3,35,70020305,Upholstery - Sublet,Sublet,0.0,0.0
+NO,Model 3,35,70020306,Vehicle Wrap – Color Film (Repair),Sublet,0.0,0.0
+YES,Model 3,35,70020805,Glass Repair / Replacement  - Sublet,Sublet,0.0,0.0
+NO,Model 3,35,70021015,Tesla Bodyshop Fascia Repair - Sublet,Sublet,0.0,0.0
+NO,Model 3,35,70021025,Tesla Bodyshop Door Repair - Sublet,Sublet,0.0,0.0
+NO,Model 3,35,70021055,Tesla Bodyshop Hood / Rear Trunk Repair - Sublet,Sublet,0.0,0.0
+NO,Model 3,35,70021745,Tesla Bodyshop Exterior Lights Repair - Sublet ,Sublet,0.0,0.0
+NO,Model 3,35,70023405,Tesla Bodyshop Wheel Hub Repair - Sublet,Sublet,0.0,0.0
+YES,Model 3,35,70060005,Thread Repair,Maintenance,0.0,0.0
+YES,Model 3,35,7007300,Other – Sublet,Sublet,0.0,0.0
+YES,Model 3,35,7100001,NO LABOR PERFORMED,Repair,0.0,0.0
+NO,Model 3,35,7100002,Seasonal Tire Storage,Fee,0.0,0.0
+YES,Model 3,35,72000005,Loaner Fee,Fee,0.0,0.0
+YES,Model 3,35,91000004,On Site – Education,Customer Education,0.0,0.0
+YES,Model 3,35,91020105,Car Wash (Hand Wash),Detail Work,0.25,0.25
+YES,Model 3,35,91020115,Car Wash (Mechanical Wash),Maintenance,0.24,0.24
+YES,Model 3,35,91022005,Charge Vehicle,Restore,0.0,0.0
+YES,Model 3,35,91022407,Vehicle Configuration Update,Program,0.05,0.05
+YES,Model 3,35,91029006,Mobile Service Hub Repair,Retrofit,0.0,0.0
+YES,Model 3,7,00000010,Remote – Education,Over The Air,0.0,0.0
+YES,Model 3,7,00004107,Alert Diagnosis - Repair,General diagnosis conclusion,0.06,0.06
+YES,Model 3,7,00004108,Alert Diagnosis (Repair) - Create New Service Activity for Repair,Test/Adjust,0.06,0.06
+YES,Model 3,7,00005914,Service Collision Estimate,Inspection,0.0,0.0
+YES,Model 3,7,00020003,Software Update,Over The Air,0.06,0.06
+YES,Model 3,7,00020007,Firmware Update - Garage,Update,0.05,0.05
+YES,Model 3,7,00020010,Remote – Known Characteristic of Current Firmware,Over The Air,0.25,0.25
+YES,Model 3,7,00020020,Remote – Over the Air Update,Over The Air,0.25,0.25
+YES,Model 3,7,00022008,User Data (Factory Reset),Restore,0.05,0.05
+YES,Model 3,7,00023003,Clear Filesystem Caches,Module Reset/Reflashed,0.05,0.05
+YES,Model 3,7,00030100,PDI (Without Test Drive),Inspection,0.12,0.12
+YES,Model 3,7,00030410,Vehicle Health Check,Inspection,1.62,1.62
+NO,Model 3,7,00030420,Four Wheel Check (on Lift),Test/Adjust,0.3,0.3
+NO,Model 3,7,00031600,Perform Periodisk Kontroll av Kjøretøy (PKK) – Norway,Test/Adjust,1.0,1.0
+NO,Model 3,7,00031700,Perform Etterkontroll Periodisk Kontroll av Kjøretøy (PKK) – Norway,Test/Adjust,0.4,0.4
+YES,Model 3,7,00032201,Loaner Registration Confirmation,Inspection,0.2,0.2
+NO,Model 3,7,00034300,TC support TAB Vehicle Configuration Change,Test/Adjust,0.2,0.2
+YES,Model 3,7,00040100,Perform Post-Repair Validation Test Drive,Test/Adjust,0.3,0.3
+YES,Model 3,7,00100004,General Diagnosis,General Diagnosis,0.5,0.5
+YES,Model 3,7,00100014,Diagnosis: Unable to Replicate Concern,General diagnosis conclusion,0.0,0.0
+YES,Model 3,7,00100024,Remote Diagnosis,Remote Diagnostics,0.3,0.3
+YES,Model 3,7,10000004,Adjustment: Body / Closure Components,Test/Adjust,0.4,0.4
+YES,Model 3,7,10010008,Tesla Body Repair - Miscellaneous Labor,Body Shop,0.0,0.0
+NO,Model 3,7,10010009,Storage Fees,Body Shop,1.0,1.0
+YES,Model 3,7,10010011,Tesla Body Repair - Structural,Body Shop,0.0,0.0
+YES,Model 3,7,10010012,Tesla Body Structural - Sheet Metal Quotation,Test/Adjust,0.6,0.6
+YES,Model 3,7,10010014,Tesla Body Structural - Sheet Metal Repair,Restore,1.0,1.0
+YES,Model 3,7,10010015,Tesla Body Structural - Reassemble Parts,Test/Adjust,1.0,1.0
+NO,Model 3,7,100111134,test ,Repair,0.5,0.5
+NO,Model 3,7,10011202,Ankle Catcher Assembly (Remove & Replace),Remove and Replace,0.78,0.78
+NO,Model 3,7,10012802,Fascia Assembly - Rear - Upper (Remove & Replace),Remove and Replace,0.72,0.72
+NO,Model 3,7,10012902,Fascia Assembly - Rear - Lower (Remove & Replace),Remove and Replace,0.66,0.66
+NO,Model 3,7,10013002,Fascia Assembly - Rear (Remove & Replace),Remove and Replace,0.72,0.72
+NO,Model 3,7,10013008,Fascia Assembly - Rear (Swap),Restore,0.96,0.96
+NO,Model 3,7,10013102,Bumper Beam - Rear (Remove & Replace),Remove and Replace,1.14,1.14
+NO,Model 3,7,10014602,Air Extractor - LH (Remove & Replace),Remove and Replace,0.9,0.9
+NO,Model 3,7,10014902,Air Extractor - RH (Remove & Replace),Remove and Replace,0.9,0.9
+NO,Model 3,7,10017652,Trailer Hitch - Rear Energy Absorber (Retrofit),Retrofit,0.96,0.96
+YES,Model 3,7,10100008,Tesla Body Repair - Mechanical Labor,Body Shop,0.0,0.0
+NO,Model 3,7,10100102202,ASSEMBLY - A PILLAR OUTER - RIGHT HAND,Remove and Replace,34.3,34.3
+NO,Model 3,7,10100102802,"ASY, A PILLAR OUTER, LEFT HAND",Remove and Replace,34.3,34.3
+NO,Model 3,7,10100121102,ASSEMBLY - B PILLAR OUTER - RIGHT HAND,Remove and Replace,21.7,21.7
+NO,Model 3,7,10100121802,"ASSEMBLY, REAR QUARTER OUTER, POWERED TRUNK, LEFT",Remove and Replace,12.5,12.5
+NO,Model 3,7,10100121902,"ASY, B PILLAR OTR, LEFT HAND",Remove and Replace,21.7,21.7
+NO,Model 3,7,10100122302,PANEL - REAR QUARTER OUTER - LEFT,Remove and Replace,7.8,7.8
+NO,Model 3,7,10100140402,Quarter Outer Assembly (Without Upper Trough),Remove and Replace,12.5,12.5
+NO,Model 3,7,10100251036,Trunk | Complete | Seam Seal,Installation,1.62,1.62
+NO,Model 3,7,10100301036,Hood | Complete | Seam Sealer,Installation,0.6,0.6
+NO,Model 3,7,10100302,Hood Assembly (Remove & Replace),Remove and Replace,0.48,0.48
+NO,Model 3,7,10100400202,ASSEMBLY - CONSOLE MOUNT - REAR,Remove and Replace,1.2,1.2
+NO,Model 3,7,10100503202,Door Outer Panels Rear,Remove and Replace,2.64,2.64
+NO,Model 3,7,10100503302,Door Outer Panels Rear,Remove and Replace,2.64,2.64
+NO,Model 3,7,10100651036,Rear Door | Complete | Seam Seal,Installation,0.6,0.6
+NO,Model 3,7,10101003402,ASSEMBLY - OUTER TOEBOARD - LEFT HAND,Remove and Replace,3.12,3.12
+NO,Model 3,7,10101003502,ASSEMBLY - REAR SHOCK TOWER SUPPORT - LEFT,Remove and Replace,8.85,8.85
+NO,Model 3,7,10101003602,ASSEMBLY - REAR SHOCK TOWER SUPPORT - RIGHT HAND,Remove and Replace,8.85,8.85
+NO,Model 3,7,10101003702,ASSEMBLY - SHOTGUN SHEAR WALL - LEFT HAND,Remove and Replace,2.34,2.34
+NO,Model 3,7,10101003802,ASSEMBLY - SHOTGUN SHEAR WALL - RIGHT HAND,Remove and Replace,2.34,2.34
+NO,Model 3,7,10101004302,PANEL - SHOCK TOWER CLOSEOUT - LEFT,Remove and Replace,4.08,4.08
+NO,Model 3,7,10101010102,Shock Tower Closeout RIGHT,Remove and Replace,4.08,4.08
+NO,Model 3,7,10101014802,ASSEMBLY - COWL TOP,Remove and Replace,3.6,3.6
+NO,Model 3,7,10101014902,ASSEMBLY - DASH WITH COWL,Remove and Replace,18.5,18.5
+NO,Model 3,7,10101015602,ASSEMBLY - SHOCK TOWER UPPER - LEFT HAND,Remove and Replace,11.8,11.8
+NO,Model 3,7,10101015702,ASSEMBLY - SHOCK TOWER UPPER - RIGHT HAND,Remove and Replace,11.8,11.8
+NO,Model 3,7,10101015902,ASSEMBLY - SHOTGUN TOWER - LEFT,Remove and Replace,8.85,8.85
+NO,Model 3,7,10101016002,ASSEMBLY - SHOTGUN TOWER - RIGHT,Remove and Replace,8.85,8.85
+NO,Model 3,7,10101016102,ASSEMBLY - TORQUE BOX OUTER - LEFT HAND,Remove and Replace,6.5,6.5
+NO,Model 3,7,10101016202,ASSEMBLY - TORQUE BOX OUTER - RIGHT HAND,Remove and Replace,6.5,6.5
+NO,Model 3,7,10101016302,ASSEMBLY DASH CROSSMEMBER,Remove and Replace,3.42,3.42
+NO,Model 3,7,10101017102,PANEL - OUTER TOEBOARD - RIGHT,Remove and Replace,3.12,3.12
+NO,Model 3,7,10101017502,PANEL - SHOTGUN OUTER - LEFT,Remove and Replace,4.2,4.2
+NO,Model 3,7,10101028302,Toeboard,Remove and Replace,10.15,10.15
+NO,Model 3,7,10101030402,Shotgun Outer,Remove and Replace,4.2,4.2
+NO,Model 3,7,10101802002,ASSEMBLY - REAR PANEL COMPLETE,Remove and Replace,5.04,5.04
+NO,Model 3,7,10101802702,PANEL - TRUNK FLOOR EXTENSION - LEFT,Remove and Replace,3.66,3.66
+NO,Model 3,7,10101802902,REAR RAIL GLOVE UPPER - LEFT,Remove and Replace,10.7,10.7
+NO,Model 3,7,10101803202,REAR RAIL GLOVE UPPER - RIGHT,Remove and Replace,10.7,10.7
+NO,Model 3,7,10101812902,ASSEMBLY - RAIL TO REAR QUARTER LOWER EXTENSION - LEFT HAND,Remove and Replace,1.38,1.38
+NO,Model 3,7,10101813002,ASSEMBLY - RAIL TO REAR QUARTER LOWER EXTENSION - RIGHT HAND,Remove and Replace,1.38,1.38
+NO,Model 3,7,10101813502,ASSEMBLY - REAR MOTOR COVER,Remove and Replace,2.76,2.76
+NO,Model 3,7,10101813602,ASSEMBLY - REAR RAIL GLOVE - LOWER,Remove and Replace,10.4,10.4
+NO,Model 3,7,10101813702,ASSEMBLY - REAR RAIL UPPER - LEFT HAND,Remove and Replace,20.6,20.6
+NO,Model 3,7,10101813802,ASSEMBLY - REAR RAIL UPPER - RIGHT HAND,Remove and Replace,20.6,20.6
+NO,Model 3,7,10101814502,"ASSEMBLY, LAMP CAN, LEFT",Remove and Replace,5.1,5.1
+NO,Model 3,7,10101814602,"ASSEMBLY, LAMP CAN, RIGHT",Remove and Replace,5.1,5.1
+NO,Model 3,7,10101814702,"ASSEMBLY, TRUNK FLOOR",Remove and Replace,4.2,4.2
+NO,Model 3,7,10101815102,"ASY,CROSSMEMBER HEELBOARD E-COATED",Remove and Replace,3.96,3.96
+NO,Model 3,7,10101815702,PANEL - QUARTER OUTER EXTENSION PANEL - LEFT HAND,Remove and Replace,1.74,1.74
+NO,Model 3,7,10101815802,PANEL - QUARTER OUTER EXTENSION PANEL - RIGHT HAND,Remove and Replace,1.74,1.74
+NO,Model 3,7,10101816002,PANEL - TRUNK FLOOR EXTENSION - RIGHT,Remove and Replace,3.66,3.66
+NO,Model 3,7,10101816102,"RAIL-REAR LOWER,LEFT HAND",Remove and Replace,25.15,25.15
+NO,Model 3,7,10101816202,"RAIL-REAR LOWER,RIGHT HAND",Remove and Replace,25.15,25.15
+NO,Model 3,7,10101822602,Third Row Seat Crossmember (Lower) Add Studs,Remove and Replace,0.3,0.3
+NO,Model 3,7,10101900202,ASSEMBLY - REAR WHEELEFTOUSE OUTER EXTENSION - RIGHT,Remove and Replace,1.68,1.68
+NO,Model 3,7,10101900302,"ASSEMBLY, C PILLAR EXTENSION, LEFT",Remove and Replace,15.1,15.1
+NO,Model 3,7,10101900402,"ASSEMBLY, C PILLAR EXTENSION, LEFT (LOWER SECTION)",Remove and Replace,10.35,10.35
+NO,Model 3,7,10101900502,"ASSEMBLY, C PILLAR EXTENSION, LEFT (UPPER SECTION)",Remove and Replace,10.0,10.0
+NO,Model 3,7,10101900902,"PANEL, REAR WHEELEFTOUSE REAR STIFFENER, LEFT",Remove and Replace,8.9,8.9
+NO,Model 3,7,10101909302,ASSEMBLY - REAR WHEELEFTOUSE OUTER EXTENSION - LEFT HAND,Remove and Replace,1.68,1.68
+NO,Model 3,7,10101909402,ASSEMBLY - WHEELEFTOUSE EXTENSION TO SILL - RIGHT,Remove and Replace,2.46,2.46
+NO,Model 3,7,10101910202,"ASY, PARCEL SHELF CROSSMEMBER",Remove and Replace,6.3,6.3
+NO,Model 3,7,10101910302,"ASY, REAR TROUGH CENTER",Remove and Replace,2.04,2.04
+NO,Model 3,7,10101910402,"ASY,DAMPER MOUNT RR-LEFT HAND",Remove and Replace,7.6,7.6
+NO,Model 3,7,10101910502,"ASY,DAMPER MOUNT RR-RIGHT",Remove and Replace,7.6,7.6
+NO,Model 3,7,10101910602,"EXTN,RR WHEELEFT HANDOUSE-LEFT HAND",Remove and Replace,2.46,2.46
+NO,Model 3,7,10101910802,PANEL - REAR PARCEL SHELF EXTENSION - LEFT HAND,Remove and Replace,1.92,1.92
+NO,Model 3,7,10101911202,PANEL - ROOF RAIL EXTENSION - LEFT HAND,Remove and Replace,10.65,10.65
+NO,Model 3,7,10101911302,PANEL - ROOF RAIL EXTENSION - RIGHT HAND,Remove and Replace,10.65,10.65
+NO,Model 3,7,10101911402,"PANEL, REAR PARCEL SHELF EXTENSION, RIGHT",Remove and Replace,1.92,1.92
+NO,Model 3,7,10101911502,"PANEL, REAR WHEELEFTOUSE REAR STIFFENER, RIGHT",Remove and Replace,8.9,8.9
+NO,Model 3,7,10101920902,Rear Wheel Arch (Section)- Right,Remove and Replace,10.15,10.15
+NO,Model 3,7,10101921002,Rear Wheel Arch (Section) - Left,Remove and Replace,10.15,10.15
+NO,Model 3,7,10101922102,Parcel Shelf Crossmember Assembly (Without Center Trough),Remove and Replace,5.64,5.64
+NO,Model 3,7,10102118,Stud - Bump Stop - Lamp Can - LH (Repair),Repair,0.48,0.48
+NO,Model 3,7,10102218,Stud - Bump Stop - Lamp Can - RH (Repair),Repair,0.48,0.48
+NO,Model 3,7,10102318,Stud - Bump Stop - Lamp Can - Pair (Repair),Repair,0.72,0.72
+NO,Model 3,7,10102900402,SILL OUTER (COMPLETE) - LEFT,Remove and Replace,37.85,37.85
+NO,Model 3,7,10102900702,SILL OUTER (COMPLETE) - RIGHT,Remove and Replace,37.85,37.85
+NO,Model 3,7,10102901202,SILL OUTER (REAR)- LEFT,Remove and Replace,11.9,11.9
+NO,Model 3,7,10102902702,ASSEMBLY - REAR JACK PAD,Remove and Replace,10.4,10.4
+NO,Model 3,7,10102904102,Sill Outer (Rear),Remove and Replace,11.9,11.9
+NO,Model 3,7,10106502,Door Assembly - Rear - LH (Remove & Replace),Remove and Replace,1.02,1.02
+NO,Model 3,7,10106552,Check Strap - Door - Rear - LH (Remove and Replace),Remove and Replace,0.6,0.6
+NO,Model 3,7,10106602,Door Assembly - Rear - RH (Remove & Replace),Remove and Replace,1.02,1.02
+NO,Model 3,7,10106652,Check Strap - Door - Rear - RH (Remove and Replace),Remove and Replace,0.6,0.6
+NO,Model 3,7,10107002,Trunk (Remove & Replace),Remove and Replace,0.9,0.9
+NO,Model 3,7,10107102,Power Trunk (Remove & Replace),Remove and Replace,0.9,0.9
+YES,Model 3,7,10108608,Tesla Body Repair - Body Labor,Body Shop,0.0,0.0
+YES,Model 3,7,10108808,Tesla Body Repair - Sublet,Body Shop,0.0,0.0
+YES,Model 3,7,10109008,Structural Body Repair,Repair,0.0,0.0
+YES,Model 3,7,10109108,Non-Structural Body Repair,Restore,0.0,0.0
+YES,Model 3,7,10182019,Customer Generated Quote - Issue (Transaction) Resolved - Bound,General diagnosis conclusion,0.0,0.0
+NO,Model 3,7,10203002,Glass - Rear Quarter - LH (Remove & Replace),Remove and Replace,1.08,1.08
+NO,Model 3,7,10203102,Glass - Rear Quarter - RH (Remove & Replace),Remove and Replace,1.08,1.08
+NO,Model 3,7,10204102,Glass - Backlight (Non-Heat Pump) (Remove & Replace),Remove and Replace,1.32,1.32
+NO,Model 3,7,10204112,Glass - Backlight (Heat Pump) (Remove & Replace),Remove and Replace,1.02,1.02
+NO,Model 3,7,10205002,Glass - Roof - Fixed (Remove & Replace),Remove and Replace,0.96,0.96
+NO,Model 3,7,10205102,Seal - Trunk Flip - Backlight (Remove & Replace),Remove and Replace,0.66,0.66
+NO,Model 3,7,10206002,Sensor - Relative Humidity and Temperature (Remove & Replace),Remove and Replace,0.3,0.3
+YES,Model 3,7,1027521,Assistance with Refund of Reservation,Test/Adjust,0.0,0.0
+NO,Model 3,7,11330002,Actuator - Active Hood Strut - RH (Remove and Replace),Remove and Replace,0.3,0.3
+NO,Model 3,7,11330502,Gas Strut - Hood - LH (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model 3,7,11330602,Gas Strut - Hood - RH (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model 3,7,11330702,C-Clips - Strut - Hood - LH (Remove and Replace),Remove and Replace,0.06,0.06
+NO,Model 3,7,11330712,C-Clips - Strut - Trunk - LH (Remove and Replace),Remove and Replace,0.06,0.06
+NO,Model 3,7,11330812,C-Clips - Strut - Trunk - RH (Remove and Replace),Remove and Replace,0.06,0.06
+NO,Model 3,7,11330902,Stop - Trunk - LH (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model 3,7,11331522,Actuator - Active Hood Strut - LH (Remove & Replace),Remove and Replace,0.3,0.3
+NO,Model 3,7,11332902,C-Clips - Strut - Hood - RH (Remove and Replace),Remove and Replace,0.06,0.06
+NO,Model 3,7,11333502,Power Strut - Trunk (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model 3,7,11334002,Gas Strut - Trunk - LH (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model 3,7,11334102,Gas Strut - Trunk - RH (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model 3,7,11339002,Stop - Trunk - RH (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model 3,7,11352002,Latch - Hood (Remove & Replace),Remove and Replace,0.18,0.18
+NO,Model 3,7,11352902,Striker - Hood (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model 3,7,11353402,Striker - Trunk (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model 3,7,11353702,Latch - Door - Rear - LH  (Remove & Replace),Remove and Replace,0.6,0.6
+NO,Model 3,7,11353802,Latch - Door - Rear - RH  (Remove & Replace),Remove and Replace,0.6,0.6
+NO,Model 3,7,11354002,Striker - Door - Rear - LH (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model 3,7,11354102,Striker - Door - Rear - RH (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model 3,7,11355002,Latch - Trunk (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model 3,7,11355202,Actuator - Latch - Hood - Primary (Remove & Replace),Remove and Replace,0.24,0.24
+NO,Model 3,7,11355302,Actuator - Latch - Hood - Secondary (Remove & Replace),Remove and Replace,0.18,0.18
+NO,Model 3,7,11355602,Switch - Trunk - Exterior (Remove & Replace),Remove and Replace,0.18,0.18
+NO,Model 3,7,11355612,Switch and Camera Assembly - Exterior Release - Trunk (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model 3,7,11358005,Manual Release - Door - Rear - LH (Actuate),Maintenance,0.05,0.05
+NO,Model 3,7,11359005,Manual Release - Door - Rear - RH (Actuate),Maintenance,0.05,0.05
+NO,Model 3,7,11452002,Handle - Exterior Release - Door - Rear - LH (Remove & Replace),Remove and Replace,0.6,0.6
+NO,Model 3,7,11452102,Handle - Exterior Release - Door - Rear - RH (Remove & Replace),Remove and Replace,0.6,0.6
+NO,Model 3,7,11455102,Hall Sensor - Exterior Release - Door - Rear - LH (Remove & Replace),Remove and Replace,0.6,0.6
+NO,Model 3,7,11456102,Hall Sensor - Exterior Release - Door - Rear - RH (Remove & Replace),Remove and Replace,0.6,0.6
+NO,Model 3,7,11500102707,Rear Door Glass Bolt Torque,Modify,0.12,0.12
+NO,Model 3,7,11500302,Door Glass - LH - Rear (Remove & Replace),Remove and Replace,0.36,0.36
+NO,Model 3,7,11500402,Door Glass - RH - Rear (Remove & Replace),Remove and Replace,0.36,0.36
+YES,Model 3,7,11700004,Adjustment: Seal,Test/Adjust,0.2,0.2
+NO,Model 3,7,11700802,Seal - B-Pillar Applique - LH (Remove & Replace),Remove and Replace,0.6,0.6
+NO,Model 3,7,11700902,Seal - B-Pillar Applique - RH (Remove & Replace),Remove and Replace,0.6,0.6
+NO,Model 3,7,11701402,Closeout Panel - Door - Rear - LH (Remove & Replace),Remove and Replace,0.6,0.6
+NO,Model 3,7,11701502,Closeout Panel - Door - Rear - RH (Remove & Replace),Remove and Replace,0.6,0.6
+NO,Model 3,7,11701802,Seal - Hood (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model 3,7,11702002,Seal - Trunk (Remove & Replace),Remove and Replace,0.18,0.18
+NO,Model 3,7,11702502,Seal - Outer Belt - Rear Door - RH (Remove and Replace),Remove and Replace,0.06,0.06
+NO,Model 3,7,11704402,Seal - Outer Belt - Rear Door - LH (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model 3,7,11704502,Seal - Outer Belt - Rear Door- RH (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model 3,7,11705402,Seal - Secondary - Rear Door - LH (Remove & Replace),Remove and Replace,0.42,0.42
+NO,Model 3,7,11705502,Seal - Secondary - Rear Door - RH (Remove & Replace),Remove and Replace,0.42,0.42
+YES,Model 3,7,12000004,Adjustment: Exterior Trim,Test/Adjust,0.2,0.2
+NO,Model 3,7,12010202,Noise Absorber - Motor Bay - Rear (Remove & Replace),Remove and Replace,3.72,3.72
+NO,Model 3,7,12030502,Panel - Aero Shield - Rear (Remove & Replace),Remove and Replace,0.18,0.18
+NO,Model 3,7,12030802,Diffuser - Rear Fascia (Remove & Replace),Remove and Replace,0.24,0.24
+NO,Model 3,7,12036002,Cover - Trailer Hitch (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model 3,7,12050602,Vehicle Configuration Badge (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model 3,7,12050606,Vehicle Configuration Badge (Retrofit),Retrofit,0.12,0.12
+NO,Model 3,7,12050607,Vehicle Configuration Badge (Remove),Modify,0.06,0.06
+NO,Model 3,7,12050702,Tesla Badge - Rear (Remove & Replace),Remove and Replace,0.24,0.24
+NO,Model 3,7,12091102,Door Mirror Assembly - LH (Remove & Replace),Remove and Replace,0.24,0.24
+NO,Model 3,7,12091202,Door Mirror Assembly - RH (Remove & Replace),Remove and Replace,0.24,0.24
+NO,Model 3,7,12091702,Skull Cap - Door Mirror - LH (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model 3,7,12091802,Skull Cap - Door Mirror - RH (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model 3,7,12092002,Glass - Door Mirror - LH (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model 3,7,12092102,Glass - Door Mirror - RH (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model 3,7,12200102,Applique - B-Pillar - LH (Remove & Replace),Remove and Replace,0.18,0.18
+NO,Model 3,7,12200112,Cover - Applique - B-Pillar - LH (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model 3,7,12200122,Cover - Applique - B-Pillar - RH (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model 3,7,12200202,Applique - B-Pillar - RH (Remove & Replace),Remove and Replace,0.18,0.18
+NO,Model 3,7,12201102,Applique - A-Pillar - LH (Remove & Replace),Remove and Replace,0.3,0.3
+NO,Model 3,7,12201112,Applique - A-Pillar - RH (Remove & Replace),Remove and Replace,0.3,0.3
+NO,Model 3,7,12202602,Cover - Rocker Panel - Lower - LH (Remove & Replace),Remove and Replace,0.18,0.18
+NO,Model 3,7,12202702,Cover - Rocker Panel - Lower - RH (Remove & Replace),Remove and Replace,0.18,0.18
+NO,Model 3,7,12207006,Mud Flaps (Retrofit),Retrofit,0.12,0.12
+NO,Model 3,7,12207102,Mud Flap - LH (Remove and Replace),Remove and Replace,0.12,0.12
+NO,Model 3,7,12207202,Mud Flap - RH (Remove and Replace),Remove and Replace,0.12,0.12
+NO,Model 3,7,12207351,Self-Test for USS,Test/Adjust,0.06,0.06
+NO,Model 3,7,12208006,Splash Guards (Retrofit),Retrofit,0.24,0.24
+NO,Model 3,7,12208102,Splash Guard - LH (Remove and Replace),Remove and Replace,0.12,0.12
+NO,Model 3,7,12208202,Splash Guard - RH (Remove and Replace),Remove and Replace,0.12,0.12
+YES,Model 3,7,12208583,Mud Flaps (PDI Retrofit),Retrofit,0.0,0.0
+NO,Model 3,7,12220402,Spoiler - Rear (Remove & Replace),Remove and Replace,0.3,0.3
+NO,Model 3,7,12220407,Spoiler - Rear (Remove),Modify,0.18,0.18
+NO,Model 3,7,12250902,Panel - Cowl Screen (Remove & Replace),Remove and Replace,0.3,0.3
+NO,Model 3,7,12251002,Cover - Shock Tower - LH (Remove & Replace),Remove and Replace,0.18,0.18
+NO,Model 3,7,12251012,Cover - Shock Tower - LH (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model 3,7,12251112,Cover - Shock Tower - RH (Remove & Replace),Remove and Replace,0.18,0.18
+NO,Model 3,7,12259802,Panel - Cowl Screen (Remove & Replace) (RHD),Remove and Replace,0.3,0.3
+NO,Model 3,7,12300202,Assembly - Trailer Hitch (Remove & Replace),Remove and Replace,0.84,0.84
+NO,Model 3,7,12302102,ECU - Trailer Hitch (Remove and Replace),Remove and Replace,0.54,0.54
+YES,Model 3,7,12302302,Ball Neck - Trailer Hitch (Remove and Replace),Remove and Replace,0.12,0.12
+NO,Model 3,7,12400002,Roof Rack (Remove),Remove and Replace,0.36,0.36
+NO,Model 3,7,12505714,Vehicle Wrap – Door Jambs (Add-On),Retrofit,0.0,0.0
+NO,Model 3,7,12505744,Vehicle Wrap – (Removal),Retrofit,0.0,0.0
+YES,Model 3,7,13000004,Diagnosis: Seats,Test/Adjust,0.5,0.5
+NO,Model 3,7,13010202,Seat Track Assembly - 1st Row - RH (Remove & Replace),Remove and Replace,0.72,0.72
+NO,Model 3,7,13011202,Motor - Seat Track - Driver Seat (Remove & Replace),Remove and Replace,0.42,0.42
+NO,Model 3,7,13011502,Motor - Seat Tilt - Driver Seat (Remove & Replace),Remove and Replace,0.3,0.3
+NO,Model 3,7,13011602,Motor - Seat Height - Driver Seat (Remove & Replace),Remove and Replace,0.48,0.48
+NO,Model 3,7,13011822,Cover - Rear - Seat Track - 1st Row Seat (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model 3,7,13015102,Switch - Back Rest and Cushion Adjust - Driver Seat (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model 3,7,13018102,Button - Cushion Adjust - Driver Seat (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model 3,7,13020300501,Giorgi Test,Remove and Install,0.6,0.6
+NO,Model 3,7,13020300502,Giorgi Test,Remove and Replace,0.6,0.6
+NO,Model 3,7,13040102,1st Row Seat Assembly - LH (Remove & Replace),Remove and Replace,0.42,0.42
+NO,Model 3,7,13040202,1st Row Seat Assembly - RH (Remove & Replace),Remove and Replace,0.54,0.54
+NO,Model 3,7,13041002,Shell - Seat Back - Driver (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model 3,7,13042002,Trim - Headrest - Driver (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model 3,7,13050902,Trim - Headrest - 2nd Row - Center (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model 3,7,13051002,Seat Cushion - Lower - 2nd Row (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model 3,7,13052002,Rail - 2nd Row - Outer - LH (Remove & Replace),Remove and Replace,0.24,0.24
+NO,Model 3,7,13052102,Rail - 2nd Row - Outer - RH (Remove & Replace),Remove and Replace,0.24,0.24
+NO,Model 3,7,13053502,Cap - HV - Ancillary Bay (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model 3,7,13053602,Cap - 12V - Ancillary Bay (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model 3,7,13054002,Seat Back Assembly - 2nd Row - LH (Remove & Replace),Remove and Replace,0.24,0.24
+NO,Model 3,7,13054012,Handle - Seat Back - 2nd Row - LH (Remove & Replace),Remove and Replace,0.6,0.6
+NO,Model 3,7,13054102,Seat Back Assembly - 2nd Row - RH (Remove & Replace),Remove and Replace,0.18,0.18
+NO,Model 3,7,13054112,Handle - Seat Back - 2nd Row - RH (Remove and Replace),Remove and Replace,0.6,0.6
+NO,Model 3,7,13055102,Bolster - Outer - Seat - 2nd Row - LH (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model 3,7,13055202,Bolster - Outer - Seat - 2nd Row - RH (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model 3,7,13055302,Bezel - Handle - Seat Back - 2nd Row - LH (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model 3,7,13055402,Bezel - Handle - Seat Back - 2nd Row - RH (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model 3,7,13055902,Latch - Seat Back - 2nd Row Seat - LH (Remove & Replace),Remove and Replace,0.6,0.6
+NO,Model 3,7,13056002,Latch - Seat Back - 2nd Row Seat - RH (Remove & Replace),Remove and Replace,0.6,0.6
+NO,Model 3,7,13056302,Striker - Seat Back - 2nd Row Seat - LH (Remove & Replace),Remove and Replace,0.36,0.36
+NO,Model 3,7,13056402,Striker - Seat Back - 2nd Row Seat - RH (Remove & Replace),Remove and Replace,0.36,0.36
+NO,Model 3,7,13056902,Clip - Seat Cushion- Lower- 2nd Row -LH (Remove and Replace),Remove and Replace,0.06,0.06
+NO,Model 3,7,13057102,Pivot Sleeve - Seat Back - 2nd Row Seat - LH (Remove & Replace),Remove and Replace,0.24,0.24
+NO,Model 3,7,13057202,Pivot Sleeve - Seat Back - 2nd Row Seat - RH (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model 3,7,13058002,Armrest - 2nd Row (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model 3,7,13058012,Closeout - Armrest - 2nd Row (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model 3,7,13070102,Foam - Cushion - Driver Seat (Remove & Replace),Remove and Replace,0.66,0.66
+NO,Model 3,7,13071122,Suspension - Seat Cushion - Driver Seat (Remove & Replace),Remove and Replace,0.48,0.48
+NO,Model 3,7,13072002,Trim - Seat Back - Driver Seat (Remove & Replace),Remove and Replace,0.78,0.78
+NO,Model 3,7,13072202,Trim - Cushion - Driver Seat (Remove & Replace),Remove and Replace,0.6,0.6
+NO,Model 3,7,13072602,Foam - Seat Back - Driver Seat (Remove & Replace),Remove and Replace,0.84,0.84
+NO,Model 3,7,13081002,Cover - Seat Back - 2nd Row Seat - RH (Remove & Replace),Remove and Replace,0.6,0.6
+NO,Model 3,7,13081102,Cover - Seat Back - 2nd Row Seat - LH (Remove & Replace),Remove and Replace,0.6,0.6
+YES,Model 3,7,14050002,USB Drive,Remove and Replace,0.06,0.06
+NO,Model 3,7,14051002,Glove Box (Non-Heat Pump) (Remove & Replace),Remove and Replace,0.54,0.54
+NO,Model 3,7,14051012,Glove Box (Without Knee Airbags) (Remove & Replace),Remove and Replace,0.24,0.24
+NO,Model 3,7,14051022,Glove Box - With Knee Airbag (Heat Pump) (Remove & Replace),Remove and Replace,0.36,0.36
+NO,Model 3,7,14051102,Solenoid - Glove Box (Remove & Replace),Remove and Replace,0.6,0.6
+NO,Model 3,7,14051202,Damper - Glove Box (Remove & Replace),Remove and Replace,0.6,0.6
+NO,Model 3,7,14051302,NVH Pad - Glove Box (Remove & Replace),Remove and Replace,0.36,0.36
+NO,Model 3,7,14052122,IP Carrier (RHD) (Remove and Replace),Remove and Replace,2.16,2.16
+NO,Model 3,7,14052202,Cross Car Beam (LHD) (Remove & Replace),Remove and Replace,3.6,3.6
+NO,Model 3,7,14055102,End Cap - Air Wave - LH (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model 3,7,14055202,End Cap - Air Wave - RH (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model 3,7,14055212,Cross Car Beam (RHD) (Remove & Replace),Remove and Replace,2.04,2.04
+NO,Model 3,7,14055302,Cover - Footwell - Driver (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model 3,7,14055402,Cover - Footwell - Passenger (LHD) (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model 3,7,14055412,Cover - Footwell - Passenger (RHD) (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model 3,7,14056002,Cover - Knee Airbag - Driver (Remove & Replace),Remove and Replace,0.36,0.36
+NO,Model 3,7,14056302,Glove Box (Without Knee Airbags) (Remove & Replace) （RHD）,Remove and Replace,0.24,0.24
+NO,Model 3,7,15050202,Mirror - Rear View (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model 3,7,15050212,Bezel - Rear View Mirror (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model 3,7,15050402,Assembly - Mirror - Sun Visor - LH (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model 3,7,15050702,Assembly - Mirror - Sun Visor - RH (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model 3,7,15050902,Quad Camera Cover – Lower (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model 3,7,15051002,Sun Visor - Driver (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model 3,7,15051052,Check Base - Sun Visor - Driver (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model 3,7,15051072,Check Base - Magnetic - Sun Visor - Driver (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model 3,7,15051301,Glare Shield - Rear View Mirror,Remove and Install,0.12,0.12
+NO,Model 3,7,15051802,Quad Camera Cover - Upper (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model 3,7,15110102,Cover - Latch - Power Trunk (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model 3,7,15110202,Trim - Lid - Power Trunk (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model 3,7,15111102,Garnish - Trunk (Remove and Replace),Remove and Replace,0.06,0.06
+NO,Model 3,7,15111107,Garnish - Trunk (Modify),,0.12,0.12
+NO,Model 3,7,15111902,Trim - Lid - Trunk (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model 3,7,15112102,Speaker Grille - Parcel Shelf - LH (Remove and Replace),Remove and Replace,0.3,0.3
+NO,Model 3,7,15112402,Speaker Grille - Parcel Shelf - RH (Remove and Replace),Remove and Replace,0.3,0.3
+YES,Model 3,7,15130004,Diagnosis: Closures,General Diagnosis,0.65,0.65
+NO,Model 3,7,15132002,Panel - Door Trim - Rear - LH (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model 3,7,15132102,Panel - Door Trim - Rear - RH (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model 3,7,15132702,NVH Pad - Panel - Door Trim - Rear - LH (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model 3,7,15132802,NVH Pad - Panel - Door Trim - Rear - RH (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model 3,7,15180502,Trim - Sill Panel - Rear - LH (Remove & Replace),Remove and Replace,0.18,0.18
+NO,Model 3,7,15180602,Trim - Sill Panel - Rear - RH (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model 3,7,15182402,Trim - A-Pillar - Lower - LH (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model 3,7,15182502,Trim - A-Pillar - Lower - RH (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model 3,7,15182602,Trim - A-Pillar - Middle - LH (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model 3,7,15182702,Trim - A-Pillar - Middle - RH (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model 3,7,15183002,Trim - B-Pillar - Upper - LH (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model 3,7,15183102,Trim - B-Pillar - Upper - RH (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model 3,7,15183402,Trim - B-Pillar - Lower - LH (Remove & Replace),Remove and Replace,0.24,0.24
+NO,Model 3,7,15183502,Trim - B-Pillar - Lower - RH (Remove & Replace),Remove and Replace,0.24,0.24
+NO,Model 3,7,15184002,Trim - A-Pillar - Upper - LH (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model 3,7,15184102,Trim - A-Pillar - Upper - RH (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model 3,7,15185002,Footrest - Driver (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model 3,7,15185102,Trim - C-Pillar - Rear - LH (Remove & Replace),Remove and Replace,0.24,0.24
+NO,Model 3,7,15185202,Trim - C-Pillar - Rear - RH (Remove & Replace),Remove and Replace,0.18,0.18
+NO,Model 3,7,15186002,Trim - C-Pillar - Upper - LH (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model 3,7,15186102,Trim - C-Pillar - Upper - RH (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model 3,7,15190102,Center Console (1.0) (Remove & Replace),Remove and Replace,0.6,0.6
+NO,Model 3,7,15190112,Center Console (2.0) (Remove & Replace),Remove and Replace,0.6,0.6
+NO,Model 3,7,15190502,Air Vent - Center Console (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model 3,7,15190702,Panel - Air Vent - Center Console (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model 3,7,15192002,Trim - Center Console - Rear (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model 3,7,15192502,Armrest - Center Console (Remove & Replace),Remove and Replace,0.24,0.24
+NO,Model 3,7,15195002,End Panel - Center Console (Remove & Replace),Remove and Replace,0.18,0.18
+NO,Model 3,7,15195202,Panel - Lower Rear - Center Console (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model 3,7,15196402,Phone Tray - Center Console (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model 3,7,15196602,Puddle Lamp - Center Console,Remove and Replace,0.36,0.36
+NO,Model 3,7,15202402,Overhead Console - Rear (Remove & Replace),Remove and Replace,0.18,0.18
+NO,Model 3,7,15241102,Hood Latch Cover (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model 3,7,15243002,Trim - Package Tray (Remove & Replace),Remove and Replace,0.42,0.42
+NO,Model 3,7,15243102,Flip Door - Tether Anchor - LH (Remove and Replace),Remove and Replace,0.42,0.42
+NO,Model 3,7,15243202,Flip Door - Tether Anchor - Center (Remove and Replace),Remove and Replace,0.36,0.36
+NO,Model 3,7,15243302,Flip Door - Tether Anchor - RH (Remove and Replace),Remove and Replace,0.36,0.36
+NO,Model 3,7,15244802,Trim - Sill - Trunk (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model 3,7,15245302,Trim - Floor - Rear Trunk (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model 3,7,15245402,Carpet - Rear Trunk (Remove & Replace),Remove and Replace,0.42,0.42
+NO,Model 3,7,15301902,Floor Mat Set (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model 3,7,15302702,Rear Carpet - Trunk (2-Piece) (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model 3,7,15303202,Carpet – Rear (Remove & Replace),Remove and Replace,0.84,0.84
+NO,Model 3,7,1601010062,Ski Cover - HV Battery - Center,Remove and Replace,1.14,1.14
+NO,Model 3,7,16010101,HV Battery (RWD),Remove and Install,3.54,3.54
+NO,Model 3,7,16010102,HV Battery (RWD),Remove and Replace,5.4,5.4
+NO,Model 3,7,16010103201,TBPRM3 - 04000,Remove and Install,0.0,0.0
+NO,Model 3,7,16010103202,TBPRM3 - 04000,Remove and Replace,0.0,0.0
+NO,Model 3,7,16010116,"Retrofit LFP HV Battery, Suspension, and Chassis Components",Retrofit,7.4,7.4
+NO,Model 3,7,16010126,Retrofit Enhanced HV Battery and Suspension Components,Retrofit,7.25,7.25
+YES,Model 3,7,16010201,HV Battery (AWD),Remove and Install,3.6,3.6
+YES,Model 3,7,16010202,HV Battery (AWD),Remove and Replace,5.4,5.4
+NO,Model 3,7,16010500,HV Battery Health Test,Inspection,0.15,0.15
+NO,Model 3,7,16011002,Flood Port - LH (Remove & Replace),Remove and Replace,0.84,0.84
+NO,Model 3,7,16011102,Flood Port - RH (Remove & Replace),Remove and Replace,0.84,0.84
+NO,Model 3,7,16014567,PTC Heater Electronics,Retrofit,1.14,1.14
+YES,Model 3,7,16015300,Discharge HV Battery (At Pack Contactors),Test/Adjust,0.96,0.96
+NO,Model 3,7,16019725,Check SOC Imbalance,Inspection,0.2,0.2
+NO,Model 3,7,16100400,Ancillary Bay Air Leak Test,Inspection,0.54,0.54
+NO,Model 3,7,16100410,Ancillary Bay Air Leak Test (Busbar Type),Test/Adjust,0.42,0.42
+NO,Model 3,7,16101002,Cover - Ancillary Bay (Remove & Replace),Remove and Replace,1.08,1.08
+NO,Model 3,7,16101602,Cover - HV Probe - HV Battery (Remove & Replace),Remove and Replace,0.36,0.36
+NO,Model 3,7,16102000,Platter Enclosure Air Leak Test,Test/Adjust,0.6,0.6
+NO,Model 3,7,16102010,Platter Enclosure Coolant Leak Test,Inspection,1.38,1.38
+YES,Model 3,7,16102100,HV Battery Air Leak Test,Test/Adjust,0.6,0.6
+NO,Model 3,7,16102102,Vent Assembly - HV Battery - LH (Remove & Replace),Remove and Replace,0.6,0.6
+NO,Model 3,7,16102112,Vent Assembly - HV Battery - RH (Remove & Replace),Remove and Replace,0.6,0.6
+NO,Model 3,7,16102202,Skid Plate - HV Battery - Rear (Remove & Replace),Remove and Replace,0.48,0.48
+NO,Model 3,7,16102602,Ski - Center Rail - HV Battery (Remove & Replace),Remove and Replace,1.26,1.26
+NO,Model 3,7,16102612,Ski - Center Rail - HV Battery (Dual Motor) (Remove & Replace),Remove and Replace,2.1,2.1
+NO,Model 3,7,16102702,Flood Ports - 2nd Generation (Remove & Replace),Remove and Replace,0.36,0.36
+NO,Model 3,7,16102706,Flood Ports - 2nd Generation (Retrofit),Retrofit,0.9,0.9
+NO,Model 3,7,16103002,Seal - Perimeter - HV Battery (Remove & Replace),Remove and Replace,3.6,3.6
+NO,Model 3,7,16106486,Vent Assembly - HV Battery - Pair (Remove & Replace),Remove and Replace,0.72,0.72
+NO,Model 3,7,16200200,Ancillary Bay Coolant Leak Test,Inspection,2.16,2.16
+NO,Model 3,7,16202202,Tube - Output - Coolant - Power Conversion System (Remove & Replace),Remove and Replace,2.52,2.52
+NO,Model 3,7,16300002,Pyrotechnic Battery Disconnect (Remove & Replace),Remove and Replace,1.26,1.26
+YES,Model 3,7,16300100,Resistance Meter (Zero Adjust),Test/Adjust,0.05,0.05
+NO,Model 3,7,16300107,Cover - Ancillary Bay (Swap) (Battery On Table),Modify,0.36,0.36
+NO,Model 3,7,16300207,Controller - High Voltage (Rework) (Battery On Table),Modify,0.24,0.24
+NO,Model 3,7,16300307,Cover - Ancillary Bay (Rework) (Battery On Table,Modify,0.06,0.06
+NO,Model 3,7,16301002,Power Conversion System (3-Phase) (Remove & Replace),Remove and Replace,2.58,2.58
+NO,Model 3,7,16301601,HV Controller,Remove and Install,1.08,1.08
+NO,Model 3,7,16301602,HV Controller,Remove and Replace,1.32,1.32
+NO,Model 3,7,16302002,Contactor - Negative  - HV Battery (Remove & Replace),Remove and Replace,1.38,1.38
+NO,Model 3,7,16302102,Contactor - Positive - HV Battery (Remove and Replace),Remove and Replace,1.56,1.56
+NO,Model 3,7,16302602,Contactor - Fast Charge - HV Battery (Remove & Replace),Remove and Replace,1.98,1.98
+NO,Model 3,7,16303002,Busbar - HV Battery - Negative (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model 3,7,16303102,Busbar - HV Battery - Positive (Remove & Replace),Remove and Replace,1.2,1.2
+NO,Model 3,7,16303602,Shunt - HV Battery (Remove & Replace),Remove and Replace,1.2,1.2
+NO,Model 3,7,16304102,Seal - Probe Lid - HV Battery (Remove and Replace),Remove and Replace,0.3,0.3
+NO,Model 3,7,16304202,Fuse - A/C Compressor - HV Battery (Remove & Replace),Remove and Replace,1.08,1.08
+NO,Model 3,7,16304402,Fuse - Power Conversion System - HV Battery (Remove & Replace),Remove and Replace,1.08,1.08
+NO,Model 3,7,16305002,Harness - Ancillary Bay - HV Battery (Remove & Replace),Remove and Replace,3.96,3.96
+NO,Model 3,7,16305102,Harness - HV Battery - PCS to HV Modules (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model 3,7,16306002,Passthrough - DCDC - 12V (Remove & Replace),Remove and Replace,1.2,1.2
+NO,Model 3,7,16306052,Passthrough - DCDC - 12V (Cable Type) (Remove and Replace),Remove and Replace,1.2,1.2
+NO,Model 3,7,16306402,Busbar - Contactor - Positive - HV Battery (Remove and Replace),Remove and Replace,3.06,3.06
+NO,Model 3,7,16307102,AC Filter - Harness - Ancillary Bay - HV Battery (Remove & Replace),Remove and Replace,0.0,0.0
+NO,Model 3,7,16307152,AC Filter - Harness - Ancillary Bay - HV Battery (3-Phase) (Remove & Replace),Remove and Replace,1.56,1.56
+NO,Model 3,7,16309000,HV Battery Contactor Seize Check,Test/Adjust,1.14,1.14
+NO,Model 3,7,16309902,Switch - Pack Contactors - Ancillary Bay - HV Battery (Remove and Replace),Remove and Replace,1.56,1.56
+NO,Model 3,7,16900308,HV Battery Damage Evaluation (Reman),Retrofit,1.0,1.0
+NO,Model 3,7,16900508,HV Battery Safety Check (Reman),Retrofit,1.0,1.0
+NO,Model 3,7,16901808,Battery Enclosure Replacement (Reman),Sublet,0.0,0.0
+NO,Model 3,7,16901908,Battery Module Replacement (Reman),Sublet,0.0,0.0
+NO,Model 3,7,16902408,Charge/Discharge Test (Reman),Sublet,0.0,0.0
+NO,Model 3,7,16902608,Battery Reassembly (Reman),Sublet,0.0,0.0
+NO,Model 3,7,16902808,Battery Module Repair (Reman),Sublet,0.0,0.0
+NO,Model 3,7,16903108,HV Battery Coolant Leak Rectification (Reman),Retrofit,1.0,1.0
+NO,Model 3,7,16904008,Enclosure - HV Battery - Remanufactured (Reman),Retrofit,5.35,5.35
+NO,Model 3,7,16904208,Enclosure - HV Battery - New (Reman),Retrofit,4.6,4.6
+NO,Model 3,7,16904508,Baffle - Vent - HV Battery (Reman),Retrofit,0.15,0.15
+NO,Model 3,7,16905008,Battery Management System (BMS) (Reman),Retrofit,0.45,0.45
+NO,Model 3,7,16906208,Modules - HV Battery - Upper (Reman),Retrofit,0.25,0.25
+NO,Model 3,7,16906408,Modules - HV Battery - Lower (Reman),Retrofit,0.7,0.7
+YES,Model 3,7,17000004,Diagnosis: Driver Assistance,General Diagnosis,0.5,0.5
+YES,Model 3,7,17000008,Jumpstart Vehicle (Restore),Restore,0.06,0.06
+YES,Model 3,7,17010000,Vehicle HV Disablement Procedure,Test/Adjust,0.3,0.3
+NO,Model 3,7,17010008,LV Battery - Recover (Heat Pump),Restore,0.06,0.06
+NO,Model 3,7,17010400,12V Power (Lead Acid) (Heat Pump) (Disconnect & Connect),,0.06,0.06
+NO,Model 3,7,17010410,LV Power (Li-Ion) (Disconnect & Connect),Modify,0.06,0.06
+NO,Model 3,7,17011002,Vent Hose - 12V Battery (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model 3,7,17011202,Battery - 12V (Lead Acid) (Remove & Replace),Remove and Replace,0.18,0.18
+NO,Model 3,7,17011232,Battery - LV (Li-Ion) (Remove & Replace),Remove and Replace,0.18,0.18
+NO,Model 3,7,17012702,Beam - 12V Battery (RWD) (Remove & Replace),Remove and Replace,0.72,0.72
+NO,Model 3,7,17012712,Beam - 12V Battery (Dual Motor) (Remove & Replace),Remove and Replace,1.56,1.56
+NO,Model 3,7,17014202,Strap - 12V Battery (Remove & Replace),Remove and Replace,0.12,0.12
+YES,Model 3,7,17100008,Harness Connector - Reconnect,Restore,0.1,0.1
+NO,Model 3,7,17100302,Harness - Center Console (Remove & Replace),Remove and Replace,0.6,0.6
+NO,Model 3,7,17100802,Harness - Body - LH (Non-Busbar) (LHD) (Remove & Replace),Remove and Replace,3.0,3.0
+NO,Model 3,7,17100852,Harness - Body - LH (RHD) (Remove & Replace),Remove and Replace,3.24,3.24
+NO,Model 3,7,17100862,Harness - Body - LH (Busbar) (RHD) (Remove & Replace),Remove and Replace,3.54,3.54
+NO,Model 3,7,17100872,Harness - Body - LH (Busbar) (LHD) (Remove & Replace),Remove and Replace,2.88,2.88
+NO,Model 3,7,17100902,Harness - Body - RH (LHD) (Remove & Replace),Remove and Replace,3.72,3.72
+NO,Model 3,7,17100952,Harness - Body - RH (RHD) (Remove & Replace),Remove and Replace,3.6,3.6
+NO,Model 3,7,17101102,Harness - Fascia - Rear (Remove & Replace),Remove and Replace,0.66,0.66
+NO,Model 3,7,17101302,Harness - Thermal Beam (Remove & Replace),Remove and Replace,0.54,0.54
+NO,Model 3,7,17101542,Harness - Sub Assembly - Thermal (Heat Pump) (Remove & Replace),Remove and Replace,0.6,0.6
+NO,Model 3,7,17102012,Jumper Harness - Trailer Hitch (Remove and Replace),Remove and Replace,0.66,0.66
+NO,Model 3,7,17102402,Busbar - DCDC Ground (Remove & Replace),Remove and Replace,0.24,0.24
+NO,Model 3,7,17102802,Harness - Rear Door - LH (Remove & Replace),Remove and Replace,0.84,0.84
+NO,Model 3,7,17102902,Harness - Rear Door - RH (Remove & Replace),Remove and Replace,0.42,0.42
+NO,Model 3,7,17103802,Harness - Seat - Driver (Remove and Replace)(RHD),Remove and Replace,0.66,0.66
+NO,Model 3,7,17104102,Harness - HVAC Assembly (Heat Pump) (Remove & Replace),Remove and Replace,3.66,3.66
+NO,Model 3,7,17104502,Harness - Trunk (Remove & Replace),Remove and Replace,0.54,0.54
+YES,Model 3,7,17105006,Wire - Electrical Harness (Overlay),Retrofit,0.0,0.0
+NO,Model 3,7,17106002,Harness - 12V Battery + (Remove & Replace),Remove and Replace,0.96,0.96
+NO,Model 3,7,17106202,Harness - 12V Battery Ground (Remove & Replace),Remove and Replace,1.08,1.08
+NO,Model 3,7,17106802,Harness - USB - Car Computer To Glove Box (LHD) (Remove & Replace),Remove and Replace,0.42,0.42
+NO,Model 3,7,17106852,Harness - USB - Car Computer To Glove Box (RHD) (Remove & Replace),Remove and Replace,0.36,0.36
+YES,Model 3,7,17108100,Diagnosis: Low Voltage Distribution and Controllers,General Diagnosis,1.0,1.0
+NO,Model 3,7,17108302,Harness - Filter - Antenna - LH (Remove & Replace),Remove and Replace,0.36,0.36
+NO,Model 3,7,17108402,Harness - Filter - Antenna - RH (Remove & Replace),Remove and Replace,0.36,0.36
+NO,Model 3,7,17130100019,M3 Headlights (Check Alignment),Inspection,0.18,0.18
+NO,Model 3,7,17150016,Electronic Toll Collection System (Retrofit),Retrofit,0.6,0.6
+NO,Model 3,7,17152102,Module - Body Controller - LH (LHD) (Non-Heat Pump) (Remove & Replace),Remove and Replace,0.72,0.72
+NO,Model 3,7,17152112,Module - Body Controller - LH (LHD) (Heat Pump) (Remove & Replace),Remove and Replace,0.54,0.54
+NO,Model 3,7,17152152,Module - Body Controller - LH (RHD) (Non-Heat Pump) (Remove & Replace),Remove and Replace,0.78,0.78
+NO,Model 3,7,17152202,Module - Body Controller - RH (Remove & Replace),Remove and Replace,1.14,1.14
+NO,Model 3,7,17152212,Module - Body Controller - RH (LHD) (Heat Pump) (Remove & Replace),Remove and Replace,0.96,0.96
+NO,Model 3,7,17152252,Module - Body Controller - RH (RHD) (Non-Heat Pump) (Remove and Replace),Remove and Replace,0.9,0.9
+NO,Model 3,7,17153582,Module - Body Controller - LH (RHD) (Heat Pump) (Remove & Replace),Remove and Replace,0.48,0.48
+NO,Model 3,7,17303002,Power Socket 12V - Center Console (Remove & Replace),Remove and Replace,0.36,0.36
+NO,Model 3,7,17350902,Task Light - Footwell Cover - RH (Remove and Replace),Remove and Replace,0.06,0.06
+NO,Model 3,7,17351702,Puddle Light - Footwell Cover - RH (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model 3,7,17352202,Puddle Light - Rear Door - LH (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model 3,7,17352302,Puddle Light - Rear Door - RH (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model 3,7,17354202,Light - Trunk (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model 3,7,17355102,Task Light - Footwell Cover - LH (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model 3,7,17400100,Headlights - Adjust - NA (Wall Method),Test/Adjust,0.12,0.12
+NO,Model 3,7,17400102,Headlight  - LH (Remove & Replace),Remove and Replace,0.54,0.54
+NO,Model 3,7,17400106,Headlamps (SAE-to-Global) - Headlamp Assembly - Pair (Retrofit),Retrofit,0.6,0.6
+YES,Model 3,7,17400150,Headlights - Adjust - NA (Tool Method),Test/Adjust,0.18,0.18
+NO,Model 3,7,17400160,Headlights - Adjust - Global (Wall Method),Test/Adjust,0.18,0.18
+NO,Model 3,7,17400170,Headlights - Adjust - Global (Tool Method),Test/Adjust,0.18,0.18
+NO,Model 3,7,17400202,Headlight - RH (Remove & Replace),Remove and Replace,0.54,0.54
+NO,Model 3,7,17400252,Headlight  - Pair (Remove & Replace),Remove and Replace,0.6,0.6
+NO,Model 3,7,17400802,ECU - Headlight - Pair (Remove & Replace),Remove and Replace,1.08,1.08
+NO,Model 3,7,17400812,ECU - Headlight - LH (Remove & Replace),Remove and Replace,0.78,0.78
+NO,Model 3,7,17400822,ECU - Headlight - RH (Remove & Replace),Remove and Replace,0.78,0.78
+NO,Model 3,7,17402002,Taillight - LH (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model 3,7,17402202,Taillight - RH (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model 3,7,17402602,Light - License Plate (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model 3,7,17402702,Light - Fog/Reverse - Rear - LH (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model 3,7,17402802,Light - Fog/Reverse - Rear - RH (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model 3,7,17402902,Lights - Fog/Reverse - Rear - LH/RH (Remove & Replace),Remove and Replace,0.24,0.24
+NO,Model 3,7,17403302,Tail Light Assembly - Pair (Remove & Replace),Remove and Replace,0.54,0.54
+NO,Model 3,7,17403502,Reflector - Fascia - Rear - LH (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model 3,7,17403602,Reflector - Fascia - Rear - RH (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model 3,7,17404502,Reflex Lens - Rear - RH (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model 3,7,17450306,Key Card - Program (No Keys Present),Program,0.06,0.06
+NO,Model 3,7,17450513,Key Fob - Program (No Keys Present),Program,0.06,0.06
+NO,Model 3,7,17450902,Battery - Key Fob (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model 3,7,17451002,Siren - Battery Backed (Remove & Replace),Remove and Replace,0.18,0.18
+NO,Model 3,7,17451802,Antenna - Bluetooth Passive Entry - Rear (Remove & Replace),Remove and Replace,0.78,0.78
+NO,Model 3,7,17454002,Module - Body Controller - Security (Remove & Replace),Remove and Replace,0.42,0.42
+NO,Model 3,7,17454012,Module - Body Controller - Security (2nd Generation) (Remove & Replace),Remove and Replace,0.42,0.42
+NO,Model 3,7,17500302,Wiper Arm - LH (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model 3,7,17500352,Wiper Arm - RH (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model 3,7,17501352,Hose - Washer - Reservoir (RHD) (Remove & Replace),Remove and Replace,0.66,0.66
+NO,Model 3,7,17501802,Wiper Arms - Pair  (Remove & Replace),Remove and Replace,0.18,0.18
+NO,Model 3,7,17502502,Wiper Module (Remove & Replace),Remove and Replace,0.36,0.36
+NO,Model 3,7,17509602,Wiper Module (RHD) (Remove & Replace),Remove and Replace,0.42,0.42
+NO,Model 3,7,1753010032,Horn - High Tone (Heat Pump) (Remove and Replace),Remove and Replace,0.12,0.12
+NO,Model 3,7,1753010042,Horn - Low Tone (Heat Pump),Remove and Replace,0.12,0.12
+NO,Model 3,7,17530100607,Triumph Horn,Modify,0.12,0.12
+NO,Model 3,7,17530102,Horn - High Tone (Remove & Replace),Remove and Replace,0.66,0.66
+NO,Model 3,7,17530302,Horn - Low Tone (Remove & Replace),Remove and Replace,0.6,0.6
+NO,Model 3,7,17531202,Horn Assembly (Remove and Replace),Remove and Replace,0.12,0.12
+NO,Model 3,7,17551002,Accelerator (Remove & Replace),Remove and Replace,0.48,0.48
+NO,Model 3,7,18100002,Actuator - Vent¬†- RH (Remove and Replace),Remove and Replace,0.3,0.3
+NO,Model 3,7,18100902,Sensor - Temperature - RH (Remove and Replace),Remove and Replace,0.12,0.12
+NO,Model 3,7,18101002,HVAC Assembly (Non-Heat Pump) (Remove & Replace),Remove and Replace,4.38,4.38
+NO,Model 3,7,18101012,HVAC Assembly (Heat Pump) (Remove & Replace),Remove and Replace,3.6,3.6
+NO,Model 3,7,18101102,Thermistor - Duct - Upper - LH (Heat Pump) (Remove and Replace),Remove and Replace,0.48,0.48
+NO,Model 3,7,18101202,Thermistor - Duct - Upper - RH (Remove and Replace),Remove and Replace,0.18,0.18
+NO,Model 3,7,18101402,Thermistor - Duct - Upper - RH (Heat Pump) (Remove and Replace),Remove and Replace,0.48,0.48
+NO,Model 3,7,18102202,Actuator - Bleed - LH (Non-Heat Pump) (Remove & Replace),Remove and Replace,4.32,4.32
+NO,Model 3,7,18102212,Actuator - Bleed - LH (Heat Pump) (Remove & Replace),Remove and Replace,3.3,3.3
+NO,Model 3,7,18102302,Actuator - Bleed - RH (Non-Heat Pump) (Remove & Replace),Remove and Replace,4.32,4.32
+NO,Model 3,7,18102312,Actuator - Bleed - RH (Heat Pump) (Remove & Replace),Remove and Replace,3.3,3.3
+NO,Model 3,7,18103202,Blower Motor - HVAC (Non-Heat Pump) (Remove & Replace),Remove and Replace,3.84,3.84
+NO,Model 3,7,18103205,Blower Motor - HVAC (Clean),Maintenance,0.3,0.3
+NO,Model 3,7,18103212,Blower Motor - HVAC (Heat Pump) (Remove & Replace),Remove and Replace,2.22,2.22
+NO,Model 3,7,18103402,Actuator - Vent - LH (Remove & Replace),Remove and Replace,0.3,0.3
+NO,Model 3,7,18103502,Actuator - Vent - RH (Remove & Replace),Remove and Replace,0.24,0.24
+NO,Model 3,7,18104202,Thermistor - Duct - Lower - RH (Heat Pump) (Remove and Replace),Remove and Replace,3.3,3.3
+NO,Model 3,7,18105302,Air Extractor - LH (Remove & Replace),Remove and Replace,0.9,0.9
+NO,Model 3,7,18105322,Air Extractor - RH (Remove & Replace),Remove and Replace,0.84,0.84
+NO,Model 3,7,18106002,Heater - PTC (RWD) (Remove & Replace),Remove and Replace,1.32,1.32
+NO,Model 3,7,18106302,Heater - PTC (Remove & Replace),Remove and Replace,1.32,1.32
+NO,Model 3,7,18107116,PTC Heater Vent Temperature Imbalance (Rework),Retrofit,0.6,0.6
+NO,Model 3,7,18107202,Sensor - Ambient Air Temperature (Non-Heat Pump) (Remove & Replace),Remove and Replace,0.18,0.18
+NO,Model 3,7,18107212,Sensor - Ambient Air Temperature (Heat Pump) (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model 3,7,18107602,Sensor - Temperature - Evaporator (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model 3,7,18107802,Sensor - Temperature - LH (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model 3,7,18107902,Sensor - Temperature - RH                        (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model 3,7,18108002,Duct - Air Wave - LH (LHD) (Non-Heat Pump) (Remove & Replace),Remove and Replace,2.4,2.4
+NO,Model 3,7,18108012,Duct - Air Wave - LH (RHD) (Remove & Replace),Remove and Replace,0.3,0.3
+NO,Model 3,7,18108102,Duct - Air Wave - RH (LHD) (Remove & Replace),Remove and Replace,0.6,0.6
+NO,Model 3,7,18108112,Duct - Air Wave - RH (Heat Pump) (Remove & Replace),Remove and Replace,0.42,0.42
+NO,Model 3,7,18108152,Duct - Air Wave - RH (RHD) (Remove & Replace),Remove and Replace,1.74,1.74
+NO,Model 3,7,18108602,Duct - Footwell - LH (LHD) (Remove & Replace),Remove and Replace,0.36,0.36
+NO,Model 3,7,18108632,Duct - Footwell - LH (RHD) (Remove & Replace),Remove and Replace,0.3,0.3
+NO,Model 3,7,18108642,Duct - Footwell - RH (RHD) (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model 3,7,18108702,Duct - Footwell - RH (LHD) (Remove & Replace),Remove and Replace,0.36,0.36
+NO,Model 3,7,18200332,Stone Guard（Heat Pump),Remove and Replace,1.26,1.26
+NO,Model 3,7,18201012,Evaporator (Pre-Heat Pump) (Remove & Replace),Remove and Replace,5.64,5.64
+NO,Model 3,7,18203011,A/C Compressor and Supermanifold,Remove and Install,1.92,1.92
+NO,Model 3,7,18203012,A/C Compressor and Supermanifold,Remove and Replace,1.92,1.92
+NO,Model 3,7,18203502,Acoustic Blanket - Compressor (Remove & Replace),Remove and Replace,0.9,0.9
+NO,Model 3,7,18203506,Acoustic Blanket - Compressor (Retrofit),Remove and Replace,0.72,0.72
+NO,Model 3,7,18203902,Compressor (Non-Heat Pump) (Remove & Replace),Remove and Replace,2.22,2.22
+NO,Model 3,7,18203912,Compressor (Heat Pump) (Remove & Replace),Remove and Replace,0.9,0.9
+NO,Model 3,7,18204902,Pipe - Low Pressure - Charge Port (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model 3,7,18205002,TXV Valve­ Evaporator (Non-Heat Pump) (Remove & Replace),Remove and Replace,0.48,0.48
+NO,Model 3,7,18205502,Sensor - Pressure and Temperature - High Pressure (Non-Heat Pump) (Remove and Replace),Remove and Replace,1.44,1.44
+NO,Model 3,7,18205602,Sensor - Pressure and Temperature - Low Pressure (Non-Heat Pump) (Remove and Replace),Remove and Replace,1.08,1.08
+NO,Model 3,7,18206202,Chiller and EXV Assembly (Non-Heat Pump) (Remove & Replace),Remove and Replace,1.74,1.74
+YES,Model 3,7,18300900,Thermal System Test,Test/Adjust,0.1,0.1
+YES,Model 3,7,18301000,Clean Radiator (Heat Pump),Maintenance,0.9,0.9
+NO,Model 3,7,18301002,Radiator (Non-Heat Pump) (Remove & Replace),Remove and Replace,1.56,1.56
+NO,Model 3,7,18301012,5-Way Valve (Remove & Replace),Remove and Replace,1.08,1.08
+NO,Model 3,7,18301022,Radiator (Heat Pump) (Remove & Replace),Remove and Replace,1.26,1.26
+NO,Model 3,7,18301100,Clean Radiator (Non-Heat Pump),Maintenance,1.14,1.14
+NO,Model 3,7,18301200,Remove and Clean Radiator (Heat Pump),Maintenance,1.32,1.32
+NO,Model 3,7,18301202,HOSE - CHILLER TO CAR COMPUTER AND HV BATTERY SUPPLY MANIFOLD (DUAL MOTOR) (REMOVE AND REPLACE),Remove and Replace,3.0,3.0
+NO,Model 3,7,18301212,Hose - Chiller To Car Computer and HV Battery Supply Manifold (Remove & Replace),Remove and Replace,1.08,1.08
+NO,Model 3,7,18301300,Remove and Clean Radiator (Non-Heat Pump),Maintenance,1.62,1.62
+NO,Model 3,7,18301502,Superbottle (Remove & Replace),Remove and Replace,1.08,1.08
+NO,Model 3,7,18301512,Superbottle (Dual Motor) (Remove & Replace),Remove and Replace,2.76,2.76
+NO,Model 3,7,18302412,Hose - Chiller to HV Battery (Heat Pump) (Dual Motor) (Remove & Replace),Remove and Replace,2.16,2.16
+NO,Model 3,7,18302422,Hose - HV Battery Return to Reservoir (Remove & Replace),Remove and Replace,1.62,1.62
+NO,Model 3,7,18302502,Hose - Outlet - Rear Drive Unit (3DU) (Remove & Replace),Remove and Replace,0.72,0.72
+NO,Model 3,7,18302532,Hose - Outlet - Rear Drive Unit (4DU) (Remove & Replace),Remove and Replace,0.54,0.54
+NO,Model 3,7,18302702,Hose - Outlet - Radiator (Non-Heat Pump) (Remove & Replace),Remove and Replace,0.6,0.6
+NO,Model 3,7,18302712,Hose - Outlet - Radiator (Heat Pump) (Remove & Replace),Remove and Replace,0.6,0.6
+NO,Model 3,7,18303702,Hose - Return - HV Battery (Remove & Replace),Remove and Replace,3.48,3.48
+NO,Model 3,7,18306302,Actuator - 5-Way Valve (Remove & Replace),Remove and Replace,0.48,0.48
+NO,Model 3,7,18306312,Actuator - 5-Way Valve (Dual Motor) (Remove & Replace),Remove and Replace,0.54,0.54
+NO,Model 3,7,18308502,Coolant Pump - HV Battery (RWD) (Remove and Replace),Remove and Replace,0.9,0.9
+NO,Model 3,7,18308512,Coolant Pump - HV Battery (Remove and Replace),Remove and Replace,0.9,0.9
+NO,Model 3,7,18308522,Coolant Pump - HV Battery (Heat Pump) (Remove & Replace),Remove and Replace,0.66,0.66
+NO,Model 3,7,18400102,Supermanifold (Remove & Replace),Remove and Replace,1.62,1.62
+NO,Model 3,7,18400202,Octovalve (Heat Pump) (Remove & Replace),Remove and Replace,1.08,1.08
+NO,Model 3,7,18400302,Sensor - Pressure and Temperature (PT) - High Pressure (Heat Pump) (Remove & Replace),Remove and Replace,0.3,0.3
+NO,Model 3,7,18400402,Sensor - Pressure and Temperature (PT) - Low Pressure (Heat Pump) (Remove & Replace),Remove and Replace,0.3,0.3
+NO,Model 3,7,18400502,Sensor - Subcool - Pressure and Temperature (PT) - High Pressure (Heat Pump) (Remove & Replace),Remove and Replace,0.36,0.36
+NO,Model 3,7,18400602,Valve Body - Octovalve (Remove & Replace),Remove and Replace,1.08,1.08
+NO,Model 3,7,18400702,Actuator - Octovalve (Remove & Replace),Remove and Replace,0.48,0.48
+NO,Model 3,7,18401202,Coil - Recirculation Expansion Valve (Remove & Replace),Remove and Replace,0.54,0.54
+NO,Model 3,7,18401302,Valve Body - EXV - Supermanifold (Heat Pump) (Remove & Replace),Remove and Replace,0.3,0.3
+NO,Model 3,7,18401602,Chller (Heat Pump) (Remove & Replace),Remove and Replace,0.96,0.96
+NO,Model 3,7,18401702,Coolant Bottle (Heat Pump) (Remove & Replace),Remove and Replace,0.96,0.96
+NO,Model 3,7,18402902,Service Kit - Check Valves - Supermanifold,Remove and Replace,1.2,1.2
+NO,Model 3,7,18500602,Active Grille Shutter (Remove & Replace),Remove and Replace,0.84,0.84
+NO,Model 3,7,18500612,Active Grille Shutter (Heat Pump) (Remove & Replace),Remove and Replace,0.72,0.72
+YES,Model 3,7,19010100825,Remove Vehicle Label (No Anti-Tamper Residue),Removal,0.06,0.06
+YES,Model 3,7,19010100902,Vehicle Emission Control Label,Remove and Replace,0.06,0.06
+YES,Model 3,7,19010100925,Remove Vehicle Label and Anti-Tamper Residue,Removal,0.12,0.12
+YES,Model 3,7,19010101002,Battery Chemistry Label,Remove and Replace,0.06,0.06
+YES,Model 3,7,19010101102,Monroney Label,Remove and Replace,0.06,0.06
+YES,Model 3,7,19010202,Labels - Any (Remove & Replace),Remove and Replace,0.24,0.24
+NO,Model 3,7,19010303,Labels - Battery Enclosure - Any,Module Reset/Reflashed,0.24,0.24
+NO,Model 3,7,190135740002,"Correct CE label already present, no further action required.",Test/Adjust,0.1,0.1
+NO,Model 3,7,20010102,Airbag - Driver (Remove & Replace),Remove and Replace,0.18,0.18
+NO,Model 3,7,20010202,Knee Airbag - Driver (NA) (Remove & Replace),Remove and Replace,0.36,0.36
+NO,Model 3,7,20013102,Harness - Airbag - Driver (Remove and Replace),Remove and Replace,0.12,0.12
+NO,Model 3,7,20050032,Height Adjuster - Seat Belt - LH (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model 3,7,20050042,Height Adjuster - Seat Belt - RH (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model 3,7,20050302,Retractor - Seatbelt -1st Row - RH (Remove and Replace),Remove and Replace,0.42,0.42
+NO,Model 3,7,20051002,Height Adjuster - Seat Belt (Remove & Replace),Test/Adjust,0.12,0.12
+NO,Model 3,7,20054102,Retractor - Seatbelt -1st Row - LH (Remove & Replace),Remove and Replace,0.42,0.42
+NO,Model 3,7,20054202,Retractor - Seatbelt  - 1st Row - RH (Remove & Replace),Remove and Replace,0.42,0.42
+NO,Model 3,7,20054702,Buckle - 1st Row - LH (Remove & Replace),Remove and Replace,0.3,0.3
+NO,Model 3,7,20054802,Buckle - 1st Row - RH (Remove & Replace),Remove and Replace,0.24,0.24
+NO,Model 3,7,20056102,Seatbelt - 2nd Row - LH (Remove & Replace),Remove and Replace,0.36,0.36
+NO,Model 3,7,20056202,Seatbelt - 2nd Row - RH (Remove & Replace),Remove and Replace,0.36,0.36
+NO,Model 3,7,20056302,Seatbelt - 2nd Row - Center (Remove & Replace),Remove and Replace,0.6,0.6
+NO,Model 3,7,20057002,Buckle - 2nd Row - LH (Remove & Replace),Remove and Replace,0.18,0.18
+NO,Model 3,7,20057102,Buckle - 2nd Row - RH (Remove & Replace),Remove and Replace,0.24,0.24
+NO,Model 3,7,20057202,Buckle - 2nd Row - Center (Remove & Replace),Remove and Replace,0.18,0.18
+NO,Model 3,7,20101002,Pretensioner - Outboard Lap - 1st Row - LH (Remove & Replace),Remove and Replace,0.24,0.24
+NO,Model 3,7,20101102,Pretensioner - Outboard Lap - 1st Row - RH (Remove & Replace),Remove and Replace,0.24,0.24
+NO,Model 3,7,20200502,Sensor - Airbag - B-Pillar - LH (Remove & Replace),Remove and Replace,0.24,0.24
+NO,Model 3,7,20200602,Sensor - Airbag - B-Pillar - RH (Remove & Replace),Remove and Replace,0.24,0.24
+NO,Model 3,7,20200702,Sensor - Airbag - C-Pillar - LH (Remove & Replace),Remove and Replace,0.24,0.24
+NO,Model 3,7,20200802,Sensor - Airbag - C-Pillar - RH (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model 3,7,20202102,Sensor - Resistive Occupancy - Driver's Seat (Remove & Replace),Remove and Replace,0.78,0.78
+YES,Model 3,7,21051000,Update Display Avatar,Test/Adjust,0.12,0.12
+NO,Model 3,7,21051202,Touchscreen (Remove & Replace),Remove and Replace,0.36,0.36
+NO,Model 3,7,21151007,Car Computer (Dispose),Modify,0.18,0.18
+NO,Model 3,7,21152002,SIM Card - Car Computer (HW2.5) (Remove & Replace),Remove and Replace,0.24,0.24
+NO,Model 3,7,21152102,SIM Card - Car Computer (HW3) (Remove & Replace),Remove and Replace,0.24,0.24
+NO,Model 3,7,21152202,SIM Card - Car Computer (eCall) (Remove & Replace),Remove and Replace,0.3,0.3
+NO,Model 3,7,21152402,SD Card - Car Computer (HW2.5) (Remove & Replace),Remove and Replace,0.3,0.3
+NO,Model 3,7,21152502,SD Card - Car Computer (HW3) (Remove & Replace),Remove and Replace,0.24,0.24
+NO,Model 3,7,21152702,Connectivity Board - Car Computer (eCall) (HW3) (Remove & Replace),Remove and Replace,1.08,1.08
+NO,Model 3,7,21152802,Connectivity Board - Car Computer (HW2.5) (Remove & Replace),Remove and Replace,0.48,0.48
+NO,Model 3,7,21152901,Connectivity Board - Car Computer (HW3),Remove and Install,1.02,1.02
+NO,Model 3,7,21152902,Connectivity Board - Car Computer (HW3),Remove and Replace,1.02,1.02
+NO,Model 3,7,21153102,Replace Car Computer (HW2.5) (LHD),Remove and Replace,0.96,0.96
+NO,Model 3,7,21153112,Replace Car Computer (HW2.5) (RHD),Remove and Replace,1.38,1.38
+NO,Model 3,7,21153202,Replace Car Computer (HW3) (LHD),Remove and Replace,1.68,1.68
+NO,Model 3,7,21153206,Car Computer - HW2.5 to HW3 (Retrofit),Retrofit,1.32,1.32
+NO,Model 3,7,21153212,Replace Car Computer (HW3) (RHD),Remove and Replace,1.86,1.86
+NO,Model 3,7,21211002,Speaker - Rear Door - LH (Remove & Replace),Remove and Replace,0.24,0.24
+NO,Model 3,7,21211102,Speaker - Rear Door - RH (Remove & Replace),Remove and Replace,0.24,0.24
+NO,Model 3,7,21211502,Speaker - Dash - LH (Remove & Replace),Remove and Replace,0.18,0.18
+NO,Model 3,7,21211602,Speaker - Dash - Center  (Remove & Replace),Remove and Replace,0.24,0.24
+NO,Model 3,7,21211702,Speaker - Dash - RH (Remove & Replace),Remove and Replace,0.24,0.24
+NO,Model 3,7,21211802,Tweeter - Dash (Remove & Replace),Remove and Replace,0.24,0.24
+NO,Model 3,7,21212002,Subwoofer (Remove & Replace),Remove and Replace,0.36,0.36
+NO,Model 3,7,21213802,Speaker - Parcel Shelf - LH (Remove & Replace),Remove and Replace,0.48,0.48
+NO,Model 3,7,21213902,Speaker - Parcel Shelf - RH (Remove & Replace),Remove and Replace,0.48,0.48
+NO,Model 3,7,21214002,Speaker - Emergency (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model 3,7,21214302,Chime - Power Trunk (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model 3,7,21220102,Tuner - FM / HD / DAB (Remove & Replace),Remove and Replace,0.24,0.24
+NO,Model 3,7,21250102,Microphone - Bluetooth (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model 3,7,21260502,USB Hub - Center Console (2.0) (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model 3,7,21260602,USB Hub - Center Console - Rear (Remove & Replace),Remove and Replace,0.18,0.18
+NO,Model 3,7,21261002,USB Cable - Center Console (Remove & Replace),Remove and Replace,0.36,0.36
+NO,Model 3,7,21300102,Antenna - AM/FM/RKE (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model 3,7,21300402,Noise Filter - Ground (Remove & Replace),Remove and Replace,0.18,0.18
+NO,Model 3,7,21300502,Noise Filter - 12V (Remove & Replace),Remove and Replace,0.18,0.18
+NO,Model 3,7,21300702,Antenna Amplifier - FM2 (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model 3,7,21300802,Antenna Amplifier - FM2/Satellite/DAB (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model 3,7,21320102,Antenna - GPS  (Remove & Replace),Remove and Replace,0.3,0.3
+NO,Model 3,7,21330102,Antenna - Wi-Fi (Remove & Replace),Remove and Replace,0.36,0.36
+NO,Model 3,7,21331102,Antenna - MIMO - LH (Remove and Replace),Remove and Replace,0.36,0.36
+NO,Model 3,7,21341002,Antenna - eCall (LHD) (Remove & Replace),Remove and Replace,0.48,0.48
+NO,Model 3,7,21341012,Antenna - eCall (RHD) (Remove and Replace),Remove and Replace,1.74,1.74
+NO,Model 3,7,30012423,M10 Bolt Torque Check,Inspection,0.1,0.1
+NO,Model 3,7,31000200,Four Wheel Alignment (Camber Caster Add-On),Test/Adjust,0.65,0.65
+NO,Model 3,7,31001500,EPAS Alignment Check,Test/Adjust,0.18,0.18
+YES,Model 3,7,31002300,Four Wheel Alignment Check and Adjust,Test/Adjust,0.9,0.9
+NO,Model 3,7,31010101601,Giorgi Test,Remove and Install,0.66,0.66
+NO,Model 3,7,31010101602,Giorgi Test,Remove and Replace,0.66,0.66
+NO,Model 3,7,31030102,Knuckle - Suspension - Rear - LH (Remove & Replace),Remove and Replace,0.96,0.96
+NO,Model 3,7,31030202,Knuckle - Suspension - Rear - RH (Remove & Replace),Remove and Replace,0.96,0.96
+NO,Model 3,7,31030602,Hub - Rear - RH (Remove & Replace),Remove and Replace,0.48,0.48
+NO,Model 3,7,31030702,Hub - Rear - LH (Remove & Replace),Remove and Replace,0.48,0.48
+NO,Model 3,7,31031102,Control Arm Assembly - Rear - Lower - LH (Remove & Replace),Remove and Replace,0.66,0.66
+NO,Model 3,7,31031202,Control Arm Assembly - Rear - Lower - RH (Remove & Replace),Remove and Replace,0.66,0.66
+NO,Model 3,7,31032012,Cover - Rear Suspension - LH (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model 3,7,31032022,Cover - Rear Suspension - RH (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model 3,7,31033102,Stabilizer Bar - Rear (Remove & Replace),Remove and Replace,0.48,0.48
+YES,Model 3,7,31039000,Suspension - Rear (Check Torque),Test/Adjust,0.36,0.36
+NO,Model 3,7,31153602,Damper - Rear - LH (Remove & Replace),Remove and Replace,0.42,0.42
+NO,Model 3,7,31153702,Damper - Rear - RH (Remove & Replace),Remove and Replace,0.42,0.42
+NO,Model 3,7,32010302,Tie Rod End - LH (Remove & Replace),Remove and Replace,0.24,0.24
+NO,Model 3,7,32010402,Tie Rod End - RH (Remove & Replace),Remove and Replace,0.24,0.24
+NO,Model 3,7,33010122,ECU - ABS Modulator (Heat Pump) (Remove & Replace),Remove and Replace,1.56,1.56
+NO,Model 3,7,33100102,ABS Modulator Assembly (Non-Heat Pump) (Remove & Replace),Remove and Replace,2.34,2.34
+NO,Model 3,7,33100112,ABS Modulator Assembly (Heat Pump) (Remove & Replace),Remove and Replace,2.76,2.76
+NO,Model 3,7,33100202,ECU - ABS (Remove & Replace),Remove and Replace,1.32,1.32
+NO,Model 3,7,33100702,Sensor - Wheel Speed - ABS - Rear - LH (Remove & Replace),Remove and Replace,0.24,0.24
+NO,Model 3,7,33100802,Sensor - Wheel Speed - ABS - Rear - RH (Remove & Replace),Remove and Replace,0.24,0.24
+YES,Model 3,7,34010105,Tire Rotation,Maintenance,0.3,0.3
+YES,Model 3,7,34011302,Lug Nuts - Vehicle Set (Remove & Replace),Remove and Replace,0.36,0.36
+NO,Model 3,7,34011402,Lug Nut Covers - Vehicle Set (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model 3,7,34012402,Wheels - Axle Set (Remove & Replace),Remove and Replace,0.24,0.24
+NO,Model 3,7,34012502,Wheel Sensor - TPMS - Rear - LH (Remove & Replace),Remove and Replace,0.24,0.24
+YES,Model 3,7,34012902,Wheels - Vehicle - Set (Remove and Replace),Remove and Replace,1.56,1.56
+YES,Model 3,7,34014005,Seasonal Wheel and Tire Set Swap (Already Built),Seasonal Swap,0.5,0.5
+YES,Model 3,7,34014101,Tire Set - Vehicle - Swap (Not Already Built),Remove and Install,1.38,1.38
+NO,Model 3,7,34015007,Wheel Disposal (Rework),Modify,0.06,0.06
+NO,Model 3,7,34015011,Center Cap - Wheel (Remove and Replace),Remove and Replace,0.06,0.06
+YES,Model 3,7,34015032,Cap - Wheel - Set (Remove & Replace),Remove and Replace,0.05,0.05
+YES,Model 3,7,34015202,Wheel - Rear - LH (Remove & Replace),Remove and Replace,0.36,0.36
+YES,Model 3,7,34015222,Cover - Wheel - Rear - LH (Remove & Replace),Remove and Replace,0.06,0.06
+YES,Model 3,7,34015302,Wheel - Rear - RH (Remove & Replace),Remove and Replace,0.36,0.36
+YES,Model 3,7,34015322,Cover - Wheel - Rear - RH (Remove & Replace),Remove and Replace,0.06,0.06
+YES,Model 3,7,34020010,Mobile Tire Service Performed,Modify,0.0,0.0
+YES,Model 3,7,34020030,Mobile Tire Service Performed – Logistics,Tire Repair,0.0,0.0
+NO,Model 3,7,34020105,Tire Rotation (Mobile Only),Maintenance,0.48,0.48
+YES,Model 3,7,34020305,Tires - All Four (Balance),Rebalance,0.6,0.6
+YES,Model 3,7,34020900,Check and Adjust Tire Pressure,Test/Adjust,0.05,0.05
+YES,Model 3,7,34021202,Tire - Rear - LH (Remove & Replace),Tire Purchase,0.35,0.35
+YES,Model 3,7,34021302,Tire - Rear - RH (Remove & Replace),Tire Purchase,0.35,0.35
+YES,Model 3,7,34021605,Tires - Rear - Set,Tire Purchase,0.7,0.7
+YES,Model 3,7,34021805,Tires - Vehicle - Set,Tire Purchase,1.15,1.15
+YES,Model 3,7,34022015,Tire - Supplemental (Rebalance),Maintenance,0.18,0.18
+YES,Model 3,7,34022205,Tire - Rear - LH (Road Force) (Balance),Tire Repair,0.2,0.2
+YES,Model 3,7,34022225,Tire - Rear - LH (Balance),Rebalance,0.2,0.2
+YES,Model 3,7,34022305,Tire - Rear - RH (Road Force) (Balance),Tire Repair,0.2,0.2
+YES,Model 3,7,34022325,Tire - Rear - RH (Balance),Rebalance,0.2,0.2
+NO,Model 3,7,34022425,Tires - Pair (Balance),Rebalance,0.3,0.3
+YES,Model 3,7,34023208,Tire - Rear - LH (Repair),Tire Repair,0.72,0.72
+YES,Model 3,7,34023308,Tire - Rear - RH (Repair),Tire Repair,0.72,0.72
+NO,Model 3,7,34040402,Sensor - TPMS - Rear - LH (Remove & Replace),Remove and Replace,0.42,0.42
+NO,Model 3,7,34040502,Sensor - TPMS - Rear - RH (Remove & Replace),Remove and Replace,0.42,0.42
+NO,Model 3,7,34040602,Wheel Sensors - TPMS - Vehicle Set (Remove & Replace),Remove and Replace,0.96,0.96
+NO,Model 3,7,34041100,Module - TPMS (Sensor ID Learn),Test/Adjust,0.18,0.18
+NO,Model 3,7,34041150,TPMS (Sensor ID Drive Learn),Test/Adjust,0.12,0.12
+NO,Model 3,7,34041200,TPMS (BLE Sensor Learn),Test/Adjust,0.05,0.05
+NO,Model 3,7,34041300,TPMS - Set Thresholds,Program,0.3,0.3
+NO,Model 3,7,34041400,BLE TPMS (Update Configuration),Test/Adjust,0.05,0.05
+NO,Model 3,7,34043002,Module - TPMS (Remove & Replace),Remove and Replace,0.3,0.3
+NO,Model 3,7,39019175,Replace Motor Oil (DM),Remove and Replace,1.38,1.38
+NO,Model 3,7,40010102,Mount - Rear Drive Unit - RH (3DU) (Remove and Replace),Remove and Replace,1.92,1.92
+NO,Model 3,7,4001020122,"Rear Drive Unit Assembly -Oil Filter,Synthetic,3DU",Remove and Replace,0.72,0.72
+NO,Model 3,7,40010202,Mount - Rear Drive Unit - RH (4DU) (Remove and Replace),Remove and Replace,2.1,2.1
+NO,Model 3,7,40011002,Drive Unit - Rear (Remove & Replace),Remove and Replace,4.08,4.08
+NO,Model 3,7,40011012,Drive Unit - Rear (4DU) (Remove & Replace),Remove and Replace,4.08,4.08
+NO,Model 3,7,40012002,Mount - Rear Drive Unit - LH (3DU) (Remove & Replace),Remove and Replace,1.92,1.92
+NO,Model 3,7,40012012,Mount - Rear Drive Unit - LH (4DU) (Remove & Replace),Remove and Replace,2.1,2.1
+NO,Model 3,7,40012202,Ground Strap - Rear Drive Unit (Remove & Replace),Remove and Replace,1.8,1.8
+NO,Model 3,7,40012537,Replace Motor Oil (RWD) ,Remove and Replace,1.74,1.74
+NO,Model 3,7,40300202,Seal - Oil - Differential to Halfshaft Assembly - Rear Drive Unit - RH (Remove and Replace),Remove and Replace,0.9,0.9
+NO,Model 3,7,40300300300,Oil Pump Diagnostics,Diagnosis Only,0.42,0.42
+NO,Model 3,7,40301002,Seal - Oil - Differential to Halfshaft Assembly - Rear Drive Unit - LH (Remove & Replace),Remove and Replace,0.9,0.9
+NO,Model 3,7,40301102,Seal - Axle - Rear Drive Unit - RH (Remove & Replace),Remove and Replace,1.26,1.26
+NO,Model 3,7,40302002,Halfshaft - Rear Drive Unit - LH (Remove & Replace),Remove and Replace,0.9,0.9
+NO,Model 3,7,40302102,Halfshaft  - Rear Drive Unit - RH (Remove & Replace),Remove and Replace,1.26,1.26
+NO,Model 3,7,40304602,Oil Pump - Rear Drive Unit (3DU) (Remove & Replace),Remove and Replace,0.78,0.78
+NO,Model 3,7,40304642,Oil Pump - Rear Drive Unit (4DU) (Remove & Replace),Remove and Replace,0.48,0.48
+NO,Model 3,7,40304802,Oil Filter - Rear Drive Unit (Remove & Replace),Remove and Replace,0.78,0.78
+NO,Model 3,7,40305202,Heat Exchanger - Rear Drive Unit (Remove & Replace),Remove and Replace,1.68,1.68
+NO,Model 3,7,40305232,Heat Exchanger - Rear Drive Unit (4DU) (Remove & Replace),Remove and Replace,0.66,0.66
+NO,Model 3,7,44000134,HV Isolation Diagnostics,Diagnosis Only,2.6,2.6
+NO,Model 3,7,44000144,HVIL Open Failure Diagnostics (Non-Heat Pump),Diagnosis Only,0.75,0.75
+YES,Model 3,7,44000204,HVIL Diagnostics,Diagnosis Only,1.0,1.0
+NO,Model 3,7,44010006,Charge Port Components (Harness Type to Busbar Type),Retrofit,0.48,0.48
+NO,Model 3,7,44010012,Actuator - Door Assembly - Charge Port (NA) (Remove & Replace),Remove and Replace,0.18,0.18
+NO,Model 3,7,44010102,Sensor Target - Door - Charge Port (Remove & Replace),Remove and Replace,0.24,0.24
+NO,Model 3,7,44011502,Door Assembly - Charge Port (NA) (Remove and Replace),Remove and Replace,0.48,0.48
+NO,Model 3,7,44011601,Charge Port (NACS),Remove and Install,0.72,0.72
+NO,Model 3,7,44011602,Charge Port (Busbar Type) (NACS),Remove and Replace,0.54,0.54
+NO,Model 3,7,44011652,Charge Port (Busbar Type) (CCS),Remove and Replace,0.6,0.6
+NO,Model 3,7,44012100,Charge Port Voltage Check,Test/Adjust,0.18,0.18
+NO,Model 3,7,44012102,Carrier Assembly - Charge Port (Remove & Replace),Remove and Replace,0.78,0.78
+NO,Model 3,7,44012702,Charge Port (GB),Remove and Replace,0.54,0.54
+NO,Model 3,7,44013102,Busbars - Charge Port to HV Battery (NACS) (Remove and Replace),Remove and Replace,0.84,0.84
+NO,Model 3,7,44013106,Busbars - Charge Port to HV Battery (Retrofit),Remove and Replace,1.98,1.98
+NO,Model 3,7,44013112,Busbars - Charge Port to HV Battery (GB) (Remove & Replace),Remove and Replace,0.84,0.84
+NO,Model 3,7,44013152,Busbars - Charge Port to HV Battery (CCS) (Remove & Replace),Remove and Replace,0.84,0.84
+NO,Model 3,7,44013156,Charge Port and Busbar to HV Battery (3-Phase) (Retrofit),Remove and Replace,1.98,1.98
+NO,Model 3,7,44013202,Release Cable - Charge Port (Remove & Replace),Remove and Replace,0.54,0.54
+YES,Model 3,7,44013205,Charge Port - Manual Release of Cable,Maintenance,0.18,0.18
+NO,Model 3,7,44014002,Latch Actuator - Charge Port (Remove & Replace),Remove and Replace,0.84,0.84
+NO,Model 3,7,44015002,ECU - Charge Port (Remove & Replace),Remove and Replace,0.18,0.18
+NO,Model 3,7,44015102,Safety Cap - Busbar - Charge Port to HV Battery (Remove & Replace),Remove and Replace,0.36,0.36
+NO,Model 3,7,44015106,ECU - Charge Port (Combo Adapter) (Retrofit),Retrofit,0.24,0.24
+NO,Model 3,7,4450010072,HV Harness - A/C Compressor,Remove and Replace,0.72,0.72
+NO,Model 3,7,44500502,Charge Port and HV Harness Assembly (NACS),Remove and Replace,0.84,0.84
+NO,Model 3,7,44501102,HV Harness Assembly - Charge Port to HV Battery (Three-Phase) (Remove and Replace),Remove and Replace,0.84,0.84
+NO,Model 3,7,44501302,Harness - Center Ski to A/C Compressor (Remove & Replace),Remove and Replace,0.66,0.66
+NO,Model 3,7,44501402,AC Cable - Charge Port to HV Battery (3-Phase) (Remove & Replace),Remove and Replace,0.48,0.48
+NO,Model 3,7,44501406,AC Cable - Charge Port to HV Battery (3-Phase) (Retrofit),Retrofit,0.48,0.48
+NO,Model 3,7,44501802,AC Cable - Charge Port to HV Battery (GB),Remove and Replace,0.48,0.48
+NO,Model 3,7,44502202,HV Harness - HV Battery to Rear Drive Unit (3DU) (Remove & Replace),Remove and Replace,0.9,0.9
+NO,Model 3,7,44502222,HV Harness - HV Battery to Rear Drive Unit (4DU) (Remove & Replace),Remove and Replace,0.66,0.66
+NO,Model 3,7,44503002,Harness - HV Battery to PTC Heater and A/C Compressor (RWD) (Remove & Replace) ,Remove and Replace,1.5,1.5
+NO,Model 3,7,44503012,HV Harness - HV Battery to PTC Heater and A/C Compressor (Dual Motor) (Remove and Replace),Remove and Replace,2.04,2.04
+NO,Model 3,7,44508569,Harness - A/C Compressor (Remove & Replace),Remove and Replace,0.72,0.72
+YES,Model 3,7,46010100004,Diagnosis: Coolant Leak,General Diagnosis,0.5,0.5
+YES,Model 3,7,50010003,Firmware Update - Mobile Connector,Module Reset/Reflashed,0.1,0.1
+YES,Model 3,7,50010102,Mobile Connector - UMC (Remove & Replace),Remove and Replace,0.0,0.0
+NO,Model 3,7,50020102,Fuses - Wall Connector (Remove & Replace),Remove and Replace,0.6,0.6
+NO,Model 3,7,50020402,Cover - Wall Connector (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model 3,7,50020702,Wall Connector (Remove & Replace),Remove and Replace,0.84,0.84
+YES,Model 3,7,50022002,Handle and Cable Assembly - 80A Wall Connector (Remove & Replace),Remove and Replace,0.48,0.48
+YES,Model 3,7,50024002,Handle and Cable Assembly - 40A Wall Connector (Remove & Replace),Remove and Replace,0.48,0.48
+YES,Model 3,7,61013108,Equip Tire Repair Kit,General diagnosis conclusion,0.0,0.0
+YES,Model 3,7,7000005,Mobile Tire Dispatch Fee,Fee,0.01,0.01
+YES,Model 3,7,70000105,Third Party Transport,Sublet,1.2,1.2
+YES,Model 3,7,7000030,Parts Not Available - Add to future service visit. ,General diagnosis conclusion,0.0,0.0
+YES,Model 3,7,70000305,Miscellaneous Labor,Fee,0.0,0.0
+YES,Model 3,7,70002005,Non-Tesla (Rental),Sublet,0.0,0.0
+YES,Model 3,7,70003805,Tesla Airport Service,Fee,1.2,1.2
+YES,Model 3,7,7000405,Vehicle Storage,Fee,0.0,0.0
+YES,Model 3,7,70004205,No Labor Performed - Unable to Perform via Mobile Service,General diagnosis conclusion,0.0,0.0
+YES,Model 3,7,70004505,No Labor Performed - Part Replaced,Repair,0.0,0.0
+YES,Model 3,7,70005700,Scrap Part Sale Over the Counter,Test/Adjust,0.0,0.0
+YES,Model 3,7,70005805,Payment Collection Required,Fee,1.2,1.2
+YES,Model 3,7,70008009,Additional Work Required - Corrosion Present,Maintenance,0.5,0.5
+YES,Model 3,7,70020305,Upholstery - Sublet,Sublet,0.0,0.0
+NO,Model 3,7,70020306,Vehicle Wrap – Color Film (Repair),Sublet,0.0,0.0
+YES,Model 3,7,70020805,Glass Repair / Replacement  - Sublet,Sublet,0.0,0.0
+NO,Model 3,7,70021015,Tesla Bodyshop Fascia Repair - Sublet,Sublet,0.0,0.0
+NO,Model 3,7,70021025,Tesla Bodyshop Door Repair - Sublet,Sublet,0.0,0.0
+NO,Model 3,7,70021055,Tesla Bodyshop Hood / Rear Trunk Repair - Sublet,Sublet,0.0,0.0
+NO,Model 3,7,70021745,Tesla Bodyshop Exterior Lights Repair - Sublet ,Sublet,0.0,0.0
+NO,Model 3,7,70023405,Tesla Bodyshop Wheel Hub Repair - Sublet,Sublet,0.0,0.0
+YES,Model 3,7,70060005,Thread Repair,Maintenance,0.0,0.0
+YES,Model 3,7,7007300,Other – Sublet,Sublet,0.0,0.0
+YES,Model 3,7,7100001,NO LABOR PERFORMED,Repair,0.0,0.0
+NO,Model 3,7,7100002,Seasonal Tire Storage,Fee,0.0,0.0
+NO,Model 3,7,72000004,California Battery Fee,Fee,0.01,0.01
+YES,Model 3,7,72000005,Loaner Fee,Fee,0.0,0.0
+NO,Model 3,7,74010008,Dubai Hailstorm Damage (Repair),Restore,7.0,7.0
+YES,Model 3,7,91000004,On Site – Education,Customer Education,0.0,0.0
+YES,Model 3,7,91020105,Car Wash (Hand Wash),Detail Work,0.25,0.25
+YES,Model 3,7,91020115,Car Wash (Mechanical Wash),Maintenance,0.24,0.24
+YES,Model 3,7,91022005,Charge Vehicle,Restore,0.0,0.0
+YES,Model 3,7,91022407,Vehicle Configuration Update,Program,0.05,0.05
+YES,Model 3,7,91029006,Mobile Service Hub Repair,Retrofit,0.0,0.0
+NO,Model 3,7,91040205,Loaner Battery Removed/Returned,Maintenance,0.0,0.0
+NO,Model 3,7,91041705,Loaner Drive Unit Removed/Returned,Maintenance,0.0,0.0

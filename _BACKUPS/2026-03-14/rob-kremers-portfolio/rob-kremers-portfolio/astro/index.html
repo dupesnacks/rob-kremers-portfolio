@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Astro Physics Trading Dashboard</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #0a0a1e 0%, #1a0033 100%);
+            color: #e0e0ff;
+            font-family: 'Courier New', monospace;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            border-bottom: 2px solid #00ffff;
+            padding-bottom: 20px;
+        }
+        
+        h1 {
+            font-size: 2.5em;
+            background: linear-gradient(90deg, #00ffff, #ff00ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 10px;
+            letter-spacing: 2px;
+        }
+        
+        .subtitle {
+            color: #888;
+            font-size: 0.9em;
+        }
+        
+        .controls {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+        
+        .token-selector {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+        
+        label {
+            color: #00ffff;
+            font-weight: bold;
+        }
+        
+        select, input {
+            background: #1a0a2e;
+            border: 1px solid #00ffff;
+            color: #e0e0ff;
+            padding: 8px 12px;
+            border-radius: 4px;
+            font-family: 'Courier New', monospace;
+            cursor: pointer;
+        }
+        
+        select:hover, input:hover {
+            border-color: #ff00ff;
+        }
+        
+        .dashboard-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+        
+        .card {
+            background: rgba(26, 10, 46, 0.8);
+            border: 1px solid #00ffff;
+            border-radius: 8px;
+            padding: 20px;
+            backdrop-filter: blur(10px);
+        }
+        
+        .card h2 {
+            color: #00ffff;
+            margin-bottom: 15px;
+            font-size: 0.9em;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .metric {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 10px 0;
+            padding: 8px 0;
+            border-bottom: 1px solid rgba(0, 255, 255, 0.1);
+        }
+        
+        .metric-label {
+            color: #888;
+            font-size: 0.85em;
+        }
+        
+        .metric-value {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #00ffff;
+        }
+        
+        .metric-value.positive {
+            color: #00ff00;
+        }
+        
+        .metric-value.negative {
+            color: #ff0055;
+        }
+        
+        .risk-score {
+            font-size: 2em;
+            text-align: center;
+            margin: 15px 0;
+        }
+        
+        .risk-bar {
+            width: 100%;
+            height: 20px;
+            background: #0a0a1e;
+            border: 1px solid #00ffff;
+            border-radius: 10px;
+            overflow: hidden;
+            margin: 10px 0;
+        }
+        
+        .risk-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #00ff00, #ffff00, #ff0000);
+            transition: width 0.3s ease;
+        }
+        
+        .signal-box {
+            text-align: center;
+            padding: 20px;
+            border-radius: 8px;
+            font-size: 1.5em;
+            font-weight: bold;
+            margin: 15px 0;
+        }
+        
+        .signal-buy {
+            background: rgba(0, 255, 0, 0.1);
+            border: 2px solid #00ff00;
+            color: #00ff00;
+        }
+        
+        .signal-sell {
+            background: rgba(255, 0, 85, 0.1);
+            border: 2px solid #ff0055;
+            color: #ff0055;
+        }
+        
+        .signal-hold {
+            background: rgba(255, 255, 0, 0.1);
+            border: 2px solid #ffff00;
+            color: #ffff00;
+        }
+        
+        .physics-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 15px;
+        }
+        
+        .physics-metric {
+            background: rgba(0, 255, 255, 0.05);
+            border: 1px solid #00ffff;
+            border-radius: 4px;
+            padding: 12px;
+            text-align: center;
+        }
+        
+        .physics-metric-name {
+            font-size: 0.75em;
+            color: #888;
+            margin-bottom: 5px;
+        }
+        
+        .physics-metric-value {
+            font-size: 1.4em;
+            color: #00ffff;
+            font-weight: bold;
+        }
+        
+        .physics-metric-percent {
+            font-size: 0.8em;
+            color: #00ff00;
+            margin-top: 3px;
+        }
+        
+        .chart-container {
+            position: relative;
+            height: 300px;
+            margin: 20px 0;
+        }
+        
+        canvas {
+            width: 100%;
+            height: 100%;
+        }
+        
+        .status {
+            text-align: center;
+            color: #888;
+            font-size: 0.85em;
+            margin-top: 10px;
+        }
+        
+        .loading {
+            text-align: center;
+            color: #ffff00;
+            padding: 20px;
+        }
+        
+        .error {
+            background: rgba(255, 0, 85, 0.1);
+            border: 1px solid #ff0055;
+            color: #ff0055;
+            padding: 15px;
+            border-radius: 4px;
+            margin: 10px 0;
+        }
+        
+        .timestamp {
+            font-size: 0.75em;
+            color: #666;
+            margin-top: 10px;
+        }
+        
+        .wave-analysis {
+            margin-top: 20px;
+        }
+        
+        .wave-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 8px 0;
+            border-bottom: 1px solid rgba(0, 255, 255, 0.1);
+            font-size: 0.9em;
+        }
+        
+        .wave-name {
+            color: #888;
+        }
+        
+        .wave-value {
+            color: #00ffff;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>⚛ ASTRO PHYSICS TRADING</h1>
+            <p class="subtitle">Quantum-Inspired Algorithmic Trading Dashboard</p>
+        </header>
+        
+        <div class="controls">
+            <div class="token-selector">
+                <label for="token">Token:</label>
+                <select id="token" onchange="changeToken()">
+                    <option value="dogecoin">DOGE (Dogecoin)</option>
+                    <option value="bitcoin">BTC (Bitcoin)</option>
+                    <option value="ethereum">ETH (Ethereum)</option>
+                    <option value="solana">SOL (Solana)</option>
+                    <option value="ripple">XRP (Ripple)</option>
+                    <option value="cardano">ADA (Cardano)</option>
+                </select>
+            </div>
+            <div class="token-selector">
+                <label for="interval">Refresh:</label>
+                <select id="interval" onchange="changeInterval()">
+                    <option value="30000">30s</option>
+                    <option value="60000" selected>1m</option>
+                    <option value="300000">5m</option>
+                    <option value="900000">15m</option>
+                </select>
+            </div>
+            <button onclick="refreshData()" style="padding: 8px 20px; background: #00ffff; color: #0a0a1e; border: none; border-radius: 4px; cursor: pointer; font-weight: bold;">↻ REFRESH</button>
+        </div>
+        
+        <div class="dashboard-grid">
+            <!-- Price Card -->
+            <div class="card">
+                <h2>Current Price</h2>
+                <div class="metric">
+                    <span class="metric-label">Price (USD)</span>
+                    <span class="metric-value" id="price">$0.00</span>
+                </div>
+                <div class="metric">
+                    <span class="metric-label">24h Change</span>
+                    <span class="metric-value" id="change24h">0%</span>
+                </div>
+                <div class="metric">
+                    <span class="metric-label">7d Change</span>
+                    <span class="metric-value" id="change7d">0%</span>
+                </div>
+                <div class="metric">
+                    <span class="metric-label">Market Cap</span>
+                    <span class="metric-value" id="marketCap">$0</span>
+                </div>
+                <div class="status" id="priceStatus">Loading...</div>
+            </div>
+            
+            <!-- Risk Score Card -->
+            <div class="card">
+                <h2>Risk Assessment</h2>
+                <div class="risk-score" id="riskScore">--</div>
+                <div class="risk-bar">
+                    <div class="risk-fill" id="riskFill" style="width: 50%;"></div>
+                </div>
+                <div style="text-align: center; color: #888; font-size: 0.85em; margin-top: 10px;">
+                    <span id="riskLabel">NEUTRAL</span>
+                </div>
+                <div class="metric" style="border-bottom: none;">
+                    <span class="metric-label">Risk State</span>
+                    <span class="metric-value" id="riskState">Neutral</span>
+                </div>
+            </div>
+            
+            <!-- Signal Card -->
+            <div class="card">
+                <h2>Trading Signal</h2>
+                <div id="signalBox" class="signal-box signal-hold">HOLD</div>
+                <div class="metric">
+                    <span class="metric-label">Signal Strength</span>
+                    <span class="metric-value" id="signalStrength">0%</span>
+                </div>
+                <div class="metric">
+                    <span class="metric-label">Confidence</span>
+                    <span class="metric-value" id="confidence">0%</span>
+                </div>
+                <div class="status" id="signalStatus">Calculating...</div>
+            </div>
+        </div>
+        
+        <!-- Physics Metrics -->
+        <div class="card">
+            <h2>Physics Engine Metrics (8D Analysis)</h2>
+            <div class="physics-grid">
+                <div class="physics-metric">
+                    <div class="physics-metric-name">Energy</div>
+                    <div class="physics-metric-value" id="energy">0.00</div>
+                    <div class="physics-metric-percent" id="energyPercent">0%</div>
+                </div>
+                <div class="physics-metric">
+                    <div class="physics-metric-name">Attractor</div>
+                    <div class="physics-metric-value" id="attractor">0.00</div>
+                    <div class="physics-metric-percent" id="attractorPercent">0%</div>
+                </div>
+                <div class="physics-metric">
+                    <div class="physics-metric-name">Phase Accel</div>
+                    <div class="physics-metric-value" id="phaseAccel">0.00</div>
+                    <div class="physics-metric-percent" id="phaseAccelPercent">0%</div>
+                </div>
+                <div class="physics-metric">
+                    <div class="physics-metric-name">Curvature</div>
+                    <div class="physics-metric-value" id="curvature">0.00</div>
+                    <div class="physics-metric-percent" id="curvaturePercent">0%</div>
+                </div>
+                <div class="physics-metric">
+                    <div class="physics-metric-name">Memory (τ)</div>
+                    <div class="physics-metric-value" id="memory">0.00</div>
+                    <div class="physics-metric-percent" id="memoryPercent">0%</div>
+                </div>
+                <div class="physics-metric">
+                    <div class="physics-metric-name">Stress</div>
+                    <div class="physics-metric-value" id="stress">0.00</div>
+                    <div class="physics-metric-percent" id="stressPercent">0%</div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Celestial Cycle Analysis -->
+        <div class="card">
+            <h2>Celestial Cycle Analysis</h2>
+            <div class="wave-analysis">
+                <div class="wave-item">
+                    <span class="wave-name">Metonic Cycle (6939d → 231d)</span>
+                    <span class="wave-value" id="metonic">0.000</span>
+                </div>
+                <div class="wave-item">
+                    <span class="wave-name">Apsidal Cycle (3285d → 109d)</span>
+                    <span class="wave-value" id="apsidal">0.000</span>
+                </div>
+                <div class="wave-item">
+                    <span class="wave-name">Solar Cycle (4018d → 134d)</span>
+                    <span class="wave-value" id="solar">0.000</span>
+                </div>
+                <div class="wave-item">
+                    <span class="wave-name">Combined Wave (12-day MA)</span>
+                    <span class="wave-value" id="combinedWave">0.000</span>
+                </div>
+                <div class="wave-item">
+                    <span class="wave-name">Wave Momentum</span>
+                    <span class="wave-value" id="momentum">0.000</span>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Historical Trades -->
+        <div class="card">
+            <h2>Trading History</h2>
+            <div id="tradeHistory" style="max-height: 300px; overflow-y: auto;">
+                <p class="status">No trades recorded yet</p>
+            </div>
+        </div>
+        
+        <div class="timestamp" id="timestamp">Last update: --</div>
+    </div>
+
+    <script>
+        // State management
+        let state = {
+            currentToken: 'dogecoin',
+            currentPrice: 0,
+            priceHistory: [],
+            trades: [],
+            refreshInterval: 60000,
+            lastUpdate: null,
+            baseDate: new Date('2014-10-01')
+        };
+        
+        const tokenMap = {
+            'dogecoin': 'DOGE',
+            'bitcoin': 'BTC',
+            'ethereum': 'ETH',
+            'solana': 'SOL',
+            'ripple': 'XRP',
+            'cardano': 'ADA'
+        };
+        
+        // Initialize
+        document.addEventListener('DOMContentLoaded', () => {
+            refreshData();
+            setInterval(refreshData, state.refreshInterval);
+        });
+        
+        function changeToken() {
+            state.currentToken = document.getElementById('token').value;
+            state.priceHistory = [];
+            state.trades = [];
+            document.getElementById('tradeHistory').innerHTML = '<p class="status">No trades recorded yet</p>';
+            refreshData();
+        }
+        
+        function changeInterval() {
+            state.refreshInterval = parseInt(document.getElementById('interval').value);
+            clearInterval(window.refreshTimer);
+            window.refreshTimer = setInterval(refreshData, state.refreshInterval);
+        }
+        
+        async function refreshData() {
+            try {
+                // Fetch price data from CoinGecko
+                const response = await fetch(
+                    `https://api.coingecko.com/api/v3/simple/price?ids=${state.currentToken}&vs_currencies=usd&include_market_cap=true&include_24hr_vol=true&include_24hr_change=true&include_7d_change=true`
+                );
+                
+                if (!response.ok) throw new Error('API Error');
+                
+                const data = await response.json();
+                const tokenData = data[state.currentToken];
+                
+                state.currentPrice = tokenData.usd;
+                state.lastUpdate = new Date();
+                
+                // Store in history
+                state.priceHistory.push({
+                    timestamp: state.lastUpdate,
+                    price: state.currentPrice
+                });
+                
+                // Keep last 100 price points
+                if (state.priceHistory.length > 100) {
+                    state.priceHistory.shift();
+                }
+                
+                updatePriceDisplay(tokenData);
+                calculatePhysicsMetrics();
+                generateSignal();
+                updateTimestamp();
+                
+            } catch (error) {
+                console.error('Error fetching data:', error);
+                document.querySelector('.error')?.remove();
+                const errorDiv = document.createElement('div');
+                errorDiv.className = 'error';
+                errorDiv.textContent = '⚠ API Error: Unable to fetch token data';
+                document.body.insertBefore(errorDiv, document.querySelector('.controls').nextSibling);
+            }
+        }
+        
+        function updatePriceDisplay(data) {
+            document.getElementById('price').textContent = '$' + state.currentPrice.toFixed(4);
+            
+            const change24h = data.usd_24h_change || 0;
+            document.getElementById('change24h').textContent = (change24h >= 0 ? '+' : '') + change24h.toFixed(2) + '%';
+            document.getElementById('change24h').className = 'metric-value ' + (change24h >= 0 ? 'positive' : 'negative');
+            
+            const change7d = data.usd_7d_change || 0;
+            document.getElementById('change7d').textContent = (change7d >= 0 ? '+' : '') + change7d.toFixed(2) + '%';
+            document.getElementById('change7d').className = 'metric-value ' + (change7d >= 0 ? 'positive' : 'negative');
+            
+            const marketCap = data.usd_market_cap || 0;
+            if (marketCap > 1e9) {
+                document.getElementById('marketCap').textContent = '$' + (marketCap / 1e9).toFixed(2) + 'B';
+            } else if (marketCap > 1e6) {
+                document.getElementById('marketCap').textContent = '$' + (marketCap / 1e6).toFixed(2) + 'M';
+            }
+            
+            document.getElementById('priceStatus').textContent = 'Updated ' + state.lastUpdate.toLocaleTimeString();
+        }
+        
+        function calculatePhysicsMetrics() {
+            // Days since base date
+            const now = new Date();
+            const daysSinceBase = Math.floor((now - state.baseDate) / (1000 * 60 * 60 * 24));
+            
+            // Celestial cycles (days reduced to cycle period)
+            const metonicValue = Math.sin(2 * Math.PI * daysSinceBase / 231);
+            const apsidalValue = Math.sin(2 * Math.PI * daysSinceBase / 109);
+            const solarValue = Math.sin(2 * Math.PI * daysSinceBase / 134);
+            
+            document.getElementById('metonic').textContent = metonicValue.toFixed(3);
+            document.getElementById('apsidal').textContent = apsidalValue.toFixed(3);
+            document.getElementById('solar').textContent = solarValue.toFixed(3);
+            
+            // Combined wave
+            const wave = metonicValue + apsidalValue + solarValue;
+            const smoothedWave = wave * 0.4143 * 0.97; // Historical scaling
+            
+            document.getElementById('combinedWave').textContent = smoothedWave.toFixed(3);
+            
+            // Wave momentum (derivative)
+            let momentum = 0;
+            if (state.priceHistory.length > 1) {
+                momentum = smoothedWave - (state.priceHistory[state.priceHistory.length - 2]?.waveValue || smoothedWave);
+            }
+            document.getElementById('momentum').textContent = momentum.toFixed(3);
+            
+            // Volatility-based metrics
+            const volatility = calculateVolatility();
+            
+            // Energy (price momentum * volatility)
+            const energyValue = Math.abs(momentum) * volatility;
+            document.getElementById('energy').textContent = energyValue.toFixed(2);
+            document.getElementById('energyPercent').textContent = Math.min(100, energyValue * 100).toFixed(0) + '%';
+            
+            // Attractor (phase convergence)
+            const attractorValue = Math.abs(metonicValue - apsidalValue) < 0.5 ? 1 + volatility : 0.5 + volatility;
+            document.getElementById('attractor').textContent = attractorValue.toFixed(2);
+            document.getElementById('attractorPercent').textContent = Math.min(100, attractorValue * 100).toFixed(0) + '%';
+            
+            // Phase acceleration
+            const phaseAccelValue = Math.abs(solarValue) > 0.7 ? Math.abs(momentum) : 0;
+            document.getElementById('phaseAccel').textContent = phaseAccelValue.toFixed(2);
+            document.getElementById('phaseAccelPercent').textContent = Math.min(100, phaseAccelValue * 100).toFixed(0) + '%';
+            
+            // Curvature (cycle correlation)
+            const curvatureValue = 1 + Math.sin(2 * Math.PI * daysSinceBase / 180);
+            document.getElementById('curvature').textContent = curvatureValue.toFixed(2);
+            document.getElementById('curvaturePercent').textContent = Math.min(100, (curvatureValue / 2) * 100).toFixed(0) + '%';
+            
+            // Memory constant (0.69)
+            const memoryValue = 0.69 * (1 + volatility);
+            document.getElementById('memory').textContent = memoryValue.toFixed(2);
+            document.getElementById('memoryPercent').textContent = Math.min(100, memoryValue * 100).toFixed(0) + '%';
+            
+            // Stress (inverse of stability)
+            const stressValue = volatility * (1 - Math.cos(smoothedWave));
+            document.getElementById('stress').textContent = stressValue.toFixed(2);
+            document.getElementById('stressPercent').textContent = Math.min(100, stressValue * 100).toFixed(0) + '%';
+            
+            // Store wave value for next iteration
+            if (!state.priceHistory[state.priceHistory.length - 1]) {
+                state.priceHistory[state.priceHistory.length - 1] = { waveValue: smoothedWave };
+            } else {
+                state.priceHistory[state.priceHistory.length - 1].waveValue = smoothedWave;
+            }
+        }
+        
+        function calculateVolatility() {
+            if (state.priceHistory.length < 2) return 0;
+            
+            const prices = state.priceHistory.map(p => p.price);
+            const mean = prices.reduce((a, b) => a + b, 0) / prices.length;
+            const variance = prices.reduce((sum, p) => sum + Math.pow(p - mean, 2), 0) / prices.length;
+            const stdDev = Math.sqrt(variance);
+            const volatility = stdDev / mean;
+            
+            return Math.min(volatility, 1); // Cap at 1
+        }
+        
+        function generateSignal() {
+            // Get recent metrics
+            const metonicValue = parseFloat(document.getElementById('metonic').textContent);
+            const apsidalValue = parseFloat(document.getElementById('apsidal').textContent);
+            const solarValue = parseFloat(document.getElementById('solar').textContent);
+            const smoothedWave = parseFloat(document.getElementById('combinedWave').textContent);
+            const momentum = parseFloat(document.getElementById('momentum').textContent);
+            const energy = parseFloat(document.getElementById('energy').textContent);
+            const attractor = parseFloat(document.getElementById('attractor').textContent);
+            const phaseAccel = parseFloat(document.getElementById('phaseAccel').textContent);
+            const volatility = calculateVolatility();
+            
+            // Signal logic based on wave crossover and physics metrics
+            let signal = 'HOLD';
+            let confidence = 0;
+            let strength = 0;
+            
+            // Buy conditions
+            if (smoothedWave > -0.2 && momentum > 0 && energy > 0.3) {
+                signal = 'BUY';
+                confidence = Math.min(100, (Math.abs(momentum) * 100 + energy * 100) / 2);
+                strength = Math.min(100, (attractor * 20 + phaseAccel * 50 + (1 - volatility) * 30));
+            }
+            // Sell conditions
+            else if (smoothedWave > 0.7 || (smoothedWave > 0.4 && momentum < -0.05)) {
+                signal = 'SELL';
+                confidence = Math.min(100, (Math.abs(momentum) * 100 + energy * 50) / 2);
+                strength = Math.min(100, volatility * 100);
+            }
+            else {
+                confidence = 30 + Math.random() * 30;
+                strength = Math.abs(smoothedWave) * 30;
+            }
+            
+            // Risk score (0-100)
+            const riskScore = calculateRiskScore(smoothedWave, energy, volatility, confidence);
+            
+            // Update display
+            updateSignalDisplay(signal, confidence, strength, riskScore);
+            
+            // Log trade if signal changed
+            logTrade(signal, confidence, riskScore);
+        }
+        
+        function calculateRiskScore(waveValue, energy, volatility, confidence) {
+            // Risk score is 100 = full risk-on, 0 = full risk-off
+            // Based on wave value, energy, volatility, and confidence
+            
+            let riskScore = 50; // Start neutral
+            
+            // Wave contribution: positive wave = more risk-on
+            riskScore += waveValue * 30;
+            
+            // Energy contribution: high energy = high risk
+            riskScore += energy * 20;
+            
+            // Volatility contribution: high volatility = lower risk score
+            riskScore -= volatility * 30;
+            
+            // Confidence bonus: high confidence = higher risk taking
+            riskScore += (confidence / 100) * 20;
+            
+            return Math.max(0, Math.min(100, riskScore));
+        }
+        
+        function updateSignalDisplay(signal, confidence, strength, riskScore) {
+            const signalBox = document.getElementById('signalBox');
+            signalBox.className = 'signal-box signal-' + signal.toLowerCase();
+            signalBox.textContent = signal;
+            
+            document.getElementById('signalStrength').textContent = strength.toFixed(0) + '%';
+            document.getElementById('signalStrength').className = 'metric-value ' + (strength > 60 ? 'positive' : 'negative');
+            
+            document.getElementById('confidence').textContent = confidence.toFixed(0) + '%';
+            document.getElementById('confidence').className = 'metric-value ' + (confidence > 50 ? 'positive' : 'negative');
+            
+            document.getElementById('riskScore').textContent = riskScore.toFixed(1);
+            document.getElementById('riskFill').style.width = riskScore + '%';
+            
+            // Risk label
+            let riskLabel = 'NEUTRAL';
+            let riskState = 'Neutral';
+            if (riskScore > 70) {
+                riskLabel = 'HIGH RISK-ON';
+                riskState = 'Risk-On';
+            } else if (riskScore > 50) {
+                riskLabel = 'MODERATE RISK-ON';
+                riskState = 'Slight Risk-On';
+            } else if (riskScore > 30) {
+                riskLabel = 'MODERATE RISK-OFF';
+                riskState = 'Slight Risk-Off';
+            } else {
+                riskLabel = 'STRONG RISK-OFF';
+                riskState = 'Risk-Off';
+            }
+            document.getElementById('riskLabel').textContent = riskLabel;
+            document.getElementById('riskState').textContent = riskState;
+            document.getElementById('riskState').className = 'metric-value ' + (riskScore > 50 ? 'positive' : 'negative');
+        }
+        
+        function logTrade(signal, confidence, riskScore) {
+            if (!state.lastTrade || state.lastTrade !== signal) {
+                const trade = {
+                    timestamp: state.lastUpdate,
+                    signal: signal,
+                    price: state.currentPrice,
+                    confidence: confidence,
+                    riskScore: riskScore
+                };
+                
+                state.trades.push(trade);
+                state.lastTrade = signal;
+                
+                // Keep last 20 trades
+                if (state.trades.length > 20) {
+                    state.trades.shift();
+                }
+                
+                updateTradeHistory();
+            }
+        }
+        
+        function updateTradeHistory() {
+            const container = document.getElementById('tradeHistory');
+            
+            if (state.trades.length === 0) {
+                container.innerHTML = '<p class="status">No trades recorded yet</p>';
+                return;
+            }
+            
+            const html = state.trades.map(trade => `
+                <div style="padding: 10px; border-bottom: 1px solid rgba(0, 255, 255, 0.1);">
+                    <div style="display: flex; justify-content: space-between; margin-bottom: 5px;">
+                        <span style="color: ${trade.signal === 'BUY' ? '#00ff00' : trade.signal === 'SELL' ? '#ff0055' : '#ffff00'}; font-weight: bold;">
+                            ${trade.signal}
+                        </span>
+                        <span style="color: #888; font-size: 0.85em;">${trade.timestamp.toLocaleTimeString()}</span>
+                    </div>
+                    <div style="display: flex; justify-content: space-between; font-size: 0.85em;">
+                        <span>Price: $${trade.price.toFixed(4)}</span>
+                        <span>Confidence: ${trade.confidence.toFixed(0)}% | Risk: ${trade.riskScore.toFixed(0)}</span>
+                    </div>
+                </div>
+            `).reverse().join('');
+            
+            container.innerHTML = html;
+        }
+        
+        function updateTimestamp() {
+            const now = new Date();
+            document.getElementById('timestamp').textContent = 
+                'Last update: ' + now.toLocaleString() + 
+                ' | Data points: ' + state.priceHistory.length + 
+                ' | Trades: ' + state.trades.length;
+        }
+    </script>
+</body>
+</html>

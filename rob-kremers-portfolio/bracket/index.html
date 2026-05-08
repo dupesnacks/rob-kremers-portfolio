@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2026 NCAA Tournament — Full Bracket | Rob Kremers</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --ink: #0a0a0f;
+      --paper: #f5f2ea;
+      --cream: #ede9df;
+      --gold: #c8963e;
+      --red: #c0392b;
+      --blue: #1a3a6b;
+      --green: #1e6b3a;
+      --orange: #d4511a;
+      --muted: #888070;
+      --border: #ccc5b0;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background: var(--paper);
+      color: var(--ink);
+      overflow-x: auto;
+    }
+
+    /* MASTHEAD */
+    .masthead {
+      background: var(--ink);
+      color: var(--paper);
+      padding: 40px;
+      border-bottom: 4px solid var(--gold);
+      text-align: center;
+    }
+
+    .masthead h1 {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 3.5rem;
+      letter-spacing: 0.05em;
+      margin-bottom: 12px;
+    }
+
+    .masthead h1 span { color: var(--gold); }
+
+    .masthead p {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.7rem;
+      letter-spacing: 0.1em;
+      color: var(--muted);
+      text-transform: uppercase;
+    }
+
+    /* CHAMPION BANNER */
+    .champ-banner {
+      background: var(--gold);
+      padding: 24px 40px;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      align-items: center;
+      flex-wrap: wrap;
+      border-bottom: 3px solid #8b6020;
+    }
+
+    .champ-info {
+      text-align: center;
+    }
+
+    .champ-label {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.65rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--ink);
+      opacity: 0.7;
+      margin-bottom: 6px;
+    }
+
+    .champ-pick {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 2.2rem;
+      letter-spacing: 0.05em;
+      color: var(--ink);
+    }
+
+    .champ-score {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.75rem;
+      color: var(--ink);
+      opacity: 0.8;
+      margin-top: 4px;
+      letter-spacing: 0.05em;
+    }
+
+    /* INSTRUCTIONS */
+    .instructions {
+      background: var(--cream);
+      padding: 16px 40px;
+      border-bottom: 1px solid var(--border);
+      font-family: 'DM Mono', monospace;
+      font-size: 0.65rem;
+      letter-spacing: 0.05em;
+      color: var(--muted);
+      text-align: center;
+    }
+
+    /* BRACKET SCROLL */
+    .bracket-wrapper {
+      overflow-x: auto;
+      padding: 40px 20px;
+    }
+
+    .bracket {
+      display: flex;
+      gap: 12px;
+      min-width: fit-content;
+      padding: 0 20px;
+      margin: 0 auto;
+    }
+
+    /* REGION SECTIONS */
+    .region {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      min-width: 140px;
+    }
+
+    .region-title {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 0.9rem;
+      letter-spacing: 0.08em;
+      padding: 8px 12px;
+      text-align: center;
+      color: white;
+      font-weight: 700;
+    }
+
+    .region.east .region-title { background: var(--blue); }
+    .region.midwest .region-title { background: var(--green); }
+    .region.west .region-title { background: var(--orange); }
+    .region.south .region-title { background: var(--red); }
+
+    /* ROUND COLUMNS */
+    .round {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      min-height: 600px;
+      gap: 4px;
+    }
+
+    .round-label {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.5rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--muted);
+      text-align: center;
+      padding: 4px 0;
+      margin-bottom: 4px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    /* GAME BOX */
+    .game {
+      display: flex;
+      flex-direction: column;
+      border: 1px solid var(--border);
+      background: var(--cream);
+      font-size: 0.65rem;
+      overflow: hidden;
+    }
+
+    .team {
+      display: flex;
+      align-items: center;
+      padding: 4px 6px;
+      gap: 4px;
+      border-bottom: 1px dashed var(--border);
+      transition: background 0.1s;
+    }
+
+    .team:last-child { border-bottom: none; }
+
+    .team.winner {
+      background: var(--ink);
+      color: var(--paper);
+    }
+
+    .seed {
+      font-family: 'DM Mono', monospace;
+      font-weight: 600;
+      min-width: 16px;
+      text-align: right;
+      color: var(--muted);
+      flex-shrink: 0;
+    }
+
+    .team.winner .seed { color: var(--gold); }
+
+    .name {
+      flex: 1;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      font-weight: 500;
+    }
+
+    .badge {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.5rem;
+      padding: 1px 3px;
+      border-radius: 1px;
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+
+    .badge.lock { background: var(--green); color: white; }
+    .badge.lean { background: var(--blue); color: white; }
+    .badge.coin { background: #8b5e1a; color: white; }
+    .badge.upset { background: var(--red); color: white; font-weight: 700; }
+
+    /* FINAL FOUR CENTER */
+    .finals-center {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      min-width: 180px;
+      padding: 20px;
+    }
+
+    .ff-box {
+      border: 2px solid var(--gold);
+      background: var(--ink);
+      color: var(--paper);
+      padding: 12px;
+      width: 100%;
+    }
+
+    .ff-label {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.5rem;
+      letter-spacing: 0.1em;
+      color: var(--gold);
+      margin-bottom: 8px;
+      text-transform: uppercase;
+    }
+
+    .ff-team {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      padding: 6px 0;
+      border-bottom: 1px dashed rgba(200,150,62,0.2);
+      font-size: 0.7rem;
+    }
+
+    .ff-team.winner {
+      background: var(--gold);
+      color: var(--ink);
+      padding: 8px 6px;
+      margin: 0 -6px;
+      border: none;
+    }
+
+    .ff-seed {
+      font-family: 'DM Mono', monospace;
+      font-weight: 600;
+      min-width: 14px;
+    }
+
+    .ff-name {
+      flex: 1;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .champ-box {
+      border: 3px solid var(--gold);
+      background: var(--gold);
+      color: var(--ink);
+      padding: 14px;
+      width: 100%;
+      text-align: center;
+    }
+
+    .champ-box-label {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.5rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      opacity: 0.7;
+      margin-bottom: 6px;
+    }
+
+    .champ-box-name {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 1.6rem;
+      letter-spacing: 0.04em;
+    }
+
+    .champ-box-score {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.55rem;
+      opacity: 0.8;
+      margin-top: 4px;
+      letter-spacing: 0.04em;
+    }
+
+    /* LEGEND */
+    .legend {
+      padding: 20px 40px;
+      background: var(--cream);
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+      border-top: 1px solid var(--border);
+      font-family: 'DM Mono', monospace;
+      font-size: 0.6rem;
+      letter-spacing: 0.06em;
+      color: var(--muted);
+    }
+
+    .legend-item {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .legend-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 1px;
+    }
+
+    .legend-dot.lock { background: var(--green); }
+    .legend-dot.lean { background: var(--blue); }
+    .legend-dot.coin { background: #8b5e1a; }
+    .legend-dot.upset { background: var(--red); }
+
+    /* FOOTER */
+    footer {
+      padding: 30px 40px;
+      text-align: center;
+      background: var(--cream);
+      border-top: 2px solid var(--border);
+      font-family: 'DM Mono', monospace;
+      font-size: 0.65rem;
+      letter-spacing: 0.08em;
+      color: var(--muted);
+      text-transform: uppercase;
+    }
+
+    @media (max-width: 1200px) {
+      .masthead h1 { font-size: 2.2rem; }
+      .round { min-height: 500px; }
+    }
+  </style>
+</head>
+<body>
+
+<header class="masthead">
+  <h1>2026 NCAA <span>TOURNAMENT</span></h1>
+  <p>Complete Bracket · All 63 Games · KenPom Analytics</p>
+</header>
+
+<div class="champ-banner">
+  <div class="champ-info">
+    <div class="champ-label">National Champion</div>
+    <div class="champ-pick">Arizona</div>
+    <div class="champ-score">72 vs Duke 68</div>
+  </div>
+  <div class="champ-info">
+    <div class="champ-label">Runner-up</div>
+    <div class="champ-pick">Duke</div>
+    <div class="champ-score">East Region</div>
+  </div>
+</div>
+
+<div class="instructions">
+  <strong>LEGEND:</strong> GREEN = LOCK | BLUE = LEAN | GOLD = COIN FLIP | RED = UPSET PICK | Full 64-team bracket with all games Round of 64 → Championship
+</div>
+
+<div class="bracket-wrapper">
+  <div class="bracket">
+    <!-- EAST REGION -->
+    <div class="region east">
+      <div class="region-title">EAST</div>
+      
+      <div class="round">
+        <div class="round-label">R64</div>
+        <div class="game"><div class="team winner"><span class="seed">1</span><span class="name">Duke</span><span class="badge lock">LOCK</span></div><div class="team"><span class="seed">16</span><span class="name">Siena</span></div></div>
+        <div class="game"><div class="team winner"><span class="seed">8</span><span class="name">Ohio St</span><span class="badge lean">LEAN</span></div><div class="team"><span class="seed">9</span><span class="name">TCU</span></div></div>
+        <div class="game"><div class="team winner"><span class="seed">5</span><span class="name">Vandy</span><span class="badge lean">LEAN</span></div><div class="team"><span class="seed">12</span><span class="name">McNeese</span></div></div>
+        <div class="game"><div class="team winner"><span class="seed">4</span><span class="name">Nebraska</span><span class="badge lean">LEAN</span></div><div class="team"><span class="seed">13</span><span class="name">Troy</span></div></div>
+        <div class="game"><div class="team winner"><span class="seed">6</span><span class="name">UNC</span><span class="badge upset">UPSET</span></div><div class="team"><span class="seed">11</span><span class="name">VCU</span></div></div>
+        <div class="game"><div class="team winner"><span class="seed">3</span><span class="name">MSU</span><span class="badge lock">LOCK</span></div><div class="team"><span class="seed">14</span><span class="name">N. Dakota St</span></div></div>
+        <div class="game"><div class="team winner"><span class="seed">7</span><span class="name">UCLA</span><span class="badge lean">LEAN</span></div><div class="team"><span class="seed">10</span><span class="name">UCF</span></div></div>
+        <div class="game"><div class="team winner"><span class="seed">2</span><span class="name">UConn</span><span class="badge lock">LOCK</span></div><div class="team"><span class="seed">15</span><span class="name">Furman</span></div></div>
+      </div>
+
+      <div class="round">
+        <div class="round-label">R32</div>
+        <div class="game"><div class="team winner"><span class="seed">1</span><span class="name">Duke</span><span class="badge lock">LOCK</span></div><div class="team"><span class="seed">8</span><span class="name">Ohio St</span></div></div>
+        <div class="game"><div class="team winner"><span class="seed">4</span><span class="name">Nebraska</span><span class="badge coin">COIN</span></div><div class="team"><span class="seed">5</span><span class="name">Vandy</span></div></div>
+        <div class="game"><div class="team winner"><span class="seed">3</span><span class="name">MSU</span><span class="badge lean">LEAN</span></div><div class="team"><span class="seed">6</span><span class="name">UNC</span></div></div>
+        <div class="game"><div class="team winner"><span class="seed">2</span><span class="name">UConn</span><span class="badge lean">LEAN</span></div><div class="team"><span class="seed">7</span><span class="name">UCLA</span></div></div>
+      </div>
+
+      <div class="round">
+        <div class="round-label">S16</div>
+        <div class="game"><div class="team winner"><span class="seed">1</span><span class="name">Duke</span><span class="badge lock">LOCK</span></div><div class="team"><span class="seed">4</span><span class="name">Nebraska</span></div></div>
+        <div class="game"><div class="team winner"><span class="seed">2</span><span class="name">UConn</span><span class="badge lean">LEAN</span></div><div class="team"><span class="seed">3</span><span class="name">MSU</span></div></div>
+      </div>
+
+      <div class="round">
+        <div class="round-label">E8</div>
+        <div class="game"><div class="team winner"><span class="seed">1</span><span class="name">Duke</span><span class="badge lean">LEAN</span></div><div class="team"><span class="seed">2</span><span class="name">UConn</span></div></div>
+      </div>
+    </div>
+
+    <!-- MIDWEST REGION -->
+    <div class="region midwest">
+      <div class="region-title">MIDWEST</div>
+      
+      <div class="round">
+        <div class="round-label">R64</div>
+        <div class="game"><div class="team winner"><span class="seed">1</span><span class="name">Michigan</span><span class="badge lock">LOCK</span></div><div class="team"><span class="seed">16</span><span class="name">Howard</span></div></div>
+        <div class="game"><div class="team winner"><span class="seed">9</span><span class="name">St Louis</span><span class="badge upset">UPSET</span></div><div class="team"><span class="seed">8</span><span class="name">Georgia</span></div></div>
+        <div class="game"><div class="team winner"><span class="seed">5</span><span class="name">Wisconsin</span><span class="badge lean">LEAN</span></div><div class="team"><span class="seed">12</span><span class="name">High Point</span></div></div>
+        <div class="game"><div class="team winner"><span class="seed">4</span><span class="name">Arkansas</span><span class="badge lock">LOCK</span></div><div class="team"><span class="seed">13</span><span class="name">Hawai'i</span></div></div>
+        <div class="game"><div class="team winner"><span class="seed">6</span><span class="name">Tennessee</span><span class="badge lean">LEAN</span></div><div class="team"><span class="seed">11</span><span class="name">Miami OH</span></div></div>
+        <div class="game"><div class="team winner"><span class="seed">3</span><span class="name">Illinois</span><span class="badge lock">LOCK</span></div><div class="team"><span class="seed">14</span><span class="name">Penn</span></div></div>
+        <div class="game"><div class="team winner"><span class="seed">7</span><span class="name">St Mary's</span><span class="badge lean">LEAN</span></div><div class="team"><span class="seed">10</span><span class="name">Texas A&M</span></div></div>
+        <div class="game"><div class="team winner"><span class="seed">2</span><span class="name">Purdue</span><span class="badge lock">LOCK</span></div><div class="team"><span class="seed">15</span><span class="name">Queens</span></div></div>
+      </div>
+
+      <div class="round">
+        <div class="round-label">R32</div>
+        <div class="game"><div class="team winner"><span class="seed">1</span><span class="name">Michigan</span><span class="badge lean">LEAN</span></div><div class="team"><span class="seed">9</span><span class="name">St Louis</span></div></div>
+        <div class="game"><div class="team winner"><span class="seed">5</span><span class="name">Wisconsin</span><span class="badge coin">COIN</span></div><div class="team"><span class="seed">4</span><span class="name">Arkansas</span></div></div>
+        <div class="game"><div class="team winner"><span class="seed">3</span><span class="name">Illinois</span><span class="badge lock">LOCK</span></div><div class="team"><span class="seed">6</span><span class="name">Tennessee</span></div></div>
+        <div class="game"><div class="team winner"><span class="seed">2</span><span class="name">Purdue</span><span class="badge lean">LEAN</span></div><div class="team"><span class="seed">7</span><span class="name">St Mary's</span></div></div>
+      </div>
+
+      <div class="round">
+        <div class="round-label">S16</div>
+        <div class="game"><div class="team winner"><span class="seed">1</span><span class="name">Michigan</span><span class="badge lean">LEAN</span></div><div class="team"><span class="seed">5</span><span class="name">Wisconsin</span></div></div>
+        <div class="game"><div class="team winner"><span class="seed">3</span><span class="name">Illinois</span><span class="badge lean">LEAN</span></div><div class="team"><span class="seed">2</span><span class="name">Purdue</span></div></div>
+      </div>
+
+      <div class="round">
+        <div class="round-label">E8</div>
+        <div class="game"><div class="team winner"><span class="seed">1</span><span class="name">Michigan</span><span class="badge lean">LEAN</span></div><div class="team"><span class="seed">3</span><span class="name">Illinois</span></div></div>
+      </div>
+    </div>
+
+    <!-- WEST REGION -->
+    <div class="region west">
+      <div class="region-title">WEST</div>
+      
+      <div class="round">
+        <div class="round-label">R64</div>
+        <div class="game"><div class="team winner"><span class="seed">1</span><span class="name">Arizona</span><span class="badge lock">LOCK</span></div><div class="team"><span class="seed">16</span><span class="name">LIU</span></div></div>
+        <div class="game"><div class="team winner"><span class="seed">8</span><span class="name">Villanova</span><span class="badge lean">LEAN</span></div><div class="team"><span class="seed">9</span><span class="name">Utah St</span></div></div>
+        <div class="game"><div class="team winner"><span class="seed">5</span><span class="name">Texas Tech</span><span class="badge lock">LOCK</span></div><div class="team"><span class="seed">12</span><span class="name">Akron</span></div></div>
+        <div class="game"><div class="team winner"><span class="seed">4</span><span class="name">Colorado</span><span class="badge lean">LEAN</span></div><div class="team"><span class="seed">13</span><span class="name">Montana St</span></div></div>
+        <div class="game"><div class="team winner"><span class="seed">6</span><span class="name">BYU</span><span class="badge lean">LEAN</span></div><div class="team"><span class="seed">11</span><span class="name">NC State</span></div></div>
+        <div class="game"><div class="team winner"><span class="seed">3</span><span class="name">Gonzaga</span><span class="badge lock">LOCK</span></div><div class="team"><span class="seed">14</span><span class="name">Kennesaw St</span></div></div>
+        <div class="game"><div class="team winner"><span class="seed">7</span><span class="name">Miami FL</span><span class="badge lean">LEAN</span></div><div class="team"><span class="seed">10</span><span class="name">Missouri</span></div></div>
+        <div class="game"><div class="team winner"><span class="seed">2</span><span class="name">Houston</span><span class="badge lock">LOCK</span></div><div class="team"><span class="seed">15</span><span class="name">SFA</span></div></div>
+      </div>
+
+      <div class="round">
+        <div class="round-label">R32</div>
+        <div class="game"><div class="team winner"><span class="seed">1</span><span class="name">Arizona</span><span class="badge lock">LOCK</span></div><div class="team"><span class="seed">8</span><span class="name">Villanova</span></div></div>
+        <div class="game"><div class="team winner"><span class="seed">5</span><span class="name">Texas Tech</span><span class="badge lean">LEAN</span></div><div class="team"><span class="seed">4</span><span class="name">Colorado</span></div></div>
+        <div class="game"><div class="team winner"><span class="seed">3</span><span class="name">Gonzaga</span><span class="badge lean">LEAN</span></div><div class="team"><span class="seed">6</span><span class="name">BYU</span></div></div>
+        <div class="game"><div class="team winner"><span class="seed">2</span><span class="name">Houston</span><span class="badge lean">LEAN</span></div><div class="team"><span class="seed">7</span><span class="name">Miami FL</span></div></div>
+      </div>
+
+      <div class="round">
+        <div class="round-label">S16</div>
+        <div class="game"><div class="team winner"><span class="seed">1</span><span class="name">Arizona</span><span class="badge lean">LEAN</span></div><div class="team"><span class="seed">5</span><span class="name">Texas Tech</span></div></div>
+        <div class="game"><div class="team winner"><span class="seed">3</span><span class="name">Gonzaga</span><span class="badge lean">LEAN</span></div><div class="team"><span class="seed">2</span><span class="name">Houston</span></div></div>
+      </div>
+
+      <div class="round">
+        <div class="round-label">E8</div>
+        <div class="game"><div class="team winner"><span class="seed">1</span><span class="name">Arizona</span><span class="badge lock">LOCK</span></div><div class="team"><span class="seed">3</span><span class="name">Gonzaga</span></div></div>
+      </div>
+    </div>
+
+    <!-- SOUTH REGION -->
+    <div class="region south">
+      <div class="region-title">SOUTH</div>
+      
+      <div class="round">
+        <div class="round-label">R64</div>
+        <div class="game"><div class="team winner"><span class="seed">1</span><span class="name">Florida</span><span class="badge lean">LEAN</span></div><div class="team"><span class="seed">16</span><span class="name">Colgate</span></div></div>
+        <div class="game"><div class="team winner"><span class="seed">9</span><span class="name">Iowa</span><span class="badge upset">UPSET</span></div><div class="team"><span class="seed">8</span><span class="name">Clemson</span></div></div>
+        <div class="game"><div class="team winner"><span class="seed">5</span><span class="name">St John's</span><span class="badge lean">LEAN</span></div><div class="team"><span class="seed">12</span><span class="name">N. Iowa</span></div></div>
+        <div class="game"><div class="team winner"><span class="seed">4</span><span class="name">Alabama</span><span class="badge upset">UPSET</span></div><div class="team"><span class="seed">13</span><span class="name">Hofstra</span></div></div>
+        <div class="game"><div class="team winner"><span class="seed">6</span><span class="name">Louisville</span><span class="badge lean">LEAN</span></div><div class="team"><span class="seed">11</span><span class="name">S Florida</span></div></div>
+        <div class="game"><div class="team winner"><span class="seed">3</span><span class="name">Baylor</span><span class="badge lock">LOCK</span></div><div class="team"><span class="seed">14</span><span class="name">Grambling</span></div></div>
+        <div class="game"><div class="team winner"><span class="seed">7</span><span class="name">Miami FL</span><span class="badge lean">LEAN</span></div><div class="team"><span class="seed">10</span><span class="name">Missouri</span></div></div>
+        <div class="game"><div class="team winner"><span class="seed">2</span><span class="name">Houston</span><span class="badge lock">LOCK</span></div><div class="team"><span class="seed">15</span><span class="name">SFA</span></div></div>
+      </div>
+
+      <div class="round">
+        <div class="round-label">R32</div>
+        <div class="game"><div class="team winner"><span class="seed">1</span><span class="name">Florida</span><span class="badge coin">COIN</span></div><div class="team"><span class="seed">9</span><span class="name">Iowa</span></div></div>
+        <div class="game"><div class="team winner"><span class="seed">4</span><span class="name">Alabama</span><span class="badge lean">LEAN</span></div><div class="team"><span class="seed">5</span><span class="name">St John's</span></div></div>
+        <div class="game"><div class="team winner"><span class="seed">3</span><span class="name">Baylor</span><span class="badge lean">LEAN</span></div><div class="team"><span class="seed">6</span><span class="name">Louisville</span></div></div>
+        <div class="game"><div class="team winner"><span class="seed">2</span><span class="name">Houston</span><span class="badge lean">LEAN</span></div><div class="team"><span class="seed">7</span><span class="name">Miami FL</span></div></div>
+      </div>
+
+      <div class="round">
+        <div class="round-label">S16</div>
+        <div class="game"><div class="team winner"><span class="seed">1</span><span class="name">Florida</span><span class="badge lean">LEAN</span></div><div class="team"><span class="seed">4</span><span class="name">Alabama</span></div></div>
+        <div class="game"><div class="team winner"><span class="seed">2</span><span class="name">Houston</span><span class="badge lean">LEAN</span></div><div class="team"><span class="seed">3</span><span class="name">Baylor</span></div></div>
+      </div>
+
+      <div class="round">
+        <div class="round-label">E8</div>
+        <div class="game"><div class="team winner"><span class="seed">2</span><span class="name">Houston</span><span class="badge lean">LEAN</span></div><div class="team"><span class="seed">1</span><span class="name">Florida</span></div></div>
+      </div>
+    </div>
+
+    <!-- FINAL FOUR & CHAMPIONSHIP -->
+    <div class="finals-center">
+      <div class="ff-box">
+        <div class="ff-label">Semifinal 1</div>
+        <div class="ff-team winner"><span class="ff-seed">1</span><span class="ff-name">Duke</span></div>
+        <div class="ff-team"><span class="ff-seed">1</span><span class="ff-name">Michigan</span></div>
+      </div>
+
+      <div class="ff-box">
+        <div class="ff-label">Semifinal 2</div>
+        <div class="ff-team winner"><span class="ff-seed">1</span><span class="ff-name">Arizona</span></div>
+        <div class="ff-team"><span class="ff-seed">2</span><span class="ff-name">Houston</span></div>
+      </div>
+
+      <div class="champ-box">
+        <div class="champ-box-label">National Championship</div>
+        <div class="champ-box-name">Arizona</div>
+        <div class="champ-box-score">72 vs Duke 68</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="legend">
+  <div class="legend-item"><div class="legend-dot lock"></div>LOCK (High Confidence)</div>
+  <div class="legend-item"><div class="legend-dot lean"></div>LEAN (Moderate)</div>
+  <div class="legend-item"><div class="legend-dot coin"></div>COIN FLIP (Toss-up)</div>
+  <div class="legend-item"><div class="legend-dot upset"></div>UPSET PICK</div>
+</div>
+
+<footer>
+  <p>2026 NCAA Tournament — Complete 63-Game Bracket<br>
+  KenPom Analytics | All Rounds: R64 → R32 → Sweet 16 → Elite Eight → Final Four → Championship<br>
+  Generated March 18, 2026 | Rob Kremers</p>
+</footer>
+
+</body>
+</html>

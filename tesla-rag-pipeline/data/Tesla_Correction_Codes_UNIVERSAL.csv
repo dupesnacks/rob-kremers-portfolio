@@ -1,0 +1,331 @@
+Code,Description,Work_Type,Labor_Hours,FRT
+00000010,Remote – Education,Over The Air,0.0,0.0
+00004107,Alert Diagnosis - Repair,General diagnosis conclusion,0.06,0.06
+00004108,Alert Diagnosis (Repair) - Create New Service Activity for Repair,Test/Adjust,0.06,0.06
+00005914,Service Collision Estimate,Inspection,0.0,0.0
+00006744,Engineering Vehicle in Service (Support),Maintenance,0.0,0.0
+00007192,Outside Influence or Vehicle Modified - Additional Work Required,Modify,0.0,0.0
+00008598,Tesla Body Repair - Menu Pricing,Test/Adjust,1.0,1.0
+00009186,Tesla Insurance Rental,Test/Adjust,0.0,0.0
+00020003,Software Update,Over The Air,0.06,0.06
+00020007,Firmware Update - Garage,Update,0.05,0.05
+00020008,Software Reinstall - Toolbox,Restore,0.06,0.06
+00020010,Remote – Known Characteristic of Current Firmware,Over The Air,0.25,0.25
+00020018,Software Reinstall - Touchscreen,Restore,0.05,0.05
+00020020,Remote – Over the Air Update,Over The Air,0.25,0.25
+00020104,Additional Work Required - Firmware Update/Reinstall Troubleshooting,General Diagnosis,0.0,0.0
+00022008,User Data (Factory Reset),Restore,0.05,0.05
+00023003,Clear Filesystem Caches,Module Reset/Reflashed,0.05,0.05
+00030100,PDI (Without Test Drive),Inspection,0.0,0.0
+00030101,Vehicle Receiving Inspection,Inspection,0.12,0.12
+00030300,Perform North Carolina State Inspection,Inspection,0.2,0.2
+00030400,Courtesy Inspection,Inspection,0.0,0.0
+00030410,Vehicle Health Check,Inspection,1.62,1.62
+00030700,Perform General Inspection,Inspection,0.78,0.78
+00030701,Perform General Inspection (No Issue Found),Inspection,0.5,0.5
+00030900,Perform Hawaii State Inspection,Inspection,0.75,0.75
+00031000,Perform New York State Inspection,Inspection,0.4,0.4
+00031100,Perform Missouri State Inspection,Inspection,0.25,0.25
+00031300,Vehicle Transfer Inspection,Inspection,0.1,0.1
+00031400,Out Of Province Inspection - Alberta (Inspection),Inspection,1.2,1.2
+00031500,Perform Nova Scotia Provincial Motor Vehicle Inspection,Inspection,0.5,0.5
+00031510,Perform Nova Scotia Provincial Motor Vehicle Inspection (Replacement Sticker),Inspection,0.1,0.1
+00031520,Perform Ontario Provincial Motor Vehicle Inspection,Inspection,1.0,1.0
+00032000,Used Vehicle Inspection,Inspection,1.08,1.08
+00032100,Used Vehicle Final Quality Check,Inspection,0.3,0.3
+00032200,Pre-Loaner Vehicle Inspection,Inspection,1.0,1.0
+00032201,Loaner Registration Confirmation,Inspection,0.2,0.2
+00033200,VIC Roadworthy Safety Inspection (RWC),Inspection,1.5,1.5
+00033300,New Hampshire State Inspection,Inspection,0.6,0.6
+00038000,Global Press Vehicle inspection,Inspection,6.1,6.1
+00039000,Used Vehicle Intake Inspection (UVIS Only),Inspection,0.0,0.0
+00039400,Repossessions and Recoveries Inspection,Inspection,0.5,0.5
+00040100,Perform Post-Repair Validation Test Drive,Test/Adjust,0.3,0.3
+00040900,Virginia Safety Inspection,Inspection,0.5,0.5
+00050104,Additional Work Required - ODIN Routine Troubleshooting,General Diagnosis,0.1,0.1
+00100004,General Diagnosis,General Diagnosis,0.5,0.5
+00100014,Diagnosis: Unable to Replicate Concern,General diagnosis conclusion,0.0,0.0
+00100024,Remote Diagnosis,Remote Diagnostics,0.3,0.3
+00100025,Remote Diagnosis: Customer Declined ,Remote Diagnostics,0.0,0.0
+00901320,Install Ceramic Coating,Retrofit,1.5,1.5
+10000004,Adjustment: Body / Closure Components,Test/Adjust,0.4,0.4
+10000105,Jack Mode Activation,Test/Adjust,0.06,0.06
+100002091,Auto Diagnostics,Remote Diagnostics,0.0,0.0
+10010007,Tesla Body Repair - Paint Supplies,Body Shop,0.0,0.0
+10010008,Tesla Body Repair - Miscellaneous Labor,Body Shop,0.0,0.0
+10010010,Tesla Body Repair - Frame Labor,Body Shop,0.0,0.0
+10010011,Tesla Body Repair - Structural,Body Shop,0.0,0.0
+10010012,Tesla Body Structural - Sheet Metal Quotation,Test/Adjust,0.6,0.6
+10010014,Tesla Body Structural - Sheet Metal Repair,Restore,1.0,1.0
+10010015,Tesla Body Structural--Reassemble Parts,Test/Adjust,1.0,1.0
+10010016,Tesla Body Repair - Aluminum Labor,Body Shop,0.0,0.0
+10100008,Tesla Body Repair - Mechanical Labor,Body Shop,0.0,0.0
+10108208,Corrosion Protection (Refinish),Restore,0.3,0.3
+10108500,Create Imprint of VIN,Inspection,0.14,0.14
+10108608,Tesla Body Repair - Body Labor,Body Shop,0.0,0.0
+10108808,Tesla Body Repair - Sublet,Body Shop,0.0,0.0
+10109008,Structural Body Repair,Repair,0.0,0.0
+10109108,Non-Structural Body Repair,Restore,0.0,0.0
+10109608,Tesla Body Repair - Insurance Pay,Body Shop,0.0,0.0
+10182019,Customer Generated Quote - Issue (Transaction) Resolved - Bound,General diagnosis conclusion,0.0,0.0
+10200108,Glass Chip Repair - Windshield,Restore,0.54,0.54
+10200118,Glass Scratch Repair - Windshield,Restore,0.36,0.36
+10200348,Clean Forward Camera View (Precision Cleaning of Inboard Glass),Restore,0.3,0.3
+1027521,Assistance with Refund of Reservation,Test/Adjust,0.0,0.0
+10300020,Touch Up Paint - Apply,Paint Work,0.2,0.2
+10300250,Paint Defects - Denib/Polish,Test/Adjust,0.25,0.25
+10302008,Clean Up Water Ingress,Restore,0.0,0.0
+10303025,Dent Repair - Paintless - 0.25,Paint Work,0.36,0.36
+10303050,Dent Repair - Paintless - 0.5,Paint Work,0.6,0.6
+10303100,Dent Repair - Paintless - 1,Paint Work,1.2,1.2
+11010004,Adjustment: Moving Glass,Test/Adjust,0.5,0.5
+11350010,Diagnosis: Latch Integrity,General Diagnosis,0.6,0.6
+11350020,Actuator Integrity Check,Test/Adjust,0.6,0.6
+11351805,Latch - Door - Lubricate,Maintenance,0.05,0.05
+11500004,Moving Glass Wind Noise Diagnosis,General Diagnosis,0.75,0.75
+11501908,Clean Up Broken Glass,Restore,0.75,0.75
+11700004,Adjustment: Seal,Test/Adjust,0.2,0.2
+12000004,Adjustment: Exterior Trim,Test/Adjust,0.2,0.2
+12070106,Bracket - License Plate - Front (Retrofit),Retrofit,0.12,0.12
+12070206,Install Tesla License Plate Frame,Installation,0.14,0.14
+12071001,License Plates (Install Onto Existing Brackets),Installation,0.06,0.06
+12208583,Mud Flaps (PDI Retrofit),Retrofit,0.0,0.0
+12302301,Ball Neck - Trailer Hitch (Remove & Install),Remove and Install,0.06,0.06
+12302302,Ball Neck - Trailer Hitch (Remove & Replace),Remove and Replace,0.12,0.12
+12505734,Vehicle Wrap – Clear Film (Installation),Retrofit,0.0,0.0
+13000004,Diagnosis: Seats,Test/Adjust,0.5,0.5
+13010300,Seat - Driver - Calibration,Program,0.06,0.06
+13010400,Seat - Front Passenger - Calibration,Program,0.06,0.06
+14050002,USB Drive,Remove and Replace,0.06,0.06
+15000004,Adjustment: Interior Trim,Test/Adjust,0.2,0.2
+15130004,Diagnosis: Closures,General Diagnosis,0.65,0.65
+16010005,HV Battery Coolant - Drain and Refill (With Battery Removed),Remove and Replace,0.15,0.15
+16010020,HV Battery Pack Isolation Inspection,Inspection,0.6,0.6
+16010201,HV Battery (AWD),Remove and Install,3.0,3.0
+16010202,HV Battery (AWD),Remove and Replace,4.86,4.86
+16015300,Discharge HV Battery (At Pack Contactors),Test/Adjust,1.02,1.02
+16015400,Discharge HV Battery (Smart Mode),Test/Adjust,1.38,1.38
+16015500,Discharge HV Battery (Through Touchscreen Service Mode),Test/Adjust,0.06,0.06
+16018725,HV Battery Vitals Inspection,Inspection,0.06,0.06
+16102100,HV Battery Air Leak Test,Test/Adjust,0.66,0.66
+16300100,Resistance Meter (Zero Adjust),Test/Adjust,0.05,0.05
+17000004,Diagnosis: Driver Assistance,General Diagnosis,0.5,0.5
+17000008,Jumpstart Vehicle (Restore),Restore,0.12,0.12
+17010000,Vehicle HV Disablement Procedure,Test/Adjust,0.3,0.3
+17100008,Harness Connector - Reconnect,Restore,0.1,0.1
+17100010,Harness Connector - Repair (Does Not Include Access Labor),Restore,0.72,0.72
+17105006,Wire - Electrical Harness (Overlay),Retrofit,0.0,0.0
+17105008,Wire - Electrical Harness (Does Not Include Access Labor) (Repair),Restore,0.0,0.0
+17105102,Connector Housing - Electrical Harness (Does Not Include Access Labor) (Remove and Replace),Remove and Replace,0.29,0.29
+17105208,Connector Terminal - Electrical Harness (Does Not Include Access Labor) (Repair),Restore,0.0,0.0
+17108100,Diagnosis: Low Voltage Distribution and Controllers,General Diagnosis,1.0,1.0
+17209106,Enable Autopilot Convenience Features,Upgrade,0.48,0.48
+17209126,Enable Basic Autopilot,Upgrade,0.0,0.0
+17209146,Enable Full Self-Driving,Over The Air,0.0,0.0
+17400150,Headlights - Adjust - NA (Tool Method),Test/Adjust,0.18,0.18
+17403012,Coax Cable - Side Repeater - Front - LH (Replace),Remove and Replace,1.2,1.2
+17403032,Coax Cable - Side Repeater - Front - LH and RH (Replace),Remove and Replace,1.2,1.2
+17403112,Coax Cable - Side Repeater - Front - RH (Replace),Remove and Replace,1.2,1.2
+17500805,Windshield Washer Fluid - Top Off,Maintenance,0.0,0.0
+18200102,A/C Refrigerant (Recovery & Recharge),Restore,1.14,1.14
+18200200,Diagnosis: Detecting Refrigerant Leaks (Add Refrigerant Part if Needed),Test/Adjust,0.6,0.6
+18200408,Use HVAC Cleaning Machine,Maintenance,0.18,0.18
+18300400,Cooling System - Vacuum Refill,Test/Adjust,0.54,0.54
+18300900,Thermal System Test,Test/Adjust,0.1,0.1
+18301000,Clean Radiator,Maintenance,1.02,1.02
+19010100825,Remove Vehicle Label (No Anti-Tamper Residue),Removal,0.06,0.06
+19010100902,Vehicle Emission Control Label,Remove and Replace,0.06,0.06
+19010100925,Remove Vehicle Label and Anti-Tamper Residue,Removal,0.12,0.12
+19010101002,Battery Chemistry Label,Remove and Replace,0.06,0.06
+19010101102,Monroney Label,Remove and Replace,0.06,0.06
+1901010121,Manufacturing Certification Label,Remove and Replace,0.12,0.12
+19010202,Labels - Any (Remove & Replace),Remove and Replace,0.29,0.29
+19010401,VIN Label - Plate (Remove & Install),Remove and Replace,2.28,2.28
+19011875,Print and Attach QC Compliance Label,Test/Adjust,0.06,0.06
+20010707,Remove the Front Seat Airbag and Discard,Modify,0.66,0.66
+21000004,Diagnosis: Infotainment,General Diagnosis,0.5,0.5
+21051000,Update Display Avatar,Test/Adjust,0.12,0.12
+21062412,Non Tesla SIM Card (Install),Installation,0.24,0.24
+31000000,Additional Suspension Link (Access Already Performed),Remove and Replace,0.3,0.3
+31002100,Four Wheel Alignment Check (No Adjustment Needed),Test/Adjust,0.3,0.3
+31002300,Four Wheel Alignment Check and Adjust,Test/Adjust,0.9,0.9
+31002400,Four Wheel Alignment Check (Customer Declined Adjustment),Test/Adjust,0.24,0.24
+31010004,Diagnosis: Front Suspension,General Diagnosis,0.8,0.8
+31019000,Suspension - Front  (Check Torque) ,Test/Adjust,0.48,0.48
+31039000,Suspension - Rear (Check Torque),Test/Adjust,0.36,0.36
+32010103,Steering Rack - Calibration,Program,0.2,0.2
+33000004,Diagnosis: Brake System,General Diagnosis,0.5,0.5
+33010100,Brake Rotor - Front - LH (Measure Runout),Test/Adjust,0.35,0.35
+33010200,Brake Rotor - Rear - LH (Measure Runout),Test/Adjust,0.42,0.42
+33011100,Brake Rotor - Front - RH (Measure Runout),Test/Adjust,0.35,0.35
+33011200,Brake Rotor - Rear - RH (Measure Runout),Test/Adjust,0.35,0.35
+33013000,Brake Pads - Burnishing,Maintenance,0.3,0.3
+33015090,Brake Pads and Rotors - Inspection,Test/Adjust,0.3,0.3
+33031102,Brake Fluid Bleed - One Caliper (Remove & Replace),Remove and Replace,0.42,0.42
+33031200,Brake Fluid Check,Test/Adjust,0.12,0.12
+33031202,Brake Fluid Bleed/Flush,Maintenance,0.84,0.84
+33031205,Brake Bleeder Machine (Flush),Maintenance,0.07,0.07
+33051005,Rear Park Brake Caliper - Caliper Seized/Motor Failure - Release,Maintenance,0.18,0.18
+34010105,Tire Rotation,Maintenance,0.3,0.3
+34011000,Inspect Wheel (Cosmetic Inspection),Inspection,0.12,0.12
+34011106,Wheel Lock Set - Install,Retrofit,0.1,0.1
+34011302,Lug Nuts - Vehicle Set (Remove & Replace),Remove and Replace,0.36,0.36
+34012501,Wheels - Vehicle - Set (Remove & Install),Remove and Install,0.42,0.42
+34012902,Wheels - Set (Remove and Replace),Remove and Replace,1.56,1.56
+34013000,Check Tire Tread Depth,Tire Inspection,0.05,0.05
+34014005,Seasonal Wheel and Tire Set Swap (Already Built),Seasonal Swap,0.5,0.5
+34014101,Tire Set - Vehicle - Swap  (Not Already Built),Remove and Install,1.38,1.38
+34014505,Seasonal Wheel and Tire - (Build and Install),Tire Purchase,1.08,1.08
+34015001,Wheel Assembly - Front - LH (Remove & Install),Remove and Install,0.18,0.18
+34015002,Wheel - Front - LH,Remove and Replace,0.36,0.36
+34015021,"Cover, Wheel, Front, LH (Remove & Install)",Remove and Install,0.05,0.05
+34015022,Cap - Wheel - Front - LH (Remove & Replace),Remove and Replace,0.06,0.06
+34015032,Cap - Wheel - Set (Remove & Replace),Remove and Replace,0.05,0.05
+34015101,Wheel Assembly - Front - RH (Remove & Install),Remove and Install,0.18,0.18
+34015102,Wheel - Front - RH (Remove & Replace),Remove and Replace,0.36,0.36
+34015121,"Cover, Wheel, Front, RH (Remove & Install)",Remove and Install,0.05,0.05
+34015122,Cap - Wheel - Front - RH (Remove & Replace),Remove and Replace,0.06,0.06
+34015201,Wheel Assembly - Rear - LH (Remove & Install),Remove and Install,0.18,0.18
+34015202,Wheel - Rear - LH (Remove & Replace),Remove and Replace,0.36,0.36
+34015221,"Cover, Wheel, Rear, LH (Remove & Install)",Remove and Install,0.05,0.05
+34015222,Cap - Wheel - Rear - LH (Remove & Replace),Remove and Replace,0.06,0.06
+34015301,Wheel Assembly - Rear - RH (Remove & Install),Remove and Install,0.18,0.18
+34015302,Wheel - Rear - RH (Remove & Replace),Remove and Replace,0.36,0.36
+34015321,"Cover, Wheel, Rear, RH (Remove & Install)",Remove and Install,0.05,0.05
+34015322,Cap - Wheel - Rear - RH (Remove & Replace),Remove and Replace,0.06,0.06
+34015401,Install Wheel Caps - Set,Installation,0.06,0.06
+34020000000,Wheel and Tire Protection Plan Inspection,Inspection,0.2,0.2
+34020010,Mobile Tire Service Performed,Modify,0.0,0.0
+34020020,Mobile Tire Service Performed – Roadside,Tire Repair,0.0,0.0
+34020030,Mobile Tire Service Performed – Logistics,Tire Repair,0.0,0.0
+3402010061,Tire Information Label,Remove and Replace,0.12,0.12
+34020100700,Tire - Quotes (Remove & Install),Test/Adjust,1.0,1.0
+34020305,Tires - All Four (Balance),Rebalance,0.6,0.6
+34020505,Tire Rotation and Balance with Automatic TPMS Learn,Rebalance,0.5,0.5
+34020600,Automated Tire Pressure Check (No Adjustment Needed),Test/Adjust,0.0,0.0
+34020700,Automated Tire Pressure Check (Adjustment Needed),Test/Adjust,0.05,0.05
+34020800,Automated Tire Pressure Check,Inspection,0.0,0.0
+34020900,Check and Adjust Tire Pressure,Test/Adjust,0.05,0.05
+34021001,Tire - Front - LH (Remove & Install),Remove and Install,0.3,0.3
+34021002,Tire - Front - LH (Remove & Replace),Tire Purchase,0.35,0.35
+34021101,Tire - Front - RH (Remove & Install),Remove and Install,0.3,0.3
+34021102,Tire - Front - RH (Remove & Replace),Tire Purchase,0.35,0.35
+34021201,Tire - Rear - LH (Remove & Install),Remove and Install,0.3,0.3
+34021202,Tire - Rear - LH (Remove & Replace),Tire Purchase,0.35,0.35
+34021301,Tire - Rear - RH (Remove & Install),Remove and Install,0.3,0.3
+34021302,Tire - Rear - RH (Remove & Replace),Tire Purchase,0.35,0.35
+34021405,Tires - Front - Set,Tire Purchase,0.7,0.7
+34021605,Tires - Rear - Set,Tire Purchase,0.7,0.7
+34021805,Tires - Vehicle - Set,Tire Purchase,1.15,1.15
+34022005,Tire - Front - LH (Road Force) (Balance),Tire Repair,0.2,0.2
+34022015,Tire - Supplemental (Rebalance),Maintenance,0.18,0.18
+34022025,Tire - Front - LH (Balance),Rebalance,0.2,0.2
+34022105,Tire - Front - RH (Road Force) (Balance),Tire Repair,0.2,0.2
+34022125,Tire - Front - RH (Balance),Rebalance,0.2,0.2
+34022205,Tire - Rear - LH (Road Force) (Balance),Tire Repair,0.2,0.2
+34022225,Tire - Rear - LH (Balance),Rebalance,0.2,0.2
+34022305,Tire - Rear - RH (Road Force) (Balance),Tire Repair,0.2,0.2
+34022325,Tire - Rear - RH (Balance),Rebalance,0.2,0.2
+34023008,Tire - Front - LH (Repair),Tire Repair,0.72,0.72
+34023108,Tire - Front - RH (Repair),Tire Repair,0.72,0.72
+34023208,Tire - Rear - LH (Repair),Tire Repair,0.72,0.72
+34023308,Tire - Rear - RH (Repair),Tire Repair,0.72,0.72
+39000004,Diagnosis: Drivetrain,General Diagnosis,0.5,0.5
+39300102,Gearbox Fluid - Front Drive Unit (1st Generation) (Drain and Refill),Remove and Replace,0.84,0.84
+44000004,Diagnosis: Charging,Test/Adjust,0.5,0.5
+44000100,Isolation/Insulation Test,Test/Adjust,0.05,0.05
+44000204,HVIL Diagnostics,Diagnosis Only,1.0,1.0
+44013205,Charge Port - Manual Release of Cable,Maintenance,0.06,0.06
+45010004,Diagnosis: Interior Rattle Squeak,General Diagnosis,0.8,0.8
+45020004,Diagnosis: Fixed Glass Wind Noise,General Diagnosis,0.7,0.7
+46010100004,Diagnosis: Coolant Leak,General Diagnosis,0.5,0.5
+50010102,Mobile Connector - UMC (Remove & Replace),Remove and Replace,0.0,0.0
+50010206,Provide Mobile Connector Adapter,Retrofit,0.0,0.0
+50010500005,Universal Mobile Connector Cleaning,Maintenance,0.06,0.06
+50020706,Wall Connector Installation,Remove and Install,1.08,1.08
+50022002,Handle and Cable Assembly - 80A Wall Connector (Remove and Replace),Remove and Replace,0.58,0.58
+50023002,Replace Wall Connector and Reimburse Installation Cost (Remove & Replace),Remove and Replace,0.0,0.0
+50024002,Handle and Cable Assembly - 40A Wall Connector (Remove and Replace),Remove and Replace,0.58,0.58
+50040102,Provide Mennekes Cable (Remove & Replace),Remove and Replace,0.24,0.24
+50040406,Provide J1772 Adapter,Retrofit,0.12,0.12
+61010007,Tesla Body Repair - Paint Labor,Body Shop,0.0,0.0
+61010100034,Windshield Deductible,Deductible,0.01,0.01
+61010100100,Wheel and Tire Protection Plan - Deductible,Deductible,0.01,0.01
+61010100134,Battery and Drive Unit Extended Service Agreement,Deductible,0.01,0.01
+61010200208,Pest or Rodent Clean Up,Restore,0.0,0.0
+61013108,Equip Tire Repair Kit,General diagnosis conclusion,0.0,0.0
+61019945,Tesla Body Repair - Blending Labor,Test/Adjust,0.0,0.0
+7000005,Mobile Tire Dispatch Fee,Fee,0.01,0.01
+70000105,Third Party Transport,Sublet,1.2,1.2
+7000030,Parts Not Available - Add to future service visit,General diagnosis conclusion,0.0,0.0
+70000305,Miscellaneous Labor,Fee,0.0,0.0
+7000060,Deliver Vehicle to Customer (3rd party),Sublet,0.0,0.0
+7000070,Tesla (Internal Loaner or Rental),Fee,0.0,0.0
+7000090,Roadside Assistance - Tow,Sublet,0.0,0.0
+7000100,Extended Service Agreement – Deductible $100,Deductible,0.01,0.01
+7000110,Follow-up Appointment Needed,General diagnosis conclusion,0.0,0.0
+70001405,Deliver Vehicle to Customer,Fee,0.0,0.0
+70001605,Valet Service Declined,Fee,0.0,0.0
+70001805,Courtesy Inspection Declined,Fee,0.0,0.0
+7000200,Extended Service Agreement – Deductible,Deductible,0.01,0.01
+70002005,Non-Tesla (Rental),Sublet,0.0,0.0
+7000201,Service Loaner Damage - Deductible,Deductible,1.2,1.2
+70002405,Rental Car Declined,Fee,0.0,0.0
+70003005,Third-party shuttle service provided (+),Sublet,0.0,0.0
+70003105,Third-party shuttle service provided (-),Sublet,0.0,0.0
+70003205,Third-party shuttle service declined,Sublet,0.0,0.0
+70003605,Airport/Train Station Shuttle Provided,Fee,0.0,0.0
+70003805,Tesla Airport Service,Fee,1.2,1.2
+7000400,Shipping/Handling,Fee,0.0,0.0
+7000405,Vehicle Storage,Fee,0.0,0.0
+7000410,Placement of Documentation in Glove Box,Retrofit,0.06,0.06
+70004105,No Labor Performed - Customer Did Not Authorize Repairs or Inspection,Inspection,0.0,0.0
+70004106,No Labor Performed - Customer No-show or Vehicle Inaccessible,Fee,0.0,0.0
+70004205,No Labor Performed - Unable to Perform via Mobile Service,General diagnosis conclusion,0.0,0.0
+70004505,No Labor Performed - Part Replaced,Repair,0.0,0.0
+70004807,Window Tint Removal,Restore,2.58,2.58
+70004817,Window Tint Install - Sublet,Modify,0.0,0.0
+70005005,Rebuilt Vehicle Inspection Complete and Rebuild Approved,Inspection,0.0,0.0
+70005505,Car Wash Declined,Fee,0.0,0.0
+70005600,Parts Counter Sales Outside of Network (Over the Counter Sales),Fee,0.0,0.0
+70005700,Scrap Part Sale Over the Counter,Test/Adjust,0.0,0.0
+70005805,Payment Collection Required,Fee,1.2,1.2
+70007005,Extended Service Agreement (ESA) Plan Purchase,Fee,0.0,0.0
+70008009,Additional Work Required - Corrosion Present,Maintenance,0.5,0.5
+70012110,General Closures System Calibration,Module Reset/Reflashed,0.12,0.12
+70015000,Test To Confirm Water Ingress No Longer Present,Test/Adjust,0.3,0.3
+70020305,Upholstery - Sublet,Sublet,0.0,0.0
+70020315,Seat Upholstery Repair (Internal),Remove and Replace,1.2,1.2
+70020325,Seat Upholstery Steaming,Modify,0.25,0.25
+70020405,Accessory Installation - Sublet,Retrofit,0.0,0.0
+70020505,Wheel Refinish - Sublet,Sublet,0.0,0.0
+70020805,Glass Repair / Replacement  - Sublet,Sublet,0.0,0.0
+70021105,Dent Repair - Sublet,Sublet,0.0,0.0
+70022005,Unsupported Vehicle Body Shop Inspection - Primary,Inspection,1.2,1.2
+70022205,Unsupported Vehicle Body Shop Inspection - Secondary,Inspection,1.2,1.2
+70022305,Vehicle Detailing - Sublet,Sublet,0.0,0.0
+70060005,Thread Repair,Maintenance,0.0,0.0
+7007100,Towing - Sublet,Sublet,0.0,0.0
+7007300,Other – Sublet,Sublet,0.0,0.0
+7100001,NO LABOR PERFORMED,Repair,0.0,0.0
+72000005,Loaner Fee,Fee,0.0,0.0
+72000008,Interlock Deactivation Fee,Fee,0.75,0.75
+72000009,Roadside Mobile Service Issue Inspection,Fee,0.25,0.25
+73010008,Remarketing - Photos,Restore,0.0,0.0
+73020008,Remarketing - Detail,Restore,0.0,0.0
+91000004,On Site – Education,Customer Education,0.0,0.0
+91001005,Print And Attach Used Car Buyers Guide,Maintenance,0.0,0.0
+91020105,Car Wash (Hand Wash),Detail Work,0.25,0.25
+91020115,Car Wash (Mechanical Wash),Maintenance,0.24,0.24
+91020205,Detail I,Detail Work,1.08,1.08
+91020305,Detail II,Detail Work,1.68,1.68
+91020405,Detail III,Detail Work,3.6,3.6
+91020908,Vehicle Cleaning - General,Detail Work,0.0,0.0
+91021005,Seasonal Wheel and Tires - (Place in Trunk),Fee,0.0,0.0
+91021507,Replace Price Information Label,Remove and Replace,0.06,0.06
+91021517,Install Used Vehicle Label,Remove and Install,0.29,0.29
+91022005,Charge Vehicle,Restore,0.0,0.0
+91022407,Vehicle Configuration Update,Program,0.05,0.05
+91029006,Mobile Service Hub Repair,Retrofit,0.0,0.0
+91041001,Loaner Tire/Wheel (Remove & Install),Remove and Install,0.35,0.35
+91041108,Loaner Wheel Reunite,Restore,0.01,0.01

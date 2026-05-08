@@ -1,0 +1,35 @@
+{
+  "timestamp": "2026-04-17T21:52:00Z",
+  "ticker": "BYND",
+  "price": 23.45,
+  "pct_change": 2.15,
+  "state": "BUILDING PRESSURE",
+  "rel_vol": 2.35,
+  "rel_vol_label": "active",
+  "vwap": 23.12,
+  "candle_trend_1m": "up",
+  "candle_trend_5m": "up",
+  "hold_fade": "holding",
+  "last5_vol_change": 1.8,
+  "alerts": [
+    "Volume 135% above average",
+    "Price holding above MA200 support",
+    "Higher lows pattern forming",
+    "Relative volume trending up"
+  ],
+  "summary": "BYND still building. Volume remains elevated (2.35x average) and price is holding at $23.45.",
+  "history": [
+    {
+      "timestamp": "2026-04-17T21:45:00Z",
+      "price": 23.12,
+      "state": "EARLY ACCUMULATION",
+      "rel_vol": 1.85
+    },
+    {
+      "timestamp": "2026-04-17T21:40:00Z",
+      "price": 22.98,
+      "state": "EARLY ACCUMULATION",
+      "rel_vol": 1.62
+    }
+  ]
+}

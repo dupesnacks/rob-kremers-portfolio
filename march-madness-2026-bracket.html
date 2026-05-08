@@ -1,0 +1,1007 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2026 March Madness Bracket - Elite Analytics Picks</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #0f3460 100%);
+            color: #fff;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 2000px;
+            margin: 0 auto;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            border-bottom: 3px solid #e94560;
+            padding-bottom: 20px;
+        }
+        
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            color: #00d4ff;
+            text-shadow: 0 0 20px rgba(0, 212, 255, 0.5);
+        }
+        
+        .subtitle {
+            font-size: 1.1em;
+            color: #b0b0b0;
+            margin-bottom: 5px;
+        }
+        
+        .champion-banner {
+            background: linear-gradient(90deg, #e94560, #f39c12);
+            padding: 30px;
+            border-radius: 10px;
+            margin: 30px 0;
+            text-align: center;
+            box-shadow: 0 0 30px rgba(233, 69, 96, 0.4);
+        }
+        
+        .champion-banner h2 {
+            font-size: 2em;
+            margin-bottom: 15px;
+            color: #fff;
+        }
+        
+        .champion-pick {
+            font-size: 1.8em;
+            font-weight: bold;
+            color: #fff;
+            margin: 10px 0;
+        }
+        
+        .final-score {
+            font-size: 1.5em;
+            color: #fff;
+            font-weight: bold;
+            margin-top: 15px;
+        }
+        
+        .champion-reasoning {
+            font-size: 0.95em;
+            color: #fff;
+            margin-top: 15px;
+            font-style: italic;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            line-height: 1.6;
+        }
+        
+        .regions-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            margin: 30px 0;
+        }
+        
+        .region {
+            background: rgba(15, 52, 96, 0.6);
+            border: 2px solid #00d4ff;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 0 15px rgba(0, 212, 255, 0.2);
+        }
+        
+        .region-title {
+            font-size: 1.4em;
+            font-weight: bold;
+            color: #00d4ff;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            border-bottom: 2px solid #e94560;
+            padding-bottom: 10px;
+        }
+        
+        .round {
+            margin-bottom: 20px;
+        }
+        
+        .round-title {
+            font-size: 0.85em;
+            color: #f39c12;
+            font-weight: bold;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .matchup {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            margin-bottom: 15px;
+            background: rgba(255, 255, 255, 0.05);
+            padding: 12px;
+            border-radius: 6px;
+            border-left: 3px solid #e94560;
+        }
+        
+        .team {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.9em;
+            padding: 5px 0;
+        }
+        
+        .team.winner {
+            background: linear-gradient(90deg, rgba(0, 212, 255, 0.3), rgba(0, 255, 136, 0.2));
+            padding: 10px;
+            border-radius: 4px;
+            font-weight: bold;
+            color: #00ff88;
+            border: 2px solid #00ff88;
+            position: relative;
+        }
+        
+        .team.winner::before {
+            content: "✓ ";
+            color: #00ff88;
+            font-weight: bold;
+            margin-right: 5px;
+        }
+        
+        .team-name {
+            flex: 1;
+        }
+        
+        .seed {
+            color: #f39c12;
+            margin-right: 8px;
+            font-weight: bold;
+            min-width: 25px;
+            text-align: right;
+        }
+        
+        .confidence {
+            font-size: 0.75em;
+            color: #00d4ff;
+            margin-left: 8px;
+            padding: 2px 6px;
+            background: rgba(0, 212, 255, 0.2);
+            border-radius: 3px;
+        }
+        
+        .explanation {
+            font-size: 0.8em;
+            color: #b0b0b0;
+            margin-top: 8px;
+            padding: 8px;
+            background: rgba(0, 0, 0, 0.3);
+            border-radius: 4px;
+            line-height: 1.4;
+            border-left: 2px solid #f39c12;
+            font-style: italic;
+        }
+        
+        .final-four {
+            grid-column: 1 / -1;
+            background: linear-gradient(135deg, rgba(233, 69, 96, 0.2), rgba(243, 156, 18, 0.2));
+            border: 2px solid #f39c12;
+            padding: 30px;
+            border-radius: 10px;
+            margin-top: 40px;
+        }
+        
+        .final-four-title {
+            font-size: 1.8em;
+            color: #f39c12;
+            text-align: center;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        
+        .final-four-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+        
+        .final-four-matchup {
+            background: rgba(15, 52, 96, 0.7);
+            padding: 20px;
+            border-radius: 8px;
+            border: 2px solid #f39c12;
+        }
+        
+        .final-four-game {
+            font-size: 1.1em;
+            margin-bottom: 15px;
+            color: #00d4ff;
+            font-weight: bold;
+        }
+        
+        .championship {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 40px;
+            border-top: 3px solid #e94560;
+        }
+        
+        .championship h3 {
+            font-size: 1.5em;
+            color: #f39c12;
+            margin-bottom: 20px;
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            padding-top: 20px;
+            border-top: 2px solid #00d4ff;
+            color: #999;
+            font-size: 0.9em;
+        }
+        
+        @media (max-width: 1400px) {
+            .regions-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .regions-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            h1 {
+                font-size: 1.8em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🏀 2026 NCAA March Madness Bracket</h1>
+            <p class="subtitle">Elite Analytics Picks | KenPom-Driven Deep Dive</p>
+            <p class="subtitle">Framework: Coaching IQ × Path Dependency × Shot Volatility × Offensive Floor</p>
+        </header>
+        
+        <div class="champion-banner">
+            <h2>🏆 CHAMPIONSHIP PICK 🏆</h2>
+            <div class="champion-pick">Arizona Wildcats</div>
+            <div class="final-score">Arizona 72 - Houston 68</div>
+            <div class="champion-reasoning">
+                Arizona's elite two-way balance (top-5 offense, top-3 defense) with inside dominance and 18+ assists/game survives the region's chaos to reach Houston in the championship. Houston's freshman talent and Sampson's defense-first philosophy get them past Florida (whose streaky guards falter in the Elite 8), but Arizona's structural advantage in controlled pace and paint dominance prevails in a low-possession final. This is the most complete team field to field — KenPom #2 overall, path-tested in the toughest conference, and built on interior strength (Awaka/Krivas) that can't be shut down by zone defenses like the three-point variance teams face.
+            </div>
+        </div>
+        
+        <div class="regions-grid">
+            <!-- EAST REGION -->
+            <div class="region">
+                <div class="region-title">🔵 East Region</div>
+                
+                <div class="round">
+                    <div class="round-title">Round of 64</div>
+                    
+                    <div class="matchup">
+                        <div class="team winner">
+                            <span class="team-name"><span class="seed">(1)</span> Duke</span>
+                            <span class="confidence">LOCK</span>
+                        </div>
+                        <div class="team">
+                            <span class="team-name"><span class="seed">(16)</span> Siena</span>
+                        </div>
+                        <div class="explanation">Duke's elite recruiting class + Caleb Foster (post-injury rehab) recovers quickly; Siena overmatched on talent despite grit.</div>
+                    </div>
+                    
+                    <div class="matchup">
+                        <div class="team winner">
+                            <span class="team-name"><span class="seed">(8)</span> Ohio State</span>
+                            <span class="confidence">LEAN</span>
+                        </div>
+                        <div class="team">
+                            <span class="team-name"><span class="seed">(9)</span> TCU</span>
+                        </div>
+                        <div class="explanation">Ohio State's higher KenPom (54th) + better defensive depth at neutral court edges out TCU's scrappy backcourt.</div>
+                    </div>
+                    
+                    <div class="matchup">
+                        <div class="team winner">
+                            <span class="team-name"><span class="seed">(5)</span> Vanderbilt</span>
+                            <span class="confidence">LEAN</span>
+                        </div>
+                        <div class="team">
+                            <span class="team-name"><span class="seed">(12)</span> McNeese</span>
+                        </div>
+                        <div class="explanation">Vanderbilt's adjusted efficiency advantage (KenPom top-30) + bench depth vs. McNeese's limited rotation; historical 5/12 split favors higher seed.</div>
+                    </div>
+                    
+                    <div class="matchup">
+                        <div class="team winner">
+                            <span class="team-name"><span class="seed">(4)</span> Nebraska</span>
+                            <span class="confidence">LEAN</span>
+                        </div>
+                        <div class="team">
+                            <span class="team-name"><span class="seed">(13)</span> Troy</span>
+                        </div>
+                        <div class="explanation">Nebraska's mid-major pedigree + three-point shooting reliability beats Troy's SunBelt pace in controlled tournament environment.</div>
+                    </div>
+                    
+                    <div class="matchup">
+                        <div class="team winner">
+                            <span class="team-name"><span class="seed">(6)</span> North Carolina</span>
+                            <span class="confidence">LEAN</span>
+                        </div>
+                        <div class="team">
+                            <span class="team-name"><span class="seed">(11)</span> VCU</span>
+                        </div>
+                        <div class="explanation">UNC's loss of Caleb Wilson (broken thumb) creates ceiling but Roy Williams' tournament experience + remaining depth survives VCU's defensive intensity.</div>
+                    </div>
+                    
+                    <div class="matchup">
+                        <div class="team winner">
+                            <span class="team-name"><span class="seed">(3)</span> Michigan State</span>
+                            <span class="confidence">LOCK</span>
+                        </div>
+                        <div class="team">
+                            <span class="team-name"><span class="seed">(14)</span> North Dakota State</span>
+                        </div>
+                        <div class="explanation">Izzo's coaching IQ + tournament pedigree is non-negotiable vs. a mid-major; three-seed should cruise.</div>
+                    </div>
+                    
+                    <div class="matchup">
+                        <div class="team winner">
+                            <span class="team-name"><span class="seed">(3)</span> Virginia</span>
+                            <span class="confidence">LEAN</span>
+                        </div>
+                        <div class="team">
+                            <span class="team-name"><span class="seed">(14)</span> Wright State</span>
+                        </div>
+                        <div class="explanation">Virginia's elite defensive system (Tony Bennett coached) + tournament experience beats Wright State's limited offensive schemes; three-seed controls pace.</div>
+                    </div>
+                    
+                    <div class="matchup">
+                        <div class="team winner">
+                            <span class="team-name"><span class="seed">(4)</span> Kansas</span>
+                            <span class="confidence">LEAN</span>
+                        </div>
+                        <div class="team">
+                            <span class="team-name"><span class="seed">(13)</span> Cal Baptist</span>
+                        </div>
+                        <div class="explanation">Kansas' Big 12 tournament battle-tested + Bill Self's tournament pedigree dominates a WAC mid-major; four-seed's experience advantage decisive.</div>
+                    </div>
+                </div>
+                
+                <div class="round">
+                    <div class="round-title">Round of 32</div>
+                    
+                    <div class="matchup">
+                        <div class="team winner">
+                            <span class="team-name"><span class="seed">(1)</span> Duke</span>
+                            <span class="confidence">LOCK</span>
+                        </div>
+                        <div class="team">
+                            <span class="team-name"><span class="seed">(8)</span> Ohio State</span>
+                        </div>
+                        <div class="explanation">Duke's elite defense (top-15 KenPom) + Foster's return to full strength shuts down Ohio State's mid-range game.</div>
+                    </div>
+                    
+                    <div class="matchup">
+                        <div class="team winner">
+                            <span class="team-name"><span class="seed">(4)</span> Nebraska</span>
+                            <span class="confidence">COIN FLIP</span>
+                        </div>
+                        <div class="team">
+                            <span class="team-name"><span class="seed">(5)</span> Vanderbilt</span>
+                        </div>
+                        <div class="explanation">Tight KenPom matchup; Nebraska's three-point volume (high variance) is vulnerability vs. Vanderbilt's balanced offense in tighter possession game.</div>
+                    </div>
+                    
+                    <div class="matchup">
+                        <div class="team winner">
+                            <span class="team-name"><span class="seed">(3)</span> Michigan State</span>
+                            <span class="confidence">LEAN</span>
+                        </div>
+                        <div class="team">
+                            <span class="team-name"><span class="seed">(6)</span> Louisville</span>
+                        </div>
+                        <div class="explanation">Izzo's coaching pedigree + MSU's tournament experience beats Louisville's Brown Jr. injury concerns; MSU's defensive intensity limits Louisville's perimeter scoring.</div>
+                    </div>
+                </div>
+                
+                <div class="round">
+                    <div class="round-title">Elite Eight</div>
+                    
+                    <div class="matchup">
+                        <div class="team winner">
+                            <span class="team-name"><span class="seed">(1)</span> Duke</span>
+                            <span class="confidence">LEAN</span>
+                        </div>
+                        <div class="team">
+                            <span class="team-name"><span class="seed">(3)</span> Michigan State</span>
+                        </div>
+                        <div class="explanation">Duke's elite guard depth + three-point shooting (44% range) outpaces Izzo's conservative offensive system in elite-level matchup; path-dependent on Foster's availability.</div>
+                    </div>
+                </div>
+                
+                <div class="round">
+                    <div class="round-title">Final Four Advance</div>
+                    <div class="matchup">
+                        <div class="team winner">
+                            <span class="team-name"><span class="seed">(1)</span> Duke</span>
+                            <span class="confidence">AUTO</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- MIDWEST REGION -->
+            <div class="region">
+                <div class="region-title">🟢 Midwest Region</div>
+                
+                <div class="round">
+                    <div class="round-title">Round of 64</div>
+                    
+                    <div class="matchup">
+                        <div class="team winner">
+                            <span class="team-name"><span class="seed">(1)</span> Michigan</span>
+                            <span class="confidence">LOCK</span>
+                        </div>
+                        <div class="team">
+                            <span class="team-name"><span class="seed">(16)</span> Howard</span>
+                        </div>
+                        <div class="explanation">Michigan's talent + Juwan Howard's tournament experience dominates a First Four survivor; L.J. Cason's guard injury addressed with depth.</div>
+                    </div>
+                    
+                    <div class="matchup">
+                        <div class="team winner">
+                            <span class="team-name"><span class="seed">(8)</span> Georgia</span>
+                            <span class="confidence">LEAN</span>
+                        </div>
+                        <div class="team">
+                            <span class="team-name"><span class="seed">(9)</span> Saint Louis</span>
+                        </div>
+                        <div class="explanation">Georgia's mid-tier KenPom (75th) + SEC tournament experience edges Saint Louis' Horizon League pedigree.</div>
+                    </div>
+                    
+                    <div class="matchup">
+                        <div class="team winner">
+                            <span class="team-name"><span class="seed">(5)</span> Wisconsin</span>
+                            <span class="confidence">LEAN</span>
+                        </div>
+                        <div class="team">
+                            <span class="team-name"><span class="seed">(12)</span> High Point</span>
+                        </div>
+                        <div class="explanation">Wisconsin's defensive weakness (62nd KenPom defense) creates HIGH POINT UPSET RISK — High Point's scrappy man-to-man defense + pace mismatches exploit Wisconsin's Big Ten sluggishness; however Wisconsin's three-point shot stability (lower variance) edges it out on balance.</div>
+                    </div>
+                    
+                    <div class="matchup">
+                        <div class="team winner">
+                            <span class="team-name"><span class="seed">(4)</span> Arkansas</span>
+                            <span class="confidence">LOCK</span>
+                        </div>
+                        <div class="team">
+                            <span class="team-name"><span class="seed">(13)</span> Hawai'i</span>
+                        </div>
+                        <div class="explanation">Arkansas' SEC tournament history + Muss' coaching IQ dominates a travel-exhausted Hawai'i team from West Coast.</div>
+                    </div>
+                    
+                    <div class="matchup">
+                        <div class="team winner">
+                            <span class="team-name"><span class="seed">(6)</span> BYU</span>
+                            <span class="confidence">LEAN</span>
+                        </div>
+                        <div class="team">
+                            <span class="team-name"><span class="seed">(11)</span> Texas</span>
+                        </div>
+                        <div class="explanation">BYU's three-point shooting efficiency + defensive intensity edges Texas (First Four exhaustion) in neutral court matchup.</div>
+                    </div>
+                    
+                    <div class="matchup">
+                        <div class="team winner">
+                            <span class="team-name"><span class="seed">(3)</span> Illinois</span>
+                            <span class="confidence">LOCK</span>
+                        </div>
+                        <div class="team">
+                            <span class="team-name"><span class="seed">(14)</span> Penn</span>
+                        </div>
+                        <div class="explanation">Illinois' nation-leading offense (KenPom #5 overall) with Underwood's tournament experience crushes a Ivy League team; three-seed floor is extremely high.</div>
+                    </div>
+                    
+                    <div class="matchup">
+                        <div class="team winner">
+                            <span class="team-name"><span class="seed">(7)</span> Saint Mary's</span>
+                            <span class="confidence">LEAN</span>
+                        </div>
+                        <div class="team">
+                            <span class="team-name"><span class="seed">(10)</span> Texas A&M</span>
+                        </div>
+                        <div class="explanation">Saint Mary's West Coast tournament experience + Gaels' consistency beats A&M's reload in a close pacing battle.</div>
+                    </div>
+                    
+                    <div class="matchup">
+                        <div class="team winner">
+                            <span class="team-name"><span class="seed">(2)</span> Iowa State</span>
+                            <span class="confidence">LOCK</span>
+                        </div>
+                        <div class="team">
+                            <span class="team-name"><span class="seed">(15)</span> Tennessee State</span>
+                        </div>
+                        <div class="explanation">Iowa State's Big 12 tournament success + Prohm's coaching experience crushes a MEAC team; two-seed should roll.</div>
+                    </div>
+                    
+                    <div class="matchup">
+                        <div class="team winner">
+                            <span class="team-name"><span class="seed">(2)</span> Purdue</span>
+                            <span class="confidence">LOCK</span>
+                        </div>
+                        <div class="team">
+                            <span class="team-name"><span class="seed">(15)</span> Queens</span>
+                        </div>
+                        <div class="explanation">Purdue's elite interior (Edey) + Big Ten tournament battle-tested vs. Queens from low-major; two-seed dominates.</div>
+                    </div>
+                    
+                    <div class="matchup">
+                        <div class="team winner">
+                            <span class="team-name"><span class="seed">(2)</span> UConn</span>
+                            <span class="confidence">LOCK</span>
+                        </div>
+                        <div class="team">
+                            <span class="team-name"><span class="seed">(15)</span> Furman</span>
+                        </div>
+                        <div class="explanation">UConn's tournament pedigree (Hurley era proven) + elite guard depth beats Furman's SoCon championship story; two-seed floor is high.</div>
+                    </div>
+                </div>
+                
+                <div class="round">
+                    <div class="round-title">Round of 32</div>
+                    
+                    <div class="matchup">
+                        <div class="team winner">
+                            <span class="team-name"><span class="seed">(1)</span> Michigan</span>
+                            <span class="confidence">LEAN</span>
+                        </div>
+                        <div class="team">
+                            <span class="team-name"><span class="seed">(8)</span> Georgia</span>
+                        </div>
+                        <div class="explanation">Michigan's elite bench + balanced offense outpaces Georgia's perimeter-dependent shot profile; Cason's return strengthens Michigan's guard floor.</div>
+                    </div>
+                    
+                    <div class="matchup">
+                        <div class="team winner">
+                            <span class="team-name"><span class="seed">(4)</span> Arkansas</span>
+                            <span class="confidence">COIN FLIP</span>
+                        </div>
+                        <div class="team">
+                            <span class="team-name"><span class="seed">(5)</span> Wisconsin</span>
+                        </div>
+                        <div class="explanation">Wisconsin's tournament pedigree vs. Arkansas' elite defense; Wisconsin's 3PT shooting (lower variance) survives Arkansas' defensive intensity in tight matchup.</div>
+                    </div>
+                    
+                    <div class="matchup">
+                        <div class="team winner">
+                            <span class="team-name"><span class="seed">(3)</span> Illinois</span>
+                            <span class="confidence">LOCK</span>
+                        </div>
+                        <div class="team">
+                            <span class="team-name"><span class="seed">(6)</span> BYU</span>
+                        </div>
+                        <div class="explanation">Illinois' historic offensive rating + tournament spacing beats BYU's defensive intensity; Illinois' elite secondary scorers finish strong.</div>
+                    </div>
+                </div>
+                
+                <div class="round">
+                    <div class="round-title">Elite Eight</div>
+                    
+                    <div class="matchup">
+                        <div class="team winner">
+                            <span class="team-name"><span class="seed">(1)</span> Michigan</span>
+                            <span class="confidence">LEAN</span>
+                        </div>
+                        <div class="team">
+                            <span class="team-name"><span class="seed">(3)</span> Illinois</span>
+                        </div>
+                        <div class="explanation">Elite Eight in Chicago (Illinois' region) tilts toward Illinois slightly, but Michigan's balanced offensive floor + defensive depth survives Illinois' elite scoring barrage in high-possession battle.</div>
+                    </div>
+                </div>
+                
+                <div class="round">
+                    <div class="round-title">Final Four Advance</div>
+                    <div class="matchup">
+                        <div class="team winner">
+                            <span class="team-name"><span class="seed">(1)</span> Michigan</span>
+                            <span class="confidence">AUTO</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- WEST REGION -->
+            <div class="region">
+                <div class="region-title">🟡 West Region</div>
+                
+                <div class="round">
+                    <div class="round-title">Round of 64</div>
+                    
+                    <div class="matchup">
+                        <div class="team winner">
+                            <span class="team-name"><span class="seed">(1)</span> Arizona</span>
+                            <span class="confidence">LOCK</span>
+                        </div>
+                        <div class="team">
+                            <span class="team-name"><span class="seed">(16)</span> LIU</span>
+                        </div>
+                        <div class="explanation">Arizona's elite interior dominance (Awaka/Krivas) + 18 assist average vs. mid-major talent is non-competitive; 1-seed locks as expected.</div>
+                    </div>
+                    
+                    <div class="matchup">
+                        <div class="team winner">
+                            <span class="team-name"><span class="seed">(8)</span> Villanova</span>
+                            <span class="confidence">LEAN</span>
+                        </div>
+                        <div class="team">
+                            <span class="team-name"><span class="seed">(9)</span> Utah State</span>
+                        </div>
+                        <div class="explanation">Villanova + Arch Madness tourney edge over Utah State (KenPom separated by 1 spot): Villanova's three-point shooting reliability (lower variance) + Wright's coaching experience in tight matchup.</div>
+                    </div>
+                    
+                    <div class="matchup">
+                        <div class="team winner">
+                            <span class="team-name"><span class="seed">(5)</span> Texas Tech</span>
+                            <span class="confidence">LOCK</span>
+                        </div>
+                        <div class="team">
+                            <span class="team-name"><span class="seed">(12)</span> Akron</span>
+                        </div>
+                        <div class="explanation">Texas Tech's top-5 national 3PT accuracy (39.3%, 11.5 made/game) dominates Akron's limited defensive schemes; tech rolls.</div>
+                    </div>
+                    
+                    <div class="matchup">
+                        <div class="team winner">
+                            <span class="team-name"><span class="seed">(4)</span> Colorado</span>
+                            <span class="confidence">LEAN</span>
+                        </div>
+                        <div class="team">
+                            <span class="team-name"><span class="seed">(13)</span> Montana State</span>
+                        </div>
+                        <div class="explanation">Colorado's Pac-12 pedigree + tournament experience edges a Big Sky mid-major; four-seed should hold.</div>
+                    </div>
+                    
+                    <div class="matchup">
+                        <div class="team winner">
+                            <span class="team-name"><span class="seed">(6)</span> Tennessee</span>
+                            <span class="confidence">LEAN</span>
+                        </div>
+                        <div class="team">
+                            <span class="team-name"><span class="seed">(11)</span> Drake</span>
+                        </div>
+                        <div class="explanation">Tennessee's SEC tournament success + interior depth beats Drake's MVC pedigree in neutral court; six-seed should advance.</div>
+                    </div>
+                    
+                    <div class="matchup">
+                        <div class="team winner">
+                            <span class="team-name"><span class="seed">(3)</span> Gonzaga</span>
+                            <span class="confidence">LOCK</span>
+                        </div>
+                        <div class="team">
+                            <span class="team-name"><span class="seed">(14)</span> Kennesaw State</span>
+                        </div>
+                        <div class="explanation">Gonzaga's WCC tournament dominance + Mark Few's tournament pedigree crushes a mid-major in neutral court; three-seed floor is high.</div>
+                    </div>
+                    
+                    <div class="matchup">
+                        <div class="team winner">
+                            <span class="team-name"><span class="seed">(7)</span> SMU</span>
+                            <span class="confidence">LEAN</span>
+                        </div>
+                        <div class="team">
+                            <span class="team-name"><span class="seed">(10)</span> Mississippi</span>
+                        </div>
+                        <div class="explanation">SMU (First Four winner) + Boynton's tournament experience edges Ole Miss' SEC tournament underperformance; SMU's backcourt depth survives.</div>
+                    </div>
+                    
+                    <div class="matchup">
+                        <div class="team winner">
+                            <span class="team-name"><span class="seed">(7)</span> Kentucky</span>
+                            <span class="confidence">LEAN</span>
+                        </div>
+                        <div class="team">
+                            <span class="team-name"><span class="seed">(10)</span> Santa Clara</span>
+                        </div>
+                        <div class="explanation">Kentucky's SEC tournament experience + guard depth beats Santa Clara's West Coast Conference pedigree; Kentucky's three-point shooting consistency survives neutral court.</div>
+                    </div>
+                    
+                    <div class="matchup">
+                        <div class="team winner">
+                            <span class="team-name"><span class="seed">(7)</span> UCLA</span>
+                            <span class="confidence">LEAN</span>
+                        </div>
+                        <div class="team">
+                            <span class="team-name"><span class="seed">(10)</span> UCF</span>
+                        </div>
+                        <div class="explanation">UCLA's Pac-12 pedigree + tournament tournament experience beats UCF's American Athletic Conference success; UCLA's perimeter defense controls pace.</div>
+                    </div>
+                </div>
+                
+                <div class="round">
+                    <div class="round-title">Round of 32</div>
+                    
+                    <div class="matchup">
+                        <div class="team winner">
+                            <span class="team-name"><span class="seed">(1)</span> Arizona</span>
+                            <span class="confidence">LOCK</span>
+                        </div>
+                        <div class="team">
+                            <span class="team-name"><span class="seed">(8)</span> Villanova</span>
+                        </div>
+                        <div class="explanation">Arizona's elite inside-outside balance (interior dominance + 18 assists) attacks Villanova's perimeter-dependent defense; Wright can't gameplan for Krivas.</div>
+                    </div>
+                    
+                    <div class="matchup">
+                        <div class="team winner">
+                            <span class="team-name"><span class="seed">(5)</span> Texas Tech</span>
+                            <span class="confidence">LEAN</span>
+                        </div>
+                        <div class="team">
+                            <span class="team-name"><span class="seed">(4)</span> Colorado</span>
+                        </div>
+                        <div class="explanation">Tech's three-point volume (high variance, 39.3% accuracy) beats Colorado's balanced approach; Tech's perimeter pressure defense forces Colorado into unfamiliar tempo.</div>
+                    </div>
+                    
+                    <div class="matchup">
+                        <div class="team winner">
+                            <span class="team-name"><span class="seed">(3)</span> Gonzaga</span>
+                            <span class="confidence">LEAN</span>
+                        </div>
+                        <div class="team">
+                            <span class="team-name"><span class="seed">(6)</span> Tennessee</span>
+                        </div>
+                        <div class="explanation">Gonzaga's elite guard scoring + Few's Elite Eight tournament experience beats Tennessee's SEC dominance; Bulldogs' three-point spacing forces Tennessee's zone into collapse.</div>
+                    </div>
+                </div>
+                
+                <div class="round">
+                    <div class="round-title">Elite Eight</div>
+                    
+                    <div class="matchup">
+                        <div class="team winner">
+                            <span class="team-name"><span class="seed">(1)</span> Arizona</span>
+                            <span class="confidence">LOCK</span>
+                        </div>
+                        <div class="team">
+                            <span class="team-name"><span class="seed">(3)</span> Gonzaga</span>
+                        </div>
+                        <div class="explanation">Arizona's interior dominance (Awaka/Krivas control paint) + 54.7% two-point shooting overwhelms Gonzaga's perimeter-first offense; Arizona's elite defensive depth forces Gonzaga into three-point reliance.</div>
+                    </div>
+                </div>
+                
+                <div class="round">
+                    <div class="round-title">Final Four Advance</div>
+                    <div class="matchup">
+                        <div class="team winner">
+                            <span class="team-name"><span class="seed">(1)</span> Arizona</span>
+                            <span class="confidence">AUTO</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- SOUTH REGION -->
+            <div class="region">
+                <div class="region-title">🔴 South Region</div>
+                
+                <div class="round">
+                    <div class="round-title">Round of 64</div>
+                    
+                    <div class="matchup">
+                        <div class="team winner">
+                            <span class="team-name"><span class="seed">(1)</span> Florida</span>
+                            <span class="confidence">LEAN</span>
+                        </div>
+                        <div class="team">
+                            <span class="team-name"><span class="seed">(16)</span> Colgate</span>
+                        </div>
+                        <div class="explanation">Florida's defending champion pedigree + guard confidence (despite streakiness) dominates a Patriot League team; championship experience carries.</div>
+                    </div>
+                    
+                    <div class="matchup">
+                        <div class="team winner">
+                            <span class="team-name"><span class="seed">(9)</span> Iowa</span>
+                            <span class="confidence">LEAN</span>
+                        </div>
+                        <div class="team">
+                            <span class="team-name"><span class="seed">(8)</span> Clemson</span>
+                        </div>
+                        <div class="explanation">Iowa's KenPom advantage (11 spots ahead) + Big Ten tournament survival beats Clemson's ACC tournament underperformance; Iowa's guard depth edges Clemson's defensive reliance.</div>
+                    </div>
+                    
+                    <div class="matchup">
+                        <div class="team winner">
+                            <span class="team-name"><span class="seed">(5)</span> St. John's</span>
+                            <span class="confidence">LEAN</span>
+                        </div>
+                        <div class="team">
+                            <span class="team-name"><span class="seed">(12)</span> UNI</span>
+                        </div>
+                        <div class="explanation">St. John's' Big East tournament experience + Lavin's tournament IQ edges UNI's FCS-level defensive intensity; guards are more reliable.</div>
+                    </div>
+                    
+                    <div class="matchup">
+                        <div class="team winner">
+                            <span class="team-name"><span class="seed">(4)</span> Alabama</span>
+                            <span class="confidence">COIN FLIP</span>
+                        </div>
+                        <div class="team">
+                            <span class="team-name"><span class="seed">(13)</span> Hofstra</span>
+                        </div>
+                        <div class="explanation">Alabama's 230th 3PT defense + 83.5 PPG allowed (worst in tourney) creates PATH TO UPSET RISK vs. shooting-heavy teams; however Hofstra's limited backcourt talent gives Alabama escape route; Alabama survives.</div>
+                    </div>
+                    
+                    <div class="matchup">
+                        <div class="team winner">
+                            <span class="team-name"><span class="seed">(6)</span> Louisville</span>
+                            <span class="confidence">LEAN</span>
+                        </div>
+                        <div class="team">
+                            <span class="team-name"><span class="seed">(11)</span> South Florida</span>
+                        </div>
+                        <div class="explanation">Louisville's Mikel Brown Jr. questionable status creates risk vs. South Florida's perimeter-heavy system; however Louisville's veteran backcourt (backup guards) survives; Payne's coaching edge.</div>
+                    </div>
+                    
+                    <div class="matchup">
+                        <div class="team winner">
+                            <span class="team-name"><span class="seed">(3)</span> Baylor</span>
+                            <span class="confidence">LOCK</span>
+                        </div>
+                        <div class="team">
+                            <span class="team-name"><span class="seed">(14)</span> Grambling</span>
+                        </div>
+                        <div class="explanation">Baylor's Big 12 tournament success + Scott Drew's tournament experience dominates a SWAC team; three-seed floor is extremely high.</div>
+                    </div>
+                    
+                    <div class="matchup">
+                        <div class="team winner">
+                            <span class="team-name"><span class="seed">(7)</span> Miami (Fla.)</span>
+                            <span class="confidence">LEAN</span>
+                        </div>
+                        <div class="team">
+                            <span class="team-name"><span class="seed">(10)</span> Missouri</span>
+                        </div>
+                        <div class="explanation">Miami's ACC tournament momentum + perimeter pressure defense beats Missouri's SEC tournament underperformance; Miami's elite wing depth controls tempo.</div>
+                    </div>
+                </div>
+                
+                <div class="round">
+                    <div class="round-title">Round of 32</div>
+                    
+                    <div class="matchup">
+                        <div class="team winner">
+                            <span class="team-name"><span class="seed">(1)</span> Florida</span>
+                            <span class="confidence">COIN FLIP</span>
+                        </div>
+                        <div class="team">
+                            <span class="team-name"><span class="seed">(9)</span> Iowa</span>
+                        </div>
+                        <div class="explanation">Florida's championship pedigree vs. Iowa's KenPom advantage in tight matchup; Florida's defending champion confidence + guard experience (despite streakiness) survives Iowa's tournament pressure; championship pressure cuts both ways but Florida's experience edges it.</div>
+                    </div>
+                    
+                    <div class="matchup">
+                        <div class="team winner">
+                            <span class="team-name"><span class="seed">(2)</span> Houston</span>
+                            <span class="confidence">COIN FLIP</span>
+                        </div>
+                        <div class="team">
+                            <span class="team-name"><span class="seed">(4)</span> Alabama</span>
+                        </div>
+                        <div class="explanation">MAJOR UPSET: Houston's Sampson elite defense + Flemings' freshman scoring explosion beats Alabama's 230th 3PT defense; Houston's backcourt applies relentless pressure forcing Alabama's guards into chaos.</div>
+                    </div>
+                    
+                    <div class="matchup">
+                        <div class="team winner">
+                            <span class="team-name"><span class="seed">(3)</span> Baylor</span>
+                            <span class="confidence">LEAN</span>
+                        </div>
+                        <div class="team">
+                            <span class="team-name"><span class="seed">(6)</span> Louisville</span>
+                        </div>
+                        <div class="explanation">Baylor's elite interior defense + Creighton-style spacing beats Louisville's three-dependent offense; Brown Jr.'s injury makes Baylor's paint dominance decisive.</div>
+                    </div>
+                </div>
+                
+                <div class="round">
+                    <div class="round-title">Elite Eight</div>
+                    
+                    <div class="matchup">
+                        <div class="team winner">
+                            <span class="team-name"><span class="seed">(2)</span> Houston</span>
+                            <span class="confidence">LEAN</span>
+                        </div>
+                        <div class="team">
+                            <span class="team-name"><span class="seed">(3)</span> Baylor</span>
+                        </div>
+                        <div class="explanation">Houston's Sampson defense + Flemings' freshman explosion beats Baylor's interior dominance; Houston's perimeter pressure + pace control (vs. Baylor's slow-paced offense) forces Baylor into inefficiency.</div>
+                    </div>
+                </div>
+                
+                <div class="round">
+                    <div class="round-title">Final Four Advance</div>
+                    <div class="matchup">
+                        <div class="team winner">
+                            <span class="team-name"><span class="seed">(2)</span> Houston</span>
+                            <span class="confidence">AUTO</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="round">
+                    <div class="round-title">Final Four Correction</div>
+                    <div class="explanation">
+                        <strong>NOTE:</strong> Houston (#2 seed in South) advances via surprise path: Houston beats Baylor in Elite Eight (Sampson's defense + Flemings' freshman explosion > Baylor's interior), then makes Final Four. Florida's streaky guards finally falter against Baylor's elite defensive intensity in Elite Eight, ending defending champ's run.
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- FINAL FOUR & CHAMPIONSHIP -->
+        <div class="final-four">
+            <div class="final-four-title">🏆 Final Four - Indianapolis 🏆</div>
+            
+            <div class="final-four-grid">
+                <div class="final-four-matchup">
+                    <div class="final-four-game">EAST vs. MIDWEST</div>
+                    <div class="team winner">
+                        <span class="team-name"><span class="seed">(1)</span> Duke</span>
+                        <span class="confidence">LEAN</span>
+                    </div>
+                    <div class="team">
+                        <span class="team-name"><span class="seed">(1)</span> Michigan</span>
+                    </div>
+                    <div class="explanation">Duke's elite guard trio + Foster's tournament return beats Michigan's balanced offense; Duke's defensive intensity in neutral court + Caleb Foster's scoring punch eliminates Michigan's bench advantage.</div>
+                </div>
+                
+                <div class="final-four-matchup">
+                    <div class="final-four-game">WEST vs. SOUTH</div>
+                    <div class="team winner">
+                        <span class="team-name"><span class="seed">(1)</span> Arizona</span>
+                        <span class="confidence">LOCK</span>
+                    </div>
+                    <div class="team">
+                        <span class="team-name"><span class="seed">(2)</span> Houston</span>
+                    </div>
+                    <div class="explanation">Arizona's interior dominance (Awaka/Krivas) + 18 assist average + 54.7% two-point shooting beats Houston's defensive intensity + Flemings' chaos; Arizona's elite bench depth outlasts Houston's freshman volatility in high-stakes Final Four.</div>
+                </div>
+            </div>
+            
+            <div class="championship">
+                <h3>🎯 CHAMPIONSHIP GAME 🎯</h3>
+                <div class="matchup">
+                    <div class="team winner">
+                        <span class="team-name"><span class="seed">(1)</span> Arizona</span>
+                        <span class="confidence">LOCK</span>
+                    </div>
+                    <div class="team">
+                        <span class="team-name"><span class="seed">(1)</span> Duke</span>
+                    </div>
+                    <div class="explanation">Arizona's elite two-way balance (top-5 offense, top-3 defense) + interior dominance beats Duke's guard-dependent offense in championship final; Duke's Caleb Foster must carry scoring load vs. Arizona's elite paint defense (Krivas/Awaka), and Duke's bench can't match Arizona's depth in a six-game tournament run exhaustion scenario. Arizona's controlled pace (18 assists/game) wears down Duke's guard-heavy rotation, and the Wildcats' structural advantage in inside scoring (54.7% 2PT, dominant paint) proves decisive in low-variance championship environment where Duke's three-point variance becomes liability. Final: Arizona 72 - Duke 68.</div>
+                </div>
+            </div>
+        </div>
+        
+        <footer>
+            <p><strong>Analysis Framework:</strong> KenPom Efficiency × Coaching IQ × Path Dependency × Shot Profile Volatility × Offensive Floor Under Duress × Tournament Experience</p>
+            <p><strong>Key Insights:</strong> Arizona's structural completeness (inside dominance + elite playmaking) > variance-dependent teams | Houston's Sampson defense + Flemings' upside survives to Final Four | Duke's guard trio + Foster recovery eliminates Midwest | Texas Tech's 3PT volume creates upset risk vs. Alabama (not reached due to other matchups)</p>
+            <p>Generated March 18, 2026 | Elite Analytics Bracket Methodology</p>
+        </footer>
+    </div>
+</body>
+</html>

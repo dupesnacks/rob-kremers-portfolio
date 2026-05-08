@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raul Trading System — Complete Overview</title>
+    <style>
+        body {
+            font-family: 'Monaco', 'Courier New', monospace;
+            background: #0a0a0a;
+            color: #d0d0d0;
+            padding: 30px;
+            max-width: 1400px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+        h1, h2, h3, h4 {
+            color: #00ff00;
+            border-bottom: 1px solid #333;
+            padding-bottom: 10px;
+        }
+        h1 { color: #00ff88; font-size: 32px; }
+        h2 { color: #00dd00; font-size: 24px; margin-top: 40px; }
+        h3 { color: #00bb00; font-size: 18px; margin-top: 25px; }
+        h4 { color: #00aa00; font-size: 15px; }
+        .box {
+            background: #1a1a1a;
+            border: 1px solid #333;
+            border-left: 3px solid #00ff00;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 4px;
+        }
+        .critical-box {
+            border-left-color: #ff4444;
+            background: #2a1a1a;
+        }
+        .info-box {
+            border-left-color: #00aaff;
+            background: #1a2a2a;
+        }
+        .success-box {
+            border-left-color: #00ff00;
+            background: #1a2a1a;
+        }
+        .warning-box {
+            border-left-color: #ffaa00;
+            background: #2a2215;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+        }
+        th, td {
+            border: 1px solid #333;
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background: #1a1a1a;
+            color: #00ff00;
+            font-weight: bold;
+        }
+        tr:nth-child(even) {
+            background: #0f0f0f;
+        }
+        tr:hover {
+            background: #1f1f1f;
+        }
+        code {
+            background: #0a0a0a;
+            border: 1px solid #333;
+            padding: 2px 6px;
+            border-radius: 3px;
+            color: #00ff00;
+            font-size: 12px;
+        }
+        pre {
+            background: #0a0a0a;
+            border: 1px solid #333;
+            padding: 15px;
+            border-radius: 4px;
+            overflow-x: auto;
+            font-size: 11px;
+            line-height: 1.4;
+        }
+        .timestamp {
+            color: #888;
+            font-size: 12px;
+        }
+        .metric {
+            display: inline-block;
+            background: #1a1a1a;
+            border: 1px solid #333;
+            padding: 10px 15px;
+            margin: 5px;
+            border-radius: 4px;
+        }
+        .metric-value {
+            color: #00ff00;
+            font-weight: bold;
+        }
+        .metric-label {
+            color: #888;
+            font-size: 11px;
+        }
+        ul, ol {
+            margin: 10px 0;
+            padding-left: 20px;
+        }
+        li {
+            margin: 5px 0;
+        }
+        .highlight {
+            color: #ffaa00;
+            font-weight: bold;
+        }
+        .added {
+            color: #00ff00;
+        }
+        .removed {
+            color: #ff6666;
+        }
+        .toc {
+            background: #1a1a1a;
+            border: 1px solid #333;
+            padding: 15px;
+            border-radius: 4px;
+            margin: 20px 0;
+        }
+        .toc a {
+            color: #00ff00;
+            text-decoration: none;
+        }
+        .toc a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1>🎯 RAUL TRADING SYSTEM — Complete Overview</h1>
+    <p class="timestamp">Last Updated: April 11, 2026 | Repo: rkremers123/raul-trading-system | Status: Production ✅</p>
+
+    <div class="toc">
+        <strong>📋 Quick Navigation:</strong>
+        <ul style="margin: 10px 0;">
+            <li><a href="#what-is">What Is This Tool?</a></li>
+            <li><a href="#core-concepts">Core Concepts</a></li>
+            <li><a href="#architecture">Architecture</a></li>
+            <li><a href="#how-it-works">How It Works (Data Pipeline)</a></li>
+            <li><a href="#canonical-specs">Canonical Specifications</a></li>
+            <li><a href="#recent-changes">Recent Changes (c7f0cdb)</a></li>
+            <li><a href="#deployment">Deployment & API</a></li>
+            <li><a href="#patterns">Key Patterns Discovered</a></li>
+            <li><a href="#next-steps">Next Steps & Roadmap</a></li>
+        </ul>
+    </div>
+
+    <h2 id="what-is">🎯 What Is This Tool?</h2>
+
+    <div class="box success-box">
+        <h3>SMA Outfits Institutional Momentum Engine</h3>
+        <p>A real-time scanner that detects <span class="highlight">institutional positioning</span> across stocks, ETFs, and crypto by analyzing how price moves across <span class="highlight">SMA (Simple Moving Average) "outfits"</span> — specific sequences of moving average periods that institutional traders use as entry/exit triggers.</p>
+        
+        <p><strong>Core Mission:</strong> Identify which "outfit" (institutional playbook) is currently gaming a ticker, and score the strength of that positioning by counting weighted hits across timeframes.</p>
+
+        <h4>Real-World Example:</h4>
+        <p><strong>TSLA on TSLA (420) outfit:</strong></p>
+        <ul>
+            <li>Outfit definition: [27, 53, 105, 210, 420] SMAs (geometric sequence: a(n)=420×2^n)</li>
+            <li>If TSLA price is currently above MA420 and approaching MA210 from below = institutional accumulation signal</li>
+            <li>The scanner counts this as a "hit" for TSLA (420) outfit on that timeframe</li>
+            <li>Across all timeframes (1m, 3m, 5m, 10m, etc.), total hits = conviction strength</li>
+        </ul>
+
+        <p><strong>What You Get:</strong> Live feed of institutional trades before retail sees them, ranked by confidence and timeframe.</p>
+    </div>
+
+    <h2 id="core-concepts">🔧 Core Concepts</h2>
+
+    <div class="box info-box">
+        <h3>1. SMA Outfits</h3>
+        <p>A named sequence of moving average periods. Examples:</p>
+        <table>
+            <tr>
+                <th>Outfit Name</th>
+                <th>Periods (SMAs)</th>
+                <th>Category</th>
+                <th>Primary Tickers</th>
+                <th>Source</th>
+            </tr>
+            <tr>
+                <td><strong>S&P (SYSTEM)</strong></td>
+                <td>[10, 50, 200]</td>
+                <td>Canonical</td>
+                <td>SPX (30m)</td>
+                <td>Raul Apr 9 2026</td>
+            </tr>
+            <tr>
+                <td><strong>NAS (SYSTEM)</strong></td>
+                <td>[20, 100, 250]</td>
+                <td>Canonical</td>
+                <td>IXIC (20m)</td>
+                <td>Raul Apr 9 2026</td>
+            </tr>
+            <tr>
+                <td><strong>DJI (SYSTEM)</strong></td>
+                <td>[30, 60, 90, 300, 600, 900]</td>
+                <td>Canonical</td>
+                <td>DJI (15m/1h)</td>
+                <td>Raul Apr 9 2026</td>
+            </tr>
+            <tr>
+                <td><strong>SVIX (211) (CORE)</strong></td>
+                <td>[36, 52, 106, 211, 422, 844]</td>
+                <td>Canonical</td>
+                <td>VIX (15m/1h)</td>
+                <td>Raul Apr 9 2026</td>
+            </tr>
+            <tr>
+                <td><strong>TSLA (420) (CORE)</strong></td>
+                <td>[27, 53, 105, 210, 420]</td>
+                <td>Observed</td>
+                <td>TSLA, TSLR, TSLQ, TSLT, TSLL</td>
+                <td>Raul trade logs</td>
+            </tr>
+            <tr>
+                <td><strong>Base 2/NVDA (CORE)</strong></td>
+                <td>[2, 4, 8, 16, 32, 64, 128, 256]</td>
+                <td>Observed</td>
+                <td>NVDA, AAPL, SOXL, AMD</td>
+                <td>Raul trade logs</td>
+            </tr>
+            <tr>
+                <td><strong>Octuple (816) (CORE)</strong></td>
+                <td>[102, 204, 408, 816]</td>
+                <td>Observed</td>
+                <td>NVDA, AAPL, ERX, USO, SCO</td>
+                <td>Raul 408 area code tweet</td>
+            </tr>
+            <tr>
+                <td><strong>Menlo Park (650) (CORE)</strong></td>
+                <td>[20, 41, 81, 163, 325, 650]</td>
+                <td>Observed</td>
+                <td>META</td>
+                <td>Raul Apr 9 area code tweet</td>
+            </tr>
+        </table>
+
+        <p><strong>Key Insight:</strong> <span class="highlight">CANONICAL</span> outfits (S&P, NAS, DJI, SVIX/VIX) are permanent institutional systems per Raul Apr 9 2026. <span class="highlight">OBSERVED</span> outfits (TSLA/420, NVDA, META) are historical observations — a stock can operate on different outfits in different legs.</p>
+    </div>
+
+    <div class="box info-box">
+        <h3>2. Hits & Weights</h3>
+        <p>A <strong>"hit"</strong> occurs when price crosses an SMA for that outfit. Example:</p>
+        <ul>
+            <li>TSLA price: $250</li>
+            <li>TSLA (420) MA210: $249</li>
+            <li>→ Price above MA210 = HIT (accumulation signal)</li>
+            <li>Weight = score based on outfit strength + affinity boost (2× if historical match)</li>
+        </ul>
+
+        <p><strong>Total Weight = Sum of all hits</strong> for a ticker across all outfits/timeframes. Higher total = stronger institutional positioning.</p>
+    </div>
+
+    <div class="box info-box">
+        <h3>3. Timeframes & Data</h3>
+        <p>Scanner checks multiple timeframes per ticker:</p>
+        <ul>
+            <li><strong>1m, 3m, 5m, 10m, 15m, 20m, 30m:</strong> Intraday (institutional hour)</li>
+            <li><strong>1h, 4h:</strong> Swing trade</li>
+            <li><strong>Daily, Weekly:</strong> Trend confirmation</li>
+        </ul>
+        <p><strong>Data Source:</strong> Schwab API (real-time, <5s latency) + Coinbase (BTC public API)</p>
+    </div>
+
+    <div class="box info-box">
+        <h3>4. Affinity & Historical Emphasis</h3>
+        <p>If a ticker has a known affinity for an outfit (e.g., TSLA→TSLA/420), hits on that outfit get a <strong>2× score boost</strong>.</p>
+        <p><strong>Why?</strong> Historical observation shows TSLA often operates on 420 outfit, but it's not restricted to it anymore (see "Recent Changes" below).</p>
+    </div>
+
+    <h2 id="architecture">🏗️ Architecture</h2>
+
+    <div class="box">
+        <h3>Repository Structure</h3>
+        <pre><code>raul-trading-system/
+├── backend/
+│   ├── app/
+│   │   ├── main.py              # FastAPI app + endpoints
+│   │   ├── config.py            # Outfit definitions + canonical specs
+│   │   ├── engine.py            # Hit scoring + ranking logic
+│   │   ├── schwab_fetcher.py    # OAuth2 token mgmt + API calls
+│   │   ├── coinbase_fetcher.py  # BTC public API
+│   │   └── alerts.py            # Confluence/surge alerts
+│   └── requirements.txt
+└── frontend/
+    └── (React dashboard — future)
+</code></pre>
+    </div>
+
+    <div class="box">
+        <h3>Data Pipeline</h3>
+        <pre><code>Schwab API (equities)  →  ┐
+Coinbase API (BTC)     →  │  fetch_ohlc()
+                           ├→ calculate_sma()
+                           ├→ detect_hits()
+                           ├→ is_affinity() boost
+                           └→ rank_by_weight()
+                           →  /api/tickers (live ranking)
+                           →  /api/btc (BTC verdict)
+</code></pre>
+    </div>
+
+    <h2 id="how-it-works">⚙️ How It Works (Full Data Pipeline)</h2>
+
+    <div class="box">
+        <h3>Step 1: Fetch OHLC Data</h3>
+        <p><code>schwab_fetcher.py</code> uses Schwab OAuth2 to fetch price history. Respects 7-day token expiry (requires manual re-auth every 7 days).</p>
+        <p><strong>Rate Limit:</strong> 120 req/min. Scan adapts to throttling.</p>
+    </div>
+
+    <div class="box">
+        <h3>Step 2: Calculate SMAs</h3>
+        <p>For each outfit + timeframe, compute moving averages for all periods in the outfit definition.</p>
+        <p><strong>Example:</strong> TSLA (420) on 5m timeframe → calculate MA27, MA53, MA105, MA210, MA420 from 5m OHLC candles</p>
+    </div>
+
+    <div class="box">
+        <h3>Step 3: Detect Hits</h3>
+        <p>Compare latest close price to each SMA. If price crosses (breaks above or below), count as HIT.</p>
+        <p><strong>Hit Logic:</strong></p>
+        <ul>
+            <li>Price > SMA = LONG hit (buy signal)</li>
+            <li>Price < SMA = SHORT hit (sell signal)</li>
+            <li>Weight = 4.0 (critical), 2.0 (support), 1.0-1.5 (minor) depending on SMA tier</li>
+        </ul>
+    </div>
+
+    <div class="box">
+        <h3>Step 4: Affinity Boost</h3>
+        <p><code>is_affinity(outfit, ticker)</code> checks if ticker has historical match. If yes, multiply weight × 2.</p>
+        <p><strong>Example:</strong> TSLA hit on TSLA (420) = 4.0 weight × 2 = 8.0 effective weight</p>
+    </div>
+
+    <div class="box">
+        <h3>Step 5: Rank by Total Weight</h3>
+        <p>Sum all hits across outfits + timeframes for each ticker. Sort by total weight. Return top 31 (light mode) or all (full mode).</p>
+        <p><strong>Output:</strong> `/api/tickers` endpoint with ranked list</p>
+    </div>
+
+    <h2 id="canonical-specs">📋 Canonical Specifications (Raul Apr 9 2026)</h2>
+
+    <div class="box critical-box">
+        <h3>The 4 Canonical System Tickers</h3>
+        <p><strong>Only these 4 have PERMANENT, RELIABLE outfit relationships:</strong></p>
+        <table>
+            <tr>
+                <th>Ticker</th>
+                <th>Timeframe(s)</th>
+                <th>Outfit Definition</th>
+                <th>Category</th>
+            </tr>
+            <tr>
+                <td><strong>SPX</strong></td>
+                <td>30m</td>
+                <td>[10, 50, 200]</td>
+                <td>System</td>
+            </tr>
+            <tr>
+                <td><strong>IXIC</strong></td>
+                <td>20m</td>
+                <td>[20, 100, 250]</td>
+                <td>System</td>
+            </tr>
+            <tr>
+                <td><strong>DJI</strong></td>
+                <td>15m/1h</td>
+                <td>[30, 60, 90, 300, 600, 900]</td>
+                <td>System</td>
+            </tr>
+            <tr>
+                <td><strong>VIX</strong></td>
+                <td>15m/1h</td>
+                <td>[36, 52, 106, 211, 422, 844]</td>
+                <td>Core (system-level)</td>
+            </tr>
+        </table>
+
+        <p><strong>Raul Quote (Apr 9 2026):</strong> "The only equities that have a relevant system are S&P 500 SPX, NASDAQ's IXIC, Dow Jones DJI, and Chicago VIX is SVIX."</p>
+    </div>
+
+    <div class="box info-box">
+        <h3>Individual Stocks = Variable Outfit</h3>
+        <p><strong>Raul Quote (Apr 9 2026):</strong> "No individual stock operates on a singular outfit. [...] on a leg higher I recorded GME operating on the 420 outfit on the daily chart. The next time it's a manufactured higher it could be on any other outfit. It can also be on any other timeframe [...] or it doesn't operate on any specific outfit because these banks [...] may just be providing liquidity."</p>
+
+        <p><strong>Implication:</strong> Historical affinity entries (TSLA→420, NVDA→Base2, META→650) are OBSERVATIONS, not permanent mappings. A stock can operate on different outfits in different legs.</p>
+    </div>
+
+    <h2 id="recent-changes">🚀 Recent Changes (Commit c7f0cdb)</h2>
+
+    <div class="box success-box">
+        <h3>Scanner Relaxation: Non-Canonical Tickers Now Scan Full Universe</h3>
+
+        <h4>What Changed?</h4>
+        <table>
+            <tr>
+                <th>Aspect</th>
+                <th>BEFORE (bed2fb6)</th>
+                <th>AFTER (c7f0cdb)</th>
+            </tr>
+            <tr>
+                <td><strong>TSLA Scanning</strong></td>
+                <td>TSLA → TSLA (420) only</td>
+                <td>TSLA → ALL outfits (420 emphasized 2×)</td>
+            </tr>
+            <tr>
+                <td><strong>NVDA Scanning</strong></td>
+                <td>NVDA → Base2/Octuple only</td>
+                <td>NVDA → ALL outfits (Base2/Octuple emphasized 2×)</td>
+            </tr>
+            <tr>
+                <td><strong>META Scanning</strong></td>
+                <td>META → Menlo Park only</td>
+                <td>META → ALL outfits (Menlo Park emphasized 2×)</td>
+            </tr>
+            <tr>
+                <td><strong>SPX/IXIC/DJI/VIX</strong></td>
+                <td>Restricted to canonical outfits</td>
+                <td>STILL restricted (no change)</td>
+            </tr>
+        </table>
+
+        <h4>Why?</h4>
+        <p>Raul clarified that individual stocks operate on <strong>variable outfits per leg</strong>. Old restriction model (TSLA→420 only) meant missing TSLA legs on Octuple (816), Octane (818), or other outfits. New model: scan everything, weight historical relationships 2×.</p>
+
+        <h4>Code Changes</h4>
+        <pre><code># NEW: Define which tickers are truly canonical (restricted scanning)
+CANONICAL_SYSTEM_TICKERS = {"SPX", "IXIC", "DJI", "VIX"}
+
+def outfits_for_ticker(ticker: str) -> set[str] | None:
+    """Returns restricted set if canonical system ticker, else None (scan all)."""
+    if ticker in CANONICAL_SYSTEM_TICKERS and ticker in TICKER_OUTFIT_MAP:
+        return TICKER_OUTFIT_MAP[ticker]  # restricted: only these outfits
+    return None  # scan all outfits; is_affinity() provides 2× boost
+</code></pre>
+
+        <h4>Impact</h4>
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px;">
+            <div class="metric">
+                <div class="metric-label">Outfit-Scan Tuples (per timeframe)</div>
+                <div class="metric-value">2.21× Increase</div>
+                <span style="color: #666;">~1,311 → ~2,899</span>
+            </div>
+            <div class="metric">
+                <div class="metric-label">Data Fetching Cost</div>
+                <div class="metric-value">ZERO ✅</div>
+                <span style="color: #666;">Compute bounded by API, not tuples</span>
+            </div>
+            <div class="metric">
+                <div class="metric-label">Correctness</div>
+                <div class="metric-value">IMPROVED ✅</div>
+                <span style="color: #666;">Can now catch TSLA on non-420 outfits</span>
+            </div>
+            <div class="metric">
+                <div class="metric-label">Affinity Boost</div>
+                <div class="metric-value">2× KEPT ✅</div>
+                <span style="color: #666;">Historical relationships still emphasized</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="box success-box">
+        <h3>Canonical Spec Corrections (Commit 4cfe1a1)</h3>
+        <ul>
+            <li><span class="removed">SVIX (211) first SMA: 26</span> → <span class="added">36</span> (factual correction per Raul spec)</li>
+            <li><span class="removed">NAS (IXIC) timeframe: 30m</span> → <span class="added">20m</span> (per Raul canonical spec)</li>
+            <li>VIX added to SVIX (211) affinity (confirmed as canonical system ticker)</li>
+            <li>Extended config docstrings with Raul Apr 9 2026 citations</li>
+        </ul>
+    </div>
+
+    <h2 id="deployment">🚀 Deployment & API</h2>
+
+    <div class="box success-box">
+        <h3>Live Backend</h3>
+        <p><strong>Location:</strong> `/Users/rk/clawd/raul-trading-system` (c7f0cdb)</p>
+        <p><strong>Running:</strong> uvicorn on port 8001</p>
+        <p><strong>Health Check:</strong> <code>curl http://localhost:8001/api/health</code></p>
+        <p><strong>Schwab OAuth:</strong> ✅ Valid (refreshed Apr 8, expires Apr 15)</p>
+    </div>
+
+    <div class="box">
+        <h3>API Endpoints</h3>
+        <table>
+            <tr>
+                <th>Endpoint</th>
+                <th>Method</th>
+                <th>Description</th>
+                <th>Response</th>
+            </tr>
+            <tr>
+                <td><code>/api/health</code></td>
+                <td>GET</td>
+                <td>Backend status</td>
+                <td>{"status": "ok", "timestamp": "..."}</td>
+            </tr>
+            <tr>
+                <td><code>/api/scan</code></td>
+                <td>POST</td>
+                <td>Start light or full scan</td>
+                <td>{"status": "started", "mode": "light"}</td>
+            </tr>
+            <tr>
+                <td><code>/api/tickers</code></td>
+                <td>GET</td>
+                <td>Live ticker rankings (post-scan)</td>
+                <td>[{rank, ticker, total, long, short, bias, ...}]</td>
+            </tr>
+            <tr>
+                <td><code>/api/btc</code></td>
+                <td>GET</td>
+                <td>BTC positioning + key levels</td>
+                <td>{price, verdict, long_weight, short_weight, key_levels, ...}</td>
+            </tr>
+            <tr>
+                <td><code>/api/sma-table</code></td>
+                <td>GET</td>
+                <td>Reference table (outfit → tickers)</td>
+                <td>[{outfit, tickers, is_canonical_system}]</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="box">
+        <h3>Scan Modes</h3>
+        <table>
+            <tr>
+                <th>Mode</th>
+                <th>Tickers Scanned</th>
+                <th>Runtime</th>
+                <th>Use Case</th>
+            </tr>
+            <tr>
+                <td><strong>Light</strong></td>
+                <td>31 (major + crypto)</td>
+                <td>~3 min</td>
+                <td>Hourly intraday checks, institutional hour</td>
+            </tr>
+            <tr>
+                <td><strong>Full</strong></td>
+                <td>65+ tickers</td>
+                <td>~9 min</td>
+                <td>End-of-day, full market survey</td>
+            </tr>
+        </table>
+    </div>
+
+    <h2 id="patterns">💡 Key Patterns Discovered</h2>
+
+    <div class="box info-box">
+        <h3>1. Extended History Windows Reveal True Conviction</h3>
+        <p><strong>Pattern:</strong> 90-300 day history shows sustained institutional positioning; 10-day windows show hedging noise.</p>
+        <ul>
+            <li>TSLA 10-day: 1.90x L/S ratio</li>
+            <li>TSLA 90-300d: 2.45x L/S ratio (true conviction)</li>
+        </ul>
+        <p><strong>Rule:</strong> Always interpret short-term shifts through long-term lens.</p>
+    </div>
+
+    <div class="box info-box">
+        <h3>2. BTC Risk Regime Controls TSLA Rebalancing</h3>
+        <p><strong>Pattern:</strong> BTC support/resistance breaks trigger institutional rebalancing in TSLA instruments.</p>
+        <ul>
+            <li>BTC breaks $72k resistance → TSLA spot flips bullish</li>
+            <li>BTC tests $70.4k support → TSLQ bearish strengthens</li>
+        </ul>
+        <p><strong>Lead Time:</strong> BTC moves first by 4-24 hours; TSLA instruments follow.</p>
+    </div>
+
+    <div class="box info-box">
+        <h3>3. Spot vs Leverage Entry Ladder</h3>
+        <p><strong>Pattern:</strong> Institutions enter via leverage FIRST (conviction building), confirm via spot accumulation SECOND (macro trigger).</p>
+        <ul>
+            <li>Week 1-2: Accumulate in TSLL/TSLR/TSLT while maintaining TSLQ hedge</li>
+            <li>Week 3+: Wait for macro confirmation (BTC risk-on breakout)</li>
+            <li>Confirmation: Spot TSLA accumulation activates, hedge ratio optimized</li>
+        </ul>
+    </div>
+
+    <div class="box info-box">
+        <h3>4. Hedge Ratio Optimization ≠ Exit</h3>
+        <p><strong>Pattern:</strong> Institutions reduce hedge allocation on macro confirmation, not to signal conviction loss.</p>
+        <ul>
+            <li><strong>Reduction on breakout</strong> = bullish (capital reallocation)</li>
+            <li><strong>Increase on weakness</strong> = bearish (risk-off)</li>
+            <li><strong>Static hedge</strong> = neutral (position holding)</li>
+        </ul>
+        <p><strong>Example:</strong> TSLQ reduced 1,849w → 1,736w (-112.5w) while net TSLA long increased from +2,415w to +2,509w.</p>
+    </div>
+
+    <h2 id="next-steps">🗺️ Next Steps & Roadmap</h2>
+
+    <div class="box warning-box">
+        <h3>Immediate</h3>
+        <ul>
+            <li>✅ <strong>Done:</strong> Scanner relaxation (c7f0cdb deployed live)</li>
+            <li>✅ <strong>Done:</strong> Canonical spec corrections (SVIX MA36, NAS 20m)</li>
+            <li>⏳ <strong>In Progress:</strong> Full scan validation (tuple count increase confirmation)</li>
+            <li>🔲 <strong>Deferred:</strong> SVIX (211) category promotion Core → System (needs Raul decision on alert behavior)</li>
+        </ul>
+    </div>
+
+    <div class="box info-box">
+        <h3>Medium-Term (Phase 2)</h3>
+        <ul>
+            <li><strong>Hash-Map Hit-Rate Scoring Engine:</strong> Aggregate OHLC hit history per (ticker, outfit, timeframe) tuple, weighted by recency + historical % return before termination</li>
+            <li><strong>React Frontend:</strong> Live dashboard with outfit matrix, real-time hits, alert configuration</li>
+            <li><strong>Confluence Alerts:</strong> Email/SMS when multiple outfits converge on same side (bullish/bearish consensus)</li>
+        </ul>
+    </div>
+
+    <div class="box">
+        <h3>Future Considerations</h3>
+        <ul>
+            <li>Multi-provider data: Add IBKR, E*Trade for redundancy</li>
+            <li>Outfit discovery: Use ML to infer new outfit sequences from price data</li>
+            <li>Backtesting engine: Simulate entry/exit on outfit signals, measure win rate</li>
+            <li>Raul API integration: Auto-pull outfit updates from Raul's trading logs</li>
+        </ul>
+    </div>
+
+    <h2>📚 Key Files Reference</h2>
+
+    <table>
+        <tr>
+            <th>File</th>
+            <th>Purpose</th>
+            <th>Key Content</th>
+        </tr>
+        <tr>
+            <td><code>config.py</code></td>
+            <td>Outfit definitions + canonical specs</td>
+            <td>OUTFITS dict, AFFINITIES, CANONICAL_SYSTEM_TICKERS, SYSTEM_CROSSOVERS</td>
+        </tr>
+        <tr>
+            <td><code>engine.py</code></td>
+            <td>Hit scoring + ranking logic</td>
+            <td>is_affinity(), detect_hits(), rank_by_weight()</td>
+        </tr>
+        <tr>
+            <td><code>schwab_fetcher.py</code></td>
+            <td>Schwab OAuth2 + API calls</td>
+            <td>fetch_ohlc(), token refresh, rate limiting</td>
+        </tr>
+        <tr>
+            <td><code>main.py</code></td>
+            <td>FastAPI endpoints</td>
+            <td>/api/scan, /api/tickers, /api/btc, /api/sma-table</td>
+        </tr>
+        <tr>
+            <td><code>alerts.py</code></td>
+            <td>Alert generation</td>
+            <td>CONFLUENCE, OUTFIT_SURGE detection</td>
+        </tr>
+    </table>
+
+    <h2>💬 Questions to Ask When Starting</h2>
+
+    <ol>
+        <li>What's the latest commit? (Check: `git log --oneline -3`)</li>
+        <li>Is Schwab OAuth valid? (Check: curl http://localhost:8001/api/health)</li>
+        <li>When was the last scan? (Check: tail -1 /tmp/backend.log)</li>
+        <li>Any errors in latest scan? (Check: grep -i error /tmp/backend.log | tail -5)</li>
+        <li>What's BTC doing? (Check: curl http://localhost:8001/api/btc | jq .verdict)</li>
+        <li>Which outfits are active on TSLA? (Check: curl http://localhost:8001/api/tickers | jq '.[] | select(.ticker=="TSLA")')</li>
+    </ol>
+
+    <hr style="border: 1px solid #333; margin: 30px 0;">
+
+    <h2>🎬 Quick Start for Claude Code</h2>
+
+    <div class="box success-box">
+        <h3>Your Mission (if you choose to accept it):</h3>
+        <ol>
+            <li><strong>Review</strong> the latest commits on the branch</li>
+            <li><strong>Test</strong> live backend (run light scan, check /api/tickers output)</li>
+            <li><strong>Validate</strong> changes match Raul's Apr 9 2026 specifications</li>
+            <li><strong>Propose</strong> next phase: hash-map scoring engine or frontend</li>
+            <li><strong>Deploy</strong> to production when ready (current code is ready ✅)</li>
+        </ol>
+    </div>
+
+    <p class="timestamp" style="margin-top: 40px;">Generated: April 11, 2026 | Status: PRODUCTION READY ✅ | Next: Full scan validation + SVIX category decision</p>
+</body>
+</html>

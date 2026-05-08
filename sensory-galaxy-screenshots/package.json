@@ -1,0 +1,21 @@
+{
+  "name": "sensory-galaxy-screenshots",
+  "version": "1.0.0",
+  "description": "Sensory Galaxy screenshot framing tool",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "next": "^15.0.0",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "html-to-image": "^1.11.11"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0",
+    "@types/react": "^18.0.0",
+    "@types/node": "^20.0.0"
+  }
+}

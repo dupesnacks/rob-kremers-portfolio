@@ -1,0 +1,1073 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BYND // SQUEEZE MONITOR</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@400;700;800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg:        #080c10;
+    --bg2:       #0d1117;
+    --bg3:       #111820;
+    --border:    #1e2d3d;
+    --dim:       #3a4a5a;
+    --muted:     #5a7080;
+    --text:      #c8d8e8;
+    --bright:    #e8f4ff;
+    --green:     #39ff9a;
+    --green-dim: #1a6640;
+    --red:       #ff4060;
+    --red-dim:   #6a1020;
+    --yellow:    #ffd060;
+    --yellow-dim:#5a4010;
+    --blue:      #4da8ff;
+    --blue-dim:  #1a3860;
+    --magenta:   #df80ff;
+    --magenta-dim:#4a2060;
+    --cyan:      #40d0e0;
+    --cyan-dim:  #103840;
+    --accent:    #39ff9a;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Space Mono', monospace;
+    font-size: 12px;
+    line-height: 1.5;
+    min-height: 100vh;
+    padding: 16px;
+  }
+
+  /* Scanline overlay */
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background: repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 2px,
+      rgba(0,0,0,0.08) 2px,
+      rgba(0,0,0,0.08) 4px
+    );
+    pointer-events: none;
+    z-index: 100;
+  }
+
+  /* ── HEADER ── */
+  .header {
+    display: flex;
+    align-items: baseline;
+    gap: 20px;
+    margin-bottom: 16px;
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 12px;
+  }
+  .header-ticker {
+    font-family: 'Syne', sans-serif;
+    font-weight: 800;
+    font-size: 28px;
+    color: var(--bright);
+    letter-spacing: 0.05em;
+  }
+  .header-label {
+    font-size: 10px;
+    color: var(--muted);
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+  }
+  .header-right {
+    margin-left: auto;
+    text-align: right;
+  }
+  .refresh-dot {
+    display: inline-block;
+    width: 7px; height: 7px;
+    border-radius: 50%;
+    background: var(--green);
+    margin-right: 6px;
+    animation: pulse 2s infinite;
+  }
+  @keyframes pulse {
+    0%,100% { opacity: 1; }
+    50%      { opacity: 0.2; }
+  }
+
+  /* ── MAIN GRID ── */
+  .grid {
+    display: grid;
+    grid-template-columns: 260px 1fr;
+    grid-template-rows: auto auto auto;
+    gap: 10px;
+  }
+
+  /* ── PANELS ── */
+  .panel {
+    background: var(--bg2);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    padding: 12px 14px;
+  }
+  .panel-title {
+    font-size: 9px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 10px;
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 6px;
+  }
+
+  /* ── STATE BADGE ── */
+  .state-panel {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  .state-badge {
+    font-family: 'Syne', sans-serif;
+    font-weight: 800;
+    font-size: 15px;
+    letter-spacing: 0.08em;
+    padding: 10px 14px;
+    border-radius: 3px;
+    text-align: center;
+    margin-bottom: 10px;
+    transition: all 0.4s ease;
+  }
+  .state-REAL-SQUEEZE      { background: var(--magenta-dim); color: var(--magenta); border: 1px solid var(--magenta); }
+  .state-BUILDING-PRESSURE { background: var(--blue-dim);    color: var(--blue);    border: 1px solid var(--blue); }
+  .state-EARLY-IGNITION    { background: var(--green-dim);   color: var(--green);   border: 1px solid var(--green); }
+  .state-EARLY-ACCUMULATION{ background: var(--cyan-dim);    color: var(--cyan);    border: 1px solid var(--cyan); }
+  .state-FADING            { background: var(--yellow-dim);  color: var(--yellow);  border: 1px solid var(--yellow); }
+  .state-BROKEN-SETUP      { background: var(--red-dim);     color: var(--red);     border: 1px solid var(--red); }
+  .state-DEAD-INACTIVE     { background: #111;               color: var(--dim);     border: 1px solid var(--dim); }
+
+  .summary-text {
+    font-size: 11px;
+    color: var(--text);
+    line-height: 1.6;
+    border-left: 2px solid var(--accent);
+    padding-left: 8px;
+    margin-top: 8px;
+  }
+
+  /* ── PRICE PANEL ── */
+  .price-panel {
+    grid-column: 2;
+    grid-row: 1;
+    display: flex;
+    gap: 10px;
+    align-items: stretch;
+  }
+  .price-big {
+    font-family: 'Syne', sans-serif;
+    font-weight: 800;
+    font-size: 38px;
+    color: var(--bright);
+    letter-spacing: -0.02em;
+    line-height: 1;
+  }
+  .price-change {
+    font-size: 14px;
+    font-weight: 700;
+    margin-top: 4px;
+  }
+  .up   { color: var(--green); }
+  .down { color: var(--red); }
+  .flat { color: var(--muted); }
+
+  .metric-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    flex: 1;
+  }
+  .metric-box {
+    background: var(--bg3);
+    border: 1px solid var(--border);
+    border-radius: 3px;
+    padding: 8px 10px;
+  }
+  .metric-label {
+    font-size: 9px;
+    color: var(--muted);
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    margin-bottom: 4px;
+  }
+  .metric-value {
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--bright);
+  }
+  .metric-sub {
+    font-size: 9px;
+    color: var(--muted);
+    margin-top: 2px;
+  }
+
+  /* ── RELVOL BAR ── */
+  .relvol-bar-wrap {
+    height: 4px;
+    background: var(--bg3);
+    border-radius: 2px;
+    margin-top: 5px;
+    overflow: hidden;
+  }
+  .relvol-bar {
+    height: 100%;
+    border-radius: 2px;
+    transition: width 0.6s ease;
+  }
+
+  /* ── LEVELS PANEL ── */
+  .levels-panel {
+    grid-column: 1;
+    grid-row: 2 / 4;
+  }
+  .level-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 0;
+    border-bottom: 1px solid var(--bg3);
+    font-size: 11px;
+  }
+  .level-row:last-child { border-bottom: none; }
+  .level-name { color: var(--muted); }
+  .level-price { color: var(--text); font-weight: 700; }
+  .level-dist { font-size: 10px; }
+  .level-indicator {
+    width: 6px; height: 6px; border-radius: 50%;
+    flex-shrink: 0;
+  }
+
+  /* ── TRENDS + VOLUME ── */
+  .middle-row {
+    grid-column: 2;
+    grid-row: 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+  }
+
+  .trend-indicator {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 2px;
+    font-size: 11px;
+    font-weight: 700;
+  }
+  .trend-up   { background: var(--green-dim);  color: var(--green); }
+  .trend-down { background: var(--red-dim);    color: var(--red); }
+  .trend-flat { background: var(--bg3);        color: var(--muted); }
+
+  .flag-chip {
+    display: inline-block;
+    background: var(--bg3);
+    border: 1px solid var(--border);
+    border-radius: 2px;
+    padding: 2px 6px;
+    font-size: 9px;
+    color: var(--cyan);
+    margin: 2px 2px 0 0;
+    letter-spacing: 0.05em;
+  }
+
+  /* ── ALERTS ── */
+  .alerts-panel {
+    grid-column: 2;
+    grid-row: 3;
+  }
+  .alert-item {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    background: var(--red-dim);
+    border: 1px solid var(--red);
+    border-radius: 2px;
+    padding: 3px 8px;
+    font-size: 10px;
+    color: var(--red);
+    font-weight: 700;
+    margin: 2px;
+    letter-spacing: 0.05em;
+  }
+  .alert-item::before { content: '⚠'; font-size: 10px; }
+  .no-alerts { color: var(--dim); font-size: 11px; }
+
+  /* ── HISTORY TABLE ── */
+  .history-panel {
+    grid-column: 1 / -1;
+    grid-row: 5;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 10px;
+  }
+  th {
+    text-align: left;
+    font-size: 9px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--muted);
+    padding: 4px 8px;
+    border-bottom: 1px solid var(--border);
+  }
+  td {
+    padding: 4px 8px;
+    border-bottom: 1px solid var(--bg3);
+    color: var(--text);
+    font-size: 10px;
+  }
+  tr:hover td { background: var(--bg3); }
+  .state-cell {
+    font-weight: 700;
+    font-size: 9px;
+    letter-spacing: 0.05em;
+  }
+
+  /* ── TIMESTAMP ── */
+  .last-update {
+    font-size: 9px;
+    color: var(--dim);
+    margin-top: 12px;
+    text-align: right;
+  }
+
+  /* ── OFFLINE ── */
+  .offline-banner {
+    background: var(--red-dim);
+    border: 1px solid var(--red);
+    color: var(--red);
+    padding: 8px 14px;
+    border-radius: 3px;
+    margin-bottom: 10px;
+    font-size: 11px;
+    font-weight: 700;
+    display: none;
+  }
+
+  /* ─────────────────────────────────────────────── */
+  /* MOBILE RESPONSIVE (< 768px)                     */
+  /* ─────────────────────────────────────────────── */
+  @media (max-width: 768px) {
+    body {
+      padding: 12px;
+      font-size: 11px;
+    }
+
+    /* Scale down header */
+    .header {
+      flex-direction: column;
+      gap: 8px;
+      margin-bottom: 12px;
+      padding-bottom: 10px;
+    }
+    .header-ticker {
+      font-size: 20px;
+    }
+    .header-label {
+      font-size: 9px;
+    }
+    .header-right {
+      margin-left: 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+    }
+
+    /* Single column grid */
+    .grid {
+      grid-template-columns: 1fr;
+      grid-template-rows: auto;
+      gap: 8px;
+    }
+
+    /* Reflow all grid items */
+    .state-panel {
+      grid-column: 1 !important;
+      grid-row: auto !important;
+    }
+    .price-panel {
+      grid-column: 1 !important;
+      grid-row: auto !important;
+      flex-direction: column;
+    }
+    .levels-panel {
+      grid-column: 1 !important;
+      grid-row: auto !important;
+    }
+    .middle-row {
+      grid-column: 1 !important;
+      grid-row: auto !important;
+      grid-template-columns: 1fr;
+      gap: 8px;
+    }
+    .alerts-panel {
+      grid-column: 1 !important;
+      grid-row: auto !important;
+    }
+    .history-panel {
+      grid-column: 1 !important;
+      grid-row: auto !important;
+    }
+
+    /* Price panel: stack vertically */
+    .price-panel > div:first-child {
+      min-width: 100%;
+    }
+    .metric-grid {
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+    }
+
+    /* Smaller price display on mobile */
+    .price-big {
+      font-size: 28px;
+    }
+    .price-change {
+      font-size: 12px;
+    }
+
+    /* Reduce panel padding */
+    .panel {
+      padding: 10px 12px;
+    }
+    .panel-title {
+      font-size: 8px;
+      margin-bottom: 8px;
+      padding-bottom: 5px;
+    }
+
+    /* Metric boxes: smaller text */
+    .metric-box {
+      padding: 6px 8px;
+    }
+    .metric-label {
+      font-size: 8px;
+    }
+    .metric-value {
+      font-size: 12px;
+    }
+    .metric-sub {
+      font-size: 8px;
+    }
+
+    /* State badge: fit better */
+    .state-badge {
+      font-size: 13px;
+      padding: 8px 12px;
+    }
+    .summary-text {
+      font-size: 10px;
+    }
+
+    /* Levels: more compact */
+    .level-row {
+      padding: 4px 0;
+      font-size: 10px;
+    }
+    .level-indicator {
+      width: 5px;
+      height: 5px;
+    }
+
+    /* Trends section */
+    .trend-indicator {
+      padding: 2px 6px;
+      font-size: 10px;
+    }
+    .flag-chip {
+      padding: 2px 5px;
+      font-size: 8px;
+      margin: 2px 2px 2px 0;
+    }
+
+    /* Alerts: wrap better */
+    .alert-item {
+      padding: 3px 6px;
+      font-size: 9px;
+      margin: 2px 2px 2px 0;
+    }
+
+    /* History table: horizontal scroll if needed */
+    table {
+      font-size: 9px;
+    }
+    th, td {
+      padding: 3px 6px;
+      font-size: 9px;
+    }
+
+    /* Last update text */
+    .last-update {
+      font-size: 8px;
+      margin-top: 10px;
+    }
+  }
+
+  /* ─────────────────────────────────────────────── */
+  /* TABLET RESPONSIVE (768px - 1024px)             */
+  /* ─────────────────────────────────────────────── */
+  @media (min-width: 769px) and (max-width: 1024px) {
+    body {
+      padding: 14px;
+      font-size: 11px;
+    }
+
+    .header-ticker {
+      font-size: 24px;
+    }
+
+    /* Two column grid but tighter */
+    .grid {
+      grid-template-columns: 200px 1fr;
+      gap: 8px;
+    }
+
+    /* Smaller price display */
+    .price-big {
+      font-size: 32px;
+    }
+    .price-change {
+      font-size: 13px;
+    }
+
+    /* Metric grid: 2 columns on tablet */
+    .metric-grid {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 8px;
+    }
+
+    .panel {
+      padding: 11px 13px;
+    }
+
+    /* Middle row: 2 columns instead of 3 */
+    .middle-row {
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+    }
+  }
+
+  /* ─────────────────────────────────────────────── */
+  /* LARGE SCREENS (> 1024px)                       */
+  /* ─────────────────────────────────────────────── */
+  @media (min-width: 1025px) {
+    /* Keep desktop layout as-is */
+  }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div>
+    <div class="header-ticker">$BYND</div>
+    <div class="header-label">Squeeze Monitor v1</div>
+  </div>
+  <div class="header-right">
+    <div><span class="refresh-dot"></span><span id="live-status" style="font-size:10px;color:var(--muted)">live</span></div>
+    <div id="scan-time" style="font-size:10px;color:var(--dim);margin-top:3px">—</div>
+  </div>
+</div>
+
+<div class="offline-banner" id="offline-banner">
+  ⚠ DATA FILE NOT FOUND — run: python backend/monitor.py
+</div>
+
+<div class="grid">
+
+  <!-- STATE -->
+  <div class="panel state-panel">
+    <div class="panel-title">Setup State</div>
+    <div class="state-badge" id="state-badge">—</div>
+    <div class="summary-text" id="summary-text">Waiting for data...</div>
+  </div>
+
+  <!-- PRICE + KEY METRICS -->
+  <div class="panel price-panel">
+    <div style="min-width:140px">
+      <div class="panel-title">Price</div>
+      <div class="price-big" id="price">—</div>
+      <div class="price-change" id="pct-change">—</div>
+      <div style="margin-top:8px;font-size:10px;color:var(--muted)">
+        H <span id="day-high" style="color:var(--green)">—</span>
+        &nbsp;/&nbsp;
+        L <span id="day-low" style="color:var(--red)">—</span>
+      </div>
+      <div style="margin-top:4px;font-size:10px;color:var(--muted)">
+        VWAP <span id="vwap" style="color:var(--yellow)">—</span>
+      </div>
+    </div>
+    <div class="metric-grid">
+      <div class="metric-box">
+        <div class="metric-label">Volume</div>
+        <div class="metric-value" id="volume">—</div>
+        <div class="metric-sub">today</div>
+      </div>
+      <div class="metric-box">
+        <div class="metric-label">Rel Vol</div>
+        <div class="metric-value" id="rel-vol">—</div>
+        <div class="metric-sub" id="rv-label">—</div>
+        <div class="relvol-bar-wrap"><div class="relvol-bar" id="rv-bar" style="width:0%"></div></div>
+      </div>
+      <div class="metric-box">
+        <div class="metric-label">Bid / Ask</div>
+        <div class="metric-value" id="bid-ask">—</div>
+        <div class="metric-sub" id="spread">spread —</div>
+      </div>
+      <div class="metric-box">
+        <div class="metric-label">5m Vol</div>
+        <div class="metric-value" id="last5vol">—</div>
+        <div class="metric-sub" id="prior5vol">prior —</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- LEVELS -->
+  <div class="panel levels-panel">
+    <div class="panel-title">Price Levels</div>
+    <div id="levels-rows">—</div>
+  </div>
+
+  <!-- MIDDLE ROW: TRENDS, FLAGS, HOLD/FADE -->
+  <div class="middle-row">
+    <div class="panel">
+      <div class="panel-title">Trend</div>
+      <div style="display:flex;flex-direction:column;gap:6px;margin-top:4px">
+        <div style="display:flex;justify-content:space-between;align-items:center">
+          <span style="font-size:10px;color:var(--muted)">1m</span>
+          <span class="trend-indicator" id="trend-1m">—</span>
+        </div>
+        <div style="display:flex;justify-content:space-between;align-items:center">
+          <span style="font-size:10px;color:var(--muted)">5m</span>
+          <span class="trend-indicator" id="trend-5m">—</span>
+        </div>
+        <div style="display:flex;justify-content:space-between;align-items:center">
+          <span style="font-size:10px;color:var(--muted)">15m</span>
+          <span class="trend-indicator" id="trend-15m">—</span>
+        </div>
+        <div style="margin-top:6px;font-size:10px;color:var(--muted)">
+          Hold/Fade: <span id="hold-fade" style="color:var(--text);font-weight:700">—</span>
+        </div>
+      </div>
+    </div>
+    <div class="panel">
+      <div class="panel-title">Momentum Flags</div>
+      <div id="flags-container" style="margin-top:4px">—</div>
+    </div>
+    <div class="panel">
+      <div class="panel-title">Volume Pace</div>
+      <div id="vol-pace" style="font-size:11px;color:var(--text);margin-top:4px;line-height:1.8">—</div>
+    </div>
+  </div>
+
+  <!-- ALERTS -->
+  <div class="panel alerts-panel">
+    <div class="panel-title">Active Alerts</div>
+    <div id="alerts-container"><span class="no-alerts">No alerts this scan</span></div>
+  </div>
+
+  <!-- SHORT SQUEEZE METRICS -->
+  <div class="panel" style="grid-column: 1/-1; grid-row: 3; background: linear-gradient(135deg, rgba(255,80,128,0.08), rgba(223,128,255,0.08)); border-left: 3px solid var(--magenta);">
+    <div class="panel-title" style="border-color: var(--magenta); color: var(--magenta);">📊 SHORT SQUEEZE METRICS</div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin-top:8px">
+      <div style="background:var(--bg3);padding:8px;border-radius:3px;border-left:2px solid var(--red)">
+        <div style="font-size:9px;color:var(--muted);text-transform:uppercase;letter-spacing:0.1em">Shares Short</div>
+        <div style="font-size:14px;font-weight:700;color:var(--red);margin-top:3px" id="squeeze-short-shares">141.7M</div>
+      </div>
+      <div style="background:var(--bg3);padding:8px;border-radius:3px;border-left:2px solid var(--red)">
+        <div style="font-size:9px;color:var(--muted);text-transform:uppercase;letter-spacing:0.1em">Short % Float</div>
+        <div style="font-size:14px;font-weight:700;color:var(--red);margin-top:3px" id="squeeze-short-pct">31.0%</div>
+        <div style="font-size:8px;color:var(--yellow);margin-top:2px">🔴 HIGH</div>
+      </div>
+      <div style="background:var(--bg3);padding:8px;border-radius:3px;border-left:2px solid var(--magenta)">
+        <div style="font-size:9px;color:var(--muted);text-transform:uppercase;letter-spacing:0.1em">Days to Cover</div>
+        <div style="font-size:14px;font-weight:700;color:var(--magenta);margin-top:3px" id="squeeze-days-cover">3.7</div>
+        <div style="font-size:8px;color:var(--magenta);margin-top:2px">⚠️ SHORT FUSE</div>
+      </div>
+      <div style="background:var(--bg3);padding:8px;border-radius:3px;border-left:2px solid var(--cyan)">
+        <div style="font-size:9px;color:var(--muted);text-transform:uppercase;letter-spacing:0.1em">Avg Daily Vol</div>
+        <div style="font-size:14px;font-weight:700;color:var(--cyan);margin-top:3px" id="squeeze-avg-vol">38.2M</div>
+      </div>
+      <div style="background:var(--bg3);padding:8px;border-radius:3px;border-left:2px solid var(--yellow)">
+        <div style="font-size:9px;color:var(--muted);text-transform:uppercase;letter-spacing:0.1em">Institutional %</div>
+        <div style="font-size:14px;font-weight:700;color:var(--yellow);margin-top:3px" id="squeeze-inst-pct">40.7%</div>
+      </div>
+      <div style="background:var(--bg3);padding:8px;border-radius:3px;border-left:2px solid var(--green)">
+        <div style="font-size:9px;color:var(--muted);text-transform:uppercase;letter-spacing:0.1em">MoM Change</div>
+        <div style="font-size:14px;font-weight:700;color:var(--green);margin-top:3px" id="squeeze-mom">+71.2%</div>
+      </div>
+    </div>
+    <div style="margin-top:8px;padding:8px;background:rgba(223,128,255,0.15);border:1px solid var(--magenta);border-radius:3px;font-size:10px;line-height:1.6;color:var(--text)">
+      <strong style="color:var(--magenta)">⚡ SQUEEZE CONFIRMED:</strong> 31% short float + 3.7 days to cover = HIGH squeeze risk. If price breaks $2.00 with volume, expect short covering acceleration. Watch L/S ratio for bullish reversal confirmation.
+    </div>
+  </div>
+
+  <!-- INSTITUTIONAL CONTEXT (NEW) -->
+  <div class="panel" style="grid-column: 1/-1; grid-row: 5;">
+    <div class="panel-title">📊 Institutional Context (from Raul)</div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:10px;margin-top:8px">
+      <div style="background:var(--bg3);padding:8px;border-radius:3px;border-left:2px solid var(--cyan)">
+        <div style="font-size:9px;color:var(--muted);text-transform:uppercase;letter-spacing:0.1em">Rank</div>
+        <div style="font-size:14px;font-weight:700;color:var(--cyan);margin-top:3px" id="inst-rank">—</div>
+      </div>
+      <div style="background:var(--bg3);padding:8px;border-radius:3px;border-left:2px solid var(--yellow)">
+        <div style="font-size:9px;color:var(--muted);text-transform:uppercase;letter-spacing:0.1em">L/S Ratio</div>
+        <div style="font-size:14px;font-weight:700;color:var(--yellow);margin-top:3px" id="inst-ls">—</div>
+        <div style="font-size:8px;color:var(--dim);margin-top:2px">conviction</div>
+      </div>
+      <div style="background:var(--bg3);padding:8px;border-radius:3px;border-left:2px solid var(--magenta)">
+        <div style="font-size:9px;color:var(--muted);text-transform:uppercase;letter-spacing:0.1em">Inst. Bias</div>
+        <div style="font-size:14px;font-weight:700;color:var(--magenta);margin-top:3px" id="inst-bias">—</div>
+      </div>
+      <div style="background:var(--bg3);padding:8px;border-radius:3px;border-left:2px solid var(--green)">
+        <div style="font-size:9px;color:var(--muted);text-transform:uppercase;letter-spacing:0.1em">Structural</div>
+        <div style="font-size:14px;font-weight:700;color:var(--green);margin-top:3px" id="inst-structural">—</div>
+      </div>
+    </div>
+    <div style="margin-top:8px;padding:8px;background:var(--bg3);border-radius:3px">
+      <div style="font-size:9px;color:var(--muted);text-transform:uppercase;letter-spacing:0.1em;margin-bottom:4px">📍 Dominant Outfit</div>
+      <div style="font-size:11px;color:var(--text);font-weight:700" id="inst-outfit">—</div>
+      <div style="font-size:9px;color:var(--muted);margin-top:4px">Key SMAs: <span id="inst-smas" style="color:var(--text)">—</span></div>
+    </div>
+    <div style="margin-top:8px;padding:8px;background:var(--red-dim);border:1px solid var(--red-dim);border-radius:3px">
+      <div style="font-size:9px;color:var(--red);text-transform:uppercase;letter-spacing:0.1em;font-weight:700;margin-bottom:4px">⚠️ What to Watch For</div>
+      <ul style="font-size:10px;color:var(--text);margin-left:16px;line-height:1.6">
+        <li id="watch-outfit">—</li>
+        <li id="watch-bias">—</li>
+        <li id="watch-ls">—</li>
+        <li id="watch-support">—</li>
+        <li id="watch-volume">—</li>
+      </ul>
+    </div>
+    <div style="margin-top:8px;padding:8px;background:var(--red-dim);border:1px solid var(--red);border-radius:3px;display:none" id="exit-signal-box">
+      <div style="font-size:10px;color:var(--red);font-weight:700" id="exit-signal-text">—</div>
+    </div>
+  </div>
+
+  <!-- HISTORY -->
+  <div class="panel history-panel" style="grid-row:6">
+    <div class="panel-title">Scan History (last 12)</div>
+    <div style="overflow-x:auto">
+      <table>
+        <thead>
+          <tr>
+            <th>Time</th>
+            <th>Price</th>
+            <th>Chg%</th>
+            <th>State</th>
+            <th>RelVol</th>
+            <th>Trend 1m/5m</th>
+            <th>Hold/Fade</th>
+            <th>L/S</th>
+            <th>Bias</th>
+          </tr>
+        </thead>
+        <tbody id="history-body">
+          <tr><td colspan="9" style="color:var(--dim);text-align:center;padding:16px">Waiting for data...</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+</div>
+
+<div class="last-update" id="last-update">Last updated: —</div>
+
+<script>
+const STATE_CLASSES = {
+  "REAL SQUEEZE":        "state-REAL-SQUEEZE",
+  "BUILDING PRESSURE":   "state-BUILDING-PRESSURE",
+  "EARLY IGNITION":      "state-EARLY-IGNITION",
+  "EARLY ACCUMULATION":  "state-EARLY-ACCUMULATION",
+  "FADING":              "state-FADING",
+  "BROKEN SETUP":        "state-BROKEN-SETUP",
+  "DEAD / INACTIVE":     "state-DEAD-INACTIVE",
+};
+
+const STATE_COLORS = {
+  "REAL SQUEEZE":        "var(--magenta)",
+  "BUILDING PRESSURE":   "var(--blue)",
+  "EARLY IGNITION":      "var(--green)",
+  "EARLY ACCUMULATION":  "var(--cyan)",
+  "FADING":              "var(--yellow)",
+  "BROKEN SETUP":        "var(--red)",
+  "DEAD / INACTIVE":     "var(--dim)",
+};
+
+function fmt(n, dec=4) {
+  if (n == null || n === undefined) return '—';
+  return parseFloat(n).toFixed(dec);
+}
+function fmtPrice(n) {
+  // Smart price formatting: drop trailing zeros
+  if (n == null || n === undefined) return '—';
+  const p = parseFloat(n);
+  if (p < 0.01) return p.toFixed(4);   // Subpenny: 4 decimals
+  if (p < 1) return p.toFixed(2);      // Penny stock: 2 decimals
+  if (p < 100) return p.toFixed(2);    // Normal: 2 decimals
+  return p.toFixed(0);                 // Large price: no decimals
+}
+function fmtVol(n) {
+  if (!n) return '—';
+  if (n >= 1_000_000) return (n/1_000_000).toFixed(2) + 'M';
+  if (n >= 1_000) return (n/1_000).toFixed(0) + 'K';
+  return n.toString();
+}
+function trendClass(t) {
+  if (t === 'up')   return 'trend-up';
+  if (t === 'down') return 'trend-down';
+  return 'trend-flat';
+}
+function pctColor(p) {
+  if (p > 0) return 'var(--green)';
+  if (p < 0) return 'var(--red)';
+  return 'var(--muted)';
+}
+function rvBarColor(rv) {
+  if (rv >= 8) return 'var(--magenta)';
+  if (rv >= 4) return 'var(--yellow)';
+  if (rv >= 2) return 'var(--blue)';
+  if (rv >= 1) return 'var(--green)';
+  return 'var(--dim)';
+}
+function rvBarWidth(rv) {
+  // Cap at 10x = 100%
+  return Math.min(100, (rv / 10) * 100) + '%';
+}
+function levelColor(distPct) {
+  const d = parseFloat(distPct);
+  if (d > 5)  return 'var(--green)';
+  if (d > 0)  return 'var(--yellow)';
+  if (d > -5) return 'var(--yellow)';
+  return 'var(--red)';
+}
+function levelDotColor(name, distPct) {
+  const d = parseFloat(distPct);
+  if (name.includes('failure') || name.includes('support')) {
+    return d > 0 ? 'var(--green)' : 'var(--red)';
+  }
+  return d > 0 ? 'var(--dim)' : 'var(--green)';
+}
+function shortTime(iso) {
+  if (!iso) return '—';
+  const d = new Date(iso);
+  const month = String(d.getMonth() + 1).padStart(2, '0');
+  const date = String(d.getDate()).padStart(2, '0');
+  const time = d.toLocaleTimeString([], {hour:'2-digit', minute:'2-digit', second:'2-digit'});
+  return `${month}/${date} ${time}`;
+}
+
+function render(d) {
+  // State badge
+  const badge = document.getElementById('state-badge');
+  badge.textContent = d.state || '—';
+  badge.className = 'state-badge ' + (STATE_CLASSES[d.state] || 'state-DEAD-INACTIVE');
+
+  // Summary
+  document.getElementById('summary-text').textContent = d.summary || '—';
+
+  // Price
+  document.getElementById('price').textContent = d.price != null ? '$' + fmtPrice(d.price) : '—';
+  const pctEl = document.getElementById('pct-change');
+  const pct = d.pct_change;
+  pctEl.textContent = pct != null ? (pct >= 0 ? '+' : '') + fmt(pct, 2) + '%' : '—';
+  pctEl.className = 'price-change ' + (pct > 0 ? 'up' : pct < 0 ? 'down' : 'flat');
+
+  document.getElementById('day-high').textContent = d.day_high ? '$' + fmtPrice(d.day_high) : '—';
+  document.getElementById('day-low').textContent  = d.day_low  ? '$' + fmtPrice(d.day_low)  : '—';
+  document.getElementById('vwap').textContent     = d.vwap     ? '$' + fmtPrice(d.vwap)     : '—';
+
+  // Metrics
+  document.getElementById('volume').textContent  = fmtVol(d.volume);
+  document.getElementById('rel-vol').textContent = d.rel_volume != null ? d.rel_volume + 'x' : '—';
+  document.getElementById('rv-label').textContent = d.rel_volume_label || '—';
+  const bar = document.getElementById('rv-bar');
+  bar.style.width = rvBarWidth(d.rel_volume || 0);
+  bar.style.background = rvBarColor(d.rel_volume || 0);
+
+  document.getElementById('bid-ask').textContent = (d.bid && d.ask)
+    ? '$' + fmtPrice(d.bid) + ' / $' + fmtPrice(d.ask) : '—';
+  document.getElementById('spread').textContent = d.spread != null
+    ? 'spread $' + fmtPrice(d.spread) : 'spread —';
+
+  document.getElementById('last5vol').textContent  = fmtVol(d.last_5m_vol);
+  document.getElementById('prior5vol').textContent = 'prior ' + fmtVol(d.prior_5m_vol);
+
+  // Trends
+  ['1m','5m','15m'].forEach(tf => {
+    const val = d['trend_' + tf];
+    const el = document.getElementById('trend-' + tf);
+    el.textContent = val || '—';
+    el.className = 'trend-indicator ' + trendClass(val);
+  });
+
+  const hfEl = document.getElementById('hold-fade');
+  hfEl.textContent = d.hold_fade || '—';
+  hfEl.style.color = d.hold_fade === 'holding' ? 'var(--green)' : d.hold_fade === 'fading' ? 'var(--red)' : 'var(--muted)';
+
+  // Flags
+  const flagsEl = document.getElementById('flags-container');
+  const flags = d.momentum_flags || [];
+  flagsEl.innerHTML = flags.length
+    ? flags.map(f => `<span class="flag-chip">${f.replace(/_/g,' ')}</span>`).join('')
+    : '<span style="color:var(--dim);font-size:10px">none</span>';
+
+  // Vol pace
+  const l5 = d.last_5m_vol || 0;
+  const p5 = d.prior_5m_vol || 0;
+  const paceDelta = p5 > 0 ? ((l5 - p5) / p5 * 100).toFixed(0) : 0;
+  const paceColor = l5 > p5 ? 'var(--green)' : 'var(--red)';
+  document.getElementById('vol-pace').innerHTML =
+    `Last 5m: <b style="color:var(--bright)">${fmtVol(l5)}</b><br>` +
+    `Prior 5m: <b>${fmtVol(p5)}</b><br>` +
+    `<span style="color:${paceColor}">${paceDelta >= 0 ? '+' : ''}${paceDelta}% vs prior</span>`;
+
+  // Levels
+  const levelsEl = document.getElementById('levels-rows');
+  const levels = d.price_levels || {};
+  levelsEl.innerHTML = Object.entries(levels).map(([name, v]) => {
+    const dot  = levelDotColor(name, v.distance_pct);
+    const dist = levelColor(v.distance_pct);
+    const arrow = v.distance_pct >= 0 ? '▲' : '▼';
+    return `<div class="level-row">
+      <div style="display:flex;align-items:center;gap:6px">
+        <div class="level-indicator" style="background:${dot}"></div>
+        <span class="level-name">${name.replace(/_/g,' ')}</span>
+      </div>
+      <span class="level-price">$${fmtPrice(v.level)}</span>
+      <span class="level-dist" style="color:${dist}">${arrow}${Math.abs(v.distance_pct).toFixed(1)}%</span>
+    </div>`;
+  }).join('');
+
+  // Squeeze metrics
+  const squeeze = d.squeeze_metrics || {};
+  if (squeeze.shares_short) {
+    document.getElementById('squeeze-short-shares').textContent = fmtVol(squeeze.shares_short);
+  }
+  if (squeeze.short_percent_float != null) {
+    document.getElementById('squeeze-short-pct').textContent = squeeze.short_percent_float.toFixed(1) + '%';
+  }
+  if (squeeze.days_to_cover != null) {
+    document.getElementById('squeeze-days-cover').textContent = squeeze.days_to_cover.toFixed(1);
+  }
+  if (squeeze.avg_daily_volume) {
+    document.getElementById('squeeze-avg-vol').textContent = fmtVol(squeeze.avg_daily_volume);
+  }
+  if (squeeze.institutional_percent != null) {
+    document.getElementById('squeeze-inst-pct').textContent = squeeze.institutional_percent.toFixed(1) + '%';
+  }
+  if (squeeze.mom_change_percent != null) {
+    const momEl = document.getElementById('squeeze-mom');
+    momEl.textContent = (squeeze.mom_change_percent >= 0 ? '+' : '') + squeeze.mom_change_percent.toFixed(1) + '%';
+    momEl.style.color = squeeze.mom_change_percent > 0 ? 'var(--green)' : 'var(--red)';
+  }
+
+  // Alerts
+  const alertsEl = document.getElementById('alerts-container');
+  const alerts = d.alerts || [];
+  alertsEl.innerHTML = alerts.length
+    ? alerts.map(a => `<span class="alert-item">${a.replace(/_/g,' ')}</span>`).join('')
+    : '<span class="no-alerts">No alerts this scan</span>';
+
+  // Institutional context (Raul data)
+  const raul = d.raul_context || {};
+  document.getElementById('inst-rank').textContent = raul.rank ? `#${raul.rank} (${fmtVol(raul.total_weight)}w)` : '—';
+  document.getElementById('inst-ls').textContent = raul.ls_ratio ? raul.ls_ratio.toFixed(2) + 'x' : '—';
+  
+  const biasColor = raul.institutional_bias === 'Bullish' ? 'var(--green)' : 
+                    raul.institutional_bias === 'Bearish' ? 'var(--red)' : 'var(--muted)';
+  const biasEl = document.getElementById('inst-bias');
+  biasEl.textContent = raul.institutional_bias || '—';
+  biasEl.style.color = biasColor;
+
+  const structColor = raul.structural_bias === 'Bullish' ? 'var(--green)' : 
+                      raul.structural_bias === 'Bearish' ? 'var(--red)' : 'var(--muted)';
+  const structEl = document.getElementById('inst-structural');
+  structEl.textContent = raul.structural_bias || '—';
+  structEl.style.color = structColor;
+
+  document.getElementById('inst-outfit').textContent = raul.dominant_outfit ? `${raul.dominant_outfit} (${raul.active_signals||0} signals)` : '—';
+  document.getElementById('inst-smas').textContent = raul.key_smas || '—';
+
+  // What to watch for
+  const watch = d.watch_for || {};
+  document.getElementById('watch-outfit').textContent = watch.outfit_change || 'Monitor dominant outfit for signal changes';
+  document.getElementById('watch-bias').textContent = watch.bias_flip || 'Watch for institutional bias flip (NEUTRAL → BEARISH)';
+  document.getElementById('watch-ls').textContent = watch.ls_ratio_drop || 'L/S ratio declining = reducing patience';
+  document.getElementById('watch-support').textContent = watch.support_break || 'Support breaks on key SMAs';
+  document.getElementById('watch-volume').textContent = watch.volume_collapse || 'Volume collapse to normal levels';
+
+  // Exit signal
+  const exitBox = document.getElementById('exit-signal-box');
+  const exitText = document.getElementById('exit-signal-text');
+  if (d.exit_signal) {
+    exitBox.style.display = 'block';
+    exitText.textContent = '🔴 ' + d.exit_signal;
+  } else {
+    exitBox.style.display = 'none';
+  }
+
+  // History table
+  const history = (d.history || []).slice().reverse();
+  const tbody = document.getElementById('history-body');
+  tbody.innerHTML = history.map(h => {
+    const stateColor = STATE_COLORS[h.state] || 'var(--dim)';
+    const pc = parseFloat(h.pct_change || 0);
+    const aText = (h.alerts || []).length ? h.alerts.slice(0,2).join(', ') : '—';
+    const lsRatio = h.ls_ratio || '—';
+    const instBias = h.institutional_bias || '—';
+    const biasHColor = instBias === 'Bullish' ? 'var(--green)' : 
+                       instBias === 'Bearish' ? 'var(--red)' : 'var(--muted)';
+    return `<tr>
+      <td style="color:var(--muted)">${shortTime(h.timestamp)}</td>
+      <td style="font-weight:700">$${fmtPrice(h.price)}</td>
+      <td style="color:${pctColor(pc)}">${pc >= 0 ? '+' : ''}${fmt(pc,2)}%</td>
+      <td class="state-cell" style="color:${stateColor}">${h.state || '—'}</td>
+      <td>${h.rel_volume || '—'}x</td>
+      <td><span class="trend-indicator ${trendClass(h.trend_1m)}" style="font-size:9px">${h.trend_1m||'—'}</span>
+          <span class="trend-indicator ${trendClass(h.trend_5m)}" style="font-size:9px;margin-left:3px">${h.trend_5m||'—'}</span></td>
+      <td style="color:${h.hold_fade==='holding'?'var(--green)':h.hold_fade==='fading'?'var(--red)':'var(--muted)'}">${h.hold_fade||'—'}</td>
+      <td style="font-weight:700;color:var(--yellow);font-size:9px">${typeof lsRatio === 'number' ? lsRatio.toFixed(2) + 'x' : lsRatio}</td>
+      <td style="color:${biasHColor};font-weight:700;font-size:9px">${instBias}</td>
+    </tr>`;
+  }).join('');
+
+  // Timestamp
+  const scanTs = d.timestamp ? shortTime(d.timestamp) : 'Unknown';
+  document.getElementById('scan-time').textContent = scanTs;
+  document.getElementById('last-update').textContent = 'Dashboard refreshed: ' + new Date().toLocaleString();
+}
+
+async function poll() {
+  try {
+    const resp = await fetch('/data.json?_=' + Date.now());
+    if (!resp.ok) throw new Error('not found');
+    const data = await resp.json();
+    render(data);
+    document.getElementById('offline-banner').style.display = 'none';
+    document.getElementById('live-status').textContent = 'live';
+    document.getElementById('live-status').style.color = 'var(--green)';
+  } catch (e) {
+    document.getElementById('offline-banner').style.display = 'block';
+    document.getElementById('live-status').textContent = 'offline';
+    document.getElementById('live-status').style.color = 'var(--red)';
+    document.getElementById('last-update').textContent = 'Last updated: ' + new Date().toLocaleTimeString() + ' (no data)';
+  }
+}
+
+// Poll every 30 seconds
+poll();
+setInterval(poll, 30_000);
+</script>
+</body>
+</html>

@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unfair Markets Dashboard</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: #0f0f12;
+            color: #e0e0e0;
+            line-height: 1.6;
+            padding: 20px;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #2a2a3e;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            background: linear-gradient(135deg, #00d4ff 0%, #0099ff 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 10px;
+        }
+
+        .timestamp {
+            color: #999;
+            font-size: 0.95em;
+        }
+
+        .market-status {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-bottom: 40px;
+        }
+
+        .status-card {
+            background: #1a1a23;
+            border: 1px solid #2a2a3e;
+            border-radius: 8px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .status-card h3 {
+            font-size: 0.9em;
+            color: #999;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 10px;
+        }
+
+        .status-value {
+            font-size: 1.8em;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .bullish {
+            color: #00d4ff;
+        }
+
+        .neutral {
+            color: #ffa500;
+        }
+
+        .bearish {
+            color: #ff4444;
+        }
+
+        .positive {
+            color: #00d4ff;
+        }
+
+        .negative {
+            color: #ff4444;
+        }
+
+        section {
+            margin-bottom: 50px;
+        }
+
+        section h2 {
+            font-size: 1.8em;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #2a2a3e;
+            color: #00d4ff;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: #1a1a23;
+            border: 1px solid #2a2a3e;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        table thead {
+            background: #2a2a3e;
+        }
+
+        table th {
+            padding: 15px;
+            text-align: left;
+            font-weight: 600;
+            color: #00d4ff;
+            font-size: 0.9em;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        table td {
+            padding: 12px 15px;
+            border-top: 1px solid #2a2a3e;
+            font-size: 0.95em;
+        }
+
+        table tbody tr:hover {
+            background: #252530;
+        }
+
+        .rank {
+            color: #999;
+            font-weight: 500;
+        }
+
+        .ticker {
+            font-weight: 600;
+            color: #00d4ff;
+        }
+
+        .weight {
+            text-align: right;
+            color: #e0e0e0;
+        }
+
+        .ls-ratio {
+            text-align: center;
+            font-weight: 600;
+        }
+
+        .signals {
+            text-align: center;
+            color: #999;
+        }
+
+        .bias-bullish {
+            color: #00d4ff;
+            font-weight: 500;
+        }
+
+        .bias-neutral {
+            color: #ffa500;
+            font-weight: 500;
+        }
+
+        .bias-bearish {
+            color: #ff4444;
+            font-weight: 500;
+        }
+
+        .tsla-breakdown {
+            background: #1a1a23;
+            border: 1px solid #2a2a3e;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        .breakdown-item {
+            display: grid;
+            grid-template-columns: 150px 1fr;
+            gap: 20px;
+            padding: 15px 0;
+            border-bottom: 1px solid #2a2a3e;
+        }
+
+        .breakdown-item:last-child {
+            border-bottom: none;
+        }
+
+        .breakdown-label {
+            font-weight: 600;
+            color: #00d4ff;
+        }
+
+        .breakdown-value {
+            display: flex;
+            justify-content: space-between;
+            gap: 30px;
+        }
+
+        .breakdown-value span {
+            flex: 1;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .stat-box {
+            background: #252530;
+            border-left: 3px solid #00d4ff;
+            padding: 15px;
+            border-radius: 4px;
+        }
+
+        .stat-label {
+            color: #999;
+            font-size: 0.85em;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 5px;
+        }
+
+        .stat-value {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #e0e0e0;
+        }
+
+        .refresh-btn {
+            display: inline-block;
+            background: linear-gradient(135deg, #00d4ff 0%, #0099ff 100%);
+            color: #0f0f12;
+            border: none;
+            padding: 12px 30px;
+            border-radius: 4px;
+            font-weight: 600;
+            cursor: pointer;
+            font-size: 0.95em;
+            transition: transform 0.2s, box-shadow 0.2s;
+            margin-bottom: 30px;
+        }
+
+        .refresh-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 16px rgba(0, 212, 255, 0.3);
+        }
+
+        .disclaimer {
+            background: #1a1a23;
+            border-left: 3px solid #ffa500;
+            padding: 15px;
+            border-radius: 4px;
+            margin-top: 40px;
+            color: #999;
+            font-size: 0.9em;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 1.8em;
+            }
+
+            table {
+                font-size: 0.85em;
+            }
+
+            table th, table td {
+                padding: 10px 8px;
+            }
+
+            .breakdown-item {
+                grid-template-columns: 1fr;
+                gap: 10px;
+            }
+
+            .breakdown-value {
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📊 Unfair Markets Dashboard</h1>
+            <p class="timestamp">Last Updated: <strong id="timestamp">April 1, 2026 @ 13:10 PDT</strong></p>
+        </header>
+
+        <!-- Market Status -->
+        <section>
+            <h2>Market Status</h2>
+            <div class="market-status">
+                <div class="status-card">
+                    <h3>Overall Bias</h3>
+                    <div class="status-value bullish">BULLISH</div>
+                    <p>All indices positive</p>
+                </div>
+                <div class="status-card">
+                    <h3>S&P 500</h3>
+                    <div class="status-value positive">Positive</div>
+                    <p>Market strength</p>
+                </div>
+                <div class="status-card">
+                    <h3>Nasdaq</h3>
+                    <div class="status-value positive">Positive</div>
+                    <p>Tech bullish</p>
+                </div>
+                <div class="status-card">
+                    <h3>Dow Jones</h3>
+                    <div class="status-value positive">Positive</div>
+                    <p>Large-caps strong</p>
+                </div>
+                <div class="status-card">
+                    <h3>Dominant Outfit</h3>
+                    <div class="status-value" style="color: #00d4ff; font-size: 1.5em;">TSLA (420)</div>
+                    <p>1,846.3w conviction</p>
+                </div>
+                <div class="status-card">
+                    <h3>Bullish Tickers</h3>
+                    <div class="status-value bullish">79.2%</div>
+                    <p>19 out of 24</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Top 10 Tickers -->
+        <section>
+            <h2>Top 10 Tickers (Institutional Action)</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th style="width: 5%">Rank</th>
+                        <th style="width: 10%">Ticker</th>
+                        <th style="width: 15%">Weight</th>
+                        <th style="width: 15%">Long / Short</th>
+                        <th style="width: 12%">L/S Ratio</th>
+                        <th style="width: 12%">Bias</th>
+                        <th style="width: 12%">Signals</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="rank">1</td>
+                        <td class="ticker">AAPU</td>
+                        <td class="weight">1,030.1w</td>
+                        <td>744.5w / 285.5w</td>
+                        <td class="ls-ratio">2.34x</td>
+                        <td><span class="bias-bullish">BULLISH</span></td>
+                        <td class="signals">117</td>
+                    </tr>
+                    <tr>
+                        <td class="rank">2</td>
+                        <td class="ticker">MSTX</td>
+                        <td class="weight">683.7w</td>
+                        <td>445.6w / 238.0w</td>
+                        <td class="ls-ratio">2.12x</td>
+                        <td><span class="bias-bullish">BULLISH</span></td>
+                        <td class="signals">81</td>
+                    </tr>
+                    <tr>
+                        <td class="rank">3</td>
+                        <td class="ticker">TSLL</td>
+                        <td class="weight">504.3w</td>
+                        <td>316.9w / 187.4w</td>
+                        <td class="ls-ratio">1.77x</td>
+                        <td><span class="bias-bullish">BULLISH</span></td>
+                        <td class="signals">72</td>
+                    </tr>
+                    <tr>
+                        <td class="rank">4</td>
+                        <td class="ticker">TSLQ</td>
+                        <td class="weight">524.6w</td>
+                        <td>311.3w / 213.3w</td>
+                        <td class="ls-ratio">1.91x</td>
+                        <td><span class="bias-bullish">BULLISH</span></td>
+                        <td class="signals">67</td>
+                    </tr>
+                    <tr>
+                        <td class="rank">5</td>
+                        <td class="ticker">NVDA</td>
+                        <td class="weight">317.5w</td>
+                        <td>212.4w / 105.1w</td>
+                        <td class="ls-ratio">1.65x</td>
+                        <td><span class="bias-bullish">BULLISH</span></td>
+                        <td class="signals">53</td>
+                    </tr>
+                    <tr>
+                        <td class="rank">6</td>
+                        <td class="ticker">SOXL</td>
+                        <td class="weight">379.7w</td>
+                        <td>291.1w / 88.6w</td>
+                        <td class="ls-ratio">3.17x</td>
+                        <td><span class="bias-bullish">BULLISH</span></td>
+                        <td class="signals">50</td>
+                    </tr>
+                    <tr>
+                        <td class="rank">7</td>
+                        <td class="ticker">DIA</td>
+                        <td class="weight">326.4w</td>
+                        <td>208.4w / 117.9w</td>
+                        <td class="ls-ratio">2.36x</td>
+                        <td><span class="bias-bullish">BULLISH</span></td>
+                        <td class="signals">47</td>
+                    </tr>
+                    <tr>
+                        <td class="rank">8</td>
+                        <td class="ticker">TQQQ</td>
+                        <td class="weight">389.4w</td>
+                        <td>218.3w / 171.0w</td>
+                        <td class="ls-ratio">1.35x</td>
+                        <td><span class="bias-neutral">NEUTRAL</span></td>
+                        <td class="signals">47</td>
+                    </tr>
+                    <tr>
+                        <td class="rank">9</td>
+                        <td class="ticker">UVIX</td>
+                        <td class="weight">331.4w</td>
+                        <td>231.9w / 99.5w</td>
+                        <td class="ls-ratio">2.33x</td>
+                        <td><span class="bias-bullish">BULLISH</span></td>
+                        <td class="signals">40</td>
+                    </tr>
+                    <tr>
+                        <td class="rank">10</td>
+                        <td class="ticker">SMR</td>
+                        <td class="weight">305.7w</td>
+                        <td>160.5w / 145.2w</td>
+                        <td class="ls-ratio">1.60x</td>
+                        <td><span class="bias-bullish">BULLISH</span></td>
+                        <td class="signals">39</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- TSLA-Specific Breakdown -->
+        <section>
+            <h2>Tesla Family Positioning (TSLA-Related Instruments)</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th style="width: 5%">Rank</th>
+                        <th style="width: 15%">Ticker</th>
+                        <th style="width: 25%">Instrument Type</th>
+                        <th style="width: 12%">Weight</th>
+                        <th style="width: 12%">L/S Ratio</th>
+                        <th style="width: 15%">Position</th>
+                        <th style="width: 12%">Signals</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="rank">1</td>
+                        <td class="ticker">TSLL</td>
+                        <td>3x Long TSLA</td>
+                        <td class="weight">778.9w</td>
+                        <td class="ls-ratio">1.98x</td>
+                        <td><span class="bias-bullish">🟢 BULLISH</span></td>
+                        <td class="signals">128</td>
+                    </tr>
+                    <tr>
+                        <td class="rank">2</td>
+                        <td class="ticker">TSLR</td>
+                        <td>2x Long TSLA</td>
+                        <td class="weight">516.3w</td>
+                        <td class="ls-ratio">1.29x</td>
+                        <td><span class="bias-bullish">🟢 BULLISH</span></td>
+                        <td class="signals">80</td>
+                    </tr>
+                    <tr>
+                        <td class="rank">3</td>
+                        <td class="ticker">TSLQ</td>
+                        <td>2x Short TSLA</td>
+                        <td class="weight">527.5w</td>
+                        <td class="ls-ratio">1.88x</td>
+                        <td><span class="bias-bearish">🔴 BEARISH (Hedge)</span></td>
+                        <td class="signals">69</td>
+                    </tr>
+                    <tr>
+                        <td class="rank">4</td>
+                        <td class="ticker">TSLT</td>
+                        <td>2x Long TSLA</td>
+                        <td class="weight">326.6w</td>
+                        <td class="ls-ratio">1.57x</td>
+                        <td><span class="bias-bullish">🟢 BULLISH</span></td>
+                        <td class="signals">54</td>
+                    </tr>
+                    <tr>
+                        <td class="rank">5</td>
+                        <td class="ticker">TSLA</td>
+                        <td>Spot TSLA</td>
+                        <td class="weight">168.5w</td>
+                        <td class="ls-ratio">1.35x</td>
+                        <td><span class="bias-neutral">🟡 NEUTRAL</span></td>
+                        <td class="signals">47</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="tsla-breakdown">
+                <h3 style="margin-bottom: 20px; color: #00d4ff;">Net TSLA Positioning</h3>
+                <div class="breakdown-item">
+                    <div class="breakdown-label">Long Exposure</div>
+                    <div class="breakdown-value">
+                        <span>TSLL + TSLR + TSLT + TSLA</span>
+                        <span style="font-weight: 600; color: #00d4ff;">1,790.3w</span>
+                    </div>
+                </div>
+                <div class="breakdown-item">
+                    <div class="breakdown-label">Short Exposure</div>
+                    <div class="breakdown-value">
+                        <span>TSLQ (hedge)</span>
+                        <span style="font-weight: 600; color: #ff4444;">527.5w</span>
+                    </div>
+                </div>
+                <div class="breakdown-item">
+                    <div class="breakdown-label">Net Position</div>
+                    <div class="breakdown-value">
+                        <span>Long - Short</span>
+                        <span style="font-weight: 600; color: #00d4ff;">+1,262.8w BULLISH</span>
+                    </div>
+                </div>
+                <div class="breakdown-item">
+                    <div class="breakdown-label">Overall L/S</div>
+                    <div class="breakdown-value">
+                        <span>Conviction Strength</span>
+                        <span style="font-weight: 600; color: #00d4ff;">3.39x (EXTREMELY BULLISH)</span>
+                    </div>
+                </div>
+                <div class="breakdown-item">
+                    <div class="breakdown-label">Hedge Ratio</div>
+                    <div class="breakdown-value">
+                        <span>Downside Protection</span>
+                        <span style="font-weight: 600; color: #ffa500;">29.4% hedged</span>
+                    </div>
+                </div>
+            </div>
+
+            <div style="background: #1a1a23; border-left: 3px solid #00d4ff; padding: 15px; border-radius: 4px; margin-top: 20px;">
+                <p><strong>Verdict:</strong> Institutions are <strong>massively long TSLA</strong> across all leverage tiers (spot + 2x + 3x) but holding 29% shorts as downside protection. Maximum conviction with controlled risk.</p>
+            </div>
+        </section>
+
+        <!-- Top Outfits -->
+        <section>
+            <h2>Top Institutional Outfits</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th style="width: 5%">Rank</th>
+                        <th style="width: 35%">Outfit</th>
+                        <th style="width: 15%">Weight</th>
+                        <th style="width: 12%">L/S Ratio</th>
+                        <th style="width: 15%">Bias</th>
+                        <th style="width: 12%">Strength</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="rank">1</td>
+                        <td class="ticker">Octane (818)</td>
+                        <td class="weight">1,846.3w</td>
+                        <td class="ls-ratio">1.98x</td>
+                        <td><span class="bias-bullish">BULLISH</span></td>
+                        <td>Strong</td>
+                    </tr>
+                    <tr>
+                        <td class="rank">2</td>
+                        <td class="ticker">TSLA (420)</td>
+                        <td class="weight">667.7w</td>
+                        <td class="ls-ratio">1.70x</td>
+                        <td><span class="bias-bullish">BULLISH</span></td>
+                        <td>Strong</td>
+                    </tr>
+                    <tr>
+                        <td class="rank">3</td>
+                        <td class="ticker">Octuple (816)</td>
+                        <td class="weight">571.0w</td>
+                        <td class="ls-ratio">1.93x</td>
+                        <td><span class="bias-bullish">BULLISH</span></td>
+                        <td>Strong</td>
+                    </tr>
+                    <tr>
+                        <td class="rank">4</td>
+                        <td class="ticker">SVIX (211)</td>
+                        <td class="weight">646.0w</td>
+                        <td class="ls-ratio">2.00x</td>
+                        <td><span class="bias-bullish">BULLISH</span></td>
+                        <td>Strong</td>
+                    </tr>
+                    <tr>
+                        <td class="rank">5</td>
+                        <td class="ticker">Base 2/NVDA</td>
+                        <td class="weight">442.9w</td>
+                        <td class="ls-ratio">1.86x</td>
+                        <td><span class="bias-bullish">BULLISH</span></td>
+                        <td>Strong</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Disclaimer -->
+        <div class="disclaimer">
+            <strong>⚠️ Disclaimer:</strong> This dashboard displays institutional trading patterns and signal analysis from the Unfair Markets engine. Data is updated manually and represents a snapshot of market positioning at the time of last update. Past performance does not guarantee future results. Trading involves substantial risk of loss. This is not financial advice.
+        </div>
+    </div>
+</body>
+</html>

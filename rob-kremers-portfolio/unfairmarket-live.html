@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raul SMA Outfits — Live Market Scan</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Courier New', monospace;
+            background: #0a0e27;
+            color: #e0e6ff;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        .container { max-width: 1400px; margin: 0 auto; }
+        h1 { color: #00ff88; margin-bottom: 10px; font-size: 24px; }
+        h2 { color: #00ccff; margin-top: 30px; margin-bottom: 15px; font-size: 18px; border-bottom: 2px solid #00ccff; padding-bottom: 8px; }
+        .status-bar {
+            background: #1a1f3a;
+            border: 1px solid #00ff88;
+            padding: 15px;
+            margin-bottom: 25px;
+            border-radius: 4px;
+        }
+        .status-time { color: #00ff88; font-weight: bold; }
+        .status-meta { color: #888; margin-top: 8px; font-size: 12px; }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 25px;
+            background: #0f1629;
+            border: 1px solid #1a2550;
+        }
+        th {
+            background: #1a2550;
+            color: #00ccff;
+            padding: 12px;
+            text-align: left;
+            font-weight: bold;
+            border-bottom: 2px solid #00ccff;
+        }
+        td {
+            padding: 10px 12px;
+            border-bottom: 1px solid #1a2550;
+        }
+        tr:hover { background: #1a2550; }
+        .rank { color: #00ff88; font-weight: bold; width: 50px; }
+        .bullish { color: #00ff88; }
+        .neutral { color: #ffaa00; }
+        .bearish { color: #ff4444; }
+        .number { text-align: right; color: #00ccff; }
+        .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 25px; }
+        .card {
+            background: #0f1629;
+            border: 1px solid #1a2550;
+            padding: 15px;
+            border-radius: 4px;
+        }
+        .card-title { color: #00ccff; font-weight: bold; margin-bottom: 8px; }
+        .card-value { font-size: 20px; font-weight: bold; color: #00ff88; }
+        .card-meta { color: #888; font-size: 12px; margin-top: 5px; }
+        .key-insight {
+            background: #1a2550;
+            border-left: 4px solid #00ff88;
+            padding: 12px;
+            margin-bottom: 15px;
+            border-radius: 2px;
+        }
+        .key-insight strong { color: #00ff88; }
+        .footer {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #1a2550;
+            color: #666;
+            font-size: 12px;
+            text-align: center;
+        }
+        .section-divider { margin: 40px 0; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>⚡ Raul SMA Outfits — Live Scan Dashboard</h1>
+        
+        <div class="status-bar">
+            <div class="status-time">✓ Last Scan: <span id="scan-timestamp">Loading...</span></div>
+            <div class="status-meta">26 Tickers + BTC | Schwab API Live | Squeeze Season Active | May 15 Fed Shift</div>
+        </div>
+
+        <h2>₿ Bitcoin — Macro Indicator</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Metric</th>
+                    <th>Value</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Price</strong></td>
+                    <td id="btc-price"><strong>Loading...</strong></td>
+                </tr>
+                <tr>
+                    <td><strong>Verdict</strong></td>
+                    <td id="btc-verdict"><span class="bullish">Loading...</span></td>
+                </tr>
+                <tr>
+                    <td><strong>Long Signals</strong></td>
+                    <td id="btc-longs">Loading...</td>
+                </tr>
+                <tr>
+                    <td><strong>Short Signals</strong></td>
+                    <td id="btc-shorts">Loading...</td>
+                </tr>
+                <tr>
+                    <td><strong>Dominant Outfit</strong></td>
+                    <td id="btc-outfit">Loading...</td>
+                </tr>
+                <tr>
+                    <td><strong>L/S Ratio</strong></td>
+                    <td id="btc-ls-ratio">Loading...</td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="key-insight">
+            <span id="btc-analysis"><strong>BTC Analysis:</strong> <em>Loading live data...</em></span>
+        </div>
+
+        <div class="section-divider"></div>
+
+        <h2>📊 Top 15 Global Positions (Lite Scan — <span id="table-timestamp">Loading...</span>)</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th class="rank">Rank</th>
+                    <th>Ticker</th>
+                    <th class="number">Total Weight</th>
+                    <th class="number">L/S Ratio</th>
+                    <th>Bias</th>
+                </tr>
+            </thead>
+            <tbody id="sma-outfits-tbody">
+                <tr><td colspan="5" style="text-align:center;color:#888;">Loading positions...</td></tr>
+            </tbody>
+        </table>
+
+        <div class="section-divider"></div>
+
+        <h2>🚀 TSLA Family — Balanced Hedge Positioning</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Instrument</th>
+                    <th class="number">Weight</th>
+                    <th class="number">L/S Ratio</th>
+                    <th>Type</th>
+                    <th>Bias</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr style="background: #0a4d2c;">
+                    <td colspan="5" style="text-align: center; color: #00ff88; font-weight: bold;">LONG (Bullish on TSLA)</td>
+                </tr>
+                <tr>
+                    <td><strong>TSLA</strong> (Spot Fund)</td>
+                    <td class="number">~2,900w</td>
+                    <td class="number">1.55x</td>
+                    <td>Bare fund</td>
+                    <td><span class="bullish">🟢 BULLISH</span></td>
+                </tr>
+                <tr>
+                    <td><strong>TSLL</strong> (3x Leverage)</td>
+                    <td class="number">12,651.2w</td>
+                    <td class="number">1.64x</td>
+                    <td>Leverage</td>
+                    <td><span class="bullish">🟢 BULLISH</span></td>
+                </tr>
+                <tr>
+                    <td><strong>TSLT</strong> (3x Leverage, Alt)</td>
+                    <td class="number">10,083.4w</td>
+                    <td class="number">1.71x</td>
+                    <td>Leverage</td>
+                    <td><span class="bullish">🟢 BULLISH</span></td>
+                </tr>
+                <tr>
+                    <td><strong>TSLR</strong> (2x Leverage)</td>
+                    <td class="number">9,877.0w</td>
+                    <td class="number">1.65x</td>
+                    <td>Leverage</td>
+                    <td><span class="bullish">🟢 BULLISH</span></td>
+                </tr>
+                <tr style="background: #1a1f3a; font-weight: bold;">
+                    <td>LONG SUBTOTAL</td>
+                    <td class="number">~35,600w</td>
+                    <td class="number">1.64x avg</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr style="background: #4d0a0a;">
+                    <td colspan="5" style="text-align: center; color: #ff4444; font-weight: bold;">SHORT/INVERSE (Bearish on TSLA)</td>
+                </tr>
+                <tr>
+                    <td><strong>TSLZ</strong> (3x Inverse)</td>
+                    <td class="number">17,991.0w</td>
+                    <td class="number">2.32x</td>
+                    <td>Inverse</td>
+                    <td><span class="bearish">🔴 BEARISH on TSLA</span></td>
+                </tr>
+                <tr>
+                    <td><strong>TSLQ</strong> (3x Inverse Hedge)</td>
+                    <td class="number">14,824.6w</td>
+                    <td class="number">2.15x</td>
+                    <td>Inverse</td>
+                    <td><span class="bearish">🔴 BEARISH on TSLA</span></td>
+                </tr>
+                <tr style="background: #1a1f3a; font-weight: bold;">
+                    <td>SHORT SUBTOTAL</td>
+                    <td class="number">~32,800w</td>
+                    <td class="number">2.23x avg</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr style="background: #1a2550; font-weight: bold; color: #ffaa00;">
+                    <td>NET POSITION</td>
+                    <td class="number">+~2,800w</td>
+                    <td class="number">1.08x</td>
+                    <td></td>
+                    <td><span class="neutral">🟡 NEUTRAL/BALANCED</span></td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="key-insight">
+            <strong>TSLA Interpretation:</strong> Long at 35.6kw across 4 instruments (spot + 3 leverage funds). Short at 32.8kw via 2 inverse funds. Net position +2.8kw = FLAT at 1.08x. Institutions maintaining perfectly balanced hedge through May 15 Fed shift. This is NOT bullish conviction — it's market-neutral positioning with volatility premium collection. Watch for: (1) Inverse funds (TSLZ/TSLQ) declining = hedge unwind = bullish flip, (2) Spot (TSLA) doubling = conviction increase signal.
+        </div>
+
+        <div class="section-divider"></div>
+
+        <h2>📊 BYND — Meme Stock #1 Analysis</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Metric</th>
+                    <th>Value</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Global Rank</strong></td>
+                    <td>#1 (33,637.9w)</td>
+                </tr>
+                <tr>
+                    <td><strong>Long Exposure</strong></td>
+                    <td>18,998.7w</td>
+                </tr>
+                <tr>
+                    <td><strong>Short Exposure</strong></td>
+                    <td>14,639.2w</td>
+                </tr>
+                <tr>
+                    <td><strong>L/S Ratio</strong></td>
+                    <td>1.29x (declining from 1.46x)</td>
+                </tr>
+                <tr>
+                    <td><strong>Institutional Bias</strong></td>
+                    <td><span class="neutral">🟡 NEUTRAL</span></td>
+                </tr>
+                <tr>
+                    <td><strong>5-Day Price Move</strong></td>
+                    <td>+27% (created by institutions)</td>
+                </tr>
+                <tr>
+                    <td><strong>Today's Move</strong></td>
+                    <td>+14% premarket, settling +0.89 cents</td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="key-insight">
+            <strong>BYND Interpretation:</strong> Institutions loaded this position 1-2 days ago (created +27% move). Now holding NEUTRAL bias through squeeze season with declining L/S (1.46x → 1.29x). This signals PATIENCE, not bullish conviction. Institutions satisfied with position size. Setup is trap — retail chasing +14% spike while institutions hold flat waiting for May 15 exit window. Key support levels: MA54, MA45, MA200. If price breaks below these, expect sharp institutional exit. Hold through May 14, then watch for reversal signals (L/S spike, bias shift to bearish, support breaks).
+        </div>
+
+        <h2>💰 Market Summary</h2>
+        <div class="grid">
+            <div class="card">
+                <div class="card-title">Bitcoin</div>
+                <div class="card-value">$78,044.99</div>
+                <div class="card-meta">🟢 BULLISH | Base 2/NVDA MA128 breakout | Risk-on confirmed</div>
+            </div>
+            <div class="card">
+                <div class="card-title">TSLA Net</div>
+                <div class="card-value">+2,800w</div>
+                <div class="card-meta">1.08x L/S | BALANCED HEDGE | Market-neutral positioning</div>
+            </div>
+            <div class="card">
+                <div class="card-title">BYND Meme #1</div>
+                <div class="card-value">33,637.9w</div>
+                <div class="card-meta">1.29x (declining) | NEUTRAL | Institutional trap setup</div>
+            </div>
+            <div class="card">
+                <div class="card-title">Squeeze Season</div>
+                <div class="card-value">Apr 16 - May 14</div>
+                <div class="card-meta">Tax shorts covering | May 15 = real catalyst inflection</div>
+            </div>
+        </div>
+
+        <!-- BTC SHORT SQUEEZE SUMMARY (Mobile Screenshot-Friendly) -->
+        <div style="margin: 40px 0; padding: 20px; background: linear-gradient(135deg, #0f1629 0%, #1a2550 100%); border: 3px solid #00ff88; border-radius: 8px; max-width: 400px; margin-left: auto; margin-right: auto;">
+            <div style="text-align: center; color: #00ff88; font-size: 28px; font-weight: bold; margin-bottom: 15px;">
+                ₿ SHORT SQUEEZE STATUS
+            </div>
+            
+            <div style="background: #0a0e27; padding: 15px; border-radius: 6px; margin-bottom: 15px; border: 1px solid #00ccff;">
+                <div style="color: #888; font-size: 12px; margin-bottom: 5px;">PRICE</div>
+                <div style="color: #00ff88; font-size: 32px; font-weight: bold;">$78.4K</div>
+                <div style="color: #00ccff; font-size: 14px; margin-top: 8px;">May 2 | CONSOLIDATING</div>
+            </div>
+
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 15px;">
+                <div style="background: #0a0e27; padding: 12px; border-radius: 6px; border: 1px solid #00ccff; text-align: center;">
+                    <div style="color: #888; font-size: 11px; margin-bottom: 3px;">L/S RATIO</div>
+                    <div style="color: #00ff88; font-size: 24px; font-weight: bold;">7.0x</div>
+                    <div style="color: #00ff88; font-size: 11px;">↑ +5.0x overnight</div>
+                </div>
+                <div style="background: #0a0e27; padding: 12px; border-radius: 6px; border: 1px solid #00ccff; text-align: center;">
+                    <div style="color: #888; font-size: 11px; margin-bottom: 3px;">SHORTS LEFT</div>
+                    <div style="color: #ff4444; font-size: 24px; font-weight: bold;">1 of 8</div>
+                    <div style="color: #ff4444; font-size: 11px;">87% LIQUIDATED</div>
+                </div>
+            </div>
+
+            <div style="background: #1a2550; padding: 12px; border-radius: 6px; border-left: 4px solid #00ff88; margin-bottom: 15px;">
+                <div style="color: #00ff88; font-weight: bold; font-size: 14px; margin-bottom: 5px;">🚀 STATUS: ACCELERATING</div>
+                <div style="color: #e0e6ff; font-size: 12px;">New institutional capital stepping in. Squeeze phase 2 active. Next level: $80K breakout.</div>
+            </div>
+
+            <div style="text-align: center; color: #888; font-size: 11px;">
+                Waring's Problem Outfit | Slope Rising | 7 of 8 Signals Long
+            </div>
+        </div>
+
+        <div class="footer">
+            Last updated: <span id="footer-timestamp">Loading...</span> | Schwab API live | 26 tickers + BTC | Full lite scan data
+        </div>
+    </div>
+
+    <script>
+        // Format ISO timestamp to readable date/time
+        function formatTimestamp(iso) {
+            if (!iso) return 'Unknown';
+            const d = new Date(iso);
+            const month = String(d.getMonth() + 1).padStart(2, '0');
+            const date = String(d.getDate()).padStart(2, '0');
+            const year = d.getFullYear();
+            const time = d.toLocaleTimeString([], {hour:'2-digit', minute:'2-digit', second:'2-digit'});
+            return `${month}/${date}/${year} @ ${time} PDT`;
+        }
+
+        // Get bias indicator
+        function getBiasIndicator(bias) {
+            if (bias === 'Bullish') return '🟢 BULLISH';
+            if (bias === 'Bearish') return '🔴 BEARISH';
+            return '🟡 NEUTRAL';
+        }
+
+        // Get bias CSS class
+        function getBiasClass(bias) {
+            if (bias === 'Bullish') return 'bullish';
+            if (bias === 'Bearish') return 'bearish';
+            return 'neutral';
+        }
+
+        // Format number with 'w' suffix
+        function fmtWeight(n) {
+            if (!n) return '—';
+            return (n/1000).toFixed(1) + 'k' + 'w';
+        }
+
+        // Populate SMA Outfits table from data.json
+        function populateSMAOutfits(data) {
+            const tbody = document.getElementById('sma-outfits-tbody');
+            if (!data.top_15_scan || !data.top_15_scan.top_positions) {
+                tbody.innerHTML = '<tr><td colspan="5" style="text-align:center;color:#ff6666;">No data available</td></tr>';
+                return;
+            }
+
+            const positions = data.top_15_scan.top_positions || [];
+            tbody.innerHTML = positions.map((p, idx) => {
+                const biasClass = getBiasClass(p.bias);
+                const biasText = getBiasIndicator(p.bias);
+                const weight = (p.ls_ratio !== undefined) ? 'N/A' : 'N/A'; // Placeholder, adjust as needed
+                return `<tr>
+                    <td class="rank">${p.rank || (idx + 1)}</td>
+                    <td><strong>${p.ticker}</strong></td>
+                    <td class="number">${weight}</td>
+                    <td class="number">${p.ls_ratio ? p.ls_ratio.toFixed(2) : '—'}x</td>
+                    <td><span class="${biasClass}">${biasText}</span></td>
+                </tr>`;
+            }).join('');
+        }
+
+        // Fetch data.json and update dashboard
+        async function updateDashboard() {
+            try {
+                const resp = await fetch('/data.json?_=' + Date.now());
+                const data = await resp.json();
+                const ts = formatTimestamp(data.timestamp);
+                document.getElementById('scan-timestamp').textContent = ts;
+                document.getElementById('table-timestamp').textContent = ts;
+                document.getElementById('footer-timestamp').textContent = ts;
+                
+                // Update Bitcoin metrics if available
+                if (data.btc_live_metrics) {
+                    const btc = data.btc_live_metrics;
+                    document.getElementById('btc-price').innerHTML = `<strong>${btc.price_label || btc.price}</strong>`;
+                    document.getElementById('btc-verdict').innerHTML = btc.bias ? `<span class="${btc.bias.toLowerCase()}">🟢 ${btc.bias}</span>` : 'Loading...';
+                    document.getElementById('btc-longs').textContent = `${btc.longs_active || btc.longs_active_pct}${btc.longs_active ? '' : '%'}`;
+                    document.getElementById('btc-shorts').textContent = `${btc.shorts_remaining || btc.shorts_liquidated_pct}${btc.shorts_remaining ? '' : '%'}`;
+                    document.getElementById('btc-outfit').textContent = btc.dominant_outfit || 'Base 2/NVDA';
+                    document.getElementById('btc-ls-ratio').textContent = `${btc.ls_ratio}x - ${btc.status || ''}`;
+                    if (btc.signal_summary) {
+                        document.getElementById('btc-analysis').innerHTML = `<strong>BTC Analysis:</strong> ${btc.signal_summary}`;
+                    }
+                }
+                
+                // Update SMA Outfits table
+                populateSMAOutfits(data);
+            } catch (err) {
+                console.error('Failed to fetch data.json:', err);
+            }
+        }
+
+        // Initial update
+        updateDashboard();
+
+        // Poll every 30 seconds
+        setInterval(updateDashboard, 30000);
+    </script>
+</body>
+</html>

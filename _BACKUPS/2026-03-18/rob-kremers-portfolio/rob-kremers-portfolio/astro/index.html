@@ -1,0 +1,1311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>⚛️ Astro Physics Trading Dashboard v2</title>
+<style>
+:root {
+  --bg: #050510;
+  --surface: #0a0a1e;
+  --card: #0f0f2e;
+  --border: #1a1a4e;
+  --cyan: #00d4ff;
+  --magenta: #ff00aa;
+  --gold: #ffd700;
+  --green: #00ff88;
+  --red: #ff4455;
+  --yellow: #ffcc00;
+  --text: #c8d8ff;
+  --dim: #556088;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: var(--bg); color: var(--text); font-family: 'Courier New', monospace; font-size: 13px; line-height: 1.5; }
+header { background: linear-gradient(135deg, #050510 0%, #0a0a30 100%); border-bottom: 1px solid var(--cyan); padding: 12px 20px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 8px; }
+header h1 { font-size: 18px; color: var(--cyan); letter-spacing: 2px; }
+.header-right { display: flex; gap: 12px; align-items: center; flex-wrap: wrap; }
+#status-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--dim); display: inline-block; margin-right: 4px; }
+#status-dot.live { background: var(--green); box-shadow: 0 0 8px var(--green); animation: pulse 2s infinite; }
+@keyframes pulse { 0%,100%{opacity:1} 50%{opacity:.4} }
+.token-select { background: var(--card); border: 1px solid var(--border); color: var(--cyan); padding: 4px 8px; border-radius: 4px; cursor: pointer; font-family: inherit; font-size: 12px; }
+.refresh-btn { background: var(--card); border: 1px solid var(--cyan); color: var(--cyan); padding: 4px 12px; border-radius: 4px; cursor: pointer; font-family: inherit; font-size: 12px; transition: all .2s; }
+.refresh-btn:hover { background: var(--cyan); color: var(--bg); }
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 12px; padding: 12px; }
+.card { background: var(--card); border: 1px solid var(--border); border-radius: 8px; padding: 14px; }
+.card-title { color: var(--dim); font-size: 10px; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 10px; border-bottom: 1px solid var(--border); padding-bottom: 6px; }
+.big-price { font-size: 32px; color: var(--gold); font-weight: bold; }
+.price-change { font-size: 13px; margin-top: 4px; }
+.price-change.up { color: var(--green); }
+.price-change.down { color: var(--red); }
+.metric-row { display: flex; justify-content: space-between; align-items: center; padding: 4px 0; border-bottom: 1px solid #111128; }
+.metric-label { color: var(--dim); }
+.metric-value { font-weight: bold; }
+.signal-box { text-align: center; padding: 16px; border-radius: 6px; margin: 8px 0; }
+.signal-box.buy { background: rgba(0,255,136,.1); border: 2px solid var(--green); }
+.signal-box.sell { background: rgba(255,68,85,.1); border: 2px solid var(--red); }
+.signal-box.hold { background: rgba(255,204,0,.1); border: 2px solid var(--yellow); }
+.signal-label { font-size: 24px; font-weight: bold; letter-spacing: 4px; }
+.signal-label.buy { color: var(--green); }
+.signal-label.sell { color: var(--red); }
+.signal-label.hold { color: var(--yellow); }
+.bar-wrap { background: #111128; border-radius: 4px; height: 8px; margin: 6px 0; overflow: hidden; }
+.bar-fill { height: 100%; border-radius: 4px; transition: width .6s ease; }
+.bar-cyan { background: linear-gradient(90deg, var(--cyan), #0066ff); }
+.bar-magenta { background: linear-gradient(90deg, var(--magenta), #aa00ff); }
+.bar-green { background: linear-gradient(90deg, var(--green), #00aaff); }
+.bar-gold { background: linear-gradient(90deg, var(--gold), #ff8800); }
+.bar-red { background: linear-gradient(90deg, var(--red), var(--magenta)); }
+.cea-badge { display: inline-block; background: rgba(0,212,255,.15); border: 1px solid var(--cyan); border-radius: 4px; padding: 2px 8px; font-size: 12px; color: var(--cyan); }
+.lpi-badge { display: inline-block; background: rgba(255,0,170,.15); border: 1px solid var(--magenta); border-radius: 4px; padding: 2px 8px; font-size: 12px; color: var(--magenta); }
+canvas { width: 100%; border-radius: 6px; }
+.forecast-window { display: flex; justify-content: space-between; align-items: center; padding: 6px 8px; margin: 4px 0; border-radius: 4px; font-size: 12px; }
+.fw-buy { background: rgba(0,255,136,.08); border-left: 3px solid var(--green); }
+.fw-sell { background: rgba(255,68,85,.08); border-left: 3px solid var(--red); }
+.trade-row { display: flex; justify-content: space-between; padding: 4px 6px; border-radius: 3px; margin: 2px 0; font-size: 11px; }
+.trade-buy { background: rgba(0,255,136,.06); color: var(--green); }
+.trade-sell { background: rgba(255,68,85,.06); color: var(--red); }
+.trade-hold { background: rgba(255,204,0,.06); color: var(--yellow); }
+.regime-pill { display: inline-block; padding: 2px 10px; border-radius: 12px; font-size: 11px; font-weight: bold; }
+.regime-bull { background: rgba(0,255,136,.2); color: var(--green); border: 1px solid var(--green); }
+.regime-bear { background: rgba(255,68,85,.2); color: var(--red); border: 1px solid var(--red); }
+.regime-neutral { background: rgba(255,204,0,.2); color: var(--yellow); border: 1px solid var(--yellow); }
+.backtest-stat { display: flex; justify-content: space-between; padding: 5px 0; border-bottom: 1px solid #111128; }
+.bt-label { color: var(--dim); }
+.bt-val { font-weight: bold; }
+.bt-val.pos { color: var(--green); }
+.bt-val.neg { color: var(--red); }
+.loading-overlay { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(5,5,16,.9); display: flex; align-items: center; justify-content: center; z-index: 100; flex-direction: column; gap: 16px; }
+.loading-text { color: var(--cyan); font-size: 16px; letter-spacing: 2px; }
+.spinner { width: 48px; height: 48px; border: 3px solid var(--border); border-top-color: var(--cyan); border-radius: 50%; animation: spin 1s linear infinite; }
+@keyframes spin { to{transform:rotate(360deg)} }
+.error-msg { color: var(--red); font-size: 12px; padding: 4px 8px; background: rgba(255,68,85,.1); border-radius: 4px; margin-top: 4px; }
+.tooltip { position: relative; cursor: help; }
+.tooltip:hover::after { content: attr(data-tip); position: absolute; bottom: 120%; left: 50%; transform: translateX(-50%); background: #1a1a4e; border: 1px solid var(--cyan); color: var(--text); padding: 6px 10px; border-radius: 4px; font-size: 11px; white-space: nowrap; z-index: 10; }
+footer { text-align: center; padding: 16px; color: var(--dim); font-size: 11px; border-top: 1px solid var(--border); margin-top: 8px; }
+a { color: var(--cyan); text-decoration: none; }
+@media (max-width: 600px) { .big-price { font-size: 24px; } header h1 { font-size: 14px; } }
+</style>
+</head>
+<body>
+
+<div class="loading-overlay" id="loading">
+  <div class="spinner"></div>
+  <div class="loading-text">⚛ ASTRO PHYSICS ENGINE INITIALIZING...</div>
+  <div id="loading-msg" style="color:var(--dim);font-size:12px">Fetching market data...</div>
+</div>
+
+<header>
+  <div>
+    <h1>⚛ ASTRO PHYSICS TRADING DASHBOARD <span style="font-size:11px;color:var(--dim)">v2.1</span></h1>
+    <div style="font-size:11px;color:var(--dim);margin-top:2px">Quantum Astro-Hurst Grand Cycle Engine | Celestial Mechanics Analysis</div>
+  </div>
+  <div class="header-right">
+    <span><span id="status-dot"></span><span id="status-text" style="font-size:11px;color:var(--dim)">OFFLINE</span></span>
+    <select class="token-select" id="token-select" onchange="onTokenChange()">
+      <option value="dogecoin">DOGE</option>
+      <option value="bitcoin">BTC</option>
+      <option value="ethereum">ETH</option>
+      <option value="solana">SOL</option>
+      <option value="ripple">XRP</option>
+      <option value="cardano">ADA</option>
+    </select>
+    <select class="token-select" id="refresh-select" onchange="onRefreshChange()">
+      <option value="60000">1 min</option>
+      <option value="300000" selected>5 min</option>
+      <option value="900000">15 min</option>
+    </select>
+    <button class="refresh-btn" onclick="manualRefresh()">↻ REFRESH</button>
+    <span id="last-update" style="font-size:11px;color:var(--dim)"></span>
+  </div>
+</header>
+
+<div class="grid">
+
+  <!-- Price + Signal -->
+  <div class="card">
+    <div class="card-title">📡 Live Market Data</div>
+    <div class="big-price" id="price">$0.0000</div>
+    <div class="price-change" id="change-24h">24h: --</div>
+    <div class="price-change" id="change-7d" style="margin-top:2px">7d: --</div>
+    <div style="margin-top:10px">
+      <div class="metric-row">
+        <span class="metric-label">Market Cap</span>
+        <span class="metric-value" id="mkt-cap">--</span>
+      </div>
+      <div class="metric-row">
+        <span class="metric-label">Volume 24h</span>
+        <span class="metric-value" id="volume">--</span>
+      </div>
+      <div class="metric-row">
+        <span class="metric-label">52W High</span>
+        <span class="metric-value" id="high-52w" style="color:var(--green)">--</span>
+      </div>
+      <div class="metric-row">
+        <span class="metric-label">52W Low</span>
+        <span class="metric-value" id="low-52w" style="color:var(--red)">--</span>
+      </div>
+      <div class="metric-row">
+        <span class="metric-label">From ATH</span>
+        <span class="metric-value" id="from-ath">--</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Signal -->
+  <div class="card">
+    <div class="card-title">🎯 Trading Signal</div>
+    <div class="signal-box hold" id="signal-box">
+      <div class="signal-label hold" id="signal-label">HOLD</div>
+      <div style="margin-top:6px;font-size:12px" id="signal-decision">Analyzing market...</div>
+    </div>
+    <div class="metric-row">
+      <span class="metric-label tooltip" data-tip="Signal confidence (0-100%)">Confidence</span>
+      <span class="metric-value" id="confidence">--</span>
+    </div>
+    <div class="bar-wrap"><div class="bar-fill bar-cyan" id="conf-bar" style="width:0%"></div></div>
+    <div class="metric-row">
+      <span class="metric-label tooltip" data-tip="Signal strength (0-100%)">Strength</span>
+      <span class="metric-value" id="strength">--</span>
+    </div>
+    <div class="bar-wrap"><div class="bar-fill bar-magenta" id="str-bar" style="width:0%"></div></div>
+    <div class="metric-row" style="margin-top:8px">
+      <span class="metric-label">System Confidence</span>
+      <span class="metric-value" id="sys-conf">--</span>
+    </div>
+    <div class="bar-wrap"><div class="bar-fill bar-green" id="sys-conf-bar" style="width:0%"></div></div>
+    <div style="margin-top:10px;padding:8px;background:rgba(0,0,0,.3);border-radius:6px;">
+      <div style="color:var(--dim);font-size:10px;margin-bottom:4px">MARKET REGIME</div>
+      <span class="regime-pill regime-neutral" id="regime-pill">NEUTRAL</span>
+      <span style="font-size:11px;margin-left:8px" id="regime-text">Loading...</span>
+    </div>
+  </div>
+
+  <!-- Risk Score -->
+  <div class="card">
+    <div class="card-title">⚡ Risk Score</div>
+    <div style="text-align:center;padding:10px 0">
+      <div style="font-size:48px;font-weight:bold" id="risk-score">--</div>
+      <div style="font-size:12px;color:var(--dim)" id="risk-label">/ 100</div>
+    </div>
+    <div class="bar-wrap" style="height:12px">
+      <div class="bar-fill" id="risk-bar" style="width:0%;background:linear-gradient(90deg,#ff4455,#ffcc00,#00ff88)"></div>
+    </div>
+    <div style="margin-top:10px">
+      <div class="metric-row">
+        <span class="metric-label">Wave</span>
+        <span class="metric-value" id="wave-val">--</span>
+      </div>
+      <div class="metric-row">
+        <span class="metric-label">Momentum</span>
+        <span class="metric-value" id="momentum-val">--</span>
+      </div>
+      <div class="metric-row">
+        <span class="metric-label">Trend</span>
+        <span class="metric-value" id="trend-val">--</span>
+      </div>
+    </div>
+    <div id="risk-interpretation" style="margin-top:10px;font-size:11px;padding:8px;background:rgba(0,0,0,.3);border-radius:4px;color:var(--dim)">
+      Loading risk interpretation...
+    </div>
+  </div>
+
+  <!-- CEA & LPI (NEW) -->
+  <div class="card">
+    <div class="card-title">🌌 CEA & LPI — Astro Core Metrics</div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:12px">
+      <div style="text-align:center;padding:10px;background:rgba(0,212,255,.08);border:1px solid var(--cyan);border-radius:6px">
+        <div style="color:var(--dim);font-size:10px;margin-bottom:4px">CEA</div>
+        <div style="font-size:28px;font-weight:bold;color:var(--cyan)" id="cea-val">--</div>
+        <div style="font-size:10px;color:var(--dim)">Cycle Energy Align</div>
+        <div style="margin-top:4px" id="cea-status"><span class="cea-badge">--</span></div>
+      </div>
+      <div style="text-align:center;padding:10px;background:rgba(255,0,170,.08);border:1px solid var(--magenta);border-radius:6px">
+        <div style="color:var(--dim);font-size:10px;margin-bottom:4px">LPI</div>
+        <div style="font-size:28px;font-weight:bold;color:var(--magenta)" id="lpi-val">--</div>
+        <div style="font-size:10px;color:var(--dim)">Leading Phase Ind.</div>
+        <div style="margin-top:4px" id="lpi-status"><span class="lpi-badge">--</span></div>
+      </div>
+    </div>
+    <div class="metric-row">
+      <span class="metric-label tooltip" data-tip="CEA > 1.0 = bullish cycle alignment">CEA Signal</span>
+      <span class="metric-value" id="cea-signal">--</span>
+    </div>
+    <div class="bar-wrap"><div class="bar-fill bar-cyan" id="cea-bar" style="width:0%"></div></div>
+    <div class="metric-row">
+      <span class="metric-label tooltip" data-tip="LPI > 0.7 = surge in 3-5 days">3-5 Day Forecast</span>
+      <span class="metric-value" id="lpi-forecast">--</span>
+    </div>
+    <div class="bar-wrap"><div class="bar-fill bar-magenta" id="lpi-bar" style="width:0%"></div></div>
+    <div style="margin-top:8px;font-size:11px;color:var(--dim);padding:6px;background:rgba(0,0,0,.3);border-radius:4px" id="cea-lpi-note">
+      ℹ️ CEA uses phase coherence (circular statistics). LPI uses 2nd derivative projection. Both are reverse-engineered approximations of Astro's proprietary metrics.
+    </div>
+  </div>
+
+  <!-- Physics Engine -->
+  <div class="card">
+    <div class="card-title">🔬 6D Physics Engine</div>
+    <div class="metric-row">
+      <span class="metric-label tooltip" data-tip="Metonic: 231-day lunar-solar cycle">Metonic</span>
+      <span class="metric-value" id="metonic">--</span>
+    </div>
+    <div class="bar-wrap"><div class="bar-fill bar-cyan" id="metonic-bar" style="width:50%"></div></div>
+    <div class="metric-row">
+      <span class="metric-label tooltip" data-tip="Apsidal: 109-day orbital precession cycle">Apsidal</span>
+      <span class="metric-value" id="apsidal">--</span>
+    </div>
+    <div class="bar-wrap"><div class="bar-fill bar-magenta" id="apsidal-bar" style="width:50%"></div></div>
+    <div class="metric-row">
+      <span class="metric-label tooltip" data-tip="Solar: 134-day sun activity cycle">Solar</span>
+      <span class="metric-value" id="solar">--</span>
+    </div>
+    <div class="bar-wrap"><div class="bar-fill bar-gold" id="solar-bar" style="width:50%"></div></div>
+    <div style="border-top:1px solid var(--border);margin:8px 0"></div>
+    <div class="metric-row">
+      <span class="metric-label tooltip" data-tip="|momentum| × volatility">Energy</span>
+      <span class="metric-value" id="energy">--</span>
+    </div>
+    <div class="metric-row">
+      <span class="metric-label tooltip" data-tip="Cycle synchronization strength">Attractor</span>
+      <span class="metric-value" id="attractor">--</span>
+    </div>
+    <div class="metric-row">
+      <span class="metric-label tooltip" data-tip="Phase acceleration at solar extremes">Phase Accel</span>
+      <span class="metric-value" id="phase-accel">--</span>
+    </div>
+    <div class="metric-row">
+      <span class="metric-label tooltip" data-tip="1 + sin(2π×days/180) — turning point proximity">Curvature</span>
+      <span class="metric-value" id="curvature">--</span>
+    </div>
+    <div class="metric-row">
+      <span class="metric-label tooltip" data-tip="0.69 × (1 + volatility) — historical inertia">Memory τ</span>
+      <span class="metric-value" id="memory">--</span>
+    </div>
+    <div class="metric-row">
+      <span class="metric-label tooltip" data-tip="volatility × (1 - cos(wave)) — friction">Stress</span>
+      <span class="metric-value" id="stress">--</span>
+    </div>
+  </div>
+
+  <!-- 90-Day Chart -->
+  <div class="card" style="grid-column: span 2">
+    <div class="card-title">📊 90-Day Cycle Projection</div>
+    <canvas id="forecast-canvas" height="180"></canvas>
+  </div>
+
+  <!-- Forecast Windows -->
+  <div class="card">
+    <div class="card-title">🔮 Upcoming Signal Windows</div>
+    <div id="forecast-windows">Loading forecast...</div>
+  </div>
+
+  <!-- Trade History -->
+  <div class="card">
+    <div class="card-title">📋 Signal History</div>
+    <div id="trade-history">No signals yet.</div>
+  </div>
+
+  <!-- Backtest -->
+  <div class="card" style="grid-column: span 2">
+    <div class="card-title">📈 Real Historical Backtest — 365 Days vs Buy & Hold</div>
+    <div id="backtest-loading" style="color:var(--dim);font-size:12px;padding:10px">Loading real historical data...</div>
+    <div id="backtest-results" style="display:none">
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin-bottom:12px">
+        <div style="background:rgba(0,0,0,.3);padding:10px;border-radius:6px">
+          <div style="color:var(--dim);font-size:10px;margin-bottom:6px">ASTRO SYSTEM</div>
+          <div style="font-size:24px;font-weight:bold" id="bt-astro-return">--</div>
+          <div style="font-size:11px;color:var(--dim)">Total Return</div>
+        </div>
+        <div style="background:rgba(0,0,0,.3);padding:10px;border-radius:6px">
+          <div style="color:var(--dim);font-size:10px;margin-bottom:6px">BUY & HOLD</div>
+          <div style="font-size:24px;font-weight:bold" id="bt-bh-return">--</div>
+          <div style="font-size:11px;color:var(--dim)">Total Return</div>
+        </div>
+        <div style="background:rgba(0,0,0,.3);padding:10px;border-radius:6px">
+          <div style="color:var(--dim);font-size:10px;margin-bottom:6px">WIN RATE</div>
+          <div style="font-size:24px;font-weight:bold" id="bt-win-rate">--</div>
+          <div style="font-size:11px;color:var(--dim)">Profitable Trades</div>
+        </div>
+        <div style="background:rgba(0,0,0,.3);padding:10px;border-radius:6px">
+          <div style="color:var(--dim);font-size:10px;margin-bottom:6px">SHARPE (est.)</div>
+          <div style="font-size:24px;font-weight:bold" id="bt-sharpe">--</div>
+          <div style="font-size:11px;color:var(--dim)">Risk-Adjusted Return</div>
+        </div>
+      </div>
+      <div id="bt-trades-list" style="max-height:200px;overflow-y:auto"></div>
+      <div id="bt-disclaimer" style="margin-top:8px;font-size:11px;color:var(--dim);padding:6px;background:rgba(0,0,0,.3);border-radius:4px">
+        ⚠️ Backtest uses real DOGE price data from CoinGecko. Results are for informational purposes only and do not guarantee future performance. No financial advice.
+      </div>
+    </div>
+    <canvas id="backtest-canvas" height="160" style="margin-top:10px"></canvas>
+  </div>
+
+</div>
+
+<footer>
+  ⚛ Astro Physics Trading Dashboard v2.1 | Inspired by @astro1062 | For educational purposes only | Not financial advice
+  <br><a href="https://www.robkremers.com/astro">robkremers.com/astro</a> | Built by Rob Kremers
+</footer>
+
+<script>
+// ===== CONSTANTS =====
+const BASE_DATE = new Date('2014-10-01T00:00:00Z'); // Astro's DOGE entry
+const TWO_PI = Math.PI * 2;
+const METONIC_PERIOD = 231;
+const APSIDAL_PERIOD = 109;
+const SOLAR_PERIOD = 134;
+const WAVE_SCALE = 0.4143 * 0.97;
+const MEMORY_BASE = 0.69;
+
+const COINGECKO_BASE = 'https://api.coingecko.com/api/v3';
+
+// ===== STATE =====
+let state = {
+  token: 'dogecoin',
+  price: 0,
+  priceHistory: [],
+  refreshInterval: 300000,
+  timer: null,
+  tradeHistory: [],
+  lastSignal: null,
+  backtestDone: false,
+  historicalPrices: []
+};
+
+// ===== UTILITY =====
+function daysSince(date) {
+  return (date - BASE_DATE) / 86400000;
+}
+
+function fmt(n, decimals = 4) {
+  if (n === null || n === undefined || isNaN(n)) return '--';
+  return n.toFixed(decimals);
+}
+
+function fmtPct(n) {
+  if (n === null || n === undefined || isNaN(n)) return '--';
+  const sign = n >= 0 ? '+' : '';
+  return sign + (n * 100).toFixed(2) + '%';
+}
+
+function fmtLargePct(n) {
+  if (n === null || n === undefined || isNaN(n)) return '--';
+  const sign = n >= 0 ? '+' : '';
+  return sign + n.toFixed(1) + '%';
+}
+
+function fmtMoney(n) {
+  if (!n) return '--';
+  if (n >= 1e9) return '$' + (n / 1e9).toFixed(2) + 'B';
+  if (n >= 1e6) return '$' + (n / 1e6).toFixed(2) + 'M';
+  return '$' + n.toFixed(0);
+}
+
+function clamp(v, lo, hi) { return Math.max(lo, Math.min(hi, v)); }
+
+function sigmoid(x) { return 1 / (1 + Math.exp(-x)); }
+
+// ===== CYCLE ENGINE =====
+function calcCycles(date) {
+  const d = daysSince(date);
+  const metonic = Math.sin(TWO_PI * d / METONIC_PERIOD);
+  const apsidal = Math.sin(TWO_PI * d / APSIDAL_PERIOD);
+  const solar = Math.sin(TWO_PI * d / SOLAR_PERIOD);
+  const wave = (metonic + apsidal + solar) * WAVE_SCALE;
+  return { metonic, apsidal, solar, wave, d };
+}
+
+function calcWave(date) {
+  return calcCycles(date).wave;
+}
+
+// ===== CEA: Cycle Energy Alignment =====
+// Reverse-engineered: measures phase coherence of three cycles using circular statistics
+// Astro's known range: mean ~1.022, max ~5.378, volatility ~0.940
+function calcCEA(date) {
+  const { metonic, apsidal, solar, d } = calcCycles(date);
+
+  // Convert to phase angles
+  const phaseM = TWO_PI * d / METONIC_PERIOD % TWO_PI;
+  const phaseA = TWO_PI * d / APSIDAL_PERIOD % TWO_PI;
+  const phaseS = TWO_PI * d / SOLAR_PERIOD % TWO_PI;
+
+  // Circular mean resultant length (Rayleigh statistic) — measures phase clustering
+  const sinSum = Math.sin(phaseM) + Math.sin(phaseA) + Math.sin(phaseS);
+  const cosSum = Math.cos(phaseM) + Math.cos(phaseA) + Math.cos(phaseS);
+  const R = Math.sqrt(sinSum * sinSum + cosSum * cosSum) / 3; // 0=dispersed, 1=aligned
+
+  // Amplitude component: how energetically active are the cycles
+  const ampM = Math.abs(metonic);
+  const ampA = Math.abs(apsidal);
+  const ampS = Math.abs(solar);
+  const ampMean = (ampM + ampA + ampS) / 3;
+
+  // Phase alignment × energy → CEA
+  // Calibrated to match Astro's known range (mean ~1.022, max ~5.378)
+  const rawCEA = (1 + R * 4.378) * (0.7 + ampMean * 0.6);
+  const cea = clamp(rawCEA, 0.5, 5.378);
+
+  return cea;
+}
+
+// ===== LPI: Leading Phase Indicator =====
+// Reverse-engineered: 3-5 day leading indicator using 2nd derivative + forward projection
+// Astro's known range: 0-1, leads surges by 3-5 days
+function calcLPI(date) {
+  const t0 = calcWave(date);
+  const t1 = calcWave(new Date(date.getTime() - 86400000));
+  const t2 = calcWave(new Date(date.getTime() - 2 * 86400000));
+  const t3 = calcWave(new Date(date.getTime() - 3 * 86400000));
+
+  // 1st derivative (momentum)
+  const dWave = t0 - t1;
+  // 2nd derivative (acceleration)
+  const d2Wave = (t0 - 2 * t1 + t2);
+  // 3rd derivative (jerk)
+  const d3Wave = (t0 - 3 * t1 + 3 * t2 - t3);
+
+  // Project 4 days ahead (midpoint of 3-5 day range) using Taylor expansion
+  const projected = t0 + dWave * 4 + d2Wave * 8 + d3Wave * (8 / 3);
+
+  // LPI: normalized to 0-1
+  // High LPI (>0.7) = surge signal ahead; Low LPI (<0.3) = dip ahead
+  const lpi = clamp(0.5 + Math.tanh(projected * 2.5) * 0.5, 0, 1);
+  return lpi;
+}
+
+// ===== PHYSICS METRICS =====
+function calcPhysics(date, prices) {
+  const { metonic, apsidal, solar, wave, d } = calcCycles(date);
+
+  // Momentum (wave derivative)
+  const prevWave = calcWave(new Date(date.getTime() - 86400000));
+  const momentum = wave - prevWave;
+
+  // Volatility from price history
+  let volatility = 0.1;
+  if (prices && prices.length > 5) {
+    const slice = prices.slice(-14);
+    const mean = slice.reduce((a, b) => a + b, 0) / slice.length;
+    const variance = slice.reduce((s, p) => s + Math.pow(p - mean, 2), 0) / slice.length;
+    volatility = clamp(Math.sqrt(variance) / mean, 0.001, 1.0);
+  }
+
+  const energy = Math.abs(momentum) * volatility;
+  const phaseAccel = Math.abs(solar) > 0.7 ? Math.abs(momentum) : 0;
+  const curvature = 1 + Math.sin(TWO_PI * d / 180);
+  const memory = MEMORY_BASE * (1 + volatility);
+  const stress = volatility * (1 - Math.cos(wave));
+
+  // Improved attractor: uses phase difference between all three cycles
+  const phaseDiffMA = Math.abs(metonic - apsidal);
+  const phaseDiffMS = Math.abs(metonic - solar);
+  const phaseDiffAS = Math.abs(apsidal - solar);
+  const avgPhaseDiff = (phaseDiffMA + phaseDiffMS + phaseDiffAS) / 3;
+  const attractor = avgPhaseDiff < 0.3 ? 2.0 : avgPhaseDiff < 0.6 ? 1.5 : 1.0;
+
+  const cea = calcCEA(date);
+  const lpi = calcLPI(date);
+
+  return { metonic, apsidal, solar, wave, momentum, volatility, energy, phaseAccel, curvature, memory, stress, attractor, cea, lpi };
+}
+
+// ===== SIGNAL GENERATION (IMPROVED) =====
+function generateSignal(metrics) {
+  const { wave, momentum, energy, attractor, phaseAccel, volatility, lpi, cea } = metrics;
+
+  // Adaptive thresholds based on volatility regime
+  const buyWaveThreshold = volatility > 0.3 ? -0.15 : -0.20;  // tighter in low vol
+  const buyMomentumThreshold = volatility > 0.3 ? 0.002 : 0.001;
+  const buyEnergyThreshold = volatility > 0.3 ? 0.25 : 0.20;
+
+  const sellWaveExhaust = 0.75;
+  const sellWaveTurn = volatility > 0.3 ? 0.35 : 0.40;
+  const sellMomentumThreshold = -0.04;
+
+  let signal = 'HOLD';
+  let confidence = 30;
+  let strength = 30;
+
+  // BUY conditions (improved with CEA and LPI)
+  const coreByConditions =
+    wave > buyWaveThreshold &&
+    momentum > buyMomentumThreshold &&
+    energy > buyEnergyThreshold;
+
+  const ceaBoost = cea > 1.0;
+  const lpiBoost = lpi > 0.65;
+
+  if (coreByConditions) {
+    signal = 'BUY';
+    confidence = clamp((Math.abs(momentum) * 100 + energy * 100) / 2, 20, 100);
+    // Boost confidence if CEA and LPI agree
+    if (ceaBoost) confidence = clamp(confidence * 1.2, 0, 100);
+    if (lpiBoost) confidence = clamp(confidence * 1.15, 0, 100);
+    strength = clamp(attractor * 20 + phaseAccel * 50 + (1 - volatility) * 30, 0, 100);
+  }
+
+  // SELL conditions
+  const sellExhausted = wave > sellWaveExhaust;
+  const sellTurning = wave > sellWaveTurn && momentum < sellMomentumThreshold;
+  const ceaSell = cea < 0.8 && wave > 0.3;
+
+  if (sellExhausted || sellTurning || ceaSell) {
+    signal = 'SELL';
+    confidence = clamp((Math.abs(momentum) * 100 + energy * 50) / 2, 20, 100);
+    if (sellExhausted) confidence = clamp(confidence * 1.3, 0, 100);
+    strength = clamp(volatility * 100, 10, 100);
+  }
+
+  // CEA very low = strong hold/avoid
+  if (cea < 0.7 && signal === 'BUY') {
+    signal = 'HOLD';
+    confidence = 25;
+  }
+
+  return { signal, confidence: Math.round(confidence), strength: Math.round(strength) };
+}
+
+// ===== RISK SCORE =====
+function calcRiskScore(metrics, confidence) {
+  const { wave, energy, volatility, cea, lpi } = metrics;
+  let score = 50
+    + (wave * 30)
+    + (energy * 20)
+    - (volatility * 30)
+    + (confidence * 0.2)
+    + (cea > 1.0 ? (cea - 1.0) * 5 : (cea - 1.0) * 8)  // CEA influence
+    + ((lpi - 0.5) * 15);  // LPI influence
+  return Math.round(clamp(score, 0, 100));
+}
+
+// ===== MARKET DECISION =====
+function getMarketDecision(signal, riskScore, lpi, cea) {
+  if (signal === 'BUY' && riskScore >= 70 && cea >= 1.5 && lpi >= 0.7)
+    return { text: '🟢 STRONG BUY', detail: 'Full alignment: CEA bullish, LPI surge ahead, wave rising' };
+  if (signal === 'BUY' && riskScore >= 65)
+    return { text: '🟢 BUY', detail: 'Cycles and momentum aligned, risk favorable' };
+  if (signal === 'BUY' && riskScore >= 50)
+    return { text: '🟡 LIGHT BUY', detail: 'Moderate setup, consider scaling in' };
+  if (signal === 'SELL' && riskScore >= 65)
+    return { text: '🔴 STRONG SELL', detail: 'Wave exhaustion + cycle divergence' };
+  if (signal === 'SELL' && riskScore >= 50)
+    return { text: '🟠 TAKE PROFITS', detail: 'Momentum fading, reduce exposure' };
+  if (riskScore < 35)
+    return { text: '🟢 ACCUMULATE', detail: 'Low risk environment, below-average wave' };
+  return { text: '⚪ HOLD / WAIT', detail: 'No clear edge, stay patient' };
+}
+
+// ===== MARKET REGIME DETECTION =====
+function detectRegime(prices, wave, volatility) {
+  if (!prices || prices.length < 20) return { regime: 'neutral', label: 'NEUTRAL' };
+
+  const recent = prices.slice(-14);
+  const prev = prices.slice(-28, -14);
+  const recentMean = recent.reduce((a, b) => a + b, 0) / recent.length;
+  const prevMean = prev.reduce((a, b) => a + b, 0) / prev.length;
+  const trendDir = recentMean - prevMean;
+
+  if (wave > 0.2 && trendDir > 0 && volatility < 0.4) return { regime: 'bull', label: 'BULL' };
+  if (wave < -0.1 && trendDir < 0) return { regime: 'bear', label: 'BEAR' };
+  return { regime: 'neutral', label: 'NEUTRAL' };
+}
+
+// ===== SYSTEM CONFIDENCE =====
+function calcSystemConfidence(metrics, signal) {
+  const { wave, momentum, energy, attractor, cea, lpi } = metrics;
+  let agreements = 0;
+  const total = 6;
+
+  if (signal === 'BUY') {
+    if (wave > 0) agreements++;
+    if (momentum > 0) agreements++;
+    if (energy > 0.2) agreements++;
+    if (attractor >= 1.5) agreements++;
+    if (cea >= 1.0) agreements++;
+    if (lpi >= 0.6) agreements++;
+  } else if (signal === 'SELL') {
+    if (wave > 0.4) agreements++;
+    if (momentum < 0) agreements++;
+    if (energy > 0.1) agreements++;
+    if (attractor < 1.5) agreements++;
+    if (cea < 1.0) agreements++;
+    if (lpi < 0.4) agreements++;
+  } else {
+    if (Math.abs(wave) < 0.3) agreements++;
+    if (Math.abs(momentum) < 0.02) agreements++;
+    agreements += 2;
+    if (cea > 0.8 && cea < 1.5) agreements++;
+    if (lpi > 0.4 && lpi < 0.6) agreements++;
+  }
+
+  return Math.round((agreements / total) * 100);
+}
+
+// ===== 90-DAY FORECAST =====
+function generateForecast(startDate) {
+  const windows = [];
+  let prevWave = calcWave(startDate);
+
+  for (let i = 1; i <= 90; i++) {
+    const d = new Date(startDate.getTime() + i * 86400000);
+    const w = calcWave(d);
+    const m = w - prevWave;
+    const lpi = calcLPI(d);
+    const cea = calcCEA(d);
+
+    // BUY window: wave crosses above threshold from below with positive momentum
+    if (prevWave <= -0.15 && w > -0.15 && m > 0) {
+      windows.push({
+        type: 'BUY', date: d,
+        wave: w,
+        strength: Math.round(clamp(Math.abs(m) * 200 + cea * 10, 20, 100)),
+        lpi: lpi, cea: cea
+      });
+    }
+
+    // SELL window: wave reaches exhaustion
+    if (w > 0.7 && prevWave <= 0.7) {
+      windows.push({
+        type: 'SELL', date: d,
+        wave: w,
+        strength: Math.round(clamp(w * 80 + Math.abs(m) * 200, 20, 100)),
+        lpi: lpi, cea: cea
+      });
+    }
+
+    // LPI-based early warning
+    if (lpi > 0.82 && i > 5) {
+      windows.push({
+        type: 'BUY', date: d,
+        wave: w,
+        strength: Math.round(lpi * 80),
+        lpi: lpi, cea: cea,
+        label: '⚡ LPI Alert'
+      });
+    }
+
+    prevWave = w;
+  }
+
+  // Deduplicate windows within 5 days
+  const deduped = [];
+  for (const win of windows) {
+    const overlaps = deduped.some(w =>
+      w.type === win.type &&
+      Math.abs(w.date - win.date) < 5 * 86400000
+    );
+    if (!overlaps) deduped.push(win);
+  }
+
+  return deduped.slice(0, 12).sort((a, b) => a.date - b.date);
+}
+
+// ===== REAL HISTORICAL BACKTEST =====
+async function fetchHistoricalPrices(coinId, days = 365) {
+  try {
+    const url = `${COINGECKO_BASE}/coins/${coinId}/market_chart?vs_currency=usd&days=${days}&interval=daily`;
+    const resp = await fetch(url);
+    if (!resp.ok) throw new Error('API error ' + resp.status);
+    const data = await resp.json();
+    return data.prices.map(([ts, p]) => ({ date: new Date(ts), price: p }));
+  } catch (e) {
+    console.warn('fetchHistoricalPrices failed:', e);
+    return null;
+  }
+}
+
+function runBacktest(historicalData) {
+  if (!historicalData || historicalData.length < 30) return null;
+
+  const initialEquity = 10000;
+  let astroEquity = initialEquity;
+  let bhEquity = initialEquity;
+  const initialPrice = historicalData[0].price;
+  const trades = [];
+  let inPosition = false;
+  let entryPrice = 0;
+  let entryDate = null;
+  let entryIdx = 0;
+  const returns = [];
+
+  for (let i = 1; i < historicalData.length; i++) {
+    const { date, price } = historicalData[i];
+    const prevPrice = historicalData[i - 1].price;
+
+    // Build mini price history for volatility
+    const miniHistory = historicalData.slice(Math.max(0, i - 14), i).map(d => d.price);
+
+    const metrics = calcPhysics(date, miniHistory);
+    const prevMetrics = calcPhysics(historicalData[i - 1].date, miniHistory.slice(0, -1));
+    const { signal } = generateSignal(metrics);
+
+    // Buy & Hold equity
+    bhEquity = initialEquity * (price / initialPrice);
+
+    if (signal === 'BUY' && !inPosition) {
+      entryPrice = price;
+      entryDate = date;
+      entryIdx = i;
+      inPosition = true;
+    } else if ((signal === 'SELL' || signal === 'HOLD') && inPosition) {
+      const pnl = (price - entryPrice) / entryPrice;
+      const fee = 0.0025; // 0.25% round-trip fee
+      const netPnl = pnl - fee;
+      astroEquity *= (1 + netPnl);
+      returns.push(netPnl);
+      trades.push({
+        entry: entryPrice, exit: price, return: netPnl,
+        entryDate, exitDate: date,
+        holdDays: Math.round((date - entryDate) / 86400000),
+        signal: signal
+      });
+      inPosition = false;
+    }
+  }
+
+  // Close open position
+  if (inPosition && historicalData.length > 0) {
+    const lastPrice = historicalData[historicalData.length - 1].price;
+    const pnl = (lastPrice - entryPrice) / entryPrice;
+    astroEquity *= (1 + pnl - 0.0025);
+    returns.push(pnl - 0.0025);
+  }
+
+  // Metrics
+  const winRate = trades.filter(t => t.return > 0).length / Math.max(1, trades.length);
+  const avgReturn = returns.reduce((a, b) => a + b, 0) / Math.max(1, returns.length);
+  const stdReturn = returns.length > 1
+    ? Math.sqrt(returns.reduce((s, r) => s + Math.pow(r - avgReturn, 2), 0) / (returns.length - 1))
+    : 0.01;
+  const sharpe = stdReturn > 0 ? (avgReturn / stdReturn) * Math.sqrt(252) : 0;
+  const astroReturn = (astroEquity - initialEquity) / initialEquity * 100;
+  const bhReturn = (bhEquity - initialEquity) / initialEquity * 100;
+
+  return {
+    astroReturn, bhReturn, winRate, sharpe,
+    trades, astroEquity, bhEquity,
+    tradeCount: trades.length
+  };
+}
+
+// ===== CHART RENDERING =====
+function drawForecastChart(canvas, startDate) {
+  const ctx = canvas.getContext('2d');
+  const W = canvas.offsetWidth;
+  const H = canvas.height;
+  canvas.width = W;
+  ctx.clearRect(0, 0, W, H);
+
+  const days = 90;
+  const points = [];
+  const lpiPoints = [];
+  const ceaPoints = [];
+
+  for (let i = 0; i <= days; i++) {
+    const d = new Date(startDate.getTime() + i * 86400000);
+    const w = calcWave(d);
+    const lpi = calcLPI(d);
+    const cea = calcCEA(d);
+    points.push(w);
+    lpiPoints.push(lpi);
+    ceaPoints.push((cea - 0.5) / 4.878); // normalize CEA to 0-1
+  }
+
+  const minW = Math.min(...points);
+  const maxW = Math.max(...points);
+  const range = maxW - minW || 1;
+  const toY = v => H - 10 - ((v - minW) / range) * (H - 20);
+  const toX = i => (i / days) * W;
+
+  // Background grid
+  ctx.strokeStyle = '#1a1a4e';
+  ctx.lineWidth = 1;
+  for (let g = 0; g <= 4; g++) {
+    const y = 10 + g * (H - 20) / 4;
+    ctx.beginPath(); ctx.moveTo(0, y); ctx.lineTo(W, y); ctx.stroke();
+  }
+
+  // Zero line
+  const zeroY = toY(0);
+  ctx.strokeStyle = '#334488'; ctx.lineWidth = 1.5;
+  ctx.setLineDash([4, 4]);
+  ctx.beginPath(); ctx.moveTo(0, zeroY); ctx.lineTo(W, zeroY); ctx.stroke();
+  ctx.setLineDash([]);
+
+  // Today marker
+  const todayX = 0;
+  ctx.strokeStyle = '#ffcc00'; ctx.lineWidth = 1;
+  ctx.beginPath(); ctx.moveTo(todayX, 0); ctx.lineTo(todayX, H); ctx.stroke();
+  ctx.fillStyle = '#ffcc00'; ctx.font = '10px monospace';
+  ctx.fillText('TODAY', todayX + 4, 14);
+
+  // CEA fill (behind)
+  ctx.beginPath();
+  ctx.moveTo(toX(0), H);
+  for (let i = 0; i <= days; i++) {
+    const ceaNorm = ceaPoints[i];
+    ctx.lineTo(toX(i), H - ceaNorm * (H * 0.3));
+  }
+  ctx.lineTo(toX(days), H); ctx.closePath();
+  ctx.fillStyle = 'rgba(0,212,255,0.06)';
+  ctx.fill();
+
+  // LPI line
+  ctx.beginPath();
+  for (let i = 0; i <= days; i++) {
+    const y = H - 10 - lpiPoints[i] * (H - 20);
+    i === 0 ? ctx.moveTo(toX(i), y) : ctx.lineTo(toX(i), y);
+  }
+  ctx.strokeStyle = 'rgba(255,0,170,0.5)'; ctx.lineWidth = 1.5;
+  ctx.stroke();
+
+  // Wave fill: green above zero, red below
+  for (let i = 0; i < days; i++) {
+    const x1 = toX(i), x2 = toX(i + 1);
+    const y1 = toY(points[i]), y2 = toY(points[i + 1]);
+    const color = points[i] >= 0 ? 'rgba(0,255,136,0.3)' : 'rgba(255,68,85,0.3)';
+    ctx.beginPath();
+    ctx.moveTo(x1, zeroY); ctx.lineTo(x1, y1);
+    ctx.lineTo(x2, y2); ctx.lineTo(x2, zeroY);
+    ctx.closePath();
+    ctx.fillStyle = color; ctx.fill();
+  }
+
+  // Main wave line
+  ctx.beginPath();
+  for (let i = 0; i <= days; i++) {
+    i === 0 ? ctx.moveTo(toX(i), toY(points[i])) : ctx.lineTo(toX(i), toY(points[i]));
+  }
+  ctx.strokeStyle = var_cyan(); ctx.lineWidth = 2;
+  ctx.stroke();
+
+  // Forecast windows
+  const windows = generateForecast(startDate);
+  for (const win of windows) {
+    const dayOffset = Math.round((win.date - startDate) / 86400000);
+    if (dayOffset < 0 || dayOffset > days) continue;
+    const x = toX(dayOffset);
+    ctx.fillStyle = win.type === 'BUY' ? 'rgba(0,255,136,0.8)' : 'rgba(255,68,85,0.8)';
+    ctx.beginPath(); ctx.arc(x, toY(win.wave), 5, 0, TWO_PI); ctx.fill();
+    ctx.fillStyle = win.type === 'BUY' ? '#00ff88' : '#ff4455';
+    ctx.font = '9px monospace';
+    ctx.fillText(win.type === 'BUY' ? 'B' : 'S', x - 3, toY(win.wave) - 8);
+  }
+
+  // Legend
+  ctx.font = '10px monospace';
+  ctx.fillStyle = var_cyan(); ctx.fillText('— WAVE', 6, H - 4);
+  ctx.fillStyle = 'rgba(255,0,170,0.8)'; ctx.fillText('— LPI', 64, H - 4);
+  ctx.fillStyle = 'rgba(0,212,255,0.5)'; ctx.fillText('▪ CEA', 108, H - 4);
+}
+
+function var_cyan() { return '#00d4ff'; }
+
+function drawBacktestChart(canvas, historicalData, btResult) {
+  if (!historicalData || historicalData.length < 2) return;
+  const ctx = canvas.getContext('2d');
+  const W = canvas.offsetWidth;
+  const H = canvas.height;
+  canvas.width = W;
+  ctx.clearRect(0, 0, W, H);
+
+  const n = historicalData.length;
+  const astroEquityCurve = [10000];
+  const bhEquityCurve = [10000];
+  const initialPrice = historicalData[0].price;
+  let astroEq = 10000;
+  let inPos = false;
+  let entryP = 0;
+
+  for (let i = 1; i < n; i++) {
+    const { date, price } = historicalData[i];
+    const miniHist = historicalData.slice(Math.max(0, i - 14), i).map(d => d.price);
+    const metrics = calcPhysics(date, miniHist);
+    const { signal } = generateSignal(metrics);
+
+    bhEquityCurve.push(10000 * (price / initialPrice));
+
+    if (signal === 'BUY' && !inPos) { entryP = price; inPos = true; }
+    if ((signal === 'SELL' || signal === 'HOLD') && inPos) {
+      astroEq *= (1 + (price - entryP) / entryP - 0.0025);
+      inPos = false;
+    }
+    astroEquityCurve.push(astroEq);
+  }
+
+  const allVals = [...astroEquityCurve, ...bhEquityCurve];
+  const minV = Math.min(...allVals);
+  const maxV = Math.max(...allVals);
+  const range = maxV - minV || 1;
+  const toY = v => H - 5 - ((v - minV) / range) * (H - 15);
+  const toX = i => (i / (n - 1)) * W;
+
+  // Grid
+  ctx.strokeStyle = '#1a1a4e'; ctx.lineWidth = 1;
+  for (let g = 0; g <= 3; g++) {
+    const y = 5 + g * (H - 15) / 3;
+    ctx.beginPath(); ctx.moveTo(0, y); ctx.lineTo(W, y); ctx.stroke();
+  }
+
+  // BH curve
+  ctx.beginPath();
+  bhEquityCurve.forEach((v, i) => i === 0 ? ctx.moveTo(toX(i), toY(v)) : ctx.lineTo(toX(i), toY(v)));
+  ctx.strokeStyle = '#334488'; ctx.lineWidth = 1.5; ctx.stroke();
+
+  // Astro curve
+  ctx.beginPath();
+  astroEquityCurve.forEach((v, i) => i === 0 ? ctx.moveTo(toX(i), toY(v)) : ctx.lineTo(toX(i), toY(v)));
+  ctx.strokeStyle = var_cyan(); ctx.lineWidth = 2.5; ctx.stroke();
+
+  // Trade markers
+  if (btResult) {
+    for (const trade of btResult.trades) {
+      const entryDay = historicalData.findIndex(d => Math.abs(d.date - trade.entryDate) < 86400000 * 2);
+      const exitDay = historicalData.findIndex(d => Math.abs(d.date - trade.exitDate) < 86400000 * 2);
+      if (entryDay >= 0) {
+        ctx.fillStyle = '#00ff88'; ctx.beginPath(); ctx.arc(toX(entryDay), toY(astroEquityCurve[entryDay] || 10000), 3, 0, TWO_PI); ctx.fill();
+      }
+      if (exitDay >= 0) {
+        ctx.fillStyle = trade.return > 0 ? '#00ff88' : '#ff4455'; ctx.beginPath(); ctx.arc(toX(exitDay), toY(astroEquityCurve[exitDay] || 10000), 3, 0, TWO_PI); ctx.fill();
+      }
+    }
+  }
+
+  // Legend
+  ctx.font = '10px monospace';
+  ctx.fillStyle = var_cyan(); ctx.fillText('— ASTRO', 6, H - 4);
+  ctx.fillStyle = '#334488'; ctx.fillText('— BUY & HOLD', 72, H - 4);
+}
+
+// ===== UI UPDATES =====
+function updateStatus(live, text) {
+  const dot = document.getElementById('status-dot');
+  const txt = document.getElementById('status-text');
+  dot.className = live ? 'live' : '';
+  txt.textContent = live ? '● LIVE' : text || 'OFFLINE';
+  txt.style.color = live ? 'var(--green)' : 'var(--dim)';
+}
+
+function setEl(id, text) {
+  const el = document.getElementById(id);
+  if (el) el.textContent = text;
+}
+
+function setBar(id, pct) {
+  const el = document.getElementById(id);
+  if (el) el.style.width = clamp(pct, 0, 100) + '%';
+}
+
+function updateDashboard(data, metrics, sig, riskScore, systemConf, regime) {
+  const { signal, confidence, strength } = sig;
+  const { wave, momentum, volatility, energy, attractor, phaseAccel, curvature, memory, stress, metonic, apsidal, solar, cea, lpi } = metrics;
+  const decision = getMarketDecision(signal, riskScore, lpi, cea);
+
+  // Price
+  setEl('price', '$' + (data.price >= 1 ? data.price.toFixed(4) : data.price.toFixed(6)));
+  const ch24 = document.getElementById('change-24h');
+  ch24.textContent = '24h: ' + fmtPct(data.change24h / 100);
+  ch24.className = 'price-change ' + (data.change24h >= 0 ? 'up' : 'down');
+  const ch7 = document.getElementById('change-7d');
+  if (data.change7d !== undefined) {
+    ch7.textContent = '7d: ' + fmtPct(data.change7d / 100);
+    ch7.className = 'price-change ' + (data.change7d >= 0 ? 'up' : 'down');
+  }
+  setEl('mkt-cap', fmtMoney(data.marketCap));
+  setEl('volume', fmtMoney(data.volume));
+
+  if (state.priceHistory.length > 0) {
+    const hi52 = Math.max(...state.priceHistory);
+    const lo52 = Math.min(...state.priceHistory);
+    setEl('high-52w', '$' + hi52.toFixed(4));
+    setEl('low-52w', '$' + lo52.toFixed(4));
+    const fromAth = (data.price - hi52) / hi52 * 100;
+    const athEl = document.getElementById('from-ath');
+    athEl.textContent = fmtPct(fromAth / 100);
+    athEl.style.color = fromAth >= 0 ? 'var(--green)' : 'var(--red)';
+  }
+
+  // Signal
+  const sb = document.getElementById('signal-box');
+  const sl = document.getElementById('signal-label');
+  sb.className = 'signal-box ' + signal.toLowerCase();
+  sl.className = 'signal-label ' + signal.toLowerCase();
+  sl.textContent = signal;
+  setEl('signal-decision', decision.text + ' — ' + decision.detail);
+
+  setEl('confidence', confidence + '%');
+  setBar('conf-bar', confidence);
+  setEl('strength', strength + '%');
+  setBar('str-bar', strength);
+  setEl('sys-conf', systemConf + '%');
+  setBar('sys-conf-bar', systemConf);
+
+  const regimePill = document.getElementById('regime-pill');
+  regimePill.textContent = regime.label;
+  regimePill.className = 'regime-pill regime-' + regime.regime;
+  setEl('regime-text', regime.regime === 'bull' ? 'Uptrend — cycles & price aligned'
+    : regime.regime === 'bear' ? 'Downtrend — avoid long exposure'
+    : 'Sideways — wait for clearer signal');
+
+  // Risk score
+  const rsEl = document.getElementById('risk-score');
+  rsEl.textContent = riskScore;
+  rsEl.style.color = riskScore >= 65 ? 'var(--green)' : riskScore >= 40 ? 'var(--yellow)' : 'var(--red)';
+  setBar('risk-bar', riskScore);
+  setEl('risk-label', riskScore >= 70 ? '/ 100 — RISK ON' : riskScore >= 40 ? '/ 100 — NEUTRAL' : '/ 100 — RISK OFF');
+
+  const riskInterp = document.getElementById('risk-interpretation');
+  if (riskScore >= 70) riskInterp.innerHTML = '<span style="color:var(--green)">✅ Full risk-on. Cycles favor upside. Consider full allocation.</span>';
+  else if (riskScore >= 55) riskInterp.innerHTML = '<span style="color:var(--yellow)">⚠️ Moderate risk. Partial allocation recommended.</span>';
+  else if (riskScore >= 40) riskInterp.innerHTML = '<span style="color:var(--yellow)">⏸️ Neutral zone. Hold existing positions, no new entries.</span>';
+  else riskInterp.innerHTML = '<span style="color:var(--red)">🛑 Risk off. Protect capital. Cycles unfavorable.</span>';
+
+  setEl('wave-val', fmt(wave, 4));
+  setEl('momentum-val', fmt(momentum, 5));
+  const trendEl = document.getElementById('trend-val');
+  if (momentum > 0.002) { trendEl.textContent = '↑ Rising'; trendEl.style.color = 'var(--green)'; }
+  else if (momentum < -0.002) { trendEl.textContent = '↓ Falling'; trendEl.style.color = 'var(--red)'; }
+  else { trendEl.textContent = '→ Flat'; trendEl.style.color = 'var(--yellow)'; }
+
+  // CEA
+  const ceaRounded = cea.toFixed(3);
+  setEl('cea-val', ceaRounded);
+  const ceaStatus = document.getElementById('cea-status');
+  if (cea >= 1.5) { ceaStatus.innerHTML = '<span class="cea-badge" style="background:rgba(0,255,136,.2);border-color:var(--green);color:var(--green)">STRONG BULLISH</span>'; }
+  else if (cea >= 1.0) { ceaStatus.innerHTML = '<span class="cea-badge">BULLISH</span>'; }
+  else if (cea >= 0.8) { ceaStatus.innerHTML = '<span class="cea-badge" style="border-color:var(--yellow);color:var(--yellow)">NEUTRAL</span>'; }
+  else { ceaStatus.innerHTML = '<span class="cea-badge" style="border-color:var(--red);color:var(--red)">BEARISH</span>'; }
+  setEl('cea-signal', cea >= 1.0 ? '✅ Bullish alignment' : '⛔ Bearish / neutral');
+  setBar('cea-bar', (cea / 5.378) * 100);
+
+  // LPI
+  setEl('lpi-val', lpi.toFixed(3));
+  const lpiStatus = document.getElementById('lpi-status');
+  if (lpi >= 0.75) { lpiStatus.innerHTML = '<span class="lpi-badge" style="background:rgba(0,255,136,.2);border-color:var(--green);color:var(--green)">⚡ SURGE AHEAD</span>'; }
+  else if (lpi >= 0.60) { lpiStatus.innerHTML = '<span class="lpi-badge">BULLISH AHEAD</span>'; }
+  else if (lpi >= 0.40) { lpiStatus.innerHTML = '<span class="lpi-badge" style="border-color:var(--yellow);color:var(--yellow)">NEUTRAL</span>'; }
+  else { lpiStatus.innerHTML = '<span class="lpi-badge" style="border-color:var(--red);color:var(--red)">DIP AHEAD</span>'; }
+  const lpiFC = document.getElementById('lpi-forecast');
+  lpiFC.textContent = lpi >= 0.75 ? '⚡ Surge likely in 3-5 days'
+    : lpi >= 0.60 ? '↑ Positive move in 3-5 days'
+    : lpi < 0.35 ? '↓ Possible dip in 3-5 days'
+    : '→ No strong signal';
+  lpiFC.style.color = lpi >= 0.60 ? 'var(--green)' : lpi < 0.35 ? 'var(--red)' : 'var(--yellow)';
+  setBar('lpi-bar', lpi * 100);
+
+  // Physics engine
+  setEl('metonic', fmt(metonic, 4));
+  setEl('apsidal', fmt(apsidal, 4));
+  setEl('solar', fmt(solar, 4));
+  setBar('metonic-bar', (metonic + 1) / 2 * 100);
+  setBar('apsidal-bar', (apsidal + 1) / 2 * 100);
+  setBar('solar-bar', (solar + 1) / 2 * 100);
+  setEl('energy', fmt(energy, 4));
+  setEl('attractor', fmt(attractor, 3));
+  setEl('phase-accel', fmt(phaseAccel, 4));
+  setEl('curvature', fmt(curvature, 4));
+  setEl('memory', fmt(memory, 4));
+  setEl('stress', fmt(stress, 4));
+}
+
+function updateForecastWindows(windows) {
+  const el = document.getElementById('forecast-windows');
+  if (!windows.length) { el.innerHTML = '<div style="color:var(--dim)">No clear windows in 90 days</div>'; return; }
+  el.innerHTML = windows.map(w => `
+    <div class="forecast-window fw-${w.type.toLowerCase()}">
+      <span style="color:${w.type === 'BUY' ? 'var(--green)' : 'var(--red)'}">${w.type === 'BUY' ? '🟢' : '🔴'} ${w.type} ${w.label || ''}</span>
+      <span>${w.date.toLocaleDateString('en-US', { month: 'short', day: 'numeric' })}</span>
+      <span style="color:var(--dim)">${w.strength}%</span>
+    </div>`).join('');
+}
+
+function updateTradeHistory(signal, price) {
+  if (state.lastSignal === signal) return;
+  state.lastSignal = signal;
+  const now = new Date();
+  state.tradeHistory.unshift({ signal, price, time: now });
+  if (state.tradeHistory.length > 20) state.tradeHistory.pop();
+
+  const el = document.getElementById('trade-history');
+  el.innerHTML = state.tradeHistory.map(t => `
+    <div class="trade-row trade-${t.signal.toLowerCase()}">
+      <span>${t.signal === 'BUY' ? '🟢' : t.signal === 'SELL' ? '🔴' : '⚪'} ${t.signal}</span>
+      <span>$${t.price >= 1 ? t.price.toFixed(4) : t.price.toFixed(6)}</span>
+      <span style="color:var(--dim)">${t.time.toLocaleDateString()} ${t.time.toLocaleTimeString()}</span>
+    </div>`).join('');
+}
+
+// ===== API LAYER =====
+async function fetchCurrentPrice(coinId) {
+  const url = `${COINGECKO_BASE}/coins/markets?vs_currency=usd&ids=${coinId}&order=market_cap_desc&per_page=1&page=1&sparkline=false&price_change_percentage=7d`;
+  const resp = await fetch(url);
+  if (!resp.ok) throw new Error('CoinGecko API error: ' + resp.status);
+  const data = await resp.json();
+  if (!data[0]) throw new Error('No data returned');
+  const d = data[0];
+  return {
+    price: d.current_price,
+    change24h: d.price_change_percentage_24h || 0,
+    change7d: d.price_change_percentage_7d_in_currency || 0,
+    marketCap: d.market_cap,
+    volume: d.total_volume,
+    high52w: d.high_24h, low52w: d.low_24h // Note: 24h highs used as placeholder
+  };
+}
+
+// ===== MAIN REFRESH CYCLE =====
+async function refresh() {
+  try {
+    setEl('last-update', 'Updating...');
+    const data = await fetchCurrentPrice(state.token);
+    state.price = data.price;
+    state.priceHistory.push(data.price);
+    if (state.priceHistory.length > 365) state.priceHistory.shift();
+
+    const now = new Date();
+    const metrics = calcPhysics(now, state.priceHistory);
+    const sig = generateSignal(metrics);
+    const riskScore = calcRiskScore(metrics, sig.confidence);
+    const systemConf = calcSystemConfidence(metrics, sig.signal);
+    const regime = detectRegime(state.priceHistory, metrics.wave, metrics.volatility);
+
+    updateDashboard(data, metrics, sig, riskScore, systemConf, regime);
+    updateTradeHistory(sig.signal, data.price);
+
+    const now2 = new Date();
+    const windows = generateForecast(now2);
+    updateForecastWindows(windows);
+
+    const canvas = document.getElementById('forecast-canvas');
+    drawForecastChart(canvas, now2);
+
+    updateStatus(true);
+    setEl('last-update', 'Updated ' + now.toLocaleTimeString());
+
+    return true;
+  } catch (e) {
+    console.error('Refresh error:', e);
+    updateStatus(false, 'ERROR');
+    setEl('last-update', 'Error: ' + e.message.substring(0, 40));
+    return false;
+  }
+}
+
+async function runRealBacktest() {
+  const btLoading = document.getElementById('backtest-loading');
+  const btResults = document.getElementById('backtest-results');
+  btLoading.textContent = 'Fetching 365 days of real ' + state.token.toUpperCase() + ' price data from CoinGecko...';
+
+  const historical = await fetchHistoricalPrices(state.token, 365);
+  state.historicalPrices = historical;
+
+  if (!historical || historical.length < 50) {
+    btLoading.textContent = '⚠️ Could not fetch historical data. API may be rate-limited. Try refreshing.';
+    return;
+  }
+
+  btLoading.textContent = `Running backtest on ${historical.length} days of real data...`;
+  // Run in next tick to not block UI
+  await new Promise(r => setTimeout(r, 50));
+
+  const result = runBacktest(historical);
+  if (!result) { btLoading.textContent = '⚠️ Backtest failed.'; return; }
+
+  btLoading.style.display = 'none';
+  btResults.style.display = 'block';
+
+  const astroRetEl = document.getElementById('bt-astro-return');
+  astroRetEl.textContent = fmtLargePct(result.astroReturn);
+  astroRetEl.className = 'bt-val ' + (result.astroReturn >= 0 ? 'pos' : 'neg');
+
+  const bhRetEl = document.getElementById('bt-bh-return');
+  bhRetEl.textContent = fmtLargePct(result.bhReturn);
+  bhRetEl.className = 'bt-val ' + (result.bhReturn >= 0 ? 'pos' : 'neg');
+
+  setEl('bt-win-rate', (result.winRate * 100).toFixed(1) + '%');
+  const sharpeEl = document.getElementById('bt-sharpe');
+  sharpeEl.textContent = result.sharpe.toFixed(2);
+  sharpeEl.className = 'bt-val ' + (result.sharpe >= 1 ? 'pos' : 'neg');
+
+  const tradesList = document.getElementById('bt-trades-list');
+  tradesList.innerHTML = result.trades.slice(-10).reverse().map(t => `
+    <div class="trade-row ${t.return > 0 ? 'trade-buy' : 'trade-sell'}">
+      <span>${t.return > 0 ? '✅' : '❌'} ${t.entryDate.toLocaleDateString()} → ${t.exitDate.toLocaleDateString()}</span>
+      <span>${t.holdDays}d</span>
+      <span>${t.return >= 0 ? '+' : ''}${(t.return * 100).toFixed(2)}%</span>
+    </div>`).join('');
+
+  const btCanvas = document.getElementById('backtest-canvas');
+  drawBacktestChart(btCanvas, historical, result);
+}
+
+// ===== INIT =====
+async function init() {
+  const loadMsg = document.getElementById('loading-msg');
+
+  loadMsg.textContent = 'Fetching live ' + state.token + ' price...';
+  const success = await refresh();
+
+  if (success) {
+    loadMsg.textContent = 'Fetching historical data for backtest...';
+    await runRealBacktest();
+  }
+
+  document.getElementById('loading').style.display = 'none';
+  state.backtestDone = true;
+
+  // Start auto-refresh
+  startRefreshTimer();
+}
+
+function startRefreshTimer() {
+  if (state.timer) clearInterval(state.timer);
+  state.timer = setInterval(refresh, state.refreshInterval);
+}
+
+function onTokenChange() {
+  state.token = document.getElementById('token-select').value;
+  state.priceHistory = [];
+  state.historicalPrices = [];
+  state.backtestDone = false;
+  const btLoading = document.getElementById('backtest-loading');
+  const btResults = document.getElementById('backtest-results');
+  btLoading.style.display = 'block';
+  btResults.style.display = 'none';
+  btLoading.textContent = 'Switching token...';
+  
+  // Fetch 30 days of price history for proper volatility calculation
+  fetchHistoricalPrices(state.token, 30).then(hist => {
+    if (hist && hist.length > 0) {
+      state.priceHistory = hist.map(h => h.price);
+      console.log(`Loaded ${hist.length} price points for ${state.token}`);
+    }
+    refresh().then(() => runRealBacktest());
+  }).catch(e => {
+    console.warn('Could not fetch history on token switch:', e);
+    refresh().then(() => runRealBacktest());
+  });
+}
+
+function onRefreshChange() {
+  state.refreshInterval = parseInt(document.getElementById('refresh-select').value);
+  startRefreshTimer();
+}
+
+function manualRefresh() {
+  refresh();
+}
+
+window.addEventListener('load', init);
+window.addEventListener('resize', () => {
+  const canvas = document.getElementById('forecast-canvas');
+  if (canvas.offsetWidth > 0) drawForecastChart(canvas, new Date());
+  const btCanvas = document.getElementById('backtest-canvas');
+  if (btCanvas.offsetWidth > 0 && state.historicalPrices.length > 0) {
+    const result = runBacktest(state.historicalPrices);
+    drawBacktestChart(btCanvas, state.historicalPrices, result);
+  }
+});
+</script>
+</body>
+</html>

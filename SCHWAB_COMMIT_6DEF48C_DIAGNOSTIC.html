@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Commit 6def48c Diagnostic Report</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Monaco', 'Courier New', monospace;
+            background: #0f0f12;
+            color: #e0e0e0;
+            padding: 40px;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        h1 {
+            color: #00d4ff;
+            margin-bottom: 10px;
+            font-size: 28px;
+            text-shadow: 0 0 10px rgba(0, 212, 255, 0.3);
+        }
+        h2 {
+            color: #00d4ff;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-size: 20px;
+        }
+        h3 {
+            color: #00aaff;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+        .section {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            border-left: 4px solid #00d4ff;
+            padding: 20px;
+            margin-bottom: 25px;
+            border-radius: 4px;
+        }
+        .success { color: #00ff00; font-weight: bold; }
+        .error { color: #ff4444; font-weight: bold; }
+        .warning { color: #ffaa00; font-weight: bold; }
+        code {
+            background: #1a1a1a;
+            padding: 2px 6px;
+            border-radius: 3px;
+            color: #00ff00;
+            font-size: 12px;
+        }
+        pre {
+            background: #1a1a1a;
+            padding: 15px;
+            border-radius: 4px;
+            overflow-x: auto;
+            margin: 10px 0;
+            border-left: 3px solid #00d4ff;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+            background: #1a1a1a;
+        }
+        th {
+            background: #0f0f12;
+            color: #00d4ff;
+            padding: 10px;
+            text-align: left;
+            font-weight: bold;
+            border-bottom: 2px solid #00d4ff;
+        }
+        td {
+            padding: 8px 10px;
+            border-bottom: 1px solid #333;
+        }
+        tr:hover { background: #222; }
+        .tldr {
+            background: linear-gradient(135deg, #2e1a1a 0%, #3e1616 100%);
+            border-left: 4px solid #ffaa00;
+            padding: 20px;
+            margin-bottom: 25px;
+            border-radius: 4px;
+        }
+        .tldr h3 { color: #ffaa00; }
+        ul { margin-left: 20px; margin-top: 10px; }
+        li { margin-bottom: 8px; }
+        .status-ok { color: #00ff00; }
+        .status-broken { color: #ff4444; }
+        .status-partial { color: #ffaa00; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🔧 Commit 6def48c Diagnostic Report</h1>
+        <div style="color: #888; font-size: 13px; margin-bottom: 30px;">April 8, 2026 — Schwab OAuth & API Parameter Issues</div>
+
+        <!-- TL;DR -->
+        <div class="tldr">
+            <h3>TL;DR for Claude Code</h3>
+            <p><strong>What We Fixed This Morning:</strong></p>
+            <ul>
+                <li>Schwab token expired (7-day cycle)</li>
+                <li>Missing <code>.env</code> file with credentials</li>
+                <li>Wrong ngrok callback URL</li>
+                <li>✅ Solution: Created <code>.env</code>, restarted ngrok, user completed OAuth login</li>
+            </ul>
+            <p style="margin-top: 15px;"><strong>What Broke With 6def48c:</strong></p>
+            <ul>
+                <li>Token path changed → New code looks in <code>raul-trading-system/</code> instead of workspace root</li>
+                <li><span class="error">Schwab API parameters broken</span> → Getting 400 errors on all equity requests</li>
+                <li>Root cause: <code>periodType=month</code> used for minute-level candles (invalid)</li>
+                <li><strong>CULPRIT:</strong> <code>config.py</code> SCHWAB_TIMEFRAMES definition changed (+91 lines)</li>
+            </ul>
+        </div>
+
+        <!-- What We Fixed This Morning -->
+        <div class="section">
+            <h2>✅ What We Fixed This Morning (OAuth)</h2>
+            
+            <h3>Initial Problem</h3>
+            <ul>
+                <li>Schwab token expired after 7 days (April 1 → April 8)</li>
+                <li>Backend couldn't authenticate: <code>"no_token"</code> / 401 Unauthorized</li>
+                <li>Only BTC returning (Coinbase public API), equity data failing</li>
+            </ul>
+
+            <h3>Root Cause</h3>
+            <ul>
+                <li><strong>Missing <code>.env</code> file</strong> — Credentials not loaded</li>
+                <li><strong>Wrong variable names</strong> — Backend expects <code>SCHWAB_APP_KEY</code>, not <code>CLIENT_ID</code></li>
+                <li><strong>Callback URL mismatch</strong> — Localhost doesn't work for Schwab OAuth; needs ngrok</li>
+                <li><strong>Token path confusion</strong> — Different code versions look in different places</li>
+            </ul>
+
+            <h3>Solution Applied</h3>
+            <ol>
+                <li>Created <code>/Users/rk/clawd/sma-outfits-engine/.env</code> with:
+                    <pre>SCHWAB_APP_KEY=zQHTzMc4K194G0ILXKaT3rOLK81lwSrrOTvSom2VadACpK7A
+SCHWAB_APP_SECRET=CFAmNLQ5LKv4cdHuetL6skkYvXvVw98H5RTFzH8kCYwoEoo0aO1gZplA29Svk7Zm
+SCHWAB_CALLBACK_URL=https://hypermodest-gennie-unoppressed.ngrok-free.dev/api/schwab/callback</pre>
+                </li>
+                <li>Restarted ngrok tunnel (kept same URL)</li>
+                <li>User completed OAuth login</li>
+                <li>Token auto-saved to <code>.schwab_token.json</code></li>
+                <li>Schwab authentication working <span class="status-ok">✅</span></li>
+            </ol>
+        </div>
+
+        <!-- What Broke -->
+        <div class="section">
+            <h2>❌ What Broke With Commit 6def48c</h2>
+            
+            <h3>When We Tried It</h3>
+            <ul>
+                <li>Pulled <code>6def48c</code> from <code>https://github.com/rkremers123/raul-trading-system</code></li>
+                <li>Updated 5 files: <code>alerts.py</code>, <code>config.py</code>, <code>engine.py</code>, <code>ranking.py</code>, <code>App.jsx</code></li>
+                <li>Switched backend to <code>/Users/rk/clawd/raul-trading-system/</code></li>
+            </ul>
+
+            <h3>Issue 1: Token Path Changed</h3>
+            <p><strong>Old Code (sma-outfits-engine):</strong></p>
+            <pre>_TOKEN_PATH = Path(__file__).resolve().parent.parent.parent / ".schwab_token.json"
+# Resolves to: /Users/rk/clawd/.schwab_token.json</pre>
+
+            <p style="margin-top: 15px;"><strong>New Code (6def48c):</strong></p>
+            <pre>_TOKEN_PATH = Path(__file__).resolve().parent.parent.parent / ".schwab_token.json"
+# Resolves to: /Users/rk/clawd/raul-trading-system/.schwab_token.json</pre>
+
+            <p style="margin-top: 15px;"><strong>Fix Applied:</strong></p>
+            <pre>cp /Users/rk/clawd/.schwab_token.json /Users/rk/clawd/raul-trading-system/.schwab_token.json</pre>
+
+            <p style="margin-top: 10px;"><strong>Status:</strong> <span class="status-ok">✅</span> Token was found and refreshed</p>
+
+            <h3>Issue 2: Schwab API 400 Bad Request Errors</h3>
+            <p><strong>Error Pattern:</strong></p>
+            <pre>WARNING:backend.app.schwab_fetcher:Schwab API error for TSLL: 400 Client Error: Bad Request for url: 
+https://api.schwabapi.com/marketdata/v1/pricehistory?symbol=TSLL&periodType=month&period=6&frequencyType=minute&frequency=15</pre>
+
+            <p style="margin-top: 15px;"><strong>Analysis:</strong></p>
+            <ul>
+                <li><code>periodType=month</code> is <strong>invalid</strong> for <code>frequencyType=minute</code></li>
+                <li>Schwab requires: minute candles use <code>periodType=day</code> (10-35 days history)</li>
+                <li>Old code had this fixed in timeframe config</li>
+                <li>New code reverted to broken parameters OR changed config structure</li>
+            </ul>
+
+            <p style="margin-top: 15px;"><strong>Key Change in Commit 6def48c:</strong></p>
+            <ul>
+                <li><code>config.py</code> got <strong>+91 lines</strong></li>
+                <li>Likely rewrote SCHWAB_TIMEFRAMES or fetch logic</li>
+                <li>Parameter validation either missing or changed</li>
+            </ul>
+
+            <p style="margin-top: 15px;"><strong>Files to Check:</strong></p>
+            <ol>
+                <li><code>/backend/app/config.py</code> — SCHWAB_TIMEFRAMES definition</li>
+                <li><code>/backend/app/schwab_fetcher.py</code> — _fetch_ohlc() call signature</li>
+                <li><code>/backend/app/engine.py</code> — How it passes timeframes to fetcher</li>
+            </ol>
+        </div>
+
+        <!-- Current Status -->
+        <div class="section">
+            <h2>📊 Current Status</h2>
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th>Backend</th>
+                        <th>Repo</th>
+                        <th>Commit</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Working</strong></td>
+                        <td><code>sma-outfits-engine</code></td>
+                        <td>3e684aa</td>
+                        <td>
+                            <ul style="margin: 0; padding-left: 20px;">
+                                <li><span class="status-ok">✅</span> 27 tickers returning</li>
+                                <li><span class="status-ok">✅</span> Schwab authenticated</li>
+                                <li><span class="status-ok">✅</span> TSLA data complete</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong>Broken</strong></td>
+                        <td><code>raul-trading-system</code></td>
+                        <td>6def48c</td>
+                        <td>
+                            <ul style="margin: 0; padding-left: 20px;">
+                                <li><span class="status-broken">❌</span> Only BTC returning</li>
+                                <li><span class="status-ok">✅</span> Schwab authenticated (token refreshes)</li>
+                                <li><span class="status-broken">❌</span> 400 errors on all equity requests</li>
+                                <li><span class="status-broken">❌</span> Rate limit throttling (35s+ sleeps)</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Action Items -->
+        <div class="section">
+            <h2>🎯 Action Items for Claude Code</h2>
+            
+            <h3>Goal</h3>
+            <p>Debug 6def48c, fix Schwab API parameters, get raul-trading-system working</p>
+
+            <h3>Questions to Investigate</h3>
+            <ol>
+                <li>What changed in <code>config.py</code> SCHWAB_TIMEFRAMES? (Old vs new)</li>
+                <li>Why are minute-level requests using <code>periodType=month</code>?</li>
+                <li>Did <code>schwab_fetcher.py</code> signature change? How is it called from engine/engine.py?</li>
+                <li>Are there new validations that are too strict or backwards?</li>
+            </ol>
+
+            <h3>Test Approach</h3>
+            <ol>
+                <li>Compare working config (sma-outfits-engine) vs broken (6def48c)</li>
+                <li>Run single ticker test: <code>curl -X POST 'http://localhost:8001/api/scan?mode=light&ticker=TSLA'</code></li>
+                <li>Check <code>/tmp/backend.log</code> for exact API call parameters</li>
+                <li>Fix parameter mapping in config.py or schwab_fetcher.py</li>
+                <li>Re-test scan</li>
+            </ol>
+
+            <h3>Timeline</h3>
+            <ul>
+                <li>This morning (Apr 8): OAuth fixed <span class="status-ok">✅</span></li>
+                <li>Now: Identify 6def48c parameter bug</li>
+                <li>Goal: Get raul-trading-system running so Claude Code pushes work properly</li>
+            </ul>
+        </div>
+
+        <!-- Important Files -->
+        <div class="section">
+            <h2>📁 Important Files</h2>
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th>File</th>
+                        <th>Location</th>
+                        <th>Purpose</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>.env</strong></td>
+                        <td><code>/Users/rk/clawd/raul-trading-system/.env</code></td>
+                        <td>Schwab credentials (APP_KEY, APP_SECRET, CALLBACK_URL)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Token</strong></td>
+                        <td><code>/Users/rk/clawd/raul-trading-system/.schwab_token.json</code></td>
+                        <td>Auto-generated after OAuth</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Config</strong></td>
+                        <td><code>/Users/rk/clawd/raul-trading-system/backend/app/config.py</code></td>
+                        <td><span class="error">LIKELY CULPRIT</span> — timeframe parameters</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Fetcher</strong></td>
+                        <td><code>/Users/rk/clawd/raul-trading-system/backend/app/schwab_fetcher.py</code></td>
+                        <td>Makes Schwab API calls</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Working Ref</strong></td>
+                        <td><code>/Users/rk/clawd/sma-outfits-engine/backend/app/config.py</code></td>
+                        <td>Gold standard — compare against this</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Comparison Command -->
+        <div class="section">
+            <h2>🔍 One-Liner Comparison</h2>
+            
+            <p>To see what changed in config.py:</p>
+            <pre>diff -u /Users/rk/clawd/sma-outfits-engine/backend/app/config.py \
+       /Users/rk/clawd/raul-trading-system/backend/app/config.py | grep -A5 -B5 "SCHWAB_TIMEFRAMES\|periodType\|frequencyType"</pre>
+
+            <p style="margin-top: 15px; color: #00ff00;">Good luck! 🚀</p>
+        </div>
+    </div>
+</body>
+</html>

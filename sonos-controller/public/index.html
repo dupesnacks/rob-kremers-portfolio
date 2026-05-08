@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sonos Controller — Rob Kremers</title>
+  <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      min-height: 100vh;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    header {
+      text-align: center;
+      color: white;
+      margin-bottom: 40px;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 8px;
+      text-shadow: 0 2px 10px rgba(0,0,0,0.3);
+    }
+
+    header p {
+      font-size: 1.1rem;
+      opacity: 0.9;
+    }
+
+    .speakers-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 24px;
+      margin-bottom: 40px;
+    }
+
+    .speaker-card {
+      background: white;
+      border-radius: 12px;
+      padding: 24px;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .speaker-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 15px 50px rgba(0,0,0,0.3);
+    }
+
+    .speaker-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 16px;
+      padding-bottom: 12px;
+      border-bottom: 2px solid #f0f0f0;
+    }
+
+    .speaker-name {
+      font-size: 1.3rem;
+      font-weight: 600;
+      color: #333;
+      text-transform: capitalize;
+    }
+
+    .status-badge {
+      padding: 6px 12px;
+      border-radius: 20px;
+      font-size: 0.75rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .status-badge.playing {
+      background: #10b981;
+      color: white;
+    }
+
+    .status-badge.paused {
+      background: #f59e0b;
+      color: white;
+    }
+
+    .status-badge.error {
+      background: #ef4444;
+      color: white;
+    }
+
+    .track-info {
+      margin-bottom: 20px;
+      padding: 12px;
+      background: #f9fafb;
+      border-radius: 8px;
+      min-height: 60px;
+      display: flex;
+      align-items: center;
+    }
+
+    .track-title {
+      font-size: 0.9rem;
+      color: #666;
+      font-style: italic;
+      word-break: break-word;
+    }
+
+    .controls {
+      display: flex;
+      gap: 8px;
+      margin-bottom: 20px;
+      flex-wrap: wrap;
+    }
+
+    button {
+      flex: 1;
+      min-width: 60px;
+      padding: 10px 16px;
+      border: none;
+      border-radius: 8px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s;
+      font-size: 0.9rem;
+    }
+
+    .btn-primary {
+      background: #667eea;
+      color: white;
+    }
+
+    .btn-primary:hover {
+      background: #5568d3;
+      transform: scale(1.02);
+    }
+
+    .btn-primary:active {
+      transform: scale(0.98);
+    }
+
+    .btn-secondary {
+      background: #e5e7eb;
+      color: #333;
+    }
+
+    .btn-secondary:hover {
+      background: #d1d5db;
+    }
+
+    .volume-control {
+      margin-bottom: 16px;
+    }
+
+    .volume-label {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.85rem;
+      margin-bottom: 8px;
+      color: #666;
+    }
+
+    input[type="range"] {
+      width: 100%;
+      height: 6px;
+      border-radius: 3px;
+      background: #e5e7eb;
+      outline: none;
+      -webkit-appearance: none;
+    }
+
+    input[type="range"]::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      appearance: none;
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+      background: #667eea;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+
+    input[type="range"]::-webkit-slider-thumb:hover {
+      background: #5568d3;
+      transform: scale(1.1);
+    }
+
+    input[type="range"]::-moz-range-thumb {
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+      background: #667eea;
+      cursor: pointer;
+      border: none;
+      transition: all 0.2s;
+    }
+
+    input[type="range"]::-moz-range-thumb:hover {
+      background: #5568d3;
+      transform: scale(1.1);
+    }
+
+    .speaker-ip {
+      font-size: 0.75rem;
+      color: #999;
+      margin-top: 8px;
+      font-family: 'Courier New', monospace;
+    }
+
+    .loading {
+      text-align: center;
+      padding: 40px;
+      color: white;
+      font-size: 1.1rem;
+    }
+
+    .error {
+      background: #fee;
+      border: 1px solid #fcc;
+      color: #c33;
+      padding: 16px;
+      border-radius: 8px;
+      margin-bottom: 20px;
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2rem;
+      }
+
+      .speakers-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .controls {
+        flex-direction: column;
+      }
+
+      button {
+        min-width: auto;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div id="root"></div>
+
+  <script type="text/babel">
+    const { useState, useEffect } = React;
+
+    function SonosController() {
+      const [speakers, setSpeakers] = useState({});
+      const [loading, setLoading] = useState(true);
+      const [error, setError] = useState(null);
+
+      // Fetch speaker states
+      const fetchSpeakers = async () => {
+        try {
+          const response = await fetch('/api/speakers');
+          if (!response.ok) throw new Error('Failed to fetch speakers');
+          const data = await response.json();
+          setSpeakers(data);
+          setError(null);
+        } catch (err) {
+          setError(err.message);
+          console.error('Fetch error:', err);
+        } finally {
+          setLoading(false);
+        }
+      };
+
+      // Fetch speakers on mount and set up interval
+      useEffect(() => {
+        fetchSpeakers();
+        const interval = setInterval(fetchSpeakers, 2000);
+        return () => clearInterval(interval);
+      }, []);
+
+      // Send control command
+      const sendCommand = async (name, command, body = null) => {
+        try {
+          const options = {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' }
+          };
+          if (body) options.body = JSON.stringify(body);
+
+          const response = await fetch(`/api/speaker/${name}/${command}`, options);
+          if (!response.ok) throw new Error('Command failed');
+
+          await fetchSpeakers();
+        } catch (err) {
+          console.error('Command error:', err);
+        }
+      };
+
+      // Handle volume change
+      const handleVolume = async (name, value) => {
+        const numValue = parseInt(value);
+        await sendCommand(name, 'volume', { volume: numValue });
+      };
+
+      if (loading) {
+        return <div className="loading">🔊 Initializing Sonos Controller...</div>;
+      }
+
+      return (
+        <div className="container">
+          <header>
+            <h1>🔊 Sonos Controller</h1>
+            <p>Manage all your speakers in one place</p>
+          </header>
+
+          {error && (
+            <div className="error">
+              ⚠️ Error: {error}. Make sure all speakers are powered on and connected.
+            </div>
+          )}
+
+          <div className="speakers-grid">
+            {Object.entries(speakers).map(([name, speaker]) => (
+              <div key={name} className="speaker-card">
+                <div className="speaker-header">
+                  <div className="speaker-name">{speaker.name}</div>
+                  <div className={`status-badge ${speaker.state}`}>
+                    {speaker.state === 'playing' ? '▶️ Playing' : 
+                     speaker.state === 'paused' ? '⏸ Paused' : 
+                     speaker.state === 'error' ? '❌ Error' : '⏹ Stopped'}
+                  </div>
+                </div>
+
+                <div className="track-info">
+                  <div className="track-title">
+                    {speaker.track?.title || speaker.error || 'No track info'}
+                  </div>
+                </div>
+
+                <div className="volume-control">
+                  <div className="volume-label">
+                    <span>Volume</span>
+                    <span>{speaker.volume || 0}%</span>
+                  </div>
+                  <input
+                    type="range"
+                    min="0"
+                    max="100"
+                    value={speaker.volume || 0}
+                    onChange={(e) => handleVolume(name, e.target.value)}
+                  />
+                </div>
+
+                <div className="controls">
+                  <button 
+                    className="btn-secondary"
+                    onClick={() => sendCommand(name, 'previous')}
+                    title="Previous track"
+                  >
+                    ⏮ Prev
+                  </button>
+                  {speaker.playing ? (
+                    <button 
+                      className="btn-primary"
+                      onClick={() => sendCommand(name, 'pause')}
+                    >
+                      ⏸ Pause
+                    </button>
+                  ) : (
+                    <button 
+                      className="btn-primary"
+                      onClick={() => sendCommand(name, 'play')}
+                    >
+                      ▶ Play
+                    </button>
+                  )}
+                  <button 
+                    className="btn-secondary"
+                    onClick={() => sendCommand(name, 'next')}
+                    title="Next track"
+                  >
+                    ⏭ Next
+                  </button>
+                </div>
+
+                <div className="controls">
+                  <button 
+                    className="btn-secondary"
+                    onClick={() => sendCommand(name, speaker.mute ? 'unmute' : 'mute')}
+                  >
+                    {speaker.mute ? '🔇 Unmute' : '🔕 Mute'}
+                  </button>
+                </div>
+
+                <div className="speaker-ip">
+                  {speaker.ip}
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      );
+    }
+
+    ReactDOM.render(<SonosController />, document.getElementById('root'));
+  </script>
+</body>
+</html>

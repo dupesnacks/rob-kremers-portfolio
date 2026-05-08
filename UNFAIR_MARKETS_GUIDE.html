@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unfair Markets Guide</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: #0f0f12;
+            color: #e0e0e0;
+            line-height: 1.6;
+            padding: 40px 20px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 50px;
+            padding-bottom: 30px;
+            border-bottom: 2px solid #2a2a3e;
+        }
+        
+        h1 {
+            font-size: 2.5em;
+            background: linear-gradient(135deg, #00d4ff 0%, #0099ff 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 10px;
+        }
+        
+        .subtitle {
+            color: #999;
+            font-size: 1.1em;
+        }
+        
+        h2 {
+            font-size: 1.8em;
+            color: #00d4ff;
+            margin: 40px 0 20px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #2a2a3e;
+        }
+        
+        h3 {
+            font-size: 1.3em;
+            color: #00d4ff;
+            margin: 30px 0 15px 0;
+        }
+        
+        h4 {
+            font-size: 1.1em;
+            color: #00d4ff;
+            margin: 20px 0 10px 0;
+        }
+        
+        p {
+            margin-bottom: 15px;
+            color: #ccc;
+        }
+        
+        code {
+            background: #1a1a23;
+            padding: 2px 6px;
+            border-radius: 4px;
+            color: #00d4ff;
+            font-family: 'Monaco', 'Courier New', monospace;
+            font-size: 0.95em;
+        }
+        
+        pre {
+            background: #1a1a23;
+            border-left: 3px solid #00d4ff;
+            padding: 15px;
+            border-radius: 4px;
+            overflow-x: auto;
+            margin: 15px 0;
+            color: #00d4ff;
+            font-family: 'Monaco', 'Courier New', monospace;
+            font-size: 0.9em;
+        }
+        
+        ul, ol {
+            margin: 15px 0 15px 30px;
+            color: #ccc;
+        }
+        
+        li {
+            margin-bottom: 8px;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: #1a1a23;
+            border: 1px solid #2a2a3e;
+            border-radius: 4px;
+            margin: 20px 0;
+        }
+        
+        table th {
+            background: #2a2a3e;
+            padding: 12px;
+            text-align: left;
+            color: #00d4ff;
+            font-weight: 600;
+            border-bottom: 1px solid #2a2a3e;
+        }
+        
+        table td {
+            padding: 10px 12px;
+            border-bottom: 1px solid #2a2a3e;
+            color: #ccc;
+        }
+        
+        table tbody tr:hover {
+            background: #252530;
+        }
+        
+        .box {
+            background: #1a1a23;
+            border-left: 3px solid #00d4ff;
+            padding: 20px;
+            border-radius: 4px;
+            margin: 20px 0;
+        }
+        
+        .box strong {
+            color: #00d4ff;
+        }
+        
+        .warning {
+            background: #1a1a23;
+            border-left: 3px solid #ff4444;
+            padding: 20px;
+            border-radius: 4px;
+            margin: 20px 0;
+        }
+        
+        .warning strong {
+            color: #ff4444;
+        }
+        
+        .success {
+            background: #1a1a23;
+            border-left: 3px solid #00d4ff;
+            padding: 20px;
+            border-radius: 4px;
+            margin: 20px 0;
+        }
+        
+        .success strong {
+            color: #00d4ff;
+        }
+        
+        .toc {
+            background: #1a1a23;
+            border: 1px solid #2a2a3e;
+            padding: 20px;
+            border-radius: 4px;
+            margin: 30px 0;
+        }
+        
+        .toc h3 {
+            margin-top: 0;
+        }
+        
+        .toc a {
+            color: #00d4ff;
+            text-decoration: none;
+        }
+        
+        .toc a:hover {
+            text-decoration: underline;
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            padding-top: 20px;
+            border-top: 1px solid #2a2a3e;
+            color: #666;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📊 Unfair Markets Guide</h1>
+            <p class="subtitle">Scan & Dashboard Operations Reference</p>
+            <p class="subtitle">For rebuilding context fast when memory is lost</p>
+        </header>
+        
+        <div class="toc">
+            <h3>Quick Navigation</h3>
+            <ul>
+                <li><a href="#setup">Quick Setup Reference</a></li>
+                <li><a href="#running">Running Scans</a></li>
+                <li><a href="#dashboard">Updating the Dashboard</a></li>
+                <li><a href="#data">Key Data Structures</a></li>
+                <li><a href="#rules">Interpretation Rules</a></li>
+                <li><a href="#workflows">Common Workflows</a></li>
+                <li><a href="#notes">Critical Notes</a></li>
+            </ul>
+        </div>
+        
+        <section id="setup">
+            <h2>Quick Setup Reference</h2>
+            
+            <h3>Core Endpoints</h3>
+            <table>
+                <tr>
+                    <th>Component</th>
+                    <th>Location/URL</th>
+                </tr>
+                <tr>
+                    <td>Backend Engine</td>
+                    <td><code>http://localhost:8001</code> (runs on Mac mini)</td>
+                </tr>
+                <tr>
+                    <td>Dashboard File</td>
+                    <td><code>/Users/rk/clawd/rob-kremers-portfolio/unfairmarket-live/index.html</code></td>
+                </tr>
+                <tr>
+                    <td>Dashboard URL (Live)</td>
+                    <td><code>https://www.robkremers.com/unfairmarket-live</code></td>
+                </tr>
+                <tr>
+                    <td>Git Repo</td>
+                    <td><code>/Users/rk/clawd/</code> (main workspace, push protected)</td>
+                </tr>
+                <tr>
+                    <td>Vercel Token</td>
+                    <td>Stored in deploy commands (direct CLI auth)</td>
+                </tr>
+            </table>
+        </section>
+        
+        <section id="running">
+            <h2>Running Scans</h2>
+            
+            <h3>Light Scan (23 Tickers — Default)</h3>
+            <pre>curl -s -X POST 'http://localhost:8001/api/scan?mode=light'
+# Response: {"status": "started", "mode": "light"}
+# Wait 2-3 minutes for completion</pre>
+            
+            <h3>Full Scan (79 Tickers)</h3>
+            <pre>curl -s -X POST 'http://localhost:8001/api/scan?mode=full'
+# Wait 5-9 minutes for completion (much longer)</pre>
+            
+            <h3>Check Scan Status</h3>
+            <pre>curl -s 'http://localhost:8001/api/scan/status'
+# Shows: in_progress: true/false, progress with ticker/timeframe</pre>
+            
+            <h3>Fetch Results (After Scan Completes)</h3>
+            <pre>curl -s 'http://localhost:8001/api/tickers'
+# Returns: JSON array of all scanned tickers with weights, L/S ratios, key SMAs
+
+curl -s 'http://localhost:8001/api/btc'
+# Returns: BTC specific endpoint with price, verdict, long/short weights</pre>
+            
+            <h3>Extract Specific Tickers</h3>
+            <pre>curl -s 'http://localhost:8001/api/tickers' | jq '[.[] | select(.ticker | test("^TSLA|^TSLL|^TSLQ"))]'
+# Returns: TSLA family data only</pre>
+        </section>
+        
+        <section id="dashboard">
+            <h2>Updating the Dashboard</h2>
+            
+            <h3>Step 1: Get Fresh Data</h3>
+            <pre>curl -s 'http://localhost:8001/api/tickers' > /tmp/tickers.json
+curl -s 'http://localhost:8001/api/btc' > /tmp/btc.json</pre>
+            
+            <h3>Step 2: Extract Key Metrics</h3>
+            <pre># Top 23 tickers (already formatted in JSON)
+jq '.' /tmp/tickers.json
+
+# BTC summary
+jq '.price, .verdict, .long_weight, .short_weight' /tmp/btc.json</pre>
+            
+            <h3>Step 3: Edit HTML File</h3>
+            <p>Open <code>/Users/rk/clawd/rob-kremers-portfolio/unfairmarket-live/index.html</code></p>
+            <p><strong>Five sections to update:</strong></p>
+            <ol>
+                <li><strong>Timestamp:</strong> Search <code>Last updated:</code> → update to current date/time in PST</li>
+                <li><strong>BTC Row:</strong> Find Bitcoin table row → update <code>$price</code>, <code>weight</code>, <code>L/S ratio</code>, <code>verdict</code></li>
+                <li><strong>BTC Analysis:</strong> Update analysis paragraph with narrative + key SMA levels</li>
+                <li><strong>Ticker Data Array:</strong> <code>window.TICKERS_DATA = [...]</code> → paste fresh JSON from <code>/tmp/tickers.json</code></li>
+                <li><strong>Analysis Box:</strong> Update "Overall Institutional Positioning" with fresh interpretation</li>
+            </ol>
+            
+            <h3>Step 4: Commit & Deploy</h3>
+            <pre>cd /Users/rk/clawd
+git add -A
+git commit -m "Scan refresh - April 6, 2026 12:39 PM PDT (message describing change)"
+vercel deploy --prod --yes --token [REDACTED]</pre>
+            
+            <div class="success">
+                <strong>✅ Deploy takes ~30 seconds.</strong> Wait for "Aliased: https://www.robkremers.com" confirmation in terminal output.
+            </div>
+        </section>
+        
+        <section id="data">
+            <h2>Key Data Structures</h2>
+            
+            <h3>Ticker JSON Format</h3>
+            <pre>{
+  "rank": 1,
+  "ticker": "AAPU",
+  "total": 961.7,           // Total weight
+  "long": 568.7,            // Long weight
+  "short": 393.0,           // Short weight
+  "ls_ratio": 2.03,         // Long/Short ratio
+  "dominant_outfit": "AN (22s)",  // SMA cluster
+  "slope": "Rising",        // Momentum direction
+  "bias": "Bullish",        // Overall verdict
+  "key_smas": "MA555, MA111, MA244, MA222, MA444"  // Key support/resistance
+}</pre>
+            
+            <h3>BTC Endpoint Format</h3>
+            <pre>{
+  "price": 69756.02,
+  "verdict": "Bullish",
+  "long_weight": 62.5,
+  "short_weight": 4.0,
+  "dominant_outfit": "Base 2/NVDA",
+  "top_hits": [...]  // Key SMA levels with deltas
+}</pre>
+        </section>
+        
+        <section id="rules">
+            <h2>Interpretation Rules (Quick Reference)</h2>
+            
+            <table>
+                <tr>
+                    <th>Metric</th>
+                    <th>What It Means</th>
+                    <th>Action</th>
+                </tr>
+                <tr>
+                    <td><strong>Weight &gt;500w</strong></td>
+                    <td>Extreme conviction</td>
+                    <td>Track closely, likely to move fast</td>
+                </tr>
+                <tr>
+                    <td><strong>L/S &gt; 3.0x</strong></td>
+                    <td>Bullish aggression</td>
+                    <td>Buy dips, resistance levels key</td>
+                </tr>
+                <tr>
+                    <td><strong>L/S &lt; 0.5x</strong></td>
+                    <td>Bearish aggression</td>
+                    <td>Watch for liquidation cascade</td>
+                </tr>
+                <tr>
+                    <td><strong>L/S = 1.0x</strong></td>
+                    <td>Balanced/hedged</td>
+                    <td>Profit-taking or uncertainty</td>
+                </tr>
+                <tr>
+                    <td><strong>Rank #1-5</strong></td>
+                    <td>Top institutional bets</td>
+                    <td>Core exposure, likely to hold</td>
+                </tr>
+                <tr>
+                    <td><strong>Dominant Outfit</strong></td>
+                    <td>Which SMA cluster</td>
+                    <td>Key support/resistance at those periods</td>
+                </tr>
+                <tr>
+                    <td><strong>Slope: Rising</strong></td>
+                    <td>Momentum up</td>
+                    <td>Institutions accumulating</td>
+                </tr>
+                <tr>
+                    <td><strong>Slope: Falling</strong></td>
+                    <td>Momentum down</td>
+                    <td>Institutions distributing</td>
+                </tr>
+            </table>
+        </section>
+        
+        <section id="workflows">
+            <h2>Common Workflows</h2>
+            
+            <h3>"Update with fresh scan results"</h3>
+            <ol>
+                <li><code>curl -X POST 'http://localhost:8001/api/scan?mode=light'</code> (start scan)</li>
+                <li>Wait 2-3 minutes</li>
+                <li><code>curl 'http://localhost:8001/api/tickers' > /tmp/tickers.json</code> (fetch)</li>
+                <li>Extract key data, update HTML file (see Step 3 above)</li>
+                <li><code>git commit</code> + <code>vercel deploy</code> (deploy)</li>
+            </ol>
+            
+            <h3>"Check current BTC status"</h3>
+            <ol>
+                <li><code>curl 'http://localhost:8001/api/btc'</code> (no scan needed, uses last scan results)</li>
+                <li>Extract price, verdict, weights</li>
+                <li>Share raw JSON if detailed analysis needed</li>
+            </ol>
+            
+            <h3>"Track specific ticker (e.g., TSLA family)"</h3>
+            <ol>
+                <li><code>curl 'http://localhost:8001/api/tickers' | jq '[.[] | select(.ticker | test("^TSLA"))]'</code></li>
+                <li>Shows all TSLA tickers (light scan has ~3, full scan has 5)</li>
+            </ol>
+        </section>
+        
+        <section id="notes">
+            <h2>Critical Notes</h2>
+            
+            <div class="warning">
+                <h3>❌ Do NOT:</h3>
+                <ul>
+                    <li>Edit dashboard directly via Vercel UI (changes revert on next deploy)</li>
+                    <li>Forget to <code>git commit</code> before deploying (old code redeploys)</li>
+                    <li>Run full scan unless needed (takes 5-9 minutes vs light 2-3)</li>
+                    <li>Deploy without fresh <code>git add/commit</code> (GitHub version is old)</li>
+                </ul>
+            </div>
+            
+            <div class="success">
+                <h3>✅ Always:</h3>
+                <ul>
+                    <li>Check <code>curl 'http://localhost:8001/api/scan/status'</code> before fetching (ensure scan finished)</li>
+                    <li>Keep <code>/tmp/tickers.json</code> and <code>/tmp/btc.json</code> as backups</li>
+                    <li>Update timestamp to exact time you ran scan (for clarity)</li>
+                    <li>Maintain consistent narrative style in analysis paragraphs (factual, pattern-focused, conviction-based)</li>
+                    <li>Verify Vercel deploy with "Aliased: https://www.robkremers.com" message</li>
+                </ul>
+            </div>
+            
+            <div class="box">
+                <strong>Context Rebuild Time:</strong> ~3-5 minutes using this guide. Share it with me if context is lost.
+            </div>
+        </section>
+        
+        <footer>
+            <p>Generated: April 6, 2026</p>
+            <p>For use with Unfair Markets trading system | Institutional positioning analysis dashboard</p>
+            <p>Keep this file in your workspace root: <code>/Users/rk/clawd/</code></p>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,69 @@
+# Reddit Analysis: Picky Eater Apps - Comments & Patterns
+
+## THREAD 1: PickyPal (r/PickyEaters)
+- **Post Score:** 169 upvotes, 97% upvote ratio ✅ HIGH ENGAGEMENT
+- **Comments:** 40 total
+- **Visible comment from BlazySusan0:** 
+  - "Same here! My son is 10 and autistic with a lot of sensory issues with food. We have a very limited amount of ingredients he will eat and I'm always trying to find new recipes..."
+  - **Pattern:** Autistic + sensory issues overlap, recipe discovery is a pain point
+
+## THREAD 2: Snack'd (r/PickyEaters) 
+- **Post Score:** 0 upvotes, 35% upvote ratio ❌ POOR RECEPTION
+- **Comments:** 4 total (sparse)
+- **Key comment from fairlycuteblonde:**
+  - "you had me until you said AI😔"
+  - **Pattern:** AI meal planning turns people OFF. Skepticism about AI organizing family food.
+- **Snack'd response:**
+  - "We are human-rooted... partnering with nutritionists and chefs... AI basically helps organize preferences and choose recipes"
+  - **Pattern:** Team had to defend AI positioning. Generic positioning ("allergies, picky eaters, dietary restrictions") didn't resonate.
+
+## THREAD 3: DishLens (r/iosapps)
+- **Post Score:** 4 upvotes, 75% upvote ratio (niche positive)
+- **Comments:** 1 visible ("Congratulations, well done!")
+- **Positioning:** Visual preview of restaurant food (adult focus, not kids)
+
+## KEY INSIGHTS FOR SENSORY GALAXY
+
+### ❌ What DOESN'T Work
+1. **Generic "picky eater" positioning** - Too broad, no emotional hook (Snack'd failed)
+2. **AI meal planning** - Triggers skepticism ("you had me until you said AI")
+3. **Focus on logistics** (grocery lists, family eating together) - Functional, boring
+4. **Corporate tone** - Snack'd felt like corporate wellness product
+
+### ✅ What DOES Work
+1. **Founder vulnerability + personal story** - PickyPal nailed this (169 upvotes)
+2. **Science-backed METHOD (not just tracking)** - Parents want why, not just how
+3. **Handling special needs** - Autism + sensory combo is REAL pain point (not mentioned by competitors)
+4. **Progress tracking that's emotional, not just data** - "Helped my kid overcome anxiety"
+5. **Kids as the focus** - Gamification, characters, progression (not adult meal planning)
+
+### 🎯 Sensory Galaxy's Unfair Advantage Over Competitors
+- **SOS method explicitly** (PickyPal vague on methodology)
+- **Gamification (explorers + planets)** - Makes it FUN, not a chore
+- **Visual SOS phases (LOOK→TOUCH→SMELL→LICK→TASTE)** - Shows the SCIENCE kids can see
+- **Real beta case:** Celiac daughter went from anxious → excited to try foods (XP/progression loop works)
+- **Handles dietary complexity** - Not just "picky," also allergies/celiac/sensory + autism
+- **Anxiety removal** = core unlock (competitors focus on eating more, not why kids refuse)
+
+### 🚨 Risks to Avoid
+- **Don't lead with AI** - Mention "science-backed" instead of "AI recommends"
+- **Don't generic position** - Be specific: "For kids with sensory sensitivity + selective eating"
+- **Don't focus on features** - Focus on: anxiety removal → confidence building → progress
+- **Don't forget the METHOD** - The SOS approach IS the product, app is just the delivery
+
+### 📊 Reddit Post Strategy (r/PickyEaters)
+Use PickyPal framework + your actual beta story:
+1. Open with vulnerability (daughter's anxiety around new foods + celiac constraint)
+2. Share the AHA moment (learned about SOS approach)
+3. Show the shift (gamification made her WANT to progress)
+4. Positioning: "We built an app that gamified SOS for kids, not adults"
+5. CTA: Beta testing for more families with sensory/selective eating struggles
+
+---
+
+## NEXT ACTIONS
+1. ✅ Extract full comment threads (done above)
+2. Extract sentiment patterns from comments
+3. Map feature requests across all threads
+4. Surface top 5 "must-haves" for Sensory Galaxy design
+5. Draft Reddit post using vulnerability ladder framework

@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arogeva - Rork AI App Prompt</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #f9f9f9;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        h1 { color: #1a5f3d; margin-bottom: 10px; }
+        h2 { color: #2d7a52; margin-top: 30px; border-left: 4px solid #1a5f3d; padding-left: 12px; }
+        h3 { color: #3d8f62; margin-top: 20px; }
+        .spec { background: #f0f7f4; padding: 15px; border-radius: 5px; margin: 15px 0; border-left: 3px solid #1a5f3d; }
+        .priority { font-weight: bold; padding: 3px 8px; border-radius: 3px; display: inline-block; margin-right: 10px; }
+        .high { background: #ffe8e8; color: #c33; }
+        .medium { background: #fff8e8; color: #c90; }
+        .low { background: #e8f8ff; color: #039; }
+        ul { margin: 10px 0; padding-left: 20px; }
+        li { margin: 8px 0; }
+        code { background: #f4f4f4; padding: 2px 6px; border-radius: 3px; font-family: 'Monaco', monospace; }
+        .feature { background: #f0f9f6; padding: 12px; margin: 10px 0; border-radius: 4px; }
+        table { width: 100%; border-collapse: collapse; margin: 15px 0; }
+        th, td { border: 1px solid #ddd; padding: 12px; text-align: left; }
+        th { background: #2d7a52; color: white; }
+        tr:nth-child(even) { background: #f9f9f9; }
+    </style>
+</head>
+<body>
+<div class="container">
+
+<h1>🌿 Arogeva – Nutrition Intelligence Platform</h1>
+<p><strong>Rork AI Prompt for React Native App Development</strong></p>
+<p><em>Build a multi-market, condition-based nutrition platform that provides clinical nutrition guidance—not generic calorie counting.</em></p>
+
+<hr>
+
+<h2>📋 Project Overview</h2>
+
+<div class="spec">
+    <strong>App Name:</strong> Arogeva™<br>
+    <strong>Founder/Expert:</strong> Mitali Kapila, MS, RD, CLT (20+ years clinical dietitian)<br>
+    <strong>Platforms:</strong> iOS + Android (React Native)<br>
+    <strong>Markets:</strong> Phase 1: India/GCC diaspora | Phase 2: US market<br>
+    <strong>Core Value Prop:</strong> Personalized nutrition protocols based on actual health conditions—not calories, but clinical wisdom
+</div>
+
+<h2>🎯 The Core Concept</h2>
+<p><strong>Unlike calorie-counting apps, Arogeva answers:</strong></p>
+<ul>
+    <li>"What should I eat if I have PCOS + gut issues?" → Condition-specific protocols from Mitali</li>
+    <li>"Is this restaurant meal safe for my condition?" → Smart restaurant menu filtering via API</li>
+    <li>"What should I shop for?" → Personalized grocery lists tied to protocols</li>
+    <li>"What do my lab values mean?" → Functional medicine interpretation linked to food choices</li>
+    <li>"How do my conditions connect?" → Shows interactions (e.g., gut health impacts hormones)</li>
+</ul>
+
+<h2>✅ Current Design (Preserve These)</h2>
+<p>The founder has already wireframed a solid UX. Build from this:</p>
+
+<div class="feature">
+    <strong>🎯 Onboarding Flow (Multi-Step)</strong><br>
+    Captures: Demographics → Activity Level → Diet Type → Life Stage → Regional Cuisine → Primary Condition → Secondary Conditions → Privacy agreement → WhatsApp opt-in
+</div>
+
+<div class="feature">
+    <strong>🏥 Condition Library (Supported)</strong><br>
+    12+ conditions: Anemia, Autoimmune, Diabetes, Bone Health, Brain & Focus, Fertility, Gut Health, Heart Health, PCOS, Perimenopause, Skin & Hair, Stress/Burnout
+</div>
+
+<div class="feature">
+    <strong>📊 Dashboard</strong><br>
+    Displays condition "score cards" (e.g., "Gut Health: Needs Attention 10/15", "Active 10/15") with red/yellow indicators
+</div>
+
+<div class="feature">
+    <strong>👨‍⚕️ Mitali's Voice</strong><br>
+    All content branded as from Mitali (credentials + photo visible). Include sections: "Mitali's Reading" (clinical insight) + "Mitali's First Prescription" (protocol)
+</div>
+
+<div class="feature">
+    <strong>🔒 Privacy First</strong><br>
+    Show on every relevant screen: User data is encrypted, never sold, transparent what's collected. WhatsApp notifications optional.
+</div>
+
+<h2>⚡ Core Features to Build</h2>
+
+<h3><span class="priority high">HIGH PRIORITY</span> 1. Condition Interconnection Logic</h3>
+<p><strong>Why:</strong> Functional medicine recognizes conditions interact. PCOS + Gut Health needs different guidance than each alone.</p>
+<div class="spec">
+    <strong>Implementation:</strong><br>
+    • Create a Condition relation graph (define which conditions relate to which)<br>
+    • When user selects 2+ conditions, show how they interact<br>
+    • Router shows combined protocol, not separate ones<br>
+    <strong>Example:</strong> User picks Gut Health + Brain & Focus → App shows: "Leaky gut impacts cognition. This protocol addresses both."<br>
+    <strong>Data Structure:</strong> Each Condition has array of related_conditions and a combined_protocol_id
+</div>
+
+<h3><span class="priority high">HIGH PRIORITY</span> 2. Personalized Protocol System</h3>
+<p><strong>Why:</strong> This is Mitali's IP. Needs to scale without losing her voice.</p>
+<div class="spec">
+    <strong>Implementation:</strong><br>
+    • Admin panel (Mitali-only): Create/edit protocols with steps, duration, recipes<br>
+    • Protocol Schema: name, description, phases (Phase 1: Elimination, Phase 2: Reintro, etc.), duration_days, recipes[], supplements[], foods_to_avoid[], clinician_notes<br>
+    • Smart assignment: Based on user profile (age, diet type, conditions, activity), recommend 1 primary protocol<br>
+    • User can view: Protocol timeline, phase-specific recipes, what to expect<br>
+    <strong>Example Protocol:</strong><br>
+    &nbsp;&nbsp;Name: "Gut Reset for Inflammation"<br>
+    &nbsp;&nbsp;Duration: 30 days<br>
+    &nbsp;&nbsp;Phase 1 (Days 1–7): Khichdi fast + bone broth<br>
+    &nbsp;&nbsp;Phase 2 (Days 8–21): Introduce cooked veggies, ghee<br>
+    &nbsp;&nbsp;Phase 3 (Days 22–30): Add proteins, legumes gradually
+</div>
+
+<h3><span class="priority high">HIGH PRIORITY</span> 3. Regional Recipe Library (India-First)</h3>
+<p><strong>Why:</strong> India/GCC version needs 180+ regional recipes curated by Mitali.</p>
+<div class="spec">
+    <strong>Implementation:</strong><br>
+    • Recipe Schema: name, cuisine (South Indian, North Indian, Bengali, etc.), ingredients, method, nutrition_facts, condition_tags[], prep_time_min, difficulty<br>
+    • Smart Filtering: By condition + diet type + cuisine preference + prep time + dietary restrictions<br>
+    • Regional Variants: Store recipe base + variants (e.g., "Khichdi" has Gujarati, Tamil, Bengali versions)<br>
+    • Integration: Recipes appear in protocols, can be favorited, searchable<br>
+    <strong>Content Requirements:</strong><br>
+    &nbsp;&nbsp;— 180 base recipes across 8 Indian cuisines<br>
+    &nbsp;&nbsp;— Each tagged with 1–3 condition categories<br>
+    &nbsp;&nbsp;— Include nutrition breakdown (macros, key micronutrients)<br>
+    &nbsp;&nbsp;— Video links optional (YouTube embeds for demo)<br>
+    <strong>Data Input:</strong> CSV or admin panel for Mitali to add/edit recipes
+</div>
+
+<h3><span class="priority medium">MEDIUM PRIORITY</span> 4. Travel Meal Navigation (API Integration)</h3>
+<p><strong>Why:</strong> Users eating out need real-time guidance. Zomato (India) + Uber Eats/GrubHub (US) integration.</p>
+<div class="spec">
+    <strong>Implementation:</strong><br>
+    • Feature: "Eat Out Safely" tab<br>
+    • User enters: Current location + restaurant name (or picks from map)<br>
+    • App fetches menu via API + shows:<br>
+    &nbsp;&nbsp;— "Safe Meals" (green): Align with their condition<br>
+    &nbsp;&nbsp;— "Modify These" (yellow): Safe with adjustments<br>
+    &nbsp;&nbsp;— "Avoid" (red): Conflicting with condition<br>
+    • Tap meal → see nutrition facts + condition-specific notes ("High in lectins—avoid if autoimmune")<br>
+    <strong>APIs Required:</strong><br>
+    &nbsp;&nbsp;— Zomato API (India): Restaurant menu data<br>
+    &nbsp;&nbsp;— Google Places API: Geolocation + restaurant discovery<br>
+    &nbsp;&nbsp;— Nutritionix or USDA API: Nutrition data fallback<br>
+    <strong>Phase 2 Launch:</strong> Start with Zomato; add US APIs in Phase 3
+</div>
+
+<h3><span class="priority medium">MEDIUM PRIORITY</span> 5. Meal Logging & Condition Scoring</h3>
+<p><strong>Why:</strong> Engagement driver. Users need to see progress toward better condition scores.</p>
+<div class="spec">
+    <strong>Implementation:</strong><br>
+    • Daily Dashboard: Shows today's score, trends, quick actions<br>
+    • Logging: User can log meals (free-text or photo upload) + symptoms (bloating? energy? skin?)<br>
+    • Scoring Algorithm:<br>
+    &nbsp;&nbsp;— Score = 0–15 per condition<br>
+    &nbsp;&nbsp;— Based on: Meals logged (alignment %), symptoms reported, protocol compliance<br>
+    &nbsp;&nbsp;— Update daily; show trend graph (last 30 days)<br>
+    • Motivation: "Your Gut Health improved 3 points this week! Keep going."<br>
+    <strong>Tech:</strong> Store meal_logs + symptom_logs with timestamps; compute scores daily
+</div>
+
+<h3><span class="priority medium">MEDIUM PRIORITY</span> 6. Lab Value Interpretation</h3>
+<p><strong>Why:</strong> Clinical credibility. Users upload bloodwork → app explains what it means for their conditions.</p>
+<div class="spec">
+    <strong>Implementation:</strong><br>
+    • Feature: "My Labs" section<br>
+    • User uploads: Lab report (PDF/photo) or enters values manually<br>
+    • App recognizes key markers: Hemoglobin, ferritin, glucose, HbA1C, TSH, hormone panels, gut markers (zonulin, etc.)<br>
+    • Shows Interpretation:<br>
+    &nbsp;&nbsp;— "Your ferritin is low (12 ng/mL). This is common with your Anemia. Follow the Anemia protocol recipe list—prioritize [iron-rich foods]."<br>
+    • Safe guardrail: Always include "Discuss with your doctor" + no direct diagnosis<br>
+    <strong>Data Setup:</strong> Define 10–15 key lab markers; map each to condition-specific advice + recipe recommendations<br>
+    <strong>Phase 2 Feature:</strong> Can add this after MVP if needed
+</div>
+
+<h3><span class="priority low">LOW PRIORITY</span> 7. Notifications & Daily Lessons</h3>
+<p><strong>Why:</strong> Re-engagement + education. Users get daily nudges + micro-learning.</p>
+<div class="spec">
+    <strong>Implementation:</strong><br>
+    • WhatsApp Notifications: Morning reminder with protocol tip (user opt-in during onboarding)<br>
+    • Daily Lesson: Pop-up or tab showing Mitali's clinical insight (e.g., "Why fermented foods heal the gut")<br>
+    • Could be: Text + optional YouTube video link<br>
+    <strong>Content Management:</strong> Admin panel for Mitali to author lessons<br>
+    <strong>Phase 1:</strong> Manual WhatsApp messages; Phase 2: Automate via Twilio/WhatsApp Business API
+</div>
+
+<h3><span class="priority low">LOW PRIORITY</span> 8. Multi-Language Support</h3>
+<p><strong>Why:</strong> India market includes Hindi, Tamil, Telugu speakers. Lower-literacy users benefit from audio.</p>
+<div class="spec">
+    <strong>Implementation:</strong><br>
+    • i18n setup: English + Hindi (Phase 2)<br>
+    • Key strings: Condition names, recipe titles, protocol phases, notifications<br>
+    • Voice: Record Mitali reading key lessons in Hindi (optional, high-touch)<br>
+    <strong>Phase 2+:</strong> Add Tamil, Telugu if data shows demand
+</div>
+
+<h2>🏗️ Technical Architecture (React Native)</h2>
+
+<table>
+    <tr>
+        <th>Layer</th>
+        <th>Requirements</th>
+        <th>Notes</th>
+    </tr>
+    <tr>
+        <td><strong>UI/Navigation</strong></td>
+        <td>React Navigation (Tab-based: Home, Protocols, Recipes, Journal, Profile)</td>
+        <td>Keep visual hierarchy simple. Dark teal theme (#1a5f3d) + white text for readability</td>
+    </tr>
+    <tr>
+        <td><strong>State Management</strong></td>
+        <td>Redux or Context API for user profile, conditions, meal logs, scores</td>
+        <td>User session persists across app restart</td>
+    </tr>
+    <tr>
+        <td><strong>Backend/Database</strong></td>
+        <td>Firebase (Firestore + Auth) or custom Node.js + PostgreSQL</td>
+        <td>User data encrypted at rest. Compliance with India GDPR (upcoming)</td>
+    </tr>
+    <tr>
+        <td><strong>API Integrations</strong></td>
+        <td>Zomato API, Google Places, Twilio/WhatsApp (for notifications)</td>
+        <td>Phase 1: Optional; Phase 2+: Full integration</td>
+    </tr>
+    <tr>
+        <td><strong>Photo/Upload</strong></td>
+        <td>React Native Image Picker + Firebase Cloud Storage</td>
+        <td>For lab reports, meal photos (optional feature)</td>
+    </tr>
+    <tr>
+        <td><strong>Analytics</strong></td>
+        <td>Firebase Analytics or custom event tracking</td>
+        <td>Track onboarding completion, protocol adoption, recipe views, score trends</td>
+    </tr>
+</table>
+
+<h2>📊 Data Models (Implement These)</h2>
+
+<div class="spec">
+    <strong>User Profile:</strong><br>
+    <code>{ id, name, age, gender, diet_type (vegan/veg/non-veg), activity_level, region, primary_condition, secondary_conditions[], language, whatsapp_opt_in }</code><br><br>
+    <strong>Condition:</strong><br>
+    <code>{ id, name, description, related_conditions[], key_foods[], foods_to_avoid[] }</code><br><br>
+    <strong>Protocol:</strong><br>
+    <code>{ id, name, description, condition_ids[], phases[{ name, days, description, recipes[], supplements[] }], version }</code><br><br>
+    <strong>Recipe:</strong><br>
+    <code>{ id, name, cuisine, ingredients[], method, prep_time, cook_time, servings, nutrition{ calories, protein, carbs, fat, fiber }, condition_tags[], difficulty }</code><br><br>
+    <strong>MealLog:</strong><br>
+    <code>{ id, user_id, date, meals[{ recipe_id, quantity }], symptoms, notes }</code><br><br>
+    <strong>ConditionScore:</strong><br>
+    <code>{ id, user_id, condition_id, date, score (0–15), factors{ meal_alignment%, symptom_severity, protocol_compliance% } }</code>
+</div>
+
+<h2>🚀 Launch Phases</h2>
+
+<h3>Phase 1 (MVP – India Market)</h3>
+<ul>
+    <li>✅ Onboarding: Demographics + Conditions</li>
+    <li>✅ Mitali's Protocols: 5–10 core protocols (Gut Reset, Anemia Protocol, PCOS Protocol, etc.)</li>
+    <li>✅ Recipe Library: 180 regional recipes filtered by condition + diet + cuisine</li>
+    <li>✅ Dashboard: Condition score cards, trends</li>
+    <li>✅ User Profile: Edit conditions, preferences</li>
+    <li>✅ Privacy: Data encryption, terms, WhatsApp opt-in</li>
+    <li>⏳ Monetization: Free tier (all features)</li>
+</ul>
+
+<h3>Phase 2 (Post-Launch – India Enhancement)</h3>
+<ul>
+    <li>🔄 Condition Interconnection: Show protocol adjustments for multi-condition users</li>
+    <li>🍽️ Zomato Integration: "Eat Out Safely" feature</li>
+    <li>🧪 Lab Interpreter: Upload/enter lab values → get condition-specific guidance</li>
+    <li>📱 Daily Lessons: Mitali's micro-content (text + optional video)</li>
+    <li>📊 Analytics: Track what's working, what isn't</li>
+</ul>
+
+<h3>Phase 3 (US Launch)</h3>
+<ul>
+    <li>🗽 Localize: US cuisine, FDA-standard nutrition facts, US restaurant APIs (Uber Eats, GrubHub)</li>
+    <li>📚 Recipe Reset: 100+ US-centric recipes + diaspora variants</li>
+    <li>💰 Monetization: Free tier + Pro tier (1:1 Mitali Q&A, advanced lab insights)</li>
+</ul>
+
+<h3>Phase 4 (GCC Market)</h3>
+<ul>
+    <li>🌍 Regional Setup: Halal certification, local ingredient swaps</li>
+    <li>✈️ Expat Protocols: Jet lag, stress, diet transition guidance</li>
+</ul>
+
+<h2>📌 Key Build Instructions for Rork</h2>
+
+<p><strong>Generate a React Native app with the following structure:</strong></p>
+
+<ul>
+    <li><strong>Tab Navigation (5 tabs):</strong>
+        <ul>
+            <li><strong>Home:</strong> Dashboard with condition score cards, daily lesson, quick actions</li>
+            <li><strong>Protocols:</strong> List of available protocols + user's current protocol with phase timeline</li>
+            <li><strong>Recipes:</strong> Searchable/filterable recipe library by condition, cuisine, prep time, diet type</li>
+            <li><strong>Journal:</strong> Daily meal logging + symptom tracking + score trends (30-day graph)</li>
+            <li><strong>Profile:</strong> User info, conditions, preferences, privacy settings, logout</li>
+        </ul>
+    </li>
+    <li><strong>Onboarding Screen (Pre-Login):</strong> Multi-step form capturing demographics, conditions, diet type, region, WhatsApp opt-in
+    </li>
+    <li><strong>Authentication:</strong> Email/phone-based signup; password optional if using phone verification</li>
+    <li><strong>Data Persistence:</strong> All user data stored encrypted; survives app restart</li>
+    <li><strong>Styling:</strong> Dark teal theme (#1a5f3d), white text, accent color cyan (#00d4d4), clean minimal design</li>
+    <li><strong>Typography:</strong> Large, readable fonts; high contrast for accessibility</li>
+</ul>
+
+<h2>🎨 UI/UX Specifications</h2>
+
+<table>
+    <tr>
+        <th>Screen</th>
+        <th>Key Elements</th>
+    </tr>
+    <tr>
+        <td><strong>Onboarding</strong></td>
+        <td>Step 1: Name, Age, Gender | Step 2: Activity Level | Step 3: Diet Type | Step 4: Region | Step 5: Primary Condition (picker) | Step 6: Secondary Conditions (multi-select, optional) | Step 7: Privacy + WhatsApp opt-in</td>
+    </tr>
+    <tr>
+        <td><strong>Home/Dashboard</strong></td>
+        <td>Greeting ("Hi, [Name]!") | Condition score cards (red/yellow/green) | "Today's Tip from Mitali" | Quick actions: "Log Meal", "View Protocol", "Browse Recipes"</td>
+    </tr>
+    <tr>
+        <td><strong>Protocols</strong></td>
+        <td>List of protocols (card layout) | Current protocol highlighted | Tap to expand: timeline, phases, recipes, supplements | "Start This Protocol" button</td>
+    </tr>
+    <tr>
+        <td><strong>Recipes</strong></td>
+        <td>Search bar | Filters: Condition, Cuisine, Prep Time, Diet Type | Recipe cards (image, name, cuisine, prep time, condition tag) | Tap to view: ingredients, method, nutrition, condition-specific notes</td>
+    </tr>
+    <tr>
+        <td><strong>Journal</strong></td>
+        <td>Calendar view (current week) | Tap day to log meals/symptoms | Condition score graphs (trending) | Weekly summary</td>
+    </tr>
+    <tr>
+        <td><strong>Profile</strong></td>
+        <td>User info, edit button | Current conditions | Preferences: Language, notifications, data privacy | Logout</td>
+    </tr>
+</table>
+
+<h2>⚠️ Important Constraints & Notes for Rork AI</h2>
+
+<ul>
+    <li><strong>Founder as Authority:</strong> Don't bury Mitali. Include her name, credentials (MS, RD, CLT), photo on every major screen. All content should feel like it's from her or clearly AI-assisted.</li>
+    <li><strong>Clinical Accuracy:</strong> Never diagnose. Always say "Discuss with your doctor" when interpreting labs or symptoms. Frame as educational guidance, not medical advice.</li>
+    <li><strong>Data Privacy is a Feature:</strong> Explicitly state "Your data is encrypted and never sold" on relevant screens. Build trust through transparency.</li>
+    <li><strong>Regional Customization:</strong> Build architecture to swap recipes/protocols by region (India vs. US vs. GCC). Don't hardcode region-specific content.</li>
+    <li><strong>Scalability for Conditions:</strong> When adding new conditions, app should automatically adjust protocols + recipe recommendations. Use relational logic, not hardcoded rules.</li>
+    <li><strong>Color Accessibility:</strong> Dark teal background with white text passes WCAG. Test with colorblind mode (protanopia, deuteranopia).</li>
+    <li><strong>Performance:</strong> Recipe library might be large (180+). Use pagination or lazy loading; don't load all recipes at once.</li>
+</ul>
+
+<h2>📈 Success Metrics to Track</h2>
+
+<p>After launch, monitor these via Firebase Analytics:</p>
+<ul>
+    <li>Onboarding completion rate (% who finish setup)</li>
+    <li>Protocol adoption (% who start a recommended protocol)</li>
+    <li>Recipe engagement (avg recipes viewed/week)</li>
+    <li>Meal logging frequency (daily active users logging meals)</li>
+    <li>Score improvements (% of users with improving condition scores over 30 days)</li>
+    <li>Retention (30-day, 90-day active users)</li>
+    <li>NPS (Net Promoter Score)</li>
+</ul>
+
+<h2>🎯 Deliverables from Rork</h2>
+
+<p>Once Rork generates the app, it should include:</p>
+<ul>
+    <li>✅ Fully functional React Native codebase (iOS + Android)</li>
+    <li>✅ All 5 tabs implemented with sample data</li>
+    <li>✅ Onboarding flow complete</li>
+    <li>✅ Firebase or custom backend integration ready (with dummy API calls)</li>
+    <li>✅ Styling applied (dark teal theme)</li>
+    <li>✅ Ready to run on simulator/device</li>
+</ul>
+
+<p>The generated app can then be customized further for real API integration and content (recipes, protocols, etc.).</p>
+
+<hr>
+
+<h2>💡 Final Thought</h2>
+<p>This app solves a real problem: <strong>People with health issues don't need calorie counters. They need a clinician who understands their life, their food, and their conditions.</strong> Arogeva is Mitali's expertise in their pocket. Build it to honor that authority and keep it simple.</p>
+
+<p><em>Good luck! 🌿</em></p>
+
+</div>
+</body>
+</html>

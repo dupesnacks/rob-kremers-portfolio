@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TFD Consumables Supply Strategy</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f8f9fa;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            padding: 60px 40px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+        
+        h1 {
+            color: #0066cc;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            border-bottom: 3px solid #0066cc;
+            padding-bottom: 20px;
+        }
+        
+        .subtitle {
+            font-size: 1.2em;
+            color: #666;
+            margin-bottom: 30px;
+            font-style: italic;
+        }
+        
+        h2 {
+            color: #0066cc;
+            font-size: 1.8em;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            border-left: 4px solid #0066cc;
+            padding-left: 15px;
+        }
+        
+        h3 {
+            color: #333;
+            font-size: 1.3em;
+            margin-top: 25px;
+            margin-bottom: 15px;
+        }
+        
+        .model-card {
+            background: #f9f9f9;
+            border: 2px solid #e0e0e0;
+            border-radius: 6px;
+            padding: 30px;
+            margin: 25px 0;
+            transition: all 0.3s;
+        }
+        
+        .model-card:hover {
+            border-color: #0066cc;
+            box-shadow: 0 4px 12px rgba(0,102,204,0.15);
+        }
+        
+        .model-card h3 {
+            margin-top: 0;
+            color: #0066cc;
+        }
+        
+        .pros-cons {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin: 15px 0;
+        }
+        
+        .pros, .cons {
+            padding: 15px;
+            border-radius: 4px;
+        }
+        
+        .pros {
+            background: #d4edda;
+            border-left: 4px solid #28a745;
+        }
+        
+        .cons {
+            background: #f8d7da;
+            border-left: 4px solid #dc3545;
+        }
+        
+        .pros h4, .cons h4 {
+            margin: 0 0 10px 0;
+            font-size: 1em;
+        }
+        
+        ul, ol {
+            margin: 12px 0 12px 25px;
+        }
+        
+        li {
+            margin-bottom: 8px;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-size: 0.95em;
+        }
+        
+        th {
+            background: #0066cc;
+            color: white;
+            padding: 12px;
+            text-align: left;
+            font-weight: 600;
+        }
+        
+        td {
+            border-bottom: 1px solid #ddd;
+            padding: 12px;
+        }
+        
+        tr:nth-child(even) {
+            background: #f9f9f9;
+        }
+        
+        .timeline {
+            position: relative;
+            padding: 20px 0;
+        }
+        
+        .phase {
+            background: #f0f7ff;
+            border-left: 4px solid #0066cc;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+        
+        .phase h4 {
+            color: #0066cc;
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+        
+        .highlights {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background: #0066cc;
+            color: white;
+            padding: 14px 28px;
+            text-decoration: none;
+            border-radius: 4px;
+            margin-top: 20px;
+            font-weight: 600;
+            transition: background 0.3s;
+        }
+        
+        .cta-button:hover {
+            background: #0052a3;
+        }
+        
+        .footer {
+            margin-top: 50px;
+            padding-top: 30px;
+            border-top: 2px solid #ddd;
+            text-align: center;
+            color: #888;
+            font-size: 0.9em;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 30px 20px;
+            }
+            
+            h1 {
+                font-size: 1.8em;
+            }
+            
+            h2 {
+                font-size: 1.4em;
+            }
+            
+            .pros-cons {
+                grid-template-columns: 1fr;
+            }
+            
+            table {
+                font-size: 0.85em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>💰 TFD Consumables Supply Strategy</h1>
+        <p class="subtitle">How to Make Money on Retainers, Whitening Kits & Care Products (Without Owning a Factory)</p>
+        
+        <!-- THE PROBLEM -->
+        <h2>The Problem: Alcon Owns the Supply Chain</h2>
+        <p>MARLO works because Alcon manufactures contact lenses, solutions, and optics. They control the entire value chain and take 100% of the margin.</p>
+        <p>You don't have that luxury. So you need a different play.</p>
+        
+        <!-- THE OPPORTUNITY -->
+        <div class="highlights">
+            <h3>What's Being Lost to Amazon</h3>
+            <ul>
+                <li><strong>Retainers:</strong> $80-200 per unit (Vivera, Essix, generic)</li>
+                <li><strong>Whitening kits:</strong> $80-300 per kit (Zoom, GLO, Opalescence)</li>
+                <li><strong>Care products:</strong> $20-50/month recurring (toothbrushes, mouthwash, guards)</li>
+            </ul>
+            <p style="margin-top: 15px;"><strong>For a practice like TFD: $200-300/month bleeding to Amazon. Multiply that by 100 practices, and you've got an opportunity.</strong></p>
+        </div>
+        
+        <!-- THREE MODELS -->
+        <h2>Three Business Models</h2>
+        
+        <!-- MODEL 1 -->
+        <div class="model-card">
+            <h3>Model 1: Affiliate Commission (Fast Start)</h3>
+            <p><strong>How it works:</strong> Partner with GLO Science, Zoom, Vivera as an affiliate. Patient buys → You get 5-15% commission.</p>
+            
+            <div class="pros-cons">
+                <div class="pros">
+                    <h4>✅ Pros</h4>
+                    <ul style="margin-top: 10px; margin-bottom: 0;">
+                        <li>Zero inventory risk</li>
+                        <li>Easy to launch</li>
+                        <li>Fast cash flow</li>
+                        <li>No supplier negotiations</li>
+                    </ul>
+                </div>
+                <div class="cons">
+                    <h4>❌ Cons</h4>
+                    <ul style="margin-top: 10px; margin-bottom: 0;">
+                        <li>Lowest margin (5-10%)</li>
+                        <li>Supplier owns relationship</li>
+                        <li>No pricing control</li>
+                        <li>Supplier can change terms</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <h4 style="margin-top: 20px;">Revenue (TFD Example)</h4>
+            <p>50 whitening kits/month × $150 × 7% = $525/month = $6,300/year</p>
+            
+            <h4>Timeline</h4>
+            <p><strong>This week.</strong> Contact GLO Science, Philips, Opalescence. Ask for affiliate program. Get links. Embed in app.</p>
+        </div>
+        
+        <!-- MODEL 2 -->
+        <div class="model-card">
+            <h3>Model 2: Wholesale Partnership (Better Margins)</h3>
+            <p><strong>How it works:</strong> Buy from suppliers at wholesale (40-50% off). Sell at retail in app. You pocket the margin.</p>
+            
+            <div class="pros-cons">
+                <div class="pros">
+                    <h4>✅ Pros</h4>
+                    <ul style="margin-top: 10px; margin-bottom: 0;">
+                        <li>40-50% gross margin</li>
+                        <li>You control pricing</li>
+                        <li>You own customer</li>
+                        <li>Sustainable model</li>
+                    </ul>
+                </div>
+                <div class="cons">
+                    <h4>❌ Cons</h4>
+                    <ul style="margin-top: 10px; margin-bottom: 0;">
+                        <li>Requires capital</li>
+                        <li>Inventory management</li>
+                        <li>Logistics/shipping</li>
+                        <li>Supplier negotiation</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <h4 style="margin-top: 20px;">Revenue (TFD Example)</h4>
+            <p>50 kits/month: Buy $75 wholesale, sell $150 retail = $3,750/month = $45,000/year (gross margin)</p>
+            
+            <h4>Timeline</h4>
+            <p><strong>Month 3.</strong> Prove affiliate model first. Once you have metrics, approach Henry Schein or Patterson Dental. Ask for practice wholesale account. Start with whitening only.</p>
+        </div>
+        
+        <!-- MODEL 3 -->
+        <div class="model-card">
+            <h3>Model 3: White-Label Partnership (Best Positioning)</h3>
+            <p><strong>How it works:</strong> Partner with supplier for exclusive distribution. Co-branded products. Revenue share: 30-40% to you.</p>
+            
+            <div class="pros-cons">
+                <div class="pros">
+                    <h4>✅ Pros</h4>
+                    <ul style="margin-top: 10px; margin-bottom: 0;">
+                        <li>30-40% margins</li>
+                        <li>Exclusive moat</li>
+                        <li>Supplier credibility</li>
+                        <li>Custom branding</li>
+                    </ul>
+                </div>
+                <div class="cons">
+                    <h4>❌ Cons</h4>
+                    <ul style="margin-top: 10px; margin-bottom: 0;">
+                        <li>Hard to negotiate</li>
+                        <li>Need proof of volume</li>
+                        <li>Locked-in contracts</li>
+                        <li>Requires scale first</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <h4 style="margin-top: 20px;">Revenue (At Scale: 100 Practices)</h4>
+            <p>100 practices × 100 kits/month × $150 × 30% = $450K/month = $5.4M/year</p>
+            
+            <h4>Timeline</h4>
+            <p><strong>Month 8-12.</strong> After running Model 2 with 5-10 practices and moving 500+ units/month, approach supplier. "I have 100 practices waiting. Want to be their exclusive whitening provider?"</p>
+        </div>
+        
+        <!-- RECOMMENDED PATH -->
+        <h2>Recommended Path for TFD (Go-to-Market)</h2>
+        
+        <div class="timeline">
+            <div class="phase">
+                <h4>Phase 1 (This Week): Affiliate Model</h4>
+                <ul>
+                    <li>Contact GLO Science, Philips Zoom, Opalescence</li>
+                    <li>Sign up for affiliate programs</li>
+                    <li>Add links to TFD app consumables section</li>
+                    <li>Expected revenue: $300-500/month</li>
+                </ul>
+            </div>
+            
+            <div class="phase">
+                <h4>Phase 2 (Month 3-6): Selective Wholesale</h4>
+                <ul>
+                    <li>Once you have affiliate metrics, approach Henry Schein + Patterson</li>
+                    <li>Set up wholesale accounts</li>
+                    <li>Buy GLO whitening at wholesale, sell at retail</li>
+                    <li>Expected revenue: $2,000-3,000/month</li>
+                </ul>
+            </div>
+            
+            <div class="phase">
+                <h4>Phase 3 (Month 8-12): White-Label Partnerships</h4>
+                <ul>
+                    <li>Show suppliers: "We're moving 500+ units/month across 10 practices"</li>
+                    <li>Pitch: "Want to be our exclusive whitening provider? All our practices will buy from you through us."</li>
+                    <li>Negotiate white-label deal (30-40% revenue share)</li>
+                    <li>Expected revenue: $10,000-20,000/month (early stage)</li>
+                </ul>
+            </div>
+        </div>
+        
+        <!-- KEY SUPPLIERS -->
+        <h2>Who to Contact (In Priority Order)</h2>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>Supplier</th>
+                    <th>Product</th>
+                    <th>Contact Strategy</th>
+                    <th>Why First</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>GLO Science</strong></td>
+                    <td>Whitening kits (SO Brilliant)</td>
+                    <td>glosciencepro.com → Partner program</td>
+                    <td>Has affiliate + wholesale. Dentist-founded. Actively courts practices.</td>
+                </tr>
+                <tr>
+                    <td><strong>Henry Schein</strong></td>
+                    <td>All consumables distributor</td>
+                    <td>henryschein.com → Practice sales</td>
+                    <td>Fastest wholesale setup. Distributes Align, 3M, Philips.</td>
+                </tr>
+                <tr>
+                    <td><strong>Patterson Dental</strong></td>
+                    <td>All consumables distributor</td>
+                    <td>pattersondental.com → Partnership</td>
+                    <td>Second distributor option. Similar to Henry Schein.</td>
+                </tr>
+                <tr>
+                    <td><strong>Align (Vivera)</strong></td>
+                    <td>Premium retainers</td>
+                    <td>Via Align practice relations</td>
+                    <td>High volume for ortho/cosmetic. 50%+ margins.</td>
+                </tr>
+                <tr>
+                    <td><strong>Philips (Zoom)</strong></td>
+                    <td>Professional whitening</td>
+                    <td>Philips.com → Dental partners</td>
+                    <td>Premium brand. Strong affiliate programs.</td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <!-- FINANCIAL SUMMARY -->
+        <h2>Financial Projections (Year 1-2)</h2>
+        
+        <h3>Affiliate Model (Conservative)</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Timeline</th>
+                    <th>Monthly Revenue</th>
+                    <th>Notes</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Month 1-3</td>
+                    <td>$300-500</td>
+                    <td>Low volume, testing phase</td>
+                </tr>
+                <tr>
+                    <td>Month 4-6</td>
+                    <td>$1,000-1,500</td>
+                    <td>11 practices active on platform</td>
+                </tr>
+                <tr>
+                    <td>Month 7-12</td>
+                    <td>$2,000-2,500</td>
+                    <td>Growing adoption</td>
+                </tr>
+                <tr style="background: #d4edda;">
+                    <td><strong>Year 2 Run Rate</strong></td>
+                    <td><strong>$25,000-30,000/year</strong></td>
+                    <td><strong>Steady baseline income</strong></td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <h3>Wholesale Model (Medium Growth)</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Stage</th>
+                    <th>Monthly Revenue</th>
+                    <th>Notes</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Month 6-9</td>
+                    <td>$2,000-3,000</td>
+                    <td>TFD + 2 other practices, whitening only</td>
+                </tr>
+                <tr>
+                    <td>Month 10-12</td>
+                    <td>$5,000-7,000</td>
+                    <td>Add retainers, 5 practices active</td>
+                </tr>
+                <tr style="background: #d4edda;">
+                    <td><strong>Year 2 Run Rate</strong></td>
+                    <td><strong>$40,000-50,000/month</strong></td>
+                    <td><strong>Multiple categories, 10+ practices</strong></td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <h3>White-Label Model (Best Case)</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Stage</th>
+                    <th>Annual Revenue</th>
+                    <th>Notes</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Year 1</td>
+                    <td>$100,000-150,000</td>
+                    <td>10 practices, multiple suppliers</td>
+                </tr>
+                <tr>
+                    <td>Year 2</td>
+                    <td>$500,000-750,000</td>
+                    <td>50 practices, exclusive partnerships</td>
+                </tr>
+                <tr style="background: #d4edda;">
+                    <td><strong>Year 3 Potential</strong></td>
+                    <td><strong>$2,000,000+</strong></td>
+                    <td><strong>200+ practices, recurring revenue</strong></td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <!-- THE PLAY -->
+        <div class="highlights">
+            <h3>The Real Play</h3>
+            <p>You don't need to own manufacturing. You need to own the <strong>distribution channel</strong> and <strong>patient relationship</strong>.</p>
+            <p style="margin-top: 15px;">Supplier makes the product. You own the practice relationship. You become the trusted middleman. Everyone wins.</p>
+            <p style="margin-top: 15px;"><strong>By Year 2, consumables revenue becomes 20-30% of your total app business. That's your moat. That's why practices stick with you instead of switching to a competitor.</strong></p>
+        </div>
+        
+        <!-- CALL TO ACTION -->
+        <h2>Action Items (This Week)</h2>
+        <ul>
+            <li>✅ Go to glosciencepro.com, find their affiliate program link</li>
+            <li>✅ Email their business dev: "I'm building a practice management app. We want to offer your whitening kits to our patient base. What's your affiliate program?"</li>
+            <li>✅ Sign up for Henry Schein online (henryschein.com). Look for "Practice Account" or "New Customer." Set up wholesale pricing.</li>
+            <li>✅ Add affiliate links to TFD app consumables section (placeholder for now)</li>
+            <li>✅ Track: How many patients see the shop? How many add to cart? How many complete purchase?</li>
+        </ul>
+        
+        <!-- FOOTER -->
+        <div class="footer">
+            <p>TFD Consumables Supply Strategy</p>
+            <p>Based on Tavily research of dental supply chains, manufacturer partnerships, and affiliate models</p>
+            <p style="margin-top: 15px;"><a href="/tfd" style="color: #0066cc; text-decoration: none; font-weight: 600;">← Back to TFD App Overview</a></p>
+        </div>
+    </div>
+</body>
+</html>

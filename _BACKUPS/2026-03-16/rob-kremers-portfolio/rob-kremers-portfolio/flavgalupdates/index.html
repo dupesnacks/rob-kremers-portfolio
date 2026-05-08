@@ -1,0 +1,1152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sensory Explorer - Complete Development Roadmap with Full Specifications">
+    <title>Sensory Explorer - Development Updates & Specifications</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Menlo', 'Monaco', monospace;
+            background: linear-gradient(135deg, #0a0a1e 0%, #1a0a3e 50%, #0a0a1e 100%);
+            color: #e0e0e0;
+            line-height: 1.6;
+        }
+        .container { max-width: 1200px; margin: 0 auto; padding: 40px 20px; }
+        h1 { font-size: 2.5rem; background: linear-gradient(135deg, #00d9ff, #667eea); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; margin-bottom: 10px; }
+        .subtitle { color: #999; font-size: 1.1rem; margin-bottom: 40px; }
+        h2 { color: #00d9ff; font-size: 1.8rem; margin-top: 50px; margin-bottom: 20px; border-bottom: 2px solid rgba(0,217,255,0.3); padding-bottom: 10px; }
+        h3 { color: #667eea; font-size: 1.3rem; margin-top: 30px; margin-bottom: 15px; }
+        .section { background: rgba(15, 15, 40, 0.8); border: 1px solid rgba(0, 217, 255, 0.2); border-radius: 12px; padding: 30px; margin-bottom: 30px; }
+        .subsection { background: rgba(20, 20, 50, 0.8); border-left: 3px solid rgba(102, 126, 234, 0.5); padding: 20px; margin: 20px 0; border-radius: 6px; }
+        .card-block { background: rgba(25, 25, 60, 0.7); border: 1px solid rgba(0, 217, 255, 0.15); padding: 20px; margin: 15px 0; border-radius: 8px; }
+        .card-view { background: rgba(20, 20, 50, 0.9); padding: 15px; border-radius: 6px; margin-bottom: 10px; }
+        .card-modal { background: rgba(15, 15, 40, 0.9); padding: 15px; border-left: 3px solid #667eea; border-radius: 6px; margin-top: 10px; }
+        .headline { color: #00d9ff; font-size: 1.1rem; font-weight: bold; margin-bottom: 8px; }
+        .subtext { color: #999; font-size: 0.9rem; margin-bottom: 10px; }
+        .modal-title { color: #667eea; font-size: 1rem; font-weight: bold; margin-bottom: 10px; margin-top: 10px; }
+        .modal-body { color: #ddd; font-size: 0.9rem; line-height: 1.7; }
+        .cta-button { display: inline-block; padding: 8px 16px; background: rgba(0, 217, 255, 0.2); color: #00d9ff; border: 1px solid #00d9ff; border-radius: 4px; margin: 5px 5px 5px 0; cursor: pointer; font-size: 0.85rem; }
+        .cta-link { color: #00d9ff; text-decoration: none; cursor: pointer; font-size: 0.9rem; }
+        .cta-link:hover { text-decoration: underline; }
+        ul { list-style: none; padding-left: 20px; }
+        li { padding: 8px 0; }
+        li::before { content: '→ '; color: #00d9ff; font-weight: bold; }
+        .status { display: inline-block; padding: 4px 12px; border-radius: 4px; font-size: 0.85rem; margin-left: 10px; font-weight: bold; }
+        .done { background: rgba(40, 167, 69, 0.3); color: #28a745; }
+        .inprogress { background: rgba(102, 126, 234, 0.3); color: #667eea; }
+        .planned { background: rgba(233, 30, 99, 0.3); color: #e91e63; }
+        .critical { background: rgba(220, 20, 60, 0.3); color: #ff4444; }
+        code { background: rgba(0,0,0,0.4); padding: 2px 6px; border-radius: 3px; font-family: 'Courier New', monospace; color: #00d9ff; }
+        pre { background: rgba(0,0,0,0.6); padding: 15px; border-radius: 6px; overflow-x: auto; margin: 15px 0; border-left: 3px solid #667eea; }
+        table { width: 100%; border-collapse: collapse; margin: 20px 0; }
+        th, td { padding: 12px; text-align: left; border-bottom: 1px solid rgba(0, 217, 255, 0.2); }
+        th { background: rgba(102, 126, 234, 0.2); color: #00d9ff; }
+        .flow-diagram { background: rgba(20, 20, 50, 0.5); padding: 20px; border-radius: 6px; margin: 20px 0; font-family: monospace; white-space: pre-wrap; color: #00d9ff; }
+        a { color: #00d9ff; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🚀 Sensory Explorer</h1>
+        <p class="subtitle">Complete Development Roadmap & Full Specifications</p>
+        <p style="color: #999; font-size: 0.85rem; margin-bottom: 30px;">Last Updated: March 10, 2026 @ 1:35 PM PST</p>
+
+        <!-- APP IDENTITY -->
+        <div class="section" style="background: rgba(0, 217, 255, 0.1); border: 2px solid #00d9ff; margin-bottom: 40px;">
+            <h3 style="color: #00d9ff; margin-bottom: 15px;">✨ OFFICIAL APP NAME & IDENTITY</h3>
+            <div style="font-size: 1.1rem; margin-bottom: 20px;">
+                <p style="margin-bottom: 10px;"><strong>App Name:</strong> <span style="color: #00d9ff; font-size: 1.3rem;">Sensory Galaxy</span></p>
+                <p style="margin-bottom: 10px;"><strong>Domain:</strong> <code>sensorygalaxy.com</code> ✅ Available</p>
+                <p style="margin-bottom: 10px;"><strong>Social Handles:</strong> <code>@sensorygalaxyapp</code> (Instagram, TikTok) ✅ Available</p>
+                <p style="margin-bottom: 10px;"><strong>Email:</strong> <code>hello@sensorygalaxy.com</code></p>
+            </div>
+            <div class="subsection">
+                <h4 style="color: #d4af37;">Why "Sensory Galaxy"?</h4>
+                <ul>
+                    <li>2-word, punchy name (easy to remember, type, say)</li>
+                    <li><strong>"Sensory"</strong> = Parents immediately understand it's about sensory sensitivity, not picky eating</li>
+                    <li><strong>"Galaxy"</strong> = Keeps your beloved visual brand (space theme, explorers, planets)</li>
+                    <li>No IP risk (not trademarked elsewhere)</li>
+                    <li>App description clarifies food + SOS method context</li>
+                </ul>
+            </div>
+            <div class="subsection">
+                <h4 style="color: #d4af37;">Action Items (Before Beta Launch)</h4>
+                <ul>
+                    <li><span class="status planned">TODO</span> Purchase domain: <code>sensorygalaxy.com</code></li>
+                    <li><span class="status planned">TODO</span> Reserve Instagram: <code>@sensorygalaxyapp</code></li>
+                    <li><span class="status planned">TODO</span> Reserve TikTok: <code>@sensorygalaxyapp</code></li>
+                    <li><span class="status planned">TODO</span> Set up email: <code>hello@sensorygalaxy.com</code> (once domain purchased)</li>
+                    <li><span class="status planned">TODO</span> Update all project docs with new name (see "Name Migration" section)</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- TABLE OF CONTENTS -->
+        <div class="section" style="background: rgba(0, 217, 255, 0.05); border: 1px solid rgba(0, 217, 255, 0.3); margin-bottom: 40px;">
+            <h3 style="color: #00d9ff; margin-bottom: 15px;">📑 Quick Navigation</h3>
+            <div style="columns: 2; column-gap: 30px;">
+                <ul style="padding-left: 0;">
+                    <li style="margin-bottom: 8px;"><a href="#onboarding">📱 Onboarding (9 Cards)</a></li>
+                    <li style="margin-bottom: 8px;"><a href="#badges">🏆 Badge System (20 Badges)</a></li>
+                    <li style="margin-bottom: 8px;"><a href="#ai-intelligence">🧠 AI-Powered Intelligence</a></li>
+                    <li style="margin-bottom: 8px;"><a href="#food-database">🍽️ Food Database (100+)</a></li>
+                    <li style="margin-bottom: 8px;"><a href="#guardrails">🛡️ LLM Guardrails</a></li>
+                    <li style="margin-bottom: 8px;"><a href="#points-economy">⭐ Points & Rewards</a></li>
+                    <li style="margin-bottom: 8px;"><a href="#user-settings">⚙️ Settings & User Features</a></li>
+                    <li style="margin-bottom: 8px;"><a href="#status">✅ Implementation Status</a></li>
+                    <li style="margin-bottom: 8px;"><a href="#references">📚 Detailed Documentation</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- ONBOARDING REDESIGN -->
+        <h2 id="onboarding">📱 Onboarding Redesign (Card + Modal Pattern)</h2>
+        
+        <div class="section">
+            <h3>Overview</h3>
+            <p style="margin-bottom: 15px;">
+                <strong>9-Card Journey:</strong> Each card shows a clean headline + image + subtext. Tap [Learn More ℹ️] for full explanation in modal. Tap [Next →] to skip and proceed.
+            </p>
+            <p style="margin-bottom: 15px;">
+                <strong>Why This Pattern?</strong> Cards stay scannable & uncluttered. Full educational copy available for parents who want depth. Respects different learning styles.
+            </p>
+            <p>
+                <strong>Card Count:</strong> 9 cards total (empathy → education → action → personalization)
+            </p>
+        </div>
+
+        <h3>Card Journey Flow</h3>
+        <div class="flow-diagram">Card 1: Problem (Empathy)
+     ↓
+Card 2: Science (SOS Method)
+     ↓
+Card 3: Bridge Foods Strategy
+     ↓
+Card 4: Outcomes (Success)
+     ↓
+Card 5: Explorer Selection
+     ↓
+Card 6-7: Safe Foods Collection
+     ↓
+Card 8: Sensory Profile Summary
+     ↓
+Card 9: Goal Food + First Action
+        </div>
+
+        <!-- CARD 1 -->
+        <div class="subsection">
+            <h3>CARD 1: Recognition (You're Not Alone)</h3>
+            
+            <div class="card-block">
+                <div class="card-view">
+                    <div class="headline">"You've Tried Everything. They Still Eat 5 Foods."</div>
+                    <div class="subtext">Mealtimes are a battle. You wonder if you're failing. You're not.</div>
+                    <div style="margin-top: 10px;">
+                        <span class="cta-link">ℹ️ Learn More</span> | <span class="cta-button">Next →</span>
+                    </div>
+                </div>
+                
+                <div class="card-modal">
+                    <div class="modal-title">The Truth</div>
+                    <div class="modal-body">
+You've offered new foods. They refuse.
+
+You've tried rewards. Didn't work.
+
+You've watched other kids eat pizza and tacos while yours asks for the same three foods again.
+
+And somewhere in there, you started to wonder: Is this my fault? Am I doing something wrong?
+
+Here's what you need to hear: **Your child isn't picky. They're not stubborn. They're not broken.**
+
+Their nervous system genuinely processes food differently. Textures, smells, temperatures—what feels fine to you might feel overwhelming to them. That's not something they can "just get over." It's how their brain is wired.
+
+And it's more common than you think. 1 in 3 children experience this.
+
+The good news? It's not permanent. With the right approach—one that works WITH their nervous system instead of against it—kids can expand their food world naturally.
+
+You're not failing. You just needed a better method.
+                    </div>
+                </div>
+            </div>
+            
+            <p><strong>Visual:</strong> Child at table looking at plate with slight anxiety, parent behind looking supportive and understanding. Dark starfield background, warm cyan/gold lighting. Emotional, not clinical.</p>
+        </div>
+
+        <!-- CARD 2 -->
+        <div class="subsection">
+            <h3>CARD 2: Validation (It's Neurological)</h3>
+            
+            <div class="card-block">
+                <div class="card-view">
+                    <div class="headline">"Stop Blaming Yourself"</div>
+                    <div style="color: #d4af37; font-size: 0.9rem; margin-bottom: 8px;">Your child's nervous system is different. That's not a failure.</div>
+                    <div class="subtext">There's a proven method that actually works.</div>
+                    <div style="margin-top: 10px;">
+                        <span class="cta-link">ℹ️ Learn More</span> | <span class="cta-button">Next →</span>
+                    </div>
+                </div>
+                
+                <div class="card-modal">
+                    <div class="modal-title">Why Willpower Doesn't Work</div>
+                    <div class="modal-body">
+You can't "willpower" your way past a nervous system that's wired differently.
+
+Your child isn't refusing food because they're being difficult. They're struggling because:
+- New textures feel wrong in their mouth
+- Smells feel overwhelming
+- Temperatures affect how food feels
+- Their brain needs MORE time to process sensations
+
+This is neurological. Not behavioral. Not something rewards or punishments will fix.
+
+THE SOS APPROACH (30+ Years of Research)
+
+Instead of forcing, we work WITH their nervous system. Five simple phases:
+
+👁️ LOOK — Just seeing the food (no pressure)
+🙌 TOUCH — Exploring the texture with hands
+👃 SMELL — Getting used to the aroma
+👅 LICK — Tiny taste (they control this)
+😋 TASTE — Eating when ready
+
+Each phase takes 3-10 days. Your child's brain gets time to process. Pressure is removed. Safety is restored.
+
+Research shows kids using this method see real progress in weeks to months—not years of stress.
+
+Your job isn't to force them. Your job is to make it safe for them to try.
+                    </div>
+                </div>
+            </div>
+            
+            <p><strong>Visual:</strong> 5 sensory icons (eye, hand, nose, tongue, mouth) arranged vertically with glowing cyan/gold effects. Reassuring, warm tone. Space-themed background with soft lighting.</p>
+        </div>
+
+        <!-- CARD 3 -->
+        <div class="subsection">
+            <h3>CARD 3: Proof (Real Parents. Real Progress.)</h3>
+            
+            <div class="card-block">
+                <div class="card-view">
+                    <div class="headline">"See It From Other Parents"</div>
+                    <div class="subtext">This method works. Here's proof.</div>
+                    <div style="margin-top: 10px;">
+                        <span class="cta-link">ℹ️ Learn More</span> | <span class="cta-button">Next →</span>
+                    </div>
+                </div>
+                
+                <div class="card-modal">
+                    <div class="modal-title">Parent Stories</div>
+                    <div class="modal-body">
+<strong>Sarah (Portland, 8 y/o):</strong>
+"My son ate chicken nuggets, rice, and applesauce. That was literally it. After 8 weeks using this method, he tried pizza. A month later, he ASKED for broccoli. I cried."
+
+<strong>Mike (Seattle, 5 y/o):</strong>
+"We were forcing mealtimes. Everyone was stressed. Then we read about the SOS phases. We stopped pushing. Everything changed. She's trying new things because SHE wants to, not because we're making her."
+
+<strong>Jessica (Eugene, 6 y/o):</strong>
+"I thought my kid would eat the same 4 foods forever. Seeing the patterns in the app showed me he was actually getting braver—we just couldn't see it until it was tracked. Now he's expanding naturally."
+
+---
+
+**The Pattern:**
+When you remove the pressure and work WITH your child's nervous system, they get braver.
+
+When you can see the patterns (which foods, which textures), you know what to try next.
+
+When progress is celebrated (not forced), kids actually want to explore.
+
+That's what this app does.
+                    </div>
+                </div>
+            </div>
+            
+            <p><strong>Visual:</strong> 3-4 parent testimonial cards with photos + names. Warm, real, authentic. Space theme in background, but focused on human connection.</p>
+        </div>
+
+        <!-- CARD 4 -->
+        <div class="subsection">
+            <h3>CARD 4: Partnership (How We Help)</h3>
+            
+            <div class="card-block">
+                <div class="card-view">
+                    <div class="headline">"We Do This Together"</div>
+                    <div class="subtext">You log. We show patterns. They get braver.</div>
+                    <div style="margin-top: 10px;">
+                        <span class="cta-link">ℹ️ Learn More</span> | <span class="cta-button">Next →</span>
+                    </div>
+                </div>
+                
+                <div class="card-modal">
+                    <div class="modal-title">How Sensory Galaxy Works</div>
+                    <div class="modal-body">
+Forget pressure. Forget battles at the dinner table.
+
+We use a proven method that works WITH your child's nervous system, not against it.
+
+YOUR ROLE (Parent):
+→ Log what they explore (any SOS phase counts)
+→ That's it. You're already doing the hard part.
+
+OUR ROLE (The App):
+📊 Find patterns in their progress
+🧠 Suggest bridge foods they're actually ready for
+📈 Show trends so you can see how far they've come
+🎮 Make it feel like an adventure (8 planets, explorer character, badges, rewards)
+
+THE PAYOFF:
+Your child earns rewards and badges not because you're bribing them—but because they're genuinely getting braver. They see their progress. You see their progress. Mealtimes shift from battles to celebrations.
+
+After weeks, you'll notice: They're trying new things. On their terms. Because they felt safe.
+                    </div>
+                </div>
+            </div>
+            
+            <p><strong>Visual:</strong> Split-screen: Left = parent dashboard (charts, analytics, patterns), Right = kid explorer (galaxy, badges, fire streaks, rewards). Full brand colors.</p>
+        </div>
+
+        <!-- CARD 5 -->
+        <div class="subsection">
+            <h3>CARD 5: Explorer Selection</h3>
+            
+            <div class="card-block">
+                <div class="card-view">
+                    <div class="headline">"Pick Your Explorer"</div>
+                    <div class="subtext">You'll unlock cosmetics together.</div>
+                    <p style="margin-top: 15px; color: #999; font-size: 0.85rem;">Shows 4 explorer buttons: Nova (Cyan), Cosmo (Purple), Star (Gold), Orbit (Pink)</p>
+                    <p style="color: #999; font-size: 0.85rem; margin-top: 10px;">[Name Your Explorer] text input</p>
+                    <div style="margin-top: 10px;">
+                        <span class="cta-button">Continue →</span>
+                    </div>
+                </div>
+            </div>
+            
+            <p><strong>NO MODAL</strong> — Direct selection on card. Each explorer shows name + title + bio.</p>
+        </div>
+
+        <!-- CARD 6-7 -->
+        <div class="subsection">
+            <h3>CARD 6-7: Safe Foods Collection</h3>
+            
+            <div class="card-block">
+                <div class="card-view">
+                    <div class="headline">"What Foods Does [Child] Already Like?"</div>
+                    <div class="subtext">Select as many as you'd like. More = better recommendations.</div>
+                    <p style="margin-top: 15px; color: #999; font-size: 0.85rem;">Scrollable grid of ~40 food options with icons + names. Checkboxes to select.</p>
+                    <p style="color: #999; font-size: 0.85rem; margin-top: 10px;">Counter: "[X] selected"</p>
+                    <div style="margin-top: 10px;">
+                        <span class="cta-button">Skip</span> <span class="cta-button">Continue →</span>
+                    </div>
+                </div>
+            </div>
+            
+            <p><strong>KEY PRINCIPLE:</strong> Do NOT reduce upfront foods. MORE foods = MORE personalization. Let parents add 3-5 initial, then encourage adding more for better AI recommendations.</p>
+            <p style="margin-top: 10px;"><strong>NO MODAL</strong> — Direct multi-select interface.</p>
+        </div>
+
+        <!-- CARD 8 -->
+        <div class="subsection">
+            <h3>CARD 8: Sensory Profile Summary</h3>
+            
+            <div class="card-block">
+                <div class="card-view">
+                    <div class="headline">"Here's What We Learned"</div>
+                    <div class="subtext">Your personalized sensory summary</div>
+                    <p style="margin-top: 15px; color: #ddd; font-size: 0.9rem;">
+                        ✓ Safe Foods: 6 items<br/>
+                        ✓ Most Common Texture: Crunchy<br/>
+                        ✓ Flavor Preference: Bland/Salty<br/>
+                        ✓ Temperature: Warm<br/>
+                        ✓ Color Variety: Yellow, Brown, White (expand next!)
+                    </p>
+                    <div style="margin-top: 10px;">
+                        <span class="cta-button">Continue →</span>
+                    </div>
+                </div>
+            </div>
+            
+            <p><strong>NO MODAL</strong> — Summary display only.</p>
+        </div>
+
+        <!-- CARD 9 -->
+        <div class="subsection">
+            <h3>CARD 9: Goal Food + First Action</h3>
+            
+            <div class="card-block">
+                <div class="card-view">
+                    <div class="headline">"What's Your Long-Term Goal?"</div>
+                    <div class="subtext">One food you'd love them to eat someday?</div>
+                    <p style="margin-top: 15px; color: #999; font-size: 0.85rem;">[Input field]: "e.g., Pizza"</p>
+                    <p style="color: #999; font-size: 0.85rem; margin-top: 10px;">(Optional: Texture/Flavor/Temperature selectors)</p>
+                    <div style="margin-top: 10px;">
+                        <span class="cta-button">Log First Food →</span>
+                    </div>
+                </div>
+            </div>
+            
+            <p><strong>9B: Log First Food</strong></p>
+            <div class="card-block">
+                <div class="card-view">
+                    <div class="headline">"Ready? Let's Start"</div>
+                    <div class="subtext">Log something from today.</div>
+                    <p style="margin-top: 15px; color: #999; font-size: 0.85rem;">[Input: "What food?"]<br/>[Dropdown: "What sensory phase?"] (LOOK, TOUCH, SMELL, LICK, TASTE)</p>
+                    <div style="margin-top: 10px;">
+                        <span class="cta-button">Log Food →</span>
+                    </div>
+                </div>
+            </div>
+            
+            <p style="margin-top: 15px;"><strong>NO MODALS</strong> — Direct input & action.</p>
+        </div>
+
+        <!-- COPY LENGTHS TABLE -->
+        <div class="subsection">
+            <h3>Copy Lengths Summary</h3>
+            <table>
+                <tr>
+                    <th>Card</th>
+                    <th>Headline Length</th>
+                    <th>Card Subtext</th>
+                    <th>Modal Size</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>10 words</td>
+                    <td>7 words</td>
+                    <td>80 words (full)</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>10 words</td>
+                    <td>7 words</td>
+                    <td>100 words (full)</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>8 words</td>
+                    <td>6 words</td>
+                    <td>95 words (full)</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>8 words</td>
+                    <td>6 words</td>
+                    <td>110 words (full)</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>3 words</td>
+                    <td>4 words</td>
+                    <td>None (direct select)</td>
+                </tr>
+                <tr>
+                    <td>6-7</td>
+                    <td>10 words</td>
+                    <td>7 words</td>
+                    <td>None (direct select)</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>5 words</td>
+                    <td>4 words</td>
+                    <td>None (display)</td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>7 words</td>
+                    <td>6 words</td>
+                    <td>None (direct input)</td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- IMPLEMENTATION NOTES -->
+        <div class="subsection">
+            <h3>Implementation Notes</h3>
+            <ul>
+                <li>Modals: Full-screen (mobile-first) with dark theme + cyan/gold accents</li>
+                <li>Smooth animations: Fade in/out transitions</li>
+                <li>Close button: X or back arrow on modals</li>
+                <li>Typography: Body text 16px, line-height 1.8 for readability</li>
+                <li>Responsive: Works on mobile/tablet/desktop</li>
+                <li>UX Flow: Card loads → User can tap [Learn More] OR [Next] → Proceed</li>
+            </ul>
+        </div>
+
+        <!-- BADGE SYSTEM -->
+        <h2 id="badges">🏆 Badge System (20 Unique Badges)</h2>
+        
+        <div class="section">
+            <h3>Overview</h3>
+            <p>20 unique badges tracking the food exploration journey. Badges are COLLECTED (not worn on character). Categories: COMMON, UNCOMMON, RARE, LEGENDARY.</p>
+
+            <h4>All 20 Badges</h4>
+            <table>
+                <tr>
+                    <th>#</th>
+                    <th>Name</th>
+                    <th>Rarity</th>
+                    <th>Unlock Condition</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>First Taste Explorer</td>
+                    <td>COMMON</td>
+                    <td>Log first food in TASTE phase</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Sensory Seeker</td>
+                    <td>COMMON</td>
+                    <td>Complete LOOK phase with any food</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Brave Mouth</td>
+                    <td>COMMON</td>
+                    <td>Reach LICK or TASTE with 3+ foods</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Touch Adventurer</td>
+                    <td>COMMON</td>
+                    <td>Complete TOUCH phase with 5+ foods</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Smell Specialist</td>
+                    <td>COMMON</td>
+                    <td>Complete SMELL phase with 5+ foods</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>Color Explorer</td>
+                    <td>UNCOMMON</td>
+                    <td>Try foods from 5+ different colors</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>Texture Master</td>
+                    <td>UNCOMMON</td>
+                    <td>Try 5+ different textures</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>Sweet Discoverer</td>
+                    <td>COMMON</td>
+                    <td>Try 3+ sweet-flavored foods</td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>Salty Sampler</td>
+                    <td>UNCOMMON</td>
+                    <td>Try 3+ salty-flavored foods</td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>Flavor Frontier</td>
+                    <td>RARE</td>
+                    <td>Try 6+ different flavor families</td>
+                </tr>
+                <tr>
+                    <td>11</td>
+                    <td>Week Warrior</td>
+                    <td>COMMON</td>
+                    <td>Log foods 7 consecutive days</td>
+                </tr>
+                <tr>
+                    <td>12</td>
+                    <td>30-Day Devotee</td>
+                    <td>UNCOMMON</td>
+                    <td>Log foods 30 consecutive days</td>
+                </tr>
+                <tr>
+                    <td>13</td>
+                    <td>Bridge Builder</td>
+                    <td>UNCOMMON</td>
+                    <td>Try 5+ bridge foods, accept 3+</td>
+                </tr>
+                <tr>
+                    <td>14</td>
+                    <td>Food Group Collector</td>
+                    <td>RARE</td>
+                    <td>Try foods from 5+ food groups</td>
+                </tr>
+                <tr>
+                    <td>15</td>
+                    <td>Rainbow Eater</td>
+                    <td>RARE</td>
+                    <td>Try foods in all 9 colors</td>
+                </tr>
+                <tr>
+                    <td>16</td>
+                    <td>SOS Master</td>
+                    <td>RARE</td>
+                    <td>Complete all 5 phases with 10+ foods</td>
+                </tr>
+                <tr>
+                    <td>17</td>
+                    <td>Planet Pioneer</td>
+                    <td>UNCOMMON</td>
+                    <td>Reach planet 4+</td>
+                </tr>
+                <tr>
+                    <td>18</td>
+                    <td>Brave Taste Tester</td>
+                    <td>RARE</td>
+                    <td>Try HIGH-RISK food & accept</td>
+                </tr>
+                <tr>
+                    <td>19</td>
+                    <td>Consistency Champion</td>
+                    <td>RARE</td>
+                    <td>Maintain 60+ day logging streak</td>
+                </tr>
+                <tr>
+                    <td>20</td>
+                    <td>Galaxy Legend</td>
+                    <td>LEGENDARY</td>
+                    <td>Unlock 12+ other badges (master)</td>
+                </tr>
+            </table>
+
+            <p style="margin-top: 20px;"><strong>See full badge spec at:</strong> <code>BADGE-DESIGN-SPEC.md</code></p>
+        </div>
+
+        <!-- AI-POWERED INTELLIGENCE -->
+        <h2 id="ai-intelligence">🧠 AI-Powered Intelligence Layer (Qwen 3.5 Plus)</h2>
+        
+        <div class="section">
+            <h3>Overview</h3>
+            <p>Sensory Explorer uses Qwen 3.5 Plus LLM for 4 key features:</p>
+            <ul style="margin-top: 15px;">
+                <li><strong>Bridge Food Recommendations:</strong> AI-powered food matching based on sensory attributes</li>
+                <li><strong>Parent Insights:</strong> Weekly narratives about progress, patterns, and next steps</li>
+                <li><strong>Regression Alerts:</strong> Detection when child stops trying new foods</li>
+                <li><strong>Analytics Narratives:</strong> Story-based summaries of food group diversity and sensory growth</li>
+            </ul>
+
+            <h3>Why Qwen 3.5 Plus?</h3>
+            <pre>Claude 3.5 Sonnet: $62,000/year at 100K users
+Qwen 3.5 Plus:    $2,150/year at 100K users
+Savings:          96% cheaper ✅
+
+Quality: Acceptable for food attribute classification + narrative generation
+Speed: Fast responses (suitable for batch + on-demand flows)</pre>
+
+            <h3>Pricing Breakdown</h3>
+            <table>
+                <tr>
+                    <th>Feature</th>
+                    <th>Calls/Year (100K users)</th>
+                    <th>Annual Cost</th>
+                </tr>
+                <tr>
+                    <td>Bridge Foods (on-demand, after 3-5 foods logged)</td>
+                    <td>~250K</td>
+                    <td>$600</td>
+                </tr>
+                <tr>
+                    <td>Weekly Parent Insights (2x/week batch)</td>
+                    <td>~10.4M</td>
+                    <td>$1,250</td>
+                </tr>
+                <tr>
+                    <td>Regression Alerts (weekly check)</td>
+                    <td>~52K</td>
+                    <td>$100</td>
+                </tr>
+                <tr>
+                    <td>Analytics Narratives (weekly batch)</td>
+                    <td>~5M</td>
+                    <td>$200</td>
+                </tr>
+                <tr style="background: rgba(0, 217, 255, 0.1);">
+                    <td><strong>TOTAL (100K users)</strong></td>
+                    <td><strong>~15.7M tokens</strong></td>
+                    <td><strong>$2,150/year</strong></td>
+                </tr>
+            </table>
+
+            <p style="margin-top: 20px; color: #28a745; font-weight: bold;">✅ Well under $2,600/year cap</p>
+
+            <h3>Threshold Rule</h3>
+            <p>Bridge food suggestions <strong>only activate after 3-5 foods logged</strong>. Why?</p>
+            <ul style="margin-top: 10px;">
+                <li>Prevents nonsensical suggestions (e.g., "salty liquid" when user only knows "crackers")</li>
+                <li>Allows AI to identify actual sensory patterns (needs multiple data points)</li>
+                <li>Respects SOS Approach: parents start with familiar foods before introducing bridges</li>
+            </ul>
+
+            <h3>Batch Processing Strategy</h3>
+            <pre>Real-time: Bridge foods only (on-demand, when parent requests)
+Batch (2x/week): Weekly insights, regression alerts, analytics narratives
+Result: Lower cost, still timely, no latency impact on UX</pre>
+
+            <h3>Implementation</h3>
+            <ul>
+                <li>API endpoint: <code>POST /api/bridge-foods/recommend</code></li>
+                <li>Input: Child's sensory profile + safe foods + history</li>
+                <li>Cache: 24 hours (avoid excessive API calls)</li>
+                <li>Fallback: Revert to rule-based algorithm if API fails</li>
+                <li>Learning: Track parent feedback → refine future recommendations</li>
+                <li>Validation: All suggestions filtered through LLM guardrails (see below)</li>
+            </ul>
+        </div>
+
+        <!-- FOOD DATABASE -->
+        <h2 id="food-database">🍽️ Expanded Food Database (100+ Foods)</h2>
+        
+        <div class="section">
+            <h3>Database Structure</h3>
+            <p>Each food includes 5 sensory attributes:</p>
+            <table>
+                <tr>
+                    <th>Attribute</th>
+                    <th>Options</th>
+                    <th>Examples</th>
+                </tr>
+                <tr>
+                    <td><strong>Texture</strong></td>
+                    <td>Crunchy, Soft, Chewy, Liquid, Mushy, Mixed</td>
+                    <td>Crackers=Crunchy, Applesauce=Mushy, Pasta=Soft</td>
+                </tr>
+                <tr>
+                    <td><strong>Flavor</strong></td>
+                    <td>Bland, Sweet, Salty, Savory, Sour, Bitter</td>
+                    <td>Crackers=Bland/Salty, Banana=Sweet, Yogurt=Bland</td>
+                </tr>
+                <tr>
+                    <td><strong>Temperature</strong></td>
+                    <td>Cold, Room Temp, Warm, Hot</td>
+                    <td>Ice cream=Cold, Soup=Hot, Crackers=Room Temp</td>
+                </tr>
+                <tr>
+                    <td><strong>Color</strong></td>
+                    <td>Red, Orange, Yellow, Green, Blue, Purple, Brown, White, Mixed</td>
+                    <td>Apple=Red, Banana=Yellow, Broccoli=Green</td>
+                </tr>
+                <tr>
+                    <td><strong>Food Group</strong></td>
+                    <td>Fruit, Vegetable, Protein, Grain, Dairy, Mixed, Other</td>
+                    <td>Apple=Fruit, Chicken=Protein, Pizza=Mixed</td>
+                </tr>
+            </table>
+
+            <h3>Food Inventory (100+ Items)</h3>
+            <div class="subsection" style="margin-top: 20px;">
+                <h4>PROTEINS (15 items)</h4>
+                <p style="color: #999; margin-bottom: 10px;">Chicken Nugget, Turkey Slices, Ground Beef, Salmon, Fish Stick, Shrimp, Eggs, Peanut Butter, Tofu, Beans (Black, Kidney), Lentils, Deli Turkey, Hot Dog</p>
+            </div>
+
+            <div class="subsection">
+                <h4>GRAINS & CARBS (12 items)</h4>
+                <p style="color: #999; margin-bottom: 10px;">White Bread, Pasta, Rice (White, Brown), Crackers, Pretzels, Cereal (Cheerios, Fruity Pebbles), Bagel, Tortilla, Pancake, Waffle</p>
+            </div>
+
+            <div class="subsection">
+                <h4>FRUITS (16 items)</h4>
+                <p style="color: #999; margin-bottom: 10px;">Apple (Red, Green), Banana, Orange, Grapes, Strawberry, Blueberry, Watermelon, Cantaloupe, Peach, Pear, Mango, Pineapple, Kiwi, Dragon Fruit</p>
+            </div>
+
+            <div class="subsection">
+                <h4>VEGETABLES (12 items)</h4>
+                <p style="color: #999; margin-bottom: 10px;">Carrots, Broccoli, Green Beans, Corn, Peas, Spinach, Sweet Potato, Bell Pepper (Red, Yellow, Green), Cucumber, Tomato</p>
+            </div>
+
+            <div class="subsection">
+                <h4>DAIRY (8 items)</h4>
+                <p style="color: #999; margin-bottom: 10px;">Cheese (Cheddar, Mozzarella, Cream), Yogurt, Milk, Cottage Cheese, Butter, Sour Cream</p>
+            </div>
+
+            <div class="subsection">
+                <h4>PROCESSED & SNACKS (20+ items)</h4>
+                <p style="color: #999; margin-bottom: 10px;">Potato Chips, Cheese Puffs, Granola Bar, Fruit Snack, Yogurt Tube, Applesauce Pouch, String Cheese, Mozzarella Stick, Popcorn, Veggie Chip, Trail Mix, Fruit Leather, Pudding Cup</p>
+            </div>
+
+            <div class="subsection">
+                <h4>COMPOSITE FOODS (7 items - tagged as "Mixed")</h4>
+                <p style="color: #999; margin-bottom: 10px;">PB&J Sandwich, Grilled Cheese, Taco, Pizza, Mac & Cheese, Quesadilla, Chicken Tenders with Ketchup</p>
+            </div>
+
+            <div class="subsection">
+                <h4>BEVERAGES (6 items)</h4>
+                <p style="color: #999; margin-bottom: 10px;">Water, Milk, Orange Juice, Apple Juice, Smoothie, Hot Chocolate</p>
+            </div>
+
+            <p style="margin-top: 20px; color: #d4af37;"><strong>Note:</strong> Database will continue to expand based on user submissions. Core 100+ provide solid foundation for bridging strategy.</p>
+        </div>
+
+        <!-- LLM GUARDRAILS -->
+        <h2 id="guardrails">🛡️ LLM Guardrails & Validation Rules</h2>
+        
+        <div class="section">
+            <h3>Why Guardrails?</h3>
+            <p>LLMs can hallucinate or suggest nonsensical combinations (e.g., "salty liquid" as a primary food). These 10 validation rules prevent bad suggestions from reaching parents.</p>
+
+            <h3>Validation Rules (10 Total)</h3>
+            <table>
+                <tr>
+                    <th>#</th>
+                    <th>Rule</th>
+                    <th>Prevents</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Never suggest liquid foods as primary foods (except beverages)</td>
+                    <td>"Try gravy" or "Try apple juice as lunch"</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Avoid bitter flavors for selective eaters</td>
+                    <td>Suggesting dark leafy greens, coffee, strong spices to hesitant kids</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Don't combine 3+ bold flavors simultaneously</td>
+                    <td>"Try salty + sour + spicy" (overwhelming sensory load)</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Validate Temperature + Texture combos</td>
+                    <td>Hot crunchy foods (e.g., crispy chips straight from fryer may be texture-jarring)</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>ONLY suggest foods in approved 100+ database</td>
+                    <td>Random foods not validated for SOS approach</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>Enforce color variety (prevent monochrome diets)</td>
+                    <td>Suggesting 10 brown foods when child already has brown</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>Require food group diversity</td>
+                    <td>Suggesting only proteins; enforce cross-group balance</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>Bridge foods must share ≥1 sensory attribute with safe foods</td>
+                    <td>Suggesting taco (mixed texture) to child who only eats crunchy foods</td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>Sensory distance ≤1 step (texture diff ≤1, flavor ≤1)</td>
+                    <td>Jumping from crackers to spicy salsa (too big of jump)</td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>Weekly batch processing only (not real-time)</td>
+                    <td>Recommendation spam; ensures thoughtful, considered suggestions</td>
+                </tr>
+            </table>
+
+            <h3>Implementation (Pseudocode)</h3>
+            <pre>function validateBridgeFoodSuggestion(suggestion, safefoods) {
+  // Rule 5: Database check
+  if (!FOOD_DATABASE.includes(suggestion)) return reject("Not in database");
+  
+  // Rule 1: Liquid check
+  if (suggestion.texture === "liquid" && suggestion !== beverage) 
+    return reject("Liquid foods not primary");
+  
+  // Rule 2: Bitter check
+  if (suggestion.flavor === "bitter") return reject("Bitter flavor avoided");
+  
+  // Rule 3: Bold flavor check
+  boldFlavors = suggestion.flavors.filter(f => f in ['salty','sour','spicy'])
+  if (boldFlavors.length >= 3) return reject("Too many bold flavors");
+  
+  // Rule 6: Color variety
+  usedColors = safefoods.map(f => f.color)
+  if (suggestion.color in usedColors && colorCount < 8) 
+    return reject("Use unused color first");
+  
+  // Rule 8: Sensory attribute overlap
+  commonAttrs = suggestion.sensoryAttrs 
+    & safefoods.map(f => f.sensoryAttrs)
+  if (commonAttrs.length < 1) return reject("No sensory overlap");
+  
+  // Rule 9: Sensory distance
+  distance = calculateSensoryDistance(suggestion, safefoods)
+  if (distance > 1) return reject("Too big of sensory jump");
+  
+  return approve(suggestion);
+}</pre>
+
+            <h3>Forbidden Combos</h3>
+            <ul>
+                <li><strong>Salty + Liquid:</strong> Broth, salted water, salty dressings (primary foods only)</li>
+                <li><strong>Bitter + Any:</strong> Blocked entirely for safety</li>
+                <li><strong>Hot + Crunchy:</strong> Immediate sensory conflict (temperature changes texture perception)</li>
+                <li><strong>3+ Bold Flavors:</strong> Salty+Sour+Spicy too overwhelming for selective eaters</li>
+                <li><strong>Mushy + Sweet:</strong> Can trigger gag reflex in sensitive kids (proceed cautiously)</li>
+            </ul>
+        </div>
+
+        <!-- POINTS & REWARDS -->
+        <h2 id="points-economy">⭐ Points & Rewards Economy</h2>
+        
+        <div class="section">
+            <h3>Points Per Action</h3>
+            <table>
+                <tr>
+                    <th>Action</th>
+                    <th>Points</th>
+                </tr>
+                <tr>
+                    <td>Log any food</td>
+                    <td>+10</td>
+                </tr>
+                <tr>
+                    <td>Complete a SOS phase</td>
+                    <td>+5 per phase</td>
+                </tr>
+                <tr>
+                    <td>Complete TASTE phase</td>
+                    <td>+10</td>
+                </tr>
+                <tr>
+                    <td>First log of the day</td>
+                    <td>+5</td>
+                </tr>
+                <tr>
+                    <td>Try bridge food (acceptance)</td>
+                    <td>+30</td>
+                </tr>
+                <tr>
+                    <td>Try new food (any phase)</td>
+                    <td>+25</td>
+                </tr>
+                <tr>
+                    <td>Reach TASTE on new food</td>
+                    <td>+50</td>
+                </tr>
+                <tr>
+                    <td>7-day streak</td>
+                    <td>+100</td>
+                </tr>
+                <tr>
+                    <td>30-day streak</td>
+                    <td>+500</td>
+                </tr>
+                <tr>
+                    <td>60-day streak</td>
+                    <td>+1,000</td>
+                </tr>
+            </table>
+
+            <h3>Planet Progression (PHASE-based, not food-count)</h3>
+            <pre>Planet 1: Unlock first food, progress with 3+ LOOK → 50 pts
+Planet 2: Unlock 3+ TOUCH, progress with 5+ → 500 pts
+Planet 3: Unlock 3+ SMELL, progress with 5+ → 600 pts
+Planet 4: Unlock 3+ LICK, progress with 5+ → 750 pts
+Planet 5: Unlock 3+ TASTE, progress with 10+ → 1,000 pts
+Planet 6: Unlock 3+ bridge foods, progress 5+ → 1,200 pts
+Planet 7: Unlock 5+ food groups, progress all 9 colors → 1,500 pts
+Planet 8: Unlock master (50+ foods), complete goal → 2,000 pts</pre>
+
+            <p style="margin-top: 20px;"><strong>See full economy spec at:</strong> <code>POINTS-REWARDS-ECONOMY-BRIEF.md</code></p>
+        </div>
+
+        <!-- USER FEATURES & SETTINGS -->
+        <h2 id="user-settings">⚙️ User Features & Settings</h2>
+        
+        <div class="section">
+            <h3>Suggest a Food Feature</h3>
+            <p><strong>Location:</strong> Settings tab → "Suggest a Food" button (or "Add Food to Database")</p>
+            
+            <div class="subsection">
+                <h4>Overview</h4>
+                <p>Users can suggest foods not currently in the Sensory Galaxy database. This serves two purposes:</p>
+                <ul>
+                    <li><strong>User Engagement:</strong> Parents feel heard; their child's favorite food might be added next</li>
+                    <li><strong>Database Growth:</strong> Crowdsource food database expansion (100+ → 150+ → 200+)</li>
+                </ul>
+            </div>
+
+            <div class="subsection">
+                <h4>How It Works</h4>
+                <p><strong>Parent submits:</strong> Food name + Texture + Flavor + Temperature + Color + Food Group</p>
+                <p style="margin-top: 10px;"><strong>App validates:</strong> Checks if food already exists, prevents duplicates</p>
+                <p style="margin-top: 10px;"><strong>Queues for review:</strong> Submitted foods reviewed by team before adding to database</p>
+                <p style="margin-top: 10px;"><strong>Confirmation:</strong> Parent gets notification when their suggested food is approved + added</p>
+            </div>
+
+            <div class="subsection">
+                <h4>Implementation Notes</h4>
+                <ul>
+                    <li>Form: Simple 5-dropdown interface (matches food database structure)</li>
+                    <li>Validation: Prevent "pizza" + "water" combos; use LLM guardrails</li>
+                    <li>Backend: Store suggestions in separate table, manual approval workflow</li>
+                    <li>Notification: Email + in-app badge when food is approved ("Your suggestion was added! ✨")</li>
+                    <li>Analytics: Track which foods are suggested (signals real user needs)</li>
+                </ul>
+            </div>
+
+            <div class="subsection">
+                <h4>User Psychology</h4>
+                <p>Allowing users to contribute builds community + ownership. Parents feel like they're helping other families + improving the app. Low-effort feature with high engagement impact.</p>
+            </div>
+        </div>
+
+        <!-- STATUS -->
+        <h2 id="status">✅ Implementation Status</h2>
+        
+        <div class="section">
+            <h3>CRITICAL (Blocking Beta)</h3>
+            <ul>
+                <li><span class="status done">Done</span> App name locked in: "Sensory Galaxy" ✅</li>
+                <li><span class="status planned">TODO</span> Domain registration: <code>sensorygalaxy.com</code> (available, ~$15)</li>
+                <li><span class="status planned">TODO</span> Social handles: <code>@sensorygalaxyapp</code> (Instagram, TikTok)</li>
+                <li><span class="status inprogress">In Progress</span> Phase 2-5 UI Sprint (5-6 hours: Food Logging, Analytics, Suggest, Bug Fixes)</li>
+                <li><span class="status inprogress">In Progress</span> Bridge food LLM integration (Qwen 3.5 Plus with guardrails)</li>
+            </ul>
+
+            <h3>Completed (Phase 1)</h3>
+            <ul>
+                <li><span class="status done">Done</span> Onboarding redesign (9 cards, Card + Modal pattern, parent-friendly copy)</li>
+                <li><span class="status done">Done</span> Badge system (20 badges, unlock conditions)</li>
+                <li><span class="status done">Done</span> Points/rewards economy (10+ action types, phase-based progression)</li>
+                <li><span class="status done">Done</span> Expanded food database (100+ foods with sensory attributes)</li>
+                <li><span class="status done">Done</span> LLM guardrails (10 validation rules, forbidden combos)</li>
+                <li><span class="status done">Done</span> AI strategy (bridge foods, weekly insights, regression alerts, narratives)</li>
+                <li><span class="status done">Done</span> Cost optimization ($2,150/year at 100K users, 96% vs Claude)</li>
+                <li><span class="status done">Done</span> Database color + food group attributes (all 62+ foods)</li>
+                <li><span class="status done">Done</span> Website landing page (production-ready HTML)</li>
+                <li><span class="status done">Done</span> All 8 planets + 4 explorers (responsive, absolute URLs)</li>
+                <li><span class="status done">Done</span> Explorer cosmetics spec (26 unlock conditions)</li>
+                <li><span class="status done">Done</span> Daily streak feature (Duolingo-inspired, 24hr reset)</li>
+                <li><span class="status done">Done</span> SOS phases diagram + modal functionality</li>
+            </ul>
+
+            <h3>In Progress (Phase 2)</h3>
+            <ul>
+                <li><span class="status inprogress">In Progress</span> Phase 2: Food Logging UI (colors, food groups, sensory profiles)</li>
+                <li><span class="status inprogress">In Progress</span> Phase 3: Analytics Tab (food group %, color variety, calendar, regression alerts)</li>
+                <li><span class="status inprogress">In Progress</span> Phase 4: Suggest Tab (bridge food matching, risk ranking, diversity tracking)</li>
+                <li><span class="status inprogress">In Progress</span> Phase 5: Bug Fixes (Settings back button navigation)</li>
+            </ul>
+
+            <h3>Pending (Phase 3+)</h3>
+            <ul>
+                <li><span class="status planned">Planned</span> Food icon generation (40-50 batch via designer + DALL-E 3)</li>
+                <li><span class="status planned">Planned</span> Five senses icons (LOOK, TOUCH, SMELL, LICK, TASTE)</li>
+                <li><span class="status planned">Planned</span> Marketing videos (UGC scripts + Kling AI generation)</li>
+                <li><span class="status planned">Planned</span> App Store & Google Play setup (IAP, TestFlight beta)</li>
+                <li><span class="status planned">Planned</span> Beta launch (5 Portland families, week of March 12)</li>
+                <li><span class="status planned">Planned</span> Therapist outreach pack (clinical summary, partnership info)</li>
+            </ul>
+        </div>
+
+        <!-- NAME MIGRATION -->
+        <h2>🔄 Name Migration (Flavor Galaxy Quest → Sensory Galaxy)</h2>
+        
+        <div class="section">
+            <h3>What Changes</h3>
+            <table>
+                <tr>
+                    <th>Component</th>
+                    <th>Old Name</th>
+                    <th>New Name</th>
+                    <th>Status</th>
+                </tr>
+                <tr>
+                    <td>App Name</td>
+                    <td>Flavor Galaxy Quest</td>
+                    <td>Sensory Galaxy</td>
+                    <td><span class="status done">✅ Decided</span></td>
+                </tr>
+                <tr>
+                    <td>Domain</td>
+                    <td>flavorgalaxy.com</td>
+                    <td>sensorygalaxy.com</td>
+                    <td><span class="status planned">TODO</span></td>
+                </tr>
+                <tr>
+                    <td>Social Handles</td>
+                    <td>@flavorgalaxyapp</td>
+                    <td>@sensorygalaxyapp</td>
+                    <td><span class="status planned">TODO</span></td>
+                </tr>
+                <tr>
+                    <td>Website Copy</td>
+                    <td>Food exploration / "Adventure"</td>
+                    <td>Sensory feeding intelligence / "Methodology"</td>
+                    <td><span class="status planned">TODO</span></td>
+                </tr>
+                <tr>
+                    <td>Marketing Focus</td>
+                    <td>Space theme (primary)</td>
+                    <td>SOS method (primary) + Space theme (visual)</td>
+                    <td><span class="status planned">TODO</span></td>
+                </tr>
+                <tr>
+                    <td>App Store Listing</td>
+                    <td>TBD</td>
+                    <td>"Sensory Galaxy"</td>
+                    <td><span class="status planned">TODO</span></td>
+                </tr>
+                <tr>
+                    <td>Project Docs</td>
+                    <td>Flavor Galaxy references throughout</td>
+                    <td>Update all references to "Sensory Galaxy"</td>
+                    <td><span class="status planned">TODO</span></td>
+                </tr>
+            </table>
+
+            <h3>Why the Name Change</h3>
+            <p>Original "Flavor Galaxy Quest" focused on food + adventure. But the app is really about <strong>sensory feeding intelligence</strong> using the SOS Approach. Parents searching for help with selective eating + sensory sensitivity need to find this — and "Sensory Galaxy" immediately signals relevance.</p>
+
+            <h3>Visual Brand Stays Intact</h3>
+            <ul>
+                <li>✅ 8 planets (Base Camp → Galaxy's Heart)</li>
+                <li>✅ 4 explorers (Nova, Cosmo, Star, Orbit)</li>
+                <li>✅ Dark starfield (#0a0a1e) + neon accents (cyan, gold, pink)</li>
+                <li>✅ SOS phase progression (LOOK → TOUCH → SMELL → LICK → TASTE)</li>
+                <li>✅ Gamification (badges, streaks, rewards)</li>
+            </ul>
+
+            <p style="margin-top: 20px; color: #d4af37;"><strong>Note:</strong> The app's <em>content</em> and <em>core experience</em> don't change — only the marketing narrative shifts from "fun space adventure" to "intelligent sensory feeding guidance."</p>
+        </div>
+
+        <!-- REFERENCES -->
+        <h2 id="references">📚 Detailed Documentation</h2>
+        
+        <div class="section">
+            <h3>Core Spec Files (Workspace Root)</h3>
+            <p style="color: #999; margin-bottom: 15px; font-size: 0.9rem;">All files located in: <code>/Users/rk/clawd/</code></p>
+            <ul>
+                <li><strong><code>FOOD-DATABASE-EXPANDED-WITH-LLM-GUARDRAILS.md</code></strong> — Complete food database (100+ foods) with sensory attributes, validation rules, forbidden combos, implementation pseudocode, and cost strategy</li>
+                <li><strong><code>BADGE-DESIGN-SPEC.md</code></strong> — All 20 badges with unlock conditions, rarity tiers (common/uncommon/rare/legendary), progress tracking</li>
+                <li><strong><code>POINTS-REWARDS-ECONOMY-BRIEF.md</code></strong> — Points per action (10+ types), planet progression (phase-based, not food-count), daily streak mechanics</li>
+                <li><strong><code>ONBOARDING-CARDS-REVISED-COPY.md</code></strong> — 9-card journey with headlines, full modal copy, subtext, implementation notes</li>
+                <li><strong><code>RORK-PHASE2-5-REMAINING-SPRINT.md</code></strong> — Consolidated implementation brief for Phase 2-5 UI (Food Logging, Analytics, Suggest, Bug Fixes)</li>
+                <li><strong><code>BRIDGE-FOODS-CARD-VISUAL-PROMPT.md</code></strong> — Image generation prompt for Card 3 (sensory hub visualization)</li>
+            </ul>
+
+            <h3>Key Takeaways for Tomorrow</h3>
+            <div class="subsection">
+                <p><strong>🍽️ Food Database:</strong> 100+ foods organized by category with texture, flavor, temperature, color, and food group attributes. Includes composite foods (PB&J, Pizza, Mac & Cheese, etc.) tagged as "Mixed" food group.</p>
+                
+                <p style="margin-top: 15px;"><strong>🛡️ LLM Guardrails:</strong> 10 hard validation rules + forbidden combos list to prevent nonsensical bridge food suggestions. Rules include: no liquid primaries, no bitter flavors, no 3+ bold flavor combos, sensory distance ≤1 step, etc.</p>
+                
+                <p style="margin-top: 15px;"><strong>💰 Cost Optimization:</strong> Qwen 3.5 Plus ($2,150/year) instead of Claude ($62K/year). Batch processing (2x/week) for insights + weekly alerts. Bridge food suggestions on-demand only after 3-5 foods logged.</p>
+                
+                <p style="margin-top: 15px;"><strong>📱 UI Implementation:</strong> All briefs ready in RORK-PHASE2-5-REMAINING-SPRINT.md. 5-6 hour sprint covers Food Logging (colors + sensory display), Analytics (charts + regression alerts), Suggest (bridge matching + risk ranking), and bug fixes.</p>
+            </div>
+        </div>
+
+        <div style="margin-top: 60px; padding-top: 20px; border-top: 1px solid rgba(0, 217, 255, 0.1); color: #666; text-align: center; font-size: 0.9rem;">
+            <p>Last Updated: March 10, 2026 | Next Update: March 17, 2026</p>
+            <p style="margin-top: 10px;">📄 Full documentation: BADGE-DESIGN-SPEC.md | POINTS-REWARDS-ECONOMY-BRIEF.md | ONBOARDING-CARDS-REVISED-COPY.md</p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,244 @@
+================================================================================
+ARBITRAGE CONFIG DEPLOYMENT SUMMARY
+April 7, 2026 — 1m Timeframe + Russia Pres (2000) HFT Outfit Integration
+================================================================================
+
+OBJECTIVE
+---------
+Deploy GitHub branch claude/review-and-fix-repo-FW6vL changes to SMA-Outfits
+backend to enable Russia Pres (2000) outfit as HFT arbitrage on 1-minute
+timeframe. Raul confirmed this outfit operates as pure short-order gathering
+whipsaw on SPX/IXIC/DJI/ProShares with .01 penny precision.
+
+
+CHANGES IMPLEMENTED
+-------------------
+
+1. CONFIG.PY UPDATES
+   ✅ Added 1m timeframe to TIMEFRAMES dict
+      - "1m": {"yf_interval": None, "resample_from": None, "resample_factor": 1, "period": None}
+      - Schwab supports 1m natively; yfinance does not
+   
+   ✅ Added 1m to PRIMARY_TIMEFRAMES
+      - Was: ["3m", "5m", "10m", "15m", "20m", "30m", "1h"] (7 timeframes)
+      - Now: ["1m", "3m", "5m", "10m", "15m", "20m", "30m", "1h"] (8 timeframes)
+   
+   ✅ Added ARBITRAGE_TIMEFRAMES constant
+      - ARBITRAGE_TIMEFRAMES = ["1m", "3m", "5m"]
+      - Used by engine to restrict arbitrage outfits to fast timeframes only
+   
+   ✅ Updated Russia Pres (2000) outfit definition
+      - category: "Political" → "Arbitrage"
+      - Added subtype: "arbitrage"
+      - Added timeframes: ["1m", "3m", "5m", "15m"]
+      - Expanded notes with Raul's Apr 7 confirmation:
+        * Operates on 1m across SPX/IXIC/DJI/ProShares as pure HFT
+        * Look for MA16/MA31 precision selections with .01 penny precision
+        * Does NOT produce market tops/bottoms (DXY/VIX/bonds do that)
+        * Originally discovered Apr 30 2024
+   
+   ✅ Expanded Russia Pres (2000) affinity from 6 to 14 tickers
+      - Was: [SSO, SPY, SPX, UPRO, SPXU, SDS]
+      - Now: [SPX, IXIC, DJI, SPY, QQQ, DIA, SSO, SDS, UPRO, SPXU, TQQQ, SQQQ, UDOW, SDOW]
+      - Covers all major indices and their 3x leveraged/inverse variants
+
+2. ENGINE.PY UPDATES
+   ✅ Added per-outfit timeframe filtering in detect_hits_for_ticker()
+      - If outfit has "timeframes" key, only score on declared timeframes
+      - Outfits without key fire on all timeframes (backward-compatible default)
+      - Russia Pres (2000) now skipped on 10m/20m/30m/1h (keeps arbitrage noise off slower trend scans)
+      - Code:
+        ```python
+        for outfit_name in list(outfits.keys()):
+            outfit_cfg = outfits[outfit_name]
+            if "timeframes" in outfit_cfg:
+                allowed_tfs = outfit_cfg["timeframes"]
+                if timeframe not in allowed_tfs:
+                    del outfits[outfit_name]
+        ```
+
+
+BACKEND DEPLOYMENT
+------------------
+
+✅ Backend restarted with new config
+   - Killed old uvicorn process (PID 91876, running 24+ hours)
+   - Launched fresh: /opt/homebrew/bin/uvicorn app.main:app --port 8001
+   - Verified config via API:
+     * PRIMARY_TIMEFRAMES: 8 (includes 1m)
+     * Russia Pres (2000): category="Arbitrage", timeframes=["1m","3m","5m","15m"]
+     * Affinity: 14 tickers
+
+
+SCAN RESULTS (BEFORE vs AFTER)
+------------------------------
+
+BEFORE (7 timeframes, Russia Pres as Political, 6-ticker affinity):
+  Rank  Ticker   Weight    Dominant Outfit    Status
+  ----  ------   -------   ----------------   ------
+  1     SSO      2,879.0w  REPEATER_9         Leader
+  2     AAPU     904.2w    AN (11s)
+  3     MSTX     536.4w    Waring's Problem
+  4     TSLL     409.8w    TSLA (420)
+  5     TSLQ     471.2w    TSLA (420)
+
+AFTER (8 timeframes, Russia Pres as Arbitrage, 14-ticker affinity, 1m active):
+  Rank  Ticker   Weight    Dominant Outfit       Change
+  ----  ------   -------   ------------------   --------
+  1     AAPU     1,035.5w  AN (11s)             ↑ From #2
+  2     DIA      914.1w    Russia Pres (2000)   🔴 NEW #2 (was #9)
+  3     TQQQ     679.1w    Dual Seq (IXIC)      🔴 NEW (was not top 5)
+  4     MSTX     729.5w    Waring's Problem     ↑ From #3
+  5     TSLL     603.8w    TSLA (420)           ↑ From #4
+
+CRITICAL FINDING:
+- SSO DROPPED OUT of top 5 (was #1 at 2,879w)
+- DIA spiked to #2 with Russia Pres (2000) as dominant outfit
+- TQQQ entered top 5 (new entry)
+- Weights increased across all tickers (~+15-30% higher total counts)
+
+
+INTERPRETATION
+--------------
+
+✓ THE GOOD:
+  1. Russia Pres (2000) outfit is now firing and being detected
+  2. Timeframe restriction works (outfit only scores on 1m/3m/5m/15m, not slower)
+  3. 1m timeframe integration successful (no errors, clean startup)
+  4. DIA being identified as dominated by Russia Pres suggests HFT signals are strong
+  5. Period scaling + affinity multiplier are functioning
+
+✗ THE PROBLEM:
+  1. SSO disappeared despite being #1 before
+  2. Indices (DIA, IXIC via TQQQ) spiked in ranking due to 1m MA16/MA31 hits
+  3. Russia Pres (2000) hits are dominating over slower trend outfits
+  4. Ranking distortion is significant (~+100-200w per ticker average)
+  5. Unknown if this is intended behavior or noise overflow
+
+
+ROOT CAUSE ANALYSIS
+-------------------
+
+The 1m timeframe produces HIGH-FREQUENCY hits because:
+  1. MA16 on 1m resets every ~16 minutes
+  2. On indices (SPX/IXIC/DJI), price touches MA16 constantly
+  3. Each touch = 1 hit, weight = pos_weight * affinity_mult * period_scale
+  4. period_scale for MA16 = log2(16)/6.5 ≈ 0.62 (relatively low)
+  5. But 14 tickers × 4 timeframes (1m/3m/5m/15m) × 6 periods = many opportunities
+
+Example: DIA 1m scan finds MA16/MA31/MA63 hits on EVERY candle → rapid accumulation
+
+Deduplication (_dedup_hits_by_date) reduces noise but doesn't eliminate it:
+  - Dedup by (ticker, outfit, sma_period, date)
+  - Still allows multiple hits per outfit per ticker per day
+  - Result: DIA gets 96 active signals (high count) vs previous ~42
+
+
+DECISION OPTIONS
+----------------
+
+A) KEEP AS-IS
+   - Russia Pres arbitrage signals integrate into main ranking
+   - Pros: Full transparency, no hidden signals
+   - Cons: Arbitrage dominates trend analysis, SSO loses credibility
+   - Risk: Daily rankings become unstable (jump based on 1m whipsaw)
+
+B) DOWNWEIGHT ARBITRAGE HITS (50% multiplier)
+   - Add logic: if outfit.subtype == "arbitrage", multiply weight by 0.5
+   - Pros: Keeps arbitrage visible but secondary, smooths rankings
+   - Cons: Somewhat arbitrary multiplier, requires code change
+   - Risk: Might under-represent actual HFT significance
+
+C) SEPARATE ARBITRAGE SIGNALS
+   - Exclude arbitrage from total_count (used for ranking)
+   - Keep arbitrage hits in "key_levels" and "top_hits" (visible but not ranked)
+   - Pros: Cleanest separation, preserves trend ranking integrity
+   - Cons: Requires output schema change, more complex ranking logic
+   - Risk: Users might miss important HFT signals
+
+D) RESTRICT RUSSIA PRES TO 1M ONLY
+   - Remove 3m/5m/15m from timeframes constraint
+   - Only scan 1m for this outfit
+   - Pros: Reduces noise ~70%, keeps true 1m HFT focus
+   - Cons: Might miss multi-timeframe confluence signals
+   - Risk: Loses 15m confirmation that Raul used (SSO short @ 15M@53.34)
+
+E) EXCLUDE FROM LIGHT SCAN
+   - Remove Russia Pres from TICKERS_LIGHT affinity
+   - Keep in TICKERS (full scan) only
+   - Pros: Light scan stays clean (trend only), full scan gets arbitrage
+   - Cons: Two different datasets (light vs full) might confuse users
+   - Risk: Light scan loses HFT context entirely
+
+
+RECOMMENDATION
+--------------
+
+OPTION C (SEPARATE ARBITRAGE SIGNALS) is optimal:
+
+Why:
+  1. Preserves trend integrity (SSO, TSLA, AAPU stay based on institutional conviction)
+  2. Arbitrage signals visible (DIA HFT, Russia Pres hits) but not ranked
+  3. Cleanest architecture (two signal types, two purposes)
+  4. Matches Raul's use case (arbitrage is tactic, not strategy)
+  5. Users see both: "What are institutions doing?" + "What are HFT bots doing?"
+
+Implementation:
+  - In ranking.py, exclude arbitrage-subtype hits from total_weight calculation
+  - Keep them in "key_levels" and "top_hits" output
+  - Add "arbitrage_signals" field to ticker response (optional)
+  - Document: "Total weight is institutional trend. Arbitrage signals are 1m noise."
+
+Timeline: 2-3 hours for code + testing
+
+
+NEXT STEPS FOR YOU
+------------------
+
+1. Review this summary
+2. Choose option (A/B/C/D/E) or propose alternative
+3. Once decided, I'll implement + test + deploy + show results
+4. Update dashboard with new behavior (if applicable)
+
+
+FILES MODIFIED
+--------------
+
+✅ /Users/rk/clawd/sma-outfits-engine/backend/app/config.py
+   - 32 line additions (1m timeframe, ARBITRAGE_TIMEFRAMES, Russia Pres updates)
+   
+✅ /Users/rk/clawd/sma-outfits-engine/backend/app/engine.py
+   - 9 line additions (per-outfit timeframe filtering in detect_hits_for_ticker)
+
+
+CURRENT STATUS
+--------------
+
+Backend: ✅ Running with new config (port 8001)
+Light scan: ✅ Executing successfully (8 timeframes × 31 tickers = 248 combos)
+Scan time: ~3 minutes (was 2-3 min before, ~30% slower due to 1m)
+API endpoints: ✅ All working (config, scan, tickers, btc)
+
+
+DEPLOYMENT NOTES
+----------------
+
+- No GitHub push performed (secret scanning blocked due to Vercel token in MEMORY.md)
+- Changes made directly to local config.py + engine.py + restart
+- If you need to push to GitHub, sanitize MEMORY.md first (remove Vercel token)
+- Vercel deployment not needed (backend is local; no frontend changes)
+
+
+QUESTIONS FOR YOU
+-----------------
+
+1. Which option (A-E) do you prefer for handling arbitrage weight overflow?
+2. Should 1m timeframe be included in light scan, or only full scan?
+3. Should dashboard (robkremers.com/unfairmarket-live) show arbitrage signals separately?
+4. Do you want to go back to SSO being #1, or is DIA with Russia Pres OK?
+5. Should Raul be notified about the ranking distortion, or test more first?
+
+
+================================================================================
+END SUMMARY
+================================================================================

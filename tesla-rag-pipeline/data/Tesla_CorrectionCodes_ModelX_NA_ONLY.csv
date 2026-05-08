@@ -1,0 +1,1938 @@
+Universal,Model,Model_ID,Code,Description,Work_Type,Labor_Hours,FRT
+YES,Model X,19,00000010,Remote – Education,Over The Air,0.0,0.0
+YES,Model X,19,00004107,Alert Diagnosis - Repair,General diagnosis conclusion,0.06,0.06
+YES,Model X,19,00004108,Alert Diagnosis (Repair) - Create New Service Activity for Repair,Test/Adjust,0.06,0.06
+YES,Model X,19,00005914,Service Collision Estimate,Inspection,0.0,0.0
+NO,Model X,19,00014105,1 Year/12500 Mile/20000 km Service (Pre-paid Plan Only) (Add Necessary Parts and Labor Separately),Maintenance,0.15,0.15
+NO,Model X,19,00014205,2 Year/25000 Mile/40000 km Service (Pre-paid Plan only),Maintenance,3.8,3.8
+NO,Model X,19,00014305,3 Year/37500 Mile/60000 km Service (Pre-paid Plan Only) (Add Necessary Parts and Labor Separately),Maintenance,0.15,0.15
+NO,Model X,19,00014405,4 Year/50000 Mile/80000 km Service (Pre-paid Plan Only),Maintenance,3.9,3.9
+NO,Model X,19,00014505,5 Year/62500 Mile/100000 km Service (Pre-paid Plan Only) (Add Necessary Parts and Labor Separately),Maintenance,0.15,0.15
+NO,Model X,19,00014705,6 Year/75000 Mile/120000 km Service (Pre-paid plan only),Maintenance,3.8,3.8
+NO,Model X,19,00014805,7 Year/87500 Mile/140000 km Service (Pre-paid Plan Only) (Add Necessary Parts and Labor Separately),Maintenance,0.15,0.15
+NO,Model X,19,00014905,8 Year/100000 Mile/160000 km Service (Pre-paid Plan Only),Maintenance,3.9,3.9
+NO,Model X,19,00015005,9 Year/112500 Mile/180000 km Service (Pre-paid Plan Only) (Add Necessary Parts and Labor Separately),Maintenance,0.15,0.15
+NO,Model X,19,00015205,10 Year/125000 Mile/200000 km Service (Pre-paid Plan Only),Maintenance,3.8,3.8
+NO,Model X,19,00015305,11 Year/137500 Mile/220000 km Service (Pre-paid Plan Only) (Add Necessary Parts and Labor Separately),Maintenance,0.15,0.15
+NO,Model X,19,00015405,12 Year/150000 Mile/240000 km Service (Pre-paid Plan Only),Maintenance,3.9,3.9
+YES,Model X,19,00020003,Firmware Update,Over The Air,0.06,0.06
+YES,Model X,19,00020007,Firmware Update - Garage,Update,0.05,0.05
+YES,Model X,19,00020010,Remote – Known Characteristic of Current Firmware,Over The Air,0.25,0.25
+YES,Model X,19,00020020,Remote – Over the Air Update,Over The Air,0.25,0.25
+YES,Model X,19,00022008,User Data (Factory Reset),Restore,0.05,0.05
+YES,Model X,19,00023003,Clear Filesystem Caches,Module Reset/Reflashed,0.05,0.05
+YES,Model X,19,00030100,PDI (Without Test Drive),Inspection,0.12,0.12
+YES,Model X,19,00030410,Vehicle Health Check,Inspection,1.5,1.5
+NO,Model X,19,00030420,Four Wheel Check (on Lift),Test/Adjust,0.3,0.3
+NO,Model X,19,00031600,Perform Periodisk Kontroll av Kjøretøy (PKK) – Norway,Test/Adjust,1.0,1.0
+NO,Model X,19,00031700,Perform Etterkontroll Periodisk Kontroll av Kjøretøy (PKK) – Norway,Test/Adjust,0.4,0.4
+YES,Model X,19,00032201,Loaner Registration Confirmation,Inspection,0.2,0.2
+NO,Model X,19,00034300,TC support TAB Vehicle Configuration Change,Test/Adjust,0.2,0.2
+YES,Model X,19,00040100,Perform Post-Repair Validation Test Drive,Test/Adjust,0.3,0.3
+NO,Model X,19,00050300,OBD Connector (Retrofit),Retrofit,0.24,0.24
+YES,Model X,19,00100004,General Diagnosis,General Diagnosis,0.5,0.5
+YES,Model X,19,00100014,Diagnosis: Unable to Replicate Concern,General diagnosis conclusion,0.0,0.0
+YES,Model X,19,00100024,Remote Diagnosis,Remote Diagnostics,0.3,0.3
+YES,Model X,19,10000004,Adjustment: Body / Closure Components,Test/Adjust,0.4,0.4
+YES,Model X,19,10010008,Tesla Body Repair - Miscellaneous Labor,Body Shop,0.0,0.0
+YES,Model X,19,10010011,Tesla Body Repair - Structural,Body Shop,0.0,0.0
+YES,Model X,19,10010012,Tesla Body Structural - Sheet Metal Quotation,Test/Adjust,0.6,0.6
+YES,Model X,19,10010014,Tesla Body Structural - Sheet Metal Repair,Restore,1.0,1.0
+YES,Model X,19,10010015,Tesla Body Structural - Reassemble Parts,Test/Adjust,1.0,1.0
+NO,Model X,19,100111134,test ,Repair,0.5,0.5
+NO,Model X,19,10012012,Cover - Tow Hook - Rear (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model X,19,10012812,Fascia Assembly - Rear - Upper (Remove & Replace),Remove and Replace,0.6,0.6
+NO,Model X,19,10012902,Fascia Assembly - Rear - Lower (Remove & Replace),Remove and Replace,0.78,0.78
+NO,Model X,19,10012912,Trim - Lower - Fascia - Rear (Remove & Replace),Remove and Replace,0.54,0.54
+NO,Model X,19,10013002,Fascia Assembly - Rear (Remove & Replace),Remove and Replace,0.72,0.72
+NO,Model X,19,10013102,Bumper Assembly - Rear (Remove & Replace),Remove and Replace,0.54,0.54
+NO,Model X,19,10014602,Air Extractor -  Rear - Outer - LH (Remove & Replace),Remove and Replace,0.84,0.84
+NO,Model X,19,10014902,Air Extractor -  Rear - Outer - RH (Remove & Replace),Remove and Replace,0.84,0.84
+NO,Model X,19,10016002,Cover - Trailer Hitch (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model X,19,10016502,Door Assembly - Rear Lower - LH (Remove & Replace),Remove and Replace,3.18,3.18
+NO,Model X,19,10016602,Door Assembly - Rear Lower - RH (Remove & Replace),Remove and Replace,3.18,3.18
+YES,Model X,19,10100008,Tesla Body Repair - Mechanical Labor,Body Shop,0.0,0.0
+NO,Model X,19,10100113002,ASSEMBLY - PANEL  REAR QUARTER OUTER LOWER LEFT HAND,Remove and Replace,2.94,2.94
+NO,Model X,19,10100113102,ASSEMBLY - PANEL  REAR QUARTER OUTER LOWER RIGHT HAND,Remove and Replace,2.94,2.94
+NO,Model X,19,10100113902,"REAR QUARTER COMPLETE, LEFT HAND",Remove and Replace,13.6,13.6
+NO,Model X,19,10100114502,WHEELEFTOUSE REAR- LEFT,Remove and Replace,9.75,9.75
+NO,Model X,19,10100114602,"REAR QUARTER COMPLETE, RIGHT HAND",Remove and Replace,13.6,13.6
+NO,Model X,19,10100115202,WHEELEFTOUSE REAR-RIGHT,Remove and Replace,9.75,9.75
+NO,Model X,19,10100115302,"REAR QUARTER OUTER COMPLETE, LEFT HAND",Remove and Replace,8.35,8.35
+NO,Model X,19,10100115502,"REAR QUARTER OUTER COMPLETE, RIGHT HAND",Remove and Replace,8.35,8.35
+NO,Model X,19,10100129402,ASSEMBLY - PANEL  C-PILLAR LOWER EXTENSION LEFT HAND,Remove and Replace,3.66,3.66
+NO,Model X,19,10100129502,ASSEMBLY - PANEL  C-PILLAR LOWER EXTENSION RIGHT HAND,Remove and Replace,3.66,3.66
+NO,Model X,19,10100129802,ASSEMBLY-A PILLAR OUTER LEFT HAND,Remove and Replace,6.45,6.45
+NO,Model X,19,10100129902,ASSEMBLY-A PILLAR OUTER RIGHT HAND,Remove and Replace,6.45,6.45
+NO,Model X,19,10100131002,B-PILLAR COMPLETE - LEFT HAND,Remove and Replace,16.1,16.1
+NO,Model X,19,10100131102,B-PILLAR COMPLETE - RIGHT HAND,Remove and Replace,16.1,16.1
+NO,Model X,19,10100131402,"REAR QUARTER COMPLETE, RIGHT HAND",Remove and Replace,0.42,0.42
+NO,Model X,19,10100301036,Hood | Complete | Seam Sealer,Installation,0.54,0.54
+NO,Model X,19,10100301602,SECOND ROW SEAT FLOOR PANEL,Remove and Replace,3.96,3.96
+NO,Model X,19,10100301802,SECOND ROW SEAT MOUNT (REAR OBLONG),Remove and Replace,1.14,1.14
+NO,Model X,19,10100302,Hood Assembly (Remove & Replace),Remove and Replace,0.3,0.3
+NO,Model X,19,10100303202,ASSEMBLY-CROSSMEMBER REAR TORQUE BOX LOWER,Remove and Replace,10.75,10.75
+NO,Model X,19,10100303702,MOUNT- REAR SEAT REAR M10 OBLONG,Remove and Replace,2.04,2.04
+NO,Model X,19,10100661036,Falcon Door | Complete | Seam Seal,Installation,0.9,0.9
+NO,Model X,19,10100701036,Liftgate | Complete | Seam Seal,Installation,0.9,0.9
+NO,Model X,19,10101007502,COWL LOWER,Remove and Replace,9.6,9.6
+NO,Model X,19,10101007702,ASY-COWL TOP,Remove and Replace,4.02,4.02
+NO,Model X,19,10101022502,ASSEMBLY - SHOTGUN SUPPORT - LEFT HAND,Remove and Replace,0.78,0.78
+NO,Model X,19,10101022602,ASSEMBLY - SHOTGUN SUPPORT - RIGHT HAND,Remove and Replace,0.78,0.78
+NO,Model X,19,10101022702,ASY-CROSSMEMBER TOEBOARD,Remove and Replace,29.65,29.65
+NO,Model X,19,10101023202,"SHOTGUN, LEFT HAND",Remove and Replace,3.54,3.54
+NO,Model X,19,10101023302,"SHOTGUN, RIGHT HAND",Remove and Replace,3.54,3.54
+NO,Model X,19,10101808002,"ASY, TRUNK WATERFALL CROSSMEMBER UPPER",Remove and Replace,12.3,12.3
+NO,Model X,19,10101808102,BUMPER PLATE - LEFT HAND,Remove and Replace,10.1,10.1
+NO,Model X,19,10101808202,BUMPER PLATE - RIGHT HAND,Remove and Replace,10.1,10.1
+NO,Model X,19,10101808302,EXTENSION - REAR TRUNK FLOOR PANEL  - LEFT HAND,Remove and Replace,2.1,2.1
+NO,Model X,19,10101808402,EXTENSION - REAR TRUNK FLOOR PANEL  - RIGHT HAND,Remove and Replace,2.1,2.1
+NO,Model X,19,10101808702,REAR END PANEL,Remove and Replace,9.35,9.35
+NO,Model X,19,10101809102,TRUNK WATERFALL CROSSMEMBER LOWER,Remove and Replace,10.45,10.45
+NO,Model X,19,10101819902,ASSEMBLY - TRUNK PANEL,Remove and Replace,7.75,7.75
+NO,Model X,19,10101820002,ASSEMBLY MOTORBAY COVER,Remove and Replace,4.92,4.92
+NO,Model X,19,10101820102,"ASSEMBLY, TRUNK FLOOR",Remove and Replace,3.9,3.9
+NO,Model X,19,10101820402,ASSEMBLY-MEMBER RAIL REAR LEFT HAND,Remove and Replace,32.6,32.6
+NO,Model X,19,10101820502,ASSEMBLY-MEMBER RAIL REAR RIGHT HAND,Remove and Replace,32.6,32.6
+NO,Model X,19,10101820602,WATERFALL PANEL,Remove and Replace,4.38,4.38
+NO,Model X,19,10101821202,"Rear Panel (Vehicles Built After May 21, 2024)",Remove and Replace,7.9,7.9
+NO,Model X,19,10101821402,"Trunk Waterfall Panel (Vehicles Built Through May 21, 2024)",Remove and Replace,2.76,2.76
+NO,Model X,19,10101904202,"WHEEL ARCH OUTER, LEFT HAND",Remove and Replace,10.45,10.45
+NO,Model X,19,10101904302,"WHEEL ARCH OUTER, RIGHT HAND",Remove and Replace,10.45,10.45
+NO,Model X,19,10101915802,"WHEELEFT HANDOUSE EXTENSION, LEFT HAND",Remove and Replace,4.98,4.98
+NO,Model X,19,10101915902,"WHEELEFT HANDOUSE EXTENSION, RIGHT HAND",Remove and Replace,4.98,4.98
+NO,Model X,19,10102030,Rear Door Adjustment - 0.6,Test/Adjust,0.6,0.6
+NO,Model X,19,10102808,NOT APPLICABLE - DO NOT USE,Restore,0.0,0.0
+NO,Model X,19,10102908,NOT APPLICABLE - DO NOT USE,Restore,0.0,0.0
+NO,Model X,19,10103200302,SECOND ROW SEAT MOUNT (REAR OUTBOARD),Remove and Replace,2.22,2.22
+NO,Model X,19,10106502,Door Assembly - Rear Lower - LH (Remove & Replace),Remove and Replace,2.88,2.88
+NO,Model X,19,10106602,Door Assembly - Rear Lower - RH (Remove & Replace),Remove and Replace,2.88,2.88
+NO,Model X,19,10106702,Door Assembly - Rear Upper - LH (Remove & Replace),Remove and Replace,2.52,2.52
+NO,Model X,19,10106802,Door Assembly - Rear Upper - RH (Remove & Replace),Remove and Replace,2.52,2.52
+NO,Model X,19,10107002,Liftgate (Remove & Replace),Remove and Replace,3.78,3.78
+YES,Model X,19,10108608,Tesla Body Repair - Body Labor,Body Shop,0.0,0.0
+YES,Model X,19,10108808,Tesla Body Repair - Sublet,Body Shop,0.0,0.0
+YES,Model X,19,10109008,Structural Body Repair,Repair,0.0,0.0
+YES,Model X,19,10109108,Non-Structural Body Repair,Restore,0.0,0.0
+YES,Model X,19,10182019,Customer Generated Quote - Issue (Transaction) Resolved - Bound,General diagnosis conclusion,0.0,0.0
+NO,Model X,19,10200702,Sensor - HVAC - Light/Temperature/Humidity (Remove & Replace),Remove and Replace,0.54,0.54
+NO,Model X,19,10203002,Glass - Rear Quarter - LH (Remove & Replace),Remove and Replace,0.78,0.78
+NO,Model X,19,10203102,Glass - Rear Quarter - RH (Remove & Replace),Remove and Replace,0.72,0.72
+NO,Model X,19,10204002,Backlight Glass (Remove & Replace),Remove and Replace,1.56,1.56
+NO,Model X,19,10206002,Sensor - Relative Humidity and Temperature (Remove & Replace),Remove and Replace,0.24,0.24
+NO,Model X,19,10209000,Secondary Image Separation Test,Inspection,0.1,0.1
+YES,Model X,19,1027521,Assistance with Refund of Reservation,Test/Adjust,0.0,0.0
+NO,Model X,19,11330401832,Diagnosis: Falcon Door Ultrasonic ,Diagnosis Only,0.6,0.6
+NO,Model X,19,11330502,Gas Strut - Hood - LH (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model X,19,11330602,Gas Strut - Hood - RH (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model X,19,11330702,C-Clips - Strut - Hood - LH (Remove and Replace),Remove and Replace,0.06,0.06
+NO,Model X,19,11330722,C-Clips - Strut - Liftgate - LH (Remove and Replace),Remove and Replace,0.06,0.06
+NO,Model X,19,11330822,C-Clips - Strut - Liftgate - RH (Remove and Replace),Remove and Replace,0.06,0.06
+NO,Model X,19,11331002,Strut - Rear Door - Primary - LH - Forward (Remove & Replace),Remove and Replace,0.3,0.3
+NO,Model X,19,11331102,Strut - Rear Door - Primary - LH - Rear (Remove & Replace),Remove and Replace,0.24,0.24
+NO,Model X,19,11331202,Strut - Rear Door - Primary - LH - Pair (Remove & Replace),Remove and Replace,0.3,0.3
+NO,Model X,19,11331302,Strut - Rear Door - Primary - RH - Forward (Remove & Replace),Remove and Replace,0.3,0.3
+NO,Model X,19,11331402,Strut - Rear Door - Primary - RH - Rear (Remove & Replace),Remove and Replace,0.24,0.24
+NO,Model X,19,11331502,Strut - Rear Door - Primary - RH - Pair (Remove & Replace),Remove and Replace,0.3,0.3
+NO,Model X,19,11331602,Strut - Rear Door - Secondary - LH - Forward (Remove & Replace),Remove and Replace,0.3,0.3
+NO,Model X,19,11331702,Strut - Rear Door - Secondary - LH - Rear (Remove & Replace),Remove and Replace,0.18,0.18
+NO,Model X,19,11331802,Strut - Rear Door - Secondary - LH - Pair (Remove & Replace),Remove and Replace,0.24,0.24
+NO,Model X,19,11331902,Strut - Rear Door - Secondary - RH - Forward (Remove & Replace),Remove and Replace,0.18,0.18
+NO,Model X,19,11332002,Strut - Rear Door - Secondary - RH - Rear (Remove & Replace),Remove and Replace,0.3,0.3
+NO,Model X,19,11332102,Strut - Rear Door - Secondary - RH - Pair (Remove & Replace),Remove and Replace,0.24,0.24
+NO,Model X,19,11332902,C-Clips - Strut - Hood - RH (Remove and Replace),Remove and Replace,0.06,0.06
+NO,Model X,19,11333002,Switch - Rear Door - Door Mounted - LH (Remove & Replace),Remove and Replace,0.72,0.72
+NO,Model X,19,11333102,Switch - Rear Door - Door Mounted - RH (Remove & Replace),Remove and Replace,0.72,0.72
+NO,Model X,19,11333202,Module - Rear Door Controller - LH (Remove & Replace),Remove and Replace,0.3,0.3
+NO,Model X,19,11333302,Module - Rear Door Controller - RH (Remove & Replace),Remove and Replace,0.3,0.3
+NO,Model X,19,11333702,Switch - Rear Door - B-pillar - LH (Remove and Replace),Remove and Replace,0.12,0.12
+NO,Model X,19,11333802,Switch - Rear Door - B-pillar - RH (Remove and Replace),Remove and Replace,0.12,0.12
+NO,Model X,19,11334202,Power Strut - Liftgate (Remove & Replace),Remove and Replace,0.24,0.24
+NO,Model X,19,11334302,Sensor - Ultrasonic - Rear Door - RH (Remove & Replace),Remove and Replace,0.66,0.66
+NO,Model X,19,11334312,Sensor - Ultrasonic - Rear Door - LH (Remove & Replace),Remove and Replace,0.66,0.66
+NO,Model X,19,11334402,Gas Strut - Liftgate (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model X,19,11334502,Module - Ultrasonic Door Sensors - LH (Remove & Replace),Remove and Replace,0.36,0.36
+NO,Model X,19,11334602,Module - Ultrasonic Door Sensors - RH (Remove & Replace),Remove and Replace,0.36,0.36
+NO,Model X,19,11334702,Carrier - Sensor - Ultrasonic - Rear Door - LH (Remove & Replace),Remove and Replace,0.9,0.9
+NO,Model X,19,11334902,Carrier - Sensor - Ultrasonic - Rear Door - RH (Remove & Replace),Remove and Replace,0.9,0.9
+NO,Model X,19,11335012,Liftgate Ball Stud - Set  (Remove & Replace),Remove and Replace,0.18,0.18
+NO,Model X,19,11335022,Module - Rear Door Electromechanical Controller - LH (Remove & Replace),Remove and Replace,1.32,1.32
+NO,Model X,19,11335032,Ball Stud - Liftgate - LH (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model X,19,11335042,Ball Stud - Liftgate - RH (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model X,19,11335402,Bumper - Liftgate - LH (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model X,19,11335412,Bumper - Liftgate - RH (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model X,19,11336022,Module - Rear Door Electromechanical Controller - RH (Remove & Replace),Remove and Replace,1.32,1.32
+NO,Model X,19,11339112,Bumper - Sprung - Hood (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model X,19,11339302,Bump Stop - Rear Door - LH (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model X,19,11339402,Bump Stop - Rear Door - RH (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model X,19,11339702,Bumper - Rear - Rear Door - Upper - LH (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model X,19,11339802,Bumper - Rear - Rear Door - Upper - RH (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model X,19,11350602,Cover - Lower Latch - Door - Rear - LH (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model X,19,11350702,Cover - Lower Latch - Door - Rear - RH (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model X,19,11352002,Latch - Hood (Remove & Replace),Remove and Replace,0.3,0.3
+NO,Model X,19,11352212,Cable - Latch - Hood - Primary (Remove & Replace),Remove and Replace,0.42,0.42
+NO,Model X,19,11352302,Actuator - Latch - Hood - Secondary (Remove & Replace),Remove and Replace,0.42,0.42
+NO,Model X,19,11352312,Cable - Latch - Hood - Secondary (Remove & Replace),Remove and Replace,0.42,0.42
+NO,Model X,19,11352902,Striker - Hood (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model X,19,11353402,Striker - Liftgate (Remove & Replace),Remove and Replace,0.18,0.18
+NO,Model X,19,11353702,Latch - Door - Rear - LH  (Remove & Replace),Remove and Replace,1.08,1.08
+NO,Model X,19,11353712,Latch and Actuator Assembly - Door - Rear - LH (Remove & Replace),Remove and Replace,0.96,0.96
+NO,Model X,19,11353732,Shroud - Latch - Door - Rear - LH (Remove & Replace),Remove and Replace,0.3,0.3
+NO,Model X,19,11353802,Latch - Door - Rear - RH  (Remove & Replace),Remove and Replace,1.08,1.08
+NO,Model X,19,11353812,Latch and Actuator Assembly - Door - Rear - RH (Remove & Replace),Remove and Replace,0.96,0.96
+NO,Model X,19,11353832,Shroud - Latch - Door - Rear - RH (Remove & Replace),Remove and Replace,0.3,0.3
+NO,Model X,19,11354002,Striker - Door - Rear - LH (Remove & Replace),Remove and Replace,0.36,0.36
+NO,Model X,19,11354102,Striker - Door - Rear - RH (Remove & Replace),Remove and Replace,0.36,0.36
+NO,Model X,19,11355002,Latch - Liftgate (Remove & Replace),Remove and Replace,0.24,0.24
+NO,Model X,19,11355602,Exterior Release Switch - Liftgate (Remove & Replace),Remove and Replace,0.96,0.96
+NO,Model X,19,11404102,Handle - Emergency Release - Liftgate (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model X,19,11451502,Bezel - Exterior Door Handle - Rear - LH (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model X,19,11451602,Bezel - Exterior Door Handle - Rear - RH (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model X,19,11452002,Handle Carrier - Exterior Release - Door - Rear - LH (Remove & Replace),Remove and Replace,1.02,1.02
+NO,Model X,19,11452102,Handle Carrier - Exterior Release - Door - Rear - RH (Remove & Replace),Remove and Replace,1.02,1.02
+NO,Model X,19,11500302,Door Glass - LH - Rear (Remove & Replace),Remove and Replace,0.84,0.84
+NO,Model X,19,11500402,Door Glass - RH - Rear (Remove & Replace),Remove and Replace,0.84,0.84
+NO,Model X,19,11500502,Door Glass Assembly - Rear - Upper - LH (Remove & Replace),Remove and Replace,0.6,0.6
+NO,Model X,19,11500602,Door Glass Assembly - Rear - Upper - RH (Remove & Replace),Remove and Replace,0.6,0.6
+NO,Model X,19,11501602,Fixed Glass - Rear Door - LH (Remove & Replace),Remove and Replace,0.66,0.66
+NO,Model X,19,11501702,Fixed Glass - Rear Door - RH (Remove & Replace),Remove and Replace,0.66,0.66
+NO,Model X,19,11504002,Applique - C-Pillar - LH (Remove & Replace),Remove and Replace,1.2,1.2
+NO,Model X,19,11504102,Applique - C-Pillar - RH (Remove & Replace),Remove and Replace,1.2,1.2
+YES,Model X,19,11700004,Adjustment: Seal,Test/Adjust,0.2,0.2
+NO,Model X,19,11700802,Seal - B-Pillar Applique - LH (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model X,19,11700902,Seal - B-Pillar Applique - RH (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model X,19,11701402,Closeout Panel - Door - Rear - LH (Remove & Replace),Remove and Replace,0.6,0.6
+NO,Model X,19,11701502,Closeout Panel - Door - Rear - RH (Remove & Replace),Remove and Replace,0.6,0.6
+NO,Model X,19,11701802,Seal - Hood (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model X,19,11701812,Aero Seal - Hood (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model X,19,11702002,Seal - Liftgate (Remove & Replace),Remove and Replace,0.18,0.18
+NO,Model X,19,11702502,Seal - Outer Belt - Rear Door - RH (Remove and Replace),Remove and Replace,0.06,0.06
+NO,Model X,19,11704402,Seal - Outer Belt - Rear Door - LH (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model X,19,11704502,Seal - Outer Belt - Rear Door- RH (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model X,19,11705402,Seal - Rear Door Cantrail - LH (Remove & Replace),Remove and Replace,0.9,0.9
+NO,Model X,19,11705502,Seal - Rear Door Cantrail - RH (Remove & Replace),Remove and Replace,0.9,0.9
+NO,Model X,19,11706002,Seal - Door - Rear - Upper - LH (Remove & Replace),Remove and Replace,1.5,1.5
+NO,Model X,19,11706102,Seal - Door - Rear - Upper - RH (Remove & Replace),Remove and Replace,1.5,1.5
+NO,Model X,19,11707302,Protector - Lower Edge - Rear Door - LH (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model X,19,11707402,Protector - Lower Edge - Rear Door - RH (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model X,19,11707502,Seal - Door Glass - Lower - Rear - LH (Remove & Replace),Remove and Replace,1.2,1.2
+NO,Model X,19,11707602,Seal - Door Glass - Lower - Rear - RH (Remove & Replace),Remove and Replace,1.2,1.2
+NO,Model X,19,11709002,Seal - Lower NVH Extrusion - LH (Remove and Replace),Remove and Replace,0.66,0.66
+NO,Model X,19,11709102,Seal - Lower NVH Extrusion - RH (Remove & Replace),Remove and Replace,0.66,0.66
+YES,Model X,19,12000004,Adjustment: Exterior Trim,Test/Adjust,0.2,0.2
+NO,Model X,19,12010202,Noise Absorber - Motor Bay - Rear (Remove & Replace),Remove and Replace,2.4,2.4
+NO,Model X,19,12030502,Panel - Aero Shield - Mid (Remove & Replace),Remove and Replace,0.24,0.24
+NO,Model X,19,12030802,Diffuser - Rear Fascia (Remove & Replace),Remove and Replace,0.42,0.42
+NO,Model X,19,12050602,Vehicle Configuration Badge (Remove & Replace),Remove and Replace,0.24,0.24
+NO,Model X,19,12050606,Vehicle Configuration Badge (Retrofit),Retrofit,0.24,0.24
+NO,Model X,19,12050607,Vehicle Configuration Badge (Remove),Modify,0.06,0.06
+NO,Model X,19,12050702,Tesla Badge - Rear (Remove & Replace),Remove and Replace,0.24,0.24
+NO,Model X,19,12054102,Plaid Graphic Badge (Remove & Replace),Remove and Replace,0.18,0.18
+NO,Model X,19,12054202,Plaid Letter Badge (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model X,19,12091102,Door Mirror Assembly - LH (Remove & Replace),Remove and Replace,0.48,0.48
+NO,Model X,19,12091202,Door Mirror Assembly - RH (Remove & Replace),Remove and Replace,0.48,0.48
+NO,Model X,19,12091702,Skull Cap - Door Mirror - LH (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model X,19,12091802,Skull Cap - Door Mirror - RH (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model X,19,12092002,Glass - Door Mirror - LH (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model X,19,12092102,Glass - Door Mirror - RH (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model X,19,12200102,Applique - B-Pillar - LH (Remove & Replace),Remove and Replace,0.24,0.24
+NO,Model X,19,12200202,Applique - B-Pillar - RH (Remove & Replace),Remove and Replace,0.18,0.18
+NO,Model X,19,12202402,Carrier - Rocker Panel - LH (Remove & Replace),Remove and Replace,0.42,0.42
+NO,Model X,19,12202502,Carrier - Rocker Panel - RH (Remove & Replace),Remove and Replace,0.42,0.42
+NO,Model X,19,12206202,Applique - Roof - Rear (Remove & Replace),Remove and Replace,1.2,1.2
+NO,Model X,19,12207002,Applique - Liftgate (Remove & Replace),Remove and Replace,0.6,0.6
+NO,Model X,19,12207006,Mud Flaps (Retrofit),Retrofit,0.12,0.12
+YES,Model X,19,12208583,Mud Flaps (PDI Retrofit),Retrofit,0.0,0.0
+NO,Model X,19,12220102,Active Spoiler Assembly (Remove & Replace),Remove and Install,0.3,0.3
+NO,Model X,19,12220402,Spoiler - Rear (Remove & Replace),Remove and Replace,0.9,0.9
+NO,Model X,19,12221002,Motor - Active Spoiler (Remove & Replace),Remove and Replace,0.42,0.42
+NO,Model X,19,12221202,Torque Rod - Active Spoiler - LH (Remove & Replace),Remove and Replace,0.42,0.42
+NO,Model X,19,12221302,Torque Rod - Active Spoiler - RH (Remove & Replace),Remove and Replace,0.42,0.42
+NO,Model X,19,12221802,Stanchion - Active Spoiler - LH (Remove & Replace),Remove and Replace,1.02,1.02
+NO,Model X,19,12221902,Stanchion - Active Spoiler - RH (Remove & Replace),Remove and Replace,1.02,1.02
+NO,Model X,19,12222002,Stanchion - Passive Spoiler - LH (Remove & Replace),Remove and Replace,0.84,0.84
+NO,Model X,19,12222012,Carrier - Stanchion - Passive Spoiler - LH (Remove & Replace),Remove and Replace,1.8,1.8
+NO,Model X,19,12222022,Carrier - Stanchion - Passive Spoiler - RH (Remove & Replace),Remove and Replace,1.8,1.8
+NO,Model X,19,12222102,Stanchion - Passive Spoiler - RH (Remove & Replace),Remove and Replace,0.84,0.84
+NO,Model X,19,12222202,Applique - Spoiler (Remove & Replace),Remove and Replace,0.72,0.72
+NO,Model X,19,12250902,Panel - Cowl Screen (Remove & Replace),Remove and Replace,0.3,0.3
+NO,Model X,19,12251012,Cover - Shock Tower - LH (Remove & Replace),Remove and Replace,0.3,0.3
+NO,Model X,19,12251112,Cover - Shock Tower - RH (Remove & Replace),Remove and Replace,0.24,0.24
+NO,Model X,19,12270402,Trim - Liftgate Trough - LH (Remove & Replace),Remove and Replace,0.18,0.18
+NO,Model X,19,12270502,Trim - Liftgate Trough - RH (Remove & Replace),Remove and Replace,0.18,0.18
+NO,Model X,19,12270702,Stop - Liftgate - LH (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model X,19,12270802,Stop - Liftgate - RH (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model X,19,12271002,Garnish - Liftgate Trough - Rear Fascia (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model X,19,12272002,Trim - Liftgate Trough - Center (Remove & Replace),Remove and Replace,0.72,0.72
+NO,Model X,19,12300202,Assembly - Trailer Hitch (Remove & Replace),Remove and Replace,0.72,0.72
+NO,Model X,19,12302002,Cable Assembly – Light – Trailer (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model X,19,12302102,ECU - Trailer Hitch (Remove and Replace),Remove and Replace,0.48,0.48
+YES,Model X,19,12302302,Ball Neck - Trailer Hitch (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model X,19,12505744,Vehicle Wrap – (Removal),Retrofit,0.0,0.0
+YES,Model X,19,13000004,Diagnosis: Seats,Test/Adjust,0.5,0.5
+NO,Model X,19,13010102,Seat Track Assembly - 1st Row - LH (Remove & Replace),Remove and Replace,2.1,2.1
+NO,Model X,19,13010412,Fan - Cushion - Driver Seat (Remove & Replace),Remove and Replace,0.66,0.66
+NO,Model X,19,13010702,Cover - Podium - Driver Seat (Remove and Replace),Remove and Replace,0.66,0.66
+NO,Model X,19,13010722,Cover - Outer - Podium - Driver (Remove & Replace),Remove and Replace,0.42,0.42
+NO,Model X,19,13010800401,Light - Driver Seat (2025+),Remove and Install,0.48,0.48
+NO,Model X,19,13010800402,Light - Driver Seat (2025+),Remove and Replace,0.48,0.48
+NO,Model X,19,13011002,Switch - Adjust - Driver's Seat  (Remove & Replace),Remove and Replace,0.3,0.3
+NO,Model X,19,13011202,Motor - Seat Track - Driver Seat (Remove & Replace),Remove and Replace,0.78,0.78
+NO,Model X,19,13011502,Motor - Seat Tilt - Driver Seat (Remove & Replace),Remove and Replace,0.18,0.18
+NO,Model X,19,13011602,Motor - Seat Height - Driver Seat (Remove & Replace),Remove and Replace,0.66,0.66
+NO,Model X,19,13012002,Riser - Outer - Driver Seat (Remove & Replace),Remove and Replace,0.6,0.6
+NO,Model X,19,13012052,Cover - Riser - Driver Seat (Remove and Replace),Remove and Replace,0.66,0.66
+NO,Model X,19,13012412,Podium - 1st Row (Remove & Replace),Remove and Replace,1.74,1.74
+NO,Model X,19,13012502,Sensor - Position - Seat Track - 1st Row Seat - LH (Remove and Replace),Remove and Replace,0.12,0.12
+NO,Model X,19,13012602,Sensor - Position - Seat Track - 1st Row Seat - RH (Remove and Replace),Remove and Replace,0.12,0.12
+NO,Model X,19,13015102,Switch - Back Rest and Cushion Adjust - Driver's Seat (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model X,19,13015152,Switch - Back Rest and Cushion Adjust - Driver Seat (2nd Generation Seat) (Remove and Replace),Remove and Replace,0.12,0.12
+NO,Model X,19,13016002,Motor - Headrest - Driver's (Remove & Replace),Remove and Replace,0.9,0.9
+NO,Model X,19,13016052,Motor - Headrest - Driver (Remove & Replace),Remove and Replace,0.42,0.42
+NO,Model X,19,13016202,Controller - Driver Seat (Remove and Replace),Remove and Replace,0.54,0.54
+NO,Model X,19,13018102,Button - Cushion Adjust - Driver Seat (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model X,19,13020012,Actuator - EZ Entry -  60 Track - 2nd Row Seat (7-Seat) (Remove & Replace),Remove and Replace,2.04,2.04
+NO,Model X,19,13020022,Actuator - EZ Entry - 40 Track - 2nd Row Seat (7-Seat) (Remove & Replace),Remove and Replace,0.24,0.24
+NO,Model X,19,13020092,Actuator - 60 Track - 2nd Row Seat (7 Seat) (Remove & Replace),Remove and Replace,1.62,1.62
+NO,Model X,19,13020102,Track - Outer - 2nd Row Seat - LH (6 Seat) (Remove & Replace),Remove and Replace,2.04,2.04
+NO,Model X,19,13020212,Actuator - Pitch Latch - 2nd Row Seat - LH (6 Seat) (Remove & Replace),Remove and Replace,0.36,0.36
+NO,Model X,19,13020222,Actuator - Pitch Latch - 2nd Row Seat - RH (6 Seat) (Remove & Replace),Remove and Replace,0.36,0.36
+NO,Model X,19,13020302,Track - Outer - 2nd Row Seat - RH (6 Seat) (Remove & Replace),Remove and Replace,2.22,2.22
+NO,Model X,19,13020802,Heater Pads - Passenger Seat - Roadster 1.5 (Remove & Replace),Remove and Replace,2.34,2.34
+NO,Model X,19,13021002,Motor - Seat Track - 2nd Row - LH (6 Seat) (Remove & Replace),Remove and Replace,2.16,2.16
+NO,Model X,19,13021102,Motor - Seat Track - 2nd Row - RH (6 Seat) (Remove & Replace),Remove and Replace,2.34,2.34
+NO,Model X,19,13021302,Release Actuator - Easy Entry - 2nd Row - RH (Remove and Replace),Remove and Replace,2.28,2.28
+NO,Model X,19,13021602,Pitch Pulley - Seat - 2nd Row - LH  (Monopost) (Remove & Replace),Remove and Replace,0.78,0.78
+NO,Model X,19,13021612,Pitch Idler - Seat - 2nd Row - LH  (Monopost) (Remove & Replace),Remove and Replace,0.78,0.78
+NO,Model X,19,13021622,Pitch Belt - Seat - 2nd Row - LH  (Monopost) (Remove & Replace),Remove and Replace,0.78,0.78
+NO,Model X,19,13021702,Pitch Pulley - Seat - 2nd Row - RH  (Monopost) (Remove & Replace),Remove and Replace,0.78,0.78
+NO,Model X,19,13021712,Pitch Idler - Seat - 2nd Row - RH  (Monopost) (Remove & Replace),Remove and Replace,0.78,0.78
+NO,Model X,19,13021722,Pitch Belt - Seat - 2nd Row - RH  (Monopost) (Remove & Replace),Remove and Replace,0.78,0.78
+NO,Model X,19,13021802,Module - 2nd Row Seat Controller - RH (5 Seat) (Remove and Replace),Remove and Replace,0.18,0.18
+NO,Model X,19,13021902,Module - 2nd Row Seat Controller - RH (6 Seat) (Remove and Replace),Remove and Replace,0.3,0.3
+NO,Model X,19,13022002,Pitch Mechanism - 2nd Row Seat - LH (Remove & Replace),Remove and Replace,0.78,0.78
+NO,Model X,19,13022102,Pitch Mechanism - 2nd Row Seat - RH (Remove & Replace),Remove and Replace,0.84,0.84
+NO,Model X,19,13022202,Motor - Pitch - 2nd Row - RH (6 Seat)(Remove and Replace),Remove and Replace,0.72,0.72
+NO,Model X,19,13022302,Mount - Actuator - Seatback - 2nd Row - RH (With 2nd Row Bench Seats)(Remove and Replace),Remove and Replace,1.74,1.74
+NO,Model X,19,13022902,Release Handle - Seat Track - 2nd Row - RH (Remove and Replace),Remove and Replace,1.62,1.62
+NO,Model X,19,13023002,Module - 2nd Row Seat Controller - LH (6 Seat) (Remove & Replace),Remove and Replace,0.3,0.3
+NO,Model X,19,13023012,Module - 2nd Row Seat Controller - LH (5 Seat) (Remove & Replace),Remove and Replace,0.18,0.18
+NO,Model X,19,13023102,Module - 2nd Row Seat Controller - RH (Remove & Replace),Remove and Replace,0.3,0.3
+NO,Model X,19,13023202,Module - 2nd Row Seat Controller - Center (Remove & Replace),Remove and Replace,0.24,0.24
+NO,Model X,19,13023502,Actuator Assembly - Release - EZ Entry - 2nd Row - LH (7 Seat) (Remove & Replace),Remove and Replace,2.1,2.1
+NO,Model X,19,13023602,Actuator Assembly - Release - EZ Entry - 2nd Row - RH (7 Seat) (Remove & Replace),Remove and Replace,1.8,1.8
+NO,Model X,19,13024002,Motor - Pitch - 2nd Row - LH (6 Seat)(Remove & Replace),Remove and Replace,0.72,0.72
+NO,Model X,19,13024102,Motor - Pitch - 2nd Row - RH (6 Seat) (Remove & Replace),Remove and Replace,0.72,0.72
+NO,Model X,19,13024202,Motor - Pitch - 2nd Row - Center (Remove & Replace),Remove and Replace,0.6,0.6
+NO,Model X,19,13024302,Switch - 2nd Row Seat - Center (Remove & Replace),Remove and Replace,0.18,0.18
+NO,Model X,19,13024402,Switch - 2nd Row - LH (6 Seat) (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model X,19,13024412,Cap - Switch - 2nd Row - LH (6 Seat) (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model X,19,13024502,Switch - 2nd Row - RH (6 Seat) (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model X,19,13024512,Cap - Switch - 2nd Row - RH (6 Seat) (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model X,19,13024602,Switch - Easy Entry - 2nd Row Seat - LH (6 Seat) (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model X,19,13024652,60/40 Seat Switch - 2nd Row - LH (Remove & Replace),Remove and Replace,0.18,0.18
+NO,Model X,19,13024702,Switch - Easy Entry - 2nd Row Seat - RH (6 Seat) (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model X,19,13024752,60/40 Seat Switch - 2nd Row - RH (Remove & Replace),Remove and Replace,0.18,0.18
+NO,Model X,19,13024802,Release Cable - EZ Entry - 2nd Row - RH (7 Seat) (Remove & Replace),Remove and Replace,1.68,1.68
+NO,Model X,19,13025002,Drive Shaft - 2nd Row Seat Motor - LH (6 Seat) (Remove & Replace),Remove and Replace,0.36,0.36
+NO,Model X,19,13025102,Drive Shaft - 2nd Row Seat Motor - RH (6 Seat) (Remove & Replace),Remove and Replace,0.36,0.36
+NO,Model X,19,13025202,Drive Shaft - 2nd Row Seat Motor - Center (Remove & Replace),Remove and Replace,0.6,0.6
+NO,Model X,19,13026102,Microswitch - EZ Entry - 2nd Row - LH (7 Seat) (Remove and Replace),Remove and Replace,1.86,1.86
+NO,Model X,19,13026202,Microswitch - EZ Entry - 2nd Row - RH (7 Seat) (Remove and Replace),Remove and Replace,1.62,1.62
+NO,Model X,19,13026502,Release Actuator - Easy Entry - 2nd Row - LH (Remove & Replace),Remove and Replace,2.28,2.28
+NO,Model X,19,13027102,Release Handle - Seat Track - 2nd Row - LH (Remove and Replace),Remove and Replace,1.62,1.62
+NO,Model X,19,13027902,Mount - Actuator - Seatback - 2nd Row - LH (With 2nd Row Bench Seats)(Remove and Replace),Remove and Replace,1.74,1.74
+NO,Model X,19,13029302,Shaft - Outboard - Seat Track Motor - 2nd Row - LH (6 Seat) (Remove & Replace),Remove and Replace,0.78,0.78
+NO,Model X,19,13029402,Shaft - Outboard - Seat Track Motor - 2nd Row - RH (6 Seat) (Remove & Replace),Remove and Replace,0.78,0.78
+NO,Model X,19,13029502,Strut Rod Assembly - Pitch - 2nd Row - LH (6 Seat) (Remove & Replace),Remove and Replace,0.9,0.9
+NO,Model X,19,13029602,Strut Rod Assembly - Pitch - 2nd Row - RH (6 Seat) (Remove & Replace),Remove and Replace,0.9,0.9
+NO,Model X,19,13033002,Actuator - Headrest - 3rd Row - LH (Remove & Replace),Remove and Replace,0.42,0.42
+NO,Model X,19,13033102,Actuator - Headrest - 3rd Row - RH (Remove & Replace),Remove and Replace,0.42,0.42
+NO,Model X,19,13040012,Microphone - Seat - Driver (Remove & Replace),Remove and Replace,1.02,1.02
+NO,Model X,19,13040102,1st Row Seat Assembly - LH (Remove & Replace),Remove and Replace,0.48,0.48
+NO,Model X,19,13040202,1st Row Seat Assembly - RH (Remove & Replace),Remove and Replace,0.48,0.48
+NO,Model X,19,13041002,Shell - Seat Back - Driver (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model X,19,13042002,Trim - Headrest - Driver's (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model X,19,13043072,Back Rest - Driver (Remove & Replace),Remove and Replace,1.38,1.38
+NO,Model X,19,13044002,Base Assembly - Driver's Seat (Remove & Replace),Remove and Replace,1.02,1.02
+NO,Model X,19,13050052,Seat Assembly - 2nd Row - LH (7-Seat) (Remove & Replace),Remove and Replace,1.08,1.08
+NO,Model X,19,13050062,Seat Assembly - 2nd Row - RH (7-Seat) (Remove & Replace),Remove and Replace,1.02,1.02
+NO,Model X,19,13050102,Seat Assembly - 2nd Row - LH (Without 2nd Row Bench Seats) (Remove & Replace),Remove and Replace,1.74,1.74
+NO,Model X,19,13050152,Seat Assembly - 2nd Row - LH (5 Seat) (Remove & Replace),Remove and Replace,1.14,1.14
+NO,Model X,19,13050202,Seat Assembly - 2nd Row - RH (Without 2nd Row Bench Seats) (Remove & Replace),Remove and Replace,1.74,1.74
+NO,Model X,19,13051002,Seat Back Assembly - 2nd Row - LH (Without 2nd Row Bench Seats) (Remove & Replace),Remove and Replace,1.2,1.2
+NO,Model X,19,13051102,Seat Back Assembly - 2nd Row - RH (Without 2nd Row Bench Seats) (Remove & Replace),Remove and Replace,1.2,1.2
+NO,Model X,19,13053002,Latch Actuator - 2nd Row Seat - LH (Remove & Replace),Remove and Replace,0.54,0.54
+NO,Model X,19,13053102,Latch Actuator - 2nd Row Seat - RH (Remove & Replace),Remove and Replace,0.54,0.54
+NO,Model X,19,13053202,Latch Actuator - 2nd Row Seat - Center (Remove & Replace),Remove and Replace,0.54,0.54
+NO,Model X,19,13054902,Seat Assembly - 2nd Row - RH (5 Seat) (Remove & Replace),Remove and Replace,1.08,1.08
+NO,Model X,19,13058702,Cushion Sub-assembly - 2nd Row Seat - LH (5 Seat) (Remove & Replace),Remove and Replace,1.38,1.38
+NO,Model X,19,13058712,Seat Back Sub-assembly - 2nd Row Seat - LH (7 Seat) (Remove & Replace),Remove and Replace,1.92,1.92
+NO,Model X,19,13058722,Seat Back Sub-assembly - 2nd Row Seat - LH (5 Seat) (Remove & Replace),Remove and Replace,1.8,1.8
+NO,Model X,19,13058802,Cushion Sub-assembly - 2nd Row Seat - RH (5 Seat) (Remove & Replace),Remove and Replace,1.44,1.44
+NO,Model X,19,13058812,Seat Back Sub-assembly - 2nd Row Seat - RH (7 Seat) (Remove & Replace),Remove and Replace,1.56,1.56
+NO,Model X,19,13058822,Seat Back Sub-assembly - 2nd Row Seat - RH (5 Seat) (Remove & Replace),Remove and Replace,1.62,1.62
+NO,Model X,19,13060032,Cushion - Seat - 3rd Row (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model X,19,13060042,USB Hub - Seat - 3rd Row (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model X,19,13060072,Cushion - Seat - 3rd Row - LH (Remove & Replace),Remove and Replace,0.54,0.54
+NO,Model X,19,13060082,Cushion - Seat - 3rd Row - RH (Remove & Replace),Remove and Replace,0.54,0.54
+NO,Model X,19,13060102,Seat Assembly - 3rd Row (Remove & Replace),Remove and Replace,0.6,0.6
+NO,Model X,19,13061202,Seat Backs - 3rd Row - LH/RH (Remove & Replace),Remove and Replace,1.26,1.26
+NO,Model X,19,13063002,Luggage Hook Tie Down - 3rd Row Seat Back - LH (Remove & Replace),Remove and Replace,0.48,0.48
+NO,Model X,19,13063102,Luggage Hook Tie Down - 3rd Row Seat Back - RH (Remove & Replace),Remove and Replace,0.48,0.48
+NO,Model X,19,13064002,Seat Back Carpet - 3rd Row - LH (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model X,19,13064102,Seat Back Carpet - 3rd Row - RH (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model X,19,13064302,Headrest - 3rd Row Seat - LH (Remove & Replace),Remove and Replace,0.36,0.36
+NO,Model X,19,13064402,Headrest - 3rd Row Seat - RH (Remove & Replace),Remove and Replace,0.36,0.36
+NO,Model X,19,13066102,Crush Plastic - Rear - 3rd Row - LH (Remove & Replace),Remove and Replace,0.54,0.54
+NO,Model X,19,13066202,Crush Plastic - Rear - 3rd Row - RH (Remove & Replace),Remove and Replace,0.54,0.54
+NO,Model X,19,13066502,Tray Harness - 3rd Row - LH (Remove & Replace),Remove and Replace,0.18,0.18
+NO,Model X,19,13066602,Tray Harness - 3rd Row - RH (Remove & Replace),Remove and Replace,0.18,0.18
+NO,Model X,19,13070102,Foam - Cushion  - Driver Seat (Remove & Replace),Remove and Replace,1.26,1.26
+NO,Model X,19,13071002,Cover - Back Rest - Driver's Seat (Remove & Replace),Remove and Replace,0.84,0.84
+NO,Model X,19,13071012,Cover - Back Rest - Driver (Remove & Replace),Remove and Replace,1.14,1.14
+NO,Model X,19,13071302,Foam - Cushion - Driver Seat (Remove & Replace),Remove and Replace,0.96,0.96
+NO,Model X,19,13072002,Trim - Seat Back - Driver Seat (Remove & Replace),Remove and Replace,1.08,1.08
+NO,Model X,19,13072202,Cover - Cushion - Driver Seat (Remove & Replace),Remove and Replace,1.26,1.26
+NO,Model X,19,13072602,Foam - Seat Back - Driver Seat (Remove & Replace),Remove and Replace,1.08,1.08
+NO,Model X,19,13073602,Module - Seat Heater - Driver Seat  (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model X,19,13073702,Module - Seat Heater - Passenger Seat (Remove & Replace),Remove and Replace,0.0,0.0
+NO,Model X,19,13080102,Trim Strip - Rear - 2nd Row Seat - LH (6 seat) (Remove & Replace),Remove and Replace,2.04,2.04
+NO,Model X,19,13080112,Panel - Seat Back - 2nd Row Seat - LH (6 Seat) (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model X,19,13080202,Trim Strip - Rear - 2nd Row Seat - RH (6 seat) (Remove & Replace),Remove and Replace,2.04,2.04
+NO,Model X,19,130803202,Bezel - Top Tether - 2nd Row,Remove and Replace,0.06,0.06
+NO,Model X,19,13080902,Cover - Seat Back - 2nd Row - RH (Without 2nd Row Bench Seats) (Remove and Replace),Remove and Replace,0.06,0.06
+NO,Model X,19,13081002,Cover - Seat Back - 2nd Row - LH (Without 2nd Row Bench Seats) (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model X,19,13081102,Cover - Seat Back - 2nd Row - RH (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model X,19,13081112,Cover - Seat Back - 2nd Row Seat - RH (6 Seat) (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model X,19,13081202,Cover - Seat Back - 2nd Row - Center (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model X,19,13081306,Tether Label - Seat Back - 2nd Row - LH (Retrofit),Retrofit,0.06,0.06
+NO,Model X,19,13081702,Release Handle - Seat Track - 2nd Row - RH (Remove and Replace),Remove and Replace,1.62,1.62
+NO,Model X,19,13082402,Trim - Seat Post - 2nd Row - Center - LH (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model X,19,13082502,Trim - Seat Post - 2nd Row - Center - RH (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model X,19,13082802,Trim - Seat Post - 2nd Row - RH - Outer (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model X,19,13083102,Release Handle - Seat Track - 2nd Row - LH (Remove and Replace),Remove and Replace,1.62,1.62
+NO,Model X,19,13086402,Trim - Back Rest - 2nd Row - RH (Bench Seat) (Remove & Replace),Remove and Replace,0.9,0.9
+NO,Model X,19,13089302,Trim - Outer - Seat Post - 2nd Row - LH (Remove & Replace),Remove and Replace,0.18,0.18
+NO,Model X,19,13089402,Trim - Outer - Seat Post - 2nd Row - RH (Remove & Replace),Remove and Replace,0.18,0.18
+NO,Model X,19,13091206,Tether Label - Seat Back - 3rd Row (Pair) (Retrofit),Retrofit,0.24,0.24
+NO,Model X,19,13092102,Rocket Clip - Seat Cushion - 3rd Row - LH (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model X,19,13093302,Heater Pad - Cushion - 3rd Row - LH (Remove & Replace),Remove and Replace,1.08,1.08
+NO,Model X,19,13093402,Heater Pad - Cushion - 3rd Row - RH (Remove & Replace),Remove and Replace,1.08,1.08
+NO,Model X,19,13093702,Cover - Cushion - 3rd Row (Remove & Replace),Remove and Replace,1.14,1.14
+NO,Model X,19,13093802,Substrate - Cushion - 3rd Row (Remove & Replace),Remove and Replace,0.66,0.66
+NO,Model X,19,13094702,Back Panel - Headrest - 3rd Row - LH (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model X,19,13094802,Back Panel - Headrest - 3rd Row - RH (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model X,19,13099702,Rocket Clip - Seat Cushion - 3rd Row - RH (Remove and Replace),Remove and Replace,0.12,0.12
+YES,Model X,19,14050002,USB Drive,Remove and Replace,0.06,0.06
+NO,Model X,19,14051002,Glove Box (Remove & Replace),Remove and Replace,0.54,0.54
+NO,Model X,19,14051112,Latch - Shape Memory Alloy (SMA) - Glove Box (Remove & Replace),Remove and Replace,0.6,0.6
+NO,Model X,19,14052202,Cross Car Beam (Remove & Replace),Remove and Replace,3.12,3.12
+NO,Model X,19,14053102,Face Level Vent - Driver's - Outer (Remove & Replace),Remove and Replace,0.18,0.18
+NO,Model X,19,14053312,Shroud - Upper - Touchscreen (Remove & Replace),Remove and Replace,0.36,0.36
+NO,Model X,19,14053322,Shroud - Lower - Touchscreen (Remove & Replace),Remove and Replace,0.36,0.36
+NO,Model X,19,14055302,Assembly - Cover - Footwell - Driver's (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model X,19,14055322,Cover - Footwell - Outboard - Driver (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model X,19,14055402,Cover - Footwell - Passenger (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model X,19,14056002,Cover - Knee Airbag - Driver (Remove & Replace),Remove and Replace,0.42,0.42
+NO,Model X,19,15050002,Cover - Harness - Rear View Mirror (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model X,19,15050202,Mirror - Rear View (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model X,19,15050902,Quad Camera Cover – Lower (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model X,19,15051002,Sun Visor - Driver's (Remove & Replace),Remove and Replace,0.18,0.18
+NO,Model X,19,15051802,Upper Cover - Rear View Mirror,Remove and Replace,0.18,0.18
+NO,Model X,19,15052002,Harness Assembly - Overhead Console (Remove & Replace),Remove and Replace,1.2,1.2
+NO,Model X,19,15111002,Trim - Upper - Liftgate (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model X,19,15111302,Trim - Liftgate - Lower (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model X,19,15111902,Trim - Liftgate - Middle (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model X,19,15112002,Grille - Speaker - Liftgate (Remove & Replace),Remove and Replace,0.06,0.06
+YES,Model X,19,15130004,Diagnosis: Closures,General Diagnosis,0.65,0.65
+NO,Model X,19,15132002,Panel - Door Trim - Rear - LH (Remove & Replace),Remove and Replace,0.18,0.18
+NO,Model X,19,15132102,Panel - Door Trim - Rear - RH (Remove & Replace),Remove and Replace,0.18,0.18
+NO,Model X,19,15132302,Panel - Door Trim - Rear - Upper - LH (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model X,19,15132402,Panel - Door Trim - Rear - Upper - RH (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model X,19,15132502,Garnish - Lower - Door Trim - Rear - LH (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model X,19,15132602,Garnish - Lower - Door Trim - Rear - RH (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model X,19,15133002,Grille - Speaker - Rear - LH (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model X,19,15133102,Grille - Speaker - Rear - RH (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model X,19,15180502,Trim - Sill Panel - Rear - LH (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model X,19,15180602,Trim - Sill Panel - Rear - RH (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model X,19,15180902,Welcome Plate - LH (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model X,19,15181002,Welcome Plate - RH (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model X,19,15182402,Trim - A-Pillar - Lower - LH (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model X,19,15182502,Trim - A-Pillar - Lower - RH (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model X,19,15182602,Trim - A-Pillar - Middle - LH (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model X,19,15182702,Trim - A-Pillar - Middle - RH (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model X,19,15183002,Trim - B-Pillar - Upper - LH (Remove & Replace),Remove and Replace,0.18,0.18
+NO,Model X,19,15183102,Trim - B-Pillar - Upper - RH (Remove & Replace),Remove and Replace,0.18,0.18
+NO,Model X,19,15183402,Trim - B-Pillar - Lower - LH (Remove & Replace),Remove and Replace,0.18,0.18
+NO,Model X,19,15183502,Trim - B-Pillar - Lower - RH (Remove & Replace),Remove and Replace,0.18,0.18
+NO,Model X,19,15184002,Trim - A-Pillar - Upper - LH (Remove & Replace),Remove and Replace,0.18,0.18
+NO,Model X,19,15184102,Trim - A-Pillar - Upper - RH (Remove & Replace),Remove and Replace,0.18,0.18
+NO,Model X,19,15184402,Trim - A-Pillar - Sun Visor Bezel - LH (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model X,19,15184502,Trim - A-Pillar - Sun Visor Bezel - RH (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model X,19,15184602,Magnet - A-Pillar - Sun Visor Bezel - LH (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model X,19,15184702,Magnet - A-Pillar - Sun Visor Bezel - RH (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model X,19,15185002,Footrest - Driver's (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model X,19,15185402,Trim - C-Pillar - Mid - LH (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model X,19,15185502,Trim - C-Pillar - Mid - RH (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model X,19,15185802,Trim - C-Pillar - Lower - LH (Remove & Replace),Remove and Replace,0.24,0.24
+NO,Model X,19,15185902,Trim - C-Pillar - Lower - RH (Remove & Replace),Remove and Replace,0.18,0.18
+NO,Model X,19,15186002,Trim - C-Pillar - Upper - LH (Remove & Replace),Remove and Replace,0.18,0.18
+NO,Model X,19,15186102,Trim - C-Pillar - Upper - RH (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model X,19,15186202,Support - Parcel Shelf - LH (Remove & Replace),Remove and Replace,0.42,0.42
+NO,Model X,19,15186302,Support - Parcel Shelf - RH (Remove & Replace),Remove and Replace,0.3,0.3
+NO,Model X,19,15187102,Racetrack Trim - Lower - LH (Remove & Replace),Remove and Replace,0.3,0.3
+NO,Model X,19,15187202,Racetrack Trim - Lower - RH (Remove & Replace),Remove and Replace,0.3,0.3
+NO,Model X,19,15187502,Racetrack Trim - Rear - LH (Remove & Replace),Remove and Replace,0.48,0.48
+NO,Model X,19,15187602,Racetrack Trim - Rear - RH (Remove & Replace),Remove and Replace,0.48,0.48
+NO,Model X,19,15187702,Racetrack Trim - Upper - LH (Remove & Replace),Remove and Replace,0.72,0.72
+NO,Model X,19,15187802,Racetrack Trim - Upper - RH (Remove & Replace),Remove and Replace,1.5,1.5
+NO,Model X,19,15189102,Bezel - Striker - Racetrack - LH (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model X,19,15189202,Bezel - Striker - Racetrack - RH (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model X,19,15190012,Phone Dock - Center Console (Remove & Replace),Remove and Replace,0.18,0.18
+NO,Model X,19,15190062,Panel - Service - Center Console (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model X,19,15190072,Trim - USB Port - Rear - Center Console (Remove & Replace),Remove and Replace,0.24,0.24
+NO,Model X,19,15190102,Center Console (Remove & Replace),Remove and Replace,0.54,0.54
+NO,Model X,19,15190502,Air Outlet - Center Console (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model X,19,15190612,Switch - Lid - Center Console (Remove & Replace),Remove and Replace,0.54,0.54
+NO,Model X,19,15191102,Closeout Extension - Center Console - LH (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model X,19,15191202,Closeout Extension - Center Console - RH (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model X,19,15191702,Base - Armrest - Center Console (Remove & Replace),Remove and Replace,0.84,0.84
+NO,Model X,19,15192002,Trim - Center Console - Rear (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model X,19,15192402,Center Console Assembly (Remove & Replace),Remove and Replace,0.54,0.54
+NO,Model X,19,15192512,Armrest - Center Console (Remove & Replace),Remove and Replace,0.66,0.66
+NO,Model X,19,15192802,USB Hub - Center Console (Remove & Replace),Remove and Replace,0.18,0.18
+NO,Model X,19,15193002,Trim - Armrest - Center Console (Remove & Replace),Remove and Replace,0.84,0.84
+NO,Model X,19,15193502,Phone Dock Adapter (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model X,19,15195202,Panel - Lower Rear - Center Console (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model X,19,15204302,Coat Hook - Rear - LH (Remove & Replace),Remove and Replace,0.42,0.42
+NO,Model X,19,15204402,Coat Hook - Rear - RH (Remove & Replace),Remove and Replace,0.42,0.42
+NO,Model X,19,15240042,Tie Down - Rear Trunk - RH (Remove & Replace),Remove and Replace,0.6,0.6
+NO,Model X,19,15240052,Tie Down - Rear Trunk - LH (Remove & Replace),Remove and Replace,0.6,0.6
+NO,Model X,19,15244802,Trim - Sill - Trunk (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model X,19,15245402,Carpet - Rear Trunk (5 Seat) (Remove & Replace),Remove and Replace,0.18,0.18
+NO,Model X,19,15245412,Carpet - Rear Trunk (7 Seat) (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model X,19,15245602,Trim - Rear Trunk - Rear Wall (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model X,19,15300022,Trim - Crush Can - Rear Trunk - LH (Remove & Replace),Remove and Replace,0.18,0.18
+NO,Model X,19,15300032,Carpet - Podium (Remove & Replace),Remove and Replace,1.26,1.26
+NO,Model X,19,15301012,Support - Carpet - Driver (Remove & Replace),Remove and Replace,0.66,0.66
+NO,Model X,19,15301402,Trim - Crush Can - Rear Trunk - RH (Remove and Replace),Remove and Replace,0.18,0.18
+NO,Model X,19,15301602,Floor Mat - 2nd Row (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model X,19,15301902,Floor Mat Set (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model X,19,15302402,Floor Panel - 1st Row (Remove & Replace),Remove and Replace,2.04,2.04
+NO,Model X,19,15302502,Carpet - 1st Row (Remove & Replace),Remove and Replace,2.04,2.04
+NO,Model X,19,15303022,Floor Panel - Middle - 2nd Row (6 Seat) (Remove & Replace),Remove and Replace,0.18,0.18
+NO,Model X,19,15303032,Floor Panel - Rear - 2nd Row (6 Seat) (Remove & Replace),Remove and Replace,0.6,0.6
+NO,Model X,19,15303042,Floor Panel - Rear - 2nd Row (5 Seat) (Remove & Replace),Remove and Replace,0.18,0.18
+NO,Model X,19,15303052,Floor Panel - Mid - 2nd Row (5 Seat) (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model X,19,15303062,Floor Panel - Rear - 2nd Row (7 Seat) ( Remove & Replace),Remove and Replace,0.6,0.6
+NO,Model X,19,15303072,Floor Panel - Mid - 2nd Row (7 Seat) (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model X,19,15303102,Floor Panel - 2nd Row - Middle (Remove & Replace),Remove and Replace,0.42,0.42
+NO,Model X,19,15303108,Floor Panel - 2nd Row - Middle,Restore,0.42,0.42
+NO,Model X,19,15303202,Floor Panel - 2nd Row - Rear (Remove & Replace),Remove and Replace,0.36,0.36
+NO,Model X,19,15303208,Floor Panel - 2nd Row - Rear,Restore,0.3,0.3
+NO,Model X,19,15303622,Floor Supports - Rear - 2nd Row - LH (Remove & Replace),Remove and Replace,0.24,0.24
+NO,Model X,19,15303642,Floor Supports - Rear - 2nd Row - RH (Remove & Replace),Remove and Replace,0.24,0.24
+NO,Model X,19,15305102,Trunk Load Floor - Rear (Remove and Replace),Remove and Replace,0.06,0.06
+NO,Model X,19,15308102,Carpet - 3rd Row (Remove & Replace),Remove and Replace,1.08,1.08
+NO,Model X,19,15309122,Carpet - Surround - Seat - 2nd Row - LH (Remove & Replace),Remove and Replace,0.24,0.24
+NO,Model X,19,15309222,Carpet - Surround - Seat - 2nd Row - RH (Remove & Replace),Remove and Replace,0.24,0.24
+NO,Model X,19,15352002,Center Console - 2nd Row (Remove & Replace),Remove and Replace,0.36,0.36
+NO,Model X,19,15352006,Center Console - 2nd Row (Retrofit),Retrofit,0.36,0.36
+NO,Model X,19,15352502,Keystone Panel - Center Console - 2nd Row (Remove & Replace),Remove and Replace,0.12,0.12
+YES,Model X,19,16010201,HV Battery (AWD),Remove and Install,4.26,4.26
+YES,Model X,19,16010202,HV Battery (AWD),Remove and Replace,5.22,5.22
+NO,Model X,19,16010500,HV Battery Health Test,Inspection,0.15,0.15
+NO,Model X,19,16011102,Flood Port - RH (Remove & Replace),Remove and Replace,0.78,0.78
+NO,Model X,19,16013008,Battery Enclosure - Re-seal - Level 1,Restore,0.6,0.6
+NO,Model X,19,16013108,Battery Enclosure - Re-seal - Level 2,Restore,1.2,1.2
+YES,Model X,19,16015300,Discharge HV Battery (At Pack Contactors),Test/Adjust,1.02,1.02
+NO,Model X,19,16100012,Cover - Pyrotechnic Fuse - HV Battery (Remove & Replace),Remove and Replace,0.36,0.36
+NO,Model X,19,16100022,Ground Cable - HV Battery (Remove & Replace),Remove and Replace,0.48,0.48
+NO,Model X,19,16101022,Cover - Rear Access - HV Battery (Remove & Replace),Remove and Replace,5.4,5.4
+NO,Model X,19,16102010,Platter Enclosure Coolant Leak Test,Inspection,0.18,0.18
+YES,Model X,19,16102100,HV Battery Air Leak Test,Test/Adjust,0.54,0.54
+NO,Model X,19,16102110,HV Battery Air Leak Test (On Table),Test/Adjust,0.18,0.18
+NO,Model X,19,16102712,Flood Port Plunger Set,Remove and Replace,0.6,0.6
+NO,Model X,19,16102732,Flood Port Assembly,Remove and Replace,0.84,0.84
+NO,Model X,19,16200210,Power Conversion System Coolant Leak Test,Test/Adjust,4.1,4.1
+NO,Model X,19,16202202,Tube - Output - Coolant - Power Conversion System (Remove & Replace),Remove and Replace,5.82,5.82
+NO,Model X,19,16300002,Pyrotechnic Battery Disconnect (Remove & Replace),Remove and Replace,0.9,0.9
+NO,Model X,19,16300042,HV Harness - Power Conversion System (Remove & Replace),Remove and Replace,6.15,6.15
+NO,Model X,19,16300062,Harness - Pyrotechnic - HV Battery (Remove & Replace),Remove and Replace,5.88,5.88
+YES,Model X,19,16300100,Resistance Meter (Zero Adjust),Test/Adjust,0.05,0.05
+NO,Model X,19,16301002,Power Conversion System (Remove & Replace),Remove and Replace,6.1,6.1
+NO,Model X,19,16301601,HV Controller,Remove and Install,6.55,6.55
+NO,Model X,19,16301602,HV Controller,Remove and Replace,6.35,6.35
+NO,Model X,19,16302002,Contactor - Negative  - HV Battery (Remove & Replace),Remove and Replace,6.2,6.2
+NO,Model X,19,16302102,Contactor - Positive - HV Battery (Remove and Replace),Remove and Replace,5.46,5.46
+NO,Model X,19,16302602,Contactor - Fast Charge - HV Battery (Remove & Replace),Remove and Replace,5.52,5.52
+NO,Model X,19,16303602,Shunt - HV Battery (Remove & Replace),Remove and Replace,6.25,6.25
+NO,Model X,19,16304202,Fuse - A/C Compressor - HV Battery (Remove & Replace),Remove and Replace,6.1,6.1
+NO,Model X,19,16304402,Fuse - Power Conversion System - HV Battery (Remove & Replace),Remove and Replace,5.94,5.94
+NO,Model X,19,16305002,Harness - HV Battery - High Voltage Controller (Remove & Replace),Remove and Replace,6.15,6.15
+NO,Model X,19,16900308,HV Battery Damage Evaluation (Reman),Retrofit,1.0,1.0
+NO,Model X,19,16900508,HV Battery Safety Check (Reman),Retrofit,1.0,1.0
+NO,Model X,19,16901808,Battery Enclosure Replacement (Reman),Sublet,0.0,0.0
+NO,Model X,19,16901908,Battery Module Replacement (Reman),Sublet,0.0,0.0
+NO,Model X,19,16902408,Charge/Discharge Test (Reman),Sublet,0.0,0.0
+NO,Model X,19,16902608,Battery Reassembly (Reman),Sublet,0.0,0.0
+NO,Model X,19,16902808,Battery Module Repair (Reman),Sublet,0.0,0.0
+NO,Model X,19,16903108,HV Battery Coolant Leak Rectification (Reman),Retrofit,1.0,1.0
+NO,Model X,19,16904008,Enclosure - HV Battery - Remanufactured (Reman),Retrofit,5.35,5.35
+NO,Model X,19,16904208,Enclosure - HV Battery - New (Reman),Retrofit,4.6,4.6
+NO,Model X,19,16904508,Baffle - Vent - HV Battery (Reman),Retrofit,0.15,0.15
+NO,Model X,19,16905008,Battery Management System (BMS) (Reman),Retrofit,0.45,0.45
+NO,Model X,19,16906208,Modules - HV Battery - Upper (Reman),Retrofit,0.25,0.25
+NO,Model X,19,16906408,Modules - HV Battery - Lower (Reman),Retrofit,0.7,0.7
+YES,Model X,19,17000004,Diagnosis: Driver Assistance,General Diagnosis,0.5,0.5
+YES,Model X,19,17000008,Jumpstart Vehicle (Restore),Restore,0.12,0.12
+YES,Model X,19,17010000,Vehicle HV Disablement Procedure,Test/Adjust,0.42,0.42
+NO,Model X,19,17010008,LV Battery - Recover,Restore,0.06,0.06
+NO,Model X,19,17010200,Disconnect LV Power,Modify,0.12,0.12
+NO,Model X,19,17011222,Battery - LV (Remove & Replace),Remove and Replace,0.24,0.24
+NO,Model X,19,17011602,E-Fuse Module (1st Generation) (Remove & Replace),Remove and Replace,1.74,1.74
+YES,Model X,19,17100008,Harness Connector - Reconnect,Restore,0.1,0.1
+NO,Model X,19,17100012,Harness - USB - 3rd Row (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model X,19,17100072,Harness - Seat Assembly - 2nd Row - LH (5 Seat) (Remove & Replace),Remove and Replace,1.56,1.56
+NO,Model X,19,17100082,Harness - Seat Assembly - 2nd Row - LH (5 Seat) (Remove & Replace),Remove and Replace,1.68,1.68
+NO,Model X,19,17100112,Harness - Seat Assembly - 2nd Row - LH (7 Seat) (Remove & Replace),Remove and Replace,1.68,1.68
+NO,Model X,19,17100122,Harness - Seat Assembly - 2nd Row - RH (7 Seat) (Remove & Replace),Remove and Replace,1.86,1.86
+NO,Model X,19,17100212,Harness - Power Strut - Rear Door - LH (Remove & Replace),Remove and Replace,2.16,2.16
+NO,Model X,19,17100222,Harness - Power Strut - Rear Door - RH (Remove & Replace),Remove and Replace,2.16,2.16
+NO,Model X,19,17100302,Harness - Center Console (Remove & Replace),Remove and Replace,1.62,1.62
+NO,Model X,19,17100402,Harness - Body - Lower Dash (Remove & Replace),Remove and Replace,8.55,8.55
+NO,Model X,19,17100802,Harness - Body - LH (NA) (Remove & Replace),Remove and Replace,6.3,6.3
+NO,Model X,19,17100812,Harness - Body - LH (RoW) (Remove & Replace),Remove and Replace,6.3,6.3
+NO,Model X,19,17100902,Harness - Body - RH (NA) (Remove & Replace),Remove and Replace,6.15,6.15
+NO,Model X,19,17100912,Harness - Body - RH (RoW) (Remove & Replace),Remove and Replace,6.15,6.15
+NO,Model X,19,17101102,Harness - Fascia - Rear (HW3) (Remove & Replace),Remove and Replace,0.42,0.42
+NO,Model X,19,17101302,Harness - Thermal Bar (Remove & Replace),Remove and Replace,1.56,1.56
+NO,Model X,19,17102012,Jumper Harness - Trailer Hitch (Remove and Replace),Remove and Replace,0.54,0.54
+NO,Model X,19,17102808,Harness - Rear Door - Lower - LH - Repair,Remove and Rebuild,0.0,0.0
+NO,Model X,19,17102812,Harness - Rear Door - Lower - LH (Remove and Replace),Remove and Replace,0.72,0.72
+NO,Model X,19,17102822,Harness - Rear Door - Lower - RH (Remove and Replace),Remove and Replace,0.72,0.72
+NO,Model X,19,17103002,Harness - Rear Door - Upper - LH (Remove & Replace),Remove and Replace,2.1,2.1
+NO,Model X,19,17103102,Harness - Rear Door - Upper - RH (Remove & Replace),Remove and Replace,2.4,2.4
+NO,Model X,19,17103108,Harness - Rear Door - Upper - RH - Repair,Remove and Rebuild,0.9,0.9
+NO,Model X,19,17103602,Harness - Seat Assembly - 2nd Row - RH (5 Seat) (Remove and Replace),Remove and Replace,1.56,1.56
+NO,Model X,19,17103702,Harness - Seat Assembly - 2nd Row - RH (5 Seat) (Remove and Replace),Remove and Replace,1.68,1.68
+NO,Model X,19,17104102,Harness - HVAC Assembly (Remove & Replace),Remove and Replace,2.4,2.4
+NO,Model X,19,17104502,Harness - Liftgate (Remove & Replace),Remove and Replace,0.96,0.96
+NO,Model X,19,17105002,Harness - Body (Remove & Replace),Remove and Replace,26.0,26.0
+YES,Model X,19,17105006,Wire - Electrical Harness (Overlay),Retrofit,0.0,0.0
+NO,Model X,19,17106802,Harness - USB - Car Computer To Glove Box (Remove & Replace),Remove and Replace,0.66,0.66
+NO,Model X,19,17107002,Harness - Rear View Mirror (Remove & Replace),Remove and Replace,0.18,0.18
+NO,Model X,19,17107301,Harness - Chassis - Rear - LH (with Wheel Speed Sensor),Remove and Install,0.3,0.3
+NO,Model X,19,17107302,Harness - Chassis - Rear - LH (with Wheel Speed Sensor),Remove and Replace,0.36,0.36
+NO,Model X,19,17107401,Harness - Chassis - Rear - RH (with Wheel Speed Sensor),Remove and Install,0.3,0.3
+NO,Model X,19,17107402,Harness - Chassis - Rear - RH (with Wheel Speed Sensor),Remove and Replace,0.36,0.36
+NO,Model X,19,17107502,Harness - Seat Back - 3rd Row - LH (Remove & Replace),Remove and Replace,0.48,0.48
+NO,Model X,19,17107602,Harness - Seat Back - 3rd Row - RH (Remove & Replace),Remove and Replace,0.6,0.6
+YES,Model X,19,17108100,Diagnosis: Low Voltage Distribution and Controllers,General Diagnosis,1.0,1.0
+NO,Model X,19,17150012,Module - Battery Controller (Remove & Replace),Remove and Replace,0.48,0.48
+NO,Model X,19,17150016,Electronic Toll Collection System (Retrofit),Retrofit,0.6,0.6
+NO,Model X,19,17152102,Module - Body Controller - LH (Remove & Replace),Remove and Replace,0.54,0.54
+NO,Model X,19,17152202,Module - Body Controller - RH (Remove & Replace),Remove and Replace,0.54,0.54
+NO,Model X,19,17152302,Module - Rear Body Controller - BCM (Remove & Replace),Remove and Replace,1.02,1.02
+NO,Model X,19,17152602,Module - Central Body Controller - BCCEN (Remove & Replace),Remove and Replace,1.08,1.08
+NO,Model X,19,17154503,Module - Gateway,Module Reset/Reflashed,0.2,0.2
+NO,Model X,19,17154603,Module - Bluetooth (Parrot),Module Reset/Reflashed,0.1,0.1
+NO,Model X,19,17157002,ECU Box (Remove & Replace),Remove and Replace,1.44,1.44
+NO,Model X,19,17201706,"Heater - Radar (Rework) (vehicles built before July 1, 2021）",Modify,0.84,0.84
+NO,Model X,19,17201806,"Heater - Radar (Rework) (vehicles built after July 1, 2021)",Modify,0.78,0.78
+NO,Model X,19,17221102,Camera - B-Pillar - LH (HW4) (Remove & Replace),Remove and Replace,0.24,0.24
+NO,Model X,19,17242014S022317013,Replace Occupant Camera,Test/Adjust,0.0,0.0
+NO,Model X,19,17250102,Camera - Rear View (Remove & Replace),Remove and Replace,1.02,1.02
+NO,Model X,19,17270102,Module - Park Assist (Remove & Replace),Remove and Replace,1.26,1.26
+NO,Model X,19,17271302,Sensor - Park Assist - Rear - Set (Remove & Replace),Remove and Replace,0.36,0.36
+NO,Model X,19,17303002,Power Socket 12V - Center Console (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model X,19,17303202,Power Socket 12V - Rear Trunk (Remove & Replace),Remove and Replace,0.48,0.48
+NO,Model X,19,17303502,USB Port - 3rd Row Seat (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model X,19,17350012,Light - Glove Box (Remove & Replace),Remove and Replace,0.6,0.6
+NO,Model X,19,17350802,Light - Map - Rear (Remove & Replace),Remove and Replace,0.48,0.48
+NO,Model X,19,17351112,Footwell Light - Rear - Center Console (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model X,19,17351502,Puddle Light - Rear Trunk (Remove & Replace),Remove and Replace,0.66,0.66
+NO,Model X,19,17352202,Welcome Lamp - Rear Door - LH (Remove & Replace),Remove and Replace,0.24,0.24
+NO,Model X,19,17352302,Welcome Lamp - Rear Door - RH (Remove & Replace),Remove and Replace,0.24,0.24
+NO,Model X,19,17352402,Puddle Light - Liftgate (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model X,19,17400022,Reflex Marker - Taillight - RH (Non-Global) (Remove & Replace),Remove and Replace,0.6,0.6
+NO,Model X,19,17400042,Reflex Marker - Taillight - RH (Global) (Remove & Replace),Remove and Replace,0.66,0.66
+NO,Model X,19,17400100,Headlights - Adjust - NA (Wall Method),Test/Adjust,0.24,0.24
+NO,Model X,19,17400102,Headlight  - LH (Remove & Replace),Remove and Replace,0.9,0.9
+YES,Model X,19,17400150,Headlights - Adjust - NA (Tool Method),Test/Adjust,0.18,0.18
+NO,Model X,19,17400160,Headlights - Adjust - Global (Wall Method),Test/Adjust,0.18,0.18
+NO,Model X,19,17400170,Headlights - Adjust - Global (Tool Method),Test/Adjust,0.18,0.18
+NO,Model X,19,17400202,Headlight - RH (Remove & Replace),Remove and Replace,0.9,0.9
+NO,Model X,19,17401502,Tail Light Assembly - RH (Non-Global) (Remove and Replace),Remove and Replace,1.8,1.8
+NO,Model X,19,17402002,Tail Light Assembly - LH (Non-Global) (Remove & Replace),Remove and Replace,1.8,1.8
+NO,Model X,19,17402012,Taillight - LH (Global) (Remove & Replace),Remove and Replace,0.66,0.66
+NO,Model X,19,17402202,Tail Light - RH (Non-Global) (Remove & Replace),Remove and Replace,0.66,0.66
+NO,Model X,19,17402212,Taillight - RH (Global) (Remove & Replace),Remove and Replace,0.66,0.66
+NO,Model X,19,17402252,Tail Light Assembly - RH (without Subwoofer) (Remove & Replace),Remove and Replace,0.54,0.54
+NO,Model X,19,17402602,Light - License Plate (Remove & Replace),Remove and Replace,0.18,0.18
+NO,Model X,19,17402702,Light - Fog/Reverse - Rear - LH (Remove & Replace),Remove and Replace,0.72,0.72
+NO,Model X,19,17402802,Light - Fog/Reverse - Rear - RH (Non-Global) (Remove & Replace),Remove and Replace,0.72,0.72
+NO,Model X,19,17402902,Lights - Fog/Reverse - Rear - LH/RH (Remove & Replace),Remove and Replace,0.66,0.66
+NO,Model X,19,17403502,Lamp - Reflex - Rear - LH (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model X,19,17403602,Lamp - Reflex - Rear - RH  (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model X,19,17409000,Headlight - Adjust - North America,Test/Adjust,0.15,0.15
+NO,Model X,19,17450306,Key Card - Program (No Keys Present),Program,0.06,0.06
+NO,Model X,19,17450513,Key Fob - Program (No Keys Present),Program,0.06,0.06
+NO,Model X,19,17450902,Battery - Key Fob (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model X,19,17451002,Siren - Battery Backed (Remove & Replace),Remove and Replace,0.72,0.72
+NO,Model X,19,17451202,Antenna - Passive Entry - Rocker - LH (Remove & Replace),Remove and Replace,0.72,0.72
+NO,Model X,19,17451302,Antenna - Passive Entry - Rocker - RH (Remove & Replace),Remove and Replace,0.72,0.72
+NO,Model X,19,17451602,Antenna - Passive Entry - Center Console (Remove & Replace),Remove and Replace,0.9,0.9
+NO,Model X,19,17451802,Module - Bluetooth Low Energy (BLE) - Rear (Remove & Replace),Remove and Replace,0.6,0.6
+NO,Model X,19,17451812,Module - Bluetooth Low Energy (BLE) - Rear - LH (Remove & Replace),Remove and Replace,0.6,0.6
+NO,Model X,19,17451822,Module - Bluetooth Low Energy (BLE) - Rear - RH (Remove & Replace),Remove and Replace,0.6,0.6
+NO,Model X,19,17454002,Module - Body Controller - Security (Remove & Replace),Remove and Replace,0.54,0.54
+NO,Model X,19,17500012,Hose - Washer - Cowl Screen (Remove & Replace),Remove and Replace,0.3,0.3
+NO,Model X,19,17500302,Wiper Arm - LH (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model X,19,17500352,Wiper Arm - RH (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model X,19,17501512,Hose - Washer - Reservoir (Remove & Replace),Remove and Replace,0.42,0.42
+NO,Model X,19,17501802,Wiper Arms - Pair  (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model X,19,17502502,Wiper Module (Remove & Replace),Remove and Replace,0.48,0.48
+NO,Model X,19,17531202,Horn Assembly (Remove and Replace),Remove and Replace,0.24,0.24
+NO,Model X,19,17551002,Accelerator (Remove & Replace),Remove and Replace,0.24,0.24
+NO,Model X,19,17570102,Pyrotechnic Battery Disconnect (Remove & Replace),Remove and Replace,0.42,0.42
+NO,Model X,19,18100052,Cap - Air Wave - Center Console (Remove & Replace),Remove and Replace,0.3,0.3
+NO,Model X,19,18100062,Duct - Jumper - Outboard - Driver (Remove & Replace),Remove and Replace,1.32,1.32
+NO,Model X,19,18100402,Duct - Busbar - 3rd Row - RH (Remove and Replace),Remove and Replace,0.6,0.6
+NO,Model X,19,18100602,Module - HVAC Controller - RCCM (Remove & Replace),Remove and Replace,1.32,1.32
+NO,Model X,19,18101002,HVAC Assembly (Remove & Replace),Remove and Replace,3.36,3.36
+NO,Model X,19,18101302,Sump Seal - HVAC Assembly (Remove and Replace),Remove and Replace,3.48,3.48
+NO,Model X,19,18101602,Duct - Rocker - 3rd Row - RH (Remove & Replace),Remove and Replace,0.54,0.54
+NO,Model X,19,18101702,Duct - Busbar - 3rd Row - LH (Remove & Replace),Remove and Replace,0.6,0.6
+NO,Model X,19,18102102,Actuator - Driver's Temperature (Remove & Replace),Remove and Replace,0.36,0.36
+NO,Model X,19,18102212,Actuator - Bleed - LH (Remove & Replace),Remove and Replace,0.36,0.36
+NO,Model X,19,18102312,Actuator - Bleed - RH (Remove & Replace),Remove and Replace,0.36,0.36
+NO,Model X,19,18102412,Actuator - Panel - LH (Remove & Replace),Remove and Replace,1.5,1.5
+NO,Model X,19,18102422,Actuator - Panel - RH (Remove & Replace),Remove and Replace,0.66,0.66
+NO,Model X,19,18102702,Actuator - Flap - Center Console - LH (Remove & Replace),Remove and Replace,0.48,0.48
+NO,Model X,19,18102712,Actuator - Vane - Center Console - LH (Remove & Replace),Remove and Replace,0.48,0.48
+NO,Model X,19,18102802,Actuator - Flap - Center Console - RH (Remove & Replace),Remove and Replace,0.48,0.48
+NO,Model X,19,18102812,Actuator - Vane - Center Console - RH (Remove & Replace),Remove and Replace,0.48,0.48
+NO,Model X,19,18102822,Actuator - Duct - Center Console (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model X,19,18102832,Actuator - Bypass - 1st Row - HVAC Case (Remove & Replace),Remove and Replace,3.06,3.06
+NO,Model X,19,18103002,Module - Thermal Controller (Remove & Replace),Remove and Replace,1.44,1.44
+NO,Model X,19,18103102,Motor - Fan Assembly - Rear HVAC (Remove & Replace),Remove and Replace,1.2,1.2
+NO,Model X,19,18103802,Assembly - HEPA Filter (Remove & Replace),Remove and Replace,1.44,1.44
+NO,Model X,19,18105102,Thermistor - Evaporator (Remove and Replace),Remove and Replace,0.36,0.36
+NO,Model X,19,18105501,Filter - HEPA,Remove and Install,0.48,0.48
+NO,Model X,19,18105502,Filter - HEPA,Remove and Replace,0.6,0.6
+NO,Model X,19,18105512,Cover - Filter - HEPA (Remove & Replace),Remove and Replace,0.42,0.42
+NO,Model X,19,18106192,Duct - Center Console - 3rd Row (Remove & Replace),Remove and Replace,0.54,0.54
+NO,Model X,19,18107002,Sensor - Air Quality (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model X,19,18107202,Sensor - Ambient Air Temperature (Remove & Replace),Remove and Replace,0.84,0.84
+NO,Model X,19,18107602,Sensor - Temperature - Evaporator (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model X,19,18107702,Sensor - Temperature - Evaporator - Rear (Remove & Replace),Remove and Replace,0.36,0.36
+NO,Model X,19,18107812,Sensor - Air Temperature - Duct - Footwell - LH (Remove & Replace),Remove and Replace,0.3,0.3
+NO,Model X,19,18107912,Sensor - Air Temperature - Duct - Footwell - RH (Remove & Replace),Remove and Replace,0.3,0.3
+NO,Model X,19,18108102,Duct - Air Wave - RH (Remove & Replace),Remove and Replace,0.54,0.54
+NO,Model X,19,18108202,Air Wave Assembly - Center Console (Remove & Replace),Remove and Replace,0.48,0.48
+NO,Model X,19,18108612,Actuator - Duct - Footwell - LH (Remove & Replace),Remove and Replace,0.36,0.36
+NO,Model X,19,18108712,Actuator - Duct - Footwell - RH (Remove & Replace),Remove and Replace,0.36,0.36
+NO,Model X,19,18109202,Sensor - Air Temperature - Duct - Driver (Remove & Replace),Remove and Replace,1.32,1.32
+NO,Model X,19,18109502,Sensor - Air Temperature - Floor Duct - 2nd Row (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model X,19,18109602,Actuator - Bypass - 2nd Row - HVAC Case (Remove & Replace),Remove and Replace,0.18,0.18
+NO,Model X,19,18109712,Actuator - Duct - Floor - 2nd Row (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model X,19,18201012,Evaporator (Remove & Replace),Remove and Replace,6.85,6.85
+NO,Model X,19,18203502,Acoustic Blanket - Compressor (Remove & Replace),Remove and Replace,1.08,1.08
+NO,Model X,19,18203912,A/C Compressor (Remove & Replace),Remove and Replace,1.62,1.62
+NO,Model X,19,18204102,Pipes - High/Low Pressure - Charge Port (with Rear HVAC) (Remove & Replace),Remove and Replace,1.44,1.44
+NO,Model X,19,18204402,Pipes - High/Low Pressure - Charge Port (without Rear HVAC) (Remove & Replace),Remove and Replace,2.22,2.22
+NO,Model X,19,18205002,TXV Valve­ Evaporator (Remove & Replace),Remove and Replace,1.68,1.68
+NO,Model X,19,18206002,EXV Valve (Remove & Replace),Remove and Replace,2.64,2.64
+NO,Model X,19,18206202,Battery Chiller (Remove & Replace),Remove and Replace,2.64,2.64
+NO,Model X,19,18207002,Pipes - High/Low Pressure - Charge Port to Rocker (Remove & Replace),Remove and Replace,1.68,1.68
+NO,Model X,19,18300052,Hose - Battery Coolant Pump 1 to Battery Coolant Pump 2 (2nd Generation) (Remove and Replace),Remove and Replace,0.84,0.84
+NO,Model X,19,18300092,Hose - Supermanifold To Offboard Battery Pump (Remove & Replace),Remove and Replace,0.84,0.84
+YES,Model X,19,18300900,Thermal System Test,Test/Adjust,0.1,0.1
+YES,Model X,19,18301000,Clean Radiator,Maintenance,1.08,1.08
+NO,Model X,19,18301032,21mm Radiator (Remove & Replace),Remove and Replace,1.68,1.68
+NO,Model X,19,18301042,12mm Radiator (Remove & Replace),Remove and Replace,1.26,1.26
+NO,Model X,19,18301102,Hose - Radiator to 3-Way Valve (Remove & Replace),Remove and Replace,1.08,1.08
+NO,Model X,19,18301200,Remove and Clean Radiator (Heat Pump),Maintenance,1.56,1.56
+NO,Model X,19,18302202,Hose - Supermanifold To 3 Way Valve And Radiator (Remove & Replace),Remove and Replace,1.14,1.14
+NO,Model X,19,18302502,Hose - Outlet - Rear Drive Unit (Remove & Replace),Remove and Replace,2.94,2.94
+NO,Model X,19,18302512,Hose - Outlet - Rear Drive Unit (Plaid) (Remove & Replace),Remove and Replace,2.94,2.94
+NO,Model X,19,18302702,Hose - Outlet - Radiator (Remove & Replace),Remove and Replace,1.02,1.02
+NO,Model X,19,18303602,Hose - Battery Supply (Remove & Replace),Remove and Replace,1.5,1.5
+NO,Model X,19,18304802,Hose - Battery to 4 Way Coolant Valve (Remove & Replace),Remove and Replace,2.58,2.58
+NO,Model X,19,18304902,Hose - Battery Coolant Pump 1 to 4-Way Coolant Valve (Remove & Replace),Remove and Replace,0.84,0.84
+NO,Model X,19,18305302,Hose - Charger Outlet (Remove & Replace),Remove and Replace,0.96,0.96
+NO,Model X,19,18305502,Hose - DCDC to Battery Coolant Heater (Remove & Replace),Remove and Replace,2.64,2.64
+NO,Model X,19,18306102,3 Way Coolant Valve - Radiator Bypass (Remove & Replace),Remove and Replace,1.14,1.14
+NO,Model X,19,18306112,Hose - HV Battery to 3 Way Valve (Remove & Replace),Remove and Replace,1.02,1.02
+NO,Model X,19,18307302,Coolant Heater - Electric - Battery (Remove & Replace),Remove and Replace,2.04,2.04
+NO,Model X,19,18308502,Coolant Pump - Battery - Offboard,Remove and Replace,0.96,0.96
+NO,Model X,19,18308542,Pump - Coolant - Battery - Chiller (Remove & Replace),Remove and Replace,0.6,0.6
+NO,Model X,19,18308562,Pump - Coolant - Radiator (Remove and Replace),Remove and Replace,0.9,0.9
+NO,Model X,19,18308602,Battery Coolant Pump 2 (Remove & Replace),Remove and Replace,2.58,2.58
+NO,Model X,19,18308702,Battery Coolant Pump 1 (2nd Generation) (Remove & Replace),Remove and Replace,0.84,0.84
+NO,Model X,19,18309002,Hose - Battery Coolant Pump 1 To Chiller (Remove & Replace),Remove and Replace,1.2,1.2
+NO,Model X,19,18309052,Hose - Battery Coolant Pump 1 to Chiller (2nd Generation) (Remove and Replace),Remove and Replace,0.84,0.84
+NO,Model X,19,18309102,Hose - Battery Coolant Pump 2 To Chiller (Remove & Replace),Remove and Replace,2.46,2.46
+NO,Model X,19,18309202,Hose - 4-Way Valve to Chiller (2nd Generation) (Remove & Replace),Remove and Replace,0.9,0.9
+NO,Model X,19,18309502,Fan - Radiator - LH (Remove & Replace),Remove and Replace,1.74,1.74
+NO,Model X,19,18309602,Fan - Radiator - RH (Remove & Replace),Remove and Replace,1.74,1.74
+NO,Model X,19,18400102,Supermanifold (Remove & Replace),Remove and Replace,2.28,2.28
+NO,Model X,19,18400202,Octovalve (Remove & Replace),Remove and Replace,2.22,2.22
+NO,Model X,19,18400302,Sensor - Pressure and Temperature (PT) - High Pressure (Remove & Replace),Remove and Replace,1.08,1.08
+NO,Model X,19,18400402,Sensor - Pressure and Temperature (PT) - Low Pressure (Remove & Replace),Remove and Replace,1.08,1.08
+NO,Model X,19,18400502,Sensor - Subcool - Pressure and Temperature (PT) - High Pressure (Remove & Replace),Remove and Replace,0.72,0.72
+NO,Model X,19,18400702,Actuator - Octovalve (Remove & Replace),Remove and Replace,2.28,2.28
+NO,Model X,19,18401202,Coil - EXV - Supermanifold (Remove & Replace),Remove and Replace,0.3,0.3
+NO,Model X,19,18401302,Valve Body - EXV - Supermanifold (Remove & Replace),Remove and Replace,0.84,0.84
+NO,Model X,19,18401602,Chller (Remove & Replace),Remove and Replace,1.5,1.5
+NO,Model X,19,18401702,Coolant Bottle (Remove & Replace),Remove and Replace,1.86,1.86
+NO,Model X,19,18401802,Pump - Coolant - Chiller - Supermanifold (Remove & Replace),Remove and Replace,1.2,1.2
+NO,Model X,19,18402902,Service Kit - Check Valves - Supermanifold,Remove and Replace,2.4,2.4
+NO,Model X,19,18500602,Active Grille Shutter (Remove & Replace),Remove and Replace,0.9,0.9
+NO,Model X,19,18501002,Duct - Fascia - HVAC (Remove & Replace),Remove and Replace,0.9,0.9
+YES,Model X,19,19010100825,Remove Vehicle Label (No Anti-Tamper Residue),Removal,0.06,0.06
+YES,Model X,19,19010100902,Vehicle Emission Control Label,Remove and Replace,0.06,0.06
+YES,Model X,19,19010100925,Remove Vehicle Label and Anti-Tamper Residue,Removal,0.12,0.12
+YES,Model X,19,19010101002,Battery Chemistry Label,Remove and Replace,0.06,0.06
+YES,Model X,19,19010101102,Monroney Label,Remove and Replace,0.06,0.06
+YES,Model X,19,19010202,Labels - Any (Remove & Replace),Remove and Replace,0.24,0.24
+NO,Model X,19,19010303,Labels - Battery Enclosure - Any,Module Reset/Reflashed,0.24,0.24
+NO,Model X,19,190135740002,"Correct CE label already present, no further action required.",Test/Adjust,0.1,0.1
+NO,Model X,19,20010102,Airbag - Driver (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model X,19,20010202,Knee Airbag - Driver (NA) (Remove & Replace),Remove and Replace,0.42,0.42
+NO,Model X,19,20010717,Remove 2nd Row Mono-Post Seat Airbag and Discard,Modify,0.84,0.84
+NO,Model X,19,20050002,Buckle - 2nd Row - RH  (6 Seat)(Remove and Replace),Remove and Replace,0.42,0.42
+NO,Model X,19,20050032,Height Adjuster - Seat Belt - LH (Remove & Replace),Remove and Replace,0.24,0.24
+NO,Model X,19,20050042,Height Adjuster - Seat Belt - LH (Remove & Replace),Remove and Replace,0.24,0.24
+NO,Model X,19,20050302,Retractor - Seatbelt -1st Row - RH (Remove and Replace),Remove and Replace,0.36,0.36
+NO,Model X,19,20051002,Height Adjuster - Seat Belt (Remove & Replace),Test/Adjust,0.06,0.06
+NO,Model X,19,20054102,Retractor - Seatbelt -1st Row - LH (Remove & Replace),Remove and Replace,0.36,0.36
+NO,Model X,19,20054202,Retractor - Seatbelt  - 1st Row - RH (Remove & Replace),Remove and Replace,0.36,0.36
+NO,Model X,19,20054702,Buckle - 1st Row - LH (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model X,19,20054802,Buckle - 1st Row - RH (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model X,19,20056102,Retractor - Seatbelt - 2nd Row - LH (6 Seat) (Remove & Replace),Remove and Replace,2.04,2.04
+NO,Model X,19,20056112,Retractor - Seatbelt - 2nd Row - LH (5 Seat) (Remove & Replace),Remove and Replace,1.8,1.8
+NO,Model X,19,20056202,Retractor - Seatbelt - 2nd Row - RH (6 Seat) (Remove & Replace),Remove and Replace,2.04,2.04
+NO,Model X,19,20056212,Retractor - Seatbelt - 2nd Row - RH (5 Seat) (Remove & Replace),Remove and Replace,1.68,1.68
+NO,Model X,19,20056312,Seat Belt Assembly - 2nd Row - Center (5 Seat) (Remove & Replace),Remove and Replace,1.86,1.86
+NO,Model X,19,20056402,Escutcheon - Seatbelt - 2nd Row - LH (Remove & Replace),Remove and Replace,0.18,0.18
+NO,Model X,19,20056412,Escutcheon - Seatbelt - 2nd Row - LH (6 Seat) (Remove & Replace),Remove and Replace,0.24,0.24
+NO,Model X,19,20056422,Escutcheon - Seatbelt Anchor - 2nd Row - LH (6 Seat) (Remove & Replace),Remove and Replace,0.36,0.36
+NO,Model X,19,20056502,Escutcheon - Seatbelt - 2nd Row - RH (Remove & Replace),Remove and Replace,0.24,0.24
+NO,Model X,19,20056512,Escutcheon - Seatbelt - 2nd Row - RH (6 Seat) (Remove & Replace),Remove and Replace,0.24,0.24
+NO,Model X,19,20056522,Escutcheon - Seatbelt Anchor - 2nd Row - RH (6 Seat) (Remove & Replace),Remove and Replace,0.36,0.36
+NO,Model X,19,20056602,Escutcheon - Seatbelt - 2nd Row - Center (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model X,19,20057002,Buckle - 2nd Row - LH  (6 Seat)(Remove & Replace),Remove and Replace,0.42,0.42
+NO,Model X,19,20057012,Buckle - 2nd Row - LH (5 Seat) (Remove & Replace),Remove and Replace,1.44,1.44
+NO,Model X,19,20057102,Buckle - 2nd Row - RH (6 Seat) (Remove & Replace),Remove and Replace,0.42,0.42
+NO,Model X,19,20057112,Buckle - 2nd Row - RH (With 2nd Row Bench Seats) (Remove & Replace),Remove and Replace,1.2,1.2
+NO,Model X,19,20057202,Buckle - 2nd Row - Center (Remove & Replace),Remove and Replace,0.6,0.6
+NO,Model X,19,20057212,Buckle - 2nd Row - Center (5 Seat) (Remove & Replace),Remove and Replace,1.14,1.14
+NO,Model X,19,20058102,Retractor - Seatbelt - 3rd Row - LH (Remove & Replace),Remove and Replace,0.84,0.84
+NO,Model X,19,20058202,Retractor - Seatbelt - 3rd Row - RH (Remove & Replace),Remove and Replace,0.84,0.84
+NO,Model X,19,20058702,Buckle - 3rd Row - LH (Remove & Replace),Remove and Replace,0.0,0.0
+NO,Model X,19,20058802,Buckle - 3rd Row - RH (Remove & Replace),Remove and Replace,0.0,0.0
+NO,Model X,19,20058902,Buckle - 3rd Row (Remove & Replace),Remove and Replace,0.18,0.18
+NO,Model X,19,20059102,Escutcheon - Seat Belt - 3rd Row - LH (Remove & Replace),Remove and Replace,0.3,0.3
+NO,Model X,19,20059202,Escutcheon - Seat Belt - 3rd Row - RH (Remove & Replace),Remove and Replace,0.3,0.3
+NO,Model X,19,20101002,Lap Pretensioner - 1st Row - LH (Remove & Replace),Remove and Replace,0.18,0.18
+NO,Model X,19,20101102,Lap Pretensioner - 1st Row - RH (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model X,19,20200502,Sensor - Impact - B-Pillar - LH (Remove & Replace),Remove and Replace,0.24,0.24
+NO,Model X,19,20200602,Sensor - Impact - B-Pillar - RH (Remove & Replace),Remove and Replace,0.24,0.24
+NO,Model X,19,20200702,Sensor - Impact - C-Pillar - LH (Remove & Replace),Remove and Replace,0.3,0.3
+NO,Model X,19,20200802,Sensor - Impact - C-Pillar - RH (Remove & Replace),Remove and Replace,0.3,0.3
+NO,Model X,19,20200902,Sensor - Airbag - D-Pillar - RH (Remove and Replace),Remove and Replace,0.72,0.72
+NO,Model X,19,20201102,Sensor - Airbag - D-Pillar - LH (Remove & Replace),Remove and Replace,0.72,0.72
+NO,Model X,19,20202002,Sensor - Pressure Tube (Remove & Replace),Remove and Replace,0.78,0.78
+NO,Model X,19,20202102,Sensor - Resistive Occupancy - Driver's Seat (Remove & Replace),Remove and Replace,1.02,1.02
+NO,Model X,19,20202212,Sensor - Occupant Classification System - 1st Row - RH (Remove & Replace),Remove and Replace,1.14,1.14
+NO,Model X,19,21050402,Re-Synchronize Odometer Value (Remove & Replace),Remove and Replace,0.3,0.3
+YES,Model X,19,21051000,Update Display Avatar,Test/Adjust,0.12,0.12
+NO,Model X,19,21051202,Touchscreen (HW3) (Remove & Replace),Remove and Replace,0.36,0.36
+NO,Model X,19,21051222,Mechanism - Pivot - Touchscreen (Remove and Replace),Remove and Replace,0.36,0.36
+NO,Model X,19,21051302,Touchscreen - Rear (Remove & Replace),Remove and Replace,0.36,0.36
+NO,Model X,19,21051402,Touchscreen (HW4) (Remove and Replace),Remove and Replace,0.42,0.42
+NO,Model X,19,21060112,Media Control Unit (Atom-based) (Remove & Replace),Remove and Replace,1.02,1.02
+NO,Model X,19,21060208,Software Recovery - Media Control Unit (Restore),Restore,0.05,0.05
+NO,Model X,19,21063208,SD Card - Media Control Unit (Reformat),Restore,0.05,0.05
+NO,Model X,19,21063308,Field Programmable Gate Array (FPGA) - Media Control Unit (Reflash),Restore,0.05,0.05
+NO,Model X,19,2110010011,Car Computer -Etisalat Sim Card.,Remove and Install,0.5,0.5
+NO,Model X,19,21151007,Car Computer (Dispose),Modify,0.24,0.24
+NO,Model X,19,21152002,SIM Card - Car Computer (Remove & Replace),Remove and Replace,0.36,0.36
+NO,Model X,19,21152502,SD Card - Car Computer (HW3) (Remove & Replace),Remove and Replace,0.42,0.42
+NO,Model X,19,21152901,Connectivity Board - Car Computer,Remove and Install,0.48,0.48
+NO,Model X,19,21152902,Connectivity Board - Car Computer (Remove & Replace),Remove and Replace,0.54,0.54
+NO,Model X,19,21153002,Connectivity Board - Car Computer (HW4) ,Remove and Replace,0.54,0.54
+NO,Model X,19,21153202,Replace Car Computer (HW3),Remove and Replace,1.02,1.02
+NO,Model X,19,21153302,Replace Car Computer (HW4) (LHD),Remove and Replace,0.9,0.9
+NO,Model X,19,21211002,Speaker - Rear Door - LH (Remove & Replace),Remove and Replace,0.3,0.3
+NO,Model X,19,21211102,Speaker - Rear Door - RH (Remove & Replace),Remove and Replace,0.3,0.3
+NO,Model X,19,21211502,Speaker - Dash - LH (Remove & Replace),Remove and Replace,1.44,1.44
+NO,Model X,19,21211602,Speaker - Dash - Center  (Remove & Replace),Remove and Replace,1.44,1.44
+NO,Model X,19,21211702,Speaker - Dash - RH (Remove & Replace),Remove and Replace,1.44,1.44
+NO,Model X,19,21211802,Tweeter - Dash (Remove & Replace),Remove and Replace,1.02,1.02
+NO,Model X,19,21212002,Subwoofer(Remove & Replace),Remove and Replace,0.66,0.66
+NO,Model X,19,21212502,Tweeter - A Pillar - LH (Remove & Replace),Remove and Replace,0.18,0.18
+NO,Model X,19,21212602,Tweeter - A Pillar - RH (Remove & Replace),Remove and Replace,0.18,0.18
+NO,Model X,19,21212702,Tweeter - Rear Door - LH (Remove & Replace),Remove and Replace,0.18,0.18
+NO,Model X,19,21212712,Tweeter - Rear Door - LH (Remove & Replace),Remove and Replace,0.3,0.3
+NO,Model X,19,21212802,Tweeter - Rear Door - RH (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model X,19,21212812,Tweeter - Rear Door - RH (Remove & Replace),Remove and Replace,0.3,0.3
+NO,Model X,19,21213002,Speaker - Liftgate - LH (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model X,19,21213102,Speaker - Liftgate - RH (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model X,19,21213302,Tweeter - Liftgate - LH (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model X,19,21213402,Tweeter - Liftgate - RH (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model X,19,21214002,Chime - Rear Door - LH (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model X,19,21214102,Chime - Rear Door - RH (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model X,19,21214202,Chime - Liftgate (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model X,19,21220102,Tuner - FM / HD / XM (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model X,19,21250102,Microphone - LH (Remove & Replace),Remove and Replace,0.24,0.24
+NO,Model X,19,21250202,Microphone - RH (Remove & Replace),Remove and Replace,0.24,0.24
+NO,Model X,19,21251002,Antenna - Bluetooth (Remove & Replace),Remove and Replace,0.9,0.9
+NO,Model X,19,21260602,USB Hub - Center Console - Rear (Remove & Replace),Remove and Replace,0.24,0.24
+NO,Model X,19,21261002,Dock Connector - Telephone-USB - Center Console (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model X,19,21300012,Noise Filter - Ground - Antenna (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model X,19,21300502,Noise Filter - 12V - Antenna (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model X,19,21300602,Antenna Amplifier - AM/FM and RKE (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model X,19,21300702,Antenna Amplifier - FM (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model X,19,21301002,RF Filter - LH (Remove & Replace),Remove and Replace,0.18,0.18
+NO,Model X,19,21301102,RF Filter - RH (Remove & Replace),Remove and Replace,0.54,0.54
+NO,Model X,19,21311002,Antenna - Satellite Radio (Remove & Replace),Remove and Replace,2.34,2.34
+NO,Model X,19,21320102,Antenna - GPS  (Remove & Replace),Remove and Replace,0.18,0.18
+NO,Model X,19,21330102,Antenna - Wi-Fi (Remove & Replace),Remove and Replace,0.6,0.6
+NO,Model X,19,21331102,Antenna - MIMO - LH (Remove and Replace),Remove and Replace,0.66,0.66
+NO,Model X,19,21350102,Antenna - GSM - LH (Remove & Replace),Remove and Replace,0.6,0.6
+NO,Model X,19,21350202,Antenna - GSM - RH (Remove & Replace),Remove and Replace,0.6,0.6
+NO,Model X,19,30011102,Skidplate - Rear (Remove & Replace),Remove and Replace,0.54,0.54
+NO,Model X,19,31001500,EPAS Alignment Check,Test/Adjust,0.12,0.12
+YES,Model X,19,31002300,Four Wheel Alignment Check and Adjust,Test/Adjust,1.32,1.32
+NO,Model X,19,31030102,Knuckle - Suspension - Rear - LH (Remove & Replace),Remove and Replace,1.44,1.44
+NO,Model X,19,31030202,Knuckle - Suspension - Rear - RH (Remove & Replace),Remove and Replace,1.44,1.44
+NO,Model X,19,31030602,Hub - Rear - RH (Remove & Replace),Remove and Replace,0.84,0.84
+NO,Model X,19,31030702,Hub - Rear - LH (Remove & Replace),Remove and Replace,0.84,0.84
+NO,Model X,19,31033102,Stabilizer Bar - Rear (Remove & Replace),Remove and Replace,1.08,1.08
+YES,Model X,19,31039000,Suspension - Rear - Check Torque,Test/Adjust,0.84,0.84
+NO,Model X,19,31100102,Module - Air Suspension - ECU (Remove & Replace),Remove and Replace,1.5,1.5
+NO,Model X,19,31100112,Module - Air Suspension - ECU (Tesla) (LHD) (Remove & Replace),Remove and Replace,0.6,0.6
+NO,Model X,19,31102002,Compressor - Air Suspension (Remove & Replace),Remove and Replace,1.32,1.32
+NO,Model X,19,31102202,Valve Block - Air Suspension (Remove & Replace),Remove and Replace,1.56,1.56
+NO,Model X,19,31102502,Reservoir - Air Suspension (Remove & Replace),Remove and Replace,0.78,0.78
+NO,Model X,19,31103202,Fill Valve - Air Suspension,Remove and Replace,0.06,0.06
+NO,Model X,19,31103206,Fill Valve - Air Suspension (Retrofit),Retrofit,0.3,0.3
+NO,Model X,19,31106002,Active Damper - Rear - LH (Remove & Replace),Remove and Replace,1.26,1.26
+NO,Model X,19,31106102,Active Damper - Rear - RH (Remove & Replace),Remove and Replace,1.2,1.2
+NO,Model X,19,31108302,Superbeam (Remove & Replace),Remove and Replace,1.38,1.38
+NO,Model X,19,32010302,Tie Rod End - LH (Remove & Replace),Remove and Replace,1.2,1.2
+NO,Model X,19,32010402,Tie Rod End - RH (Remove & Replace),Remove and Replace,1.2,1.2
+NO,Model X,19,33100102,ABS Modulator Assembly (Remove & Replace),Remove and Replace,4.68,4.68
+NO,Model X,19,33100202,ECU - ABS (Remove & Replace),Remove and Replace,1.62,1.62
+NO,Model X,19,33251012,Pedal Assembly (Remove & Replace),Remove and Replace,2.4,2.4
+NO,Model X,19,34010100001,Cap - Wheel（2025+）,Remove and Install,0.0,0.0
+YES,Model X,19,34010105,Tire Rotation,Maintenance,0.3,0.3
+YES,Model X,19,34011302,Lug Nuts - Vehicle Set (Remove & Replace),Remove and Replace,0.36,0.36
+NO,Model X,19,34011402,Lug Nut Covers - Vehicle Set (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model X,19,34012402,Wheels - Axle Set (Remove & Replace),Remove and Replace,0.24,0.24
+NO,Model X,19,34012502,Wheel Sensor - TPMS - Rear - LH (Remove & Replace),Remove and Replace,0.3,0.3
+YES,Model X,19,34012902,Wheels - Set (Remove and Replace),Remove and Replace,1.56,1.56
+YES,Model X,19,34014005,Seasonal Wheel and Tire Set Swap (Already Built),Seasonal Swap,0.5,0.5
+YES,Model X,19,34014101,Tire Set - Vehicle - Swap (Not Already Built),Remove and Install,1.38,1.38
+NO,Model X,19,34015007,Wheel Disposal (Rework),Modify,0.06,0.06
+YES,Model X,19,34015032,Cap - Wheel - Set (Remove & Replace),Remove and Replace,0.05,0.05
+YES,Model X,19,34015202,Wheel - Rear - LH (Remove & Replace),Remove and Replace,0.36,0.36
+YES,Model X,19,34015222,Cap - Wheel - Rear - LH (Remove & Replace),Remove and Replace,0.06,0.06
+YES,Model X,19,34015302,Wheel - Rear - RH (Remove & Replace),Remove and Replace,0.36,0.36
+YES,Model X,19,34015322,Cap - Wheel - Rear - RH (Remove & Replace),Remove and Replace,0.06,0.06
+YES,Model X,19,34020010,Mobile Tire Service Performed,Modify,0.0,0.0
+YES,Model X,19,34020030,Mobile Tire Service Performed – Logistics,Tire Repair,0.0,0.0
+NO,Model X,19,34020105,Tire Rotation (Mobile Only),Maintenance,0.48,0.48
+YES,Model X,19,34020305,Tires - All Four (Balance),Rebalance,0.6,0.6
+YES,Model X,19,34020900,Check and Adjust Tire Pressure,Test/Adjust,0.05,0.05
+YES,Model X,19,34021202,Tire - Rear - LH (Remove & Replace),Tire Purchase,0.35,0.35
+YES,Model X,19,34021302,Tire - Rear - RH (Remove & Replace),Tire Purchase,0.35,0.35
+YES,Model X,19,34021605,Tires - Rear - Set,Tire Purchase,0.7,0.7
+YES,Model X,19,34021805,Tires - Vehicle - Set,Tire Purchase,1.15,1.15
+YES,Model X,19,34022015,Tire - Supplemental (Rebalance),Maintenance,0.18,0.18
+YES,Model X,19,34022205,Tire - Rear - LH (Road Force) (Balance),Tire Repair,0.2,0.2
+YES,Model X,19,34022225,Tire - Rear - LH (Balance),Rebalance,0.2,0.2
+YES,Model X,19,34022305,Tire - Rear - RH (Road Force) (Balance),Tire Repair,0.2,0.2
+YES,Model X,19,34022325,Tire - Rear - RH (Balance),Rebalance,0.2,0.2
+NO,Model X,19,34022425,Tires - Pair (Balance),Rebalance,0.3,0.3
+YES,Model X,19,34023208,Tire - Rear - LH (Repair),Tire Repair,0.72,0.72
+YES,Model X,19,34023308,Tire - Rear - RH (Repair),Tire Repair,0.72,0.72
+NO,Model X,19,34040402,Wheel Sensor - TPMS - Rear - LH (Remove & Replace),Remove and Replace,0.42,0.42
+NO,Model X,19,34040502,Wheel Sensor - TPMS - Rear - RH (Remove & Replace),Remove and Replace,0.42,0.42
+NO,Model X,19,34040602,Wheel Sensors - TPMS - Vehicle Set (Remove & Replace),Remove and Replace,0.96,0.96
+NO,Model X,19,34041100,TPMS Sensor - ID Learn Procedure,Test/Adjust,0.18,0.18
+NO,Model X,19,34041150,TPMS (Sensor ID Drive Learn),Test/Adjust,0.06,0.06
+NO,Model X,19,34041300,TPMS - Set Thresholds,Program,0.3,0.3
+NO,Model X,19,34043002,Module - TPMS (Remove & Replace),Remove and Replace,1.8,1.8
+NO,Model X,19,40010102,Mount - Rear Drive Unit - RH (Remove and Replace),Remove and Replace,4.2,4.2
+NO,Model X,19,40010300,Drive Unit Health Check,Test/Adjust,1.0,1.0
+NO,Model X,19,40011002,Drive Unit - Rear (Long Range) (Remove & Replace),Remove and Replace,3.66,3.66
+NO,Model X,19,40012002,Mount - Rear Drive Unit - LH (Remove & Replace),Remove and Replace,4.2,4.2
+NO,Model X,19,40012202,Ground Strap - Rear Drive Unit (Plaid) (Remove & Replace),Remove and Replace,2.4,2.4
+NO,Model X,19,40012212,Ground Strap - Rear Drive Unit (Long Range) (Remove & Replace),Remove and Replace,3.0,3.0
+NO,Model X,19,40016102,Drive Unit - Rear (Plaid) (Remove & Replace),Remove and Replace,3.9,3.9
+NO,Model X,19,40102002,Sensor - Rear Motor - Speed (Remove & Replace),Remove and Replace,0.48,0.48
+NO,Model X,19,40300202,Seal - Axle - Rear Drive Unit - RH (Long Range) (Remove and Replace),Remove and Replace,1.26,1.26
+NO,Model X,19,40300502,Seal ‚Äì Axle ‚Äì Large Rear Drive Unit ‚Äì RH (Remove and Replace),Remove and Replace,2.04,2.04
+NO,Model X,19,40300602,Rear Gearbox Fluid - Large Drive Unit (Remove & Replace),Remove and Replace,0.42,0.42
+NO,Model X,19,40301002,Seal - Axle - Rear Drive Unit - LH (Long Range) (Remove & Replace),Remove and Replace,1.26,1.26
+NO,Model X,19,40301012,Seal - Axle - Rear Drive Unit - LH (Plaid) (Remove & Replace),Remove and Replace,1.02,1.02
+NO,Model X,19,40301022,Seal - Axle - Rear Drive Unit - RH (Plaid) (Remove & Replace),Remove and Replace,1.02,1.02
+NO,Model X,19,40301402,Seal – Axle – Large Rear Drive Unit – LH (Remove & Replace),Remove and Replace,2.04,2.04
+NO,Model X,19,40301502,Rear Oil Seal - Differential to Halfshaft Assembly - Large Drive Unit - RH (Remove & Replace),Remove and Replace,2.04,2.04
+NO,Model X,19,40302002,Halfshaft - Rear Drive Unit - LH (Long Range) (Remove & Replace),Remove and Replace,1.2,1.2
+NO,Model X,19,40302102,Halfshaft - Rear Drive Unit - RH (Long Range) (Remove & Replace),Remove and Replace,1.2,1.2
+NO,Model X,19,40302202,Rear Halfshaft Assembly - Small Drive Unit - LH (Remove & Replace),Remove and Replace,1.8,1.8
+NO,Model X,19,40302302,Rear Halfshaft Assembly - Small Drive Unit - RH (Remove & Replace),Remove and Replace,1.8,1.8
+NO,Model X,19,40302602,Rear Halfshaft Assembly - Large Drive Unit - LH (Remove & Replace),Remove and Replace,2.16,2.16
+NO,Model X,19,40302702,Rear Halfshaft Assembly - Large Drive Unit - RH (Remove & Replace),Remove and Replace,2.16,2.16
+NO,Model X,19,40304602,Oil Pump - Rear Drive Unit (Long Range) (Remove & Replace),Remove and Replace,0.66,0.66
+NO,Model X,19,40304622,Oil Pump - RH - Rear Drive Unit (Plaid) (Remove & Replace),Remove and Replace,0.48,0.48
+NO,Model X,19,40304632,Oil Pump - Rear - Rear Drive Unit (Plaid) (Remove & Replace),Remove and Replace,1.02,1.02
+NO,Model X,19,40304652,Oil Pump - LH - Rear Drive Unit (Plaid) (Remove & Replace),Remove and Replace,0.48,0.48
+NO,Model X,19,40305202,Heat Exchanger - Rear Drive Unit (Long Range) (Remove & Replace),Remove and Replace,1.38,1.38
+NO,Model X,19,40305212,Heat Exchanger - Rear Drive Unit - LH (Plaid) (Remove & Replace),Remove and Replace,1.26,1.26
+NO,Model X,19,40305222,Heat Exchanger - Rear Drive Unit - RH (Plaid) (Remove & Replace),Remove and Replace,1.32,1.32
+NO,Model X,19,44000134,HV Isolation Diagnostics,Diagnosis Only,4.1,4.1
+YES,Model X,19,44000204,HVIL Diagnostics,Diagnosis Only,1.0,1.0
+NO,Model X,19,44011502,Door Assembly - Charge Port (NA) (Remove & Replace),Remove and Replace,1.8,1.8
+NO,Model X,19,44011506,Seal - Door - Charge Port (Retrofit),Retrofit,0.12,0.12
+NO,Model X,19,44011512,Door Assembly - Charge Port (Global) (Remove & Replace),Remove and Replace,1.68,1.68
+NO,Model X,19,44011522,Charge Port Door Panel Service Kit,Remove and Replace,0.18,0.18
+NO,Model X,19,44011601,Charge Port (NACS),Remove and Install,1.56,1.56
+NO,Model X,19,44011602,Charge Port (NACS),Remove and Replace,1.56,1.56
+NO,Model X,19,44011622,Charge Port - Global (NACS),Remove and Replace,1.44,1.44
+NO,Model X,19,44011632,Charge Port (CCS) (Remove & Replace),Remove and Replace,1.44,1.44
+NO,Model X,19,44013102,Busbars - Charge Port to HV Battery (NACS) (Non-Global) (Remove & Replace),Remove and Replace,1.92,1.92
+NO,Model X,19,44013112,Busbars - Charge Port to HV Battery (GB) (Remove & Replace),Remove and Replace,2.76,2.76
+NO,Model X,19,44013202,Release Cable - Charge Port (Remove & Replace),Remove and Replace,1.98,1.98
+YES,Model X,19,44013205,Charge Port - Manual Release of Cable,Maintenance,0.18,0.18
+NO,Model X,19,44015002,ECU - Charge Port (Remove & Replace),Remove and Replace,0.48,0.48
+NO,Model X,19,44015102,Safety Cap - Busbar - Charge Port to HV Battery (NA) (Remove & Replace),Remove and Replace,0.84,0.84
+NO,Model X,19,44100102,Charger (Remove & Replace),Remove and Replace,2.52,2.52
+NO,Model X,19,44103102,30A Fuse - Charger - 3rd Generation (Remove & Replace),Remove and Replace,3.3,3.3
+NO,Model X,19,44104102,PLC Relay - ECU - Charge Port (CCS) (Remove & Replace),Remove and Replace,0.9,0.9
+NO,Model X,19,44200702,Forward Junction Box (Remove & Replace),Remove and Replace,3.3,3.3
+NO,Model X,19,44200802,Forward Junction Box (RHD) (Remove & Replace),Remove and Replace,3.54,3.54
+NO,Model X,19,44202402,HVIL Switch - Forward Junction Box (Remove & Replace),Remove and Replace,2.4,2.4
+NO,Model X,19,44500012,HV Harness - HV Battery to Rear Drive Unit - LH (Plaid) (Remove & Replace),Remove and Replace,3.3,3.3
+NO,Model X,19,44500022,HV Harness - HV Battery to Rear Drive Unit - RH (Plaid) (Remove & Replace),Remove and Replace,3.24,3.24
+NO,Model X,19,44500302,HV Harness - Charger to Charge Port (Remove & Replace),Remove and Replace,0.96,0.96
+NO,Model X,19,44501402,AC Cable - Charge Port to HV Battery (3-Phase) (Remove & Replace),Remove and Replace,2.58,2.58
+NO,Model X,19,44502002,HV Harness - Charger to Rear PTC Heater (Remove & Replace),Remove and Replace,1.2,1.2
+NO,Model X,19,44502202,Harness - HV Battery to Rear Drive Unit (Remove & Replace),Remove and Replace,0.84,0.84
+NO,Model X,19,44502802,HV Harness - FJB to DCDC (Remove & Replace),Remove and Replace,1.56,1.56
+NO,Model X,19,44504202,HV Harness - HV Battery To A/C Compressor (Remove & Replace),Remove and Replace,0.84,0.84
+YES,Model X,19,46010100004,Diagnosis: Coolant Leak,General Diagnosis,0.5,0.5
+YES,Model X,19,50010003,Firmware Update - Mobile Connector,Module Reset/Reflashed,0.1,0.1
+YES,Model X,19,50010102,Mobile Connector - UMC (Remove & Replace),Remove and Replace,0.0,0.0
+NO,Model X,19,50020102,Fuses - Wall Connector (Remove & Replace),Remove and Replace,0.6,0.6
+NO,Model X,19,50020402,Cover - Wall Connector (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model X,19,50020702,Wall Connector (Remove & Replace),Remove and Replace,0.84,0.84
+YES,Model X,19,50022002,Handle and Cable Assembly - 80A Wall Connector (Remove & Replace),Remove and Replace,0.48,0.48
+YES,Model X,19,50024002,Handle and Cable Assembly - 40A Wall Connector (Remove & Replace),Remove and Replace,0.48,0.48
+YES,Model X,19,61013108,Equip Tire Repair Kit,General diagnosis conclusion,0.0,0.0
+YES,Model X,19,7000005,Mobile Tire Dispatch Fee,Fee,0.01,0.01
+YES,Model X,19,70000105,Third Party Transport,Sublet,1.2,1.2
+YES,Model X,19,7000030,Parts Not Available - Add to future service visit. ,General diagnosis conclusion,0.0,0.0
+YES,Model X,19,70000305,Miscellaneous Labor,Fee,0.0,0.0
+YES,Model X,19,70002005,Non-Tesla (Rental),Sublet,0.0,0.0
+YES,Model X,19,70003805,Tesla Airport Service,Fee,1.2,1.2
+YES,Model X,19,7000405,Vehicle Storage,Fee,0.0,0.0
+YES,Model X,19,70004205,No Labor Performed - Unable to Perform via Mobile Service,General diagnosis conclusion,0.0,0.0
+YES,Model X,19,70004505,No Labor Performed - Part Replaced,Repair,0.0,0.0
+YES,Model X,19,70005700,Scrap Part Sale Over the Counter,Test/Adjust,0.0,0.0
+YES,Model X,19,70005805,Payment Collection Required,Fee,1.2,1.2
+YES,Model X,19,70008009,Additional Work Required - Corrosion Present,Maintenance,0.5,0.5
+YES,Model X,19,70020305,Upholstery - Sublet,Sublet,0.0,0.0
+NO,Model X,19,70020306,Vehicle Wrap – Color Film (Repair),Sublet,0.0,0.0
+YES,Model X,19,70020805,Glass Repair / Replacement  - Sublet,Sublet,0.0,0.0
+NO,Model X,19,70021015,Tesla Bodyshop Fascia Repair - Sublet,Sublet,0.0,0.0
+NO,Model X,19,70021025,Tesla Bodyshop Door Repair - Sublet,Sublet,0.0,0.0
+NO,Model X,19,70021055,Tesla Bodyshop Hood / Rear Trunk Repair - Sublet,Sublet,0.0,0.0
+NO,Model X,19,70021745,Tesla Bodyshop Exterior Lights Repair - Sublet ,Sublet,0.0,0.0
+NO,Model X,19,70023405,Tesla Bodyshop Wheel Hub Repair - Sublet,Sublet,0.0,0.0
+YES,Model X,19,70060005,Thread Repair,Maintenance,0.0,0.0
+YES,Model X,19,7007300,Other – Sublet,Sublet,0.0,0.0
+YES,Model X,19,7100001,NO LABOR PERFORMED,Repair,0.0,0.0
+NO,Model X,19,7100002,Seasonal Tire Storage,Fee,0.0,0.0
+YES,Model X,19,72000005,Loaner Fee,Fee,0.0,0.0
+NO,Model X,19,74010008,Dubai Hailstorm Damage (Repair),Restore,7.0,7.0
+NO,Model X,19,90001006,Level 1 Mobile Service Vehicle Conversion (Retrofit),Retrofit,4.8,4.8
+YES,Model X,19,91000004,On Site – Education,Customer Education,0.0,0.0
+YES,Model X,19,91020105,Car Wash (Hand Wash),Detail Work,0.25,0.25
+YES,Model X,19,91020115,Car Wash (Mechanical Wash),Maintenance,0.24,0.24
+YES,Model X,19,91022005,Charge Vehicle,Restore,0.0,0.0
+YES,Model X,19,91022407,Vehicle Configuration Update,Program,0.05,0.05
+YES,Model X,19,91029006,Mobile Service Hub Repair,Retrofit,0.0,0.0
+NO,Model X,19,91040115,Former Loaner Battery Kept As Permanent Replacement,Remove and Replace,0.0,0.0
+NO,Model X,19,91040205,Loaner Battery Removed/Returned,Maintenance,0.0,0.0
+NO,Model X,19,91041705,Loaner Drive Unit Removed/Returned,Maintenance,0.0,0.0
+YES,Model X,2,00000010,Remote – Education,Over The Air,0.0,0.0
+YES,Model X,2,00004107,Alert Diagnosis - Repair,General diagnosis conclusion,0.06,0.06
+YES,Model X,2,00004108,Alert Diagnosis (Repair) - Create New Service Activity for Repair,Test/Adjust,0.06,0.06
+YES,Model X,2,00005914,Service Collision Estimate,Inspection,0.0,0.0
+NO,Model X,2,00014105,1 Year/12500 Mile/20000 km Service (Pre-paid Plan Only) (Add Necessary Parts and Labor Separately),Maintenance,0.15,0.15
+NO,Model X,2,00014205,2 Year/25000 Mile/40000 km Service (Pre-paid Plan only),Maintenance,3.8,3.8
+NO,Model X,2,00014305,3 Year/37500 Mile/60000 km Service (Pre-paid Plan Only) (Add Necessary Parts and Labor Separately),Maintenance,0.15,0.15
+NO,Model X,2,00014405,4 Year/50000 Mile/80000 km Service (Pre-paid Plan Only),Maintenance,3.9,3.9
+NO,Model X,2,00014505,5 Year/62500 Mile/100000 km Service (Pre-paid Plan Only) (Add Necessary Parts and Labor Separately),Maintenance,0.15,0.15
+NO,Model X,2,00014705,6 Year/75000 Mile/120000 km Service (Pre-paid plan only),Maintenance,3.8,3.8
+NO,Model X,2,00014805,7 Year/87500 Mile/140000 km Service (Pre-paid Plan Only) (Add Necessary Parts and Labor Separately),Maintenance,0.15,0.15
+NO,Model X,2,00014905,8 Year/100000 Mile/160000 km Service (Pre-paid Plan Only),Maintenance,3.9,3.9
+NO,Model X,2,00015005,9 Year/112500 Mile/180000 km Service (Pre-paid Plan Only) (Add Necessary Parts and Labor Separately),Maintenance,0.15,0.15
+NO,Model X,2,00015205,10 Year/125000 Mile/200000 km Service (Pre-paid Plan Only),Maintenance,3.8,3.8
+NO,Model X,2,00015305,11 Year/137500 Mile/220000 km Service (Pre-paid Plan Only) (Add Necessary Parts and Labor Separately),Maintenance,0.15,0.15
+NO,Model X,2,00015405,12 Year/150000 Mile/240000 km Service (Pre-paid Plan Only),Maintenance,3.9,3.9
+YES,Model X,2,00020003,Firmware Update,Over The Air,0.06,0.06
+YES,Model X,2,00020007,Firmware Update - Garage,Update,0.05,0.05
+YES,Model X,2,00020010,Remote – Known Characteristic of Current Firmware,Over The Air,0.25,0.25
+YES,Model X,2,00020020,Remote – Over the Air Update,Over The Air,0.25,0.25
+YES,Model X,2,00022008,User Data (Factory Reset),Restore,0.05,0.05
+YES,Model X,2,00023003,Clear Filesystem Caches,Module Reset/Reflashed,0.05,0.05
+YES,Model X,2,00030100,PDI (Without Test Drive),Inspection,0.0,0.0
+YES,Model X,2,00030410,Vehicle Health Check,Inspection,1.5,1.5
+NO,Model X,2,00030420,Four Wheel Check (on Lift),Test/Adjust,0.3,0.3
+NO,Model X,2,00031600,Perform Periodisk Kontroll av Kjøretøy (PKK) – Norway,Test/Adjust,1.0,1.0
+NO,Model X,2,00031700,Perform Etterkontroll Periodisk Kontroll av Kjøretøy (PKK) – Norway,Test/Adjust,0.4,0.4
+YES,Model X,2,00032201,Loaner Registration Confirmation,Inspection,0.2,0.2
+NO,Model X,2,00034300,TC support TAB Vehicle Configuration Change,Test/Adjust,0.2,0.2
+YES,Model X,2,00040100,Perform Post-Repair Validation Test Drive,Test/Adjust,0.3,0.3
+YES,Model X,2,00100004,General Diagnosis,General Diagnosis,0.5,0.5
+YES,Model X,2,00100014,Diagnosis: Unable to Replicate Concern,General diagnosis conclusion,0.0,0.0
+YES,Model X,2,00100024,Remote Diagnosis,Remote Diagnostics,0.3,0.3
+YES,Model X,2,10000004,Adjustment: Body / Closure Components,Test/Adjust,0.4,0.4
+YES,Model X,2,10010008,Tesla Body Repair - Miscellaneous Labor,Body Shop,0.0,0.0
+NO,Model X,2,10010009,Storage Fees,Body Shop,1.0,1.0
+YES,Model X,2,10010011,Tesla Body Repair - Structural,Body Shop,0.0,0.0
+YES,Model X,2,10010012,Tesla Body Structural - Sheet Metal Quotation,Test/Adjust,0.6,0.6
+YES,Model X,2,10010014,Tesla Body Structural - Sheet Metal Repair,Restore,1.0,1.0
+YES,Model X,2,10010015,Tesla Body Structural - Reassemble Parts,Test/Adjust,1.0,1.0
+NO,Model X,2,100111134,test ,Repair,0.5,0.5
+NO,Model X,2,10011312,Ankle Catcher Assembly - LH,Remove and Replace,0.24,0.24
+NO,Model X,2,10011322,Ankle Catcher Assembly - RH,Remove and Replace,0.24,0.24
+NO,Model X,2,10012902,Fascia Assembly - Rear - Lower (Remove & Replace),Remove and Replace,1.2,1.2
+NO,Model X,2,10013002,Fascia Assembly - Rear (Remove & Replace),Remove and Replace,0.72,0.72
+NO,Model X,2,10013102,Bumper Assembly - Rear (Remove & Replace),Remove and Replace,0.54,0.54
+NO,Model X,2,10014602,Air Extractor -  Rear - Outer - LH (Remove & Replace),Remove and Replace,0.3,0.3
+NO,Model X,2,10014902,Air Extractor -  Rear - Outer - RH (Remove & Replace),Remove and Replace,0.3,0.3
+NO,Model X,2,10015402,Spear - Fog Light - Upper - LH (Remove & Replace),Remove and Replace,0.72,0.72
+NO,Model X,2,10015502,Spear - Fog Light - Upper - RH (Remove & Replace),Remove and Replace,0.54,0.54
+NO,Model X,2,10015602,Spear - Fog Light - Lower - LH (Remove & Replace),Remove and Replace,0.72,0.72
+NO,Model X,2,10015702,Spear - Fog Light - Lower - RH (Remove & Replace),Remove and Replace,0.54,0.54
+NO,Model X,2,10016002,Cover - Trailer Hitch (Remove & Replace),Remove and Replace,0.06,0.06
+YES,Model X,2,10100008,Tesla Body Repair - Mechanical Labor,Body Shop,0.0,0.0
+NO,Model X,2,10100112102,ASSEMBLY - PANEL  REAR QUARTER OUTER LOWER LEFT HAND,Remove and Replace,1.08,1.08
+NO,Model X,2,10100112202,ASSEMBLY - REAR QUARTER OUTER COMP LEFT HAND,Remove and Replace,12.7,12.7
+NO,Model X,2,10100112402,ASSEMBLY - REAR QUARTER OUTER COMP RIGHT HAND,Remove and Replace,12.7,12.7
+NO,Model X,2,10100126502,ASSEMBLY - PANEL  C-PILLAR LOWER EXTENSION LEFT HAND,Remove and Replace,3.36,3.36
+NO,Model X,2,10100126602,ASSEMBLY - PANEL  C-PILLAR LOWER EXTENSION RIGHT HAND,Remove and Replace,3.36,3.36
+NO,Model X,2,10100126702,ASSEMBLY B PILLAR COMPLETE LEFT HAND,Remove and Replace,14.25,14.25
+NO,Model X,2,10100126802,ASSEMBLY B PILLAR COMPLETE RIGHT HAND,Remove and Replace,14.25,14.25
+NO,Model X,2,10100127102,ASY - PNL REAR QTR OTR LWR LEFT HAND,Remove and Replace,2.94,2.94
+NO,Model X,2,10100127202,ASY - PNL REAR QTR OTR LWR RIGHT,Remove and Replace,2.94,2.94
+NO,Model X,2,10100127302,"ASY, A-PILLAR UPPER OTR LEFT HAND, SVC",Remove and Replace,6.5,6.5
+NO,Model X,2,10100127402,"ASY, A-PILLAR UPPER OTR RIGHT, SVC",Remove and Replace,6.5,6.5
+NO,Model X,2,10100128902,"REAR QUARTER OUTER COMPLETE, LEFT HAND",Remove and Replace,0.54,0.54
+NO,Model X,2,10100129002,"REAR QUARTER OUTER COMPLETE, RIGHT HAND",Remove and Replace,0.54,0.54
+NO,Model X,2,10100301036,Hood | Complete | Seam Sealer,Installation,0.54,0.54
+NO,Model X,2,10100302,Hood Assembly (Remove & Replace),Remove and Replace,0.36,0.36
+NO,Model X,2,10100661036,Falcon Door | Complete | Seam Seal,Installation,0.9,0.9
+NO,Model X,2,10100701036,Liftgate | Complete | Seam Seal,Installation,0.9,0.9
+NO,Model X,2,10101020002,ASSEMBLY - COWL TOP,Remove and Replace,5.28,5.28
+NO,Model X,2,10101021002,"ASY, SHOTGUN, LEFT HAND",Remove and Replace,6.4,6.4
+NO,Model X,2,10101021102,"ASY, SHOTGUN, RIGHT",Remove and Replace,6.4,6.4
+NO,Model X,2,10101021402,"CONNECTOR,SHOCK TOWER TO RAIL LEFT HAND",Remove and Replace,0.6,0.6
+NO,Model X,2,10101021502,EXTENSION-SHOCK TOWER RIGHT HAND,Remove and Replace,5.22,5.22
+NO,Model X,2,10101806502,BUMPER PLATE - LEFT HAND,Remove and Replace,10.2,10.2
+NO,Model X,2,10101806602,BUMPER PLATE - RIGHT HAND,Remove and Replace,10.2,10.2
+NO,Model X,2,10101807102,TRUNK WATERFALL CROSSMEMBER LOWER,Remove and Replace,2.34,2.34
+NO,Model X,2,10101818702,ASSEMBLY - REAR MEMBER RAIL - LEFT HAND - SERVICE,Remove and Replace,16.95,16.95
+NO,Model X,2,10101818802,ASSEMBLY - REAR MEMBER RAIL - RIGHT HAND - SERVICE,Remove and Replace,16.95,16.95
+NO,Model X,2,10101819502,REAR BODY PANEL ASSEMBLY,Remove and Replace,9.45,9.45
+NO,Model X,2,10101819802,"WELD ASY, TRUNK,MDLX",Remove and Replace,3.9,3.9
+NO,Model X,2,10101903502,"MDLX, PNL, WHEEL ARCH OTR RIGHT",Remove and Replace,13.35,13.35
+NO,Model X,2,10101913502,"ASSEMBLY, REAR QUARTER COMPLETE, LEFT HAND",Remove and Replace,13.15,13.15
+NO,Model X,2,10101913602,"ASSEMBLY, REAR QUARTER COMPLETE, RIGHT HAND",Remove and Replace,13.15,13.15
+NO,Model X,2,10101914102,"EXTENSION - RR TRUNK FLOOR PNL, LEFT HAND",Remove and Replace,2.1,2.1
+NO,Model X,2,10101914202,"EXTENSION - RR TRUNK FLOOR PNL, RIGHT",Remove and Replace,2.1,2.1
+NO,Model X,2,10101914302,"MDLX, PNL, WHEEL ARCH OTR LEFT HAND",Remove and Replace,13.35,13.35
+NO,Model X,2,10101920902,Rear Wheel Arch (Section)- Right,Remove and Replace,14.25,14.25
+NO,Model X,2,10101921002,Rear Wheel Arch (Section) - Left,Remove and Replace,14.25,14.25
+NO,Model X,2,10102030,Rear Door Adjustment - 0.6,Test/Adjust,0.6,0.6
+NO,Model X,2,10103200202,SECOND ROW SEAT MOUNT (REAR OUTBOARD),Remove and Replace,1.26,1.26
+NO,Model X,2,10103200602,SECOND ROW SEAT MOUNT (REAR OBLONG),Remove and Replace,1.26,1.26
+NO,Model X,2,10103708,Riv-Nut - A-Pillar (Restore),Restore,0.42,0.42
+NO,Model X,2,10106502,Door Assembly - Rear Lower - LH (Remove & Replace),Remove and Replace,3.36,3.36
+NO,Model X,2,10106506,Door Assembly - Rear Lower LH (Retrofit),Retrofit,0.3,0.3
+NO,Model X,2,10106602,Door Assembly - Rear Lower - RH (Remove & Replace),Remove and Replace,3.36,3.36
+NO,Model X,2,10106606,Door Assembly - Rear Lower RH (Retrofit),Retrofit,0.3,0.3
+NO,Model X,2,10106702,Door Assembly - Rear Upper - LH (Remove & Replace),Remove and Replace,2.7,2.7
+NO,Model X,2,10106802,Door Assembly - Rear Upper - RH (Remove & Replace),Remove and Replace,2.7,2.7
+NO,Model X,2,10107002,Liftgate Assembly (Remove & Replace),Remove and Replace,3.78,3.78
+YES,Model X,2,10108608,Tesla Body Repair - Body Labor,Body Shop,0.0,0.0
+YES,Model X,2,10108808,Tesla Body Repair - Sublet,Body Shop,0.0,0.0
+YES,Model X,2,10109008,Structural Body Repair,Repair,0.0,0.0
+YES,Model X,2,10109108,Non-Structural Body Repair,Restore,0.0,0.0
+YES,Model X,2,10182019,Customer Generated Quote - Issue (Transaction) Resolved - Bound,General diagnosis conclusion,0.0,0.0
+NO,Model X,2,10200702,Sensor - HVAC - Light/Temperature/Humidity (Remove & Replace),Remove and Replace,0.54,0.54
+NO,Model X,2,10203002,Glass - Rear Quarter - LH (Remove & Replace),Remove and Replace,0.78,0.78
+NO,Model X,2,10203102,Glass - Rear Quarter - RH (Remove & Replace),Remove and Replace,0.78,0.78
+NO,Model X,2,10204002,Liftgate Glass (Remove & Replace),Remove and Replace,1.98,1.98
+NO,Model X,2,10204202,Liftgate Glass (Passive Spoiler) (Remove and Replace) (Requires Urethane and Primer),Remove and Replace,1.8,1.8
+NO,Model X,2,10204302,Cover - Stanchion Collar - Backlight - LH (Remove & Replace),Remove and Replace,2.28,2.28
+NO,Model X,2,10204402,Cover - Stanchion Collar - Backlight - RH (Remove & Replace),Remove and Replace,2.28,2.28
+NO,Model X,2,10209000,Secondary Image Separation Test,Inspection,0.1,0.1
+YES,Model X,2,1027521,Assistance with Refund of Reservation,Test/Adjust,0.0,0.0
+NO,Model X,2,11330401832,Diagnosis: Falcon Door Ultrasonic ,Diagnosis Only,0.6,0.6
+NO,Model X,2,11330502,Gas Strut - Hood - LH (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model X,2,11330602,Gas Strut - Hood - RH (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model X,2,1133070041,Bump Stop - Overslam - Liftgate,Remove and Install,0.06,0.06
+NO,Model X,2,1133070042,Bump Stop - Overslam - Liftgate,Remove and Replace,0.06,0.06
+NO,Model X,2,11330702,C-Clips - Strut - Hood - LH (Remove and Replace),Remove and Replace,0.06,0.06
+NO,Model X,2,11330722,C-Clips - Strut - Liftgate - LH (Remove and Replace),Remove and Replace,0.06,0.06
+NO,Model X,2,11330822,C-Clips - Strut - Liftgate - RH (Remove and Replace),Remove and Replace,0.06,0.06
+NO,Model X,2,11331002,Strut - Rear Door - Primary - LH - Forward (Remove & Replace),Remove and Replace,0.24,0.24
+NO,Model X,2,11331102,Strut - Rear Door - Primary - LH - Rear (Remove & Replace),Remove and Replace,0.24,0.24
+NO,Model X,2,11331202,Strut - Rear Door - Primary - LH - Pair (Remove & Replace),Remove and Replace,0.3,0.3
+NO,Model X,2,11331302,Strut - Rear Door - Primary - RH - Forward (Remove & Replace),Remove and Replace,0.24,0.24
+NO,Model X,2,11331402,Strut - Rear Door - Primary - RH - Rear (Remove & Replace),Remove and Replace,0.24,0.24
+NO,Model X,2,11331502,Strut - Rear Door - Primary - RH - Pair (Remove & Replace),Remove and Replace,0.3,0.3
+NO,Model X,2,11331602,Strut - Rear Door - Secondary - LH - Forward (Remove & Replace),Remove and Replace,0.18,0.18
+NO,Model X,2,11331702,Strut - Rear Door - Secondary - LH - Rear (Remove & Replace),Remove and Replace,0.18,0.18
+NO,Model X,2,11331802,Strut - Rear Door - Secondary - LH - Pair (Remove & Replace),Remove and Replace,0.24,0.24
+NO,Model X,2,11331902,Strut - Rear Door - Secondary - RH - Forward (Remove & Replace),Remove and Replace,0.18,0.18
+NO,Model X,2,11332002,Strut - Rear Door - Secondary - RH - Rear (Remove & Replace),Remove and Replace,0.18,0.18
+NO,Model X,2,11332102,Strut - Rear Door - Secondary - RH - Pair (Remove & Replace),Remove and Replace,0.24,0.24
+NO,Model X,2,11332902,C-Clips - Strut - Hood - RH (Remove and Replace),Remove and Replace,0.06,0.06
+NO,Model X,2,11333002,Switch - Rear Door - Door Mounted - LH (Remove & Replace),Remove and Replace,0.78,0.78
+NO,Model X,2,11333102,Switch - Rear Door - Door Mounted - RH (Remove & Replace),Remove and Replace,0.78,0.78
+NO,Model X,2,11333202,Module - Rear Door Controller - LH (Remove & Replace),Remove and Replace,0.6,0.6
+NO,Model X,2,11333302,Module - Rear Door Controller - RH (Remove & Replace),Remove and Replace,0.6,0.6
+NO,Model X,2,11333702,Switch - Rear Door - B-pillar - LH (Remove and Replace),Remove and Replace,0.36,0.36
+NO,Model X,2,11333802,Switch - Rear Door - B-pillar - RH (Remove and Replace),Remove and Replace,0.36,0.36
+NO,Model X,2,11334202,Power Strut - Liftgate (Remove & Replace),Remove and Replace,0.18,0.18
+NO,Model X,2,11334302,Sensor - Ultrasonic - Rear Door - RH (Remove & Replace),Remove and Replace,0.96,0.96
+NO,Model X,2,11334312,Sensor - Ultrasonic - Rear Door - LH (Remove & Replace),Remove and Replace,0.96,0.96
+NO,Model X,2,11334402,Gas Strut - Liftgate (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model X,2,11334502,Module - Ultrasonic Door Sensors - LH (Remove & Replace),Remove and Replace,0.54,0.54
+NO,Model X,2,11334602,Module - Ultrasonic Door Sensors - RH (Remove & Replace),Remove and Replace,0.54,0.54
+NO,Model X,2,11334702,Carrier - Sensor - Ultrasonic - Rear Door - LH (Remove & Replace),Remove and Replace,1.26,1.26
+NO,Model X,2,11334902,Carrier - Sensor - Ultrasonic - Rear Door - RH (Remove & Replace),Remove and Replace,1.26,1.26
+NO,Model X,2,11335012,Liftgate Ball Stud - Set  (Remove & Replace),Remove and Replace,0.18,0.18
+NO,Model X,2,11335022,Module - Rear Door Electromechanical Controller - LH (Remove & Replace),Remove and Replace,1.92,1.92
+NO,Model X,2,11335402,Bumper - Liftgate - LH (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model X,2,11335412,Bumper - Liftgate - RH (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model X,2,11336022,Module - Rear Door Electromechanical Controller - RH (Remove & Replace),Remove and Replace,1.92,1.92
+NO,Model X,2,11350602,Cover - Lower Latch - Door - Rear - LH (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model X,2,11350702,Cover - Lower Latch - Door - Rear - RH (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model X,2,11352002,Latch - Hood (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model X,2,11352202,Actuator - Latch - Hood - Primary (Remove & Replace),Remove and Replace,0.42,0.42
+NO,Model X,2,11352212,Cable - Latch - Hood - Primary (Remove & Replace),Remove and Replace,0.42,0.42
+NO,Model X,2,11352302,Actuator - Latch - Hood - Secondary (Remove & Replace),Remove and Replace,0.42,0.42
+NO,Model X,2,11352312,Cable - Latch - Hood - Secondary (Remove & Replace),Remove and Replace,0.42,0.42
+NO,Model X,2,11352902,Striker - Hood (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model X,2,11353402,Striker - Liftgate (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model X,2,11353702,Latch - Door - Rear - LH  (Remove & Replace),Remove and Replace,1.02,1.02
+NO,Model X,2,11353802,Latch - Door - Rear - RH  (Remove & Replace),Remove and Replace,1.02,1.02
+NO,Model X,2,11354002,Striker - Door - Rear - LH (Remove & Replace),Remove and Replace,0.42,0.42
+NO,Model X,2,11354102,Striker - Door - Rear - RH (Remove & Replace),Remove and Replace,0.42,0.42
+NO,Model X,2,11355002,Latch - Liftgate (Remove & Replace),Remove and Replace,0.24,0.24
+NO,Model X,2,11357002,Exterior Release Switch - Liftgate (Remove & Replace),Remove and Replace,0.96,0.96
+NO,Model X,2,11451502,Bezel - Exterior Door Handle - Rear - LH (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model X,2,11451602,Bezel - Exterior Door Handle - Rear - RH (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model X,2,11452002,Handle Carrier - Exterior Release - Door - Rear - LH (Remove & Replace),Remove and Replace,0.84,0.84
+NO,Model X,2,11452102,Handle Carrier - Exterior Release - Door - Rear - RH (Remove & Replace),Remove and Replace,0.84,0.84
+NO,Model X,2,11500302,Door Glass - LH - Rear (Remove & Replace),Remove and Replace,0.96,0.96
+NO,Model X,2,11500402,Door Glass - RH - Rear (Remove & Replace),Remove and Replace,0.96,0.96
+NO,Model X,2,11500502,Door Glass Assembly - Rear - Upper - LH (Remove & Replace),Remove and Replace,0.42,0.42
+NO,Model X,2,11500602,Door Glass Assembly - Rear - Upper - RH (Remove & Replace),Remove and Replace,0.6,0.6
+NO,Model X,2,11501602,Fixed Glass - Rear Door - LH (Remove & Replace),Remove and Replace,0.66,0.66
+NO,Model X,2,11501702,Fixed Glass - Rear Door - RH (Remove & Replace),Remove and Replace,0.66,0.66
+NO,Model X,2,11504002,Applique - C-Pillar - LH (Remove & Replace),Remove and Replace,1.2,1.2
+NO,Model X,2,11504102,Applique - C-Pillar - RH (Remove & Replace),Remove and Replace,1.2,1.2
+YES,Model X,2,11700004,Adjustment: Seal,Test/Adjust,0.2,0.2
+NO,Model X,2,11700802,Seal - B-Pillar Applique - LH (Remove & Replace),Remove and Replace,0.6,0.6
+NO,Model X,2,11700902,Seal - B-Pillar Applique - RH (Remove & Replace),Remove and Replace,0.6,0.6
+NO,Model X,2,11701402,Closeout Panel - Door - Rear - LH (Remove & Replace),Remove and Replace,0.6,0.6
+NO,Model X,2,11701802,Seal - Hood (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model X,2,11702002,Seal - Liftgate (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model X,2,11702502,Seal - Outer Belt - Rear Door - RH (Remove and Replace),Remove and Replace,0.06,0.06
+NO,Model X,2,11704402,Seal - Outer Belt - Rear Door - LH (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model X,2,11704502,Seal - Outer Belt - Rear Door- RH (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model X,2,11705402,Seal - Rear Door Cantrail - LH (Remove & Replace),Remove and Replace,1.08,1.08
+NO,Model X,2,11705502,Seal - Rear Door Cantrail - RH (Remove & Replace),Remove and Replace,1.08,1.08
+NO,Model X,2,11706002,Seal - Door - Rear - Upper - LH (Remove & Replace),Remove and Replace,1.74,1.74
+NO,Model X,2,11706102,Seal - Door - Rear - Upper - RH (Remove & Replace),Remove and Replace,1.74,1.74
+NO,Model X,2,11707302,Protector - Lower Edge - Rear Door - LH (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model X,2,11707402,Protector - Lower Edge - Rear Door - RH (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model X,2,11709002,Seal - Lower NVH Extrusion - LH (Remove and Replace),Remove and Replace,1.02,1.02
+NO,Model X,2,11709102,Seal - Lower NVH Extrusion - RH (Remove & Replace),Remove and Replace,1.02,1.02
+YES,Model X,2,12000004,Adjustment: Exterior Trim,Test/Adjust,0.2,0.2
+NO,Model X,2,12030502,Panel - Aero Shield - Mid (Remove & Replace),Remove and Replace,0.3,0.3
+NO,Model X,2,12030506,Panel - Aero Shield - Mid (Retrofit),Retrofit,0.72,0.72
+NO,Model X,2,12030802,Diffuser Panel - Rear (Remove & Replace),Remove and Replace,0.78,0.78
+NO,Model X,2,12050602,Vehicle Configuration Badge (Remove & Replace),Remove and Replace,0.24,0.24
+NO,Model X,2,12050606,Vehicle Configuration Badge (Retrofit),Retrofit,0.24,0.24
+NO,Model X,2,12050607,Vehicle Configuration Badge (Remove),Modify,0.06,0.06
+NO,Model X,2,12050702,Tesla Badge - Rear (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model X,2,12091102,Door Mirror Assembly - LH (Remove & Replace),Remove and Replace,0.66,0.66
+NO,Model X,2,12091202,Door Mirror Assembly - RH (Remove & Replace),Remove and Replace,0.66,0.66
+NO,Model X,2,12091702,Skull Cap - Door Mirror - LH (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model X,2,12091802,Skull Cap - Door Mirror - RH (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model X,2,12092002,Glass - Door Mirror - LH (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model X,2,12092102,Glass - Door Mirror - RH (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model X,2,12200102,Applique - B-Pillar - LH (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model X,2,12200202,Applique - B-Pillar - RH (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model X,2,12202402,Carrier - Rocker Panel - LH (Remove & Replace),Remove and Replace,0.42,0.42
+NO,Model X,2,12202502,Carrier - Rocker Panel - RH (Remove & Replace),Remove and Replace,0.48,0.48
+NO,Model X,2,12206202,Applique - Roof - Rear (Remove & Replace),Remove and Replace,1.14,1.14
+NO,Model X,2,12207002,Applique - Liftgate (Remove & Replace),Remove and Replace,0.18,0.18
+YES,Model X,2,12208583,Mud Flaps (PDI Retrofit),Retrofit,0.0,0.0
+NO,Model X,2,12220102,Active Spoiler Assembly (Remove & Replace),Remove and Install,1.74,1.74
+NO,Model X,2,12221002,Motor - Active Spoiler (Remove & Replace),Remove and Replace,0.42,0.42
+NO,Model X,2,12221202,Torque Rod - Active Spoiler - LH (Remove & Replace),Remove and Replace,0.42,0.42
+NO,Model X,2,12221302,Torque Rod - Active Spoiler - RH (Remove & Replace),Remove and Replace,0.42,0.42
+NO,Model X,2,12221802,Stanchion - Active Spoiler - LH (Remove & Replace),Remove and Replace,1.26,1.26
+NO,Model X,2,12221902,Stanchion - Active Spoiler - RH (Remove & Replace),Remove and Replace,1.02,1.02
+NO,Model X,2,12222002,Stanchion - Passive Spoiler - LH (Remove & Replace),Remove and Replace,1.02,1.02
+NO,Model X,2,12222102,Stanchion - Passive Spoiler - RH (Remove & Replace),Remove and Replace,0.84,0.84
+NO,Model X,2,12250902,Panel - Cowl Screen (Remove & Replace),Remove and Replace,0.18,0.18
+NO,Model X,2,12270402,Trim - Liftgate Trough - LH (Remove & Replace),Remove and Replace,0.18,0.18
+NO,Model X,2,12270502,Trim - Liftgate Trough - RH (Remove & Replace),Remove and Replace,0.18,0.18
+NO,Model X,2,12271002,Garnish - Liftgate Trough - Rear Fascia (Remove & Replace),Remove and Replace,0.18,0.18
+NO,Model X,2,12272002,Trim - Liftgate Trough - Upper (Remove & Replace),Remove and Replace,1.02,1.02
+NO,Model X,2,12300202,Assembly - Trailer Hitch (Remove & Replace),Remove and Replace,1.14,1.14
+NO,Model X,2,12302002,Cable Assembly – Light – Trailer (Remove & Replace),Remove and Replace,0.12,0.12
+YES,Model X,2,12302302,Ball Neck - Trailer Hitch (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model X,2,12505744,Vehicle Wrap – (Removal),Retrofit,0.0,0.0
+YES,Model X,2,13000004,Diagnosis: Seats,Test/Adjust,0.5,0.5
+NO,Model X,2,13010102,Seat Track Assembly - 1st Row - LH (Remove & Replace),Remove and Replace,1.08,1.08
+NO,Model X,2,13010412,Fan - Cushion - Driver Seat (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model X,2,13010702,Cover - Podium - Driver Seat (Remove and Replace),Remove and Replace,0.66,0.66
+NO,Model X,2,13011002,Switch - Adjust - Driver's Seat  (Remove & Replace),Remove and Replace,0.18,0.18
+NO,Model X,2,13011202,Motor - Seat Track - Driver Seat (Remove & Replace),Remove and Replace,0.78,0.78
+NO,Model X,2,13011502,Motor - Seat Tilt - Driver Seat (Remove & Replace),Remove and Replace,0.66,0.66
+NO,Model X,2,13011602,Motor - Seat Height - Driver's Seat (Remove & Replace),Remove and Replace,1.02,1.02
+NO,Model X,2,13012002,Riser - Outer - Driver Seat (Remove & Replace),Remove and Replace,0.66,0.66
+NO,Model X,2,13012052,Cover - Riser - Driver Seat (Remove and Replace),Remove and Replace,0.66,0.66
+NO,Model X,2,13015102,Cover - Seat Track - Driver's - Outboard - Rear (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model X,2,13015152,Switch - Back Rest and Cushion Adjust - Driver Seat (2nd Generation Seat) (Remove and Replace),Remove and Replace,0.12,0.12
+NO,Model X,2,13016002,Motor - Headrest - Driver's (Remove & Replace),Remove and Replace,0.9,0.9
+NO,Model X,2,13016052,Motor - Headrest - Driver (Remove & Replace),Remove and Replace,0.42,0.42
+NO,Model X,2,13016202,Controller - Driver Seat (Remove and Replace),Remove and Replace,0.36,0.36
+NO,Model X,2,13018102,Button - Cushion Adjust - Driver Seat (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model X,2,13020022,Actuator - EZ Entry - 40 Track - 2nd Row Seat (7-Seat) (Remove & Replace),Remove and Replace,0.24,0.24
+NO,Model X,2,13020102,Track - Outer - 2nd Row Seat - LH (Remove & Replace),Remove and Replace,2.22,2.22
+NO,Model X,2,13020112,Sensor - Position - Seat Track - 2nd Row Seat - LH (Monopost) (Remove & Replace),Remove and Replace,0.9,0.9
+NO,Model X,2,13020122,Sensor - Position - Seat Track - 2nd Row Seat - RH (Monopost) (Remove & Replace),Remove and Replace,0.9,0.9
+NO,Model X,2,13020212,Actuator - Pitch Latch - 2nd Row Seat - LH (6 Seat) (Remove & Replace),Remove and Replace,0.36,0.36
+NO,Model X,2,13020302,Track - Outer - 2nd Row Seat - RH (Remove & Replace),Remove and Replace,2.22,2.22
+NO,Model X,2,13020802,Heater Pads - Passenger Seat - Roadster 1.5 (Remove & Replace),Remove and Replace,2.34,2.34
+NO,Model X,2,13021002,Motor - Seat Track - 2nd Row - LH (Remove & Replace),Remove and Replace,2.34,2.34
+NO,Model X,2,13021102,Motor - Seat Track - 2nd Row - RH (Remove & Replace),Remove and Replace,2.34,2.34
+NO,Model X,2,13021302,Actuator - Track Release - Easy Entry - 2nd Row - RH (Remove and Replace),Remove and Replace,2.04,2.04
+NO,Model X,2,13021602,Pitch Pulley - Seat - 2nd Row - LH  (Monopost) (Remove & Replace),Remove and Replace,0.78,0.78
+NO,Model X,2,13021612,Pitch Idler - Seat - 2nd Row - LH  (Monopost) (Remove & Replace),Remove and Replace,0.78,0.78
+NO,Model X,2,13021622,Pitch Belt - Seat - 2nd Row - LH  (Monopost) (Remove & Replace),Remove and Replace,0.78,0.78
+NO,Model X,2,13021702,Pitch Pulley - Seat - 2nd Row - RH  (Monopost) (Remove & Replace),Remove and Replace,0.78,0.78
+NO,Model X,2,13021712,Pitch Idler - Seat - 2nd Row - RH  (Monopost) (Remove & Replace),Remove and Replace,0.78,0.78
+NO,Model X,2,13021722,Pitch Belt - Seat - 2nd Row - RH  (Monopost) (Remove & Replace),Remove and Replace,0.78,0.78
+NO,Model X,2,13022002,Pitch Mechanism - 2nd Row Seat - LH (Remove & Replace),Remove and Replace,0.9,0.9
+NO,Model X,2,13022102,Pitch Mechanism - 2nd Row Seat - RH (Remove & Replace),Remove and Replace,0.84,0.84
+NO,Model X,2,13022302,Mount - Actuator - Seatback - 2nd Row - RH (With 2nd Row Bench Seats)(Remove and Replace),Remove and Replace,1.62,1.62
+NO,Model X,2,13022902,Release Handle - Seat Track - 2nd Row - RH (Remove and Replace),Remove and Replace,1.62,1.62
+NO,Model X,2,13023002,Module - 2nd Row Seat Controller - LH (Remove & Replace),Remove and Replace,0.6,0.6
+NO,Model X,2,13023102,Module - 2nd Row Seat Controller - RH (Remove & Replace),Remove and Replace,0.6,0.6
+NO,Model X,2,13023202,Module - 2nd Row Seat Controller - Center (Remove & Replace),Remove and Replace,0.6,0.6
+NO,Model X,2,13023602,Actuator Assembly - Release - EZ Entry - 2nd Row - RH (7 Seat) (Remove & Replace),Remove and Replace,1.8,1.8
+NO,Model X,2,13024002,Motor - Pitch - 2nd Row - LH (Remove & Replace),Remove and Replace,0.66,0.66
+NO,Model X,2,13024102,Motor - Pitch - 2nd Row - RH (Remove & Replace),Remove and Replace,0.6,0.6
+NO,Model X,2,13024202,Motor - Pitch - 2nd Row - Center (Remove & Replace),Remove and Replace,0.6,0.6
+NO,Model X,2,13024302,Switch - 2nd Row Seat - Center (Remove & Replace),Remove and Replace,0.18,0.18
+NO,Model X,2,13024402,Switch - 2nd Row - LH (Remove & Replace),Remove and Replace,0.18,0.18
+NO,Model X,2,13024502,Switch - 2nd Row - RH (Remove & Replace),Remove and Replace,0.18,0.18
+NO,Model X,2,13024602,Switch - Easy Entry - 2nd Row Seat - LH (Remove & Replace),Remove and Replace,0.18,0.18
+NO,Model X,2,13024652,60/40 Seat Switch - 2nd Row - LH (Remove & Replace),Remove and Replace,0.18,0.18
+NO,Model X,2,13024702,Switch - Easy Entry - 2nd Row Seat - RH (Remove & Replace),Remove and Replace,0.18,0.18
+NO,Model X,2,13024752,60/40 Seat Switch - 2nd Row - RH (Remove & Replace),Remove and Replace,0.18,0.18
+NO,Model X,2,13024802,Release Cable - Easy Entry - 2nd Row - RH (Remove & Replace),Remove and Replace,1.86,1.86
+NO,Model X,2,13025002,Drive Shaft - 2nd Row Seat Motor - LH (Remove & Replace),Remove and Replace,0.6,0.6
+NO,Model X,2,13025102,Drive Shaft - 2nd Row Seat Motor - RH (Remove & Replace),Remove and Replace,0.6,0.6
+NO,Model X,2,13025202,Drive Shaft - 2nd Row Seat Motor - Center (Remove & Replace),Remove and Replace,0.6,0.6
+NO,Model X,2,13026102,Microswitch - Easy Entry - 2nd Row - LH (With 2nd Row Bench Seats) (Remove and Replace),Remove and Replace,1.92,1.92
+NO,Model X,2,13026202,Microswitch - Easy Entry - 2nd Row - RH (With 2nd Row Bench Seats) (Remove and Replace),Remove and Replace,1.92,1.92
+NO,Model X,2,13026502,Actuator - Track Release - Easy Entry - 2nd Row - LH (Remove & Replace),Remove and Replace,2.04,2.04
+NO,Model X,2,13027102,Release Handle - Seat Track - 2nd Row - LH (Remove and Replace),Remove and Replace,1.62,1.62
+NO,Model X,2,13027902,Mount - Actuator - Seatback - 2nd Row - LH (With 2nd Row Bench Seats)(Remove and Replace),Remove and Replace,1.62,1.62
+NO,Model X,2,13033002,Actuator - Headrest - 3rd Row - LH (Remove & Replace),Remove and Replace,0.66,0.66
+NO,Model X,2,13033102,Actuator - Headrest - 3rd Row - RH (Remove & Replace),Remove and Replace,0.66,0.66
+NO,Model X,2,13040102,1st Row Seat Assembly - LH (Remove & Replace),Remove and Replace,1.2,1.2
+NO,Model X,2,13040152,Seat - Driver - 2nd Generation (Remove and Replace),Remove and Replace,0.66,0.66
+NO,Model X,2,13040202,1st Row Seat Assembly - RH (Remove & Replace),Remove and Replace,0.6,0.6
+NO,Model X,2,13040302,Seat - Driver (Tesla) (Remove & Replace),Remove and Replace,0.6,0.6
+NO,Model X,2,13041002,Cover - Seat Back - Driver's (Remove & Replace),Remove and Replace,0.18,0.18
+NO,Model X,2,13042002,Trim - Headrest - Driver's (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model X,2,13042052,Trim - Headrest - Driver (2nd Generation) (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model X,2,13044002,Base Assembly - Driver's Seat (Remove & Replace),Remove and Replace,1.02,1.02
+NO,Model X,2,13050052,Seat Assembly - 2nd Row - LH (7-Seat) (Remove & Replace),Remove and Replace,1.08,1.08
+NO,Model X,2,13050062,Seat Assembly - 2nd Row - RH (7-Seat) (Remove & Replace),Remove and Replace,1.14,1.14
+NO,Model X,2,13050102,Seat Assembly - 2nd Row - LH (Without 2nd Row Bench Seats) (Remove & Replace),Remove and Replace,2.28,2.28
+NO,Model X,2,13050202,Seat Assembly - 2nd Row - RH (Without 2nd Row Bench Seats) (Remove & Replace),Remove and Replace,2.28,2.28
+NO,Model X,2,13050302,Seat Assembly - 2nd Row - Center (Without 2nd Row Bench Seats) (Remove & Replace),Remove and Replace,2.58,2.58
+NO,Model X,2,13051002,Seat Back Assembly - 2nd Row - LH (Without 2nd Row Bench Seats) (Remove & Replace),Remove and Replace,1.2,1.2
+NO,Model X,2,13051102,Seat Back Assembly - 2nd Row - RH (Without 2nd Row Bench Seats) (Remove & Replace),Remove and Replace,1.2,1.2
+NO,Model X,2,13051202,Seat Back Assembly - 2nd Row - Center (Without 2nd Row Bench Seats) (Remove & Replace),Remove and Replace,1.2,1.2
+NO,Model X,2,13053002,Latch Actuator - 2nd Row Seat - LH (Remove & Replace),Remove and Replace,0.54,0.54
+NO,Model X,2,13053102,Latch Actuator - 2nd Row Seat - RH (Remove & Replace),Remove and Replace,0.54,0.54
+NO,Model X,2,13053202,Latch Actuator - 2nd Row Seat - Center (Remove & Replace),Remove and Replace,0.54,0.54
+NO,Model X,2,13054002,Seat Assembly - 2nd Row - LH (With 2nd Row Bench Seats) (Remove & Replace),Remove and Replace,1.32,1.32
+NO,Model X,2,13054102,Seat Assembly - 2nd Row - RH (With 2nd Row Bench Seats) (Remove & Replace),Remove and Replace,1.26,1.26
+NO,Model X,2,13058822,Seat Back Sub-assembly - 2nd Row Seat - RH (5 Seat) (Remove & Replace),Remove and Replace,1.62,1.62
+NO,Model X,2,13060102,Seat Assembly - 3rd Row (Remove & Replace),Remove and Replace,0.84,0.84
+NO,Model X,2,13061202,Seat Backs - 3rd Row - LH/RH (Remove & Replace),Remove and Replace,1.26,1.26
+NO,Model X,2,13063002,Luggage Hook Tie Down - 3rd Row Seat Back - LH (Remove & Replace),Remove and Replace,0.48,0.48
+NO,Model X,2,13063102,Luggage Hook Tie Down - 3rd Row Seat Back - RH (Remove & Replace),Remove and Replace,0.48,0.48
+NO,Model X,2,13064002,Seat Back Carpet - 3rd Row - LH (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model X,2,13064102,Seat Back Carpet - 3rd Row - RH (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model X,2,13064302,Headrest - 3rd Row Seat - LH (Remove & Replace),Remove and Replace,0.66,0.66
+NO,Model X,2,13064402,Headrest - 3rd Row Seat - RH (Remove & Replace),Remove and Replace,0.66,0.66
+NO,Model X,2,13071002,Cover - Back Rest - Driver's Seat (Remove & Replace),Remove and Replace,0.84,0.84
+NO,Model X,2,13071302,Foam - Cushion - Driver Seat (Remove & Replace),Remove and Replace,0.96,0.96
+NO,Model X,2,13072002,Trim - Seat Back - Driver Seat (Remove & Replace),Remove and Replace,1.02,1.02
+NO,Model X,2,13072202,Trim - Cushion - Driver Seat (Remove & Replace),Remove and Replace,0.96,0.96
+NO,Model X,2,13072602,Foam - Seat Back - Driver Seat (Remove & Replace),Remove and Replace,1.08,1.08
+NO,Model X,2,13073602,Module - Seat Heater - Driver Seat  (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model X,2,13073702,Module - Seat Heater - Passenger Seat (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model X,2,13080902,Cover - Seat Back - 2nd Row - RH (Without 2nd Row Bench Seats) (Remove and Replace),Remove and Replace,0.06,0.06
+NO,Model X,2,13081002,Cover - Seat Back - 2nd Row - LH (Without 2nd Row Bench Seats) (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model X,2,13081102,Cover - Seat Back - 2nd Row - RH (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model X,2,13081202,Cover - Seat Back - 2nd Row - Center (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model X,2,13081306,Tether Label - Seat Back - 2nd Row - LH (Retrofit),Retrofit,0.06,0.06
+NO,Model X,2,13081702,Release Handle - Seat Track - 2nd Row - RH (Remove and Replace),Remove and Replace,1.62,1.62
+NO,Model X,2,13082002,Trim - Seat Post - 2nd Row - LH - Outer (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model X,2,13082402,Trim - Seat Post - 2nd Row - Center - LH (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model X,2,13082502,Trim - Seat Post - 2nd Row - Center - RH (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model X,2,13082802,Trim - Seat Post - 2nd Row - RH - Outer (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model X,2,13083102,Release Handle - Seat Track - 2nd Row - LH (Remove and Replace),Remove and Replace,1.62,1.62
+NO,Model X,2,13086302,Trim - Back Rest - 2nd Row - LH (Bench Seat) (Remove & Replace),Remove and Replace,1.68,1.68
+NO,Model X,2,13086402,Trim - Back Rest - 2nd Row - RH (Bench Seat) (Remove & Replace),Remove and Replace,0.9,0.9
+NO,Model X,2,13086502,Trim - Cushion - 2nd Row - LH (Bench Seat) (Remove & Replace),Remove and Replace,1.44,1.44
+NO,Model X,2,13086602,Trim - Cushion - 2nd Row - RH (Bench Seat) (Remove & Replace),Remove and Replace,1.2,1.2
+NO,Model X,2,13091206,Tether Label - Seat Back - 3rd Row (Pair) (Retrofit),Retrofit,0.24,0.24
+YES,Model X,2,14050002,USB Drive,Remove and Replace,0.06,0.06
+NO,Model X,2,14051002,Glove Box (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model X,2,14052202,Cross Car Beam (Remove & Replace),Remove and Replace,4.56,4.56
+NO,Model X,2,14053002,Trim - Touch Screen Surround (Remove & Replace),Remove and Replace,0.84,0.84
+NO,Model X,2,14053102,Face Level Vent - Driver's - Outer (Remove & Replace),Remove and Replace,0.18,0.18
+NO,Model X,2,14055302,Assembly - Cover - Footwell - Driver's (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model X,2,14055402,Assembly - Cover - Footwell - Passenger's (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model X,2,14055412,Cover - Footwell - Passenger (RHD) (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model X,2,14055422,Cover - Footwell - Driver (RHD) (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model X,2,15050002,Cover - Overhead Harness (Triple Cam),Remove and Replace,0.12,0.12
+NO,Model X,2,15050012,Harness Assembly - Overhead (Triple Cam),Remove and Replace,0.18,0.18
+NO,Model X,2,15050022,Cover - Overhead Harness (Mono Cam),Remove and Replace,0.12,0.12
+NO,Model X,2,15050032,Harness Assembly - Overhead (Mono Cam),Remove and Replace,0.18,0.18
+NO,Model X,2,15050202,Mirror - Rear View (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model X,2,15050912,Triple Camera Cover – Lower (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model X,2,15051002,Sun Visor - Driver's (Remove & Replace),Remove and Replace,0.24,0.24
+NO,Model X,2,15052002,Harness Assembly - Overhead Console (Remove & Replace),Remove and Replace,1.2,1.2
+NO,Model X,2,15111002,Trim - Upper - Liftgate (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model X,2,15111302,Trim - Liftgate - Lower (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model X,2,15111902,Trim - Liftgate - Middle (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model X,2,15112002,Grille - Speaker - Liftgate (Remove & Replace),Remove and Replace,0.06,0.06
+YES,Model X,2,15130004,Diagnosis: Closures,General Diagnosis,0.65,0.65
+NO,Model X,2,15132002,Panel - Door Trim - Rear - LH (Remove & Replace),Remove and Replace,0.18,0.18
+NO,Model X,2,15132102,Panel - Door Trim - Rear - RH (Remove & Replace),Remove and Replace,0.18,0.18
+NO,Model X,2,15132302,Panel - Door Trim - Rear - Upper - LH (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model X,2,15132402,Panel - Door Trim - Rear - Upper - RH (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model X,2,15132502,Garnish - Door Trim - LH - Rear - Lower (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model X,2,15132602,Garnish - Door Trim - RH - Rear - Lower (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model X,2,15133002,Grille - Speaker - Rear - LH (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model X,2,15133102,Grille - Speaker - Rear - RH (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model X,2,15180502,Trim - Sill Panel - Rear - LH (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model X,2,15180602,Trim - Sill Panel - Rear - RH (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model X,2,15180902,Welcome Plate - LH (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model X,2,15181002,Welcome Plate - RH (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model X,2,15182402,Trim - A-Pillar - Lower - LH (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model X,2,15182502,Trim - A-Pillar - Lower - RH (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model X,2,15183002,Trim - B-Pillar - Upper - LH (Remove & Replace),Remove and Replace,0.3,0.3
+NO,Model X,2,15183102,Trim - B-Pillar - Upper - RH (Remove & Replace),Remove and Replace,0.3,0.3
+NO,Model X,2,15183402,Trim - B-Pillar - Lower - LH (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model X,2,15183502,Trim - B-Pillar - Lower - RH (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model X,2,15184002,Trim - A-Pillar - Upper - LH (Remove & Replace),Remove and Replace,0.18,0.18
+NO,Model X,2,15184102,Trim - A-Pillar - Upper - RH (Remove & Replace),Remove and Replace,0.18,0.18
+NO,Model X,2,15184402,Trim - A-Pillar - Sun Visor Bezel - LH (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model X,2,15184502,Trim - A-Pillar - Sun Visor Bezel - RH (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model X,2,15184602,Magnet - A-Pillar - Sun Visor Bezel - LH (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model X,2,15184702,Magnet - A-Pillar - Sun Visor Bezel - RH (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model X,2,15185002,Footrest - Driver's (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model X,2,15185402,Trim - C-Pillar - Mid - LH (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model X,2,15185502,Trim - C-Pillar - Mid - RH (Remove & Replace),Remove and Replace,0.18,0.18
+NO,Model X,2,15185802,Trim - C-Pillar - Lower - LH (Remove & Replace),Remove and Replace,0.24,0.24
+NO,Model X,2,15185902,Trim - C-Pillar - Lower - RH (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model X,2,15186002,Trim - C-Pillar - Upper - LH (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model X,2,15186102,Trim - C-Pillar - Upper - RH (Remove & Replace),Remove and Replace,0.48,0.48
+NO,Model X,2,15186202,Support - Parcel Shelf - LH (Remove & Replace),Remove and Replace,0.42,0.42
+NO,Model X,2,15186302,Support - Parcel Shelf - RH (Remove & Replace),Remove and Replace,0.3,0.3
+NO,Model X,2,15187102,Racetrack Trim - Lower - LH (Remove & Replace),Remove and Replace,0.36,0.36
+NO,Model X,2,15187202,Racetrack Trim - Lower - RH (Remove & Replace),Remove and Replace,0.42,0.42
+NO,Model X,2,15187502,Racetrack Trim - Rear - LH (Remove & Replace),Remove and Replace,1.2,1.2
+NO,Model X,2,15187602,Racetrack Trim - Rear - RH (Remove & Replace),Remove and Replace,1.2,1.2
+NO,Model X,2,15187702,Racetrack Trim - Upper - LH (Remove & Replace),Remove and Replace,1.5,1.5
+NO,Model X,2,15187802,Racetrack Trim - Upper - RH (Remove & Replace),Remove and Replace,1.5,1.5
+NO,Model X,2,15190102,Center Console (Remove & Replace),Remove and Replace,0.6,0.6
+NO,Model X,2,15190502,Air Outlet - Center Console (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model X,2,15191102,Closeout Extension - Center Console - LH (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model X,2,15191202,Closeout Extension - Center Console - RH (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model X,2,15191702,Base - Armrest - Center Console (Remove & Replace),Remove and Replace,0.84,0.84
+NO,Model X,2,15192002,Trim - Center Console - Rear (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model X,2,15192502,Armrest Pads - Center Console - 1st Row (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model X,2,15192802,USB Hub - Center Console (Remove & Replace),Remove and Replace,0.18,0.18
+NO,Model X,2,15193002,Trim - Armrest - Center Console (Remove & Replace),Remove and Replace,0.84,0.84
+NO,Model X,2,15193502,Phone Dock Adapter (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model X,2,15244802,Trim - Sill - Trunk (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model X,2,15245402,Carpet - Rear Trunk (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model X,2,15245602,Trim - Rear Trunk - Rear Wall (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model X,2,15301902,Floor Mat Set (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model X,2,15302402,Floor Panel - 1st Row (Remove & Replace),Remove and Replace,2.04,2.04
+NO,Model X,2,15302502,Carpet - 1st Row (Remove & Replace),Remove and Replace,2.04,2.04
+NO,Model X,2,15303102,Floor Panel - 2nd Row - Middle (Remove & Replace),Remove and Replace,0.42,0.42
+NO,Model X,2,15303108,Floor Panel - 2nd Row - Middle,Restore,0.42,0.42
+NO,Model X,2,15303202,Floor Panel - 2nd Row - Rear (Remove & Replace),Remove and Replace,0.36,0.36
+NO,Model X,2,15303208,Floor Panel - 2nd Row - Rear,Restore,0.3,0.3
+NO,Model X,2,15305102,Trunk Load Floor - Rear (Remove and Replace),Remove and Replace,0.06,0.06
+NO,Model X,2,15307202,Absorber - Wheelhouse - Rear - RH (Remove & Replace),Remove and Replace,2.58,2.58
+NO,Model X,2,15352002,Center Console - 2nd Row (Remove & Replace),Remove and Replace,0.36,0.36
+NO,Model X,2,15352006,Center Console - 2nd Row (Retrofit),Retrofit,0.36,0.36
+NO,Model X,2,15352502,Keystone Panel - Center Console - 2nd Row (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model X,2,16010103408,HV Battery Cover Corrosion (Removal not Possible),Restore,0.06,0.06
+NO,Model X,2,16010103419,HV Battery Cover Corrosion (Corrosion not Present),Inspection,0.06,0.06
+NO,Model X,2,16010103508,HV Battery Cover Corrosion (Corrosion Removed),Restore,1.38,1.38
+NO,Model X,2,16010200402,BATTERY FLOW NUT REPLACEMENT,Remove and Replace,0.36,0.36
+YES,Model X,2,16010201,HV Battery (AWD),Remove and Install,1.62,1.62
+YES,Model X,2,16010202,HV Battery (AWD),Remove and Replace,2.46,2.46
+NO,Model X,2,16010500,Not Applicable,Inspection,0.0,0.0
+NO,Model X,2,16011051,"Ancillary
+Unit (HV Battery 2.0)",Remove and Install,4.08,4.08
+NO,Model X,2,16011052,"Ancillary
+Unit (HV Battery 2.0)",Remove and Replace,4.08,4.08
+NO,Model X,2,16012042,Aero Shield Support Tab - HV Battery 2.0 (Battery Already Removed),Remove and Replace,1.08,1.08
+NO,Model X,2,16012052,Aero Shield Support Tab - HV Battery 2.0 (Battery Not Yet Removed),Remove and Replace,1.62,1.62
+NO,Model X,2,16012112,BMS PCBA - High Voltage Battery Assembly (HV Battery 1.0/1.5) (Remove & Replace),Remove and Replace,4.38,4.38
+NO,Model X,2,16012118,BMS Standoff - High Voltage Battery Assembly (Repair),Restore,0.06,0.06
+NO,Model X,2,16013008,Battery Enclosure - Re-seal - Level 1,Restore,0.6,0.6
+NO,Model X,2,16013108,Battery Enclosure - Re-seal - Level 2,Restore,1.2,1.2
+NO,Model X,2,16014002,HV Battery Blanket (Remove & Replace),Remove and Replace,2.4,2.4
+NO,Model X,2,16015100,Discharge HV Battery (Through Rapid Mate),Test/Adjust,0.36,0.36
+NO,Model X,2,16015200,Discharge HV Battery (Through Discharge Port),Test/Adjust,0.3,0.3
+YES,Model X,2,16015300,Discharge HV Battery (At Pack Contactors),Test/Adjust,1.02,1.02
+NO,Model X,2,16101006,Mud Flaps - HV Battery (Retrofit),Retrofit,1.74,1.74
+YES,Model X,2,16102100,HV Battery Air Leak Test,Test/Adjust,0.66,0.66
+YES,Model X,2,16300100,Resistance Meter (Zero Adjust),Test/Adjust,0.05,0.05
+NO,Model X,2,16302202,BMS PCBA - High Voltage Battery Assembly (HV Battery 2.0) (Remove & Replace),Remove and Replace,2.94,2.94
+NO,Model X,2,16302841,Battery Module Remove and Replace (Reman),Fee,0.4,0.4
+NO,Model X,2,16304176,Halfcup Charge/Discharge Test (Reman),Fee,5.29,5.29
+NO,Model X,2,16308502,Fuse - Pyrotechnic - HV Battery 2.0 (Remove & Replace),Remove and Replace,0.66,0.66
+NO,Model X,2,16308507,Fuse - Pyrotechnic - HV Battery 2.0 (Dismantle and Discard),Modify,0.05,0.05
+NO,Model X,2,16308602,Rapid Mate - Low Voltage (HV Battery 2.0) (Remove & Replace),Remove and Replace,3.42,3.42
+NO,Model X,2,16900308,HV Battery Damage Evaluation (Reman),Retrofit,1.0,1.0
+NO,Model X,2,16900508,HV Battery Safety Check (Reman),Retrofit,1.0,1.0
+NO,Model X,2,16901808,Battery Enclosure Replacement (Reman),Sublet,0.0,0.0
+NO,Model X,2,16901908,Battery Module Replacement (Reman),Sublet,0.0,0.0
+NO,Model X,2,16902408,Charge/Discharge Test (Reman),Sublet,0.0,0.0
+NO,Model X,2,16902608,Battery Reassembly (Reman),Sublet,0.0,0.0
+NO,Model X,2,16902808,Battery Module Repair (Reman),Sublet,0.0,0.0
+NO,Model X,2,16903108,HV Battery Coolant Leak Rectification (Reman),Retrofit,1.0,1.0
+NO,Model X,2,16904008,Enclosure - HV Battery - Remanufactured (Reman),Retrofit,5.35,5.35
+NO,Model X,2,16904208,Enclosure - HV Battery - New (Reman),Retrofit,4.6,4.6
+NO,Model X,2,16904508,Baffle - Vent - HV Battery (Reman),Retrofit,0.15,0.15
+NO,Model X,2,16905008,Battery Management System (BMS) (Reman),Retrofit,0.45,0.45
+NO,Model X,2,16906208,Modules - HV Battery - Upper (Reman),Retrofit,0.25,0.25
+NO,Model X,2,16906408,Modules - HV Battery - Lower (Reman),Retrofit,0.7,0.7
+YES,Model X,2,17000004,Diagnosis: Driver Assistance,General Diagnosis,0.5,0.5
+YES,Model X,2,17000008,Jumpstart Vehicle (Restore),Restore,0.12,0.12
+YES,Model X,2,17010000,Vehicle HV Disablement Procedure,Test/Adjust,1.14,1.14
+NO,Model X,2,17010200,Disconnect 12V Power,Modify,0.24,0.24
+NO,Model X,2,17011202,Battery - 12V (Remove & Replace),Remove and Replace,0.36,0.36
+NO,Model X,2,17011602,E-Fuse Module (1st Generation) (Remove & Replace),Remove and Replace,1.74,1.74
+NO,Model X,2,17012502,12V Battery Negative Cable Assembly - 12V Battery and Fuses (Remove and Replace),Remove and Replace,0.3,0.3
+NO,Model X,2,17012602,Vent Tube - 12V Battery (Remove and Replace),Remove and Replace,0.24,0.24
+NO,Model X,2,17015232,Harness - Body (Remove & Replace) (LHD),Remove and Replace,8.9,8.9
+YES,Model X,2,17100008,Harness Connector - Reconnect,Restore,0.1,0.1
+NO,Model X,2,17100132,Harness - Seat Assembly - 2nd Row - LH - (With 2nd Row Bench Seat) (Remove & Replace),Remove and Replace,1.44,1.44
+NO,Model X,2,17100302,Harness - Center Console (Remove & Replace),Remove and Replace,0.72,0.72
+NO,Model X,2,17100402,Harness - Body - Lower Dash (Remove & Replace),Remove and Replace,8.55,8.55
+NO,Model X,2,17101102,Harness - Fascia - Rear (Remove & Replace),Remove and Replace,1.02,1.02
+NO,Model X,2,17102302,Harness - Seat Assembly - 2nd Row - RH - (With 2nd Row Bench Seat) (Remove and Replace),Remove and Replace,1.44,1.44
+NO,Model X,2,17102808,Harness - Rear Door - Lower - LH - Repair,Remove and Rebuild,0.0,0.0
+NO,Model X,2,17102812,Harness - Rear Door - Lower - LH (Remove & Replace),Remove and Replace,1.2,1.2
+NO,Model X,2,17102822,Harness - Rear Door - Lower - RH (Remove & Replace),Remove and Replace,1.2,1.2
+NO,Model X,2,17103002,Harness - Rear Door - Upper - LH (Remove & Replace),Remove and Replace,1.74,1.74
+NO,Model X,2,17103102,Harness - Rear Door - Upper - RH (Remove & Replace),Remove and Replace,0.9,0.9
+NO,Model X,2,17103108,Harness - Rear Door - Upper - RH - Repair,Remove and Rebuild,0.9,0.9
+NO,Model X,2,17104502,Harness - Liftgate (Remove & Replace),Remove and Replace,2.4,2.4
+NO,Model X,2,17105002,Harness - Body (Remove & Replace),Remove and Replace,11.35,11.35
+YES,Model X,2,17105006,Wire - Electrical Harness (Overlay),Retrofit,0.0,0.0
+NO,Model X,2,17107602,Harness - Seat Back - 3rd Row - RH (Remove & Replace),Remove and Replace,0.6,0.6
+YES,Model X,2,17108100,Diagnosis: Low Voltage Distribution and Controllers,General Diagnosis,1.0,1.0
+NO,Model X,2,17150016,Electronic Toll Collection System (Retrofit),Retrofit,0.6,0.6
+NO,Model X,2,17152302,Module - Rear Body Controller - BCM (Remove & Replace),Remove and Replace,1.02,1.02
+NO,Model X,2,17152602,Module - Central Body Controller - BCCEN (Remove & Replace),Remove and Replace,0.84,0.84
+NO,Model X,2,17154503,Module - Gateway,Module Reset/Reflashed,0.2,0.2
+NO,Model X,2,17154603,Module - Bluetooth (Parrot),Module Reset/Reflashed,0.1,0.1
+NO,Model X,2,17157002,ECU Box (Remove & Replace),Remove and Replace,1.08,1.08
+NO,Model X,2,17250102,Camera - Rear View (Remove & Replace),Remove and Replace,0.54,0.54
+NO,Model X,2,17261102,Camera - B-Pillar - LH (Remove & Replace),Remove and Replace,0.18,0.18
+NO,Model X,2,17261202,Camera - B-Pillar - RH (Remove & Replace),Remove and Replace,0.18,0.18
+NO,Model X,2,17270102,Module - Park Assist (Remove & Replace),Remove and Replace,1.26,1.26
+NO,Model X,2,17271302,Sensor - Park Assist - Rear - Set (Remove & Replace),Remove and Replace,0.36,0.36
+NO,Model X,2,17302102,Switch - Glove Box (Remove & Replace),Remove and Replace,0.96,0.96
+NO,Model X,2,17303002,Power Socket 12V - Center Console (Remove & Replace),Remove and Replace,0.9,0.9
+NO,Model X,2,17303202,Power Socket 12V - Rear Trunk (Remove & Replace),Remove and Replace,0.18,0.18
+NO,Model X,2,17303502,USB Port - 3rd Row Seat (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model X,2,17350802,Light - Map - Rear (Remove & Replace),Remove and Replace,0.48,0.48
+NO,Model X,2,17350902,Task Light - Footwell Cover - RH (Remove and Replace),Remove and Replace,0.06,0.06
+NO,Model X,2,17351502,Puddle Light - Rear Trunk (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model X,2,17352202,Welcome Lamp - Rear Door - LH (Remove & Replace),Remove and Replace,0.24,0.24
+NO,Model X,2,17352302,Welcome Lamp - Rear Door - RH (Remove & Replace),Remove and Replace,0.24,0.24
+NO,Model X,2,17352402,Puddle Light - Liftgate (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model X,2,17355102,Task Light - Footwell Cover - LH (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model X,2,17400102,Headlight  - LH (Remove & Replace),Remove and Replace,0.96,0.96
+YES,Model X,2,17400150,Headlights - Adjust - NA (Tool Method),Test/Adjust,0.18,0.18
+NO,Model X,2,17400202,Headlight - RH (Remove & Replace),Remove and Replace,0.96,0.96
+NO,Model X,2,17400252,Headlight  - Pair (Remove & Replace),Remove and Replace,1.08,1.08
+NO,Model X,2,17402002,Tail Light Assembly - LH (Remove & Replace),Remove and Replace,1.08,1.08
+NO,Model X,2,17402202,Tail Light Assembly - RH (with Subwoofer) (Remove & Replace),Remove and Replace,0.6,0.6
+NO,Model X,2,17402252,Tail Light Assembly - RH (without Subwoofer) (Remove & Replace),Remove and Replace,0.54,0.54
+NO,Model X,2,17402602,Light - License Plate (Remove & Replace),Remove and Replace,0.18,0.18
+NO,Model X,2,17402702,Light - Fog/Reverse - Rear - LH (Remove & Replace),Remove and Replace,0.48,0.48
+NO,Model X,2,17402802,Light - Fog/Reverse - Rear - RH (Remove & Replace),Remove and Replace,0.48,0.48
+NO,Model X,2,17402902,Lights - Fog/Reverse - Rear - LH/RH (Remove & Replace),Remove and Replace,0.66,0.66
+NO,Model X,2,17403502,Lamp - Reflex - Rear - LH (Remove & Replace),Remove and Replace,1.02,1.02
+NO,Model X,2,17403602,Lamp - Reflex - Rear - RH  (Remove & Replace),Remove and Replace,1.02,1.02
+NO,Model X,2,17409000,Headlight - Adjust - North America,Test/Adjust,0.15,0.15
+NO,Model X,2,17450513,Key Fob - Program (No Keys Present),Program,0.12,0.12
+NO,Model X,2,17450603,Key Fob (Tegra) (Unpair),Removal,0.0,0.0
+NO,Model X,2,17450902,Battery - Key Fob (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model X,2,17451002,Siren - Battery Backed (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model X,2,17451202,Antenna - Passive Entry - Rocker - LH (Remove & Replace),Remove and Replace,0.72,0.72
+NO,Model X,2,17451302,Antenna - Passive Entry - Rocker - RH (Remove & Replace),Remove and Replace,0.72,0.72
+NO,Model X,2,17451601,Antenna (with Cap) - Passive Entry - Center Console,Remove and Install,0.72,0.72
+NO,Model X,2,17451602,Antenna (with Cap) - Passive Entry - Center Console,Remove and Replace,0.72,0.72
+NO,Model X,2,17451802,Antenna - Passive Entry - Rear (Remove & Replace),Remove and Replace,0.54,0.54
+NO,Model X,2,17500302,Wiper Arm - LH (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model X,2,17500352,Wiper Arm - RH (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model X,2,17501802,Wiper Arms - Pair  (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model X,2,17502502,Wiper Module (LHD) (Remove & Replace),Remove and Replace,0.66,0.66
+NO,Model X,2,17502702,Wiper Module (RHD) (Remove & Replace),Remove and Replace,0.6,0.6
+NO,Model X,2,17530102,Horn - High Tone (Remove & Replace),Remove and Replace,0.66,0.66
+NO,Model X,2,17530202,Horns - Tone Horn Assembly - Pair (Remove and Replace),Remove and Replace,0.66,0.66
+NO,Model X,2,17530302,Horn - Low Tone (Remove & Replace),Remove and Replace,0.66,0.66
+NO,Model X,2,17551002,Accelerator (Remove & Replace),Remove and Replace,0.48,0.48
+NO,Model X,2,17570102,Pyrotechnic Battery Disconnect (Remove & Replace),Remove and Replace,0.42,0.42
+NO,Model X,2,18100402,Duct - Busbar - 3rd Row - RH (Remove and Replace),Remove and Replace,0.6,0.6
+NO,Model X,2,18100602,Module - HVAC Controller - RCCM (Remove & Replace),Remove and Replace,1.32,1.32
+NO,Model X,2,18101002,HVAC Assembly (Remove & Replace),Remove and Replace,6.6,6.6
+NO,Model X,2,18101602,Duct - Rocker - 3rd Row - RH (Remove & Replace),Remove and Replace,0.54,0.54
+NO,Model X,2,18102102,Actuator - Driver's Temperature (Remove & Replace),Remove and Replace,0.42,0.42
+NO,Model X,2,18103002,Module - Thermal Controller (Remove & Replace),Remove and Replace,1.44,1.44
+NO,Model X,2,18103102,Motor - Fan Assembly - Rear HVAC (Remove & Replace),Remove and Replace,1.2,1.2
+NO,Model X,2,18103222,Blower Control FET - Blower Motor - HVAC (Remove & Replace),Remove and Replace,0.36,0.36
+NO,Model X,2,18103802,Duct - HEPA Filter (Remove & Replace),Remove and Replace,0.3,0.3
+NO,Model X,2,18105501,Filter - HEPA,Remove and Install,0.18,0.18
+NO,Model X,2,18105502,Filter - HEPA,Remove and Replace,0.18,0.18
+NO,Model X,2,18106602,Heater - Rear PTC (Remove & Replace),Remove and Replace,1.2,1.2
+NO,Model X,2,18107002,Sensor - Air Quality (Remove & Replace),Remove and Replace,0.78,0.78
+NO,Model X,2,18107202,Sensor - Ambient Air Temperature (Remove & Replace),Remove and Replace,0.66,0.66
+NO,Model X,2,18107602,Sensor - Temperature - Evaporator (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model X,2,18107702,Sensor - Temperature - Evaporator - Rear (Remove & Replace),Remove and Replace,0.42,0.42
+NO,Model X,2,18200402, Hose Coupler To DCDC,Remove and Replace,2.4,2.4
+NO,Model X,2,18201012,Evaporator (Remove & Replace),Remove and Replace,6.25,6.25
+NO,Model X,2,18203902,A/C Compressor (Remove & Replace),Remove and Replace,2.52,2.52
+NO,Model X,2,18204102,Pipes - High/Low Pressure - Charge Port (with Rear HVAC) (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model X,2,18204402,Pipes - High/Low Pressure - Charge Port (without Rear HVAC) (Remove & Replace),Remove and Replace,1.02,1.02
+NO,Model X,2,18205002,TXV Valve­ Evaporator (Remove & Replace),Remove and Replace,0.36,0.36
+NO,Model X,2,18205502,Sensor - Pressure and Temperature - High Pressure (Remove and Replace),Remove and Replace,1.08,1.08
+NO,Model X,2,18205602,Sensor - Pressure and Temperature - Low Pressure (Remove and Replace),Remove and Replace,1.08,1.08
+NO,Model X,2,18206002,Battery Chiller and EXV Assembly (Remove & Replace),Remove and Replace,0.6,0.6
+NO,Model X,2,18206202,Battery Chiller (Remove & Replace),Remove and Replace,1.2,1.2
+NO,Model X,2,18207002,Pipes - High/Low Pressure - Charge Port to Rocker (Remove & Replace),Remove and Replace,0.36,0.36
+NO,Model X,2,18300052,Hose - Battery Coolant Pump 1 to Battery Coolant Pump 2 (2nd Generation) (Remove and Replace),Remove and Replace,0.84,0.84
+NO,Model X,2,18300702,Hose - 3-Way Valve to 4-Way Valve (Remove and Replace),Remove and Replace,1.08,1.08
+YES,Model X,2,18300900,Thermal System Test,Test/Adjust,0.1,0.1
+YES,Model X,2,18301000,Clean Radiator,Maintenance,0.96,0.96
+NO,Model X,2,18301002,Radiator (Remove & Replace),Remove and Replace,2.04,2.04
+NO,Model X,2,18301100,Clean Radiator (Non-Heat Pump),Maintenance,0.9,0.9
+NO,Model X,2,18301102,Hose - Radiator to 3-Way Valve (Remove & Replace),Remove and Replace,0.84,0.84
+NO,Model X,2,18301300,Remove and Clean Radiator (Non-Heat Pump),Maintenance,1.38,1.38
+NO,Model X,2,18301502,Superbottle (Remove & Replace),Remove and Replace,1.38,1.38
+NO,Model X,2,18302522,Hose - Outlet - Small Rear Drive Unit (Remove & Replace),Remove and Replace,3.3,3.3
+NO,Model X,2,18304102,Hose - Reservoir to 4 Way Coolant Valve (Remove & Replace),Remove and Replace,0.9,0.9
+NO,Model X,2,18304802,Hose - Battery to 4 Way Coolant Valve (Remove & Replace),Remove and Replace,2.58,2.58
+NO,Model X,2,18304902,Hose - Battery Coolant Pump 1 to 4-Way Coolant Valve (Remove & Replace),Remove and Replace,0.84,0.84
+NO,Model X,2,18305302,Hose - Charger Outlet (Remove & Replace),Remove and Replace,0.96,0.96
+NO,Model X,2,18305502,Hose - DCDC to Battery Coolant Heater (Remove & Replace),Remove and Replace,2.64,2.64
+NO,Model X,2,18306102,3 Way Coolant Valve - Radiator Bypass (Remove & Replace),Remove and Replace,0.9,0.9
+NO,Model X,2,18306502,4 Way Coolant Valve - Series/Parallel (Remove & Replace),Remove and Replace,1.02,1.02
+NO,Model X,2,18307302,Coolant Heater - Electric - Battery (Remove & Replace),Remove and Replace,2.4,2.4
+NO,Model X,2,18307402,Coolant Heater (RHD) (Remove & Replace),Remove and Replace,2.64,2.64
+NO,Model X,2,18308502,Battery Coolant Pump 1 (1st Generation) (Remove & Replace),Remove and Replace,0.96,0.96
+NO,Model X,2,18308602,Battery Coolant Pump 2 (Remove & Replace),Remove and Replace,2.58,2.58
+NO,Model X,2,18308702,Battery Coolant Pump 1 (2nd Generation) (Remove & Replace),Remove and Replace,0.84,0.84
+NO,Model X,2,18309002,Hose - Battery Coolant Pump 1 To Chiller (Remove & Replace),Remove and Replace,1.2,1.2
+NO,Model X,2,18309052,Hose - Battery Coolant Pump 1 to Chiller (2nd Generation) (Remove and Replace),Remove and Replace,0.84,0.84
+NO,Model X,2,18309102,Hose - Battery Coolant Pump 2 To Chiller (Remove & Replace),Remove and Replace,2.46,2.46
+NO,Model X,2,18309202,Hose - 4-Way Valve to Chiller (2nd Generation) (Remove & Replace),Remove and Replace,0.9,0.9
+NO,Model X,2,18500602,Active Louver - Center (Remove & Replace),Remove and Replace,0.78,0.78
+NO,Model X,2,18501002,Duct - Fascia - HVAC (Remove & Replace),Remove and Replace,0.9,0.9
+YES,Model X,2,19010100825,Remove Vehicle Label (No Anti-Tamper Residue),Removal,0.06,0.06
+YES,Model X,2,19010100902,Vehicle Emission Control Label,Remove and Replace,0.06,0.06
+YES,Model X,2,19010100925,Remove Vehicle Label and Anti-Tamper Residue,Removal,0.12,0.12
+YES,Model X,2,19010101002,Battery Chemistry Label,Remove and Replace,0.06,0.06
+YES,Model X,2,19010101102,Monroney Label,Remove and Replace,0.06,0.06
+YES,Model X,2,19010202,Labels - Any (Remove & Replace),Remove and Replace,0.24,0.24
+NO,Model X,2,19010303,Labels - Battery Enclosure - Any,Module Reset/Reflashed,0.24,0.24
+NO,Model X,2,190135740002,"Correct CE label already present, no further action required.",Test/Adjust,0.1,0.1
+NO,Model X,2,20010102,Airbag - Driver (Remove & Replace),Remove and Replace,0.48,0.48
+NO,Model X,2,20010202,Knee Airbag - Driver (NA) (Remove & Replace),Remove and Replace,0.54,0.54
+NO,Model X,2,20010717,Remove 2nd Row Mono-Post Seat Airbag and Discard,Modify,0.0,0.0
+NO,Model X,2,20050002,Buckle - 2nd Row - RH  (Without 2nd Row Bench Seats)(Remove and Replace),Remove and Replace,0.6,0.6
+NO,Model X,2,20050302,Retractor - Seatbelt -1st Row - RH (Remove and Replace),Remove and Replace,0.84,0.84
+NO,Model X,2,20051002,Height Adjuster - Seat Belt (Remove & Replace),Test/Adjust,0.06,0.06
+NO,Model X,2,20054102,Retractor - Seatbelt -1st Row - LH (Remove & Replace),Remove and Replace,0.84,0.84
+NO,Model X,2,20054202,Retractor - Seatbelt  - 1st Row - RH (Remove & Replace),Remove and Replace,0.84,0.84
+NO,Model X,2,20054702,Buckle - 1st Row - LH (Remove & Replace),Remove and Replace,0.42,0.42
+NO,Model X,2,20054802,Buckle - 1st Row - RH (Remove & Replace),Remove and Replace,0.42,0.42
+NO,Model X,2,20056102,Seat Belt Assembly - 2nd Row - LH (Without 2nd Row Bench Seats)  (Remove & Replace),Remove and Replace,2.88,2.88
+NO,Model X,2,20056112,Retractor - Seatbelt - 2nd Row - LH (Bench Seat) (Remove & Replace),Remove and Replace,1.86,1.86
+NO,Model X,2,20056202,Seat Belt Assembly - 2nd Row - RH (Without 2nd Row Bench Seats)  (Remove & Replace),Remove and Replace,2.88,2.88
+NO,Model X,2,20056212,Retractor - Seatbelt - 2nd Row - RH (Bench Seat) (Remove & Replace),Remove and Replace,1.56,1.56
+NO,Model X,2,20056302,Seatbelt - 2nd Row - Center (Remove & Replace),Remove and Replace,3.72,3.72
+NO,Model X,2,20056312,Retractor - Seatbelt - 2nd Row - Center (Bench Seat) (Remove & Replace),Remove and Replace,1.92,1.92
+NO,Model X,2,20056402,Escutcheon - Seatbelt - 2nd Row - LH (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model X,2,20056502,Escutcheon - Seatbelt - 2nd Row - RH (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model X,2,20056602,Retractor Bezel - 2nd Row - Center (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model X,2,20057002,Buckle - 2nd Row - LH  (Without 2nd Row Bench Seats)(Remove & Replace),Remove and Replace,0.6,0.6
+NO,Model X,2,20057012,Buckle - 2nd Row - LH (With 2nd Row Bench Seats) (Remove & Replace),Remove and Replace,1.62,1.62
+NO,Model X,2,20057102,Buckle - 2nd Row - RH (Without 2nd Row Bench Seats) (Remove & Replace),Remove and Replace,0.54,0.54
+NO,Model X,2,20057112,Buckle - 2nd Row - RH (With 2nd Row Bench Seats) (Remove & Replace),Remove and Replace,1.26,1.26
+NO,Model X,2,20057202,Buckle Assembly - 2nd Row - Center (Without 2nd Row Bench Seats) (Remove and Replace),Remove and Replace,0.6,0.6
+NO,Model X,2,20057212,Buckle Assembly - 2nd Row - Center (With 2nd Row Bench Seats) (Remove and Replace),Remove and Replace,1.14,1.14
+NO,Model X,2,20058102,Retractor - Seatbelt - 3rd Row - LH (Remove & Replace),Remove and Replace,1.26,1.26
+NO,Model X,2,20058202,Retractor - Seatbelt - 3rd Row - RH (Remove & Replace),Remove and Replace,1.26,1.26
+NO,Model X,2,20058702,Buckle - 3rd Row - LH (Remove & Replace),Remove and Replace,0.0,0.0
+NO,Model X,2,20058802,Buckle - 3rd Row - RH (Remove & Replace),Remove and Replace,0.0,0.0
+NO,Model X,2,20058902,Buckle - 3rd Row (Remove & Replace),Remove and Replace,0.84,0.84
+NO,Model X,2,20101002,Pretensioner - Outboard Lap - 1st Row - LH (Remove & Replace),Remove and Replace,1.32,1.32
+NO,Model X,2,20101102,Pretensioner - Outboard Lap - 1st Row - RH (Remove & Replace),Remove and Replace,1.02,1.02
+NO,Model X,2,20200502,Sensor - Airbag - B-Pillar - LH (Remove & Replace),Remove and Replace,0.54,0.54
+NO,Model X,2,20200602,Sensor - Airbag - B-Pillar - RH (Remove & Replace),Remove and Replace,0.54,0.54
+NO,Model X,2,20200702,Sensor - Airbag - C-Pillar - LH (Remove & Replace),Remove and Replace,0.36,0.36
+NO,Model X,2,20200802,Sensor - Airbag - C-Pillar - RH (Remove & Replace),Remove and Replace,0.36,0.36
+NO,Model X,2,20200902,Sensor - Airbag - D-Pillar - RH (Remove and Replace),Remove and Replace,0.72,0.72
+NO,Model X,2,20201102,Sensor - Airbag - D-Pillar - LH (Remove & Replace),Remove and Replace,0.72,0.72
+NO,Model X,2,20202002,Sensor - Pressure Tube (Remove & Replace),Remove and Replace,1.2,1.2
+NO,Model X,2,20202102,Sensor - Resistive Occupancy - Driver's Seat (Remove & Replace),Remove and Replace,1.02,1.02
+NO,Model X,2,20202112,Sensor Mat - Occupant Classification System - 1st Row - LH (Remove & Replace),Remove and Replace,1.14,1.14
+NO,Model X,2,20202302,Sensor Mat - Occupant Classification System - 1st Row - RH (Remove and Replace),Remove and Replace,1.14,1.14
+NO,Model X,2,21050402,Re-Synchronize Odometer Value (Remove & Replace),Remove and Replace,0.3,0.3
+YES,Model X,2,21051000,Update Display Avatar,Test/Adjust,0.12,0.12
+NO,Model X,2,21060102,Media Control Unit (Remove & Replace),Remove and Replace,0.96,0.96
+NO,Model X,2,21060107,Disposed of Media Control Unit,Modify,0.18,0.18
+NO,Model X,2,21060108,Tegra Parrot Module - Media Control Unit (Reflash),Restore,0.0,0.0
+NO,Model X,2,21060112,Media Control Unit (Atom-based) (Remove & Replace),Remove and Replace,1.02,1.02
+NO,Model X,2,21060208,Software Recovery - Media Control Unit (Restore),Restore,0.05,0.05
+NO,Model X,2,21062902,Connectivity Board (With Gyro Board) (Remove & Replace),Remove and Replace,1.62,1.62
+NO,Model X,2,21063002,Navigation Micro SD Card - Media Control Unit (Remove & Replace),Remove and Replace,1.2,1.2
+NO,Model X,2,21063208,SD Card - Media Control Unit (Reformat),Restore,0.05,0.05
+NO,Model X,2,21063308,Field Programmable Gate Array (FPGA) - Media Control Unit (Reflash),Restore,0.05,0.05
+NO,Model X,2,21065002,SD Card - Media Control Unit (Remove & Replace),Remove and Replace,1.08,1.08
+NO,Model X,2,21211002,Speaker - Rear Door - LH (Remove & Replace),Remove and Replace,0.24,0.24
+NO,Model X,2,21211102,Speaker - Rear Door - RH (Remove & Replace),Remove and Replace,0.24,0.24
+NO,Model X,2,21211502,Speaker - Dash - LH (Premium Only) (Remove & Replace),Remove and Replace,1.02,1.02
+NO,Model X,2,21211602,Speaker - Dash - Center  (Remove & Replace),Remove and Replace,1.02,1.02
+NO,Model X,2,21211702,Speaker - Dash - RH (Premium Only) (Remove & Replace),Remove and Replace,1.02,1.02
+NO,Model X,2,21211802,Tweeter - Dash (Remove & Replace),Remove and Replace,1.02,1.02
+NO,Model X,2,21212002,Subwoofer Assembly (Remove & Replace),Remove and Replace,0.48,0.48
+NO,Model X,2,21212502,Tweeter - A Pillar - LH (Remove & Replace),Remove and Replace,0.18,0.18
+NO,Model X,2,21212602,Tweeter - A Pillar - RH (Remove & Replace),Remove and Replace,0.18,0.18
+NO,Model X,2,21212702,Tweeter - Rear Door - LH (Remove & Replace),Remove and Replace,0.18,0.18
+NO,Model X,2,21212802,Tweeter - Rear Door - RH (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model X,2,21213002,Speaker - Liftgate - LH (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model X,2,21213102,Speaker - Liftgate - RH (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model X,2,21213302,Tweeter - Liftgate - LH (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model X,2,21213402,Tweeter - Liftgate - RH (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model X,2,21213502,Premium Boost Amplifier (Remove & Replace),Remove and Replace,0.96,0.96
+NO,Model X,2,21214002,Chime - Rear Door - LH (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model X,2,21214102,Chime - Rear Door - RH (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model X,2,21214202,Chime - Liftgate (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model X,2,21220102,Tuner - FM (Remove & Replace),Remove and Replace,0.84,0.84
+NO,Model X,2,21250102,Microphone - LH (Remove & Replace),Remove and Replace,0.24,0.24
+NO,Model X,2,21250202,Microphone - RH (Remove & Replace),Remove and Replace,0.24,0.24
+NO,Model X,2,21251002,Antenna - Bluetooth (Remove & Replace),Remove and Replace,0.78,0.78
+NO,Model X,2,21261002,Dock Connector - Telephone-USB - Center Console (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model X,2,21300602,Antenna Amplifier - AM/FM and RKE (Remove & Replace),Remove and Replace,0.06,0.06
+NO,Model X,2,21300702,Antenna Amplifier - FM2 (Remove & Replace),Remove and Replace,0.18,0.18
+NO,Model X,2,21301002,RF Filter - LH (Remove & Replace),Remove and Replace,0.18,0.18
+NO,Model X,2,21301102,RF Filter - RH (Remove & Replace),Remove and Replace,0.54,0.54
+NO,Model X,2,21311002,Antenna - Satellite Radio (Remove & Replace),Remove and Replace,4.44,4.44
+NO,Model X,2,21320102,Antenna - GPS  (Remove & Replace),Remove and Replace,4.44,4.44
+NO,Model X,2,21330102,Antenna - Wi-Fi (Remove & Replace),Remove and Replace,0.6,0.6
+NO,Model X,2,21350102,Antenna - GSM - LH (Remove & Replace),Remove and Replace,0.6,0.6
+NO,Model X,2,21350202,Antenna - GSM - RH (Remove & Replace),Remove and Replace,0.6,0.6
+NO,Model X,2,30011102,Skidplate - Rear (Remove & Replace),Remove and Replace,0.54,0.54
+YES,Model X,2,31002300,Four Wheel Alignment Check and Adjust,Test/Adjust,1.32,1.32
+NO,Model X,2,31030102,Knuckle - Suspension - Rear - LH (Remove & Replace),Remove and Replace,1.44,1.44
+NO,Model X,2,31030202,Knuckle - Suspension - Rear - RH (Remove & Replace),Remove and Replace,1.44,1.44
+NO,Model X,2,31030602,Hub - Rear - RH (Remove & Replace),Remove and Replace,0.9,0.9
+NO,Model X,2,31030612,Hub - Rear - RH (Adaptive Suspension) (Remove & Replace),Remove and Replace,0.78,0.78
+NO,Model X,2,31030702,Hub - Rear - LH (Remove & Replace),Remove and Replace,0.84,0.84
+NO,Model X,2,31030712,Hub - Rear - LH (Adaptive Suspension) (Remove & Replace),Remove and Replace,0.78,0.78
+NO,Model X,2,31031102,Control Arm Assembly - Rear - Lower - LH (Remove & Replace),Remove and Replace,0.78,0.78
+NO,Model X,2,31031202,Control Arm Assembly - Rear - Lower - RH (Remove & Replace),Remove and Replace,0.78,0.78
+NO,Model X,2,31033102,Stabilizer Bar - Rear (Remove & Replace),Remove and Replace,3.24,3.24
+YES,Model X,2,31039000,Suspension - Rear - Check Torque,Test/Adjust,0.84,0.84
+NO,Model X,2,31100102,Module - Air Suspension - ECU (Remove & Replace),Remove and Replace,1.5,1.5
+NO,Model X,2,31101008,Air Dryer - Tesla Air Suspension (Regenerate),Restore,0.15,0.15
+NO,Model X,2,31102002,Compressor - Air Suspension (Remove & Replace),Remove and Replace,0.72,0.72
+NO,Model X,2,31102202,Valve Block - Air Suspension (Remove & Replace),Remove and Replace,1.32,1.32
+NO,Model X,2,31102502,Reservoir - Air Suspension (Remove & Replace),Remove and Replace,1.5,1.5
+NO,Model X,2,31103202,Fill Valve - Air Suspension,Remove and Replace,0.06,0.06
+NO,Model X,2,31103206,Fill Valve - Air Suspension (Retrofit),Retrofit,0.54,0.54
+NO,Model X,2,32010100,Lock To Lock-Angle Test,Test/Adjust,0.05,0.05
+NO,Model X,2,32010302,Tie Rod End - LH (Remove & Replace),Remove and Replace,0.18,0.18
+NO,Model X,2,32010402,Tie Rod End - RH (Remove & Replace),Remove and Replace,0.18,0.18
+NO,Model X,2,33100102,ABS Modulator Assembly (Remove & Replace),Remove and Replace,4.68,4.68
+NO,Model X,2,33100702,Sensor - Wheel Speed - ABS - Rear - LH (Remove & Replace),Remove and Replace,0.42,0.42
+NO,Model X,2,33100802,Sensor - Wheel Speed - ABS - Rear - RH (Remove & Replace),Remove and Replace,0.42,0.42
+YES,Model X,2,34010105,Tire Rotation,Maintenance,0.3,0.3
+YES,Model X,2,34011302,Lug Nuts - Vehicle Set (Remove & Replace),Remove and Replace,0.36,0.36
+NO,Model X,2,34011402,Lug Nut Covers - Vehicle Set (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model X,2,34012402,Wheels - Axle Set (Remove & Replace),Remove and Replace,0.24,0.24
+NO,Model X,2,34012502,Wheel Sensor - TPMS - Rear - LH (Remove & Replace),Remove and Replace,0.3,0.3
+YES,Model X,2,34012902,Wheels - Set (Remove and Replace),Remove and Replace,1.56,1.56
+YES,Model X,2,34014005,Seasonal Wheel and Tire Set Swap (Already Built),Seasonal Swap,0.5,0.5
+YES,Model X,2,34014101,Tire Set - Vehicle - Swap (Not Already Built),Remove and Install,1.38,1.38
+NO,Model X,2,34015007,Wheel Disposal (Rework),Modify,0.06,0.06
+YES,Model X,2,34015032,Cap - Wheel - Set (Remove & Replace),Remove and Replace,0.05,0.05
+YES,Model X,2,34015202,Wheel - Rear - LH (Remove & Replace),Remove and Replace,0.36,0.36
+YES,Model X,2,34015222,Cap - Wheel - Rear - LH (Remove & Replace),Remove and Replace,0.06,0.06
+YES,Model X,2,34015302,Wheel - Rear - RH (Remove & Replace),Remove and Replace,0.36,0.36
+YES,Model X,2,34015322,Cap - Wheel - Rear - RH (Remove & Replace),Remove and Replace,0.06,0.06
+YES,Model X,2,34020010,Mobile Tire Service Performed,Modify,0.0,0.0
+YES,Model X,2,34020030,Mobile Tire Service Performed – Logistics,Tire Repair,0.0,0.0
+NO,Model X,2,34020105,Tire Rotation (Mobile Only),Maintenance,0.48,0.48
+YES,Model X,2,34020305,Tires - All Four (Balance),Rebalance,0.6,0.6
+YES,Model X,2,34020900,Check and Adjust Tire Pressure,Test/Adjust,0.05,0.05
+YES,Model X,2,34021202,Tire - Rear - LH (Remove & Replace),Tire Purchase,0.35,0.35
+YES,Model X,2,34021302,Tire - Rear - RH (Remove & Replace),Tire Purchase,0.35,0.35
+YES,Model X,2,34021605,Tires - Rear - Set,Tire Purchase,0.7,0.7
+YES,Model X,2,34021805,Tires - Vehicle - Set,Tire Purchase,1.15,1.15
+YES,Model X,2,34022015,Tire - Supplemental (Rebalance),Maintenance,0.18,0.18
+YES,Model X,2,34022205,Tire - Rear - LH (Road Force) (Balance),Tire Repair,0.2,0.2
+YES,Model X,2,34022225,Tire - Rear - LH (Balance),Rebalance,0.2,0.2
+YES,Model X,2,34022305,Tire - Rear - RH (Road Force) (Balance),Tire Repair,0.2,0.2
+YES,Model X,2,34022325,Tire - Rear - RH (Balance),Rebalance,0.2,0.2
+NO,Model X,2,34022425,Tires - Pair (Balance),Rebalance,0.3,0.3
+YES,Model X,2,34023208,Tire - Rear - LH (Repair),Tire Repair,0.72,0.72
+YES,Model X,2,34023308,Tire - Rear - RH (Repair),Tire Repair,0.72,0.72
+NO,Model X,2,34040402,Wheel Sensor - TPMS - Rear - LH (Remove & Replace),Remove and Replace,0.54,0.54
+NO,Model X,2,34040502,Wheel Sensor - TPMS - Rear - RH (Remove & Replace),Remove and Replace,0.54,0.54
+NO,Model X,2,34040602,Wheel Sensors - TPMS - Vehicle Set (Remove & Replace),Remove and Replace,0.96,0.96
+NO,Model X,2,34041100,TPMS Sensor - ID Learn Procedure,Test/Adjust,0.18,0.18
+NO,Model X,2,34041150,TPMS (Sensor ID Drive Learn),Test/Adjust,0.06,0.06
+NO,Model X,2,34041300,TPMS - Set Thresholds,Program,0.3,0.3
+NO,Model X,2,34043002,Module - TPMS (Remove & Replace),Remove and Replace,1.8,1.8
+NO,Model X,2,40010300,Drive Unit Health Check,Test/Adjust,1.0,1.0
+NO,Model X,2,40010702,Drive Unit - Rear - Large (Remove & Replace),Remove and Replace,3.24,3.24
+NO,Model X,2,40016002,Drive Unit - Rear - Small (Remove & Replace),Remove and Replace,5.16,5.16
+NO,Model X,2,40018332,Drive Unit Function Test (Reman),Fee,1.32,1.32
+NO,Model X,2,40019244,Drive Unit Disassembly (Reman),Fee,1.2,1.2
+NO,Model X,2,40102002,Sensor - Rear Motor - Speed (Remove & Replace),Remove and Replace,0.48,0.48
+NO,Model X,2,40300402,Gearbox Fluid - Small Drive Unit (Remove & Replace),Remove and Replace,1.8,1.8
+NO,Model X,2,40300502,Seal ‚Äì Axle ‚Äì Large Rear Drive Unit ‚Äì RH (Remove and Replace),Remove and Replace,2.04,2.04
+NO,Model X,2,40300602,Rear Gearbox Fluid - Large Drive Unit (Remove & Replace),Remove and Replace,0.42,0.42
+NO,Model X,2,40301202,Rear Oil Seal - Differential to Halfshaft Assembly - Small Drive Unit - LH (Remove & Replace),Remove and Replace,1.8,1.8
+NO,Model X,2,40301302,Rear Oil Seal - Differential to Halfshaft Assembly - Small Drive Unit - RH (Remove & Replace),Remove and Replace,1.8,1.8
+NO,Model X,2,40301402,Seal – Axle – Large Rear Drive Unit – LH (Remove & Replace),Remove and Replace,2.04,2.04
+NO,Model X,2,40301502,Rear Oil Seal - Differential to Halfshaft Assembly - Large Drive Unit - RH (Remove & Replace),Remove and Replace,2.04,2.04
+NO,Model X,2,40302202,Rear Halfshaft Assembly - Small Drive Unit - LH (Remove & Replace),Remove and Replace,1.8,1.8
+NO,Model X,2,40302302,Rear Halfshaft Assembly - Small Drive Unit - RH (Remove & Replace),Remove and Replace,1.14,1.14
+NO,Model X,2,40302602,Rear Halfshaft Assembly - Large Drive Unit - LH (Remove & Replace),Remove and Replace,1.14,1.14
+NO,Model X,2,40302702,Rear Halfshaft Assembly - Large Drive Unit - RH (Remove & Replace),Remove and Replace,2.16,2.16
+NO,Model X,2,40304602,Oil Pump - Rear Drive Unit (Remove & Replace),Remove and Replace,1.26,1.26
+YES,Model X,2,44000204,HVIL Diagnostics,Diagnosis Only,1.0,1.0
+NO,Model X,2,44011402,Trim - Charge Port Door (Remove and Replace),Remove and Replace,0.06,0.06
+NO,Model X,2,44011502,Door - Charge Port (Remove & Replace),Remove and Replace,1.2,1.2
+NO,Model X,2,44011601,Charge Port (NACS),Remove and Install,1.14,1.14
+NO,Model X,2,44011602,Charge Port (NACS),Remove and Replace,1.14,1.14
+NO,Model X,2,44012102,Charge Port (Type 2),Remove and Replace,1.14,1.14
+NO,Model X,2,44013202,Release Cable - Charge Port (Remove & Replace),Remove and Replace,1.98,1.98
+YES,Model X,2,44013205,Charge Port - Manual Release of Cable,Maintenance,0.18,0.18
+NO,Model X,2,44014006,Charge Port - Charge Port 1098900-00-J to 1549220-20-A (Retrofit),Retrofit,1.92,1.92
+NO,Model X,2,44015002,ECU - Charge Port (Remove & Replace),Remove and Replace,0.78,0.78
+NO,Model X,2,44100102,Charger (Remove & Replace),Remove and Replace,2.82,2.82
+NO,Model X,2,44103102,30A Fuse - Charger - 3rd Generation (Remove & Replace),Remove and Replace,3.3,3.3
+NO,Model X,2,44103202,Charger - 3rd Generation (3 Phase) (Remove & Replace),Remove and Replace,3.12,3.12
+NO,Model X,2,44104102,PLC Relay - ECU - Charge Port (CCS) (Remove & Replace),Remove and Replace,0.9,0.9
+NO,Model X,2,44200102,DCDC Converter (Remove & Replace),Remove and Replace,2.76,2.76
+NO,Model X,2,44200702,Forward Junction Box (Remove & Replace),Remove and Replace,3.3,3.3
+NO,Model X,2,44200802,Forward Junction Box (RHD) (Remove & Replace),Remove and Replace,3.54,3.54
+NO,Model X,2,44201102,Forward Junction Box - 1st Generation - 40 Amp Fuse (Dual Motor) (Remove & Replace),Remove and Replace,2.16,2.16
+NO,Model X,2,44202402,HVIL Switch - Forward Junction Box (Remove & Replace),Remove and Replace,2.22,2.22
+NO,Model X,2,44501406,AC Cable - Charge Port to HV Battery (3-Phase) (Retrofit),Retrofit,0.96,0.96
+NO,Model X,2,44502002,HV Harness - Charger to Rear PTC Heater (Remove & Replace),Remove and Replace,1.2,1.2
+NO,Model X,2,44502802,HV Harness - FJB to DCDC (Remove & Replace),Remove and Replace,1.56,1.56
+NO,Model X,2,44503202,HV Harness - Rapid Splitter to FJB (Remove & Replace),Remove and Replace,5.28,5.28
+NO,Model X,2,44503212,HV Harness - Rapid Splitter to FJB - Large Drive Unit (Remove & Replace),Remove and Replace,4.2,4.2
+YES,Model X,2,46010100004,Diagnosis: Coolant Leak,General Diagnosis,0.5,0.5
+YES,Model X,2,50010003,Firmware Update - Mobile Connector,Module Reset/Reflashed,0.1,0.1
+YES,Model X,2,50010102,Mobile Connector - UMC (Remove & Replace),Remove and Replace,0.0,0.0
+NO,Model X,2,50020102,Fuses - Wall Connector (Remove & Replace),Remove and Replace,0.6,0.6
+NO,Model X,2,50020402,Cover - Wall Connector (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Model X,2,50020702,Wall Connector (Remove & Replace),Remove and Replace,0.84,0.84
+YES,Model X,2,50022002,Handle and Cable Assembly - 80A Wall Connector (Remove & Replace),Remove and Replace,0.48,0.48
+YES,Model X,2,50024002,Handle and Cable Assembly - 40A Wall Connector (Remove & Replace),Remove and Replace,0.48,0.48
+YES,Model X,2,61013108,Equip Tire Repair Kit,General diagnosis conclusion,0.0,0.0
+YES,Model X,2,7000005,Mobile Tire Dispatch Fee,Fee,0.01,0.01
+YES,Model X,2,70000105,Third Party Transport,Sublet,1.2,1.2
+YES,Model X,2,7000030,Parts Not Available - Add to future service visit. ,General diagnosis conclusion,0.0,0.0
+YES,Model X,2,70000305,Miscellaneous Labor,Fee,0.0,0.0
+YES,Model X,2,70002005,Non-Tesla (Rental),Sublet,0.0,0.0
+YES,Model X,2,70003805,Tesla Airport Service,Fee,1.2,1.2
+YES,Model X,2,7000405,Vehicle Storage,Fee,0.0,0.0
+YES,Model X,2,70004205,No Labor Performed - Unable to Perform via Mobile Service,General diagnosis conclusion,0.0,0.0
+YES,Model X,2,70004505,No Labor Performed - Part Replaced,Repair,0.0,0.0
+YES,Model X,2,70005700,Scrap Part Sale Over the Counter,Test/Adjust,0.0,0.0
+YES,Model X,2,70005805,Payment Collection Required,Fee,1.2,1.2
+YES,Model X,2,70008009,Additional Work Required - Corrosion Present,Maintenance,0.5,0.5
+YES,Model X,2,70020305,Upholstery - Sublet,Sublet,0.0,0.0
+NO,Model X,2,70020306,Vehicle Wrap – Color Film (Repair),Sublet,0.0,0.0
+YES,Model X,2,70020805,Glass Repair / Replacement  - Sublet,Sublet,0.0,0.0
+NO,Model X,2,70021015,Tesla Bodyshop Fascia Repair - Sublet,Sublet,0.0,0.0
+NO,Model X,2,70021025,Tesla Bodyshop Door Repair - Sublet,Sublet,0.0,0.0
+NO,Model X,2,70021055,Tesla Bodyshop Hood / Rear Trunk Repair - Sublet,Sublet,0.0,0.0
+NO,Model X,2,70021745,Tesla Bodyshop Exterior Lights Repair - Sublet ,Sublet,0.0,0.0
+NO,Model X,2,70023405,Tesla Bodyshop Wheel Hub Repair - Sublet,Sublet,0.0,0.0
+YES,Model X,2,70060005,Thread Repair,Maintenance,0.0,0.0
+YES,Model X,2,7007300,Other – Sublet,Sublet,0.0,0.0
+YES,Model X,2,7100001,NO LABOR PERFORMED,Repair,0.0,0.0
+NO,Model X,2,7100002,Seasonal Tire Storage,Fee,0.0,0.0
+NO,Model X,2,72000004,California Battery Fee,Fee,0.01,0.01
+YES,Model X,2,72000005,Loaner Fee,Fee,0.0,0.0
+NO,Model X,2,74010008,Dubai Hailstorm Damage (Repair),Restore,7.0,7.0
+NO,Model X,2,90001006,Level 1 Mobile Service Vehicle Conversion (Retrofit),Retrofit,4.8,4.8
+YES,Model X,2,91000004,On Site – Education,Customer Education,0.0,0.0
+YES,Model X,2,91020105,Car Wash (Hand Wash),Detail Work,0.25,0.25
+YES,Model X,2,91020115,Car Wash (Mechanical Wash),Maintenance,0.24,0.24
+YES,Model X,2,91022005,Charge Vehicle,Restore,0.0,0.0
+YES,Model X,2,91022407,Vehicle Configuration Update,Program,0.05,0.05
+YES,Model X,2,91029006,Mobile Service Hub Repair,Retrofit,0.0,0.0
+NO,Model X,2,91040115,Former Loaner Battery Kept As Permanent Replacement,Remove and Replace,0.0,0.0
+NO,Model X,2,91040205,Loaner Battery Removed/Returned,Maintenance,0.0,0.0
+NO,Model X,2,91041705,Loaner Drive Unit Removed/Returned,Maintenance,0.0,0.0

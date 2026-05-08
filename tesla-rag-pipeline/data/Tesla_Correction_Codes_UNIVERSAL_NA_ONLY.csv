@@ -1,0 +1,1056 @@
+Universal,Model,Model_ID,Code,Description,Work_Type,Labor_Hours,FRT
+YES,Model 3,35,00000010,Remote – Education,Over The Air,0.0,0.0
+YES,Model 3,35,00004107,Alert Diagnosis - Repair,General diagnosis conclusion,0.06,0.06
+YES,Model 3,35,00004108,Alert Diagnosis (Repair) - Create New Service Activity for Repair,Test/Adjust,0.06,0.06
+YES,Model 3,35,00005914,Service Collision Estimate,Inspection,0.0,0.0
+YES,Model 3,35,00020003,Software Update,Over The Air,0.06,0.06
+YES,Model 3,35,00020007,Firmware Update - Garage,Update,0.05,0.05
+YES,Model 3,35,00020010,Remote – Known Characteristic of Current Firmware,Over The Air,0.25,0.25
+YES,Model 3,35,00020020,Remote – Over the Air Update,Over The Air,0.25,0.25
+YES,Model 3,35,00022008,User Data (Factory Reset),Restore,0.05,0.05
+YES,Model 3,35,00023003,Clear Filesystem Caches,Module Reset/Reflashed,0.05,0.05
+YES,Model 3,35,00030100,PDI (Without Test Drive),Inspection,0.0,0.0
+YES,Model 3,35,00030410,Vehicle Health Check,Inspection,1.62,1.62
+YES,Model 3,35,00032201,Loaner Registration Confirmation,Inspection,0.2,0.2
+YES,Model 3,35,00040100,Perform Post-Repair Validation Test Drive,Test/Adjust,0.3,0.3
+YES,Model 3,35,00100004,General Diagnosis,General Diagnosis,0.5,0.5
+YES,Model 3,35,00100014,Diagnosis: Unable to Replicate Concern,General diagnosis conclusion,0.0,0.0
+YES,Model 3,35,00100024,Remote Diagnosis,Remote Diagnostics,0.3,0.3
+YES,Model 3,35,10000004,Adjustment: Body / Closure Components,Test/Adjust,0.4,0.4
+YES,Model 3,35,10010008,Tesla Body Repair - Miscellaneous Labor,Body Shop,0.0,0.0
+YES,Model 3,35,10010011,Tesla Body Repair - Structural,Body Shop,0.0,0.0
+YES,Model 3,35,10010012,Tesla Body Structural - Sheet Metal Quotation,Test/Adjust,0.6,0.6
+YES,Model 3,35,10010014,Tesla Body Structural - Sheet Metal Repair,Restore,1.0,1.0
+YES,Model 3,35,10010015,Tesla Body Structural--Reassemble Parts,Test/Adjust,1.0,1.0
+YES,Model 3,35,10100008,Tesla Body Repair - Mechanical Labor,Body Shop,0.0,0.0
+YES,Model 3,35,10108608,Tesla Body Repair - Body Labor,Body Shop,0.0,0.0
+YES,Model 3,35,10108808,Tesla Body Repair - Sublet,Body Shop,0.0,0.0
+YES,Model 3,35,10109008,Structural Body Repair,Repair,0.0,0.0
+YES,Model 3,35,10109108,Non-Structural Body Repair,Restore,0.0,0.0
+YES,Model 3,35,10182019,Customer Generated Quote - Issue (Transaction) Resolved - Bound,General diagnosis conclusion,0.0,0.0
+YES,Model 3,35,1027521,Assistance with Refund of Reservation,Test/Adjust,0.0,0.0
+YES,Model 3,35,11700004,Adjustment: Seal,Test/Adjust,0.2,0.2
+YES,Model 3,35,12000004,Adjustment: Exterior Trim,Test/Adjust,0.2,0.2
+YES,Model 3,35,12208583,Mud Flaps (PDI Retrofit),Retrofit,0.0,0.0
+YES,Model 3,35,12302302,Ball Neck - Trailer Hitch (Remove & Replace),Remove and Replace,0.12,0.12
+YES,Model 3,35,13000004,Diagnosis: Seats,Test/Adjust,0.5,0.5
+YES,Model 3,35,14050002,USB Drive,Remove and Replace,0.06,0.06
+YES,Model 3,35,15130004,Diagnosis: Closures,General Diagnosis,0.65,0.65
+YES,Model 3,35,16010201,HV Battery (AWD),Remove and Install,3.0,3.0
+YES,Model 3,35,16010202,HV Battery (AWD),Remove and Replace,4.86,4.86
+YES,Model 3,35,16015300,Discharge HV Battery (At Pack Contactors),Test/Adjust,1.02,1.02
+YES,Model 3,35,16102100,HV Battery Air Leak Test,Test/Adjust,0.66,0.66
+YES,Model 3,35,16300100,Resistance Meter (Zero Adjust),Test/Adjust,0.05,0.05
+YES,Model 3,35,17000004,Diagnosis: Driver Assistance,General Diagnosis,0.5,0.5
+YES,Model 3,35,17000008,Jumpstart Vehicle (Restore),Restore,0.12,0.12
+YES,Model 3,35,17010000,Vehicle HV Disablement Procedure,Test/Adjust,0.3,0.3
+YES,Model 3,35,17100008,Harness Connector - Reconnect,Restore,0.1,0.1
+YES,Model 3,35,17105006,Wire - Electrical Harness (Overlay),Retrofit,0.0,0.0
+YES,Model 3,35,17108100,Diagnosis: Low Voltage Distribution and Controllers,General Diagnosis,1.0,1.0
+YES,Model 3,35,17400150,Headlights - Adjust - NA (Tool Method),Test/Adjust,0.18,0.18
+YES,Model 3,35,18300900,Thermal System Test,Test/Adjust,0.1,0.1
+YES,Model 3,35,18301000,Clean Radiator,Maintenance,1.02,1.02
+YES,Model 3,35,19010100825,Remove Vehicle Label (No Anti-Tamper Residue),Removal,0.06,0.06
+YES,Model 3,35,19010100902,Vehicle Emission Control Label,Remove and Replace,0.06,0.06
+YES,Model 3,35,19010100925,Remove Vehicle Label and Anti-Tamper Residue,Removal,0.12,0.12
+YES,Model 3,35,19010101002,Battery Chemistry Label,Remove and Replace,0.06,0.06
+YES,Model 3,35,19010101102,Monroney Label,Remove and Replace,0.06,0.06
+YES,Model 3,35,19010202,Labels - Any (Remove & Replace),Remove and Replace,0.29,0.29
+YES,Model 3,35,21051000,Update Display Avatar,Test/Adjust,0.12,0.12
+YES,Model 3,35,31002300,Four Wheel Alignment Check and Adjust,Test/Adjust,0.9,0.9
+YES,Model 3,35,31039000,Suspension - Rear (Check Torque),Test/Adjust,0.36,0.36
+YES,Model 3,35,34010105,Tire Rotation,Maintenance,0.3,0.3
+YES,Model 3,35,34011302,Lug Nuts - Vehicle Set (Remove & Replace),Remove and Replace,0.36,0.36
+YES,Model 3,35,34012902,Wheels - Set (Remove and Replace),Remove and Replace,1.56,1.56
+YES,Model 3,35,34014005,Seasonal Wheel and Tire Set Swap (Already Built),Seasonal Swap,0.5,0.5
+YES,Model 3,35,34014101,Tire Set - Vehicle - Swap  (Not Already Built),Remove and Install,1.38,1.38
+YES,Model 3,35,34015032,Cap - Wheel - Set (Remove & Replace),Remove and Replace,0.05,0.05
+YES,Model 3,35,34015202,Wheel - Rear - LH (Remove & Replace),Remove and Replace,0.36,0.36
+YES,Model 3,35,34015222,Cap - Wheel - Rear - LH (Remove & Replace),Remove and Replace,0.06,0.06
+YES,Model 3,35,34015302,Wheel - Rear - RH (Remove & Replace),Remove and Replace,0.36,0.36
+YES,Model 3,35,34015322,Cap - Wheel - Rear - RH (Remove & Replace),Remove and Replace,0.06,0.06
+YES,Model 3,35,34020010,Mobile Tire Service Performed,Modify,0.0,0.0
+YES,Model 3,35,34020030,Mobile Tire Service Performed – Logistics,Tire Repair,0.0,0.0
+YES,Model 3,35,34020305,Tires - All Four (Balance),Rebalance,0.6,0.6
+YES,Model 3,35,34020900,Check and Adjust Tire Pressure,Test/Adjust,0.05,0.05
+YES,Model 3,35,34021202,Tire - Rear - LH (Remove & Replace),Tire Purchase,0.35,0.35
+YES,Model 3,35,34021302,Tire - Rear - RH (Remove & Replace),Tire Purchase,0.35,0.35
+YES,Model 3,35,34021605,Tires - Rear - Set,Tire Purchase,0.7,0.7
+YES,Model 3,35,34021805,Tires - Vehicle - Set,Tire Purchase,1.15,1.15
+YES,Model 3,35,34022015,Tire - Supplemental (Rebalance),Maintenance,0.18,0.18
+YES,Model 3,35,34022205,Tire - Rear - LH (Road Force) (Balance),Tire Repair,0.2,0.2
+YES,Model 3,35,34022225,Tire - Rear - LH (Balance),Rebalance,0.2,0.2
+YES,Model 3,35,34022305,Tire - Rear - RH (Road Force) (Balance),Tire Repair,0.2,0.2
+YES,Model 3,35,34022325,Tire - Rear - RH (Balance),Rebalance,0.2,0.2
+YES,Model 3,35,34023208,Tire - Rear - LH (Repair),Tire Repair,0.72,0.72
+YES,Model 3,35,34023308,Tire - Rear - RH (Repair),Tire Repair,0.72,0.72
+YES,Model 3,35,44000204,HVIL Diagnostics,Diagnosis Only,1.0,1.0
+YES,Model 3,35,44013205,Charge Port - Manual Release of Cable,Maintenance,0.06,0.06
+YES,Model 3,35,46010100004,Diagnosis: Coolant Leak,General Diagnosis,0.5,0.5
+YES,Model 3,35,50010102,Mobile Connector - UMC (Remove & Replace),Remove and Replace,0.0,0.0
+YES,Model 3,35,50022002,Handle and Cable Assembly - 80A Wall Connector (Remove and Replace),Remove and Replace,0.58,0.58
+YES,Model 3,35,50024002,Handle and Cable Assembly - 40A Wall Connector (Remove and Replace),Remove and Replace,0.58,0.58
+YES,Model 3,35,61013108,Equip Tire Repair Kit,General diagnosis conclusion,0.0,0.0
+YES,Model 3,35,7000005,Mobile Tire Dispatch Fee,Fee,0.01,0.01
+YES,Model 3,35,70000105,Third Party Transport,Sublet,1.2,1.2
+YES,Model 3,35,7000030,Parts Not Available - Add to future service visit,General diagnosis conclusion,0.0,0.0
+YES,Model 3,35,70000305,Miscellaneous Labor,Fee,0.0,0.0
+YES,Model 3,35,70002005,Non-Tesla (Rental),Sublet,0.0,0.0
+YES,Model 3,35,70003805,Tesla Airport Service,Fee,1.2,1.2
+YES,Model 3,35,7000405,Vehicle Storage,Fee,0.0,0.0
+YES,Model 3,35,70004205,No Labor Performed - Unable to Perform via Mobile Service,General diagnosis conclusion,0.0,0.0
+YES,Model 3,35,70004505,No Labor Performed - Part Replaced,Repair,0.0,0.0
+YES,Model 3,35,70005700,Scrap Part Sale Over the Counter,Test/Adjust,0.0,0.0
+YES,Model 3,35,70005805,Payment Collection Required,Fee,1.2,1.2
+YES,Model 3,35,70008009,Additional Work Required - Corrosion Present,Maintenance,0.5,0.5
+YES,Model 3,35,70020305,Upholstery - Sublet,Sublet,0.0,0.0
+YES,Model 3,35,70020805,Glass Repair / Replacement  - Sublet,Sublet,0.0,0.0
+YES,Model 3,35,70060005,Thread Repair,Maintenance,0.0,0.0
+YES,Model 3,35,7007300,Other – Sublet,Sublet,0.0,0.0
+YES,Model 3,35,7100001,NO LABOR PERFORMED,Repair,0.0,0.0
+YES,Model 3,35,72000005,Loaner Fee,Fee,0.0,0.0
+YES,Model 3,35,91000004,On Site – Education,Customer Education,0.0,0.0
+YES,Model 3,35,91020105,Car Wash (Hand Wash),Detail Work,0.25,0.25
+YES,Model 3,35,91020115,Car Wash (Mechanical Wash),Maintenance,0.24,0.24
+YES,Model 3,35,91022005,Charge Vehicle,Restore,0.0,0.0
+YES,Model 3,35,91022407,Vehicle Configuration Update,Program,0.05,0.05
+YES,Model 3,35,91029006,Mobile Service Hub Repair,Retrofit,0.0,0.0
+YES,Model 3,7,00000010,Remote – Education,Over The Air,0.0,0.0
+YES,Model 3,7,00004107,Alert Diagnosis - Repair,General diagnosis conclusion,0.06,0.06
+YES,Model 3,7,00004108,Alert Diagnosis (Repair) - Create New Service Activity for Repair,Test/Adjust,0.06,0.06
+YES,Model 3,7,00005914,Service Collision Estimate,Inspection,0.0,0.0
+YES,Model 3,7,00020003,Software Update,Over The Air,0.06,0.06
+YES,Model 3,7,00020007,Firmware Update - Garage,Update,0.05,0.05
+YES,Model 3,7,00020010,Remote – Known Characteristic of Current Firmware,Over The Air,0.25,0.25
+YES,Model 3,7,00020020,Remote – Over the Air Update,Over The Air,0.25,0.25
+YES,Model 3,7,00022008,User Data (Factory Reset),Restore,0.05,0.05
+YES,Model 3,7,00023003,Clear Filesystem Caches,Module Reset/Reflashed,0.05,0.05
+YES,Model 3,7,00030100,PDI (Without Test Drive),Inspection,0.12,0.12
+YES,Model 3,7,00030410,Vehicle Health Check,Inspection,1.62,1.62
+YES,Model 3,7,00032201,Loaner Registration Confirmation,Inspection,0.2,0.2
+YES,Model 3,7,00040100,Perform Post-Repair Validation Test Drive,Test/Adjust,0.3,0.3
+YES,Model 3,7,00100004,General Diagnosis,General Diagnosis,0.5,0.5
+YES,Model 3,7,00100014,Diagnosis: Unable to Replicate Concern,General diagnosis conclusion,0.0,0.0
+YES,Model 3,7,00100024,Remote Diagnosis,Remote Diagnostics,0.3,0.3
+YES,Model 3,7,10000004,Adjustment: Body / Closure Components,Test/Adjust,0.4,0.4
+YES,Model 3,7,10010008,Tesla Body Repair - Miscellaneous Labor,Body Shop,0.0,0.0
+YES,Model 3,7,10010011,Tesla Body Repair - Structural,Body Shop,0.0,0.0
+YES,Model 3,7,10010012,Tesla Body Structural - Sheet Metal Quotation,Test/Adjust,0.6,0.6
+YES,Model 3,7,10010014,Tesla Body Structural - Sheet Metal Repair,Restore,1.0,1.0
+YES,Model 3,7,10010015,Tesla Body Structural - Reassemble Parts,Test/Adjust,1.0,1.0
+YES,Model 3,7,10100008,Tesla Body Repair - Mechanical Labor,Body Shop,0.0,0.0
+YES,Model 3,7,10108608,Tesla Body Repair - Body Labor,Body Shop,0.0,0.0
+YES,Model 3,7,10108808,Tesla Body Repair - Sublet,Body Shop,0.0,0.0
+YES,Model 3,7,10109008,Structural Body Repair,Repair,0.0,0.0
+YES,Model 3,7,10109108,Non-Structural Body Repair,Restore,0.0,0.0
+YES,Model 3,7,10182019,Customer Generated Quote - Issue (Transaction) Resolved - Bound,General diagnosis conclusion,0.0,0.0
+YES,Model 3,7,1027521,Assistance with Refund of Reservation,Test/Adjust,0.0,0.0
+YES,Model 3,7,11700004,Adjustment: Seal,Test/Adjust,0.2,0.2
+YES,Model 3,7,12000004,Adjustment: Exterior Trim,Test/Adjust,0.2,0.2
+YES,Model 3,7,12208583,Mud Flaps (PDI Retrofit),Retrofit,0.0,0.0
+YES,Model 3,7,12302302,Ball Neck - Trailer Hitch (Remove and Replace),Remove and Replace,0.12,0.12
+YES,Model 3,7,13000004,Diagnosis: Seats,Test/Adjust,0.5,0.5
+YES,Model 3,7,14050002,USB Drive,Remove and Replace,0.06,0.06
+YES,Model 3,7,15130004,Diagnosis: Closures,General Diagnosis,0.65,0.65
+YES,Model 3,7,16010201,HV Battery (AWD),Remove and Install,3.6,3.6
+YES,Model 3,7,16010202,HV Battery (AWD),Remove and Replace,5.4,5.4
+YES,Model 3,7,16015300,Discharge HV Battery (At Pack Contactors),Test/Adjust,0.96,0.96
+YES,Model 3,7,16102100,HV Battery Air Leak Test,Test/Adjust,0.6,0.6
+YES,Model 3,7,16300100,Resistance Meter (Zero Adjust),Test/Adjust,0.05,0.05
+YES,Model 3,7,17000004,Diagnosis: Driver Assistance,General Diagnosis,0.5,0.5
+YES,Model 3,7,17000008,Jumpstart Vehicle (Restore),Restore,0.06,0.06
+YES,Model 3,7,17010000,Vehicle HV Disablement Procedure,Test/Adjust,0.3,0.3
+YES,Model 3,7,17100008,Harness Connector - Reconnect,Restore,0.1,0.1
+YES,Model 3,7,17105006,Wire - Electrical Harness (Overlay),Retrofit,0.0,0.0
+YES,Model 3,7,17108100,Diagnosis: Low Voltage Distribution and Controllers,General Diagnosis,1.0,1.0
+YES,Model 3,7,17400150,Headlights - Adjust - NA (Tool Method),Test/Adjust,0.18,0.18
+YES,Model 3,7,18300900,Thermal System Test,Test/Adjust,0.1,0.1
+YES,Model 3,7,18301000,Clean Radiator (Heat Pump),Maintenance,0.9,0.9
+YES,Model 3,7,19010100825,Remove Vehicle Label (No Anti-Tamper Residue),Removal,0.06,0.06
+YES,Model 3,7,19010100902,Vehicle Emission Control Label,Remove and Replace,0.06,0.06
+YES,Model 3,7,19010100925,Remove Vehicle Label and Anti-Tamper Residue,Removal,0.12,0.12
+YES,Model 3,7,19010101002,Battery Chemistry Label,Remove and Replace,0.06,0.06
+YES,Model 3,7,19010101102,Monroney Label,Remove and Replace,0.06,0.06
+YES,Model 3,7,19010202,Labels - Any (Remove & Replace),Remove and Replace,0.24,0.24
+YES,Model 3,7,21051000,Update Display Avatar,Test/Adjust,0.12,0.12
+YES,Model 3,7,31002300,Four Wheel Alignment Check and Adjust,Test/Adjust,0.9,0.9
+YES,Model 3,7,31039000,Suspension - Rear (Check Torque),Test/Adjust,0.36,0.36
+YES,Model 3,7,34010105,Tire Rotation,Maintenance,0.3,0.3
+YES,Model 3,7,34011302,Lug Nuts - Vehicle Set (Remove & Replace),Remove and Replace,0.36,0.36
+YES,Model 3,7,34012902,Wheels - Vehicle - Set (Remove and Replace),Remove and Replace,1.56,1.56
+YES,Model 3,7,34014005,Seasonal Wheel and Tire Set Swap (Already Built),Seasonal Swap,0.5,0.5
+YES,Model 3,7,34014101,Tire Set - Vehicle - Swap (Not Already Built),Remove and Install,1.38,1.38
+YES,Model 3,7,34015032,Cap - Wheel - Set (Remove & Replace),Remove and Replace,0.05,0.05
+YES,Model 3,7,34015202,Wheel - Rear - LH (Remove & Replace),Remove and Replace,0.36,0.36
+YES,Model 3,7,34015222,Cover - Wheel - Rear - LH (Remove & Replace),Remove and Replace,0.06,0.06
+YES,Model 3,7,34015302,Wheel - Rear - RH (Remove & Replace),Remove and Replace,0.36,0.36
+YES,Model 3,7,34015322,Cover - Wheel - Rear - RH (Remove & Replace),Remove and Replace,0.06,0.06
+YES,Model 3,7,34020010,Mobile Tire Service Performed,Modify,0.0,0.0
+YES,Model 3,7,34020030,Mobile Tire Service Performed – Logistics,Tire Repair,0.0,0.0
+YES,Model 3,7,34020305,Tires - All Four (Balance),Rebalance,0.6,0.6
+YES,Model 3,7,34020900,Check and Adjust Tire Pressure,Test/Adjust,0.05,0.05
+YES,Model 3,7,34021202,Tire - Rear - LH (Remove & Replace),Tire Purchase,0.35,0.35
+YES,Model 3,7,34021302,Tire - Rear - RH (Remove & Replace),Tire Purchase,0.35,0.35
+YES,Model 3,7,34021605,Tires - Rear - Set,Tire Purchase,0.7,0.7
+YES,Model 3,7,34021805,Tires - Vehicle - Set,Tire Purchase,1.15,1.15
+YES,Model 3,7,34022015,Tire - Supplemental (Rebalance),Maintenance,0.18,0.18
+YES,Model 3,7,34022205,Tire - Rear - LH (Road Force) (Balance),Tire Repair,0.2,0.2
+YES,Model 3,7,34022225,Tire - Rear - LH (Balance),Rebalance,0.2,0.2
+YES,Model 3,7,34022305,Tire - Rear - RH (Road Force) (Balance),Tire Repair,0.2,0.2
+YES,Model 3,7,34022325,Tire - Rear - RH (Balance),Rebalance,0.2,0.2
+YES,Model 3,7,34023208,Tire - Rear - LH (Repair),Tire Repair,0.72,0.72
+YES,Model 3,7,34023308,Tire - Rear - RH (Repair),Tire Repair,0.72,0.72
+YES,Model 3,7,44000204,HVIL Diagnostics,Diagnosis Only,1.0,1.0
+YES,Model 3,7,44013205,Charge Port - Manual Release of Cable,Maintenance,0.18,0.18
+YES,Model 3,7,46010100004,Diagnosis: Coolant Leak,General Diagnosis,0.5,0.5
+YES,Model 3,7,50010003,Firmware Update - Mobile Connector,Module Reset/Reflashed,0.1,0.1
+YES,Model 3,7,50010102,Mobile Connector - UMC (Remove & Replace),Remove and Replace,0.0,0.0
+YES,Model 3,7,50022002,Handle and Cable Assembly - 80A Wall Connector (Remove & Replace),Remove and Replace,0.48,0.48
+YES,Model 3,7,50024002,Handle and Cable Assembly - 40A Wall Connector (Remove & Replace),Remove and Replace,0.48,0.48
+YES,Model 3,7,61013108,Equip Tire Repair Kit,General diagnosis conclusion,0.0,0.0
+YES,Model 3,7,7000005,Mobile Tire Dispatch Fee,Fee,0.01,0.01
+YES,Model 3,7,70000105,Third Party Transport,Sublet,1.2,1.2
+YES,Model 3,7,7000030,Parts Not Available - Add to future service visit. ,General diagnosis conclusion,0.0,0.0
+YES,Model 3,7,70000305,Miscellaneous Labor,Fee,0.0,0.0
+YES,Model 3,7,70002005,Non-Tesla (Rental),Sublet,0.0,0.0
+YES,Model 3,7,70003805,Tesla Airport Service,Fee,1.2,1.2
+YES,Model 3,7,7000405,Vehicle Storage,Fee,0.0,0.0
+YES,Model 3,7,70004205,No Labor Performed - Unable to Perform via Mobile Service,General diagnosis conclusion,0.0,0.0
+YES,Model 3,7,70004505,No Labor Performed - Part Replaced,Repair,0.0,0.0
+YES,Model 3,7,70005700,Scrap Part Sale Over the Counter,Test/Adjust,0.0,0.0
+YES,Model 3,7,70005805,Payment Collection Required,Fee,1.2,1.2
+YES,Model 3,7,70008009,Additional Work Required - Corrosion Present,Maintenance,0.5,0.5
+YES,Model 3,7,70020305,Upholstery - Sublet,Sublet,0.0,0.0
+YES,Model 3,7,70020805,Glass Repair / Replacement  - Sublet,Sublet,0.0,0.0
+YES,Model 3,7,70060005,Thread Repair,Maintenance,0.0,0.0
+YES,Model 3,7,7007300,Other – Sublet,Sublet,0.0,0.0
+YES,Model 3,7,7100001,NO LABOR PERFORMED,Repair,0.0,0.0
+YES,Model 3,7,72000005,Loaner Fee,Fee,0.0,0.0
+YES,Model 3,7,91000004,On Site – Education,Customer Education,0.0,0.0
+YES,Model 3,7,91020105,Car Wash (Hand Wash),Detail Work,0.25,0.25
+YES,Model 3,7,91020115,Car Wash (Mechanical Wash),Maintenance,0.24,0.24
+YES,Model 3,7,91022005,Charge Vehicle,Restore,0.0,0.0
+YES,Model 3,7,91022407,Vehicle Configuration Update,Program,0.05,0.05
+YES,Model 3,7,91029006,Mobile Service Hub Repair,Retrofit,0.0,0.0
+YES,Model S,1,00000010,Remote – Education,Over The Air,0.0,0.0
+YES,Model S,1,00004107,Alert Diagnosis - Repair,General diagnosis conclusion,0.06,0.06
+YES,Model S,1,00004108,Alert Diagnosis (Repair) - Create New Service Activity for Repair,Test/Adjust,0.06,0.06
+YES,Model S,1,00005914,Service Collision Estimate,Inspection,0.0,0.0
+YES,Model S,1,00020003,Firmware Update,Over The Air,0.06,0.06
+YES,Model S,1,00020007,Firmware Update - Garage,Update,0.05,0.05
+YES,Model S,1,00020010,Remote – Known Characteristic of Current Firmware,Over The Air,0.25,0.25
+YES,Model S,1,00020020,Remote – Over the Air Update,Over The Air,0.25,0.25
+YES,Model S,1,00022008,User Data (Factory Reset),Restore,0.05,0.05
+YES,Model S,1,00023003,Clear Filesystem Caches,Module Reset/Reflashed,0.05,0.05
+YES,Model S,1,00030100,PDI (Without Test Drive),Inspection,0.0,0.0
+YES,Model S,1,00030410,Vehicle Health Check,Inspection,1.5,1.5
+YES,Model S,1,00032201,Loaner Registration Confirmation,Inspection,0.2,0.2
+YES,Model S,1,00040100,Perform Post-Repair Validation Test Drive,Test/Adjust,0.3,0.3
+YES,Model S,1,00100004,General Diagnosis,General Diagnosis,0.5,0.5
+YES,Model S,1,00100014,Diagnosis: Unable to Replicate Concern,General diagnosis conclusion,0.0,0.0
+YES,Model S,1,00100024,Remote Diagnosis,Remote Diagnostics,0.3,0.3
+YES,Model S,1,10000004,Adjustment: Body / Closure Components,Test/Adjust,0.4,0.4
+YES,Model S,1,10010008,Tesla Body Repair - Miscellaneous Labor,Body Shop,0.0,0.0
+YES,Model S,1,10010011,Tesla Body Repair - Structural,Body Shop,0.0,0.0
+YES,Model S,1,10010012,Tesla Body Structural - Sheet Metal Quotation,Test/Adjust,0.6,0.6
+YES,Model S,1,10010014,Tesla Body Structural - Sheet Metal Repair,Restore,1.0,1.0
+YES,Model S,1,10010015,Tesla Body Structural - Reassemble Parts,Test/Adjust,1.0,1.0
+YES,Model S,1,10100008,Tesla Body Repair - Mechanical Labor,Body Shop,0.0,0.0
+YES,Model S,1,10108608,Tesla Body Repair - Body Labor,Body Shop,0.0,0.0
+YES,Model S,1,10108808,Tesla Body Repair - Sublet,Body Shop,0.0,0.0
+YES,Model S,1,10109008,Structural Body Repair,Repair,0.0,0.0
+YES,Model S,1,10109108,Non-Structural Body Repair,Restore,0.0,0.0
+YES,Model S,1,10182019,Customer Generated Quote - Issue (Transaction) Resolved - Bound,General diagnosis conclusion,0.0,0.0
+YES,Model S,1,1027521,Assistance with Refund of Reservation,Test/Adjust,0.0,0.0
+YES,Model S,1,11700004,Adjustment: Seal,Test/Adjust,0.2,0.2
+YES,Model S,1,12000004,Adjustment: Exterior Trim,Test/Adjust,0.2,0.2
+YES,Model S,1,12208583,Mud Flaps (PDI Retrofit),Retrofit,0.0,0.0
+YES,Model S,1,12302302,Ball Neck - Trailer Hitch (Remove & Replace),Remove and Replace,0.12,0.12
+YES,Model S,1,13000004,Diagnosis: Seats,Test/Adjust,0.5,0.5
+YES,Model S,1,14050002,USB Drive,Remove and Replace,0.06,0.06
+YES,Model S,1,15130004,Diagnosis: Closures,General Diagnosis,0.65,0.65
+YES,Model S,1,16010201,HV Battery (AWD),Remove and Install,1.5,1.5
+YES,Model S,1,16010202,HV Battery (AWD),Remove and Replace,2.28,2.28
+YES,Model S,1,16015300,Discharge HV Battery (At Pack Contactors),Test/Adjust,0.96,0.96
+YES,Model S,1,16102100,HV Battery Air Leak Test,Test/Adjust,0.66,0.66
+YES,Model S,1,16300100,Resistance Meter (Zero Adjust),Test/Adjust,0.05,0.05
+YES,Model S,1,17000004,Diagnosis: Driver Assistance,General Diagnosis,0.5,0.5
+YES,Model S,1,17000008,Jumpstart Vehicle (Restore),Restore,0.12,0.12
+YES,Model S,1,17010000,Vehicle HV Disablement Procedure,Test/Adjust,0.54,0.54
+YES,Model S,1,17100008,Harness Connector - Reconnect,Restore,0.1,0.1
+YES,Model S,1,17105006,Wire - Electrical Harness (Overlay),Retrofit,0.0,0.0
+YES,Model S,1,17108100,Diagnosis: Low Voltage Distribution and Controllers,General Diagnosis,1.0,1.0
+YES,Model S,1,17400150,Headlights - Adjust - NA (Tool Method),Test/Adjust,0.18,0.18
+YES,Model S,1,18300900,Thermal System Test,Test/Adjust,0.1,0.1
+YES,Model S,1,19010100825,Remove Vehicle Label (No Anti-Tamper Residue),Removal,0.06,0.06
+YES,Model S,1,19010100902,Vehicle Emission Control Label,Remove and Replace,0.06,0.06
+YES,Model S,1,19010100925,Remove Vehicle Label and Anti-Tamper Residue,Removal,0.12,0.12
+YES,Model S,1,19010101002,Battery Chemistry Label,Remove and Replace,0.06,0.06
+YES,Model S,1,19010101102,Monroney Label,Remove and Replace,0.06,0.06
+YES,Model S,1,19010202,Labels - Any (Remove & Replace),Remove and Replace,0.24,0.24
+YES,Model S,1,21051000,Update Display Avatar,Test/Adjust,0.12,0.12
+YES,Model S,1,31002300,Four Wheel Alignment Check and Adjust,Test/Adjust,1.32,1.32
+YES,Model S,1,31039000,Suspension - Rear - Check Torque,Test/Adjust,0.84,0.84
+YES,Model S,1,34010105,Tire Rotation,Maintenance,0.3,0.3
+YES,Model S,1,34011302,Lug Nuts - Vehicle Set (Remove & Replace),Remove and Replace,0.36,0.36
+YES,Model S,1,34012902,Wheels - Set (Remove and Replace),Remove and Replace,1.56,1.56
+YES,Model S,1,34014005,Seasonal Wheel and Tire Set Swap (Already Built),Seasonal Swap,0.5,0.5
+YES,Model S,1,34014101,Tire Set - Vehicle - Swap (Not Already Built),Remove and Install,1.38,1.38
+YES,Model S,1,34015032,Cap - Wheel - Set (Remove & Replace),Remove and Replace,0.05,0.05
+YES,Model S,1,34015202,Wheel - Rear - LH (Remove & Replace),Remove and Replace,0.36,0.36
+YES,Model S,1,34015222,Cap - Wheel - Rear - LH (Remove & Replace),Remove and Replace,0.06,0.06
+YES,Model S,1,34015302,Wheel - Rear - RH (Remove & Replace),Remove and Replace,0.36,0.36
+YES,Model S,1,34015322,Cap - Wheel - Rear - RH (Remove & Replace),Remove and Replace,0.06,0.06
+YES,Model S,1,34020010,Mobile Tire Service Performed,Modify,0.0,0.0
+YES,Model S,1,34020030,Mobile Tire Service Performed – Logistics,Tire Repair,0.0,0.0
+YES,Model S,1,34020305,Tires - All Four (Balance),Rebalance,0.6,0.6
+YES,Model S,1,34020900,Check and Adjust Tire Pressure,Test/Adjust,0.05,0.05
+YES,Model S,1,34021202,Tire - Rear - LH (Remove & Replace),Tire Purchase,0.35,0.35
+YES,Model S,1,34021302,Tire - Rear - RH (Remove & Replace),Tire Purchase,0.35,0.35
+YES,Model S,1,34021605,Tires - Rear - Set,Tire Purchase,0.7,0.7
+YES,Model S,1,34021805,Tires - Vehicle - Set,Tire Purchase,1.15,1.15
+YES,Model S,1,34022015,Tire - Supplemental (Rebalance),Maintenance,0.18,0.18
+YES,Model S,1,34022205,Tire - Rear - LH (Road Force) (Balance),Tire Repair,0.2,0.2
+YES,Model S,1,34022225,Tire - Rear - LH (Balance),Rebalance,0.2,0.2
+YES,Model S,1,34022305,Tire - Rear - RH (Road Force) (Balance),Tire Repair,0.2,0.2
+YES,Model S,1,34022325,Tire - Rear - RH (Balance),Rebalance,0.2,0.2
+YES,Model S,1,34023208,Tire - Rear - LH (Repair),Tire Repair,0.72,0.72
+YES,Model S,1,34023308,Tire - Rear - RH (Repair),Tire Repair,0.72,0.72
+YES,Model S,1,44000204,HVIL Diagnostics,Diagnosis Only,1.0,1.0
+YES,Model S,1,44013205,"Charge Port - Manual Release of Cable (Vehicles With 3 Phase, Non-Motorized Charge Port)",Maintenance,0.96,0.96
+YES,Model S,1,46010100004,Diagnosis: Coolant Leak,General Diagnosis,0.5,0.5
+YES,Model S,1,50010003,Firmware Update - Mobile Connector,Module Reset/Reflashed,0.1,0.1
+YES,Model S,1,50010102,Mobile Connector - UMC (Remove & Replace),Remove and Replace,0.0,0.0
+YES,Model S,1,50022002,Handle and Cable Assembly - 80A Wall Connector (Remove & Replace),Remove and Replace,0.48,0.48
+YES,Model S,1,50024002,Handle and Cable Assembly - 40A Wall Connector (Remove & Replace),Remove and Replace,0.48,0.48
+YES,Model S,1,61013108,Equip Tire Repair Kit,General diagnosis conclusion,0.0,0.0
+YES,Model S,1,7000005,Mobile Tire Dispatch Fee,Fee,0.01,0.01
+YES,Model S,1,70000105,Third Party Transport,Sublet,1.2,1.2
+YES,Model S,1,7000030,Parts Not Available - Add to future service visit. ,General diagnosis conclusion,0.0,0.0
+YES,Model S,1,70000305,Miscellaneous Labor,Fee,0.0,0.0
+YES,Model S,1,70002005,Non-Tesla (Rental),Sublet,0.0,0.0
+YES,Model S,1,70003805,Tesla Airport Service,Fee,1.2,1.2
+YES,Model S,1,7000405,Vehicle Storage,Fee,0.0,0.0
+YES,Model S,1,70004205,No Labor Performed - Unable to Perform via Mobile Service,General diagnosis conclusion,0.0,0.0
+YES,Model S,1,70004505,No Labor Performed - Part Replaced,Repair,0.0,0.0
+YES,Model S,1,70005700,Scrap Part Sale Over the Counter,Test/Adjust,0.0,0.0
+YES,Model S,1,70005805,Payment Collection Required,Fee,1.2,1.2
+YES,Model S,1,70008009,Additional Work Required - Corrosion Present,Maintenance,0.5,0.5
+YES,Model S,1,70020305,Upholstery - Sublet,Sublet,0.0,0.0
+YES,Model S,1,70020805,Glass Repair / Replacement  - Sublet,Sublet,0.0,0.0
+YES,Model S,1,70060005,Thread Repair,Maintenance,0.0,0.0
+YES,Model S,1,7007300,Other – Sublet,Sublet,0.0,0.0
+YES,Model S,1,7100001,NO LABOR PERFORMED,Repair,0.0,0.0
+YES,Model S,1,72000005,Loaner Fee,Fee,0.0,0.0
+YES,Model S,1,91000004,On Site – Education,Customer Education,0.0,0.0
+YES,Model S,1,91020105,Car Wash (Hand Wash),Detail Work,0.25,0.25
+YES,Model S,1,91020115,Car Wash (Mechanical Wash),Maintenance,0.24,0.24
+YES,Model S,1,91022005,Charge Vehicle,Restore,0.0,0.0
+YES,Model S,1,91022407,Vehicle Configuration Update,Program,0.05,0.05
+YES,Model S,1,91029006,Mobile Service Hub Repair,Retrofit,0.0,0.0
+YES,Model S,18,00000010,Remote – Education,Over The Air,0.0,0.0
+YES,Model S,18,00004107,Alert Diagnosis - Repair,General diagnosis conclusion,0.06,0.06
+YES,Model S,18,00004108,Alert Diagnosis (Repair) - Create New Service Activity for Repair,Test/Adjust,0.06,0.06
+YES,Model S,18,00005914,Service Collision Estimate,Inspection,0.0,0.0
+YES,Model S,18,00020003,Firmware Update,Over The Air,0.06,0.06
+YES,Model S,18,00020007,Firmware Update - Garage,Update,0.05,0.05
+YES,Model S,18,00020010,Remote – Known Characteristic of Current Firmware,Over The Air,0.25,0.25
+YES,Model S,18,00020020,Remote – Over the Air Update,Over The Air,0.25,0.25
+YES,Model S,18,00022008,User Data (Factory Reset),Restore,0.05,0.05
+YES,Model S,18,00023003,Clear Filesystem Caches,Module Reset/Reflashed,0.05,0.05
+YES,Model S,18,00030100,PDI (Without Test Drive),Inspection,0.12,0.12
+YES,Model S,18,00030410,Vehicle Health Check,Inspection,1.5,1.5
+YES,Model S,18,00032201,Loaner Registration Confirmation,Inspection,0.2,0.2
+YES,Model S,18,00040100,Perform Post-Repair Validation Test Drive,Test/Adjust,0.3,0.3
+YES,Model S,18,00100004,General Diagnosis,General Diagnosis,0.5,0.5
+YES,Model S,18,00100014,Diagnosis: Unable to Replicate Concern,General diagnosis conclusion,0.0,0.0
+YES,Model S,18,00100024,Remote Diagnosis,Remote Diagnostics,0.3,0.3
+YES,Model S,18,10000004,Adjustment: Body / Closure Components,Test/Adjust,0.4,0.4
+YES,Model S,18,10010008,Tesla Body Repair - Miscellaneous Labor,Body Shop,0.0,0.0
+YES,Model S,18,10010011,Tesla Body Repair - Structural,Body Shop,0.0,0.0
+YES,Model S,18,10010012,Tesla Body Structural - Sheet Metal Quotation,Test/Adjust,0.6,0.6
+YES,Model S,18,10010014,Tesla Body Structural - Sheet Metal Repair,Restore,1.0,1.0
+YES,Model S,18,10010015,Tesla Body Structural - Reassemble Parts,Test/Adjust,1.0,1.0
+YES,Model S,18,10100008,Tesla Body Repair - Mechanical Labor,Body Shop,0.0,0.0
+YES,Model S,18,10108608,Tesla Body Repair - Body Labor,Body Shop,0.0,0.0
+YES,Model S,18,10108808,Tesla Body Repair - Sublet,Body Shop,0.0,0.0
+YES,Model S,18,10109008,Structural Body Repair,Repair,0.0,0.0
+YES,Model S,18,10109108,Non-Structural Body Repair,Restore,0.0,0.0
+YES,Model S,18,10182019,Customer Generated Quote - Issue (Transaction) Resolved - Bound,General diagnosis conclusion,0.0,0.0
+YES,Model S,18,1027521,Assistance with Refund of Reservation,Test/Adjust,0.0,0.0
+YES,Model S,18,11700004,Adjustment: Seal,Test/Adjust,0.2,0.2
+YES,Model S,18,12000004,Adjustment: Exterior Trim,Test/Adjust,0.2,0.2
+YES,Model S,18,12208583,Mud Flaps (PDI Retrofit),Retrofit,0.0,0.0
+YES,Model S,18,12302302,Ball Neck - Trailer Hitch (Remove & Replace),Remove and Replace,0.12,0.12
+YES,Model S,18,13000004,Diagnosis: Seats,Test/Adjust,0.5,0.5
+YES,Model S,18,14050002,USB Drive,Remove and Replace,0.06,0.06
+YES,Model S,18,15130004,Diagnosis: Closures,General Diagnosis,0.65,0.65
+YES,Model S,18,16010201,HV Battery (AWD),Remove and Install,2.88,2.88
+YES,Model S,18,16010202,HV Battery (AWD),Remove and Replace,3.72,3.72
+YES,Model S,18,16015300,Discharge HV Battery (At Pack Contactors),Test/Adjust,1.02,1.02
+YES,Model S,18,16102100,HV Battery Air Leak Test,Test/Adjust,0.36,0.36
+YES,Model S,18,16300100,Resistance Meter (Zero Adjust),Test/Adjust,0.05,0.05
+YES,Model S,18,17000004,Diagnosis: Driver Assistance,General Diagnosis,0.5,0.5
+YES,Model S,18,17000008,Jumpstart Vehicle (Restore),Restore,0.12,0.12
+YES,Model S,18,17010000,Vehicle HV Disablement Procedure,Test/Adjust,0.36,0.36
+YES,Model S,18,17100008,Harness Connector - Reconnect,Restore,0.1,0.1
+YES,Model S,18,17105006,Wire - Electrical Harness (Overlay),Retrofit,0.0,0.0
+YES,Model S,18,17108100,Diagnosis: Low Voltage Distribution and Controllers,General Diagnosis,1.0,1.0
+YES,Model S,18,17400150,Headlights - Adjust - NA (Tool Method),Test/Adjust,0.18,0.18
+YES,Model S,18,18300900,Thermal System Test,Test/Adjust,0.1,0.1
+YES,Model S,18,18301000,Clean Radiator,Maintenance,0.96,0.96
+YES,Model S,18,19010100825,Remove Vehicle Label (No Anti-Tamper Residue),Removal,0.06,0.06
+YES,Model S,18,19010100902,Vehicle Emission Control Label,Remove and Replace,0.06,0.06
+YES,Model S,18,19010100925,Remove Vehicle Label and Anti-Tamper Residue,Removal,0.12,0.12
+YES,Model S,18,19010101002,Battery Chemistry Label,Remove and Replace,0.06,0.06
+YES,Model S,18,19010101102,Monroney Label,Remove and Replace,0.06,0.06
+YES,Model S,18,19010202,Labels - Any (Remove & Replace),Remove and Replace,0.24,0.24
+YES,Model S,18,21051000,Update Display Avatar,Test/Adjust,0.12,0.12
+YES,Model S,18,31002300,Four Wheel Alignment Check and Adjust,Test/Adjust,1.32,1.32
+YES,Model S,18,31039000,Suspension - Rear - Check Torque,Test/Adjust,0.84,0.84
+YES,Model S,18,34010105,Tire Rotation,Maintenance,0.3,0.3
+YES,Model S,18,34011302,Lug Nuts - Vehicle Set (Remove & Replace),Remove and Replace,0.36,0.36
+YES,Model S,18,34012902,Wheels - Set (Remove and Replace),Remove and Replace,1.56,1.56
+YES,Model S,18,34014005,Seasonal Wheel and Tire Set Swap (Already Built),Seasonal Swap,0.5,0.5
+YES,Model S,18,34014101,Tire Set - Vehicle - Swap (Not Already Built),Remove and Install,1.38,1.38
+YES,Model S,18,34015032,Cap - Wheel - Set (Remove & Replace),Remove and Replace,0.05,0.05
+YES,Model S,18,34015202,Wheel - Rear - LH (Remove & Replace),Remove and Replace,0.36,0.36
+YES,Model S,18,34015222,Cap - Wheel - Rear - LH (Remove & Replace),Remove and Replace,0.06,0.06
+YES,Model S,18,34015302,Wheel - Rear - RH (Remove & Replace),Remove and Replace,0.36,0.36
+YES,Model S,18,34015322,Cap - Wheel - Rear - RH (Remove & Replace),Remove and Replace,0.06,0.06
+YES,Model S,18,34020010,Mobile Tire Service Performed,Modify,0.0,0.0
+YES,Model S,18,34020030,Mobile Tire Service Performed – Logistics,Tire Repair,0.0,0.0
+YES,Model S,18,34020305,Tires - All Four (Balance),Rebalance,0.6,0.6
+YES,Model S,18,34020900,Check and Adjust Tire Pressure,Test/Adjust,0.05,0.05
+YES,Model S,18,34021202,Tire - Rear - LH (Remove & Replace),Tire Purchase,0.35,0.35
+YES,Model S,18,34021302,Tire - Rear - RH (Remove & Replace),Tire Purchase,0.35,0.35
+YES,Model S,18,34021605,Tires - Rear - Set,Tire Purchase,0.7,0.7
+YES,Model S,18,34021805,Tires - Vehicle - Set,Tire Purchase,1.15,1.15
+YES,Model S,18,34022015,Tire - Supplemental (Rebalance),Maintenance,0.18,0.18
+YES,Model S,18,34022205,Tire - Rear - LH (Road Force) (Balance),Tire Repair,0.2,0.2
+YES,Model S,18,34022225,Tire - Rear - LH (Balance),Rebalance,0.2,0.2
+YES,Model S,18,34022305,Tire - Rear - RH (Road Force) (Balance),Tire Repair,0.2,0.2
+YES,Model S,18,34022325,Tire - Rear - RH (Balance),Rebalance,0.2,0.2
+YES,Model S,18,34023208,Tire - Rear - LH (Repair),Tire Repair,0.72,0.72
+YES,Model S,18,34023308,Tire - Rear - RH (Repair),Tire Repair,0.72,0.72
+YES,Model S,18,44000204,HVIL Diagnostics,Diagnosis Only,1.0,1.0
+YES,Model S,18,44013205,"Charge Port - Manual Release of Cable (Vehicles With 3 Phase, Non-Motorized Charge Port)",Maintenance,0.96,0.96
+YES,Model S,18,46010100004,Diagnosis: Coolant Leak,General Diagnosis,0.5,0.5
+YES,Model S,18,50010003,Firmware Update - Mobile Connector,Module Reset/Reflashed,0.1,0.1
+YES,Model S,18,50010102,Mobile Connector - UMC (Remove & Replace),Remove and Replace,0.0,0.0
+YES,Model S,18,50022002,Handle and Cable Assembly - 80A Wall Connector (Remove & Replace),Remove and Replace,0.48,0.48
+YES,Model S,18,50024002,Handle and Cable Assembly - 40A Wall Connector (Remove & Replace),Remove and Replace,0.48,0.48
+YES,Model S,18,61013108,Equip Tire Repair Kit,General diagnosis conclusion,0.0,0.0
+YES,Model S,18,7000005,Mobile Tire Dispatch Fee,Fee,0.01,0.01
+YES,Model S,18,70000105,Third Party Transport,Sublet,1.2,1.2
+YES,Model S,18,7000030,Parts Not Available - Add to future service visit. ,General diagnosis conclusion,0.0,0.0
+YES,Model S,18,70000305,Miscellaneous Labor,Fee,0.0,0.0
+YES,Model S,18,70002005,Non-Tesla (Rental),Sublet,0.0,0.0
+YES,Model S,18,70003805,Tesla Airport Service,Fee,1.2,1.2
+YES,Model S,18,7000405,Vehicle Storage,Fee,0.0,0.0
+YES,Model S,18,70004205,No Labor Performed - Unable to Perform via Mobile Service,General diagnosis conclusion,0.0,0.0
+YES,Model S,18,70004505,No Labor Performed - Part Replaced,Repair,0.0,0.0
+YES,Model S,18,70005700,Scrap Part Sale Over the Counter,Test/Adjust,0.0,0.0
+YES,Model S,18,70005805,Payment Collection Required,Fee,1.2,1.2
+YES,Model S,18,70008009,Additional Work Required - Corrosion Present,Maintenance,0.5,0.5
+YES,Model S,18,70020305,Upholstery - Sublet,Sublet,0.0,0.0
+YES,Model S,18,70020805,Glass Repair / Replacement  - Sublet,Sublet,0.0,0.0
+YES,Model S,18,70060005,Thread Repair,Maintenance,0.0,0.0
+YES,Model S,18,7007300,Other – Sublet,Sublet,0.0,0.0
+YES,Model S,18,7100001,NO LABOR PERFORMED,Repair,0.0,0.0
+YES,Model S,18,72000005,Loaner Fee,Fee,0.0,0.0
+YES,Model S,18,91000004,On Site – Education,Customer Education,0.0,0.0
+YES,Model S,18,91020105,Car Wash (Hand Wash),Detail Work,0.25,0.25
+YES,Model S,18,91020115,Car Wash (Mechanical Wash),Maintenance,0.24,0.24
+YES,Model S,18,91022005,Charge Vehicle,Restore,0.0,0.0
+YES,Model S,18,91022407,Vehicle Configuration Update,Program,0.05,0.05
+YES,Model S,18,91029006,Mobile Service Hub Repair,Retrofit,0.0,0.0
+YES,Model X,19,00000010,Remote – Education,Over The Air,0.0,0.0
+YES,Model X,19,00004107,Alert Diagnosis - Repair,General diagnosis conclusion,0.06,0.06
+YES,Model X,19,00004108,Alert Diagnosis (Repair) - Create New Service Activity for Repair,Test/Adjust,0.06,0.06
+YES,Model X,19,00005914,Service Collision Estimate,Inspection,0.0,0.0
+YES,Model X,19,00020003,Firmware Update,Over The Air,0.06,0.06
+YES,Model X,19,00020007,Firmware Update - Garage,Update,0.05,0.05
+YES,Model X,19,00020010,Remote – Known Characteristic of Current Firmware,Over The Air,0.25,0.25
+YES,Model X,19,00020020,Remote – Over the Air Update,Over The Air,0.25,0.25
+YES,Model X,19,00022008,User Data (Factory Reset),Restore,0.05,0.05
+YES,Model X,19,00023003,Clear Filesystem Caches,Module Reset/Reflashed,0.05,0.05
+YES,Model X,19,00030100,PDI (Without Test Drive),Inspection,0.12,0.12
+YES,Model X,19,00030410,Vehicle Health Check,Inspection,1.5,1.5
+YES,Model X,19,00032201,Loaner Registration Confirmation,Inspection,0.2,0.2
+YES,Model X,19,00040100,Perform Post-Repair Validation Test Drive,Test/Adjust,0.3,0.3
+YES,Model X,19,00100004,General Diagnosis,General Diagnosis,0.5,0.5
+YES,Model X,19,00100014,Diagnosis: Unable to Replicate Concern,General diagnosis conclusion,0.0,0.0
+YES,Model X,19,00100024,Remote Diagnosis,Remote Diagnostics,0.3,0.3
+YES,Model X,19,10000004,Adjustment: Body / Closure Components,Test/Adjust,0.4,0.4
+YES,Model X,19,10010008,Tesla Body Repair - Miscellaneous Labor,Body Shop,0.0,0.0
+YES,Model X,19,10010011,Tesla Body Repair - Structural,Body Shop,0.0,0.0
+YES,Model X,19,10010012,Tesla Body Structural - Sheet Metal Quotation,Test/Adjust,0.6,0.6
+YES,Model X,19,10010014,Tesla Body Structural - Sheet Metal Repair,Restore,1.0,1.0
+YES,Model X,19,10010015,Tesla Body Structural - Reassemble Parts,Test/Adjust,1.0,1.0
+YES,Model X,19,10100008,Tesla Body Repair - Mechanical Labor,Body Shop,0.0,0.0
+YES,Model X,19,10108608,Tesla Body Repair - Body Labor,Body Shop,0.0,0.0
+YES,Model X,19,10108808,Tesla Body Repair - Sublet,Body Shop,0.0,0.0
+YES,Model X,19,10109008,Structural Body Repair,Repair,0.0,0.0
+YES,Model X,19,10109108,Non-Structural Body Repair,Restore,0.0,0.0
+YES,Model X,19,10182019,Customer Generated Quote - Issue (Transaction) Resolved - Bound,General diagnosis conclusion,0.0,0.0
+YES,Model X,19,1027521,Assistance with Refund of Reservation,Test/Adjust,0.0,0.0
+YES,Model X,19,11700004,Adjustment: Seal,Test/Adjust,0.2,0.2
+YES,Model X,19,12000004,Adjustment: Exterior Trim,Test/Adjust,0.2,0.2
+YES,Model X,19,12208583,Mud Flaps (PDI Retrofit),Retrofit,0.0,0.0
+YES,Model X,19,12302302,Ball Neck - Trailer Hitch (Remove & Replace),Remove and Replace,0.12,0.12
+YES,Model X,19,13000004,Diagnosis: Seats,Test/Adjust,0.5,0.5
+YES,Model X,19,14050002,USB Drive,Remove and Replace,0.06,0.06
+YES,Model X,19,15130004,Diagnosis: Closures,General Diagnosis,0.65,0.65
+YES,Model X,19,16010201,HV Battery (AWD),Remove and Install,4.26,4.26
+YES,Model X,19,16010202,HV Battery (AWD),Remove and Replace,5.22,5.22
+YES,Model X,19,16015300,Discharge HV Battery (At Pack Contactors),Test/Adjust,1.02,1.02
+YES,Model X,19,16102100,HV Battery Air Leak Test,Test/Adjust,0.54,0.54
+YES,Model X,19,16300100,Resistance Meter (Zero Adjust),Test/Adjust,0.05,0.05
+YES,Model X,19,17000004,Diagnosis: Driver Assistance,General Diagnosis,0.5,0.5
+YES,Model X,19,17000008,Jumpstart Vehicle (Restore),Restore,0.12,0.12
+YES,Model X,19,17010000,Vehicle HV Disablement Procedure,Test/Adjust,0.42,0.42
+YES,Model X,19,17100008,Harness Connector - Reconnect,Restore,0.1,0.1
+YES,Model X,19,17105006,Wire - Electrical Harness (Overlay),Retrofit,0.0,0.0
+YES,Model X,19,17108100,Diagnosis: Low Voltage Distribution and Controllers,General Diagnosis,1.0,1.0
+YES,Model X,19,17400150,Headlights - Adjust - NA (Tool Method),Test/Adjust,0.18,0.18
+YES,Model X,19,18300900,Thermal System Test,Test/Adjust,0.1,0.1
+YES,Model X,19,18301000,Clean Radiator,Maintenance,1.08,1.08
+YES,Model X,19,19010100825,Remove Vehicle Label (No Anti-Tamper Residue),Removal,0.06,0.06
+YES,Model X,19,19010100902,Vehicle Emission Control Label,Remove and Replace,0.06,0.06
+YES,Model X,19,19010100925,Remove Vehicle Label and Anti-Tamper Residue,Removal,0.12,0.12
+YES,Model X,19,19010101002,Battery Chemistry Label,Remove and Replace,0.06,0.06
+YES,Model X,19,19010101102,Monroney Label,Remove and Replace,0.06,0.06
+YES,Model X,19,19010202,Labels - Any (Remove & Replace),Remove and Replace,0.24,0.24
+YES,Model X,19,21051000,Update Display Avatar,Test/Adjust,0.12,0.12
+YES,Model X,19,31002300,Four Wheel Alignment Check and Adjust,Test/Adjust,1.32,1.32
+YES,Model X,19,31039000,Suspension - Rear - Check Torque,Test/Adjust,0.84,0.84
+YES,Model X,19,34010105,Tire Rotation,Maintenance,0.3,0.3
+YES,Model X,19,34011302,Lug Nuts - Vehicle Set (Remove & Replace),Remove and Replace,0.36,0.36
+YES,Model X,19,34012902,Wheels - Set (Remove and Replace),Remove and Replace,1.56,1.56
+YES,Model X,19,34014005,Seasonal Wheel and Tire Set Swap (Already Built),Seasonal Swap,0.5,0.5
+YES,Model X,19,34014101,Tire Set - Vehicle - Swap (Not Already Built),Remove and Install,1.38,1.38
+YES,Model X,19,34015032,Cap - Wheel - Set (Remove & Replace),Remove and Replace,0.05,0.05
+YES,Model X,19,34015202,Wheel - Rear - LH (Remove & Replace),Remove and Replace,0.36,0.36
+YES,Model X,19,34015222,Cap - Wheel - Rear - LH (Remove & Replace),Remove and Replace,0.06,0.06
+YES,Model X,19,34015302,Wheel - Rear - RH (Remove & Replace),Remove and Replace,0.36,0.36
+YES,Model X,19,34015322,Cap - Wheel - Rear - RH (Remove & Replace),Remove and Replace,0.06,0.06
+YES,Model X,19,34020010,Mobile Tire Service Performed,Modify,0.0,0.0
+YES,Model X,19,34020030,Mobile Tire Service Performed – Logistics,Tire Repair,0.0,0.0
+YES,Model X,19,34020305,Tires - All Four (Balance),Rebalance,0.6,0.6
+YES,Model X,19,34020900,Check and Adjust Tire Pressure,Test/Adjust,0.05,0.05
+YES,Model X,19,34021202,Tire - Rear - LH (Remove & Replace),Tire Purchase,0.35,0.35
+YES,Model X,19,34021302,Tire - Rear - RH (Remove & Replace),Tire Purchase,0.35,0.35
+YES,Model X,19,34021605,Tires - Rear - Set,Tire Purchase,0.7,0.7
+YES,Model X,19,34021805,Tires - Vehicle - Set,Tire Purchase,1.15,1.15
+YES,Model X,19,34022015,Tire - Supplemental (Rebalance),Maintenance,0.18,0.18
+YES,Model X,19,34022205,Tire - Rear - LH (Road Force) (Balance),Tire Repair,0.2,0.2
+YES,Model X,19,34022225,Tire - Rear - LH (Balance),Rebalance,0.2,0.2
+YES,Model X,19,34022305,Tire - Rear - RH (Road Force) (Balance),Tire Repair,0.2,0.2
+YES,Model X,19,34022325,Tire - Rear - RH (Balance),Rebalance,0.2,0.2
+YES,Model X,19,34023208,Tire - Rear - LH (Repair),Tire Repair,0.72,0.72
+YES,Model X,19,34023308,Tire - Rear - RH (Repair),Tire Repair,0.72,0.72
+YES,Model X,19,44000204,HVIL Diagnostics,Diagnosis Only,1.0,1.0
+YES,Model X,19,44013205,Charge Port - Manual Release of Cable,Maintenance,0.18,0.18
+YES,Model X,19,46010100004,Diagnosis: Coolant Leak,General Diagnosis,0.5,0.5
+YES,Model X,19,50010003,Firmware Update - Mobile Connector,Module Reset/Reflashed,0.1,0.1
+YES,Model X,19,50010102,Mobile Connector - UMC (Remove & Replace),Remove and Replace,0.0,0.0
+YES,Model X,19,50022002,Handle and Cable Assembly - 80A Wall Connector (Remove & Replace),Remove and Replace,0.48,0.48
+YES,Model X,19,50024002,Handle and Cable Assembly - 40A Wall Connector (Remove & Replace),Remove and Replace,0.48,0.48
+YES,Model X,19,61013108,Equip Tire Repair Kit,General diagnosis conclusion,0.0,0.0
+YES,Model X,19,7000005,Mobile Tire Dispatch Fee,Fee,0.01,0.01
+YES,Model X,19,70000105,Third Party Transport,Sublet,1.2,1.2
+YES,Model X,19,7000030,Parts Not Available - Add to future service visit. ,General diagnosis conclusion,0.0,0.0
+YES,Model X,19,70000305,Miscellaneous Labor,Fee,0.0,0.0
+YES,Model X,19,70002005,Non-Tesla (Rental),Sublet,0.0,0.0
+YES,Model X,19,70003805,Tesla Airport Service,Fee,1.2,1.2
+YES,Model X,19,7000405,Vehicle Storage,Fee,0.0,0.0
+YES,Model X,19,70004205,No Labor Performed - Unable to Perform via Mobile Service,General diagnosis conclusion,0.0,0.0
+YES,Model X,19,70004505,No Labor Performed - Part Replaced,Repair,0.0,0.0
+YES,Model X,19,70005700,Scrap Part Sale Over the Counter,Test/Adjust,0.0,0.0
+YES,Model X,19,70005805,Payment Collection Required,Fee,1.2,1.2
+YES,Model X,19,70008009,Additional Work Required - Corrosion Present,Maintenance,0.5,0.5
+YES,Model X,19,70020305,Upholstery - Sublet,Sublet,0.0,0.0
+YES,Model X,19,70020805,Glass Repair / Replacement  - Sublet,Sublet,0.0,0.0
+YES,Model X,19,70060005,Thread Repair,Maintenance,0.0,0.0
+YES,Model X,19,7007300,Other – Sublet,Sublet,0.0,0.0
+YES,Model X,19,7100001,NO LABOR PERFORMED,Repair,0.0,0.0
+YES,Model X,19,72000005,Loaner Fee,Fee,0.0,0.0
+YES,Model X,19,91000004,On Site – Education,Customer Education,0.0,0.0
+YES,Model X,19,91020105,Car Wash (Hand Wash),Detail Work,0.25,0.25
+YES,Model X,19,91020115,Car Wash (Mechanical Wash),Maintenance,0.24,0.24
+YES,Model X,19,91022005,Charge Vehicle,Restore,0.0,0.0
+YES,Model X,19,91022407,Vehicle Configuration Update,Program,0.05,0.05
+YES,Model X,19,91029006,Mobile Service Hub Repair,Retrofit,0.0,0.0
+YES,Model X,2,00000010,Remote – Education,Over The Air,0.0,0.0
+YES,Model X,2,00004107,Alert Diagnosis - Repair,General diagnosis conclusion,0.06,0.06
+YES,Model X,2,00004108,Alert Diagnosis (Repair) - Create New Service Activity for Repair,Test/Adjust,0.06,0.06
+YES,Model X,2,00005914,Service Collision Estimate,Inspection,0.0,0.0
+YES,Model X,2,00020003,Firmware Update,Over The Air,0.06,0.06
+YES,Model X,2,00020007,Firmware Update - Garage,Update,0.05,0.05
+YES,Model X,2,00020010,Remote – Known Characteristic of Current Firmware,Over The Air,0.25,0.25
+YES,Model X,2,00020020,Remote – Over the Air Update,Over The Air,0.25,0.25
+YES,Model X,2,00022008,User Data (Factory Reset),Restore,0.05,0.05
+YES,Model X,2,00023003,Clear Filesystem Caches,Module Reset/Reflashed,0.05,0.05
+YES,Model X,2,00030100,PDI (Without Test Drive),Inspection,0.0,0.0
+YES,Model X,2,00030410,Vehicle Health Check,Inspection,1.5,1.5
+YES,Model X,2,00032201,Loaner Registration Confirmation,Inspection,0.2,0.2
+YES,Model X,2,00040100,Perform Post-Repair Validation Test Drive,Test/Adjust,0.3,0.3
+YES,Model X,2,00100004,General Diagnosis,General Diagnosis,0.5,0.5
+YES,Model X,2,00100014,Diagnosis: Unable to Replicate Concern,General diagnosis conclusion,0.0,0.0
+YES,Model X,2,00100024,Remote Diagnosis,Remote Diagnostics,0.3,0.3
+YES,Model X,2,10000004,Adjustment: Body / Closure Components,Test/Adjust,0.4,0.4
+YES,Model X,2,10010008,Tesla Body Repair - Miscellaneous Labor,Body Shop,0.0,0.0
+YES,Model X,2,10010011,Tesla Body Repair - Structural,Body Shop,0.0,0.0
+YES,Model X,2,10010012,Tesla Body Structural - Sheet Metal Quotation,Test/Adjust,0.6,0.6
+YES,Model X,2,10010014,Tesla Body Structural - Sheet Metal Repair,Restore,1.0,1.0
+YES,Model X,2,10010015,Tesla Body Structural - Reassemble Parts,Test/Adjust,1.0,1.0
+YES,Model X,2,10100008,Tesla Body Repair - Mechanical Labor,Body Shop,0.0,0.0
+YES,Model X,2,10108608,Tesla Body Repair - Body Labor,Body Shop,0.0,0.0
+YES,Model X,2,10108808,Tesla Body Repair - Sublet,Body Shop,0.0,0.0
+YES,Model X,2,10109008,Structural Body Repair,Repair,0.0,0.0
+YES,Model X,2,10109108,Non-Structural Body Repair,Restore,0.0,0.0
+YES,Model X,2,10182019,Customer Generated Quote - Issue (Transaction) Resolved - Bound,General diagnosis conclusion,0.0,0.0
+YES,Model X,2,1027521,Assistance with Refund of Reservation,Test/Adjust,0.0,0.0
+YES,Model X,2,11700004,Adjustment: Seal,Test/Adjust,0.2,0.2
+YES,Model X,2,12000004,Adjustment: Exterior Trim,Test/Adjust,0.2,0.2
+YES,Model X,2,12208583,Mud Flaps (PDI Retrofit),Retrofit,0.0,0.0
+YES,Model X,2,12302302,Ball Neck - Trailer Hitch (Remove & Replace),Remove and Replace,0.12,0.12
+YES,Model X,2,13000004,Diagnosis: Seats,Test/Adjust,0.5,0.5
+YES,Model X,2,14050002,USB Drive,Remove and Replace,0.06,0.06
+YES,Model X,2,15130004,Diagnosis: Closures,General Diagnosis,0.65,0.65
+YES,Model X,2,16010201,HV Battery (AWD),Remove and Install,1.62,1.62
+YES,Model X,2,16010202,HV Battery (AWD),Remove and Replace,2.46,2.46
+YES,Model X,2,16015300,Discharge HV Battery (At Pack Contactors),Test/Adjust,1.02,1.02
+YES,Model X,2,16102100,HV Battery Air Leak Test,Test/Adjust,0.66,0.66
+YES,Model X,2,16300100,Resistance Meter (Zero Adjust),Test/Adjust,0.05,0.05
+YES,Model X,2,17000004,Diagnosis: Driver Assistance,General Diagnosis,0.5,0.5
+YES,Model X,2,17000008,Jumpstart Vehicle (Restore),Restore,0.12,0.12
+YES,Model X,2,17010000,Vehicle HV Disablement Procedure,Test/Adjust,1.14,1.14
+YES,Model X,2,17100008,Harness Connector - Reconnect,Restore,0.1,0.1
+YES,Model X,2,17105006,Wire - Electrical Harness (Overlay),Retrofit,0.0,0.0
+YES,Model X,2,17108100,Diagnosis: Low Voltage Distribution and Controllers,General Diagnosis,1.0,1.0
+YES,Model X,2,17400150,Headlights - Adjust - NA (Tool Method),Test/Adjust,0.18,0.18
+YES,Model X,2,18300900,Thermal System Test,Test/Adjust,0.1,0.1
+YES,Model X,2,18301000,Clean Radiator,Maintenance,0.96,0.96
+YES,Model X,2,19010100825,Remove Vehicle Label (No Anti-Tamper Residue),Removal,0.06,0.06
+YES,Model X,2,19010100902,Vehicle Emission Control Label,Remove and Replace,0.06,0.06
+YES,Model X,2,19010100925,Remove Vehicle Label and Anti-Tamper Residue,Removal,0.12,0.12
+YES,Model X,2,19010101002,Battery Chemistry Label,Remove and Replace,0.06,0.06
+YES,Model X,2,19010101102,Monroney Label,Remove and Replace,0.06,0.06
+YES,Model X,2,19010202,Labels - Any (Remove & Replace),Remove and Replace,0.24,0.24
+YES,Model X,2,21051000,Update Display Avatar,Test/Adjust,0.12,0.12
+YES,Model X,2,31002300,Four Wheel Alignment Check and Adjust,Test/Adjust,1.32,1.32
+YES,Model X,2,31039000,Suspension - Rear - Check Torque,Test/Adjust,0.84,0.84
+YES,Model X,2,34010105,Tire Rotation,Maintenance,0.3,0.3
+YES,Model X,2,34011302,Lug Nuts - Vehicle Set (Remove & Replace),Remove and Replace,0.36,0.36
+YES,Model X,2,34012902,Wheels - Set (Remove and Replace),Remove and Replace,1.56,1.56
+YES,Model X,2,34014005,Seasonal Wheel and Tire Set Swap (Already Built),Seasonal Swap,0.5,0.5
+YES,Model X,2,34014101,Tire Set - Vehicle - Swap (Not Already Built),Remove and Install,1.38,1.38
+YES,Model X,2,34015032,Cap - Wheel - Set (Remove & Replace),Remove and Replace,0.05,0.05
+YES,Model X,2,34015202,Wheel - Rear - LH (Remove & Replace),Remove and Replace,0.36,0.36
+YES,Model X,2,34015222,Cap - Wheel - Rear - LH (Remove & Replace),Remove and Replace,0.06,0.06
+YES,Model X,2,34015302,Wheel - Rear - RH (Remove & Replace),Remove and Replace,0.36,0.36
+YES,Model X,2,34015322,Cap - Wheel - Rear - RH (Remove & Replace),Remove and Replace,0.06,0.06
+YES,Model X,2,34020010,Mobile Tire Service Performed,Modify,0.0,0.0
+YES,Model X,2,34020030,Mobile Tire Service Performed – Logistics,Tire Repair,0.0,0.0
+YES,Model X,2,34020305,Tires - All Four (Balance),Rebalance,0.6,0.6
+YES,Model X,2,34020900,Check and Adjust Tire Pressure,Test/Adjust,0.05,0.05
+YES,Model X,2,34021202,Tire - Rear - LH (Remove & Replace),Tire Purchase,0.35,0.35
+YES,Model X,2,34021302,Tire - Rear - RH (Remove & Replace),Tire Purchase,0.35,0.35
+YES,Model X,2,34021605,Tires - Rear - Set,Tire Purchase,0.7,0.7
+YES,Model X,2,34021805,Tires - Vehicle - Set,Tire Purchase,1.15,1.15
+YES,Model X,2,34022015,Tire - Supplemental (Rebalance),Maintenance,0.18,0.18
+YES,Model X,2,34022205,Tire - Rear - LH (Road Force) (Balance),Tire Repair,0.2,0.2
+YES,Model X,2,34022225,Tire - Rear - LH (Balance),Rebalance,0.2,0.2
+YES,Model X,2,34022305,Tire - Rear - RH (Road Force) (Balance),Tire Repair,0.2,0.2
+YES,Model X,2,34022325,Tire - Rear - RH (Balance),Rebalance,0.2,0.2
+YES,Model X,2,34023208,Tire - Rear - LH (Repair),Tire Repair,0.72,0.72
+YES,Model X,2,34023308,Tire - Rear - RH (Repair),Tire Repair,0.72,0.72
+YES,Model X,2,44000204,HVIL Diagnostics,Diagnosis Only,1.0,1.0
+YES,Model X,2,44013205,Charge Port - Manual Release of Cable,Maintenance,0.18,0.18
+YES,Model X,2,46010100004,Diagnosis: Coolant Leak,General Diagnosis,0.5,0.5
+YES,Model X,2,50010003,Firmware Update - Mobile Connector,Module Reset/Reflashed,0.1,0.1
+YES,Model X,2,50010102,Mobile Connector - UMC (Remove & Replace),Remove and Replace,0.0,0.0
+YES,Model X,2,50022002,Handle and Cable Assembly - 80A Wall Connector (Remove & Replace),Remove and Replace,0.48,0.48
+YES,Model X,2,50024002,Handle and Cable Assembly - 40A Wall Connector (Remove & Replace),Remove and Replace,0.48,0.48
+YES,Model X,2,61013108,Equip Tire Repair Kit,General diagnosis conclusion,0.0,0.0
+YES,Model X,2,7000005,Mobile Tire Dispatch Fee,Fee,0.01,0.01
+YES,Model X,2,70000105,Third Party Transport,Sublet,1.2,1.2
+YES,Model X,2,7000030,Parts Not Available - Add to future service visit. ,General diagnosis conclusion,0.0,0.0
+YES,Model X,2,70000305,Miscellaneous Labor,Fee,0.0,0.0
+YES,Model X,2,70002005,Non-Tesla (Rental),Sublet,0.0,0.0
+YES,Model X,2,70003805,Tesla Airport Service,Fee,1.2,1.2
+YES,Model X,2,7000405,Vehicle Storage,Fee,0.0,0.0
+YES,Model X,2,70004205,No Labor Performed - Unable to Perform via Mobile Service,General diagnosis conclusion,0.0,0.0
+YES,Model X,2,70004505,No Labor Performed - Part Replaced,Repair,0.0,0.0
+YES,Model X,2,70005700,Scrap Part Sale Over the Counter,Test/Adjust,0.0,0.0
+YES,Model X,2,70005805,Payment Collection Required,Fee,1.2,1.2
+YES,Model X,2,70008009,Additional Work Required - Corrosion Present,Maintenance,0.5,0.5
+YES,Model X,2,70020305,Upholstery - Sublet,Sublet,0.0,0.0
+YES,Model X,2,70020805,Glass Repair / Replacement  - Sublet,Sublet,0.0,0.0
+YES,Model X,2,70060005,Thread Repair,Maintenance,0.0,0.0
+YES,Model X,2,7007300,Other – Sublet,Sublet,0.0,0.0
+YES,Model X,2,7100001,NO LABOR PERFORMED,Repair,0.0,0.0
+YES,Model X,2,72000005,Loaner Fee,Fee,0.0,0.0
+YES,Model X,2,91000004,On Site – Education,Customer Education,0.0,0.0
+YES,Model X,2,91020105,Car Wash (Hand Wash),Detail Work,0.25,0.25
+YES,Model X,2,91020115,Car Wash (Mechanical Wash),Maintenance,0.24,0.24
+YES,Model X,2,91022005,Charge Vehicle,Restore,0.0,0.0
+YES,Model X,2,91022407,Vehicle Configuration Update,Program,0.05,0.05
+YES,Model X,2,91029006,Mobile Service Hub Repair,Retrofit,0.0,0.0
+YES,Cybertruck,103,00000010,Remote – Education,Over The Air,0.0,0.0
+YES,Cybertruck,103,00004107,Alert Diagnosis - Repair,General diagnosis conclusion,0.06,0.06
+YES,Cybertruck,103,00004108,Alert Diagnosis (Repair) - Create New Service Activity for Repair,Test/Adjust,0.06,0.06
+YES,Cybertruck,103,00005914,Service Collision Estimate,Inspection,0.0,0.0
+YES,Cybertruck,103,00020003,Software Update,Over The Air,0.06,0.06
+YES,Cybertruck,103,00020007,Firmware Update - Garage,Update,0.05,0.05
+YES,Cybertruck,103,00020010,Remote – Known Characteristic of Current Firmware,Over The Air,0.25,0.25
+YES,Cybertruck,103,00020020,Remote – Over the Air Update,Over The Air,0.25,0.25
+YES,Cybertruck,103,00022008,User Data (Factory Reset),Restore,0.05,0.05
+YES,Cybertruck,103,00023003,Clear Filesystem Caches,Module Reset/Reflashed,0.05,0.05
+YES,Cybertruck,103,00030100,PDI (Without Test Drive),Inspection,0.0,0.0
+YES,Cybertruck,103,00030410,Vehicle Health Check,Inspection,1.62,1.62
+YES,Cybertruck,103,00032201,Loaner Registration Confirmation,Inspection,0.2,0.2
+YES,Cybertruck,103,00040100,Perform Post-Repair Validation Test Drive,Test/Adjust,0.3,0.3
+YES,Cybertruck,103,00100004,General Diagnosis,General Diagnosis,0.5,0.5
+YES,Cybertruck,103,00100014,Diagnosis: Unable to Replicate Concern,General diagnosis conclusion,0.0,0.0
+YES,Cybertruck,103,00100024,Remote Diagnosis,Remote Diagnostics,0.3,0.3
+YES,Cybertruck,103,10000004,Adjustment: Body / Closure Components,Test/Adjust,0.0,0.0
+YES,Cybertruck,103,10010008,Tesla Body Repair - Miscellaneous Labor,Body Shop,0.0,0.0
+YES,Cybertruck,103,10010011,Tesla Body Repair - Structural,Body Shop,0.0,0.0
+YES,Cybertruck,103,10010012,Tesla Body Structural - Sheet Metal Quotation,Test/Adjust,1.2,1.2
+YES,Cybertruck,103,10010014,Tesla Body Structural - Sheet Metal Repair,Restore,1.0,1.0
+YES,Cybertruck,103,10010015,Tesla Body Structural--Reassemble Parts,Test/Adjust,1.0,1.0
+YES,Cybertruck,103,10100008,Tesla Body Repair - Mechanical Labor,Body Shop,0.0,0.0
+YES,Cybertruck,103,10108608,Tesla Body Repair - Body Labor,Body Shop,0.0,0.0
+YES,Cybertruck,103,10108808,Tesla Body Repair - Sublet,Body Shop,0.0,0.0
+YES,Cybertruck,103,10109008,Structural Body Repair,Repair,0.0,0.0
+YES,Cybertruck,103,10109108,Non-Structural Body Repair,Restore,0.0,0.0
+YES,Cybertruck,103,10182019,Customer Generated Quote - Issue (Transaction) Resolved - Bound,General diagnosis conclusion,0.0,0.0
+YES,Cybertruck,103,1027521,Assistance with Refund of Reservation,Test/Adjust,0.0,0.0
+YES,Cybertruck,103,11700004,Adjustment: Seal,Test/Adjust,0.2,0.2
+YES,Cybertruck,103,12000004,Adjustment: Exterior Trim,Test/Adjust,0.0,0.0
+YES,Cybertruck,103,12208583,Mud Flaps (PDI Retrofit),Retrofit,0.0,0.0
+YES,Cybertruck,103,12302302,Ball Neck - Trailer Hitch (Remove & Replace),Remove and Replace,0.12,0.12
+YES,Cybertruck,103,13000004,Diagnosis: Seats,Test/Adjust,0.5,0.5
+YES,Cybertruck,103,14050002,USB Drive,Remove and Replace,0.06,0.06
+YES,Cybertruck,103,15130004,Diagnosis: Closures,General Diagnosis,0.65,0.65
+YES,Cybertruck,103,16010201,HV Battery (AWD),Remove and Install,6.55,6.55
+YES,Cybertruck,103,16010202,HV Battery (AWD),Remove and Replace,8.3,8.3
+YES,Cybertruck,103,16015300,Discharge HV Battery (At Pack Contactors),Test/Adjust,1.02,1.02
+YES,Cybertruck,103,16102100,HV Battery Air Leak Test,Test/Adjust,0.66,0.66
+YES,Cybertruck,103,16300100,Resistance Meter (Zero Adjust),Test/Adjust,0.05,0.05
+YES,Cybertruck,103,17000004,Diagnosis: Driver Assistance,General Diagnosis,0.5,0.5
+YES,Cybertruck,103,17000008,Jumpstart Vehicle (Restore),Restore,0.6,0.6
+YES,Cybertruck,103,17010000,Vehicle HV Disablement Procedure,Test/Adjust,0.36,0.36
+YES,Cybertruck,103,17100008,Harness Connector - Reconnect,Restore,0.1,0.1
+YES,Cybertruck,103,17105006,Wire - Electrical Harness (Overlay),Retrofit,0.0,0.0
+YES,Cybertruck,103,17108100,Diagnosis: Low Voltage Distribution and Controllers,General Diagnosis,1.0,1.0
+YES,Cybertruck,103,17400150,Headlights - Adjust - NA (Tool Method),Test/Adjust,0.66,0.66
+YES,Cybertruck,103,18300900,Thermal System Test,Test/Adjust,0.1,0.1
+YES,Cybertruck,103,18301000,Clean Radiator (Heat Pump),Maintenance,1.38,1.38
+YES,Cybertruck,103,19010100825,Remove Vehicle Label (No Anti-Tamper Residue),Removal,0.06,0.06
+YES,Cybertruck,103,19010100902,Vehicle Emission Control Label,Remove and Replace,0.06,0.06
+YES,Cybertruck,103,19010100925,Remove Vehicle Label and Anti-Tamper Residue,Removal,0.12,0.12
+YES,Cybertruck,103,19010101002,Battery Chemistry Label,Remove and Replace,0.06,0.06
+YES,Cybertruck,103,19010101102,Monroney Label,Remove and Replace,0.06,0.06
+YES,Cybertruck,103,19010202,Labels - Any (Remove & Replace),Remove and Replace,0.29,0.29
+YES,Cybertruck,103,21051000,Update Display Avatar,Test/Adjust,0.12,0.12
+YES,Cybertruck,103,31002300,Four Wheel Alignment Check and Adjust,Test/Adjust,1.2,1.2
+YES,Cybertruck,103,31039000,Suspension - Rear (Check Torque),Test/Adjust,0.36,0.36
+YES,Cybertruck,103,34010105,Tire Rotation,Maintenance,0.6,0.6
+YES,Cybertruck,103,34011302,Lug Nuts - Vehicle Set (Remove & Replace),Remove and Replace,0.48,0.48
+YES,Cybertruck,103,34012902,Wheels - Set (Remove and Replace),Remove and Replace,1.32,1.32
+YES,Cybertruck,103,34014005,Seasonal Wheel and Tire Set Swap (Already Built),Seasonal Swap,0.5,0.5
+YES,Cybertruck,103,34014101,Tire Set - Vehicle - Swap  (Not Already Built),Remove and Install,1.56,1.56
+YES,Cybertruck,103,34015032,Cap - Wheel - Set (Remove & Replace),Remove and Replace,0.05,0.05
+YES,Cybertruck,103,34015202,Wheel - Rear - LH (Remove & Replace),Remove and Replace,0.36,0.36
+YES,Cybertruck,103,34015221,Wheel Cover - Rear - LH,Remove and Install,0.05,0.05
+YES,Cybertruck,103,34015222,Wheel Cover - Rear - LH,Remove and Replace,0.06,0.06
+YES,Cybertruck,103,34015302,Wheel - Rear - RH (Remove & Replace),Remove and Replace,0.36,0.36
+YES,Cybertruck,103,34015321,Wheel Cover - Rear - RH,Remove and Install,0.05,0.05
+YES,Cybertruck,103,34015322,Wheel Cover - Rear - RH,Remove and Replace,0.06,0.06
+YES,Cybertruck,103,34020010,Mobile Tire Service Performed,Modify,0.0,0.0
+YES,Cybertruck,103,34020030,Mobile Tire Service Performed – Logistics,Tire Repair,0.0,0.0
+YES,Cybertruck,103,34020305,Rebalance 4 Tires,Rebalance,0.9,0.9
+YES,Cybertruck,103,34020900,Check and Adjust Tire Pressure,Test/Adjust,0.1,0.1
+YES,Cybertruck,103,34021202,Tire - Rear - LH (Remove & Replace),Tire Purchase,0.35,0.35
+YES,Cybertruck,103,34021302,Tire - Rear - RH (Remove & Replace),Tire Purchase,0.35,0.35
+YES,Cybertruck,103,34021605,Tires - Rear - Set,Tire Purchase,0.7,0.7
+YES,Cybertruck,103,34021805,Tires - Vehicle - Set,Tire Purchase,1.15,1.15
+YES,Cybertruck,103,34022015,Tire - Supplemental (Rebalance),Maintenance,0.18,0.18
+YES,Cybertruck,103,34022205,Tire - Rear - LH (Road Force) (Balance),Tire Repair,0.2,0.2
+YES,Cybertruck,103,34022225,Tire - Rear - LH (Balance),Rebalance,0.3,0.3
+YES,Cybertruck,103,34022305,Tire - Rear - RH (Road Force) (Balance),Tire Repair,0.2,0.2
+YES,Cybertruck,103,34022325,Tire - Rear - RH (Balance),Rebalance,0.3,0.3
+YES,Cybertruck,103,34023208,Tire - Rear - LH (Repair),Tire Repair,0.66,0.66
+YES,Cybertruck,103,34023308,Tire - Rear - RH (Repair),Tire Repair,0.66,0.66
+YES,Cybertruck,103,44000204,HVIL Diagnostics,Diagnosis Only,1.0,1.0
+YES,Cybertruck,103,44013205,Charge Port - Manual Release of Cable,Maintenance,0.12,0.12
+YES,Cybertruck,103,50010003,Firmware Update - Mobile Connector,Module Reset/Reflashed,0.1,0.1
+YES,Cybertruck,103,50010102,Mobile Connector - UMC (Remove & Replace),Remove and Replace,0.0,0.0
+YES,Cybertruck,103,50022002,Handle and Cable Assembly - 80A Wall Connector (Remove & Replace),Remove and Replace,0.58,0.58
+YES,Cybertruck,103,50024002,Handle and Cable Assembly - 40A Wall Connector (Remove & Replace),Remove and Replace,0.58,0.58
+YES,Cybertruck,103,61013108,Equip Tire Repair Kit,General diagnosis conclusion,0.0,0.0
+YES,Cybertruck,103,7000005,Mobile Tire Dispatch Fee,Fee,0.01,0.01
+YES,Cybertruck,103,70000105,Third Party Transport,Sublet,1.2,1.2
+YES,Cybertruck,103,7000030,Parts Not Available - Add to future service visit. ,General diagnosis conclusion,0.0,0.0
+YES,Cybertruck,103,70000305,Miscellaneous Labor,Fee,0.0,0.0
+YES,Cybertruck,103,70002005,Non-Tesla (Rental),Sublet,0.0,0.0
+YES,Cybertruck,103,70003805,Tesla Airport Service,Fee,1.2,1.2
+YES,Cybertruck,103,7000405,Vehicle Storage,Fee,0.0,0.0
+YES,Cybertruck,103,70004205,No Labor Performed - Unable to Perform via Mobile Service,General diagnosis conclusion,0.0,0.0
+YES,Cybertruck,103,70004505,No Labor Performed - Part Replaced,Repair,0.0,0.0
+YES,Cybertruck,103,70005700,Scrap Part Sale Over the Counter,Test/Adjust,0.0,0.0
+YES,Cybertruck,103,70005805,Payment Collection Required,Fee,1.2,1.2
+YES,Cybertruck,103,70008009,Additional Work Required - Corrosion Present,Maintenance,0.5,0.5
+YES,Cybertruck,103,70020305,Upholstery - Sublet,Sublet,0.0,0.0
+YES,Cybertruck,103,70020805,Glass Repair / Replacement  - Sublet,Sublet,0.0,0.0
+YES,Cybertruck,103,70060005,Thread Repair,Maintenance,0.0,0.0
+YES,Cybertruck,103,7007300,Other – Sublet,Sublet,0.0,0.0
+YES,Cybertruck,103,7100001,NO LABOR PERFORMED,Repair,0.0,0.0
+YES,Cybertruck,103,72000005,Loaner Fee,Fee,0.0,0.0
+YES,Cybertruck,103,91000004,On Site – Education,Customer Education,0.0,0.0
+YES,Cybertruck,103,91020105,Car Wash (Hand Wash),Detail Work,0.25,0.25
+YES,Cybertruck,103,91020115,Car Wash (Mechanical Wash),Maintenance,0.24,0.24
+YES,Cybertruck,103,91022005,Charge Vehicle,Restore,0.0,0.0
+YES,Cybertruck,103,91022407,Vehicle Configuration Update,Program,0.05,0.05
+YES,Cybertruck,103,91029006,Mobile Service Hub Repair,Retrofit,0.0,0.0
+YES,Model Y,36,00000010,Remote – Education,Over The Air,0.0,0.0
+YES,Model Y,36,00004107,Alert Diagnosis - Repair,General diagnosis conclusion,0.06,0.06
+YES,Model Y,36,00004108,Alert Diagnosis (Repair) - Create New Service Activity for Repair,Test/Adjust,0.06,0.06
+YES,Model Y,36,00005914,Service Collision Estimate,Inspection,0.0,0.0
+YES,Model Y,36,00020003,Software Update,Over The Air,0.06,0.06
+YES,Model Y,36,00020007,Firmware Update - Garage,Update,0.05,0.05
+YES,Model Y,36,00020010,Remote – Known Characteristic Of Current Firmware,Over The Air,0.25,0.25
+YES,Model Y,36,00020020,Remote – Over The Air Update,Over The Air,0.0,0.0
+YES,Model Y,36,00022008,User Data (Factory Reset),Restore,0.05,0.05
+YES,Model Y,36,00023003,Clear Filesystem Caches,Module Reset/Reflashed,0.05,0.05
+YES,Model Y,36,00030100,PDI (Without Test Drive),Inspection,0.0,0.0
+YES,Model Y,36,00030410,Vehicle Health Check,Inspection,1.62,1.62
+YES,Model Y,36,00032201,Loaner Registration Confirmation,Inspection,0.2,0.2
+YES,Model Y,36,00040100,Perform Post-Repair Validation Test Drive,Test/Adjust,0.3,0.3
+YES,Model Y,36,00100004,General Diagnosis,General Diagnosis,0.5,0.5
+YES,Model Y,36,00100014,Diagnosis: Unable to Replicate Concern,General diagnosis conclusion,0.0,0.0
+YES,Model Y,36,00100024,Remote Diagnosis,Remote Diagnostics,0.0,0.0
+YES,Model Y,36,10000004,Adjustment: Body / Closure Components,Test/Adjust,0.4,0.4
+YES,Model Y,36,10010008,Tesla Body Repair - Miscellaneous Labor,Body Shop,0.0,0.0
+YES,Model Y,36,10010011,Tesla Body Repair - Structural,Body Shop,0.0,0.0
+YES,Model Y,36,10010012,Tesla Body Structural--Sheet Metal Quotation,Test/Adjust,0.6,0.6
+YES,Model Y,36,10010014,Tesla Body Structural--Sheet Metal Repair,Restore,0.0,0.0
+YES,Model Y,36,10010015,Tesla Body Structural--Reassemble Parts,Test/Adjust,1.0,1.0
+YES,Model Y,36,10100008,Tesla Body Repair - Mechanical Labor,Body Shop,0.0,0.0
+YES,Model Y,36,10108608,Tesla Body Repair - Body Labor,Body Shop,0.0,0.0
+YES,Model Y,36,10108808,Tesla Body Repair - Sublet,Body Shop,0.0,0.0
+YES,Model Y,36,10109008,Structural Body Repair,Repair,0.0,0.0
+YES,Model Y,36,10109108,Non-Structural Body Repair,Restore,0.0,0.0
+YES,Model Y,36,10182019,Customer Generated Quote - Issue (Transaction) Resolved - Bound,General diagnosis conclusion,0.0,0.0
+YES,Model Y,36,1027521,Assistance With Refund Of Reservation,Test/Adjust,0.0,0.0
+YES,Model Y,36,11700004,Adjustment: Seal,Test/Adjust,0.2,0.2
+YES,Model Y,36,12000004,Adjustment: Exterior Trim,Test/Adjust,0.2,0.2
+YES,Model Y,36,12208583,Mud Flaps (PDI Retrofit),Retrofit,0.0,0.0
+YES,Model Y,36,12302302,Ball Neck - Trailer Hitch (Remove & Replace),Remove and Replace,0.12,0.12
+YES,Model Y,36,13000004,Diagnosis: Seats,Test/Adjust,0.5,0.5
+YES,Model Y,36,14050002,USB Drive,Remove and Replace,0.06,0.06
+YES,Model Y,36,15130004,Diagnosis: Closures,General Diagnosis,0.65,0.65
+YES,Model Y,36,16010201,HV Battery (AWD),Remove and Install,3.54,3.54
+YES,Model Y,36,16010202,HV Battery (AWD),Remove and Replace,4.92,4.92
+YES,Model Y,36,16015300,Discharge Hv Battery (At Pack Contactors),Test/Adjust,1.02,1.02
+YES,Model Y,36,16018725,Check SOC Imbalance,Inspection,0.06,0.06
+YES,Model Y,36,16102100,HV Battery Air Leak Test,Test/Adjust,0.72,0.72
+YES,Model Y,36,16300100,Resistance Meter (Zero Adjust),Test/Adjust,0.05,0.05
+YES,Model Y,36,17000004,Diagnosis: Driver Assistance,General Diagnosis,0.5,0.5
+YES,Model Y,36,17000008,Jumpstart Vehicle (Restore),Restore,0.12,0.12
+YES,Model Y,36,17010000,Vehicle HV Disablement Procedure,Test/Adjust,0.36,0.36
+YES,Model Y,36,17100008,Harness Connector - Reconnect,Restore,0.1,0.1
+YES,Model Y,36,17108100,Diagnosis: Low Voltage Distribution and Controllers,General Diagnosis,1.0,1.0
+YES,Model Y,36,17400150,SAE Headlamps - Adjust (Tool Method),Test/Adjust,0.24,0.24
+YES,Model Y,36,18300900,Thermal System Test,Test/Adjust,0.1,0.1
+YES,Model Y,36,18301000,Clean Radiator,Maintenance,0.96,0.96
+YES,Model Y,36,19010100825,Remove Vehicle Label (No Anti-Tamper Residue),Removal,0.06,0.06
+YES,Model Y,36,19010100902,Vehicle Emission Control Label,Remove and Replace,0.06,0.06
+YES,Model Y,36,19010100925,Remove Vehicle Label and Anti-Tamper Residue,Removal,0.12,0.12
+YES,Model Y,36,19010101002,Battery Chemistry Label,Remove and Replace,0.06,0.06
+YES,Model Y,36,19010101102,Monroney Label,Remove and Replace,0.06,0.06
+YES,Model Y,36,19010202,Labels - Any,Remove and Replace,0.0,0.0
+YES,Model Y,36,21051000,Update Display Avatar,Test/Adjust,0.0,0.0
+YES,Model Y,36,31002300,Four Wheel Alignment Check And Adjust,Test/Adjust,0.9,0.9
+YES,Model Y,36,31039000,Suspension - Rear - Check Torque,Test/Adjust,0.9,0.9
+YES,Model Y,36,34010105,Tire Rotation,Maintenance,0.3,0.3
+YES,Model Y,36,34011302,Lug Nuts - Vehicle Set,Remove and Replace,0.36,0.36
+YES,Model Y,36,34012501,Wheels - Vehicle - Set,Remove and Install,0.42,0.42
+YES,Model Y,36,34012902,Wheels - Set (Remove and Replace),Remove and Replace,1.02,1.02
+YES,Model Y,36,34014005,Seasonal Wheel and Tire Set Swap (Already Built),Seasonal Swap,0.5,0.5
+YES,Model Y,36,34014101,Tire Set - Vehicle - Swap  (Not Already Built),Remove and Install,1.38,1.38
+YES,Model Y,36,34014505,Accessory Wheel/Tire Package Assembly,Tire Purchase,1.08,1.08
+YES,Model Y,36,34015032,Cap - Wheel - Set (Remove & Replace),Remove and Replace,0.05,0.05
+YES,Model Y,36,34015201,Wheel Assembly - Rear - LH,Remove and Install,0.18,0.18
+YES,Model Y,36,34015202,Wheel - Rear - LH,Remove and Replace,0.36,0.36
+YES,Model Y,36,34015222,Cap - Wheel - Rear - LH,Remove and Replace,0.06,0.06
+YES,Model Y,36,34015301,Wheel Assembly - Rear - RH,Remove and Install,0.18,0.18
+YES,Model Y,36,34015302,Wheel - Rear - RH,Remove and Replace,0.36,0.36
+YES,Model Y,36,34015322,Cap - Wheel - Rear - RH,Remove and Replace,0.06,0.06
+YES,Model Y,36,34020010,Mobile Tire Service Performed,Modify,0.0,0.0
+YES,Model Y,36,34020030,Mobile Tire Service Performed – Logistics,Tire Repair,0.0,0.0
+YES,Model Y,36,34020305,Tires - All Four (Balance),Rebalance,0.6,0.6
+YES,Model Y,36,34020900,Check And Adjust Tire Pressure,Test/Adjust,0.05,0.05
+YES,Model Y,36,34021201,Tire - Rear - LH,Remove and Install,0.3,0.3
+YES,Model Y,36,34021202,Tire - Rear - LH,Tire Purchase,0.35,0.35
+YES,Model Y,36,34021302,Tire - Rear - RH,Tire Purchase,0.35,0.35
+YES,Model Y,36,34021605,Tires - Rear - Set,Tire Purchase,0.7,0.7
+YES,Model Y,36,34021805,Tires - Vehicle - Set,Tire Purchase,1.15,1.15
+YES,Model Y,36,34022015,Tire - Supplemental (Rebalance),Maintenance,0.0,0.0
+YES,Model Y,36,34022205,Tire - Rear - LH (Road Force Balance) (Add-On),Tire Repair,0.2,0.2
+YES,Model Y,36,34022225,Tire - Rear - LH (Balance),Rebalance,0.2,0.2
+YES,Model Y,36,34022305,Tire - Rear - RH (Road Force Balance) (Add-On),Tire Repair,0.2,0.2
+YES,Model Y,36,34022325,Tire - Rear - RH (Balance),Rebalance,0.2,0.2
+YES,Model Y,36,34023208,Tire - Rear - LH (Repair),Tire Repair,0.72,0.72
+YES,Model Y,36,34023308,Tire - Rear - RH (Repair),Tire Repair,0.72,0.72
+YES,Model Y,36,44000204,HVIL Diagnostics,Diagnosis Only,1.0,1.0
+YES,Model Y,36,44013205,Charge Port - Manual Release of Cable,Maintenance,0.06,0.06
+YES,Model Y,36,46010100004,Diagnosis: Coolant Leak,General Diagnosis,0.5,0.5
+YES,Model Y,36,50010102,Mobile Connector - UMC,Remove and Replace,0.0,0.0
+YES,Model Y,36,50022002,Handle And Cable Assembly - 80A Wall Connector,Remove and Replace,0.0,0.0
+YES,Model Y,36,50024002,Handle And Cable Assembly - 40A Wall Connector,Remove and Replace,0.0,0.0
+YES,Model Y,36,7000005,Mobile Tire Dispatch Fee,Fee,0.01,0.01
+YES,Model Y,36,70000105,Third Party Transport,Sublet,0.0,0.0
+YES,Model Y,36,7000030,Parts Not Available - Add To Future Service Visit.,General diagnosis conclusion,0.0,0.0
+YES,Model Y,36,70000305,Miscellaneous Labor,Fee,0.0,0.0
+YES,Model Y,36,70002005,Non-Tesla (Rental),Sublet,0.0,0.0
+YES,Model Y,36,70003805,Tesla Airport Service,Fee,0.0,0.0
+YES,Model Y,36,7000405,Vehicle Storage,Fee,0.0,0.0
+YES,Model Y,36,70004205,No Labor Performed - Unable to Perform via Mobile Service,General diagnosis conclusion,0.0,0.0
+YES,Model Y,36,70004505,No Labor Performed - Part Replaced,Repair,0.0,0.0
+YES,Model Y,36,70005700,Scrap Part Sale Over The Counter,Test/Adjust,0.0,0.0
+YES,Model Y,36,70005805,Payment Collection Required,Fee,0.0,0.0
+YES,Model Y,36,70008009,Additional Work Required - Corrosion Present,Maintenance,0.5,0.5
+YES,Model Y,36,70020305,Upholstery - Sublet,Sublet,0.0,0.0
+YES,Model Y,36,70020805,Glass Repair / Replacement  - Sublet,Sublet,0.0,0.0
+YES,Model Y,36,70060005,Thread Repair,Maintenance,0.0,0.0
+YES,Model Y,36,7007300,Other – Sublet,Sublet,0.0,0.0
+YES,Model Y,36,7100001,No Labor Performed,Repair,0.0,0.0
+YES,Model Y,36,72000005,Loaner Fee,Fee,0.0,0.0
+YES,Model Y,36,91000004,On Site – Education,Customer Education,0.0,0.0
+YES,Model Y,36,91020105,Car Wash (Hand Wash),Detail Work,0.25,0.25
+YES,Model Y,36,91020115,Car Wash (Mechanical Wash),Maintenance,0.0,0.0
+YES,Model Y,36,91022005,Charge Vehicle,Restore,0.0,0.0
+YES,Model Y,36,91022407,Vehicle Configuration Update,Program,0.05,0.05
+YES,Model Y,36,91029006,Mobile Service Hub Repair,Retrofit,0.0,0.0
+YES,Model Y,17,00000010,Remote – Education,Over The Air,0.0,0.0
+YES,Model Y,17,00004107,Alert Diagnosis - Repair,General diagnosis conclusion,0.06,0.06
+YES,Model Y,17,00004108,Alert Diagnosis (Repair) - Create New Service Activity for Repair,Test/Adjust,0.06,0.06
+YES,Model Y,17,00005914,Service Collision Estimate,Inspection,0.0,0.0
+YES,Model Y,17,00020003,Software Update,Over The Air,0.06,0.06
+YES,Model Y,17,00020007,Firmware Update - Garage,Update,0.05,0.05
+YES,Model Y,17,00020010,Remote – Known Characteristic of Current Firmware,Over The Air,0.25,0.25
+YES,Model Y,17,00020020,Remote – Over the Air Update,Over The Air,0.25,0.25
+YES,Model Y,17,00022008,User Data (Factory Reset),Restore,0.05,0.05
+YES,Model Y,17,00023003,Clear Filesystem Caches,Module Reset/Reflashed,0.05,0.05
+YES,Model Y,17,00030100,PDI (Without Test Drive),Inspection,0.12,0.12
+YES,Model Y,17,00030410,Vehicle Health Check,Inspection,1.62,1.62
+YES,Model Y,17,00032201,Loaner Registration Confirmation,Inspection,0.2,0.2
+YES,Model Y,17,00040100,Perform Post-Repair Validation Test Drive,Test/Adjust,0.3,0.3
+YES,Model Y,17,00100004,General Diagnosis,General Diagnosis,0.5,0.5
+YES,Model Y,17,00100014,Diagnosis: Unable to Replicate Concern,General diagnosis conclusion,0.0,0.0
+YES,Model Y,17,00100024,Remote Diagnosis,Remote Diagnostics,0.3,0.3
+YES,Model Y,17,10000004,Adjustment: Body / Closure Components,Test/Adjust,0.4,0.4
+YES,Model Y,17,10010008,Tesla Body Repair - Miscellaneous Labor,Body Shop,0.0,0.0
+YES,Model Y,17,10010011,Tesla Body Repair - Structural,Body Shop,0.0,0.0
+YES,Model Y,17,10010012,Tesla Body Structural - Sheet Metal Quotation,Test/Adjust,0.6,0.6
+YES,Model Y,17,10010014,Tesla Body Structural - Sheet Metal Repair,Restore,1.0,1.0
+YES,Model Y,17,10010015,Tesla Body Structural - Reassemble Parts,Test/Adjust,1.0,1.0
+YES,Model Y,17,10100008,Tesla Body Repair - Mechanical Labor,Body Shop,0.0,0.0
+YES,Model Y,17,10108608,Tesla Body Repair - Body Labor,Body Shop,0.0,0.0
+YES,Model Y,17,10108808,Tesla Body Repair - Sublet,Body Shop,0.0,0.0
+YES,Model Y,17,10109008,Structural Body Repair,Repair,0.0,0.0
+YES,Model Y,17,10109108,Non-Structural Body Repair,Restore,0.0,0.0
+YES,Model Y,17,10182019,Customer Generated Quote - Issue (Transaction) Resolved - Bound,General diagnosis conclusion,0.0,0.0
+YES,Model Y,17,1027521,Assistance with Refund of Reservation,Test/Adjust,0.0,0.0
+YES,Model Y,17,11700004,Adjustment: Seal,Test/Adjust,0.2,0.2
+YES,Model Y,17,12000004,Adjustment: Exterior Trim,Test/Adjust,0.2,0.2
+YES,Model Y,17,12208583,Mud Flaps (PDI Retrofit),Retrofit,0.0,0.0
+YES,Model Y,17,12302302,Ball Neck - Trailer Hitch (Remove and Replace),Remove and Replace,0.12,0.12
+YES,Model Y,17,13000004,Diagnosis: Seats,Test/Adjust,0.5,0.5
+YES,Model Y,17,14050002,USB Drive,Remove and Replace,0.06,0.06
+YES,Model Y,17,15130004,Diagnosis: Closures,General Diagnosis,0.65,0.65
+YES,Model Y,17,16010201,HV Battery (AWD) (Non-Structural Pack),Remove and Install,3.6,3.6
+YES,Model Y,17,16010202,HV Battery (AWD) (Non-Structural Pack),Remove and Replace,5.4,5.4
+YES,Model Y,17,16015300,Discharge HV Battery (At Pack Contactors),Test/Adjust,1.02,1.02
+YES,Model Y,17,16102100,HV Battery Air Leak Test (Non-Structural Pack),Test/Adjust,0.6,0.6
+YES,Model Y,17,16300100,Resistance Meter (Zero Adjust),Test/Adjust,0.05,0.05
+YES,Model Y,17,17000004,Diagnosis: Driver Assistance,General Diagnosis,0.5,0.5
+YES,Model Y,17,17000008,Jumpstart Vehicle (Restore),Restore,0.12,0.12
+YES,Model Y,17,17010000,Vehicle HV Disablement Procedure (Non-Structural Pack),Test/Adjust,0.3,0.3
+YES,Model Y,17,17100008,Harness Connector - Reconnect,Restore,0.1,0.1
+YES,Model Y,17,17105006,Wire - Electrical Harness (Overlay),Retrofit,0.0,0.0
+YES,Model Y,17,17108100,Diagnosis: Low Voltage Distribution and Controllers,General Diagnosis,1.0,1.0
+YES,Model Y,17,17400150,Headlights - Adjust - NA (Tool Method),Test/Adjust,0.18,0.18
+YES,Model Y,17,18300900,Thermal System Test,Test/Adjust,0.1,0.1
+YES,Model Y,17,18301000,Clean Radiator (Heat Pump),Maintenance,1.02,1.02
+YES,Model Y,17,19010100825,Remove Vehicle Label (No Anti-Tamper Residue),Removal,0.06,0.06
+YES,Model Y,17,19010100902,Vehicle Emission Control Label,Remove and Replace,0.06,0.06
+YES,Model Y,17,19010100925,Remove Vehicle Label and Anti-Tamper Residue,Removal,0.12,0.12
+YES,Model Y,17,19010101002,Battery Chemistry Label,Remove and Replace,0.06,0.06
+YES,Model Y,17,19010101102,Monroney Label,Remove and Replace,0.06,0.06
+YES,Model Y,17,19010202,Labels - Any (Remove & Replace),Remove and Replace,0.12,0.12
+YES,Model Y,17,21051000,Update Display Avatar,Test/Adjust,0.12,0.12
+YES,Model Y,17,31002300,Four Wheel Alignment Check and Adjust,Test/Adjust,0.9,0.9
+YES,Model Y,17,31039000,Suspension - Rear (Check Torque),Test/Adjust,0.36,0.36
+YES,Model Y,17,34010105,Tire Rotation,Maintenance,0.3,0.3
+YES,Model Y,17,34011302,Lug Nuts - Vehicle Set (Remove & Replace),Remove and Replace,0.36,0.36
+YES,Model Y,17,34012902,Wheels - Set (Remove and Replace),Remove and Replace,1.56,1.56
+YES,Model Y,17,34014005,Seasonal Wheel and Tire Set Swap (Already Built),Seasonal Swap,0.5,0.5
+YES,Model Y,17,34014101,Tire Set - Vehicle - Swap (Not Already Built),Remove and Install,1.38,1.38
+YES,Model Y,17,34015032,Cap - Wheel - Set (Remove & Replace),Remove and Replace,0.05,0.05
+YES,Model Y,17,34015202,Wheel - Rear - LH (Remove & Replace),Remove and Replace,0.36,0.36
+YES,Model Y,17,34015222,Cover - Wheel - Rear - LH (Remove & Replace),Remove and Replace,0.06,0.06
+YES,Model Y,17,34015302,Wheel - Rear - RH (Remove & Replace),Remove and Replace,0.36,0.36
+YES,Model Y,17,34015322,Cover - Wheel - Rear - RH (Remove & Replace),Remove and Replace,0.06,0.06
+YES,Model Y,17,34020010,Mobile Tire Service Performed,Modify,0.0,0.0
+YES,Model Y,17,34020030,Mobile Tire Service Performed – Logistics,Tire Repair,0.0,0.0
+YES,Model Y,17,34020305,Tires - All Four (Balance),Rebalance,0.6,0.6
+YES,Model Y,17,34020900,Check and Adjust Tire Pressure,Test/Adjust,0.05,0.05
+YES,Model Y,17,34021202,Tire - Rear - LH (Remove & Replace),Tire Purchase,0.35,0.35
+YES,Model Y,17,34021302,Tire - Rear - RH (Remove & Replace),Tire Purchase,0.35,0.35
+YES,Model Y,17,34021605,Tires - Rear - Set,Tire Purchase,0.7,0.7
+YES,Model Y,17,34021805,Tires - Vehicle - Set,Tire Purchase,1.15,1.15
+YES,Model Y,17,34022015,Tire - Supplemental (Rebalance),Maintenance,0.18,0.18
+YES,Model Y,17,34022205,Tire - Rear - LH (Road Force) (Balance),Tire Repair,0.2,0.2
+YES,Model Y,17,34022225,Tire - Rear - LH (Balance),Rebalance,0.2,0.2
+YES,Model Y,17,34022305,Tire - Rear - RH (Road Force) (Balance),Tire Repair,0.2,0.2
+YES,Model Y,17,34022325,Tire - Rear - RH (Balance),Rebalance,0.2,0.2
+YES,Model Y,17,34023208,Tire - Rear - LH (Repair),Tire Repair,0.72,0.72
+YES,Model Y,17,34023308,Tire - Rear - RH (Repair),Tire Repair,0.72,0.72
+YES,Model Y,17,44000204,HVIL Diagnostics,Diagnosis Only,1.0,1.0
+YES,Model Y,17,44013205,Charge Port - Manual Release of Cable,Maintenance,0.18,0.18
+YES,Model Y,17,46010100004,Diagnosis: Coolant Leak,General Diagnosis,0.5,0.5
+YES,Model Y,17,50010003,Firmware Update - Mobile Connector,Module Reset/Reflashed,0.1,0.1
+YES,Model Y,17,50010102,Mobile Connector - UMC (Remove & Replace),Remove and Replace,0.0,0.0
+YES,Model Y,17,50022002,Handle and Cable Assembly - 80A Wall Connector (Remove & Replace),Remove and Replace,0.48,0.48
+YES,Model Y,17,50024002,Handle and Cable Assembly - 40A Wall Connector (Remove & Replace),Remove and Replace,0.48,0.48
+YES,Model Y,17,61013108,Equip Tire Repair Kit,General diagnosis conclusion,0.0,0.0
+YES,Model Y,17,7000005,Mobile Tire Dispatch Fee,Fee,0.01,0.01
+YES,Model Y,17,70000105,Third Party Transport,Sublet,1.2,1.2
+YES,Model Y,17,7000030,Parts Not Available - Add to future service visit. ,General diagnosis conclusion,0.0,0.0
+YES,Model Y,17,70000305,Miscellaneous Labor,Fee,0.0,0.0
+YES,Model Y,17,70002005,Non-Tesla (Rental),Sublet,0.0,0.0
+YES,Model Y,17,70003805,Tesla Airport Service,Fee,1.2,1.2
+YES,Model Y,17,7000405,Vehicle Storage,Fee,0.0,0.0
+YES,Model Y,17,70004205,No Labor Performed - Unable to Perform via Mobile Service,General diagnosis conclusion,0.0,0.0
+YES,Model Y,17,70004505,No Labor Performed - Part Replaced,Repair,0.0,0.0
+YES,Model Y,17,70005700,Scrap Part Sale Over the Counter,Test/Adjust,0.0,0.0
+YES,Model Y,17,70005805,Payment Collection Required,Fee,1.2,1.2
+YES,Model Y,17,70008009,Additional Work Required - Corrosion Present,Maintenance,0.5,0.5
+YES,Model Y,17,70020305,Upholstery - Sublet,Sublet,0.0,0.0
+YES,Model Y,17,70020805,Glass Repair / Replacement  - Sublet,Sublet,0.0,0.0
+YES,Model Y,17,70060005,Thread Repair,Maintenance,0.0,0.0
+YES,Model Y,17,7007300,Other – Sublet,Sublet,0.0,0.0
+YES,Model Y,17,7100001,NO LABOR PERFORMED,Repair,0.0,0.0
+YES,Model Y,17,72000005,Loaner Fee,Fee,0.0,0.0
+YES,Model Y,17,91000004,On Site – Education,Customer Education,0.0,0.0
+YES,Model Y,17,91020105,Car Wash (Hand Wash),Detail Work,0.25,0.25
+YES,Model Y,17,91020115,Car Wash (Mechanical Wash),Maintenance,0.24,0.24
+YES,Model Y,17,91022005,Charge Vehicle,Restore,0.0,0.0
+YES,Model Y,17,91022407,Vehicle Configuration Update,Program,0.05,0.05
+YES,Model Y,17,91029006,Mobile Service Hub Repair,Retrofit,0.0,0.0

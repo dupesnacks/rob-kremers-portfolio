@@ -1,0 +1,2489 @@
+Code,Description,Work Type,Labor Hours,FRT
+00000010,Remote – Education,Over The Air,0.0,0.0
+00000900,TEST CODE CYBERTRUCK ONLY,Test/Adjust,0.0,0.0
+00004107,Alert Diagnosis - Repair,General diagnosis conclusion,0.06,0.06
+00004108,Alert Diagnosis (Repair) - Create New Service Activity for Repair,Test/Adjust,0.06,0.06
+00005914,Service Collision Estimate,Inspection,0.0,0.0
+00006744,Engineering Vehicle in Service (Support),Maintenance,0.0,0.0
+00007192,Outside Influence or Vehicle Modified - Additional Work Required,Modify,0.0,0.0
+00008598,Tesla Body Repair - Menu Pricing,Test/Adjust,1.0,1.0
+00009186,Tesla Insurance Rental,Test/Adjust,0.0,0.0
+00020003,Software Update,Over The Air,0.06,0.06
+00020007,Firmware Update - Garage,Update,0.05,0.05
+00020008,Software Reinstall - Toolbox,Restore,0.06,0.06
+00020010,Remote – Known Characteristic of Current Firmware,Over The Air,0.25,0.25
+00020018,Software Reinstall - Touchscreen,Restore,0.05,0.05
+00020020,Remote – Over the Air Update,Over The Air,0.25,0.25
+00020104,Additional Work Required - Firmware Update/Reinstall Troubleshooting,General Diagnosis,0.0,0.0
+00022008,User Data (Factory Reset),Restore,0.05,0.05
+00023003,Clear Filesystem Caches,Module Reset/Reflashed,0.05,0.05
+00030100,PDI (Without Test Drive),Inspection,0.0,0.0
+00030101,Vehicle Receiving Inspection,Inspection,0.12,0.12
+00030300,Perform North Carolina State Inspection,Inspection,0.2,0.2
+00030400,Courtesy Inspection,Inspection,0.0,0.0
+00030410,Vehicle Health Check,Inspection,1.62,1.62
+00030700,Perform General Inspection,Inspection,0.78,0.78
+00030701,Perform General Inspection (No Issue Found),Inspection,0.5,0.5
+00030900,Perform Hawaii State Inspection,Inspection,0.75,0.75
+00031000,Perform New York State Inspection,Inspection,0.4,0.4
+00031100,Perform Missouri State Inspection,Inspection,0.4,0.4
+00031300,Vehicle Transfer Inspection,Inspection,0.1,0.1
+00031400,Out Of Province Inspection - Alberta (Inspection),Inspection,1.2,1.2
+00031500,Perform Nova Scotia Provincial Motor Vehicle Inspection,Inspection,0.5,0.5
+00031510,Perform Nova Scotia Provincial Motor Vehicle Inspection (Replacement Sticker),Inspection,0.1,0.1
+00031520,Perform Ontario Provincial Motor Vehicle Inspection,Inspection,1.0,1.0
+00032000,Used Vehicle Inspection,Inspection,0.72,0.72
+00032100,Used Vehicle Final Quality Check,Inspection,0.3,0.3
+00032200,Pre-Loaner Vehicle Inspection,Inspection,1.0,1.0
+00032201,Loaner Registration Confirmation,Inspection,0.2,0.2
+00033200,VIC Roadworthy Safety Inspection (RWC),Inspection,1.5,1.5
+00033300,New Hampshire State Inspection,Inspection,0.6,0.6
+00038000,Global Press Vehicle inspection,Inspection,6.1,6.1
+00039000,Used Vehicle Intake Inspection (UVIS Only),Inspection,0.0,0.0
+00039400,Repossessions and Recoveries Inspection,Inspection,0.5,0.5
+00040100,Perform Post-Repair Validation Test Drive,Test/Adjust,0.3,0.3
+00040900,Virginia Safety Inspection,Inspection,0.5,0.5
+00050104,Additional Work Required - ODIN Routine Troubleshooting,General Diagnosis,0.1,0.1
+00100004,General Diagnosis,General Diagnosis,0.5,0.5
+00100014,Diagnosis: Unable to Replicate Concern,General diagnosis conclusion,0.0,0.0
+00100024,Remote Diagnosis,Remote Diagnostics,0.3,0.3
+00100025,Remote Diagnosis: Customer Declined ,Remote Diagnostics,0.0,0.0
+00901320,Install Ceramic Coating,Retrofit,2.0,2.0
+10000004,Adjustment: Body / Closure Components,Test/Adjust,0.0,0.0
+10000105,Jack Mode Activation,Test/Adjust,0.06,0.06
+100002091,Auto Diagnostics,Remote Diagnostics,0.0,0.0
+10010007,Tesla Body Repair - Paint Supplies,Body Shop,0.0,0.0
+10010008,Tesla Body Repair - Miscellaneous Labor,Body Shop,0.0,0.0
+10010009,Storage Fees,Body Shop,1.0,1.0
+10010010,Tesla Body Repair - Frame Labor,Body Shop,0.0,0.0
+10010011,Tesla Body Repair - Structural,Body Shop,0.0,0.0
+10010012,Tesla Body Structural - Sheet Metal Quotation,Test/Adjust,1.2,1.2
+10010014,Tesla Body Structural - Sheet Metal Repair,Restore,1.0,1.0
+10010015,Tesla Body Structural--Reassemble Parts,Test/Adjust,1.0,1.0
+10010016,Tesla Body Repair - Aluminum Labor,Body Shop,0.0,0.0
+10010100429,Cantrail to Fender Rework,Repair,0.18,0.18
+1001045011,Front End Carrier Plastic Assembly,Remove and Install,0.48,0.48
+1001045012,Front End Carrier Plastic Assembly,Remove and Replace,0.48,0.48
+1001046011,Front Fascia Fairing Assembly - LH,Remove and Install,0.12,0.12
+1001046012,Front Fascia Fairing Assembly - LH,Remove and Replace,0.12,0.12
+1001046021,Front Fascia Fairing Assembly - RH,Remove and Install,0.12,0.12
+1001046022,Front Fascia Fairing Assembly - RH,Remove and Replace,0.12,0.12
+1001046031,Front Fascia Lower Dummy LP Cover,Remove and Install,0.06,0.06
+1001046032,Front Fascia Lower Dummy LP Cover,Remove and Replace,0.06,0.06
+1001046041,Cover - Camera - Lower - Fascia - Front   ,Remove and Install,0.06,0.06
+1001046042,Cover - Camera - Lower - Fascia - Front   ,Remove and Replace,0.06,0.06
+1001046051,Front Fascia,Remove and Install,0.42,0.42
+1001046052,Front Fascia,Remove and Replace,0.84,0.84
+1001050011,Front Energy Absorber - Front Bumper Beam Assembly,Remove and Install,1.08,1.08
+1001050012,Front Energy Absorber - Front Bumper Beam Assembly,Remove and Replace,1.08,1.08
+1001050021,Support Bracket - LH - Front Energy Absorber,Remove and Install,0.42,0.42
+1001050022,Support Bracket - LH - Front Energy Absorber,Remove and Replace,0.42,0.42
+1001050031,Support Bracket - RH - Front Energy Absorber,Remove and Install,0.42,0.42
+1001050032,Support Bracket - RH - Front Energy Absorber,Remove and Replace,0.42,0.42
+1001050041,Support Bracket - Center - Front Energy Absorber,Remove and Install,0.48,0.48
+1001050042,Support Bracket - Center - Front Energy Absorber,Remove and Replace,0.48,0.48
+1001052011,Lower Tow Eye Cap - LH - Front Grille,Remove and Install,0.06,0.06
+1001052012,Lower Tow Eye Cap - LH - Front Grille,Remove and Replace,0.06,0.06
+1001052021,Lower Tow Eye Cap - RH - Front Grille,Remove and Install,0.06,0.06
+1001052022,Lower Tow Eye Cap - RH - Front Grille,Remove and Replace,0.06,0.06
+1001052031,Front Center Applique Assembly,Remove and Install,0.12,0.12
+1001052032,Front Center Applique Assembly,Remove and Replace,0.12,0.12
+1001052041,Frunk Switch,Remove and Install,0.12,0.12
+1001052042,Frunk Switch,Remove and Replace,0.12,0.12
+1001052051,Foam Seal - Upper/Lower - Front Grille,Remove and Install,0.42,0.42
+1001052052,Foam Seal - Upper/Lower - Front Grille,Remove and Replace,0.42,0.42
+1001052061,Foam Seal - Side - Front Grille,Remove and Install,0.42,0.42
+1001052062,Foam Seal - Side - Front Grille,Remove and Replace,0.42,0.42
+1001052071,Front Lower Grille,Remove and Install,0.42,0.42
+1001052072,Front Lower Grille,Remove and Replace,0.42,0.42
+1001089011,Step Bracket Center - RH - Rear Fascia,Remove and Install,0.42,0.42
+1001089012,Step Bracket Center - RH - Rear Fascia,Remove and Replace,0.42,0.42
+1001089021,Step Bracket Center - LH - Rear Fascia,Remove and Install,0.42,0.42
+1001089022,Step Bracket Center - LH - Rear Fascia,Remove and Replace,0.42,0.42
+1001089031,Body Side Bracket - RH - Rear Fascia,Remove and Install,0.42,0.42
+1001089032,Body Side Bracket - RH - Rear Fascia,Remove and Replace,0.42,0.42
+1001089041,Body Side Bracket - LH - Rear Fascia,Remove and Install,0.42,0.42
+1001089042,Body Side Bracket - LH - Rear Fascia,Remove and Replace,0.42,0.42
+1001089051,Rear Fascia,Remove and Install,0.36,0.36
+1001089052,Rear Fascia,Remove and Replace,0.9,0.9
+1001089061,Trailer Hitch Cover,Remove and Install,0.06,0.06
+1001089062,Trailer Hitch Cover,Remove and Replace,0.06,0.06
+1001094011,Rear Energry Absorber - Center Bracket,Remove and Install,0.54,0.54
+1001094012,Rear Energry Absorber - Center Bracket,Remove and Replace,0.54,0.54
+1001094021,Rear Energry Absorber - Fascia Step Bracket - Center,Remove and Install,0.42,0.42
+1001094022,Rear Energry Absorber - Fascia Step Bracket - Center,Remove and Replace,0.42,0.42
+1001094031,Rear Energry Absorber - Cast Bumper Assembly - LH,Remove and Install,0.78,0.78
+1001094032,Rear Energry Absorber - Cast Bumper Assembly - LH,Remove and Replace,0.78,0.78
+1001094041,Rear Energry Absorber - Cast Bumper Assembly - RH,Remove and Install,0.71,0.71
+1001094042,Rear Energry Absorber - Cast Bumper Assembly - RH,Remove and Replace,0.71,0.71
+10011105701,Active Grille Shutter,Remove and Install,1.14,1.14
+10011105702,Active Grille Shutter,Remove and Replace,1.14,1.14
+10019408,Body Panel Repair/ Refinish,Refinish,0.0,0.0
+10100008,Tesla Body Repair - Mechanical Labor,Body Shop,0.0,0.0
+10100101402,ASSEMBLY - BODY SIDE COMPLETE - LEFT HAND,Remove and Replace,23.9,23.9
+10100101602,ASSEMBLY - BODY SIDE COMPLETE - RIGHT HAND,Remove and Replace,23.9,23.9
+10100101802,ASSEMBLY - FRONT QUARTER OUTER PANEL - LEFT,Remove and Replace,5.16,5.16
+10100101902,FRONT QUARTER WINDOW ASSEMBLY (OUTER) - LEFT,Remove and Replace,5.22,5.22
+10100102002,ASSEMBLY - FRONT QUARTER OUTER PANEL - RIGHT,Remove and Replace,6.1,6.1
+10100102102,FRONT QUARTER WINDOW ASSEMBLY (OUTER) - RIGHT,Remove and Replace,5.22,5.22
+10100118802,ASSEMBLY - BODY SIDE OUTER - LEFT HAND,Remove and Replace,18.05,18.05
+10100118902,ASSEMBLY - BODY SIDE OUTER - RIGHT HAND,Remove and Replace,18.05,18.05
+10100119002,ASSEMBLY - CANTRAIL STUD PLATE,Remove and Replace,0.66,0.66
+10100119102,ASSEMBLY - C-PILLAR INNER - LEFT HAND,Remove and Replace,26.45,26.45
+10100119202,ASSEMBLY - C-PILLAR INNER - RIGHT,Remove and Replace,26.45,26.45
+10100119302,ASSEMBLY - C-PILLAR LOWER NUT PLATE,Remove and Replace,0.36,0.36
+10100119402,ASSEMBLY - FRONT HEADER GUSSET - LEFT,Remove and Replace,1.32,1.32
+10100119502,ASSEMBLY - FRONT HEADER GUSSET - RIGHT,Remove and Replace,1.32,1.32
+10100119602,ASSEMBLY - FRONT QUARTER OUTER PANEL WITH GUSSET - LEFT? HAND,Remove and Replace,4.2,4.2
+10100119702,ASSEMBLY - FRONT QUARTER OUTER PANEL WITH GUSSET - RIGHT? HAND,Remove and Replace,4.2,4.2
+10100119802,ASSEMBLY - HV BATTERY SUPPORT BRACKET - LEFT HAND,Remove and Replace,5.58,5.58
+10100119902,ASSEMBLY - INSTRUMENT PANEL CROSS CAR BEAM BRACKET - LEFT,Remove and Replace,2.22,2.22
+10100120002,ASSEMBLY - INSTRUMENT PANEL CROSS CAR BEAM BRACKET - RIGHT,Remove and Replace,2.22,2.22
+10100120102,ASSEMBLY - MARRIAGE BRACKET - RIGHT,Remove and Replace,5.58,5.58
+10100120202,ASSEMBLY - POWERGATE STRUT MOUNT - LEFT HAND,Remove and Replace,0.66,0.66
+10100120302,ASSEMBLY - POWERGATE STRUT MOUNT - RIGHT,Remove and Replace,0.66,0.66
+10100120402,ASSEMBLY - SIDE SILL EXTRUSION,Remove and Replace,19.25,19.25
+10100120502,CANTRAIL TRIM BRACKET,Remove and Replace,0.6,0.6
+10100120602,PANEL - UPPER SAIL BRACKET - LEFT HAND,Remove and Replace,0.96,0.96
+10100120702,PANEL - UPPER SAIL BRACKET - RIGHT HAND,Remove and Replace,0.96,0.96
+10100120802,ROCKER SUPPORT BRACKET,Remove and Replace,1.32,1.32
+1010018011,Body Side Panels - Assembly - Front Quarter Outer Panel With Gusset - Left​,Remove and Install,0.71,0.71
+1010018012,Body Side Panels - Assembly - Front Quarter Outer Panel With Gusset - Left​,Remove and Replace,0.71,0.71
+1010018021,Body Side Panels - Assembly - Front Quarter Outer Panel With Gusset - Right​,Remove and Install,0.71,0.71
+1010018022,Body Side Panels - Assembly - Front Quarter Outer Panel With Gusset - Right​,Remove and Replace,0.71,0.71
+1010020701,Bed Side Outer Assembly - RH,Remove and Install,1.44,1.44
+1010020702,Bed Side Outer Assembly - RH,Remove and Replace,1.44,1.44
+1010025011,Tailgate Assembly ,Remove and Install,0.3,0.3
+1010025012,Tailgate Assembly,Remove and Replace,0.9,0.9
+1010025021,Door - Front - LH,Remove and Install,0.24,0.24
+1010025022,Door - Front - LH,Remove and Replace,0.9,0.9
+1010025031,Door - Front - RH,Remove and Install,0.24,0.24
+1010025032,Door - Front - RH,Remove and Replace,0.9,0.9
+1010025041,Door - Rear - LH,Remove and Install,0.24,0.24
+1010025042,Door - Rear - LH,Remove and Replace,0.9,0.9
+1010025051,Door - Rear - RH,Remove and Install,0.24,0.24
+1010025052,Door - Rear - RH,Remove and Replace,0.9,0.9
+1010025061,Trim - Cantrail - Roof Rail - LH,Remove and Install,0.66,0.66
+1010025062,Trim - Cantrail - Roof Rail - LH,Remove and Replace,0.66,0.66
+1010025071,Trim - Cantrail - Roof Rail - RH,Remove and Install,0.66,0.66
+1010025072,Trim - Cantrail - Roof Rail - RH,Remove and Replace,0.66,0.66
+1010025081,Fender Assembly - Front - LH,Remove and Install,0.66,0.66
+1010025082,Fender Assembly - Front - LH,Remove and Replace,0.66,0.66
+1010025091,Fender Assembly - Front - RH,Remove and Install,0.66,0.66
+1010025092,Fender Assembly - Front - RH,Remove and Replace,0.66,0.66
+1010025101,Bed Side Outer Assembly - LH,Remove and Install,1.44,1.44
+1010025102,Bed Side Outer Assembly - LH,Remove and Replace,1.44,1.44
+1010025111,Closure Panels - Assembly - Bed Side Outer - Right,Remove and Install,1.44,1.44
+1010025112,Closure Panels - Assembly - Bed Side Outer - Right,Remove and Replace,1.44,1.44
+1010025121,Powergate Hood,Remove and Install,0.3,0.3
+1010025122,Powergate Hood,Remove and Replace,0.42,0.42
+1010025131,Powergate Fascia,Remove and Install,0.12,0.12
+1010025132,Powergate Fascia,Remove and Replace,0.12,0.12
+1010025141,Lamp Step Bracket - LH,Remove and Install,0.24,0.24
+1010025142,Lamp Step Bracket - LH,Remove and Replace,0.24,0.24
+1010025151,Lamp Step Bracket - RH,Remove and Install,0.18,0.18
+1010025152,Lamp Step Bracket - RH,Remove and Replace,0.18,0.18
+1010025161,Bed Side Applique Corner Bracket - LH,Remove and Install,0.12,0.12
+1010025162,Bed Side Applique Corner Bracket - LH,Remove and Replace,0.12,0.12
+1010025171,Bed Side Applique Corner Bracket - RH,Remove and Install,0.12,0.12
+1010025172,Bed Side Applique Corner Bracket - RH,Remove and Replace,0.12,0.12
+1010026005,Powergate (Manual Release),Maintenance,0.18,0.18
+1010028003,PANEL - FRONT HEADER UPPER,Remove and Replace,4.5,4.5
+1010028004,ASSEMBLY - REAR HEADER INNER,Remove and Replace,2.34,2.34
+1010048001,ASSEMBLY - REAR WALL UPPER CROSSMEMBER GLOVE - LEFT HAND,Remove and Replace,1.92,1.92
+1010048002,ASSEMBLY - REAR WALL UPPER CROSSMEMBER GLOVE - RIGHT HAND,Remove and Replace,1.92,1.92
+1010048003,ASSEMBLY - REAR WALL LOWER CROSSMEMBER GLOVE - LEFT,Remove and Replace,3.3,3.3
+1010048004,ASSEMBLY - REAR WALL LOWER CROSSMEMBER GLOVE - RIGHT,Remove and Replace,3.3,3.3
+1010048011,ASSEMBLY - REAR WALL COMPLETE,Remove and Replace,11.85,11.85
+10100503501,Bed Side Outer Assembly - LH (Long Range),Remove and Install,1.38,1.38
+10100503502,Bed Side Outer Assembly - LH (Long Range),Remove and Replace,1.38,1.38
+10100504407,Trim - Cantrail - Roof Rail - LH (Rework),Modify,0.24,0.24
+10100504507,Trim - Cantrail - Roof Rail - RH (Rework),Modify,0.24,0.24
+1010054011,Front Inner Panels - Front Motor Mount - Left,Remove and Install,0.71,0.71
+1010054012,Front Inner Panels - Front Motor Mount - Left,Remove and Replace,0.71,0.71
+1010054021,Front Inner Panels - Front Motor Mount - Right,Remove and Install,0.71,0.71
+1010054022,Front Inner Panels - Front Motor Mount - Right,Remove and Replace,0.71,0.71
+1010054031,Front Inner Panels - Front Quarter Outer LH,Remove and Install,0.71,0.71
+1010054032,Front Inner Panels - Front Quarter Outer LH,Remove and Replace,0.71,0.71
+1010054041,Front Inner Panels - Front Quarter Outer RH,Remove and Install,0.71,0.71
+1010054042,Front Inner Panels - Front Quarter Outer RH,Remove and Replace,0.71,0.71
+1010054051,Front Inner Panels - Assembly - CFM Bracket Left,Remove and Install,0.71,0.71
+1010054052,Front Inner Panels - Assembly - CFM Bracket Left,Remove and Replace,0.71,0.71
+1010054061,Front Inner Panels - Assembly - CFM Bracket Right,Remove and Install,0.71,0.71
+1010054062,Front Inner Panels - Assembly - CFM Bracket Right,Remove and Replace,0.71,0.71
+1010054071,Front Inner Panels - Assembly - Fender Beam - Left,Remove and Install,0.71,0.71
+1010054072,Front Inner Panels - Assembly - Fender Beam - Left,Remove and Replace,0.71,0.71
+1010054081,Front Inner Panels - Assembly - Fender Beam - Right,Remove and Install,0.71,0.71
+1010054082,Front Inner Panels - Assembly - Fender Beam - Right,Remove and Replace,0.71,0.71
+1010078001,FRONT MOTOR MOUNT - LEFT HAND,Remove and Replace,0.48,0.48
+1010078002,FRONT MOTOR MOUNT - RIGHT HAND,Remove and Replace,0.3,0.3
+1010078005,ASSEMBLY - CFM BRACKET LEFT HAND,Remove and Replace,0.54,0.54
+1010078006,ASSEMBLY - CFM BRACKET RIGHT HAND,Remove and Replace,0.54,0.54
+1010082011,Dash Absorber - LH,Remove and Install,2.4,2.4
+1010082012,Dash Absorber - LH,Remove and Replace,2.4,2.4
+1010082021,Dash Absorber - RH,Remove and Install,3.36,3.36
+1010082022,Dash Absorber - RH,Remove and Replace,3.36,3.36
+1010098001,ASSEMBLY - POWERGATE STRUT MOUNT - LEFT,Remove and Replace,0.66,0.66
+1010098002,ASSEMBLY - POWERGATE STRUT MOUNT - RIGHT,Remove and Replace,0.66,0.66
+1010098003,ASSEMBLY - C-PILLAR INNER - LEFT HAND,Remove and Replace,27.4,27.4
+1010098004,ASSEMBLY - C-PILLAR INNER - RIGHT HAND,Remove and Replace,27.4,27.4
+1010098009,ASSEMBLY - HV BATTERY SUPPORT BRACKET - LEFT HAND,Remove and Replace,5.58,5.58
+1010098010,ASSEMBLY - HV BATTERY SUPPORT BRACKET - RIGHT HAND,Remove and Replace,5.58,5.58
+1010098017,ASSEMBLY - FRONT QUARTER OUTER PANEL - LEFT,Remove and Replace,5.22,5.22
+1010098018,ASSEMBLY - FRONT QUARTER OUTER PANEL - RIGHT,Remove and Replace,5.22,5.22
+1010098019,ASSEMBLY - C-PILLAR LOWER NUT PLATE,Remove and Replace,0.36,0.36
+1010098020,ROCKER SUPPORT BRACKET,Remove and Replace,0.4,0.4
+10101001302,Front Under Body (Complete),Remove and Replace,16.05,16.05
+10101001402,FRONT DRIVE UNIT MOUNT,Remove and Replace,0.42,0.42
+10101001502,FRONT DRIVE UNIT MOUNT (RIGHT),Remove and Replace,0.3,0.3
+10101014102,ASSEMBLY - FENDER BEAM - LEFT HAND,Remove and Replace,1.62,1.62
+10101014202,ASSEMBLY - FENDER BEAM - RIGHT HAND,Remove and Replace,1.62,1.62
+10101014302,FRONT BUMPER MOUNT - LEFT HAND,Remove and Replace,0.3,0.3
+10101014402,FRONT BUMPER MOUNT - RIGHT HAND,Remove and Replace,0.3,0.3
+10101014502,PANEL - GUTTER CONNECTOR - LEFT,Remove and Replace,1.44,1.44
+10101014602,PANEL - GUTTER CONNECTOR - RIGHT HAND,Remove and Replace,1.44,1.44
+1010102011,Rear Under Body - Rear Fascia Bracket LH,Remove and Install,0.71,0.71
+1010102012,Rear Under Body - Rear Fascia Bracket LH,Remove and Replace,0.71,0.71
+1010102021,Rear Under Body - Rear Fascia Bracket RH,Remove and Install,0.71,0.71
+1010102022,Rear Under Body - Rear Fascia Bracket RH,Remove and Replace,0.71,0.71
+10101029702,Front Under Body (Small Section),Remove and Replace,9.4,9.4
+10101029802,Front Under Body (Small Section),Remove and Replace,9.4,9.4
+10101029902,Dash Reinforcement Assembly,Remove and Replace,18.85,18.85
+1010118001,ASSEMBLY - REAR BED BRIDGE BRACKET - RIGHT HAND,Remove and Replace,0.48,0.48
+1010118002,ASSEMBLY - MAST CASTING - LEFT,Remove and Replace,21.7,21.7
+1010118005,ASSEMBLY - REAR BED BRIDGE BRACKET - LEFT HAND,Remove and Replace,0.32,0.32
+1010118006,ASSEMBLY - MAST CASTING - RIGHT,Remove and Replace,21.7,21.7
+1010118007,ASSEMBLY - REAR WHEEL ARCH - LEFT,Remove and Replace,41.14,41.14
+1010118008,ASSEMBLY - REAR WHEEL ARCH - RIGHT,Remove and Replace,41.1,41.1
+1010118010,ASSEMBLY - TAILGATE PLATE - LEFT HAND,Remove and Replace,1.14,1.14
+1010118011,ASSEMBLY - TAILGATE PLATE - RIGHT HAND,Remove and Replace,1.14,1.14
+1010118014,ASSEMBLY - TAILGATE TOWER - LEFT HAND,Remove and Replace,6.6,6.6
+1010118015,ASSEMBLY - TAILGATE TOWER - RIGHT HAND,Remove and Replace,6.6,6.6
+1010118020,ASSEMBLY - REAR UNDER BODY HALF SECTION - RIGHT HAND,Remove and Replace,13.4,13.4
+10101801202,ASSEMBLY - REAR WALL COMPLETE,Remove and Replace,11.85,11.85
+10101801402,PANEL TONNEAU DATUM - LEFT HAND,Remove and Replace,0.96,0.96
+10101801602,PANEL TONNEAU DATUM - RIGHT HAND,Remove and Replace,0.96,0.96
+10101801802,REAR SEAT STANCHION,Remove and Replace,1.98,1.98
+10101811202,Tonneau Attachment Bracket (Upper),Remove and Replace,0.84,0.84
+10101812102,ASSEMBLY - REAR WALL LOWER CROSSMEMBER GLOVE - LEFT HAND,Remove and Replace,3.3,3.3
+10101812202,ASSEMBLY - REAR WALL LOWER CROSSMEMBER GLOVE - RIGHT HAND,Remove and Replace,3.3,3.3
+10101812302,ASSEMBLY - REAR WALL UPPER CROSSMEMBER GLOVE - LEFT HAND,Remove and Replace,2.16,2.16
+10101812402,ASSEMBLY - REAR WALL UPPER CROSSMEMBER GLOVE - RIGHT HAND,Remove and Replace,2.16,2.16
+10101812502,Tonneau Attachment Bracket (Upper),Remove and Replace,0.84,0.84
+10101812702,Rear Seat Stanchion Braces,Remove and Replace,2.46,2.46
+10102000102,ASSEMBLY - REAR WHEEL ARCH - LEFT HAND,Remove and Replace,12.4,12.4
+10102000202,ASSEMBLY - REAR WHEEL ARCH - RIGHT HAND,Remove and Replace,12.4,12.4
+10102000302,WHEELEFTOUSE ARCH LEFT HAND,Remove and Replace,12.55,12.55
+10102000402,WHEELEFTOUSE ARCH RIGHT HAND,Remove and Replace,12.55,12.55
+10102000502,ASSEMBLY - REAR BED BRIDGE BRACKET - LEFT HAND,Remove and Replace,0.48,0.48
+10102000602,ASSEMBLY - REAR BED BRIDGE BRACKET - RIGHT HAND,Remove and Replace,0.48,0.48
+10102000702,ASSEMBLY - REAR FASCIA BRACKET - LEFT,Remove and Replace,1.74,1.74
+10102000802,ASSEMBLY - REAR FASCIA BRACKET - RIGHT,Remove and Replace,1.74,1.74
+10102000902,ASSEMBLY - REAR TIEDOWN NUT PLATE - LEFT HAND,Remove and Replace,0.42,0.42
+10102001002,ASSEMBLY - REAR UNDER BODY HALF SECTION - LEFT HAND,Remove and Replace,11.85,11.85
+10102001102,ASSEMBLY - REAR UNDER BODY HALF SECTION - RIGHT HAND,Remove and Replace,11.85,11.85
+10102001202,ASSEMBLY - TAILGATE PLATE - LEFT HAND,Remove and Replace,1.14,1.14
+10102001302,ASSEMBLY - TAILGATE TOWER - RIGHT HAND,Remove and Replace,6.0,6.0
+10102001402,REAR FASCIA SUPPORT BRACKET,Remove and Replace,1.5,1.5
+10102001502,REAR TIEDOWN NUT PLATE RIGHT HAND,Remove and Replace,0.42,0.42
+10102001602,Rear Under Body (Frame Rail Section),Remove and Replace,21.4,21.4
+10102001702,TAILGATE PLATE RIGHT HAND,Remove and Replace,1.14,1.14
+10102001802,TAILGATE TOWER COMPLETE LEFT HAND,Remove and Replace,6.0,6.0
+10102001902,Rear Under Body (Frame Rail Section),Remove and Replace,15.45,15.45
+10102002002,Mast Assembly (Section),Remove and Replace,11.0,11.0
+10102002102,Mast Assembly (Section),Remove and Replace,11.0,11.0
+10102002202,Rear Wheel Arch Extension (Front),Remove and Replace,1.14,1.14
+10102002302,Rear Wheel Arch Extension (Front),Remove and Replace,1.14,1.14
+10102002702,Rear Under Body (Complete),Remove and Replace,21.4,21.4
+10102700302,ASSEMBLY - FRONT HEADER LOWER,Remove and Replace,6.05,6.05
+10102700402,ASSEMBLY - REAR HEADER INNER,Remove and Replace,2.34,2.34
+10102700602,PANEL - REAR HEADER UPPER,Remove and Replace,20.15,20.15
+10108208,Corrosion Protection (Refinish),Restore,0.3,0.3
+10108500,Create Imprint of VIN,Inspection,0.14,0.14
+10108608,Tesla Body Repair - Body Labor,Body Shop,0.0,0.0
+10108808,Tesla Body Repair - Sublet,Body Shop,0.0,0.0
+10109008,Structural Body Repair,Repair,0.0,0.0
+10109108,Non-Structural Body Repair,Restore,0.0,0.0
+10109608,Tesla Body Repair - Insurance Pay,Body Shop,0.0,0.0
+10182019,Customer Generated Quote - Issue (Transaction) Resolved - Bound,General diagnosis conclusion,0.0,0.0
+10200108,Glass Chip Repair - Windshield,Restore,0.54,0.54
+10200118,Glass Scratch Repair - Windshield,Restore,0.36,0.36
+1020030011,Seal - Quarter Glass - Front - LH,Remove and Install,0.06,0.06
+1020030012,Seal - Quarter Glass - Front - LH,Remove and Replace,0.06,0.06
+1020030021,Moving Glass - Door - Rear - LH,Remove and Install,0.24,0.24
+1020030022,Moving Glass - Door - Rear - LH,Remove and Replace,0.24,0.24
+1020030031,Moving Glass - Door - Rear - RH,Remove and Install,0.24,0.24
+1020030032,Moving Glass - Door - Rear - RH,Remove and Replace,0.24,0.24
+1020030041,Seal - Quarter Glass - Front - RH,Remove and Install,0.06,0.06
+1020030042,Seal - Quarter Glass - Front - RH,Remove and Replace,0.06,0.06
+1020030051,Quarter Glass - Front - LH,Remove and Install,1.68,1.68
+1020030052,Quarter Glass - Front - LH,Remove and Replace,1.68,1.68
+1020030061,Quarter Glass - Front - RH,Remove and Install,1.68,1.68
+1020030062,Quarter Glass - Front - RH,Remove and Replace,1.68,1.68
+1020030071,Door Glass - Upper Seal LH,Remove and Install,0.71,0.71
+1020030072,Door Glass - Upper Seal LH,Remove and Replace,0.71,0.71
+1020030081,Door Glass - Upper Seal RH,Remove and Install,0.71,0.71
+1020030082,Door Glass - Upper Seal RH,Remove and Replace,0.71,0.71
+1020030091,Moving Glass - Door - Front - RH,Remove and Install,0.18,0.18
+1020030092,Moving Glass - Door - Front - RH,Remove and Replace,0.18,0.18
+1020030101,Moving Glass - Door - Front - LH,Remove and Install,0.18,0.18
+1020030102,Moving Glass - Door - Front - LH,Remove and Replace,0.18,0.18
+10200348,Clean Forward Camera View (Precision Cleaning of Inboard Glass),Restore,0.42,0.42
+1020106011,Roof Glass - Roof Assembly,Remove and Install,2.28,2.28
+1020106012,Fixed Glass Roof Assembly,Remove and Replace,2.28,2.28
+1020130001,Primary Seal - Door - Rear - RH,Remove and Install,0.06,0.06
+1020132011,Windshield Assembly,Remove and Install,2.1,2.1
+1020132012,Windshield Assembly,Remove and Replace,2.1,2.1
+1020133021,Primary Seal - Door - Rear - LH,Remove and Install,0.06,0.06
+1020133051,Seal - Header - LH,Remove and Install,0.12,0.12
+1020133052,Seal - Header - LH,Remove and Replace,0.12,0.12
+1020133061,Seal - Header - RH,Remove and Install,0.12,0.12
+1020133062,Seal - Header - RH,Remove and Replace,0.12,0.12
+1020133071,Fixed Backlite Glass,Remove and Install,1.44,1.44
+1020133072,Fixed Backlite Glass,Remove and Replace,1.44,1.44
+1020133082,Edge Seal - Windshield - Front,Remove and Replace,0.48,0.48
+1020133092,Edge Seal - Windshield - LH,Remove and Replace,0.72,0.72
+1020133102,Edge Seal - Windshield - RH,Remove and Replace,0.72,0.72
+1020133112,Edge Seal - Rear - Roof Glass,Remove and Replace,0.48,0.48
+1020300101,Sensor - Windshield - Temperature and Relative Humidity ,Remove and Install,0.18,0.18
+1020300102,Sensor - Windshield - Temperature and Relative Humidity  ,Remove and Replace,0.18,0.18
+1027521,Assistance with Refund of Reservation,Test/Adjust,0.0,0.0
+10300020,Touch Up Paint - Apply,Paint Work,0.2,0.2
+10300250,Paint Defects - Denib/Polish,Test/Adjust,0.25,0.25
+10302008,Clean Up Water Ingress,Restore,0.0,0.0
+10303025,Dent Repair - Paintless - 0.25,Paint Work,0.36,0.36
+10303050,Dent Repair - Paintless - 0.5,Paint Work,0.6,0.6
+10303100,Dent Repair - Paintless - 1,Paint Work,1.2,1.2
+11010004,Adjustment: Moving Glass,Test/Adjust,0.0,0.0
+11200100301,Corner Bracket - Tonneau - LH (Long Range),Remove and Install,0.6,0.6
+11200100302,Corner Bracket - Tonneau - LH (Long Range),Remove and Replace,0.6,0.6
+11200100401,Horizon Rail Assembly - Tonneau - LH (Long Range),Remove and Install,0.3,0.3
+11200100402,Horizon Rail Assembly - Tonneau - LH (Long Range),Remove and Replace,0.3,0.3
+11200100501,Cam Block - Tonneau - LH (Long Range),Remove and Install,0.12,0.12
+11200100502,Cam Block - Tonneau - LH (Long Range),Remove and Replace,0.12,0.12
+11200100601,Closeout Seal - Tonneau (Long Range),Remove and Install,0.24,0.24
+11200100602,Closeout Seal - Tonneau (Long Range),Remove and Replace,0.24,0.24
+11200100701,Applique - Lower - Tonneau (Long Range),Remove and Install,0.24,0.24
+11200100702,Applique - Lower - Tonneau (Long Range),Remove and Replace,0.24,0.24
+11200100801,Applique - Upper - Tonneau (Long Range),Remove and Install,0.18,0.18
+11200100802,Applique - Upper - Tonneau (Long Range),Remove and Replace,0.18,0.18
+11200100901,Hinge Pivot - Applique - Tonneau - LH (Long Range),Remove and Install,0.18,0.18
+11200100902,Hinge Pivot - Applique - Tonneau - LH (Long Range),Remove and Replace,0.18,0.18
+11200101001,Foam Datum Pad - Tonneau (Long Range),Remove and Install,0.18,0.18
+11200101002,Foam Datum Pad - Tonneau (Long Range),Remove and Replace,0.18,0.18
+1120122007,Slat System - Tonneau (Rework),Modify,1.2,1.2
+1120122011,Tonneau Lower Assembly,Remove and Install,2.82,2.82
+1120122012,Tonneau Lower Assembly,Remove and Replace,2.82,2.82
+1120122021,Tonneau Motor Assembly - LH,Remove and Install,0.9,0.9
+1120122022,Tonneau Motor Assembly - LH,Remove and Replace,0.9,0.9
+1120122031,Tonneau Motor Assembly - RH,Remove and Install,0.9,0.9
+1120122032,Tonneau Motor Assembly - RH,Remove and Replace,0.9,0.9
+1120122041,Tonneau Horizontal Rail - LH ,Remove and Install,0.24,0.24
+1120122042,Tonneau Horizontal Rail - LH ,Remove and Replace,0.24,0.24
+1120122051,Tonneau Horizontal Rail - RH,Remove and Install,0.24,0.24
+1120122052,Tonneau Horizontal Rail - RH,Remove and Replace,0.24,0.24
+1120122061,Strut - Bed Cargo Tub,Remove and Install,0.06,0.06
+1120122062,Strut - Bed Cargo Tub,Remove and Replace,0.06,0.06
+1120122071,Tonneau - Bed Cargo Tub Bumpstop,Remove and Install,0.71,0.71
+1120122072,Tonneau - Bed Cargo Tub Bumpstop,Remove and Replace,0.71,0.71
+1120122081,Manual Release - Tailgate,Remove and Install,0.24,0.24
+1120122082,Manual Release - Tailgate,Remove and Replace,0.24,0.24
+1120122091,Slat System - Tonneau,Remove and Install,0.9,0.9
+1120122092,Slat System - Tonneau,Remove and Replace,1.08,1.08
+1120122101,Bushing Slat and Seal,Remove and Install,1.08,1.08
+1120122102,Bushing Slat and Seal,Remove and Replace,1.08,1.08
+1120122111,Tonneau Applique,Remove and Install,0.18,0.18
+1120122112,Tonneau Applique,Remove and Replace,0.18,0.18
+1120122121,Tonneau NVH Barrier Assembly,Remove and Install,0.54,0.54
+1120122131,Chain Link - Tonneau,Remove and Install,0.96,0.96
+1120122141,Mid Slat - Tonneau,Remove and Install,1.14,1.14
+1120122151,Sealing Slat - Tonneau,Remove and Install,1.02,1.02
+1120122152,Sealing Slat - Tonneau,Remove and Replace,1.02,1.02
+1120122161,Tonneau Slats (Manual Release),Removal,2.04,2.04
+1120122171,Deflector Clip - Tonneau - LH,Remove and Install,0.96,0.96
+1120122172,Deflector Clip - Tonneau - LH,Remove and Replace,0.96,0.96
+1120122181,Deflector Clip - Tonneau - RH,Remove and Install,0.96,0.96
+1120122182,Deflector Clip - Tonneau - RH,Remove and Replace,0.96,0.96
+1120123011,Flat Cassette Assembly - LH,Remove and Install,2.88,2.88
+1120123012,Flat Cassette Assembly - LH,Remove and Replace,2.88,2.88
+1120123021,Flat Cassette Assembly - RH,Remove and Install,2.88,2.88
+1120123022,Flat Cassette Assembly - RH,Remove and Replace,2.88,2.88
+1133040001,Door Striker - Rear - RH,Remove and Install,0.06,0.06
+1133040002,Door Striker - Rear - RH,Remove and Replace,0.06,0.06
+1133041001,Door Presenter - Front Door - LH,Remove and Install,0.42,0.42
+1133041002,Door Presenter - Front Door - LH,Remove and Replace,0.42,0.42
+1133041011,"Front and Rear Door Latch and Striker - Door Presenter, RH",Remove and Install,0.71,0.71
+1133041012,"Front and Rear Door Latch and Striker - Door Presenter, RH",Remove and Replace,0.71,0.71
+1133041021,Door Latch - Front - LH,Remove and Install,0.42,0.42
+1133041022,Door Latch - Front - LH,Remove and Replace,0.42,0.42
+1133041031,Door Latch - Front - RH,Remove and Install,0.42,0.42
+1133041032,Door Latch - Front - RH,Remove and Replace,0.42,0.42
+1133041041,Door Latch - Rear - LH,Remove and Install,0.42,0.42
+1133041042,Door Latch - Rear - LH,Remove and Replace,0.42,0.42
+1133041051,Door Latch - Rear - RH,Remove and Install,0.42,0.42
+1133041052,Door Latch - Rear - RH,Remove and Replace,0.42,0.42
+1133041061,Door Striker - Rear - LH,Remove and Install,0.06,0.06
+1133041062,Door Striker - Rear - LH,Remove and Replace,0.06,0.06
+1133041071,Door Presenter - Front Door - RH,Remove and Install,0.42,0.42
+1133041072,Door Presenter - Front Door - RH,Remove and Replace,0.42,0.42
+1133041081,Door Presenter - Rear Door - LH,Remove and Install,0.36,0.36
+1133041082,Door Presenter - Rear Door - LH,Remove and Replace,0.36,0.36
+1133041091,Door Presenter - Rear Door - RH,Remove and Install,0.36,0.36
+1133041092,Door Presenter - Rear Door - RH,Remove and Replace,0.36,0.36
+1133071001,Check Strap - Rear Door - RH,Remove and Install,0.42,0.42
+1133071002,Check Strap - Rear Door - RH,Remove and Replace,0.42,0.42
+1133071011,Check Strap  - Rear Door - LH,Remove and Install,0.42,0.42
+1133071012,"Check Strap, Rear",Remove and Replace,0.42,0.42
+1133071021,Hinge - Upper - Front Door - LH,Remove and Install,0.12,0.12
+1133071022,Hinge - Upper - Front Door - LH,Remove and Replace,0.12,0.12
+1133071031,Hinge - Lower - Front Door - LH,Remove and Install,0.12,0.12
+1133071032,Hinge - Lower - Front Door - LH,Remove and Replace,0.12,0.12
+1133071041,Hinge - Upper - Front Door - RH,Remove and Install,0.12,0.12
+1133071042,Hinge - Upper - Front Door - RH,Remove and Replace,0.12,0.12
+1133071051,Hinge - Lower - Front Door - RH,Remove and Install,0.12,0.12
+1133071052,Hinge - Lower - Front Door - RH,Remove and Replace,0.12,0.12
+1133071061,Hinge - Upper - Rear Door - LH,Remove and Install,0.12,0.12
+1133071062,Hinge - Upper - Rear Door - LH,Remove and Replace,0.12,0.12
+1133071071,Hood Strut - LH,Remove and Install,0.24,0.24
+1133071072,Hood Strut - LH,Remove and Replace,0.24,0.24
+1133071081,Powergate Hinge - LH,Remove and Install,0.48,0.48
+1133071082,Powergate Hinge - LH,Remove and Replace,0.48,0.48
+1133071091,Powergate Hinge - RH,Remove and Install,0.48,0.48
+1133071092,Powergate Hinge - RH,Remove and Replace,0.48,0.48
+1133071101,Hinge - Lower - Rear Door - LH,Remove and Install,0.12,0.12
+1133071102,Hinge - Lower - Rear Door - LH,Remove and Replace,0.12,0.12
+1133071111,Hinge - Upper - Rear Door - RH,Remove and Install,0.71,0.71
+1133071112,Hinge - Upper - Rear Door - RH,Remove and Replace,0.71,0.71
+1133071121,Hinge - Lower - Rear Door - RH,Remove and Install,0.71,0.71
+1133071122,Hinge - Lower - Rear Door - RH,Remove and Replace,0.71,0.71
+1133071131,Check Strap - Front Door - LH,Remove and Install,0.48,0.48
+1133071132,Check Strap - Front Door - LH,Remove and Replace,0.48,0.48
+1133071141,Check Strap - Front Door - RH,Remove and Install,0.48,0.48
+1133071142,Check Strap - Front Door - RH,Remove and Replace,0.48,0.48
+1133071171,Hood Strut - RH,Remove and Install,0.24,0.24
+1133071172,Hood Strut - RH,Remove and Replace,0.24,0.24
+1133110001,"Tailgate Latch and Striker - RH Body - Side Hinge, Tailgate",Remove and Install,0.24,0.24
+1133116011,Striker - Tailgate,Remove and Install,0.06,0.06
+1133116012,Striker - Tailgate,Remove and Replace,0.06,0.06
+1133116021,Bumpstop - Tailgate,Remove and Install,0.06,0.06
+1133116022,Bumpstop - Tailgate,Remove and Replace,0.06,0.06
+1133116031,Cable Strap - Tailgate,Remove and Install,0.06,0.06
+1133116032,Cable Strap - Tailgate,Remove and Replace,0.06,0.06
+1133116041,Cinching Latch - Tailgate - LH,Remove and Install,0.24,0.24
+1133116042,Cinching Latch - Tailgate - LH,Remove and Replace,0.24,0.24
+1133116051,Cinching Latch - Tailgate - RH,Remove and Install,0.24,0.24
+1133116052,Cinching Latch - Tailgate - RH,Remove and Replace,0.24,0.24
+1133116061,Strut Damper - Tailgate,Remove and Install,0.12,0.12
+1133116062,Strut Damper - Tailgate,Remove and Replace,0.12,0.12
+1133116071,Hinge - Body Side - Tailgate - RH,Remove and Install,0.24,0.24
+1133116072,Hinge - Body Side - Tailgate - RH,Remove and Replace,0.24,0.24
+1133116081,"Tailgate Latch and Striker - LH Body - Side Hinge, Tailgate",Remove and Install,0.3,0.3
+1133116082,Hinge - Body Side - Tailgate - LH,Remove and Replace,0.3,0.3
+1133116091,Striker - Powergate,Remove and Install,0.06,0.06
+1133116092,Striker - Powergate,Remove and Replace,0.06,0.06
+1133116101,Latch - Powergate,Remove and Install,0.24,0.24
+1133116102,Latch - Hood,Remove and Replace,0.24,0.24
+1133116111,Tailgate Torsion Rod,Remove and Install,0.48,0.48
+1133116112,Tailgate Torsion Rod,Remove and Replace,0.48,0.48
+11332800101,Actuator - Latch - Hood,Remove and Install,0.3,0.3
+11332800102,Actuator - Latch - Hood,Remove and Replace,0.3,0.3
+11350010,Diagnosis: Latch Integrity,General Diagnosis,0.6,0.6
+11350020,Actuator Integrity Check,Test/Adjust,0.6,0.6
+11351805,Latch - Door - Lubricate,Maintenance,0.05,0.05
+11500004,Diagnosis: Moving Glass Wind Noise,General Diagnosis,0.75,0.75
+1150040011,Window Regulator - Front Door - LH,Remove and Install,0.36,0.36
+1150040012,Window Regulator - Front Door - LH,Remove and Replace,0.36,0.36
+1150040021,Window Regulator - Front Door - RH,Remove and Install,0.36,0.36
+1150040022,Window Regulator - Front Door - RH,Remove and Replace,0.36,0.36
+1150040031,Window Regulator - Rear Door - LH,Remove and Install,0.36,0.36
+1150040032,Window Regulator - Rear Door - LH,Remove and Replace,0.36,0.36
+1150040041,Window Regulator - Rear Door - RH,Remove and Install,0.36,0.36
+1150040042,Window Regulator - Rear Door - RH,Remove and Replace,0.36,0.36
+1150040051,Closeout Panel - Front Door - LH,Remove and Install,0.42,0.42
+1150040052,Closeout Panel - Front Door - LH ,Remove and Replace,0.42,0.42
+1150040061,Closeout Panel - Front Door - RH,Remove and Install,0.42,0.42
+1150040062,Closeout Panel - Front Door - RH,Remove and Replace,0.42,0.42
+1150040071,Front and Rear Door Glass Regulator - Front Door LH Window Regulator Mechanism,Remove and Install,0.71,0.71
+1150040072,Front and Rear Door Glass Regulator - Front Door LH Window Regulator Mechanism,Remove and Replace,0.71,0.71
+1150040081,Front and Rear Door Glass Regulator - Front Door RH Window Regulator Mechanism,Remove and Install,0.71,0.71
+1150040082,Front and Rear Door Glass Regulator - Front Door RH Window Regulator Mechanism,Remove and Replace,0.71,0.71
+1150040091,"Window Regulator, 48V P-Motor",Remove and Install,0.71,0.71
+1150040092,"Window Regulator, 48V P-Motor",Remove and Replace,0.71,0.71
+1150040101,"Window Regulator, 48V Q-Motor",Remove and Install,0.18,0.18
+1150040102,"Window Regulator, 48V Q-Motor",Remove and Replace,0.18,0.18
+1150040112,Closeout Panel - Rear Door - LH,Remove and Replace,0.48,0.48
+1150040122,Closeout Panel - Rear Door - RH,Remove and Replace,0.48,0.48
+11501908,Clean Up Broken Glass,Restore,0.75,0.75
+11700004,Adjustment: Seal,Test/Adjust,0.2,0.2
+1170010051,"Body Side Seals - Primary Seal, Front Door, LH,  ",Remove and Install,0.6,0.6
+1170010052,"Body Side Seals - Primary Seal, Front Door, LH,  ",Remove and Replace,0.6,0.6
+1170010061,"Body Side Seals - Primary Seal, Front Door, RH,  ",Remove and Install,0.6,0.6
+1170010062,"Body Side Seals - Primary Seal, Front Door, RH,  ",Remove and Replace,0.6,0.6
+1170010071,"Body Side Seals - Primary Seal, Rear Door, RH,  ",Remove and Install,0.6,0.6
+1170010072,"Body Side Seals - Primary Seal, Rear Door, RH,  ",Remove and Replace,0.6,0.6
+1170010081,"Body Side Seals - Primary Seal, Rear Door, LH,  ",Remove and Install,0.6,0.6
+1170010082,"Body Side Seals - Primary Seal, Rear Door, LH,  ",Remove and Replace,0.6,0.6
+1170042011,Waist Belt Seal - Inner - Front Door - LH,Remove and Install,0.06,0.06
+1170042012,Waist Belt Seal - Inner - Front Door - LH,Remove and Replace,0.06,0.06
+1170042021,Waist Belt Seal - Inner - Front Door - RH,Remove and Install,0.06,0.06
+1170042022,Waist Belt Seal - Inner - Front Door - RH,Remove and Replace,0.06,0.06
+1170042031,Secondary Seal - Front Door - LH,Remove and Install,0.12,0.12
+1170042032,Secondary Seal - Front Door - LH,Remove and Replace,0.12,0.12
+1170042041,Waist Belt Seal - Outer - Front Door - RH,Remove and Install,0.06,0.06
+1170042042,Waist Belt Seal - Outer - Front Door - RH,Remove and Replace,0.06,0.06
+1170042051,Glass Run Seal - Front Door - A-Pillar - LH,Remove and Install,0.36,0.36
+1170042052,Glass Run Seal - Front Door - A-Pillar - LH,Remove and Replace,0.36,0.36
+1170042061,Waist Belt Seal - Outer - Rear Door - LH,Remove and Install,0.06,0.06
+1170042062,Waist Belt Seal - Outer - Rear Door - LH,Remove and Replace,0.06,0.06
+1170042071,Waist Belt Seal - Outer - Rear Door - RH,Remove and Install,0.06,0.06
+1170042072,Waist Belt Seal - Outer - Rear Door - RH,Remove and Replace,0.06,0.06
+1170042081,Waist Belt Seal - Outer - Front Door - LH,Remove and Install,0.06,0.06
+1170042082,Waist Belt Seal - Outer - Front Door - LH,Remove and Replace,0.06,0.06
+1170042091,Secondary Seal - Rear Door - RH,Remove and Install,0.06,0.06
+1170042092,Secondary Seal - Rear Door - RH,Remove and Replace,0.06,0.06
+1170042101,Secondary Seal - Rear Door - LH,Remove and Install,0.06,0.06
+1170042102,Secondary Seal - Rear Door - LH,Remove and Replace,0.06,0.06
+1170042111,Waist Belt Seal - Inner - Rear Door - LH,Remove and Install,0.06,0.06
+1170042112,Waist Belt Seal - Inner - Rear Door - LH,Remove and Replace,0.06,0.06
+1170042121,Waist Belt Seal - Inner - Rear Door - RH,Remove and Install,0.06,0.06
+1170042122,Waist Belt Seal - Inner - Rear Door - RH,Remove and Replace,0.06,0.06
+1170042131,Secondary Seal - Front Door - RH,Remove and Install,0.12,0.12
+1170042132,Secondary Seal - Front Door - RH,Remove and Replace,0.12,0.12
+1170042151,Glass Run Seal - Front Door - A-Pillar - RH,Remove and Install,0.36,0.36
+1170042152,Glass Run Seal - Front Door - A-Pillar - RH,Remove and Replace,0.36,0.36
+1170085011,Aero Seal - LH - Powergate,Remove and Install,0.12,0.12
+1170085012,Aero Seal - LH - Powergate,Remove and Replace,0.12,0.12
+1170085021,Aero Seal - RH - Powergate,Remove and Install,0.12,0.12
+1170085022,Aero Seal - RH - Powergate,Remove and Replace,0.12,0.12
+1170117011,Water Management Seal - RH - Center - Tonneau,Remove and Install,0.06,0.06
+1170117012,Water Management Seal - RH - Center - Tonneau,Remove and Replace,0.06,0.06
+1170117021,Seal - LH - Tailgate,Remove and Install,0.06,0.06
+1170117022,Seal - LH - Tailgate,Remove and Replace,0.06,0.06
+1170117031,Seal - RH - Tailgate,Remove and Install,0.06,0.06
+1170117032,Seal - RH - Tailgate,Remove and Replace,0.06,0.06
+1170117041,Water Management Seal - LH - Center - Tonneau ,Remove and Install,0.06,0.06
+1170117042,Water Management Seal - LH - Center - Tonneau,Remove and Replace,0.06,0.06
+12000004,Adjustment: Exterior Trim,Test/Adjust,0.0,0.0
+1201130011,Wheel Liner - Front - LH,Remove and Install,0.18,0.18
+1201130012,Wheel Liner - Front - LH,Remove and Replace,0.18,0.18
+1201130021,Wheel Liner - Front - RH,Remove and Install,0.18,0.18
+1201130022,Wheel Liner - Front - RH,Remove and Replace,0.18,0.18
+1201130031,Wheel Liner - Rear - LH,Remove and Install,0.24,0.24
+1201130032,Wheel Liner - Rear - LH,Remove and Replace,0.24,0.24
+1201130041,Wheel Liner - Rear - RH,Remove and Install,0.24,0.24
+1201130042,Wheel Liner - Rear - RH,Remove and Replace,0.24,0.24
+12030400001,Skid Plate Stamping,Remove and Install,0.3,0.3
+12030400002,Skid Plate Stamping,Remove and Replace,0.3,0.3
+1203128011,Skid Plate,Remove and Install,0.24,0.24
+1203128012,Skid Plate,Remove and Replace,0.24,0.24
+1203128021,Lower Tub Crossmember,Remove and Install,0.42,0.42
+1203128022,Lower Tub Crossmember,Remove and Replace,0.42,0.42
+1203128031,Diffuser - Rear,Remove and Install,0.66,0.66
+1203128032,Diffuser - Rear,Remove and Replace,0.66,0.66
+1203128041,Aeroshield - Rear,Remove and Install,0.12,0.12
+1203128042,Aeroshield - Rear,Remove and Replace,0.12,0.12
+1203128051,Aeroshield - Front,Remove and Install,0.24,0.24
+1203128052,Aeroshield - Front,Remove and Replace,0.24,0.24
+12070106,Bracket - License Plate - Front,Retrofit,0.06,0.06
+12070206,Install Tesla License Plate Frame,Installation,0.14,0.14
+1207080011,License Plate Assembly - Front,Remove and Install,0.06,0.06
+1207080012,License Plate Mounting - Front License Plate Assembly,Remove and Replace,0.06,0.06
+12071001,License Plates (Install Onto Existing Brackets),Installation,0.06,0.06
+1209030001,Exterior Mirror Glass - Flat - Electrochromic Dimming - RH,Remove and Install,0.06,0.06
+1209030002,Exterior Mirror Glass - Flat - Electrochromic Dimming - RH,Remove and Replace,0.06,0.06
+1209034031,Skull Cap - Exterior Mirror - LH,Remove and Install,0.12,0.12
+1209034032,Skull Cap - Exterior Mirror - LH,Remove and Replace,0.12,0.12
+1209034041,Skull Cap - Exterior Mirror - RH,Remove and Install,0.12,0.12
+1209034042,Skull Cap - Exterior Mirror - RH,Remove and Replace,0.12,0.12
+1209034051,Exterior Mirror Assembly - Electromechanical - LH,Remove and Install,0.12,0.12
+1209034052,Exterior Mirror Assembly - Electromechanical - LH,Remove and Replace,0.12,0.12
+1209034061,Exterior Mirror Assembly - Electromechanical - RH,Remove and Install,0.12,0.12
+1209034062,Exterior Mirror Assembly - Electromechanical - RH,Remove and Replace,0.12,0.12
+1209034071,Exterior Mirror Glass - Flat - Electrochromic Dimming - LH,Remove and Install,0.06,0.06
+1209034072,Exterior Mirror Glass - Flat - Electrochromic Dimming - LH,Remove and Replace,0.06,0.06
+1209034081,Exterior Mirror Glass - Convex - Electrochromic Dimming - RH,Remove and Install,0.06,0.06
+1209034082,Exterior Mirror Glass - Convex - Electrochromic Dimming - RH,Remove and Replace,0.06,0.06
+1215014011,Bumpstops - Bed Cargo Tub,Remove and Install,0.06,0.06
+1215014012,Bumpstops - Bed Cargo Tub,Remove and Replace,0.06,0.06
+1215014021,Lid - Bed Cargo Tub,Remove and Install,0.12,0.12
+1215014022,Lid - Bed Cargo Tub,Remove and Replace,0.12,0.12
+1215014041,Under Bed Storage Assembly,Remove and Install,1.32,1.32
+1215014042,Under Bed Storage Assembly,Remove and Replace,1.32,1.32
+1215014051,Seal - Bed Cargo Tub,Remove and Install,0.12,0.12
+1215014052,Seal - Bed Cargo Tub,Remove and Replace,0.12,0.12
+1215016021,Bed Side Wall - LH,Remove and Install,0.66,0.66
+1215016022,Bed Side Wall - LH,Remove and Replace,0.66,0.66
+1215016031,Bed Side Wall - Bed Side Wall - RH,Remove and Install,0.66,0.66
+1215016032,Bed Side Wall - RH,Remove and Replace,0.66,0.66
+1215016051,Forged Bed Tiedown Assembly,Remove and Install,0.12,0.12
+1215016052,Forged Bed Tiedown Assembly,Remove and Replace,0.12,0.12
+12150300001,False Wall - Bed (Long Range),Remove and Install,1.2,1.2
+12150300002,False Wall - Bed (Long Range),Remove and Replace,1.2,1.2
+12150300101,Bracket Upper - Bed - LH (Long Range),Remove and Install,1.26,1.26
+12150300102,Bracket Upper - Bed - LH (Long Range),Remove and Replace,1.26,1.26
+12150300201,X-Member - Bed (Long Range),Remove and Install,1.14,1.14
+12150300202,X-Member - Bed (Long Range),Remove and Replace,1.14,1.14
+12150300301,Wall Assembly - Bed Side - Lower - LH (Long Range),Remove and Install,0.72,0.72
+12150300302,Wall Assembly - Bed Side - Lower - LH (Long Range),Remove and Replace,0.72,0.72
+12150300401,Damper Reinforcement Assembly - Bed (Long Range),Remove and Install,1.14,1.14
+12150300402,Damper Reinforcement Assembly - Bed (Long Range),Remove and Replace,1.14,1.14
+12150300501,Bed Floor Assembly (Long Range),Remove and Install,0.3,0.3
+12150300502,Bed Floor Assembly (Long Range),Remove and Replace,0.3,0.3
+12150300601,Wall Assembly - Bed Side - Upper - LH (Long Range),Remove and Install,0.72,0.72
+12150300602,Wall Assembly - Bed Side - Upper - LH (Long Range),Remove and Replace,0.72,0.72
+1215125011,Manual Release Cap - Tailgate Cover,Remove and Install,0.06,0.06
+1215125012,Manual Release Cap - Tailgate Cover,Remove and Replace,0.06,0.06
+1215125021,Bed Floor Assembly,Remove and Install,0.24,0.24
+1215125022,Bed Floor Assembly,Remove and Replace,0.24,0.24
+1215125031,Cover - Inner - Tailgate,Remove and Install,0.24,0.24
+1215125032,Cover - Inner - Tailgate,Remove and Replace,0.24,0.24
+1215125041,Bed Closeout - Rear - RH,Remove and Install,0.06,0.06
+1215125042,Bed Closeout - Rear - RH,Remove and Replace,0.06,0.06
+1215125051,Bed Closeout - Rear - LH,Remove and Install,0.06,0.06
+1215125052,Bed Closeout - Rear - LH,Remove and Replace,0.06,0.06
+1215125061,Front Wall Assembly - Truck Bed,Remove and Install,1.32,1.32
+1215125062,Front Wall Assembly - Truck Bed,Remove and Replace,1.32,1.32
+1220035011,Closeout - Applique - B-Pillar - LH,Remove and Install,0.06,0.06
+1220035012,Closeout - Applique - B-Pillar - LH,Remove and Replace,0.06,0.06
+1220035021,Closeout - Applique - B-Pillar - RH,Remove and Install,0.06,0.06
+1220035022,Closeout - Applique - B-Pillar - RH,Remove and Replace,0.06,0.06
+1220035031,Applique - C-Pillar - LH,Remove and Install,0.06,0.06
+1220035032,Applique - C-Pillar - LH,Remove and Replace,0.06,0.06
+1220035041,Applique - C-Pillar - RH,Remove and Install,0.06,0.06
+1220035042,Applique - C-Pillar - RH,Remove and Replace,0.06,0.06
+1220035051,Closeout - Applique - C-Pillar - LH,Remove and Install,0.06,0.06
+1220035052,Closeout - Applique - C-Pillar - LH,Remove and Replace,0.06,0.06
+1220035061,Exterior Trim Fittings - C-Pillar Applique Closeout - RH,Remove and Install,0.06,0.06
+1220035062,Closeout - Applique - C-Pillar - RH,Remove and Replace,0.06,0.06
+1220035071,Closeout - Sail Baffle - LH,Remove and Install,0.06,0.06
+1220035072,Closeout - Sail Baffle - LH,Remove and Replace,0.06,0.06
+1220035081,Closeout - Sail Baffle - RH,Remove and Install,0.06,0.06
+1220035082,Exterior Trim Fittings - Sail Baffle Closeout - RH,Remove and Replace,0.06,0.06
+1220035091,Bracket - Applique - Roof,Remove and Install,0.06,0.06
+1220035092,Bracket - Applique - Roof,Remove and Replace,0.06,0.06
+1220035101,Bracket - Beauty Cover - Lightbar - LH,Remove and Install,0.12,0.12
+1220035102,Bracket - Beauty Cover - Lightbar - LH,Remove and Replace,0.12,0.12
+1220035111,Bracket - Beauty Cover - Lightbar - RH,Remove and Install,0.12,0.12
+1220035112,Bracket - Beauty Cover - Lightbar - RH,Remove and Replace,0.12,0.12
+1220035121,Applique - Wiper,Remove and Install,0.12,0.12
+1220035122,Applique - Wiper,Remove and Replace,0.12,0.12
+1220035131,Applique - Backlite - LH,Remove and Install,0.06,0.06
+1220035132,Applique - Backlite - LH,Remove and Replace,0.06,0.06
+1220035141,Applique - Backlite - RH,Remove and Install,0.06,0.06
+1220035142,Applique - Backlite - RH,Remove and Replace,0.06,0.06
+1220035151,Applique - Sail Baffle - LH,Remove and Install,0.06,0.06
+1220035152,Applique - Sail Baffle - LH,Remove and Replace,0.06,0.06
+1220035161,Applique - Sail Baffle - RH,Remove and Install,0.06,0.06
+1220035162,Applique - Sail Baffle - RH,Remove and Replace,0.06,0.06
+1220035171,Applique - Upper - Fascia,Remove and Install,0.18,0.18
+1220035172,Applique - Upper - Fascia,Remove and Replace,0.18,0.18
+1220035181,Beauty Cover - Lightbar - LH,Remove and Install,0.06,0.06
+1220035182,Beauty Cover - Lightbar - LH,Remove and Replace,0.06,0.06
+1220035191,Beauty Cover - Lightbar - RH,Remove and Install,0.06,0.06
+1220035192,Beauty Cover - Lightbar - RH,Remove and Replace,0.06,0.06
+1220035201,Baffle - Fender - Front - LH,Remove and Install,0.66,0.66
+1220035202,Baffle - Fender - Front - LH,Remove and Replace,0.66,0.66
+1220035211,Baffle - Fender - Front - RH,Remove and Install,0.66,0.66
+1220035212,Baffle - Fender - Front - RH,Remove and Replace,0.66,0.66
+1220035221,Applique - Roof - LH,Remove and Install,0.06,0.06
+1220035222,Applique - Roof - LH,Remove and Replace,0.06,0.06
+1220035231,Applique - Roof - RH,Remove and Install,0.06,0.06
+1220035232,Applique - Roof - RH,Remove and Replace,0.06,0.06
+1220035241,Applique - B-Pillar - LH,Remove and Install,0.12,0.12
+1220035242,Applique - B-Pillar - LH,Remove and Replace,0.12,0.12
+1220035251,Applique - B-Pillar - RH,Remove and Install,0.12,0.12
+1220035252,Applique - B-Pillar - RH,Remove and Replace,0.12,0.12
+1220035262,Applique - Roof - Pair,Remove and Replace,0.06,0.06
+1220040001,Fender Flare - Aft - Rear - RH,Remove and Install,0.06,0.06
+1220040002,Fender Flare - Aft - Rear - RH,Remove and Replace,0.06,0.06
+1220040101,Fender Flare - Fore - Rear - RH,Remove and Install,0.06,0.06
+1220040102,Fender Flare - Fore - Rear - RH,Remove and Replace,0.06,0.06
+1220043011,Fender Flare - Front - LH,Remove and Install,0.12,0.12
+1220043012,Fender Flare - Front - LH,Remove and Replace,0.12,0.12
+1220043021,Fender Flare - Front - RH,Remove and Install,0.12,0.12
+1220043022,Fender Flare - Front - RH,Remove and Replace,0.12,0.12
+1220043031,Fender Flare - Fore - Rear - LH,Remove and Install,0.06,0.06
+1220043032,Fender Flare - Fore - Rear - LH,Remove and Replace,0.06,0.06
+1220043041,Fender Flare - Rear - RH,Remove and Install,0.06,0.06
+1220043042,Fender Flare - Rear - RH,Remove and Replace,0.06,0.06
+1220043051,Fender Flare - Aft - Rear - LH,Remove and Install,0.06,0.06
+1220043052,Fender Flare - Aft - Rear - LH,Remove and Replace,0.06,0.06
+1220043061,Carrier - Fender Flare - Fore - Front - LH,Remove and Install,0.12,0.12
+1220043062,Carrier - Fender Flare - Fore - Front - LH,Remove and Replace,0.12,0.12
+1220043071,Carrier - Fender Flare - Fore - Front - RH,Remove and Install,0.12,0.12
+1220043072,Carrier - Fender Flare - Fore - Front - RH,Remove and Replace,0.12,0.12
+1220043081,Carrier - Fender Flare - Aft - Front - LH,Remove and Install,0.12,0.12
+1220043082,Carrier - Fender Flare - Aft - Front - LH,Remove and Replace,0.12,0.12
+1220043091,Carrier - Fender Flare - Aft - Front - RH,Remove and Install,0.12,0.12
+1220043092,Carrier - Fender Flare - Aft - Front - RH,Remove and Replace,0.12,0.12
+1220043101,Carrier - Fender Flare - Fore - Rear - LH,Remove and Install,0.12,0.12
+1220043102,Carrier - Fender Flare - Fore - Rear - LH,Remove and Replace,0.12,0.12
+1220043111,Carrier - Fender Flare - Fore - Rear - RH,Remove and Install,0.12,0.12
+1220043112,Carrier - Fender Flare - Fore - Rear - RH,Remove and Replace,0.12,0.12
+1220043121,Carrier - Fender Flare - Aft - Rear - LH,Remove and Install,0.06,0.06
+1220043122,Carrier - Fender Flare - Aft - Rear - LH,Remove and Replace,0.06,0.06
+1220043131,Carrier - Fender Flare - Aft - Rear - RH,Remove and Install,0.12,0.12
+1220043132,Carrier - Fender Flare - Aft - Rear - RH,Remove and Replace,0.12,0.12
+1220105011,Rocker Panel Assembly - LH,Remove and Install,0.18,0.18
+1220105012,Rocker Panel Assembly - LH,Remove and Replace,0.18,0.18
+1220105021,Rocker Panel Assembly - RH,Remove and Install,0.18,0.18
+1220105022,Rocker Panel Assembly - RH,Remove and Replace,0.18,0.18
+1220105031,Rocker Step Reinforcement - Rear - LH,Remove and Install,0.24,0.24
+1220105032,Rocker Step Reinforcement - Rear - LH,Remove and Replace,0.24,0.24
+1220105041,Rocker Step Reinforcement - Rear - RH,Remove and Install,0.24,0.24
+1220105042,Rocker Step Reinforcement - Rear - RH,Remove and Replace,0.24,0.24
+1220105051,Rocker Step Reinforcement - Front - RH,Remove and Install,0.71,0.71
+1220105052,Rocker Step Reinforcement - Front - RH,Remove and Replace,0.71,0.71
+1220105061,Rocker Step Reinforcement - Front - LH,Remove and Install,0.24,0.24
+1220105062,Rocker Step Reinforcement - Front - LH,Remove and Replace,0.24,0.24
+1220126006,Sail Applique Set,Retrofit,1.26,1.26
+1220126011,Sail Applique - LH,Remove and Install,0.18,0.18
+1220126012,Sail Applique - LH,Remove and Replace,0.18,0.18
+1220126021,Sail Applique - RH,Remove and Install,0.18,0.18
+1220126022,Sail Applique - RH,Remove and Replace,0.18,0.18
+1220126032,Top Applique - Tailgate,Remove and Replace,0.06,0.06
+1220126041,Bed Side Wall Assembly - Upper - LH,Remove and Install,0.06,0.06
+1220126042,Bed Side Wall Assembly - Upper - LH,Remove and Replace,0.06,0.06
+1220126051,Bed Side Wall Assembly - Upper - RH,Remove and Install,0.06,0.06
+1220126052,Bed Side Wall Assembly - Upper - RH,Remove and Replace,0.06,0.06
+1220126061,Applique - Closeout - Lamp - Rear - LH,Remove and Install,0.18,0.18
+1220126062,Applique - Closeout - Lamp - Rear - LH,Remove and Replace,0.18,0.18
+1220126071,Applique - Closeout - Lamp - Rear - RH,Remove and Install,0.18,0.18
+1220126072,Applique - Closeout - Lamp - Rear - RH,Remove and Replace,0.18,0.18
+12201600101,Sail Applique - Bed - LH (Long Range),Remove and Install,0.12,0.12
+12201600102,Sail Applique - Bed - LH (Long Range),Remove and Replace,0.12,0.12
+12202201,Fairing - Rocker Panel - Rear - LH,Remove and Install,0.24,0.24
+12202202,Fairing - Rocker Panel - Rear - LH,Remove and Replace,0.24,0.24
+12202301,Fairing - Rocker Panel - Rear - RH,Remove and Install,0.24,0.24
+12202302,Fairing - Rocker Panel - Rear - RH,Remove and Replace,0.24,0.24
+1220310001,Switch - Tonneau,Remove and Install,0.12,0.12
+1220310002,Switch - Tonneau (Remove and Replace),Remove and Replace,0.12,0.12
+12206640,Bed Floor D-Rings Installation,Installation,0.12,0.12
+12207006,Mud Flaps,Retrofit,0.24,0.24
+12207301,Mud Flap - Front - LH,Remove and Install,0.06,0.06
+12207302,Mud Flap - Front - LH,Remove and Replace,0.06,0.06
+12207351,Self-Test for USS,Test/Adjust,0.06,0.06
+12207401,Mud Flap - Rear - LH,Remove and Install,0.12,0.12
+12207402,Mud Flap - Rear - LH,Remove and Replace,0.12,0.12
+12207501,Mud Flap - Front - RH,Remove and Install,0.06,0.06
+12207502,Mud Flap - Front - RH,Remove and Replace,0.06,0.06
+12207601,Mud Flap - Rear - RH,Remove and Install,0.12,0.12
+12207602,Mud Flap - Rear - RH,Remove and Replace,0.12,0.12
+12207904,Sail Applique Assembly - Pair (Inspect & Replace)),Remove and Replace,0.3,0.3
+12208583,Mud Flaps (PDI Retrofit),Retrofit,0.0,0.0
+1224057011,Seal - Frunk,Remove and Install,0.06,0.06
+1224057012,Seal - Frunk,Remove and Replace,0.06,0.06
+1224057021,Frunk Assembly,Remove and Install,0.12,0.12
+1224057022,Frunk Assembly,Remove and Replace,0.12,0.12
+1224057031,Lamp - Frunk,Remove and Install,0.12,0.12
+1224057032,Lamp - Frunk,Remove and Replace,0.12,0.12
+1224057041,Safety Lock Switch,Remove and Install,0.12,0.12
+1224057042,Safety Lock Switch,Remove and Replace,0.12,0.12
+1224057051,Access Panel - Frunk,Remove and Install,0.06,0.06
+1224057052,Access Panel - Frunk,Remove and Replace,0.06,0.06
+1225127011,Underhood Apron - LH,Remove and Install,0.12,0.12
+1225127012,Underhood Apron - LH,Remove and Replace,0.12,0.12
+1225127021,Underhood Apron - RH,Remove and Install,0.12,0.12
+1225127022,Underhood Apron - RH,Remove and Replace,0.12,0.12
+1225127031,Underhood Apron - Rear,Remove and Install,0.06,0.06
+1225127032,Underhood Apron - Rear,Remove and Replace,0.06,0.06
+1230124011,Tow Hitch,Remove and Install,0.72,0.72
+1230124012,Tow Hitch,Remove and Replace,0.72,0.72
+12302301,Ball Neck - Trailer Hitch (Remove & Install),Remove and Install,0.06,0.06
+12302302,Ball Neck - Trailer Hitch (Remove & Replace),Remove and Replace,0.12,0.12
+1245011001,Exterior Door Switch - Front - LH (B-Pillar),Remove and Install,0.12,0.12
+1245011002,Exterior Door Switch - Front - LH (B-Pillar),Remove and Replace,0.12,0.12
+1245011011,Exterior Door Switch - Front - RH (B-Pillar),Remove and Install,0.12,0.12
+1245011012,Exterior Door Switch - Front - RH (B-Pillar),Remove and Replace,0.12,0.12
+1245011021,Exterior Door Switch - Rear - LH (C-Pillar),Remove and Install,0.12,0.12
+1245011022,Exterior Door Switch - Rear - LH (C-Pillar),Remove and Replace,0.12,0.12
+1245011031,Exterior Door Switch - Rear - RH (C-Pillar),Remove and Install,0.12,0.12
+1245011032,Exterior Door Switch - Rear - RH (C-Pillar),Remove and Replace,0.12,0.12
+12505714,Vehicle Wrap – Door Jambs (Add-On),Retrofit,0.0,0.0
+12505724,Vehicle Wrap – Color Film (Installation),Retrofit,0.0,0.0
+12505734,Vehicle Wrap – Clear Film (Installation),Retrofit,0.0,0.0
+12505754,Vehicle Wrap - Vinyl (Installation),Retrofit,10.2,10.2
+13000004,Diagnosis: Seats,Test/Adjust,0.5,0.5
+13010102601,Bridge - Track Motor - 1st Row Seat - LH ,Remove and Install,0.66,0.66
+13010102602,Bridge - Track Motor - 1st Row Seat - LH ,Remove and Replace,0.66,0.66
+1301010312,Blower - Cushion - Front Seat - LH,Remove and Replace,0.12,0.12
+13010300,Seat - Driver - Calibration,Program,0.06,0.06
+13010400,Seat - Front Passenger - Calibration,Program,0.06,0.06
+1301059011,Button - Cushion Adjust - 1st Row Seat - LH,Remove and Install,0.06,0.06
+1301059012,Button - Cushion Adjust - 1st Row Seat - LH,Remove and Replace,0.06,0.06
+1301059021,Button - Recline - 1st Row Seat - LH,Remove and Install,0.06,0.06
+1301059022,Button - Recline - 1st Row Seat - LH,Remove and Replace,0.06,0.06
+1301059031,Button - 8WY/Lumbar - 1st Row Seat - LH,Remove and Install,0.18,0.18
+1301059032,Button - 8WY/Lumbar - 1st Row Seat - LH,Remove and Replace,0.18,0.18
+1301059041,Button - Cushion Adjust - 1st Row Seat - RH,Remove and Install,0.12,0.12
+1301059042,Button - Cushion Adjust - 1st Row Seat - RH,Remove and Replace,0.12,0.12
+1301059051,Button - Recline - 1st Row Seat - RH,Remove and Install,0.06,0.06
+1301059052,Button - Recline - 1st Row Seat - RH,Remove and Replace,0.06,0.06
+1301059061,Button - 8WY/Lumbar - 1st Row Seat - RH,Remove and Install,0.18,0.18
+1301059062,Button - 8WY/Lumbar - 1st Row Seat - RH,Remove and Replace,0.18,0.18
+1301060001,Cover - Crossmember Riser - 1st Row Seat - RH,Remove and Install,0.18,0.18
+1301060002,Cover - Crossmember Riser - 1st Row Seat - RH,Remove and Replace,0.18,0.18
+1301060101,Front Seat Sliders and Controllers - 1R Seat Inboard Riser RH,Remove and Install,1.02,1.02
+1301060102,Front Seat Sliders and Controllers - 1R Seat Inboard Riser RH,Remove and Replace,1.02,1.02
+1301060201,Motor - Recline - 1st Row Seat - RH,Remove and Install,0.48,0.48
+1301060202,Motor - Recline - 1st Row Seat - RH,Remove and Replace,0.48,0.48
+1301060301,Motor - Seat Height - 1st Row Seat - RH,Remove and Install,0.36,0.36
+1301060302,Motor - Seat Height - 1st Row Seat - RH,Remove and Replace,0.36,0.36
+1301060401,Motor - Seat Tilt  - 1st Row Seat - RH,Remove and Install,0.18,0.18
+1301060402,Motor - Seat Tilt  - 1st Row Seat - RH,Remove and Replace,0.18,0.18
+1301060501,Seatback Assembly - 1st Row Seat - RH,Remove and Install,0.48,0.48
+1301060502,Seatback Assembly - 1st Row Seat - RH,Remove and Replace,0.48,0.48
+1301061001,Frame - Seat Cushion - 1st Row Seat - RH,Remove and Install,1.38,1.38
+1301061002,Frame - Seat Cushion - 1st Row Seat - RH,Remove and Replace,1.38,1.38
+1301061011,Frame - Seat Cushion - 1st Row Seat - LH,Remove and Install,1.38,1.38
+1301061012,Frame - Seat Cushion - 1st Row Seat - LH,Remove and Replace,1.38,1.38
+1301061021,Seatback Assembly - 1st Row Seat - LH,Remove and Install,0.48,0.48
+1301061022,Seatback Assembly - 1st Row Seat - LH,Remove and Replace,0.48,0.48
+1301061031,Track Cover - 1st Row Seat,Remove and Install,0.06,0.06
+1301061032,Track Cover - 1st Row Seat,Remove and Replace,0.06,0.06
+1301061041,Motor - Seat Tilt  - 1st Row Seat - LH,Remove and Install,0.18,0.18
+1301061042,Motor - Seat Tilt  - 1st Row Seat - LH,Remove and Replace,0.18,0.18
+1301061051,Riser - Inboard 1st Row Seat - LH,Remove and Install,1.02,1.02
+1301061052,Riser - Inboard 1st Row Seat - LH,Remove and Replace,1.02,1.02
+1301061061,Cover - Crossmember Riser - 1st Row Seat - LH,Remove and Install,0.18,0.18
+1301061062,Cover - Crossmember Riser - 1st Row Seat - LH,Remove and Replace,0.18,0.18
+1301061071,Riser - Inboard - 1st Row Seat - RH,Remove and Install,1.02,1.02
+1301061072,Riser - Inboard - 1st Row Seat - RH,Remove and Replace,1.02,1.02
+1301061081,Motor - Recline - 1st Row Seat - LH,Remove and Install,0.48,0.48
+1301061082,Motor - Recline - 1st Row Seat - LH,Remove and Replace,0.48,0.48
+1301061091,Motor - Seat Height - 1st Row Seat - LH,Remove and Install,0.36,0.36
+1301061092,Motor - Seat Height - 1st Row Seat - LH,Remove and Replace,0.36,0.36
+1301061101,Riser - Outboard - 1st Row Seat - LH,Remove and Install,0.48,0.48
+1301061102,Riser - Outboard - 1st Row Seat - LH,Remove and Replace,0.48,0.48
+1301061111,Riser - Outboard - 1st Row Seat - RH,Remove and Install,0.54,0.54
+1301061112,Riser - Outboard - 1st Row Seat - RH,Remove and Replace,0.54,0.54
+1304058011,Seat Assembly - 1st Row - LH,Remove and Install,0.3,0.3
+1304058012,Seat Assembly - 1st Row - LH,Remove and Replace,0.42,0.42
+1304058021,Seat Assembly - 1st Row - RH,Remove and Install,0.3,0.3
+1304058022,Seat Assembly - 1st Row - RH,Remove and Replace,0.42,0.42
+1305002011,Bolster - Outboard - LH - 2nd Row Seat Back,Remove and Install,0.06,0.06
+1305002012,Bolster - Outboard - LH - 2nd Row Seat Back,Remove and Replace,0.06,0.06
+1305002021,Bolster - Outboard - RH - 2nd Row Seat Back,Remove and Install,0.06,0.06
+1305002022,Bolster - Outboard - RH - 2nd Row Seat Back,Remove and Replace,0.06,0.06
+1305002031,Bolster - Inboard - LH - 2nd Row Seat Back,Remove and Install,0.06,0.06
+1305002032,Bolster - Inboard - LH - 2nd Row Seat Back,Remove and Replace,0.06,0.06
+1305002041,Bolster - Inboard - RH - 2nd Row Seat Back,Remove and Install,0.06,0.06
+1305002042,Bolster - Inboard - RH - 2nd Row Seat Back,Remove and Replace,0.06,0.06
+1305002051,Armrest - 2nd Row Seat,Remove and Install,1.26,1.26
+1305002052,Armrest - 2nd Row Seat,Remove and Replace,1.26,1.26
+1305002061,Headrest - Center - 2nd Row Seat,Remove and Install,0.06,0.06
+1305002062,Headrest - Center - 2nd Row Seat,Remove and Replace,0.06,0.06
+1305002071,Cushion Assembly - 2nd Row Seat - RH,Remove and Install,0.78,0.78
+1305002072,Cushion Assembly - 2nd Row Seat - RH,Remove and Replace,0.78,0.78
+1305002081,Cushion Assembly - 2nd Row Seat - LH,Remove and Install,0.84,0.84
+1305002082,Cushion Assembly - 2nd Row Seat - LH,Remove and Replace,0.84,0.84
+1305002091,Seat Back Assembly - 2nd Row Seat - RH,Remove and Install,0.71,0.71
+1305002092,Seat Back Assembly - 2nd Row Seat - RH,Remove and Replace,0.71,0.71
+1305002101,Seat Back Assembly - 2nd Row Seat - LH,Remove and Install,0.78,0.78
+1305002102,Seat Back Assembly - 2nd Row Seat - LH,Remove and Replace,0.78,0.78
+1305003011,Shoulder Cover - LH - 2nd Row Seat,Remove and Install,0.66,0.66
+1305003012,Shoulder Cover - LH - 2nd Row Seat,Remove and Replace,0.66,0.66
+1305003021,Shoulder Cover - RH - 2nd Row Seat,Remove and Install,0.12,0.12
+1305003022,Shoulder Cover - RH - 2nd Row Seat,Remove and Replace,0.12,0.12
+1305003031,Back Lumbar - 2nd Row Seat,Remove and Install,0.06,0.06
+1305003032,Back Lumbar - 2nd Row Seat,Remove and Replace,0.06,0.06
+1305003041,Cap - Top Tether - Center - 2nd Row Seat,Remove and Install,0.06,0.06
+1305003042,Cap - Top Tether - Center - 2nd Row Seat,Remove and Replace,0.06,0.06
+1305003051,Strap - Release Buckle - Seat Cushion - 2nd Row Seat,Remove and Install,0.12,0.12
+1305003052,Strap - Release Buckle - Seat Cushion - 2nd Row Seat,Remove and Replace,0.12,0.12
+1305003061,Underbelly - 2nd Row Seat - LH,Remove and Install,0.78,0.78
+1305003062,Underbelly - 2nd Row Seat - LH,Remove and Replace,0.78,0.78
+1305003071,Underbelly - 2nd Row Seat - RH,Remove and Install,0.72,0.72
+1305003072,Underbelly - 2nd Row Seat - RH,Remove and Replace,0.72,0.72
+1305003082,2nd Row Seat Back Hardware - 2R Seat Armrest,Remove and Replace,0.71,0.71
+1305003091,Bezel - Cupholder - Armrest - 2nd Row Seat,Remove and Install,0.06,0.06
+1305003092,Bezel - Cupholder - Armrest - 2nd Row Seat,Remove and Replace,0.06,0.06
+1305003101,Cap - Shoulder Cover - 2nd Row Seat,Remove and Install,0.72,0.72
+1305003102,Cap - Shoulder Cover - 2nd Row Seat,Remove and Replace,0.72,0.72
+1305003111,Closeout - Armrest - 2nd Row Seat,Remove and Install,0.96,0.96
+1305003112,Closeout - Armrest - 2nd Row Seat,Remove and Replace,0.96,0.96
+1305003121,Mounting Bracket - Armrest - 2nd Row Seat,Remove and Install,1.08,1.08
+1305003122,Mounting Bracket - Armrest - 2nd Row Seat,Remove and Replace,1.08,1.08
+13050401201,CT Seats - 2nd Row Seat Assemblies and Hardware - 2nd Row Seat Assemblies - 2nd Row - Full Seat Assembly (RI),Remove and Install,1.74,1.74
+13050401202,CT Seats - 2nd Row Seat Assemblies and Hardware - 2nd Row Seat Assemblies - 2nd Row - Full Seat Assembly (RI),Remove and Replace,1.74,1.74
+1307060001,Trim - Seat Cushion - 1st Row Seat - RH/RH,Remove and Install,0.9,0.9
+1307060002,Trim - Seat Cushion - 1st Row Seat - RH/RH,Remove and Replace,0.9,0.9
+1307060011,Side Shield - Inboard - 1st Row Seat - RH,Remove and Install,0.3,0.3
+1307060012,Side Shield - Inboard - 1st Row Seat - RH,Remove and Replace,0.3,0.3
+1307060021,Side Shield - Inboard - 1st Row Seat - LH,Remove and Install,0.3,0.3
+1307060022,Side Shield - Inboard - 1st Row Seat - LH,Remove and Replace,0.3,0.3
+1307060031,Trim - Seat Back - 1st Row - RH,Remove and Install,0.6,0.6
+1307060032,Trim - Seat Back - 1st Row - RH,Remove and Replace,0.6,0.6
+1307060041,Trim - Seat Back - 1st Row - LH,Remove and Install,0.6,0.6
+1307060042,Trim - Seat Back - 1st Row - LH,Remove and Replace,0.6,0.6
+1307060051,Trim - Seat Cushion - 1st Row Seat - RH,Remove and Install,0.9,0.9
+1307060052,Trim - Seat Cushion - 1st Row Seat - RH,Remove and Replace,0.9,0.9
+1307060061,Foam - Seat Cushion - 1st Row Seat - LH (with Ventilation),Remove and Install,0.71,0.71
+1307060062,Foam - Seat Cushion - 1st Row Seat - LH (with Ventilation),Remove and Replace,0.71,0.71
+1307060071,Screw Cover - 1st Row Seat - LH,Remove and Install,0.12,0.12
+1307060072,Screw Cover - 1st Row Seat - LH,Remove and Replace,0.12,0.12
+1307060081,Side Shield - Outboard - 1st Row Seat - RH,Remove and Install,0.12,0.12
+1307060082,Side Shield - Outboard - 1st Row Seat - RH,Remove and Replace,0.12,0.12
+1307060091,Side Shield - Outboard - 1st Row Seat - LH,Remove and Install,0.12,0.12
+1307060092,Side Shield - Outboard - 1st Row Seat - LH,Remove and Replace,0.12,0.12
+1307060101,Foam - Seat Back - 1st Row Seat - RH (with Ventilation),Remove and Install,0.9,0.9
+1307060102,Foam - Seat Back - 1st Row Seat - RH (with Ventilation),Remove and Replace,0.9,0.9
+1307060111,Screw Cover - 1st Row Seat - RH,Remove and Install,0.12,0.12
+1307060112,Screw Cover - 1st Row Seat - RH,Remove and Replace,0.12,0.12
+1307060121,Foam - Seat Back - 1st Row Seat - LH (with Ventilation),Remove and Install,0.66,0.66
+1307060122,Foam - Seat Back - 1st Row Seat - LH (with Ventilation),Remove and Replace,0.66,0.66
+1307060131,Foam - Seat Cushion - 1st Row Seat - RH (with Ventilation),Remove and Install,0.9,0.9
+1307060132,Foam - Seat Cushion - 1st Row Seat - RH (with Ventilation),Remove and Replace,0.9,0.9
+1307060141,Trim - Seat Cushion - 1st Row Seat - LH,Remove and Install,0.9,0.9
+1307060142,Trim - Seat Cushion - 1st Row Seat - LH,Remove and Replace,0.9,0.9
+1308000001,Buckle Closeout - 2nd Row - RH,Remove and Install,0.36,0.36
+1308000002,Buckle Closeout - 2nd Row - RH,Remove and Replace,0.36,0.36
+1308005011,2nd Row Seat Covers and Pads - 2R Seat Back Inboard Bolster LH Trim,Remove and Install,0.71,0.71
+1308005012,2nd Row Seat Covers and Pads - 2R Seat Back Inboard Bolster LH Trim,Remove and Replace,0.71,0.71
+1308005021,2nd Row Seat Covers and Pads - 2R Seat Back Inboard Bolster LH Foam,Remove and Install,0.71,0.71
+1308005022,2nd Row Seat Covers and Pads - 2R Seat Back Inboard Bolster LH Foam,Remove and Replace,0.71,0.71
+1308005031,2nd Row Seat Covers and Pads - 2R Seat Bolster Substrate Inboard LH,Remove and Install,0.71,0.71
+1308005032,2nd Row Seat Covers and Pads - 2R Seat Bolster Substrate Inboard LH,Remove and Replace,0.71,0.71
+1308005041,2nd Row Seat Covers and Pads - 2R Seat Back Inboard Bolster RH Trim,Remove and Install,0.71,0.71
+1308005042,2nd Row Seat Covers and Pads - 2R Seat Back Inboard Bolster RH Trim,Remove and Replace,0.71,0.71
+1308005051,2nd Row Seat Covers and Pads - 2R Seat Back Inboard Bolster RH Foam,Remove and Install,0.71,0.71
+1308005052,2nd Row Seat Covers and Pads - 2R Seat Back Inboard Bolster RH Foam,Remove and Replace,0.71,0.71
+1308005061,2nd Row Seat Covers and Pads - 2R Seat Bolster Substrate Inboard RH,Remove and Install,0.71,0.71
+1308005062,2nd Row Seat Covers and Pads - 2R Seat Bolster Substrate Inboard RH,Remove and Replace,0.71,0.71
+1308005071,Substrate - Back Rest - 2nd Row Seat - RH,Remove and Install,0.42,0.42
+1308005072,Substrate - Back Rest - 2nd Row Seat - RH,Remove and Replace,0.42,0.42
+1308005081,Trim - Back Rest Insert - 2nd Row Seat,Remove and Install,0.96,0.96
+1308005082,Trim - Back Rest Insert - 2nd Row Seat,Remove and Replace,0.96,0.96
+1308005091,Foam - Back Rest Insert - 2nd Row Seat,Remove and Install,0.96,0.96
+1308005092,Foam - Back Rest Insert - 2nd Row Seat,Remove and Replace,0.96,0.96
+1308005101,Substrate - Back Rest - 2nd Row Seat - LH,Remove and Install,0.48,0.48
+1308005102,Substrate - Back Rest - 2nd Row Seat - LH,Remove and Replace,0.48,0.48
+1308005111,Buckle Closeout - 2nd Row - LH,Remove and Install,0.36,0.36
+1308005112,Buckle Closeout - 2nd Row - LH,Remove and Replace,0.36,0.36
+1308005121,B-Cover - Outboard - 2nd Row - LH,Remove and Install,0.12,0.12
+1308005122,B-Cover - Outboard - 2nd Row - LH,Remove and Replace,0.12,0.12
+1308005131,B-Cover - Outboard - 2nd Row - RH,Remove and Install,0.12,0.12
+1308005132,B-Cover - Outboard - 2nd Row - RH,Remove and Replace,0.12,0.12
+1308005141,A-Cover - Front - Outboard - 2nd Row - LH,Remove and Install,0.12,0.12
+1308005142,A-Cover - Front - Outboard - 2nd Row - LH,Remove and Replace,0.12,0.12
+1308005151,A-Cover - Front - Outboard - 2nd Row - RH,Remove and Install,0.12,0.12
+1308005152,A-Cover - Front - Outboard - 2nd Row - RH,Remove and Replace,0.12,0.12
+1308005161,Closeout Split - Buckle - 2nd Row Seat - LH,Remove and Install,0.36,0.36
+1308005162,Closeout Split - Buckle - 2nd Row Seat - LH,Remove and Replace,0.36,0.36
+1308005171,Closeout Split - Buckle - 2nd Row Seat - RH,Remove and Install,0.48,0.48
+1308005172,Closeout Split - Buckle - 2nd Row Seat - RH,Remove and Replace,0.48,0.48
+14050002,USB Drive,Remove and Replace,0.06,0.06
+1405010181,Super Cowl Assembly,Remove and Install,3.42,3.42
+1405010182,Super Cowl Assembly,Remove and Replace,3.42,3.42
+1405027011,Puddle Lamp - Footwell - Instrument Panel,Remove and Install,0.12,0.12
+1405027012,Puddle Lamp - Footwell - Instrument Panel,Remove and Replace,0.12,0.12
+1405027021,Glovebox Assembly,Remove and Install,0.54,0.54
+1405027022,Glovebox Assembly,Remove and Replace,0.54,0.54
+1405027031,Mid Panel Assembly - Instrument Panel,Remove and Install,0.12,0.12
+1405027032,Mid Panel Assembly - Instrument Panel,Remove and Replace,0.12,0.12
+1405027041,Defrost Panel,Remove and Install,1.62,1.62
+1405027042,Defrost Panel,Remove and Replace,1.62,1.62
+1405027051,Quarter Panel Assembly - LH - Instrument Panel,Remove and Install,0.18,0.18
+1405027052,Quarter Panel Assembly - LH - Instrument Panel,Remove and Replace,0.18,0.18
+1405027061,Quarter Panel Assembly - RH - Instrument Panel,Remove and Install,0.18,0.18
+1405027062,Quarter Panel Assembly - RH - Instrument Panel,Remove and Replace,0.18,0.18
+1405027071,Top Pad Assembly - Instrument Panel,Remove and Install,1.08,1.08
+1405027072,Top Pad Assembly - Instrument Panel,Remove and Replace,1.08,1.08
+1405027081,Lower Assembly - Instrument Panel,Remove and Install,0.42,0.42
+1405027082,Lower Assembly - Instrument Panel,Remove and Replace,0.42,0.42
+1405028011,Puddle Lamp - Glovebox,Remove and Install,0.54,0.54
+1405028012,Puddle Lamp - Glovebox,Remove and Replace,0.54,0.54
+1405028021,Module (RJ45) - Ethernet Diagnostic,Remove and Install,0.12,0.12
+1405028022,Module (RJ45) - Ethernet Diagnostic,Remove and Replace,0.12,0.12
+1405028031,Supercarrier Assembly,Remove and Install,2.34,2.34
+1405028032,Supercarrier Assembly,Remove and Replace,2.34,2.34
+1405028041,Bracket - Steering Column - Instrument Panel,Remove and Install,1.26,1.26
+1405028042,Bracket - Steering Column - Instrument Panel,Remove and Replace,1.26,1.26
+1405028051,Display Bracket - RH - Instrument Panel,Remove and Install,0.71,0.71
+1405028052,Display Bracket - RH - Instrument Panel,Remove and Replace,0.71,0.71
+1405028061,Display Bracket - LH - Instrument Panel,Remove and Install,0.18,0.18
+1405028062,Display Bracket - LH - Instrument Panel,Remove and Replace,0.18,0.18
+1405028071,Downleg Bracket - RH - Instrument Panel,Remove and Install,3.06,3.06
+1405028072,Downleg Bracket - RH - Instrument Panel,Remove and Replace,3.06,3.06
+1405028081,Downleg Bracket - LH - Instrument Panel,Remove and Install,3.06,3.06
+1405028082,Downleg Bracket - LH - Instrument Panel,Remove and Replace,3.06,3.06
+1405028091,Display Shroud - Instrument Panel,Remove and Install,0.12,0.12
+1405028092,Display Shroud - Instrument Panel,Remove and Replace,0.12,0.12
+1405028101,Service Panel - Center Shroud - Instrument Panel,Remove and Install,0.06,0.06
+1405028102,Service Panel - Center Shroud - Instrument Panel,Remove and Replace,0.06,0.06
+1405028111,Cover - Footwell,Remove and Install,0.12,0.12
+1405028112,Cover - Footwell,Remove and Replace,0.12,0.12
+1405070001,Floor Duct - Outboard - RH - Instrument Panel,Remove and Install,0.54,0.54
+1405070002,Floor Duct - Outboard - RH - Instrument Panel,Remove and Replace,0.54,0.54
+1405070101,Interior Ducting and Vents - Instrument Panel Floor Duct Inboard - RH,Remove and Install,0.71,0.71
+1405070102,Interior Ducting and Vents - Instrument Panel Floor Duct Inboard - RH,Remove and Replace,0.71,0.71
+1405077011,Demist Duct - Side Window - LH,Remove and Install,1.32,1.32
+1405077012,Demist Duct - Side Window - LH,Remove and Replace,1.32,1.32
+1405077021,Demist Duct - Side Window - RH,Remove and Install,0.71,0.71
+1405077022,Demist Duct - Side Window - RH,Remove and Replace,0.71,0.71
+1405077031,Interior Ducting and Vents - Instrument Panel Floor Duct - RH,Remove and Install,0.71,0.71
+1405077032,Interior Ducting and Vents - Instrument Panel Floor Duct - RH,Remove and Replace,0.71,0.71
+1405077041,Interior Ducting and Vents - Instrument Panel Floor Duct Inboard - LH,Remove and Install,0.71,0.71
+1405077042,Interior Ducting and Vents - Instrument Panel Floor Duct Inboard - LH,Remove and Replace,0.71,0.71
+1405077051,Floor Duct - Outboard - LH - Instrument Panel,Remove and Install,0.54,0.54
+1405077052,Floor Duct - Outboard - LH - Instrument Panel,Remove and Replace,0.54,0.54
+1405077061,Airwave Module - Instrument Panel,Remove and Install,1.14,1.14
+1405077062,Airwave Module - Instrument Panel,Remove and Replace,1.14,1.14
+1405077071,Aerobracket Assembly - Instrument Panel,Remove and Install,1.26,1.26
+1405077072,Aerobracket Assembly - Instrument Panel,Remove and Replace,1.26,1.26
+1405077081,Demist Duct - Driver,Remove and Install,1.2,1.2
+1405077082,Demist Duct - Driver,Remove and Replace,1.2,1.2
+1405077091,Demist Duct - Front Passenger,Remove and Install,1.2,1.2
+1405077092,Demist Duct - Front Passenger,Remove and Replace,1.2,1.2
+1405077101,Interior Ducting and Vents - Jumper Floor Duct,Remove and Install,0.71,0.71
+1405077102,Interior Ducting and Vents - Jumper Floor Duct,Remove and Replace,0.71,0.71
+1405077111,Airwave Panel Duct - LH,Remove and Install,1.44,1.44
+1405077112,Airwave Panel Duct - LH,Remove and Replace,1.44,1.44
+1405077121,Airwave Panel Duct - RH,Remove and Install,1.44,1.44
+1405077122,Airwave Panel Duct - RH,Remove and Replace,1.44,1.44
+15000004,Adjustment: Interior Trim,Test/Adjust,0.2,0.2
+1505103011,Overhead Console Assembly - Front,Remove and Install,0.12,0.12
+1505103012,Overhead Console Assembly - Front,Remove and Replace,0.06,0.06
+1505103021,Glare Shield - Rearview Mirror,Remove and Install,0.18,0.18
+1505103022,Glare Shield - Rearview Mirror,Remove and Replace,0.18,0.18
+1505103031,Beauty Cover - Rearview Mirror,Remove and Install,0.12,0.12
+1505103032,Beauty Cover - Rearview Mirror,Remove and Replace,0.12,0.12
+1505103041,Rearview Mirror,Remove and Install,0.06,0.06
+1505103042,Rearview Mirror ,Remove and Replace,0.06,0.06
+1505113011,Sun Visors - Sunvisor and Curtain Assembly - LH,Remove and Install,0.71,0.71
+1505113012,Sun Visors - Sunvisor and Curtain Assembly - LH,Remove and Replace,0.71,0.71
+1505113021,Sun Visors - Sunvisor and Curtain Assembly - RH,Remove and Install,0.71,0.71
+1505113022,Sun Visors - Sunvisor and Curtain Assembly - RH,Remove and Replace,0.71,0.71
+1505113031,Sun Visor - LH,Remove and Install,0.42,0.42
+1505113032,Sun Visor - LH,Remove and Replace,0.42,0.42
+1505113041,Sun Visor - RH,Remove and Install,0.42,0.42
+1505113042,Sun Visor - RH,Remove and Replace,0.42,0.42
+15130004,Diagnosis: Closures,General Diagnosis,0.65,0.65
+1513040001,Ambient Light - Map Pocket - Door Panel - Front - RH,Remove and Install,0.18,0.18
+1513040002,Ambient Light - Map Pocket - Door Panel - Front - RH,Remove and Replace,0.18,0.18
+1513040201,Puddle Lamp - Door Panel - Front - RH,Remove and Install,0.06,0.06
+1513040202,Puddle Lamp - Door Panel - Front - RH,Remove and Replace,0.06,0.06
+1513040301,Reflector - Door - Front - RH,Remove and Install,0.06,0.06
+1513040302,Reflector - Door - Front - RH,Remove and Replace,0.06,0.06
+1513047011,Ambient Light - Map Pocket - Door Panel - Front - LH,Remove and Install,0.18,0.18
+1513047012,Ambient Light - Map Pocket - Door Panel - Front - LH,Remove and Replace,0.18,0.18
+1513047021,Puddle Lamp - Door Panel - Front - LH,Remove and Install,0.06,0.06
+1513047022,Puddle Lamp - Door Panel - Front - LH,Remove and Replace,0.06,0.06
+1513047031,Panel - Door Trim - Front - LH,Remove and Install,0.12,0.12
+1513047032,Panel - Door Trim - Front - LH,Remove and Replace,0.12,0.12
+1513047037,Panel - Door Trim - Front - LH (Rework),Modify,0.12,0.12
+1513047041,Panel - Door Trim - Front - RH,Remove and Install,0.12,0.12
+1513047042,Panel - Door Trim - Front - RH,Remove and Replace,0.12,0.12
+1513047047,Panel - Door Trim - Front - RH (Rework),Modify,0.12,0.12
+1513047051,Interior Door Switch - Front - LH,Remove and Install,0.18,0.18
+1513047052,Interior Door Switch - Front - LH,Remove and Replace,0.18,0.18
+1513047061,Interior Door Switch - Front - RH,Remove and Install,0.18,0.18
+1513047062,Interior Door Switch - Front - RH,Remove and Replace,0.18,0.18
+1513047071,Beltline Assembly - Door Panel - Front - LH,Remove and Install,0.06,0.06
+1513047072,Beltline Assembly - Door Panel - Front - LH,Remove and Replace,0.06,0.06
+1513047081,Switch - Window - Front - LH,Remove and Install,0.24,0.24
+1513047082,Switch - Window - Front - LH,Remove and Replace,0.24,0.24
+1513047091,Switch - Window - Front - RH,Remove and Install,0.18,0.18
+1513047092,Switch - Window - Front - RH,Remove and Replace,0.18,0.18
+1513047101,Beltline Assembly - Door Panel - Front - RH,Remove and Install,0.06,0.06
+1513047102,Beltline Assembly - Door Panel - Front - RH,Remove and Replace,0.06,0.06
+1513047111,NVH Foam - Door - Front - LH,Remove and Install,0.18,0.18
+1513047112,NVH Foam - Door - Front - LH,Remove and Replace,0.18,0.18
+1513047121,NVH Foam - Door - Front - RH,Remove and Install,0.18,0.18
+1513047122,NVH Foam - Door - Front - RH,Remove and Replace,0.18,0.18
+1513047131,Reflector - Door - Front - LH,Remove and Install,0.06,0.06
+1513047132,Reflector - Door - Front - LH,Remove and Replace,0.06,0.06
+1513047141,Puddle Lamp - Door Panel - Front - RH,Remove and Replace,0.06,0.06
+1513047142,Puddle Lamp - Door Panel - Front - RH,Remove and Replace,0.06,0.06
+1513090001,Ambient Light - Map Pocket - Door Panel - Rear - RH,Remove and Install,0.12,0.12
+1513090002,Ambient Light - Map Pocket - Door Panel - Rear - RH,Remove and Replace,0.12,0.12
+1513090101,Puddle Lamp - Door Panel - Rear - RH,Remove and Install,0.06,0.06
+1513090102,Puddle Lamp - Door Panel - Rear - RH,Remove and Replace,0.06,0.06
+1513090201,Switch - Window - Rear - RH,Remove and Install,0.12,0.12
+1513090202,Switch - Window - Rear - RH,Remove and Replace,0.12,0.12
+1513091011,Ambient Light - Map Pocket - Door Panel - Rear - LH,Remove and Install,0.12,0.12
+1513091012,Ambient Light - Map Pocket - Door Panel - Rear - LH,Remove and Replace,0.12,0.12
+1513091021,Puddle Lamp - Door Panel - Rear - LH,Remove and Install,0.06,0.06
+1513091022,Puddle Lamp - Door Panel - Rear - LH,Remove and Replace,0.06,0.06
+1513091031,Panel - Door Trim - Rear - LH,Remove and Install,0.06,0.06
+1513091032,Panel - Door Trim - Rear - LH,Remove and Replace,0.06,0.06
+1513091037,Panel - Door Trim - Rear - LH,Modify,0.12,0.12
+1513091041,Interior Door Switch - Rear - LH,Remove and Install,0.12,0.12
+1513091042,Interior Door Switch - Rear - LH,Remove and Replace,0.12,0.12
+1513091051,Interior Door Switch - Rear - RH,Remove and Install,0.18,0.18
+1513091052,Interior Door Switch - Rear - RH,Remove and Replace,0.18,0.18
+1513091061,Panel - Door Trim - Rear - RH,Remove and Install,0.06,0.06
+1513091062,Panel - Door Trim - Rear - RH,Remove and Replace,0.06,0.06
+1513091067,Panel - Door Trim - Rear - RH,Modify,0.12,0.12
+1513091071,Switch - Window - Rear - LH,Remove and Install,0.12,0.12
+1513091072,Switch - Window - Rear - LH,Remove and Replace,0.12,0.12
+1513091081,Beltline Assembly - Door Panel - Rear - LH,Remove and Install,0.06,0.06
+1513091082,Beltline Assembly - Door Panel - Rear - LH,Remove and Replace,0.06,0.06
+1513091091,Beltline Assembly - Door Panel - Rear - RH,Remove and Install,0.06,0.06
+1513091092,Beltline Assembly - Door Panel - Rear - RH,Remove and Replace,0.06,0.06
+1513091101,NVH Foam - Door - Rear - LH,Remove and Install,0.12,0.12
+1513091102,NVH Foam - Door - Rear - LH,Remove and Replace,0.12,0.12
+1513091111,NVH Foam - Door - Rear - RH,Remove and Install,0.12,0.12
+1513091112,NVH Foam - Door - Rear - RH,Remove and Replace,0.12,0.12
+1518006011,Trim - B-Pillar - Lower - LH,Remove and Install,0.24,0.24
+1518006012,Trim - B-Pillar - Lower - LH,Remove and Replace,0.24,0.24
+1518006021,Trim - B-Pillar - Upper - LH,Remove and Install,0.78,0.78
+1518006022,Trim - B-Pillar - Upper - LH,Remove and Replace,0.66,0.66
+1518006031,Trim - B-Pillar - Upper - RH,Remove and Install,0.66,0.66
+1518006032,Trim - B-Pillar - Upper - RH,Remove and Replace,0.66,0.66
+1518006041,Ramp Bracket - C-Pillar - LH,Remove and Install,0.72,0.72
+1518006042,Ramp Bracket - C-Pillar - LH,Remove and Replace,0.72,0.72
+1518006051,Ramp Bracket - C-Pillar - RH,Remove and Install,0.72,0.72
+1518006052,Ramp Bracket - C-Pillar - RH,Remove and Replace,0.72,0.72
+1518006061,Trim - B-Pillar - Lower - RH,Remove and Install,0.24,0.24
+1518006062,Trim - B-Pillar - Lower - RH,Remove and Replace,0.24,0.24
+1518006071,Trim - C-Pillar - Upper - LH,Remove and Install,0.66,0.66
+1518006072,Trim - C-Pillar - Upper - LH,Remove and Replace,0.66,0.66
+1518006081,Trim - C-Pillar - Lower - LH,Remove and Install,0.12,0.12
+1518006082,Trim - C-Pillar - Lower - LH,Remove and Replace,0.12,0.12
+1518006091,Trim - C-Pillar - Upper - RH,Remove and Install,0.66,0.66
+1518006092,Trim - C-Pillar - Upper - RH,Remove and Replace,0.66,0.66
+1518006101,Trim - C-Pillar - Lower - RH,Remove and Install,0.12,0.12
+1518006102,Trim - C-Pillar - Lower - RH,Remove and Replace,0.12,0.12
+1518006111,Trim - A-Pillar - Lower - LH,Remove and Install,0.06,0.06
+1518006112,Trim - A-Pillar - Lower - LH,Remove and Replace,0.06,0.06
+1518006121,Trim - A-Pillar - Lower - RH,Remove and Install,0.06,0.06
+1518006122,Trim - A-Pillar - Lower - RH,Remove and Replace,0.06,0.06
+1518006131,Trim - A-Pillar - Mid - LH,Remove and Install,0.06,0.06
+1518006132,Trim - A-Pillar - Mid - LH,Remove and Replace,0.06,0.06
+1518006141,Trim - A-Pillar - Mid - RH,Remove and Install,0.06,0.06
+1518006142,Trim - A-Pillar - Mid - RH,Remove and Replace,0.06,0.06
+1518006151,Trim - A-Pillar - Upper - LH,Remove and Install,0.24,0.24
+1518006152,Trim - A-Pillar - Upper - LH,Remove and Replace,0.24,0.24
+1518006161,Trim - A-Pillar - Upper - RH,Remove and Install,0.24,0.24
+1518006162,Trim - A-Pillar - Upper - RH,Remove and Replace,0.24,0.24
+1518006171,Trim - A-Pillar - Forward - LH,Remove and Install,0.36,0.36
+1518006172,Trim - A-Pillar - Forward - LH,Remove and Replace,0.36,0.36
+1518006181,Trim - A-Pillar - Forward - RH,Remove and Install,0.36,0.36
+1518006182,Trim - A-Pillar - Forward - RH,Remove and Replace,0.36,0.36
+1518006191,Bezel - Trim - B-Pillar - Upper - LH,Remove and Install,1.02,1.02
+1518006192,Bezel - Trim - B-Pillar - Upper - LH,Remove and Replace,1.02,1.02
+1518006201,Bezel - Trim - B-Pillar - Upper - RH,Remove and Install,1.02,1.02
+1518006202,Bezel - Trim - B-Pillar - Upper - RH,Remove and Replace,1.02,1.02
+1519023011,Puddle Lamp - Center Console,Remove and Install,0.12,0.12
+1519023012,Puddle Lamp - Center Console,Remove and Replace,0.12,0.12
+1519023021,Cap - Armrest - Center Console,Remove and Install,0.06,0.06
+1519023022,Cap - Armrest - Center Console,Remove and Replace,0.06,0.06
+1519023031,Decor - Top - Center Console,Remove and Install,0.06,0.06
+1519023032,Decor - Top - Center Console,Remove and Replace,0.06,0.06
+1519023041,Panel - Rear - Center Console,Remove and Install,0.18,0.18
+1519023042,Panel - Rear - Center Console,Remove and Replace,0.18,0.18
+1519023051,Cap - Airwave - Center Console,Remove and Install,0.24,0.24
+1519023052,Cap - Airwave - Center Console,Remove and Replace,0.24,0.24
+1519023061,Cupholder - Center Console,Remove and Install,0.54,0.54
+1519023062,Cupholder - Center Console,Remove and Replace,0.54,0.54
+1519023071,Panel - Front - Center Console,Remove and Install,0.12,0.12
+1519023072,Panel - Front - Center Console,Remove and Replace,0.12,0.12
+1519023081,External Panel - LH - Center Console,Remove and Install,0.48,0.48
+1519023082,External Panel - LH - Center Console,Remove and Replace,0.48,0.48
+1519023091,Airwave Assembly - Center Console,Remove and Install,0.36,0.36
+1519023092,Airwave Assembly - Center Console,Remove and Replace,0.36,0.36
+1519023101,Armrest Assembly - Center Console,Remove and Install,0.48,0.48
+1519023102,Armrest Assembly - Center Console,Remove and Replace,0.48,0.48
+1519023111,External Panel - RH - Center Console,Remove and Install,0.48,0.48
+1519023112,External Panel - RH - Center Console,Remove and Replace,0.48,0.48
+1519023121,Wireless Charger - Center Console,Remove and Install,0.12,0.12
+1519023122,Wireless Charger - Center Console,Remove and Replace,0.12,0.12
+1519023131,Center Console Assembly,Remove and Install,0.54,0.54
+1519023132,Center Console Assembly,Remove and Replace,0.71,0.71
+15190405401,Panel - Rear - Center Console (Long Range),Remove and Install,0.0,0.0
+15190405402,Panel - Rear - Center Console (Long Range),Remove and Replace,0.0,0.0
+15190405501,Center Console Assembly (Long Range),Remove and Install,0.42,0.42
+15190405502,Center Console Assembly (Long Range),Remove and Replace,0.42,0.42
+1519129011,Controller - USB - Center Console,Remove and Install,0.12,0.12
+1519129012,Controller - USB - Center Console,Remove and Replace,0.12,0.12
+1519129021,Hub - USB - Panel - Rear - Center Console,Remove and Install,0.12,0.12
+1519129022,Hub - USB - Panel - Rear - Center Console,Remove and Replace,0.12,0.12
+15200300001,Spot Lamp - Headliner Trim - LH (Long Range),Remove and Install,0.42,0.42
+15200300002,Spot Lamp - Headliner Trim - LH (Long Range),Remove and Replace,0.42,0.42
+1520068011,Maplight - Front,Remove and Install,0.12,0.12
+1520068012,Maplight - Front,Remove and Replace,0.12,0.12
+1520068021,Trim - Header - Front,Remove and Install,0.12,0.12
+1520068022,Trim - Header - Front,Remove and Replace,0.12,0.12
+1520068027,Pigtail - Trim - Header - Front (Rework),Test/Adjust,0.36,0.36
+1520068031,Trim - Cantrail - LH,Remove and Install,0.48,0.48
+1520068032,Trim - Cantrail - LH,Remove and Replace,0.48,0.48
+1520068041,Trim - Cantrail - RH,Remove and Install,0.48,0.48
+1520068042,Trim - Cantrail - RH,Remove and Replace,0.48,0.48
+1520068051,Coathook and Maplight - LH,Remove and Install,0.48,0.48
+1520068052,Coathook and Maplight - LH,Remove and Replace,0.48,0.48
+1520068061,Coathook and Maplight - RH,Remove and Install,0.48,0.48
+1520068062,Coathook and Maplight - RH,Remove and Replace,0.48,0.48
+1520068071,Trim - Header - Rear,Remove and Install,0.12,0.12
+1520068072,Trim - Header - Rear,Remove and Replace,0.12,0.12
+1520068081,Bracket - TCU,Remove and Install,0.12,0.12
+1520068082,Bracket - TCU,Remove and Replace,0.12,0.12
+1530079011,NVH Pad - Dash,Remove and Install,4.02,4.02
+1530079012,NVH Pad - Dash,Remove and Replace,4.02,4.02
+1530079021,NVH Pad - Cowl,Remove and Install,1.62,1.62
+1530079022,NVH Pad - Cowl,Remove and Replace,1.62,1.62
+1530079031,NVH Pad - Rear Wall,Remove and Install,1.86,1.86
+1530079032,NVH Pad - Rear Wall,Remove and Replace,1.86,1.86
+1530083011,Trim - Center Floor - Lower,Remove and Install,0.12,0.12
+1530083012,Trim - Center Floor - Lower,Remove and Replace,0.12,0.12
+1530083021,Rail - Center Floor - RH,Remove and Install,0.71,0.71
+1530083022,Rail - Center Floor - RH,Remove and Replace,0.71,0.71
+1530083031,Rail - Center Floor - LH,Remove and Install,0.06,0.06
+1530083032,Rail - Center Floor - LH,Remove and Replace,0.06,0.06
+1530083041,Bracket - Upper - Center Floor,Remove and Install,0.48,0.48
+1530083042,Bracket - Upper - Center Floor,Remove and Replace,0.48,0.48
+1530083051,Bezel - Duct - Carpet - Rear,Remove and Install,0.12,0.12
+1530083052,Bezel - Duct - Carpet - Rear,Remove and Replace,0.12,0.12
+1530083061,Side Trim - Pedal,Remove and Install,0.06,0.06
+1530083062,Side Trim - Pedal,Remove and Replace,0.06,0.06
+1530083071,Carpet Assembly - Driver,Remove and Install,0.36,0.36
+1530083072,Carpet Assembly - Driver,Remove and Replace,0.36,0.36
+1530083081,Carpet Assembly - Front Passenger,Remove and Install,0.54,0.54
+1530083082,Carpet Assembly - Front Passenger,Remove and Replace,0.54,0.54
+1530083091,Carpet Assembly - Rear,Remove and Install,0.6,0.6
+1530083092,Carpet Assembly - Rear,Remove and Replace,0.6,0.6
+1530083101,Floor Mat Kit,Remove and Install,0.12,0.12
+1530083102,Floor Mat Kit,Remove and Replace,0.12,0.12
+1530083111,Trim - Lower - Rear Wall,Remove and Install,0.18,0.18
+1530083112,Trim - Lower - Rear Wall,Remove and Replace,0.18,0.18
+16010005,HV Battery Coolant - Drain and Refill (With Battery Removed),Remove and Replace,0.15,0.15
+16010020,HV Battery Pack Isolation Inspection,Inspection,0.6,0.6
+16010103501,HV Battery Assembly (Long Range),Remove and Install,4.2,4.2
+16010103502,HV Battery Assembly (Long Range),Remove and Replace,5.22,5.22
+1601011032,Thermal Vent - HV Battery ,Remove and Replace,0.48,0.48
+16010201,HV Battery (AWD),Remove and Install,6.55,6.55
+16010202,HV Battery (AWD),Remove and Replace,8.3,8.3
+1601070011,HV Connector Header - 2-Pole/600V,Remove and Install,0.71,0.71
+1601070012,HV Connector Header - 2-Pole/600V,Remove and Replace,0.71,0.71
+1601070021,"High Voltage Battery Assembly - Disconnect, Pyro, Single Joint",Remove and Install,0.72,0.72
+1601070022,"High Voltage Battery Assembly - Disconnect, Pyro, Single Joint",Remove and Replace,0.72,0.72
+1601070031,"HV Connector Header - DC, FC",Remove and Install,3.24,3.24
+1601070032,"High Voltage Battery Assembly - HV Connector Header, DC FC",Remove and Replace,3.24,3.24
+1601070041,"High Voltage Battery Assembly - HV Connector Header, Front Door",Remove and Install,0.71,0.71
+1601070042,"High Voltage Battery Assembly - HV Connector Header, Front Door",Remove and Replace,0.71,0.71
+1601070051,"Doubler - HV Connector Header - DC, FC",Remove and Install,1.56,1.56
+1601070052,"Doubler - HV Connector Header - DC, FC",Remove and Replace,1.56,1.56
+1601070061,Cover - Pyro Access  - HV Battery,Remove and Install,0.6,0.6
+1601070062,Cover - Pyro Access  - HV Battery,Remove and Replace,0.6,0.6
+1601070071,Flood Port,Remove and Install,0.71,0.71
+1601070072,Flood Port,Remove and Replace,0.71,0.71
+1601070091,Terrestrial Armor,Remove and Install,1.74,1.74
+1601070092,Terrestrial Armor,Remove and Replace,1.74,1.74
+1601070096,Terrestrial Armor Package (Retrofit),Retrofit,1.62,1.62
+1601070101,Chinstrap - Front - HV Battery,Remove and Install,0.71,0.71
+1601070102,Chinstrap - Front - HV Battery,Remove and Replace,0.71,0.71
+1601070111,Venting Bracket - Rear - HV Battery,Remove and Install,0.71,0.71
+1601070112,Venting Bracket - Rear - HV Battery,Remove and Replace,0.71,0.71
+1601070121,"Fuse, 60A, 1000VDC, Eaton EVK22-60-T - HV Battery",Remove and Install,3.3,3.3
+1601070122,"Fuse, 60A, 1000VDC, Eaton EVK22-60-T - HV Battery",Remove and Replace,3.3,3.3
+1601070131,Skid Plate - Rear,Remove and Install,0.18,0.18
+1601070132,Skid Plate - Rear,Remove and Replace,0.18,0.18
+1601070141,"High Voltage Battery Assembly - Rear Right Side Ski, HVB",Remove and Install,0.71,0.71
+1601070142,"High Voltage Battery Assembly - Rear Right Side Ski, HVB",Remove and Replace,0.71,0.71
+1601070151,Littelfuse 828 - 30,Remove and Install,0.6,0.6
+1601070152,Littelfuse 828 - 30,Remove and Replace,0.6,0.6
+16011908,Inspection for Vehicle Soaking in Water,Test/Adjust,1.74,1.74
+16015300,Discharge HV Battery (At Pack Contactors),Test/Adjust,1.02,1.02
+16015400,Discharge HV Battery (Smart Mode),Test/Adjust,1.38,1.38
+16015500,Discharge HV Battery (Through Touchscreen Service Mode),Test/Adjust,0.06,0.06
+16018725,HV Battery Vitals Inspection,Inspection,0.06,0.06
+16100400,Ancillary Bay Air Leak Test,Inspection,0.42,0.42
+16100410,Ancillary Bay Air Leak Test (Busbar Type),Test/Adjust,0.42,0.42
+16102000,Platter Enclosure Air Leak Test,Test/Adjust,0.6,0.6
+16102010,Platter Enclosure Coolant Leak Test,Inspection,1.38,1.38
+16102020,Platter Enclosure Coolant (Drain and Refill),Test/Adjust,0.12,0.12
+16102100,HV Battery Air Leak Test,Test/Adjust,0.66,0.66
+16200200,Ancillary Bay Coolant Leak Test,Inspection,2.16,2.16
+16200505,Coolant - HV Battery (Drain and Refill) ,Maintenance,1.08,1.08
+16202000,Ancillary Bay Coolant (Drain and Refill),Test/Adjust,2.28,2.28
+16300100,Resistance Meter (Zero Adjust),Test/Adjust,0.05,0.05
+1630010011,Pyro Disconnect,Remove and Install,0.72,0.72
+1630010012,Pyro Disconnect,Remove and Replace,0.72,0.72
+1630010021,"Ancillary Components - HV Connector Header, FC",Remove and Install,0.71,0.71
+1630010022,"Ancillary Components - HV Connector Header, FC",Remove and Replace,0.71,0.71
+1630010031,Header - HV Connector - Front Drive Unit,Remove and Install,0.42,0.42
+1630010032,Header - HV Connector - Front Drive Unit,Remove and Replace,0.42,0.42
+1630010041,"Ancillary Components - HV Connector Header, Dc FC, Doubler",Remove and Install,0.71,0.71
+1630010042,"Ancillary Components - HV Connector Header, DC FC, Doubler",Remove and Replace,0.71,0.71
+1630010051,Flood Port,Remove and Install,0.36,0.36
+1630010052,Flood Port,Remove and Replace,0.36,0.36
+1630010061,Ancillary Components - Harness - Device Cluster,Remove and Install,0.71,0.71
+1630010071,Harness - Shunt Jumper,Remove and Install,3.84,3.84
+1630010072,Harness - Shunt Jumper,Remove and Replace,3.84,3.84
+1630010081,Power Conversion System,Remove and Install,4.2,4.2
+1630010082,Power Conversion System,Remove and Replace,4.2,4.2
+1630010091,"PCB, AC Junction Box, B2",Remove and Install,3.42,3.42
+1630010092,"PCB, AC Junction Box, B2",Remove and Replace,3.42,3.42
+1630010101,Ancillary Cover,Remove and Install,3.18,3.18
+1630010102,Anclilary Cover,Remove and Replace,3.18,3.18
+1630010111,Device Cluster Assembly,Remove and Install,3.96,3.96
+1630010112,Device Cluster Assembly,Remove and Replace,3.84,3.84
+1630010121,Ancillary Components - Busbar DC Link Positive,Remove and Install,0.71,0.71
+1630010122,Ancillary Components - Busbar DC Link Positive,Remove and Replace,0.71,0.71
+1630010131,"Ancillary Components - DC Inlet, Positive",Remove and Install,0.71,0.71
+1630010132,"Ancillary Components - DC Inlet, Positive",Remove and Replace,0.71,0.71
+1630010141,DC Inlet - Negative - Ancillary Bay,Remove and Install,0.71,0.71
+1630010142,DC Inlet - Negative - Ancillary Bay,Remove and Replace,0.71,0.71
+1630010151,Last Mile Busbar Assembly,Remove and Install,4.56,4.56
+1630010152,Last Mile Busbar Assembly,Remove and Replace,4.56,4.56
+1630010161,HV Harness - Device Cluster,Remove and Install,2.76,2.76
+1630010162,HV Harness - Device Cluster,Remove and Replace,2.76,2.76
+1630010171,HV Harness - AC Junction Box To PCS,Remove and Install,3.24,3.24
+1630010172,HV Harness - AC Junction Box To PCS,Remove and Replace,3.24,3.24
+1630010181,HV Harness - AC Junction Box To FC,Remove and Install,3.18,3.18
+1630010182,HV Harness - AC Junction Box To FC,Remove and Replace,3.18,3.18
+1630010191,"Fuse, 60A, 1000VDC, Eaton EVK22-60-T - Ancillary",Remove and Install,3.3,3.3
+1630010192,"Fuse, 60A, 1000VDC, Eaton EVK22-60-T - Ancillary",Remove and Replace,3.3,3.3
+1630010201,Ancillary Components - Fast Charge Insulator,Remove and Install,0.71,0.71
+1630010202,Ancillary Components - Fast Charge Insulator,Remove and Replace,0.71,0.71
+1630010211,30A Sand Fuse - Ancillary Bay,Remove and Install,0.71,0.71
+1630010212,30A Sand Fuse - Ancillary Bay,Remove and Replace,0.71,0.71
+1630010221,AC Junction Box,Remove and Install,3.42,3.42
+1630010222,AC Junction Box,Remove and Replace,3.42,3.42
+1630010311,Coolant Hose Assembly - Power Conversion System,Remove and Install,4.2,4.2
+1630010312,Coolant Hose Assembly - Power Conversion System,Remove and Replace,4.2,4.2
+1630010342,Harness - Ancillary Bay,Remove and Replace,3.48,3.48
+16300105726,Ferrite Core - Device Cluster Assembly,Installation,0.12,0.12
+16300105801,Fuse - Power Conversion System (Long Range),Remove and Install,1.74,1.74
+16300105802,Fuse - Power Conversion System (Long Range),Remove and Replace,1.74,1.74
+16300105901,Ancillary Cover (Long Range),Remove and Install,1.56,1.56
+16300105902,Ancillary Cover (Long Range),Remove and Replace,1.56,1.56
+16300106001,Device Cluster Assembly (Long Range),Remove and Install,2.34,2.34
+16300106002,Device Cluster Assembly (Long Range),Remove and Replace,2.4,2.4
+16300106101,Power Conversion System (Long Range),Remove and Install,2.52,2.52
+16300106102,Power Conversion System (Long Range),Remove and Replace,2.52,2.52
+16300106201,Header - DC Input - Busbar - Ancillary (Long Range),Remove and Install,1.62,1.62
+16300106202,Header - DC Input - Busbar - Ancillary (Long Range),Remove and Replace,1.62,1.62
+16300106301,Device Cluster Assembly (Long Range),Remove and Install,2.34,2.34
+16300106302,Device Cluster Assembly (Long Range),Remove and Replace,2.34,2.34
+16300106401,Coolant Hose Assembly - Power Conversion System (Long Range),Remove and Install,2.52,2.52
+16300106402,Coolant Hose Assembly - Power Conversion System (Long Range),Remove and Replace,2.52,2.52
+16300106501,Last Mile Busbar Assembly (Long Range),Remove and Install,3.06,3.06
+16300106502,Last Mile Busbar Assembly (Long Range),Remove and Replace,3.06,3.06
+16300106601,Jumper Harness - ACJB to PCS (Long Range),Remove and Install,1.68,1.68
+16300106602,Jumper Harness - ACJB to PCS (Long Range),Remove and Replace,1.68,1.68
+16300106701,AC Junction Box - Ancillary (Long Range),Remove and Install,1.86,1.86
+16300106702,AC Junction Box - Ancillary (Long Range),Remove and Replace,1.86,1.86
+16300106801,Harness - Ancillary (Long Range),Remove and Install,1.8,1.8
+16300106802,Harness - Ancillary (Long Range),Remove and Replace,1.8,1.8
+16300500,HV Integrity Check - HV Battery,Test/Adjust,0.12,0.12
+16309000,HV Battery Contactor Seize Check,Test/Adjust,3.18,3.18
+17000004,Diagnosis: Driver Assistance,General Diagnosis,0.5,0.5
+17000008,Jumpstart Vehicle (Restore),Restore,0.6,0.6
+17010000,Vehicle HV Disablement Procedure,Test/Adjust,0.36,0.36
+17010008,MV Battery - Recover,Restore,0.06,0.06
+17010410,LV Power (Disconnect & Connect),Modify,0.06,0.06
+17010500,MV Maintainer (Connect & Disconnect),Maintenance,0.06,0.06
+17011000,Vehicle HV Disablement Procedure (with Terrestrial Armor Installed),Test/Adjust,1.68,1.68
+1702000000,Mid-Voltage Power (Disconnect and Connect),,0.06,0.06
+1702081011,MV Battery - Li-ion 48V,Remove and Install,0.12,0.12
+1702081012,MV Battery - Li-ion 48V,Remove and Replace,0.18,0.18
+17100008,Harness Connector - Reconnect,Restore,0.1,0.1
+17100010,Harness Connector - Repair (Does Not Include Access Labor),Restore,0.72,0.72
+1710013011,Harness - Bed - LH,Remove and Install,2.7,2.7
+1710013012,Harness - Bed - LH,Remove and Replace,2.7,2.7
+1710013021,Harness - Bed - RH,Remove and Install,2.58,2.58
+1710013022,Harness - Bed - RH,Remove and Replace,2.58,2.58
+1710013031,Harness - MV Backbone,Remove and Install,1.26,1.26
+1710013032,Harness - MV Backbone,Remove and Replace,1.26,1.26
+1710029008,Center Display Cable Overlay,Repair,0.84,0.84
+1710029011,Harness - Cowl,Remove and Install,0.6,0.6
+1710029012,Harness - Cowl,Remove and Replace,0.6,0.6
+1710029021,Harness - Instrument Panel,Remove and Install,2.04,2.04
+1710029022,Harness - Instrument Panel,Remove and Replace,2.04,2.04
+1710029031,Harness - Speaker - Cowl,Remove and Install,1.68,1.68
+1710029032,Harness - Speaker - Cowl,Remove and Replace,1.68,1.68
+1710029041,Harness - Console,Remove and Install,0.84,0.84
+1710029042,Harness - Console,Remove and Replace,0.84,0.84
+1710030001,Harness - Door - Front - RH,Remove and Install,0.48,0.48
+1710030002,Harness - Door - Front - RH,Remove and Replace,0.48,0.48
+1710031011,Harness - Door - Front - LH,Remove and Install,0.54,0.54
+1710031012,Harness - Door - Front - LH,Remove and Replace,0.54,0.54
+1710031021,Harness - Door - Rear - RH,Remove and Install,0.42,0.42
+1710031022,Harness - Door - Rear - RH,Remove and Replace,0.42,0.42
+1710031031,Harness - Trim - Door - Rear - RH,Remove and Install,0.12,0.12
+1710031032,Harness - Trim - Door - Rear - RH,Remove and Replace,0.12,0.12
+1710031041,Door Harnesses - Front RH Door,Remove and Install,0.71,0.71
+1710031042,Door Harnesses - Front RH Door,Remove and Replace,0.71,0.71
+1710031051,Harness - Trim - Door - Front - LH,Remove and Install,0.18,0.18
+1710031052,Harness - Trim - Door - Front - LH,Remove and Replace,0.18,0.18
+1710031061,Harness - Trim - Door - Rear - LH,Remove and Install,0.18,0.18
+1710031062,Harness - Trim - Door - Rear - LH,Remove and Replace,0.18,0.18
+1710031071,"Harness - Door, Closures Devices",Remove and Install,0.42,0.42
+1710031072,"Harness - Door, Closures Devices",Remove and Replace,0.42,0.42
+1710031081,Harness - Door - Rear - LH,Remove and Install,0.42,0.42
+1710031082,Harness - Door - Rear - LH,Remove and Replace,0.42,0.42
+1710031111,Harness - Trim - Door - Front - RH,Remove and Install,0.18,0.18
+1710031112,Harness - Trim - Door - Front - RH,Remove and Replace,0.18,0.18
+1710032011,Harness - Front Drive Unit,Remove and Install,1.2,1.2
+1710032012,Harness - Front Drive Unit,Remove and Replace,1.2,1.2
+1710032021,Harness - Subframe - Rear (Dual Motor),Remove and Install,0.9,0.9
+1710032022,Harness - Subframe - Rear (Dual Motor),Remove and Replace,0.9,0.9
+1710032031,Harness - Subframe - Rear (Tri-Motor),Remove and Install,1.62,1.62
+1710032032,Harness - Subframe - Rear (Tri-Motor),Remove and Replace,1.62,1.62
+1710051011,Harness - Fascia - Front,Remove and Install,0.42,0.42
+1710051012,Harness - Fascia - Front,Remove and Replace,0.42,0.42
+1710051021,Harness - Gate - Front,Remove and Install,0.48,0.48
+1710051022,Harness - Gate - Front,Remove and Replace,0.48,0.48
+1710051031,Harness - FEM,Remove and Install,0.48,0.48
+1710051032,Harness - FEM,Remove and Replace,0.48,0.48
+1710066011,Harness - Cabin Floor,Remove and Install,1.44,1.44
+1710066012,Harness - Cabin Floor,Remove and Replace,1.44,1.44
+1710066021,Harness - LH - Frunk,Remove and Install,2.76,2.76
+1710066022,Harness - LH - Frunk,Remove and Replace,2.76,2.76
+1710066031,Harness - RH - Frunk,Remove and Install,4.5,4.5
+1710066032,Harness - RH - Frunk,Remove and Replace,4.5,4.5
+1710091002,Harness - Seat - 1st Row - LH,Remove and Replace,0.9,0.9
+1710091012,Harness - Seat - 1st Row - RH,Remove and Replace,0.84,0.84
+1710091022,Harness - Seat - 2nd Row,Remove and Replace,1.8,1.8
+1710095011,Harness - Tailgate,Remove and Install,0.42,0.42
+1710095012,Harness - Tailgate,Remove and Replace,0.42,0.42
+1710095021,Harness - Fascia - Rear,Remove and Install,0.48,0.48
+1710095022,Harness - Fascia - Rear,Remove and Replace,0.48,0.48
+1710109011,Harness - Side Assembly - RH,Remove and Install,1.74,1.74
+1710109012,Harness - Side Assembly - RH,Remove and Replace,1.74,1.74
+1710109021,Harness - Side Assembly - LH,Remove and Install,2.1,2.1
+1710109022,Harness - Side Assembly - LH,Remove and Replace,2.1,2.1
+1710109031,Harness - Trim - A-Pillar - LH,Remove and Install,0.24,0.24
+1710109032,Harness - Trim - A-Pillar - LH,Remove and Replace,0.24,0.24
+1710109041,Harness - Trim - A -Pillar - RH,Remove and Install,0.24,0.24
+1710109042,Harness - Trim - A -Pillar - RH,Remove and Replace,0.24,0.24
+1710109051,Harness - Roof Accessory Jumper,Remove and Install,0.18,0.18
+1710109052,Harness - Roof Accessory Jumper,Remove and Replace,0.18,0.18
+1710112011,Harness - Steering Jumper,Remove and Install,0.72,0.72
+1710112012,Steering Harnesses - SBW Jumper,Remove and Replace,0.72,0.72
+1710112021,Harness - Steer Jumper - Rear,Remove and Install,0.84,0.84
+1710112022,Harness - Steer Jumper - Rear,Remove and Replace,0.84,0.84
+1710118011,Harness - Ancillary Bay,Remove and Install,2.82,2.82
+1710118012,Harness - Ancillary Bay,Remove and Replace,2.82,2.82
+1710118021,TBD - Harness - Shunt Jumper,Remove and Install,0.71,0.71
+1710118022,TBD - Harness - Shunt Jumper,Remove and Replace,0.71,0.71
+1710118031,TBD - Harness - Device Cluster,Remove and Install,0.71,0.71
+1710118032,TBD - Harness - Device Cluster,Remove and Replace,0.71,0.71
+1710119011,"Thermal and HVAC Harnesses - Harness - Megavac, Center",Remove and Install,0.71,0.71
+1710119012,"Thermal and HVAC Harnesses - Harness - Megavac, Center",Remove and Replace,0.71,0.71
+1710119021,Harness - HVAC Dry Side,Remove and Install,2.46,2.46
+1710119022,Harness - HVAC Dry Side,Remove and Replace,2.46,2.46
+1710119031,"Thermal and HVAC Harnesses - Harness - Supermanifold W/ Standalone Controller, Center",Remove and Install,0.71,0.71
+1710119032,"Thermal and HVAC Harnesses - Harness - Supermanifold W/ Standalone Controller, Center",Remove and Replace,0.71,0.71
+17101200901,Harness - Frunk - RH (Long Range),Remove and Install,4.56,4.56
+17101200902,Harness - Frunk - RH (Long Range),Remove and Replace,4.56,4.56
+17101201001,Harness - Bed - LH (Long Range),Remove and Install,2.64,2.64
+17101201002,Harness - Bed - LH (Long Range),Remove and Replace,2.64,2.64
+17101201101,Harness - Bed - RH (Long Range),Remove and Install,2.58,2.58
+17101201102,Harness - Bed - RH (Long Range),Remove and Replace,2.58,2.58
+1710134011,Harness - Windshield,Remove and Install,0.36,0.36
+1710134012,Harness - Windshield,Remove and Replace,0.36,0.36
+17101900101,Harness - Cabin Floor (Long Range),Remove and Install,1.5,1.5
+17101900102,Harness - Cabin Floor (Long Range),Remove and Replace,1.5,1.5
+17103200101,Harness - Jumper - Rear Steer (Long Range),Remove and Install,0.66,0.66
+17103200102,Harness - Jumper - Rear Steer (Long Range),Remove and Replace,0.66,0.66
+17105006,Wire - Electrical Harness (Overlay),Retrofit,0.0,0.0
+17105008,Wire - Electrical Harness (Does Not Include Access Labor) (RepAir),Restore,0.0,0.0
+17105102,Connector Housing - Electrical Harness (Does Not Include Access Labor) (Remove and Replace),Remove and Replace,0.29,0.29
+17105208,Connector Terminal - Electrical Harness (Does Not Include Access Labor) (RepAir),Restore,0.0,0.0
+17108100,Diagnosis: Low Voltage Distribution and Controllers,General Diagnosis,1.0,1.0
+1715017011,Body Controller - RH,Remove and Install,0.6,0.6
+1715017012,Body Controller - RH,Remove and Replace,0.84,0.84
+1715017021,Body Controller - Rear,Remove and Install,0.42,0.42
+1715017022,Body Controller - Rear,Remove and Replace,0.6,0.6
+1715017031,Body Controller - LH,Remove and Install,0.78,0.78
+1715017032,Body Controller - LH,Remove and Replace,1.02,1.02
+1715017041,ECU - Trailer,Remove and Install,0.42,0.42
+1715017042,ECU - Trailer,Remove and Replace,0.42,0.42
+1715017051,Door Controller - Front - LH,Remove and Install,0.24,0.24
+1715017052,Door Controller - Front - LH,Remove and Replace,0.24,0.24
+1715017061,Door Controller - Front - RH,Remove and Install,0.24,0.24
+1715017062,Door Controller - Front - RH,Remove and Replace,0.24,0.24
+1715017071,Door Controller - Rear - LH,Remove and Install,0.18,0.18
+1715017072,Door Controller - Rear - LH,Remove and Replace,0.18,0.18
+1715017081,Door Controller - Rear - RH,Remove and Install,0.18,0.18
+1715017082,Door Controller - Rear - RH,Remove and Replace,0.18,0.18
+17150300301,Rear - MV Controller (Long Range),Remove and Install,0.42,0.42
+17150300302,Rear - MV Controller (Long Range),Remove and Replace,0.42,0.42
+1720078011,Radar - Cabin,Remove and Install,0.12,0.12
+1720078012,Radar - Cabin,Remove and Replace,0.12,0.12
+17209106,Enable Autopilot Convenience Features,Upgrade,0.48,0.48
+17209126,Enable Basic Autopilot,Upgrade,0.0,0.0
+17209146,Enable Full Self-Driving,Over The Air,0.0,0.0
+1722037011,Camera - Forward Facing - Front Fascia,Remove and Install,0.12,0.12
+1722037012,Camera - Forward Facing - Front Fascia,Remove and Replace,0.18,0.18
+1722037021,Bi-Cam - Forward Facing,Remove and Install,0.3,0.3
+1722037022,Bi-Cam - Forward Facing,Remove and Replace,0.3,0.3
+1722037031,Fan - Camera - Windshield,Remove and Install,0.24,0.24
+1722037032,Fan - Camera - Windshield,Remove and Replace,0.24,0.24
+1722090011,Camera - Rear,Remove and Install,0.42,0.42
+1722090012,Camera - Rear,Remove and Replace,0.42,0.42
+1722110011,Camera - B-Pillar - LH,Remove and Install,0.12,0.12
+1722110012,Camera - B-Pillar - LH,Remove and Replace,0.18,0.18
+1722110021,Camera - Fender Flare - LH,Remove and Install,0.12,0.12
+1722110022,Camera - Fender Flare - LH,Remove and Replace,0.18,0.18
+1722110031,Camera - Fender Flare - RH,Remove and Install,0.12,0.12
+1722110032,Camera - Fender Flare - RH,Remove and Replace,0.18,0.18
+1722110041,Camera - B-Pillar - RH,Remove and Install,0.12,0.12
+1722110042,Camera - B-Pillar - RH,Remove and Replace,0.18,0.18
+1724076011,Interior Camera,Remove and Install,0.18,0.18
+1724076012,Interior Camera,Remove and Replace,0.18,0.18
+17331922,Intrusion Sensor Study - No Problem Found,Diagnosis - No Trouble Found,0.29,0.29
+17333444,Intrusion Sensor Study - Replaced,Remove and Replace,0.29,0.29
+17400100,Headlights - Adjust (Wall Method),Test/Adjust,0.18,0.18
+17400150,Headlights - Adjust - NA (Tool Method),Test/Adjust,0.66,0.66
+1740015011,Bed Light - LH,Remove and Install,0.18,0.18
+1740015012,Bed Light - LH,Remove and Replace,0.18,0.18
+1740015021,Bed Light - RH,Remove and Install,0.18,0.18
+1740015022,Bed Light - RH,Remove and Replace,0.18,0.18
+17400201801,Bed Light - LH (Long Range),Remove and Install,0.72,0.72
+17400201802,Bed Light - LH (Long Range),Remove and Replace,0.72,0.72
+1740056011,Lightbar - Front,Remove and Install,0.12,0.12
+1740056012,Lightbar - Front,Remove and Replace,0.12,0.12
+1740067011,Headlamp Assembly - LH,Remove and Install,0.6,0.6
+1740067012,Headlamp Assembly - LH,Remove and Replace,0.71,0.71
+1740067021,Headlamp Assembly - RH,Remove and Install,0.6,0.6
+1740067022,Headlamp Assembly - RH,Remove and Replace,0.71,0.71
+1740115011,Lamp - License Plate,Remove and Install,0.18,0.18
+1740115012,Lamp - License Plate,Remove and Replace,0.18,0.18
+1740115021,Lamp - Rear Marker - LH,Remove and Install,0.42,0.42
+1740115022,Lamp - Rear Marker - LH,Remove and Replace,0.42,0.42
+1740115031,Tail Lamp - Body Side - LH,Remove and Install,0.18,0.18
+1740115032,Tail Lamp - Body Side - LH,Remove and Replace,0.18,0.18
+1740115041,Tail Lamp - Body Side - RH,Remove and Install,0.18,0.18
+1740115042,Tail Lamp - Body Side - RH,Remove and Replace,0.18,0.18
+1740115051,Tail Lights - Rear Marker Lamp - RH,Remove and Install,0.42,0.42
+1740115052,Lamp - Rear Marker - RH,Remove and Replace,0.42,0.42
+1740115061,Lamp - Tailgate,Remove and Install,0.3,0.3
+1740115062,Lamp - Tailgate,Remove and Replace,0.3,0.3
+1740115071,Lamp - Reverse - LH,Remove and Install,0.42,0.42
+1740115072,Lamp - Reverse - LH,Remove and Replace,0.42,0.42
+1740115081,Lamp - Reverse - RH,Remove and Install,0.42,0.42
+1740115082,Lamp - Reverse - RH,Remove and Replace,0.42,0.42
+17403012,Coax Cable - Side Repeater - Front - LH (Replace),Remove and Replace,1.2,1.2
+17403032,Coax Cable - Side Repeater - Front - LH and RH (Replace),Remove and Replace,1.2,1.2
+17403112,Coax Cable - Side Repeater - Front - RH (Replace),Remove and Replace,1.2,1.2
+17450306,Key Card - Program (No Keys Present),Program,0.06,0.06
+17450406,Key Card - Program (Existing Key Present),Program,0.06,0.06
+1745104011,BLE End Point - Front Rear,Remove and Install,0.48,0.48
+1745104012,BLE End Point - Front Rear,Remove and Replace,0.71,0.71
+1745104021,BLE End Point - Interior,Remove and Install,0.18,0.18
+1745104022,BLE End Point - Interior,Remove and Replace,0.18,0.18
+1745104031,BLE End Point - Wheel Well - Front - LH,Remove and Install,0.18,0.18
+1745104032,BLE End Point - Wheel Well - Front - LH,Remove and Replace,0.18,0.18
+1745104041,BLE  End Point - Rear,Remove and Install,0.42,0.42
+1745104042,BLE  End Point - Rear,Remove and Replace,0.42,0.42
+1745104051,"Remote and Passive Entry - Interior Endpoint, TLA, Quorvo",Remove and Install,0.71,0.71
+1745104052,"Remote and Passive Entry - Interior Endpoint, TLA, Quorvo",Remove and Replace,0.71,0.71
+1745104061,BLE End Point - Wheel Well - Front - RH,Remove and Install,0.18,0.18
+1745104062,BLE End Point - Wheel Well - Front - RH,Remove and Replace,0.18,0.18
+1745104071,BLE End Point - Wheel Well - Rear - LH,Remove and Install,0.18,0.18
+1745104072,BLE End Point - Wheel Well - Rear - LH,Remove and Replace,0.18,0.18
+1745104081,BLE End Point - Wheel Well - Rear - RH,Remove and Install,0.18,0.18
+1745104082,BLE End Point - Wheel Well - Rear - RH,Remove and Replace,0.18,0.18
+1750010301,Washer Tank Service Kit (Remove and Install),Remove and Install,0.18,0.18
+1750010302,Washer Tank Service Kit (Remove and Replace),Remove and Replace,0.18,0.18
+1750020121,Cap - Tank - Washer - Windshield,Remove and Install,0.06,0.06
+1750020122,Cap - Tank - Washer - Windshield,Remove and Replace,0.06,0.06
+1750020131,Neck - Tank - Washer - Windshield,Remove and Install,0.12,0.12
+1750020132,Neck - Tank - Washer - Windshield,Remove and Replace,0.12,0.12
+1750020311,Pump - Washer - Windshield,Remove and Install,0.12,0.12
+1750020312,Pump - Washer - Windshield,Remove and Replace,0.12,0.12
+1750020711,Sensor - Level - Washer - Windshield,Remove and Install,0.12,0.12
+1750020712,Sensor - Level - Washer - Windshield,Remove and Replace,0.12,0.12
+17500805,Windshield Washer Fluid - Top Off,Maintenance,0.0,0.0
+1750135011,Hose - Washer - Wiper - Windshield,Remove and Install,0.12,0.12
+1750135012,Hose - Washer - Wiper - Windshield,Remove and Replace,0.12,0.12
+1750135021,Motor - Wiper - Windshield,Remove and Install,0.3,0.3
+1750135022,Motor - Wiper - Windshield,Remove and Replace,0.3,0.3
+1750135031,Wiper Arm - Windshield,Remove and Install,0.18,0.18
+1750135032,Wiper Arm - Windshield,Remove and Replace,0.18,0.18
+1750135041,Wiper Blade - Windshield,Remove and Install,0.06,0.06
+1750135042,Wiper Blade - Windshield,Remove and Replace,0.06,0.06
+1750135051,Wiper Arm and Blade Assembly - Windshield,Remove and Install,0.12,0.12
+1750135052,Wiper Arm and Blade Assembly - Windshield,Remove and Replace,0.12,0.12
+1753070001,"Horns - Horn Assembly, Low Tone, RH",Remove and Install,0.71,0.71
+1753070002,"Horns - Horn Assembly, Low Tone, RH",Remove and Replace,0.71,0.71
+1753072011,"Horns - Horn Assembly, Low Tone, LH",Remove and Install,0.71,0.71
+1753072012,"Horns - Horn Assembly, Low Tone, LH",Remove and Replace,0.71,0.71
+1753072021,"Horns - Horn Assembly, High Tone, RH",Remove and Install,0.71,0.71
+1753072022,"Horns - Horn Assembly, High Tone, RH",Remove and Replace,0.71,0.71
+1810021011,"Sensor - Cabin Temperature, Fan Driven",Remove and Install,0.06,0.06
+1810021012,"Sensor - Cabin Temperature, Fan Driven",Remove and Replace,0.06,0.06
+1810021021,Harness - Megavac - Center,Remove and Install,4.08,4.08
+1810021022,Harness - Megavac - Center,Remove and Replace,4.08,4.08
+1810021031,HVAC Distribution,Remove and Install,2.34,2.34
+1810021032,HVAC Distribution,Remove and Replace,2.34,2.34
+1810021041,Wet Side - HVAC,Remove and Install,3.3,3.3
+1810021042,Wet Side - HVAC,Remove and Replace,3.3,3.3
+1810021051,Sensor - Cabin HVAC - Relative Humidity and Temp,Remove and Install,0.48,0.48
+1810021052,Sensor - Cabin HVAC - Relative Humidity and Temp,Remove and Replace,0.48,0.48
+1810021061,HEPA Filter,Remove and Install,0.06,0.06
+1810021062,HEPA Filter,Remove and Replace,0.06,0.06
+1810021071,Blower - HVAC,Remove and Install,0.54,0.54
+1810021072,Blower - HVAC,Remove and Replace,0.54,0.54
+1810021082,Actuator - Blend Door - HVAC,Remove and Replace,0.6,0.6
+1810021091,Cover - HEPA Filter,Remove and Install,0.06,0.06
+1810021092,Cover - HEPA Filter,Remove and Replace,0.06,0.06
+1810080001,Floor Duct - Inboard - RH - Instrument Panel,Remove and Install,1.32,1.32
+1810080002,Floor Duct - Inboard - RH - Instrument Panel,Remove and Replace,1.32,1.32
+1810080101,Passenger Ducting and Vents - IP Floor Duct RH Outboard,Remove and Install,0.71,0.71
+1810080102,Passenger Ducting and Vents - IP Floor Duct RH Outboard,Remove and Replace,0.71,0.71
+1810084022,Passenger Ducting and Vents - Side Window Demist Duct RH,Remove and Replace,0.71,0.71
+1810084031,Floor Duct - RH - Instrument Panel,Remove and Install,0.48,0.48
+1810084032,Floor Duct - RH - Instrument Panel,Remove and Replace,0.48,0.48
+1810084041,Floor Duct - Inboard - LH - Instrument Panel,Remove and Install,1.32,1.32
+1810084042,Floor Duct - Inboard - LH - Instrument Panel,Remove and Replace,1.32,1.32
+1810084051,Passenger Ducting and Vents - IP Floor Duct LH Outboard,Remove and Install,0.71,0.71
+1810084052,Passenger Ducting and Vents - IP Floor Duct LH Outboard,Remove and Replace,0.71,0.71
+1810084061,Pentaport AC Lines,Remove and Install,1.02,1.02
+1810084062,Pentaport AC Lines,Remove and Replace,1.02,1.02
+1810084071,Duct On Rails - 2nd Row,Remove and Install,0.54,0.54
+1810084072,Duct On Rails - 2nd Row,Remove and Replace,0.54,0.54
+1810084081,Suction Discharge Lines,Remove and Install,0.66,0.66
+1810084082,Suction Discharge Lines,Remove and Replace,0.66,0.66
+1810084091,Air Extractor,Remove and Install,1.2,1.2
+1810084092,Air Extractor,Remove and Replace,1.2,1.2
+1810084101,Jumper Duct - Center Console,Remove and Install,0.9,0.9
+1810084102,Jumper Duct - Center Console,Remove and Replace,0.9,0.9
+1810084111,Passenger Ducting and Vents - 2nd Row Floor Duct RH,Remove and Install,0.71,0.71
+1810084112,Passenger Ducting and Vents - 2nd Row Floor Duct RH,Remove and Replace,0.71,0.71
+1810084121,Floor Y Duct - 2nd Row,Remove and Install,0.72,0.72
+1810084122,Floor Y Duct - 2nd Row,Remove and Replace,0.72,0.72
+1810084131,Riser Duct - Center Console,Remove and Install,0.9,0.9
+1810084132,Riser Duct - Center Console,Remove and Replace,0.9,0.9
+1810084141,Demist Duct - Quarter Glass - LH,Remove and Install,1.26,1.26
+1810084142,Demist Duct - Quarter Glass - LH,Remove and Replace,1.26,1.26
+1810084151,Demist Duct - Quarter Glass - RH,Remove and Install,0.71,0.71
+1810084152,Demist Duct - Quarter Glass - RH,Remove and Replace,0.71,0.71
+1810084161,Jumper Floor Duct,Remove and Install,0.42,0.42
+1810084162,Jumper Floor Duct,Remove and Replace,0.42,0.42
+1810084171,Panel Duct - LH,Remove and Install,0.71,0.71
+1810084172,Panel Duct - LH,Remove and Replace,0.71,0.71
+1810084181,Panel Duct - RH,Remove and Install,0.6,0.6
+1810084182,Panel Duct - RH,Remove and Replace,0.6,0.6
+18200102,A/C Refrigerant (Recovery & Recharge),Restore,1.14,1.14
+18200112,A/C Refrigerant (Unknown Oil Quantity or System Flush),Restore,3.02,3.02
+18200200,Diagnosis: Detecting Refrigerant Leaks (Add Refrigerant Part if Needed),Test/Adjust,1.8,1.8
+1820026011,A/C Compressor,Remove and Install,0.72,0.72
+1820026012,A/C Compressor,Remove and Replace,0.72,0.72
+1820026021,Acoustic Cover - Compressor,Remove and Install,1.86,1.86
+1820026022,Acoustic Cover - Compressor,Remove and Replace,1.86,1.86
+18200408,Use HVAC Cleaning Machine,Maintenance,0.24,0.24
+18201018,"Use Evaporator Foam Cleaner, Replace Cabin Filters",Remove and Replace,0.65,0.65
+18202022,Desiccant (Heat Pump) (Add-On) (Remove and Replace),Remove and Replace,0.18,0.18
+18203012,A/C Compressor and Supermanifold,Remove and Replace,1.38,1.38
+18204012,"Compressor, Supermanifold, and A/C Lines",Remove and Replace,1.5,1.5
+18260100001,Controller - Supermanifold,Remove and Install,0.24,0.24
+18260100002,Controller - Supermanifold,Remove and Replace,0.24,0.24
+18260100401,Liquid Cooled Condenser,Remove and Install,0.96,0.96
+18260100402,Liquid Cooled Condenser,Remove and Replace,0.96,0.96
+18300110,Cooling System (Drain and Refill),Test/Adjust,0.78,0.78
+1830020511,Hoses - Rear Powertrain Hose Bundle,Remove and Install,5.7,5.7
+1830020512,Hoses - Rear Powertrain Hose Bundle,Remove and Replace,5.7,5.7
+1830036011,Module - Cooling Fan,Remove and Install,1.26,1.26
+1830036012,Module - Cooling Fan,Remove and Replace,1.26,1.26
+18300400,Cooling System (Vacuum Refill),Test/Adjust,0.36,0.36
+1830073011,Hose - Return - Powertrain,Remove and Install,0.84,0.84
+1830073012,Hose - Return - Powertrain,Remove and Replace,0.84,0.84
+1830073021,Hose - Supply - Powertrain,Remove and Install,0.84,0.84
+1830073022,Hose - Supply - Powertrain,Remove and Replace,0.84,0.84
+1830073031,Hose - Radiator To Manifold,Remove and Install,0.48,0.48
+1830073032,Hose - Radiator To Manifold,Remove and Replace,0.48,0.48
+1830073041,Hose - Supply - HV Battery,Remove and Install,1.98,1.98
+1830073042,Hose - Supply - HV Battery,Remove and Replace,1.98,1.98
+1830073051,"Hoses - Hose, Battery Return",Remove and Install,0.71,0.71
+1830073052,"Hoses - Hose, Battery Return",Remove and Replace,0.71,0.71
+1830073061,Hose - Inverter to Heat Exchanger - Front Drive Unit,Remove and Install,0.9,0.9
+1830073062,Hose - Inverter to Heat Exchanger - Front Drive Unit,Remove and Replace,0.9,0.9
+1830073071,Hose - Supply - Rear Drive Unit (Dual Motor),Remove and Install,1.38,1.38
+1830073072,Hose - Supply - Rear Drive Unit (Dual Motor),Remove and Replace,1.38,1.38
+1830073081,Hose - Return - Rear Drive Unit (Dual Motor),Remove and Install,0.72,0.72
+1830073082,Hose - Return - Rear Drive Unit (Dual Motor),Remove and Replace,0.72,0.72
+1830073091,Hose - Manifold To Radiator,Remove and Install,0.48,0.48
+1830073092,Hose - Manifold To Radiator,Remove and Replace,0.48,0.48
+1830073101,Hose - Supply - Inline - Front Drive Unit,Remove and Install,0.72,0.72
+1830073102,Hose - Supply - Inline - Front Drive Unit,Remove and Replace,0.72,0.72
+1830073111,Hose - Inverter to Heat Exchanger - Rear Drive Unit - LH (Tri Motor),Remove and Install,1.74,1.74
+1830073112,Hose - Inverter to Heat Exchanger - Rear Drive Unit - LH (Tri Motor),Remove and Replace,1.74,1.74
+1830073121,Hose - Inverter to Heat Exchanger - Rear Drive Unit - RH (Tri Motor),Remove and Install,1.74,1.74
+1830073122,Hose - Inverter to Heat Exchanger - Rear Drive Unit - RH (Tri Motor),Remove and Replace,1.74,1.74
+1830073131,Hose - Return - Rear Drive Unit (Tri Motor),Remove and Install,2.94,2.94
+1830073132,Hose - Return - Rear Drive Unit (Tri Motor),Remove and Replace,2.94,2.94
+1830073141,Hose - Supply - Rear Drive Unit (Tri Motor),Remove and Install,2.94,2.94
+1830073142,Hose - Supply - Rear Drive Unit (Tri Motor),Remove and Replace,2.94,2.94
+18300900,Thermal System Test,Test/Adjust,0.1,0.1
+18301000,Clean Radiator (Heat Pump),Maintenance,1.38,1.38
+18302600501,Hose - Coolant Bundle - HV Battery (Long Range),Remove and Install,2.04,2.04
+18302600502,Hose - Coolant Bundle - HV Battery (Long Range),Remove and Replace,2.04,2.04
+18302600601,Supply Hose - Rear Drive Unit (Long Range),Remove and Install,0.66,0.66
+18302600602,Supply Hose - Rear Drive Unit (Long Range),Remove and Replace,0.66,0.66
+18302600701,Powertrain Coolant Bundle (Long Range),Remove and Install,4.26,4.26
+18302600702,Powertrain Coolant Bundle (Long Range),Remove and Replace,4.26,4.26
+1840010091,"Coil, EXV4.5/VCV  - Supermanifold",Remove and Install,0.3,0.3
+1840010092,"Coil, EXV4.5/VCV  - Supermanifold",Remove and Replace,0.3,0.3
+1840114011,Octovalve - Supermanifold,Remove and Install,1.74,1.74
+1840114012,Octovalve - Supermanifold,Remove and Replace,0.71,0.71
+1840114021,Sensor - Powertrain - High Pressure - Supermanifold,Remove and Install,0.54,0.54
+1840114022,Sensor - Powertrain - High Pressure - Supermanifold,Remove and Replace,0.54,0.54
+1840114031,Sensor - Powertrain - Low Pressure - Supermanifold,Remove and Install,0.54,0.54
+1840114032,Sensor - Powertrain - Low Pressure - Supermanifold,Remove and Replace,0.54,0.54
+1840114071,Supermanifold,Remove and Install,1.32,1.32
+1840114072,Supermanifold,Remove and Replace,1.32,1.32
+1840114081,Harness - Center - Supermanifold W/ Standalone Controller,Remove and Install,1.86,1.86
+1840114082,Harness - Center - Supermanifold W/ Standalone Controller,Remove and Replace,1.86,1.86
+1840114091,Bottle - Coolant - Supermanifold,Remove and Install,0.96,0.96
+1840114092,Bottle - Coolant - Supermanifold,Remove and Replace,0.96,0.96
+1840114101,Chiller - Supermanifold,Remove and Install,0.54,0.54
+1840114102,Chiller - Supermanifold,Remove and Replace,0.54,0.54
+1840114111,Core - Expansion Valve - Supermanifold,Remove and Install,0.36,0.36
+1840114112,Core - Expansion Valve - Supermanifold,Remove and Replace,0.36,0.36
+1840114121,Check Valve - Supermanifold,Remove and Install,0.48,0.48
+1840114122,Check Valve - Supermanifold,Remove and Replace,0.48,0.48
+1840114131,Pump - Coolant - Supermanifold,Remove and Install,0.96,0.96
+1840114132,Pump - Coolant - Supermanifold,Remove and Replace,0.96,0.96
+1840114141,Desiccant - Supermanifold,Remove and Install,0.48,0.48
+1840114142,Desiccant - Supermanifold,Remove and Replace,0.48,0.48
+1840114151,"Check Valve, 16MM - Supermanifold",Remove and Install,0.48,0.48
+1840114152,"Check Valve, 16MM - Supermanifold",Remove and Replace,0.48,0.48
+18405432,Desiccant Bag (Add-on to Other A/C Service Procedures) (Heat Pump),Remove and Replace,0.18,0.18
+19010100825,Remove Vehicle Label (No Anti-Tamper Residue),Removal,0.06,0.06
+19010100902,Vehicle Emission Control Label,Remove and Replace,0.06,0.06
+19010100925,Remove Vehicle Label and Anti-Tamper Residue,Removal,0.12,0.12
+19010101002,Battery Chemistry Label,Remove and Replace,0.06,0.06
+19010101102,Monroney Label,Remove and Replace,0.06,0.06
+1901010121,Manufacturing Certification Label,Remove and Replace,0.12,0.12
+19010202,Labels - Any (Remove & Replace),Remove and Replace,0.29,0.29
+19010303,Labels - Battery Enclosure - Any,Module Reset/Reflashed,0.24,0.24
+19010401,VIN Label - Plate (Remove & Install),Remove and Replace,0.07,0.07
+19011002,Replace Marketing Decal - Door - Front - LH (Remove & Replace),Remove and Replace,0.72,0.72
+19011006,Install Marketing Decal - Door - Front - LH,Remove and Install,0.43,0.43
+19011102,Replace Marketing Decal - Door - Front - RH (Remove & Replace),Remove and Replace,0.72,0.72
+19011106,Install Marketing Decal - Door - Front - RH,Remove and Install,0.43,0.43
+19011875,Print and Attach QC Compliance Label,Test/Adjust,0.06,0.06
+2001038011,Airbag - Driver,Remove and Install,0.12,0.12
+2001038012,Airbag - Driver,Remove and Replace,0.12,0.12
+2001038021,Airbag - Front Passenger,Remove and Install,0.72,0.72
+2001038022,Airbag - Front Passenger,Remove and Replace,0.72,0.72
+2001038031,Airbag - Knee - Driver,Remove and Install,0.48,0.48
+2001038032,Airbag - Knee - Driver,Remove and Replace,0.48,0.48
+2001038041,Airbag - Knee - Front Passenger,Remove and Install,0.48,0.48
+2001038042,Airbag - Knee - Front Passenger,Remove and Replace,0.48,0.48
+20010707,Remove the Front Seat Airbag and Discard,Modify,0.84,0.84
+2001108011,Airbag - Curtain - Driver,Remove and Install,0.84,0.84
+2001108012,Airbag - Curtain - Driver,Remove and Replace,0.84,0.84
+2001108021,Airbag - Curtain - Front Passenger,Remove and Install,0.84,0.84
+2001108022,Airbag - Curtain - Front Passenger,Remove and Replace,0.84,0.84
+2005000001,2nd Row Seat Belts - RH 2nd Row Buckle Mini Anchor,Remove and Install,0.06,0.06
+2005000002,2nd Row Seat Belts - 2R RH Buckle Mini Anchor,Remove and Replace,0.06,0.06
+2005001011,Retractor - Seat Belt - Driver,Remove and Install,0.96,0.96
+2005001012,Retractor - Seat Belt - Driver,Remove and Replace,0.96,0.96
+2005001021,Retractor - Seat Belt - Front Passenger,Remove and Install,0.96,0.96
+2005001022,Retractor - Seat Belt - Front Passenger,Remove and Replace,0.96,0.96
+2005001031,"Buckle, ZF, Sumitomo - Seat Belt - Driver",Remove and Install,0.12,0.12
+2005001032,"Buckle, ZF, Sumitomo - Seat Belt - Driver",Remove and Replace,0.12,0.12
+2005001041,"Webguide - Seat Belt, Single Fastener",Remove and Install,0.9,0.9
+2005001042,"Webguide - Seat Belt, Single Fastener",Remove and Replace,0.9,0.9
+2005004011,Retractor - Seat Belt - Outboard - 2nd Row,Remove and Install,0.78,0.78
+2005004012,Retractor - Seat Belt - Outboard - 2nd Row,Remove and Replace,0.78,0.78
+2005004021,Retractor - Seat Belt - Center - 2nd Row,Remove and Install,0.78,0.78
+2005004022,Retractor - Seat Belt - Center - 2nd Row,Remove and Replace,0.78,0.78
+2005004031,"Buckle, Mini Anchor - Seat Belt - LH - 2nd Row",Remove and Install,0.06,0.06
+2005004032,"Buckle, Mini Anchor - Seat Belt - LH - 2nd Row",Remove and Replace,0.06,0.06
+2005004041,Buckle - Seat Belt - Center/RH - 2nd Row,Remove and Install,0.18,0.18
+2005004042,Buckle - Seat Belt - Center/RH - 2nd Row,Remove and Replace,0.18,0.18
+20051000301,CT Safety and Restraint - Seat Belts - 2nd Row Seat Belts - 2nd Row Retractor - Outboard Pair (RI),Remove and Install,0.9,0.9
+20051000302,CT Safety and Restraint - Seat Belts - 2nd Row Seat Belts - 2nd Row Retractor - Outboard Pair (RI),Remove and Replace,0.9,0.9
+20051000401,Retractor Pair - Seat Belt - Outboard - 2nd Row,Remove and Install,1.26,1.26
+20051000402,Retractor Pair - Seat Belt - Outboard - 2nd Row,Remove and Replace,1.26,1.26
+2010086011,Pretensioner - Lap - Driver,Remove and Install,0.12,0.12
+2010086012,Pretensioner - Lap - Driver,Remove and Replace,0.12,0.12
+2010086021,Pretensioner - Lap - Front Passenger,Remove and Install,0.12,0.12
+2010086022,Pretensioner - Lap - Front Passenger,Remove and Replace,0.12,0.12
+2020010141,Sensor - Pressure - Door - Front - RH,Remove and Install,0.12,0.12
+2020010142,Sensor - Pressure - Door - Front - RH,Remove and Replace,0.12,0.12
+2020075011,Sensor - Pressure - Door - Front - LH,Remove and Install,0.18,0.18
+2020075012,Sensor - Pressure - Door - Front - LH,Remove and Replace,0.12,0.12
+2020075021,Impact Sensor - Front End Module - RH,Remove and Install,0.18,0.18
+2020075022,Impact Sensor - Front End Module - RH,Remove and Replace,0.18,0.18
+2020075031,Impact Sensor - Front End Module - LH,Remove and Install,0.18,0.18
+2020075032,Impact Sensor - Front End Module - LH,Remove and Replace,0.18,0.18
+2020075041,Impact Sensor - Fender - LH,Remove and Install,0.12,0.12
+2020075042,Impact Sensor - Fender - LH,Remove and Replace,0.12,0.12
+2020075051,Impact Sensor - B-Pillar - LH,Remove and Install,0.24,0.24
+2020075052,Impact Sensor - B-Pillar - LH,Remove and Replace,0.24,0.24
+2020075061,Restraint Control Module,Remove and Install,0.42,0.42
+2020075062,Restraint Control Module,Remove and Replace,0.78,0.78
+2020107011,Position Sensor - Seat Track - Driver,Remove and Install,0.06,0.06
+2020107012,Position Sensor - Seat Track - Driver,Remove and Replace,0.06,0.06
+21000004,Diagnosis: Infotainment,General Diagnosis,0.5,0.5
+21051000,Update Display Avatar,Test/Adjust,0.12,0.12
+21062412,Non Tesla SIM Card (Install),Installation,0.29,0.29
+2107123011,Touchscreen - Rear Display,Remove and Install,0.3,0.3
+2107123012,Touchscreen - Rear Display,Remove and Replace,0.3,0.3
+2107123021,Touchscreen - Center Display Assembly,Remove and Install,0.12,0.12
+2107123022,Touchscreen - Center Display Assembly,Remove and Replace,0.71,0.71
+2110022011,Car Computer - Drip Guard,Remove and Install,0.54,0.54
+2110022012,Car Computer - Drip Guard,Remove and Replace,0.54,0.54
+2110022021,Car Computer,Remove and Install,0.84,0.84
+2110022022,Car Computer,Remove and Replace,0.96,0.96
+21151007,Car Computer (Dispose),Modify,0.3,0.3
+21152002,SIM Card - Car Computer (Remove & Replace),Remove and Replace,0.29,0.29
+21152402,SD Card - Car Computer (Remove & Replace),Remove and Replace,0.36,0.36
+21153302,Replace Car Computer (HW4) (LHD),Remove and Replace,1.02,1.02
+2121012011,Tweeter - LH,Remove and Install,0.24,0.24
+2121012012,Tweeter - LH,Remove and Replace,0.24,0.24
+2121012021,Audio Speakers - Audio Speaker - Full Range - 100mm,Remove and Install,0.71,0.71
+2121012022,Audio Speakers - Audio Speaker - Full Range - 100mm,Remove and Replace,0.71,0.71
+2121012031,Speaker (Full Range) - LH,Remove and Install,0.24,0.24
+2121012032,Speaker (Full Range) - LH,Remove and Replace,0.24,0.24
+2121012041,Speaker - Super Horn,Remove and Install,0.12,0.12
+2121012042,Speaker - Super Horn,Remove and Replace,0.12,0.12
+2121012051,Speaker - Header - Rear - LH,Remove and Install,0.12,0.12
+2121012052,Speaker - Header - Rear - LH,Remove and Replace,0.12,0.12
+2121012061,Subwoofer - Front Door - LH,Remove and Install,0.18,0.18
+2121012062,Subwoofer - Front Door - LH,Remove and Replace,0.12,0.12
+2121012071,Horn - Low Tone - LH,Remove and Install,0.12,0.12
+2121012072,Horn - Low Tone - LH,Remove and Replace,0.12,0.12
+2121012081,Subwoofer - C-Pillar - LH,Remove and Install,0.24,0.24
+2121012082,Subwoofer - C-Pillar - LH,Remove and Replace,0.24,0.24
+2121012091,Subwoofer - C-Pillar - RH,Remove and Install,0.24,0.24
+2121012092,Subwoofer - C-Pillar - RH,Remove and Replace,0.24,0.24
+2121012101,Telephony Microphone  - LH,Remove and Install,0.24,0.24
+2121012102,Telephony Microphone  - LH,Remove and Replace,0.24,0.24
+2121012111,Pedestrian Warning Speaker,Remove and Install,0.42,0.42
+2121012112,Pedestrian Warning Speaker,Remove and Replace,0.42,0.42
+2121012121,Tweeter - RH,Remove and Install,0.2,0.2
+2121012122,Tweeter - RH,Remove and Replace,0.24,0.24
+2121012161,Subwoofer - Front Door - RH,Remove and Install,0.12,0.12
+2121012162,Subwoofer - Front Door - RH,Remove and Replace,0.12,0.12
+2121012401,"Audio Speakers - Horn Assembly, Low Tone, RH",Remove and Install,0.12,0.12
+2121012402,"Audio Speakers - Horn Assembly, Low Tone, RH",Remove and Replace,0.12,0.12
+2135011011,Antenna - FM Amplifier,Remove and Install,0.71,0.71
+2135011012,Antenna - FM Amplifier,Remove and Replace,0.71,0.71
+2135011021,Telematics Control Unit (TCU),Remove and Install,0.12,0.12
+2135011022,Telematics Control Unit (TCU),Remove and Replace,0.18,0.18
+2135011031,FM/HD Tuner,Remove and Install,0.12,0.12
+2135011032,FM/HD Tuner,Remove and Replace,0.12,0.12
+2135011041,GPS Antenna,Remove and Install,0.12,0.12
+2135011042,GPS Antenna,Remove and Replace,0.12,0.12
+3001000011,Megabeam,Remove and Install,0.48,0.48
+3001000012,Megabeam,Remove and Replace,0.48,0.48
+3001000021,Recovery Hook - Front - LH,Remove and Install,0.54,0.54
+3001000022,Recovery Hook - Front - LH,Remove and Replace,0.54,0.54
+3001000031,Recovery Hook - Front - RH,Remove and Install,0.54,0.54
+3001000032,Front Subframe - Tow Hook - RH,Remove and Replace,0.54,0.54
+30010400301,Subframe - Front (Long Range),Remove and Install,2.4,2.4
+30010400302,Subframe - Front (Long Range),Remove and Replace,0.0,0.0
+3001064011,Chassis Structure Assembly - Front,Remove and Install,2.46,2.46
+3001064012,Chassis Structure Assembly - Front,Remove and Replace,2.46,2.46
+3001100011,Subframe - Rear (Dual Motor),Remove and Install,2.58,2.58
+3001100012,Subframe - Rear (Dual Motor),Remove and Replace,3.78,3.78
+3001100021,Subframe - Rear (Tri Motor),Remove and Install,3.84,3.84
+3001100022,Subframe - Rear (Tri Motor),Remove and Replace,3.84,3.84
+30016264,Rear Subframe to Body (Torque),Inspection,0.18,0.18
+31000000,Additional Suspension Link (Access Already Performed),Remove and Replace,0.3,0.3
+31001000,Ride Height (Adjust),Test/Adjust,0.18,0.18
+31001500,EPAS Alignment Check,Test/Adjust,0.12,0.12
+31002100,Four Wheel Alignment Check (No Adjustment Needed),Test/Adjust,0.6,0.6
+31002300,Four Wheel Alignment Check and Adjust,Test/Adjust,1.2,1.2
+31002400,Four Wheel Alignment Check (Customer Declined Adjustment),Test/Adjust,0.42,0.42
+31010004,Diagnosis: Front Suspension,General Diagnosis,0.8,0.8
+31010301201,Coil Spring Assembly - Rear - LH (Long Range),Remove and Install,1.26,1.26
+31010301202,Coil Spring Assembly - Rear - LH (Long Range),Remove and Replace,1.26,1.26
+3101039011,Module - Air Spring - Front - LH,Remove and Install,0.66,0.66
+3101039012,Module - Air Spring - Front - LH,Remove and Replace,0.66,0.66
+3101039021,Module - Air Spring - Front - RH,Remove and Install,0.66,0.66
+3101039022,Module - Air Spring - Front - RH,Remove and Replace,0.66,0.66
+31010400201,Non-Driven Hub - Front - LH (Long Range),Remove and Install,0.42,0.42
+31010400202,Non-Driven Hub - Front - LH (Long Range),Remove and Replace,0.42,0.42
+31010400301,Knuckle Assembly - Front - LH (Long Range),Remove and Install,0.48,0.48
+31010400302,Knuckle Assembly - Front - LH (Long Range),Remove and Replace,0.48,0.48
+31010400401,Non-Driven Hub - Front - RH (Long Range),Remove and Install,0.42,0.42
+31010400402,Non-Driven Hub - Front - RH (Long Range),Remove and Replace,0.42,0.42
+3101055011,Driven Hub - Front - LH,Remove and Install,0.66,0.66
+3101055012,Driven Hub - Front - LH,Remove and Replace,0.66,0.66
+3101055021,Knuckle - Front - LH,Remove and Install,0.54,0.54
+3101055022,Knuckle - Front - LH,Remove and Replace,0.72,0.72
+3101055031,Knuckle - Front - RH,Remove and Install,0.54,0.54
+3101055032,Knuckle - Front - RH,Remove and Replace,0.72,0.72
+3101055041,Driven Hub - Front - RH,Remove and Install,0.66,0.66
+3101055042,Driven Hub - Front - RH,Remove and Replace,0.66,0.66
+3101060001,Control Arm - Lower - Front - RH,Remove and Install,0.54,0.54
+3101060002,Control Arm - Lower - Front - RH,Remove and Replace,0.54,0.54
+31010600901,Coil Spring Assembly - Front - LH (Long Range),Remove and Install,0.78,0.78
+31010600902,Coil Spring Assembly - Front - LH (Long Range),Remove and Replace,0.78,0.78
+3101062011,Stabilizer Bar - Front,Remove and Install,1.32,1.32
+3101062012,Stabilizer Bar - Front,Remove and Replace,1.32,1.32
+3101062021,Link - Stabilizer Bar - Front - LH,Remove and Install,0.24,0.24
+3101062022,Link - Stabilizer Bar - Front - LH,Remove and Replace,0.24,0.24
+3101062031,Link - Stabilizer Bar - Front - RH,Remove and Install,0.24,0.24
+3101062032,Link - Stabilizer Bar - Front - RH,Remove and Replace,0.24,0.24
+3101065011,Control Arm - Upper - Front - LH,Remove and Install,0.48,0.48
+3101065012,Control Arm - Upper - Front - LH,Remove and Replace,0.48,0.48
+3101065021,Control Arm - Upper - Front - RH,Remove and Install,0.48,0.48
+3101065022,Control Arm - Upper - Front - RH,Remove and Replace,0.48,0.48
+3101065031,Control Arm - Lower - Front - LH,Remove and Install,0.54,0.54
+3101065032,Control Arm - Lower - Front - LH,Remove and Replace,0.54,0.54
+31010700201, Control Arm - Lower - Front - LH (Long Range),Remove and Install,0.72,0.72
+31010700202,Arm - Lower - Front - LH (Long Range),Remove and Replace,0.72,0.72
+31010700301,Control Arm - Lower - Front - RH (Long Range),Remove and Install,0.72,0.72
+31010700302,Control Arm - Lower - Front - RH (Long Range),Remove and Replace,0.72,0.72
+31019000,Suspension - Front  (Check Torque) ,Test/Adjust,0.48,0.48
+3103087011,Module - Air Spring - Rear - LH,Remove and Install,1.08,1.08
+3103087012,Module - Air Spring - Rear - LH,Remove and Replace,1.08,1.08
+3103087021,Module - Air Spring - Rear - RH,Remove and Install,1.08,1.08
+3103087022,Module - Air Spring - Rear - RH,Remove and Replace,1.08,1.08
+3103097011,Hub - Rear- LH,Remove and Install,0.42,0.42
+3103097012,Hub - Rear- LH,Remove and Replace,0.42,0.42
+3103097021,Knuckle - Rear - LH,Remove and Install,0.48,0.48
+3103097022,Knuckle - Rear - LH,Remove and Replace,0.48,0.48
+3103097031,Knuckle - Rear - RH,Remove and Install,0.48,0.48
+3103097032,Knuckle - Rear - RH,Remove and Replace,0.48,0.48
+3103097041,Rear Knuckle - Hub and Bearing - Upper Balljoint Assembly,Remove and Install,0.71,0.71
+3103097042,Rear Knuckle - Hub and Bearing - Upper Balljoint Assembly,Remove and Replace,0.71,0.71
+3103097051,Rear Knuckle - Hub and Bearing - Lower Balljoint Assembly,Remove and Install,0.71,0.71
+3103097052,Rear Knuckle - Hub and Bearing - Lower Balljoint Assembly,Remove and Replace,0.71,0.71
+3103097061,Hub - Rear- RH,Remove and Install,0.42,0.42
+3103097062,Hub - Rear- RH,Remove and Replace,0.42,0.42
+3103098011,Link - Stabilizer Bar - Rear - LH,Remove and Install,0.18,0.18
+3103098012,Link - Stabilizer Bar - Rear - LH,Remove and Replace,0.18,0.18
+3103098021,Link - Stabilizer Bar - Rear - RH,Remove and Install,0.18,0.18
+3103098022,Link - Stabilizer Bar - Rear - RH,Remove and Replace,0.18,0.18
+3103098031,Stabilizer Bar - Rear,Remove and Install,0.72,0.72
+3103098032,Stabilizer Bar - Rear,Remove and Replace,0.72,0.72
+3103101011,Control Arm - Upper - Rear - LH,Remove and Install,1.14,1.14
+3103101012,Control Arm - Upper - Rear - LH,Remove and Replace,1.14,1.14
+3103101021,Control Arm - Upper - Rear - RH,Remove and Install,1.14,1.14
+3103101022,Control Arm - Upper - Rear - RH,Remove and Replace,1.14,1.14
+3103101031,Control Arm - Lower - Rear - LH,Remove and Install,1.02,1.02
+3103101032,Control Arm - Lower - Rear - LH,Remove and Replace,1.02,1.02
+3103101041,Control Arm - Lower - Rear - RH,Remove and Install,1.02,1.02
+3103101042,Control Arm - Lower - Rear - RH,Remove and Replace,1.02,1.02
+3103101051,Aeroshield - Control Arm - Lower  - Rear - LH,Remove and Install,0.06,0.06
+3103101052,Aeroshield - Control Arm - Lower  - Rear - LH,Remove and Replace,0.06,0.06
+3103101061,Aeroshield - Control Arm - Lower  - Rear - RH,Remove and Install,0.06,0.06
+3103101062,Aeroshield - Control Arm - Lower  - Rear - RH,Remove and Replace,0.06,0.06
+31039000,Suspension - Rear (Check Torque),Test/Adjust,0.36,0.36
+3110008011,Compressor - Air Suspension,Remove and Install,0.84,0.84
+3110008012,Compressor - Air Suspension,Remove and Replace,0.84,0.84
+3110008021,Bracket - Carrier - Compressor - Air Suspension,Remove and Install,0.6,0.6
+3110008022,Bracket - Carrier - Compressor - Air Suspension,Remove and Replace,0.6,0.6
+3110008031,Air Compressor Exhaust Assembly,Remove and Install,0.48,0.48
+3110008032,Air Compressor Exhaust Assembly,Remove and Replace,0.48,0.48
+3110008041,Reservoir - Air Suspension,Remove and Install,0.66,0.66
+3110008042,Reservoir - Air Suspension,Remove and Replace,0.66,0.66
+3110008051,Airline - Inlet - Valve Block - Air Suspension,Remove and Install,0.72,0.72
+3110008052,Airline - Inlet - Valve Block - Air Suspension,Remove and Replace,0.72,0.72
+3110009011,Airline Bundle - LH,Remove and Install,6.0,6.0
+3110009012,Airline Bundle - LH,Remove and Replace,6.0,6.0
+3110009021,Airline Bundle - RH,Remove and Install,5.76,5.76
+3110009022,Airline Bundle - RH,Remove and Replace,5.76,5.76
+3110009031,Airline Bundle - Rear,Remove and Install,1.8,1.8
+3110009032,Airline Bundle - Rear,Remove and Replace,1.8,1.8
+31100200,Air Lines Leak,Inspection,0.36,0.36
+3110060001,Sensor - Ride Height - Rear - RH,Remove and Install,0.36,0.36
+3110060002,Sensor - Ride Height - Rear - RH,Remove and Replace,0.36,0.36
+3110069011,Sensor - Ride Height - Front - LH,Remove and Install,0.42,0.42
+3110069012,Sensor - Ride Height - Front - LH,Remove and Replace,0.42,0.42
+3110069021,Sensor - Ride Height - Front - RH,Remove and Install,0.42,0.42
+3110069022,Sensor - Ride Height - Front - RH,Remove and Replace,0.42,0.42
+3110069031,Sensor - Ride Height - Rear - LH,Remove and Install,0.36,0.36
+3110069032,Sensor - Ride Height - Rear - LH,Remove and Replace,0.36,0.36
+3110069041,Height Controller and Sensors - Rear Ride Height Sensor Bracket - RH,Remove and Install,0.71,0.71
+3110069042,Height Controller and Sensors - Rear Ride Height Sensor Bracket - RH,Remove and Replace,0.71,0.71
+3110102201,Valve Block - Air Suspension,Remove and Install,0.66,0.66
+3110102202,Valve Block - Air Suspension,Remove and Replace,0.66,0.66
+3110102301, SCUBA Valve Block Assembly,Remove and Install,0.72,0.72
+3110102302, SCUBA Valve Block Assembly,Remove and Replace,0.72,0.72
+31101300,Air Suspension - Pressurize / Depressurize - Two Air Springs,Test/Adjust,0.36,0.36
+31101500,Pressurize / Depressurize - Full System,Test/Adjust,0.3,0.3
+3201010071,Tie Rod - Inner - Front Steering Gear - LH,Remove and Install,0.54,0.54
+3201010072,Tie Rod - Inner - Front Steering Gear - LH,Remove and Replace,0.54,0.54
+32010103,Steering Rack - Calibration,Program,0.2,0.2
+3201010401,Tie Rod - Outer - Front Steering Gear - LH,Remove and Install,0.42,0.42
+3201010402,Tie Rod - Outer - Front Steering Gear - LH,Remove and Replace,0.42,0.42
+3201010501,Tie Rod - Outer - Front Steering Gear - RH,Remove and Install,0.42,0.42
+3201010502,Tie Rod - Outer - Front Steering Gear - RH,Remove and Replace,0.42,0.42
+3201010601,Tie Rod - Inner - Front Steering Gear - RH,Remove and Install,0.54,0.54
+3201010602,Tie Rod - Inner - Front Steering Gear - RH,Remove and Replace,0.54,0.54
+3201063011,Steering Actuator - Front,Remove and Install,1.5,1.5
+3201063012,Steering Actuator - Front,Remove and Replace,1.68,1.68
+3201099011,Toe Link - Rear - LH,Remove and Install,0.42,0.42
+3201099012,Toe Link - Rear - LH,Remove and Replace,0.42,0.42
+3201099021,Steering Actuator - Rear,Remove and Install,1.38,1.38
+3201099022,Steering Actuator - Rear,Remove and Replace,1.38,1.38
+32020200001,Steering Gear - Rear (Long Range),Remove and Install,1.14,1.14
+32020200002,Steering Gear - Rear (Long Range),Remove and Replace,1.14,1.14
+32050200600,Steering Wheel Calibration,Test/Adjust,0.06,0.06
+3205111001,Actuator - Steering Column,Remove and Install,0.78,0.78
+3205111002,Actuator - Steering Column,Remove and Replace,0.78,0.78
+3205111011,Clip - Lower - Steering Column Shroud,Remove and Install,0.24,0.24
+3205111012,Clip - Lower - Steering Column Shroud,Remove and Replace,0.24,0.24
+3205111021,Steering Wheel Pur Heated,Remove and Install,0.18,0.18
+3205111022,Steering Wheel Pur Heated,Remove and Replace,0.18,0.18
+3205111031,Harness - Steering Wheel,Remove and Install,0.48,0.48
+3205111032,Harness - Steering Wheel,Remove and Replace,0.48,0.48
+3205111041,Shroud - Lower - Steering Column,Remove and Install,0.24,0.24
+3205111042,Shroud - Lower - Steering Column,Remove and Replace,0.24,0.24
+3205111051,Shroud - Upper - Steering Column,Remove and Install,0.06,0.06
+3205111052,Shroud - Upper - Steering Column,Remove and Replace,0.06,0.06
+3205111061,Control Module - Steering Column,Remove and Install,0.3,0.3
+3205111062,Control Module - Steering Column,Remove and Replace,0.36,0.36
+3205111071,Gap Hider - Instrument Panel,Remove and Install,0.54,0.54
+3205111072,Gap Hider - Instrument Panel,Remove and Replace,0.54,0.54
+3205111102,Steering Feedback Actuator,Remove and Replace,1.2,1.2
+3205111111,Steering Column,Remove and Install,1.14,1.14
+3205111112,Steering Column,Remove and Replace,1.14,1.14
+33000004,Diagnosis: Brake System,General Diagnosis,0.5,0.5
+33010100,Brake Rotor - Front - LH (Measure Runout),Test/Adjust,0.35,0.35
+33010200,Brake Rotor - Rear - LH (Measure Runout),Test/Adjust,0.42,0.42
+3301040001,Rear Brake Caliper - Bleed Screw - RH,Remove and Install,0.42,0.42
+3301040002,Rear Brake Caliper - Bleed Screw - RH,Remove and Replace,0.42,0.42
+3301044011,Brake Rotor - Front - LH,Remove and Install,0.24,0.24
+3301044012,Brake Rotor - Front - LH,Remove and Replace,0.24,0.24
+3301044021,Brake Caliper - Front - LH,Remove and Install,0.54,0.54
+3301044022,Brake Caliper - Front - LH,Remove and Replace,0.54,0.54
+3301044031,Brake Caliper - Front - RH,Remove and Install,0.54,0.54
+3301044032,Brake Caliper - Front - RH,Remove and Replace,0.54,0.54
+3301044041,Brake Shield - Front - LH,Remove and Install,0.66,0.66
+3301044042,Brake Shield - Front - LH,Remove and Replace,0.66,0.66
+3301044051,Brake Shield - Front - RH,Remove and Install,0.66,0.66
+3301044052,Brake Shield - Front - RH,Remove and Replace,0.66,0.66
+3301044061,Front Brake Rotors - Calipers and Pads - Front Brake Caliper - LH Performance,Remove and Install,0.71,0.71
+3301044062,Front Brake Rotors - Calipers and Pads - Front Brake Caliper - LH Performance,Remove and Replace,0.71,0.71
+3301044071,Front Brake Rotors - Calipers and Pads - Front Brake Caliper - RH Performance,Remove and Install,0.71,0.71
+3301044072,Front Brake Rotors - Calipers and Pads - Front Brake Caliper - RH Performance,Remove and Replace,0.71,0.71
+3301044081,Brake Pad Kit - Front,Remove and Install,0.48,0.48
+3301044082,Brake Pad Kit - Front,Remove and Replace,0.48,0.48
+3301044091,Front Brake Rotors - Calipers and Pads - Service Front Brake Caliper - LH (Without Pads),Remove and Install,0.71,0.71
+3301044092,Front Brake Rotors - Calipers and Pads - Service Front Brake Caliper - LH (Without Pads),Remove and Replace,0.71,0.71
+3301044101,Front Brake Rotors - Calipers and Pads - Service Front Brake Caliper - RH (Without Pads),Remove and Install,0.71,0.71
+3301044102,Front Brake Rotors - Calipers and Pads - Service Front Brake Caliper - RH (Without Pads),Remove and Replace,0.71,0.71
+3301044111,Front Brake Rotors - Calipers and Pads - Service Front Brake Caliper - LH (Without Pads) Performance,Remove and Install,0.71,0.71
+3301044112,Front Brake Rotors - Calipers and Pads - Service Front Brake Caliper - LH (Without Pads) Performance,Remove and Replace,0.71,0.71
+3301044121,Front Brake Rotors - Calipers and Pads - Service Front Brake Caliper - RH (Without Pads) Performance,Remove and Install,0.71,0.71
+3301044122,Front Brake Rotors - Calipers and Pads - Service Front Brake Caliper - RH (Without Pads) Performance,Remove and Replace,0.71,0.71
+3301044131,Spring Kit - Brake Caliper - Front,Remove and Install,0.18,0.18
+3301044132,Spring Kit - Brake Caliper - Front,Remove and Replace,0.18,0.18
+3301044141,Bleed Screw Kit - Brake Caliper - Front,Remove and Install,0.48,0.48
+3301044142,Bleed Screw Kit - Brake Caliper - Front,Remove and Replace,0.48,0.48
+3301044151,Boot Kit - Brake Caliper - Front,Remove and Install,0.36,0.36
+3301044152,Boot Kit - Brake Caliper - Front,Remove and Replace,0.36,0.36
+3301044161,Bleed Screw - Brake Caliper - Rear - LH,Remove and Install,0.42,0.42
+3301044162,Bleed Screw - Brake Caliper - Rear - LH,Remove and Replace,0.42,0.42
+3301080001,Rear Brake Rotors - Calipers and Pads - Rear Brake Caliper - RH Performance,Remove and Install,0.71,0.71
+3301080002,Rear Brake Rotors - Calipers and Pads - Rear Brake Caliper - RH Performance,Remove and Replace,0.71,0.71
+33010821,Boot Kit - Brake Caliper - Rear (Remove & Install),Remove and Install,0.54,0.54
+33010822,Boot Kit - Brake Caliper - Rear (Remove & Replace),Remove and Replace,0.54,0.54
+3301088011,Brake Rotor - Rear - Base,Remove and Install,0.36,0.36
+3301088012,Brake Rotor - Rear - Base,Remove and Replace,0.36,0.36
+3301088021,Brake Caliper - Rear - LH,Remove and Install,0.54,0.54
+3301088022,Brake Caliper - Rear - LH,Remove and Replace,0.54,0.54
+3301088031,Brake Caliper - Rear - RH,Remove and Install,0.54,0.54
+3301088032,Brake Caliper - Rear - RH,Remove and Replace,0.54,0.54
+3301088041,Brake Shield - Brake - Rear - LH,Remove and Install,0.54,0.54
+3301088042,Brake Shield - Brake - Rear - LH,Remove and Replace,0.54,0.54
+3301088051,Brake Shield - Brake - Rear - RH,Remove and Install,0.54,0.54
+3301088052,Brake Shield - Brake - Rear - RH,Remove and Replace,0.54,0.54
+3301088061,Rear Brake Rotors - Calipers and Pads - Rear Brake Caliper - LH Performance,Remove and Install,0.71,0.71
+3301088062,Rear Brake Rotors - Calipers and Pads - Rear Brake Caliper - LH Performance,Remove and Replace,0.71,0.71
+3301088071,Rear Brake Rotors - Calipers and Pads - Rear Brake Caliper - Right Performance,Remove and Install,0.71,0.71
+3301088072,Rear Brake Rotors - Calipers and Pads - Rear Brake Caliper - Right Performance,Remove and Replace,0.71,0.71
+3301088081,Brake Pad Kit - Rear,Remove and Install,0.48,0.48
+3301088082,Brake Pad Kit - Rear,Remove and Replace,0.48,0.48
+3301088091,SVC Brake Caliper - Rear - LH (Without Pads),Remove and Install,0.6,0.6
+3301088092,SVC Brake Caliper - Rear - LH (Without Pads),Remove and Replace,0.6,0.6
+3301088101,SVC Brake Caliper - Rear - RH (Without Pads),Remove and Install,0.71,0.71
+3301088102,SVC Brake Caliper - Rear - RH (Without Pads),Remove and Replace,0.71,0.71
+3301088111,Rear Brake Rotors - Calipers and Pads - SVC Rear Brake Caliper - LH (Without Pads) Performance,Remove and Install,0.71,0.71
+3301088112,Rear Brake Rotors - Calipers and Pads - SVC Rear Brake Caliper - LH (Without Pads) Performance,Remove and Replace,0.71,0.71
+3301088121,Rear Brake Rotors - Calipers and Pads - SVC Rear Brake Caliper - RH (Without Pads) Performance,Remove and Install,0.71,0.71
+3301088122,Rear Brake Rotors - Calipers and Pads - SVC Rear Brake Caliper - RH (Without Pads) Performance,Remove and Replace,0.71,0.71
+33011100,Brake Rotor - Front - RH (Measure Runout),Test/Adjust,0.35,0.35
+33011200,Brake Rotor - Rear - RH (Measure Runout),Test/Adjust,0.35,0.35
+33013000,Brake Pads - Burnishing,Maintenance,0.3,0.3
+33013325,Clean And Lubricate Brake Calipers (Integrated Parking Brake) (Requires Code 34012501),Maintenance,1.26,1.26
+33015090,Brake Pads and Rotors - Inspection,Test/Adjust,0.3,0.3
+3303019011,HCU Brake Pipe Assembly,Remove and Install,1.5,1.5
+3303019012,HCU Brake Pipe Assembly,Remove and Replace,1.5,1.5
+3303019021,Brake Pipe Assembly - Front,Remove and Install,4.14,4.14
+3303019022,Brake Pipe Assembly - Front,Remove and Replace,4.14,4.14
+3303019031,Brake Tube Pipe Assembly - LH,Remove and Install,1.08,1.08
+3303019032,Brake Tube Pipe Assembly - LH,Remove and Replace,1.08,1.08
+3303019041,Brake Lines - Right Brake Tube Pipe Assembly,Remove and Install,0.71,0.71
+3303019042,Brake Lines - Right Brake Tube Pipe Assembly,Remove and Replace,0.71,0.71
+3303020102,Brake Hose - Front - LH,Remove and Replace,0.78,0.78
+3303020202,Brake Hose - Front - RH,Remove and Replace,0.78,0.78
+3303020302,Brake Hose - Rear - LH,Remove and Replace,0.78,0.78
+3303020502,Brake Hose - Rear - RH,Remove and Replace,0.78,0.78
+33031102,Brake Fluid Bleed - One Caliper (Remove & Replace),Remove and Replace,0.79,0.79
+33031200,Brake Fluid Check,Test/Adjust,0.12,0.12
+33031202,Brake Fluid Bleed/Flush,Maintenance,0.9,0.9
+33031205,Brake Bleeder Machine (Flush),Maintenance,0.07,0.07
+33051005,Parking Brake - Caliper - Rear - LH (Release),Maintenance,0.18,0.18
+3310007011,Hydraulic Control Unit,Remove and Install,3.06,3.06
+3310007012,Hydraulic Control Unit,Remove and Replace,3.06,3.06
+3310007021,Bracket Assembly - Hydraulic Control Unit,Remove and Install,2.46,2.46
+3310007022,Bracket Assembly - Hydraulic Control Unit,Remove and Replace,2.46,2.46
+3310007031,Wheel Speed Sensor - Front - RH,Remove and Install,0.18,0.18
+3310007032,Wheel Speed Sensor - Front - RH,Remove and Replace,0.18,0.18
+3310007041,Wheel Speed Sensor - Front - LH,Remove and Install,0.18,0.18
+3310007042,Wheel Speed Sensor - Front - LH,Remove and Replace,0.18,0.18
+3310007051,ABS Module and ESC Sensor - Service Brake HCU Pre - Filled,Remove and Install,2.28,2.28
+3310007052,ABS Module and ESC Sensor - Service Brake HCU Pre - Filled,Remove and Replace,2.28,2.28
+3310007061,Wheel Speed Sensor - Rear - RH,Remove and Install,0.18,0.18
+3310007062,Wheel Speed Sensor - Rear - RH,Remove and Replace,0.18,0.18
+3310007071,Wheel Speed Sensor - Rear - LH,Remove and Install,0.18,0.18
+3310007072,Wheel Speed Sensor - Rear - LH,Remove and Replace,0.18,0.18
+3310007082,Chassis Harness - Wheel Speed Sensor - Front - LH,Remove and Replace,0.18,0.18
+3310007092,Chassis Harness - Wheel Speed Sensor - Front - RH,Remove and Replace,0.18,0.18
+3310007102,Chassis Harness - Wheel Speed Sensor - Rear - LH,Remove and Replace,0.18,0.18
+3310007112,Chassis Harness - Wheel Speed Sensor - Rear - RH,Remove and Replace,0.18,0.18
+3320033011,Brake Booster Assembly,Remove and Install,1.68,1.68
+3320033012,Brake Booster Assembly,Remove and Replace,1.68,1.68
+3320033021,Brake Remote Reservoir,Remove and Install,0.12,0.12
+3320033022,Brake Remote Reservoir,Remove and Replace,0.12,0.12
+3320033031,Remote Reservoir Tube,Remove and Install,0.18,0.18
+3320033032,Remote Reservoir Tube,Remove and Replace,0.18,0.18
+3325020011,Brake Pedal - Option,Remove and Install,2.16,2.16
+3325020012,Brake Pedal - Option,Remove and Replace,2.16,2.16
+3325020021,Accelerator Pedal,Remove and Install,0.12,0.12
+3325020022,Accelerator Pedal,Remove and Replace,0.12,0.12
+3325020031,Support Bracket - Accelerator Pedal,Remove and Install,0.12,0.12
+3325020032,Support Bracket - Accelerator Pedal,Remove and Replace,0.12,0.12
+33254952,Brake Pedal - Accelerator Pedal (Inspection),Inspection,0.06,0.06
+34010105,Tire Rotation,Maintenance,0.6,0.6
+34010201301,Steel Wheel (Long Range),Remove and Install,0.78,0.78
+34010201302,Steel Wheel (Long Range),Remove and Replace,0.78,0.78
+34011000,Inspect Wheel (Cosmetic Inspection),Inspection,0.12,0.12
+34011106,Wheel Lock Set - Install,Retrofit,0.1,0.1
+34011302,Lug Nuts - Vehicle Set (Remove & Replace),Remove and Replace,0.48,0.48
+3401131031,Wheels - Wheel,Remove and Install,0.48,0.48
+3401131032,Wheels - Wheel,Remove and Replace,0.48,0.48
+34012501,Wheels - Vehicle - Set (Remove & Install),Remove and Install,0.3,0.3
+34012902,Wheels - Set (Remove and Replace),Remove and Replace,1.32,1.32
+34013000,Check Tire Tread Depth,Tire Inspection,0.05,0.05
+34014005,Seasonal Wheel and Tire Set Swap (Already Built),Seasonal Swap,0.5,0.5
+34014101,Tire Set - Vehicle - Swap  (Not Already Built),Remove and Install,1.56,1.56
+34014505,Seasonal Wheel and Tire - (Build and Install),Tire Purchase,2.04,2.04
+34015001,Wheel Assembly - Front - LH (Remove & Install),Remove and Install,0.12,0.12
+34015002,Wheel - Front - LH (Remove & Replace),Remove and Replace,0.36,0.36
+34015021,Wheel Cover - Front - LH,Remove and Install,0.05,0.05
+34015022,Wheel Cover - Front - LH,Remove and Replace,0.06,0.06
+34015032,Cap - Wheel - Set (Remove & Replace),Remove and Replace,0.05,0.05
+34015101,Wheel Assembly - Front - RH (Remove & Install),Remove and Install,0.12,0.12
+34015102,Wheel - Front - RH (Remove & Replace),Remove and Replace,0.36,0.36
+34015121,Wheel Cover - Front - RH,Remove and Install,0.05,0.05
+34015122,Wheel Cover - Front - RH,Remove and Replace,0.06,0.06
+34015201,Wheel Assembly - Rear - LH (Remove & Install),Remove and Install,0.12,0.12
+34015202,Wheel - Rear - LH (Remove & Replace),Remove and Replace,0.36,0.36
+34015221,Wheel Cover - Rear - LH,Remove and Install,0.05,0.05
+34015222,Wheel Cover - Rear - LH,Remove and Replace,0.06,0.06
+34015301,Wheel Assembly - Rear - RH (Remove & Install),Remove and Install,0.12,0.12
+34015302,Wheel - Rear - RH (Remove & Replace),Remove and Replace,0.36,0.36
+34015321,Wheel Cover - Rear - RH,Remove and Install,0.05,0.05
+34015322,Wheel Cover - Rear - RH,Remove and Replace,0.06,0.06
+34015401,Install Wheel Caps - Set,Installation,0.06,0.06
+34020000000,Wheel and Tire Protection Plan Inspection,Inspection,0.2,0.2
+34020010,Mobile Tire Service Performed,Modify,0.0,0.0
+34020020,Mobile Tire Service Performed – Roadside,Tire Repair,0.0,0.0
+34020030,Mobile Tire Service Performed – Logistics,Tire Repair,0.0,0.0
+3402010061,Tire Information Label,Remove and Replace,0.12,0.12
+34020100700,Tire - Quotes (Remove & Install),Test/Adjust,1.0,1.0
+34020100901,Rubber Valve Stem (Long Range),Remove and Install,0.42,0.42
+34020100902,Rubber Valve Stem (Long Range),Remove and Replace,0.42,0.42
+34020101002,Tires - Vehicle - Set,Remove and Replace,1.92,1.92
+34020305,Rebalance 4 Tires,Rebalance,0.9,0.9
+34020505,Tire Rotation and Balance with Automatic TPMS Learn,Rebalance,0.75,0.75
+34020600,Automated Tire Pressure Check (No Adjustment Needed),Test/Adjust,0.0,0.0
+34020700,Automated Tire Pressure Check (Adjustment Needed),Test/Adjust,0.1,0.1
+34020800,Automated Tire Pressure Check,Inspection,0.0,0.0
+34020900,Check and Adjust Tire Pressure,Test/Adjust,0.1,0.1
+34021001,Tire - Front - LH (Remove & Install),Remove and Install,0.25,0.25
+34021002,Tire - Front - LH (Remove & Replace),Tire Purchase,0.35,0.35
+34021101,Tire - Front - RH (Remove & Install),Remove and Install,0.25,0.25
+34021102,Tire - Front - RH (Remove & Replace),Tire Purchase,0.35,0.35
+34021201,Tire - Rear - LH (Remove & Install),Remove and Install,0.25,0.25
+34021202,Tire - Rear - LH (Remove & Replace),Tire Purchase,0.35,0.35
+34021301,Tire - Rear - RH (Remove & Install),Remove and Install,0.25,0.25
+34021302,Tire - Rear - RH (Remove & Replace),Tire Purchase,0.35,0.35
+34021405,Tires - Front - Set,Tire Purchase,0.7,0.7
+34021605,Tires - Rear - Set,Tire Purchase,0.7,0.7
+34021805,Tires - Vehicle - Set,Tire Purchase,1.15,1.15
+34022005,Tire - Front - LH (Road Force) (Balance),Tire Repair,0.2,0.2
+34022015,Tire - Supplemental (Rebalance),Maintenance,0.18,0.18
+34022025,Tire - Front - LH (Balance),Rebalance,0.3,0.3
+34022105,Tire - Front - RH (Road Force) (Balance),Tire Repair,0.2,0.2
+34022125,Tire - Front - RH (Balance),Rebalance,0.3,0.3
+34022205,Tire - Rear - LH (Road Force) (Balance),Tire Repair,0.2,0.2
+34022225,Tire - Rear - LH (Balance),Rebalance,0.3,0.3
+34022305,Tire - Rear - RH (Road Force) (Balance),Tire Repair,0.2,0.2
+34022325,Tire - Rear - RH (Balance),Rebalance,0.3,0.3
+34023008,Tire - Front - LH (Repair),Tire Repair,0.66,0.66
+34023108,Tire - Front - RH (Repair),Tire Repair,0.66,0.66
+34023208,Tire - Rear - LH (Repair),Tire Repair,0.66,0.66
+34023308,Tire - Rear - RH (Repair),Tire Repair,0.66,0.66
+34040100101,Sensor - Tire Pressure Monitoring System (TPMS),Remove and Install,0.0,0.0
+3404120011,Sensor - TPMS - Front - LH,Remove and Install,0.3,0.3
+3404120012,Sensor - TPMS - Front - LH,Remove and Replace,0.3,0.3
+3404120021,Sensor - TPMS - Front - RH,Remove and Install,0.3,0.3
+3404120022,Sensor - TPMS - Front - RH,Remove and Replace,0.3,0.3
+3404120031,Sensor - TPMS - Rear - LH,Remove and Install,0.3,0.3
+3404120032,Sensor - TPMS - Rear - LH,Remove and Replace,0.3,0.3
+3404120041,Sensor - TPMS - Rear - RH,Remove and Install,0.3,0.3
+3404120042,Sensor - TMPS - Rear - RH,Remove and Replace,0.3,0.3
+39000004,Diagnosis: Drivetrain,General Diagnosis,0.5,0.5
+39010102319,Odometer Inspection and Rollback,Inspection,0.12,0.12
+39010201301,Oil Filter - Front Drive Unit,Remove and Install,1.44,1.44
+39010201302,Oil Filter - Front Drive Unit,Remove and Replace,1.44,1.44
+3901049011,Axle Seal - Output - Front Drive Unit,Remove and Install,0.6,0.6
+3901049012,Axle Seal - Output - Front Drive Unit,Remove and Replace,0.6,0.6
+3901049021,Electric Oil Pump - Front Drive Unit,Remove and Install,0.66,0.66
+3901049022,Electric Oil Pump - Front Drive Unit,Remove and Replace,0.66,0.66
+3901049031,Ground Strap - Front Drive Unit,Remove and Install,0.24,0.24
+3901049032,Ground Strap - Front Drive Unit,Remove and Replace,0.24,0.24
+3901049041,Breather Housing - Front Drive Unit,Remove and Install,1.26,1.26
+3901049042,Breather Housing - Front Drive Unit,Remove and Replace,1.26,1.26
+3901049051,NVH Covers - Inverter - Front Drive Unit,Remove and Install,0.71,0.71
+3901049052,NVH Covers - Inverter - Front Drive Unit,Remove and Replace,0.71,0.71
+3901049061,NVH Covers - Motor Side - Front Drive Unit,Remove and Install,0.71,0.71
+3901049062,NVH Covers - Motor Side - Front Drive Unit,Remove and Replace,0.71,0.71
+3901049071,Bushing - Gearcase - Front Drive Unit,Remove and Install,0.71,0.71
+3901049072,Bushing - Gearcase - Front Drive Unit,Remove and Replace,0.71,0.71
+3901049081,Heat Exchanger - Front Drive Unit,Remove and Install,1.32,1.32
+3901049082,Heat Exchanger - Front Drive Unit,Remove and Replace,1.32,1.32
+3901049091,Bushing - Side - LH - Front Drive Unit,Remove and Install,0.71,0.71
+3901049092,Bushing - Side - LH - Front Drive Unit,Remove and Replace,0.71,0.71
+3901049101,Mount - Inverter - Front Drive Unit,Remove and Install,2.34,2.34
+3901049102,Mount - Inverter - Front Drive Unit,Remove and Replace,2.34,2.34
+3901049111,Drive Unit - Front,Remove and Install,3.42,3.42
+3901049112,Drive Unit - Front,Remove and Replace,3.66,3.66
+39019175,Replace Motor Oil (DM),Remove and Replace,4.18,4.18
+3920048011,Cover - Phase Out - Inverter - Front Drive Unit,Remove and Install,0.6,0.6
+3920048012,Cover - Phase Out - Inverter - Front Drive Unit,Remove and Replace,0.6,0.6
+3920048021,Inverter - Front Drive Unit,Remove and Install,3.9,3.9
+3920048022,Inverter - Front Drive Unit,Remove and Replace,3.9,3.9
+3930010031,Halfshaft - RH - Front Drive Unit,Remove and Install,0.66,0.66
+3930010032,Halfshaft - RH - Front Drive Unit,Remove and Replace,0.66,0.66
+39300102,Gearbox Fluid - Front Drive Unit (Drain and Fill),Remove and Replace,0.48,0.48
+39300105,Front Drive Unit Assembly - Gearbox Fluid (Fill),Test/Adjust,0.48,0.48
+3930053011,Halfshaft - LH - Front Drive Unit,Remove and Install,0.66,0.66
+3930053012,Halfshaft - LH - Front Drive Unit,Remove and Replace,0.66,0.66
+39303301,Halfshafts - Front Drive Unit - LH and RH,Remove and Install,1.26,1.26
+39303302,Halfshafts - LH and RH - Front Drive Unit,Remove and Replace,1.26,1.26
+4001093011,Axle Seal - Output - Rear Drive Unit,Remove and Install,0.54,0.54
+4001093012,Axle Seal - Output - Rear Drive Unit,Remove and Replace,0.54,0.54
+4001093021,Electric Oil Pump - Rear Drive Unit,Remove and Install,0.66,0.66
+4001093022,Electric Oil Pump - Rear Drive Unit,Remove and Replace,0.66,0.66
+4001093031,Ground Strap - Rear Drive Unit (Dual Motor),Remove and Install,1.2,1.2
+4001093032,Ground Strap - Rear Drive Unit (Dual Motor),Remove and Replace,1.2,1.2
+4001093041,Breather Housing - Rear Drive Unit,Remove and Install,0.3,0.3
+4001093042,Breather Housing - Rear Drive Unit,Remove and Replace,0.3,0.3
+4001093051,NVH Covers - Inverter - Rear Drive Unit,Remove and Install,0.71,0.71
+4001093052,NVH Covers - Inverter - Rear Drive Unit,Remove and Replace,0.71,0.71
+4001093061,NVH Covers - Motor Side - Rear Drive Unit,Remove and Install,0.71,0.71
+4001093062,NVH Covers - Motor Side - Rear Drive Unit,Remove and Replace,0.71,0.71
+4001093071,Drive Unit - Rear (Dual Motor),Remove and Install,3.24,3.24
+4001093072,Drive Unit - Rear (Dual Motor),Remove and Replace,3.36,3.36
+4001093081,Bushing - Gearcase - Rear Drive Unit,Remove and Install,0.71,0.71
+4001093082,Bushing - Gearcase - Rear Drive Unit,Remove and Replace,0.71,0.71
+4001093091,Heat Exchanger - Rear Drive Unit,Remove and Install,0.66,0.66
+4001093092,Heat Exchanger - Rear Drive Unit,Remove and Replace,0.66,0.66
+4001093101,Bushing - Side - LH - Rear Drive Unit,Remove and Install,0.71,0.71
+4001093102,Bushing - Side - LH - Rear Drive Unit,Remove and Replace,0.71,0.71
+4001093111,Mount - Inverter - Rear Drive Unit,Remove and Install,2.22,2.22
+4001093112,Mount - Inverter - Rear Drive Unit,Remove and Replace,2.22,2.22
+4001093121,Ground Strap - Rear Drive Unit (Tri Motor),Remove and Install,0.66,0.66
+4001093122,Ground Strap - Rear Drive Unit (Tri Motor),Remove and Replace,0.66,0.66
+4001093132,Drive Unit - Rear (Tri Motor),Remove and Replace,3.78,3.78
+4001093221,Oil Pump - Rear Drive Unit - LH (Tri Motor),Remove and Install,0.6,0.6
+4001093222,Oil Pump - Rear Drive Unit - LH (Tri Motor),Remove and Replace,0.6,0.6
+4001093231,Oil Pump - Rear Drive Unit - RH (Tri Motor),Remove and Install,0.6,0.6
+4001093232,Oil Pump - Rear Drive Unit - RH (Tri Motor),Remove and Replace,0.6,0.6
+40011000201,Drive Unit - Rear (Long Range),Remove and Install,3.72,3.72
+40011000202,Drive Unit - Rear (Long Range),Remove and Replace,3.72,3.72
+40011000301,Mount - RH - Rear Drive Unit (Long Range),Remove and Install,1.44,1.44
+40011000302,Mount - RH - Rear Drive Unit (Long Range),Remove and Replace,1.44,1.44
+40011000401,Ground Strap - Rear Drive Unit (Long Range),Remove and Install,0.3,0.3
+40011000402,Ground Strap - Rear Drive Unit (Long Range),Remove and Replace,0.3,0.3
+40011000501,Breather Housing - Rear Drive Unit (Long Range),Remove and Install,0.48,0.48
+40011000502,Breather Housing - Rear Drive Unit (Long Range),Remove and Replace,0.48,0.48
+4001241200001,CT TM Rear Drive Unit - Rear Drive Unit Assembly - Rear Drive Unit - Oil Filter - LH (RI),Remove and Install,2.64,2.64
+4001241200002,CT TM Rear Drive Unit - Rear Drive Unit Assembly - Rear Drive Unit - Oil Filter - LH (RI),Remove and Replace,2.64,2.64
+40200200601,Drive Inverter Assembly - Rear (Long Range),Remove and Install,3.0,3.0
+40200200602,Drive Inverter Assembly - Rear (Long Range),Remove and Replace,3.0,3.0
+40200200701,Phase Out Cover - Drive Inverter - Rear (Long Range),Remove and Install,0.66,0.66
+40200200702,Phase Out Cover - Drive Inverter - Rear (Long Range),Remove and Replace,0.66,0.66
+40200400101,Drive Inverters - Rear - Set (Tri-Motor),Remove and Install,3.12,3.12
+40200400102,Drive Inverters - Rear - Set (Tri-Motor),Remove and Replace,3.12,3.12
+4020090001,Tri Motor - Drive Inverter Assembly - RH,Remove and Install,2.64,2.64
+4020092011,Cover - Phase Out - Drive Inverter - Rear,Remove and Install,1.68,1.68
+4020092012,Cover - Phase Out - Drive Inverter - Rear,Remove and Replace,1.68,1.68
+4020092021,Drive Inverter - Rear,Remove and Install,3.84,3.84
+4020092022,Drive Inverter - Rear,Remove and Replace,3.84,3.84
+4020092031,Drive Inverter - Rear - LH (Tri-Motor),Remove and Install,2.64,2.64
+4020092032,Drive Inverter - Rear - LH (Tri-Motor),Remove and Replace,2.64,2.64
+4020092041,Rear Drive Unit Assembly - Tri Motor - Drive Inverter Assembly - RH,Remove and Install,2.64,2.64
+4020092042,Drive Inverter Assembly - Rear - RH (Tri-Motor),Remove and Replace,2.64,2.64
+40202000,Powertrain Coolant (Drain and Refill),Test/Adjust,0.14,0.14
+40202010,Inverter Coolant Leak Test,Inspection,0.12,0.12
+40202020,Inverter Air Leak Test,Inspection,0.12,0.12
+4030010021,Halfshaft - Rear Drive Unit - RH,Remove and Install,0.48,0.48
+4030010022,Halfshaft - Rear Drive Unit - RH,Remove and Replace,0.48,0.48
+40300102,Gearbox Fluid - Rear Drive Unit (3DU) (Drain and Refill),Remove and Replace,0.54,0.54
+40300105,Gearbox Fluid - Rear Drive Unit (Tri Motor) (Top Off),Maintenance,0.66,0.66
+40300112,Gearbox Fluid - Rear Drive Unit (Tri-Motor) (Drain & Refill),Maintenance,0.66,0.66
+40300122,Gearbox Fluid - Rear Drive Unit (Tri Motor) (Drain & Fill),Maintenance,0.48,0.48
+40300135,Gearbox Fluid - Rear Drive Unit (Dual Motor) (Top Off),Maintenance,0.48,0.48
+4030096011,Halfshaft - Rear Drive Unit - LH,Remove and Install,0.48,0.48
+4030096012,Halfshaft - Rear Drive Unit - LH,Remove and Replace,0.48,0.48
+40303301,Halfshafts - Rear Drive Unit - LH and RH,Remove and Install,0.96,0.96
+40303302,Halfshafts - Rear Drive Unit - LH and RH,Remove and Replace,0.96,0.96
+40305211,Heat Exchanger - Rear Drive Unit - LH (Tri Motor),Remove and Install,1.38,1.38
+40305212,Heat Exchanger - Rear Drive Unit - LH (Tri Motor),Remove and Replace,1.38,1.38
+40305221,Heat Exchanger - Rear Drive Unit - RH (Tri Motor),Remove and Install,1.38,1.38
+40305222,Heat Exchanger - Rear Drive Unit - RH (Tri Motor),Remove and Replace,1.38,1.38
+44000004,Diagnosis: Charging,Test/Adjust,0.5,0.5
+44000100,Isolation/Insulation Test,Test/Adjust,0.05,0.05
+44000134,HV Isolation Diagnostics,Diagnosis Only,1.0,1.0
+44000204,HVIL Diagnostics,Diagnosis Only,1.0,1.0
+44010103001,Chargeport Assembly - Busbar (Long Range),Remove and Install,1.32,1.32
+44010103002,Chargeport Assembly - Busbar (Long Range),Remove and Replace,1.32,1.32
+44010103101,Chargeport and Busbar Assembly (Long Range),Remove and Install,1.32,1.32
+44010103102,Chargeport and Busbar Assembly (Long Range),Remove and Replace,1.32,1.32
+4401024011,Charge Port - Chargeport Pins,Remove and Install,0.71,0.71
+4401024012,Charge Port - Chargeport Pins,Remove and Replace,0.71,0.71
+4401024021,ECU - Charge Port Controller (Gen 4),Remove and Install,0.71,0.71
+4401024022,ECU - Charge Port Controller (Gen 4),Remove and Replace,0.18,0.18
+4401024031,Door - Charge Port,Remove and Install,0.3,0.3
+4401024032,Door - Charge Port,Remove and Replace,0.3,0.3
+4401024041,Busbar - Charge Port,Remove and Install,1.26,1.26
+4401024042,Busbar - Charge Port,Remove and Replace,1.26,1.26
+44012100,Charge Port Voltage Check,Test/Adjust,0.18,0.18
+44013205,Charge Port - Manual Release of Cable,Maintenance,0.12,0.12
+44019566,Charge Port Lubrication,Maintenance,0.86,0.86
+44500300301,HV Connector - Busbar - Charge Port (Long Range),Remove and Install,1.08,1.08
+44500300302,HV Connector - Busbar - Charge Port (Long Range),Remove and Replace,1.08,1.08
+44500300700,Low Internal Isolation Diagnostics - HV System (Long Range),Test/Adjust,1.08,1.08
+44500300800,Low Internal Isolation Diagnostics - HV System,Test/Adjust,1.02,1.02
+4450074011,"HV Connector Header, Plug",Remove and Install,1.32,1.32
+4450074012,"HV Connector Header, Plug",Remove and Replace,1.32,1.32
+4450074021,HV Harness - Rear Drive Unit (Dual Motor),Remove and Install,1.02,1.02
+4450074022,HV Harness - Rear Drive Unit (Dual Motor),Remove and Replace,1.02,1.02
+4450074031,HV Harness - Front Drive Unit,Remove and Install,6.65,6.65
+4450074032,HV Harness - Front Drive Unit,Remove and Replace,6.65,6.65
+4450074041,HV Harness - Bed Outlet,Remove and Install,0.96,0.96
+4450074042,HV Harness - Bed Outlet,Remove and Replace,0.96,0.96
+4450074051,HV Harness - AC Compressor (Remove and Install),Remove and Install,5.64,5.64
+4450074052,HV Harness - AC Compressor (Remove and Replace),Remove and Replace,5.64,5.64
+4450074061,HV Harness - Cabin Outlets,Remove and Install,1.86,1.86
+4450074062,HV Harness - Cabin Outlets,Remove and Replace,1.86,1.86
+4450074071,Bed Outlet Assembly,Remove and Install,0.12,0.12
+4450074072,Bed Outlet Assembly,Remove and Replace,0.12,0.12
+4450074081,HV Harness - Rear Drive Unit - LH (Tri Motor),Remove and Install,2.82,2.82
+4450074082,HV Harness - Rear Drive Unit - LH (Tri Motor),Remove and Replace,2.82,2.82
+4450074091,HV Harness - Rear Drive Unit - RH (Tri Motor),Remove and Install,2.82,2.82
+4450074092,HV Harness - Rear Drive Unit - RH (Tri Motor),Remove and Replace,2.82,2.82
+45010004,Diagnosis: Interior Rattle Squeak,General Diagnosis,0.8,0.8
+45020004,Diagnosis: Fixed Glass Wind Noise,General Diagnosis,0.7,0.7
+46010100004,CT DM Thermal Management - Cooling System - Coolant Leak Diagnostics (Test),General Diagnosis,0.8,0.8
+50010003,Firmware Update - Mobile Connector,Module Reset/Reflashed,0.1,0.1
+50010102,Mobile Connector - UMC (Remove & Replace),Remove and Replace,0.0,0.0
+50010202,Remove Stuck Deadfront - Charge Handle,Remove and Replace,0.06,0.06
+50010206,Provide Mobile Connector Adapter,Retrofit,0.0,0.0
+50010500005,Universal Mobile Connector Cleaning,Maintenance,0.06,0.06
+50020706,Wall Connector Installation,Remove and Install,1.08,1.08
+50022002,Handle and Cable Assembly - 80A Wall Connector (Remove & Replace),Remove and Replace,0.58,0.58
+50023002,Replace Wall Connector and Reimburse Installation Cost (Remove & Replace),Remove and Replace,0.0,0.0
+50024002,Handle and Cable Assembly - 40A Wall Connector (Remove & Replace),Remove and Replace,0.58,0.58
+50030102,Supercharging Cable - Connector (Remove & Replace),Remove and Replace,0.58,0.58
+50040102,Provide Mennekes Cable (Remove & Replace),Remove and Replace,0.24,0.24
+50040406,Provide J1772 Adapter,Retrofit,0.12,0.12
+61010001,Off Road Lightbar,Remove and Install,1.44,1.44
+61010002,Off Road Lightbar,Remove and Replace,1.2,1.2
+61010006,Off Road Lightbar,Retrofit,1.08,1.08
+61010007,Tesla Body Repair - Paint Labor,Body Shop,0.0,0.0
+61010011,Crossbars (Install),Installation,0.3,0.3
+61010012,Crossbars (Remove),Removal,0.36,0.36
+61010100034,Windshield Deductible,Deductible,0.01,0.01
+61010100100,Wheel and Tire Protection Plan - Deductible,Deductible,0.01,0.01
+61010100134,Battery and Drive Unit Extended Service Agreement,Deductible,0.01,0.01
+61010200100,Cybertruck Option Code Discrepancy,Test/Adjust,0.06,0.06
+61010200208,Pest or Rodent Clean Up,Restore,0.0,0.0
+6101020121,Cybertent,Remove and Install,0.12,0.12
+6101020126,Install Cybertent Kit,Installation,0.36,0.36
+61013108,Equip Tire Repair Kit,General diagnosis conclusion,0.0,0.0
+61019945,Tesla Body Repair - Blending Labor,Test/Adjust,0.0,0.0
+7000005,Mobile Tire Dispatch Fee,Fee,0.01,0.01
+70000105,Third Party Transport,Sublet,1.2,1.2
+7000030,Parts Not Available - Add to future service visit. ,General diagnosis conclusion,0.0,0.0
+70000305,Miscellaneous Labor,Fee,0.0,0.0
+7000060,Deliver Vehicle to Customer (3rd party),Sublet,0.0,0.0
+7000070,Tesla (Internal Loaner or Rental),Fee,0.0,0.0
+7000090,Roadside Assistance - Tow,Sublet,0.0,0.0
+7000100,Extended Service Agreement – Deductible $100,Deductible,0.01,0.01
+7000110,Follow-up Appointment Needed,General diagnosis conclusion,0.0,0.0
+70001405,Deliver Vehicle to Customer,Fee,0.0,0.0
+70001605,Valet Service Declined,Fee,0.0,0.0
+70001805,Courtesy Inspection Declined,Fee,0.0,0.0
+7000200,Extended Service Agreement – Deductible,Deductible,0.01,0.01
+70002005,Non-Tesla (Rental),Sublet,0.0,0.0
+7000201,Service Loaner Damage - Deductible,Deductible,1.2,1.2
+70002405,Rental Car Declined,Fee,0.0,0.0
+70003005,Third-party shuttle service provided (+),Sublet,0.0,0.0
+70003105,Third-party shuttle service provided (-),Sublet,0.0,0.0
+70003205,Third-party shuttle service declined,Sublet,0.0,0.0
+70003605,Airport/Train Station Shuttle Provided,Fee,0.0,0.0
+70003805,Tesla Airport Service,Fee,1.2,1.2
+7000400,Shipping/Handling,Fee,0.0,0.0
+7000405,Vehicle Storage,Fee,0.0,0.0
+7000410,Placement of Documentation in Glove Box,Retrofit,0.06,0.06
+70004105,No Labor Performed - Customer Did Not Authorize Repairs,Inspection,0.0,0.0
+70004106,No Labor Performed - Customer No-show or Vehicle Inaccessible,Fee,0.0,0.0
+70004205,No Labor Performed - Unable to Perform via Mobile Service,General diagnosis conclusion,0.0,0.0
+70004505,No Labor Performed - Part Replaced,Repair,0.0,0.0
+70004807,Window Tint Removal,Restore,2.58,2.58
+70004817,Window Tint Install - Sublet,Modify,0.0,0.0
+70005005,Rebuilt Vehicle Inspection Complete and Rebuild Approved,Inspection,0.0,0.0
+70005505,Car Wash Declined,Fee,0.0,0.0
+70005600,Parts Counter Sales Outside of Network (Over the Counter Sales),Fee,0.0,0.0
+70005700,Scrap Part Sale Over the Counter,Test/Adjust,0.0,0.0
+70005805,Payment Collection Required,Fee,1.2,1.2
+70007005,Extended Service Agreement (ESA) Plan Purchase,Fee,0.0,0.0
+70008009,Additional Work Required - Corrosion Present,Maintenance,0.5,0.5
+70012110,General Closures System Calibration,Module Reset/Reflashed,0.12,0.12
+70012180,General HVAC/Thermal System Calibration,Module Reset/Reflashed,0.12,0.12
+70015000,Test To Confirm Water Ingress No Longer Present,Test/Adjust,0.3,0.3
+70020305,Upholstery - Sublet,Sublet,0.0,0.0
+70020315,Seat Upholstery Repair (Internal),Remove and Replace,1.2,1.2
+70020325,Seat Upholstery Steaming,Modify,0.25,0.25
+70020405,Accessory Installation - Sublet,Retrofit,0.0,0.0
+70020505,Wheel Refinish - Sublet,Sublet,0.0,0.0
+70020805,Glass Repair / Replacement  - Sublet,Sublet,0.0,0.0
+70021105,Dent Repair - Sublet,Sublet,0.0,0.0
+70022005,Unsupported Vehicle Body Shop Inspection - Primary,Inspection,1.2,1.2
+70022205,Unsupported Vehicle Body Shop Inspection - Secondary,Inspection,1.2,1.2
+70022305,Vehicle Detailing - Sublet,Sublet,0.0,0.0
+70060005,Thread Repair,Maintenance,0.0,0.0
+7007100,Towing - Sublet,Sublet,0.0,0.0
+7007300,Other – Sublet,Sublet,0.0,0.0
+7100001,NO LABOR PERFORMED,Repair,0.0,0.0
+72000005,Loaner Fee,Fee,0.0,0.0
+72000008,Interlock Deactivation Fee,Fee,0.75,0.75
+72000009,Roadside Mobile Service Issue Inspection,Fee,0.25,0.25
+73010008,Remarketing - Photos,Restore,0.0,0.0
+73020008,Remarketing - Detail,Restore,0.0,0.0
+90001006,Level 1 Mobile Service Vehicle Conversion (Retrofit),Retrofit,4.8,4.8
+91000004,On Site – Education,Customer Education,0.0,0.0
+91001005,Print And Attach Used Car Buyers Guide,Maintenance,0.06,0.06
+91020105,Car Wash (Hand Wash),Detail Work,0.25,0.25
+91020115,Car Wash (Mechanical Wash),Maintenance,0.24,0.24
+91020205,Detail I,Detail Work,1.2,1.2
+91020305,Detail II,Detail Work,1.68,1.68
+91020405,Detail III,Detail Work,3.6,3.6
+91020908,Vehicle Cleaning - General,Detail Work,0.0,0.0
+91021005,Seasonal Wheel and Tires - (Place in Trunk),Fee,0.0,0.0
+91021507,Replace Price Information Label,Remove and Replace,0.06,0.06
+91021517,Install Used Vehicle Label,Remove and Install,0.29,0.29
+91022005,Charge Vehicle,Restore,0.0,0.0
+91022407,Vehicle Configuration Update,Program,0.05,0.05
+91029006,Mobile Service Hub Repair,Retrofit,0.0,0.0
+91041001,Loaner Tire/Wheel (Remove & Install),Remove and Install,0.2,0.2
+91041108,Loaner Wheel Reunite,Restore,0.01,0.01

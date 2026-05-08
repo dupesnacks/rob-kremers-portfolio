@@ -1,0 +1,23 @@
+# Ignore large directories
+venv/
+node_modules/
+.git/
+.github/
+__pycache__/
+.pytest_cache/
+.next/
+.vercel/
+.env
+.env.local
+.DS_Store
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+build/
+.coverage
+.venv/
+env/
+tesla-rag-pipeline/venv/
+sma-outfits-repo/venv/
+raul-trading-system/venv/

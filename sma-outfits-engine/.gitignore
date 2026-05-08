@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+*.pyo
+.env
+.schwab_token.json
+*.db
+node_modules/
+dist/
+.vite/
+*.tar.gz

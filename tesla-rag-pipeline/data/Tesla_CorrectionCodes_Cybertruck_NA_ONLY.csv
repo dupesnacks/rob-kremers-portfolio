@@ -1,0 +1,1030 @@
+Universal,Model,Model_ID,Code,Description,Work_Type,Labor_Hours,FRT
+YES,Cybertruck,103,00000010,Remote – Education,Over The Air,0.0,0.0
+YES,Cybertruck,103,00004107,Alert Diagnosis - Repair,General diagnosis conclusion,0.06,0.06
+YES,Cybertruck,103,00004108,Alert Diagnosis (Repair) - Create New Service Activity for Repair,Test/Adjust,0.06,0.06
+YES,Cybertruck,103,00005914,Service Collision Estimate,Inspection,0.0,0.0
+YES,Cybertruck,103,00020003,Software Update,Over The Air,0.06,0.06
+YES,Cybertruck,103,00020007,Firmware Update - Garage,Update,0.05,0.05
+YES,Cybertruck,103,00020010,Remote – Known Characteristic of Current Firmware,Over The Air,0.25,0.25
+YES,Cybertruck,103,00020020,Remote – Over the Air Update,Over The Air,0.25,0.25
+YES,Cybertruck,103,00022008,User Data (Factory Reset),Restore,0.05,0.05
+YES,Cybertruck,103,00023003,Clear Filesystem Caches,Module Reset/Reflashed,0.05,0.05
+YES,Cybertruck,103,00030100,PDI (Without Test Drive),Inspection,0.0,0.0
+YES,Cybertruck,103,00030410,Vehicle Health Check,Inspection,1.62,1.62
+YES,Cybertruck,103,00032201,Loaner Registration Confirmation,Inspection,0.2,0.2
+YES,Cybertruck,103,00040100,Perform Post-Repair Validation Test Drive,Test/Adjust,0.3,0.3
+YES,Cybertruck,103,00100004,General Diagnosis,General Diagnosis,0.5,0.5
+YES,Cybertruck,103,00100014,Diagnosis: Unable to Replicate Concern,General diagnosis conclusion,0.0,0.0
+YES,Cybertruck,103,00100024,Remote Diagnosis,Remote Diagnostics,0.3,0.3
+YES,Cybertruck,103,10000004,Adjustment: Body / Closure Components,Test/Adjust,0.0,0.0
+YES,Cybertruck,103,10010008,Tesla Body Repair - Miscellaneous Labor,Body Shop,0.0,0.0
+NO,Cybertruck,103,10010009,Storage Fees,Body Shop,1.0,1.0
+YES,Cybertruck,103,10010011,Tesla Body Repair - Structural,Body Shop,0.0,0.0
+YES,Cybertruck,103,10010012,Tesla Body Structural - Sheet Metal Quotation,Test/Adjust,1.2,1.2
+YES,Cybertruck,103,10010014,Tesla Body Structural - Sheet Metal Repair,Restore,1.0,1.0
+YES,Cybertruck,103,10010015,Tesla Body Structural--Reassemble Parts,Test/Adjust,1.0,1.0
+NO,Cybertruck,103,1001089051,Rear Fascia,Remove and Install,0.36,0.36
+NO,Cybertruck,103,1001089052,Rear Fascia,Remove and Replace,0.9,0.9
+NO,Cybertruck,103,1001089061,Trailer Hitch Cover,Remove and Install,0.06,0.06
+NO,Cybertruck,103,1001089062,Trailer Hitch Cover,Remove and Replace,0.06,0.06
+NO,Cybertruck,103,1001094031,Rear Energry Absorber - Cast Bumper Assembly - LH,Remove and Install,0.78,0.78
+NO,Cybertruck,103,1001094032,Rear Energry Absorber - Cast Bumper Assembly - LH,Remove and Replace,0.78,0.78
+NO,Cybertruck,103,1001094041,Rear Energry Absorber - Cast Bumper Assembly - RH,Remove and Install,0.71,0.71
+NO,Cybertruck,103,1001094042,Rear Energry Absorber - Cast Bumper Assembly - RH,Remove and Replace,0.71,0.71
+NO,Cybertruck,103,10011105701,Active Grille Shutter,Remove and Install,1.14,1.14
+NO,Cybertruck,103,10011105702,Active Grille Shutter,Remove and Replace,1.14,1.14
+YES,Cybertruck,103,10100008,Tesla Body Repair - Mechanical Labor,Body Shop,0.0,0.0
+NO,Cybertruck,103,10100119002,ASSEMBLY - CANTRAIL STUD PLATE,Remove and Replace,0.66,0.66
+NO,Cybertruck,103,10100119302,ASSEMBLY - C-PILLAR LOWER NUT PLATE,Remove and Replace,0.36,0.36
+NO,Cybertruck,103,10100120202,ASSEMBLY - POWERGATE STRUT MOUNT - LEFT HAND,Remove and Replace,0.66,0.66
+NO,Cybertruck,103,10100120302,ASSEMBLY - POWERGATE STRUT MOUNT - RIGHT,Remove and Replace,0.66,0.66
+NO,Cybertruck,103,1010025011,Tailgate Assembly ,Remove and Install,0.3,0.3
+NO,Cybertruck,103,1010025012,Tailgate Assembly,Remove and Replace,0.9,0.9
+NO,Cybertruck,103,1010025041,Door - Rear - LH,Remove and Install,0.24,0.24
+NO,Cybertruck,103,1010025042,Door - Rear - LH,Remove and Replace,0.9,0.9
+NO,Cybertruck,103,1010025051,Door - Rear - RH,Remove and Install,0.24,0.24
+NO,Cybertruck,103,1010025052,Door - Rear - RH,Remove and Replace,0.9,0.9
+NO,Cybertruck,103,1010025061,Trim - Cantrail - Roof Rail - LH,Remove and Install,0.66,0.66
+NO,Cybertruck,103,1010025062,Trim - Cantrail - Roof Rail - LH,Remove and Replace,0.66,0.66
+NO,Cybertruck,103,1010025071,Trim - Cantrail - Roof Rail - RH,Remove and Install,0.66,0.66
+NO,Cybertruck,103,1010025072,Trim - Cantrail - Roof Rail - RH,Remove and Replace,0.66,0.66
+NO,Cybertruck,103,1010025121,Powergate Hood,Remove and Install,0.3,0.3
+NO,Cybertruck,103,1010025122,Powergate Hood,Remove and Replace,0.42,0.42
+NO,Cybertruck,103,1010025131,Powergate Fascia,Remove and Install,0.12,0.12
+NO,Cybertruck,103,1010025132,Powergate Fascia,Remove and Replace,0.12,0.12
+NO,Cybertruck,103,1010026005,Powergate (Manual Release),Maintenance,0.18,0.18
+NO,Cybertruck,103,1010048001,ASSEMBLY - REAR WALL UPPER CROSSMEMBER GLOVE - LEFT HAND,Remove and Replace,1.92,1.92
+NO,Cybertruck,103,1010048002,ASSEMBLY - REAR WALL UPPER CROSSMEMBER GLOVE - RIGHT HAND,Remove and Replace,1.92,1.92
+NO,Cybertruck,103,1010048003,ASSEMBLY - REAR WALL LOWER CROSSMEMBER GLOVE - LEFT,Remove and Replace,3.3,3.3
+NO,Cybertruck,103,1010048004,ASSEMBLY - REAR WALL LOWER CROSSMEMBER GLOVE - RIGHT,Remove and Replace,3.3,3.3
+NO,Cybertruck,103,1010048011,ASSEMBLY - REAR WALL COMPLETE,Remove and Replace,11.85,11.85
+NO,Cybertruck,103,10100504407,Trim - Cantrail - Roof Rail - LH (Rework),Modify,0.24,0.24
+NO,Cybertruck,103,10100504507,Trim - Cantrail - Roof Rail - RH (Rework),Modify,0.24,0.24
+NO,Cybertruck,103,1010082011,Dash Absorber - LH,Remove and Install,2.4,2.4
+NO,Cybertruck,103,1010082012,Dash Absorber - LH,Remove and Replace,2.4,2.4
+NO,Cybertruck,103,1010082021,Dash Absorber - RH,Remove and Install,3.36,3.36
+NO,Cybertruck,103,1010082022,Dash Absorber - RH,Remove and Replace,3.36,3.36
+NO,Cybertruck,103,1010098001,ASSEMBLY - POWERGATE STRUT MOUNT - LEFT,Remove and Replace,0.66,0.66
+NO,Cybertruck,103,1010098002,ASSEMBLY - POWERGATE STRUT MOUNT - RIGHT,Remove and Replace,0.66,0.66
+NO,Cybertruck,103,1010098019,ASSEMBLY - C-PILLAR LOWER NUT PLATE,Remove and Replace,0.36,0.36
+NO,Cybertruck,103,10101014502,PANEL - GUTTER CONNECTOR - LEFT,Remove and Replace,1.44,1.44
+NO,Cybertruck,103,10101014602,PANEL - GUTTER CONNECTOR - RIGHT HAND,Remove and Replace,1.44,1.44
+NO,Cybertruck,103,1010118007,ASSEMBLY - REAR WHEEL ARCH - LEFT,Remove and Replace,41.14,41.14
+NO,Cybertruck,103,1010118008,ASSEMBLY - REAR WHEEL ARCH - RIGHT,Remove and Replace,41.1,41.1
+NO,Cybertruck,103,1010118010,ASSEMBLY - TAILGATE PLATE - LEFT HAND,Remove and Replace,1.14,1.14
+NO,Cybertruck,103,1010118011,ASSEMBLY - TAILGATE PLATE - RIGHT HAND,Remove and Replace,1.14,1.14
+NO,Cybertruck,103,1010118014,ASSEMBLY - TAILGATE TOWER - LEFT HAND,Remove and Replace,6.6,6.6
+NO,Cybertruck,103,1010118015,ASSEMBLY - TAILGATE TOWER - RIGHT HAND,Remove and Replace,6.6,6.6
+NO,Cybertruck,103,10101801202,ASSEMBLY - REAR WALL COMPLETE,Remove and Replace,11.85,11.85
+NO,Cybertruck,103,10101801802,REAR SEAT STANCHION,Remove and Replace,1.98,1.98
+NO,Cybertruck,103,10101812102,ASSEMBLY - REAR WALL LOWER CROSSMEMBER GLOVE - LEFT HAND,Remove and Replace,3.3,3.3
+NO,Cybertruck,103,10101812202,ASSEMBLY - REAR WALL LOWER CROSSMEMBER GLOVE - RIGHT HAND,Remove and Replace,3.3,3.3
+NO,Cybertruck,103,10101812302,ASSEMBLY - REAR WALL UPPER CROSSMEMBER GLOVE - LEFT HAND,Remove and Replace,2.16,2.16
+NO,Cybertruck,103,10101812402,ASSEMBLY - REAR WALL UPPER CROSSMEMBER GLOVE - RIGHT HAND,Remove and Replace,2.16,2.16
+NO,Cybertruck,103,10102000102,ASSEMBLY - REAR WHEEL ARCH - LEFT HAND,Remove and Replace,12.4,12.4
+NO,Cybertruck,103,10102000202,ASSEMBLY - REAR WHEEL ARCH - RIGHT HAND,Remove and Replace,12.4,12.4
+NO,Cybertruck,103,10102000302,WHEELEFTOUSE ARCH LEFT HAND,Remove and Replace,12.55,12.55
+NO,Cybertruck,103,10102000402,WHEELEFTOUSE ARCH RIGHT HAND,Remove and Replace,12.55,12.55
+NO,Cybertruck,103,10102000902,ASSEMBLY - REAR TIEDOWN NUT PLATE - LEFT HAND,Remove and Replace,0.42,0.42
+NO,Cybertruck,103,10102001202,ASSEMBLY - TAILGATE PLATE - LEFT HAND,Remove and Replace,1.14,1.14
+NO,Cybertruck,103,10102001302,ASSEMBLY - TAILGATE TOWER - RIGHT HAND,Remove and Replace,6.0,6.0
+NO,Cybertruck,103,10102001502,REAR TIEDOWN NUT PLATE RIGHT HAND,Remove and Replace,0.42,0.42
+NO,Cybertruck,103,10102001702,TAILGATE PLATE RIGHT HAND,Remove and Replace,1.14,1.14
+NO,Cybertruck,103,10102001802,TAILGATE TOWER COMPLETE LEFT HAND,Remove and Replace,6.0,6.0
+NO,Cybertruck,103,10102002002,Mast Assembly (Section),Remove and Replace,11.0,11.0
+NO,Cybertruck,103,10102002102,Mast Assembly (Section),Remove and Replace,11.0,11.0
+YES,Cybertruck,103,10108608,Tesla Body Repair - Body Labor,Body Shop,0.0,0.0
+YES,Cybertruck,103,10108808,Tesla Body Repair - Sublet,Body Shop,0.0,0.0
+YES,Cybertruck,103,10109008,Structural Body Repair,Repair,0.0,0.0
+YES,Cybertruck,103,10109108,Non-Structural Body Repair,Restore,0.0,0.0
+YES,Cybertruck,103,10182019,Customer Generated Quote - Issue (Transaction) Resolved - Bound,General diagnosis conclusion,0.0,0.0
+NO,Cybertruck,103,1020030071,Door Glass - Upper Seal LH,Remove and Install,0.71,0.71
+NO,Cybertruck,103,1020030072,Door Glass - Upper Seal LH,Remove and Replace,0.71,0.71
+NO,Cybertruck,103,1020030081,Door Glass - Upper Seal RH,Remove and Install,0.71,0.71
+NO,Cybertruck,103,1020030082,Door Glass - Upper Seal RH,Remove and Replace,0.71,0.71
+NO,Cybertruck,103,1020106011,Roof Glass - Roof Assembly,Remove and Install,2.28,2.28
+NO,Cybertruck,103,1020106012,Fixed Glass Roof Assembly,Remove and Replace,2.28,2.28
+NO,Cybertruck,103,1020130001,Primary Seal - Door - Rear - RH,Remove and Install,0.06,0.06
+NO,Cybertruck,103,1020133021,Primary Seal - Door - Rear - LH,Remove and Install,0.06,0.06
+NO,Cybertruck,103,1020133071,Fixed Backlite Glass,Remove and Install,1.44,1.44
+NO,Cybertruck,103,1020133072,Fixed Backlite Glass,Remove and Replace,1.44,1.44
+NO,Cybertruck,103,1020133112,Edge Seal - Rear - Roof Glass,Remove and Replace,0.48,0.48
+YES,Cybertruck,103,1027521,Assistance with Refund of Reservation,Test/Adjust,0.0,0.0
+NO,Cybertruck,103,1120122061,Strut - Bed Cargo Tub,Remove and Install,0.06,0.06
+NO,Cybertruck,103,1120122062,Strut - Bed Cargo Tub,Remove and Replace,0.06,0.06
+NO,Cybertruck,103,1120122081,Manual Release - Tailgate,Remove and Install,0.24,0.24
+NO,Cybertruck,103,1120122082,Manual Release - Tailgate,Remove and Replace,0.24,0.24
+NO,Cybertruck,103,1120123011,Flat Cassette Assembly - LH,Remove and Install,2.88,2.88
+NO,Cybertruck,103,1120123012,Flat Cassette Assembly - LH,Remove and Replace,2.88,2.88
+NO,Cybertruck,103,1120123021,Flat Cassette Assembly - RH,Remove and Install,2.88,2.88
+NO,Cybertruck,103,1120123022,Flat Cassette Assembly - RH,Remove and Replace,2.88,2.88
+NO,Cybertruck,103,1133040001,Door Striker - Rear - RH,Remove and Install,0.06,0.06
+NO,Cybertruck,103,1133040002,Door Striker - Rear - RH,Remove and Replace,0.06,0.06
+NO,Cybertruck,103,1133041041,Door Latch - Rear - LH,Remove and Install,0.42,0.42
+NO,Cybertruck,103,1133041042,Door Latch - Rear - LH,Remove and Replace,0.42,0.42
+NO,Cybertruck,103,1133041051,Door Latch - Rear - RH,Remove and Install,0.42,0.42
+NO,Cybertruck,103,1133041052,Door Latch - Rear - RH,Remove and Replace,0.42,0.42
+NO,Cybertruck,103,1133041061,Door Striker - Rear - LH,Remove and Install,0.06,0.06
+NO,Cybertruck,103,1133041062,Door Striker - Rear - LH,Remove and Replace,0.06,0.06
+NO,Cybertruck,103,1133041081,Door Presenter - Rear Door - LH,Remove and Install,0.36,0.36
+NO,Cybertruck,103,1133041082,Door Presenter - Rear Door - LH,Remove and Replace,0.36,0.36
+NO,Cybertruck,103,1133041091,Door Presenter - Rear Door - RH,Remove and Install,0.36,0.36
+NO,Cybertruck,103,1133041092,Door Presenter - Rear Door - RH,Remove and Replace,0.36,0.36
+NO,Cybertruck,103,1133071001,Check Strap - Rear Door - RH,Remove and Install,0.42,0.42
+NO,Cybertruck,103,1133071002,Check Strap - Rear Door - RH,Remove and Replace,0.42,0.42
+NO,Cybertruck,103,1133071011,Check Strap  - Rear Door - LH,Remove and Install,0.42,0.42
+NO,Cybertruck,103,1133071012,"Check Strap, Rear",Remove and Replace,0.42,0.42
+NO,Cybertruck,103,1133071071,Hood Strut - LH,Remove and Install,0.24,0.24
+NO,Cybertruck,103,1133071072,Hood Strut - LH,Remove and Replace,0.24,0.24
+NO,Cybertruck,103,1133071171,Hood Strut - RH,Remove and Install,0.24,0.24
+NO,Cybertruck,103,1133071172,Hood Strut - RH,Remove and Replace,0.24,0.24
+NO,Cybertruck,103,1133116011,Striker - Tailgate,Remove and Install,0.06,0.06
+NO,Cybertruck,103,1133116012,Striker - Tailgate,Remove and Replace,0.06,0.06
+NO,Cybertruck,103,1133116021,Bumpstop - Tailgate,Remove and Install,0.06,0.06
+NO,Cybertruck,103,1133116022,Bumpstop - Tailgate,Remove and Replace,0.06,0.06
+NO,Cybertruck,103,1133116031,Cable Strap - Tailgate,Remove and Install,0.06,0.06
+NO,Cybertruck,103,1133116032,Cable Strap - Tailgate,Remove and Replace,0.06,0.06
+NO,Cybertruck,103,1133116061,Strut Damper - Tailgate,Remove and Install,0.12,0.12
+NO,Cybertruck,103,1133116062,Strut Damper - Tailgate,Remove and Replace,0.12,0.12
+NO,Cybertruck,103,1133116091,Striker - Powergate,Remove and Install,0.06,0.06
+NO,Cybertruck,103,1133116092,Striker - Powergate,Remove and Replace,0.06,0.06
+NO,Cybertruck,103,1133116101,Latch - Powergate,Remove and Install,0.24,0.24
+NO,Cybertruck,103,1133116102,Latch - Hood,Remove and Replace,0.24,0.24
+NO,Cybertruck,103,1133116111,Tailgate Torsion Rod,Remove and Install,0.48,0.48
+NO,Cybertruck,103,1133116112,Tailgate Torsion Rod,Remove and Replace,0.48,0.48
+NO,Cybertruck,103,11332800101,Actuator - Latch - Hood,Remove and Install,0.3,0.3
+NO,Cybertruck,103,11332800102,Actuator - Latch - Hood,Remove and Replace,0.3,0.3
+NO,Cybertruck,103,1150040112,Closeout Panel - Rear Door - LH,Remove and Replace,0.48,0.48
+NO,Cybertruck,103,1150040122,Closeout Panel - Rear Door - RH,Remove and Replace,0.48,0.48
+YES,Cybertruck,103,11700004,Adjustment: Seal,Test/Adjust,0.2,0.2
+NO,Cybertruck,103,1170042061,Waist Belt Seal - Outer - Rear Door - LH,Remove and Install,0.06,0.06
+NO,Cybertruck,103,1170042062,Waist Belt Seal - Outer - Rear Door - LH,Remove and Replace,0.06,0.06
+NO,Cybertruck,103,1170042071,Waist Belt Seal - Outer - Rear Door - RH,Remove and Install,0.06,0.06
+NO,Cybertruck,103,1170042072,Waist Belt Seal - Outer - Rear Door - RH,Remove and Replace,0.06,0.06
+NO,Cybertruck,103,1170042091,Secondary Seal - Rear Door - RH,Remove and Install,0.06,0.06
+NO,Cybertruck,103,1170042092,Secondary Seal - Rear Door - RH,Remove and Replace,0.06,0.06
+NO,Cybertruck,103,1170042101,Secondary Seal - Rear Door - LH,Remove and Install,0.06,0.06
+NO,Cybertruck,103,1170042102,Secondary Seal - Rear Door - LH,Remove and Replace,0.06,0.06
+NO,Cybertruck,103,1170085011,Aero Seal - LH - Powergate,Remove and Install,0.12,0.12
+NO,Cybertruck,103,1170085012,Aero Seal - LH - Powergate,Remove and Replace,0.12,0.12
+NO,Cybertruck,103,1170085021,Aero Seal - RH - Powergate,Remove and Install,0.12,0.12
+NO,Cybertruck,103,1170085022,Aero Seal - RH - Powergate,Remove and Replace,0.12,0.12
+NO,Cybertruck,103,1170117021,Seal - LH - Tailgate,Remove and Install,0.06,0.06
+NO,Cybertruck,103,1170117022,Seal - LH - Tailgate,Remove and Replace,0.06,0.06
+NO,Cybertruck,103,1170117031,Seal - RH - Tailgate,Remove and Install,0.06,0.06
+NO,Cybertruck,103,1170117032,Seal - RH - Tailgate,Remove and Replace,0.06,0.06
+YES,Cybertruck,103,12000004,Adjustment: Exterior Trim,Test/Adjust,0.0,0.0
+NO,Cybertruck,103,1203128011,Skid Plate,Remove and Install,0.24,0.24
+NO,Cybertruck,103,1203128012,Skid Plate,Remove and Replace,0.24,0.24
+NO,Cybertruck,103,1203128021,Lower Tub Crossmember,Remove and Install,0.42,0.42
+NO,Cybertruck,103,1203128022,Lower Tub Crossmember,Remove and Replace,0.42,0.42
+NO,Cybertruck,103,1203128031,Diffuser - Rear,Remove and Install,0.66,0.66
+NO,Cybertruck,103,1203128032,Diffuser - Rear,Remove and Replace,0.66,0.66
+NO,Cybertruck,103,1203128041,Aeroshield - Rear,Remove and Install,0.12,0.12
+NO,Cybertruck,103,1203128042,Aeroshield - Rear,Remove and Replace,0.12,0.12
+NO,Cybertruck,103,1209034031,Skull Cap - Exterior Mirror - LH,Remove and Install,0.12,0.12
+NO,Cybertruck,103,1209034032,Skull Cap - Exterior Mirror - LH,Remove and Replace,0.12,0.12
+NO,Cybertruck,103,1209034041,Skull Cap - Exterior Mirror - RH,Remove and Install,0.12,0.12
+NO,Cybertruck,103,1209034042,Skull Cap - Exterior Mirror - RH,Remove and Replace,0.12,0.12
+NO,Cybertruck,103,1209034051,Exterior Mirror Assembly - Electromechanical - LH,Remove and Install,0.12,0.12
+NO,Cybertruck,103,1209034052,Exterior Mirror Assembly - Electromechanical - LH,Remove and Replace,0.12,0.12
+NO,Cybertruck,103,1209034061,Exterior Mirror Assembly - Electromechanical - RH,Remove and Install,0.12,0.12
+NO,Cybertruck,103,1209034062,Exterior Mirror Assembly - Electromechanical - RH,Remove and Replace,0.12,0.12
+NO,Cybertruck,103,1215014011,Bumpstops - Bed Cargo Tub,Remove and Install,0.06,0.06
+NO,Cybertruck,103,1215014012,Bumpstops - Bed Cargo Tub,Remove and Replace,0.06,0.06
+NO,Cybertruck,103,1215014021,Lid - Bed Cargo Tub,Remove and Install,0.12,0.12
+NO,Cybertruck,103,1215014022,Lid - Bed Cargo Tub,Remove and Replace,0.12,0.12
+NO,Cybertruck,103,1215014051,Seal - Bed Cargo Tub,Remove and Install,0.12,0.12
+NO,Cybertruck,103,1215014052,Seal - Bed Cargo Tub,Remove and Replace,0.12,0.12
+NO,Cybertruck,103,1215016051,Forged Bed Tiedown Assembly,Remove and Install,0.12,0.12
+NO,Cybertruck,103,1215016052,Forged Bed Tiedown Assembly,Remove and Replace,0.12,0.12
+NO,Cybertruck,103,12150300001,False Wall - Bed (Long Range),Remove and Install,1.2,1.2
+NO,Cybertruck,103,12150300002,False Wall - Bed (Long Range),Remove and Replace,1.2,1.2
+NO,Cybertruck,103,12150300201,X-Member - Bed (Long Range),Remove and Install,1.14,1.14
+NO,Cybertruck,103,12150300202,X-Member - Bed (Long Range),Remove and Replace,1.14,1.14
+NO,Cybertruck,103,12150300501,Bed Floor Assembly (Long Range),Remove and Install,0.3,0.3
+NO,Cybertruck,103,12150300502,Bed Floor Assembly (Long Range),Remove and Replace,0.3,0.3
+NO,Cybertruck,103,1215125011,Manual Release Cap - Tailgate Cover,Remove and Install,0.06,0.06
+NO,Cybertruck,103,1215125012,Manual Release Cap - Tailgate Cover,Remove and Replace,0.06,0.06
+NO,Cybertruck,103,1215125021,Bed Floor Assembly,Remove and Install,0.24,0.24
+NO,Cybertruck,103,1215125022,Bed Floor Assembly,Remove and Replace,0.24,0.24
+NO,Cybertruck,103,1215125041,Bed Closeout - Rear - RH,Remove and Install,0.06,0.06
+NO,Cybertruck,103,1215125042,Bed Closeout - Rear - RH,Remove and Replace,0.06,0.06
+NO,Cybertruck,103,1215125051,Bed Closeout - Rear - LH,Remove and Install,0.06,0.06
+NO,Cybertruck,103,1215125052,Bed Closeout - Rear - LH,Remove and Replace,0.06,0.06
+NO,Cybertruck,103,1220035011,Closeout - Applique - B-Pillar - LH,Remove and Install,0.06,0.06
+NO,Cybertruck,103,1220035012,Closeout - Applique - B-Pillar - LH,Remove and Replace,0.06,0.06
+NO,Cybertruck,103,1220035021,Closeout - Applique - B-Pillar - RH,Remove and Install,0.06,0.06
+NO,Cybertruck,103,1220035022,Closeout - Applique - B-Pillar - RH,Remove and Replace,0.06,0.06
+NO,Cybertruck,103,1220035031,Applique - C-Pillar - LH,Remove and Install,0.06,0.06
+NO,Cybertruck,103,1220035032,Applique - C-Pillar - LH,Remove and Replace,0.06,0.06
+NO,Cybertruck,103,1220035041,Applique - C-Pillar - RH,Remove and Install,0.06,0.06
+NO,Cybertruck,103,1220035042,Applique - C-Pillar - RH,Remove and Replace,0.06,0.06
+NO,Cybertruck,103,1220035051,Closeout - Applique - C-Pillar - LH,Remove and Install,0.06,0.06
+NO,Cybertruck,103,1220035052,Closeout - Applique - C-Pillar - LH,Remove and Replace,0.06,0.06
+NO,Cybertruck,103,1220035062,Closeout - Applique - C-Pillar - RH,Remove and Replace,0.06,0.06
+NO,Cybertruck,103,1220035071,Closeout - Sail Baffle - LH,Remove and Install,0.06,0.06
+NO,Cybertruck,103,1220035072,Closeout - Sail Baffle - LH,Remove and Replace,0.06,0.06
+NO,Cybertruck,103,1220035081,Closeout - Sail Baffle - RH,Remove and Install,0.06,0.06
+NO,Cybertruck,103,1220035121,Applique - Wiper,Remove and Install,0.12,0.12
+NO,Cybertruck,103,1220035122,Applique - Wiper,Remove and Replace,0.12,0.12
+NO,Cybertruck,103,1220035131,Applique - Backlite - LH,Remove and Install,0.06,0.06
+NO,Cybertruck,103,1220035132,Applique - Backlite - LH,Remove and Replace,0.06,0.06
+NO,Cybertruck,103,1220035141,Applique - Backlite - RH,Remove and Install,0.06,0.06
+NO,Cybertruck,103,1220035142,Applique - Backlite - RH,Remove and Replace,0.06,0.06
+NO,Cybertruck,103,1220035151,Applique - Sail Baffle - LH,Remove and Install,0.06,0.06
+NO,Cybertruck,103,1220035152,Applique - Sail Baffle - LH,Remove and Replace,0.06,0.06
+NO,Cybertruck,103,1220035161,Applique - Sail Baffle - RH,Remove and Install,0.06,0.06
+NO,Cybertruck,103,1220035162,Applique - Sail Baffle - RH,Remove and Replace,0.06,0.06
+NO,Cybertruck,103,1220035171,Applique - Upper - Fascia,Remove and Install,0.18,0.18
+NO,Cybertruck,103,1220035172,Applique - Upper - Fascia,Remove and Replace,0.18,0.18
+NO,Cybertruck,103,1220035221,Applique - Roof - LH,Remove and Install,0.06,0.06
+NO,Cybertruck,103,1220035222,Applique - Roof - LH,Remove and Replace,0.06,0.06
+NO,Cybertruck,103,1220035231,Applique - Roof - RH,Remove and Install,0.06,0.06
+NO,Cybertruck,103,1220035232,Applique - Roof - RH,Remove and Replace,0.06,0.06
+NO,Cybertruck,103,1220035241,Applique - B-Pillar - LH,Remove and Install,0.12,0.12
+NO,Cybertruck,103,1220035242,Applique - B-Pillar - LH,Remove and Replace,0.12,0.12
+NO,Cybertruck,103,1220035251,Applique - B-Pillar - RH,Remove and Install,0.12,0.12
+NO,Cybertruck,103,1220035252,Applique - B-Pillar - RH,Remove and Replace,0.12,0.12
+NO,Cybertruck,103,1220035262,Applique - Roof - Pair,Remove and Replace,0.06,0.06
+NO,Cybertruck,103,1220105011,Rocker Panel Assembly - LH,Remove and Install,0.18,0.18
+NO,Cybertruck,103,1220105012,Rocker Panel Assembly - LH,Remove and Replace,0.18,0.18
+NO,Cybertruck,103,1220105021,Rocker Panel Assembly - RH,Remove and Install,0.18,0.18
+NO,Cybertruck,103,1220105022,Rocker Panel Assembly - RH,Remove and Replace,0.18,0.18
+NO,Cybertruck,103,1220126006,Sail Applique Set,Retrofit,1.26,1.26
+NO,Cybertruck,103,1220126011,Sail Applique - LH,Remove and Install,0.18,0.18
+NO,Cybertruck,103,1220126012,Sail Applique - LH,Remove and Replace,0.18,0.18
+NO,Cybertruck,103,1220126021,Sail Applique - RH,Remove and Install,0.18,0.18
+NO,Cybertruck,103,1220126022,Sail Applique - RH,Remove and Replace,0.18,0.18
+NO,Cybertruck,103,1220126032,Top Applique - Tailgate,Remove and Replace,0.06,0.06
+NO,Cybertruck,103,1220126061,Applique - Closeout - Lamp - Rear - LH,Remove and Install,0.18,0.18
+NO,Cybertruck,103,1220126062,Applique - Closeout - Lamp - Rear - LH,Remove and Replace,0.18,0.18
+NO,Cybertruck,103,1220126071,Applique - Closeout - Lamp - Rear - RH,Remove and Install,0.18,0.18
+NO,Cybertruck,103,1220126072,Applique - Closeout - Lamp - Rear - RH,Remove and Replace,0.18,0.18
+NO,Cybertruck,103,12201600101,Sail Applique - Bed - LH (Long Range),Remove and Install,0.12,0.12
+NO,Cybertruck,103,12201600102,Sail Applique - Bed - LH (Long Range),Remove and Replace,0.12,0.12
+NO,Cybertruck,103,12207006,Mud Flaps,Retrofit,0.24,0.24
+NO,Cybertruck,103,12207351,Self-Test for USS,Test/Adjust,0.06,0.06
+NO,Cybertruck,103,12207401,Mud Flap - Rear - LH,Remove and Install,0.12,0.12
+NO,Cybertruck,103,12207402,Mud Flap - Rear - LH,Remove and Replace,0.12,0.12
+NO,Cybertruck,103,12207601,Mud Flap - Rear - RH,Remove and Install,0.12,0.12
+NO,Cybertruck,103,12207602,Mud Flap - Rear - RH,Remove and Replace,0.12,0.12
+YES,Cybertruck,103,12208583,Mud Flaps (PDI Retrofit),Retrofit,0.0,0.0
+NO,Cybertruck,103,1224057041,Safety Lock Switch,Remove and Install,0.12,0.12
+NO,Cybertruck,103,1224057042,Safety Lock Switch,Remove and Replace,0.12,0.12
+NO,Cybertruck,103,1230124011,Tow Hitch,Remove and Install,0.72,0.72
+NO,Cybertruck,103,1230124012,Tow Hitch,Remove and Replace,0.72,0.72
+YES,Cybertruck,103,12302302,Ball Neck - Trailer Hitch (Remove & Replace),Remove and Replace,0.12,0.12
+NO,Cybertruck,103,1245011021,Exterior Door Switch - Rear - LH (C-Pillar),Remove and Install,0.12,0.12
+NO,Cybertruck,103,1245011022,Exterior Door Switch - Rear - LH (C-Pillar),Remove and Replace,0.12,0.12
+NO,Cybertruck,103,1245011031,Exterior Door Switch - Rear - RH (C-Pillar),Remove and Install,0.12,0.12
+NO,Cybertruck,103,1245011032,Exterior Door Switch - Rear - RH (C-Pillar),Remove and Replace,0.12,0.12
+NO,Cybertruck,103,12505714,Vehicle Wrap – Door Jambs (Add-On),Retrofit,0.0,0.0
+YES,Cybertruck,103,13000004,Diagnosis: Seats,Test/Adjust,0.5,0.5
+NO,Cybertruck,103,1301059011,Button - Cushion Adjust - 1st Row Seat - LH,Remove and Install,0.06,0.06
+NO,Cybertruck,103,1301059012,Button - Cushion Adjust - 1st Row Seat - LH,Remove and Replace,0.06,0.06
+NO,Cybertruck,103,1301059031,Button - 8WY/Lumbar - 1st Row Seat - LH,Remove and Install,0.18,0.18
+NO,Cybertruck,103,1301059032,Button - 8WY/Lumbar - 1st Row Seat - LH,Remove and Replace,0.18,0.18
+NO,Cybertruck,103,1301059041,Button - Cushion Adjust - 1st Row Seat - RH,Remove and Install,0.12,0.12
+NO,Cybertruck,103,1301059042,Button - Cushion Adjust - 1st Row Seat - RH,Remove and Replace,0.12,0.12
+NO,Cybertruck,103,1301059061,Button - 8WY/Lumbar - 1st Row Seat - RH,Remove and Install,0.18,0.18
+NO,Cybertruck,103,1301059062,Button - 8WY/Lumbar - 1st Row Seat - RH,Remove and Replace,0.18,0.18
+NO,Cybertruck,103,1301060001,Cover - Crossmember Riser - 1st Row Seat - RH,Remove and Install,0.18,0.18
+NO,Cybertruck,103,1301060002,Cover - Crossmember Riser - 1st Row Seat - RH,Remove and Replace,0.18,0.18
+NO,Cybertruck,103,1301060301,Motor - Seat Height - 1st Row Seat - RH,Remove and Install,0.36,0.36
+NO,Cybertruck,103,1301060302,Motor - Seat Height - 1st Row Seat - RH,Remove and Replace,0.36,0.36
+NO,Cybertruck,103,1301060401,Motor - Seat Tilt  - 1st Row Seat - RH,Remove and Install,0.18,0.18
+NO,Cybertruck,103,1301060402,Motor - Seat Tilt  - 1st Row Seat - RH,Remove and Replace,0.18,0.18
+NO,Cybertruck,103,1301060501,Seatback Assembly - 1st Row Seat - RH,Remove and Install,0.48,0.48
+NO,Cybertruck,103,1301060502,Seatback Assembly - 1st Row Seat - RH,Remove and Replace,0.48,0.48
+NO,Cybertruck,103,1301061021,Seatback Assembly - 1st Row Seat - LH,Remove and Install,0.48,0.48
+NO,Cybertruck,103,1301061022,Seatback Assembly - 1st Row Seat - LH,Remove and Replace,0.48,0.48
+NO,Cybertruck,103,1301061031,Track Cover - 1st Row Seat,Remove and Install,0.06,0.06
+NO,Cybertruck,103,1301061032,Track Cover - 1st Row Seat,Remove and Replace,0.06,0.06
+NO,Cybertruck,103,1301061041,Motor - Seat Tilt  - 1st Row Seat - LH,Remove and Install,0.18,0.18
+NO,Cybertruck,103,1301061042,Motor - Seat Tilt  - 1st Row Seat - LH,Remove and Replace,0.18,0.18
+NO,Cybertruck,103,1301061061,Cover - Crossmember Riser - 1st Row Seat - LH,Remove and Install,0.18,0.18
+NO,Cybertruck,103,1301061062,Cover - Crossmember Riser - 1st Row Seat - LH,Remove and Replace,0.18,0.18
+NO,Cybertruck,103,1301061091,Motor - Seat Height - 1st Row Seat - LH,Remove and Install,0.36,0.36
+NO,Cybertruck,103,1301061092,Motor - Seat Height - 1st Row Seat - LH,Remove and Replace,0.36,0.36
+NO,Cybertruck,103,1301061101,Riser - Outboard - 1st Row Seat - LH,Remove and Install,0.48,0.48
+NO,Cybertruck,103,1301061102,Riser - Outboard - 1st Row Seat - LH,Remove and Replace,0.48,0.48
+NO,Cybertruck,103,1301061111,Riser - Outboard - 1st Row Seat - RH,Remove and Install,0.54,0.54
+NO,Cybertruck,103,1301061112,Riser - Outboard - 1st Row Seat - RH,Remove and Replace,0.54,0.54
+NO,Cybertruck,103,1304058011,Seat Assembly - 1st Row - LH,Remove and Install,0.3,0.3
+NO,Cybertruck,103,1304058012,Seat Assembly - 1st Row - LH,Remove and Replace,0.42,0.42
+NO,Cybertruck,103,1304058021,Seat Assembly - 1st Row - RH,Remove and Install,0.3,0.3
+NO,Cybertruck,103,1304058022,Seat Assembly - 1st Row - RH,Remove and Replace,0.42,0.42
+NO,Cybertruck,103,1305002011,Bolster - Outboard - LH - 2nd Row Seat Back,Remove and Install,0.06,0.06
+NO,Cybertruck,103,1305002012,Bolster - Outboard - LH - 2nd Row Seat Back,Remove and Replace,0.06,0.06
+NO,Cybertruck,103,1305002021,Bolster - Outboard - RH - 2nd Row Seat Back,Remove and Install,0.06,0.06
+NO,Cybertruck,103,1305002022,Bolster - Outboard - RH - 2nd Row Seat Back,Remove and Replace,0.06,0.06
+NO,Cybertruck,103,1305002051,Armrest - 2nd Row Seat,Remove and Install,1.26,1.26
+NO,Cybertruck,103,1305002052,Armrest - 2nd Row Seat,Remove and Replace,1.26,1.26
+NO,Cybertruck,103,1305002061,Headrest - Center - 2nd Row Seat,Remove and Install,0.06,0.06
+NO,Cybertruck,103,1305002062,Headrest - Center - 2nd Row Seat,Remove and Replace,0.06,0.06
+NO,Cybertruck,103,1305002071,Cushion Assembly - 2nd Row Seat - RH,Remove and Install,0.78,0.78
+NO,Cybertruck,103,1305002072,Cushion Assembly - 2nd Row Seat - RH,Remove and Replace,0.78,0.78
+NO,Cybertruck,103,1305002081,Cushion Assembly - 2nd Row Seat - LH,Remove and Install,0.84,0.84
+NO,Cybertruck,103,1305002082,Cushion Assembly - 2nd Row Seat - LH,Remove and Replace,0.84,0.84
+NO,Cybertruck,103,1305002091,Seat Back Assembly - 2nd Row Seat - RH,Remove and Install,0.71,0.71
+NO,Cybertruck,103,1305002092,Seat Back Assembly - 2nd Row Seat - RH,Remove and Replace,0.71,0.71
+NO,Cybertruck,103,1305002101,Seat Back Assembly - 2nd Row Seat - LH,Remove and Install,0.78,0.78
+NO,Cybertruck,103,1305002102,Seat Back Assembly - 2nd Row Seat - LH,Remove and Replace,0.78,0.78
+NO,Cybertruck,103,1305003031,Back Lumbar - 2nd Row Seat,Remove and Install,0.06,0.06
+NO,Cybertruck,103,1305003032,Back Lumbar - 2nd Row Seat,Remove and Replace,0.06,0.06
+NO,Cybertruck,103,1305003041,Cap - Top Tether - Center - 2nd Row Seat,Remove and Install,0.06,0.06
+NO,Cybertruck,103,1305003042,Cap - Top Tether - Center - 2nd Row Seat,Remove and Replace,0.06,0.06
+NO,Cybertruck,103,1305003051,Strap - Release Buckle - Seat Cushion - 2nd Row Seat,Remove and Install,0.12,0.12
+NO,Cybertruck,103,1305003052,Strap - Release Buckle - Seat Cushion - 2nd Row Seat,Remove and Replace,0.12,0.12
+NO,Cybertruck,103,1305003082,2nd Row Seat Back Hardware - 2R Seat Armrest,Remove and Replace,0.71,0.71
+NO,Cybertruck,103,1305003111,Closeout - Armrest - 2nd Row Seat,Remove and Install,0.96,0.96
+NO,Cybertruck,103,1305003112,Closeout - Armrest - 2nd Row Seat,Remove and Replace,0.96,0.96
+NO,Cybertruck,103,13050401201,CT Seats - 2nd Row Seat Assemblies and Hardware - 2nd Row Seat Assemblies - 2nd Row - Full Seat Assembly (RI),Remove and Install,1.74,1.74
+NO,Cybertruck,103,13050401202,CT Seats - 2nd Row Seat Assemblies and Hardware - 2nd Row Seat Assemblies - 2nd Row - Full Seat Assembly (RI),Remove and Replace,1.74,1.74
+NO,Cybertruck,103,1307060001,Trim - Seat Cushion - 1st Row Seat - RH/RH,Remove and Install,0.9,0.9
+NO,Cybertruck,103,1307060002,Trim - Seat Cushion - 1st Row Seat - RH/RH,Remove and Replace,0.9,0.9
+NO,Cybertruck,103,1307060031,Trim - Seat Back - 1st Row - RH,Remove and Install,0.6,0.6
+NO,Cybertruck,103,1307060032,Trim - Seat Back - 1st Row - RH,Remove and Replace,0.6,0.6
+NO,Cybertruck,103,1307060041,Trim - Seat Back - 1st Row - LH,Remove and Install,0.6,0.6
+NO,Cybertruck,103,1307060042,Trim - Seat Back - 1st Row - LH,Remove and Replace,0.6,0.6
+NO,Cybertruck,103,1307060051,Trim - Seat Cushion - 1st Row Seat - RH,Remove and Install,0.9,0.9
+NO,Cybertruck,103,1307060052,Trim - Seat Cushion - 1st Row Seat - RH,Remove and Replace,0.9,0.9
+NO,Cybertruck,103,1307060061,Foam - Seat Cushion - 1st Row Seat - LH (with Ventilation),Remove and Install,0.71,0.71
+NO,Cybertruck,103,1307060062,Foam - Seat Cushion - 1st Row Seat - LH (with Ventilation),Remove and Replace,0.71,0.71
+NO,Cybertruck,103,1307060071,Screw Cover - 1st Row Seat - LH,Remove and Install,0.12,0.12
+NO,Cybertruck,103,1307060072,Screw Cover - 1st Row Seat - LH,Remove and Replace,0.12,0.12
+NO,Cybertruck,103,1307060101,Foam - Seat Back - 1st Row Seat - RH (with Ventilation),Remove and Install,0.9,0.9
+NO,Cybertruck,103,1307060102,Foam - Seat Back - 1st Row Seat - RH (with Ventilation),Remove and Replace,0.9,0.9
+NO,Cybertruck,103,1307060111,Screw Cover - 1st Row Seat - RH,Remove and Install,0.12,0.12
+NO,Cybertruck,103,1307060112,Screw Cover - 1st Row Seat - RH,Remove and Replace,0.12,0.12
+NO,Cybertruck,103,1307060121,Foam - Seat Back - 1st Row Seat - LH (with Ventilation),Remove and Install,0.66,0.66
+NO,Cybertruck,103,1307060122,Foam - Seat Back - 1st Row Seat - LH (with Ventilation),Remove and Replace,0.66,0.66
+NO,Cybertruck,103,1307060131,Foam - Seat Cushion - 1st Row Seat - RH (with Ventilation),Remove and Install,0.9,0.9
+NO,Cybertruck,103,1307060132,Foam - Seat Cushion - 1st Row Seat - RH (with Ventilation),Remove and Replace,0.9,0.9
+NO,Cybertruck,103,1307060141,Trim - Seat Cushion - 1st Row Seat - LH,Remove and Install,0.9,0.9
+NO,Cybertruck,103,1307060142,Trim - Seat Cushion - 1st Row Seat - LH,Remove and Replace,0.9,0.9
+NO,Cybertruck,103,1308000001,Buckle Closeout - 2nd Row - RH,Remove and Install,0.36,0.36
+NO,Cybertruck,103,1308000002,Buckle Closeout - 2nd Row - RH,Remove and Replace,0.36,0.36
+NO,Cybertruck,103,1308005071,Substrate - Back Rest - 2nd Row Seat - RH,Remove and Install,0.42,0.42
+NO,Cybertruck,103,1308005072,Substrate - Back Rest - 2nd Row Seat - RH,Remove and Replace,0.42,0.42
+NO,Cybertruck,103,1308005101,Substrate - Back Rest - 2nd Row Seat - LH,Remove and Install,0.48,0.48
+NO,Cybertruck,103,1308005102,Substrate - Back Rest - 2nd Row Seat - LH,Remove and Replace,0.48,0.48
+NO,Cybertruck,103,1308005111,Buckle Closeout - 2nd Row - LH,Remove and Install,0.36,0.36
+NO,Cybertruck,103,1308005112,Buckle Closeout - 2nd Row - LH,Remove and Replace,0.36,0.36
+NO,Cybertruck,103,1308005121,B-Cover - Outboard - 2nd Row - LH,Remove and Install,0.12,0.12
+NO,Cybertruck,103,1308005122,B-Cover - Outboard - 2nd Row - LH,Remove and Replace,0.12,0.12
+NO,Cybertruck,103,1308005131,B-Cover - Outboard - 2nd Row - RH,Remove and Install,0.12,0.12
+NO,Cybertruck,103,1308005132,B-Cover - Outboard - 2nd Row - RH,Remove and Replace,0.12,0.12
+NO,Cybertruck,103,1308005161,Closeout Split - Buckle - 2nd Row Seat - LH,Remove and Install,0.36,0.36
+NO,Cybertruck,103,1308005162,Closeout Split - Buckle - 2nd Row Seat - LH,Remove and Replace,0.36,0.36
+NO,Cybertruck,103,1308005171,Closeout Split - Buckle - 2nd Row Seat - RH,Remove and Install,0.48,0.48
+NO,Cybertruck,103,1308005172,Closeout Split - Buckle - 2nd Row Seat - RH,Remove and Replace,0.48,0.48
+YES,Cybertruck,103,14050002,USB Drive,Remove and Replace,0.06,0.06
+NO,Cybertruck,103,1405010181,Super Cowl Assembly,Remove and Install,3.42,3.42
+NO,Cybertruck,103,1405010182,Super Cowl Assembly,Remove and Replace,3.42,3.42
+NO,Cybertruck,103,1405027021,Glovebox Assembly,Remove and Install,0.54,0.54
+NO,Cybertruck,103,1405027022,Glovebox Assembly,Remove and Replace,0.54,0.54
+NO,Cybertruck,103,1405028011,Puddle Lamp - Glovebox,Remove and Install,0.54,0.54
+NO,Cybertruck,103,1405028012,Puddle Lamp - Glovebox,Remove and Replace,0.54,0.54
+NO,Cybertruck,103,1405028021,Module (RJ45) - Ethernet Diagnostic,Remove and Install,0.12,0.12
+NO,Cybertruck,103,1405028022,Module (RJ45) - Ethernet Diagnostic,Remove and Replace,0.12,0.12
+NO,Cybertruck,103,1405028031,Supercarrier Assembly,Remove and Install,2.34,2.34
+NO,Cybertruck,103,1405028032,Supercarrier Assembly,Remove and Replace,2.34,2.34
+NO,Cybertruck,103,1405028111,Cover - Footwell,Remove and Install,0.12,0.12
+NO,Cybertruck,103,1405028112,Cover - Footwell,Remove and Replace,0.12,0.12
+NO,Cybertruck,103,1405077111,Airwave Panel Duct - LH,Remove and Install,1.44,1.44
+NO,Cybertruck,103,1405077112,Airwave Panel Duct - LH,Remove and Replace,1.44,1.44
+NO,Cybertruck,103,1405077121,Airwave Panel Duct - RH,Remove and Install,1.44,1.44
+NO,Cybertruck,103,1405077122,Airwave Panel Duct - RH,Remove and Replace,1.44,1.44
+NO,Cybertruck,103,1505103021,Glare Shield - Rearview Mirror,Remove and Install,0.18,0.18
+NO,Cybertruck,103,1505103022,Glare Shield - Rearview Mirror,Remove and Replace,0.18,0.18
+NO,Cybertruck,103,1505103041,Rearview Mirror,Remove and Install,0.06,0.06
+NO,Cybertruck,103,1505103042,Rearview Mirror ,Remove and Replace,0.06,0.06
+NO,Cybertruck,103,1505113031,Sun Visor - LH,Remove and Install,0.42,0.42
+NO,Cybertruck,103,1505113032,Sun Visor - LH,Remove and Replace,0.42,0.42
+NO,Cybertruck,103,1505113041,Sun Visor - RH,Remove and Install,0.42,0.42
+NO,Cybertruck,103,1505113042,Sun Visor - RH,Remove and Replace,0.42,0.42
+YES,Cybertruck,103,15130004,Diagnosis: Closures,General Diagnosis,0.65,0.65
+NO,Cybertruck,103,1513090001,Ambient Light - Map Pocket - Door Panel - Rear - RH,Remove and Install,0.12,0.12
+NO,Cybertruck,103,1513090002,Ambient Light - Map Pocket - Door Panel - Rear - RH,Remove and Replace,0.12,0.12
+NO,Cybertruck,103,1513090101,Puddle Lamp - Door Panel - Rear - RH,Remove and Install,0.06,0.06
+NO,Cybertruck,103,1513090102,Puddle Lamp - Door Panel - Rear - RH,Remove and Replace,0.06,0.06
+NO,Cybertruck,103,1513091011,Ambient Light - Map Pocket - Door Panel - Rear - LH,Remove and Install,0.12,0.12
+NO,Cybertruck,103,1513091012,Ambient Light - Map Pocket - Door Panel - Rear - LH,Remove and Replace,0.12,0.12
+NO,Cybertruck,103,1513091021,Puddle Lamp - Door Panel - Rear - LH,Remove and Install,0.06,0.06
+NO,Cybertruck,103,1513091022,Puddle Lamp - Door Panel - Rear - LH,Remove and Replace,0.06,0.06
+NO,Cybertruck,103,1513091031,Panel - Door Trim - Rear - LH,Remove and Install,0.06,0.06
+NO,Cybertruck,103,1513091032,Panel - Door Trim - Rear - LH,Remove and Replace,0.06,0.06
+NO,Cybertruck,103,1513091037,Panel - Door Trim - Rear - LH,Modify,0.12,0.12
+NO,Cybertruck,103,1513091061,Panel - Door Trim - Rear - RH,Remove and Install,0.06,0.06
+NO,Cybertruck,103,1513091062,Panel - Door Trim - Rear - RH,Remove and Replace,0.06,0.06
+NO,Cybertruck,103,1513091067,Panel - Door Trim - Rear - RH,Modify,0.12,0.12
+NO,Cybertruck,103,1513091101,NVH Foam - Door - Rear - LH,Remove and Install,0.12,0.12
+NO,Cybertruck,103,1513091102,NVH Foam - Door - Rear - LH,Remove and Replace,0.12,0.12
+NO,Cybertruck,103,1513091111,NVH Foam - Door - Rear - RH,Remove and Install,0.12,0.12
+NO,Cybertruck,103,1513091112,NVH Foam - Door - Rear - RH,Remove and Replace,0.12,0.12
+NO,Cybertruck,103,1518006011,Trim - B-Pillar - Lower - LH,Remove and Install,0.24,0.24
+NO,Cybertruck,103,1518006012,Trim - B-Pillar - Lower - LH,Remove and Replace,0.24,0.24
+NO,Cybertruck,103,1518006021,Trim - B-Pillar - Upper - LH,Remove and Install,0.78,0.78
+NO,Cybertruck,103,1518006022,Trim - B-Pillar - Upper - LH,Remove and Replace,0.66,0.66
+NO,Cybertruck,103,1518006031,Trim - B-Pillar - Upper - RH,Remove and Install,0.66,0.66
+NO,Cybertruck,103,1518006032,Trim - B-Pillar - Upper - RH,Remove and Replace,0.66,0.66
+NO,Cybertruck,103,1518006061,Trim - B-Pillar - Lower - RH,Remove and Install,0.24,0.24
+NO,Cybertruck,103,1518006062,Trim - B-Pillar - Lower - RH,Remove and Replace,0.24,0.24
+NO,Cybertruck,103,1518006071,Trim - C-Pillar - Upper - LH,Remove and Install,0.66,0.66
+NO,Cybertruck,103,1518006072,Trim - C-Pillar - Upper - LH,Remove and Replace,0.66,0.66
+NO,Cybertruck,103,1518006081,Trim - C-Pillar - Lower - LH,Remove and Install,0.12,0.12
+NO,Cybertruck,103,1518006082,Trim - C-Pillar - Lower - LH,Remove and Replace,0.12,0.12
+NO,Cybertruck,103,1518006091,Trim - C-Pillar - Upper - RH,Remove and Install,0.66,0.66
+NO,Cybertruck,103,1518006092,Trim - C-Pillar - Upper - RH,Remove and Replace,0.66,0.66
+NO,Cybertruck,103,1518006101,Trim - C-Pillar - Lower - RH,Remove and Install,0.12,0.12
+NO,Cybertruck,103,1518006102,Trim - C-Pillar - Lower - RH,Remove and Replace,0.12,0.12
+NO,Cybertruck,103,1518006111,Trim - A-Pillar - Lower - LH,Remove and Install,0.06,0.06
+NO,Cybertruck,103,1518006112,Trim - A-Pillar - Lower - LH,Remove and Replace,0.06,0.06
+NO,Cybertruck,103,1518006121,Trim - A-Pillar - Lower - RH,Remove and Install,0.06,0.06
+NO,Cybertruck,103,1518006122,Trim - A-Pillar - Lower - RH,Remove and Replace,0.06,0.06
+NO,Cybertruck,103,1518006131,Trim - A-Pillar - Mid - LH,Remove and Install,0.06,0.06
+NO,Cybertruck,103,1518006132,Trim - A-Pillar - Mid - LH,Remove and Replace,0.06,0.06
+NO,Cybertruck,103,1518006141,Trim - A-Pillar - Mid - RH,Remove and Install,0.06,0.06
+NO,Cybertruck,103,1518006142,Trim - A-Pillar - Mid - RH,Remove and Replace,0.06,0.06
+NO,Cybertruck,103,1518006151,Trim - A-Pillar - Upper - LH,Remove and Install,0.24,0.24
+NO,Cybertruck,103,1518006152,Trim - A-Pillar - Upper - LH,Remove and Replace,0.24,0.24
+NO,Cybertruck,103,1518006161,Trim - A-Pillar - Upper - RH,Remove and Install,0.24,0.24
+NO,Cybertruck,103,1518006162,Trim - A-Pillar - Upper - RH,Remove and Replace,0.24,0.24
+NO,Cybertruck,103,1518006171,Trim - A-Pillar - Forward - LH,Remove and Install,0.36,0.36
+NO,Cybertruck,103,1518006172,Trim - A-Pillar - Forward - LH,Remove and Replace,0.36,0.36
+NO,Cybertruck,103,1518006181,Trim - A-Pillar - Forward - RH,Remove and Install,0.36,0.36
+NO,Cybertruck,103,1518006182,Trim - A-Pillar - Forward - RH,Remove and Replace,0.36,0.36
+NO,Cybertruck,103,1518006191,Bezel - Trim - B-Pillar - Upper - LH,Remove and Install,1.02,1.02
+NO,Cybertruck,103,1518006192,Bezel - Trim - B-Pillar - Upper - LH,Remove and Replace,1.02,1.02
+NO,Cybertruck,103,1518006201,Bezel - Trim - B-Pillar - Upper - RH,Remove and Install,1.02,1.02
+NO,Cybertruck,103,1518006202,Bezel - Trim - B-Pillar - Upper - RH,Remove and Replace,1.02,1.02
+NO,Cybertruck,103,1519023011,Puddle Lamp - Center Console,Remove and Install,0.12,0.12
+NO,Cybertruck,103,1519023012,Puddle Lamp - Center Console,Remove and Replace,0.12,0.12
+NO,Cybertruck,103,1519023021,Cap - Armrest - Center Console,Remove and Install,0.06,0.06
+NO,Cybertruck,103,1519023022,Cap - Armrest - Center Console,Remove and Replace,0.06,0.06
+NO,Cybertruck,103,1519023041,Panel - Rear - Center Console,Remove and Install,0.18,0.18
+NO,Cybertruck,103,1519023042,Panel - Rear - Center Console,Remove and Replace,0.18,0.18
+NO,Cybertruck,103,1519023051,Cap - Airwave - Center Console,Remove and Install,0.24,0.24
+NO,Cybertruck,103,1519023052,Cap - Airwave - Center Console,Remove and Replace,0.24,0.24
+NO,Cybertruck,103,1519023081,External Panel - LH - Center Console,Remove and Install,0.48,0.48
+NO,Cybertruck,103,1519023082,External Panel - LH - Center Console,Remove and Replace,0.48,0.48
+NO,Cybertruck,103,1519023091,Airwave Assembly - Center Console,Remove and Install,0.36,0.36
+NO,Cybertruck,103,1519023092,Airwave Assembly - Center Console,Remove and Replace,0.36,0.36
+NO,Cybertruck,103,1519023101,Armrest Assembly - Center Console,Remove and Install,0.48,0.48
+NO,Cybertruck,103,1519023102,Armrest Assembly - Center Console,Remove and Replace,0.48,0.48
+NO,Cybertruck,103,1519023111,External Panel - RH - Center Console,Remove and Install,0.48,0.48
+NO,Cybertruck,103,1519023112,External Panel - RH - Center Console,Remove and Replace,0.48,0.48
+NO,Cybertruck,103,1519023121,Wireless Charger - Center Console,Remove and Install,0.12,0.12
+NO,Cybertruck,103,1519023122,Wireless Charger - Center Console,Remove and Replace,0.12,0.12
+NO,Cybertruck,103,1519023131,Center Console Assembly,Remove and Install,0.54,0.54
+NO,Cybertruck,103,1519023132,Center Console Assembly,Remove and Replace,0.71,0.71
+NO,Cybertruck,103,15190405401,Panel - Rear - Center Console (Long Range),Remove and Install,0.0,0.0
+NO,Cybertruck,103,15190405402,Panel - Rear - Center Console (Long Range),Remove and Replace,0.0,0.0
+NO,Cybertruck,103,15190405501,Center Console Assembly (Long Range),Remove and Install,0.42,0.42
+NO,Cybertruck,103,15190405502,Center Console Assembly (Long Range),Remove and Replace,0.42,0.42
+NO,Cybertruck,103,1519129011,Controller - USB - Center Console,Remove and Install,0.12,0.12
+NO,Cybertruck,103,1519129012,Controller - USB - Center Console,Remove and Replace,0.12,0.12
+NO,Cybertruck,103,1519129021,Hub - USB - Panel - Rear - Center Console,Remove and Install,0.12,0.12
+NO,Cybertruck,103,1519129022,Hub - USB - Panel - Rear - Center Console,Remove and Replace,0.12,0.12
+NO,Cybertruck,103,1520068031,Trim - Cantrail - LH,Remove and Install,0.48,0.48
+NO,Cybertruck,103,1520068032,Trim - Cantrail - LH,Remove and Replace,0.48,0.48
+NO,Cybertruck,103,1520068041,Trim - Cantrail - RH,Remove and Install,0.48,0.48
+NO,Cybertruck,103,1520068042,Trim - Cantrail - RH,Remove and Replace,0.48,0.48
+NO,Cybertruck,103,1520068051,Coathook and Maplight - LH,Remove and Install,0.48,0.48
+NO,Cybertruck,103,1520068052,Coathook and Maplight - LH,Remove and Replace,0.48,0.48
+NO,Cybertruck,103,1520068061,Coathook and Maplight - RH,Remove and Install,0.48,0.48
+NO,Cybertruck,103,1520068062,Coathook and Maplight - RH,Remove and Replace,0.48,0.48
+NO,Cybertruck,103,1530079011,NVH Pad - Dash,Remove and Install,4.02,4.02
+NO,Cybertruck,103,1530079012,NVH Pad - Dash,Remove and Replace,4.02,4.02
+NO,Cybertruck,103,1530079021,NVH Pad - Cowl,Remove and Install,1.62,1.62
+NO,Cybertruck,103,1530079022,NVH Pad - Cowl,Remove and Replace,1.62,1.62
+NO,Cybertruck,103,1530079031,NVH Pad - Rear Wall,Remove and Install,1.86,1.86
+NO,Cybertruck,103,1530079032,NVH Pad - Rear Wall,Remove and Replace,1.86,1.86
+NO,Cybertruck,103,1530083011,Trim - Center Floor - Lower,Remove and Install,0.12,0.12
+NO,Cybertruck,103,1530083012,Trim - Center Floor - Lower,Remove and Replace,0.12,0.12
+NO,Cybertruck,103,1530083021,Rail - Center Floor - RH,Remove and Install,0.71,0.71
+NO,Cybertruck,103,1530083022,Rail - Center Floor - RH,Remove and Replace,0.71,0.71
+NO,Cybertruck,103,1530083031,Rail - Center Floor - LH,Remove and Install,0.06,0.06
+NO,Cybertruck,103,1530083032,Rail - Center Floor - LH,Remove and Replace,0.06,0.06
+NO,Cybertruck,103,1530083051,Bezel - Duct - Carpet - Rear,Remove and Install,0.12,0.12
+NO,Cybertruck,103,1530083052,Bezel - Duct - Carpet - Rear,Remove and Replace,0.12,0.12
+NO,Cybertruck,103,1530083071,Carpet Assembly - Driver,Remove and Install,0.36,0.36
+NO,Cybertruck,103,1530083072,Carpet Assembly - Driver,Remove and Replace,0.36,0.36
+NO,Cybertruck,103,1530083091,Carpet Assembly - Rear,Remove and Install,0.6,0.6
+NO,Cybertruck,103,1530083092,Carpet Assembly - Rear,Remove and Replace,0.6,0.6
+NO,Cybertruck,103,1530083101,Floor Mat Kit,Remove and Install,0.12,0.12
+NO,Cybertruck,103,1530083102,Floor Mat Kit,Remove and Replace,0.12,0.12
+NO,Cybertruck,103,1530083111,Trim - Lower - Rear Wall,Remove and Install,0.18,0.18
+NO,Cybertruck,103,1530083112,Trim - Lower - Rear Wall,Remove and Replace,0.18,0.18
+NO,Cybertruck,103,16010103501,HV Battery Assembly (Long Range),Remove and Install,4.2,4.2
+NO,Cybertruck,103,16010103502,HV Battery Assembly (Long Range),Remove and Replace,5.22,5.22
+NO,Cybertruck,103,1601011032,Thermal Vent - HV Battery ,Remove and Replace,0.48,0.48
+YES,Cybertruck,103,16010201,HV Battery (AWD),Remove and Install,6.55,6.55
+YES,Cybertruck,103,16010202,HV Battery (AWD),Remove and Replace,8.3,8.3
+NO,Cybertruck,103,1601070061,Cover - Pyro Access  - HV Battery,Remove and Install,0.6,0.6
+NO,Cybertruck,103,1601070062,Cover - Pyro Access  - HV Battery,Remove and Replace,0.6,0.6
+NO,Cybertruck,103,1601070071,Flood Port,Remove and Install,0.71,0.71
+NO,Cybertruck,103,1601070072,Flood Port,Remove and Replace,0.71,0.71
+NO,Cybertruck,103,1601070091,Terrestrial Armor,Remove and Install,1.74,1.74
+NO,Cybertruck,103,1601070092,Terrestrial Armor,Remove and Replace,1.74,1.74
+NO,Cybertruck,103,1601070096,Terrestrial Armor Package (Retrofit),Retrofit,1.62,1.62
+NO,Cybertruck,103,1601070121,"Fuse, 60A, 1000VDC, Eaton EVK22-60-T - HV Battery",Remove and Install,3.3,3.3
+NO,Cybertruck,103,1601070122,"Fuse, 60A, 1000VDC, Eaton EVK22-60-T - HV Battery",Remove and Replace,3.3,3.3
+NO,Cybertruck,103,1601070131,Skid Plate - Rear,Remove and Install,0.18,0.18
+NO,Cybertruck,103,1601070132,Skid Plate - Rear,Remove and Replace,0.18,0.18
+NO,Cybertruck,103,1601070151,Littelfuse 828 - 30,Remove and Install,0.6,0.6
+NO,Cybertruck,103,1601070152,Littelfuse 828 - 30,Remove and Replace,0.6,0.6
+YES,Cybertruck,103,16015300,Discharge HV Battery (At Pack Contactors),Test/Adjust,1.02,1.02
+NO,Cybertruck,103,16100400,Ancillary Bay Air Leak Test,Inspection,0.42,0.42
+NO,Cybertruck,103,16100410,Ancillary Bay Air Leak Test (Busbar Type),Test/Adjust,0.42,0.42
+NO,Cybertruck,103,16102000,Platter Enclosure Air Leak Test,Test/Adjust,0.6,0.6
+NO,Cybertruck,103,16102010,Platter Enclosure Coolant Leak Test,Inspection,1.38,1.38
+YES,Cybertruck,103,16102100,HV Battery Air Leak Test,Test/Adjust,0.66,0.66
+NO,Cybertruck,103,16200200,Ancillary Bay Coolant Leak Test,Inspection,2.16,2.16
+YES,Cybertruck,103,16300100,Resistance Meter (Zero Adjust),Test/Adjust,0.05,0.05
+NO,Cybertruck,103,1630010011,Pyro Disconnect,Remove and Install,0.72,0.72
+NO,Cybertruck,103,1630010012,Pyro Disconnect,Remove and Replace,0.72,0.72
+NO,Cybertruck,103,1630010051,Flood Port,Remove and Install,0.36,0.36
+NO,Cybertruck,103,1630010052,Flood Port,Remove and Replace,0.36,0.36
+NO,Cybertruck,103,1630010071,Harness - Shunt Jumper,Remove and Install,3.84,3.84
+NO,Cybertruck,103,1630010072,Harness - Shunt Jumper,Remove and Replace,3.84,3.84
+NO,Cybertruck,103,1630010081,Power Conversion System,Remove and Install,4.2,4.2
+NO,Cybertruck,103,1630010082,Power Conversion System,Remove and Replace,4.2,4.2
+NO,Cybertruck,103,1630010091,"PCB, AC Junction Box, B2",Remove and Install,3.42,3.42
+NO,Cybertruck,103,1630010092,"PCB, AC Junction Box, B2",Remove and Replace,3.42,3.42
+NO,Cybertruck,103,1630010101,Ancillary Cover,Remove and Install,3.18,3.18
+NO,Cybertruck,103,1630010102,Anclilary Cover,Remove and Replace,3.18,3.18
+NO,Cybertruck,103,1630010151,Last Mile Busbar Assembly,Remove and Install,4.56,4.56
+NO,Cybertruck,103,1630010152,Last Mile Busbar Assembly,Remove and Replace,4.56,4.56
+NO,Cybertruck,103,1630010171,HV Harness - AC Junction Box To PCS,Remove and Install,3.24,3.24
+NO,Cybertruck,103,1630010172,HV Harness - AC Junction Box To PCS,Remove and Replace,3.24,3.24
+NO,Cybertruck,103,1630010181,HV Harness - AC Junction Box To FC,Remove and Install,3.18,3.18
+NO,Cybertruck,103,1630010182,HV Harness - AC Junction Box To FC,Remove and Replace,3.18,3.18
+NO,Cybertruck,103,1630010191,"Fuse, 60A, 1000VDC, Eaton EVK22-60-T - Ancillary",Remove and Install,3.3,3.3
+NO,Cybertruck,103,1630010192,"Fuse, 60A, 1000VDC, Eaton EVK22-60-T - Ancillary",Remove and Replace,3.3,3.3
+NO,Cybertruck,103,1630010211,30A Sand Fuse - Ancillary Bay,Remove and Install,0.71,0.71
+NO,Cybertruck,103,1630010212,30A Sand Fuse - Ancillary Bay,Remove and Replace,0.71,0.71
+NO,Cybertruck,103,1630010221,AC Junction Box,Remove and Install,3.42,3.42
+NO,Cybertruck,103,1630010222,AC Junction Box,Remove and Replace,3.42,3.42
+NO,Cybertruck,103,1630010311,Coolant Hose Assembly - Power Conversion System,Remove and Install,4.2,4.2
+NO,Cybertruck,103,1630010312,Coolant Hose Assembly - Power Conversion System,Remove and Replace,4.2,4.2
+NO,Cybertruck,103,1630010342,Harness - Ancillary Bay,Remove and Replace,3.48,3.48
+NO,Cybertruck,103,16300105801,Fuse - Power Conversion System (Long Range),Remove and Install,1.74,1.74
+NO,Cybertruck,103,16300105802,Fuse - Power Conversion System (Long Range),Remove and Replace,1.74,1.74
+NO,Cybertruck,103,16300105901,Ancillary Cover (Long Range),Remove and Install,1.56,1.56
+NO,Cybertruck,103,16300105902,Ancillary Cover (Long Range),Remove and Replace,1.56,1.56
+NO,Cybertruck,103,16300106101,Power Conversion System (Long Range),Remove and Install,2.52,2.52
+NO,Cybertruck,103,16300106102,Power Conversion System (Long Range),Remove and Replace,2.52,2.52
+NO,Cybertruck,103,16300106401,Coolant Hose Assembly - Power Conversion System (Long Range),Remove and Install,2.52,2.52
+NO,Cybertruck,103,16300106402,Coolant Hose Assembly - Power Conversion System (Long Range),Remove and Replace,2.52,2.52
+NO,Cybertruck,103,16300106501,Last Mile Busbar Assembly (Long Range),Remove and Install,3.06,3.06
+NO,Cybertruck,103,16300106502,Last Mile Busbar Assembly (Long Range),Remove and Replace,3.06,3.06
+NO,Cybertruck,103,16300106601,Jumper Harness - ACJB to PCS (Long Range),Remove and Install,1.68,1.68
+NO,Cybertruck,103,16300106602,Jumper Harness - ACJB to PCS (Long Range),Remove and Replace,1.68,1.68
+NO,Cybertruck,103,16300106701,AC Junction Box - Ancillary (Long Range),Remove and Install,1.86,1.86
+NO,Cybertruck,103,16300106702,AC Junction Box - Ancillary (Long Range),Remove and Replace,1.86,1.86
+NO,Cybertruck,103,16300106801,Harness - Ancillary (Long Range),Remove and Install,1.8,1.8
+NO,Cybertruck,103,16300106802,Harness - Ancillary (Long Range),Remove and Replace,1.8,1.8
+NO,Cybertruck,103,16309000,HV Battery Contactor Seize Check,Test/Adjust,3.18,3.18
+YES,Cybertruck,103,17000004,Diagnosis: Driver Assistance,General Diagnosis,0.5,0.5
+YES,Cybertruck,103,17000008,Jumpstart Vehicle (Restore),Restore,0.6,0.6
+YES,Cybertruck,103,17010000,Vehicle HV Disablement Procedure,Test/Adjust,0.36,0.36
+NO,Cybertruck,103,17010008,MV Battery - Recover,Restore,0.06,0.06
+NO,Cybertruck,103,17010410,LV Power (Disconnect & Connect),Modify,0.06,0.06
+NO,Cybertruck,103,1702000000,Mid-Voltage Power (Disconnect and Connect),,0.06,0.06
+NO,Cybertruck,103,1702081011,MV Battery - Li-ion 48V,Remove and Install,0.12,0.12
+NO,Cybertruck,103,1702081012,MV Battery - Li-ion 48V,Remove and Replace,0.18,0.18
+YES,Cybertruck,103,17100008,Harness Connector - Reconnect,Restore,0.1,0.1
+NO,Cybertruck,103,1710013011,Harness - Bed - LH,Remove and Install,2.7,2.7
+NO,Cybertruck,103,1710013012,Harness - Bed - LH,Remove and Replace,2.7,2.7
+NO,Cybertruck,103,1710013021,Harness - Bed - RH,Remove and Install,2.58,2.58
+NO,Cybertruck,103,1710013022,Harness - Bed - RH,Remove and Replace,2.58,2.58
+NO,Cybertruck,103,1710013031,Harness - MV Backbone,Remove and Install,1.26,1.26
+NO,Cybertruck,103,1710013032,Harness - MV Backbone,Remove and Replace,1.26,1.26
+NO,Cybertruck,103,1710029008,Center Display Cable Overlay,Repair,0.84,0.84
+NO,Cybertruck,103,1710029011,Harness - Cowl,Remove and Install,0.6,0.6
+NO,Cybertruck,103,1710029012,Harness - Cowl,Remove and Replace,0.6,0.6
+NO,Cybertruck,103,1710029031,Harness - Speaker - Cowl,Remove and Install,1.68,1.68
+NO,Cybertruck,103,1710029032,Harness - Speaker - Cowl,Remove and Replace,1.68,1.68
+NO,Cybertruck,103,1710029041,Harness - Console,Remove and Install,0.84,0.84
+NO,Cybertruck,103,1710029042,Harness - Console,Remove and Replace,0.84,0.84
+NO,Cybertruck,103,1710031021,Harness - Door - Rear - RH,Remove and Install,0.42,0.42
+NO,Cybertruck,103,1710031022,Harness - Door - Rear - RH,Remove and Replace,0.42,0.42
+NO,Cybertruck,103,1710031031,Harness - Trim - Door - Rear - RH,Remove and Install,0.12,0.12
+NO,Cybertruck,103,1710031032,Harness - Trim - Door - Rear - RH,Remove and Replace,0.12,0.12
+NO,Cybertruck,103,1710031061,Harness - Trim - Door - Rear - LH,Remove and Install,0.18,0.18
+NO,Cybertruck,103,1710031062,Harness - Trim - Door - Rear - LH,Remove and Replace,0.18,0.18
+NO,Cybertruck,103,1710031081,Harness - Door - Rear - LH,Remove and Install,0.42,0.42
+NO,Cybertruck,103,1710031082,Harness - Door - Rear - LH,Remove and Replace,0.42,0.42
+NO,Cybertruck,103,1710051031,Harness - FEM,Remove and Install,0.48,0.48
+NO,Cybertruck,103,1710051032,Harness - FEM,Remove and Replace,0.48,0.48
+NO,Cybertruck,103,1710091002,Harness - Seat - 1st Row - LH,Remove and Replace,0.9,0.9
+NO,Cybertruck,103,1710091012,Harness - Seat - 1st Row - RH,Remove and Replace,0.84,0.84
+NO,Cybertruck,103,1710091022,Harness - Seat - 2nd Row,Remove and Replace,1.8,1.8
+NO,Cybertruck,103,1710095011,Harness - Tailgate,Remove and Install,0.42,0.42
+NO,Cybertruck,103,1710095012,Harness - Tailgate,Remove and Replace,0.42,0.42
+NO,Cybertruck,103,1710095021,Harness - Fascia - Rear,Remove and Install,0.48,0.48
+NO,Cybertruck,103,1710095022,Harness - Fascia - Rear,Remove and Replace,0.48,0.48
+NO,Cybertruck,103,1710109031,Harness - Trim - A-Pillar - LH,Remove and Install,0.24,0.24
+NO,Cybertruck,103,1710109032,Harness - Trim - A-Pillar - LH,Remove and Replace,0.24,0.24
+NO,Cybertruck,103,1710109041,Harness - Trim - A -Pillar - RH,Remove and Install,0.24,0.24
+NO,Cybertruck,103,1710109042,Harness - Trim - A -Pillar - RH,Remove and Replace,0.24,0.24
+NO,Cybertruck,103,1710109051,Harness - Roof Accessory Jumper,Remove and Install,0.18,0.18
+NO,Cybertruck,103,1710109052,Harness - Roof Accessory Jumper,Remove and Replace,0.18,0.18
+NO,Cybertruck,103,1710112021,Harness - Steer Jumper - Rear,Remove and Install,0.84,0.84
+NO,Cybertruck,103,1710112022,Harness - Steer Jumper - Rear,Remove and Replace,0.84,0.84
+NO,Cybertruck,103,1710118011,Harness - Ancillary Bay,Remove and Install,2.82,2.82
+NO,Cybertruck,103,1710118012,Harness - Ancillary Bay,Remove and Replace,2.82,2.82
+NO,Cybertruck,103,1710118021,TBD - Harness - Shunt Jumper,Remove and Install,0.71,0.71
+NO,Cybertruck,103,1710118022,TBD - Harness - Shunt Jumper,Remove and Replace,0.71,0.71
+NO,Cybertruck,103,1710119011,"Thermal and HVAC Harnesses - Harness - Megavac, Center",Remove and Install,0.71,0.71
+NO,Cybertruck,103,1710119012,"Thermal and HVAC Harnesses - Harness - Megavac, Center",Remove and Replace,0.71,0.71
+NO,Cybertruck,103,1710119031,"Thermal and HVAC Harnesses - Harness - Supermanifold W/ Standalone Controller, Center",Remove and Install,0.71,0.71
+NO,Cybertruck,103,1710119032,"Thermal and HVAC Harnesses - Harness - Supermanifold W/ Standalone Controller, Center",Remove and Replace,0.71,0.71
+NO,Cybertruck,103,17101201001,Harness - Bed - LH (Long Range),Remove and Install,2.64,2.64
+NO,Cybertruck,103,17101201002,Harness - Bed - LH (Long Range),Remove and Replace,2.64,2.64
+NO,Cybertruck,103,17101201101,Harness - Bed - RH (Long Range),Remove and Install,2.58,2.58
+NO,Cybertruck,103,17101201102,Harness - Bed - RH (Long Range),Remove and Replace,2.58,2.58
+NO,Cybertruck,103,17103200101,Harness - Jumper - Rear Steer (Long Range),Remove and Install,0.66,0.66
+NO,Cybertruck,103,17103200102,Harness - Jumper - Rear Steer (Long Range),Remove and Replace,0.66,0.66
+YES,Cybertruck,103,17105006,Wire - Electrical Harness (Overlay),Retrofit,0.0,0.0
+YES,Cybertruck,103,17108100,Diagnosis: Low Voltage Distribution and Controllers,General Diagnosis,1.0,1.0
+NO,Cybertruck,103,1715017011,Body Controller - RH,Remove and Install,0.6,0.6
+NO,Cybertruck,103,1715017012,Body Controller - RH,Remove and Replace,0.84,0.84
+NO,Cybertruck,103,1715017021,Body Controller - Rear,Remove and Install,0.42,0.42
+NO,Cybertruck,103,1715017022,Body Controller - Rear,Remove and Replace,0.6,0.6
+NO,Cybertruck,103,1715017031,Body Controller - LH,Remove and Install,0.78,0.78
+NO,Cybertruck,103,1715017032,Body Controller - LH,Remove and Replace,1.02,1.02
+NO,Cybertruck,103,1715017041,ECU - Trailer,Remove and Install,0.42,0.42
+NO,Cybertruck,103,1715017042,ECU - Trailer,Remove and Replace,0.42,0.42
+NO,Cybertruck,103,1715017071,Door Controller - Rear - LH,Remove and Install,0.18,0.18
+NO,Cybertruck,103,1715017072,Door Controller - Rear - LH,Remove and Replace,0.18,0.18
+NO,Cybertruck,103,1715017081,Door Controller - Rear - RH,Remove and Install,0.18,0.18
+NO,Cybertruck,103,1715017082,Door Controller - Rear - RH,Remove and Replace,0.18,0.18
+NO,Cybertruck,103,17150300301,Rear - MV Controller (Long Range),Remove and Install,0.42,0.42
+NO,Cybertruck,103,17150300302,Rear - MV Controller (Long Range),Remove and Replace,0.42,0.42
+NO,Cybertruck,103,1722090011,Camera - Rear,Remove and Install,0.42,0.42
+NO,Cybertruck,103,1722090012,Camera - Rear,Remove and Replace,0.42,0.42
+NO,Cybertruck,103,1722110011,Camera - B-Pillar - LH,Remove and Install,0.12,0.12
+NO,Cybertruck,103,1722110012,Camera - B-Pillar - LH,Remove and Replace,0.18,0.18
+NO,Cybertruck,103,1722110041,Camera - B-Pillar - RH,Remove and Install,0.12,0.12
+NO,Cybertruck,103,1722110042,Camera - B-Pillar - RH,Remove and Replace,0.18,0.18
+NO,Cybertruck,103,17400100,Headlights - Adjust (Wall Method),Test/Adjust,0.18,0.18
+YES,Cybertruck,103,17400150,Headlights - Adjust - NA (Tool Method),Test/Adjust,0.66,0.66
+NO,Cybertruck,103,1740015011,Bed Light - LH,Remove and Install,0.18,0.18
+NO,Cybertruck,103,1740015012,Bed Light - LH,Remove and Replace,0.18,0.18
+NO,Cybertruck,103,1740015021,Bed Light - RH,Remove and Install,0.18,0.18
+NO,Cybertruck,103,1740015022,Bed Light - RH,Remove and Replace,0.18,0.18
+NO,Cybertruck,103,17400201801,Bed Light - LH (Long Range),Remove and Install,0.72,0.72
+NO,Cybertruck,103,17400201802,Bed Light - LH (Long Range),Remove and Replace,0.72,0.72
+NO,Cybertruck,103,1740067011,Headlamp Assembly - LH,Remove and Install,0.6,0.6
+NO,Cybertruck,103,1740067012,Headlamp Assembly - LH,Remove and Replace,0.71,0.71
+NO,Cybertruck,103,1740067021,Headlamp Assembly - RH,Remove and Install,0.6,0.6
+NO,Cybertruck,103,1740067022,Headlamp Assembly - RH,Remove and Replace,0.71,0.71
+NO,Cybertruck,103,1740115011,Lamp - License Plate,Remove and Install,0.18,0.18
+NO,Cybertruck,103,1740115012,Lamp - License Plate,Remove and Replace,0.18,0.18
+NO,Cybertruck,103,1740115021,Lamp - Rear Marker - LH,Remove and Install,0.42,0.42
+NO,Cybertruck,103,1740115022,Lamp - Rear Marker - LH,Remove and Replace,0.42,0.42
+NO,Cybertruck,103,1740115051,Tail Lights - Rear Marker Lamp - RH,Remove and Install,0.42,0.42
+NO,Cybertruck,103,1740115052,Lamp - Rear Marker - RH,Remove and Replace,0.42,0.42
+NO,Cybertruck,103,1740115061,Lamp - Tailgate,Remove and Install,0.3,0.3
+NO,Cybertruck,103,1740115062,Lamp - Tailgate,Remove and Replace,0.3,0.3
+NO,Cybertruck,103,1740115071,Lamp - Reverse - LH,Remove and Install,0.42,0.42
+NO,Cybertruck,103,1740115072,Lamp - Reverse - LH,Remove and Replace,0.42,0.42
+NO,Cybertruck,103,1740115081,Lamp - Reverse - RH,Remove and Install,0.42,0.42
+NO,Cybertruck,103,1740115082,Lamp - Reverse - RH,Remove and Replace,0.42,0.42
+NO,Cybertruck,103,17450306,Key Card - Program (No Keys Present),Program,0.06,0.06
+NO,Cybertruck,103,1750010302,Washer Tank Service Kit (Remove and Replace),Remove and Replace,0.18,0.18
+NO,Cybertruck,103,1753070001,"Horns - Horn Assembly, Low Tone, RH",Remove and Install,0.71,0.71
+NO,Cybertruck,103,1753070002,"Horns - Horn Assembly, Low Tone, RH",Remove and Replace,0.71,0.71
+NO,Cybertruck,103,1753072011,"Horns - Horn Assembly, Low Tone, LH",Remove and Install,0.71,0.71
+NO,Cybertruck,103,1753072012,"Horns - Horn Assembly, Low Tone, LH",Remove and Replace,0.71,0.71
+NO,Cybertruck,103,1753072021,"Horns - Horn Assembly, High Tone, RH",Remove and Install,0.71,0.71
+NO,Cybertruck,103,1753072022,"Horns - Horn Assembly, High Tone, RH",Remove and Replace,0.71,0.71
+NO,Cybertruck,103,1810021021,Harness - Megavac - Center,Remove and Install,4.08,4.08
+NO,Cybertruck,103,1810021022,Harness - Megavac - Center,Remove and Replace,4.08,4.08
+NO,Cybertruck,103,1810021031,HVAC Distribution,Remove and Install,2.34,2.34
+NO,Cybertruck,103,1810021032,HVAC Distribution,Remove and Replace,2.34,2.34
+NO,Cybertruck,103,1810021061,HEPA Filter,Remove and Install,0.06,0.06
+NO,Cybertruck,103,1810021062,HEPA Filter,Remove and Replace,0.06,0.06
+NO,Cybertruck,103,1810021071,Blower - HVAC,Remove and Install,0.54,0.54
+NO,Cybertruck,103,1810021072,Blower - HVAC,Remove and Replace,0.54,0.54
+NO,Cybertruck,103,1810021082,Actuator - Blend Door - HVAC,Remove and Replace,0.6,0.6
+NO,Cybertruck,103,1810021091,Cover - HEPA Filter,Remove and Install,0.06,0.06
+NO,Cybertruck,103,1810021092,Cover - HEPA Filter,Remove and Replace,0.06,0.06
+NO,Cybertruck,103,1810084071,Duct On Rails - 2nd Row,Remove and Install,0.54,0.54
+NO,Cybertruck,103,1810084072,Duct On Rails - 2nd Row,Remove and Replace,0.54,0.54
+NO,Cybertruck,103,1810084091,Air Extractor,Remove and Install,1.2,1.2
+NO,Cybertruck,103,1810084092,Air Extractor,Remove and Replace,1.2,1.2
+NO,Cybertruck,103,1810084101,Jumper Duct - Center Console,Remove and Install,0.9,0.9
+NO,Cybertruck,103,1810084102,Jumper Duct - Center Console,Remove and Replace,0.9,0.9
+NO,Cybertruck,103,1810084121,Floor Y Duct - 2nd Row,Remove and Install,0.72,0.72
+NO,Cybertruck,103,1810084122,Floor Y Duct - 2nd Row,Remove and Replace,0.72,0.72
+NO,Cybertruck,103,1810084131,Riser Duct - Center Console,Remove and Install,0.9,0.9
+NO,Cybertruck,103,1810084132,Riser Duct - Center Console,Remove and Replace,0.9,0.9
+NO,Cybertruck,103,1810084161,Jumper Floor Duct,Remove and Install,0.42,0.42
+NO,Cybertruck,103,1810084162,Jumper Floor Duct,Remove and Replace,0.42,0.42
+NO,Cybertruck,103,1810084171,Panel Duct - LH,Remove and Install,0.71,0.71
+NO,Cybertruck,103,1810084172,Panel Duct - LH,Remove and Replace,0.71,0.71
+NO,Cybertruck,103,1810084181,Panel Duct - RH,Remove and Install,0.6,0.6
+NO,Cybertruck,103,1810084182,Panel Duct - RH,Remove and Replace,0.6,0.6
+NO,Cybertruck,103,1820026011,A/C Compressor,Remove and Install,0.72,0.72
+NO,Cybertruck,103,1820026012,A/C Compressor,Remove and Replace,0.72,0.72
+NO,Cybertruck,103,1820026021,Acoustic Cover - Compressor,Remove and Install,1.86,1.86
+NO,Cybertruck,103,1820026022,Acoustic Cover - Compressor,Remove and Replace,1.86,1.86
+NO,Cybertruck,103,18203012,A/C Compressor and Supermanifold,Remove and Replace,1.38,1.38
+NO,Cybertruck,103,18260100001,Controller - Supermanifold,Remove and Install,0.24,0.24
+NO,Cybertruck,103,18260100002,Controller - Supermanifold,Remove and Replace,0.24,0.24
+NO,Cybertruck,103,1830073031,Hose - Radiator To Manifold,Remove and Install,0.48,0.48
+NO,Cybertruck,103,1830073032,Hose - Radiator To Manifold,Remove and Replace,0.48,0.48
+NO,Cybertruck,103,1830073041,Hose - Supply - HV Battery,Remove and Install,1.98,1.98
+NO,Cybertruck,103,1830073042,Hose - Supply - HV Battery,Remove and Replace,1.98,1.98
+NO,Cybertruck,103,1830073051,"Hoses - Hose, Battery Return",Remove and Install,0.71,0.71
+NO,Cybertruck,103,1830073052,"Hoses - Hose, Battery Return",Remove and Replace,0.71,0.71
+NO,Cybertruck,103,1830073071,Hose - Supply - Rear Drive Unit (Dual Motor),Remove and Install,1.38,1.38
+NO,Cybertruck,103,1830073072,Hose - Supply - Rear Drive Unit (Dual Motor),Remove and Replace,1.38,1.38
+NO,Cybertruck,103,1830073081,Hose - Return - Rear Drive Unit (Dual Motor),Remove and Install,0.72,0.72
+NO,Cybertruck,103,1830073082,Hose - Return - Rear Drive Unit (Dual Motor),Remove and Replace,0.72,0.72
+NO,Cybertruck,103,1830073091,Hose - Manifold To Radiator,Remove and Install,0.48,0.48
+NO,Cybertruck,103,1830073092,Hose - Manifold To Radiator,Remove and Replace,0.48,0.48
+NO,Cybertruck,103,1830073131,Hose - Return - Rear Drive Unit (Tri Motor),Remove and Install,2.94,2.94
+NO,Cybertruck,103,1830073132,Hose - Return - Rear Drive Unit (Tri Motor),Remove and Replace,2.94,2.94
+NO,Cybertruck,103,1830073141,Hose - Supply - Rear Drive Unit (Tri Motor),Remove and Install,2.94,2.94
+NO,Cybertruck,103,1830073142,Hose - Supply - Rear Drive Unit (Tri Motor),Remove and Replace,2.94,2.94
+YES,Cybertruck,103,18300900,Thermal System Test,Test/Adjust,0.1,0.1
+YES,Cybertruck,103,18301000,Clean Radiator (Heat Pump),Maintenance,1.38,1.38
+NO,Cybertruck,103,18302600501,Hose - Coolant Bundle - HV Battery (Long Range),Remove and Install,2.04,2.04
+NO,Cybertruck,103,18302600502,Hose - Coolant Bundle - HV Battery (Long Range),Remove and Replace,2.04,2.04
+NO,Cybertruck,103,18302600601,Supply Hose - Rear Drive Unit (Long Range),Remove and Install,0.66,0.66
+NO,Cybertruck,103,18302600602,Supply Hose - Rear Drive Unit (Long Range),Remove and Replace,0.66,0.66
+NO,Cybertruck,103,1840010091,"Coil, EXV4.5/VCV  - Supermanifold",Remove and Install,0.3,0.3
+NO,Cybertruck,103,1840010092,"Coil, EXV4.5/VCV  - Supermanifold",Remove and Replace,0.3,0.3
+NO,Cybertruck,103,1840114011,Octovalve - Supermanifold,Remove and Install,1.74,1.74
+NO,Cybertruck,103,1840114012,Octovalve - Supermanifold,Remove and Replace,0.71,0.71
+NO,Cybertruck,103,1840114071,Supermanifold,Remove and Install,1.32,1.32
+NO,Cybertruck,103,1840114072,Supermanifold,Remove and Replace,1.32,1.32
+NO,Cybertruck,103,1840114081,Harness - Center - Supermanifold W/ Standalone Controller,Remove and Install,1.86,1.86
+NO,Cybertruck,103,1840114082,Harness - Center - Supermanifold W/ Standalone Controller,Remove and Replace,1.86,1.86
+NO,Cybertruck,103,1840114091,Bottle - Coolant - Supermanifold,Remove and Install,0.96,0.96
+NO,Cybertruck,103,1840114092,Bottle - Coolant - Supermanifold,Remove and Replace,0.96,0.96
+NO,Cybertruck,103,1840114101,Chiller - Supermanifold,Remove and Install,0.54,0.54
+NO,Cybertruck,103,1840114102,Chiller - Supermanifold,Remove and Replace,0.54,0.54
+NO,Cybertruck,103,1840114111,Core - Expansion Valve - Supermanifold,Remove and Install,0.36,0.36
+NO,Cybertruck,103,1840114112,Core - Expansion Valve - Supermanifold,Remove and Replace,0.36,0.36
+NO,Cybertruck,103,1840114121,Check Valve - Supermanifold,Remove and Install,0.48,0.48
+NO,Cybertruck,103,1840114122,Check Valve - Supermanifold,Remove and Replace,0.48,0.48
+NO,Cybertruck,103,1840114131,Pump - Coolant - Supermanifold,Remove and Install,0.96,0.96
+NO,Cybertruck,103,1840114132,Pump - Coolant - Supermanifold,Remove and Replace,0.96,0.96
+NO,Cybertruck,103,1840114151,"Check Valve, 16MM - Supermanifold",Remove and Install,0.48,0.48
+NO,Cybertruck,103,1840114152,"Check Valve, 16MM - Supermanifold",Remove and Replace,0.48,0.48
+YES,Cybertruck,103,19010100825,Remove Vehicle Label (No Anti-Tamper Residue),Removal,0.06,0.06
+YES,Cybertruck,103,19010100902,Vehicle Emission Control Label,Remove and Replace,0.06,0.06
+YES,Cybertruck,103,19010100925,Remove Vehicle Label and Anti-Tamper Residue,Removal,0.12,0.12
+YES,Cybertruck,103,19010101002,Battery Chemistry Label,Remove and Replace,0.06,0.06
+YES,Cybertruck,103,19010101102,Monroney Label,Remove and Replace,0.06,0.06
+YES,Cybertruck,103,19010202,Labels - Any (Remove & Replace),Remove and Replace,0.29,0.29
+NO,Cybertruck,103,19010303,Labels - Battery Enclosure - Any,Module Reset/Reflashed,0.24,0.24
+NO,Cybertruck,103,2001038011,Airbag - Driver,Remove and Install,0.12,0.12
+NO,Cybertruck,103,2001038012,Airbag - Driver,Remove and Replace,0.12,0.12
+NO,Cybertruck,103,2001038031,Airbag - Knee - Driver,Remove and Install,0.48,0.48
+NO,Cybertruck,103,2001038032,Airbag - Knee - Driver,Remove and Replace,0.48,0.48
+NO,Cybertruck,103,2005001011,Retractor - Seat Belt - Driver,Remove and Install,0.96,0.96
+NO,Cybertruck,103,2005001012,Retractor - Seat Belt - Driver,Remove and Replace,0.96,0.96
+NO,Cybertruck,103,2005001031,"Buckle, ZF, Sumitomo - Seat Belt - Driver",Remove and Install,0.12,0.12
+NO,Cybertruck,103,2005001032,"Buckle, ZF, Sumitomo - Seat Belt - Driver",Remove and Replace,0.12,0.12
+NO,Cybertruck,103,2005004011,Retractor - Seat Belt - Outboard - 2nd Row,Remove and Install,0.78,0.78
+NO,Cybertruck,103,2005004012,Retractor - Seat Belt - Outboard - 2nd Row,Remove and Replace,0.78,0.78
+NO,Cybertruck,103,2005004021,Retractor - Seat Belt - Center - 2nd Row,Remove and Install,0.78,0.78
+NO,Cybertruck,103,2005004022,Retractor - Seat Belt - Center - 2nd Row,Remove and Replace,0.78,0.78
+NO,Cybertruck,103,2005004041,Buckle - Seat Belt - Center/RH - 2nd Row,Remove and Install,0.18,0.18
+NO,Cybertruck,103,2005004042,Buckle - Seat Belt - Center/RH - 2nd Row,Remove and Replace,0.18,0.18
+NO,Cybertruck,103,20051000401,Retractor Pair - Seat Belt - Outboard - 2nd Row,Remove and Install,1.26,1.26
+NO,Cybertruck,103,20051000402,Retractor Pair - Seat Belt - Outboard - 2nd Row,Remove and Replace,1.26,1.26
+NO,Cybertruck,103,2010086011,Pretensioner - Lap - Driver,Remove and Install,0.12,0.12
+NO,Cybertruck,103,2010086012,Pretensioner - Lap - Driver,Remove and Replace,0.12,0.12
+NO,Cybertruck,103,2020075051,Impact Sensor - B-Pillar - LH,Remove and Install,0.24,0.24
+NO,Cybertruck,103,2020075052,Impact Sensor - B-Pillar - LH,Remove and Replace,0.24,0.24
+NO,Cybertruck,103,2020107011,Position Sensor - Seat Track - Driver,Remove and Install,0.06,0.06
+NO,Cybertruck,103,2020107012,Position Sensor - Seat Track - Driver,Remove and Replace,0.06,0.06
+YES,Cybertruck,103,21051000,Update Display Avatar,Test/Adjust,0.12,0.12
+NO,Cybertruck,103,2107123011,Touchscreen - Rear Display,Remove and Install,0.3,0.3
+NO,Cybertruck,103,2107123012,Touchscreen - Rear Display,Remove and Replace,0.3,0.3
+NO,Cybertruck,103,2107123021,Touchscreen - Center Display Assembly,Remove and Install,0.12,0.12
+NO,Cybertruck,103,2107123022,Touchscreen - Center Display Assembly,Remove and Replace,0.71,0.71
+NO,Cybertruck,103,2110022011,Car Computer - Drip Guard,Remove and Install,0.54,0.54
+NO,Cybertruck,103,2110022012,Car Computer - Drip Guard,Remove and Replace,0.54,0.54
+NO,Cybertruck,103,2110022021,Car Computer,Remove and Install,0.84,0.84
+NO,Cybertruck,103,2110022022,Car Computer,Remove and Replace,0.96,0.96
+NO,Cybertruck,103,21151007,Car Computer (Dispose),Modify,0.3,0.3
+NO,Cybertruck,103,21152002,SIM Card - Car Computer (Remove & Replace),Remove and Replace,0.29,0.29
+NO,Cybertruck,103,21152402,SD Card - Car Computer (Remove & Replace),Remove and Replace,0.36,0.36
+NO,Cybertruck,103,21153302,Replace Car Computer (HW4) (LHD),Remove and Replace,1.02,1.02
+NO,Cybertruck,103,2121012011,Tweeter - LH,Remove and Install,0.24,0.24
+NO,Cybertruck,103,2121012012,Tweeter - LH,Remove and Replace,0.24,0.24
+NO,Cybertruck,103,2121012031,Speaker (Full Range) - LH,Remove and Install,0.24,0.24
+NO,Cybertruck,103,2121012032,Speaker (Full Range) - LH,Remove and Replace,0.24,0.24
+NO,Cybertruck,103,2121012041,Speaker - Super Horn,Remove and Install,0.12,0.12
+NO,Cybertruck,103,2121012042,Speaker - Super Horn,Remove and Replace,0.12,0.12
+NO,Cybertruck,103,2121012071,Horn - Low Tone - LH,Remove and Install,0.12,0.12
+NO,Cybertruck,103,2121012072,Horn - Low Tone - LH,Remove and Replace,0.12,0.12
+NO,Cybertruck,103,2121012081,Subwoofer - C-Pillar - LH,Remove and Install,0.24,0.24
+NO,Cybertruck,103,2121012082,Subwoofer - C-Pillar - LH,Remove and Replace,0.24,0.24
+NO,Cybertruck,103,2121012091,Subwoofer - C-Pillar - RH,Remove and Install,0.24,0.24
+NO,Cybertruck,103,2121012092,Subwoofer - C-Pillar - RH,Remove and Replace,0.24,0.24
+NO,Cybertruck,103,2121012101,Telephony Microphone  - LH,Remove and Install,0.24,0.24
+NO,Cybertruck,103,2121012102,Telephony Microphone  - LH,Remove and Replace,0.24,0.24
+NO,Cybertruck,103,2121012121,Tweeter - RH,Remove and Install,0.2,0.2
+NO,Cybertruck,103,2121012122,Tweeter - RH,Remove and Replace,0.24,0.24
+NO,Cybertruck,103,2135011011,Antenna - FM Amplifier,Remove and Install,0.71,0.71
+NO,Cybertruck,103,2135011012,Antenna - FM Amplifier,Remove and Replace,0.71,0.71
+NO,Cybertruck,103,2135011021,Telematics Control Unit (TCU),Remove and Install,0.12,0.12
+NO,Cybertruck,103,2135011022,Telematics Control Unit (TCU),Remove and Replace,0.18,0.18
+NO,Cybertruck,103,2135011031,FM/HD Tuner,Remove and Install,0.12,0.12
+NO,Cybertruck,103,2135011032,FM/HD Tuner,Remove and Replace,0.12,0.12
+NO,Cybertruck,103,2135011041,GPS Antenna,Remove and Install,0.12,0.12
+NO,Cybertruck,103,2135011042,GPS Antenna,Remove and Replace,0.12,0.12
+NO,Cybertruck,103,3001000011,Megabeam,Remove and Install,0.48,0.48
+NO,Cybertruck,103,3001000012,Megabeam,Remove and Replace,0.48,0.48
+NO,Cybertruck,103,31001500,EPAS Alignment Check,Test/Adjust,0.12,0.12
+YES,Cybertruck,103,31002300,Four Wheel Alignment Check and Adjust,Test/Adjust,1.2,1.2
+NO,Cybertruck,103,3103097011,Hub - Rear- LH,Remove and Install,0.42,0.42
+NO,Cybertruck,103,3103097012,Hub - Rear- LH,Remove and Replace,0.42,0.42
+NO,Cybertruck,103,3103097021,Knuckle - Rear - LH,Remove and Install,0.48,0.48
+NO,Cybertruck,103,3103097022,Knuckle - Rear - LH,Remove and Replace,0.48,0.48
+NO,Cybertruck,103,3103097031,Knuckle - Rear - RH,Remove and Install,0.48,0.48
+NO,Cybertruck,103,3103097032,Knuckle - Rear - RH,Remove and Replace,0.48,0.48
+NO,Cybertruck,103,3103097061,Hub - Rear- RH,Remove and Install,0.42,0.42
+NO,Cybertruck,103,3103097062,Hub - Rear- RH,Remove and Replace,0.42,0.42
+NO,Cybertruck,103,3103098031,Stabilizer Bar - Rear,Remove and Install,0.72,0.72
+NO,Cybertruck,103,3103098032,Stabilizer Bar - Rear,Remove and Replace,0.72,0.72
+NO,Cybertruck,103,3103101011,Control Arm - Upper - Rear - LH,Remove and Install,1.14,1.14
+NO,Cybertruck,103,3103101012,Control Arm - Upper - Rear - LH,Remove and Replace,1.14,1.14
+NO,Cybertruck,103,3103101021,Control Arm - Upper - Rear - RH,Remove and Install,1.14,1.14
+NO,Cybertruck,103,3103101022,Control Arm - Upper - Rear - RH,Remove and Replace,1.14,1.14
+NO,Cybertruck,103,3103101031,Control Arm - Lower - Rear - LH,Remove and Install,1.02,1.02
+NO,Cybertruck,103,3103101032,Control Arm - Lower - Rear - LH,Remove and Replace,1.02,1.02
+NO,Cybertruck,103,3103101041,Control Arm - Lower - Rear - RH,Remove and Install,1.02,1.02
+NO,Cybertruck,103,3103101042,Control Arm - Lower - Rear - RH,Remove and Replace,1.02,1.02
+NO,Cybertruck,103,3103101051,Aeroshield - Control Arm - Lower  - Rear - LH,Remove and Install,0.06,0.06
+NO,Cybertruck,103,3103101052,Aeroshield - Control Arm - Lower  - Rear - LH,Remove and Replace,0.06,0.06
+NO,Cybertruck,103,3103101061,Aeroshield - Control Arm - Lower  - Rear - RH,Remove and Install,0.06,0.06
+NO,Cybertruck,103,3103101062,Aeroshield - Control Arm - Lower  - Rear - RH,Remove and Replace,0.06,0.06
+YES,Cybertruck,103,31039000,Suspension - Rear (Check Torque),Test/Adjust,0.36,0.36
+NO,Cybertruck,103,3110008011,Compressor - Air Suspension,Remove and Install,0.84,0.84
+NO,Cybertruck,103,3110008012,Compressor - Air Suspension,Remove and Replace,0.84,0.84
+NO,Cybertruck,103,3110008041,Reservoir - Air Suspension,Remove and Install,0.66,0.66
+NO,Cybertruck,103,3110008042,Reservoir - Air Suspension,Remove and Replace,0.66,0.66
+NO,Cybertruck,103,3110102201,Valve Block - Air Suspension,Remove and Install,0.66,0.66
+NO,Cybertruck,103,3110102202,Valve Block - Air Suspension,Remove and Replace,0.66,0.66
+NO,Cybertruck,103,3110102301, SCUBA Valve Block Assembly,Remove and Install,0.72,0.72
+NO,Cybertruck,103,3110102302, SCUBA Valve Block Assembly,Remove and Replace,0.72,0.72
+NO,Cybertruck,103,3310007061,Wheel Speed Sensor - Rear - RH,Remove and Install,0.18,0.18
+NO,Cybertruck,103,3310007062,Wheel Speed Sensor - Rear - RH,Remove and Replace,0.18,0.18
+NO,Cybertruck,103,3310007071,Wheel Speed Sensor - Rear - LH,Remove and Install,0.18,0.18
+NO,Cybertruck,103,3310007072,Wheel Speed Sensor - Rear - LH,Remove and Replace,0.18,0.18
+NO,Cybertruck,103,3310007102,Chassis Harness - Wheel Speed Sensor - Rear - LH,Remove and Replace,0.18,0.18
+NO,Cybertruck,103,3310007112,Chassis Harness - Wheel Speed Sensor - Rear - RH,Remove and Replace,0.18,0.18
+NO,Cybertruck,103,3320033031,Remote Reservoir Tube,Remove and Install,0.18,0.18
+NO,Cybertruck,103,3320033032,Remote Reservoir Tube,Remove and Replace,0.18,0.18
+NO,Cybertruck,103,3325020021,Accelerator Pedal,Remove and Install,0.12,0.12
+NO,Cybertruck,103,3325020022,Accelerator Pedal,Remove and Replace,0.12,0.12
+YES,Cybertruck,103,34010105,Tire Rotation,Maintenance,0.6,0.6
+NO,Cybertruck,103,34010201301,Steel Wheel (Long Range),Remove and Install,0.78,0.78
+NO,Cybertruck,103,34010201302,Steel Wheel (Long Range),Remove and Replace,0.78,0.78
+YES,Cybertruck,103,34011302,Lug Nuts - Vehicle Set (Remove & Replace),Remove and Replace,0.48,0.48
+NO,Cybertruck,103,3401131031,Wheels - Wheel,Remove and Install,0.48,0.48
+NO,Cybertruck,103,3401131032,Wheels - Wheel,Remove and Replace,0.48,0.48
+YES,Cybertruck,103,34012902,Wheels - Set (Remove and Replace),Remove and Replace,1.32,1.32
+YES,Cybertruck,103,34014005,Seasonal Wheel and Tire Set Swap (Already Built),Seasonal Swap,0.5,0.5
+YES,Cybertruck,103,34014101,Tire Set - Vehicle - Swap  (Not Already Built),Remove and Install,1.56,1.56
+YES,Cybertruck,103,34015032,Cap - Wheel - Set (Remove & Replace),Remove and Replace,0.05,0.05
+YES,Cybertruck,103,34015202,Wheel - Rear - LH (Remove & Replace),Remove and Replace,0.36,0.36
+YES,Cybertruck,103,34015221,Wheel Cover - Rear - LH,Remove and Install,0.05,0.05
+YES,Cybertruck,103,34015222,Wheel Cover - Rear - LH,Remove and Replace,0.06,0.06
+YES,Cybertruck,103,34015302,Wheel - Rear - RH (Remove & Replace),Remove and Replace,0.36,0.36
+YES,Cybertruck,103,34015321,Wheel Cover - Rear - RH,Remove and Install,0.05,0.05
+YES,Cybertruck,103,34015322,Wheel Cover - Rear - RH,Remove and Replace,0.06,0.06
+YES,Cybertruck,103,34020010,Mobile Tire Service Performed,Modify,0.0,0.0
+YES,Cybertruck,103,34020030,Mobile Tire Service Performed – Logistics,Tire Repair,0.0,0.0
+NO,Cybertruck,103,34020100901,Rubber Valve Stem (Long Range),Remove and Install,0.42,0.42
+NO,Cybertruck,103,34020100902,Rubber Valve Stem (Long Range),Remove and Replace,0.42,0.42
+NO,Cybertruck,103,34020101002,Tires - Vehicle - Set,Remove and Replace,1.92,1.92
+YES,Cybertruck,103,34020305,Rebalance 4 Tires,Rebalance,0.9,0.9
+YES,Cybertruck,103,34020900,Check and Adjust Tire Pressure,Test/Adjust,0.1,0.1
+YES,Cybertruck,103,34021202,Tire - Rear - LH (Remove & Replace),Tire Purchase,0.35,0.35
+YES,Cybertruck,103,34021302,Tire - Rear - RH (Remove & Replace),Tire Purchase,0.35,0.35
+YES,Cybertruck,103,34021605,Tires - Rear - Set,Tire Purchase,0.7,0.7
+YES,Cybertruck,103,34021805,Tires - Vehicle - Set,Tire Purchase,1.15,1.15
+YES,Cybertruck,103,34022015,Tire - Supplemental (Rebalance),Maintenance,0.18,0.18
+YES,Cybertruck,103,34022205,Tire - Rear - LH (Road Force) (Balance),Tire Repair,0.2,0.2
+YES,Cybertruck,103,34022225,Tire - Rear - LH (Balance),Rebalance,0.3,0.3
+YES,Cybertruck,103,34022305,Tire - Rear - RH (Road Force) (Balance),Tire Repair,0.2,0.2
+YES,Cybertruck,103,34022325,Tire - Rear - RH (Balance),Rebalance,0.3,0.3
+YES,Cybertruck,103,34023208,Tire - Rear - LH (Repair),Tire Repair,0.66,0.66
+YES,Cybertruck,103,34023308,Tire - Rear - RH (Repair),Tire Repair,0.66,0.66
+NO,Cybertruck,103,3404120031,Sensor - TPMS - Rear - LH,Remove and Install,0.3,0.3
+NO,Cybertruck,103,3404120032,Sensor - TPMS - Rear - LH,Remove and Replace,0.3,0.3
+NO,Cybertruck,103,3404120041,Sensor - TPMS - Rear - RH,Remove and Install,0.3,0.3
+NO,Cybertruck,103,3404120042,Sensor - TMPS - Rear - RH,Remove and Replace,0.3,0.3
+NO,Cybertruck,103,39019175,Replace Motor Oil (DM),Remove and Replace,4.18,4.18
+NO,Cybertruck,103,4001093011,Axle Seal - Output - Rear Drive Unit,Remove and Install,0.54,0.54
+NO,Cybertruck,103,4001093012,Axle Seal - Output - Rear Drive Unit,Remove and Replace,0.54,0.54
+NO,Cybertruck,103,4001093021,Electric Oil Pump - Rear Drive Unit,Remove and Install,0.66,0.66
+NO,Cybertruck,103,4001093022,Electric Oil Pump - Rear Drive Unit,Remove and Replace,0.66,0.66
+NO,Cybertruck,103,4001093031,Ground Strap - Rear Drive Unit (Dual Motor),Remove and Install,1.2,1.2
+NO,Cybertruck,103,4001093032,Ground Strap - Rear Drive Unit (Dual Motor),Remove and Replace,1.2,1.2
+NO,Cybertruck,103,4001093071,Drive Unit - Rear (Dual Motor),Remove and Install,3.24,3.24
+NO,Cybertruck,103,4001093072,Drive Unit - Rear (Dual Motor),Remove and Replace,3.36,3.36
+NO,Cybertruck,103,4001093091,Heat Exchanger - Rear Drive Unit,Remove and Install,0.66,0.66
+NO,Cybertruck,103,4001093092,Heat Exchanger - Rear Drive Unit,Remove and Replace,0.66,0.66
+NO,Cybertruck,103,4001093121,Ground Strap - Rear Drive Unit (Tri Motor),Remove and Install,0.66,0.66
+NO,Cybertruck,103,4001093122,Ground Strap - Rear Drive Unit (Tri Motor),Remove and Replace,0.66,0.66
+NO,Cybertruck,103,4001093132,Drive Unit - Rear (Tri Motor),Remove and Replace,3.78,3.78
+NO,Cybertruck,103,4001093221,Oil Pump - Rear Drive Unit - LH (Tri Motor),Remove and Install,0.6,0.6
+NO,Cybertruck,103,4001093222,Oil Pump - Rear Drive Unit - LH (Tri Motor),Remove and Replace,0.6,0.6
+NO,Cybertruck,103,4001093231,Oil Pump - Rear Drive Unit - RH (Tri Motor),Remove and Install,0.6,0.6
+NO,Cybertruck,103,4001093232,Oil Pump - Rear Drive Unit - RH (Tri Motor),Remove and Replace,0.6,0.6
+NO,Cybertruck,103,40011000201,Drive Unit - Rear (Long Range),Remove and Install,3.72,3.72
+NO,Cybertruck,103,40011000202,Drive Unit - Rear (Long Range),Remove and Replace,3.72,3.72
+NO,Cybertruck,103,40011000301,Mount - RH - Rear Drive Unit (Long Range),Remove and Install,1.44,1.44
+NO,Cybertruck,103,40011000302,Mount - RH - Rear Drive Unit (Long Range),Remove and Replace,1.44,1.44
+NO,Cybertruck,103,40011000401,Ground Strap - Rear Drive Unit (Long Range),Remove and Install,0.3,0.3
+NO,Cybertruck,103,40011000402,Ground Strap - Rear Drive Unit (Long Range),Remove and Replace,0.3,0.3
+NO,Cybertruck,103,4001241200001,CT TM Rear Drive Unit - Rear Drive Unit Assembly - Rear Drive Unit - Oil Filter - LH (RI),Remove and Install,2.64,2.64
+NO,Cybertruck,103,4001241200002,CT TM Rear Drive Unit - Rear Drive Unit Assembly - Rear Drive Unit - Oil Filter - LH (RI),Remove and Replace,2.64,2.64
+NO,Cybertruck,103,4030010021,Halfshaft - Rear Drive Unit - RH,Remove and Install,0.48,0.48
+NO,Cybertruck,103,4030010022,Halfshaft - Rear Drive Unit - RH,Remove and Replace,0.48,0.48
+NO,Cybertruck,103,40300105,Gearbox Fluid - Rear Drive Unit (Tri Motor) (Top Off),Maintenance,0.66,0.66
+NO,Cybertruck,103,40300135,Gearbox Fluid - Rear Drive Unit (Dual Motor) (Top Off),Maintenance,0.48,0.48
+NO,Cybertruck,103,4030096011,Halfshaft - Rear Drive Unit - LH,Remove and Install,0.48,0.48
+NO,Cybertruck,103,4030096012,Halfshaft - Rear Drive Unit - LH,Remove and Replace,0.48,0.48
+NO,Cybertruck,103,40303301,Halfshafts - Rear Drive Unit - LH and RH,Remove and Install,0.96,0.96
+NO,Cybertruck,103,40303302,Halfshafts - Rear Drive Unit - LH and RH,Remove and Replace,0.96,0.96
+NO,Cybertruck,103,40305211,Heat Exchanger - Rear Drive Unit - LH (Tri Motor),Remove and Install,1.38,1.38
+NO,Cybertruck,103,40305212,Heat Exchanger - Rear Drive Unit - LH (Tri Motor),Remove and Replace,1.38,1.38
+NO,Cybertruck,103,40305221,Heat Exchanger - Rear Drive Unit - RH (Tri Motor),Remove and Install,1.38,1.38
+NO,Cybertruck,103,40305222,Heat Exchanger - Rear Drive Unit - RH (Tri Motor),Remove and Replace,1.38,1.38
+NO,Cybertruck,103,44000134,HV Isolation Diagnostics,Diagnosis Only,1.0,1.0
+YES,Cybertruck,103,44000204,HVIL Diagnostics,Diagnosis Only,1.0,1.0
+NO,Cybertruck,103,44010103001,Chargeport Assembly - Busbar (Long Range),Remove and Install,1.32,1.32
+NO,Cybertruck,103,44010103002,Chargeport Assembly - Busbar (Long Range),Remove and Replace,1.32,1.32
+NO,Cybertruck,103,44010103101,Chargeport and Busbar Assembly (Long Range),Remove and Install,1.32,1.32
+NO,Cybertruck,103,44010103102,Chargeport and Busbar Assembly (Long Range),Remove and Replace,1.32,1.32
+NO,Cybertruck,103,4401024021,ECU - Charge Port Controller (Gen 4),Remove and Install,0.71,0.71
+NO,Cybertruck,103,4401024022,ECU - Charge Port Controller (Gen 4),Remove and Replace,0.18,0.18
+NO,Cybertruck,103,4401024031,Door - Charge Port,Remove and Install,0.3,0.3
+NO,Cybertruck,103,4401024032,Door - Charge Port,Remove and Replace,0.3,0.3
+NO,Cybertruck,103,4401024041,Busbar - Charge Port,Remove and Install,1.26,1.26
+NO,Cybertruck,103,4401024042,Busbar - Charge Port,Remove and Replace,1.26,1.26
+NO,Cybertruck,103,44012100,Charge Port Voltage Check,Test/Adjust,0.18,0.18
+YES,Cybertruck,103,44013205,Charge Port - Manual Release of Cable,Maintenance,0.12,0.12
+NO,Cybertruck,103,44500300301,HV Connector - Busbar - Charge Port (Long Range),Remove and Install,1.08,1.08
+NO,Cybertruck,103,44500300302,HV Connector - Busbar - Charge Port (Long Range),Remove and Replace,1.08,1.08
+NO,Cybertruck,103,4450074021,HV Harness - Rear Drive Unit (Dual Motor),Remove and Install,1.02,1.02
+NO,Cybertruck,103,4450074022,HV Harness - Rear Drive Unit (Dual Motor),Remove and Replace,1.02,1.02
+NO,Cybertruck,103,4450074041,HV Harness - Bed Outlet,Remove and Install,0.96,0.96
+NO,Cybertruck,103,4450074042,HV Harness - Bed Outlet,Remove and Replace,0.96,0.96
+NO,Cybertruck,103,4450074052,HV Harness - AC Compressor (Remove and Replace),Remove and Replace,5.64,5.64
+NO,Cybertruck,103,4450074071,Bed Outlet Assembly,Remove and Install,0.12,0.12
+NO,Cybertruck,103,4450074072,Bed Outlet Assembly,Remove and Replace,0.12,0.12
+NO,Cybertruck,103,4450074081,HV Harness - Rear Drive Unit - LH (Tri Motor),Remove and Install,2.82,2.82
+NO,Cybertruck,103,4450074082,HV Harness - Rear Drive Unit - LH (Tri Motor),Remove and Replace,2.82,2.82
+NO,Cybertruck,103,4450074091,HV Harness - Rear Drive Unit - RH (Tri Motor),Remove and Install,2.82,2.82
+NO,Cybertruck,103,4450074092,HV Harness - Rear Drive Unit - RH (Tri Motor),Remove and Replace,2.82,2.82
+YES,Cybertruck,103,50010003,Firmware Update - Mobile Connector,Module Reset/Reflashed,0.1,0.1
+YES,Cybertruck,103,50010102,Mobile Connector - UMC (Remove & Replace),Remove and Replace,0.0,0.0
+YES,Cybertruck,103,50022002,Handle and Cable Assembly - 80A Wall Connector (Remove & Replace),Remove and Replace,0.58,0.58
+YES,Cybertruck,103,50024002,Handle and Cable Assembly - 40A Wall Connector (Remove & Replace),Remove and Replace,0.58,0.58
+NO,Cybertruck,103,61010001,Off Road Lightbar,Remove and Install,1.44,1.44
+NO,Cybertruck,103,61010002,Off Road Lightbar,Remove and Replace,1.2,1.2
+NO,Cybertruck,103,61010006,Off Road Lightbar,Retrofit,1.08,1.08
+NO,Cybertruck,103,61010012,Crossbars (Remove),Removal,0.36,0.36
+NO,Cybertruck,103,6101020121,Cybertent,Remove and Install,0.12,0.12
+YES,Cybertruck,103,61013108,Equip Tire Repair Kit,General diagnosis conclusion,0.0,0.0
+YES,Cybertruck,103,7000005,Mobile Tire Dispatch Fee,Fee,0.01,0.01
+YES,Cybertruck,103,70000105,Third Party Transport,Sublet,1.2,1.2
+YES,Cybertruck,103,7000030,Parts Not Available - Add to future service visit. ,General diagnosis conclusion,0.0,0.0
+YES,Cybertruck,103,70000305,Miscellaneous Labor,Fee,0.0,0.0
+YES,Cybertruck,103,70002005,Non-Tesla (Rental),Sublet,0.0,0.0
+YES,Cybertruck,103,70003805,Tesla Airport Service,Fee,1.2,1.2
+YES,Cybertruck,103,7000405,Vehicle Storage,Fee,0.0,0.0
+YES,Cybertruck,103,70004205,No Labor Performed - Unable to Perform via Mobile Service,General diagnosis conclusion,0.0,0.0
+YES,Cybertruck,103,70004505,No Labor Performed - Part Replaced,Repair,0.0,0.0
+YES,Cybertruck,103,70005700,Scrap Part Sale Over the Counter,Test/Adjust,0.0,0.0
+YES,Cybertruck,103,70005805,Payment Collection Required,Fee,1.2,1.2
+YES,Cybertruck,103,70008009,Additional Work Required - Corrosion Present,Maintenance,0.5,0.5
+YES,Cybertruck,103,70020305,Upholstery - Sublet,Sublet,0.0,0.0
+YES,Cybertruck,103,70020805,Glass Repair / Replacement  - Sublet,Sublet,0.0,0.0
+YES,Cybertruck,103,70060005,Thread Repair,Maintenance,0.0,0.0
+YES,Cybertruck,103,7007300,Other – Sublet,Sublet,0.0,0.0
+YES,Cybertruck,103,7100001,NO LABOR PERFORMED,Repair,0.0,0.0
+YES,Cybertruck,103,72000005,Loaner Fee,Fee,0.0,0.0
+NO,Cybertruck,103,90001006,Level 1 Mobile Service Vehicle Conversion (Retrofit),Retrofit,4.8,4.8
+YES,Cybertruck,103,91000004,On Site – Education,Customer Education,0.0,0.0
+YES,Cybertruck,103,91020105,Car Wash (Hand Wash),Detail Work,0.25,0.25
+YES,Cybertruck,103,91020115,Car Wash (Mechanical Wash),Maintenance,0.24,0.24
+YES,Cybertruck,103,91022005,Charge Vehicle,Restore,0.0,0.0
+YES,Cybertruck,103,91022407,Vehicle Configuration Update,Program,0.05,0.05
+YES,Cybertruck,103,91029006,Mobile Service Hub Repair,Retrofit,0.0,0.0
