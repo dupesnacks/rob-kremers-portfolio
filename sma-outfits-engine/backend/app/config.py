@@ -414,7 +414,7 @@ AFFINITIES: Dict[str, List[str]] = {
     # Apr 29 2026: Waring's Problem flashing across major market.
     # Price 19.37 for SVIX entry encoded first two Waring integers; UVIX day high = 548 (last integer).
     "Waring's Problem": ["MSTX", "SVIX", "UVIX", "VIX", "UVXY"],
-    "TSLA (420)": ["TSLA", "TSLR", "TSLQ", "TSLT", "TSLL", "NKLA", "DXY"],
+    "TSLA (420)": ["TSLA", "TSLR", "TSLQ", "TSLT", "TSLL", "NKLA", "BYND", "DXY"],
     # VIX added Apr 9 2026 — Raul confirmed VIX has a permanent system outfit.
     # RIVN confirmed Apr 29 2026 — 2H MA855 long@15.14, penny breach stop
     "SVIX (211)": ["VIX", "SVIX", "UVXY", "SVXY", "UVIX", "BTC", "RIVN"],

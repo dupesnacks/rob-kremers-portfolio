@@ -1,0 +1,63 @@
+# Daily Log — ClawdyMcBotFace Session Notes
+
+ClawdyMcBotFace: append to this file at the end of every session or whenever told "remember this."
+Format: `- [TAG] note`. Tags: TRADE, CONFIG, TOOL, ERROR, FIX, SIGNAL, NOTE.
+
+---
+
+## 2026-05-08
+
+- [CONFIG] Added REPEATER_9 affinity to config.py (sma-outfits-engine): `"REPEATER_9": ["BYND", "SVIX", "TSLZ"]` — was missing, causing 1× weight instead of 2× on REPEATER_9 hits for these tickers
+- [TOOL] volume_monitor.py: fixed _load_env() to search ~/clawd/sma-outfits-engine/.env — was failing to find env when script run from ~/.openclaw/workspace/, causing empty SCHWAB_APP_KEY → 401 on token refresh
+- [TOOL] volume_monitor.py: now writes volume_data.json after every run (idempotent upsert, 60-day history per ticker, 200-entry alert log). NEVER manually edit this file.
+- [SIGNAL] SABS: 7.3× volume spike (629% above baseline), TREND +23% 7-day. Hantavirus (650) MA650=$3.410 magnetized. Raul holding ~10K shares.
+- [SIGNAL] BYND: 0.87× normal volume on May 8. REPEATER_9 6,612 hits, L/S 4.20×, weight 16,694.
+- [FIX] Schwab daily candle API settles ~6-7 PM ET. Run volume_monitor.py at 7 PM ET cron, not 4:30 PM.
+- [NOTE] volume_data.json must be manually copied (scp) to robkremers.com web root after each run until automated
+- [TOOL] volume_monitor.py: upgraded to real yfinance v2 with intraday pacing alerts + session % tracking
+- [CRON] ✅ **Hourly market hours job INSTALLED** via launchd
+  - **Path:** `/Users/rk/Library/LaunchAgents/com.raul.volumemonitor.plist`
+  - **Schedule:** Every hour 10 AM - 4 PM ET (top of hour), Mon-Fri
+  - **Command:** `cd /Users/rk/clawd/raul-trading-system && python3 volume_monitor.py`
+  - **Output:** `/tmp/volume_monitor.log`
+  - Confirmed loaded: `launchctl list | grep volumemonitor` ✓
+  - No env vars, no token, no backend needed
+- [TEST] Manual volume monitor run @ 06:39 AM PDT — yfinance data source working
+  - BYND: $0.8633, 3.85M vol intraday (0.04× baseline, expected pre-market light)
+  - SABS: $4.14, 105K vol, **TREND +137%** (7-day avg volume up strong)
+  - Confirms institutional accumulation pattern in SABS holding + Raul's position
+- [CONFIG] Fixed BYND affinity: Added BYND to TSLA (420) affinity list (was in REPEATER_9 but missing from TSLA)
+- [ERROR] Schwab token expired (401 Unauthorized on refresh). BYND/SABS data fetch failing. **Requires re-auth:**
+  - **Action:** Visit `http://localhost:8001/api/schwab/auth` in browser
+  - Complete Schwab OAuth login flow
+  - Token will be written to `~/.clawd/sma-outfits-engine/.schwab_token.json`
+  - Then re-trigger scan via API or wait for next hourly scan
+
+## 2026-05-07
+
+- [TRADE] SABS: Raul entered ~10K shares at $3.410. Hantavirus (650) 2H MA650=$3.410 [magnetized]. Position 6 = 8.0× weight. Penny breach stop at $3.400.
+- [TRADE] SAB: Raul speculative entry at $3.63. Hantavirus (650) 15M MA180=$3.63. Penny breach stop.
+- [CONFIG] Added Hantavirus (650) outfit to config.py: periods [18,36,65,180,360,650]. Affinities: SAB, SABS.
+- [TOOL] volume_dashboard.html created for robkremers.com. Reads volume_data.json. Chart.js bar charts, ticker cards with RVOL gauge, alert history table.
+
+## 2026-05-06
+
+- [SIGNAL] BYND: 106.7M volume (1.09× — normal). TSLA(420) 344 hits, REPEATER_9 active. #1 ranked ticker.
+- [CONFIG] BYND added to TSLA (420) affinity — confirmed by 344 hits + 12% price move that day.
+- [NOTE] AFFINITY_LOCK requires is_affinity(outfit, ticker)==True in config AND sma_period≥400. Check /api/alerts first — do not label a signal AFFINITY_LOCK based on hit count alone.
+
+## 2026-05-01
+
+- [TRADE] MSFL: full position long. 32M MA484=$17.28. 22² (484) outfit. Penny breach stop.
+- [TRADE] NVDX: secondary long. 30M MA225=$17.67. Nikkei (225) outfit. Penny breach stop.
+- [CONFIG] Added 22² (484) and Nikkei (225) outfits to config.
+
+## Persistent Notes (do not remove)
+
+- **Port is 8001** — ngrok points to 8001. Starting backend on 8000 = OAuth broken.
+- **Two repos**: `sma-outfits-engine` (running, Python 3.9) vs `raul-trading-system` (GitHub, Python 3.10). Never copy whole files between them.
+- **Python 3.9 rules for sma-outfits-engine**: no `dict | None`, no `list[str]`, no walrus operator.
+- **Token path**: `~/clawd/sma-outfits-engine/.schwab_token.json` — good for 7 days.
+- **ls_ratio ≠ price performance** — use /api/prices for actual % change, never ls_ratio.
+- **Schwab data lag**: daily candles settle ~7 PM ET. Don't run volume monitor before that.
+- **Never manually edit volume_data.json** — always generate via `python3 volume_monitor.py`.
