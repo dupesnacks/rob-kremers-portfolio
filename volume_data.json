@@ -2,19 +2,19 @@
   "tickers": {
     "BYND": {
       "latest": {
-        "date": "2026-05-08",
-        "close": 0.8331000208854675,
-        "volume": 77078593,
-        "baseline": 106102825,
-        "rvol": 0.73,
-        "trend_pct": -43.7,
+        "date": "2026-05-11",
+        "close": 0.8086000084877014,
+        "volume": 51123220,
+        "baseline": 109198905,
+        "rvol": 0.47,
+        "trend_pct": -27.9,
         "consecutive": 0,
         "alerts": [],
         "is_intraday": false,
         "session_pct": null,
         "paced_rvol": null,
         "paced_volume": null,
-        "prior_day_volume": 89479300,
+        "prior_day_volume": 77484200,
         "pct_of_prior": null
       },
       "history": [
@@ -41,27 +41,35 @@
           "baseline": 106102825,
           "rvol": 0.73,
           "alerts": []
+        },
+        {
+          "date": "2026-05-11",
+          "volume": 51123220,
+          "close": 0.8086000084877014,
+          "baseline": 109198905,
+          "rvol": 0.47,
+          "alerts": []
         }
       ]
     },
     "SABS": {
       "latest": {
-        "date": "2026-05-08",
-        "close": 4.110000133514404,
-        "volume": 5268769,
-        "baseline": 602155,
-        "rvol": 8.75,
-        "trend_pct": 137.1,
-        "consecutive": 1,
+        "date": "2026-05-11",
+        "close": 3.7200000286102295,
+        "volume": 2620408,
+        "baseline": 892980,
+        "rvol": 2.93,
+        "trend_pct": 330.9,
+        "consecutive": 2,
         "alerts": [
-          "\ud83d\udea8 SPIKE \u2014 8.7\u00d7 average (775% above baseline)",
-          "\ud83d\udcc8 TREND \u2014 7-day avg volume up 137% vs prior 7 days"
+          "\ud83d\udea8 SPIKE \u2014 2.9\u00d7 average (193% above baseline)",
+          "\ud83d\udcc8 TREND \u2014 7-day avg volume up 331% vs prior 7 days"
         ],
         "is_intraday": false,
         "session_pct": null,
         "paced_rvol": null,
         "paced_volume": null,
-        "prior_day_volume": 3280200,
+        "prior_day_volume": 6014100,
         "pct_of_prior": null
       },
       "history": [
@@ -88,13 +96,24 @@
         },
         {
           "date": "2026-05-08",
-          "volume": 5268769,
+          "volume": 6002619,
           "close": 4.110000133514404,
           "baseline": 602155,
-          "rvol": 8.75,
+          "rvol": 9.97,
           "alerts": [
-            "\ud83d\udea8 SPIKE \u2014 8.7\u00d7 average (775% above baseline)",
+            "\ud83d\udea8 SPIKE \u2014 10.0\u00d7 average (897% above baseline)",
             "\ud83d\udcc8 TREND \u2014 7-day avg volume up 137% vs prior 7 days"
+          ]
+        },
+        {
+          "date": "2026-05-11",
+          "volume": 2620408,
+          "close": 3.7200000286102295,
+          "baseline": 892980,
+          "rvol": 2.93,
+          "alerts": [
+            "\ud83d\udea8 SPIKE \u2014 2.9\u00d7 average (193% above baseline)",
+            "\ud83d\udcc8 TREND \u2014 7-day avg volume up 331% vs prior 7 days"
           ]
         }
       ]
@@ -102,13 +121,23 @@
   },
   "alert_log": [
     {
+      "date": "2026-05-11",
+      "ticker": "SABS",
+      "alerts": [
+        "\ud83d\udea8 SPIKE \u2014 2.9\u00d7 average (193% above baseline)",
+        "\ud83d\udcc8 TREND \u2014 7-day avg volume up 331% vs prior 7 days"
+      ],
+      "rvol": 2.93,
+      "close": 3.7200000286102295
+    },
+    {
       "date": "2026-05-08",
       "ticker": "SABS",
       "alerts": [
-        "\ud83d\udea8 SPIKE \u2014 8.7\u00d7 average (775% above baseline)",
+        "\ud83d\udea8 SPIKE \u2014 10.0\u00d7 average (897% above baseline)",
         "\ud83d\udcc8 TREND \u2014 7-day avg volume up 137% vs prior 7 days"
       ],
-      "rvol": 8.75,
+      "rvol": 9.97,
       "close": 4.110000133514404
     },
     {
@@ -131,5 +160,5 @@
       "close": 3.8
     }
   ],
-  "last_updated": "2026-05-08 13:30 ET"
+  "last_updated": "2026-05-11 13:30 ET"
 }
