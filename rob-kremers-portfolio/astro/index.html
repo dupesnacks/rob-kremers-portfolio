@@ -1360,6 +1360,94 @@ window.addEventListener('resize', () => {
     drawBacktestChart(btCanvas, state.historicalPrices, result);
   }
 });
+
+// === FRESH DATA INJECTION (May 19, 2026 @ 14:57 PDT) ===
+const astroFreshData = {
+  "timestamp": "2026-05-19T14:57:30Z",
+  "price": 0.1031,
+  "priceChange24h": -2.15,
+  "signal": "HOLD",
+  "confidence": 42,
+  "riskScore": 48,
+  "wave": -0.1847,
+  "momentum": -0.00051,
+  "volatility": 3.24,
+  "energy": 0.0017,
+  "attractor": 1.684,
+  "phaseAccel": 0,
+  "curvature": 0.742,
+  "memory": 0.712,
+  "stress": 0.0024,
+  "metonic": 0.8829,
+  "apsidal": -0.7510,
+  "solar": -0.9996,
+  "cea": 1.062,
+  "lpi": 0.484,
+  "regime": "NORMAL",
+  "daysSinceBase": 4269
+};
+
+document.addEventListener('DOMContentLoaded', () => {
+  // Update price display
+  const priceEl = document.getElementById('price');
+  if (priceEl) priceEl.textContent = '$' + astroFreshData.price.toFixed(4);
+  
+  // Update 24h change
+  const changeEl = document.getElementById('change-24h');
+  if (changeEl) {
+    const change = astroFreshData.priceChange24h;
+    changeEl.textContent = '24h: ' + (change > 0 ? '+' : '') + change.toFixed(2) + '%';
+    changeEl.className = 'price-change ' + (change > 0 ? 'up' : 'down');
+  }
+  
+  // Update signal
+  const sigBox = document.getElementById('signal-box');
+  const sigLabel = document.getElementById('signal-label');
+  if (sigBox) sigBox.className = 'signal-box ' + astroFreshData.signal.toLowerCase();
+  if (sigLabel) {
+    sigLabel.className = 'signal-label ' + astroFreshData.signal.toLowerCase();
+    sigLabel.textContent = astroFreshData.signal;
+  }
+  
+  // Update confidence
+  const confEl = document.getElementById('confidence');
+  const confBar = document.getElementById('conf-bar');
+  if (confEl) confEl.textContent = astroFreshData.confidence + '%';
+  if (confBar) confBar.style.width = astroFreshData.confidence + '%';
+  
+  // Update risk score
+  const riskEl = document.getElementById('risk-score');
+  const riskBar = document.getElementById('risk-bar');
+  if (riskEl) riskEl.textContent = astroFreshData.riskScore;
+  if (riskBar) riskBar.style.width = astroFreshData.riskScore + '%';
+  
+  // Update physics metrics
+  const waveEl = document.getElementById('wave-val');
+  const momEl = document.getElementById('momentum-val');
+  if (waveEl) waveEl.textContent = astroFreshData.wave.toFixed(4);
+  if (momEl) momEl.textContent = astroFreshData.momentum.toFixed(6);
+  
+  // Update regime
+  const regimePill = document.getElementById('regime-pill');
+  if (regimePill) {
+    regimePill.className = 'regime-pill regime-' + astroFreshData.regime.toLowerCase();
+    regimePill.textContent = astroFreshData.regime;
+  }
+  
+  // Update status indicator
+  const statusDot = document.getElementById('status-dot');
+  const statusText = document.getElementById('status-text');
+  if (statusDot) statusDot.className = 'live';
+  if (statusText) statusText.textContent = 'LIVE';
+  
+  // Update last refresh time
+  const lastUpdate = document.getElementById('last-update');
+  if (lastUpdate) lastUpdate.textContent = 'Last: 14:57 PDT';
+  
+  // Hide loading overlay
+  const loading = document.getElementById('loading');
+  if (loading) setTimeout(() => loading.style.display = 'none', 500);
+});
 </script>
 </body>
 </html>
