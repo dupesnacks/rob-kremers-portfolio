@@ -2,19 +2,19 @@
   "tickers": {
     "BYND": {
       "latest": {
-        "date": "2026-05-19",
-        "close": 0.7573000192642212,
-        "volume": 25426747,
-        "baseline": 90191940,
-        "rvol": 0.28,
-        "trend_pct": -49.1,
+        "date": "2026-05-20",
+        "close": 0.7865999937057495,
+        "volume": 22624034,
+        "baseline": 71602630,
+        "rvol": 0.32,
+        "trend_pct": -60.2,
         "consecutive": 0,
         "alerts": [],
         "is_intraday": false,
         "session_pct": null,
         "paced_rvol": null,
         "paced_volume": null,
-        "prior_day_volume": 30852900,
+        "prior_day_volume": 25654900,
         "pct_of_prior": null
       },
       "history": [
@@ -92,31 +92,37 @@
         },
         {
           "date": "2026-05-19",
-          "volume": 25426747,
+          "volume": 25517375,
           "close": 0.7573000192642212,
           "baseline": 90191940,
           "rvol": 0.28,
+          "alerts": []
+        },
+        {
+          "date": "2026-05-20",
+          "volume": 22624034,
+          "close": 0.7865999937057495,
+          "baseline": 71602630,
+          "rvol": 0.32,
           "alerts": []
         }
       ]
     },
     "SABS": {
       "latest": {
-        "date": "2026-05-19",
-        "close": 3.549999952316284,
-        "volume": 486442,
-        "baseline": 1092130,
-        "rvol": 0.45,
-        "trend_pct": 91.3,
+        "date": "2026-05-20",
+        "close": 3.680000066757202,
+        "volume": 564205,
+        "baseline": 1095870,
+        "rvol": 0.51,
+        "trend_pct": -42.1,
         "consecutive": 0,
-        "alerts": [
-          "\ud83d\udcc8 TREND \u2014 7-day avg volume up 91% vs prior 7 days"
-        ],
+        "alerts": [],
         "is_intraday": false,
         "session_pct": null,
         "paced_rvol": null,
         "paced_volume": null,
-        "prior_day_volume": 772500,
+        "prior_day_volume": 488000,
         "pct_of_prior": null
       },
       "history": [
@@ -216,13 +222,21 @@
         },
         {
           "date": "2026-05-19",
-          "volume": 486442,
+          "volume": 488016,
           "close": 3.549999952316284,
           "baseline": 1092130,
           "rvol": 0.45,
           "alerts": [
             "\ud83d\udcc8 TREND \u2014 7-day avg volume up 91% vs prior 7 days"
           ]
+        },
+        {
+          "date": "2026-05-20",
+          "volume": 564205,
+          "close": 3.680000066757202,
+          "baseline": 1095870,
+          "rvol": 0.51,
+          "alerts": []
         }
       ]
     }
@@ -323,5 +337,5 @@
       "close": 3.8
     }
   ],
-  "last_updated": "2026-05-19 13:30 ET"
+  "last_updated": "2026-05-20 13:30 ET"
 }
