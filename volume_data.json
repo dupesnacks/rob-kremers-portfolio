@@ -3,10 +3,10 @@
     "BYND": {
       "latest": {
         "date": "2026-05-22",
-        "close": 0.7659000158309937,
-        "volume": 29522552,
+        "close": 0.765999972820282,
+        "volume": 29831300,
         "baseline": 62343925,
-        "rvol": 0.47,
+        "rvol": 0.48,
         "trend_pct": -54.2,
         "consecutive": 0,
         "alerts": [],
@@ -116,10 +116,10 @@
         },
         {
           "date": "2026-05-22",
-          "volume": 29522552,
-          "close": 0.7659000158309937,
+          "volume": 29831300,
+          "close": 0.765999972820282,
           "baseline": 62343925,
-          "rvol": 0.47,
+          "rvol": 0.48,
           "alerts": []
         }
       ]
@@ -128,9 +128,9 @@
       "latest": {
         "date": "2026-05-22",
         "close": 3.9000000953674316,
-        "volume": 323110,
+        "volume": 324100,
         "baseline": 1097350,
-        "rvol": 0.29,
+        "rvol": 0.3,
         "trend_pct": -68.2,
         "consecutive": 0,
         "alerts": [],
@@ -264,16 +264,34 @@
         },
         {
           "date": "2026-05-22",
-          "volume": 323110,
+          "volume": 324100,
           "close": 3.9000000953674316,
           "baseline": 1097350,
-          "rvol": 0.29,
+          "rvol": 0.3,
           "alerts": []
         }
       ]
     }
   },
   "alert_log": [
+    {
+      "date": "2026-05-22",
+      "ticker": "SABS",
+      "alerts": [
+        "\ud83d\udce3 EARLY SURGE \u2014 already 87% of yesterday's full volume, only 54% through session"
+      ],
+      "rvol": 0.3,
+      "close": 3.9000000953674316
+    },
+    {
+      "date": "2026-05-22",
+      "ticker": "BYND",
+      "alerts": [
+        "\ud83d\udd25 EXCEEDED PRIOR DAY \u2014 115% of yesterday's full volume with 15% of session still remaining"
+      ],
+      "rvol": 0.48,
+      "close": 0.765999972820282
+    },
     {
       "date": "2026-05-19",
       "ticker": "SABS",
@@ -369,5 +387,5 @@
       "close": 3.8
     }
   ],
-  "last_updated": "2026-05-22 13:30 ET"
+  "last_updated": "2026-05-25 13:30 ET"
 }
