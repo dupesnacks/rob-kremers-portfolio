@@ -2,19 +2,19 @@
   "tickers": {
     "BYND": {
       "latest": {
-        "date": "2026-05-26",
-        "close": 0.7684000134468079,
-        "volume": 36516053,
-        "baseline": 57936190,
-        "rvol": 0.63,
-        "trend_pct": -52.6,
+        "date": "2026-05-27",
+        "close": 0.7889999747276306,
+        "volume": 28338580,
+        "baseline": 55885645,
+        "rvol": 0.51,
+        "trend_pct": -52.0,
         "consecutive": 0,
         "alerts": [],
         "is_intraday": false,
         "session_pct": null,
         "paced_rvol": null,
         "paced_volume": null,
-        "prior_day_volume": 29831300,
+        "prior_day_volume": 37030600,
         "pct_of_prior": null
       },
       "history": [
@@ -129,24 +129,32 @@
           "baseline": 57936190,
           "rvol": 0.63,
           "alerts": []
+        },
+        {
+          "date": "2026-05-27",
+          "volume": 28338580,
+          "close": 0.7889999747276306,
+          "baseline": 55885645,
+          "rvol": 0.51,
+          "alerts": []
         }
       ]
     },
     "SABS": {
       "latest": {
-        "date": "2026-05-26",
-        "close": 3.809999942779541,
-        "volume": 446934,
-        "baseline": 1085755,
-        "rvol": 0.41,
-        "trend_pct": -71.4,
+        "date": "2026-05-27",
+        "close": 3.5999999046325684,
+        "volume": 280854,
+        "baseline": 1086930,
+        "rvol": 0.26,
+        "trend_pct": -73.8,
         "consecutive": 0,
         "alerts": [],
         "is_intraday": false,
         "session_pct": null,
         "paced_rvol": null,
         "paced_volume": null,
-        "prior_day_volume": 324100,
+        "prior_day_volume": 447400,
         "pct_of_prior": null
       },
       "history": [
@@ -285,6 +293,14 @@
           "baseline": 1085755,
           "rvol": 0.41,
           "alerts": []
+        },
+        {
+          "date": "2026-05-27",
+          "volume": 280854,
+          "close": 3.5999999046325684,
+          "baseline": 1086930,
+          "rvol": 0.26,
+          "alerts": []
         }
       ]
     }
@@ -412,5 +428,5 @@
       "close": 3.8
     }
   ],
-  "last_updated": "2026-05-26 13:30 ET"
+  "last_updated": "2026-05-27 13:30 ET"
 }
