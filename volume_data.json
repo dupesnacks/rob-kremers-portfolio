@@ -2,19 +2,19 @@
   "tickers": {
     "BYND": {
       "latest": {
-        "date": "2026-05-27",
-        "close": 0.7889999747276306,
-        "volume": 28338580,
-        "baseline": 55885645,
-        "rvol": 0.51,
-        "trend_pct": -52.0,
+        "date": "2026-05-28",
+        "close": 0.8202999830245972,
+        "volume": 46167219,
+        "baseline": 55004485,
+        "rvol": 0.84,
+        "trend_pct": -45.9,
         "consecutive": 0,
         "alerts": [],
         "is_intraday": false,
         "session_pct": null,
         "paced_rvol": null,
         "paced_volume": null,
-        "prior_day_volume": 37030600,
+        "prior_day_volume": 28855700,
         "pct_of_prior": null
       },
       "history": [
@@ -137,24 +137,32 @@
           "baseline": 55885645,
           "rvol": 0.51,
           "alerts": []
+        },
+        {
+          "date": "2026-05-28",
+          "volume": 46167219,
+          "close": 0.8202999830245972,
+          "baseline": 55004485,
+          "rvol": 0.84,
+          "alerts": []
         }
       ]
     },
     "SABS": {
       "latest": {
-        "date": "2026-05-27",
-        "close": 3.5999999046325684,
-        "volume": 280854,
-        "baseline": 1086930,
-        "rvol": 0.26,
-        "trend_pct": -73.8,
+        "date": "2026-05-28",
+        "close": 3.569999933242798,
+        "volume": 133710,
+        "baseline": 1089375,
+        "rvol": 0.12,
+        "trend_pct": -78.6,
         "consecutive": 0,
         "alerts": [],
         "is_intraday": false,
         "session_pct": null,
         "paced_rvol": null,
         "paced_volume": null,
-        "prior_day_volume": 447400,
+        "prior_day_volume": 283200,
         "pct_of_prior": null
       },
       "history": [
@@ -296,16 +304,33 @@
         },
         {
           "date": "2026-05-27",
-          "volume": 280854,
+          "volume": 283102,
           "close": 3.5999999046325684,
           "baseline": 1086930,
           "rvol": 0.26,
+          "alerts": []
+        },
+        {
+          "date": "2026-05-28",
+          "volume": 133710,
+          "close": 3.569999933242798,
+          "baseline": 1089375,
+          "rvol": 0.12,
           "alerts": []
         }
       ]
     }
   },
   "alert_log": [
+    {
+      "date": "2026-05-28",
+      "ticker": "BYND",
+      "alerts": [
+        "\ud83d\udd25 EXCEEDED PRIOR DAY \u2014 129% of yesterday's full volume with 15% of session still remaining"
+      ],
+      "rvol": 0.67,
+      "close": 0.8274000287055969
+    },
     {
       "date": "2026-05-26",
       "ticker": "BYND",
@@ -428,5 +453,5 @@
       "close": 3.8
     }
   ],
-  "last_updated": "2026-05-27 13:30 ET"
+  "last_updated": "2026-05-28 13:30 ET"
 }
