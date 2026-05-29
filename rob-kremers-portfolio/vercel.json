@@ -63,6 +63,10 @@
       "destination": "/actually.html"
     },
     {
+      "source": "/astro",
+      "destination": "/astro/index.html"
+    },
+    {
       "source": "/flavorgalaxy",
       "destination": "/flavorgalaxy/index.html"
     },
@@ -85,6 +89,10 @@
     {
       "source": "/unfairmarket-live",
       "destination": "/unfairmarket-live.html"
+    },
+    {
+      "source": "/tilray",
+      "destination": "/tilray.html"
     }
   ],
   "trailingSlash": false
