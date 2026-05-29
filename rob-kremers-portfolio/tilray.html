@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brand Marketing Audit • Widmer & Redhook | 2026</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@700&display=swap');
+        
+        :root {
+            --primary: #1a365d;
+        }
+        
+        body {
+            font-family: 'Inter', system_ui, sans-serif;
+        }
+        
+        .heading-serif {
+            font-family: 'Playfair Display', Georgia, serif;
+        }
+
+        .section-header {
+            font-size: 1.35rem;
+            letter-spacing: -.025em;
+        }
+
+        .agency-header {
+            background: linear-gradient(135deg, #1a365d 0%, #2c5282 100%);
+        }
+
+        .insight-card {
+            transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.2s;
+        }
+        
+        .insight-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.05), 0 8px 10px -6px rgb(0 0 0 / 0.05);
+        }
+
+        .metric-value {
+            font-variant-numeric: tabular-nums;
+        }
+
+        .nav-active {
+            border-bottom: 3px solid #1a365d;
+            font-weight: 600;
+        }
+
+        .beer-gradient {
+            background: linear-gradient(90deg, #f6ad55 0%, #ed8936 100%);
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+        
+        .highlight {
+            background-color: #fefce8;
+            padding: 2px 6px;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800">
+    <!-- Header -->
+    <div class="agency-header text-white py-8">
+        <div class="max-w-screen-xl mx-auto px-8">
+            <div class="flex items-center justify-between">
+                <div>
+                    <div class="flex items-center gap-x-3">
+                        <div class="w-11 h-11 bg-white/10 backdrop-blur flex items-center justify-center rounded-2xl">
+                            <i class="fa-solid fa-chart-line text-3xl"></i>
+                        </div>
+                        <div>
+                            <h1 class="text-4xl font-semibold tracking-tighter">RIVET</h1>
+                            <p class="text-white/60 text-sm -mt-1">Brand Strategy</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-right">
+                    <div class="text-white/70 text-sm">CONFIDENTIAL</div>
+                    <div class="font-semibold text-xl tracking-tight">January 2026</div>
+                </div>
+            </div>
+            
+            <div class="mt-8 max-w-3xl">
+                <h2 class="text-5xl font-semibold tracking-tighter leading-none">Widmer Brothers & Redhook Brewing</h2>
+                <p class="mt-3 text-2xl text-white/80">Brand Marketing Performance Audit</p>
+                <div class="mt-4 inline-flex items-center gap-x-2 bg-white/10 px-4 py-1.5 rounded-3xl text-sm">
+                    <div class="w-2 h-2 bg-emerald-400 rounded-full animate-pulse"></div>
+                    <span>Prepared for internal strategy discussion • Tilray Brands</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="max-w-screen-xl mx-auto px-8 pt-8">
+        
+        <!-- Meta -->
+        <div class="flex items-center justify-between text-sm mb-8">
+            <div class="flex items-center gap-x-6 text-slate-500">
+                <div><span class="font-medium text-slate-700">Client:</span> Tilray Brands – Craft Division</div>
+                <div><span class="font-medium text-slate-700">Brands:</span> Widmer Brothers, Redhook Brewing</div>
+                <div><span class="font-medium text-slate-700">Period:</span> Q1 2023 – Q1 2026</div>
+            </div>
+            <div class="text-xs px-3 py-1 bg-white border border-slate-200 rounded-2xl text-slate-500">
+                14 pages • Internal use only
+            </div>
+        </div>
+
+        <!-- Executive Summary -->
+        <div class="mb-12">
+            <div class="flex items-center gap-x-3 mb-4">
+                <div class="text-xs font-mono tracking-[3px] text-slate-400">01</div>
+                <div class="section-header font-semibold">Executive Summary</div>
+            </div>
+            
+            <div class="prose max-w-none text-[15px] leading-relaxed text-slate-600">
+                <p>Over the past 36 months, Widmer Brothers and Redhook Brewing have executed a <span class="font-medium text-slate-800">product-led innovation strategy</span> with mixed results. While Redhook has shown meaningful momentum through the Big Ballard IPA family expansion and the launch of '81 Light Lager, Widmer Brothers remains relatively quiet, relying heavily on its legacy Hefeweizen equity.</p>
+                
+                <p class="mt-3">The portfolio is currently under-optimized for the current craft beer environment. Key opportunities exist in <span class="highlight">distinct brand architecture</span>, stronger regional storytelling, and a shift from pure product innovation toward <span class="font-medium">brand experience and community activation</span>.</p>
+            </div>
+            
+            <div class="grid grid-cols-3 gap-4 mt-6">
+                <div class="bg-white border border-slate-200 p-5 rounded-3xl">
+                    <div class="text-emerald-600 text-xs font-medium tracking-widest">STRENGTH</div>
+                    <div class="text-2xl font-semibold mt-1">Product Innovation Velocity</div>
+                    <div class="text-sm text-slate-600 mt-2">Redhook has launched 4 meaningful new SKUs since 2024, including the successful Big Ballard line extension.</div>
+                </div>
+                <div class="bg-white border border-slate-200 p-5 rounded-3xl">
+                    <div class="text-amber-600 text-xs font-medium tracking-widest">RISK</div>
+                    <div class="text-2xl font-semibold mt-1">Brand Dilution</div>
+                    <div class="text-sm text-slate-600 mt-2">Widmer's identity has become blurred. Limited new campaign work visible in market.</div>
+                </div>
+                <div class="bg-white border border-slate-200 p-5 rounded-3xl">
+                    <div class="text-blue-600 text-xs font-medium tracking-widest">OPPORTUNITY</div>
+                    <div class="text-2xl font-semibold mt-1">$4.2M Revenue Uplift</div>
+                    <div class="text-sm text-slate-600 mt-2">Estimated annual upside from unified PNW portfolio positioning + local activation program.</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Brand Overview -->
+        <div class="mb-12">
+            <div class="flex items-center gap-x-3 mb-4">
+                <div class="text-xs font-mono tracking-[3px] text-slate-400">02</div>
+                <div class="section-header font-semibold">Portfolio Architecture & Positioning</div>
+            </div>
+            
+            <div class="grid grid-cols-2 gap-6">
+                <!-- Widmer -->
+                <div class="bg-white border border-slate-200 rounded-3xl p-7">
+                    <div class="flex items-center gap-x-4">
+                        <div>
+                            <div class="font-semibold text-2xl">Widmer Brothers</div>
+                            <div class="text-emerald-700 text-sm">Est. 1984 • Portland, OR</div>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-5 space-y-4 text-sm">
+                        <div>
+                            <div class="text-xs uppercase tracking-widest text-slate-400 mb-1">HERITAGE EQUITY</div>
+                            <div class="font-medium">America's Original Hefeweizen (1986)</div>
+                        </div>
+                        <div>
+                            <div class="text-xs uppercase tracking-widest text-slate-400 mb-1">CURRENT POSITIONING</div>
+                            <div class="leading-snug">Traditional, approachable, Pacific Northwest craft pioneer. Heavy reliance on core Hefeweizen.</div>
+                        </div>
+                        <div>
+                            <div class="text-xs uppercase tracking-widest text-slate-400 mb-1">2025–26 ACTIVITY LEVEL</div>
+                            <div class="flex items-center gap-x-2">
+                                <div class="h-2 flex-1 bg-slate-100 rounded"><div class="h-2 w-[25%] bg-emerald-600 rounded"></div></div>
+                                <span class="text-xs font-mono text-emerald-700">LOW</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Redhook -->
+                <div class="bg-white border border-slate-200 rounded-3xl p-7">
+                    <div class="flex items-center gap-x-4">
+                        <div>
+                            <div class="font-semibold text-2xl">Redhook Brewing</div>
+                            <div class="text-emerald-700 text-sm">Est. 1981 • Seattle / Portland</div>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-5 space-y-4 text-sm">
+                        <div>
+                            <div class="text-xs uppercase tracking-widest text-slate-400 mb-1">HERITAGE EQUITY</div>
+                            <div class="font-medium">Redhook ESB & Ballard IPA lineage</div>
+                        </div>
+                        <div>
+                            <div class="text-xs uppercase tracking-widest text-slate-400 mb-1">CURRENT POSITIONING</div>
+                            <div class="leading-snug">Bold, experimental, Seattle grit meets modern hazy IPAs. More agile brand voice.</div>
+                        </div>
+                        <div>
+                            <div class="text-xs uppercase tracking-widest text-slate-400 mb-1">2025–26 ACTIVITY LEVEL</div>
+                            <div class="flex items-center gap-x-2">
+                                <div class="h-2 flex-1 bg-slate-100 rounded"><div class="h-2 w-[75%] bg-emerald-600 rounded"></div></div>
+                                <span class="text-xs font-mono text-emerald-700">HIGH</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Recent Activity -->
+        <div class="mb-12">
+            <div class="flex items-center gap-x-3 mb-4">
+                <div class="text-xs font-mono tracking-[3px] text-slate-400">03</div>
+                <div class="section-header font-semibold">Marketing Activity (2023–2026)</div>
+            </div>
+            
+            <div class="bg-white border border-slate-200 rounded-3xl overflow-hidden">
+                <table class="w-full">
+                    <thead>
+                        <tr class="border-b text-xs text-slate-500">
+                            <th class="text-left py-4 px-7 font-normal">Date</th>
+                            <th class="text-left py-4 px-4 font-normal">Brand</th>
+                            <th class="text-left py-4 px-4 font-normal">Initiative</th>
+                            <th class="text-left py-4 px-4 font-normal">Type</th>
+                            <th class="text-left py-4 px-4 font-normal">Assessment</th>
+                        </tr>
+                    </thead>
+                    <tbody class="text-sm divide-y">
+                        <tr>
+                            <td class="py-4 px-7 text-slate-500">Q4 2025</td>
+                            <td class="px-4"><span class="font-medium">Redhook</span></td>
+                            <td class="px-4">Juicy Big Ballard launch</td>
+                            <td class="px-4"><span class="text-xs px-2.5 py-px bg-orange-100 text-orange-700 rounded">Line Extension</span></td>
+                            <td class="px-4"><span class="text-emerald-600">Strong</span> — Clear family play, modern hazy positioning</td>
+                        </tr>
+                        <tr>
+                            <td class="py-4 px-7 text-slate-500">Q3 2025</td>
+                            <td class="px-4"><span class="font-medium">Redhook</span></td>
+                            <td class="px-4">'81 Light Lager launch</td>
+                            <td class="px-4"><span class="text-xs px-2.5 py-px bg-blue-100 text-blue-700 rounded">New Core</span></td>
+                            <td class="px-4"><span class="text-emerald-600">Smart</span> — Timely response to light lager trend</td>
+                        </tr>
+                        <tr>
+                            <td class="py-4 px-7 text-slate-500">Q2 2025</td>
+                            <td class="px-4"><span class="font-medium">Redhook</span></td>
+                            <td class="px-4">Big Ballard Imperial IPA refresh</td>
+                            <td class="px-4"><span class="text-xs px-2.5 py-px bg-violet-100 text-violet-700 rounded">Refresh</span></td>
+                            <td class="px-4"><span class="text-emerald-600">Good</span> — Strengthened flagship</td>
+                        </tr>
+                        <tr>
+                            <td class="py-4 px-7 text-slate-500">2024–25</td>
+                            <td class="px-4"><span class="font-medium">Widmer</span></td>
+                            <td class="px-4">Limited seasonal releases only</td>
+                            <td class="px-4"><span class="text-xs px-2.5 py-px bg-slate-100 text-slate-600 rounded">Maintenance</span></td>
+                            <td class="px-4"><span class="text-amber-600">Underwhelming</span> — No major campaign</td>
+                        </tr>
+                        <tr>
+                            <td class="py-4 px-7 text-slate-500">2023–24</td>
+                            <td class="px-4"><span class="font-medium">Both</span></td>
+                            <td class="px-4">Tilray integration & backend alignment</td>
+                            <td class="px-4"><span class="text-xs px-2.5 py-px bg-slate-100 text-slate-600 rounded">Infrastructure</span></td>
+                            <td class="px-4"><span class="text-emerald-600">Necessary</span> — Low consumer visibility</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- Strategic Assessment -->
+        <div class="mb-12">
+            <div class="flex items-center gap-x-3 mb-4">
+                <div class="text-xs font-mono tracking-[3px] text-slate-400">04</div>
+                <div class="section-header font-semibold">Strategic Assessment</div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+                <div class="insight-card bg-white border border-slate-200 rounded-3xl p-6">
+                    <div class="uppercase text-xs tracking-[1.5px] text-emerald-600 font-medium mb-3">WHAT'S WORKING</div>
+                    <ul class="space-y-3 text-sm">
+                        <li class="flex gap-x-3"><i class="fa-solid fa-check text-emerald-500 mt-1"></i> <span>Redhook's Big Ballard family creates clear hierarchy and modern relevance</span></li>
+                        <li class="flex gap-x-3"><i class="fa-solid fa-check text-emerald-500 mt-1"></i> <span>Light lager entry ('81) shows awareness of macro category shifts</span></li>
+                        <li class="flex gap-x-3"><i class="fa-solid fa-check text-emerald-500 mt-1"></i> <span>Strong regional distribution infrastructure via Tilray</span></li>
+                    </ul>
+                </div>
+                
+                <div class="insight-card bg-white border border-slate-200 rounded-3xl p-6">
+                    <div class="uppercase text-xs tracking-[1.5px] text-rose-600 font-medium mb-3">WHAT'S NOT WORKING</div>
+                    <ul class="space-y-3 text-sm">
+                        <li class="flex gap-x-3"><i class="fa-solid fa-times text-rose-500 mt-1"></i> <span>Widmer has no visible brand campaign or positioning refresh since 2022</span></li>
+                        <li class="flex gap-x-3"><i class="fa-solid fa-times text-rose-500 mt-1"></i> <span>Both brands lack distinctive visual systems compared to competitors (Deschutes, Hopworks, etc.)</span></li>
+                        <li class="flex gap-x-3"><i class="fa-solid fa-times text-rose-500 mt-1"></i> <span>Minimal community or experiential activation in Portland metro</span></li>
+                    </ul>
+                </div>
+                
+                <div class="insight-card bg-white border border-slate-200 rounded-3xl p-6">
+                    <div class="uppercase text-xs tracking-[1.5px] text-blue-600 font-medium mb-3">WHITE SPACE</div>
+                    <ul class="space-y-3 text-sm">
+                        <li class="flex gap-x-3"><i class="fa-solid fa-lightbulb text-blue-500 mt-1"></i> <span>Unified "PNW Craft Portfolio" narrative under Tilray</span></li>
+                        <li class="flex gap-x-3"><i class="fa-solid fa-lightbulb text-blue-500 mt-1"></i> <span>Hyper-local Portland brewery experiences and taproom programming</span></li>
+                        <li class="flex gap-x-3"><i class="fa-solid fa-lightbulb text-blue-500 mt-1"></i> <span>Modernization of Widmer visual identity while protecting Hefeweizen equity</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Recommendations -->
+        <div>
+            <div class="flex items-center gap-x-3 mb-4">
+                <div class="text-xs font-mono tracking-[3px] text-slate-400">05</div>
+                <div class="section-header font-semibold">Strategic Recommendations</div>
+            </div>
+            
+            <div class="space-y-4">
+                <div class="bg-white border-l-4 border-emerald-600 pl-6 py-5 pr-7 rounded-r-3xl">
+                    <div class="font-semibold">1. Create Distinct Brand Architectures</div>
+                    <div class="text-sm mt-1 text-slate-600">Widmer should own "Heritage & Approachability." Redhook should own "Bold Experimentation." Currently the lines are blurred.</div>
+                </div>
+                
+                <div class="bg-white border-l-4 border-emerald-600 pl-6 py-5 pr-7 rounded-r-3xl">
+                    <div class="font-semibold">2. Launch a Portland-Centric Activation Platform</div>
+                    <div class="text-sm mt-1 text-slate-600">Develop a year-round series of taproom + community events under the working title <span class="font-medium">"Portland Pour"</span>. Position both brands as the beating heart of Portland beer culture.</div>
+                </div>
+                
+                <div class="bg-white border-l-4 border-emerald-600 pl-6 py-5 pr-7 rounded-r-3xl">
+                    <div class="font-semibold">3. Modernize Widmer Visual Identity</div>
+                    <div class="text-sm mt-1 text-slate-600">A respectful refresh of packaging and digital assets that honors the 1984 founding story while feeling current. Avoid full rebrand — focus on evolution.</div>
+                </div>
+                
+                <div class="bg-white border-l-4 border-emerald-600 pl-6 py-5 pr-7 rounded-r-3xl">
+                    <div class="font-semibold">4. Develop a Unified Tilray PNW Narrative</div>
+                    <div class="text-sm mt-1 text-slate-600">Market the two brands together when appropriate (distribution, festivals, retail programs) while protecting individual identities in consumer-facing work.</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="mt-12 pt-8 border-t text-xs text-slate-400 flex justify-between items-center">
+            <div>Prepared by RIVET Brand Strategy • January 2026</div>
+            <div>For internal discussion only. Not for distribution.</div>
+        </div>
+        
+    </div>
+</body>
+</html>
