@@ -2,19 +2,19 @@
   "tickers": {
     "BYND": {
       "latest": {
-        "date": "2026-06-04",
-        "close": 0.7860000133514404,
-        "volume": 33814515,
-        "baseline": 42738300,
-        "rvol": 0.79,
-        "trend_pct": 14.0,
+        "date": "2026-06-05",
+        "close": 0.7093999981880188,
+        "volume": 46652661,
+        "baseline": 39110390,
+        "rvol": 1.19,
+        "trend_pct": 12.4,
         "consecutive": 0,
         "alerts": [],
         "is_intraday": false,
         "session_pct": null,
         "paced_rvol": null,
         "paced_volume": null,
-        "prior_day_volume": 34374400,
+        "prior_day_volume": 34224400,
         "pct_of_prior": null
       },
       "history": [
@@ -185,24 +185,32 @@
           "baseline": 42738300,
           "rvol": 0.79,
           "alerts": []
+        },
+        {
+          "date": "2026-06-05",
+          "volume": 46652661,
+          "close": 0.7093999981880188,
+          "baseline": 39110390,
+          "rvol": 1.19,
+          "alerts": []
         }
       ]
     },
     "SABS": {
       "latest": {
-        "date": "2026-06-04",
-        "close": 3.4700000286102295,
-        "volume": 303560,
-        "baseline": 1042010,
-        "rvol": 0.29,
-        "trend_pct": -42.2,
+        "date": "2026-06-05",
+        "close": 3.380000114440918,
+        "volume": 350277,
+        "baseline": 1021665,
+        "rvol": 0.34,
+        "trend_pct": -41.9,
         "consecutive": 0,
         "alerts": [],
         "is_intraday": false,
         "session_pct": null,
         "paced_rvol": null,
         "paced_volume": null,
-        "prior_day_volume": 327000,
+        "prior_day_volume": 304000,
         "pct_of_prior": null
       },
       "history": [
@@ -397,28 +405,36 @@
           "baseline": 1042010,
           "rvol": 0.29,
           "alerts": []
+        },
+        {
+          "date": "2026-06-05",
+          "volume": 350277,
+          "close": 3.380000114440918,
+          "baseline": 1021665,
+          "rvol": 0.34,
+          "alerts": []
         }
       ]
     },
     "LFVN": {
       "latest": {
-        "date": "2026-06-04",
-        "close": 9.3100004196167,
-        "volume": 2290944,
-        "baseline": 515005,
-        "rvol": 4.45,
-        "trend_pct": 1085.0,
-        "consecutive": 3,
+        "date": "2026-06-05",
+        "close": 9.970000267028809,
+        "volume": 949837,
+        "baseline": 588340,
+        "rvol": 1.61,
+        "trend_pct": 879.4,
+        "consecutive": 4,
         "alerts": [
-          "\ud83d\udea8 SPIKE \u2014 4.4\u00d7 average (345% above baseline)",
-          "\ud83d\udcc8 TREND \u2014 7-day avg volume up 1085% vs prior 7 days",
-          "\ud83d\udd04 ACCUMULATION \u2014 3 consecutive days above 1.5\u00d7 baseline"
+          "\u26a0\ufe0f ELEVATED \u2014 1.6\u00d7 average (61% above baseline)",
+          "\ud83d\udcc8 TREND \u2014 7-day avg volume up 879% vs prior 7 days",
+          "\ud83d\udd04 ACCUMULATION \u2014 4 consecutive days above 1.5\u00d7 baseline"
         ],
         "is_intraday": false,
         "session_pct": null,
         "paced_rvol": null,
         "paced_volume": null,
-        "prior_day_volume": 893500,
+        "prior_day_volume": 2306500,
         "pct_of_prior": null
       },
       "history": [
@@ -457,14 +473,26 @@
         },
         {
           "date": "2026-06-04",
-          "volume": 2290944,
+          "volume": 2294196,
           "close": 9.3100004196167,
           "baseline": 515005,
           "rvol": 4.45,
           "alerts": [
-            "\ud83d\udea8 SPIKE \u2014 4.4\u00d7 average (345% above baseline)",
+            "\ud83d\udea8 SPIKE \u2014 4.5\u00d7 average (345% above baseline)",
             "\ud83d\udcc8 TREND \u2014 7-day avg volume up 1085% vs prior 7 days",
             "\ud83d\udd04 ACCUMULATION \u2014 3 consecutive days above 1.5\u00d7 baseline"
+          ]
+        },
+        {
+          "date": "2026-06-05",
+          "volume": 949837,
+          "close": 9.970000267028809,
+          "baseline": 588340,
+          "rvol": 1.61,
+          "alerts": [
+            "\u26a0\ufe0f ELEVATED \u2014 1.6\u00d7 average (61% above baseline)",
+            "\ud83d\udcc8 TREND \u2014 7-day avg volume up 879% vs prior 7 days",
+            "\ud83d\udd04 ACCUMULATION \u2014 4 consecutive days above 1.5\u00d7 baseline"
           ]
         }
       ]
@@ -472,10 +500,21 @@
   },
   "alert_log": [
     {
+      "date": "2026-06-05",
+      "ticker": "LFVN",
+      "alerts": [
+        "\u26a0\ufe0f ELEVATED \u2014 1.6\u00d7 average (61% above baseline)",
+        "\ud83d\udcc8 TREND \u2014 7-day avg volume up 879% vs prior 7 days",
+        "\ud83d\udd04 ACCUMULATION \u2014 4 consecutive days above 1.5\u00d7 baseline"
+      ],
+      "rvol": 1.61,
+      "close": 9.970000267028809
+    },
+    {
       "date": "2026-06-04",
       "ticker": "LFVN",
       "alerts": [
-        "\ud83d\udea8 SPIKE \u2014 4.4\u00d7 average (345% above baseline)",
+        "\ud83d\udea8 SPIKE \u2014 4.5\u00d7 average (345% above baseline)",
         "\ud83d\udcc8 TREND \u2014 7-day avg volume up 1085% vs prior 7 days",
         "\ud83d\udd04 ACCUMULATION \u2014 3 consecutive days above 1.5\u00d7 baseline"
       ],
@@ -661,5 +700,5 @@
       "close": 3.8
     }
   ],
-  "last_updated": "2026-06-04 13:30 ET"
+  "last_updated": "2026-06-05 13:30 ET"
 }
