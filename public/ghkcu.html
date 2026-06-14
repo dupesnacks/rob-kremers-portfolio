@@ -1,0 +1,958 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GHK-Cu Skincare — Project Dashboard</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background: #f9f9f9;
+            color: #1a1a1a;
+        }
+
+        .header {
+            background: #ffffff;
+            border-bottom: 1px solid #e5e5e5;
+            padding: 20px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .header h1 {
+            font-size: 24px;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+        }
+
+        .header-meta {
+            display: flex;
+            gap: 30px;
+            font-size: 13px;
+            color: #666;
+        }
+
+        .container {
+            display: flex;
+            height: calc(100vh - 70px);
+        }
+
+        .sidebar {
+            width: 280px;
+            background: #ffffff;
+            border-right: 1px solid #e5e5e5;
+            overflow-y: auto;
+            padding: 20px 0;
+        }
+
+        .sidebar-section {
+            padding: 0 15px;
+            margin-bottom: 25px;
+        }
+
+        .sidebar-section-title {
+            font-size: 11px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: #999;
+            margin-bottom: 10px;
+        }
+
+        .sidebar-item {
+            padding: 10px 12px;
+            margin-bottom: 5px;
+            cursor: pointer;
+            border-radius: 6px;
+            font-size: 13px;
+            transition: all 0.15s;
+            background: #f9f9f9;
+        }
+
+        .sidebar-item:hover {
+            background: #eee;
+        }
+
+        .sidebar-item.active {
+            background: #000;
+            color: #fff;
+            font-weight: 600;
+        }
+
+        .content {
+            flex: 1;
+            overflow-y: auto;
+            padding: 40px 50px;
+            background: #fafafa;
+        }
+
+        .file-view {
+            display: none;
+            animation: fadeIn 0.2s;
+        }
+
+        .file-view.active {
+            display: block;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .file-title {
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 10px;
+            letter-spacing: -0.5px;
+        }
+
+        .file-meta {
+            font-size: 12px;
+            color: #999;
+            margin-bottom: 30px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 30px;
+            font-size: 13px;
+        }
+
+        th {
+            background: #f0f0f0;
+            padding: 12px;
+            text-align: left;
+            font-weight: 600;
+            border-bottom: 1px solid #ddd;
+        }
+
+        td {
+            padding: 12px;
+            border-bottom: 1px solid #eee;
+        }
+
+        tr:hover {
+            background: #f9f9f9;
+        }
+
+        h2 {
+            font-size: 18px;
+            margin-top: 35px;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+
+        h3 {
+            font-size: 15px;
+            margin-top: 25px;
+            margin-bottom: 12px;
+            font-weight: 600;
+        }
+
+        p {
+            line-height: 1.6;
+            margin-bottom: 12px;
+            color: #333;
+        }
+
+        ul, ol {
+            margin-left: 20px;
+            margin-bottom: 12px;
+        }
+
+        li {
+            margin-bottom: 8px;
+            line-height: 1.5;
+        }
+
+        .status-badge {
+            display: inline-block;
+            padding: 4px 10px;
+            border-radius: 4px;
+            font-size: 11px;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+
+        .status-done {
+            background: #d4edda;
+            color: #155724;
+        }
+
+        .status-in-progress {
+            background: #fff3cd;
+            color: #856404;
+        }
+
+        .status-pending {
+            background: #d1ecf1;
+            color: #0c5460;
+        }
+
+        .status-open {
+            background: #f8d7da;
+            color: #721c24;
+        }
+
+        .scorecard-summary {
+            background: #f0f0f0;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+        }
+
+        .score-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 8px 0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .score-item:last-child {
+            border-bottom: none;
+        }
+
+        .score-label {
+            font-weight: 500;
+        }
+
+        .score-value {
+            font-weight: 700;
+        }
+
+        .score-bar {
+            display: inline-block;
+            width: 40px;
+            height: 6px;
+            background: #ddd;
+            border-radius: 3px;
+            margin-left: 10px;
+        }
+
+        .scroll-indicator {
+            font-size: 11px;
+            color: #999;
+            margin-top: 50px;
+            text-align: center;
+        }
+
+        @media (max-width: 1024px) {
+            .container {
+                flex-direction: column;
+            }
+            .sidebar {
+                width: 100%;
+                height: auto;
+                border-right: none;
+                border-bottom: 1px solid #e5e5e5;
+            }
+            .sidebar-section {
+                display: inline-block;
+                margin-right: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <div>
+        <h1>GHK-Cu Skincare — Project Dashboard</h1>
+        <p style="font-size: 13px; color: #999; margin-top: 5px;">Phase 0–10 validation & execution tracker</p>
+    </div>
+    <div class="header-meta">
+        <div>
+            <strong>Last Updated</strong><br>
+            2026-06-13 17:43 PDT
+        </div>
+        <div>
+            <strong>Status</strong><br>
+            <span class="status-badge status-in-progress">IN PROGRESS</span>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="sidebar">
+        <div class="sidebar-section">
+            <div class="sidebar-section-title">Core Documents</div>
+            <div class="sidebar-item active" onclick="showFile('claude')">CLAUDE.md</div>
+            <div class="sidebar-item" onclick="showFile('dashboard')">DASHBOARD.md</div>
+            <div class="sidebar-item" onclick="showFile('decisions')">DECISIONS.md</div>
+            <div class="sidebar-item" onclick="showFile('log')">LOG.md</div>
+        </div>
+
+        <div class="sidebar-section">
+            <div class="sidebar-section-title">Phase 1: Regulatory</div>
+            <div class="sidebar-item" onclick="showFile('claims')">CLAIMS_GUARDRAIL.md</div>
+            <div class="sidebar-item" onclick="showFile('assumptions')">ASSUMPTIONS.md</div>
+        </div>
+
+        <div class="sidebar-section">
+            <div class="sidebar-section-title">Phase 2: Suppliers</div>
+            <div class="sidebar-item" onclick="showFile('suppliers')">SUPPLIERS.md</div>
+            <div class="sidebar-item" onclick="showFile('outreach')">outreach/_template.md</div>
+        </div>
+
+        <div class="sidebar-section">
+            <div class="sidebar-section-title">Phase 3–10: Execution</div>
+            <div class="sidebar-item" onclick="showFile('competitors')">COMPETITORS.md</div>
+            <div class="sidebar-item" onclick="showFile('product')">PRODUCT_STRATEGY.md</div>
+            <div class="sidebar-item" onclick="showFile('brand')">BRAND.md</div>
+            <div class="sidebar-item" onclick="showFile('marketing')">MARKETING.md</div>
+            <div class="sidebar-item" onclick="showFile('operations')">OPERATIONS.md</div>
+            <div class="sidebar-item" onclick="showFile('financial')">FINANCIAL_MODEL.md</div>
+            <div class="sidebar-item" onclick="showFile('insurance')">INSURANCE.md</div>
+            <div class="sidebar-item" onclick="showFile('validation')">CUSTOMER_VALIDATION.md</div>
+        </div>
+
+        <div class="sidebar-section">
+            <div class="sidebar-section-title">Risk & Scoring</div>
+            <div class="sidebar-item" onclick="showFile('risk')">RISK_REGISTER.md</div>
+            <div class="sidebar-item" onclick="showFile('scorecard')">SCORECARD.md</div>
+        </div>
+    </div>
+
+    <div class="content">
+        <div id="claude" class="file-view active">
+            <div class="file-title">CLAUDE.md</div>
+            <div class="file-meta">Operating guide • Memory map • Claims guardrails</div>
+            <h2>GHK-Cu Skincare — OpenClaw Project Memory & Operating Guide</h2>
+            <p>You are OpenClaw, project manager for the GHK-Cu Cosmetic Skincare Brand Validation project. This file loads every session in this directory.</p>
+            <h3>Mission</h3>
+            <p>Evaluate and potentially launch a U.S. D2C or private-label GHK-Cu / Copper Tripeptide-1 cosmetic (cream/moisturizer/serum), positioned strictly as cosmetic — never drug/medical/injectable/peptide-therapy. Lean MVP, $49–$69 price band, premium-minimalist brand.</p>
+            <h3>Success Outcomes</h3>
+            <ul>
+                <li><strong>Outcome A (Go):</strong> Credible supplier + samples + compliant claims + insurance + working unit economics + real customer interest</li>
+                <li><strong>Outcome B (Pivot):</strong> Adjacent lower-risk opportunity (content/community, GLP-1 lifestyle brand, bundles, affiliate, tooling)</li>
+                <li><strong>Outcome C (No-Go):</strong> Any item in No-Go Triggers fires</li>
+            </ul>
+            <div class="scroll-indicator">↓ Scroll for more details</div>
+        </div>
+
+        <div id="dashboard" class="file-view">
+            <div class="file-title">DASHBOARD.md</div>
+            <div class="file-meta">Phase tracker • Spend gates • Blockers</div>
+            <table>
+                <tr>
+                    <th>Phase</th>
+                    <th>Task</th>
+                    <th>Status</th>
+                    <th>Owner</th>
+                    <th>Decision-Needed?</th>
+                </tr>
+                <tr>
+                    <td><strong>0</strong></td>
+                    <td>Setup: Directory structure, files</td>
+                    <td><span class="status-badge status-done">✅ DONE</span></td>
+                    <td>OpenClaw</td>
+                    <td>N</td>
+                </tr>
+                <tr>
+                    <td><strong>1</strong></td>
+                    <td>Regulatory/Claims Review</td>
+                    <td><span class="status-badge status-in-progress">🟡 IN PROGRESS</span></td>
+                    <td>OpenClaw</td>
+                    <td>Y</td>
+                </tr>
+                <tr>
+                    <td><strong>2a</strong></td>
+                    <td>Supplier Outreach (10 candidates)</td>
+                    <td><span class="status-badge status-pending">⏳ NOT STARTED</span></td>
+                    <td>OpenClaw</td>
+                    <td>N</td>
+                </tr>
+                <tr>
+                    <td><strong>3</strong></td>
+                    <td>Competitor & Amazon Research</td>
+                    <td><span class="status-badge status-pending">⏳ NOT STARTED</span></td>
+                    <td>OpenClaw</td>
+                    <td>Y</td>
+                </tr>
+                <tr>
+                    <td><strong>8</strong></td>
+                    <td>Financial Modeling</td>
+                    <td><span class="status-badge status-pending">⏳ NOT STARTED</span></td>
+                    <td>OpenClaw</td>
+                    <td>Y</td>
+                </tr>
+                <tr>
+                    <td><strong>9</strong></td>
+                    <td>Insurance & Broker Research</td>
+                    <td><span class="status-badge status-pending">⏳ NOT STARTED</span></td>
+                    <td>OpenClaw</td>
+                    <td>Y</td>
+                </tr>
+            </table>
+            <h3>Spend Decision Gates</h3>
+            <table>
+                <tr>
+                    <th>Gate</th>
+                    <th>Threshold</th>
+                    <th>Status</th>
+                    <th>Next Action</th>
+                </tr>
+                <tr>
+                    <td>$1k+ spend</td>
+                    <td>5+ suppliers contacted</td>
+                    <td><span class="status-badge status-pending">⏳ PENDING</span></td>
+                    <td>Approve outreach</td>
+                </tr>
+                <tr>
+                    <td>Samples</td>
+                    <td>COGS/MOQ/testing known</td>
+                    <td><span class="status-badge status-pending">⏳ PENDING</span></td>
+                    <td>Post-supplier response</td>
+                </tr>
+                <tr>
+                    <td>Inventory</td>
+                    <td>Legal clear, insurance quoted, unit econ done</td>
+                    <td><span class="status-badge status-pending">⏳ PENDING</span></td>
+                    <td>Post-Phase 7–10</td>
+                </tr>
+            </table>
+        </div>
+
+        <div id="decisions" class="file-view">
+            <div class="file-title">DECISIONS.md</div>
+            <div class="file-meta">Items awaiting Rob + ChatGPT review</div>
+            <h2>Batch #1: Setup & Phase 0–1</h2>
+            <h3>Decision #1: Approve Supplier Outreach</h3>
+            <p><strong>Question:</strong> Should we proceed with Phase 2 supplier outreach using the template to all 10 candidates?</p>
+            <p><strong>OpenClaw Recommendation:</strong> YES — proceed with simultaneous outreach. Advantages: maximizes response pool, parallel exploration reduces timeline risk, forces comparison shopping.</p>
+            <p><strong>Status:</strong> <span class="status-badge status-open">⏳ OPEN</span></p>
+
+            <h3>Decision #2: Legal Review Timeline</h3>
+            <p><strong>Question:</strong> Can you secure attorney review of CLAIMS_GUARDRAIL.md by June 20?</p>
+            <p><strong>Recommendation:</strong> URGENT — prioritize attorney review immediately. This is critical path.</p>
+            <p><strong>Status:</strong> <span class="status-badge status-open">⏳ OPEN</span></p>
+
+            <h3>Decision #3: Pivot Tolerance</h3>
+            <p><strong>Question:</strong> If attorney says cosmetic positioning is risky, open to Outcome B (pivot to content/community)?</p>
+            <p><strong>Why it matters:</strong> Defines go/no-go contingency if legal blocks.</p>
+            <p><strong>Status:</strong> <span class="status-badge status-open">⏳ OPEN</span></p>
+
+            <h3>Decision #4: Budget & Spend Authority</h3>
+            <p><strong>Question:</strong> What's your maximum spend authorization at each decision gate?</p>
+            <p><strong>Examples:</strong> Max $15k inventory, max $5k samples, max $10k marketing</p>
+            <p><strong>Status:</strong> <span class="status-badge status-open">⏳ OPEN</span></p>
+        </div>
+
+        <div id="log" class="file-view">
+            <div class="file-title">LOG.md</div>
+            <div class="file-meta">Weekly updates • Decision tracking • Blockers</div>
+            <h2>Entry #1 — First Assignment Complete</h2>
+            <p><strong>Date:</strong> 2026-06-13, 17:43 PDT</p>
+            <h3>Completed</h3>
+            <ul>
+                <li>✅ Directory structure created</li>
+                <li>✅ 16 files + 1 directory fully populated</li>
+                <li>✅ CLAIMS_GUARDRAIL.md seeded with Safe / Borderline / Prohibited tables</li>
+                <li>✅ SCORECARD.md initialized with 11 categories (baseline: 21/55)</li>
+                <li>✅ RISK_REGISTER.md with 13 No-Go Triggers + 7 Active Risks</li>
+                <li>✅ SUPPLIERS.md with 10 candidates</li>
+                <li>✅ outreach/_template.md drafted with 8-question inquiry</li>
+            </ul>
+            <h3>Blockers</h3>
+            <p>None — setup complete on schedule (Days 1–2).</p>
+            <h3>Next Week (Jun 15–20)</h3>
+            <ol>
+                <li>Rob reviews DECISIONS.md Batch #1</li>
+                <li>OpenClaw schedules attorney for legal review</li>
+                <li>Pending attorney clearance: Send Phase 2 supplier outreach</li>
+                <li>Parallel: Competitive research planning</li>
+            </ol>
+        </div>
+
+        <div id="claims" class="file-view">
+            <div class="file-title">CLAIMS_GUARDRAIL.md</div>
+            <div class="file-meta">Safe / Borderline / Prohibited claims</div>
+            <h2>Safe (Cosmetic) Claims</h2>
+            <ul>
+                <li>Helps skin look smoother</li>
+                <li>Improves the appearance of fine lines</li>
+                <li>Moisturizes and supports a youthful-looking complexion</li>
+                <li>Helps skin feel soft, hydrated, refreshed</li>
+                <li>Supports healthy-looking skin</li>
+                <li>Improves the look of skin texture</li>
+            </ul>
+            <h2>Prohibited (Drug/Medical) Claims</h2>
+            <ul>
+                <li>❌ Stimulates collagen</li>
+                <li>❌ Repairs/regenerates skin</li>
+                <li>❌ Heals wounds</li>
+                <li>❌ Treats scars/acne/eczema/rosacea/inflammation</li>
+                <li>❌ Reduces inflammation</li>
+                <li>❌ Reverses aging</li>
+                <li>❌ Medical-grade peptide therapy</li>
+                <li>❌ Any injectable/research peptide framing</li>
+            </ul>
+            <h2>Enforcement Rule</h2>
+            <p>If any draft contains a Prohibited claim:</p>
+            <ol>
+                <li>OpenClaw rewrites immediately using Safe alternatives</li>
+                <li>Flag violation in DECISIONS.md</li>
+                <li>Never send violating version for review</li>
+            </ol>
+        </div>
+
+        <div id="assumptions" class="file-view">
+            <div class="file-title">ASSUMPTIONS.md</div>
+            <div class="file-meta">Verified / Assumed / Unknown / Attorney-needed</div>
+            <h2>Verified Assumptions</h2>
+            <table>
+                <tr>
+                    <th>Assumption</th>
+                    <th>Evidence</th>
+                    <th>Risk</th>
+                </tr>
+                <tr>
+                    <td>GHK-Cu is a cosmetic-grade ingredient available in U.S. supply chains</td>
+                    <td>Ingredient widely available; used in existing skincare products</td>
+                    <td>Low</td>
+                </tr>
+                <tr>
+                    <td>$49–$69 retail price band is viable</td>
+                    <td>Comparable peptide serums retail $30–80</td>
+                    <td>Low</td>
+                </tr>
+                <tr>
+                    <td>U.S. contract manufacturers with GHK-Cu experience exist</td>
+                    <td>10-candidate seed list identified</td>
+                    <td>Low</td>
+                </tr>
+            </table>
+            <h2>Unknowns (Phase 1–2)</h2>
+            <ul>
+                <li><strong>Legal:</strong> Will FTC/FDA challenge cosmetic GHK-Cu claims?</li>
+                <li><strong>Supply:</strong> Can suppliers document formula/testing reliably?</li>
+                <li><strong>Insurance:</strong> Is product liability insurance obtainable for cosmetic peptides?</li>
+                <li><strong>Demand:</strong> Is there real customer interest for cosmetic GHK-Cu?</li>
+            </ul>
+        </div>
+
+        <div id="suppliers" class="file-view">
+            <div class="file-title">SUPPLIERS.md</div>
+            <div class="file-meta">10 candidates • Evaluation tracker</div>
+            <h2>Candidates (10 Total)</h2>
+            <table>
+                <tr>
+                    <th>Supplier</th>
+                    <th>GHK-Cu Exp.</th>
+                    <th>Testing/COA</th>
+                    <th>Status</th>
+                </tr>
+                <tr>
+                    <td>Pravada</td>
+                    <td>Yes</td>
+                    <td>Y/Y</td>
+                    <td><span class="status-badge status-pending">Not Started</span></td>
+                </tr>
+                <tr>
+                    <td>FormuNova</td>
+                    <td>Unknown</td>
+                    <td>TBD</td>
+                    <td><span class="status-badge status-pending">Not Started</span></td>
+                </tr>
+                <tr>
+                    <td>Indigo Private Label</td>
+                    <td>Yes</td>
+                    <td>Y/Y</td>
+                    <td><span class="status-badge status-pending">Not Started</span></td>
+                </tr>
+                <tr>
+                    <td>Lady Burd</td>
+                    <td>Unknown</td>
+                    <td>TBD</td>
+                    <td><span class="status-badge status-pending">Not Started</span></td>
+                </tr>
+                <tr>
+                    <td>Nardo's Natural</td>
+                    <td>Unknown</td>
+                    <td>TBD</td>
+                    <td><span class="status-badge status-pending">Not Started</span></td>
+                </tr>
+                <tr>
+                    <td>Cosmetic Solutions</td>
+                    <td>Yes</td>
+                    <td>Y/Y</td>
+                    <td><span class="status-badge status-pending">Not Started</span></td>
+                </tr>
+                <tr>
+                    <td>Active Peptide Labs</td>
+                    <td>Yes</td>
+                    <td>Y/Y</td>
+                    <td><span class="status-badge status-pending">Not Started</span></td>
+                </tr>
+                <tr>
+                    <td>Bulk Naturals</td>
+                    <td>Unknown</td>
+                    <td>TBD</td>
+                    <td><span class="status-badge status-pending">Not Started</span></td>
+                </tr>
+                <tr>
+                    <td>Bolder Botanicals</td>
+                    <td>Unknown</td>
+                    <td>Y</td>
+                    <td><span class="status-badge status-pending">Not Started</span></td>
+                </tr>
+                <tr>
+                    <td>PhytoLabs</td>
+                    <td>Unknown</td>
+                    <td>Y</td>
+                    <td><span class="status-badge status-pending">Not Started</span></td>
+                </tr>
+            </table>
+            <h3>Phase 2 Workflow</h3>
+            <ol>
+                <li>Send outreach emails (template in outreach/_template.md)</li>
+                <li>Log outreach + response dates</li>
+                <li>Populate COGS/MOQ/testing details from replies</li>
+                <li>Score each on responsiveness, competence, documentation, pricing</li>
+                <li>Select top 3–5 for calls + sample requests</li>
+            </ol>
+        </div>
+
+        <div id="outreach" class="file-view">
+            <div class="file-title">outreach/_template.md</div>
+            <div class="file-meta">Supplier inquiry template • Tracking fields</div>
+            <h2>Email Draft</h2>
+            <p><strong>Subject:</strong> GHK-Cu Cosmetic Serum Contract Manufacturing Inquiry</p>
+            <p>Hi [First Name],</p>
+            <p>I'm Rob Kremers, founder of [Brand Name TBD], and we're exploring U.S. contract manufacturing for a premium cosmetic serum featuring GHK-Cu (Copper Tripeptide-1) as the active ingredient. We're targeting a lean MVP launch with high quality standards and positioned strictly as a cosmetic product.</p>
+            <h3>Key Questions</h3>
+            <ol>
+                <li><strong>GHK-Cu Experience:</strong> Prior cosmetic GHK-Cu projects?</li>
+                <li><strong>Documentation & Testing:</strong> COA from 3rd-party labs? Batch records? Stability testing?</li>
+                <li><strong>MOQ:</strong> Typical MOQ for a cosmetic serum in the $50–$70 retail range?</li>
+                <li><strong>Lead Time:</strong> How many weeks from order → delivery?</li>
+                <li><strong>Pricing:</strong> Ballpark COGS for peptide-infused hydrating serum?</li>
+                <li><strong>Certifications:</strong> FDA registered? GMP-certified? ISO-certified?</li>
+                <li><strong>Claims Compliance:</strong> Familiar with FTC/FDA distinctions for cosmetic vs. drug?</li>
+                <li><strong>References:</strong> Willing to share references from prior cosmetic brands?</li>
+            </ol>
+            <h3>Tracking Fields</h3>
+            <ul>
+                <li>Sent Date, Recipient, Response Date</li>
+                <li>Key Takeaways, MOQ/Lead Time/COGS from response</li>
+                <li>Next Step (call scheduled / wait / not a fit / qualified for samples)</li>
+            </ul>
+        </div>
+
+        <div id="competitors" class="file-view">
+            <div class="file-title">COMPETITORS.md</div>
+            <div class="file-meta">Phase 3 research • Amazon opportunity summary</div>
+            <h2>Competitive Landscape</h2>
+            <p><em>To be populated during Phase 3 (Jun 20–26)</em></p>
+            <ul>
+                <li>Competitor analysis (brands, pricing, claims, positioning)</li>
+                <li>Amazon private-label peptide serum ASIN review</li>
+                <li>Market size & growth rate</li>
+                <li>Differentiation whitespace</li>
+            </ul>
+            <h3>Research Focus</h3>
+            <ol>
+                <li>Can we differentiate vs. generic peptide serums?</li>
+                <li>Is premium positioning sustainable?</li>
+                <li>What's our competitive advantage?</li>
+                <li>6–12 month differentiation window?</li>
+            </ol>
+        </div>
+
+        <div id="product" class="file-view">
+            <div class="file-title">PRODUCT_STRATEGY.md</div>
+            <div class="file-meta">Phase 4 • SKU options • MVP recommendation</div>
+            <h2>To Be Determined</h2>
+            <ul>
+                <li><strong>Format:</strong> Serum? Cream? Both?</li>
+                <li><strong>Volume:</strong> 30 mL? 50 mL?</li>
+                <li><strong>Price Point:</strong> $49 / $59 / $69?</li>
+                <li><strong>GHK-Cu Concentration:</strong> %?</li>
+                <li><strong>Shelf Life:</strong> ?</li>
+            </ul>
+            <p><em>Phase 4 timeline: Jun 25–Jul 01</em></p>
+        </div>
+
+        <div id="brand" class="file-view">
+            <div class="file-title">BRAND.md</div>
+            <div class="file-meta">Phase 5 • Positioning • Naming</div>
+            <h2>Brand Direction</h2>
+            <p><strong>Vibe:</strong> Premium, minimalist (Apple/Tesla restraint)</p>
+            <p><strong>Audience:</strong> TBD</p>
+            <p><strong>Promise:</strong> TBD</p>
+            <h3>Name Shortlist</h3>
+            <p><em>To be populated during Phase 5 (Jun 27–Jul 03)</em></p>
+            <h3>Visual Identity</h3>
+            <ul>
+                <li>Primary Color: TBD</li>
+                <li>Logo Style: TBD</li>
+                <li>Packaging: TBD</li>
+            </ul>
+        </div>
+
+        <div id="marketing" class="file-view">
+            <div class="file-title">MARKETING.md</div>
+            <div class="file-meta">Phase 6 • GTM • Claims-compliant messaging</div>
+            <h2>Key Constraint</h2>
+            <p>All copy must align with <strong>CLAIMS_GUARDRAIL.md</strong> (Safe claims only; no prohibited terms).</p>
+            <h3>Channel Strategy</h3>
+            <p><em>To be populated Phase 6 (Jun 29–Jul 05)</em></p>
+            <ul>
+                <li>D2C (Shopify)</li>
+                <li>Email flows (welcome, nurture, re-engagement)</li>
+                <li>Social content (with claim review)</li>
+                <li>Influencer strategy (if within claims bounds)</li>
+            </ul>
+        </div>
+
+        <div id="operations" class="file-view">
+            <div class="file-title">OPERATIONS.md</div>
+            <div class="file-meta">Phase 7 • SOPs • Adverse events</div>
+            <h2>Critical SOP</h2>
+            <p><strong>Adverse Event Handling:</strong></p>
+            <p>Any adverse event report → Immediate escalation to Rob + LOG.md + DECISIONS.md (top priority).</p>
+            <h3>Other SOPs (TBD Phase 7)</h3>
+            <ul>
+                <li>Order Processing</li>
+                <li>Returns & Refunds</li>
+                <li>Batch Record Management (audit trail for liability)</li>
+                <li>Fulfillment by volume tier</li>
+            </ul>
+        </div>
+
+        <div id="financial" class="file-view">
+            <div class="file-title">FINANCIAL_MODEL.md</div>
+            <div class="file-meta">Phase 8 • Unit economics • 3-year scenarios</div>
+            <h2>Go/No-Go Thresholds (for Rob)</h2>
+            <ul>
+                <li><strong>Minimum gross margin:</strong> 60%+</li>
+                <li><strong>Minimum contribution margin (per unit after CAC):</strong> $15+ positive</li>
+                <li><strong>Maximum inventory risk (MOQ):</strong> $15k</li>
+            </ul>
+            <h3>To Be Modeled (Phase 8)</h3>
+            <p><em>After supplier COGS confirmed</em></p>
+            <ul>
+                <li>$49 / $59 / $69 tier unit economics</li>
+                <li>3-year scenarios (conservative / moderate / bullish)</li>
+                <li>Break-even analysis</li>
+                <li>Stress tests (COGS +20%, CAC +50%, repeat-purchase -50%)</li>
+            </ul>
+        </div>
+
+        <div id="insurance" class="file-view">
+            <div class="file-title">INSURANCE.md</div>
+            <div class="file-meta">Phase 9 • Broker quotes • Coverage details</div>
+            <h2>Go/No-Go Gate</h2>
+            <ul>
+                <li><strong>Green light:</strong> 2+ brokers willing to quote; premium <$1.5k/year; no unusual restrictions</li>
+                <li><strong>Yellow flag:</strong> Limited quotes; premium $1.5–3k/year; requires proof of batch records + SOP</li>
+                <li><strong>Red flag:</strong> No brokers willing to quote; premium >$3k/year; restrictions on GHK-Cu positioning</li>
+                <li><strong>No-go trigger:</strong> Insurance unavailable (NG-002)</li>
+            </ul>
+            <h3>Broker Questions (Phase 9)</h3>
+            <p><em>To be finalized and sent to 3+ brokers</em></p>
+            <ul>
+                <li>Will you quote product liability for cosmetic GHK-Cu serum?</li>
+                <li>Higher premiums for peptide actives?</li>
+                <li>What standard coverage limits for cosmetic skincare?</li>
+                <li>Do you require 3rd-party testing or batch records?</li>
+            </ul>
+        </div>
+
+        <div id="validation" class="file-view">
+            <div class="file-title">CUSTOMER_VALIDATION.md</div>
+            <div class="file-meta">Phase 10 • Interviews • Demand signals</div>
+            <h2>Interview Target</h2>
+            <p><strong>Candidate Profile:</strong> Skincare enthusiast (buys serums/actives), aware of peptides, budget $40–80/product, age 25–55</p>
+            <h2>Key Questions</h2>
+            <ol>
+                <li>Have you heard of GHK-Cu or copper peptides in skincare?</li>
+                <li>Would you try a premium cosmetic serum with GHK-Cu?</li>
+                <li>Price comfort: $49, $59, or $69?</li>
+                <li>Would you buy again? How often?</li>
+                <li>What would differentiate from other peptide serums?</li>
+                <li>What makes you trust a skincare brand?</li>
+            </ol>
+            <h2>Go/No-Go Thresholds</h2>
+            <table>
+                <tr>
+                    <th>Criterion</th>
+                    <th>Target</th>
+                </tr>
+                <tr>
+                    <td>10+ interviews completed</td>
+                    <td>Yes</td>
+                </tr>
+                <tr>
+                    <td>80%+ willing to try</td>
+                    <td>Yes</td>
+                </tr>
+                <tr>
+                    <td>30%+ repeat likelihood</td>
+                    <td>Yes</td>
+                </tr>
+                <tr>
+                    <td>CAC estimate <$20/customer</td>
+                    <td>Yes</td>
+                </tr>
+            </table>
+        </div>
+
+        <div id="risk" class="file-view">
+            <div class="file-title">RISK_REGISTER.md</div>
+            <div class="file-meta">No-Go Triggers • Active risks • Mitigation</div>
+            <h2>No-Go Triggers (Hard Stops)</h2>
+            <table>
+                <tr>
+                    <th>Trigger</th>
+                    <th>Severity</th>
+                    <th>Detection Point</th>
+                </tr>
+                <tr>
+                    <td>No manufacturer can document formula/testing</td>
+                    <td>Critical</td>
+                    <td>Phase 2 supplier calls</td>
+                </tr>
+                <tr>
+                    <td>No product liability insurance available</td>
+                    <td>Critical</td>
+                    <td>Phase 9 broker quotes</td>
+                </tr>
+                <tr>
+                    <td>Product needs drug-like claims to sell</td>
+                    <td>Critical</td>
+                    <td>Phase 10 customer validation</td>
+                </tr>
+                <tr>
+                    <td>Supplier refuses batch records</td>
+                    <td>Critical</td>
+                    <td>Phase 2 outreach</td>
+                </tr>
+                <tr>
+                    <td>MOQ forces excessive upfront risk (>$15k)</td>
+                    <td>Critical</td>
+                    <td>Phase 2 responses</td>
+                </tr>
+                <tr>
+                    <td>Feels generic vs. Amazon private-label</td>
+                    <td>High</td>
+                    <td>Phase 3 research</td>
+                </tr>
+                <tr>
+                    <td>CAC too high + weak repeat purchase</td>
+                    <td>High</td>
+                    <td>Phase 10 validation</td>
+                </tr>
+                <tr>
+                    <td>Attorney says model isn't defensible</td>
+                    <td>Critical</td>
+                    <td>Phase 1 legal review</td>
+                </tr>
+            </table>
+            <h2>Active Risks (Being Monitored)</h2>
+            <ul>
+                <li><strong>R-001:</strong> Regulatory uncertainty on GHK-Cu claims — Phase 1 attorney review</li>
+                <li><strong>R-002:</strong> Supplier capacity/reliability unknown — Phase 2 due diligence</li>
+                <li><strong>R-003:</strong> Ingredient sourcing costs not validated — Phase 8 financial model</li>
+                <li><strong>R-004:</strong> Customer interest unvalidated — Phase 10 interviews</li>
+                <li><strong>R-005:</strong> Amazon private-label commoditization — Phase 3 research</li>
+                <li><strong>R-006:</strong> Adverse event liability exposure — Phase 7 SOP + Phase 9 insurance</li>
+                <li><strong>R-007:</strong> Payment processor (Stripe/Shopify) may flag peptide positioning — Phase 2b compliance check</li>
+            </ul>
+        </div>
+
+        <div id="scorecard" class="file-view">
+            <div class="file-title">SCORECARD.md</div>
+            <div class="file-meta">Go/No-Go assessment • 11 categories • Date-stamped history</div>
+            <h2>Current Score: 21/55</h2>
+            <p><strong>Interpretation:</strong> 20–29 = Weak position; <strong>Hard stop:</strong> Legal defensibility <4/5 regardless of total</p>
+            <div class="scorecard-summary">
+                <div class="score-item">
+                    <span class="score-label">Legal Defensibility</span>
+                    <span class="score-value">3/5</span>
+                </div>
+                <div class="score-item">
+                    <span class="score-label">Claims Compliance</span>
+                    <span class="score-value">2/5</span>
+                </div>
+                <div class="score-item">
+                    <span class="score-label">Supplier Quality Confidence</span>
+                    <span class="score-value">1/5</span>
+                </div>
+                <div class="score-item">
+                    <span class="score-label">Insurance Availability</span>
+                    <span class="score-value">1/5</span>
+                </div>
+                <div class="score-item">
+                    <span class="score-label">Payment/Platform Stability</span>
+                    <span class="score-value">3/5</span>
+                </div>
+                <div class="score-item">
+                    <span class="score-label">Marketing (w/o risky claims)</span>
+                    <span class="score-value">2/5</span>
+                </div>
+                <div class="score-item">
+                    <span class="score-label">Product Liability Control</span>
+                    <span class="score-value">2/5</span>
+                </div>
+                <div class="score-item">
+                    <span class="score-label">Profit Potential</span>
+                    <span class="score-value">2/5</span>
+                </div>
+                <div class="score-item">
+                    <span class="score-label">Reputation Risk</span>
+                    <span class="score-value">2/5</span>
+                </div>
+                <div class="score-item">
+                    <span class="score-label">Scalability</span>
+                    <span class="score-value">1/5</span>
+                </div>
+                <div class="score-item">
+                    <span class="score-label">Exitability</span>
+                    <span class="score-value">1/5</span>
+                </div>
+            </div>
+            <h3>Next Milestones</h3>
+            <ol>
+                <li><strong>Phase 2:</strong> Supplier score → 3–4 (documentation, testing, MOQ clarity)</li>
+                <li><strong>Phase 1:</strong> Legal defensibility → 4–5 (attorney review locks down claims)</li>
+                <li><strong>Phase 9:</strong> Insurance score → 3–4 (broker quotes + underwriting)</li>
+                <li><strong>Phase 10:</strong> Scalability score → 3–4 (10+ interviews, repeat-purchase signal)</li>
+            </ol>
+        </div>
+    </div>
+</div>
+
+<script>
+    function showFile(fileId) {
+        // Hide all file views
+        const views = document.querySelectorAll('.file-view');
+        views.forEach(v => v.classList.remove('active'));
+
+        // Show selected file
+        const selected = document.getElementById(fileId);
+        if (selected) {
+            selected.classList.add('active');
+        }
+
+        // Update sidebar active state
+        const items = document.querySelectorAll('.sidebar-item');
+        items.forEach(item => item.classList.remove('active'));
+        event.target.classList.add('active');
+
+        // Scroll to top
+        document.querySelector('.content').scrollTop = 0;
+    }
+</script>
+
+</body>
+</html>
