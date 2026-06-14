@@ -24,7 +24,7 @@
     { "source": "/live-dashboard", "destination": "/live-dashboard.html" },
     { "source": "/unfairmarket-live", "destination": "/unfairmarket-live.html" },
     { "source": "/volume", "destination": "/volume.html" },
-    { "source": "/ghkcu", "destination": "/ghkcu.html" }
+    { "source": "/ghkcu", "destination": "/ghkcu/index.html" }
   ],
   "trailingSlash": false
 }
