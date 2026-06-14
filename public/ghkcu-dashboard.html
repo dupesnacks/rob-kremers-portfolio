@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GHK-Cu Skincare — Project Dashboard</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background: #f9f9f9;
+            color: #1a1a1a;
+        }
+
+        .header {
+            background: #ffffff;
+            border-bottom: 1px solid #e5e5e5;
+            padding: 20px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .header h1 {
+            font-size: 24px;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+        }
+
+        .header-meta {
+            display: flex;
+            gap: 30px;
+            font-size: 13px;
+            color: #666;
+        }
+
+        .container {
+            display: flex;
+            height: calc(100vh - 70px);
+        }
+
+        .sidebar {
+            width: 280px;
+            background: #ffffff;
+            border-right: 1px solid #e5e5e5;
+            overflow-y: auto;
+            padding: 20px 0;
+        }
+
+        .sidebar-section {
+            padding: 0 15px;
+            margin-bottom: 25px;
+        }
+
+        .sidebar-section-title {
+            font-size: 11px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: #999;
+            margin-bottom: 10px;
+        }
+
+        .sidebar-item {
+            padding: 10px 12px;
+            margin-bottom: 5px;
+            cursor: pointer;
+            border-radius: 6px;
+            font-size: 13px;
+            transition: all 0.15s;
+            background: #f9f9f9;
+        }
+
+        .sidebar-item:hover {
+            background: #eee;
+        }
+
+        .sidebar-item.active {
+            background: #000;
+            color: #fff;
+            font-weight: 600;
+        }
+
+        .content {
+            flex: 1;
+            overflow-y: auto;
+            padding: 40px 50px;
+            background: #fafafa;
+        }
+
+        .file-view {
+            display: none;
+            animation: fadeIn 0.2s;
+        }
+
+        .file-view.active {
+            display: block;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .file-title {
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 10px;
+            letter-spacing: -0.5px;
+        }
+
+        .file-meta {
+            font-size: 12px;
+            color: #999;
+            margin-bottom: 30px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 30px;
+            font-size: 13px;
+        }
+
+        th {
+            background: #f0f0f0;
+            padding: 12px;
+            text-align: left;
+            font-weight: 600;
+            border-bottom: 1px solid #ddd;
+        }
+
+        td {
+            padding: 12px;
+            border-bottom: 1px solid #eee;
+        }
+
+        tr:hover {
+            background: #f9f9f9;
+        }
+
+        h2 {
+            font-size: 18px;
+            margin-top: 35px;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+
+        h3 {
+            font-size: 15px;
+            margin-top: 25px;
+            margin-bottom: 12px;
+            font-weight: 600;
+        }
+
+        p {
+            line-height: 1.6;
+            margin-bottom: 12px;
+            color: #333;
+        }
+
+        ul, ol {
+            margin-left: 20px;
+            margin-bottom: 12px;
+        }
+
+        li {
+            margin-bottom: 8px;
+            line-height: 1.5;
+        }
+
+        .status-badge {
+            display: inline-block;
+            padding: 4px 10px;
+            border-radius: 4px;
+            font-size: 11px;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+
+        .status-done {
+            background: #d4edda;
+            color: #155724;
+        }
+
+        .status-in-progress {
+            background: #fff3cd;
+            color: #856404;
+        }
+
+        .status-pending {
+            background: #d1ecf1;
+            color: #0c5460;
+        }
+
+        .status-open {
+            background: #f8d7da;
+            color: #721c24;
+        }
+
+        .scorecard-summary {
+            background: #f0f0f0;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+        }
+
+        .score-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 8px 0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .score-item:last-child {
+            border-bottom: none;
+        }
+
+        .score-label {
+            font-weight: 500;
+        }
+
+        .score-value {
+            font-weight: 700;
+        }
+
+        .score-bar {
+            display: inline-block;
+            width: 40px;
+            height: 6px;
+            background: #ddd;
+            border-radius: 3px;
+            margin-left: 10px;
+        }
+
+        .scroll-indicator {
+            font-size: 11px;
+            color: #999;
+            margin-top: 50px;
+            text-align: center;
+        }
+
+        @media (max-width: 1024px) {
+            .container {
+                flex-direction: column;
+            }
+            .sidebar {
+                width: 100%;
+                height: auto;
+                border-right: none;
+                border-bottom: 1px solid #e5e5e5;
+            }
+            .sidebar-section {
+                display: inline-block;
+                margin-right: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <div>
+        <h1>GHK-Cu Skincare — Project Dashboard</h1>
+        <p style="font-size: 13px; color: #999; margin-top: 5px;">Phase 0–10 validation & execution tracker</p>
+    </div>
+    <div class="header-meta">
+        <div>
+            <strong>Last Updated</strong><br>
+            2026-06-13 17:43 PDT
+        </div>
+        <div>
+            <strong>Status</strong><br>
+            <span class="status-badge status-in-progress">IN PROGRESS</span>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="sidebar">
+        <div class="sidebar-section">
+            <div class="sidebar-section-title">Core Documents</div>
+            <div class="sidebar-item active" onclick="showFile('claude')">CLAUDE.md</div>
+            <div class="sidebar-item" onclick="showFile('dashboard')">DASHBOARD.md</div>
+            <div class="sidebar-item" onclick="showFile('decisions')">DECISIONS.md</div>
+            <div class="sidebar-item" onclick="showFile('log')">LOG.md</div>
+        </div>
+
+        <div class="sidebar-section">
+            <div class="sidebar-section-title">Phase 1: Regulatory</div>
+            <div class="sidebar-item" onclick="showFile('claims')">CLAIMS_GUARDRAIL.md</div>
+            <div class="sidebar-item" onclick="showFile('assumptions')">ASSUMPTIONS.md</div>
+        </div>
+
+        <div class="sidebar-section">
+            <div class="sidebar-section-title">Phase 2: Suppliers</div>
+            <div class="sidebar-item" onclick="showFile('suppliers')">SUPPLIERS.md</div>
+            <div class="sidebar-item" onclick="showFile('outreach')">outreach/_template.md</div>
+        </div>
+
+        <div class="sidebar-section">
+            <div class="sidebar-section-title">Phase 3–10: Execution</div>
+            <div class="sidebar-item" onclick="showFile('competitors')">COMPETITORS.md</div>
+            <div class="sidebar-item" onclick="showFile('product')">PRODUCT_STRATEGY.md</div>
+            <div class="sidebar-item" onclick="showFile('brand')">BRAND.md</div>
+            <div class="sidebar-item" onclick="showFile('marketing')">MARKETING.md</div>
+            <div class="sidebar-item" onclick="showFile('operations')">OPERATIONS.md</div>
+            <div class="sidebar-item" onclick="showFile('financial')">FINANCIAL_MODEL.md</div>
+            <div class="sidebar-item" onclick="showFile('insurance')">INSURANCE.md</div>
+            <div class="sidebar-item" onclick="showFile('validation')">CUSTOMER_VALIDATION.md</div>
+        </div>
+
+        <div class="sidebar-section">
+            <div class="sidebar-section-title">Risk & Scoring</div>
+            <div class="sidebar-item" onclick="showFile('risk')">RISK_REGISTER.md</div>
+            <div class="sidebar-item" onclick="showFile('scorecard')">SCORECARD.md</div>
+        </div>
+    </div>
+
+    <div class="content">
+        <div id="claude" class="file-view active">
+            <div class="file-title">CLAUDE.md</div>
+            <div class="file-meta">Operating guide • Memory map • Claims guardrails</div>
+            <h2>GHK-Cu Skincare — OpenClaw Project Memory & Operating Guide</h2>
+            <p>You are OpenClaw, project manager for the GHK-Cu Cosmetic Skincare Brand Validation project. This file loads every session in this directory.</p>
+            <h3>Mission</h3>
+            <p>Evaluate and potentially launch a U.S. D2C or private-label GHK-Cu / Copper Tripeptide-1 cosmetic (cream/moisturizer/serum), positioned strictly as cosmetic — never drug/medical/injectable/peptide-therapy. Lean MVP, $49–$69 price band, premium-minimalist brand.</p>
+            <h3>Success Outcomes</h3>
+            <ul>
+                <li><strong>Outcome A (Go):</strong> Credible supplier + samples + compliant claims + insurance + working unit economics + real customer interest</li>
+                <li><strong>Outcome B (Pivot):</strong> Adjacent lower-risk opportunity (content/community, GLP-1 lifestyle brand, bundles, affiliate, tooling)</li>
+                <li><strong>Outcome C (No-Go):</strong> Any item in No-Go Triggers fires</li>
+            </ul>
+            <div class="scroll-indicator">↓ Scroll for more details</div>
+        </div>
+
+        <div id="dashboard" class="file-view">
+            <div class="file-title">DASHBOARD.md</div>
+            <div class="file-meta">Phase tracker • Spend gates • Blockers</div>
+            <p><strong>Phase 0 (Setup):</strong> ✅ DONE | <strong>Phase 1 (Legal):</strong> 🟡 IN PROGRESS | <strong>Phase 2 (Suppliers):</strong> ⏳ NOT STARTED</p>
+            <p>All 18 files created and populated. Ready for supplier outreach pending legal review and budget approval.</p>
+        </div>
+
+        <div id="decisions" class="file-view">
+            <div class="file-title">DECISIONS.md</div>
+            <div class="file-meta">Items awaiting Rob + ChatGPT review</div>
+            <h2>Batch #1: Setup & Phase 0–1</h2>
+            <h3>Decision #1: Approve Supplier Outreach</h3>
+            <p><strong>Status:</strong> <span class="status-badge status-open">⏳ OPEN</span></p>
+            <h3>Decision #2: Legal Review Timeline</h3>
+            <p><strong>Status:</strong> <span class="status-badge status-open">⏳ OPEN</span></p>
+            <h3>Decision #3: Pivot Tolerance</h3>
+            <p><strong>Status:</strong> <span class="status-badge status-open">⏳ OPEN</span></p>
+            <h3>Decision #4: Budget & Spend Authority</h3>
+            <p><strong>Status:</strong> <span class="status-badge status-open">⏳ OPEN</span></p>
+        </div>
+
+        <div id="log" class="file-view">
+            <div class="file-title">LOG.md</div>
+            <div class="file-meta">Weekly updates • Decision tracking • Blockers</div>
+            <h2>Entry #1 — First Assignment Complete (2026-06-13)</h2>
+            <p><strong>Status:</strong> ✅ DONE</p>
+            <ul>
+                <li>All 18 files created in ~/clawd/ghk-cu-skincare/</li>
+                <li>CLAIMS_GUARDRAIL.md, SCORECARD.md, RISK_REGISTER.md fully seeded</li>
+                <li>10 suppliers identified in SUPPLIERS.md</li>
+                <li>Outreach template ready in outreach/_template.md</li>
+            </ul>
+        </div>
+
+        <div id="claims" class="file-view">
+            <div class="file-title">CLAIMS_GUARDRAIL.md</div>
+            <div class="file-meta">Safe / Borderline / Prohibited claims</div>
+            <h2>Safe Claims ✅</h2>
+            <ul>
+                <li>Helps skin look smoother</li>
+                <li>Improves appearance of fine lines</li>
+                <li>Moisturizes and supports youthful-looking complexion</li>
+                <li>Helps skin feel soft, hydrated, refreshed</li>
+            </ul>
+            <h2>Prohibited Claims ❌</h2>
+            <ul>
+                <li>Stimulates collagen</li>
+                <li>Repairs/regenerates skin</li>
+                <li>Treats scars/acne/eczema/rosacea</li>
+                <li>Medical-grade peptide therapy</li>
+            </ul>
+        </div>
+
+        <div id="assumptions" class="file-view">
+            <div class="file-title">ASSUMPTIONS.md</div>
+            <div class="file-meta">Verified / Assumed / Unknown</div>
+            <h3>Verified</h3>
+            <ul>
+                <li>GHK-Cu is a cosmetic-grade ingredient available in U.S. supply chains</li>
+                <li>$49–$69 retail price band is viable for skincare</li>
+                <li>U.S. contract manufacturers with GHK-Cu experience exist</li>
+            </ul>
+            <h3>Unknowns (Phase 1–2)</h3>
+            <ul>
+                <li>Will FTC/FDA challenge cosmetic GHK-Cu claims?</li>
+                <li>Can suppliers document formula/testing reliably?</li>
+                <li>Is product liability insurance obtainable?</li>
+                <li>Is there real customer demand for cosmetic GHK-Cu?</li>
+            </ul>
+        </div>
+
+        <div id="suppliers" class="file-view">
+            <div class="file-title">SUPPLIERS.md</div>
+            <div class="file-meta">10 candidates • Evaluation tracker</div>
+            <h2>Candidates (10)</h2>
+            <p>Pravada, FormuNova, Indigo Private Label, Lady Burd, Nardo's Natural, Cosmetic Solutions, Active Peptide, Bulk Naturals, Bolder Botanicals, PhytoLabs</p>
+            <p><strong>Status:</strong> Ready for Phase 2 outreach pending legal clearance</p>
+        </div>
+
+        <div id="outreach" class="file-view">
+            <div class="file-title">outreach/_template.md</div>
+            <div class="file-meta">Supplier inquiry template</div>
+            <h3>Key Questions</h3>
+            <ol>
+                <li>GHK-Cu experience (prior cosmetic projects)</li>
+                <li>Documentation & testing (COA, batch records, stability)</li>
+                <li>MOQ and lead time</li>
+                <li>Ballpark COGS for peptide serum</li>
+                <li>Certifications (FDA, GMP, ISO)</li>
+                <li>Claims compliance expertise</li>
+                <li>References available</li>
+            </ol>
+        </div>
+
+        <div id="competitors" class="file-view">
+            <div class="file-title">COMPETITORS.md</div>
+            <div class="file-meta">Phase 3 research • Amazon opportunity</div>
+            <p><em>To be populated Jun 20–26</em></p>
+        </div>
+
+        <div id="product" class="file-view">
+            <div class="file-title">PRODUCT_STRATEGY.md</div>
+            <div class="file-meta">Phase 4 • SKU options</div>
+            <p><em>To be populated Jun 25–Jul 01</em></p>
+        </div>
+
+        <div id="brand" class="file-view">
+            <div class="file-title">BRAND.md</div>
+            <div class="file-meta">Phase 5 • Positioning • Naming</div>
+            <p><strong>Vibe:</strong> Premium, minimalist (Apple/Tesla restraint)</p>
+            <p><em>To be populated Jun 27–Jul 03</em></p>
+        </div>
+
+        <div id="marketing" class="file-view">
+            <div class="file-title">MARKETING.md</div>
+            <div class="file-meta">Phase 6 • GTM</div>
+            <p>All copy must align with CLAIMS_GUARDRAIL.md (Safe claims only)</p>
+            <p><em>To be populated Jun 29–Jul 05</em></p>
+        </div>
+
+        <div id="operations" class="file-view">
+            <div class="file-title">OPERATIONS.md</div>
+            <div class="file-meta">Phase 7 • SOPs</div>
+            <p><strong>Critical:</strong> Any adverse event → immediate escalation to Rob</p>
+            <p><em>To be populated Jul 01–02</em></p>
+        </div>
+
+        <div id="financial" class="file-view">
+            <div class="file-title">FINANCIAL_MODEL.md</div>
+            <div class="file-meta">Phase 8 • Unit economics</div>
+            <p><strong>Thresholds:</strong> 60%+ gross margin, $15+ contribution margin, $15k max MOQ investment</p>
+            <p><em>To be populated Jul 02–04</em></p>
+        </div>
+
+        <div id="insurance" class="file-view">
+            <div class="file-title">INSURANCE.md</div>
+            <div class="file-meta">Phase 9 • Broker quotes</div>
+            <p><strong>Go signal:</strong> 2+ brokers willing to quote, <$1.5k/year premium, no unusual restrictions</p>
+            <p><em>To be populated Jul 05–08</em></p>
+        </div>
+
+        <div id="validation" class="file-view">
+            <div class="file-title">CUSTOMER_VALIDATION.md</div>
+            <div class="file-meta">Phase 10 • Interviews</div>
+            <p><strong>Targets:</strong> 10+ interviews, 80%+ willing to try, 30%+ repeat likelihood, CAC <$20/customer</p>
+            <p><em>To be populated Jul 01–10</em></p>
+        </div>
+
+        <div id="risk" class="file-view">
+            <div class="file-title">RISK_REGISTER.md</div>
+            <div class="file-meta">No-Go Triggers • Active Risks</div>
+            <h2>Hard Stops (13)</h2>
+            <p>No manufacturer documentation • No insurance available • Needs drug claims to sell • MOQ >$15k • Attorney says indefensible • etc.</p>
+        </div>
+
+        <div id="scorecard" class="file-view">
+            <div class="file-title">SCORECARD.md</div>
+            <div class="file-meta">Go/No-Go assessment • 11 categories</div>
+            <div class="scorecard-summary">
+                <div class="score-item">
+                    <span class="score-label"><strong>Current Total:</strong></span>
+                    <span class="score-value">21/55</span>
+                </div>
+                <div class="score-item">
+                    <span class="score-label">Legal Defensibility</span>
+                    <span class="score-value">3/5</span>
+                </div>
+                <div class="score-item">
+                    <span class="score-label">Supplier Quality</span>
+                    <span class="score-value">1/5</span>
+                </div>
+                <div class="score-item">
+                    <span class="score-label">Insurance Availability</span>
+                    <span class="score-value">1/5</span>
+                </div>
+                <div class="score-item">
+                    <span class="score-label">Profit Potential</span>
+                    <span class="score-value">2/5</span>
+                </div>
+            </div>
+            <p><strong>Hard stop:</strong> Legal defensibility <4/5 = automatic escalation</p>
+        </div>
+    </div>
+</div>
+
+<script>
+    function showFile(fileId) {
+        const views = document.querySelectorAll('.file-view');
+        views.forEach(v => v.classList.remove('active'));
+        const selected = document.getElementById(fileId);
+        if (selected) selected.classList.add('active');
+        const items = document.querySelectorAll('.sidebar-item');
+        items.forEach(item => item.classList.remove('active'));
+        event.target.classList.add('active');
+        document.querySelector('.content').scrollTop = 0;
+    }
+</script>
+
+</body>
+</html>
