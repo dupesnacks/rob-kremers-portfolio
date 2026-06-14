@@ -1,6 +1,6 @@
 {
   "buildCommand": "echo 'Static site - no build needed - GHK-Cu dashboard live'",
-  "outputDirectory": ".",
+  "outputDirectory": "public",
   "rewrites": [
     { "source": "/aurora", "destination": "/aurora.html" },
     { "source": "/consulting", "destination": "/consulting.html" },
