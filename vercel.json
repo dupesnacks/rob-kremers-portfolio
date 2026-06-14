@@ -23,8 +23,7 @@
     { "source": "/projects", "destination": "/index-projects.html" },
     { "source": "/live-dashboard", "destination": "/live-dashboard.html" },
     { "source": "/unfairmarket-live", "destination": "/unfairmarket-live.html" },
-    { "source": "/volume", "destination": "/volume.html" },
-    { "source": "/ghkcu", "destination": "/ghkcu/index.html" }
+    { "source": "/volume", "destination": "/volume.html" }
   ],
   "trailingSlash": false
 }
