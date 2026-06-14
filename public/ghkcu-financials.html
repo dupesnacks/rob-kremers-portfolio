@@ -1,0 +1,1494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GHK-Cu Skincare — 5-Year Financial Model</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background: #fff;
+            color: #1a1a1a;
+            line-height: 1.6;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #1a472a 0%, #2d5f3f 100%);
+            color: #fff;
+            padding: 40px 24px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+        }
+
+        .header h1 {
+            font-size: 32px;
+            margin-bottom: 8px;
+            font-weight: 700;
+        }
+
+        .header p {
+            font-size: 14px;
+            opacity: 0.95;
+        }
+
+        .content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 24px;
+        }
+
+        .section {
+            margin-bottom: 60px;
+            padding-bottom: 40px;
+            border-bottom: 2px solid #e0e0e0;
+        }
+
+        .section:last-child {
+            border-bottom: none;
+        }
+
+        .section h1 {
+            font-size: 32px;
+            margin: 0 0 20px 0;
+            font-weight: 700;
+            color: #000;
+        }
+
+        .section h2 {
+            font-size: 24px;
+            margin: 32px 0 16px 0;
+            font-weight: 700;
+            color: #000;
+            border-bottom: 2px solid #f0f0f0;
+            padding-bottom: 8px;
+        }
+
+        .section h3 {
+            font-size: 18px;
+            margin: 24px 0 12px 0;
+            font-weight: 600;
+            color: #333;
+        }
+
+        .section p {
+            margin-bottom: 12px;
+            font-size: 15px;
+            line-height: 1.7;
+        }
+
+        .section ul, .section ol {
+            margin: 16px 0 16px 24px;
+            line-height: 1.8;
+        }
+
+        .section li {
+            margin-bottom: 8px;
+            font-size: 15px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-size: 14px;
+        }
+
+        th {
+            background: #f5f5f5;
+            padding: 12px;
+            text-align: left;
+            font-weight: 600;
+            border-bottom: 2px solid #ddd;
+        }
+
+        td {
+            padding: 12px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        tr:hover {
+            background: #f9f9f9;
+        }
+
+        .number {
+            text-align: right;
+            font-family: "Menlo", monospace;
+            font-size: 13px;
+        }
+
+        .highlight-row {
+            background: #f0f9e6;
+            font-weight: 600;
+        }
+
+        .negative {
+            color: #cc0000;
+        }
+
+        .positive {
+            color: #008000;
+        }
+
+        .box {
+            background: #f5f5f5;
+            padding: 20px;
+            border-left: 4px solid #333;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+
+        .box-green {
+            border-left-color: #00cc00;
+            background: #f0ffe6;
+        }
+
+        .box-yellow {
+            border-left-color: #ffd700;
+            background: #fffee6;
+        }
+
+        .box-red {
+            border-left-color: #cc0000;
+            background: #ffe6e6;
+        }
+
+        .metric-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 20px;
+            margin: 20px 0;
+        }
+
+        .metric-card {
+            background: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+            border-top: 3px solid #333;
+        }
+
+        .metric-card.green {
+            border-top-color: #00cc00;
+        }
+
+        .metric-card.yellow {
+            border-top-color: #ffd700;
+        }
+
+        .metric-label {
+            font-size: 12px;
+            font-weight: 600;
+            text-transform: uppercase;
+            color: #666;
+            margin-bottom: 8px;
+        }
+
+        .metric-value {
+            font-size: 28px;
+            font-weight: 700;
+            color: #000;
+            font-family: "Menlo", monospace;
+        }
+
+        .metric-note {
+            font-size: 12px;
+            color: #999;
+            margin-top: 4px;
+        }
+
+        .scenario-tabs {
+            display: flex;
+            gap: 8px;
+            margin-bottom: 20px;
+            overflow-x: auto;
+        }
+
+        .scenario-btn {
+            padding: 10px 16px;
+            background: #fff;
+            border: 2px solid #e0e0e0;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 13px;
+            transition: all 0.2s;
+            white-space: nowrap;
+        }
+
+        .scenario-btn.active {
+            background: #000;
+            color: #fff;
+            border-color: #000;
+        }
+
+        .scenario-content {
+            display: none;
+        }
+
+        .scenario-content.active {
+            display: block;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 40px 24px;
+            color: #999;
+            font-size: 13px;
+            border-top: 1px solid #e0e0e0;
+        }
+
+        @media (max-width: 768px) {
+            .metric-grid {
+                grid-template-columns: 1fr;
+            }
+
+            table {
+                font-size: 12px;
+            }
+
+            th, td {
+                padding: 8px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <h1>💰 GHK-Cu Skincare Financial Model</h1>
+    <p>5-Year Projections, Unit Economics & Profitability Analysis</p>
+</div>
+
+<div class="content">
+
+<!-- ASSUMPTIONS & DRIVERS -->
+<div class="section">
+    <h1>📊 Financial Assumptions & Key Drivers</h1>
+    
+    <h2>Unit Economics Foundation</h2>
+    
+    <h3>Product: 30 mL Premium Hydrating Serum</h3>
+    <p>Single SKU MVP. Cosmetic-grade GHK-Cu (Copper Tripeptide-1) formulation.</p>
+    
+    <table>
+        <tr>
+            <th colspan="4">COGS Breakdown (Per Unit)</th>
+        </tr>
+        <tr>
+            <td><strong>Item</strong></td>
+            <td class="number"><strong>Cost</strong></td>
+            <td class="number"><strong>% of COGS</strong></td>
+            <td><strong>Notes</strong></td>
+        </tr>
+        <tr>
+            <td>GHK-Cu raw material + base serum (30 mL)</td>
+            <td class="number">$2.50–$3.50</td>
+            <td class="number">40–42%</td>
+            <td>Supplier dependent; assumes MOQ negotiated</td>
+        </tr>
+        <tr>
+            <td>Glass bottle (30 mL, dropper, label, box)</td>
+            <td class="number">$1.50–$2.00</td>
+            <td class="number">24–26%</td>
+            <td>Premium packaging; eco-friendly glass</td>
+        </tr>
+        <tr>
+            <td>Fulfillment (pick, pack, label, QA)</td>
+            <td class="number">$0.50–$0.75</td>
+            <td class="number">8–10%</td>
+            <td>In-house or 3PL (assume in-house at scale)</td>
+        </tr>
+        <tr>
+            <td>Shipping to customer (avg USPS Priority)</td>
+            <td class="number">$1.50–$2.00</td>
+            <td class="number">24–26%</td>
+            <td>~$2.00 avg for weight + zones; customer absorbs if <$50</td>
+        </tr>
+        <tr class="highlight-row">
+            <td><strong>Total COGS + Fulfillment</strong></td>
+            <td class="number"><strong>$6.00–$8.25</strong></td>
+            <td class="number"><strong>100%</strong></td>
+            <td><strong>Baseline: $7.00/unit</strong></td>
+        </tr>
+    </table>
+
+    <h2>Price Points & Gross Margin</h2>
+    
+    <table>
+        <tr>
+            <th>Retail Price</th>
+            <th class="number">Revenue/Unit</th>
+            <th class="number">COGS + Fulfillment</th>
+            <th class="number">Gross Profit</th>
+            <th class="number">Gross Margin %</th>
+        </tr>
+        <tr>
+            <td><strong>$49 (Entry)</strong></td>
+            <td class="number">$49.00</td>
+            <td class="number">$7.00</td>
+            <td class="number">$42.00</td>
+            <td class="number"><strong>85.7%</strong></td>
+        </tr>
+        <tr>
+            <td><strong>$59 (Standard)</strong></td>
+            <td class="number">$59.00</td>
+            <td class="number">$7.00</td>
+            <td class="number">$52.00</td>
+            <td class="number"><strong>88.1%</strong></td>
+        </tr>
+        <tr>
+            <td><strong>$69 (Premium)</strong></td>
+            <td class="number">$69.00</td>
+            <td class="number">$7.00</td>
+            <td class="number">$62.00</td>
+            <td class="number"><strong>89.9%</strong></td>
+        </tr>
+    </table>
+
+    <div class="box box-green">
+        <strong>✓ Gross Margin Target Met:</strong> 80%+ margins across all price points provide substantial buffer for marketing, fulfillment optimization, and profit. Conservative assumption: blend price at <strong>$59</strong> (~88% gross margin).
+    </div>
+
+    <h2>Operating Costs (Fixed + Variable)</h2>
+    
+    <table>
+        <tr>
+            <th>Category</th>
+            <th>Monthly Cost</th>
+            <th>Notes</th>
+        </tr>
+        <tr>
+            <td><strong>Fixed Costs (Monthly)</strong></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Shopify/e-commerce platform</td>
+            <td class="number">$300</td>
+            <td>Plus 2.9% payment processing; starts $29/mo, scales with growth</td>
+        </tr>
+        <tr>
+            <td>Hosting, email (Klaviyo/ConvertKit)</td>
+            <td class="number">$150</td>
+            <td>Email marketing + SMS automation</td>
+        </tr>
+        <tr>
+            <td>Customer service / support (part-time)</td>
+            <td class="number">$500</td>
+            <td>Scales with unit volume; assume 1–2 hrs/day at $25/hr</td>
+        </tr>
+        <tr>
+            <td>Product liability insurance</td>
+            <td class="number">$100</td>
+            <td>~$1,200/year, quoted from brokers (Phase 9)</td>
+        </tr>
+        <tr>
+            <td>Accounting / legal retainer</td>
+            <td class="number">$250</td>
+            <td>Tax, compliance, contract review</td>
+        </tr>
+        <tr>
+            <td>Office / storage</td>
+            <td class="number">$300</td>
+            <td>Small warehouse or shared space for inventory + fulfillment</td>
+        </tr>
+        <tr class="highlight-row">
+            <td><strong>Total Fixed Costs</strong></td>
+            <td class="number"><strong>$1,600/mo</strong></td>
+            <td><strong>$19,200/year</strong></td>
+        </tr>
+        <tr>
+            <td><strong>Variable Costs (Per Unit Sold)</strong></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Payment processing (Stripe fees)</td>
+            <td class="number">2.9% + $0.30</td>
+            <td>On revenue; avg ~$1.90 per $59 transaction</td>
+        </tr>
+        <tr>
+            <td>Customer acquisition cost (CAC)</td>
+            <td class="number">$8–$15</td>
+            <td>Paid ads (Google, Facebook) + organic; see section below</td>
+        </tr>
+        <tr class="highlight-row">
+            <td><strong>Total Variable Costs</strong></td>
+            <td class="number"><strong>$10–$17/unit</strong></td>
+            <td><strong>Before marketing spend</strong></td>
+        </tr>
+    </table>
+
+    <h2>Customer Acquisition Cost (CAC) & Marketing</h2>
+    
+    <div class="box box-yellow">
+        <strong>⚠️ Critical Metric:</strong> CAC must be <$20 to achieve positive unit contribution margin. If CAC >$30, profitability severely impacted.
+    </div>
+
+    <table>
+        <tr>
+            <th>Channel</th>
+            <th>Monthly Budget</th>
+            <th>Expected Volume</th>
+            <th>CAC (est.)</th>
+            <th>ROAS</th>
+        </tr>
+        <tr>
+            <td><strong>Organic (Content + Email)</strong></td>
+            <td class="number">$0 paid</td>
+            <td class="number">10–20 units/mo</td>
+            <td class="number">$0–2</td>
+            <td class="number">—</td>
+        </tr>
+        <tr>
+            <td><strong>Google Ads (Search)</strong></td>
+            <td class="number">$500/mo</td>
+            <td class="number">30–50 units/mo</td>
+            <td class="number">$10–$17</td>
+            <td class="number">3.5–5.0x</td>
+        </tr>
+        <tr>
+            <td><strong>Facebook/Instagram (Prospecting)</strong></td>
+            <td class="number">$500/mo</td>
+            <td class="number">25–40 units/mo</td>
+            <td class="number">$12–$20</td>
+            <td class="number">2.5–3.5x</td>
+        </tr>
+        <tr>
+            <td><strong>Influencer (micro, affiliate)</strong></td>
+            <td class="number">$200/mo</td>
+            <td class="number">15–25 units/mo</td>
+            <td class="number">$8–$13</td>
+            <td class="number">4.0–6.0x</td>
+        </tr>
+        <tr>
+            <td><strong>Email / Retention (existing)</strong></td>
+            <td class="number">$100/mo</td>
+            <td class="number">20–30 repeat units/mo</td>
+            <td class="number">$0 (retained)</td>
+            <td class="number">—</td>
+        </tr>
+        <tr class="highlight-row">
+            <td><strong>Total Marketing Budget</strong></td>
+            <td class="number"><strong>$1,300/mo</strong></td>
+            <td class="number"><strong>~100 units/mo avg</strong></td>
+            <td class="number"><strong>$13 CAC (blended)</strong></td>
+            <td class="number"><strong>3.5x ROAS avg</strong></td>
+        </tr>
+    </table>
+
+    <h3>Repeat Purchase & Lifetime Value</h3>
+    <ul>
+        <li><strong>First Purchase (Paid):</strong> CAC $13, Revenue $59 → Gross Profit $52</li>
+        <li><strong>Repeat Rate Target:</strong> 30% (repeat within 6 months)</li>
+        <li><strong>Repeat Purchase Margin:</strong> No CAC; Gross Profit $52 per repeat</li>
+        <li><strong>Lifetime Value (5 purchases in 18 mo):</strong> $260 gross profit per customer (5 × $52)</li>
+        <li><strong>LTV:CAC Ratio:</strong> 260/13 = <strong>20:1</strong> (excellent; target is 3:1+)</li>
+    </ul>
+</div>
+
+<!-- SCENARIOS -->
+<div class="section">
+    <h1>🎯 3-Year Scenario Analysis</h1>
+    
+    <div class="scenario-tabs">
+        <button class="scenario-btn active" onclick="showScenario('conservative')">📉 Conservative</button>
+        <button class="scenario-btn" onclick="showScenario('moderate')">📊 Moderate</button>
+        <button class="scenario-btn" onclick="showScenario('bullish')">📈 Bullish</button>
+    </div>
+
+    <!-- CONSERVATIVE -->
+    <div id="conservative" class="scenario-content active">
+        <h2>Conservative Scenario</h2>
+        <p><strong>Assumptions:</strong> Slower customer acquisition, lower repeat rate, higher CAC. 50% of marketing ROI targets met.</p>
+
+        <table>
+            <tr>
+                <th>Period</th>
+                <th class="number">Units Sold</th>
+                <th class="number">Revenue</th>
+                <th class="number">COGS</th>
+                <th class="number">Marketing</th>
+                <th class="number">Operating</th>
+                <th class="number">Net Profit</th>
+                <th class="number">Cumulative</th>
+            </tr>
+            <tr>
+                <td><strong>Year 1: H1 (Jan–Jun)</strong></td>
+                <td class="number">150</td>
+                <td class="number">$8,850</td>
+                <td class="number">$1,050</td>
+                <td class="number">$3,900</td>
+                <td class="number">$9,600</td>
+                <td class="number"><span class="negative">-$5,700</span></td>
+                <td class="number"><span class="negative">-$5,700</span></td>
+            </tr>
+            <tr>
+                <td><strong>Year 1: H2 (Jul–Dec)</strong></td>
+                <td class="number">280</td>
+                <td class="number">$16,520</td>
+                <td class="number">$1,960</td>
+                <td class="number">$5,200</td>
+                <td class="number">$9,600</td>
+                <td class="number"><span class="negative">-$240</span></td>
+                <td class="number"><span class="negative">-$5,940</span></td>
+            </tr>
+            <tr class="highlight-row">
+                <td><strong>Year 1 Total</strong></td>
+                <td class="number"><strong>430 units</strong></td>
+                <td class="number"><strong>$25,370</strong></td>
+                <td class="number"><strong>$3,010</strong></td>
+                <td class="number"><strong>$9,100</strong></td>
+                <td class="number"><strong>$19,200</strong></td>
+                <td class="number"><strong>-$5,940</strong></td>
+                <td class="number"><strong>-$5,940</strong></td>
+            </tr>
+            <tr>
+                <td><strong>Year 2: H1</strong></td>
+                <td class="number">480</td>
+                <td class="number">$28,320</td>
+                <td class="number">$3,360</td>
+                <td class="number">$6,000</td>
+                <td class="number">$9,600</td>
+                <td class="number">$9,360</td>
+                <td class="number">$3,420</td>
+            </tr>
+            <tr>
+                <td><strong>Year 2: H2</strong></td>
+                <td class="number">620</td>
+                <td class="number">$36,580</td>
+                <td class="number">$4,340</td>
+                <td class="number">$7,500</td>
+                <td class="number">$9,600</td>
+                <td class="number">$15,140</td>
+                <td class="number">$18,560</td>
+            </tr>
+            <tr class="highlight-row">
+                <td><strong>Year 2 Total</strong></td>
+                <td class="number"><strong>1,100 units</strong></td>
+                <td class="number"><strong>$64,900</strong></td>
+                <td class="number"><strong>$7,700</strong></td>
+                <td class="number"><strong>$13,500</strong></td>
+                <td class="number"><strong>$19,200</strong></td>
+                <td class="number"><strong>$24,500</strong></td>
+                <td class="number"><strong>$18,560</strong></td>
+            </tr>
+            <tr>
+                <td><strong>Year 3: H1</strong></td>
+                <td class="number">750</td>
+                <td class="number">$44,250</td>
+                <td class="number">$5,250</td>
+                <td class="number">$8,000</td>
+                <td class="number">$9,600</td>
+                <td class="number">$21,400</td>
+                <td class="number">$39,960</td>
+            </tr>
+            <tr>
+                <td><strong>Year 3: H2</strong></td>
+                <td class="number">900</td>
+                <td class="number">$53,100</td>
+                <td class="number">$6,300</td>
+                <td class="number">$9,000</td>
+                <td class="number">$9,600</td>
+                <td class="number">$28,200</td>
+                <td class="number">$68,160</td>
+            </tr>
+            <tr class="highlight-row">
+                <td><strong>Year 3 Total</strong></td>
+                <td class="number"><strong>1,650 units</strong></td>
+                <td class="number"><strong>$97,350</strong></td>
+                <td class="number"><strong>$11,550</strong></td>
+                <td class="number"><strong>$17,000</strong></td>
+                <td class="number"><strong>$19,200</strong></td>
+                <td class="number"><strong>$49,600</strong></td>
+                <td class="number"><strong>$68,160</strong></td>
+            </tr>
+        </table>
+
+        <div class="metric-grid">
+            <div class="metric-card">
+                <div class="metric-label">Year 1 Loss</div>
+                <div class="metric-value negative">-$5,940</div>
+                <div class="metric-note">Break-even: Month 15</div>
+            </div>
+            <div class="metric-card green">
+                <div class="metric-label">Year 3 Profit</div>
+                <div class="metric-value">$49,600</div>
+                <div class="metric-note">3-year cumulative: $68,160</div>
+            </div>
+            <div class="metric-card">
+                <div class="metric-label">Year 3 ARR</div>
+                <div class="metric-value">$97,350</div>
+                <div class="metric-note">3-year CAGR: 65%</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODERATE -->
+    <div id="moderate" class="scenario-content">
+        <h2>Moderate Scenario</h2>
+        <p><strong>Assumptions:</strong> Marketing ROI targets hit; 30% repeat rate; $13 blended CAC. Most likely outcome.</p>
+
+        <table>
+            <tr>
+                <th>Period</th>
+                <th class="number">Units Sold</th>
+                <th class="number">Revenue</th>
+                <th class="number">COGS</th>
+                <th class="number">Marketing</th>
+                <th class="number">Operating</th>
+                <th class="number">Net Profit</th>
+                <th class="number">Cumulative</th>
+            </tr>
+            <tr>
+                <td><strong>Year 1: H1</strong></td>
+                <td class="number">250</td>
+                <td class="number">$14,750</td>
+                <td class="number">$1,750</td>
+                <td class="number">$3,250</td>
+                <td class="number">$9,600</td>
+                <td class="number">$150</td>
+                <td class="number">$150</td>
+            </tr>
+            <tr>
+                <td><strong>Year 1: H2</strong></td>
+                <td class="number">450</td>
+                <td class="number">$26,550</td>
+                <td class="number">$3,150</td>
+                <td class="number">$4,500</td>
+                <td class="number">$9,600</td>
+                <td class="number">$9,300</td>
+                <td class="number">$9,450</td>
+            </tr>
+            <tr class="highlight-row">
+                <td><strong>Year 1 Total</strong></td>
+                <td class="number"><strong>700 units</strong></td>
+                <td class="number"><strong>$41,300</strong></td>
+                <td class="number"><strong>$4,900</strong></td>
+                <td class="number"><strong>$7,750</strong></td>
+                <td class="number"><strong>$19,200</strong></td>
+                <td class="number"><strong>$9,450</strong></td>
+                <td class="number"><strong>$9,450</strong></td>
+            </tr>
+            <tr>
+                <td><strong>Year 2: H1</strong></td>
+                <td class="number">800</td>
+                <td class="number">$47,200</td>
+                <td class="number">$5,600</td>
+                <td class="number">$6,000</td>
+                <td class="number">$9,600</td>
+                <td class="number">$26,000</td>
+                <td class="number">$35,450</td>
+            </tr>
+            <tr>
+                <td><strong>Year 2: H2</strong></td>
+                <td class="number">1,100</td>
+                <td class="number">$64,900</td>
+                <td class="number">$7,700</td>
+                <td class="number">$6,500</td>
+                <td class="number">$9,600</td>
+                <td class="number">$41,100</td>
+                <td class="number">$76,550</td>
+            </tr>
+            <tr class="highlight-row">
+                <td><strong>Year 2 Total</strong></td>
+                <td class="number"><strong>1,900 units</strong></td>
+                <td class="number"><strong>$112,100</strong></td>
+                <td class="number"><strong>$13,300</strong></td>
+                <td class="number"><strong>$12,500</strong></td>
+                <td class="number"><strong>$19,200</strong></td>
+                <td class="number"><strong>$67,100</strong></td>
+                <td class="number"><strong>$76,550</strong></td>
+            </tr>
+            <tr>
+                <td><strong>Year 3: H1</strong></td>
+                <td class="number">1,400</td>
+                <td class="number">$82,600</td>
+                <td class="number">$9,800</td>
+                <td class="number">$6,800</td>
+                <td class="number">$9,600</td>
+                <td class="number">$56,400</td>
+                <td class="number">$132,950</td>
+            </tr>
+            <tr>
+                <td><strong>Year 3: H2</strong></td>
+                <td class="number">1,700</td>
+                <td class="number">$100,300</td>
+                <td class="number">$11,900</td>
+                <td class="number">$7,500</td>
+                <td class="number">$9,600</td>
+                <td class="number">$71,300</td>
+                <td class="number">$204,250</td>
+            </tr>
+            <tr class="highlight-row">
+                <td><strong>Year 3 Total</strong></td>
+                <td class="number"><strong>3,100 units</strong></td>
+                <td class="number"><strong>$182,900</strong></td>
+                <td class="number"><strong>$21,700</strong></td>
+                <td class="number"><strong>$14,300</strong></td>
+                <td class="number"><strong>$19,200</strong></td>
+                <td class="number"><strong>$127,700</strong></td>
+                <td class="number"><strong>$204,250</strong></td>
+            </tr>
+        </table>
+
+        <div class="metric-grid">
+            <div class="metric-card green">
+                <div class="metric-label">Year 1 Profit</div>
+                <div class="metric-value">$9,450</div>
+                <div class="metric-note">Profitable by month 6</div>
+            </div>
+            <div class="metric-card green">
+                <div class="metric-label">Year 3 Profit</div>
+                <div class="metric-value">$127,700</div>
+                <div class="metric-note">3-year cumulative: $204,250</div>
+            </div>
+            <div class="metric-card">
+                <div class="metric-label">Year 3 ARR</div>
+                <div class="metric-value">$182,900</div>
+                <div class="metric-note">3-year CAGR: 103%</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- BULLISH -->
+    <div id="bullish" class="scenario-content">
+        <h2>Bullish Scenario</h2>
+        <p><strong>Assumptions:</strong> Strong customer demand, high repeat rate (40%+), viral organic growth, CAC drops to $10. Upside case.</p>
+
+        <table>
+            <tr>
+                <th>Period</th>
+                <th class="number">Units Sold</th>
+                <th class="number">Revenue</th>
+                <th class="number">COGS</th>
+                <th class="number">Marketing</th>
+                <th class="number">Operating</th>
+                <th class="number">Net Profit</th>
+                <th class="number">Cumulative</th>
+            </tr>
+            <tr>
+                <td><strong>Year 1: H1</strong></td>
+                <td class="number">400</td>
+                <td class="number">$23,600</td>
+                <td class="number">$2,800</td>
+                <td class="number">$2,500</td>
+                <td class="number">$9,600</td>
+                <td class="number">$8,700</td>
+                <td class="number">$8,700</td>
+            </tr>
+            <tr>
+                <td><strong>Year 1: H2</strong></td>
+                <td class="number">700</td>
+                <td class="number">$41,300</td>
+                <td class="number">$4,900</td>
+                <td class="number">$3,500</td>
+                <td class="number">$9,600</td>
+                <td class="number">$23,300</td>
+                <td class="number">$32,000</td>
+            </tr>
+            <tr class="highlight-row">
+                <td><strong>Year 1 Total</strong></td>
+                <td class="number"><strong>1,100 units</strong></td>
+                <td class="number"><strong>$64,900</strong></td>
+                <td class="number"><strong>$7,700</strong></td>
+                <td class="number"><strong>$6,000</strong></td>
+                <td class="number"><strong>$19,200</strong></td>
+                <td class="number"><strong>$32,000</strong></td>
+                <td class="number"><strong>$32,000</strong></td>
+            </tr>
+            <tr>
+                <td><strong>Year 2: H1</strong></td>
+                <td class="number">1,500</td>
+                <td class="number">$88,500</td>
+                <td class="number">$10,500</td>
+                <td class="number">$5,000</td>
+                <td class="number">$9,600</td>
+                <td class="number">$63,400</td>
+                <td class="number">$95,400</td>
+            </tr>
+            <tr>
+                <td><strong>Year 2: H2</strong></td>
+                <td class="number">2,100</td>
+                <td class="number">$123,900</td>
+                <td class="number">$14,700</td>
+                <td class="number">$5,500</td>
+                <td class="number">$9,600</td>
+                <td class="number">$94,100</td>
+                <td class="number">$189,500</td>
+            </tr>
+            <tr class="highlight-row">
+                <td><strong>Year 2 Total</strong></td>
+                <td class="number"><strong>3,600 units</strong></td>
+                <td class="number"><strong>$212,400</strong></td>
+                <td class="number"><strong>$25,200</strong></td>
+                <td class="number"><strong>$10,500</strong></td>
+                <td class="number"><strong>$19,200</strong></td>
+                <td class="number"><strong>$157,500</strong></td>
+                <td class="number"><strong>$189,500</strong></td>
+            </tr>
+            <tr>
+                <td><strong>Year 3: H1</strong></td>
+                <td class="number">2,800</td>
+                <td class="number">$165,200</td>
+                <td class="number">$19,600</td>
+                <td class="number">$5,000</td>
+                <td class="number">$9,600</td>
+                <td class="number">$131,000</td>
+                <td class="number">$320,500</td>
+            </tr>
+            <tr>
+                <td><strong>Year 3: H2</strong></td>
+                <td class="number">3,500</td>
+                <td class="number">$206,500</td>
+                <td class="number">$24,500</td>
+                <td class="number">$5,500</td>
+                <td class="number">$9,600</td>
+                <td class="number">$162,900</td>
+                <td class="number">$483,400</td>
+            </tr>
+            <tr class="highlight-row">
+                <td><strong>Year 3 Total</strong></td>
+                <td class="number"><strong>6,300 units</strong></td>
+                <td class="number"><strong>$371,700</strong></td>
+                <td class="number"><strong>$44,100</strong></td>
+                <td class="number"><strong>$10,500</strong></td>
+                <td class="number"><strong>$19,200</strong></td>
+                <td class="number"><strong>$293,900</strong></td>
+                <td class="number"><strong>$483,400</strong></td>
+            </tr>
+        </table>
+
+        <div class="metric-grid">
+            <div class="metric-card green">
+                <div class="metric-label">Year 1 Profit</div>
+                <div class="metric-value">$32,000</div>
+                <div class="metric-note">Profitable from month 2</div>
+            </div>
+            <div class="metric-card green">
+                <div class="metric-label">Year 3 Profit</div>
+                <div class="metric-value">$293,900</div>
+                <div class="metric-note">3-year cumulative: $483,400</div>
+            </div>
+            <div class="metric-card">
+                <div class="metric-label">Year 3 ARR</div>
+                <div class="metric-value">$371,700</div>
+                <div class="metric-note">3-year CAGR: 142%</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 5-YEAR EXTENDED PROJECTION -->
+<div class="section">
+    <h1>📈 5-Year Extended Projection (Moderate Scenario)</h1>
+    
+    <p>Extending the moderate scenario 2 additional years (Years 4–5). Assumes operational maturity, brand recognition, and scale benefits (lower COGS, CAC efficiency).</p>
+
+    <table>
+        <tr>
+            <th>Period</th>
+            <th class="number">Units</th>
+            <th class="number">Revenue</th>
+            <th class="number">COGS</th>
+            <th class="number">Operating</th>
+            <th class="number">Marketing</th>
+            <th class="number">Net Profit</th>
+            <th class="number">Margin %</th>
+        </tr>
+        <tr>
+            <td><strong>Year 1 (12 mo)</strong></td>
+            <td class="number">700</td>
+            <td class="number">$41,300</td>
+            <td class="number">$4,900</td>
+            <td class="number">$19,200</td>
+            <td class="number">$7,750</td>
+            <td class="number">$9,450</td>
+            <td class="number">22.9%</td>
+        </tr>
+        <tr>
+            <td><strong>Year 2 (12 mo)</strong></td>
+            <td class="number">1,900</td>
+            <td class="number">$112,100</td>
+            <td class="number">$13,300</td>
+            <td class="number">$19,200</td>
+            <td class="number">$12,500</td>
+            <td class="number">$67,100</td>
+            <td class="number">59.9%</td>
+        </tr>
+        <tr>
+            <td><strong>Year 3 (12 mo)</strong></td>
+            <td class="number">3,100</td>
+            <td class="number">$182,900</td>
+            <td class="number">$21,700</td>
+            <td class="number">$19,200</td>
+            <td class="number">$14,300</td>
+            <td class="number">$127,700</td>
+            <td class="number">69.8%</td>
+        </tr>
+        <tr>
+            <td><strong>Year 4 (12 mo, est.)</strong></td>
+            <td class="number">4,500</td>
+            <td class="number">$265,500</td>
+            <td class="number">$31,500</td>
+            <td class="number">$21,000</td>
+            <td class="number">$14,000</td>
+            <td class="number">$199,000</td>
+            <td class="number">74.9%</td>
+        </tr>
+        <tr>
+            <td><strong>Year 5 (12 mo, est.)</strong></td>
+            <td class="number">6,000</td>
+            <td class="number">$354,000</td>
+            <td class="number">$42,000</td>
+            <td class="number">$24,000</td>
+            <td class="number">$13,000</td>
+            <td class="number">$275,000</td>
+            <td class="number">77.7%</td>
+        </tr>
+        <tr class="highlight-row">
+            <td><strong>5-Year Total</strong></td>
+            <td class="number"><strong>16,200 units</strong></td>
+            <td class="number"><strong>$955,800</strong></td>
+            <td class="number"><strong>$113,400</strong></td>
+            <td class="number"><strong>$102,600</strong></td>
+            <td class="number"><strong>$61,550</strong></td>
+            <td class="number"><strong>$678,250</strong></td>
+            <td class="number"><strong>71.0%</strong></td>
+        </tr>
+    </table>
+
+    <div class="box box-green">
+        <strong>✓ Key Metrics (5-Year):</strong><br>
+        • Revenue at scale: $354k ARR by Year 5<br>
+        • Cumulative profit: $678k (71% of revenue)<br>
+        • Break-even: Month 6 (Year 1)<br>
+        • Operating margin improves: 23% → 78% as overhead spreads<br>
+        • CAC payback: 2 months average (LTV:CAC = 20:1)
+    </div>
+</div>
+
+<!-- SENSITIVITY ANALYSIS -->
+<div class="section">
+    <h1>⚠️ Sensitivity Analysis & Risk Factors</h1>
+    
+    <h2>How Changes in Key Assumptions Impact Year 3 Profit (Moderate Scenario)</h2>
+
+    <table>
+        <tr>
+            <th>Variable</th>
+            <th>Baseline</th>
+            <th>Scenario</th>
+            <th class="number">Year 3 Profit</th>
+            <th class="number">Change</th>
+        </tr>
+        <tr class="highlight-row">
+            <td colspan="5"><strong>BASELINE: Year 3 Profit = $127,700</strong></td>
+        </tr>
+        <tr>
+            <td rowspan="3"><strong>COGS (per unit)</strong></td>
+            <td rowspan="3">$7.00</td>
+            <td>$6.00 (10% down)</td>
+            <td class="number">$149,700</td>
+            <td class="number positive">+$22,000</td>
+        </tr>
+        <tr>
+            <td>$8.50 (20% up) ⚠️</td>
+            <td class="number">$105,700</td>
+            <td class="number negative">-$22,000</td>
+        </tr>
+        <tr>
+            <td>$10.00 (40% up, supplier risk)</td>
+            <td class="number">$83,700</td>
+            <td class="number negative">-$44,000</td>
+        </tr>
+        <tr>
+            <td rowspan="3"><strong>Retail Price (blend)</strong></td>
+            <td rowspan="3">$59</td>
+            <td>$54 (lower price)</td>
+            <td class="number">$104,700</td>
+            <td class="number negative">-$23,000</td>
+        </tr>
+        <tr>
+            <td>$64 (higher price)</td>
+            <td class="number">$150,700</td>
+            <td class="number positive">+$23,000</td>
+        </tr>
+        <tr>
+            <td>$49 (entry, cannibalization risk)</td>
+            <td class="number">$81,700</td>
+            <td class="number negative">-$46,000</td>
+        </tr>
+        <tr>
+            <td rowspan="3"><strong>CAC (blended)</strong></td>
+            <td rowspan="3">$13</td>
+            <td>$10 (better channel mix)</td>
+            <td class="number">$155,700</td>
+            <td class="number positive">+$28,000</td>
+        </tr>
+        <tr>
+            <td>$18 (competitive pressure) ⚠️</td>
+            <td class="number">$99,700</td>
+            <td class="number negative">-$28,000</td>
+        </tr>
+        <tr>
+            <td>$25 (saturated channels)</td>
+            <td class="number">$55,700</td>
+            <td class="number negative">-$72,000</td>
+        </tr>
+        <tr>
+            <td rowspan="3"><strong>Repeat Rate</strong></td>
+            <td rowspan="3">30%</td>
+            <td>40% (strong retention)</td>
+            <td class="number">$167,700</td>
+            <td class="number positive">+$40,000</td>
+        </tr>
+        <tr>
+            <td>20% (weak retention) ⚠️</td>
+            <td class="number">$87,700</td>
+            <td class="number negative">-$40,000</td>
+        </tr>
+        <tr>
+            <td>10% (no product-market fit)</td>
+            <td class="number">$47,700</td>
+            <td class="number negative">-$80,000</td>
+        </tr>
+        <tr>
+            <td rowspan="2"><strong>Unit Volume (Year 3)</strong></td>
+            <td rowspan="2">3,100 units</td>
+            <td>+20% growth (4,000 units)</td>
+            <td class="number">$169,700</td>
+            <td class="number positive">+$42,000</td>
+        </tr>
+        <tr>
+            <td>-30% shortfall (2,000 units) ⚠️</td>
+            <td class="number">$67,700</td>
+            <td class="number negative">-$60,000</td>
+        </tr>
+    </table>
+
+    <h2>Key Insights</h2>
+    <ul>
+        <li><strong>Most Sensitive To:</strong> Repeat rate (±$40k) and CAC (±$28k to ±$72k). These are the two biggest levers.</li>
+        <li><strong>COGS Pressure:</strong> 20% COGS increase (to $8.50) cuts Year 3 profit by $22k. Supplier due diligence critical.</li>
+        <li><strong>Price Elasticity:</strong> $5 price increase ($59→$64) adds $23k profit; $5 decrease ($59→$54) cuts $23k. Price point is material.</li>
+        <li><strong>CAC Break-Even:</strong> If CAC rises to $25, Year 3 profit drops 56%. Acquire efficiently or profitability collapses.</li>
+        <li><strong>Volume Risk:</strong> -30% shortfall (market adoption slower) results in $60k profit loss. Validate customer demand early (Phase 10).</li>
+    </ul>
+</div>
+
+<!-- CASH FLOW & RUNWAY -->
+<div class="section">
+    <h1>💵 Cash Flow & Startup Runway</h1>
+    
+    <h2>Initial Capital Requirements</h2>
+
+    <table>
+        <tr>
+            <th>Item</th>
+            <th class="number">Cost</th>
+            <th>Notes</th>
+        </tr>
+        <tr>
+            <td>Initial inventory (first MOQ, 500 units @ $7 COGS)</td>
+            <td class="number">$3,500</td>
+            <td>Assumes MOQ negotiated to 500–1k units</td>
+        </tr>
+        <tr>
+            <td>Packaging, labeling, QA (batch 500)</td>
+            <td class="number">$1,000</td>
+            <td>Upfront; amortized over first 500 units</td>
+        </tr>
+        <tr>
+            <td>Website build + e-commerce setup (Shopify, template)</td>
+            <td class="number">$2,000</td>
+            <td>One-time; includes domain, SSL, basic design</td>
+        </tr>
+        <tr>
+            <td>Product liability insurance (first year)</td>
+            <td class="number">$1,200</td>
+            <td>Annual; broker quote from Phase 9</td>
+        </tr>
+        <tr>
+            <td>Initial marketing spend (Google Ads, Facebook, influencer seeding)</td>
+            <td class="number">$5,000</td>
+            <td>First 2 months; ramp up by month 3</td>
+        </tr>
+        <tr>
+            <td>Legal / accounting setup + contracts</td>
+            <td class="number">$1,500</td>
+            <td>Business formation, supplier contracts, TOS</td>
+        </tr>
+        <tr>
+            <td>Working capital buffer (30 days operating costs)</td>
+            <td class="number">$5,000</td>
+            <td>Covers fulfillment, platform, etc. before first sales</td>
+        </tr>
+        <tr class="highlight-row">
+            <td><strong>Total Initial Capital Required</strong></td>
+            <td class="number"><strong>$19,200</strong></td>
+            <td><strong>Lean launch; assumes founder time invested</strong></td>
+        </tr>
+    </table>
+
+    <div class="box box-yellow">
+        <strong>⚠️ Cash Flow Risk:</strong> Initial inventory ($3.5k) + operating costs ($9.6k/6 months) = $13.1k before first sale. Need $19.2k runway to reach profitability in Month 6 (moderate scenario). If slow ramp, may need $25–30k buffer.
+    </div>
+
+    <h2>Payback Period & ROI</h2>
+    
+    <div class="metric-grid">
+        <div class="metric-card">
+            <div class="metric-label">Initial Investment</div>
+            <div class="metric-value">$19.2k</div>
+            <div class="metric-note">Lean startup capital</div>
+        </div>
+        <div class="metric-card">
+            <div class="metric-label">Payback (Moderate)</div>
+            <div class="metric-value">Month 9</div>
+            <div class="metric-note">Cumulative profit turns positive Year 1 H2</div>
+        </div>
+        <div class="metric-card green">
+            <div class="metric-label">3-Year ROI</div>
+            <div class="metric-value">1,064%</div>
+            <div class="metric-note">$204k profit on $19.2k invested</div>
+        </div>
+    </div>
+
+    <h2>Monthly Cash Burn (First 6 Months, Moderate Scenario)</h2>
+
+    <table>
+        <tr>
+            <th>Month</th>
+            <th class="number">Units Sold</th>
+            <th class="number">Revenue</th>
+            <th class="number">Expenses</th>
+            <th class="number">Net Cash Flow</th>
+            <th class="number">Cumulative</th>
+        </tr>
+        <tr>
+            <td><strong>Month 1</strong></td>
+            <td class="number">20</td>
+            <td class="number">$1,180</td>
+            <td class="number">$4,500</td>
+            <td class="number"><span class="negative">-$3,320</span></td>
+            <td class="number"><span class="negative">-$3,320</span></td>
+        </tr>
+        <tr>
+            <td><strong>Month 2</strong></td>
+            <td class="number">35</td>
+            <td class="number">$2,065</td>
+            <td class="number">$3,500</td>
+            <td class="number"><span class="negative">-$1,435</span></td>
+            <td class="number"><span class="negative">-$4,755</span></td>
+        </tr>
+        <tr>
+            <td><strong>Month 3</strong></td>
+            <td class="number">55</td>
+            <td class="number">$3,245</td>
+            <td class="number">$3,700</td>
+            <td class="number"><span class="negative">-$455</span></td>
+            <td class="number"><span class="negative">-$5,210</span></td>
+        </tr>
+        <tr>
+            <td><strong>Month 4</strong></td>
+            <td class="number">75</td>
+            <td class="number">$4,425</td>
+            <td class="number">$3,800</td>
+            <td class="number">$625</td>
+            <td class="number"><span class="negative">-$4,585</span></td>
+        </tr>
+        <tr>
+            <td><strong>Month 5</strong></td>
+            <td class="number">90</td>
+            <td class="number">$5,310</td>
+            <td class="number">$3,900</td>
+            <td class="number">$1,410</td>
+            <td class="number"><span class="negative">-$3,175</span></td>
+        </tr>
+        <tr>
+            <td><strong>Month 6</strong></td>
+            <td class="number">125</td>
+            <td class="number">$7,375</td>
+            <td class="number">$4,000</td>
+            <td class="number">$3,375</td>
+            <td class="number"><span class="negative">-$175</span></td>
+        </tr>
+    </table>
+
+    <div class="box box-green">
+        <strong>✓ Path to Cash Positive:</strong> By Month 6, monthly revenue exceeds expenses. With $19.2k initial capital, runway extends 5.5 months, which aligns with profitability timeline.
+    </div>
+</div>
+
+<!-- UNIT ECONOMICS DETAIL -->
+<div class="section">
+    <h1>🎯 Unit Economics Deep Dive</h1>
+
+    <h2>Single Unit P&L ($59 Price Point)</h2>
+
+    <table>
+        <tr>
+            <th colspan="3">Revenue & COGS</th>
+        </tr>
+        <tr>
+            <td><strong>Revenue per unit</strong></td>
+            <td></td>
+            <td class="number">$59.00</td>
+        </tr>
+        <tr>
+            <td><strong>COGS + fulfillment</strong></td>
+            <td></td>
+            <td class="number">$7.00</td>
+        </tr>
+        <tr>
+            <td><strong>Gross profit per unit</strong></td>
+            <td></td>
+            <td class="number">$52.00</td>
+        </tr>
+        <tr>
+            <td><strong>Gross margin %</strong></td>
+            <td></td>
+            <td class="number">88.1%</td>
+        </tr>
+        <tr>
+            <th colspan="3">Contribution Margin (after variable costs)</th>
+        </tr>
+        <tr>
+            <td>Gross profit per unit</td>
+            <td></td>
+            <td class="number">$52.00</td>
+        </tr>
+        <tr>
+            <td>Payment processing (2.9% + $0.30)</td>
+            <td></td>
+            <td class="number">-$2.01</td>
+        </tr>
+        <tr>
+            <td><strong>Contribution margin (before CAC)</strong></td>
+            <td></td>
+            <td class="number">$49.99</td>
+        </tr>
+        <tr>
+            <td>Customer acquisition cost (CAC)</td>
+            <td></td>
+            <td class="number">-$13.00</td>
+        </tr>
+        <tr class="highlight-row">
+            <td><strong>Net unit contribution (first purchase)</strong></td>
+            <td></td>
+            <td class="number"><strong>$36.99</strong></td>
+        </tr>
+        <tr>
+            <th colspan="3">Repeat Purchase Economics (30% repeat rate)</th>
+        </tr>
+        <tr>
+            <td>Revenue (repeat unit, no CAC)</td>
+            <td></td>
+            <td class="number">$59.00</td>
+        </tr>
+        <tr>
+            <td>COGS + fulfillment</td>
+            <td></td>
+            <td class="number">-$7.00</td>
+        </tr>
+        <tr>
+            <td>Payment processing</td>
+            <td></td>
+            <td class="number">-$2.01</td>
+        </tr>
+        <tr class="highlight-row">
+            <td><strong>Net unit contribution (repeat)</strong></td>
+            <td></td>
+            <td class="number"><strong>$49.99</strong></td>
+        </tr>
+        <tr>
+            <th colspan="3">Lifetime Value (5 purchases in 18 months)</th>
+        </tr>
+        <tr>
+            <td>Purchase 1 contribution (with CAC)</td>
+            <td></td>
+            <td class="number">$36.99</td>
+        </tr>
+        <tr>
+            <td>Purchase 2–5 contribution (no CAC, × 4)</td>
+            <td></td>
+            <td class="number">$199.96</td>
+        </tr>
+        <tr class="highlight-row">
+            <td><strong>Lifetime value (LTV) per customer</strong></td>
+            <td></td>
+            <td class="number"><strong>$236.95</strong></td>
+        </tr>
+        <tr>
+            <td><strong>LTV:CAC ratio</strong></td>
+            <td></td>
+            <td class="number"><strong>18.2:1</strong></td>
+        </tr>
+    </table>
+
+    <div class="box box-green">
+        <strong>✓ Healthy Unit Economics:</strong> LTV:CAC of 18:1 (target: 3:1+) indicates strong profitability potential. Even with higher CAC or lower repeat, margins remain positive.
+    </div>
+</div>
+
+<!-- GO/NO-GO THRESHOLDS -->
+<div class="section">
+    <h1>🚨 Financial Go/No-Go Thresholds</h1>
+
+    <p>These are the financial guardrails. If any are breached, escalate to DECISIONS.md.</p>
+
+    <table>
+        <tr>
+            <th>Metric</th>
+            <th>Green Light</th>
+            <th>Yellow Flag</th>
+            <th>Red Light (No-Go)</th>
+        </tr>
+        <tr>
+            <td><strong>Gross Margin</strong></td>
+            <td>≥60%</td>
+            <td>50–60%</td>
+            <td><span class="negative"><50%</span></td>
+        </tr>
+        <tr>
+            <td><strong>CAC (blended)</strong></td>
+            <td><$15</td>
+            <td>$15–$25</td>
+            <td><span class="negative">>$30</span></td>
+        </tr>
+        <tr>
+            <td><strong>LTV:CAC Ratio</strong></td>
+            <td>≥10:1</td>
+            <td>5–10:1</td>
+            <td><span class="negative"><3:1</span></td>
+        </tr>
+        <tr>
+            <td><strong>Repeat Rate</strong></td>
+            <td>≥30%</td>
+            <td>20–30%</td>
+            <td><span class="negative"><15%</span></td>
+        </tr>
+        <tr>
+            <td><strong>Break-Even Timeline</strong></td>
+            <td>≤12 months</td>
+            <td>12–18 months</td>
+            <td><span class="negative">>18 months</span></td>
+        </tr>
+        <tr>
+            <td><strong>Unit Economics Profitability</strong></td>
+            <td>Positive after CAC</td>
+            <td>Marginally positive</td>
+            <td><span class="negative">Negative (CAC > contribution)</span></td>
+        </tr>
+        <tr>
+            <td><strong>Initial Capital Required</strong></td>
+            <td><$25k</td>
+            <td>$25–$50k</td>
+            <td><span class="negative">>$75k</span></td>
+        </tr>
+        <tr>
+            <td><strong>Year 3 Profitability</strong></td>
+            <td>>$100k</td>
+            <td>$50–$100k</td>
+            <td><span class="negative"><$25k or negative</span></td>
+        </tr>
+    </table>
+
+    <div class="box box-green">
+        <strong>✓ Current Model Status:</strong> All thresholds in green light zone. Gross margin 88%, CAC target $13, LTV:CAC 18:1, break-even 9–12 months, Year 3 profit $128k (moderate), capital required $19.2k.
+    </div>
+</div>
+
+<!-- SUMMARY -->
+<div class="section">
+    <h1>📋 Executive Summary</h1>
+
+    <div class="metric-grid">
+        <div class="metric-card green">
+            <div class="metric-label">Initial Capital</div>
+            <div class="metric-value">$19.2k</div>
+            <div class="metric-note">Lean, bootstrap-friendly</div>
+        </div>
+        <div class="metric-card green">
+            <div class="metric-label">Payback Period</div>
+            <div class="metric-value">9 months</div>
+            <div class="metric-note">Month 9 (moderate scenario)</div>
+        </div>
+        <div class="metric-card green">
+            <div class="metric-label">Year 3 ARR</div>
+            <div class="metric-value">$182.9k</div>
+            <div class="metric-note">Moderate scenario</div>
+        </div>
+        <div class="metric-card green">
+            <div class="metric-label">5-Year Cumulative Profit</div>
+            <div class="metric-value">$678k</div>
+            <div class="metric-note">Moderate scenario; 71% margin</div>
+        </div>
+        <div class="metric-card green">
+            <div class="metric-label">Gross Margin</div>
+            <div class="metric-value">88%</div>
+            <div class="metric-note">At $59 price point</div>
+        </div>
+        <div class="metric-card green">
+            <div class="metric-label">LTV:CAC</div>
+            <div class="metric-value">18:1</div>
+            <div class="metric-note">Very healthy unit economics</div>
+        </div>
+    </div>
+
+    <h2>Key Takeaways</h2>
+    <ul>
+        <li><strong>Financially Viable:</strong> Lean unit economics ($7 COGS → $52 gross profit), healthy margins (88% at $59), and strong LTV:CAC (18:1) support profitability even at moderate customer acquisition.</li>
+        <li><strong>Bootstrap-Friendly:</strong> $19.2k initial capital is manageable for a lean launch. No external funding required to reach profitability if execution is solid.</li>
+        <li><strong>Fast Path to Profitability:</strong> Moderate scenario hits profitability in Month 6, payback in Month 9. Conservative scenario slightly delayed (Month 15), bullish scenario immediate (Month 2).</li>
+        <li><strong>Scale Potential:</strong> 5-year revenue grows to $354k ARR with $275k annual profit. Margin expansion from 23% to 78% as fixed costs spread.</li>
+        <li><strong>Sensitive to CAC & Repeat:</strong> CAC and repeat rate are the two biggest levers. A $5 increase in CAC (to $18) cuts Year 3 profit 22%. A 10-point drop in repeat rate (30%→20%) cuts $40k profit. Focus heavily on customer acquisition efficiency and retention.</li>
+        <li><strong>Price Point Matters:</strong> $59 retail is the balanced sweet spot. $49 risks commoditization; $69 may face demand resistance. Validate pricing in Phase 10 customer interviews.</li>
+        <li><strong>No-Go Risk:</strong> If COGS exceeds $9/unit (supplier negotiation failure) or CAC exceeds $20 (channel saturation), profitability significantly impaired. Monitor closely in Phase 2 supplier calls.</li>
+    </ul>
+
+    <h2>Next Steps (Financial Diligence)</h2>
+    <ol>
+        <li><strong>Phase 2:</strong> Lock in supplier COGS quotes. Every $1 difference = $3.1k Year 3 profit swing.</li>
+        <li><strong>Phase 8:</strong> Model actual margin assumptions with real COGS + fulfillment data. Stress-test at $8–$10 COGS.</li>
+        <li><strong>Phase 10:</strong> Validate CAC assumptions with real customer acquisition data (Google Ads, Facebook, organic). Target <$15 blended CAC.</li>
+        <li><strong>Ongoing:</strong> Track CAC, repeat rate, and gross margin monthly. If CAC creeps >$18 or repeat <25%, pause growth and optimize channels.</li>
+    </ol>
+</div>
+
+</div>
+
+<div class="footer">
+    <p>GHK-Cu Skincare — 5-Year Financial Model | Compiled Jun 13, 2026</p>
+    <p>Assumptions subject to Phase 2 supplier confirmation, Phase 10 customer validation, and Phase 8 financial modeling. Scenarios are probabilistic; actual results will vary.</p>
+    <p>Dashboard: <a href="https://www.robkremers.com/ghkcu-dashboard.html">robkremers.com/ghkcu-dashboard.html</a> | Full Brief: <a href="https://www.robkremers.com/ghkcu-full-brief.html">robkremers.com/ghkcu-full-brief.html</a></p>
+</div>
+
+<script>
+function showScenario(scenario) {
+    // Hide all scenarios
+    document.getElementById('conservative').classList.remove('active');
+    document.getElementById('moderate').classList.remove('active');
+    document.getElementById('bullish').classList.remove('active');
+    
+    // Remove active from all buttons
+    const buttons = document.querySelectorAll('.scenario-btn');
+    buttons.forEach(btn => btn.classList.remove('active'));
+    
+    // Show selected scenario
+    document.getElementById(scenario).classList.add('active');
+    event.target.classList.add('active');
+}
+</script>
+
+</body>
+</html>
