@@ -378,7 +378,7 @@ OUTFITS: Dict[str, dict] = {
     },
     # Hantavirus outfit — Raul May 7 2026
     "Hantavirus (650)": {
-        "periods": [18, 36, 65, 180, 360, 650],
+        "periods": [16, 36, 65, 160, 360, 650],
         "category": "Core",
         "notes": (
             "Raul May 7 2026. SAB 15M MA180=3.63 (speculative). "
@@ -431,7 +431,7 @@ AFFINITIES: Dict[str, List[str]] = {
     "Octane (818)": ["SMR", "OKLO", "MSTX", "MSTR", "SCO", "DRN", "FAS", "TSLL"],
     "Octuple (816)": ["DOG", "UDOW", "DIA", "DJI", "NVDA", "AAPL", "ERX", "USO", "SCO", "SOXS"],
     "REPEATER_9": ["BYND", "SVIX", "TSLZ"],
-    "Hantavirus (650)": ["SAB", "SABS"],
+    "Hantavirus (650)": ["SABS"],
     "Menlo Park (650)": ["META"],
     "Palantir (770)": ["MYY", "UMDD", "PLTR", "MDY", "IVOO"],
     "Alphabet/GOOG (100)": ["GOOG", "GOOGL"],
@@ -527,7 +527,7 @@ TICKERS = [
     # Financials
     "JPM", "V", "XLF", "FAS",
     # Leveraged single-stock
-    "TSLQ", "TSLR", "TSLZ", "ORCX", "AAPU", "AAPD", "TSLT", "MSTX", "TSLL",
+    "TSLQ", "TSLR", "TSLZ", "ORCX", "AAPU", "AAPD", "TSLT", "MSTX", "TSLL", "MSTU",
     # Commodities / Bonds / Gold
     "GLD", "TLT", "TBT", "USO", "SCO",
     # Crypto / BTC-linked
@@ -550,8 +550,8 @@ TICKERS = [
     "RIVN",
     # Apr 29 2026 long trades: MSFL (22² outfit 32M) + NVDX (Nikkei 225 outfit 30M)
     "MSFL", "NVDX",
-    # May 7 2026: SAB (15M MA180=3.63 speculative) + SABS (2H MA650=3.410 full conviction, magnetized)
-    "SAB", "SABS",
+    # May 7 2026: SABS (2H MA650=3.410 full conviction, magnetized)
+    "SABS",
 ]
 
 # Light scan: just the most important tickers

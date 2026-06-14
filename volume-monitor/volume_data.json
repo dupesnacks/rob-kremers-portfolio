@@ -1,0 +1,356 @@
+[
+  {
+    "ticker": "BYND",
+    "daily": {
+      "today_volume": 26927200,
+      "avg_20day": 35423515
+    },
+    "weekly": {
+      "has_data": true,
+      "volume_this_week": 212240800,
+      "volume_4week_avg": 185014350,
+      "volume_change_pct": 14.72,
+      "price_start": 0.72,
+      "price_end": 0.68,
+      "price_change_pct": -5.68
+    },
+    "monthly": {
+      "has_data": true,
+      "volume_this_month": 386878200,
+      "volume_3month_avg": 1162215400,
+      "volume_change_pct": -66.71,
+      "price_start": 0.79,
+      "price_end": 0.68,
+      "price_change_pct": -13.47
+    }
+  },
+  {
+    "ticker": "SABS",
+    "daily": {
+      "today_volume": 355800,
+      "avg_20day": 403220
+    },
+    "weekly": {
+      "has_data": true,
+      "volume_this_week": 1521500,
+      "volume_4week_avg": 4376175,
+      "volume_change_pct": -65.23,
+      "price_start": 3.4,
+      "price_end": 3.33,
+      "price_change_pct": -2.06
+    },
+    "monthly": {
+      "has_data": true,
+      "volume_this_month": 3507800,
+      "volume_3month_avg": 16503333,
+      "volume_change_pct": -78.74,
+      "price_start": 3.74,
+      "price_end": 3.33,
+      "price_change_pct": -10.96
+    }
+  },
+  {
+    "ticker": "GME",
+    "daily": {
+      "today_volume": 5309800,
+      "avg_20day": 6002150
+    },
+    "weekly": {
+      "has_data": true,
+      "volume_this_week": 26551300,
+      "volume_4week_avg": 35580400,
+      "volume_change_pct": -25.38,
+      "price_start": 21.77,
+      "price_end": 21.77,
+      "price_change_pct": 0.0
+    },
+    "monthly": {
+      "has_data": true,
+      "volume_this_month": 70478900,
+      "volume_3month_avg": 155214133,
+      "volume_change_pct": -54.59,
+      "price_start": 21.02,
+      "price_end": 21.77,
+      "price_change_pct": 3.57
+    }
+  },
+  {
+    "ticker": "AMC",
+    "daily": {
+      "today_volume": 45507700,
+      "avg_20day": 35246270
+    },
+    "weekly": {
+      "has_data": true,
+      "volume_this_week": 203606000,
+      "volume_4week_avg": 150592700,
+      "volume_change_pct": 35.2,
+      "price_start": 1.81,
+      "price_end": 2.34,
+      "price_change_pct": 29.28
+    },
+    "monthly": {
+      "has_data": true,
+      "volume_this_month": 459870700,
+      "volume_3month_avg": 615133633,
+      "volume_change_pct": -25.24,
+      "price_start": 1.78,
+      "price_end": 2.34,
+      "price_change_pct": 31.46
+    }
+  },
+  {
+    "ticker": "BTC-USD",
+    "daily": {
+      "today_volume": 17075428352,
+      "avg_20day": 36211075240
+    },
+    "weekly": {
+      "has_data": true,
+      "volume_this_week": 211051679740,
+      "volume_4week_avg": 241821470174,
+      "volume_change_pct": -12.72,
+      "price_start": 60866.94,
+      "price_end": 64148.15,
+      "price_change_pct": 5.39
+    },
+    "monthly": {
+      "has_data": true,
+      "volume_this_month": 522996369399,
+      "volume_3month_avg": 1105870500726,
+      "volume_change_pct": -52.71,
+      "price_start": 73580.21,
+      "price_end": 64148.15,
+      "price_change_pct": -12.82
+    }
+  },
+  {
+    "ticker": "DOGE-USD",
+    "daily": {
+      "today_volume": 662100672,
+      "avg_20day": 905471468
+    },
+    "weekly": {
+      "has_data": true,
+      "volume_this_week": 5359451843,
+      "volume_4week_avg": 7902342310,
+      "volume_change_pct": -32.18,
+      "price_start": 0.08,
+      "price_end": 0.09,
+      "price_change_pct": 7.06
+    },
+    "monthly": {
+      "has_data": true,
+      "volume_this_month": 13227369206,
+      "volume_3month_avg": 41389027671,
+      "volume_change_pct": -68.04,
+      "price_start": 0.1,
+      "price_end": 0.09,
+      "price_change_pct": -12.59
+    }
+  },
+  {
+    "ticker": "IBM",
+    "daily": {
+      "today_volume": 5741900,
+      "avg_20day": 12393460
+    },
+    "weekly": {
+      "has_data": true,
+      "volume_this_week": 34595800,
+      "volume_4week_avg": 61399000,
+      "volume_change_pct": -43.65,
+      "price_start": 286.44,
+      "price_end": 272.24,
+      "price_change_pct": -4.96
+    },
+    "monthly": {
+      "has_data": true,
+      "volume_this_month": 120730900,
+      "volume_3month_avg": 146995000,
+      "volume_change_pct": -17.87,
+      "price_start": 322.55,
+      "price_end": 272.24,
+      "price_change_pct": -15.6
+    }
+  },
+  {
+    "ticker": "PLTR",
+    "daily": {
+      "today_volume": 35378000,
+      "avg_20day": 38400790
+    },
+    "weekly": {
+      "has_data": true,
+      "volume_this_week": 159204000,
+      "volume_4week_avg": 205748700,
+      "volume_change_pct": -22.62,
+      "price_start": 135.68,
+      "price_end": 127.99,
+      "price_change_pct": -5.67
+    },
+    "monthly": {
+      "has_data": true,
+      "volume_this_month": 380211100,
+      "volume_3month_avg": 983619233,
+      "volume_change_pct": -61.35,
+      "price_start": 159.98,
+      "price_end": 127.99,
+      "price_change_pct": -20.0
+    }
+  },
+  {
+    "ticker": "LFVN",
+    "daily": {
+      "today_volume": 503500,
+      "avg_20day": 798220
+    },
+    "weekly": {
+      "has_data": true,
+      "volume_this_week": 4612200,
+      "volume_4week_avg": 3062450,
+      "volume_change_pct": 50.6,
+      "price_start": 10.99,
+      "price_end": 9.05,
+      "price_change_pct": -17.65
+    },
+    "monthly": {
+      "has_data": true,
+      "volume_this_month": 12573700,
+      "volume_3month_avg": 4182600,
+      "volume_change_pct": 200.62,
+      "price_start": 8.34,
+      "price_end": 9.05,
+      "price_change_pct": 8.58
+    }
+  },
+  {
+    "ticker": "IPW",
+    "daily": {
+      "today_volume": 576100,
+      "avg_20day": 400163
+    },
+    "weekly": {
+      "has_data": true,
+      "volume_this_week": 5307800,
+      "volume_4week_avg": 816128,
+      "volume_change_pct": 550.36,
+      "price_start": 3.02,
+      "price_end": 3.04,
+      "price_change_pct": 0.66
+    },
+    "monthly": {
+      "has_data": true,
+      "volume_this_month": 6529100,
+      "volume_3month_avg": 3136612,
+      "volume_change_pct": 108.16,
+      "price_start": 3.87,
+      "price_end": 3.04,
+      "price_change_pct": -21.35
+    }
+  },
+  {
+    "ticker": "TSLA",
+    "daily": {
+      "today_volume": 63514500,
+      "avg_20day": 47410425
+    },
+    "weekly": {
+      "has_data": true,
+      "volume_this_week": 268803400,
+      "volume_4week_avg": 249438525,
+      "volume_change_pct": 7.76,
+      "price_start": 396.33,
+      "price_end": 406.43,
+      "price_change_pct": 2.55
+    },
+    "monthly": {
+      "has_data": true,
+      "volume_this_month": 494581500,
+      "volume_3month_avg": 1276847267,
+      "volume_change_pct": -61.27,
+      "price_start": 427.49,
+      "price_end": 406.43,
+      "price_change_pct": -4.93
+    }
+  },
+  {
+    "ticker": "TSLL",
+    "daily": {
+      "today_volume": 94297400,
+      "avg_20day": 70860110
+    },
+    "weekly": {
+      "has_data": true,
+      "volume_this_week": 345465500,
+      "volume_4week_avg": 417742400,
+      "volume_change_pct": -17.3,
+      "price_start": 13.04,
+      "price_end": 13.59,
+      "price_change_pct": 4.22
+    },
+    "monthly": {
+      "has_data": true,
+      "volume_this_month": 670785000,
+      "volume_3month_avg": 1855478567,
+      "volume_change_pct": -63.85,
+      "price_start": 15.32,
+      "price_end": 13.59,
+      "price_change_pct": -11.32
+    }
+  },
+  {
+    "ticker": "SPCX",
+    "error": "insufficient_data"
+  },
+  {
+    "ticker": "PLCE",
+    "daily": {
+      "today_volume": 703900,
+      "avg_20day": 862055
+    },
+    "weekly": {
+      "has_data": true,
+      "volume_this_week": 1892500,
+      "volume_4week_avg": 4029550,
+      "volume_change_pct": -53.03,
+      "price_start": 3.47,
+      "price_end": 3.48,
+      "price_change_pct": 0.29
+    },
+    "monthly": {
+      "has_data": true,
+      "volume_this_month": 5826300,
+      "volume_3month_avg": 10173667,
+      "volume_change_pct": -42.73,
+      "price_start": 4.28,
+      "price_end": 3.48,
+      "price_change_pct": -18.69
+    }
+  },
+  {
+    "ticker": "INTC",
+    "daily": {
+      "today_volume": 151169400,
+      "avg_20day": 130172290
+    },
+    "weekly": {
+      "has_data": true,
+      "volume_this_week": 748850200,
+      "volume_4week_avg": 666981025,
+      "volume_change_pct": 12.27,
+      "price_start": 111.0,
+      "price_end": 124.57,
+      "price_change_pct": 12.23
+    },
+    "monthly": {
+      "has_data": true,
+      "volume_this_month": 1331550800,
+      "volume_3month_avg": 2533640133,
+      "volume_change_pct": -47.45,
+      "price_start": 109.43,
+      "price_end": 124.57,
+      "price_change_pct": 13.84
+    }
+  }
+]

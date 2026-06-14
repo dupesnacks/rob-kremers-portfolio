@@ -37,8 +37,8 @@ def fetch_ohlc(ticker: str, timeframe: str) -> Optional[pd.DataFrame]:
     Index is DatetimeIndex (UTC).
     Returns None on failure.
     """
-    if ticker == "BTC":
-        df = _fetch_ohlc_coinbase(timeframe)
+    if ticker in _COINBASE_PAIRS:
+        df = _fetch_ohlc_coinbase(ticker, timeframe)
         if df is not None and not df.empty:
             _data_source_stats["schwab"] += 1  # count in schwab bucket (successful fetch)
             return df
@@ -63,18 +63,28 @@ _COINBASE_GRANULARITY = {
 _COINBASE_RESAMPLE = {
     "3m": 3, "10m": 2, "20m": (4, 300), "30m": 2, "2h": 2, "4h": 4, "1W": 7,
 }
+_COINBASE_PAIRS = {
+    "BTC": "BTC-USD",
+    "DOGE": "DOGE-USD",
+    "ZEC": "ZEC-USD",
+}
 
 
-def _fetch_ohlc_coinbase(timeframe: str) -> Optional[pd.DataFrame]:
-    """Fetch BTC-USD candles from Coinbase Exchange API (no auth required)."""
+def _fetch_ohlc_coinbase(ticker: str, timeframe: str) -> Optional[pd.DataFrame]:
+    """Fetch OHLC candles from Coinbase Exchange API (no auth required)."""
     try:
+        if ticker not in _COINBASE_PAIRS:
+            logger.warning("Coinbase: ticker %s not supported", ticker)
+            return None
+        
         granularity = _COINBASE_GRANULARITY.get(timeframe)
         if granularity is None:
             logger.warning("Coinbase: unsupported timeframe %s", timeframe)
             return None
 
         # Determine how many candles to fetch (max 300 per request)
-        url = "https://api.exchange.coinbase.com/products/BTC-USD/candles"
+        product_id = _COINBASE_PAIRS[ticker]
+        url = "https://api.exchange.coinbase.com/products/{}/candles".format(product_id)
         params = {"granularity": granularity}
         resp = requests.get(url, params=params, timeout=10,
                             headers={"User-Agent": "OpenClaw/1.0"})
@@ -82,7 +92,7 @@ def _fetch_ohlc_coinbase(timeframe: str) -> Optional[pd.DataFrame]:
         data = resp.json()
 
         if not data or not isinstance(data, list):
-            logger.warning("Coinbase: empty response for BTC @ %s", timeframe)
+            logger.warning("Coinbase: empty response for %s @ %s", ticker, timeframe)
             return None
 
         # Coinbase returns: [[timestamp, low, high, open, close, volume], ...]
@@ -103,16 +113,16 @@ def _fetch_ohlc_coinbase(timeframe: str) -> Optional[pd.DataFrame]:
             df = _resample_ohlc(df, factor)
 
         if len(df) < 10:
-            logger.warning("Coinbase: only %d candles for BTC @ %s", len(df), timeframe)
+            logger.warning("Coinbase: only %d candles for %s @ %s", len(df), ticker, timeframe)
             return None
 
         return df
 
     except requests.exceptions.RequestException as e:
-        logger.warning("Coinbase fetch failed for BTC @ %s: %s", timeframe, e)
+        logger.warning("Coinbase fetch failed for %s @ %s: %s", ticker, timeframe, e)
         return None
     except Exception:
-        logger.warning("Coinbase fetch error for BTC @ %s", timeframe, exc_info=True)
+        logger.warning("Coinbase fetch error for %s @ %s", ticker, timeframe, exc_info=True)
         return None
 
 
@@ -163,14 +173,32 @@ def _resample_ohlc(df: pd.DataFrame, factor: int) -> pd.DataFrame:
 
 
 def fetch_latest_price(ticker: str) -> Optional[float]:
-    """Get the latest price for a ticker via Schwab (or Coinbase for BTC)."""
-    if ticker == "BTC":
+    """Get the latest price for a ticker via Schwab (or Coinbase for BTC/DOGE/ZEC)."""
+    if ticker in _COINBASE_PAIRS:
+        ohlc_price = None
         try:
-            df = _fetch_ohlc_coinbase("5m")
+            df = _fetch_ohlc_coinbase(ticker, "5m")
             if df is not None and not df.empty:
-                return float(df["Close"].iloc[-1])
+                ohlc_price = float(df["Close"].iloc[-1])
         except Exception:
             pass
+
+        ticker_price = None
+        try:
+            product_id = _COINBASE_PAIRS[ticker]
+            url = f"https://api.exchange.coinbase.com/products/{product_id}/ticker"
+            resp = requests.get(url, timeout=5, headers={"User-Agent": "OpenClaw/1.0"})
+            resp.raise_for_status()
+            data = resp.json()
+            if "price" in data:
+                ticker_price = float(data["price"])
+        except Exception:
+            pass
+
+        # Use whichever is higher to catch recent pumps (e.g. ZEC)
+        candidates = [p for p in (ohlc_price, ticker_price) if p is not None]
+        if candidates:
+            return max(candidates)
         return None
     try:
         from .schwab_fetcher import is_schwab_available, fetch_ohlc_schwab

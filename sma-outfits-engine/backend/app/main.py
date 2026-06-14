@@ -683,6 +683,266 @@ async def get_btc():
     }
 
 
+@app.get("/api/doge")
+async def get_doge():
+    """
+    Dogecoin dedicated panel — mirrors /api/btc but for DOGE-USD via Coinbase.
+    """
+    import numpy as np
+
+    price = fetch_latest_price("DOGE")
+
+    _DOGE_ALLOWED_OUTFITS = {
+        "AN (33s)",
+        "AN (11s)",
+        "AN (22s)",
+        "REPEATER_9",
+        "Base 2/NVDA",
+        "Waring's Problem",
+    }
+
+    doge_timeframes = ["5m", "15m", "30m", "1h", "2h", "4h", "1D"]
+    hits = []
+    sma_levels = {}
+
+    for tf in doge_timeframes:
+        df = fetch_ohlc("DOGE", tf)
+        if df is None or df.empty:
+            continue
+        close = df["Close"]
+        current_price = float(close.iloc[-1])
+        if price is None:
+            price = current_price
+
+        for outfit_name, outfit_def in OUTFITS.items():
+            if outfit_name not in _DOGE_ALLOWED_OUTFITS:
+                continue
+            periods = outfit_def["periods"]
+            for idx, period in enumerate(periods):
+                if period >= len(close):
+                    continue
+                sma_val = float(close.rolling(window=period).mean().iloc[-1])
+                if np.isnan(sma_val):
+                    continue
+                delta = current_price - sma_val
+                pct = abs(delta / sma_val) * 100
+
+                if pct <= 0.5:
+                    side = "long" if current_price > sma_val else "short"
+                    weight = [1.0, 1.5, 2.0, 4.0, 6.0, 8.0][idx] if len(periods) == 6 else [1.0, 3.0, 8.0][idx]
+                    hits.append({
+                        "outfit": outfit_name,
+                        "timeframe": tf,
+                        "period": period,
+                        "sma_value": round(sma_val, 6),
+                        "delta": round(delta, 6),
+                        "pct": round(pct, 3),
+                        "side": side,
+                        "weight": weight,
+                        "position": idx,
+                    })
+                    key = "MA{}".format(period)
+                    if key not in sma_levels or weight > sma_levels[key]["weight"]:
+                        sma_levels[key] = {"value": round(sma_val, 6), "weight": weight, "side": side}
+
+    long_weight = sum(h["weight"] for h in hits if h["side"] == "long")
+    short_weight = sum(h["weight"] for h in hits if h["side"] == "short")
+    total_hits = len(hits)
+
+    if total_hits == 0:
+        verdict = "Neutral"
+        reason = "No SMA outfit signals detected on DOGE"
+    elif long_weight > short_weight * 1.5:
+        verdict = "Bullish"
+        reason = "{} long signals ({:.1f}w) vs {} short ({:.1f}w)".format(
+            sum(1 for h in hits if h["side"] == "long"), long_weight,
+            sum(1 for h in hits if h["side"] == "short"), short_weight)
+    elif short_weight > long_weight * 1.5:
+        verdict = "Bearish"
+        reason = "{} short signals ({:.1f}w) vs {} long ({:.1f}w)".format(
+            sum(1 for h in hits if h["side"] == "short"), short_weight,
+            sum(1 for h in hits if h["side"] == "long"), long_weight)
+    else:
+        verdict = "Neutral"
+        reason = "Mixed signals — {:.1f}w long vs {:.1f}w short".format(long_weight, short_weight)
+
+    outfit_weights = {}
+    for h in hits:
+        outfit_weights[h["outfit"]] = outfit_weights.get(h["outfit"], 0) + h["weight"]
+    dominant = max(outfit_weights, key=outfit_weights.get) if outfit_weights else None
+
+    top_hits = sorted(hits, key=lambda h: h["weight"], reverse=True)[:10]
+
+    entry_signals = []
+    seen_buckets = set()
+    for h in sorted(hits, key=lambda x: -x["weight"]):
+        if h["side"] != "long" or h["position"] < 2:
+            continue
+        bucket = round(h["sma_value"] * 1000)
+        if bucket in seen_buckets:
+            continue
+        seen_buckets.add(bucket)
+        protocol = "candle_close" if h["position"] == 5 else ("point_break" if h["position"] >= 3 else "penny_breach")
+        stop_delta = 0.0001 if protocol == "penny_breach" else (0.001 if protocol == "point_break" else 0)
+        stop = round(h["sma_value"] - stop_delta, 6)
+        entry_signals.append({
+            "outfit": h["outfit"],
+            "timeframe": h["timeframe"],
+            "period": h["period"],
+            "entry": h["sma_value"],
+            "stop": stop,
+            "protocol": protocol,
+            "weight": h["weight"],
+            "label": "MA{}".format(h["period"]),
+        })
+        if len(entry_signals) >= 5:
+            break
+
+    return {
+        "price": round(price, 6) if price else None,
+        "verdict": verdict,
+        "reason": reason,
+        "total_hits": total_hits,
+        "long_weight": round(long_weight, 1),
+        "short_weight": round(short_weight, 1),
+        "dominant_outfit": dominant,
+        "key_levels": dict(sorted(sma_levels.items(), key=lambda x: x[1]["weight"], reverse=True)),
+        "top_hits": top_hits,
+        "entry_signals": entry_signals,
+        "source": "coinbase",
+    }
+
+
+@app.get("/api/zec")
+async def get_zec():
+    """
+    ZEC dedicated panel — mirrors /api/doge but for ZEC-USD via Coinbase.
+    """
+    import numpy as np
+
+    price = fetch_latest_price("ZEC")
+
+    _ZEC_ALLOWED_OUTFITS = {
+        "AN (33s)",
+        "AN (11s)",
+        "AN (22s)",
+        "Waring's Problem",
+        "Base 2/NVDA",
+        "Bitcoin (248)",
+    }
+
+    zec_timeframes = ["5m", "15m", "30m", "1h", "2h", "4h", "1D"]
+    hits = []
+    sma_levels = {}
+
+    for tf in zec_timeframes:
+        df = fetch_ohlc("ZEC", tf)
+        if df is None or df.empty:
+            continue
+        close = df["Close"]
+        current_price = float(close.iloc[-1])
+        if price is None:
+            price = current_price
+
+        for outfit_name, outfit_def in OUTFITS.items():
+            if outfit_name not in _ZEC_ALLOWED_OUTFITS:
+                continue
+            periods = outfit_def["periods"]
+            for idx, period in enumerate(periods):
+                if period >= len(close):
+                    continue
+                sma_val = float(close.rolling(window=period).mean().iloc[-1])
+                if np.isnan(sma_val):
+                    continue
+                delta = current_price - sma_val
+                pct = abs(delta / sma_val) * 100
+
+                if pct <= 0.5:
+                    side = "long" if current_price > sma_val else "short"
+                    weight = [1.0, 1.5, 2.0, 4.0, 6.0, 8.0][idx] if len(periods) == 6 else [1.0, 3.0, 8.0][idx]
+                    hits.append({
+                        "outfit": outfit_name,
+                        "timeframe": tf,
+                        "period": period,
+                        "sma_value": round(sma_val, 4),
+                        "delta": round(delta, 4),
+                        "pct": round(pct, 3),
+                        "side": side,
+                        "weight": weight,
+                        "position": idx,
+                    })
+                    key = "MA{}".format(period)
+                    if key not in sma_levels or weight > sma_levels[key]["weight"]:
+                        sma_levels[key] = {"value": round(sma_val, 4), "weight": weight, "side": side}
+
+    long_weight = sum(h["weight"] for h in hits if h["side"] == "long")
+    short_weight = sum(h["weight"] for h in hits if h["side"] == "short")
+    total_hits = len(hits)
+
+    if total_hits == 0:
+        verdict = "Neutral"
+        reason = "No SMA outfit signals detected on ZEC"
+    elif long_weight > short_weight * 1.5:
+        verdict = "Bullish"
+        reason = "{} long signals ({:.1f}w) vs {} short ({:.1f}w)".format(
+            sum(1 for h in hits if h["side"] == "long"), long_weight,
+            sum(1 for h in hits if h["side"] == "short"), short_weight)
+    elif short_weight > long_weight * 1.5:
+        verdict = "Bearish"
+        reason = "{} short signals ({:.1f}w) vs {} long ({:.1f}w)".format(
+            sum(1 for h in hits if h["side"] == "short"), short_weight,
+            sum(1 for h in hits if h["side"] == "long"), long_weight)
+    else:
+        verdict = "Neutral"
+        reason = "Mixed signals — {:.1f}w long vs {:.1f}w short".format(long_weight, short_weight)
+
+    outfit_weights = {}
+    for h in hits:
+        outfit_weights[h["outfit"]] = outfit_weights.get(h["outfit"], 0) + h["weight"]
+    dominant = max(outfit_weights, key=outfit_weights.get) if outfit_weights else None
+
+    top_hits = sorted(hits, key=lambda h: h["weight"], reverse=True)[:10]
+
+    entry_signals = []
+    seen_buckets = set()
+    for h in sorted(hits, key=lambda x: -x["weight"]):
+        if h["side"] != "long" or h["position"] < 2:
+            continue
+        bucket = round(h["sma_value"] * 10000)
+        if bucket in seen_buckets:
+            continue
+        seen_buckets.add(bucket)
+        protocol = "candle_close" if h["position"] == 5 else ("point_break" if h["position"] >= 3 else "penny_breach")
+        stop_delta = 0.0001 if protocol == "penny_breach" else (0.001 if protocol == "point_break" else 0)
+        stop = round(h["sma_value"] - stop_delta, 4)
+        entry_signals.append({
+            "outfit": h["outfit"],
+            "timeframe": h["timeframe"],
+            "period": h["period"],
+            "entry": h["sma_value"],
+            "stop": stop,
+            "protocol": protocol,
+            "weight": h["weight"],
+            "label": "MA{}".format(h["period"]),
+        })
+        if len(entry_signals) >= 5:
+            break
+
+    return {
+        "price": round(price, 2) if price else None,
+        "verdict": verdict,
+        "reason": reason,
+        "total_hits": total_hits,
+        "long_weight": round(long_weight, 1),
+        "short_weight": round(short_weight, 1),
+        "dominant_outfit": dominant,
+        "key_levels": dict(sorted(sma_levels.items(), key=lambda x: x[1]["weight"], reverse=True)),
+        "top_hits": top_hits,
+        "entry_signals": entry_signals,
+        "source": "coinbase",
+    }
+
+
 @app.get("/api/alerts")
 async def get_alerts():
     """

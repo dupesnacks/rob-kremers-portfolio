@@ -27,6 +27,15 @@ WATCHLIST = [
     'AMC',
     'BTC-USD',
     'DOGE-USD',
+    'IBM',
+    'PLTR',
+    'LFVN',
+    'IPW',
+    'TSLA',
+    'TSLL',
+    'SPCX',
+    'PLCE',
+    'INTC',
 ]
 # ===================================================
 
